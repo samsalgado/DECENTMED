@@ -1,6 +1,7 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import ReactPlayer from 'react-player';
 import cancerimg from "../../images copy/cancerimg.png";
 import "../../App.css";
 const Blog10 = () => {
@@ -37,6 +38,17 @@ const Blog10 = () => {
              I am not a Nutritionist, but researchers, Nutritionists and Herbalists universally agree that disease stems from deficiency. The disagreement stems from protein consumption and the best sources of protein. Furthermore, regardless of your perspective on veganism, star athletes Chris Paul (3rd oldest active NBA Player) and Serena Williams (23 Grand Slam Titles [2nd most]) indicate you can perform efficiently by being plant-based. Future Hall of Fame Quarterback Tom Brady is primarily plant-based, eating “80% plant-based, 20% animal-based”. Regarding dairy, “80% of African and Native Americans are lactose intolerant”, diets high in meat and dairy do not provide the necessary vitamins and nutrients that plants do.
              Moreover, all pharmaceuticals have a plant root.
            </p>
+            <div className='container'>
+          <div className='video-container'>
+          <ReactPlayer
+          url="https://www.dropbox.com/scl/fi/40iuefd3qdbo0h34vssq2/The-Curious-Case-of-Cancer-Vitamin-B17.mp4?rlkey=pejf34o2ndr5erb9ksde3qbkz&st=oibbui7r&dl=0" // Replace with your video URL
+          width='100%'
+          height='400px'
+          controls={true}
+          />
+
+          </div>   
+          </div>
 
            <p>
            How many times have you eaten an apricot seed?
