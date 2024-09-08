@@ -1,0 +1,66 @@
+.container {
+  padding: 2rem; /* Add padding for better content spacing */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.title-container {
+  text-align: center; /* Center title text */
+}
+
+.collapsibles-table {
+  margin: 0 auto; /* Center table horizontally */
+  width: 80%; /* Adjust table width as needed */
+  max-width: 100%; /* Ensure table does not overflow on smaller screens */
+}
+
+.gridimag,
+.gridima,
+.gridimage {
+  width: 100%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 600px; /* Adjust maximum width of grid images */
+  margin: 10px auto; /* Center images horizontally with margin */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.AC {
+  width: 80%;
+  max-width: 350px; /* Adjust maximum width of AC image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Correctly handle inline-block display */
+  margin: 5px auto 10px; /* Adjust margin for spacing around image */
+  /* Consider using other methods for positioning rather than negative margins */
+}
+
+.CASESTUDY {
+  width: 100%; /* Ensure images fill their container */
+  max-width: 500px; /* Adjust maximum width of case study images */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Correctly handle inline-block display */
+  margin: 10px auto; /* Add margin for spacing around images */
+}
+
+.case-studies {
+  display: flex; /* Arrange case studies horizontally */
+  justify-content: center; /* Center case studies */
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .collapsibles-table {
+    width: 100%; /* Adjust table width to full width on smaller screens */
+  }
+
+  .gridimag,
+  .gridima,
+  .gridimage,
+  .CASESTUDY {
+    max-width: 90%; /* Ensure images scale down to fit their container on smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .AC {
+    max-width: 80%; /* Adjust max-width for smaller screens */
+  }
+}

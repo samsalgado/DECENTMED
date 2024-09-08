@@ -1,0 +1,48 @@
+/* Tele.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), calc(100% / var(--columns)));
+  grid-gap: 0px; /* Consider adjusting for better accessibility */
+  min-height: 100px; /* Adjust as needed */
+}  
+  .gridimage {
+    max-width: 250px; /* Set the desired width */
+    height: fit-content; /* Allow height to adjust based on aspect ratio */
+    object-fit: contain; 
+  }  
+  /* Media Queries for Responsive Columns and Text */
+  
+/* Paragraph inside .parc */
+.parc p {
+  font-size: 1rem; /* Set default font size */
+  line-height: 1.5; /* Improve readability with increased line height */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust grid for mobile devices */
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for mobile */
+    grid-gap: 5px; /* Reduce gap between items */
+  }
+
+  /* Adjust paragraph font size for smaller screens */
+  .parc p {
+    font-size: 0.9rem; /* Decrease font size for better readability on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust grid for mobile devices */
+  .grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+  }
+
+  .gridrow {
+    display: flex; /* Enable flexbox for stacking items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: space-between; /* Distribute space between items */
+  }
+}

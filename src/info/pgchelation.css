@@ -1,0 +1,20 @@
+/* Pgchelation.css */
+
+.content-wrapper {  /* New style for content wrapper */
+    display: flex;  /* Use flexbox for responsive layout (placeholder) */
+    flex-direction: column;  /* Stack elements on mobile (placeholder) */
+  }
+  
+  /* Media Queries for Mobile Tweaks (Optional) */
+  
+  @media (max-width: 768px) {
+    .collapsibles-table tr { /* Adjust table row layout on mobile */
+      display: flex;
+      flex-wrap: wrap; /* Allow text to wrap within cells */
+    }
+    
+    .collapsibles-table td, .collapsibles-table th {
+      font-size: 0.8rem; /* Reduce font size on mobile */
+    }
+  }
+  

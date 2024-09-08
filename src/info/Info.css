@@ -1,0 +1,68 @@
+/* Container styles */
+.container {
+  width: 100%; /* Ensure full width on all devices */
+  max-width: 1200px; /* Limit max-width for larger screens */
+  margin: 0 auto; /* Center container */
+  padding: 15px; /* Ensure some padding around the container */
+}
+
+/* Card styles */
+.card {
+  border-radius: 8px; /* Optional: rounded corners for the cards */
+  border: 1px solid #ddd; /* Light border for better visibility */
+}
+
+.card-header {
+  background-color: #87CEEB; /* Sky blue background for the header */
+  color: white; /* White text color for the header */
+  font-size: 1.25rem; /* Adjust header font size */
+  padding: 10px; /* Add padding for better spacing */
+}
+.intro-image {
+  max-width: 115%;
+  height: auto;
+  border: 2px solid #ddd; /* Optional border */
+  border-radius: 8px; /* Optional rounded corners */
+}
+.card-body {
+  background-color: #f9f9f9; /* Light background for the card body */
+  font-size: 1rem; /* Default font size */
+  padding: 15px; /* Add padding inside the card body */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .card-header {
+    font-size: 1.1rem; /* Adjust header font size for smaller screens */
+  }
+
+  .card-body {
+    font-size: 0.9rem; /* Adjust body font size for smaller screens */
+  }
+  .container {
+    padding: 10px;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Or row for horizontal layout */
+  align-items: center; /* Or justify-content for centering content horizontally */
+}
+@media (max-width: 576px) {
+  .card-header {
+    font-size: 1rem; /* Further reduce header font size for extra-small screens */
+  }
+
+  .card-body {
+    font-size: 0.85rem; /* Further reduce body font size for extra-small screens */
+  }
+
+  .container {
+    padding: 10px; /* Reduce padding on extra-small screens */
+  }
+}
+@media (max-width: 768px) {
+  .video-container {
+    padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+  }
+}
