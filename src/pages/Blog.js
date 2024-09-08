@@ -1,7 +1,6 @@
 import React from 'react';
 import Topbar from './topbar';
 import Footer from '../footer';
-import DETOXIMG from '../images copy/detoxpg.png';
 import bitcoin from "../images copy/btc (1).png";
 import B17 from "../images copy/B17.png";
 import hypnotherapy from "../images copy/hypno.png";
@@ -109,25 +108,6 @@ const BlogPage = () => {
     <a href='/blog10'>
     <figure>
         <img className='gridimag' src={cancerimg} alt="logo" />
-          <figcaption>Click on image for full Blog</figcaption>
-        </figure>
-      </a>
-      </div>
-</div>  
-
-    </div>
-
-    <br></br>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Detox Cleanse</h2>
-    <div className='pr'>
-  <p>
-Dr. Sebi found that disease does not exist in a non-acidic environment. Due to the foods we consume, non-alkaline foods guide the body toward acidity. Dr. Sebi, using plants, vegetables, and detoxifications - cured over 500 cancer cases. Dr. Sebi, like other herbalists, was heavily maligned for his work with detoxification. Dr. Andrew Ivy's medical practice focused on using herbs and detoxification to rid the body of tumors. "Optimal health requires the body's biological systems must be in homeostasis with all environmental stressors". Detoxification is a "reset button" enabling the body to reset and begin the healing process.
-</p>
-<div className='container'>
-    <a href='/blog3'>
-    <figure>
-        <img className='gridimag' src={DETOXIMG} alt="logo" />
           <figcaption>Click on image for full Blog</figcaption>
         </figure>
       </a>
