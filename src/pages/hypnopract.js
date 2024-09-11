@@ -16,7 +16,7 @@ export function Hypnopract() {
             </header>
 
             <div class="container">
-            <h1>Hypnotherapy Near Me</h1>
+            <h1>Hypnotherapy</h1>
  
   <div class="row">
     <div class="col-md-4">

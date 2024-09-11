@@ -6,6 +6,7 @@ import B17 from "../images copy/B17.png";
 import hypnotherapy from "../images copy/hypno.png";
 import batana from "../images copy/batana.png";
 import hepB from "../images copy/hepB.png";
+import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
 import consult from "../images copy/consult.png";
@@ -247,6 +248,22 @@ const BlogPage = () => {
     <a href='/blog9'>
     <figure>
         <img className='gridimag' src={nutritionbenefits} alt="logo" />
+          <figcaption>Click on image for full Blog</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>When Will The Last Bitcoin be Mined?</h2>
+    <div className='pr'>
+    <p>
+    One of the best parts of Bitcoin is its supply. Inflation is running rampant and will not cease until it’s too late. USD operates upon the printer, and the Federal Reserve has not stopped printing money. In 2008 the Federal Reserve injected $500 billion into the US economy. How is Bitcoin different from the traditional financial system? Bitcoin has a set supply of 21 million coins, and will never exceed the supply. The last Bitcoin mined will be in 2140.
+        </p>
+      </div>
+    </div>
+    <div className='container'>
+    <a href='/blog11'>
+    <figure>
+        <img className='gridimag' src={BTC} alt="logo" />
           <figcaption>Click on image for full Blog</figcaption>
         </figure>
       </a>

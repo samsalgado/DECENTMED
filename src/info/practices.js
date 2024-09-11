@@ -3,15 +3,17 @@ import '../App.css';
 import Treatment from "../pages/treatment";
 import Departments from "../pages/departments";
 import { NavLink } from 'react-router-dom';
+//<Route path='/homeopract' element={<HomeopathyPract />} />
 function Practices() {
     return (
         <div className="container-blue">
             <h1 className="text-center mb-4">Practices</h1>
             <div className="row justify-content-center">
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
+                    <NavLink to='/homeopract'>
                     <h3>Homeopathy</h3>
                         <img className="img-custom" src={Treatment.homeopath} alt="Homeopathy" />
-                   
+                        </NavLink>   
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
                     <h3>Acupuncture</h3>

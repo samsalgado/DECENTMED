@@ -7,6 +7,7 @@ import Blog5 from './pages/blogs/blog5';
 import Blog8 from './pages/blogs/blog8';
 import Blog7 from './pages/blogs/blog7';
 import Blog9 from './pages/blogs/blog9';
+import Blog11 from './pages/blogs/blog11';
 import Blog1 from './pages/blogs/blog1';
 import { Detox } from './pages/Detox';
 import {StemCell} from './pages/Stemcell';
@@ -29,6 +30,7 @@ import Blog3 from './pages/blogs/blog3';
 import Blog4 from './pages/blogs/blog4';
 import { Apoth } from './pages/Apoth';
 import { Hypnopract } from './pages/hypnopract';
+import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 function App() {
 
   return( 
@@ -43,7 +45,9 @@ function App() {
     <Route path="/blog2" element={<Blog2 />} />
     <Route path="/blog3" element={<Blog3 />} />
     <Route path='/hypnopract' element={<Hypnopract />} />
+    <Route path='/homeopract' element={<HomeopathyPract />} />
     <Route path="/blog4" element={<Blog4 />} />
+    <Route path="/blog11" element={<Blog11 />} />
     <Route path="/cancer" element={<Blog6 />} /> 
     <Route path="/blog5" element={<Blog5 />} />
     <Route path="/prevent" element={<Prevent />}/>
