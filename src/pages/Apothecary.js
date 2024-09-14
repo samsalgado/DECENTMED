@@ -796,7 +796,6 @@ const Apothecary = () => {
             description:"Red clover is safe and effective herb with a long history of medicinal usage. It is commonly used to treat skin conditions, normally in combination with other purifying herbs such as Arctium lappa and Rumex crispus[254]. It is a folk remedy for cancer of the breast, a concentrated decoction being applied to the site of the tumour in order to encourage it to grow outwards and clear the body[254]. Flavonoids in the flowers and leaves are oestrogenic and may be of benefit in the treatment of menopausal complaints[254]. The flowering heads are alterative, antiscrofulous, antispasmodic, aperient, detergent, diuretic, expectorant, sedative and tonic[4, 21, 165, 218, 238]. It has also shown anticancer activity[172, 218], poultices of the herb have been used as local applications to cancerous growths[4]. Internally, the plant is used in the treatment of skin complaints (especially eczema and psoriasis), cancers of the breast, ovaries and lymphatic system, chronic degenerative diseases, gout, whooping cough and dry coughs[238]. The plant is normally harvested for use as it comes into flower[222, 238] and some reports say that only the flowers are used[4]. The toxic indolizidine alkaloid 'slaframine' is often found in diseased clover (even if the clover shows no external symptoms of disease). This alkaloid is being studied for its antidiabetic and anti-AIDS activity[222].",
             medrating:3,
             source:' https://pfaf.org/user/Plant.aspx?LatinName=Trifolium+pratense'
-
         },
         {
             id:88,
@@ -921,6 +920,51 @@ const Apothecary = () => {
             price:0.0090232,
             medrating:2,
             source:'https://pfaf.org/user/plant.aspx?latinname=Ficus+carica#google_vignette'
+        },
+        {
+            id:103,
+            image:Plants.thuja,
+            name:'Thuja orientalis',
+            description:"This plant is commonly used in Chinese herbalism, where it is considered to be one of the 50 fundamental herbs[218]. Both the leaves and the seeds contain an essential oil consisting of borneol, bornyl acetate, thujone, camphor and sesquiterpenes[283]. The leaves also contain rhodoxanthin, amentoflavone, quercetin, myricetin, carotene, xanthophyll and ascorbic acid[283]. The leaves are antibacterial, antipyretic, antitussive, astringent, diuretic, emmenagogue, emollient, expectorant, febrifuge, haemostatic, refrigerant and stomachic[147, 176, 218, 238]. Their use is said to improve the growth of hair[147, 176, 238]. They are used internally in the treatment of coughs, haemorrhages, excessive menstruation, bronchitis, asthma, skin infections, mumps, bacterial dysentery, arthritic pain and premature baldness[238]. The leaves are harvested for use as required and can be used fresh or dried[238]. This remedy should not be prescribed to pregnant women[238]. The seed is aperient, lenitive and sedative[147, 176, 218]. It is used internally in the treatment of palpitations, insomnia, nervous disorders and constipation in the elderly[238]. The root bark is used in the treatment of burns and scalds[218]. The stems are used in the treatment of coughs, colds, dysentery, rheumatism and parasitic skin diseases[218].",
+            price:0.0015625,
+            medrating:3,
+            source:'https://pfaf.org/user/plant.aspx?LatinName=Thuja+orientalis'
+        },
+        {
+            id:104,
+            image:Plants.burdock,
+            name:'Arctium lappa',
+            description:"Burdock is one of the foremost detoxifying herbs in both Chinese and Western herbal medicine[254]. The dried root of one year old plants is the official herb, but the leaves and fruits can also be used[4]. It is used to treat conditions caused by an 'overload' of toxins, such as throat and other infections, boils, rashes and other skin problems[254]. The root is thought to be particularly good at helping to eliminate heavy metals from the body[254]. The plant is also part of a North American formula called essiac which is a popular treatment for cancer. Its effectiveness has never been reliably proven or disproven since controlled studies have not been carried out. The other herbs included in the formula are Rumex acetosella, Ulmus rubra and Rheum palmatum[254]. The plant is antibacterial, antifungal, carminative[9, 21, 147, 165, 176]. It has soothing, mucilaginous properties and is said to be one of the most certain cures for many types of skin diseases, burns, bruises etc[4, 244]. It is used in the treatment of herpes, eczema, acne, impetigo, ringworm, boils, bites etc[244]. The plant can be taken internally as an infusion, or used externally as a wash[244]. Use with caution[165]. The roots of one-year old plants are harvested in mid-summer and dried. They are alterative, aperient, blood purifier, cholagogue, depurative, diaphoretic, diuretic and stomachic[218, 222]. The seed is alterative, antiphlogistic, depurative, diaphoretic and diuretic[218]. Recent research has shown that seed extracts lower blood sugar levels[238]. The seed is harvested in the summer and dried for later use[254]. The crushed seed is poulticed onto bruises[222]. The leaves are poulticed onto burns, ulcers and sores[222].",
+            price:0.000043213,
+            medrating:5,
+            source:'https://pfaf.org/user/plant.aspx?latinname=Arctium+lappa'
+        },
+        {
+            id:105,
+            image:Plants.plumbago,
+            name:"Plumbago Europaea",
+            description:"The whole plant, but especially the root, is acrid, emetic, odontalgic, sialagogue and vesicant[4, 61, 100, 103]. Chewing the root produces copious salivation and is said to be of benefit in treating toothache[4].",
+            price:0.000000002321,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Plumbago+europaea"
+        },
+        {
+            id:106,
+            image:Plants.madigascarperiwinkle,
+            name:'Catharanthus roseus',
+            description:"Madagascar periwinkle has long been used as a traditional medicine. Tests by pharmaceutical companies in the 1950's showed the presence of a number of medically active alkaloids, especially the compound vincristine, which has been shown to have activity against leukaemia[ 238 , 254 , 302 ]. The alkaloids, when isolated from the plant, are highly toxic but have also been shown to reduce the numbers of white blood cells, leading to applications which have revolutionized conventional cancer therapy[ 238 ]. The plant is cultivated as a source of these alkaloids, a number of which are extracted and used allopathically[ 299 ]. The isolated alkaloids are used to treat and other cancers[ 238 ]. The alkaloids vincristine and vinblastine are prescribed in anticancer therapy, particularly in cases of acute leukaemia (especially in children) and Hodgkin's lymphoma. They are usually part of a complex chemotherapy protocol[ 299 ]. Used in isolation, they have a number of side-effects, including alopecia, nausea and bone marrow depression[ 238 ]. The dried root is an industrial source of ajmalicine, which increases the blood flow in the brain and peripheral parts of the body. Preparations of ajmalicine are used to treat the psychological and behavioural problems of senility, sensory problems (dizziness, tinnitus), cranial traumas and their neurological complications[ 299 ]. The leaves and aerial parts of the plant have a wide range of traditional uses. Well known as an oral hypoglycaemic agent, the plant is also considered to be depurative, diaphoretic, diuretic, emetic, purgative and vermifuge. A decoction is taken to treat hypertension, asthma, menstrual irregularities, chronic constipation, diarrhoea, indigestion, dyspepsis, malaria, dengue fever, diabetes, cancer and skin diseases[ 238 , 299 , 348 ]. Extracts prepared from the leaves have been applied externally as antiseptic agents for the healing of wounds; to relieve the effects of wasp stings; against haemorrhage, skin rash and as a mouthwash to treat toothache[ 299 ]. The leaves are harvested when the plant is flowering, and can be dried for later use[ 238 ]. An infusion of the flowers is used to treat mild diabetes[ 348 ]. A decoction of the roots is taken to treat dysmenorrhoea[ 299 ].",
+            price:0.0000392123,
+            medrating:4,
+            source:'https://pfaf.org/user/plant.aspx?latinname=Catharanthus+roseus'
+        },
+        {
+            id:107,
+            image:Plants.crepe,
+            name:"Crepe Myrtle",
+            description:"The stem bark is febrifuge, stimulant and styptic[218, 240]. The bark, flowers and leaves are considered to be hydrogogue and a drastic purgative[240]. A paste of the flowers is applied externally to cuts and wounds[272]. The root is astringent, detoxicant and diuretic[147, 218]. A decoction of the flowers is used in the treatment of colds[218].",
+            price:0.000301,
+            medrating:2,
+            source:'https://pfaf.org/user/plant.aspx?latinname=Crepe+myrtle'
         }
     ]
   );
