@@ -17,7 +17,7 @@ const Footer = () => {
         <a href='https://twitter.com/ttf123457'>
             <img src={x} alt='' width={80} height={80} />
         </a>
-        <a href='https://www.youtube.com/channel/UCviB2N6lC9aJu0eSw6FijWQ'>
+        <a href='https://www.youtube.com/playlist?list=PL8Q31etEj6NEEZGvqEw0UAOUG4O0ucsiz'>
             <img src={youtube} alt='' width={80} height={80}  />
         </a>
         </div>

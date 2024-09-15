@@ -965,6 +965,78 @@ const Apothecary = () => {
             price:0.000301,
             medrating:2,
             source:'https://pfaf.org/user/plant.aspx?latinname=Crepe+myrtle'
+        },
+        {
+            id:108,
+            image:Plants.begonia,
+            name:"Hardy Begonia",
+            description:"The tuberous roots and fruits are anodyne, antiphlogistic and antispasmodic. Stimulates blood circulation[147]. A decoction is used in the treatment of traumatic pain, haematemesis, gonorrhoea, post-partum vaginal discharge, amenorrhoea and snakebites[147].",
+            price:0.0000942435,
+            medrating:2,
+            source:'https://pfaf.org/user/plant.aspx?latinname=begonia'
+        },
+        {
+            id:109,
+            image:Plants.maple,
+            name:"Acer saccharinum",
+            description:"An infusion of the bark is used in the treatment of coughs, cramps and dysentery[257]. The infusion is also applied externally to old, stubborn running sores[257]. A compound infusion is used in the treatment of 'female complaints'[257]. The inner bark is boiled and used with water as a wash for sore eyes[257]. An infusion is used internally in the treatment of diarrhoea[257]. An infusion of the root bark has been used in the treatment of gonorrhoea[257].",
+            price:0.0000087657,
+            medrating:1,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Acer+saccharinum"
+        },
+        {
+            id:109,
+            image:Plants.raintree,
+            name:"Koelreuteria paniculata",
+            description:"The flowers are ophthalmic[178, 218]. They are used in the treatment of conjunctivitis and epiphora[218].",
+            price:0.00005087657,
+            medrating:1,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Koelreuteria+paniculata"
+        },
+        {
+            id:109,
+            image:Plants.africantuliptree,
+            name:"African Tulip Tree",
+            description:"Approximately 119 pure chemical substances isolated from higher plants are used in medicine throughout the world [2]. Spathodea campanulata P. Beauvais is one of the medicinally important perennial plants commonly used as folkloric medicine in Nigeria. The species Spathodea campanulata belong to the family Bignoniaceae and is native to Africa. It is often used in gardening in tropical and subtropical areas, including South America [3]. The flowers are used as diuretic and anti-inflammatory, while the leaves are against kidney diseases, urethra inflammations and as an antidote against animal poisons [4]. Several phytochemical studies were performed with different parts of Spathodea campanulata including stem barks, leaves, flowers and fruits. The leaves contain spathodol, caffeic acid, other phenolic acids and flavonoids, while fruits contain polyphenols, tannins, saponins and glycosides [5]. The plant leaves reported to have antiplasmodial, analgesic, anti-inflammatory and anti-larvicidal activity. The stem bark decoction of Spathodea campanulata have been displayed hypoglycemic, anticomplementary, antimalarial and anti-HIV activity [6].",
+            price:0.000003342,
+            medrating:0,
+            source:"https://journals.innovareacademics.in/index.php/ijpps/article/view/24096/14506"
+        },
+        {
+            id:110,
+            image:Plants.solidago,
+            name:"Solidago canadensis",
+            description:"Haemostatic, styptic[168, 172]. The root is applied as a poultice to burns[168, 172, 222]. An infusion of the dried powdered herb can be used as an antiseptic[168, 172]. The blossoms are analgesic, astringent and febrifuge[257]. They have been chewed and the juice slowly swallowed to treat sore throats[213, 222]. A tea made from the flowers is used in the treatment of diarrhoea, body pains, fevers and snakebites[222, 257]. The plant contains quercitin, a compound that is reportedly useful in the treatment of haemorrhagic nephritis[222]. This plant is said to have similar medicinal properties to S. virgaurea. These are:- Goldenrod is a safe and gentle remedy for a number of disorders. In particular, it is a valuable astringent remedy treating wounds and bleeding, whilst it is particularly useful in the treatment of urinary tract disorders, being used both for serious ailments such as nephritis and for more common problems such as cystitis[254]. The plant contains saponins that are antifungal and act specifically against the Candida fungus which is the cause of vaginal and oral thrush[238, 254]. It also contains rutin which is used to treat capillary fragility, and phenolic glycosides which are anti-inflammatory[238]. The leaves and flowering tops are anthelmintic, anti-inflammatory, antiseptic, aromatic, astringent, carminative, diaphoretic, mildly diuretic, febrifuge and stimulant[4, 7, 9, 21, 147, 165]. A good vulnerary herb, it has also proved of value when used internally in the treatment of urinary infections, chronic catarrh, skin diseases, influenza, whooping cough, bladder and kidney stones etc[4, 238]. Due to its mild action, goldenrod is used to treat gastro-enteritis in children[254]. It makes an excellent mouthwash in the treatment of thrush[7]. The plant is gathered in the summer and dried for later use[7]. The seed is anticoagulant, astringent and carminative[218]. A homeopathic remedy is made from the plant[9]. It is used in the treatment of kidney and bladder disorders, rheumatism and arthritis[9]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Solidago canadensis for infections of the urinary tract, and kidney and bladder stones (see [302] for critics of commission E).",
+            price:0.000090242,
+            medrating:2,
+            source:'https://pfaf.org/User/Plant.aspx?LatinName=Solidago+canadensis'
+        },
+        {
+            id:111,
+            image:Plants.geraniumdissect,
+            name:"Geranium dissect",
+            description:"The whole plant, but especially the roots, is rich in tannin[4]. It is antiseptic, highly astringent, styptic and tonic[4]. An infusion of the whole plant, or of the roots alone, is used in the treatment of diarrhoea (especially for children and the elderly), dysentery, cholera, gastro-enteritis, internal bleeding, excessive menstruation etc[4]. Externally, it is used in the treatment of purulent wounds, haemorrhoids, thrush, vaginal discharges, inflammations of the mouth etc[238]. It is best to harvest the roots as the plant comes into flower since they are then at their most active medicinally[4]. The leaves should be harvested before the plant sets seed[4]. Both are dried for later use[238].",
+            price:0.00000017808,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Geranium+dissect"
+        },
+        {
+            id:112,
+            image:Plants.trigonella,
+            name:"Trigonella forum-graecum",
+            description:"Fenugreek is much used in herbal medicine, especially in North Africa, the Middle East and India. It has a wide range of medicinal applications[254]. The seeds are very nourishing and are given to convalescents and to encourage weight gain, especially in anorexia nervosa[254]. The seeds should not be prescribed medicinally for pregnant women since they can induce uterine contractions[238, 254]. Research has shown that the seeds can inhibit cancer of the liver, lower blood cholesterol levels and also have an antidiabetic effect[254]. The seed and leaves are anticholesterolemic, anti-inflammatory, antitumor, carminative, demulcent, deobstruent, emollient, expectorant, febrifuge, galactogogue, hypoglycaemic, laxative, parasiticide, restorative and uterine tonic[4, 7, 21, 147, 165, 176, 238]. The seed yields a strong mucilage and is therefore useful in the treatment of inflammation and ulcers of the stomach and intestines[4, 254]. Taken internally, a decoction of the ground seeds serves to drain off the sweat ducts[7]. The seed is very nourishing and body-building and is one of the most efficacious tonics in cases of physical debility caused by anaemia or by infectious diseases, especially where a nervous factor is involved[7, 244]. It is also used in the treatment of late-onset diabetes, poor digestion (especially in convalescence), insufficient lactation, painful menstruation, labour pains etc[238, 244]. The seeds freshen bad breath and restore a dulled sense of taste[254]. Externally, the seeds can be ground into a powder and used as a poultice for abscesses, boils, ulcers, burns etc, or they can be used as a douche for excessive vaginal discharge[4, 244, 254]. The leaves are harvested in the growing season and can be used fresh or dried[238]. The seeds are harvested when fully ripe and dried for later use[238]. Compounds extracted from the plant have shown cardiotonic, hypoglycaemic, diuretic, antiphlogistic and hypotensive activity[218]. One of its constituent alkaloids, called 'trigonelline', has shown potential for use in cancer therapy. The seed contains the saponin diosgenin, an important substance in the synthesis of oral contraceptives and sex hormones[244], whilst saponins in the plant have been extracted for use in various other pharmaceutical products[238]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Trigonella foenum-graecum for loss of appetite, inflammation of the skin (see [302] for critics of commission E).",
+            price:0.000942042,
+            medrating:5,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Trigonella+foenum-graecum"
+        },
+        {
+            id:113,
+            image:Plants.gymnemasylvestre,
+            name:"Gymnema sylvestre",
+            description:"Gurmar is an important, bitter-tasting Ayurvedic herb that is used especially to reduce blood sugar levels in diabetics[304 ]. Both roots and leaves can be used[304 ]. The plant contains a group of oleanane type triterpenoid saponins known as gymnemic acids, a complex mixture of at least 9 closely related acidic glycosides, which have taste-modifying activity; and gurmarin, which is a sweet taste-suppressing polypeptide. When the leaf is chewed, the ability to taste sweetness is lost temporarily[299 ]. Studies have demonstrated that the leaf powder may exert an antidiabetic effect via a number of pathways, including decreasing the uptake of glucose from the small intestine; improvements in glycogen synthesis, glycolysis, gluconeogenesis, and hepatic and muscle glucose uptake; as well as the reversal of haemoglobin and plasma protein glycosylation[299 ]. The plant is antidote, astringent, diuretic, emetic, hypoglycaemic, purgative, refrigerant, stomachic and tonic[304 ]. It is used particularly to reduce sugar levels in the blood and urine[304 ]. The leaves are used in the treatment of fevers and coughs[299 ]. The powdered leaf is considered to help curb cravings for sweets and to have lipid lowering effects, it is added to food additives as a weight loss remedy[299 ]. The powder also helps in preventing caries[299 ]. Applied externally the leaves are combined with castor oil and used as a poultice to treat swollen glands[304 ]. The roots are considered to be a useful antidote to snakebite - they are applied to the wound as a powder, made into a paste with water or given internally as a decoction[299 , 304 ]. The pounded and cooked roots are added to food and eaten as a treatment for epilepsy[299 ]. The pounded cooked root or root powder is applied externally to treat boils[299 ].",
+            price:0.000456000500000001,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Gymnema+sylvestre"
         }
     ]
   );
