@@ -1037,6 +1037,42 @@ const Apothecary = () => {
             price:0.000456000500000001,
             medrating:4,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Gymnema+sylvestre"
+        },
+        {
+            id:114,
+            image:Plants.rosablanda,
+            name:"Rosa blanda",
+            description:"A decoction of the fruit has been used in the treatment of itching piles and any other itches[257]. The skin of the fruit has been used in the treatment of stomach problems and indigestion[257]. The dried powdered flowers have been used in the treatment of heartburn[257]. An infusion of the root has been used as a wash for inflamed eyes[257]. The infusion has also been used as an analgesic to treat headaches and lumbago[257]. The fruit of many members of this genus is a very rich source of vitamins and minerals, especially in vitamins A, C and E, flavanoids and other bio-active compounds. It is also a fairly good source of essential fatty acids, which is fairly unusual for a fruit. It is being investigated as a food that is capable of reducing the incidence of cancer and also as a means of halting or reversing the growth of cancers[214].",
+            price:0.00000257,
+            medrating:2,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Rosa+blanda"
+        },
+        {
+            id:115,
+            image:Plants.aster,
+            name:"White Panicle Aster",
+            description:"An infusion of the plant, combined with another unnamed plant, has been used in the treatment of fevers[257]. A decoction of the plant has been used to dress wounds[257]. The dried and powdered plant has been used as a salve on abrasions[257]. Smoke from the crushed blossoms has been inhaled in the treatment of nosebleeds[257].",
+            price:0.00016787,
+            medrating:1,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Aster+lanceolatus"
+        },
+        {
+            id:116,
+            images:Plants.dandelion,
+            name:"Taraxacum officinale",
+            description:"The dandelion is a commonly used herbal remedy. It is especially effective and valuable as a diuretic because it contains high levels of potassium salts and therefore can replace the potassium that is lost from the body when diuretics are used[238]. All parts of the plant, but especially the root, are slightly aperient, cholagogue, depurative, strongly diuretic, hepatic, laxative, stomachic and tonic[4, 7, 9, 21, 54, 165, 176, 222, 238]. The root is also experimentally cholagogue, hypoglycaemic and a weak antibiotic against yeast infections[222]. The dried root has a weaker action[222]. The roots can be used fresh or dried and should be harvested in the autumn when 2 years old[4]. The leaves are harvested in the spring when the plant is in flower and can be dried for later use[9]. A tea can be made from the leaves or, more commonly, from the roots[213]. The plant is used internally in the treatment of gall bladder and urinary disorders, gallstones, jaundice, cirrhosis, dyspepsia with constipation, oedema associated with high blood pressure and heart weakness, chronic joint and skin complaints, gout, eczema and acne[238]. The plant has an antibacterial action, inhibiting the growth of Staphylococcus aureus, Pneumococci, Meningococci, Bacillus dysenteriae, B. typhi, C. diphtheriae, Proteus etc[176]. The latex contained in the plant sap can be used to remove corns, warts and verrucae[7]. The latex has a specific action on inflammations of the gall bladder and is also believed to remove stones in the liver[7]. A tea made from the leaves is laxative[222]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Taraxacum officinale for dyspepsia, urnary tract infections, liver and gallbladder complaints, appetite loss (see [302] for critics of commission E).",
+            price:0.00035271,
+            medrating:3,
+            source:"https://pfaf.org/user/plant.aspx?LatinName=Taraxacum+officinale"
+        },
+        {
+            id:117,
+            image:Plants.sunflower,
+            name:"Helianthus annuus",
+            description:"A tea made from the leaves is astringent, diuretic and expectorant, it is used in the treatment of high fevers[222]. The crushed leaves are used as a poultice on sores, swellings, snakebites and spider bites[222, 257]. The leaves are harvested as the plant comes into flower and are dried for later use[238]. A tea made from the flowers is used in the treatment of malaria and lung ailments[222, 257]. The flowering head and seeds are febrifuge, nutritive and stomachic[7]. The seed is also considered to be diuretic and expectorant[4, 218, 222]. It has been used with success in the treatment of many pulmonary complaints[4]. A decoction of the roots has been used as a warm wash on rheumatic aches and pains[257].",
+            price:0.0005023439,
+            medrating:2,
+            source:"https://pfaf.org/user/plant.aspx?LatinName=Helianthus+annuus"
         }
     ]
   );
