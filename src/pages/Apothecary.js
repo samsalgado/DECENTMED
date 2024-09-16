@@ -1073,6 +1073,33 @@ const Apothecary = () => {
             price:0.0005023439,
             medrating:2,
             source:"https://pfaf.org/user/plant.aspx?LatinName=Helianthus+annuus"
+        },
+        {
+            id:118,
+            image:Plants.rhustyphina,
+            name:"Rhus typhina",
+            description:"Stag's horn sumach was often employed medicinally by several native North American Indian tribes who valued it especially for its astringent qualities[257]. It is little used in modern herbalism. Some caution is advised in the use of the leaves and stems of this plant, see the notes above on toxicity. The bark is antiseptic, astringent, galactogogue and tonic[222, 257]. An infusion is used in the treatment of diarrhoea, fevers, piles, general debility, uterine prolapse etc[213, 222]. An infusion is also said to greatly increase the milk flow of a nursing mother - small pieces of the wood were also eaten for this purpose[257]. The inner bark is said to be a valuable remedy for piles[257]. The roots are astringent, blood purifier, diuretic and emetic[222]. An infusion of the roots, combined with purple coneflower (Echinacea purpurea) has been used in the treatment of venereal disease[257]. A poultice of the roots has been used to treat boils[257]. The leaves are astringent. They have been used in the treatment of asthma, diarrhoea and stomatosis[222]. An infusion of the fruits has been used as a tonic to improve the appetite and as a treatment for diarrhoea[257]. The berries are astringent and blood purifier[257]. They were chewed as a remedy for bed-wetting[222, 257]. A tea made from the berries has been used to treat sore throats[213]. The flowers are astringent and stomachic. An infusion has been used to treat stomach pains[257]. The sap has been applied externally as a treatment of warts[226]. Some caution is advised here since the sap can cause a rash on many people[K].",
+            price:0.0000342451,
+            medrating:2,
+            source:"https://pfaf.org/user/plant.aspx?LatinName=Rhus+typhina#google_vignette"
+        },
+        {
+            id:119,
+            image:Plants.jewelweed,
+            name:"Jewelweed",
+            description:"Jewelweed was commonly used as a medicinal herb by a number of native North American Indian tribes[257], and has been widely used in domestic medicine. Its main value lies in its external application for wounds and a range of skin complaints. However, it is little used in modern herbalism and is considered to be dangerous and 'wholly questionable' when used internally[4]. The herb is antidote, cathartic, diuretic and emetic[4, 172, 207, 213]. An infusion has been used in the treatment of fevers, difficult urination, measles, stomach cramps, jaundice etc[257]. The juice of the leaves is used externally in the treatment of piles, fungal dermatitis, nettle stings, poison ivy rash, burns etc[4, 172, 207, 213, 257]. The sap is used to remove warts[207]. A poultice of the leaves is applied to bruises, burns, cuts etc[222].",
+            price:0.000526252,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Impatiens+capensis"
+        },
+        {
+            id:120,
+            image: Plants.japaneseknotweed,
+            name:"Japanese knotweed",
+            description:"Possibly may have similar properties to other knotweeds where the root can be antiphlogistic, bechic, depurative, diuretic, emmenagogue, emollient, febrifuge, stomachic and vulnerary[46, 61, 147, 178, 218]. It is also used in the treatment of women's complaints[147]. A decoction is used in the treatment of burn injuries, boils and abscesses, poisonous snakebites, acute hepatitis, appendicitis, traumatic injuries and menstrual irregularities[147]. The leaves can be crushed and applied externally as a poultice to abscesses, cuts etc, whilst the dried roots can be ground into a powder and applied externally[147]. Extracts of the plant have shown antitumour activity[218].",
+            price:0.00005256219,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Reynoutria+japonica"
         }
     ]
   );
