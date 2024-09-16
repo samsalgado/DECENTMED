@@ -1098,7 +1098,7 @@ const Apothecary = () => {
             name:"Japanese knotweed",
             description:"Possibly may have similar properties to other knotweeds where the root can be antiphlogistic, bechic, depurative, diuretic, emmenagogue, emollient, febrifuge, stomachic and vulnerary[46, 61, 147, 178, 218]. It is also used in the treatment of women's complaints[147]. A decoction is used in the treatment of burn injuries, boils and abscesses, poisonous snakebites, acute hepatitis, appendicitis, traumatic injuries and menstrual irregularities[147]. The leaves can be crushed and applied externally as a poultice to abscesses, cuts etc, whilst the dried roots can be ground into a powder and applied externally[147]. Extracts of the plant have shown antitumour activity[218].",
             price:0.00005256219,
-            medrating:2,
+            medrating:3,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Reynoutria+japonica"
         }
     ]
