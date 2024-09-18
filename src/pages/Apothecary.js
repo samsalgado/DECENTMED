@@ -913,14 +913,7 @@ const Apothecary = () => {
             medrating:2,
             source:"https://pfaf.org/user/plant.aspx?latinname=Rubus+occidentalis"
         },
-        {
-            id:102,
-            image:Plants.ficus,
-            description:"A decoction of the leaves is stomachic[218]. The leaves are also added to boiling water and used as a steam bath for painful or swollen piles[218]. The latex from the stems is used to treat corns, warts and piles[4, 89, 218]. It also has an analgesic effect against insect stings and bites[7]. The fruit is mildly laxative, demulcent, digestive and pectoral[4, 7, 218]. The unripe green fruits are cooked with other foods as a galactogogue and tonic[218]. The roasted fruit is emollient and used as a poultice in the treatment of gumboils, dental abscesses etc[4]. Syrup of figs, made from the fruit, is a well-known and effective gentle laxative that is also suitable for the young and very old[254, K]. A decoction of the young branches is an excellent pectoral[7]. The plant has anticancer properties[218].",
-            price:0.0090232,
-            medrating:2,
-            source:'https://pfaf.org/user/plant.aspx?latinname=Ficus+carica#google_vignette'
-        },
+     
         {
             id:103,
             image:Plants.thuja,
@@ -944,7 +937,7 @@ const Apothecary = () => {
             image:Plants.plumbago,
             name:"Plumbago Europaea",
             description:"The whole plant, but especially the root, is acrid, emetic, odontalgic, sialagogue and vesicant[4, 61, 100, 103]. Chewing the root produces copious salivation and is said to be of benefit in treating toothache[4].",
-            price:0.000000002321,
+            price:0.000034294,
             medrating:2,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Plumbago+europaea"
         },
@@ -1100,13 +1093,59 @@ const Apothecary = () => {
             price:0.00005256219,
             medrating:3,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Reynoutria+japonica"
+        },
+        {
+            id:121,
+            image:Plants.monarda,
+            name:"Wild bergamot",
+            description:"Wild bergamot was often employed medicinally by several native North American Indian tribes who used it to treat a variety of complaints, but especially those connected with the digestive system[257]. It is still sometimes used in modern herbalism. The leaves and flowering stems are carminative, diaphoretic, diuretic and stimulant[4, 222]. An infusion is used internally in the treatment of colds, catarrh, headaches, gastric disorders, aching kidneys, to reduce low fevers and soothe sore throats[213, 238, 257]. Externally, it is applied as a poultice to skin eruptions, cuts etc and as a wash for sore eyes[238, 257]. The leaves can be harvested before the plant flowers, or they can be harvested with the flowering stems. They can be used fresh or dried[238]. The plant contains the essential oil 'bergamot oil' which can be inhaled to treat bronchial complaints[213]. The leaves also contain 'thymol', an essential oil that can be used to expel gas from the digestive tract[213].",
+            price:0.0000034738,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Monarda+fistulosa"
+        },
+        {
+            id:122,
+            image:Plants.quercusrobur,
+            name:"English oak",
+            description:"The oak tree has a long history of medicinal use. It is anti-inflammatory, antiseptic, astringent, decongestant, haemostatic and tonic[4, 7, 9, 13, 21, 165]. The bark is the part of the plant that is most commonly used[4], though other parts such as the galls, seeds and seed cups are also sometimes used[7]. A decoction of the bark is useful in the treatment of chronic diarrhoea, dysentery, intermittent fevers, haemorrhages etc[4]. Externally, it is used to bathe wounds, skin eruptions, sweaty feet, piles etc[9]. It is also used as a vaginal douche for genital inflammations and discharge, and also as a wash for throat and mouth infections[9]. The bark is harvested from branches 5 - 12 years old, and is dried for later use[9]. Any galls produced on the tree are strongly astringent and can be used in the treatment of haemorrhages, chronic diarrhoea, dysentery etc[4]. The plant is used in Bach flower remedies - the keywords for prescribing it are 'Despondency', 'Despair, but never ceasing effort'[209]. A homeopathic remedy is made from the bark. It is used in the treatment of disorders of the spleen and gall bladder[9]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Quercus robur Pedunculate Oak for coughs/bronchitis, diarrhoea, inflammation of mouth and pharynx, inflammation of the skin (see [302] for critics of commission E).",
+            price:0.00000324232,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Quercus+robur"
+        },
+
+        {
+            id:123,
+            image:Plants.lobelia,
+            name:"Lobelia siphilitica",
+            description:"The root is cathartic, diaphoretic and emetic[4, 46, 103]. It is used in the treatment of dropsy, diarrhoea, stomach complaints, syphilis and dysentery[4, 257]. A poultice of the root has been applied to sores that are hard to heal[257]. The leaves are analgesic and febrifuge[257]. An infusion has been used in the treatment of colds and fevers[257]. A poultice of the crushed leaves has been applied to the head to relieve the pain of headaches[257]. At one time in N. America the root of this plant was believed to be effective in the treatment of VD[103, 222]. When used in Europe, however, it was found to be ineffective[213]. This might have been because the N. American Indians used the fresh root (which still contained the volatile oils) and also used it in conjunction with Podophyllum peltatum and Prunus virginiana, and then dusted the ulcers with the bark of Ceanothus americanus[213]. It was believed by some native North American Indian tribes that if the finely ground roots were secretly added to the food of an arguing couple then this would avert a divorce and they would love each other again[213]. A homeopathic remedy is made from the roots[4].",
+            price:0.000323,
+            medrating:2,
+            source:"https://pfaf.org/USER/Plant.aspx?LatinName=Lobelia+siphilitica"
+        },
+        {
+            id:124,
+            image:Plants.Elderberry,
+            name:"Elderberry",
+            description:"Elder has a very long history of household use as a medicinal herb and is also much used by herbalists[4]. The plant has been called 'the medicine chest of country people'[4]. The flowers are the main part used in modern herbalism, though all parts of the plant have been used at times[238]. Stimulant[9, 53, 165]. The inner bark is collected from young trees in the autumn and is best sun-dried[4]. It is diuretic, a strong purgative and in large doses emetic[4, 7]. It is used in the treatment of constipation and arthritic conditions[238]. An emollient ointment is made from the green inner bark[4]. The leaves can be used both fresh or dry. For drying, they are harvested in periods of fine weather during June and July. The leaves are purgative, but are more nauseous than the bark[4]. They are also diaphoretic, diuretic, expectorant and haemostatic[4, 7]. The juice is said to be a good treatment for inflamed eyes[4]. An ointment made from the leaves is emollient and is used in the treatment of bruises, sprains, chilblains, wounds etc[4]. The fresh flowers are used in the distillation of 'Elder Flower Water'. The flowers can be preserved with salt to make them available for distillation later in the season[4]. The water is mildly astringent and a gentle stimulant. It is mainly used as a vehicle for eye and skin lotions[4]. The dried flowers are diaphoretic, diuretic, expectorant, galactogogue and pectoral[4, 7]. An infusion is very effective in the treatment of chest complaints and is also used to bathe inflamed eyes[4]. The infusion is also a very good spring tonic and blood cleanser[4]. Externally, the flowers are used in poultices to ease pain and abate inflammation[4]. Used as an ointment, it treats chilblains, burns, wounds, scalds etc[4]. The fruit is depurative, weakly diaphoretic and gently laxative[4, 7]. A tea made from the dried berries is said to be a good remedy for colic and diarrhoea[4]. The fruit is widely used for making wines, preserves etc., and these are said to retain the medicinal properties of the fruit[4]. The pith of young stems is used in treating burns and scalds[46, 61, 100]. The root is no longer used in herbal medicine but it formerly had a high reputation as an emetic and purgative that was very effective against dropsy[4]. A homeopathic remedy is made from the fresh inner bark of young branches[4]. It relieves asthmatic symptoms and spurious croup in children[4]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Sambucus nigra for cough and bronchitis, fevers and colds (see [302] for critics of commission E).",
+            price:0.000043231,
+            medrating:3,
+            source:"https://pfaf.org/user/plant.aspx?latinname=Sambucus+nigra"
+
+        },
+        {
+            id:125,
+            image:Plants.mint,
+            name:"Virginia Mountain Mint",
+            description:"A tea made from the leaves is alterative, diaphoretic and carminative[222, 257]. A poultice of the leaves is used in the treatment of headaches[222]. The tea is also used in the treatment of menstrual disorders, indigestion, colic, coughs, colds, chills and fevers[222, 238, 257].The flowering stems are cut as flowering begins and they can be used fresh or dried[238]. There is a suggestion that this plant can cause abortions, so it is best not used by pregnant women[257].",
+            price:0.00009323,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Pycnanthemum+virginianum"
         }
     ]
   );
   console.log(setPlants);
 
 
-  // Function to handle displaying plants in rows (3 columns)
   return (
     
 <div className="plant-container">
