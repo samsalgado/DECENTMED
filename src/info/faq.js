@@ -3,12 +3,13 @@ import React from 'react'
 import "./Info.css";
 import ANS from './ans';
 import Merlin from './merlin';
+import { useTranslation } from 'react-i18next';
 const FAQ = () => {
-
+  const {t} = useTranslation();
   return (
     
     <div className='container'>
-              <h1>About Us</h1>
+              <h1>{t("About Us")}</h1>
             <Merlin />
             <div>
             <ANS />        

@@ -1,5 +1,6 @@
 import { Routes} from 'react-router';
 import './App.css';
+import { useTranslation } from 'react-i18next';
 import { Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import {Prevent} from './pages/Prevent';
@@ -32,41 +33,42 @@ import { Apoth } from './pages/Apoth';
 import { Hypnopract } from './pages/hypnopract';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 function App() {
+  const { t } = useTranslation();
 
   return( 
 
   <Routes>
-    <Route exact path="/" element={<Home />} />
+    <Route exact path="/" element={<Home t={t} />} />
     <Route path="/404" element={<NotFound />} />
-    <Route path="/stemcell" element={<StemCell />}/>
-    <Route path="/ayurveda" element={<Ayurveda />} />
-    <Route path="/blog" element={<BlogPage />} />
-    <Route path="/blog1" element={<Blog1 />} />
-    <Route path="/blog2" element={<Blog2 />} />
-    <Route path="/blog3" element={<Blog3 />} />
-    <Route path='/hypnopract' element={<Hypnopract />} />
-    <Route path='/homeopract' element={<HomeopathyPract />} />
-    <Route path="/blog4" element={<Blog4 />} />
-    <Route path="/blog11" element={<Blog11 />} />
-    <Route path="/cancer" element={<Blog6 />} /> 
-    <Route path="/blog5" element={<Blog5 />} />
-    <Route path="/prevent" element={<Prevent />}/>
-    <Route path="/blog8" element={<Blog8 />} />
-    <Route path="/blog9" element={<Blog9 />} />
-    <Route path="/blog10" element={<Blog10 />} />
-    <Route path="/detox" element={<Detox />}/>
-    <Route path="/hypnotherapy" element={<Hypnotherapy />}/>
-    <Route path="/nutrition" element={<Nutrition />}/>
-    <Route path="/chiropractic" element={<Chiropractic />}/>
-    <Route path="/acu" element={<Acupuncture />}/>
-    <Route path="/blog4" element={<Blog4 />} />
-    <Route path="/chelation" element={<Chelation />}/>
-    <Route path="/homeopathy" element={<Homeopathy />} />
-    <Route path="/telehealth" element={<Telehealth />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/blog7" element={<Blog7 />} />
-    <Route path="/bitcoin" element={<Bitcoin />} />
-    <Route path="/apoth" element={<Apoth />} />
+    <Route path="/stemcell" element={<StemCell t={t} />}/>
+    <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+    <Route path="/blog" element={<BlogPage t={t} />} />
+    <Route path="/apoth" element={<Apoth t={t} />} />
+    <Route path="/blog1" element={<Blog1 t={t} />} />
+    <Route path="/blog2" element={<Blog2 t={t} />} />
+    <Route path="/blog3" element={<Blog3 t={t} />} />
+    <Route path='/hypnopract' element={<Hypnopract t={t} />} />
+    <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
+    <Route path="/blog4" element={<Blog4 t={t} />} />
+    <Route path="/blog11" element={<Blog11 t={t} />} />
+    <Route path="/cancer" element={<Blog6 t={t} />} /> 
+    <Route path="/blog5" element={<Blog5 t={t} />} />
+    <Route path="/prevent" element={<Prevent t={t} />}/>
+    <Route path="/blog8" element={<Blog8 t={t} />} />
+    <Route path="/blog9" element={<Blog9 t={t} />} />
+    <Route path="/blog10" element={<Blog10 t={t}/>} />
+    <Route path="/detox" element={<Detox t={t}/>}/>
+    <Route path="/hypnotherapy" element={<Hypnotherapy t={t}/>}/>
+    <Route path="/nutrition" element={<Nutrition t={t} />}/>
+    <Route path="/chiropractic" element={<Chiropractic t={t}/>}/>
+    <Route path="/acu" element={<Acupuncture t={t}/>}/>
+    <Route path="/chelation" element={<Chelation t={t}/>}/>
+    <Route path="/homeopathy" element={<Homeopathy t={t}/>} />
+    <Route path="/telehealth" element={<Telehealth t={t} />} />
+    <Route path="/about" element={<About t={t}/>} />
+    <Route path="/blog7" element={<Blog7 t={t}/>} />
+    <Route path="/bitcoin" element={<Bitcoin t={t}/>} />
+   
     
 </Routes>
     

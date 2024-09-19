@@ -1,6 +1,5 @@
 import React from "react";
 import '../App.css';
-
 function Values() {
     return (
         <div className="container-bblue">
