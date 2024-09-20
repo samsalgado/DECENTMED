@@ -10,6 +10,7 @@ import Blog7 from './pages/blogs/blog7';
 import Blog9 from './pages/blogs/blog9';
 import Blog11 from './pages/blogs/blog11';
 import Blog1 from './pages/blogs/blog1';
+import Blog12 from './pages/blogs/blog12';
 import { Detox } from './pages/Detox';
 import {StemCell} from './pages/Stemcell';
 import {NotFound} from './pages/NotFound';
@@ -57,6 +58,7 @@ function App() {
     <Route path="/blog8" element={<Blog8 t={t} />} />
     <Route path="/blog9" element={<Blog9 t={t} />} />
     <Route path="/blog10" element={<Blog10 t={t}/>} />
+    <Route path="/blog12" element={<Blog12 t={t}/>} />   
     <Route path="/detox" element={<Detox t={t}/>}/>
     <Route path="/hypnotherapy" element={<Hypnotherapy t={t}/>}/>
     <Route path="/nutrition" element={<Nutrition t={t} />}/>

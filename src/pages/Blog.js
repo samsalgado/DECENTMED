@@ -9,6 +9,7 @@ import hepB from "../images copy/hepB.png";
 import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
+import montreal from "../images copy/montreal.png";
 import consult from "../images copy/consult.png";
 import cancerimg from "../images copy/cancerimg.png";
 import cell from "../images copy/cell.png";
@@ -216,6 +217,23 @@ const BlogPage = () => {
     <a href='/blog7'>
     <figure>
         <img className='gridimag' src={batana} alt="logo" />
+          <figcaption>Click on image for full Blog</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Acupuncture Montreal</h2>
+    <div className='pr'>
+        <p>
+        Mass immigration in Canada has its advantages and disadvantages; assimilation led to Canadians adopting Traditional Chinese Medicine (TCM). Acupuncture Montreal adoption began with British Columbia adding acupuncture to the <a href="https://pubmed.ncbi.nlm.nih.gov/25555597/">Canadian Medical Services Plan in 2008.</a> Ontario and British Columbia have the highest adoption of acupuncture among the ten provinces of Canada. Regulation in Canada is varied among the provinces. For instance, <a href="https://acupuncturecanada.org/acupuncture-101/regulation-and-education/#:~:text=Medical%20doctors%20and%20dentists%20may,but%20Quebec%20and%20British%20Columbia.">chiropractors can use acupuncture everywhere but in British Columbia and Quebec.</a> British Columbia has most regulations regarding the provinces.
+        </p>
+    
+      </div>
+        </div>
+        <div className='container'>
+    <a href='/blog12'>
+    <figure>
+        <img className='gridimag' src={montreal} alt="logo" />
           <figcaption>Click on image for full Blog</figcaption>
         </figure>
       </a>
