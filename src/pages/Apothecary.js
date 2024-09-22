@@ -1140,6 +1140,141 @@ const Apothecary = () => {
             price:0.00009323,
             medrating:2,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Pycnanthemum+virginianum"
+        },
+        {
+            id:126,
+            image:Plants.lavandula,
+            name:"Lavandula angustifolia",
+            description:"Lavender is a commonly used household herb, though it is better known for its sweet-scented aroma than for its medicinal qualities[254]. However, it is an important relaxing herb, having a soothing and relaxing affect upon the nervous system[254]. The flowering spikes can be dried and used internally in a tincture, though the extracted essential oil is more commonly used. The essential oil is much more gentle in its action than most other essential oils and can be safely applied direct to the skin as an antiseptic to help heal wounds, burns etc[254]. An essential oil obtained from the flowers is antihalitosis, powerfully antiseptic, antispasmodic, aromatic, carminative, cholagogue, diuretic, nervine, sedative, stimulant, stomachic and tonic[4, 7, 9, 21, 165, 238]. It is not often used internally, though it is a useful carminative and nervine[4]. It is mainly used externally where it is an excellent restorative and tonic - when rubbed into the temples, for example, it can cure a nervous headache, and it is a delightful addition to the bath-water[4]. Its powerful antiseptic properties are able to kill many of the common bacteria such as typhoid, diphtheria, streptococcus and Pneumococcus, as well as being a powerful antidote to some snake venoms[244]. It is very useful in the treatment of burns, sunburn, scalds, bites, vaginal discharge, anal fissure etc, where it also soothes the affected part of the body and can prevent the formation of permanent scar tissue[4, 238]. The essential oil is used in aromatherapy. Its keyword is 'Immune system'[210]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Lavandula angustifolia for loss of appetite, nervousness and insomnia, circulatory disorders, dyspeptic complaints (see [302] for critics of commission E).",
+            price:0.000176543,
+            medrating:3,
+            source:"https://pfaf.org/user/plant.aspx?LatinName=Lavandula+angustifolia"
+        },
+        {
+            id:127,
+            image:Plants.rosanutkana,
+            name:"Rosa Nutkana",
+            description:"An infusion of the roots and sprouts has been used as an eyewash for sore eyes[257]. A decoction of the roots has been used by women after giving birth and also in the treatment of sore throats[257]. A decoction of the bark has been taken to ease the labour pains of childbirth[257]. A poultice of the chewed leaves has been used to alleviate the pain of bee stings[257]. A decoction of the branches, combined with chokecherry (Prunus virginiana) and red willow (Salix bonplandiana), has been used in the treatment of various women's complaints, diarrhoea and vomiting[257]. The leaves have been placed in shoes as a protection from athletes foot[257]. The fruit of many members of this genus is a very rich source of vitamins and minerals, especially in vitamins A, C and E, flavanoids and other bio-active compounds. It is also a fairly good source of essential fatty acids, which is fairly unusual for a fruit. It is being investigated as a food that is capable of reducing the incidence of cancer and also as a means of halting or reversing the growth of cancers[214].",
+            price:0.00019231,
+            medrating:2,
+            source:"https://pfaf.org/user/plant.aspx?LatinName=Rosa+nutkana"
+        },
+        {
+            id:128,
+            image:Plants.pinus,
+            name:"Pinus palustris",
+            description:"The turpentine obtained from the resin of all pine trees is antiseptic, diuretic, rubefacient and vermifuge[4]. It is a valuable remedy used internally in the treatment of kidney and bladder complaints and is used both internally and as a rub and steam bath in the treatment of rheumatic affections[4]. It is also very beneficial to the respiratory system and so is useful in treating diseases of the mucous membranes and respiratory complaints such as coughs, colds, influenza and TB[4]. Externally it is a very beneficial treatment for a variety of skin complaints, wounds, sores, burns, boils etc and is used in the form of liniment plasters, poultices, herbal steam baths and inhalers[4]. The turpentine was formerly used in the treatment of colic, chronic diarrhoea, worms, to arrest bleeding from tooth sockets and as a rubefacient[222].",
+            price:0.00020323,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Pinus+palustris"
+        },
+        {
+            id:129,
+            image:Plants.lythrum,
+            name:"Lythrum salicaria",
+            description:"Purple loosestrife is an astringent herb that is mainly employed as a treatment for diarrhoea and dysentery. It can be safely taken by people of all ages and has been used to help arrest diarrhoea in breast-feeding babies[254]. It can also be used to treat heavy periods and inter-menstrual bleeding[254]. Modern research has shown the whole plant to be antibiotic and to be particularly effective against the micro-organism that causes typhus[254]. The flowering plant is antibiotic, highly astringent, hypoglycaemic, styptic and vulnerary[4, 7, 9, 21, 152, 218, 238]. It is valued as an intestinal disinfectant, especially in cases of enteritis[7], an infusion is used internally in the treatment of diarrhoea, internal bleeding, excessive menstruation etc[9, 222, 238]. The flowering plant is harvested in the summer and can be used fresh or dried[9]. Externally, the plant is used as a cleansing and healing wash for wounds, sores, impetigo, eczema, excess vaginal discharge, vaginal itching etc[7, 222, 238, 254]. The powdered plant is used as a haemostatic in cases of severe nosebleeds[7]. The stems are regarded as gum stimulators and are given to children to chew in order to strengthen weak or bleeding gums[7].",
+            price:0.00021424,
+            medrating:3,
+            source:"https://pfaf.org/USER/Plant.aspx?LatinName=Lythrum+salicaria"
+        },
+        {
+            id:130,
+            image:Plants.betulapendula,
+            name:"Betula pendula",
+            description:"Anti-inflammatory, cholagogue, diaphoretic[21, 165, 201]. The bark is diuretic and laxative[7]. An oil obtained from the inner bark is astringent and is used in the treatment of various skin afflictions, especially eczema and psoriasis[4, 238]. The bark is usually obtained from trees that have been felled for timber and can be distilled at any time of the year[238]. The inner bark is bitter and astringent, it is used in treating intermittent fevers[4]. The vernal sap is diuretic[4]. The buds are balsamic[7]. The young shoots and leaves secrete a resinous substance which has acid properties, when combined with alkalis it is a tonic laxative[4]. The leaves are anticholesterolemic and diuretic[7]. They also contain phytosides, which are effective germicides[7]. An infusion of the leaves is used in the treatment of gout, dropsy and rheumatism, and is recommended as a reliable solvent of kidney stones[4]. The young leaves and leaf buds are harvested in the spring and dried for later use[238]. A decoction of the leaves and bark is used for bathing skin eruptions[4]. Moxa is made from the yellow fungous excrescences of the wood, which sometimes swell out of the fissures[4]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Betula species for infections of the urinary tract, kidney and bladder stones, rheumatism (see [302] for critics of commission E).",
+            price:0.00022525,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Betula+pendula"
+        },
+        {
+            id:131,
+            image:Plants.crataegusmonogyna,
+            name:"Hawthorn",
+            description:"Hawthorn is an extremely valuable medicinal herb. It is used mainly for treating disorders of the heart and circulation system, especially angina[254]. Western herbalists consider it a 'food for the heart', it increases the blood flow to the heart muscles and restores normal heart beat[254]. This effect is brought about by the presence of bioflavonoids in the fruit, these bioflavonoids are also strongly antioxidant, helping to prevent or reduce degeneration of the blood vessels[254]. The fruit is antispasmodic, cardiac, diuretic, sedative, tonic and vasodilator[4, 9, 21, 46, 165]. Both the fruits and flowers of hawthorns are well-known in herbal folk medicine as a heart tonic and modern research has borne out this use. The fruits and flowers have a hypotensive effect as well as acting as a direct and mild heart tonic[222]. They are especially indicated in the treatment of weak heart combined with high blood pressure[222], they are also used to treat a heart muscle weakened by age, for inflammation of the heart muscle, arteriosclerosis and for nervous heart problems[21]. Prolonged use is necessary for the treatment to be efficacious[222]. It is normally used either as a tea or a tincture[222]. Hawthorn is combined with ginkgo (Ginkgo biloba) to enhance poor memory, working by improving the blood supply to the brain[254]. The bark is astringent and has been used in the treatment of malaria and other fevers[7]. The roots are said to stimulate the arteries of the heart[218].",
+            price:0.00043626,
+            medrating:5,
+            source:"https://pfaf.org/user/plant.aspx?latinname=Crataegus+monogyna"
+        },
+        {
+            id:132,
+            image:Plants.Prunuslaurocerasus,
+            name:"Prunus laurocerasus",
+            description:"The fresh leaves are antispasmodic, narcotic and sedative[4, 7]. They are of value in the treatment of coughs, whooping cough, asthma, dyspepsia and indigestion[4, 238]. Externally, a cold infusion of the leaves is used as a wash for eye infections[238]. There are different opinions as to the best time to harvest the leaves, but they should only be used fresh because the active principles are destroyed if the leaves are dried[4]. Although no specific mention has been seen for this species, all members of the genus contain amygdalin and prunasin, substances which break down in water to form hydrocyanic acid (cyanide or prussic acid). In small amounts this exceedingly poisonous compound stimulates respiration, improves digestion and gives a sense of well-being[238].",
+            price:0.00018867,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Prunus+laurocerasus"
+        },
+        {
+            id:133,
+            image:Plants.Centaureascabiosa,
+            name:"Centaurea scabiosa",
+            description:"The roots and seeds are diaphoretic, diuretic, tonic and vulnerary[4]. The plant once had a very high reputation as an ingredient of the Medieval 'salve', an ointment applied to heal wounds and treat skin infections[4, 254].",
+            price:0.0000920166,
+            medrating:2,
+            source:"https://pfaf.org/USER/Plant.aspx?LatinName=Centaurea+scabiosa"
+        },
+        {
+            id:134,
+            image:Plants.Leucanthemumvulgaree,
+            name:"Leucanthemum vulgare",
+            description:"The whole plant, and especially the flowers[7], is antispasmodic, antitussive, diaphoretic, diuretic, emmenagogue, tonic and vulnerary[4, 7, 21]. It is harvested in May and June then dried for later use[4]. The plant has been employed successfully in the treatment of whooping cough, asthma and nervous excitability[4]. Externally it is used as a lotion on bruises, wounds, ulcers and some cutaneous diseases[4, 7]. A decoction of the dried flowers and stems has been used as a wash for chapped hands[257]. A distilled water made from the flowers is an effective eye lotion in the treatment of conjunctivitis[7].",
+            price:0.00012909,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Leucanthemum+vulgare"
+        },
+        {
+            id:135,
+            image:Plants.Tanacetum,
+            name:"Tansy",
+            description:"Tansy is a commonly grown domestic remedy, useful in treating a wide range of complaints, though it is little used in modern herbalism[4, 254]. Its main value is as a vermifuge to expel intestinal worms and, to a lesser degree, to help stimulate menstrual bleeding[254]. Tansy should be used with caution, however, it is possibly unsafe for internal use, especially if you are pregnant[238]. The essential oil in the leaves is toxic and as little as ½oz can kill an adult[21, 222]. The leaves and flowering tops are anthelmintic, antispasmodic, bitter, carminative, emmenagogue, stimulant and tonic[4, 7, 9, 21, 46, 165]. An infusion of the leaves or whole plant is used to treat menstrual irregularities and as an anthelmintic, especially for children[4, 213]. It is also valuable in treating hysteria, kidney weaknesses, stomach problems, fevers and also as an emmenagogue[4]. In larger doses the plant can procure an abortion, though these doses can be poisonous[213]. Externally, tansy is used as a poultice on swellings and some eruptive skin diseases[4]. It is also used externally to kill lice, fleas and scabies, though even external use of the plant carries the risk of toxicity[254]. The plant is harvested as it is coming into flower and is dried for later use[4]. The seeds are used as an anthelmintic[207].",
+            price:0.0000920166,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Tanacetum+vulgare"
+        },
+        {
+            id:136,
+            image:Plants.Berberisaquifolium,
+            name:"Berberis aquifolium",
+            description:"Oregon grape was often used by several native North American Indian tribes to treat loss of appetite and debility[254]. Its current herbal use is mainly in the treatment of gastritis and general digestive weakness, to stimulate the kidney and gallbladder function and to reduce catarrhal problems[254, 257]. The root and root bark is alterative, blood tonic, cholagogue, diuretic, laxative and tonic[4, 21, 165, 257]. It improves the digestion and absorption and is taken internally in the treatment of psoriasis, syphilis, haemorrhages, stomach complaints and impure blood conditions[4, 238]. Externally, it has been used as a gargle for sore throats and as a wash for blurry or bloodshot eyes[257]. The roots are harvested in late autumn or early spring and dried for later use[238]. The fruit is an excellent gentle and safe laxative[257]. Berberine, universally present in rhizomes of Mahonia species, has marked antibacterial effects[218] and is used as a bitter tonic[213]. Since it is not appreciably absorbed by the body, it is used orally in the treatment of various enteric infections, especially bacterial dysentery[218]. It should not be used with Glycyrrhiza species (Liquorice) because this nullifies the effects of the berberine[218]. Berberine has also shown antitumour activity[218]. The root and root bark are best harvested in the autumn[213].",
+            price:0.0005520166,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Berberis+aquifolium"
+        },
+        {
+            id:137,
+            image:Plants.Melilotus,
+            name:"Melilotus albus",
+            description:"The whole herb, harvested when in flower, is aromatic, carminative and emollient[4]. It was at one time widely esteemed as a medicinal herb, though it has fallen from favour in recent times[4]. The dried leaves contain coumarin, this can be used as an anticlotting agent for the blood[207]. The dried flowering plant has been used in ointments for external ulcers[222].",
+            price:0.0001591,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Melilotus+albus"
+        },
+        {
+            id:138,
+            image:Plants.RedClover,
+            name:"Red Clover",
+            description:"Red clover is safe and effective herb with a long history of medicinal usage. It is commonly used to treat skin conditions, normally in combination with other purifying herbs such as Arctium lappa and Rumex crispus[254]. It is a folk remedy for cancer of the breast, a concentrated decoction being applied to the site of the tumour in order to encourage it to grow outwards and clear the body[254]. Flavonoids in the flowers and leaves are oestrogenic and may be of benefit in the treatment of menopausal complaints[254]. The flowering heads are alterative, antiscrofulous, antispasmodic, aperient, detergent, diuretic, expectorant, sedative and tonic[4, 21, 165, 218, 238]. It has also shown anticancer activity[172, 218], poultices of the herb have been used as local applications to cancerous growths[4]. Internally, the plant is used in the treatment of skin complaints (especially eczema and psoriasis), cancers of the breast, ovaries and lymphatic system, chronic degenerative diseases, gout, whooping cough and dry coughs[238]. The plant is normally harvested for use as it comes into flower[222, 238] and some reports say that only the flowers are used[4]. The toxic indolizidine alkaloid 'slaframine' is often found in diseased clover (even if the clover shows no external symptoms of disease). This alkaloid is being studied for its antidiabetic and anti-AIDS activity[222].",
+            price:0.0001591,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Trifolium+pratense"
+        },
+        {
+            id:139,
+            image:Plants.Rosarugosa,
+            name:"Rosa rugosa",
+            description:"The leaves are used in the treatment of fevers[218]. The flowers act on the spleen and liver, promoting blood circulation[147, 218]. They are used internally in the treatment of poor appetite and digestion, and menstrual complaints arising from constrained liver energy[238]. The root is used in the treatment of coughs[218]. The fruit of many members of this genus is a very rich source of vitamins and minerals, especially in vitamins A, C and E, flavanoids and other bio-active compounds. It is also a fairly good source of essential fatty acids, which is fairly unusual for a fruit. It is being investigated as a food that is capable of reducing the incidence of cancer and also as a means of halting or reversing the growth of cancers[214].",
+            price:0.0001591,
+            medrating:2,
+            source:"https://pfaf.org/User/plant.aspx?LatinName=Rosa+rugosa"
+        },
+        {
+            id:140,
+            image:Plants.Elaeagnusumbellata,
+            name:"Elaeagnus umbellata",
+            description:"The flowers are astringent, cardiac and stimulant[240]. The seeds are used as a stimulant in the treatment of coughs[240]. The expressed oil from the seeds is used in the treatment of pulmonary affections[240]. The fruit of many members of this genus is a very rich source of vitamins and minerals, especially in vitamins A, C and E, flavanoids and other bio-active compounds. It is also a fairly good source of essential fatty acids, which is fairly unusual for a fruit. It is being investigated as a food that is capable of reducing the incidence of cancer and also as a means of halting or reversing the growth of cancers[214].",
+            price:0.000347197,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Elaeagnus+umbellata"
         }
     ]
   );
