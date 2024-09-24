@@ -1275,6 +1275,15 @@ const Apothecary = () => {
             price:0.000347197,
             medrating:2,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Elaeagnus+umbellata"
+        },
+        {
+            id:141,
+            //image:Plants.Blacklocust,
+            name:"Black Locust",
+            description:"Febrifuge[13, 46]. The flowers are antispasmodic, aromatic, diuretic, emollient and laxative[218]. They are cooked and eaten for the treatment of eye ailments[218]. The flower is said to contain the antitumor compound benzoaldehyde[269]. The inner bark and the root bark are emetic, purgative and tonic[4, 7, 218, 257]. The root bark has been chewed to induce vomiting, or held in the mouth to allay toothache[222, 257], though it is rarely if ever prescribed as a therapeutic agent in Britain[4]. The fruit is narcotic[13]. This probably refers to the seedpod. The leaves are cholagogue and emetic[7]. The leaf juice inhibits viruses[218].",
+            price:0.0001591,
+            medrating:2,
+            source:"https://pfaf.org/user/plant.aspx?latinname=Robinia+pseudoacacia"
         }
     ]
   );

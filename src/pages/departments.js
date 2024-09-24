@@ -9,6 +9,7 @@ const Departments = {
     nutriton: require("../images copy/nutrition.png"),
     prp:require('../images copy/PRP.png'),
     stem:require('../images copy/stem.png'),
+    naturopathy: require("../images copy/naturopathy.png"), 
     chiro: require("../images copy/Chiropractic.png"),
     hypnotherapy: require("../images copy/hypno.png"), 
     chelation: require("../images copy/chelation.png")
