@@ -31,6 +31,7 @@ import Bitcoin from './pages/blogs/bitcoin';
 import Blog3 from './pages/blogs/blog3';
 import Blog4 from './pages/blogs/blog4';
 import { Apoth } from './pages/Apoth';
+import { Chiro } from './pages/ChiroPRACT';
 import { Hypnopract } from './pages/hypnopract';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 function App() {
@@ -50,6 +51,7 @@ function App() {
     <Route path="/blog3" element={<Blog3 t={t} />} />
     <Route path='/hypnopract' element={<Hypnopract t={t} />} />
     <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
+    <Route path='/chiropract' element={<Chiro t={t} />} />
     <Route path="/blog4" element={<Blog4 t={t} />} />
     <Route path="/blog11" element={<Blog11 t={t} />} />
     <Route path="/cancer" element={<Blog6 t={t} />} /> 

@@ -28,8 +28,10 @@ function Practices() {
                         <img className="img-custo" src={Departments.healthcoach} alt="Chelation" />
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
+                    <NavLink to="/chiropract">
                     <h3>Chiropractic</h3>
                         <img className="img-custom" src={Departments.chiro} alt="Chiropractic" />
+                        </NavLink>
                 </div>
             </div>
             <div className="row justify-content-center">
