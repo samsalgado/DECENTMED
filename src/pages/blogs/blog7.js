@@ -52,4 +52,4 @@ const Blog7 = () => {
   );
 };
 
-export default Blog7; // Default export
+export default Blog7; 

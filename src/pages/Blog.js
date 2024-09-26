@@ -9,6 +9,7 @@ import hepB from "../images copy/hepB.png";
 import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
+import chirotreat from '../images copy/chirotreats.png';
 import montreal from "../images copy/montreal.png";
 import consult from "../images copy/consult.png";
 import cancerimg from "../images copy/cancerimg.png";
@@ -238,6 +239,24 @@ const BlogPage = () => {
         </figure>
       </a>
     </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Pain Pill for Back: Best Chiropractor Near Me
+      </h2>
+    <div className='pr'>
+        <p>
+        Back pain effects an estimated "80% of the US population". As people age, pain becomes more and more frequent. According to <a href="https://nida.nih.gov/news-events/news-releases/2024/05/over-115-million-pills-containing-illicit-fentanyl-seized-by-law-enforcement-in-2023">NIDA</a>: "Over 115 million pills containing illicit fentanyl seized by law enforcement in 2023", if this the seized number, imagine the actual number of pills containing fentanyl last year. The "War on Drugs" was a collosal failure in the United States; Oregon decriminalized drugs in its state. However, this decision hasn't worked either, resulting in rampant drug use, overdose, homelessness and fentanyl deaths. Pain pills, or opioids have a long history of abuse and addiction. "In 2022, over 107,000 people died of a drug overdose, with 75% of those deaths involving an opioid." According to WebMD: "Estimated 3 million Americans suffer from OUD (Opioid Use Disorder)". Chiropractors take a holistic perspective, the body can heal itself. Chiropractic techniques are 40% more effective than medical care for lower back pain. Suffering from back pain? Type: "best chiropractor near me" instead of using pain pills for back. 
+        </p>    
+      </div>
+        </div>
+        <div className='container'>
+    <a href='/blog14'>
+    <figure>
+        <img className='gridimag' src={chirotreat} alt="logo" />
+          <figcaption>Click on image for full Blog</figcaption>
+        </figure>
+      </a>
+    </div>
+
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Hepatitis B: Herbal Medicine On Hep B</h2>
     <div className='pr'>
