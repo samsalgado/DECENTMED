@@ -1278,12 +1278,30 @@ const Apothecary = () => {
         },
         {
             id:141,
-            //image:Plants.Blacklocust,
+            image:Plants.Blacklocust,
             name:"Black Locust",
             description:"Febrifuge[13, 46]. The flowers are antispasmodic, aromatic, diuretic, emollient and laxative[218]. They are cooked and eaten for the treatment of eye ailments[218]. The flower is said to contain the antitumor compound benzoaldehyde[269]. The inner bark and the root bark are emetic, purgative and tonic[4, 7, 218, 257]. The root bark has been chewed to induce vomiting, or held in the mouth to allay toothache[222, 257], though it is rarely if ever prescribed as a therapeutic agent in Britain[4]. The fruit is narcotic[13]. This probably refers to the seedpod. The leaves are cholagogue and emetic[7]. The leaf juice inhibits viruses[218].",
             price:0.0001591,
             medrating:2,
             source:"https://pfaf.org/user/plant.aspx?latinname=Robinia+pseudoacacia"
+        },
+        {
+            id:142,
+            image:Plants.Erigeron,
+            name:"Erigeron canadensis",
+            description:"In traditional North American herbal medicine, Canada fleabane was boiled to make steam for sweat lodges, taken as a snuff to stimulate sneezing during the course of a cold and burned to create a smoke that warded off insects[254]. Nowadays it is valued most for its astringency, being used in the treatment of gastro-intestinal problems such as diarrhoea and dysentery[254]. It is said to be a very effective treatment for bleeding haemorrhoids[254]. The whole plant is antirheumatic, astringent, balsamic, diuretic, emmenagogue, styptic, tonic and vermifuge[4, 7, 9, 21, 222]. It can be harvested at any time that it is in flower and is best used when fresh[4, 207, 238]. The dried herb should not be stored for more than a year[238]. The seeds can also be used[4]. An infusion of the plant has been used to treat diarrhoea and internal haemorrhages[213] or applied externally to treat gonorrhoea[213] and bleeding piles[7]. The leaves are experimentally hypoglycaemic[218]. The essential oil found in the leaves is used in the treatment of diarrhoea, dysentery and internal haemorrhages[4, 207, 218]. It is a uterine stimulant[213] and is also said to be valuable in the treatment of inflamed tonsils plus ulceration and inflammation of the throat[4]. A tea of the boiled roots is used to treat menstrual irregularities[213]. A homeopathic remedy is made from the plant[9]. It is used in the treatment of haemorrhoids and painful menstruation[9].",
+            price:0.0000347197,
+            medrating:3,
+            source:"https://pfaf.org/user/plant.aspx?LatinName=Erigeron+canadensis"
+        },
+        {
+            id:143,
+            image:Plants.Mugwort,
+            name:"Mugwort",
+            description:"Mugwort has a long history of use in herbal medicine especially in matters connected to the digestive system, menstrual complaints and the treatment of worms[238]. It is slightly toxic, however, and should never be used by pregnant women, especially in their first trimester, since it can cause a miscarriage[7, 238]. Large, prolonged dosage can damage the nervous system[268]. All parts of the plant are anthelmintic, antiseptic, antispasmodic, carminative, cholagogue, diaphoretic, digestive, emmenagogue, expectorant, nervine, purgative, stimulant, slightly tonic and used in the treatment of women's complaints[4, 7, 13, 21, 147, 165, 178, 201]. The leaves are also said to be appetizer, diuretic, haemostatic and stomachic[176, 218, 222]. They can be used internally or externally[218]. An infusion of the leaves and flowering tops is used in the treatment of nervous and spasmodic affections, sterility, functional bleeding of the uterus, dysmenorrhoea, asthma and diseases of the brain[176, 243]. The leaves have an antibacterial action, inhibiting the growth of Staphylococcus aureus, Bacillus typhi, B. dysenteriae, streptococci, E. coli, B. subtilis, Pseudomonas etc[176]. The leaves are harvested in August and can be dried for later use[4]. The stem is also said to be antirheumatic, antispasmodic, and stomachic[218]. The roots are tonic and antispasmodic[243]. They are said to be one of the best stomachics[4]. They are harvested in the autumn and dried for later use[4]. The leaves, placed inside the shoes, are said to be soothing for sore feet[238]. The compressed dried leaves and stems are used in moxibustion[176, 178, 218, 222, 238]. Another report says that the down from the leaves is used[4].",
+            price:0.0003036642430492751,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Artemisia+vulgaris"
         }
     ]
   );
