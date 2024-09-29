@@ -1302,7 +1302,45 @@ const Apothecary = () => {
             price:0.0003036642430492751,
             medrating:3,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Artemisia+vulgaris"
+        },
+        {
+            id:144,
+            image:Plants.bermudagrass,
+            name: 'Cynodon dactylon (Bermudagrass)',
+            description:"Bermudagrass is reported to be alterative, anabolic, antiseptic, aperient, astringent, cyanogenetic, demulcent, depurative, diuretic, emollient, sudorific, and vulnerary[269]. A decoction of the root is used as a diuretic in the treatment of dropsy and secondary syphilis[240]. An infusion of the root is used to stop bleeding from piles[240, 243]. The juice of the plant is astringent and is applied externally to fresh cuts and wounds[240]. When mixed with the powder of a clove (Syzygium aromaticum), it is used as an anthelmintic[272]. Internally, it is used in the treatment of chronic diarrhoea and dysentery[240, 243]. It is also useful in the treatment of catarrhal ophthalmia[240, 243]. The juice is also diuretic and is used in the treatment of dropsy and anasarca[240, 243]. The leaf juice has also been used in the treatment of hysteria, epilepsy and insanity[240, 243]. The plant is a folk remedy for anasarca, calculus, cancer, carbuncles, convulsions, cough, cramps, cystitis, diarrhoea, dropsy, dysentery, epilepsy, headache, haemorrhage, hypertension, hysteria, insanity, kidneys, laxative, measles, rubella, snakebite, sores, stones, tumours, uro-genital disorders, warts, and wounds[269].",
+            price:0.0003186633567578987,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Cynodon+dactylon"
+        },
+        {
+            id:145,
+            image:Plants.crownflower,
+            name: "Calotropis gigantea",
+            description:"The milky sap (latex) coagulates when warm and is said to have similar cardiac properties to digitalis (from various Digitalis spp.)[ 307 ]. It is also considered to be antiseptic, emetic, purgative and vermifuge[ 299 ]. It is used in the treatment of a variety of other conditions including dysentery, leprosy, elephantiasis, epilepsy, asthma and many other complaints[ 307 ]. Mixed with salt, it is taken orally as an emetic for treating severe colds[ 348 ]. In Nepal, the latex is applied to sprains, body pains, boils and pimples[ 272 ]. The milky latex is used externally to stop bleeding, and for treating a wide range of conditions including leprosy, rheumatism, ringworm, boils, scabies, stings, burns, bruises, cuts, sores and wounds, [ 299 , 348 ]. It is applied to the gums and teeth to treat caries and toothaches[ 299 ]. The bark is used as a medicine for the treatment of neurodermatitis and syphilis[ 266 ]. The powdered bark is used to treat diarrhoea, dysentery, elephantiasis, and leprosy [ 272 , 299 ]. The stem bark is diaphoretic and expectorant, and is used for dysentery, spleen complaints, convulsions, lumbago, scabies, ringworm, pneumonia, and to induce labour. An infusion of the leaves is used to treat severe chest colds and heart conditions[ 348 ]. The leaf juice is used in the treatment of intermittent fever[ 272 ]. The smoke of dried, burned leaves is inhaled to calm asthma attacks[ 299 ]. The crushed leaves are warmed and used as a poultice on sores, burns, headaches and rheumatic pains[ 46 , 266 , 272 , 299 ]. The powdered flowers are valued for treating coughs, colds and asthma[ 272 , 299 ]. An infusion is taken to treat intestinal worms, rheumatism and epileptic attacks[ 299 ]. The juice of young buds is dropped into the ear in the treatment of earache[ 272 ]. The fruit pulp is considered abortive[ 299 ].",
+            price:0.0004321231,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Calotropis+gigantea"
+        },
+        {
+            id:146,
+            image:Plants.Jointedflatsedge,
+            name: "Cyperus articulatus",
+            description:"Piripiri has a long history of use in herbal medicine systems in South America. It is particularly valued for its beneficial effect upon the digestive system and is commonly used to treat nausea, vomiting, stomach-aches, and intestinal gas[ 318 ]. The plant is anthelmintic, antibacterial, antiemetic, antifungal, carminative, contraceptive, digestive, febrifuge and sedative[ 318 ]. More recently, interest has grown about the plants possible use in treating conditions such as epilepsy and convulsions. Researchers in Africa have published several studies which suggest that the plant can mediate many of the brain chemical reactions which are required in epilepsy and report that the rhizome has anti-epileptic actions. In addition, other laboratory research reports that the plant has anti-convulsant actions, as well as sedative actions[ 318 ]. The fresh rhizomes are ground up to extract the juice, which is used as a nerve tonic in cases of stress and nervous and mental disorders (including epilepsy). It is also used to treat and prevent a wide range of digestive and gastrointestinal disorders; to treat fevers and flu; to facilitate child birth or to induce an abortion; as a contraceptive; and for throat cancer[ 318 ]. Externally, it is used to heal wounds and treat snake bite, whilst it is also put on the head as a hair tonic and to treat or prevent baldness[ 318 ]. A leaf infusion is employed for treating headaches; colds and flu; mouth sores and ulcers; and hypertension[ 318 ]. The whole plant is decocted to relieve nausea and vomiting caused from malaria[ 318 ].",
+            price:0.0007589319296963962,
+            medrating:4,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Cyperus+articulatus"
+        },
+      
+        {
+            id:147,
+            image:Plants.Thymeleaf,
+            name:"Arenaria serpyllifolia",
+            description:"The plant is antitussive, depurative, diuretic and febrifuge[[147, 218]. A decoction of the leaves is used in the treatment of dysentery[218]. It is also used in the treatment of bladder complaints, calculus troubles and acute and chronic cystitis[240].",
+            price:0.0000357565578952794,
+            medrating:2,
+            source:"https://pfaf.org/USER/Plant.aspx?LatinName=Arenaria+serpyllifolia"
         }
+
     ]
   );
   console.log(setPlants);
