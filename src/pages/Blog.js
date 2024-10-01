@@ -9,6 +9,7 @@ import hepB from "../images copy/hepB.png";
 import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
+import shroom from '../images copy/shroom.webp';
 import chirotreat from '../images copy/chirotreats.png';
 import montreal from "../images copy/montreal.png";
 import consult from "../images copy/consult.png";
@@ -205,6 +206,7 @@ const BlogPage = () => {
         </div>
         
     </div>
+
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Batana Oil: Batana Oil Benefits</h2>
     <div className='pr'>
@@ -305,7 +307,23 @@ const BlogPage = () => {
         </figure>
       </a>
     </div>
-
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Mushrooms & Relationships    </h2>
+    <div className='pr'>
+        <p>
+        For many years now, I have been applying a very particular stipulation to my interpersonal relationships: Anyone who wishes to enter into and sustain a relationship with me of any kind, whether professional or personal, must be willing to consume entheogens with me on a continual and consistent basis. Otherwise, I have found that communication issues and personality barriers seem to arise, and I typically need to end the relationship. 
+        </p>
+        <div className='container'>
+    <a href='https://lern-herstory.com/stories/f/mushrooms-relationships'>
+    <figure>
+        <img className='gridimag' src={shroom} alt="logo" />
+          <figcaption>Click on image for blog by Julie P. Fry on Mushrooms</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        
+    </div>
     <Footer />
     </>
   );
