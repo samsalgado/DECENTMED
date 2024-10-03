@@ -17,7 +17,12 @@ const Blog15 = ({t}) => {
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Orange Pill: Onboarding Suriname onto Bitcoin')}
       </h1>
+      <a href="https://btcpay0.voltageapp.io/apps/WYdgLYf994wmcnonsQdN1UrWZ6K/crowdfund">
+      <figure>
           <img className='gridimag' src={chirotreat} alt="logo" />
+          <figcaption>Contribute to their Project</figcaption>
+          </figure>
+          </a>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='pr'>
