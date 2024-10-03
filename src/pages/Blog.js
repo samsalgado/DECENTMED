@@ -328,6 +328,7 @@ const BlogPage = () => {
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Orange Pill: Onboarding Suriname onto Bitcoin    </h2>
     <div className='pr'>
         <p>
+        When the world thinks of South America - Colombia, Brazil and Argentina are common nations mentioned. Lionel Messi, the Venezuela situation, Pablo Escobar or the Amazon Rainforest are referenced regarding South America. Most people cannot find Suriname on a map, let alone explain its history. Suriname gained its independence on November 25, 1975, from the Netherlands. Companies like BitcoinSranan are working toward making  Now, Suriname is on the path to becoming the next El Salvador and onboarding the nation on Bitcoin.
         </p>
         <div className='container'>
     <a href='/blog15'>
