@@ -15,6 +15,7 @@ import montreal from "../images copy/montreal.png";
 import consult from "../images copy/consult.png";
 import cancerimg from "../images copy/cancerimg.png";
 import cell from "../images copy/cell.png";
+import surinameorangepill from "../images copy/surinameonboard.jpeg";
 import acuneed from '../images copy/acuneed.png';
 import constipation from '../images copy/constipation.png';
 import blogs from '../images copy/blogs.png';
@@ -322,7 +323,21 @@ const BlogPage = () => {
       </a>
       </div>
         </div>
-        
+        </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Orange Pill: Onboarding Suriname onto Bitcoin    </h2>
+    <div className='pr'>
+        <p>
+        </p>
+        <div className='container'>
+    <a href='/blog15'>
+    <figure>
+        <img className='gridimag' src={surinameorangepill} alt="logo" />
+          <figcaption>Click on image for blog</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
     </div>
     <Footer />
     </>
