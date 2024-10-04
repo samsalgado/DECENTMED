@@ -1339,8 +1339,16 @@ const Apothecary = () => {
             price:0.0000357565578952794,
             medrating:2,
             source:"https://pfaf.org/USER/Plant.aspx?LatinName=Arenaria+serpyllifolia"
+        },
+        {
+            id:148,
+            //image:Plants.Terminalia,
+            name: "Terminalia catappa",
+            description:"Various parts of the tree, such as the leaves and fruit, contain tannins and are astringent[303 , 459 ]. The leaves, crushed with Dacrydium elatum and rhizomes of Cyperus rotundus, are combined to treat dysentery[303 ]. The red leaves act as a vermifuge, while the sap of young leaves, cooked with oil from the kernel, is used to treat leprosy[303 ]. The juice of the leaves is ingested for coughs[311 ]. An infusion of the leaves is used to treat jaundice[311 ]. The leaves are used to treat indigestion[311 ]. The young leaves are used to cure headaches and colic[303 ]. Externally, the leaves may be rubbed on breasts to cure pain or, when heated, may be applied to numb parts of the body[303 ]. They may be used as a dressing for swollen rheumatic joints[303 ]. The leaves, applied to the head and sides, are refreshing and sudorific[582 ]. Leaves, bark and fruit are used to treat yaws[303 ]. The bark and root bark are useful for bilious fever, diarrhoea, thrush, and as a remedy for sores and abscesses[303 , 311 ]. The fluid from the bark is used to treat diabetes and as a tonic[311 ]. An infusion of the bark is used to treat stomach ache and also as an emetic for infants[311 ]. Externally, the bark is used to treat sores, pimples and fungal skin diseases[311 ]. The kernel of the fruit mixed with beeswax stops putrid exudation and bloody faeces. It is recommended as a mild laxative and a galactagogue for women, but too frequent use causes diarrhoea[303 ].",
+            price:0.00012947463609338055,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Terminalia+catappa"
         }
-
     ]
   );
   console.log(setPlants);
