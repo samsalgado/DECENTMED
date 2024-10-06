@@ -1342,12 +1342,102 @@ const Apothecary = () => {
         },
         {
             id:148,
-            //image:Plants.Terminalia,
+            image:Plants.Terminalia,
             name: "Terminalia catappa",
             description:"Various parts of the tree, such as the leaves and fruit, contain tannins and are astringent[303 , 459 ]. The leaves, crushed with Dacrydium elatum and rhizomes of Cyperus rotundus, are combined to treat dysentery[303 ]. The red leaves act as a vermifuge, while the sap of young leaves, cooked with oil from the kernel, is used to treat leprosy[303 ]. The juice of the leaves is ingested for coughs[311 ]. An infusion of the leaves is used to treat jaundice[311 ]. The leaves are used to treat indigestion[311 ]. The young leaves are used to cure headaches and colic[303 ]. Externally, the leaves may be rubbed on breasts to cure pain or, when heated, may be applied to numb parts of the body[303 ]. They may be used as a dressing for swollen rheumatic joints[303 ]. The leaves, applied to the head and sides, are refreshing and sudorific[582 ]. Leaves, bark and fruit are used to treat yaws[303 ]. The bark and root bark are useful for bilious fever, diarrhoea, thrush, and as a remedy for sores and abscesses[303 , 311 ]. The fluid from the bark is used to treat diabetes and as a tonic[311 ]. An infusion of the bark is used to treat stomach ache and also as an emetic for infants[311 ]. Externally, the bark is used to treat sores, pimples and fungal skin diseases[311 ]. The kernel of the fruit mixed with beeswax stops putrid exudation and bloody faeces. It is recommended as a mild laxative and a galactagogue for women, but too frequent use causes diarrhoea[303 ].",
             price:0.00012947463609338055,
             medrating:2,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Terminalia+catappa"
+        },
+        {
+            id:149,
+            image:Plants.justiciasecunda,
+            name: "Justicia secunda",
+            description:"Justicia secunda is Anti-Oxidant, Anti-Enzymatic, Anti-Viral, and Cytotoxic",
+            price:0.000213128420,
+            medrating:0,
+            source:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9952096/"
+        },
+        {
+            id:150,
+            image:Plants.minnieroot,
+            name: "Popping Pod",
+            description:"In folk medicine[7] and Ayurvedic medicine[8] it is believed to be diuretic, anti-diabetic, antipyretic, analgesic, antihypertensive, and gastroprotective, and has been used for gonorrhea.[9]",
+            price:0.00014359520,
+            medrating:"N/A",
+            source:"https://www.inaturalist.org/taxa/291119-Ruellia-tuberosa"
+        },
+        {
+            id:151,
+            image:Plants.foetida,
+            name: "Mauritius Hemp",
+            description:"The root has been used as blood purifying remedy[317 ]. An infusion with sweet oil is drunk as a treatment for syphilis[348 ]. The root is mixed with gin and used as a treatment for back pain[348 ]. The leaves are febrifuge[348 ]. They are used in a preparation with molasses or honey to treat children's obstinate colds[348 ].",
+            price:0.0000983529896,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Furcraea+foetida"
+        },
+        {
+            id:152,
+            image:Plants.gomphrena,
+            name:"Gomphrena",
+            description:"Pfaffia root is a very important medicinal herb with a very long history of traditional use amongst the indigenous peoples of the Amazon region[318 ]. Regarded as a general cure-all, it was and is used as a tonic and rejuvenating herb to treat a wide range of illnesses and restore virility to the body[318 ]. In modern herbal medicine the root is considered to be an adaptogen and a tonic, able to increase the body's resistance to adverse influences by a wide range of physical, chemical, and biochemical factors and having a normalizing or restorative effect on the body as a whole[318 ]. It is taken to stimulate appetite and circulation; increase oestrogen production; balance blood sugar levels; enhance the immune system; strengthen the muscular system; enhance memory; and as a general restorative tonic after illness[318 ]. It is used to treat exhaustion and chronic fatigue; impotence; arthritis; anaemia; diabetes; cancer; high blood pressure; PMS, menopause, and hormonal disorders; and many types of stress[318 ]. The root contains 19 different amino acids, a large number of electrolytes, trace minerals, iron, magnesium, zinc, vitamins A, B1, B2, E, K , and pantothenic acid. Its high germanium content probably accounts for its properties as an oxygenator at the cellular level; its high iron content may account for its traditional use for anaemia. The root also contains novel phytochemicals including saponins, pfaffic acids, glycosides, and nortriterpenes[318 ]. Saponins are well known to have a wide spectrum of activities including lowering blood cholesterol; inhibiting cancer cell growth; and acting as antifungal and antibacterial agents[318 ]. They are also known as natural detergent and foaming agents[318 ]. Phytochemists report that saponins can act by binding with bile acids and cholesterol. It is thought that these chemicals 'clean' or purge these fatty compounds from the body (thus lowering blood cholesterol levels)[318 ]. The specific saponins found in the roots of suma include a group of novel phytochemicals named pfaffosides. These saponins have clinically demonstrated the ability to inhibit tumour cell melanomas and help to regulate blood sugar levels[318 ]. Pfaffia has demonstrated analgesic and anti-inflammatory activities in various studies[318 ].",
+            price:0.000783529896,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Gomphrena"
+        },
+        {
+            id:153,
+            image:Plants.caju,
+            name: "Caju",
+            description:"The leaves are febrifuge[ 238 ]. They are used in west Africa in the treatment of malaria[ 254 ]. In India and Africa the leaves are used to treat toothache and gum problems[ 254 ]. The leaves can be harvested at any time and dried for later use[ 238 ]. The bark is astringent, rubefacient and vesicant[ 303 ]. Research has shown that it is also hypoglycaemic, having the ability to reduce blood sugar levels[ 238 ]. The bark is used in Ayurvedic medicine to detoxify snake bites[ 254 ]. The bark is harvested as required and used fresh or dried[ 238 ]. Leaf and bark infusions are used in the treatment of toothache and sore gums, whilst the bark and leaf extracts and fruit juice are taken internally to treat diarrhoea[ 238 ]. The fruit is anti-scorbutic, astringent and diuretic[ 238 , 303 ]. Cashew syrup is a good remedy for coughs and colds. Cashew apple juice is said to be effective for the treatment of syphilis, and is also used in the treatment of cholera and kidney troubles[ 303 ]. The fresh, acrid juice inside the shell is vesicant[ 324 ]. It has been used for removing warts[ 63 , 238 ] as well as for treating ringworm, leprosy and corns[ 238 ], and is applied to the soles of the feet to cure cracks in the skin[ 303 ]. It is toxic to many disease-causing organisms, such as Staphylococcus bacteria[ 238 ]. The sap, or bark extract[ 238 ], is considered to be contraceptive[ 307 ]. The gum is bactericidal, fungicidal and kills worms and protozoa[ 254 ]. It is applied externally in the treatment of leprosy, and for corns and fungal conditions[ 254 ]. An infusion of the root is an excellent purgative[ 303 ].",
+            price:0.00020707531228678734,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Anacardium+occidentale"
+        },
+        {
+            id:154,
+            image:Plants.Spondiasmombin,
+            name: "Spondias mombin",
+            description:"Both the bark and flowers are used in folk medicine to make cure-all teas for digestive tract ailments, lower back pain, rheumatism, angina, sore throat, malarial fever, congestion, diarrhoea, urethritis, metrorrhagia, and as a contraceptive[303 ]. The bark is used in a remedy for gonorrhoea, to treat diarrhoea, coughs and colds, haemorrhages. stomach-aches and to alleviate fatigue[348 ].. Plant extracts exhibit antibacterial properties, and a decoction of the bark or root bark is considered antiseptic[303 ]. The roots are regarded as febrifuge[303 ]. An infusion is used to treat dysentery[348 ]. Leaf decoctions are used to treat diarrhoea, dysentery, colds, fevers and gonorrhoea[303 , 739 ]. The leaves are also used in an abortifacient preparation[348 ]. A decoction of the leaves and young stems is used as an eyewash in ophthalmia[348 , 739 ]. The flowers are cardiac and stomachic[739 ]. A decoction is used in the treatment of laryngitis, ophthalmia and children's diarrhoea[739 ]. The fruit is mildly laxative[348 ]. It is stewed and eaten to cure diarrhoea[348 ].",
+            price:0.0001911341797011994,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Spondias+mombin"
+        },
+        {
+            id:155,
+            image:Plants.betel,
+            name: "Betel Nut Palm",
+            description:"Betel palm is an astringent, stimulant herb that relieves hunger, abdominal discomfort and weariness. It kills intestinal parasites and other pathogens, and also has diuretic and laxative effects[ 238 ]. It is used mainly in veterinary medicine to expel tapeworms[ 238 ]. The seed is used against anaemia, fits, leucoderma, leprosy, obesity and worms[ 303 ]. It is also used in the treatment of dysentery and malaria[ 238 ]. In combination with other ingredients, it is also a purgative and an ointment for nasal ulcers[ 303 ]. Kernels of green and mature fruits are chewed as an astringent and stimulant, often with the leaves or fruit of betel pepper (Piper betle) and slaked lime[ 303 , 320 ]. The rind is also used as a laxative in cases of constipation with flatulence and bloating, as well as a diuretic in treating oedema[ 238 ]. The fruits are harvested when fully ripe, and can be dried for later use[ 238 ]. The areca nut decoction as well as arecoline and its salts have been found to be effective on various parasitic helminth infections such as those caused by Taenia spp[ 303 ].",
+            price:0.00025952222,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Areca+catechu",  
+        },
+        {
+            id:156,
+            image:Plants.Euterpeoleracea,
+            name:"Euterpe oleracea",
+            description:"A cold water infusion of the wood in the stem is used as an external wash for a contraceptive[ 348 ]. The sap is styptic. It is used to treat haemorrhages, scorpion bites, and is used in the treatment of wounds and cuts[ 348 ]. A decoction of the leaves is used in the treatment of fevers[ 348 ]. An infusion of whole seedlings is used to treat shot wounds from hunting[ 348 ]. The central bud, or heart, is roasted and applied topically to soothe the pain of scorpion stings;[ 348 ]. The juice from the roasted bud should be drunk at the same time[ 348 ]. Overeating of the heart or pith causes diarrhoea[ 348 ]. The heart is dried, pulverised and then used in a plaster to cicatrize open cuts[ 348 ]. The liquid extracted from the warm heart is patted on an open wound[ 348 ]. The oil from the fruit is used in the treatment of diarrhoea[ 739 ]. A tea made from the roots is used to treat jaundice and to strengthen the blood[ 739 ]. A tea made from the seeds is used to treat fevers[ 739 ]. The fruit is used in a savoury, violet-coloured beverage that is drunk as a refreshant[ 348 ]. Phenols occur in the heart of palm[ 348 ].",
+            price:0.0001433107819444356,
+            medrating:2,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Euterpe+oleracea"
+        },
+        {
+            id:157,
+            image:Plants.Mauritiaflexuosa,
+            name:"Mauritia flexuosa",
+            description:"The oil from the seed is high in vitamin A and is frequently used to treat burns, because of its soothing qualities and its ability to promote the formation of scar tissue[314 ]. A pap prepared from the pith is used to treat dysentery and diarrhoea[348 ]. The fruit is made into a cheese-like paste that is sometimes eaten for remedying bowel problems, or to allay hunger when desperate[348 ]. The leaves are used in baths as an emollient[739 ]. The sap from young stems is considered tonic[739 ].",
+            price:0.0001433107819444356,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Mauritia+flexuosa"
+        },
+        {
+            id:158,
+            image:Plants.Ageratumconyzoides,
+            name:"Ageratum conyzoides",
+            description:"The plant contains between 0.7 - 2.0% essential oil, plus alkaloids and saponins[283]. The whole plant is antiinflammatory and antiallergic[283]. The juice of the fresh plant, or an extract of the dried plant, is used in the treatment of allergic rhinitis and sinusitis[283]. The juice of the fresh plant is also useful in treating post-partum uterine haemorrhage[283]. The juice of the root is antilithic[240, 243]. A paste of the root, mixed with the bark of Schinus wallichii, is applied to set dislocated bones[272]. The leaves are styptic[240]. They are dried and applied as a powder to cuts, sores and the ruptures caused by leprosy[272], The powder absorbs the moisture of the disease and forms a layer that is removed after 1 - 2 days[272]. An effective cure for most cuts and sores, though it does not effect a complete cure for leprosy[272]. The leaves are also used externally in the treatment of ague[240, 243]. The juice of the plant is used to treat cuts, wounds and bruises[272]. A paste of the leaves is used as a poultice to remove thorns from the skin[272]. A paste made of the leaves mixed with equal amounts of Bidens pilosa, Drymaria cordata, Galinsoga parviflora and the rhizome of Zingiber officinale is used to treat snakebites[272]. The juice of the flowerheads is used externally to treat scabies, whilst a paste of them is used to treat rheumatism[272]. A tea made from the flowerheads mixed with Ocimum tenuifolium is used to treat coughs and colds[272].",
+            price:0.0002325581395348837,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Ageratum+conyzoides"
         }
     ]
   );
