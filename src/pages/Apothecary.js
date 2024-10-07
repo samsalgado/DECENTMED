@@ -1438,6 +1438,60 @@ const Apothecary = () => {
             price:0.0002325581395348837,
             medrating:3,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Ageratum+conyzoides"
+        },
+        {
+            id:159,
+            image:Plants.cannaindica,
+            name:"Canna indica",
+            description:"The plant is used in the treatment of women's complaints[218]. A decoction of the root with fermented rice is used in the treatment of gonorrhoea and amenorrhoea[218]. The plant is also considered to be demulcent, diaphoretic and diuretic[218].",
+            price:0.0001433107819444356,
+            medrating:2,
+            source:"https://pfaf.org/user/plant.aspx?latinname=Canna+indica"
+        },
+        {
+            id:160,
+            image:Plants.calabash,
+            name:"Calabash Tree",
+            description:"The pulp (of the fruit?[ K ]) is astringent, emollient, expectorant and laxative[ 46 ]. It is used in domestic medicines[ 46 ]. The fruit is abortifacient, emetic, emmenagogue, purgative and vermifuge[ 348 ]. A syrup made from the pulp of the fruit is a popular remedy for colds[ 331 ]. The juice of the fruit is used to treat diarrhoea, pneumonia and intestinal irregularity. It is made into a strong tea and drunk to procure an abortion, to ease childbirth, and is used in a mix to relieve severe menstrual pains by eliminating blood clots[ 348 ]. A syrup made from the fruit is used to treat consumption[ 348 ]. The leaves are cholagogue, emetic (in larger doses), and purgative[ 348 ]. An infusion is sometimes administered for treating dysentery[ 331 ]. It is boiled with sugar, soft grease or Buckley's white rub to make a syrup that is used to treat colds[ 348 ]. Juice of young leaves is drunk to remedy colds and lung diseases[ 348 ]. The leaf is chewed to treat toothache[ 348 ] The leaves are used as a wash to cleanse dirty wounds[ 348 ]. The whole plant is used as a diuretic against hydropsy and diarrhoea[ 348 ]. The ripe fruit-pulp contains crescentic, tartaric, citric, tannic, chlorogenic and hydrocyanic acids, and may cause abortion in cattle[ 348 ]. The seed oil contains oleic acid[ 348 ]. The stem-bark and leaf show antimicrobial activity[ 348 ]",
+            price:0.0001433107819444356,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Iris"
+        },
+        {
+            id:161,
+            image:Plants.patula,
+            name:"French Marigold",
+            description:"The whole herb is aromatic, digestive, diuretic and sedative[238]. It is used internally in the treatment of indigestion, colic, severe constipation[238], coughs and dysentery[218]. Externally, it is used to treat sore eyes and rheumatism[238]. The leaves are harvested as required for immediate use during the growing season, whilst the flowering plant can be dried and stored for later use[238].",
+            price:0.0001433107819444356,
+            medrating:2,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Tagetes+patula"
+        },
+        {
+            id:162,
+            image:Plants.tageteserecta,
+            name:"African Marigold",
+            description:"The whole herb is anthelmintic, aromatic, digestive, diuretic, emmenagogue, sedative and stomachic[61, 238]. It is used internally in the treatment of indigestion, colic, severe constipation[238], coughs and dysentery[218]. Externally, it is used to treat sores, ulcers, eczema. sore eyes and rheumatism[218, 238, 257, 272]. The leaves are harvested as required for immediate use during the growing season, whilst the flowering plant can be dried and stored for later use[238]. A paste of the leavs is applied externally to treat boils, carbuncles and earaches[272]. The flowers are carminitive, diuretic and vermifuge[272]. A decoction is used to treat colds, and mumps[218]. It is applied externally to trea skin diseases, conjunctivitis and sore eyes[218, 272]. The root is laxative[272].",
+            price:0.0001433107819444356,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Tagetes+erecta"
+        },
+        {
+            id:163,
+            image:Plants.trilobata,
+            name:"Singapore daisy",
+            description:"A strong decoction of the whole plant is used to treat severe chest colds[348 ]. It is combined with Lantana camara, as a tea or syrup, as a remedy for colds[348 ]. The leaves are included in a cough and cold remedy along with the boiled leaves of Commelina nudiflora or Hibiscus sabdariffa, and sometime also Citrus aurantiifolia[348 ]. The plant contains acetylenes and derivatives of kaurenic acid[348 ].",
+            price:0.00011433107819444356,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Sphagneticola+trilobata"
+        },
+        {
+            id:164,
+            image:Plants.Ecliptaprostrata,
+            name:"Eclipta prostrata",
+            description:"The plant is used in the treatment of diarrhoea, constipation, and coughs[218]. It is used in domestic medicines[218]. It is also used in the treatment of gastrointestinal diseases[218]. The leaves are used to treat toothache[218]. The fruit is used to treat consumption[218]. The leaves are used as a wash to cleanse dirty wounds[218]. The whole plant is used as a diuretic against hydropsy and diarrhoea[218]. The seed oil contains crescentic acid[218]. The stem-bark and leaf show antimicrobial activity[218].",
+            price:0.0003331433107819444356,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Eclipta+prostrata"
         }
     ]
   );
