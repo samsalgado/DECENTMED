@@ -1492,6 +1492,69 @@ const Apothecary = () => {
             price:0.0003331433107819444356,
             medrating:3,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Eclipta+prostrata"
+        },
+        {
+            id:165,
+            image:Plants.castor,
+            name:"Castor Oil",
+            description:"The oil from the seed is a very well-known laxative that has been widely used for over 2,000 years[222]. It is considered to be fast, safe and gentle, prompting a bowel movement in 3 - 5 hours, and is recommended for both the very young and the aged[4, 254]. It is so effective that it is regularly used to clear the digestive tract in cases of poisoning[254]. It should not be used in cases of chronic constipation, where it might deal with the symptoms but does not treat the cause[4]. The flavour is somewhat unpleasant, however, and it can cause nausea in some people[4]. The oil has a remarkable antidandruff effect[7]. The oil is well-tolerated by the skin and so is sometimes used as a vehicle for medicinal and cosmetic preparations[254]. Castor oil congeals to a gel-mass when the alcoholic solution is distilled in the presence of sodium salts of higher fatty acids[240]. This gel is useful in the treatment of non-inflammatory skin diseases and is a good protective in cases of occupational eczema and dermatitis[240]. The seed is anthelmintic, cathartic, emollient, laxative, purgative[4, 7, 21]. It is rubbed on the temple to treat headache[218] and is also powdered and applied to abscesses and various skin infections[218]. The seed is used in Tibetan medicine, where it is considered to have an acrid, bitter and sweet taste with a heating potency[241]. It is used in the treatment of indigestion and as a purgative[241]. A decoction of the leaves and roots is antitussive, discutient and expectorant[218]. The leaves are used as a poultice to relieve headaches and treat boils[240].",
+            price:0.0002433107819444356,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Ricinus+communis"
+        },
+        {
+            id:166,
+            image:Plants.Jatrophacurcas,
+            name:"Barbados Nut",
+            description:"Although widely used in traditional medicine, and to an extent in modern medicine, it should be noted that all parts of the plant are very poisonous and so extreme caution should be employed if utilising this plant for any internal use[K , 200 ]. Modern research has supported the traditional uses. For example, the latex has antibiotic properties against Candida albicans, Escherichia coli, Klebsiella pneumoniae, Staphylococcus aureus and Streptococcus pyogens[303 ]. It also has coagulating effects on blood plasma[303 ]. A methanol extract of the leaves afforded moderate protection for cultured human lymphoblastoid cells against the cytopathic effects of the human immunodeficiency virus[303 ]. The juice of the bark is used in the treatment of malarial fevers, and is also useful in reducing swellings caused by inflammation[272 ]. This juice is also applied externally to treat burns, scabies, eczema and ringworm[272 ]. The fresh bark is cut into small pieces and chewed or kept in the mouth for 1 - 2 hours in order to treat pyorrhoea[272 ]. A paste of the bark is applied to the gums to treat wounds and swellings of the gums[272 ]. The thin twigs are popularly used in Nepal as toothbrushes to treat toothache[272 ]. They are considered especially good for treating bleeding and swollen gums[272 ]. A leaf infusion is used as a diuretic, for bathing, to treat coughs, and as an enema in treating convulsions and fits[303 ]. The leaves are also used to treat jaundice, fevers, rheumatic pains, guinea worm sores and poor development of the foetus in pregnant women[303 ]. In Ghana the ashes from the burnt leaves are applied by rectal injection for treating haemorrhoids[303 ]. The juice of the leaves, or the latex, is applied directly to wounds and cuts as a styptic and astringent to clean teeth, gums, and to treat sores on the tongue and in the mouth[303 ]. It is also considered useful for treating decayed teeth[272 , 348 ]. The seeds resemble groundnuts in flavour, and 15 - 20 seeds will cause griping, purging and vomiting for 30 minutes. It is reported from Gabon that 1 - 2 roasted seeds are sufficient to act as a purgative; larger doses may be dangerous. The seeds have been substituted for castor oil and are sometimes called 'larger castor oil'. The seeds are also used in the treatment of syphilis[303 ]. The oil from the seeds, known as 'curcas'’ is a powerful purgative and emetic[46 , 272 ]. The oil is widely used for treating skin diseases such as herpes, itches, eczema and boils; and also to soothe pain such as that caused by rheumatism; it is an ingredient in the oily extract, known in Hausa as 'kufi', which is a rubefacient for rheumatism and for parasitic skin conditions. The oil is used to stimulate hair growth. It is used in the treatment of [272 ]. It is warmed and used to dress burns[272 ]. The cotyledons are used to treat constipation and as an appetizer[272 ]. The root bark is used to relieve the spasms of infantile tetanus and is used for sores, dysentery and jaundice[303 ]. The juice of the roots is applied to boils and pimples[272 ]. The juice of the flowers has numerous medicinal qualities[303 ].",
+            price:0.0001762962962962963,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Jatropha+curcas"
+        },
+        {
+            id:167,
+            image:Plants.AsthmaWeed,
+            name:"Asthma Weed",
+            description:"Asthma weed has traditionally been used in Asia to treat bronchitic asthma and laryngeal spasm, though in modern herbalism it is more used in the treatment of intestinal amoebic dysentery[268]. It should not be used without expert guidance, however, since large doses cause gastro-intestinal irritation, nausea and vomiting[268]. The plant is anodyne, antipruritic, carminative, depurative, diuretic, febrifuge, galactogogue, purgative and vermifuge[218].The aerial parts of the plant are harvested when in flower during the summer and can be dried for later use[238]. The stem, taken internally, is famed as a treatment for asthma, bronchitis and various other lung complaints[218, 238, 240]. The herb relaxes the bronchioles but apparently depresses the heart and general respiration[218]. It is usually used in combination with other anti-asthma herbs such as Grindelia camporum and Lobelia inflata[254]. It is also used to treat intestinal amoebic dysentery[254]. The whole plant is decocted and used in the treatment of athlete's foot, dysentery, enteritis and skin conditions[218]. It has been used in the treatment of syphilis[4]. The sap is applied to warts in order to destroy them[238, 240]. The treatment needs to be repeated 2 - 3 times a day over a period of several weeks to be fully effective[K].",
+            price:0.0002183107819444356,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Euphorbia+hirta"
+        },
+        {
+            id:168,
+            image:Plants.Loofah,
+            name:"Loofah",
+            description:"The loofah is an astringent, pain-killing herb that controls bleeding, promotes healing, improves circulation and milk flow[238. It acts mainly on the lungs, liver and stomach[238 ]. The fruits are used internally in the treatment of rheumatism, chest pains, backache, orchitis, haemorrhoids, internal bleeding and insufficient lactation[238 ]. Externally, it is applied to shingles and boils[238 ]. The dried fruits are used as abrasive sponges in skin care to remove dead skin and stimulate the peripheral circulation[238 ].",
+            price:0.00013793911724270316,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Luffa+aegyptiaca"
+        },
+        {
+            id:169,
+            image:Plants.Lagenariasiceraria,
+            name:"Bottle Gourd",
+            description:"The pulp around the seed is emetic and purgative[46, 178, 272]. A poultice of the crushed leaves has been applied to the head to treat headaches[257]. The flowers are an antidote to poison[218]. The stem bark and the rind of the fruit are diuretic[218]. The fruit is antilithic, diuretic, emetic and refrigerant[178, 218]. The juice of the fruit is used in the treatment of stomach acidity, indigestion and ulcers[272]. The seed is vermifuge[218]. A poultice of the boiled seeds has been used in the treatment of boils[257]. Taken with Achyranthes spp the seed is used to treat aching teeth and gums, boils etc[218]. Extracts of the plant have shown antibiotic activity[218]. In many parts of China 3 grams per day of this species (the report does not say what part of the plant) has been used as a single treatment for diabetes mellitus[218].",
+            price:0.0001293069306930693,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Lagenaria+siceraria"
+        },
+        {
+            id:170,
+            image:Plants.Kangkong,
+            name:"Kangkong",
+            description:"The young shoots are mildly laxative and are used by diabetic patients[272 ]. A decoction of the leaves is used to treat coughs[272 ]. The fried leaves are eaten to cool down a fever[310 ]. The crushed leaves are applied as a poultice on sores and boils[310 , 348 ]. A paste made from the buds is used to treat ringworm[272 , 299 ]. The roots are laxative, tonic and antidote[310 ]. They are used in the treatment of opium or arsenic poisoning, and also to counter the effects of drinking unhealthy water[310 ]. A decoction of the roots is used as a wash against haemorrhoids[310 , 348 ]. The plant has shown oral hypoglycaemic activity in tests with diabetic humans; it was shown that an aqueous leaf extract can be as effective as tolbutamide in reducing blood glucose levels[299 ].",
+            price:0.00027272727272727273,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Ipomoea+aquatica"
+        },
+        {
+            id:171,
+            image:Plants.Mammeaamericana,
+            name:"Mammee Apple",
+            description:"Uses of mamey in folk medicine include treatment of scalp infections, diarrhoea, digestive and eye problems[303 ]. The powdered seeds are employed in the treatment of parasitic skin diseases[303 , 348 ]. An infusion of the ground seeds, minus the embryo which is considered convulsant, is employed as an anthelmintic for adults only[303 ]. The gummy latex from the bark has been used as an insecticide, to extract chiggers and insects from the skin, and to kill ticks and other parasites of dogs and other domestic animals[447 ]. An aromatic liqueur called Eau de Creole or Crème de Creole, is distilled from the flowers and said to act as a tonic or digestive[303 ]. An infusion of the fresh or dry leaves is given in cases of intermittent fever[303 ]. The plant contains coumarins, especially mammeine[348 ].",
+            price:0.00019148936170212766,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Mammea+americana"
         }
     ]
   );
