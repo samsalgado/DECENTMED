@@ -1555,7 +1555,125 @@ const Apothecary = () => {
             price:0.00019148936170212766,
             medrating:2,
             source:"https://pfaf.org/user/Plant.aspx?LatinName=Mammea+americana"
-        }
+        },
+        {
+            id:172,
+            image:Plants.RedSandalwood,
+            name:"Red Sandalwood",
+            description:"The plant is antibacterial and haemaglutinin[311 ]. A decoction of the leaves is used in the treatment of rheumatism and gout[46 , 307 ]. The bark is used to treat leprosy[311 ]. A decoction of the bark and leaves is used to treat dysentery, diarrhoea and tonsillitis[303 ]. The wood is used as a tonic[46 ]. The pulverized wood, mixed with water, is taken orally for treating migraines and headaches[303 ]. In vitro studies suggest Adenanthera pavonina leaf extract has antibacterial activity against the intestinal pathogen Campylobacter jejuni. Also, high doses of seed extract have an anti-inflammatory effect in studies in rats and mice.",
+            price:0.00016129032258064516,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Adenanthera+pavonina"
+        },
+        {
+            id:173,
+            image:Plants.Copaiferaguyanensis,
+            name:"Copaifera guyanensis",
+            description:"Copaiba-balsam, an oily oleo-resin obtained from the trunk of the tree, has a very long history of use medicinally. It was widely used by the native peoples prior to the Europeans reaching S. America and these uses were soon taken up by the Europeans[ 317 ]. The resin is especially valued for its ability to counter mucous in the chest and genito-urinary system[ 254 ]. The resin is an aromatic, stimulant herb with a bitter, burning taste[ 238 ]. Both it and the bark are anodyne, antacid, antibacterial, antifungal, antiinflammatory, antimicrobial, astringent, cytostatic, demulcent, digestive, disinfectant, diuretic, expectorant, mildly laxative, vermifuge and vulnerary[ 318 ]. The resin obtained from the trunk contains a number of medically active constituents including 30 - 90% essential oils and unusual condensed tannins[ 238 ]. The essential oil contains alpha- and beta-caryophyllene, sesquiterpenes, resins and terpenic acids[ 254 ]. It improves the digestion, has diuretic and expectorant effects, and controls bacterial infections[ 238 ]. Much of the clinical research performed to date has verified the traditional uses of copaiba. It has, for instance, been shown to be highly effective as a topical wound healer and anti-inflammatory agent[ 318 ]. The anti-inflammatory effect is mainly due to the sesquiterpenes, particularly caryophyllene which has also demonstrated effective pain-relieving properties, antifungal properties against nail fungus and gastroprotective properties[ 318 ]. The resin as a whole (and, particularly, two of its diterpenes - copalic acid and kaurenic acid) has demonstrated significant antimicrobial activity against gram-positive bacteria. One of copaiba?s other chemicals, kaurenoic acid, has also demonstrated selective antibacterial activity against Gram-positive bacteria in other recent studies[318. Other constituents of the resin have demonstrated significant antitumor activity[ 318 ]. The resin is taken internally in the treatment of a range of respiratory problems such as tuberculosis, bronchitis and sinusitis; urinary tract and reproductive system conditions such as cystitis, kidney and bladder infections, vaginal discharge and gonorrhoea[ 238 , 254 ]. Stomach ulcers, tetanus, herpes, pleurisy and haemorrhages are just some of the other conditions treated with the resin[ 318 ]. Externally, it is used in the treatment of a range of skin problems including insect bites, eczema, chilblains, sores and psoriasis[ 238 , 254. It is also used to treat wounds and stop bleeding[ 318 ]. As an antiseptic gargle, it is used to treat sore throats and tonsillitis[ 318 ]. The resin should be used with care, see notes above on toxicity[ 238 ]. The resin is tapped at intervals from the tree and the holes filled in afterwards[ 238 ]. It is used in infusions or distilled for its essential oil[ 238 ].",
+            price:0.00032129032258064516,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Copaifera+guyanensis"
+        },
+        {
+            id:174,
+            image:Plants.Dipteryxodorata,
+            name: 'Dipteryx odorata',
+            description:"The bark is astringent and febrifuge[ 348 ]. A decoction, combined with the crushed whole plant of Tonina fluviatilis, is used to prepare an infant fortifier[ 348 ]. The fragrant seeds are a rich source of coumarin. They are considered to be antiasthmatic, antispasmodic, cardiotonic and emmenagogue[ 739 ]. A decoction of the seed and sugar is used as a cold remedy[ 348 ]. The seed is mixed with rum to make a tincture that is rubbed on snakebite, contusions and rheumatism[ 348 ]. The seeds have been used in the past to treat whooping cough, but recent research has shown that the aromatic coumarins they contain can have detrimental effects upon the heart and liver, and may also cause cancer[ 238 ]. The oil from the seeds is used to alleviate stomach aches, to treat sores in the mouth, to fortify the scalp and improve hair growth[ 739 ]. It is said to be effective in controlling dysentery[ 348 ]. A cold water infusion of the leaves is used as an ear wash to treat earache[ 348 ]. The leaves are crushed to make a snuff powder[ 348 ]. The seed contains coumarin, which is used in perfume and for flavouring tobacco and whisky[ 348 ]. Bark contains isoflavones and umbelliferone[ 348 ]. The leaves contains salicylic, hydroxycoumaric, coumaric and ferulic acids[ 348 ].",
+            price:0.00014129032258064516,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Dipteryx+odorata"
+        },
+        {
+            id:175,
+            image:Plants.Indigoferasuffruticosa,
+            name: 'Indigofera suffruticosa',
+            description:"The plant finds some use in domestic medicine in Guatemala. Indigo is often applied to the stings of bees and other insects to reduce pain and inflammation, although its efficacy is somewhat doubtful[331 ]. A decoction of the roots is taken against stomach-ache[310 ]. A tincture of the roots and seeds in rum is used as a vermifuge[310 ]. The leaves are resolutive and sudorific[348 ]. An infusion of bruised leaves is used as a treatment for fever[310 ]. Combined with the leaves of Indigofera tinctoria and the bark of Phellodendron chinense, it is used as a medicine against scrofula[310 ]. The fresh leaves are used in a warm bath to act as a calmative[348 ]. The plant juice is used as a treatment for diarrhoea[310 ].",
+            price:0.00012129032258064516,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Indigofera+suffruticosa"
+        },
+        {
+            id:176,
+            image:Plants.IceCream,
+            name: 'Ice Cream Bean',
+            description:"A decoction of the crushed leaves is taken to relieve coughing[348 ]. A decoction of the leaves is applied to sores of the lips (perhaps herpes)[348 ].",
+            price:0.0001129032258064516,
+            medrating:2,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Inga+edulis"
+        },
+        {
+            id:177,
+            image:Plants.Sesbaniagrandiflora,
+            name: 'Sesbania grandiflora (Vegetable Hummingbird)',
+            description:"The leaves are aperient and diuretic[272 ]. Crushed leaves are applied as a poultice to sprains and bruises of all kinds, swellings, rheumatism, itching etc[303 ]. A tea made from the leaves is believed to have antibiotic, anthelmintic, antitumor and contraceptive properties[303 ]. The bitter bark is considered as an astringent, febrifuge, tonic and an antipyretic, a remedy for gastric troubles, colic with diarrhoea and dysentery[46 , 272 , 303 ]. A bark decoction is taken orally to treat fever, diarrhoea, dysentery and diabetes[272 , 303 ]. The flowers are emollient and laxative[272 ]. Juice of the flowers, put in the eyes, is said to relieve dimness of vision[303 ]. Sinus congestion is reduced by taking a decoction of the flowers[303 ]. The root is a well-known medicine for malaria[303 ]. Root juices are used for poultices[303 ]. A paste of the root is applied externally in the treatment of rheumatism[272 ].",
+            price:0.0001029032258064516,
+            medrating:2,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Sesbania+grandiflora"
+        },
+        {
+            id:178,
+            image:Plants.SweetBasil,
+            name: 'Sweet Basil',
+            description:"Sacred basil is a very important herb in the Ayurvedic tradition[254 ]. A pungently aromatic, warming, antiseptic herb; it induces perspiration; lowers fevers; relaxes spasms; eases pain; clears bacterial infections; strengthens the immune and nervous systems; reduces inflammations; and benefits the digestive system[238 , 254 , 272 , 348 ]. Research has shown that the herb has the ability to lower blood sugar levels[254 ]. The essential oils from the leaf have shown antibacterial and antifungal activity. They contain methylchaviol, eugenol and other volatile, commercial oils[238 ]. The plant is used internally in the treatment of feverish illnesses (especially in children), colds, influenza, sinusitis, headaches, rheumatism, arthritis, digestive disorders, including abdominal distension and cramps; low libido and negativity[238 ]. It has been found helpful in some types of diabetes[254 ]. The herb is used externally as an antiseptic to treat skin infections, spots etc[238 , 348 ]. The juice of the plants is used to treat insect bites and ringworm[254 ]. The juice is dropped into the ear to treat earaches[348 ]. The leaves can be harvested during the growing season and used fresh or dried for later use[238 ]. The seeds are used as a tonic[238 ].",
+            price:0.000729032258064516,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+tenuiflorum"
+        },
+        {
+            id:179,
+            image:Plants.Camphor,
+            name: 'Camphor',
+            description:"Camphor has a long history of herbal use in the Orient with a wide range of uses. It has occasionally been used internally in the treatment of hysteria, but in modern day herbalism it is mainly used as the essential oil and internal use is not advised[254]. The wood and leaves are analgesic, antispasmodic, odontalgic, rubefacient, stimulant. An infusion is used as an inhalant in the treatment of colds and diseases of the lungs[46, 57, 176, 178, 238]. The plant is more commonly used in the form of the essential oil which can be obtained by distillation of the chipped branches, trunk and wood of the tree, or from the leaves and twigs. Wood 24 - 40 years old is normally used[268]. The essential oil is anthelmintic, antirheumatic, antispasmodic, cardiotonic, carminative, diaphoretic, sedative and tonic[4, 218, 238, 240]. It is used externally in liniments for treating joint and muscle pains, balms for chilblains, chapped lips, cold sores, skin diseases etc and as an inhalant for bronchial congestion[238]. Some caution is advised, excessive use causes vomiting, palpitations, convulsions and death[238]. It is possible that the oil can be absorbed through the skin, causing systemic poisoning[238]. The essential oil is used in aromatherapy. Its keyword is 'Piercing'[210]. It is used in the treatment of digestive complaints and depression[238]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Cinnamomum camphora for Arrhythmia, Cough/bronchitis, Hypotension, Nervous heart complaints, Rheumatism.",
+            price:0.0003029032258064516,
+            medrating:3,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Cinnamomum+camphora"
+        },
+        {
+            id:180,
+            image:Plants.MuskMallow,
+            name: 'Musk Mallow',
+            description:"An emulsion made from the seed is antispasmodic and is especially effective in the digestive system[4, 238]. The seeds are also chewed as a nervine, stomachic and to sweeten the breath[4, 238]. They are also said to be aphrodisiac[4, 238]. The seeds are valued medicinally for their diuretic, demulcent and stomachic properties. They are also said to be stimulant, antiseptic, cooling, tonic, carminative and aphrodisiac. A paste of the bark is applied to cuts, wounds and sprains[272]. The essential oil is used in aromatherapy for the treatment of depression and anxiety[238]. It is also applied externally to treat cramp, poor circulation and aching joints[238].",
+            price:0.0002039032258064516,
+            medrating:3,
+            source:"https://pfaf.org/User/Plant.aspx?LatinName=Abelmoschus+moschatus"
+        },
+        {
+            id:181,
+            image:Plants.Aniroba,
+            name: 'Andiroba',
+            description:"The bark contains tannins and a bitter-tasting alkaloid, carapine. It is astringent, bitter and febrifuge[ 303 , 348 ]. It is used internally in the treatment of malaria, stomach aches, diarrhoea, dysentery and rheumatism[ 348 , 378 ]. The stem bark is used externally as a wash for treating a wide range of skin complaints including the spots of chicken pox and measles; eczema, ulcers, burns, wounds and sores[ 348 ]. The leaves are boiled in water and used as a wash on itchy skin, wounds and persistent ulcers[ 303 , 348 ]. A fruit rind decoction is taken orally for the treatment of fevers and intestinal worms[ 303 ]. A cream-coloured, intensely bitter oil of high acidity and very unpleasant smell, called 'carapa oil', is obtained from the seeds[ 378 ]. The oil is anti-inflammatory, demulcent and soothing[ 348 ]. A decoction is taken orally in the treatment of hepatitis and tetanus[ 303 ]. It is used to treat a range of pulmonary conditions including a hacking cough, bronchial tract discomforts and lung problems[ 348 ]. Applied externally, it is used as a skin lotion and softener, especially for children with thrush and dried, cracked skin; and to treat a range of skin conditions including eczema, ringworm, running sores, pain, swelling and itching. It is applied three times daily to treat painful piles[ 348 ]. It is rubbed on to a painful stomach and used to reduce pus-filled abscesses[ 348 ]. It is mixed with anatta paste (Bixa orellana) and applied it to the hair and skin in order to repel mosquitoes, sand fleas, ticks, lice and other biting insects[ 348 ]. A drop of the oil, combined with a drop of red lavender, is used to treat thrush in children[ 348 ]. The grated nut is mixed with hot water, and drunk as a treatment for malaria, diarrhoea and dysentery, and to reduce excessive menstrual flow[ 348 ] Applied externally, the grated nut is mixed with palm oil and used as an analgesic for muscular aches and pains; as an antifungal; as a treatment for dry skin, sores and eczema; for relieving itches caused by measles and chicken pox[ 348 ].",
+            price:0.0005019032258064516,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Carapa+guianensis"
+        },
+        {
+            id:182,
+            image:Plants.Arrowroot,
+            name: 'Arrowroot',
+            description:"Arrowroot is a soothing demulcent and nutritive food that has traditionally been used in much the same ways as slippery elm (Ulmus rubra)[254 ]. Easily digested, it is of benefit to convalescents and those with weak digestions, helping to relieve acidity, indigestion and colic[254 ]. It is mildly laxative[254 ]. An infusion of the root has traditionally been used to treat urinary infections[254 ]. The root also been used as an antidote for poison[254 ]. The powdered root has been used as an ointment or poultice, especially combined with an antiseptic herb such as myrrh (Commiphora spp.)[254 ]. The powdered root has traditionally been made into a poultice for treating smallpox sores[254 ].",
+            price:0.00014009032258064516,
+            medrating:3,
+            source:"https://pfaf.org/USER/Plant.aspx?LatinName=Maranta+arundinacea"
+        },
+        {
+            id:183,
+            image:Plants.Breadfruit,
+            name: 'Breadfruit',
+            description:"Breadfruit has a very wide range of applications in traditional medicine with all parts of the plant being utilised in the treatment of a range of conditions[ 311 ]. Research has shown the presence of a number of active compounds in the plant:- The fruit contains artocarpine and the enzyme papayotine[ 348 ]. The leaf contains the phenols quercetin and camphorol, plus gamma-aminobutyric acid, which lowers the blood pressure[ 348 ]. The stem-bark and fruit contain cyclopropane sterols[ 348 ]. The toasted flowers are rubbed on the gums around aching teeth to ease pain[ 303 ]. An extract from the flowers is effective in treating ear oedema[ 303 ]. Latex is massaged into the skin to treat broken bones, bruises, sprains, abscesses etc, and is bandaged on the spine to relieve sciatica[ 303 , 348 ]. It is commonly used to treat puncture wounds in the eyes[ 311 ], skin ailments and fungal diseases such as thrush[ 303 , 311 ]. The latter is also treated with crushed leaves[ 303 ]. Diluted latex is taken internally to treat diarrhoea, stomach-ache and dysentery[ 303 ]. Latex and juice from the crushed leaves are both traditionally used to treat ear infections[ 303 ]. A filtrate of new, unfolded leaves is employed as a remedy for fish poisoning and as a muscle relaxant in cases of convulsive spasms[ 311 ]. The yellowing leaf is brewed into a tea and taken to reduce high blood pressure[ 303 , 348 ]. The tea is also thought to control diabetes[ 303 ]. Hypertension and diabetes medications are prepared from a mixture of the boiled leaves of this species combined with Persea americana, Carica papaya and Annona muricata[ 348 ]. The leaves are used in Taiwan to treat liver diseases and fevers[ 303 ]. The root is an astringent and is used as a purgative[ 303 ]. Pressed fluid of the root is used in the treatment of respiratory ailments which include difficult, painful breathing[ 311 ]. When macerated it is used as a poultice for skin ailments[ 303 ]. The bark is used to treat headache. Bark extracts exhibited strong cytotoxic activities against leukaemia cells in tissue culture, and extracts from roots and stem barks showed some antimicrobial activity against Gram-positive bacteria and may have potential in treating tumours[ 303 ]. Liquid squeezed from the bark or leaves is given to remedy chest pains and vomiting resulting from heart trouble[ 311 ]. Pressed liquid from the stem bark is employed in the treatment of pain in the bones and maternal postpartum infections[ 311 ]. The bark is also used to treat stomach aches and digestive tract problems[ 311 ]. Fluid pressed from young fruit is given to treat an illness which causes pain in the lungs and vomiting of blood[ 311 ].",
+            price:0.0005019032258064516,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Artocarpus+altilis"
+        },
+        {
+            id:181,
+            image:Plants.Melaleucaleucadendra,
+            name: 'Melaleuca leucadendra',
+            description:"An essential oil obtained from the leaves contains several terpenoids including 50 - 60% of the strongly antiseptic cineole, betapinene and alpha-terpineol[254 ]. It is aromatic and stimulant with a strong camphoraceous aroma. It is expectorant, relieves spasms, increases perspiration and expels internal parasites[238 ]. It is used internally in the treatment of bronchitis, tuberculosis, colds, sinusitis, gastric infections and roundworms[238 ]. Externally, it is used to treat rheumatism, gout, neuralgia, acne, nasal congestion, sinusitis, toothache, chilblains and skin diseases[238 ]. The leaves and twigs can be harvested at any time of the year and used fresh, dried or the essential oil can be extracted[254 ]. This herb, especially in the form of the essential oil, is subject to legal restrictions in some countries[238 ].",
+            price:0.0005019032258064516,
+            medrating:4,
+            source:"https://pfaf.org/user/Plant.aspx?LatinName=Melaleuca+leucadendra"
+        },
+
     ]
   );
   console.log(setPlants);
