@@ -39,6 +39,8 @@ const Ayurvedaa = () => {
             4. Truly intuitive
         </p>
     </div>
+    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=6L1vMYZEMeNPaCH-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
     </div>
     
   )

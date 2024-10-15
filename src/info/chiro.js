@@ -4,11 +4,9 @@ import Collapsible from 'react-collapsible';
 import stats from '../images copy/stats.jpg';
 import chirotreat from '../images copy/chirotreats.png';
 import chiropractorstats from '../images copy/chiropractor-stats.png';
-
 const Chiro = () => {
 
   return (
-    
     <div className='container'>
               <h1>Chiropractic</h1>
               <iframe

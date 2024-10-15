@@ -9,6 +9,7 @@ import hepB from "../images copy/hepB.png";
 import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
+import Fenbendazole from '../images copy/Fenbendazole.png';
 import shroom from '../images copy/shroom.webp';
 import chirotreat from '../images copy/chirotreats.png';
 import montreal from "../images copy/montreal.png";
@@ -22,7 +23,6 @@ import blogs from '../images copy/blogs.png';
 import depression from '../images copy/depression.jpg';
 import { Helmet } from 'react-helmet'; // Import Helmet
 const BlogPage = () => {
-  // Sample blog data
 
   return (
     <>
@@ -40,8 +40,20 @@ const BlogPage = () => {
        </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Fenbendazole for Cancer</h2>
+      <div className='container'>
+      <a href='/fenbendazole'>
+    <figure>
+        <img className='gridimag' src={Fenbendazole} alt="logo" />
+          <figcaption>Click on image for full Blog</figcaption>
+        </figure>
+      </a>
+
+      </div>
+
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Can Constipation cause Back Pain?
     </h2>
+    
     <div className='pr'>
     <p>
     An estimated “80% of the population will have significant back pain. According to the NIH, “15% of the US population deal with chronic constipation”, a statistic that highlights the American diet. Our bodies are interconnected systems; constipation causes stool buildup and affects the sacral nerve. Yes, constipation can cause back pain, specifically lower back pain.
@@ -71,6 +83,21 @@ const BlogPage = () => {
         </figure>
       </a>
       </div>
+      <div className='pr'>
+      <p>
+        Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases, working to relieve the trigger point symptom.
+      </p>
+     
+      </div>
+      <div className='container'>
+      <a href='/blog2'>
+    <figure>
+        <img className='gridimag' src={acuneed} alt="logo" />
+          <figcaption>Click on image for full Blog</figcaption>
+        </figure>
+      </a>
+      </div>
+
     </div>
     <br></br>
  

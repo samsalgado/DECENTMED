@@ -2,7 +2,9 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import "../../App.css";
+import fenben from '../../images copy/Fenbendazole.png';
 import ReactPlayer from 'react-player';
+import Collapsible from 'react-collapsible';
 const Blog6 = ({t}) => {
   return (
     <>
@@ -25,7 +27,6 @@ width='100%'
 height='400px'
 controls={true}
 />
-
   </div>   
 </div>
 
@@ -94,6 +95,17 @@ controls={true}
                {t("In summary, disease stems from a deficiency in vitamin B (A, D, E, K) - vitamin B consumption benefits the body. B17 (Laetrile) is a controversial component similar to vitamin B and primarily found in 'bitter almond, apricot, blackthorn, cherry, nectarine, peach and plum'; adding these fruits to your diet is no harm and could benefit your nutrition. Dr. Krebs claimed, 'Healthy adults should get a minimum of 50 milligrams of B17 daily'. Regarding cancer, Laetrile is not a treatment method in the global West - Europe, USA, and Canada. However, alternative cancer treatment in Mexico and other developing nations uses Laetrile. The body is an interconnected system. Furthermore, people should value nutrition -including vitamin B and complex B vitamins for disease prevention.")}   
            </p>
           </div>
+          <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-title">Cancer Cures</th>}>
+               <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
+            </Collapsible>
+          </tbody>
+        </table>
+       
+      </div>
+
       </div>
       <Footer />
     </>
