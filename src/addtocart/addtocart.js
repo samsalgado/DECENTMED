@@ -70,7 +70,7 @@ const AddtoCart = () => {
 
       <h4>{t('Join the Coalition')}</h4>
       <p>
-      {t('Bitcoin Address')}:36Nqp5XegC8Zf5RFr8fk7YchGSt66pA6Pr 
+      {t('Bitcoin Address')}: bc1qysv9r9fh7lfqmkq5666as0lpkhk33nj4wpcqfj
     </p>
       <p>{t("Initial Payment of $100 [0.0017 BTC] (BTC Preferred). Let's change the healthcare industry forever!")}</p>
       {/* Consider adding a price display here */}
