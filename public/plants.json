@@ -1,0 +1,619 @@
+[
+    {
+        "id": 1,
+        "image": "Plants.abiesbalsema",
+        "name": "Abies balsamea",
+        "price": 0.00019,
+        "description": "The resin obtained from the balsam fir has been used throughout the world and is a very effective antiseptic and healing agent...",
+        "medrating": 5,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Abies+balsamea"
+    },
+    {
+        "id": 2,
+        "image": "Plants.rhusglabra",
+        "name": "Rhus Glabra",
+        "price": 0.000734,
+        "description": "Smooth sumach was employed medicinally by various native North American Indian tribes...",
+        "medrating": 3,
+        "source": "https://pfaf.org/user/plant.aspx?LatinName=Rhus+glabra"
+    },
+    {
+        "id": 3,
+        "image": "Plants.sweetacacia",
+        "name": "Acacia farnesiana",
+        "price": 0.0002320248,
+        "description": "The root is antispasmodic and tonic...",
+        "medrating": 1,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Paeonia+mascula"
+    },
+    {
+        "id": 4,
+        "image": "Plants.blackwood",
+        "name": "Blackwood",
+        "description": "The plant is Antirheumatic",
+        "price": 0.0001320248,
+        "medrating": 1,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Acacia+melanoxylon"
+    },
+    {
+        "id": 5,
+        "image": "Plants.muskmilfoil",
+        "name": "Musk Milfoil",
+        "description": "The leaves and flowering stems are appetizer, diaphoretic, digestive, diuretic...",
+        "price": 0.000284320248,
+        "medrating": 4,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Achillea+erba-rotta+moschata"
+    },
+    {
+        "id": 6,
+        "image": "Plants.californiayarrow",
+        "name": "Achillea millefolium",
+        "description": "Yarrow has a high reputation and is widely employed in herbal medicine...",
+        "price": 0.0000014,
+        "medrating": 2,
+        "source": "https://pfaf.org/user/plant.aspx?LatinName=Achillea+millefolium"
+    },
+    {
+        "id": 7,
+        "image": "Plants.californianettle",
+        "name": "Urtica dioica",
+        "description": "Nettles have a long history of use in the home as a herbal remedy and nutritious addition to the diet...",
+        "price": 0.00018111950024,
+        "medrating": 5,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Urtica+dioica"
+    },
+    {
+        "id": 8,
+        "image": "Plants.acmella",
+        "name": "Acmella oleracea",
+        "description": "The most common and widespread medicinal use is to treat toothache and throat and gum infections...",
+        "price": 0.000211119500248,
+        "medrating": 3,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Acmella+oleracea"
+    },
+    {
+        "id": 9,
+        "image": "Plants.sweetflag",
+        "name": "Acorus calmus",
+        "description": "Sweet flag has a very long history of medicinal use in many herbal traditions...",
+        "price": 0.0003320248,
+        "medrating": 4,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Acorus+calamus"
+    },
+    {
+        "id": 10,
+        "image": "Plants.horsechesnut",
+        "name": "Aesculus hippocastanum",
+        "description": "Horse chestnut is an astringent, anti-inflammatory herb that helps to tone the vein walls...",
+        "price": 0.000351119500248,
+        "medrating": 4,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Aesculus+hippocastanum"
+    }
+,
+    {
+        "id": 11,
+        "image": "Plants.whitesnakeroot",
+        "name": "Ageratina altissima",
+        "price": 0.000264320248,
+        "description": "The root is diaphoretic, diuretic, febrifuge, stimulant and tonic[257]. It has been used in the treatment of diarrhoea, gravel and urinary diseases[257]. It has also been used in herbal sweat baths to encourage sweating[257]. A decoction or infusion of the root has been taken to treat a fallen or inflamed womb[257]. The root has been chewed and held in the mouth as a treatment for toothache[257].",
+        "medrating": 2,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Ageratina+altissima"
+    },
+    {
+        "id": 12,
+        "image": "Plants.giantelephantear",
+        "name": "Alocasia macrorrhizo",
+        "price": 0.000184320248,
+        "description": "Giant taro is often used in traditional medicine in regions where the plant is cultivated as a food crop. All parts of the plant are used[283 , 311 ]. The sap of the stem is used to treat earache or boils in the ear[311 ]. Applied externally, it is used to treat cuts[311 ]. In New Guinea, headaches are treated with the sap and the leaves[311 ]. The leaves are said to be antimicrobial, antifungal, antioxidant, hepatoprotective, antidiarrheal, and antiprotozoal. The leaves and the rhizome are used in the treatment of impetigo, furunculosis, phlegmon and snake·bite in the form of a liquid extract for administration by mouth, and their residue is used for poulticing. They are also used in treating colic and vomiting, in a daily dose of 10 to 20g of dried rhizome in the form of a decoction[283 ]. The rhizome is used to make a plaster that is applied topically and is said to be effective against furunculosis[283 ]. Sexual insufficiency is treated by eating the leaves cooked in coconut milk[311 ]. The roots are used to treat swollen lymph glands[311 ]. The wood is used to treat stomach-ache and diarrhoea[311 ]. The leaves and rhizomes are collected throughout the year. The leaves are used fresh. The rhizomes are boiled hard to reduce itching compounds, then sun·dried or heat·dried[283 ].",
+        "medrating": 2,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Alocasia_macrorrhizos"
+    },
+    {
+        "id": 13,
+        "image": "Plants.shortawnfoxtail",
+        "name": "Alopecurus aequalis",
+        "price": 0.000012314,
+        "description": "The whole plant is antiphlogistic, depurative and diuretic[147]. It is used in the treatment of oedema, chickenpox and snakebites[147].",
+        "medrating": 1,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Alopecurus+aequalis"
+    },
+    {
+        "id": 14,
+        "image": "Plants.commonmarshmallow",
+        "name": "Althaea officinalis",
+        "price": 0.000294320248,
+        "description": "Marsh mallow is a very useful household medicinal herb. Its soothing demulcent properties make it very effective in treating inflammations and irritations of the mucous membranes such as the alimentary canal, the urinary and the respiratory organs[4, 254]. The root counters excess stomach acid, peptic ulceration and gastritis[254]. It is also applied externally to bruises, sprains, aching muscles, insect bites, skin inflammations, splinters etc[4, 238]. The whole plant, but especially the root, is antitussive, demulcent, diuretic, highly emollient, slightly laxative and odontalgic[4, 17, 21, 46, 165]. An infusion of the leaves is used to treat cystitis and frequent urination[254]. The leaves are harvested in August when the plant is just coming into flower and can be dried for later use[4]. The root can be used in an ointment for treating boils and abscesses[254]. The root is best harvested in the autumn, preferably from 2 year old plants, and is dried for later use[238].",
+        "medrating": 5,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Althaea+officinalis"
+    },
+    {
+        "id": 15,
+        "image": "Plants.bishopsweed",
+        "name": "Ammi visnaga",
+        "price": 0.0007211119500248,
+        "description": "Visnaga is an effective muscle relaxant and has been used for centuries to alleviate the excruciating pain of kidney stones[254]. Modern research has confirmed the validity of this traditional use[254]. Visnagin contains khellin, from which particularly safe pharmaceutical drugs for the treatment of asthma have been made[254]. The seeds are diuretic and lithontripic[46]. They contain a fatty oil that includes the substance 'khellin'. This has been shown to be of benefit in the treatment of asthma[238]. Taken internally, the seeds have a strongly antispasmodic action on the smaller bronchial muscles[254], they also dilate the bronchial, urinary and blood vessels without affecting blood pressure[238]. The affect last for about 6 hours and the plant has practically no side effects[254]. The seeds are used in the treatment of asthma, angina, coronary arteriosclerosis and kidney stones[238]. By relaxing the muscles of the urethra, visnaga reduces the pain caused by trapped kidney stones and helps ease the stone down into the bladder[254]. The seeds are harvested in late summer before they have fully ripened and are dried for later use[254].",
+        "medrating": 5,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Ammi%20visnaga"
+    },
+    {
+        "id": 16,
+        "image": "Plants.blackpoplar",
+        "name": "Populus nigra",
+        "price": 0.000036500248,
+        "description": "The leaf buds are covered with a resinous sap that has a strong turpentine odour and a bitter taste[4, 213]. They also contain salicin, a glycoside that probably decomposes into salicylic acid (aspirin) in the body[213]. The buds are antiscorbutic, antiseptic, balsamic, diaphoretic, diuretic, expectorant, febrifuge, salve, stimulant, tonic and vulnerary[4, 9, 21, 165, 238]. They are taken internally in the treatment of bronchitis and upper respiratory tract infections, stomach and kidney disorders[4, 238]. They should not be prescribed to patients who are sensitive to aspirin[238]. Externally, the buds are used to treat colds, sinusitis, arthritis, rheumatism, muscular pain and dry skin conditions[238]. They can be put in hot water and used as an inhalant to relieve congested nasal passages[213].",
+        "medrating": 3,
+        "source": "https://pfaf.org/User/Plant.aspx?LatinName=Populus+nigra"
+    },
+    {
+        "id": 18,
+        "image": "Plants.commonbugloss",
+        "name": "Anchusa officinalis",
+        "price": 0.000081992119500248,
+        "description": "All parts of the plant are demulcent and expectorant[9]. They are used externally to treat cuts, bruises and phlebitis and internally to treat coughs and bronchial catarrh[9]. A homeopathic remedy is made from the plant[9]. It is used in the treatment of stomach and duodenal ulcers[9].",
+        "medrating": 2,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Anchusa+officinalis"
+    },
+    {
+        "id": 19,
+        "image": "Plants.greenchireta",
+        "name": "Andrographis paniculata",
+        "price": 0.00038119500248,
+        "description": "Green chireta has a long history of traditional medicinal use in India, various parts of South-East Asia, Central America and the Caribbean[310]. The roots and leaves are considered to be alterative, anthelmintic, bitter, febrifuge, stomachic and tonic[46]. There has been a large amount of research into the effects of this plant, several medically active compounds have been identified with a wide range of effective actions[310].",
+        "medrating": 4,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Andrographis+paniculata"
+    },
+    {
+        "id": 20,
+        "image": "Plants.bigbluestem",
+        "name": "Andropogon gerardii",
+        "price": 0.00001711119500248,
+        "description": "None",
+        "medrating": 0,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Andropogon+gerardii"
+    }
+,
+  {
+    "id": 20,
+    "image": "Plants.bigbluestem",
+    "name": "Andropogon gerardii",
+    "price": 0.0001020248,
+    "description": "The plant is analgesic, carminative and diuretic[222]. A decoction of the roots is used in the treatment of stomach-aches and flatulence[222, 257]. A tea made from the leaves is used as a wash to relieve fevers and general debility[222, 257].",
+    "medrating": 1,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Andropogon+gerardii"
+  },
+  {
+    "id": 21,
+    "image": "Plants.blacktupello",
+    "name": "Nyssa sylvatica",
+    "price": 0.00011119500248,
+    "description": "The bark is emetic, ophthalmic and vermifuge[257]. An infusion has been used as a bath and also given to children with worms[257]. A strong decoction is used to cause vomiting when unable to retain food[257]. A strong ooze from the roots is used as eye drops[257].",
+    "medrating": 1,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Nyssa+sylvatica"
+  },
+  {
+    "id": 22,
+    "image": "Plants.indianbarberry",
+    "name": "Berberis aristata",
+    "price": 0.0002184320248,
+    "description": "The dried stem, root bark and wood are alterative, antiperiodic, deobstruent, diaphoretic, laxative, ophthalmic and tonic (bitter)[46, 61, 158, 194, 240]. An infusion is used in the treatment of malaria, eye complaints, skin diseases, menorrhagia, diarrhoea and jaundice[240, 243]. Berberine, universally present in rhizomes of Berberis species, has marked antibacterial effects. Since it is not appreciably absorbed by the body, it is used orally in the treatment of various enteric infections, especially bacterial dysentery[218]. It should not be used with Glycyrrhiza species (Liquorice) because this nullifies the effects of the berberine[218]. Berberine has also shown antitumour activity[218].",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/plant.aspx?LatinName=Berberis+aristata"
+  },
+  {
+    "id": 23,
+    "image": "Plants.angelicaanomala",
+    "name": "Angelica anomala",
+    "price": 0.0002987429,
+    "description": "The root is analgesic, antibacterial, antidote, carminative, depuritive, diaphoretic, poultice and is also used to treat women's complaints[147, 176, 178, 218]. The drug (an extract of the root?) lowers arterial pressure, increases diuresis and stimulates contraction of the smooth muscles, especially the uterus, but without causing abortion[218]. The plant is used in the treatment of colds and headaches, coryza, leucorrhoea, boils and abscesses[147]. Small quantities of angelicotoxin, one of the active ingredients in the root, have an excitatory effect on the respiratory centre, central nervous system and vasculomotor centre. It increases the rate of respiration, increases blood pressure, decreases the pulse, increases the secretion of saliva and induces vomiting[176]. In large doses it can cause convulsions and generalized paralysis[176].",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Angelica+anomala"
+  },
+  {
+    "id": 24,
+    "image": "Plants.chineseangelica",
+    "name": "Angelica sinensis",
+    "price": 0.0004184320248,
+    "description": "Dang Gui is a well-known Chinese herb that has been used in the treatment of female ailments for thousands of years. Its reputation is perhaps second only to ginseng (Panax ginseng) and it is particularly noted for its 'blood tonic' effects on women[218]. The root has a sweet pungent aroma that is very distinctive and it is often used in cooking, which is the best way to take it as a blood tonic[254]. One report says that the root contains vitamin B12 and can be used in the treatment of pernicious anaemia[176]. The root is alterative, analgesic, anticholesterolemic, anti-inflammatory, antispasmodic, deobstruent, emmenagogue, emollient, hepatic, laxative, sedative and peripheral vasodilator[165, 176, 218]. It is commonly used in the treatment of a wide range of women's complaints where it regulates the menstrual cycle and relieves period pain[218, 238, 254] and also to ensure a healthy pregnancy and easy delivery[218]. However conflicting information suggests it should not be used during pregnancy [301] and should not be used if menstrual flow is heavy or during menstration [301]. It is an ideal tonic for women with heavy menstruation who risk becoming anaemic[254]. The water-soluble and non-volatile elements of the root increase the contraction of the uterus whilst the volatile elements can relax the muscle of the uterus[176]. Its use prevents the decrease of liver glycogen and protects the liver[176]. Used for menopausal symptoms (hot flushes) [301]. It has an antibacterial action, inhibiting the growth of various bacteria including Bacillus dysenteriae, Bacillus typhi, B. comma, B. cholerae and haemolytic streptococci[176]. The root is an ingredient of 'Four Things Soup', the most widely used woman's tonic in China[254]. The other species used are Rehmannia glutinosa, Ligusticum wallichii and Paeonia lactiflora[254]. The root is harvested in the autumn or winter and dried for later use[254, 283]. It has been used to treat pulmonary hypertension in combination with the allopathic medication nifedipine [301]. Other uses include: constipation (a laxative), trauma injuries, ulcers, rheumatism and malaria [301].",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Angelica+sinensis"
+  },
+  {
+    "id": 25,
+    "image": "Plants.thalecross",
+    "name": "Arabidopsis thaliana",
+    "price": 0.0001920248,
+    "description": "The plant is used to cure sores in the mouth[240].",
+    "medrating": 1,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Arabidopsis+thaliana"
+  },
+  {
+    "id": 26,
+    "image": "Plants.bearberry",
+    "name": "Arctostaphylos uva-ursi",
+    "price": 0.0007211119500248,
+    "description": "Bearberry was commonly used by many native North American Indian tribes to treat a wide range of complaints and has also been used in conventional herbal medicine for hundreds of years, it is one of the best natural urinary antiseptics[254]. The leaves contain hydroquinones and are strongly antibacterial, especially against certain organisms associated with urinary infections[238]. The plant should be used with caution, however, because hydroquinones are also toxic[222]. The leaves are antiseptic, astringent, diuretic, lithontripic, hypnotic and tonic[7, 9, 21, 102, 165, 172, 192]. The dried leaves are used in the treatment of a variety of complaints[4]. These leaves should be harvested in early autumn, only green leaves being selected, and then dried in gentle heat[4]. A tea made from the dried leaves is much used for kidney and bladder complaints and inflammations of the urinary tract such as acute and chronic cystitis and urethritis, but it should be used with caution and preferably only under the supervision of a qualified practitioner[4, 21, 46, 172, 222, 254]. The tea is more effective if the urine is alkaline, thus it is best used in combination with a vegetable-based diet[254]. Externally, a poultice of the infused leaves with oil has been used as a salve to treat rashes, skin sores etc, and as a wash for a baby's head[257]. An infusion of the leaves has been used as an eyewash, a mouthwash for cankers and sore gums and as a poultice for back pains, rheumatism, burns etc[257]. The dried leaves have been used for smoking as an alternative to tobacco[238]. One report says that it is unclear whether this was for medicinal purposes or for the intoxicated state it could produce[192], whilst another says that the leaves were smoked to treat headaches and also as a narcotic[257]. The herb should not be prescribed to children, pregnant women or patients with kidney disease[238]. Another report says that some native North American Indian tribes used an infusion of the stems, combined with blueberry stems (Vaccinium spp.), to treat diabetes[238]. The berries are astringent, diuretic and laxative[7, 9, 218]. The fruit can be eaten raw, cooked or made into a jelly[257]. The fruit has been used to treat scurvy and rheumatism[254].",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Arctostaphylos+uva-ursi"
+  },
+
+  {
+    "id": 27,
+    "image": "Plants.thymesandword",
+    "name": "Arenaria serpyllifolia",
+    "price": 0.00023426101992119500248,
+    "description": "The plant is antitussive, depurative, diuretic and febrifuge. A decoction of the leaves is used in the treatment of dysentery. It is also used in the treatment of bladder complaints, calculus troubles and acute and chronic cystitis.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Arenaria+serpyllifolia"
+  },
+  {
+    "id": 28,
+    "image": "Plants.shatavari",
+    "name": "Asparagus racemosus",
+    "price": 0.000371920248,
+    "description": "Shatavari (this is an Indian word meaning 'a woman who has a hundred husbands') is the most important herb in Ayurvedic medicine for dealing with problems connected women's fertility. The rhizome is a soothing tonic that acts mainly on the circulatory, digestive, respiratory and female reproductive organs. The root is alterative, antispasmodic, aphrodisiac, demulcent, diuretic, galactogogue and refrigerant. It is taken internally in the treatment of infertility, loss of libido, threatened miscarriage, menopausal problems, hyperacidity, stomach ulcers and bronchial infections. Externally it is used to treat stiffness in the joints. The root is used fresh in the treatment of dysentery.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Asparagus+racemosus"
+  },
+  {
+    "id": 29,
+    "image": "Plants.herbofgrace",
+    "name": "Bacopa monnieri",
+    "price": 0.000172321920248,
+    "description": "Brahmi is a very important Ayurvedic herb, being particularly valued for its beneficial effect upon the nervous system. Its main active substances are steroidal saponins, including bacosides. The whole plant is used - roots, stems and leaves. It is cardiac, nervine tonic, sedative and vasoconstrictor. The leaves and stalks are aperient and diuretic. An alcohol extract of the whole plant has been shown to have anticancer activity against Walker carcinoma. An alcohol extract of plant is a muscle relaxant and cardiovascular relaxant. The plant is used principally in the treatment of a range of nervous system disorders including neuralgia, hysteria, epilepsy, insanity, neurasthenia, aphonia and hoarseness. The plant is also taken internally in a number of other conditions including indigestion, ulcers, wind, constipation, asthma, bronchitis and infertility.",
+    "medrating": 4,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Bacopa+monnieri"
+  },
+  {
+    "id": 30,
+    "image": "Plants.banksiaattenuata",
+    "name": "Banksia attenuata",
+    "price": 0.000123421261019921195002480,
+    "description": "An infusion of the flowers was used to relieve coughs and cold and as a refreshing drink.",
+    "medrating": 0,
+    "source": "https://www.friendsofqueensparkbushland.org.au/banksia-attenuata/#:~:text=Banksia%20attenuataCommon%20name%3A%20Candle%20Banksia&text=Aboriginal%20name%3A%20Piara.,and%20as%20a%20refreshing%20drink."
+  },
+  {
+    "id": 31,
+    "image": "Plants.batflower",
+    "name": "Batflower",
+    "price": 0.0000194320248,
+    "description": "Tacca chantrieri is rare, but sometimes available from online nurseries. A white variety (Tacca integrifolia) of this plant exists, but my sources tell me that White Bat Flower is not as easy to grow indoors.",
+    "medrating": 0,
+    "source": "https://www.guide-to-houseplants.com/bat-flower.html"
+  },
+  {
+    "id": 32,
+    "image": "Plants.orchid",
+    "name": "Orchid",
+    "price": 0.0000194320248,
+    "description": "The root is carminative. The flowers are laxative. The bark, roots and flowers, when mixed with rice-water, are used in poultice form as a maturant.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Bauhinia+purpurea"
+  },
+  {
+    "id": 33,
+    "image": "Plants.beggarsticks",
+    "name": "Bidens pilosa",
+    "price": 0.0009832742,
+    "description": "The root is carminative. The flowers are laxative. The bark, roots and flowers, when mixed with rice-water, are used in poultice form as a maturant.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Bauhinia+purpurea"
+  },
+  {
+    "id": 34,
+    "image": "Plants.potmarigold",
+    "name": "Calendula Officinalis",
+    "price": 0.0001594320248,
+    "description": "Pot marigold is one of the best known and versatile herbs in Western herbal medicine and is also a popular domestic remedy. It is, above all, a remedy for skin problems and is applied externally to bites and stings, sprains, wounds, sore eyes, varicose veins etc. It is also a cleansing and detoxifying herb and is taken internally in treating fevers and chronic infections. Only the common deep-orange flowered variety is considered to be of medicinal value. The whole plant, but especially the flowers and the leaves, is antiphlogistic, antiseptic, antispasmodic, aperient, astringent, cholagogue, diaphoretic, emmenagogue, skin, stimulant and vulnerary.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Calendula+officinalis"
+  },
+  {
+    "id": 35,
+    "image": "Plants.callunavulgaris",
+    "name": "Calluna vulgaris",
+    "price": 0.000091094320248,
+    "description": "Heather has a long history of medicinal use in folk medicine. In particular it is a good urinary antiseptic and diuretic, disinfecting the urinary tract and mildly increasing urine production. The flowering shoots are antiseptic, astringent, cholagogue, depurative, diaphoretic, diuretic, expectorant, mildly sedative and vasoconstrictor. The plant is often macerated and made into a liniment for treating rheumatism and arthritis.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Calluna+vulgaris"
+  },
+  {
+    "id": 36,
+    "image": "Plants.caper",
+    "name": "Capparis Spinosa",
+    "price": 0.000091094320248,
+    "description": "The root-bark is analgesic, anthelmintic, antihaemorrhoidal, aperient, deobstruent, depurative, diuretic, emmenagogue, expectorant, tonic and vasoconstrictive. It is used internally in the treatment of gastrointestinal infections, diarrhoea, gout and rheumatism. Externally, it is used to treat skin conditions, capillary weakness and easy bruising.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Capparis+spinosa"
+  },
+  {
+    "id": 37,
+    "image": "Plants.goldenchaintree",
+    "name": "Cassia fistula",
+    "price": 0.00073594320248,
+    "description": "The ripe pods and seeds are widely used in both traditional and conventional medicine as a laxative. The root-bark, leaves and flowers also have laxative properties, but to a lesser extent. The fruit pulp is rich in pectins and mucilage. In-vitro and in-vivo tests have shown that the seed powder has amoebicidal and cysticidal properties against Entamoeba histolytica.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Cassia+fistula"
+  },
+  {
+    "id": 38,
+    "image": "Plants.trumpettree",
+    "name": "Cecropia peltata",
+    "price": 0.0000943594320248,
+    "description": "The bark and leaves are anticoagulant, antiinflammatory, antitumor, astringent, cardiotonic, diuretic, hypotensive and vasodilator. A tea made from the bark or leaves has been used in the treatment of angina pectoris, high blood pressure and internal bleeding.",
+    "medrating": 4,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Cecropia+peltata"
+  },
+  {
+    "id": 39,
+    "image": "Plants.camphor",
+    "name": "Cinnamomum camphora",
+    "price": 0.0000394320248,
+    "description": "The essential oil of camphor has a wide range of uses as a topical treatment for conditions such as muscle pain, skin irritations, and cough. The leaves, bark, and wood are also used in traditional medicine for their antiseptic, anti-inflammatory, and antispasmodic properties. Camphor is used in various forms, such as ointments, lotions, and inhalants.",
+    "medrating": 4,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Cinnamomum+camphora"
+  },
+
+
+  {
+    "id": 41,
+    "image": "Plants.fieldmouseear",
+    "name": "Cerastium arvense",
+    "price": 0.0000943594320248,
+    "description": "The plant is astringent. A decoction of the plant has been used in the treatment of injuries and miscarriage. A decoction is said to stop uterine bleeding and prevents the child from passing through the uterus.",
+    "medrating": 1,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Cerastium+arvense"
+  },
+  {
+    "id": 42,
+    "image": "Plants.stjohnsbread",
+    "name": "Ceratonia Siliqua",
+    "price": 0.0000943594320248,
+    "description": "The pulp in the seedpods of carob is very nutritious and, due to its high sugar content, sweet-tasting and mildly laxative. However, the pulp in the pods is also astringent and, used in a decoction, will treat diarrhoea and gently help to cleanse and also relieve irritation within the gut. The seedpods are also used in the treatment of coughs. A flour made from the ripe seedpods is demulcent and emollient. The seed husks are astringent and purgative. The bark is strongly astringent. A decoction is used in the treatment of diarrhoea.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Ceratonia+siliqua"
+  },
+  {
+    "id": 43,
+    "image": "Plants.broom",
+    "name": "Cytisus scoparius",
+    "price": 0.000171920248,
+    "description": "Broom is a bitter narcotic herb that depresses the respiration and regulates heart action. It acts upon the electrical conductivity of the heart, slowing and regulating the transmission of the impulses. The young herbaceous tips of flowering shoots are cardiotonic, cathartic, diuretic, emetic, and vasoconstrictor. The plant is used internally in the treatment of heart complaints, and is especially used in conjunction with Convallaria majalis. The plant is also strongly diuretic, stimulating urine production and thus countering fluid retention. Since broom causes the muscles of the uterus to contract, it has been used to prevent blood loss after childbirth.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Cytisus+scoparius"
+  },
+  {
+    "id": 44,
+    "image": "Plants.oakleafdatura",
+    "name": "Datura quercifolia",
+    "price": 0.0000943594320248,
+    "description": "The whole plant is narcotic. It has been used in the past to deaden pain, treat insomnia, etc., but any use of this plant should only be carried out under the supervision of a qualified practitioner since the difference between the medicinal dose and a toxic dose is very small.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Datura+quercifolia"
+  },
+  {
+    "id": 45,
+    "image": "Plants.chineseyam",
+    "name": "Dioscorea batatas",
+    "price": 0.000521119500248,
+    "description": "The Chinese yam, called Shan Yao in Chinese herbalism, is a sweet soothing herb that stimulates the stomach and spleen and has a tonic effect on the lungs and kidneys. The tuber contains allantoin, a cell-proliferant that speeds the healing process. The root is an ingredient of 'The herb of eight ingredients', traditionally prescribed in Chinese herbalism to treat hyperthyroidism, nephritis and diabetes. The tuber is anthelmintic, digestive, and gently tonic. It is used internally in the treatment of tiredness, weight loss, poor appetite, poor digestion, chronic diarrhoea, asthma, dry coughs, frequent or uncontrollable urination, diabetes, and emotional instability.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Dioscorea+batatas"
+  },
+  {
+    "id": 46,
+    "image": "Plants.Enterolobiumcyclocarpum",
+    "name": "Enterolobium cyclocarpum",
+    "price": 0.0000943594320248,
+    "description": "A syrup obtained from the bark is used in the treatment of colds. A gum obtained from the trunk is used as a remedy for affections of the chest.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Enterolobium+cyclocarpum"
+  },
+  {
+    "id": 47,
+    "image": "Plants.yellowgentian",
+    "name": "Yellow gentian",
+    "price": 0.000485900248,
+    "description": "Gentian root has a long history of use as a herbal bitter in the treatment of digestive disorders and is an ingredient of many proprietary medicines. It contains some of the most bitter compounds known and is used as a scientific basis for measuring bitterness. It is especially useful in states of exhaustion from chronic disease and in all cases of debility, weakness of the digestive system, and lack of appetite. It is one of the best strengtheners of the human system, stimulating the liver, gall bladder, and digestive system, and is an excellent tonic to combine with a purgative in order to prevent its debilitating effects.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Gentiana%20lutea"
+  },
+  {
+    "id": 48,
+    "image": "Plants.sweetteavine",
+    "name": "Sweet Tea Vine",
+    "price": 0.00042943594320248,
+    "description": "The whole plant is a tonic herb that improves the circulation, stimulates liver function, strengthens the immune and nervous systems, and reduces blood sugar and cholesterol levels. It also has sedative effects, relieving spasms and lowering the blood pressure. It is used internally in the treatment of nervous tension and exhaustion, peptic ulcer, asthma, bronchitis, diabetes, cardiovascular disease, and cancer.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Gynostemma+pentaphyllum"
+  },
+  {
+    "id": 49,
+    "image": "Plants.pinktrumpettree",
+    "name": "Handroanthus impetiginosus",
+    "price": 0.000265900248,
+    "description": "The wood and inner bark are a bitter, cooling, pungent herb that lowers fever and reduces inflammation. The heartwood contains a naphthaquinone called lapachol, which has been shown to have antibiotic and antitumor effects. Many native S. American peoples have prized pau d'arco as a cure-all, using it to treat a wide range of conditions including wounds, fevers, dysentery, intestinal inflammation, and snake bites.",
+    "medrating": 4,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Handroanthus+impetiginosus"
+  },
+  {
+    "id": 50,
+    "image": "Plants.seabuckthorn",
+    "name": "Hippophae Rhamnoides",
+    "price": 0.000565900248,
+    "description": "The twigs and leaves contain 4 - 5% tannin. They are astringent and vermifuge. The tender branches and leaves contain bio-active substances which are used to produce an oil that is quite distinct from the oil produced from the fruit. Yields of around 3% of oil are obtained. This oil is used as an ointment for treating burns. The freshly-pressed juice is used in the treatment of colds, febrile conditions, exhaustion, etc.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Hippophae+rhamnoides"
+  },
+  {
+    "id": 51,
+    "image": "Plants.hop",
+    "name": "Humulus lupulus",
+    "price": 0.000165900248,
+    "description": "Hops have a long and proven history of herbal use, where they are employed mainly for their soothing, sedative, tonic, and calming effect on the body and the mind. Their strongly bitter flavour largely accounts for their ability to strengthen and stimulate the digestion, increasing gastric and other secretions. The female fruiting body is anodyne, antiseptic, antispasmodic, diuretic, febrifuge, hypnotic, nervine, sedative, stomachic, and tonic.",
+    "medrating": 5,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Humulus+lupulus"
+  },
+  {
+    "id": 52,
+    "image": "Plants.rockycandytuft",
+    "name": "Iberis amara",
+    "price": 0.000484320248,
+    "description": "Iberis amara is an herb that has been used in the past as a mild bitter tonic for digestive disorders, particularly indigestion, lack of appetite, and other digestive issues. It has also been employed as a diuretic and a mild laxative. It has been found useful in the treatment of dyspepsia, heartburn, and bloating, and is used to increase bile flow and reduce water retention.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Iberis+amara"
+  },
+
+  {
+    "id": 53,
+    "image": "Plants.Juniperuscommunis",
+    "name": "Juniperus communis",
+    "price": 0.000284320248,
+    "description": "Traditionally the plant is being potentially used as antidiarrhoeal, anti-inflammatory, astringent, and antiseptic and in the treatment of various abdominal disorders.",
+    "medrating": 0,
+    "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4897106/"
+  },
+  {
+    "id": 54,
+    "image": "Plants.Kalmiapolifolia",
+    "name": "Kalmia polifolia",
+    "price": 0.0001119500248,
+    "description": "Swamp laurel is a very poisonous narcotic plant. The leaves of which were at one time used by some native North American Indian tribes to commit suicide. It is little, if at all, used in modern herbalism though the leaves are a good external treatment for many skin diseases and inflammation. The leaves are astringent and sedative. They are used externally to make a poultice or a wash in the treatment of many skin diseases, open sores, wounds that will not heal, and inflammation. Used internally, the leaves have a splendid effect in the treatment of active haemorrhages, diarrhoea, and flux. They should be used with great caution however, and only under the supervision of a qualified practitioner.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Kalmia+polifolia"
+  },
+  {
+    "id": 55,
+    "image": "Plants.truelaurel",
+    "name": "True laurel",
+    "price": 0.00042842,
+    "description": "The bay tree has a long history of folk use in the treatment of many ailments, particularly as an aid to digestion and in the treatment of bronchitis and influenza. It has also been used to treat various types of cancer. The fruits and leaves are not usually administered internally, other than as a stimulant in veterinary practice, but were formerly employed in the treatment of hysteria, amenorrhoea, flatulent colic, etc. Another report says that the leaves are used mainly to treat upper respiratory tract disorders and to ease arthritic aches and pains. It is settling to the stomach and has a tonic effect, stimulating the appetite and the secretion of digestive juices. The leaves are antiseptic, aromatic, astringent, carminative, diaphoretic, digestive, diuretic, emetic in large doses, emmenagogue, narcotic, parasiticide, stimulant, and stomachic. The fruit is antiseptic, aromatic, digestive, narcotic, and stimulant.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/plant.aspx?latinname=laurus"
+  },
+  {
+    "id": 56,
+    "image": "Plants.flax",
+    "name": "Linum usitatissimum",
+    "price": 0.000324123193,
+    "description": "Linseed has a long history of medicinal use, its main effects being as a laxative and expectorant that soothes irritated tissues, controls coughing, and relieves pain. The seed, or the oil from the seed are normally used. The seed is analgesic, demulcent, emollient, laxative, pectoral, and resolvent. The crushed seed makes a very useful poultice in the treatment of ulceration, abscesses, and deep-seated inflammations. An infusion of the seed contains a good deal of mucilage and is a valuable domestic remedy for coughs, colds, and inflammation of the urinary organs. If the seed is bruised and then eaten straight away, it will swell considerably in the digestive tract and stimulate peristalsis and so is used in the treatment of chronic constipation. The oil in the seed contains 4% L-glutamic acid, which is used to treat mental deficiencies in adults. It also has soothing and lubricating properties, and is used in medicines to soothe tonsillitis, sore throats, coughs, colds, constipation, gravel, and stones. When mixed with an equal quantity of lime water it is used to treat burns and scalds.",
+    "medrating": 2,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Linum+usitatissimum"
+  },
+  {
+    "id": 57,
+    "image": "Plants.teatree",
+    "name": "Melaleuca alternifolia",
+    "price": 0.000307200248,
+    "description": "Tea tree, and in particular its essential oil, is one of the most important natural antiseptics and it merits a place in every medicine chest. It is useful for treating stings, burns, wounds, and skin infections of all kinds. An essential oil obtained from the leaves and twigs is strongly antiseptic, diaphoretic, and expectorant. It stimulates the immune system and is effective against a broad range of bacterial and fungal infections. Internally, it is used in the treatment of chronic and some acute infections, notably cystitis, glandular fever, and chronic fatigue syndrome. It is used externally in the treatment of thrush, vaginal infections, acne, athlete's foot, verrucae, warts, insect bites, cold sores, and nits. It is applied neat to verrucae, warts, and nits, but is diluted with a carrier oil such as almond for other uses. The oil is non-irritant. Another report says that high-quality oils contain about 40% terpinen-4-ol, which is well tolerated by the skin, and 5% cineol which is irritant.",
+    "medrating": 5,
+    "source": "https://pfaf.org/USER/Plant.aspx?LatinName=Melaleuca+alternifolia"
+  },
+  {
+    "id": 58,
+    "image": "Plants.yellowalfala",
+    "name": "Medicago sativa",
+    "price": 0.000123421261019921195002480,
+    "description": "Alfalfa leaves, either fresh or dried, have traditionally been used as a nutritive tonic to stimulate the appetite and promote weight gain. The plant has an oestrogenic action and could prove useful in treating problems related to menstruation and menopause. Some caution is advised in the use of this plant, however. It should not be prescribed to people with auto-immune diseases such as rheumatoid arthritis. The plant is antiscorbutic, aperient, diuretic, oxytocic, haemostatic, nutritive, stimulant, and tonic. The expressed juice is emetic and is also anodyne in the treatment of gravel. The plant is taken internally for debility in convalescence or anaemia, haemorrhage, menopausal complaints, pre-menstrual tension, fibroids etc. The leaves are rich in vitamin K which is used medicinally to encourage the clotting of blood.",
+    "medrating": 3,
+    "source": "https://pfaf.org/user/Plant.aspx?LatinName=Medicago+sativa"
+  },
+  {
+    "id": 59,
+    "image": "Plants.sensitiveplant",
+    "name": "Mimosa pudica",
+    "price": 0.0002312312,
+    "description": "According to Ayurveda, the root is bitter, acrid, cooling, vulnerary, alexipharmic. It is used in treatment of biliousness, leprosy, dysentery, vaginal and uterine complaints, inflammations, burning sensation, fatigue, asthma, leucoderma, blood diseases etc. According to the Unani system of medicine, the root is resolvent, alternative, useful in diseases arising from blood impurities and bile, bilious fevers, piles, jaundice, leprosy etc. The root is used to control alcoholism. The leaves are bitter, mildly sudorific, tonic. A leaf tincture is given by teetotallers to drunkards to remedy drunkenness. The seed is emetic.",
+    "medrating": 2,
+    "source": "https://pfaf.org/User/Plant.aspx?LatinName=Mimosa+pudica"
+  },
+  {
+    "id": 60,
+    "image": "Plants.astro",
+    "name": "Astrocaryum vulgare",
+    "price": 0.000342341,
+    "description": "A decoction of the root is used to treat furunculosis. The seeds and fruits are also used as food. In South America, it is also used as a treatment for hemorrhoids and for treating dry skin or skin infections.",
+    "medrating": 0,
+    "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4204310/"
+  },
+  
+    {
+        "id": 61,
+        "image": "Plants.Monotropauniflora",
+        "name": "Monotropa uniflora",
+        "price": 0.000031311412,
+        "description": "An infusion of the root is antispasmodic, hypnotic, nervine, sedative, tonic. It is a good remedy for spasms, fainting spells and various nervous conditions. It has been given to children who suffer from fits, epilepsy and convulsions. The plant was used by some native North American Indian tribes to treat eye problems, the stem was bruised and the clear fluid of the stems applied to the eyes. The juice from the stems has also been used to treat nervous irritability, including fits and spasms. An infusion of the leaves has been used to treat colds and fevers. The crushed plant has been rubbed on bunions and warts in order to destroy them. A poultice of the plant has been applied to sores that are difficult to heal. The flowers have been chewed in order to bring relief from toothache. Water extracts of the plant are bactericidal.",
+        "medrating": 3,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Monotropa+uniflora"
+    },
+    {
+        "id": 62,
+        "image": "Plants.montanoa",
+        "name": "Montanoa",
+        "price": 0.000031311412,
+        "description": "This shrub is common on the banks of plots and roads in the high and semi-arid regions of the center of the country. It is a medicinal plant with a long tradition in Mexico to 'accelerate partos' (the name Nahuatl means 'medicinal plant of women'), but its use is of care.",
+        "medrating": 0,
+        "source": "http://www.conabio.gob.mx/malezasdemexico/asteraceae/montanoa-tomentosa/fichas/ficha.htm#:~:text=Este%20arbusto%20es%20com%C3%BAn%20en,su%20uso%20es%20de%20cuidado"
+    },
+    {
+        "id": 63,
+        "image": "Plants.waxmyrtle",
+        "name": "Myrica communis",
+        "price": 0.0021119500248,
+        "description": "Wax myrtle is a popular herbal remedy in North America where it is employed to increase the circulation, stimulate perspiration and keep bacterial infections in check. The plant should not be used during pregnancy. The root bark is antibacterial, astringent, emetic (in large doses), sternutatory, stimulant and tonic. It is harvested in the autumn, thoroughly dried then powdered and kept in a dark place in an airtight container. It is used internally in the treatment of diarrhoea, irritable bowel syndrome, jaundice, fevers, colds, influenza, catarrh, excessive menstruation, vaginal discharge etc. Externally, it is applied to indolent ulcers, sore throats, spongy gums, sores, itching skin conditions, dandruff etc. The wax is astringent and slightly narcotic. It is regarded as a sure cure for dysentery and is also used to treat internal ulcers. A tea made from the leaves is used in the treatment of fevers and externally as a wash for itchy skin.",
+        "medrating": 3,
+        "source": "https://pfaf.org/user/plant.aspx?LatinName=Myrica+cerifera"
+    },
+    {
+        "id": 64,
+        "image": "Plants.myrtle",
+        "name": "Myrtus communis",
+        "price": 0.0002312324,
+        "description": "The leaves are aromatic, balsamic, haemostatic and tonic. Recent research has revealed a substance in the plant that has an antibiotic action. The active ingredients in myrtle are rapidly absorbed and give a violet-like scent to the urine within 15 minutes. The plant is taken internally in the treatment of urinary infections, digestive problems, vaginal discharge, bronchial congestion, sinusitis and dry coughs. In India it is considered to be useful in the treatment of cerebral affections, especially epilepsy. Externally, it is used in the treatment of acne (the essential oil is normally used here), wounds, gum infections and haemorrhoids. The leaves are picked as required and used fresh or dried. An essential oil obtained from the plant is antiseptic. It contains the substance myrtol - this is used as a remedy for gingivitis. The oil is used as a local application in the treatment of rheumatism. The fruit is carminative. It is used in the treatment of dysentery, diarrhoea, haemorrhoids, internal ulceration and rheumatism.",
+        "medrating": 3,
+        "source": "https://pfaf.org/User/Plant.aspx?LatinName=Myrtus+communis"
+    },
+    {
+        "id": 65,
+        "image": "Plants.rosebay",
+        "name": "Rosebay",
+        "price": 0.000442634101992119500248,
+        "description": "The leaves and the flowers are cardiotonic, diaphoretic, diuretic, emetic, expectorant and sternutatory. A decoction of the leaves has been applied externally in the treatment of scabies, and to reduce swellings. This is a very poisonous plant, containing a powerful cardiac toxin, and should only be used with extreme caution. The root is powerfully resolvent. Because of its poisonous nature it is only used externally. It is beaten into a paste with water and applied to chancres and ulcers on the penis. An oil prepared from the root bark is used in the treatment of leprosy and skin diseases of a scaly nature. The whole plant is said to have anticancer properties.",
+        "medrating": 2,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Nerium+oleander"
+    },
+    {
+        "id": 66,
+        "image": "Plants.nigellaicarica",
+        "name": "Nigella icarica",
+        "price": 0.0002131413,
+        "description": "One of the main strengths of the use of Nigella is that the seeds are rich in the omega-6 fatty acid linoleic acid and provide an extra source of dietary phytochemicals, including the bioactive thymoquinone, and characteristics saponins, alkaloids, and flavonoids.",
+        "medrating": 0,
+        "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107825/"
+    },
+    {
+        "id": 67,
+        "image": "Plants.beeorchid",
+        "name": "Ophyrs apifera",
+        "price": 0.00011119500248,
+        "description": "Salep (see above for more details) is very nutritive and demulcent. It has been used as a diet of special value for children and convalescents, being boiled with water, flavoured and prepared in the same way as arrowroot. Rich in mucilage, it forms a soothing and demulcent jelly that is used in the treatment of irritations of the gastro-intestinal canal. One part of salep to fifty parts of water is sufficient to make a jelly. The tuber, from which salep is prepared, should be harvested as the plant dies down after flowering and setting seed.",
+        "medrating": 2,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Ophrys+apifera"
+    },
+    {
+        "id": 68,
+        "image": "Plants.greatyellowwoodsorrel",
+        "name": "Oxalis grandis",
+        "price": 0.000012342421,
+        "description": "Some Oxalis species have medicinal properties but no information could be found for this species. For example Oxalis acetosella: The fresh or dried leaves are anodyne, antiscorbutic, astringent, diuretic, emmenagogue, expectorant, febrifuge, irritant and stomachic. A decoction is used in the treatment of fevers, both to quench the thirst and allay the fever. Externally, the leaves are crushed and applied locally to dispel boils, or to alleviate burns, ulcers, and scalds.",
+        "medrating": 1,
+        "source": "https://pfaf.org/user/Plant.aspx?LatinName=Oxalis+grandis"
+    }
+]
+
+
+
+
+
+
+

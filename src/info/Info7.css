@@ -1,0 +1,32 @@
+/* Info7.css */
+
+.container {
+    /* Adjust width and margins for better mobile experience */
+    width: 100%; /* Make container fluid-width */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 1rem; /* Add some padding for better spacing */
+  }
+  
+  table {
+    /* Ensure table elements are responsive (optional) */
+    width: 100%; /* Or use flexbox for more control */
+  }
+  
+  .collapsibles-table th,
+  .collapsibles-table td {
+    /* Adjust font sizes and padding for better mobile experience */
+    font-size: 1rem;
+    padding: 10px; /* Adjust as needed */
+  }
+  
+  
+  /* Media Queries for Additional Mobile Tweaks (Optional): */
+  
+  @media (max-width: 768px) {
+    .parc {
+        font-size: 12.5px; /* Adjust as needed */
+        line-height: 1.5; /* Increase line-height for better spacing */
+
+    }
+      
+}  

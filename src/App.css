@@ -1,0 +1,1014 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+.description-container {
+  cursor: pointer; /* Indicate clickability */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.description-container.show {
+  background-color: lightblue; /* Visual feedback on click */
+}
+.mimi {
+  height: 250px;
+}
+.eve {
+  width: 400px;
+  height: 250px;
+}
+.socials {
+  float: right;
+}
+.row {
+  flex-direction: row;
+}
+.ayurveda-image {
+  max-width: 100%; /* Adjust maximum width of Ayurveda image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Correctly handle inline-block display */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.go {
+  align-items: left;
+  height: 25vmin;
+  width: fit-content;
+  position: relative;
+}
+.blog {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 55px;
+}
+.acutreats-image,
+.TELE,
+.REACT,
+.pic,
+.lemon-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 5px;
+}
+.acutreats-image {
+  width: 100%; /* Ensure image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 550px; /* Limit maximum width */
+}
+
+.plantpic {
+  height: 20vmin;
+}
+.pic {
+  max-width: 30%;
+}
+.large-image {
+  max-width: 70%; /* Adjust as needed */
+}
+.imge-container {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+}
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.TELE {
+  max-width: 100%;
+  height: auto;
+}
+.TELEa {
+  max-width: 100%;
+  height: auto;
+}
+.FACTS {
+  width: 90%; /* Set image width to 100% */
+  height: auto;
+  max-width: 400px; /* Maintain aspect ratio */
+}
+
+.AC {
+  height: 70%; /* Adjust percentage as needed */
+  width: 100%; /* Fills container width */
+  position: relative;
+  top: 20px;
+}
+
+.CASESTUDY {
+  height: 130%; /* Adjust percentage as needed */
+  width: 100%; /* Fills container width */
+  position: relative;
+  top: 10px;
+}
+.btc {
+  text-align: center;
+  position: static;
+}
+.HOMEO {
+  height: 60vh; /* Adjust height as needed (vh: viewport height) */
+  width: 45vw; /* Adjust width as needed (vw: viewport width) */
+  position: relative;
+  top: 10px; /* Adjust top position as needed */
+  margin: 0 auto; /* Center the elements horizontally */
+}
+
+.HOME {
+  height: 60vh; /* Adjust height as needed (vh: viewport height) */
+  width: 80vw; /* Adjust width as needed (vw: viewport width) */
+  position: relative;
+  top: 10px; /* Adjust top position as needed */
+  margin: 0 auto; /* Center the elements horizontally */
+}
+
+.chart {
+  width: 100%; /* Set width to 100% for mobile responsiveness */
+  height: auto;
+  max-width: 600px; /* Optional: Set a maximum width to prevent very large images */
+  margin: 0 auto;
+}
+.container2 {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.gobtc {
+  display: flex;
+  align-items: center;
+  margin: 20%;
+}
+
+.outline {
+  align-items: center;
+  margin-left: 30%;
+  margin-top: 0%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.pr {
+  text-align: start;
+  margin-top: 10px;
+  text-indent: 15px;
+  font-size: 16px;
+}
+.wpr {
+  text-align: start;
+  top: 10px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  text-indent: 20px;
+  overflow: hidden;
+}
+.ppr {
+  text-align: start;
+  top: 10px;
+  font-size: 13px;
+  text-indent: 20px;
+}
+.par {
+  text-align: start;
+  top: 10px;
+  font-size: 13.3px;
+  text-indent: 20px;
+}
+.parc {
+  text-align: start;
+  top: 10px;
+  font-size: 14px;
+  text-indent: 20px;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  border: 10px solid #ccc; /* Example border color */
+  margin: 5% auto; /* Center with responsive margin */
+  padding: 10px; /* Reduce padding for a tighter look */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Arrange elements vertically */
+  width: 80%; /* Set a specific width */
+  max-width: 600px; /* Limit max width for larger screens */
+}
+.thecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1000px;
+}
+.page-container {
+  /* Set width and height for your container */
+  width: 100%; /* Adjust as needed */
+  height: 120vh; /* Adjust as needed (vh: viewport height) */
+
+  /* Add some margin and padding for spacing */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+
+  /* Set a background color */
+}
+.mail {
+  position: absolute;
+  width: max-content;
+}
+
+.header {
+  text-align: center;
+  margin-top: -12%;
+}
+.center {
+  text-align: center;
+  align-self: center;
+}
+.hidden {
+  display: none;
+  opacity: 0; /* Ensures no leftover content opacity */
+}
+.preventpic {
+  margin-top: 5px;
+  margin-left: 45px;
+  margin-right: 85px;
+  height: 30px; /* Adjust image height as needed */
+}
+
+.topbar {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 10px 30px; /* Add some padding */
+}
+
+.me-auto a {
+  margin-right: 25px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  border-radius: 8px;
+  padding: 8px;
+  /* color: white; */
+}
+.me-auto a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  /* background-color: blue; */
+  color: black;
+}
+.me-auto {
+  gap: 10px;
+}
+
+.REACT {
+  margin: 2rem auto;
+  width: 90%;
+  max-height: 80vh;
+  padding: 1rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px; /* Adjust spacing between grid items */
+}
+.grid-rw {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+}
+.gridrow {
+  display: flex;
+  flex-direction: grid;
+}
+.grid-row {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Adjust minmax values as needed */
+
+  justify-content: flex-start;
+}
+
+/* Basic table styles */
+.collapsibles-table {
+  /* Style the table containing titles and content */
+  border-collapse: collapse; /* Ensure table borders collapse properly */
+  width: 100%;
+}
+
+.collapsibles-table th,
+.collapsibles-table td {
+  padding: 10px; /* Adjust padding for spacing between content and borders */
+  border: 1px solid #ddd; /* Adds a thin border to each cell */
+}
+.grid {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: (2, 1fr);
+  grid-gap: 10px;
+}
+.collapsible-title {
+  display: flex; /* Change to flexbox for better row layout */
+  flex-direction: row;
+  justify-content: space-between;
+  padding: [desired padding amount];
+}
+.theecontainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.link {
+  text-decoration: none;
+}
+/* Optional styles for readability */
+.collapsibles-table th {
+  background-color: #eee; /* Light background color for table header */
+  font-weight: bold; /* Bold text for headers */
+}
+.collapsibles-table td {
+  display: flex;
+  grid-template-columns: 1fr auto; /* One fraction for content, auto for image */
+}
+.img-custom {
+  width: 100%; /* Adjust to your desired size */
+  max-width: 200px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+.img-custo {
+  width: 100%; /* Adjust to your desired size */
+  max-width: 150px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+.img-custom-s {
+  width: 100%; /* Adjust to your desired size */
+  max-width: 405px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+.collapsibles-table img {
+  grid-column: 2; /* Position image in the second column */
+  width: 100%; /* Image will fill the available width in the column */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Optional styles for the collapsible section within the table */
+.react-collapsible__trigger {
+  /* Adjust styles for the collapsible trigger (header) as needed */
+  cursor: pointer; /* Indicates clickable behavior */
+  padding: 10px; /* Adjust padding for consistency with table cells */
+  border-bottom: 1px solid #ddd; /* Adds a bottom border to separate the trigger from content */
+}
+
+.grid-image {
+  max-width: 100%; /* Adjust width based on column count */
+  height: 70px; /* Set image height */
+  object-fit: cover; /* Crop images to fit while maintaining aspect ratio */
+  margin: 0px;
+  top: 20px;
+}
+.gallery {
+  align-items: center;
+  font-size: 36px;
+}
+.centerr {
+  align-items: center;
+}
+.title {
+  font-size: 20;
+  font-weight: "bold";
+  margin-bottom: 10;
+  text-align: center;
+}
+.grid-image {
+  width: calc(
+    100% / var(--columns)
+  ); /* Adjust width based on column count (optional) */
+  max-width: 250px; /* Set a maximum width for images */
+  object-fit: cover; /* Ensure images scale proportionally */
+  margin: auto;
+  /* Add other styles like border, etc. */
+}
+.gridimag {
+  /* Set a consistent width for all images */
+  width: 100%; /* Adjust width as desired */
+  height: auto;
+  margin: 5px;
+}
+
+.lemon-image {
+  width: 50px; /* Same width as gridimage */
+  height: auto;
+  object-fit: contain; /* Display entire image, potentially with space */
+  margin: 5px;
+  top: 20px;
+}
+.logo {
+  width: 100px; /* Adjust size as needed for mobile */
+  height: auto;
+}
+/* Optional: Set a base font size for the grid */
+body {
+  font-size: 16px;
+}
+
+.Logo {
+  align-items: left;
+  height: 9vmin;
+  width: fit-content;
+  position: relative;
+}
+
+.contact {
+  text-align: right;
+  text-align: end;
+  position: relative;
+  left: -100px;
+  margin-right: 0%;
+  margin-top: -4%;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Adds spacing between items */
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+h4 {
+  text-decoration: underline;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.flexx {
+  flex-direction: row;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.plant-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between columns */
+  padding: 16px;
+  margin: auto;
+}
+
+.contain {
+  flex: 1 1 calc(100% - 16px); /* Default for small devices */
+  max-width: calc(100% - 16px);
+  padding: 8px; /* Internal padding */
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  /* Small devices */
+  .plant-container {
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (3 columns) */
+  .contain {
+    flex: 1 1 calc(33.33% - 16px);
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Large devices (4 columns) */
+  .contain {
+    flex: 1 1 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+  }
+}
+
+.pic1 {
+  width: 100%; /* Ensure images scale within columns */
+  height: auto;
+}
+
+.wpr {
+  word-wrap: break-word;
+}
+
+.edu {
+  color: black;
+  font-weight: bold; /* Bold text for headers */
+}
+.e {
+  color: #333; /* Example text color */
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pic1 {
+  /* Adjust image width as needed to fit in the container */
+  max-width: 20%; /* Adjust based on your container width and desired spacing */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 1rem; /* Add some margin between images */
+}
+.piccO,
+.PLANT,
+.pik1,
+.dual,
+.pic2,
+.IMG,
+.pic3,
+.pic6 {
+  /* Set individual image sizes as needed */
+  max-width: 40%; /* Adjust as needed */
+  height: auto;
+}
+.pik1 {
+  max-width: 350px; /* Adjust width as needed */
+  height: 140px;
+  top: -100px;
+}
+.whitepaper {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+}
+.dual {
+  max-width: 470px; /* Adjust width as needed */
+  height: 250px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.indent {
+  text-indent: -26%;
+}
+.ident {
+  text-indent: -7%;
+}
+
+.coursepic {
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+}
+.nav-link img {
+  /* Style the image within navigation links */
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  margin-right: 5px; /* Add margin between image and text */
+}
+.coursepi {
+  height: 65px; /* Adjust image height as needed */
+}
+.nav {
+  justify-content: center; /* Center navigation links */
+}
+.courseic {
+  height: 70px;
+}
+.inputstyles {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container-bBblue {
+  /* Adjust container size as needed */
+  max-width: 900px; /* Example max width */
+  margin: 0 auto;
+}
+.container-blue {
+  background-color: #87ceeb; /* Bootstrap primary blue color */
+  border: 2px solid white; /* Darker blue border */
+  padding: 20px; /* Add some padding inside the container */
+  border-radius: 8px; /* Optional: rounded corners */
+  color: black; /* White text color for contrast */
+}
+.container-bblue {
+  background-color: #87ceeb; /* Bootstrap primary blue color */
+  border: 2px solid white; /* Darker blue border */
+  padding: 20px; /* Add some padding inside the container */
+  border-radius: 8px; /* Optional: rounded corners */
+  color: black; /* White text color for contrast */
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex; /* Maintain flex layout */
+  flex-direction: column; /* Maintain column layout */
+  align-items: center; /* Maintain centered content */
+  margin: 0 auto; /* Remove margin for better mobile spacing */
+  width: 100%; /* Use full viewport width */
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 5px;
+    bottom: 10px;
+  }
+  .acutreats-image,
+  .TELE,
+  .REACT,
+  .pic,
+  .gridimage,
+  .gridimag,
+  .lemon-image {
+    max-width: 50%; /* Adjust for potentially fewer images per row */
+    margin: 3px; /* Reduce margins for tighter spacing */
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    width: 100%; /* Container takes full width */
+  }
+
+  /* Adjust styles for other elements as needed on mobile */
+}
+.imgg {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Adjust object-fit as necessary */
+  margin: 5px; /* Adjust margins as needed */
+}
+.acutreats-image,
+.TELE,
+.REACT,
+.pic,
+.gridimage,
+.gridimag,
+.lemon-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Adjust object-fit as necessary */
+  margin: 5px; /* Adjust margins as needed */
+  bottom: 10px;
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(
+      1,
+      3fr
+    ); /* Switch to 3 columns on larger screens */
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 1px;
+    bottom: 10px;
+    position: relative;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Grid container for larger screens */
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 3fr); /* 3 columns on larger screens */
+    grid-gap: 0px; /* Adjust gap between grid items */
+  }
+}
+@media (max-width: 768px) {
+  .Logo {
+    width: 60px; /* Adjust logo size for smaller screens */
+  }
+  .nav-link {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+
+  .large-image {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+.footer-grid {
+  display: flex;
+  align-items: center;
+  bottom: 10px;
+  /* Other necessary styles */
+}
+
+/* Media query for laptop screens */
+@media (min-width: 768px) {
+  .footer-grid img {
+    max-width: 200px; /* Adjust maximum width for images */
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .collapsibles-table td {
+    grid-template-columns: 1fr; /* Stack content and image on smaller screens */
+  }
+}
+.chelation-graphic {
+  max-width: 90%; /* Ensures image always fits within its container */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .pr {
+    text-indent: 10px; /* Further reduce indent on smaller screens */
+  }
+}
+/* Custom CSS for half-page centered modal */
+.modal-half-page .modal-dialog {
+  max-width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.modal-half-page .modal-content {
+  height: 100%; /* Ensures the content fills the modal */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* loader spinner */
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.loader {
+  height: 100px;
+  width: 100px;
+  color: #4fa94d; /* Adjust the color as needed */
+}
+
+/* table code css */
+
+.table {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove gaps between borders */
+  position: relative; /* Ensures the close icon is positioned relative to this container */
+  padding: 20px;
+}
+
+thead th {
+  background-color: #f4f4f4; /* Light gray background for headers */
+  font-weight: 600; /* Semi-bold text for headers */
+  text-align: center; /* Center align text */
+  padding: 12px; /* Space inside header cells */
+  border: 1px solid #ddd; /* Subtle borders */
+}
+
+tbody td {
+  padding: 12px; /* Space inside body cells */
+  border: 1px solid #ddd; /* Subtle borders */
+  text-align: center; /* Center align text */
+  vertical-align: middle; /* Align text to the middle */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+.table h1 {
+  font-size: 1.5rem; /* Header font size */
+  font-weight: 600; /* Semi-bold */
+  margin-bottom: 20px; /* Spacing below the title */
+  color: #333; /* Darker text color */
+}
+
+th,
+td {
+  width: calc(100% / 9); /* Distribute width equally across columns */
+}
+
+th:first-child,
+td:first-child {
+  text-align: center; /* Center the first column */
+}
+
+th:last-child,
+td:last-child {
+  text-align: center; /* Center the last column */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Dashboard X Icon */
+.close-icon {
+  position: absolute;
+  top: 25px; /* Adjust to position the "X" */
+  right: 40px; /* Adjust to position the "X" */
+  font-size: 2.5rem; /* Size of the "X" icon */
+  background: none;
+  border: none;
+  color: #ff0000; /* Red color for the "X" */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+  color: #cc0000; /* Darker red on hover */
+}
+
+/* Close button styles */
+.closes-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.closes-icon:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* * Modal Background - Now Transparent */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent; /* Set background to transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden; /* Prevent background scrolling */
+}
+
+/* Modal Container */
+.modal-container {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh; /* Constrain height */
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  text-align: left;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  overflow-y: auto;
+}
+
+/* Responsive Modal Content for Small Screens */
+@media (max-width: 600px) {
+  .modal-container {
+    width: 100%;
+    height: 90vh;
+    max-width: none; /* Remove max-width on small screens */
+    max-height: none; /* Remove max-height on small screens */
+    padding: 15px;
+  }
+}
+
+
+/* Button Styling */
+.modal-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.modal-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Active Effect */
+.modal-button:active {
+  transform: translateY(1px);
+  background-color: #004494;
+}
+
+/* Focus Effect */
+.modal-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0056b3, 0 4px 8px rgba(0, 0, 0, 0.2);
+}

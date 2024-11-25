@@ -1,0 +1,90 @@
+.container {
+  display: flex; /* Inherit flexbox layout from main app.css (optional) */
+  flex-direction: column; /* Maintain column layout on mobile */
+  align-items: center; /* Maintain centered content */
+  margin: 0 auto; /* Remove margin for better mobile spacing */
+  width: 100%; /* Use full viewport width */
+}
+
+/* Styles for all images (including collapsible images) */
+img {
+  max-width: 100%; /* Ensure images scale down to 100% width on mobile */
+  height: auto;
+  display: inline-block;
+}
+
+/* Specific style for grid images within collapsible */
+.gridimage {
+  width: 100%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 450px; /* Adjust maximum width of grid images */
+  margin: 10px; /* Add margin around images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+.gridimag {
+  width: 110%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 600px; /* Adjust maximum width of grid images */
+  margin: 10px; /* Add margin around images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+.ayurveda-image {
+  max-width: max-content; /* Limiting maximum width to maintain clarity */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default inline-block spacing */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Specific style for acutreats image */
+.acutreats-image {
+  width: 100%; /* Ensure image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 550px; /* Limit maximum width */
+}
+
+/* Optional: Additional styling for the main acupuncture benefits image (if needed) */
+.AC {
+  max-width: 60%; /* Adjust width as needed for .AC class (e.g., 70%, 80%) */
+  left: 10%; /* Adjust left margin as needed for .AC class */
+}
+
+/* Styles for mobile devices (screen width less than 768px) */
+@media (max-width: 768px) {
+  /* Mobile-specific styles for images */
+  .gridimage {
+    max-width: 100%; /* Ensure grid images are responsive */
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .acutreats-image {
+    max-width: 100%; /* Ensure acutreats image is responsive */
+  }
+
+  .AC {
+    width: 60%; /* Adjust main image width for smaller screens */
+    margin: 0 auto 20px; /* Center image and add bottom margin */
+  }
+    .gridimag {
+      max-width: 100%; /* Ensure grid images are responsive */
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+}
+/* ... your existing CSS ... */
+
+@media (max-width: 768px) {
+  .gridimage, .gridimag {
+    max-width: 80%; /* Adjust as needed */
+    margin: 5px;
+  }
+
+  .acutreats-image {
+    max-width: 80%;
+  }
+
+  /* Other mobile-specific styles */
+}
+

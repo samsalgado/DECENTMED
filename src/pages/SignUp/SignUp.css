@@ -1,0 +1,159 @@
+/* Container and Form Styles */
+.register-container {
+  margin-top: 3rem;
+}
+
+.register-form-container {
+  border: 2px solid #ABABAB;
+  padding: 1.5rem 2rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.register-title {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  border: 2px solid #C5C5C5;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.error-message {
+  color: #f56565;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0723f5e9;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Link for Existing Account */
+.already-account {
+  text-align: center;
+  font-size:1.2rem;
+text-align: center;
+  margin-top: 1.2rem;
+font-weight: 600;
+}
+.already-account a{
+color: green;
+font-size: bold;
+}
+
+
+.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 2.3rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Divider */
+.divider {
+
+  width: 33.33%;
+  margin: 1rem auto 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust Form Container */
+  .register-form-container {
+    padding: 1rem 1.5rem; /* Reduce padding on smaller screens */
+  /* Adjust width for tablets and smaller screens */
+;  
+}
+
+  .register-title {
+    font-size: 1.5rem; /* Slightly reduce the title font size */
+  }
+
+  .form-group input {
+    font-size: 1rem; /* Adjust input font size for better readability */
+    padding: 0.5rem; /* Slightly reduce input padding */
+  }
+
+  .submit-button {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 0.5rem; /* Reduce button padding */
+  }
+
+  .already-account {
+    font-size: 0.95rem; /* Reduce text size for smaller devices */
+  }
+
+  .divider {
+    font-size: 0.9rem; /* Reduce divider text size */
+width: 30%;
+}
+}
+
+@media (max-width: 480px) {
+  /* Extra Small Devices */
+  .register-form-container {
+ max-width: 90%;
+    padding: 1rem; /* Further reduce padding */
+margin: auto; 
+ }
+
+  .register-title {
+    font-size: 1.25rem; /* Reduce title font size */
+  }
+
+  .form-group input {
+    font-size: 0.9rem; /* Adjust input size for smaller devices */
+  }
+
+  .submit-button {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.5rem; /* Further reduce padding */
+
+}
+
+  .already-account {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .divider {
+    font-size: 0.85rem; /* Make divider text smaller */
+width: 40%;  
+}
+}

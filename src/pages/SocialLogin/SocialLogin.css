@@ -1,0 +1,58 @@
+/* Center and style the container */
+.social-login {
+  margin-bottom: 2.5rem; 
+  width: 100%; 
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+margin: auto;
+text-align: center;
+}
+
+/* Style the Google SignIn button */
+.google-signin-btn {
+  background-color: #041cd3e9; 
+  width: 29rem;   
+  text-align: center;
+color:white;
+  padding: 0.80rem; 
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.625rem; 
+  cursor: pointer;
+  border: none;
+}
+
+/* Hover state */
+.google-signin-btn:hover {
+  background-color: #0723f5e9; 
+color:aliceblue;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust styles for tablets and smaller screens */
+  .social-login {
+    width: 95%; 
+  }
+
+  .google-signin-btn {
+    width: 100%; 
+    padding: 0.7rem; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for small devices (mobile) */
+  .social-login {
+    width: 96%; 
+  }
+
+  .google-signin-btn {
+    width: 92%; 
+    padding: 0.6rem; 
+    font-size: 0.85rem; 
+  }
+}

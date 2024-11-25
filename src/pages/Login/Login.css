@@ -1,0 +1,159 @@
+/* Login.css */
+
+.login-container {
+  margin-top: 3rem;
+}
+
+.login-form-container {
+  border: 2px solid #ababab;
+  padding: 2rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.login-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-field {
+  margin-bottom: 1.5rem;
+}
+
+.login-input {
+  border: 2px solid #c5c5c5;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 2.3rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.login-error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #0723f5e9; /* Darken on hover */
+  color: aliceblue;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.login-button :hover {
+  background-color: #0723f5e9; /* Darken on hover */
+  color: aliceblue;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-weight: 600;
+}
+
+.login-link {
+  color: rgb(3, 135, 3);
+  font-weight: bold;
+}
+.login-link:hover {
+  color: rgb(5, 174, 5);
+  font-weight: bold;
+}
+
+.divider {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem auto;
+  color: #666;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px solid #ccc;
+  margin: 0 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* For Tablets and Smaller Screens */
+  .login-form-container {
+    padding: 1.5rem; /* Reduce padding */
+    max-width: 90%; /* Adjust form width */
+  }
+
+  .login-title {
+    font-size: 1.75rem; /* Reduce title size */
+  }
+
+  .login-button {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.7rem; /* Reduce padding */
+  }
+
+  .divider {
+    width: 80%; /* Reduce divider width */
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For Small Devices (Mobile) */
+  .login-form-container {
+    padding: 1rem; /* Further reduce padding */
+    max-width: 95%; /* Make it take up almost full width */
+  }
+
+  .login-title {
+    font-size: 1.5rem; /* Further reduce title size */
+  }
+
+  .login-input {
+    font-size: 0.9rem; /* Adjust input font size */
+    padding: 0.5rem; /* Slightly reduce padding */
+  }
+.forget-pass{
+margin: 10px auto;
+
+}
+  .password-toggle {
+    top: 2rem; /* Adjust position for smaller inputs */
+  }
+
+  .login-button {
+    font-size: 0.85rem; /* Reduce button font size */
+    padding: 0.6rem; /* Adjust padding */
+  }
+
+  .divider {
+    width:80%; /* Reduce divider width */
+    font-size: 14px; /* Adjust divider text size */
+  }
+
+  .login-footer {
+    font-size: 0.9rem; /* Reduce footer text size */
+  }
+}

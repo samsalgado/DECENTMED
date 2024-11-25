@@ -1,0 +1,64 @@
+/* Chiro.css */
+
+.container {
+    width: 100%; /* Set a maximum container width */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image { /* Renamed .imag for clarity */
+    display: inline-block;
+    max-width: 100%; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.collapsibles-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.collapsibles-table th,
+.collapsibles-table td {
+    padding: 1rem;
+}
+
+.gridimage {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.FACTS { /* Renamed .FACTS for clarity */
+    max-width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .collapsibles-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .collapsibles-table th,
+    .collapsibles-table td {
+        padding: 0.5rem;
+    }
+}

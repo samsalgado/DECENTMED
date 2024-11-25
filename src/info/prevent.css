@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; /* Adjusted margin for tighter spacing on mobile */
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center; /* Center elements horizontally */
+  align-items: center;
+  margin: 0px 0;
+}
+
+.chart {
+  width: 100%; /* Set width to 100% for mobile responsiveness */
+  height: auto;
+  max-width: 600px; /* Optional: Set a maximum width to prevent very large images */
+  margin: 0 auto;
+}
+
+/* Responsive Styles for Content (Optional) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem; /* Add padding for better spacing on mobile */
+  }
+  .title-container {
+    font-size: 1.2rem; /* Adjust font size for better readability */
+  }
+  .pr { /* Assuming this is your content class */
+    font-size: 0.9rem; /* Adjust font size for content */
+    line-height: 1.5; /* Adjust line-height for better readability */
+  }
+}
