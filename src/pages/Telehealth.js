@@ -16,7 +16,7 @@ export function Telehealth({ t }) {
     const { loading, data: paymentsInformation } = useQuery({
         queryKey: ['paymentsInformation'],
         queryFn: async () => {
-            const res = await fetch('https://decentmed-server.vercel.app//payments');
+            const res = await fetch('https://decentmed-server.vercel.app/payments');
             return res.json();
         }
     })

@@ -46,7 +46,7 @@ const AddtoCart = () => {
 
     setError(""); // Clear any previous error
 
-    axios.post('https://decentmed-server.vercel.app//payments', payment)
+    axios.post('https://decentmed-server.vercel.app/payments', payment)
       .then(data => {
         if (data?.data.insertedId) {
           Swal.fire({

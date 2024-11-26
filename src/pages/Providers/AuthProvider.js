@@ -50,7 +50,7 @@ const unsubscribe = onAuthStateChanged(auth,currentUser=>{
 setUser(currentUser)
 // get and set token
 if(currentUser){
-axios.post(`https://decentmed-server.vercel.app//jwt`,{email: currentUser.email})
+axios.post(`https://decentmed-server.vercel.app/jwt`,{email: currentUser.email})
 .then(data=>{
 console.log(data.data.token)
 localStorage.setItem('access-token',data.data.token);
