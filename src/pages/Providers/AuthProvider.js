@@ -1,6 +1,6 @@
 
-import React, { createContext, useEffect, useState } from 'react';
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile, } from "firebase/auth";
+import React, { createContext, useEffect, useState } from 'react';
 
 import axios from 'axios';
 import app from '../../firebase/FrebaseConfig';
@@ -50,7 +50,7 @@ const unsubscribe = onAuthStateChanged(auth,currentUser=>{
 setUser(currentUser)
 // get and set token
 if(currentUser){
-axios.post(`http://localhost:5001/jwt`,{email: currentUser.email})
+axios.post(`https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/jwt`,{email: currentUser.email})
 .then(data=>{
 console.log(data.data.token)
 localStorage.setItem('access-token',data.data.token);

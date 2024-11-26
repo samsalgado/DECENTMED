@@ -13,11 +13,10 @@ import Topbar from './topbar';
 export function Telehealth({ t }) {
 
     const { user } = useContext(AuthContext);
-console.log(user,'telehealth');
     const { loading, data: paymentsInformation } = useQuery({
         queryKey: ['paymentsInformation'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5001/payments');
+            const res = await fetch('https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/payments');
             return res.json();
         }
     })

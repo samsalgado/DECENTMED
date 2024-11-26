@@ -7,12 +7,11 @@ const useUsers = () => {
   useEffect(() => {
     const fetchAgents = async () => {
       try {
-        const response = await fetch("http://localhost:5001/users");
+        const response = await fetch("https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/users");
         const data = await response.json();
         setUsers(data);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching users:', error);
       }
     };
 

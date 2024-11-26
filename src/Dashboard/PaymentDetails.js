@@ -7,7 +7,7 @@ console.log(payments);
   const handleStatus = (payments, status) => {
 
     fetch(
-      `http://localhost:5001/payments-history/${payments._id}/?status=${status}`,
+      `https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/payments-history/${payments._id}/?status=${status}`,
       {
         method: "PATCH",
       }

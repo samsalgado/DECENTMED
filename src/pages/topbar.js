@@ -15,23 +15,11 @@ const Topbar = () => {
   const { user, logOut } = useContext(AuthContext)
 
   const [isAdmin, isAdminLoading] = useAdmin()
-  console.log(isAdmin);
-  //   const handleLogout = async () => {
-  //   try {
-  //     await axios.post('http://localhost:5001/api/logout', {}, { withCredentials: true });
-  //     setUser(null);
-  //     navigate('/login', { replace: true });
-  //   } catch (error) {
-  //     console.error('Logout failed:', error);
-  //   }
-  // };
-
   const handleLogOut = () => {
     logOut()
       .then(() => { })
       .then(window.location.reload())
-      .catch(error => {
-        console.log(error.message);
+      .catch(error => {;
       })
   }
 

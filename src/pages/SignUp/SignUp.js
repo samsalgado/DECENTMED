@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { Link, useNavigate } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
+import { useForm } from 'react-hook-form';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Footer from '../../footer';
 import { AuthContext } from '../Providers/AuthProvider';
@@ -23,7 +23,7 @@ const [error, setError] = useState('');
         updatePhoto(data.name).then((result) => {
 
           const saveUser = { name: data.name, email: data.email, password:data.password,role:"user"  };
-          fetch(`http://localhost:5001/users`, {
+          fetch(`https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/users`, {
             method: "POST",
             headers: {
               "content-type": "application/json"

@@ -1,7 +1,7 @@
 
+import { useQuery } from '@tanstack/react-query';
 import { useContext } from 'react';
 import { AuthContext } from '../pages/Providers/AuthProvider';
-import { useQuery } from '@tanstack/react-query';
 
 
 const usePaymentHistory = () => {
@@ -11,7 +11,7 @@ const usePaymentHistory = () => {
     queryKey: ['paymentData'],
     enabled: !loading,
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5001/payments-history`);
+      const res = await fetch(`https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/payments-history`);
       return res.json();
     },
   })

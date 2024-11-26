@@ -112,7 +112,7 @@ const CheckOutFrom = () => {
         transaction: paymentIntent.id,
         date: new Date()   // utc date convert. use moment js 
       }
-      axios.post('http://localhost:5001/payments', payment)
+      axios.post('https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/payments', payment)
         .then(data => {
           console.log(data);
           if (data?.data.insertedId) {

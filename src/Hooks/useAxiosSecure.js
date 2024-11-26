@@ -1,11 +1,11 @@
 import axios from 'axios';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useAuth from './useAuth';
-import { useEffect } from 'react';
 
 
  export const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5001', 
+    baseURL: 'https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app', 
   });
 
 const useAxiosSecure = () => {
