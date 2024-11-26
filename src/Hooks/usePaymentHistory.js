@@ -11,7 +11,7 @@ const usePaymentHistory = () => {
     queryKey: ['paymentData'],
     enabled: !loading,
     queryFn: async () => {
-      const res = await fetch(`https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/payments-history`);
+      const res = await fetch(`https://decentmed-server.vercel.app//payments-history`);
       return res.json();
     },
   })

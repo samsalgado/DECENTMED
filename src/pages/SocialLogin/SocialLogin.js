@@ -15,7 +15,7 @@ const SocialLogin = () => {
    console.log(result,222);
       const saveUser = { name: loggedUser?.displayName, email: loggedUser?.email, role: "user" }
 
-      fetch(`https://decentmed-server-7coc9m6th-themerlingroupworlds-projects.vercel.app/users`, {
+      fetch(`https://decentmed-server.vercel.app//users`, {
         method: "POST",
         headers: {
           "content-type": "application/json"
