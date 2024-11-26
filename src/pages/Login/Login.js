@@ -1,5 +1,5 @@
 
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -13,7 +13,7 @@ import './Login.css'; // Import the custom CSS
 import { AuthContext } from '../Providers/AuthProvider';
 
 const Login = () => {
-  const { signInUser, sendPasswordReset } = useContext(AuthContext);
+  const { signInUser } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || '/';

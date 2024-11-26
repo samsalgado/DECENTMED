@@ -17,6 +17,7 @@ const AddtoCart = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
+  console.log(name);
   const amount = 100;
   const payment = {
     name: user?.displayName,
@@ -55,20 +56,20 @@ const AddtoCart = () => {
             showConfirmButton: false,
             timer: 1500
           }).then(() => {
-          // Refresh the page after showing success
-          window.location.href = "/telehealth"; // Replace "/another-route-path" with the desired route
-        });
+            // Refresh the page after showing success
+            window.location.href = "/telehealth"; // Replace "/another-route-path" with the desired route
+          });
 
         }
       })
 
     // Clear input fields after successful payment
-        setName("");
-        setPractice("");
-        setBitcoinAddress("")
+
+    setPractice("");
+    setBitcoinAddress("")
 
       .catch((error) => {
-  setError(error)
+        setError(error)
       })
   }
 
@@ -101,7 +102,7 @@ const AddtoCart = () => {
         <p style={{ 'word-wrap': ' break-word', fontSize: '20px' }} >
           {t('Bitcoin Address : bc1qysv9r9fh7lfqmkq5666as0lpkhk33nj4wpcqfj')}
         </p>
-     <QRCodeSVG size={180} />
+        <QRCodeSVG size={180} />
         <p>{t("Initial Payment of $100 [0.0017 BTC] (BTC Preferred). Let's change the healthcare industry forever!")}</p>
         {/* Consider adding a price display here */}
 

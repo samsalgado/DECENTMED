@@ -10,7 +10,7 @@ const Apothecary = () => {
   // Price: BTC
   // Medical Rating: 
   // Source:
-  const [plant, setPlants] = useState(
+  const [plant] = useState(
     [
       {
         id: 1,

@@ -40,7 +40,6 @@ import { Chiro } from './pages/ChiroPRACT';
 import { Hypnopract } from './pages/hypnopract';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 import SignUp from './pages/SignUp/SignUp';
-import { loadStripe } from '@stripe/stripe-js'; import { Elements } from '@stripe/react-stripe-js';
 import StripePayment from './pages/StripePayment/StripePayment';
 import Topbar from './pages/topbar';
 import Login from './pages/Login/Login';

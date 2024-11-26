@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 
 const PaymentDetails = ({ payments, index, refetch }) => {
-  const { bitcoinAddress, name, price, email, practice, status, date, } = payments;
+  const { bitcoinAddress, price, email, practice, status, date, } = payments;
 console.log(payments);
   // pending user approve function
   const handleStatus = (payments, status) => {

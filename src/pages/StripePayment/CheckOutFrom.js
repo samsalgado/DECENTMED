@@ -26,6 +26,7 @@ const CheckOutFrom = () => {
   const [axiosSecure] = useAxiosSecure();
   const location = useLocation();
   const navigate = useNavigate();
+  console.log(name);
   useEffect(() => {
     if (amount === 100) {
       axiosSecure.post('/create-payment-intent', { price: amount })

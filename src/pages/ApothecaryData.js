@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import Description from '../info/description';
 import '../App.css'
 const ApothecaryData = ({ val }) => {
-  const { id, image, name, price, medrating, description } = val;
+  const { image, name, price, medrating, description } = val;
 
   //  Modal create
   const [show, setShow] = useState(false);
