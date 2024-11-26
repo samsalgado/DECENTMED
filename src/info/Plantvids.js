@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../App.css';
 const PlantVids = () => {
-    const [plant, setPlants] = useState([
+    const [plant] = useState([
         {
             id:1,
             videoUrl: "https://www.youtube.com/embed/YeZBT6KMp8w?si=cLSpPZ8nMSpaW45L",

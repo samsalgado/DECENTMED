@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../App.css"
 import { CookiesProvider } from 'react-cookie'
-import CustomizedDialogs from './dialog'
+// import CustomizedDialogs from './dialog'
 import { useTranslation } from 'react-i18next'
 import imge from '../images copy/stripe.jpg';
 import Swal from 'sweetalert2'
@@ -11,13 +11,12 @@ import { Button } from '@mui/material'
 const Offer2 = () => {
   const { t } = useTranslation();
 
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const { user } = useAuth();
   const handleClickOpen = () => {
     if (user) {
-      setOpen(true);
       return navigate('/stripepay', { state: { from: location } })
     }
 

@@ -6,7 +6,6 @@ import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog'; // Import from Dialog.js
 import DialogContent from '@mui/material/DialogContent';
 import { useLocation, useNavigate } from 'react-router-dom';
-import useAuth from '../Hooks/useAuth';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../pages/Providers/AuthProvider';
 import { useContext } from 'react';
