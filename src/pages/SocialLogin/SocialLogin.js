@@ -12,7 +12,6 @@ const SocialLogin = () => {
   const handleGoogleSignIn = () => {
     googleSignIn().then((result) => {
       const loggedUser = result?.user;
-   console.log(result,222);
       const saveUser = { name: loggedUser?.displayName, email: loggedUser?.email, role: "user" }
 
       fetch(`https://decentmed-server.vercel.app/users`, {
@@ -28,6 +27,7 @@ const SocialLogin = () => {
     navigate(from, { replace: true })
       .catch(error => {
         console.log(error.message);
+
       })
   }
   return (

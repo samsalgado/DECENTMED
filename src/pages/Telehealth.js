@@ -20,14 +20,38 @@ export function Telehealth({ t }) {
             return res.json();
         }
     })
-    if (loading) {
+
+    const { loader, data: adminInformation } = useQuery({
+        queryKey: ['adminInformation'],
+        queryFn: async () => {
+            const res = await fetch('https://decentmed-server.vercel.app/users');
+            return res.json();
+        }
+    })
+
+    if (loading || loader) {
         return <button style={{ backgroundColor: 'blue', color: 'white', padding: '8px 20px', fontWeight: "bold", border: 'none', borderRadius: '5px' }}> </button>
     }
 
-    // Find payments for the logged-in user's email
-    const paymentsByEmail = paymentsInformation?.find(
-        (payment) => (payment?.email === user?.email && payment.status === 'approved')
+    // Find role logged Admin
+    const userRole = adminInformation?.find(
+        (admin) => admin?.role === "admin" && admin?.email === user?.email
     );
+
+    // // Find payments for the logged-in user's email
+    // const paymentsByEmail = paymentsInformation?.find(
+    //     (payment) => (payment?.email === user?.email && payment.status === 'approved') || userRole
+    // );
+
+    const paymentsByEmail = paymentsInformation?.find(
+        (payment) => {
+            if (userRole) {
+                return true; // admin 
+            }
+            return payment?.email === user?.email && payment.status === 'approved';
+        }
+    );
+
 
     return (
         <>
@@ -45,7 +69,11 @@ export function Telehealth({ t }) {
             </div>
             <Practice />
             <div>
-                {paymentsByEmail && <Practices />}
+                {paymentsByEmail ? (
+                    <Practices />
+                ) : (
+                    <p className='warning'>{t('No payments found or not approved special service.')}</p>
+                )}
             </div>
             <div>
                 <Info7 />

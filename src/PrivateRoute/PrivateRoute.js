@@ -8,8 +8,6 @@ import { BallTriangle } from  'react-loader-spinner'
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
   const [isAdmin, isAdminLoading] = useAdmin();
-  console.log(isAdmin)
-
   const location = useLocation();
 
   if (loading || isAdminLoading) {

@@ -22,7 +22,7 @@ const [error, setError] = useState('');
       .then(result => {
         updatePhoto(data.name).then((result) => {
 
-          const saveUser = { name: data.name, email: data.email, password:data.password,role:"user"  };
+          const saveUser = { name: data.name, email: data.email,role:"user"  };
           fetch(`https://decentmed-server.vercel.app/users`, {
             method: "POST",
             headers: {
@@ -44,11 +44,10 @@ const [error, setError] = useState('');
           navigate('/');
         })
           .catch(error => {
-            console.log(error.message);
+  setError(error)
           });
       })
       .catch(error => {
-        console.log(error.message);
 setError(error)
       });
   };

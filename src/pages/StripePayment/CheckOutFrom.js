@@ -20,18 +20,18 @@ const CheckOutFrom = () => {
   const [message, setMessage] = useState(null);
   const [practice, setPractice] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
-  const [amount, setAmount] = useState(100);
+
   const [closed, setClosed] = useState(false);
   const { user } = useContext(AuthContext)
   const [axiosSecure] = useAxiosSecure();
   const location = useLocation();
   const navigate = useNavigate();
   console.log(name);
+  const [amount, setAmount] = useState();
   useEffect(() => {
-    if (amount === 100) {
+    if (amount > 0) {
       axiosSecure.post('/create-payment-intent', { price: amount })
         .then(res => {
-          console.log(res.data.clientSecret);
           setClientSecret(res.data.clientSecret);
         })
     }
@@ -48,7 +48,6 @@ const CheckOutFrom = () => {
   }
 
   const handleSubmit = async (event) => {
-    console.log(user, 'checkoutForm');
     event.preventDefault();
 
     if (!stripe || !elements) {
@@ -59,6 +58,20 @@ const CheckOutFrom = () => {
     const card = elements.getElement(CardElement);
     if (!card) {
       setMessage('Please enter your card details');
+      return;
+    }
+
+    // Convert amount to number
+    const amountInUSD = parseFloat(amount);
+
+    // Validate amount is greater than 0
+    if (isNaN(amountInUSD) || amountInUSD <= 0) {
+      setMessage('Please enter a valid amount greater than 0 USD');
+      return;
+    }
+
+    if (amountInUSD < 100) {
+      setMessage('The minimum amount for payment is 100 USD');
       return;
     }
 
@@ -81,7 +94,7 @@ const CheckOutFrom = () => {
       return;
     }
     else {
-      console.log('PaymentMethode', paymentMethod);
+      // console.log('PaymentMethode', paymentMethod);
     }
 
     // Confirm the payment intent
@@ -96,7 +109,7 @@ const CheckOutFrom = () => {
     });
     if (confirmError) {
       setMessage(`Payment confirmation failed: ${confirmError.message}`);
-      console.log(`ata ki seta${confirmError.message}`);
+      // console.log(`ata ki seta${confirmError.message}`);
       setIsProcessing(false)
     }
 
@@ -107,14 +120,14 @@ const CheckOutFrom = () => {
         name: user?.displayName,
         email: user?.email,
         practice: practice,
-        price: amount,
+        price: amountInUSD,
         status: paymentIntent.status,
         transaction: paymentIntent.id,
         date: new Date()   // utc date convert. use moment js 
       }
       axios.post('https://decentmed-server.vercel.app/payments', payment)
         .then(data => {
-          console.log(data);
+          // console.log(data);
           if (data?.data.insertedId) {
             Swal.fire({
               position: "top-end",
@@ -134,7 +147,6 @@ const CheckOutFrom = () => {
 
     }
 
-    console.log('checkoutform');
     setIsProcessing(false);
 
   };
@@ -189,7 +201,16 @@ const CheckOutFrom = () => {
           type="number"
           placeholder="Amount (USD)"
           value={amount}
-          onChange={(e) => setAmount(e.target.value)}
+          // onChange={(e) => setAmount(e.target.value)}
+          onChange={(e) => {
+            // Ensure the amount is a valid number (remove non-numeric characters if necessary)
+            const newValue = e.target.value;
+            if (/^\d*\.?\d*$/.test(newValue)) {
+              setAmount(newValue);
+            }
+          }}
+          min="0.01"  // Prevent entering 0 or negative values
+          step="0.01" // Allows decimal input for cents
           required
         />
 

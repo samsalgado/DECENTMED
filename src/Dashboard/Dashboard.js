@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const [paymentData, refetch] = usePaymentHistory();
   const navigate = useNavigate();
-console.log(paymentData,'dahsborad');
   const handleBackHome = () => {
     navigate('/'); // Replace '/' with your home route
   };

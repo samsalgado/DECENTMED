@@ -1012,3 +1012,9 @@ td:last-child {
   outline: none;
   box-shadow: 0 0 0 2px #0056b3, 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.warning{
+color: #c60606;
+font-size: 25px;
+font-weight: bold;
+}

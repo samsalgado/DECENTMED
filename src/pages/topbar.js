@@ -46,6 +46,11 @@ const Topbar = () => {
             </Nav.Link>
 
             {!isAdminLoading && isAdmin &&
+              (<Nav.Link href='/dashboard'>  
+                {t('Dashboard')}
+              </Nav.Link>)
+            }
+            {/* {!isAdminLoading && isAdmin &&
               (<Nav.Link href='/dashboard'>  <button style={{
                 backgroundColor: 'blue', color: 'white',
                 padding: '8px 16px', fontWeight: "bold", border: 'none',
@@ -54,7 +59,7 @@ const Topbar = () => {
                 {t('Dashboard')}
               </button>
               </Nav.Link>)
-            }
+            } */}
           </Nav>
 
           {
