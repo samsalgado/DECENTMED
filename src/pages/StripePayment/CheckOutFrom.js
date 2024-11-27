@@ -94,7 +94,7 @@ const CheckOutFrom = () => {
       return;
     }
     else {
-      // console.log('PaymentMethode', paymentMethod);
+      console.log('PaymentMethod', paymentMethod);
     }
 
     // Confirm the payment intent
