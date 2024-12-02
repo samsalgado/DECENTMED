@@ -101,7 +101,7 @@ const CheckOutFrom = () => {
       return;
     }
     else {
-      console.log('PaymentMethod', paymentMethod);
+      console.log(paymentMethod);
     }
 
   if (!clientSecret || !clientSecret.includes("_secret_")) {
