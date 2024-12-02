@@ -23,7 +23,7 @@ const [error, setError] = useState('');
         updatePhoto(data.name).then((result) => {
 
           const saveUser = { name: data.name, email: data.email,role:"user"  };
-          fetch(`http://localhost:5001/users`, {
+          fetch(`https://decentmed-server.vercel.app/users`, {
             method: "POST",
             headers: {
               "content-type": "application/json"

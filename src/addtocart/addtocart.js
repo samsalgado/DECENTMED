@@ -1,11 +1,11 @@
 import axios from 'axios';
-import  btclightAddress  from '../pics/btclight.png'
 import React, { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import '../App.css';
 import { AuthContext } from '../pages/Providers/AuthProvider';
+import btclightAddress from '../pics/btclight.png';
 
 
 const AddtoCart = () => {
@@ -47,7 +47,7 @@ const AddtoCart = () => {
 
     setError(""); // Clear any previous error
 
-    axios.post('http://localhost:5001/payments', payment)
+    axios.post('https://decentmed-server.vercel.app/payments', payment)
       .then(data => {
         if (data?.data.insertedId) {
           Swal.fire({

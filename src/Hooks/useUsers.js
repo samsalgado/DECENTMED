@@ -7,7 +7,7 @@ const useUsers = () => {
   useEffect(() => {
     const fetchAgents = async () => {
       try {
-        const response = await fetch("http://localhost:5001/users");
+        const response = await fetch("https://decentmed-server.vercel.app/users");
         const data = await response.json();
         setUsers(data);
         setLoading(false);
