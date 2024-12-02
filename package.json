@@ -50,6 +50,7 @@
     "sweetalert2": "^11.14.5",
     "timers-browserify": "^2.0.12",
     "url": "^0.11.3",
+    "use-debounce": "^10.0.4",
     "use-indexeddb": "^2.0.2",
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"

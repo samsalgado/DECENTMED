@@ -7,6 +7,8 @@ import Plants from "./Plants";
 import ApothecaryData from "./ApothecaryData";
 
 const Apothecary = () => {
+
+
   // Price: BTC
   // Medical Rating: 
   // Source:
@@ -1684,8 +1686,8 @@ const Apothecary = () => {
 
   return (
 
-    <div>
-      <div className="plant-container">
+    <div className='contents'>
+      <div   className='plant-container'>
       
           {plant.map((val) => (
             <ApothecaryData val={val} key={val.id}>

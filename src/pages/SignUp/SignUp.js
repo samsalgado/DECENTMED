@@ -23,7 +23,7 @@ const [error, setError] = useState('');
         updatePhoto(data.name).then((result) => {
 
           const saveUser = { name: data.name, email: data.email,role:"user"  };
-          fetch(`https://decentmed-server.vercel.app/users`, {
+          fetch(`http://localhost:5001/users`, {
             method: "POST",
             headers: {
               "content-type": "application/json"
@@ -128,7 +128,7 @@ setError(error)
     <div className="divider">Or</div>
     <SocialLogin />
   </div>
-  <footer>
+  <footer className='footer'>
     <Footer />
   </footer>
 </>

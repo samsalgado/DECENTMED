@@ -8,7 +8,6 @@ const {user,loading} = useContext(AuthContext);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isAdminLoading, setIsAdminLoading] = useState(true);
   const [users] = useUsers(); // Assuming this fetches all users from MongoDB
-
   useEffect(() => {
     // Only proceed if user and users data is available
     if (!loading && user ) {

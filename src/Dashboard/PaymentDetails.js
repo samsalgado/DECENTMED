@@ -1,12 +1,11 @@
 import Swal from "sweetalert2";
-
 const PaymentDetails = ({ payments, index, refetch }) => {
   const { bitcoinAddress, price, email, practice, status, date, } = payments;
   // pending user approve function
   const handleStatus = (payments, status) => {
 
     fetch(
-      `https://decentmed-server.vercel.app/payments-history/${payments._id}/?status=${status}`,
+      `http://localhost:5001/payments-history/${payments._id}/?status=${status}`,
       {
         method: "PATCH",
       }
@@ -35,9 +34,8 @@ const PaymentDetails = ({ payments, index, refetch }) => {
         <td className="border px-4 py-2">{email}</td>
         <td className="border px-4 py-2">{practice}</td>
        
-        <td className="border px-4 py-2">{bitcoinAddress || 'Stipe Pay'}</td>
+        <td className="border px-4 py-2" style={{ wordWrap: 'break-word', wordBreak: 'break-all' }}>{bitcoinAddress || 'Stipe Pay'}</td>
         <td className="border px-4 py-2">${price}</td>
-        {/* <td className="border px-4 py-2">{status || 'anonymous'}</td> */}
         <td className="border px-4 py-2">
           {status === 'approved' ?
             <> <p style={{ color: 'green', fontSize: 'bold', }} >{status}</p> </> :

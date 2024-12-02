@@ -1,15 +1,15 @@
 
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
-
-// import '../../App.css'
 import { AuthContext } from '../Providers/AuthProvider';
 import './CheckOutForm.css';
+
+
 const CheckOutFrom = () => {
 
   const { t } = useTranslation();
@@ -28,16 +28,14 @@ const CheckOutFrom = () => {
   const navigate = useNavigate();
   console.log(name);
   const [amount, setAmount] = useState();
-  useEffect(() => {
-    if (amount > 0) {
-      axiosSecure.post('/create-payment-intent', { price: amount })
-        .then(res => {
-          setClientSecret(res.data.clientSecret);
-        })
-    }
-  }, [axiosSecure, amount])
 
-  // const [succeeded, setSucceeded] = useState('');
+  console.log(clientSecret);
+  const handleAmountChange = (e) => {
+    const newValue = e.target.value;
+    if (/^\d*\.?\d*$/.test(newValue)) {
+      setAmount(newValue);
+    }
+  };
 
   const handleClickClosed = () => {
     if (!closed) {
@@ -49,19 +47,19 @@ const CheckOutFrom = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    setMessage(null)
     if (!stripe || !elements) {
       setMessage('Stripe is not loaded. Please try again later')
       return;
     }
 
-    const card = elements.getElement(CardElement);
-    if (!card) {
-      setMessage('Please enter your card details');
+    // Check if card details are entered
+    const card = elements.getElement(CardElement)
+    if (!card || card._empty) {
+      setMessage('Please fill out your card details');
       return;
     }
 
-    // Convert amount to number
     const amountInUSD = parseFloat(amount);
 
     // Validate amount is greater than 0
@@ -77,6 +75,15 @@ const CheckOutFrom = () => {
 
     setIsProcessing(true);
 
+    // Create a PaymentIntent here (moved from useEffect)
+    try {
+      const res = await axiosSecure.post('/create-payment-intent', { price: amountInUSD });
+      setClientSecret(res.data.clientSecret);
+    } catch (err) {
+      console.error('Error fetching clientSecret:', err);
+      setIsProcessing(false);
+      return;
+    }
 
     // Create the payment method first
     const { error: paymentMethodError, paymentMethod } = await stripe.createPaymentMethod({
@@ -97,6 +104,12 @@ const CheckOutFrom = () => {
       console.log('PaymentMethod', paymentMethod);
     }
 
+  if (!clientSecret || !clientSecret.includes("_secret_")) {
+      setMessage("Invalid payment secret. Please try again.");
+      setIsProcessing(false);
+      return;
+    }
+
     // Confirm the payment intent
     const { error: confirmError, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
@@ -109,7 +122,6 @@ const CheckOutFrom = () => {
     });
     if (confirmError) {
       setMessage(`Payment confirmation failed: ${confirmError.message}`);
-      // console.log(`ata ki seta${confirmError.message}`);
       setIsProcessing(false)
     }
 
@@ -125,7 +137,7 @@ const CheckOutFrom = () => {
         transaction: paymentIntent.id,
         date: new Date()   // utc date convert. use moment js 
       }
-      axios.post('https://decentmed-server.vercel.app/payments', payment)
+      await axios.post('http://localhost:5001/payments', payment)
         .then(data => {
           // console.log(data);
           if (data?.data.insertedId) {
@@ -138,31 +150,21 @@ const CheckOutFrom = () => {
             }).then(() => {
               window.location.href = "/telehealth"; // Replace "/another-route-path" with the desired route
             });
-
           }
         })
-        .catch(error => {
-          console.log(error);
+        .catch(err => {
+          console.error('Error during payment:', err);
+          setMessage('An unexpected error occurred. Please try again.');
         })
 
     }
 
     setIsProcessing(false);
-
   };
 
   return (
 
-    <div style={{
-      position: 'relative',
-      maxWidth: '60%',
-      margin: '0 auto',
-      padding: '20px',
-      textAlign: 'center',
-      border: '5px solid #ccc',
-      borderRadius: '8px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    }}>
+    <div className='containers'>
 
       {/* Close Button */}
       <button className="closes-icon"
@@ -173,7 +175,7 @@ const CheckOutFrom = () => {
       <h4>{('Join the Coalition')}</h4>
       <p>{t("Initial Payment of $100. Let's change the healthcare industry forever!")}</p>
 
-      <form onSubmit={handleSubmit}>
+      <form className='fields' onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Enter your name"
@@ -201,14 +203,7 @@ const CheckOutFrom = () => {
           type="number"
           placeholder="Amount (USD)"
           value={amount}
-          // onChange={(e) => setAmount(e.target.value)}
-          onChange={(e) => {
-            // Ensure the amount is a valid number (remove non-numeric characters if necessary)
-            const newValue = e.target.value;
-            if (/^\d*\.?\d*$/.test(newValue)) {
-              setAmount(newValue);
-            }
-          }}
+          onChange={handleAmountChange}
           min="0.01"  // Prevent entering 0 or negative values
           step="0.01" // Allows decimal input for cents
           required
@@ -231,14 +226,16 @@ const CheckOutFrom = () => {
             },
           }}
         />
+
         {
 
-          <button type="submit" disabled={!stripe || !clientSecret}>
+          <button type="submit" disabled={!stripe || !amount || isProcessing}>
             {isProcessing ? 'Processing...' : `Pay $${amount}`}
 
           </button>
 
         }
+
         <h4> {message} </h4>
       </form>
     </div>
@@ -246,6 +243,7 @@ const CheckOutFrom = () => {
 };
 
 export default CheckOutFrom;
+
 
 
 

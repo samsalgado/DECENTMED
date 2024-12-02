@@ -1,5 +1,3 @@
-
-
 .App {
   text-align: center;
 }
@@ -422,10 +420,6 @@ body {
   width: 100px; /* Adjust size as needed for mobile */
   height: auto;
 }
-/* Optional: Set a base font size for the grid */
-body {
-  font-size: 16px;
-}
 
 .Logo {
   align-items: left;
@@ -472,46 +466,6 @@ h4 {
 }
 .App-link {
   color: #61dafb;
-}
-
-.plant-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* Space between columns */
-  padding: 16px;
-  margin: auto;
-}
-
-.contain {
-  flex: 1 1 calc(100% - 16px); /* Default for small devices */
-  max-width: calc(100% - 16px);
-  padding: 8px; /* Internal padding */
-  box-sizing: border-box;
-}
-
-@media (max-width: 767px) {
-  /* Small devices */
-  .plant-container {
-    height: 100vh; /* Full viewport height */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-}
-
-@media (min-width: 768px) {
-  /* Medium devices (3 columns) */
-  .contain {
-    flex: 1 1 calc(33.33% - 16px);
-    max-width: calc(33.33% - 16px);
-  }
-}
-
-@media (min-width: 1200px) {
-  /* Large devices (4 columns) */
-  .contain {
-    flex: 1 1 calc(25% - 16px);
-    max-width: calc(25% - 16px);
-  }
 }
 
 .pic1 {
@@ -653,26 +607,7 @@ select {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
-@media (max-width: 768px) {
-  .footer-container {
-    padding: 5px;
-    bottom: 10px;
-  }
-  .acutreats-image,
-  .TELE,
-  .REACT,
-  .pic,
-  .gridimage,
-  .gridimag,
-  .lemon-image {
-    max-width: 50%; /* Adjust for potentially fewer images per row */
-    margin: 3px; /* Reduce margins for tighter spacing */
-  }
 
-  .logo {
-    width: 80px;
-  }
-}
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack elements vertically on mobile */
@@ -687,6 +622,26 @@ input[type="submit"]:hover {
   object-fit: contain; /* Adjust object-fit as necessary */
   margin: 5px; /* Adjust margins as needed */
 }
+
+@media (max-width: 600px) {
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .wrapper {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .content {
+    padding-bottom: 60px;
+  }
+}
+
+/* General styles for footer images */
 .acutreats-image,
 .TELE,
 .REACT,
@@ -696,23 +651,48 @@ input[type="submit"]:hover {
 .lemon-image {
   max-width: 100%;
   height: auto;
-  object-fit: contain; /* Adjust object-fit as necessary */
-  margin: 5px; /* Adjust margins as needed */
+  object-fit: contain;
+  margin: 5px;
   bottom: 10px;
 }
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(
-      1,
-      3fr
-    ); /* Switch to 3 columns on larger screens */
-  }
+
+/* Footer container */
+.footer-container {
+  padding: 60px 8px;
+  bottom: 10px;
+  position: relative;
 }
+
+/* Wrapper to ensure footer stays at the bottom */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+/* Main content area */
+.contents {
+  flex: 1; /* Allow content to grow and fill space */
+  padding: 0px 0px 0px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: auto; /* Scroll if content overflows */
+}
+
+/* Footer styles */
+.footer {
+  margin-top: auto; /* Push footer to the bottom */
+  padding: 20px;
+}
+
+/* Media query for smaller devices */
 @media (max-width: 600px) {
   .footer-container {
-    padding: 1px;
-    bottom: 10px;
-    position: relative;
+    padding: 60px 4px;
+    bottom: 10px !important;
+    position: relative !important;
   }
 
   .logo {
@@ -720,61 +700,130 @@ input[type="submit"]:hover {
   }
 }
 
+/* Media query for smaller screens (768px and below) */
 @media (max-width: 768px) {
-  .container {
+  .wrapper {
     flex-direction: column;
-    width: 100%;
+    min-height: 100vh; /* Full height wrapper */
+  }
+
+  .contents {
+    flex: 1;
+  }
+
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .acutreats-image,
+  .TELE,
+  .REACT,
+  .pic,
+  .gridimage,
+  .gridimag,
+  .lemon-image {
+    max-width: 50%; /* Adjust images for smaller screens */
+    margin: 3px; /* Reduce margins */
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .nav-link {
+    font-size: 14px;
   }
 }
 
-/* Grid container for larger screens */
+/* Grid container for larger screens (above 768px) */
 @media (min-width: 768px) {
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 3fr); /* 3 columns on larger screens */
-    grid-gap: 0px; /* Adjust gap between grid items */
-  }
-}
-@media (max-width: 768px) {
-  .Logo {
-    width: 60px; /* Adjust logo size for smaller screens */
-  }
-  .nav-link {
-    font-size: 14px; /* Adjust font size for better readability */
-  }
-}
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .image-container {
-    flex-direction: column; /* Stack images vertically on smaller screens */
+    grid-template-columns: repeat(6, 3fr);
+    grid-gap: 0px;
   }
 
-  .large-image {
-    max-width: 100%; /* Full width on smaller screens */
+  .footer-grid img {
+    max-width: 200px;
+    height: auto;
   }
 }
+
+/* Footer grid and bottom positioning */
 .footer-grid {
   display: flex;
   align-items: center;
   bottom: 10px;
-  /* Other necessary styles */
 }
 
-/* Media query for laptop screens */
-@media (min-width: 768px) {
-  .footer-grid img {
-    max-width: 200px; /* Adjust maximum width for images */
-    height: auto;
+/* To fix footer at bottom of page if content is less */
+.bottom-fix {
+  bottom: 0;
+}
+
+/* Plant container styles */
+.plant-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between columns */
+  padding: 16px;
+  margin: auto;
+}
+
+.contain {
+  flex: 1 1 calc(100% - 16px); /* Default for small devices */
+  max-width: calc(100% - 16px);
+  padding: 8px; /* Internal padding */
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  /* Small devices */
+  .plant-container {
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
   }
 }
+
+@media (min-width: 768px) {
+  /* Medium devices (3 columns) */
+  .contain {
+    flex: 1 1 calc(33.33% - 16px);
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Large devices (4 columns) */
+  .contain {
+    flex: 1 1 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+  }
+}
+
+.pic1 {
+  width: 100%; /* Ensure images scale within columns */
+  height: auto;
+}
+
+.wpr {
+  word-wrap: break-word;
+}
+
 @media (max-width: 768px) {
   .collapsibles-table td {
-    grid-template-columns: 1fr; /* Stack content and image on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
 .chelation-graphic {
-  max-width: 90%; /* Ensures image always fits within its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 90%;
+  height: auto;
   border: 1px solid #ccc;
   margin: 10px;
 }
@@ -902,6 +951,27 @@ td:last-child {
   color: #cc0000; /* Darker red on hover */
 }
 
+/* bitcoin container style  */
+.btc-container {
+  max-width: 60%;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .btc-container {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+}
+
 /* Close button styles */
 .closes-icon {
   position: absolute;
@@ -919,8 +989,6 @@ td:last-child {
 .closes-icon:hover {
   transform: scale(1.2);
 }
-
-
 
 /* * Modal Background - Now Transparent */
 .modal-background {
@@ -981,7 +1049,6 @@ td:last-child {
   }
 }
 
-
 /* Button Styling */
 .modal-button {
   padding: 10px 20px;
@@ -1010,11 +1077,11 @@ td:last-child {
 /* Focus Effect */
 .modal-button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #0056b3, 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 2px #0056b3, 0 4px 8px rgba(0,  0,  0,  0.2);
 }
 
-.warning{
-color: #c60606;
-font-size: 25px;
-font-weight: bold;
+.warning {
+  color: #c60606;
+  font-size: 25px;
+  font-weight: bold;
 }

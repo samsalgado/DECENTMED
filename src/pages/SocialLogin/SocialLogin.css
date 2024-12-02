@@ -34,7 +34,7 @@ color:aliceblue;
 @media (max-width: 768px) {
   /* Adjust styles for tablets and smaller screens */
   .social-login {
-    width: 95%; 
+    width: 88%; 
   }
 
   .google-signin-btn {
@@ -47,11 +47,11 @@ color:aliceblue;
 @media (max-width: 480px) {
   /* Adjust styles for small devices (mobile) */
   .social-login {
-    width: 96%; 
+    width: 88%; 
   }
 
   .google-signin-btn {
-    width: 92%; 
+    width: 90%; 
     padding: 0.6rem; 
     font-size: 0.85rem; 
   }

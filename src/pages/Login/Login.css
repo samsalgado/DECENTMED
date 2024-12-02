@@ -157,3 +157,7 @@ margin: 10px auto;
     font-size: 0.9rem; /* Reduce footer text size */
   }
 }
+.footer{
+margin-top: 40px;
+padding: 0 12px;
+}

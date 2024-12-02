@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { QRCodeSVG } from 'qrcode.react';
+import  btclightAddress  from '../pics/btclight.png'
 import React, { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -28,25 +28,26 @@ const AddtoCart = () => {
     status: 'pending',
     date: new Date()
   }
-  // Bitcoin address validation function
-  const isValidBitcoinAddress = (address) => {
-    const legacyRegex = /^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$/; // Legacy P2PKH or P2SH
-    const bech32Regex = /^(bc1)[a-z0-9]{25,87}$/; // Bech32
-    return legacyRegex.test(address) || bech32Regex.test(address);
+
+  // Validation function for Lightning Invoice
+  const isValidLightningInvoice = (invoice) => {
+    const lnInvoiceRegex = /^ln(bc|tb|bcrt)[0-9]{1,}[a-z0-9]+$/i;
+    return lnInvoiceRegex.test(invoice);
   };
 
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Validate Bitcoin address
-    if (!isValidBitcoinAddress(bitcoinAddress)) {
-      setError("Invalid bitcoin address.Please provide a valid address.");
+  
+  // Validate Lightning Invoice
+    if (!isValidLightningInvoice(bitcoinAddress)) {
+      setError("Invalid Lightning Invoice. Please provide a valid Lightning Network Invoice.");
       return;
     }
 
     setError(""); // Clear any previous error
 
-    axios.post('https://decentmed-server.vercel.app/payments', payment)
+    axios.post('http://localhost:5001/payments', payment)
       .then(data => {
         if (data?.data.insertedId) {
           Swal.fire({
@@ -79,20 +80,7 @@ const AddtoCart = () => {
 
   return (
     <>
-      <div style={{
-        maxWidth: '60%',
-        width: '100%',
-        margin: ' auto',
-        marginTop: '40px',
-        padding: '20px',
-        textAlign: 'center',
-        border: '4px solid #ccc',
-        borderRadius: '8px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-        position: 'relative'
-      }}
-
-      >
+      <div className='btc-container'>
 
         {/* Close Button */}
         <button className="closes-icon" onClick={() => handleBack()}>
@@ -100,9 +88,9 @@ const AddtoCart = () => {
         </button>
         <h4>{t('Join the Coalition')}</h4>
         <p style={{ 'word-wrap': ' break-word', fontSize: '20px' }} >
-          {t('Bitcoin Address : bc1qysv9r9fh7lfqmkq5666as0lpkhk33nj4wpcqfj')}
+          {t('Bitcoin Address : lnbc1pn5mep0pp5n94kygg4apk7s306cytffaeakqla52ne6y85dhd3n9zfl2zxf8tqdp82pshjgr5dusyymrfde4jq4mpd3kx2apq24ek2uscqzpuxqr8pqsp556upw7px8js755wcumfa6qd74ntnr05rk73eq8x76mvf5ucpn46s9p4gqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpqysgq0wpfq3f5kwlgtqmuzy0sdh6uv4krrhvknynah0e9z3ssppy8j9h9cdcpu2yv6nq24qt2jh2sl6n07axat2m7mkhw4gpmcr5evkemzfgp9cz9pd')}
         </p>
-        <QRCodeSVG size={180} />
+        <img src={btclightAddress} className="pik1" alt="" />
         <p>{t("Initial Payment of $100 [0.0017 BTC] (BTC Preferred). Let's change the healthcare industry forever!")}</p>
         {/* Consider adding a price display here */}
 

@@ -13,14 +13,11 @@ import { AuthContext } from "./Providers/AuthProvider";
 const Topbar = () => {
   const { t } = useTranslation();
   const { user, logOut } = useContext(AuthContext)
-
   const [isAdmin, isAdminLoading] = useAdmin()
   const handleLogOut = () => {
     logOut()
       .then(() => { })
       .then(window.location.reload())
-      .catch(error => {;
-      })
   }
 
   return (

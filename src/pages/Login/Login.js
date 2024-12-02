@@ -33,7 +33,7 @@ const Login = () => {
           title: 'Success!',
           text: 'Do you want to continue',
           icon: 'success',
-          confirmButtonText: 'Cool',
+          confirmButtonText: 'Welcome',
         });
         navigate(from, { replace: true });
       })
@@ -100,7 +100,7 @@ const Login = () => {
         <div className="divider">Or</div>
         <SocialLogin />
       </div>
-      <footer>
+      <footer className='footer'>
         <Footer />
       </footer>
 

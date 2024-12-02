@@ -3,9 +3,9 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useAuth from './useAuth';
 
-
+// http://localhost:5001
  export const axiosSecure = axios.create({
-    baseURL: 'https://decentmed-server.vercel.app', 
+    baseURL: 'http://localhost:5001', 
   });
 
 const useAxiosSecure = () => {
