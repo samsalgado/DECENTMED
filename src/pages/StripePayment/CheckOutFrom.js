@@ -45,24 +45,39 @@ const CheckOutFrom = () => {
 
   }
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setMessage(null)
+    setMessage(null);
+
     if (!stripe || !elements) {
-      setMessage('Stripe is not loaded. Please try again later')
+      setMessage('Stripe is not loaded. Please try again later');
       return;
     }
 
-    // Check if card details are entered
-    const card = elements.getElement(CardElement)
-    if (!card || card._empty) {
-      setMessage('Please fill out your card details');
+    const card = elements.getElement(CardElement);
+    if (!card) {
+      setMessage('Please enter your card details');
+      return;
+    }
+
+    // Validate CardElement fields
+    const { error: cardValidationError } = await stripe.createPaymentMethod({
+      type: 'card',
+      card,
+      billing_details: {
+        name: user?.displayName,
+        email: user?.email,
+      },
+    });
+
+    if (cardValidationError) {
+      setMessage(`Card error: ${cardValidationError.message}`);
       return;
     }
 
     const amountInUSD = parseFloat(amount);
 
-    // Validate amount is greater than 0
     if (isNaN(amountInUSD) || amountInUSD <= 0) {
       setMessage('Please enter a valid amount greater than 0 USD');
       return;
@@ -75,91 +90,62 @@ const CheckOutFrom = () => {
 
     setIsProcessing(true);
 
-    // Create a PaymentIntent here (moved from useEffect)
     try {
+      // Fetch clientSecret
       const res = await axiosSecure.post('/create-payment-intent', { price: amountInUSD });
-      setClientSecret(res.data.clientSecret);
-    } catch (err) {
-      console.error('Error fetching clientSecret:', err);
-      setIsProcessing(false);
-      return;
-    }
+      const fetchedClientSecret = res.data.clientSecret;
 
-    // Create the payment method first
-    const { error: paymentMethodError, paymentMethod } = await stripe.createPaymentMethod({
-      type: 'card',
-      card,
-      billing_details: {
-        name: user?.displayName,
-        email: user?.email,
-      },
-    });
+      if (!fetchedClientSecret || !fetchedClientSecret.includes("_secret_")) {
+        throw new Error("Invalid payment secret.");
+      }
 
-    if (paymentMethodError) {
-      setMessage(`Payment failed: ${paymentMethodError.message}`);
-      setIsProcessing(false);
-      return;
-    }
-    else {
-      console.log(paymentMethod);
-    }
+      setClientSecret(fetchedClientSecret);
 
-  if (!clientSecret || !clientSecret.includes("_secret_")) {
-      setMessage("Invalid payment secret. Please try again.");
-      setIsProcessing(false);
-      return;
-    }
+      // Confirm the payment
+      const { error: confirmError, paymentIntent } = await stripe.confirmCardPayment(fetchedClientSecret, {
+        payment_method: {
+          card: card,
+          billing_details: {
+            name: user?.displayName,
+            email: user?.email,
+          },
+        },
+      });
 
-    // Confirm the payment intent
-    const { error: confirmError, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
-      payment_method: {
-        card: card,
-        billing_details: {
+      if (confirmError) {
+        throw new Error(confirmError.message);
+      }
+
+      if (paymentIntent.status === 'succeeded') {
+        setMessage('Payment successful!');
+        const payment = {
           name: user?.displayName,
           email: user?.email,
-        },
-      },
-    });
-    if (confirmError) {
-      setMessage(`Payment confirmation failed: ${confirmError.message}`);
-      setIsProcessing(false)
-    }
+          practice: practice,
+          price: amountInUSD,
+          status: paymentIntent.status,
+          transaction: paymentIntent.id,
+          date: new Date(),
+        };
 
-
-    if (paymentIntent.status === 'succeeded') {
-      setMessage('Payment successful!');
-      const payment = {
-        name: user?.displayName,
-        email: user?.email,
-        practice: practice,
-        price: amountInUSD,
-        status: paymentIntent.status,
-        transaction: paymentIntent.id,
-        date: new Date()   // utc date convert. use moment js 
+        const savePayment = await axios.post('https://decentmed-server.vercel.app/payments', payment);
+        if (savePayment.data.insertedId) {
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your Payment Successful",
+            showConfirmButton: false,
+            timer: 1500,
+          }).then(() => {
+            window.location.href = "/telehealth";
+          });
+        }
       }
-      await axios.post('https://decentmed-server.vercel.app/payments', payment)
-        .then(data => {
-          // console.log(data);
-          if (data?.data.insertedId) {
-            Swal.fire({
-              position: "top-end",
-              icon: "success",
-              title: "Your Payment Successful",
-              showConfirmButton: false,
-              timer: 1500
-            }).then(() => {
-              window.location.href = "/telehealth"; // Replace "/another-route-path" with the desired route
-            });
-          }
-        })
-        .catch(err => {
-          console.error('Error during payment:', err);
-          setMessage('An unexpected error occurred. Please try again.');
-        })
-
+    } catch (err) {
+      setMessage(err.message || 'An unexpected error occurred.');
+    } finally {
+      setIsProcessing(false);
     }
-
-    setIsProcessing(false);
   };
 
   return (

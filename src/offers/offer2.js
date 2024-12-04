@@ -44,7 +44,7 @@ const Offer2 = () => {
       <CookiesProvider>
 
         <div>
-          <img src={imge} className="pik1" alt='' />
+          <img src={imge} className="pik1 stripe" alt='' />
           <h2>{t('Pay with Credit Card')}</h2>
         </div>
         <Button onClick={handleClickOpen}>add cart</Button>

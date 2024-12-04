@@ -13,7 +13,7 @@ const Offer = () => {
       <CookiesProvider>
         
         <div>
-          <img src={imge} className="pik1" alt=''  />
+          <img src={imge} className="pik1 bitc" alt=''  />
           <h2>{t('Pay with Bitcoin')}</h2>
           </div>
         <CustomizedDialogs>

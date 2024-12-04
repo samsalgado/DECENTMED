@@ -509,6 +509,17 @@ h4 {
   height: 140px;
   top: -100px;
 }
+/* Small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .stripe {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .bitc {
+    width: 100%;
+  }
+}
 .whitepaper {
   display: flex;
   justify-content: flex-end;
