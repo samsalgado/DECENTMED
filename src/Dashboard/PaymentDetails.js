@@ -34,7 +34,7 @@ const PaymentDetails = ({ payments, index, refetch }) => {
         <td className="border px-4 py-2">{email}</td>
         <td className="border px-4 py-2">{practice}</td>
        
-        <td className="border px-4 py-2" style={{ wordWrap: 'break-word', wordBreak: 'break-all' }}>{bitcoinAddress || 'Stipe Pay'}</td>
+        <td className="border px-4 py-2" style={{ wordWrap: 'break-word', wordBreak: 'break-all' }}>{bitcoinAddress || 'Stripe Pay'}</td>
         <td className="border px-4 py-2">${price}</td>
         <td className="border px-4 py-2">
           {status === 'approved' ?
