@@ -17,6 +17,7 @@ import Blog1 from './pages/blogs/blog1';
 import Blog15 from './pages/blogs/blog15';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
+import Blog17 from './pages/blogs/blog17';
 import { Detox } from './pages/Detox';
 import { StemCell } from './pages/Stemcell';
 import { NotFound } from './pages/NotFound';
@@ -39,6 +40,7 @@ import Blog4 from './pages/blogs/blog4';
 import { Apoth } from './pages/Apoth';
 import { Chiro } from './pages/ChiroPRACT';
 import { Hypnopract } from './pages/hypnopract';
+import { AYPract } from './pages/AYPRACT';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 import SignUp from './pages/SignUp/SignUp';
 import StripePayment from './pages/StripePayment/StripePayment';
@@ -69,13 +71,14 @@ function App() {
           <Route path="/blog" element={<BlogPage t={t} />} />
           <Route path="/apoth" element={<Apoth t={t} />} />
           <Route path="/blog1" element={<Blog1 t={t} />} />
-          {/* <Route path="/blog17" element={<Blog17 t={t} />} /> */}
+          <Route path="/blog17" element={<Blog17 t={t} />} />
           <Route path="/blog2" element={<Blog2 t={t} />} />
           <Route path="/blog3" element={<Blog3 t={t} />} />
           <Route path="/herbalmedicine" element={<HerbalMedicine t={t} />} />
           <Route path='/hypnopract' element={<Hypnopract t={t} />} />
           <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
           <Route path='/chiropract' element={<Chiro t={t} />} />
+          <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
           <Route path="/blog4" element={<Blog4 t={t} />} />
           <Route path="/blog11" element={<Blog11 t={t} />} />
           <Route path="/cancer" element={<Blog6 t={t} />} />
