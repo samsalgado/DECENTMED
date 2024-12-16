@@ -1,4 +1,4 @@
-import '../App.css';
+Ima import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
@@ -28,7 +28,7 @@ export function AYPract() {
 
   <div class="row">
     <div class="col-md-6">
-      <h3>{t("Heart of Wellness")}</h3>
+      <h3>{t("Healing Goddess")}</h3>
       <a href='https://healinggoddessproducts.com/'>
     <figure>
         <img src={Stacy} alt="logo" />
