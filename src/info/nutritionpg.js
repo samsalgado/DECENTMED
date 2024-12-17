@@ -14,7 +14,7 @@ const Nutritionpage = () => {
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-title">Obesity Facts</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">Obesity Facts</th>}>
               <tr>
                 <img alt='' />
               <img className='gridimage' src={obese} alt='' />
@@ -23,7 +23,7 @@ const Nutritionpage = () => {
               </tr>
             
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-title">Dr. Sebi Food List</th>}>
+            <Collapsible trigger={<th className="collapsible-trigger">Dr. Sebi Food List</th>}>
               <tr>
                 <img alt='' />
               <img className='gridimage' src={drsebi} alt='' />
