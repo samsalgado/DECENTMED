@@ -25,7 +25,7 @@ const Pgchelation = () => {
     <tbody> 
     <Collapsible trigger={
       <Button variant="primary" className="collapsible-trigger">
-        >{t("Chelation 101 (Heavy Metal Detox)")}
+        Chelation Breakdown: Heavy Metal Detox
         </Button>
         }>
         <tr>
