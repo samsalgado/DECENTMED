@@ -307,10 +307,27 @@ body {
 /* Basic table styles */
 .collapsibles-table {
   /* Style the table containing titles and content */
-  border-collapse: collapse; /* Ensure table borders collapse properly */
+  margin: 0 auto; /* Ensure table borders collapse properly */
   width: 100%;
 }
+.collapsibles-table img {
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* Adds spacing around images */
+}
 
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .collapsible-trigger {
+    font-size: 14px;
+    padding: 8px 12px; /* Adjust button padding */
+  }
+
+  .collapsibles-table img {
+    margin: 5px auto; /* Reduce spacing for mobile */
+  }
+}
 .collapsibles-table th,
 .collapsibles-table td {
   padding: 10px; /* Adjust padding for spacing between content and borders */
