@@ -17,7 +17,7 @@ const Ayurvedaa = () => {
       <div className="collapsible">
         <Elements />
       </div>
-<iframe width="100%" height="600px" src="https://www.youtube.com/embed/mlFbTS9wVhE?si=fRt9B7LAT32KK3nX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+<iframe width="100%" height={315} src="https://www.youtube.com/embed/YHuAEIoV_Ow" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     <br></br>
     <div className='pr'>
         <h3>What is Ayurveda?</h3>
@@ -39,7 +39,7 @@ const Ayurvedaa = () => {
             4. Truly intuitive
         </p>
     </div>
-    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=6L1vMYZEMeNPaCH-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+    <iframe width="100%" height={315} src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=6L1vMYZEMeNPaCH-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
     </div>
     
