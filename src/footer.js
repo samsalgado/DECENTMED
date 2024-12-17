@@ -11,9 +11,6 @@ const Footer = () => {
   return (
 <div className="footer-container">
 <div className='socials'>
-<a href='https://btcpay0.voltageapp.io/apps/WYdgLYf994wmcnonsQdN1UrWZ6K/crowdfund'>
-            <img src={suriname} alt='' className='Logo'   />
-        </a>
         <a href='https://twitter.com/ttf123457'>
             <img src={x} alt='' className='Logo' />
         </a>
