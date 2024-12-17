@@ -10,7 +10,7 @@ const Homeo = () => {
         <iframe
             width="100%"
             height="475"
-            src="https://www.youtube.com/embed/xns7YBl6U7M?si=ea3bBuDqkUDlrcxj"
+            src="https://www.youtube.com/embed/j7bV-Ig45kg"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
