@@ -1,4 +1,4 @@
-Ima import '../App.css';
+import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
