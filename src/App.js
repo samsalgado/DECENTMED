@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import Fen from './pages/blogs/fenbendazole';
+import Ivermectin from './pages/blogs/ivermectin';
 import { Prevent } from './pages/Prevent';
 import Blog5 from './pages/blogs/blog5';
 import Blog8 from './pages/blogs/blog8';
@@ -85,6 +86,7 @@ function App() {
           <Route path="/blog5" element={<Blog5 t={t} />} />
           <Route path="/blog15" element={<Blog15 t={t} />} />
           <Route path="/blog15" element={<Blog15 t={t} />} />
+          <Route path="/ivermectin" element={<Ivermectin t={t} />} />
           <Route path="/fenbendazole" element={<Fen t={t} />} />
           <Route path="/prevent" element={<Prevent t={t} />} />
           <Route path="/blog8" element={<Blog8 t={t} />} />

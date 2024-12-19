@@ -77,7 +77,6 @@ export function Telehealth({ t }) {
             </div>
             <div>
                 <Info7 />
-
             </div>
             <br></br>
             <footer>

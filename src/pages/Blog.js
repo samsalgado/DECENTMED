@@ -10,6 +10,7 @@ import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
 import Fenbendazole from '../images copy/Fenbendazole.png';
+import Ivermectin from '../images copy/IVERMECTINCANCER.jpeg';
 import shroom from '../images copy/shroom.webp';
 import chirotreat from '../images copy/chirotreats.png';
 import montreal from "../images copy/montreal.png";
@@ -51,7 +52,17 @@ const BlogPage = () => {
       </a>
 
       </div>
-
+      </div>
+      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Ivermectin for Cancer</h2>
+      <div className='container'>
+      <a href='/ivermectin'>
+    <figure>
+        <img className='gridimag' src={Ivermectin} alt="logo" />
+          <figcaption>Click on image for full Blog</figcaption>
+        </figure>
+      </a>
+      </div>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Can Constipation cause Back Pain?
     </h2>
     
