@@ -32,7 +32,7 @@ The war on drugs has been a colossal failure. Since its inception, the drug war 
     <div className="title-container">
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-title">Chiropractic Benefits</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">Chiropractic Benefits</th>}>
               <tr className="image-container">
                 <img alt='' />
                 <img className='image' src={chiropractorstats} alt='' />        
