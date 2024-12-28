@@ -211,6 +211,21 @@ const PlantVids = () => {
             id:42,
             videoUrl:"https://www.youtube.com/embed/N1ztMOfIkGw?si=p848MXDle08nZRVc",
             name:"Bush Candle Tree"
+        },
+        {
+            id:43,
+            videoUrl:"https://www.youtube.com/embed/lcKeU_AKQeQ",
+            name:"Heavenly Bamboo"
+        },
+        {
+            id:44,
+            videoUrl:"https://www.youtube.com/embed/u0EopIpcrAw",
+            name:"Chinese Holly"
+        },
+        {
+            id:45,
+            videoUrl:"https://www.youtube.com/embed/mRSnRX53QNc",
+            name:"Johnny Jump Up"
         }
 
         
