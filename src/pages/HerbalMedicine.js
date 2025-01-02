@@ -1,7 +1,6 @@
 import React from 'react'
 import Topbar from "./topbar";
 import "../info/homeo.css";
-import Footer from '../footer';
 import Herbal from '../info/Herbal';
 import PlantVids from '../info/Plantvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
