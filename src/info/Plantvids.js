@@ -199,8 +199,8 @@ const PlantVids = () => {
         },
         {
             id:40,
-            videoUrl:"https://www.youtube.com/embed/mzVYCtPz73c?si=fanVY7y0ValCmqdr",
-            name:"Banana"
+            videoUrl:"https://www.youtube.com/embed/xQiCRN_gie8",
+            name:"English Ivy"
         },
         {
             id:41,
