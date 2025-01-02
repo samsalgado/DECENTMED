@@ -20,9 +20,6 @@ const HerbalMedicine = ({t}) => {
     <br></br>
     <h1 className='center'>Encyclopedia of Herbal Medicine</h1>
     <PlantVids />
-    <footer>
-        <Footer />
-    </footer>
 </div>
 
   )
