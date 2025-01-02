@@ -226,6 +226,21 @@ const PlantVids = () => {
             id:45,
             videoUrl:"https://www.youtube.com/embed/mRSnRX53QNc",
             name:"Johnny Jump Up"
+        },
+        {
+            id:46, 
+            videoUrl:"https://www.youtube.com/embed/SlWgwzVn0rM",
+            name: "Chinese Witch Hazel"
+        },
+        {
+            id:47,
+            videoUrl:"https://www.youtube.com/embed/_dA-c1F9aew",
+            name:"Bigleaf Hydrangea"
+        },
+        {
+            id:48,
+            videoUrl:"https://www.youtube.com/embed/1cB4G1oVtxk",
+            name: "Oriental bittersweet"
         }
 
         
