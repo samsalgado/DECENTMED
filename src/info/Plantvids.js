@@ -249,11 +249,11 @@ const PlantVids = () => {
         <div className="plant-container">
             {plant.map((val, key) => {
                 return (
-                    <div key={key} className="col-6 col-md-2 text-center mb-4">
-                        <div className="contain">
+                    <div key={key} className="plant-card">
+                        <div className="video-container">
                         <iframe 
                            width="100%" // Full width
-                           height="600" 
+                           height="315" 
                             title="Video" 
                             src={val.videoUrl} 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
