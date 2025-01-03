@@ -632,6 +632,13 @@ select {
   margin: 0 auto; /* Remove margin for better mobile spacing */
   width: 100%; /* Use full viewport width */
 }
+/* Video container for responsiveness */
+.video-container iframe {
+  border: none;
+  border-radius: 8px;
+  aspect-ratio: 16/9; /* Maintain a proper aspect ratio for the iframe */
+  width: 100%;
+  }
 input[type="submit"]:hover {
   background-color: #45a049;
 }
@@ -793,6 +800,14 @@ input[type="submit"]:hover {
 .bottom-fix {
   bottom: 0;
 }
+.plant-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 16px;
+}
+
 
 
 /* Individual plant card styling */
@@ -1117,4 +1132,31 @@ td:last-child {
   color: #c60606;
   font-size: 25px;
   font-weight: bold;
+}
+/* Typography adjustments */
+.plant-card h3 {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #333;
+}
+
+/* Responsive design for medium and large screens */
+@media (min-width: 768px) {
+  .plant-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .plant-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plant-container {
+    gap: 24px;
+  }
+
+  .plant-card {
+    padding: 24px;
+  }
 }
