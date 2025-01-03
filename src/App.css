@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  p text-align: center;
 }
 
 .App-logo {
@@ -794,13 +794,18 @@ input[type="submit"]:hover {
   bottom: 0;
 }
 
+
+/* Individual plant card styling */
+
 /* Plant container styles */
+/* General container styling */
 .plant-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* Space between columns */
+  display: grid;
+  gap: 16px; /* Spacing between items */
   padding: 16px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 }
 
 .contain {
