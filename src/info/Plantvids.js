@@ -241,6 +241,11 @@ const PlantVids = () => {
             id:48,
             videoUrl:"https://www.youtube.com/embed/1cB4G1oVtxk",
             name: "Oriental bittersweet"
+        },
+        {
+            id:49,
+            videoUrl:"https://www.youtube.com/embed/_aZqcCtMDNs",
+            name: "Common Boxwood"
         }
 
         
