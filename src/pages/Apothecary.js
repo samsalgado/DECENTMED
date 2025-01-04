@@ -1687,7 +1687,7 @@ const Apothecary = () => {
   return (
 
     <div className='contents'>
-      <div   className='plant-container'>
+      <div   className='plant-containers'>
       
           {plant.map((val) => (
             <ApothecaryData val={val} key={val.id}>

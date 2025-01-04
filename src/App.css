@@ -810,19 +810,12 @@ input[type="submit"]:hover {
 
 /* Individual plant card styling */
 
-/* Plant container styles */
-.plant-container {
+/* Plant container styles herbalmedicine */
+.plant-container  {
   display: grid;
   gap: 16px; /* Spacing between items */
   padding: 16px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.contain {
-  flex: 1 1 calc(100% - 16px); /* Default for small devices */
-  max-width: calc(100% - 16px);
-  padding: 8px; /* Internal padding */
-  box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
@@ -833,6 +826,32 @@ input[type="submit"]:hover {
     align-items: center; /* Center vertically */
   }
 }
+
+/* Plant container styles apothecary */
+.plant-containers {
+  display:flex;
+flex-wrap: wrap;
+  gap: 16px; /* Spacing between items */
+  padding: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (max-width: 767px) {
+  /* Small devices */
+  .plant-containers {
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+}
+
+.contain {
+  flex: 1 1 calc(100% - 16px); /* Default for small devices */
+  max-width: calc(100% - 16px);
+  padding: 8px; /* Internal padding */
+  box-sizing: border-box;
+}
+
 
 @media (min-width: 768px) {
   /* Medium devices (3 columns) */
