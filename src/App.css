@@ -1,5 +1,5 @@
 .App {
-   text-align: center;
+  text-align: center;
 }
 
 .App-logo {
@@ -638,7 +638,7 @@ select {
   border-radius: 8px;
   aspect-ratio: 16/9; /* Maintain a proper aspect ratio for the iframe */
   width: 100%;
-  }
+}
 input[type="submit"]:hover {
   background-color: #45a049;
 }
@@ -808,20 +808,15 @@ input[type="submit"]:hover {
   padding: 16px;
 }
 
-
-
 /* Individual plant card styling */
 
 /* Plant container styles */
-/* General container styling */
 .plant-container {
   display: grid;
   gap: 16px; /* Spacing between items */
   padding: 16px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
-
 
 .contain {
   flex: 1 1 calc(100% - 16px); /* Default for small devices */
