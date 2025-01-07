@@ -251,6 +251,11 @@ const PlantVids = () => {
             id: 50,
             videoUrl:"https://youtube.com/embed/vEiwD8mdxe4",
             name: "Winged Spindle Tree"
+        },
+        {
+            id: 51,
+            videoUrl:"https://www.youtube.com/embed/ITqIATgSwH0",
+            name: "French Lavender"
         }
 
 
