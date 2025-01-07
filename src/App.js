@@ -35,7 +35,6 @@ import { Ayurveda } from './pages/Ayurveda';
 import { Chiropractic } from './pages/Chiropractic';
 import { Chelation } from './pages/Chelation';
 import { Telehealth } from './pages/Telehealth';
-import Bitcoin from './pages/blogs/bitcoin';
 import Blog3 from './pages/blogs/blog3';
 import Blog4 from './pages/blogs/blog4';
 import { Apoth } from './pages/Apoth';
@@ -105,7 +104,6 @@ function App() {
           <Route path="/telehealth" element={<Telehealth t={t} />} />
           <Route path="/about" element={<About t={t} />} />
           <Route path="/blog7" element={<Blog7 t={t} />} />
-          <Route path="/bitcoin" element={<Bitcoin t={t} />} />
           <Route path="/login" element={<Login t={t} />} />
           <Route path="/signin" element={<SignUp t={t} />} />
           <Route path="/stripepay" element={<StripePayment t={t} />} />
