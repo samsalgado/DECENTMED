@@ -1,12 +1,10 @@
 import React from 'react';
 import Topbar from './topbar';
 import Footer from '../footer';
-import bitcoin from "../images copy/btc (1).png";
 import B17 from "../images copy/B17.png";
 import hypnotherapy from "../images copy/hypno.png";
 import batana from "../images copy/batana.png";
 import hepB from "../images copy/hepB.png";
-import BTC from "../images copy/2140.webp";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
 import '../App.css';
 import Fenbendazole from '../images copy/Fenbendazole.png';
@@ -18,7 +16,6 @@ import consult from "../images copy/consult.png";
 import RoseOil from '../images copy/roseoil.png';
 import cancerimg from "../images copy/cancerimg.png";
 import cell from "../images copy/cell.png";
-import surinameorangepill from "../images copy/surinameonboard.jpeg";
 import acuneed from '../images copy/acuneed.png';
 import constipation from '../images copy/constipation.png';
 import blogs from '../images copy/blogs.png';
@@ -37,7 +34,7 @@ const BlogPage = () => {
         <Topbar />
         </header>
         <div className='container'>
-        <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Blogs</h1>
+        <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Health & Wellness Blogs</h1>
        <img className='gridimag' src={blogs} alt="logo" />
        </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -332,22 +329,6 @@ const BlogPage = () => {
       </a>
     </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>When Will The Last Bitcoin be Mined?</h2>
-    <div className='pr'>
-    <p>
-    One of the best parts of Bitcoin is its supply. Inflation is running rampant and will not cease until it’s too late. USD operates upon the printer, and the Federal Reserve has not stopped printing money. In 2008 the Federal Reserve injected $500 billion into the US economy. How is Bitcoin different from the traditional financial system? Bitcoin has a set supply of 21 million coins, and will never exceed the supply. The last Bitcoin mined will be in 2140.
-        </p>
-      </div>
-    </div>
-    <div className='container'>
-    <a href='/blog11'>
-    <figure>
-        <img className='gridimag' src={BTC} alt="logo" />
-          <figcaption>Click on image for full Blog</figcaption>
-        </figure>
-      </a>
-    </div>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Mushrooms & Relationships    </h2>
     <div className='pr'>
         <p>
@@ -363,22 +344,7 @@ const BlogPage = () => {
       </div>
         </div>
         </div>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Orange Pill: Onboarding Suriname onto Bitcoin    </h2>
-    <div className='pr'>
-        <p>
-        When the world thinks of South America - Colombia, Brazil and Argentina are common nations mentioned. Lionel Messi, the Venezuela situation, Pablo Escobar or the Amazon Rainforest are referenced regarding South America. Most people cannot find Suriname on a map, let alone explain its history. Suriname gained its independence on November 25, 1975, from the Netherlands. Companies like BitcoinSranan are working toward making  Now, Suriname is on the path to becoming the next El Salvador and onboarding the nation on Bitcoin.
-        </p>
-        <div className='container'>
-    <a href='/blog15'>
-    <figure>
-        <img className='gridimag' src={surinameorangepill} alt="logo" />
-          <figcaption>Click on image for blog</figcaption>
-        </figure>
-      </a>
-      </div>
-        </div>
-    </div>
+    
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Rose Oil Benefits</h2>
     <div className='pr'>
