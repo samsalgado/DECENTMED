@@ -108,22 +108,6 @@ const BlogPage = () => {
       </div>
 
     </div>
- 
-  <div className='container'>
-    <div className='video-container'>
-          <iframe
-            width="100%"
-            height="200"
-            src="https://www.youtube.com/embed/0nCQbNHj9io?si=WQ6pa7RdA12659Rm"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-          </div>   
-</div>
-</div>  
-
-    </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>The Curious Case of Cancer: Everyday Fruit for Prevention</h2>
     <div className='pr'>
