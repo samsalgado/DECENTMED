@@ -108,22 +108,7 @@ const BlogPage = () => {
       </div>
 
     </div>
-    <br></br>
  
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>What is Bitcoin?</h2>
-    <div className='pr'>
-    <p>
-    Imagine a world where you can send money from your phone to pay your bills, accept security deposits, and transact with anyone as if they were right next to you. The world is less complicated than people think; dropping an apple determine gravity. As of today, systems are complex. There are multiple channels and entities in place overseeing the simplest of exchanges. Bitcoin is this simplified world, a way to transact and exchange person-to-person without a “middleman.”
-    </p>
-    <div className='container'>
-    <a href='/bitcoin'>
-    <figure>
-        <img className='gridimag' src={bitcoin} alt="logo" />
-          <figcaption>Click on image for full Blog</figcaption>
-        </figure>
-      </a>
-      </div>
   <div className='container'>
     <div className='video-container'>
           <iframe
