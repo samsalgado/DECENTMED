@@ -3,7 +3,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import MeditationInfo from '../info/mediationinfo.js';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Meditation({t}) {
+export default function Meditation({t}) {
     return (
         <>
                 <Helmet>  {/* Add Helmet component */}
