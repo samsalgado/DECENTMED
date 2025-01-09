@@ -5,7 +5,7 @@ const MeditationInfo = () => {
   return (
     <div className='container'>
               <h1>Meditation</h1>
-<iframe width="100%" height={500} src="https://www.youtube.com/embed/_dXK3YZHGcw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+<iframe width="100%" height={500} src="https://www.youtube.com/embed/cQ-pEQZrVvw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 <Button variant="primary" href="https://sanjivana.com/" target="_blank">Visit Serenity Meditations</Button>  {/* Added Bootstrap Button */}
     <br></br>
@@ -86,7 +86,8 @@ Meditation is a practice, and it’s normal for the mind to wander. Gently bring
 The healing power of meditation is profound, offering benefits that extend far beyond relaxation. By incorporating meditation into daily life, individuals can experience a transformative journey toward improved mental clarity, emotional stability, and physical well-being. As more people recognize its potential, meditation may well become a cornerstone of holistic health practices in our modern world.
 </p>
     </div>
-
+    
+    <h2>All Things Meditation</h2>
     <iframe width="100%" height={315} src="https://www.youtube.com/embed/uAYmlKc9R-k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     </div>
     
