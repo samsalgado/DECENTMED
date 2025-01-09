@@ -1,5 +1,6 @@
 import React from 'react'
 import "../App.css";
+import { Button } from 'react-bootstrap';
 const MeditationInfo = () => {
   return (
     <div className='container'>
