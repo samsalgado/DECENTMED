@@ -9,6 +9,7 @@ import { Prevent } from './pages/Prevent';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
 import Blog8 from './pages/blogs/blog8';
+import Meditation from './pages/Meditation';
 import Blog7 from './pages/blogs/blog7';
 import Blog9 from './pages/blogs/blog9';
 import Blog11 from './pages/blogs/blog11';
@@ -78,6 +79,7 @@ function App() {
           <Route path='/hypnopract' element={<Hypnopract t={t} />} />
           <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
           <Route path='/chiropract' element={<Chiro t={t} />} />
+          <Route path='/meditation' element={<Meditation t={t} />} />
           <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
           <Route path="/blog4" element={<Blog4 t={t} />} />
           <Route path="/blog11" element={<Blog11 t={t} />} />
