@@ -256,6 +256,11 @@ const PlantVids = () => {
             id: 51,
             videoUrl:"https://www.youtube.com/embed/ITqIATgSwH0",
             name: "French Lavender"
+        },
+        {
+            id:52
+            videoUrl:"https://www.youtube.com/embed/hVaT0GEhKnA",
+            name: "Rosin Weed Plant"
         }
 
 
