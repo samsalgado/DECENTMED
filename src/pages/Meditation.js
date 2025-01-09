@@ -1,7 +1,7 @@
 import '../App.css';
 import Topbar from './topbar';
 import Footer from '../footer';
-import MeditationInfo from '../info/mediationinfo.js';
+import MeditationInfo from '../info/mediationinfo';
 import { Helmet } from 'react-helmet'; // Import Helmet
 export default function Meditation({t}) {
     return (
