@@ -87,8 +87,6 @@ The healing power of meditation is profound, offering benefits that extend far b
 </p>
     </div>
     
-    <h2>All Things Meditation</h2>
-    <iframe width="100%" height={315} src="https://www.youtube.com/embed/uAYmlKc9R-k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     </div>
     
   )
