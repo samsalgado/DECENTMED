@@ -62,6 +62,10 @@ const EducationMenu = () => {
       <img className='coursepic' src={Treatment.prevent} alt="" />
       </NavLink>
       </ul>
+          <ul>
+      <NavLink to="/meditation">{t('Meditation')}
+      </NavLink>
+      </ul>
     </NavDropdown>
   );
 };
