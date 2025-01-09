@@ -7,14 +7,10 @@ const MeditationVids = () => {
             videoUrl: "https://www.youtube.com/embed/uAYmlKc9R-k?si=RcAneTXFZopuzqaC",
             name: "Enlightenment and Meditation",
         },
-        {
-            id:2,
-            videoUrl:"https://www.youtube.com/embed/nL_UNpSBFnY?feature=shared",
-            name: "Mindfulness through Meditation"
-        },
+      
 
 {
-            id:3,
+            id:2,
             videoUrl:"https://www.youtube.com/embed/nL_UNpSBFnY?feature=shared",
             name: "Mindfulness through Meditation"
         },
