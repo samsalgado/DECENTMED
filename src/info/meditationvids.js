@@ -31,14 +31,9 @@ const MeditationVids = () => {
             name: "Mind Rest - Guided Breath Meditation"
         },
 
-{
-            id:6,
-            videoUrl:"https://www.youtube.com/embed/GMe5_qOxP1Y?si=r8mZX1ZVPalVFsnq",
-            name: "Mind Rest - Guided Breath Meditation"
-        },
 
 {
-            id:7,
+            id:6,
             videoUrl:"https://youtu.be/526W579R8Kc?si=tcrLEI4joPOui-5m",
             name: "Self-Care Meditation"
         }
