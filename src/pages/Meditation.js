@@ -17,7 +17,8 @@ export default function Meditation({t}) {
         </header>
             <MeditationInfo />
        <br></br>
-
+        <h1 className='center'>Meditation 101</h1>
+        <PlantVids />
         <footer>
             <Footer />
         </footer>
