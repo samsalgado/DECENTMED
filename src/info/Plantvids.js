@@ -113,11 +113,6 @@ const PlantVids = () => {
             name: "Rosa Nutkana"
         },
         {
-            id: 23,
-            videoUrl: "https://www.youtube.com/embed/dmbJUMaZq_s?si=ObiTM1ItYEjqbf2U",
-            name: "Blackberry"
-        },
-        {
             id: 24,
             videoUrl: "https://www.youtube.com/embed/M5IPjiJ3G50?si=hlVjfeqfZ9sgE74g",
             name: "Black Locust Tree"
