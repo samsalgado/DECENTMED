@@ -14,31 +14,31 @@ const MeditationVids = () => {
         },
 
 {
-            id:3
+            id:3,
             videoUrl:"https://www.youtube.com/embed/nL_UNpSBFnY?feature=shared",
             name: "Mindfulness through Meditation"
         },
 
 {
-            id:4
+            id:4,
             videoUrl:"https://www.youtube.com/embed/JqHfqYasY6Y?si=Oslq9NBWoGF5y58w",
             name: "All Things Meditation - All You Need to Know"
         },
 
 {
-            id:5
+            id:5,
             videoUrl:"https://www.youtube.com/embed/GMe5_qOxP1Y?si=r8mZX1ZVPalVFsnq",
             name: "Mind Rest - Guided Breath Meditation"
         },
 
 {
-            id:5
+            id:6,
             videoUrl:"https://www.youtube.com/embed/GMe5_qOxP1Y?si=r8mZX1ZVPalVFsnq",
             name: "Mind Rest - Guided Breath Meditation"
         },
 
 {
-            id:5
+            id:7,
             videoUrl:"https://youtu.be/526W579R8Kc?si=tcrLEI4joPOui-5m",
             name: "Self-Care Meditation"
         }
