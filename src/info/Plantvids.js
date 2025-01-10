@@ -266,6 +266,12 @@ const PlantVids = () => {
             id:54,
             videoUrl:"https://www.youtube.com/embed/qLXaDR1qZ_U",
             name: "Slender Amaranth"
+        },
+        {
+            id:55,
+            videoUrl: "https://www.youtube.com/embed/lrE0nYyiaPs",
+            name: "Coral Tree"
+        
         }
 
 
