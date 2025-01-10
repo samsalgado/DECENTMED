@@ -261,6 +261,11 @@ const PlantVids = () => {
         id:53,
         videoUrl: "https://www.youtube.com/embed/dmbJUMaZq_s?feature=share",
         name: "Blackberry"
+        },
+        {
+            id:54,
+            videoUrl:"https://www.youtube.com/embed/qLXaDR1qZ_U",
+            name: "Slender Amaranth"
         }
 
 
