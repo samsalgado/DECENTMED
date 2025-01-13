@@ -5,7 +5,6 @@ import Footer from '../footer';
 import Stacy from '../cards/healinggoddess.png'
 import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
-import { Height } from '@mui/icons-material';
 export function AYPract() {
   const { t } = useTranslation();
 
