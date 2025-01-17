@@ -9,7 +9,8 @@ chiro: require("../images copy/Chiropractic.png"),
 chelation: require("../images copy/chelation.png"),
 homeopath: require("../images copy/homeopathy.png"),
 hypnotherapy:require("../images copy/hypno.png"),
-herbalmedicine:require("../images copy/HERBALMEDICINE.png")
+herbalmedicine:require("../images copy/HERBALMEDICINE.png"),
+meditation:require("../images copy/meditation.jpg")
 
 };
 export default Treatment;
