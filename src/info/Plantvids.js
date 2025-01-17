@@ -284,6 +284,24 @@ const PlantVids = () => {
             videoUrl:"https://www.youtube.com/embed/rHbqtcfKuZ8",
             name: "Lily Magnolia"
         
+        },
+        {
+            id:58,
+            videoUrl:"https://www.youtube.com/embed/Z-7UP5tMma8",
+            name: "Sweet Gum Tree"
+        
+        },
+        {
+            id:59,
+            videoUrl:"https://www.youtube.com/embed/8uOE2r6bkaw",
+            name: "Mulberry"
+        
+        },
+        {
+            id:60,
+            videoUrl:"https://www.youtube.com/embed/d1El8YLjMbM",
+            name: "Camellia"
+        
         }
 
 
