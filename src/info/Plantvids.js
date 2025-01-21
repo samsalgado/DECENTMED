@@ -302,6 +302,11 @@ const PlantVids = () => {
             videoUrl:"https://www.youtube.com/embed/d1El8YLjMbM",
             name: "Camellia"
         
+        },
+        {
+            id:61,
+            videoUrl:"https://www.youtube.com/embed/D2cNN0u-thY",
+            name: "Oleander"
         }
 
 
