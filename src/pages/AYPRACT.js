@@ -2,6 +2,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import ReactPlayer from 'react-player';
 import Stacy from '../cards/healinggoddess.png'
 import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
@@ -36,6 +37,14 @@ export function AYPract() {
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
+      <div>
+      <ReactPlayer
+url="https://www.dropbox.com/scl/fo/9qlfdbvezunz90djxfkol/AITtkyoWqA6NXTGeNNEQsMM?e=2&preview=110124+Fireside+Chat+.mov&rlkey=8c5po1fm5sh4mmaoz4xdaltxc&st=9i5re8pz&dl=0" // Replace with your video URL
+width='100%'
+height='400px'
+controls={true}
+/>
+</div>
       <h5>Stacy Theodossin - The Healing Goddess      </h5>
       <p>
       {t("After Stacy graduated from San Diego State University in 1992, she moved to the Detroit area and began her career in sales and marketing.  She traveled the world and climbed the corporate ladder. But something was missing.  Before long, she was back to her studies – this time in Ayurvedic Medicine.  Her own journey to health and healing, through Ayurveda, had already begun a few years earlier -- when she was a patient with her own chronic health conditions. When she had the opportunity to deepen her knowledge, she jumped at the chance.  At first, it was from an academic standpoint.  She couldn’t wrap her mind around how it all worked.  After hours and years of study and residency, she found the answers she sought. Then, her mission was clear – she needed to teach others how to HEAL & TRANSFORM their own lives through Ayurveda, the 'wisdom of life.")}
