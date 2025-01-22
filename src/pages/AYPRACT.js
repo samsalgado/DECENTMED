@@ -39,7 +39,7 @@ export function AYPract() {
       </a>
       <div>
       <ReactPlayer
-url="https://www.dropbox.com/scl/fo/9qlfdbvezunz90djxfkol/AITtkyoWqA6NXTGeNNEQsMM?e=2&preview=110124+Fireside+Chat+.mov&rlkey=8c5po1fm5sh4mmaoz4xdaltxc&st=9i5re8pz&dl=0" // Replace with your video URL
+url="https://www.dropbox.com/scl/fo/9qlfdbvezunz90djxfkol/AITtkyoWqA6NXTGeNNEQsMM?raw=1" // Replace with your video URL
 width='100%'
 height='400px'
 controls={true}
