@@ -312,7 +312,12 @@ const PlantVids = () => {
             id:62,
             videoUrl:"https://www.youtube.com/embed/p_7yHzi8jRE",
             name:"Ditch Lily"
-         }
+         },
+        {
+        id:63,
+        videoUrl:"https://www.youtube.com/embed/h9ZDNtHrMuM",
+        name:"Rose Tea"
+        }
 
 
     ]);
