@@ -39,9 +39,9 @@ export function AYPract() {
       </a>
       <div>
       <ReactPlayer
-url="https://www.dropbox.com/scl/fo/9qlfdbvezunz90djxfkol/AITtkyoWqA6NXTGeNNEQsMM?raw=1" // Replace with your video URL
-width='100%'
+url="https://www.youtube.com/embed/pM79ofh3cUM"
 height='400px'
+width="100%"
 controls={true}
 />
 </div>
