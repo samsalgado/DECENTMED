@@ -307,8 +307,12 @@ const PlantVids = () => {
             id:61,
             videoUrl:"https://www.youtube.com/embed/D2cNN0u-thY",
             name: "Oleander"
-        }
-
+        },
+        {
+            id:62,
+            videoUrl:"https://www.youtube.com/embed/p_7yHzi8jRE",
+            name:"Ditch Lily"
+         }
 
 
     ]);
