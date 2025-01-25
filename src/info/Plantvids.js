@@ -317,6 +317,11 @@ const PlantVids = () => {
         id:63,
         videoUrl:"https://www.youtube.com/embed/h9ZDNtHrMuM",
         name:"Rose Tea"
+        },
+        {
+        id:64,
+        videoUrl:"https://www.youtube.com/embed/H1vAnonkeSM",
+        name:"Wild Sage"
         }
 
 
