@@ -322,6 +322,11 @@ const PlantVids = () => {
         id:64,
         videoUrl:"https://www.youtube.com/embed/H1vAnonkeSM",
         name:"Wild Sage"
+        },
+        {
+        id:65,
+        videoUrl:"https://www.youtube.com/embed/ytbsI1YPWa8",
+        name:"Fremont Cottonwood"
         }
 
 
