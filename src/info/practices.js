@@ -52,7 +52,7 @@ function Practices() {
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
-                    <h3>Nutrition/Dietician</h3>
+                    <h3>Nutrition</h3>
 
                     <img className="img-custom" src={Departments.nutriton} alt="Nutrition" />
 
