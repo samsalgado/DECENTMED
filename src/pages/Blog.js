@@ -326,7 +326,8 @@ const BlogPage = () => {
     <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
     <figure>
         <img className='gridimag' src={Fagen} alt="logo" />
-          <figcaption>Click on image for blog by Julie P. Fry on Mushrooms</figcaption>
+          <figcaption>Click on image for blog by Nutritionist Randee Fagen 
+        </figcaption>
         </figure>
       </a>
       </div>
