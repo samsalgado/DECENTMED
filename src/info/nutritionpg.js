@@ -18,7 +18,8 @@ const Nutritionpage = () => {
               <tr>
                 <img alt='' />
               <img className='gridimage' src={obese} alt='' />
-              <img className='gridimag' src={drsebi} alt='' />
+        
+              
               <img alt='' />
               </tr>
             
