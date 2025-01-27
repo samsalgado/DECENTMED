@@ -315,6 +315,23 @@ const BlogPage = () => {
         </div>
     
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Mushrooms & Relationships    </h2>
+    <div className='pr'>
+        <p>
+        In the world of healthcare, a quiet revolution is underway. Patients and practitioners alike are realizing that the traditional "band-aid" approach—managing symptoms without addressing underlying causes—often falls short. This growing awareness has sparked interest in functional medicine, a patient-centered approach that focuses on uncovering and resolving the root causes of illness.
+        So, what makes functional medicine so transformative? Let’s explore why this approach is reshaping the future of healthcare.
+         </p>
+        <div className='container'>
+    <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
+    <figure>
+        <img className='gridimag' src={shroom} alt="logo" />
+          <figcaption>Click on image for blog by Julie P. Fry on Mushrooms</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Rose Oil Benefits</h2>
     <div className='pr'>
         <p>
