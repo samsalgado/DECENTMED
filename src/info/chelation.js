@@ -18,9 +18,7 @@ const Pgchelation = () => {
 
   <div className="title-container">
 
-<div className="collapsible">
    <img className='gridimag' src={chelationgraphic} alt='' />
-</div>
 <table className="collapsibles-table">
     <tbody> 
     <Collapsible trigger={
