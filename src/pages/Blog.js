@@ -1,6 +1,7 @@
 import React from 'react';
 import Topbar from './topbar';
 import Footer from '../footer';
+import Fagen from "../images copy/IMG_6505.jpeg";
 import B17 from "../images copy/B17.png";
 import hypnotherapy from "../images copy/hypno.png";
 import batana from "../images copy/batana.png";
@@ -324,7 +325,7 @@ const BlogPage = () => {
         <div className='container'>
     <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
     <figure>
-        <img className='gridimag' src={shroom} alt="logo" />
+        <img className='gridimag' src={Fagen} alt="logo" />
           <figcaption>Click on image for blog by Julie P. Fry on Mushrooms</figcaption>
         </figure>
       </a>
