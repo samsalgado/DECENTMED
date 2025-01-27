@@ -316,7 +316,7 @@ const BlogPage = () => {
         </div>
     
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>Mushrooms & Relationships    </h2>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>The Root Cause Approach: A Path to True Healing</h2>
     <div className='pr'>
         <p>
         In the world of healthcare, a quiet revolution is underway. Patients and practitioners alike are realizing that the traditional "band-aid" approach—managing symptoms without addressing underlying causes—often falls short. This growing awareness has sparked interest in functional medicine, a patient-centered approach that focuses on uncovering and resolving the root causes of illness.
