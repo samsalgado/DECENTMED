@@ -259,10 +259,6 @@ const Hoxsey = ({t}) => {
            <p>
             <a href="https://www.dropbox.com/scl/fi/lips9wksb1voy7wwcvi01/YouDontHaveToDie_HarryHoxsey.pdf?rlkey=95a8mmfufb4vfei6os3249aq5&st=0o8e265b&dl=0">You Don’t Have to Die Full Book</a>   
            </p>
-
-  <p>
-            <a href="https://www.dropbox.com/scl/fi/lips9wksb1voy7wwcvi01/YouDontHaveToDie_HarryHoxsey.pdf?rlkey=95a8mmfufb4vfei6os3249aq5&st=0o8e265b&dl=0">You Don’t Have to Die Full Book</a>   
-           </p>
 <p>
   <a href="https://youtu.be/0TGjm7wIyUk?si=bw0UwHeh2IPGJxGN">Krebiozen Full Movie</a>
 </p>
