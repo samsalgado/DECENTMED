@@ -13,7 +13,12 @@
   border-radius: 5px;
   margin-top: 10px;
 }
-
+.rumble {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
 .description-container.show {
   background-color: lightblue; /* Visual feedback on click */
 }
