@@ -114,10 +114,8 @@ const Ivermectin = ({t}) => {
           <tbody> 
           <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
                <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
-               <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
                <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
-               <a href="https://www.amazon.com/Cancer-Care-Repurposed-Metabolic-Interventions/dp/0960121706"> <img src={cancercare} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
             </Collapsible>
           </tbody>
         </table>
