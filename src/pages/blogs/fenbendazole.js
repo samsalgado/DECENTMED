@@ -1,6 +1,7 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import Collapsible from 'react-collapsible';
 import starvecancer from '../../images copy/starvecancer.webp';
@@ -86,6 +87,20 @@ const Fen = ({t}) => {
            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437363/">Source 2</a>
            </p>
           </div>
+      </div>
+       <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
+               <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
+               <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
+              <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
+               <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+               <a href="https://www.amazon.com/Cancer-Care-Repurposed-Metabolic-Interventions/dp/0960121706"> <img src={cancercare} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+            </Collapsible>
+          </tbody>
+        </table>
+       
       </div>
       <Footer />
     </>
