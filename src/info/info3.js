@@ -2,7 +2,6 @@ import React from 'react'
 import "../App.css";
 import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
-import ReactPlayer from 'react-player';
 import Protocols from './Protocols';
 const Info3 = () => {
 
@@ -24,12 +23,17 @@ const Info3 = () => {
          <a href='https://gerson.org/'> Cancer</a> treatments globally like the Gerson Therapy and <a href='https://drsebiscellfood.com/'>Dr. Sebi diet</a> use forms of Detoxification to cleanse the body from toxins that cause cancer. 
         </p>
         <h4>Detoxification Protocols</h4>
-     <ReactPlayer
-  url="https://rumble.com/embed/v6c1084/?pub=4hu51y"
-  width="100%"
-  height="400px"
-  controls={true}
-/>
+     <div>
+  <iframe
+    className="rumble"
+    width="100%"
+    height="400px"
+    src="https://rumble.com/embed/v6bxnhg/?pub=4hu51y"
+    frameBorder="0"
+    allowFullScreen
+    title="Rumble video player"
+  ></iframe>
+</div>
     </div>
     <div className="title-container">
         <Protocols />
