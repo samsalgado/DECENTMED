@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
+import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
@@ -89,6 +90,7 @@ function App() {
           <Route path="/blog15" element={<Blog15 t={t} />} />
           <Route path="/bitcoin" element={<Bitcoin t={t}/>} />
           <Route path="/ivermectin" element={<Ivermectin t={t} />} />
+          <Route path="/hoxsey" element={<Hoxsey t={t} />} />
           <Route path="/fenbendazole" element={<Fen t={t} />} />
           <Route path="/prevent" element={<Prevent t={t} />} />
           <Route path="/blog8" element={<Blog8 t={t} />} />
