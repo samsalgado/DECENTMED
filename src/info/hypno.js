@@ -8,12 +8,12 @@ const HYPNO = () => {
     return (
         <div className="container">
             <h1>Hypnotherapy</h1>
-            <ReactPlayer
-      url="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
-      width='100%'
-      height='400px'
-      controls={true}
-    />
+           <ReactPlayer
+  url="https://rumble.com/embed/v6ea2py/?pub=4hu51y"
+  width="100%"
+  height="400px"
+  controls={true}
+/>
       <Button variant="primary" href="https://www.green-hypnotherapy.com/" target="_blank">Visit Green Hypnotherapy</Button>  {/* Added Bootstrap Button */}
         <br></br>
         <Benefits />
