@@ -2,6 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import "../../App.css";
+import Hoxsey from '../../images copy/IMG_6431.jpeg';
 import fenben from '../../images copy/Fenbendazole.png';
 import ReactPlayer from 'react-player';
 import Collapsible from 'react-collapsible';
@@ -104,6 +105,7 @@ controls={true}
           <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
                <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
                <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
+              <a href="/hoxsey"> <img src={Hoxsey} alt='' /> </a>
                <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
                <a href="https://www.amazon.com/Cancer-Care-Repurposed-Metabolic-Interventions/dp/0960121706"> <img src={cancercare} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
             </Collapsible>
