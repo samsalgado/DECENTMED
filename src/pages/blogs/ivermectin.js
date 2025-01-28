@@ -1,6 +1,11 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import hhoxsey from '../../images copy/IMG_6431.jpeg';
+import fenben from '../../images copy/Fenbendazole.png';
+import ReactPlayer from 'react-player';
+import Collapsible from 'react-collapsible';
+import starvecancer from '../../images copy/starvecancer.webp';
 import fenben from '../../images copy/ivermectin1.jpeg';
 import fenben2 from '../../images copy/chemistry.jpeg';
 import fenben3 from '../../images copy/ivermectin2.jpeg';
