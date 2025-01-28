@@ -7,7 +7,6 @@ import fenben from '../../images copy/Fenbendazole.png';
 import ReactPlayer from 'react-player';
 import Collapsible from 'react-collapsible';
 import starvecancer from '../../images copy/starvecancer.webp';
-import cancercare from '../../images copy/cancercare.jpg';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 const Blog6 = ({t}) => {
   return (
@@ -107,7 +106,6 @@ controls={true}
                <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
                <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
-               <a href="https://www.amazon.com/Cancer-Care-Repurposed-Metabolic-Interventions/dp/0960121706"> <img src={cancercare} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
             </Collapsible>
           </tbody>
         </table>
