@@ -2,7 +2,6 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import "../../App.css";
-import ReactPlayer from 'react-player';
 
 const Blog3 = () => {
   return (
@@ -17,13 +16,17 @@ const Blog3 = () => {
       </header>
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Detox Cleanse</h1>
-      <ReactPlayer
-      url="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
-      width='100%'
-      height='400px'
-      controls={true}
-    />
-
+     <div className="video-container">
+  <iframe
+    className="rumble"
+    width="100%"
+    height="400px"
+    src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
+    frameborder="0"
+    allowFullScreen
+    title="Dr. Sebi and Max Gerson Dietary Protocol Video"
+  />
+  </div>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='pr'>
