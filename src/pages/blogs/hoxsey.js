@@ -25,48 +25,48 @@ import hoxsey19 from '../../images copy/IMG_6450.jpeg';
 
 import hoxsey20 from '../../images copy/IMG_6451.jpeg';
 
-import hoxsey22 from '../../images copy/IMG_6452.jpeg';
+import hoxsey21 from '../../images copy/IMG_6452.jpeg';
 
-import hoxsey24 from '../../images copy/IMG_6453.jpeg';
+import hoxsey22 from '../../images copy/IMG_6453.jpeg';
 
-import hoxsey24 from '../../images copy/IMG_6454.jpeg';
+import hoxsey23 from '../../images copy/IMG_6454.jpeg';
 
-import hoxsey23 from '../../images copy/IMG_6455.jpeg';
+import hoxsey24 from '../../images copy/IMG_6455.jpeg';
 
-import hoxsey24 from '../../images copy/IMG_6456.png';
-import hoxsey25 from '../../imagescopy/IMG_6457.jpeg
+import hoxsey25 from '../../images copy/IMG_6456.png';
+import hoxsey26 from '../../images copy/IMG_6457.jpeg';
 
-import hoxsey26 from '../../imagescopy/IMG_6458.jpeg
+import hoxsey27 from '../../images copy/IMG_6458.jpeg';
 
-import hoxsey27 from '../../imagescopy/IMG_6459.jpeg
+import hoxsey28 from '../../imagescopy/IMG_6459.jpeg';
 
-import hoxsey28 from '../../images copy/IMG_6460.jpeg';
+import hoxsey29 from '../../images copy/IMG_6460.jpeg';
 
-import hoxsey29 from '../../images copy/IMG_6461.jpeg';
-
-import hoxsey30 from '../../images copy/IMG_6462.jpeg';
+import hoxsey30 from '../../images copy/IMG_6461.jpeg';
 
 import hoxsey31 from '../../images copy/IMG_6462.jpeg';
 
-import hoxsey32 from '../../images copy/IMG_6463.jpeg';
+import hoxsey32 from '../../images copy/IMG_6462.jpeg';
 
-import hoxsey33 from '../../images copy/IMG_6464.jpeg';
+import hoxsey33 from '../../images copy/IMG_6463.jpeg';
 
-import hoxsey34 from '../../images copy/IMG_6465.jpeg';
+import hoxsey34 from '../../images copy/IMG_6464.jpeg';
 
-import hoxsey35 from '../../images copy/IMG_6466.jpeg';
+import hoxsey35 from '../../images copy/IMG_6465.jpeg';
 
-import hoxsey36 from '../../images copy/IMG_6467.jpeg';
+import hoxsey36 from '../../images copy/IMG_6466.jpeg';
 
-import hoxsey37 from '../../images copy/IMG_6468jpeg';
+import hoxsey37 from '../../images copy/IMG_6467.jpeg';
 
-import hoxsey38 from '../../images copy/IMG_6469.jpeg';
+import hoxsey38 from '../../images copy/IMG_6468jpeg';
 
-import hoxsey39 from '../../images copy/IMG_6470.jpeg';
+import hoxsey39 from '../../images copy/IMG_6469.jpeg';
 
-import hoxsey40 from '../../images copy/IMG_6471.jpeg';
+import hoxsey40 from '../../images copy/IMG_6470.jpeg';
 
-import hoxsey41 from '../../images copy/IMG_6472.jpeg';
+import hoxsey41 from '../../images copy/IMG_6471.jpeg';
+
+import hoxsey42 from '../../images copy/IMG_6472.jpeg';
 
 import "../../App.css";
 const Hoxsey = ({t}) => {
@@ -184,7 +184,9 @@ const Hoxsey = ({t}) => {
             <p>
                 <img className='gridimag' src={hoxsey28} alt="pic" />
             </p>
-
+     <p>
+                <img className='gridimag' src={hoxsey29} alt="pic" />
+            </p>
             <p>
                 <img className='gridimag' src={hoxsey29} alt="pic" />
             </p>
@@ -235,6 +237,9 @@ const Hoxsey = ({t}) => {
 
   <p>
                 <img className='gridimag' src={hoxsey41} alt="pic" />
+            </p>
+              <p>
+                <img className='gridimag' src={hoxsey42} alt="pic" />
             </p>
           <p>
             <a href="https://docs.google.com/presentation/d/11ioJ2uKusayB5mbCPyp9BjtM_D49qY_CaQdf0Rk8ORg/edit">Slide Show</a>   
