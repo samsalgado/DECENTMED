@@ -24,12 +24,12 @@ const Info3 = () => {
          <a href='https://gerson.org/'> Cancer</a> treatments globally like the Gerson Therapy and <a href='https://drsebiscellfood.com/'>Dr. Sebi diet</a> use forms of Detoxification to cleanse the body from toxins that cause cancer. 
         </p>
         <h4>Detoxification Protocols</h4>
-        <ReactPlayer
-      url="https://rumble.com/v6e62ia-dr.-sebi-and-max-gerson-dietary-protocol.html"
-      width='100%'
-      height='400px'
-      controls={true}
-    />
+      <ReactPlayer
+  url="https://rumble.com/embed/v6e62ia/?pub=4hu51y"
+  width="100%"
+  height="400px"
+  controls={true}
+/>
     </div>
     <div className="title-container">
         <Protocols />
