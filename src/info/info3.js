@@ -4,7 +4,6 @@ import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
 import ReactPlayer from 'react-player';
 import Protocols from './Protocols';
-import cancer from '../images copy/cancer.mp4';
 const Info3 = () => {
 
   return (
