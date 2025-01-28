@@ -84,14 +84,14 @@ const Hoxsey = ({t}) => {
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Harry Hoxsey: You Don’t Have to Die")}
       </h1>
       <div className='container'>
-<iframe
-  className="rumble"
-  width="100%"
-  height="400px"
-  src="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
-  frameBorder="0"
-  allowFullScreen
-  title="You Don’t Have to Die Video"
+<iframe 
+  className="rumble" 
+  width="100%" 
+  height="400px" 
+  src="https://rumble.com/embed/v6c1084/?pub=4hu51y" 
+  frameBorder="0" 
+  allowFullScreen 
+  title="You Don’t Have to Die Video" 
 />
         </div>
       </div>
