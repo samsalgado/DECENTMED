@@ -9,7 +9,7 @@ import fenben5 from '../../images copy/IMG_6436.jpeg';
 import fenben6 from '../../images copy/IMG_6437.jpeg';
 import fenben7 from '../../images copy/IMG_6438.jpeg';
 import fenben8 from '../../images copy/IMG_6439.jpeg';
-import fenben9 from '../../images copy/IMG_6440.jpeg';
+import fenben9 from '../../images copy/IMG_6532.jpeg';
 import fenben10 from '../../images copy/IMG_6441.jpeg';
 import fenben11 from '../../images copy/IMG_6442.jpeg';
 import fenben12 from '../../images copy/IMG_6443.jpeg';
