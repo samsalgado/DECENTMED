@@ -4,7 +4,6 @@ import Footer from "../../footer";
 import cancer from '../../images copy/cancer.mp4';
 import "../../App.css";
 import ReactPlayer from 'react-player';
-import cleanse from "../../images copy/Cleanse.mp4";
 
 const Blog3 = () => {
   return (
@@ -32,9 +31,6 @@ const Blog3 = () => {
           <p>
     A detox cleanses the body. A water detox cleanse can flush out the body's toxins. The 3 day cleanse detox will restore your cells to ketosis. When detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness. Cancer treatments globally like the <a href='https://gerson.org/'>Gerson Therapy</a> and<a href="https://drsebiscellfood.com/">Dr. Sebi </a>diet use forms of Detoxification to cleanse the body from toxins that cause cancer.
         </p>
-            <div className='video-container'>
-            <ReactPlayer url={cleanse} width="100%" height="400px" controls={true} />
-            </div>
             <p>
   Most doctors and nurses have no clue that the Flexner Report outlines the medicine they practice. The Flexner Report is the blueprint for medicine. Throughout the 1900s, small groups of doctors used detoxifications and juice fasting to fight tumors in the body. Doctors like William Koch and Max Gerson are forgotten - two men who used practices from around the world and attacked in the US. Although the food and minerals are depleted and toxic, detoxes assist in restoring the body to its optimal state. Dr. Gerson prescribed coffee enemas to rid the body of the toxins trapped in the body. The green diet plan and coffee enemas prompt the liver to open the bile ducts and rid the body of tumors and toxins. Gerson's diet protocol is not recommended in the US. Furthermore, a 1 to 3 day cleanse detox helps to fight tumors in the body.
   </p>
