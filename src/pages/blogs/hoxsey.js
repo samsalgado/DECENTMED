@@ -66,7 +66,7 @@ import hoxsey40 from '../../images copy/IMG_6470.jpeg';
 
 import hoxsey41 from '../../images copy/IMG_6471.jpeg';
 
-import hoxsey42 from '../../images copy/IMG_6472.jpeg';
+import hoxsey42 from '../../images copy/IMG_6472.jpeg'; //
 
 import "../../App.css";
 const Hoxsey = ({t}) => {
