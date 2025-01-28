@@ -1,6 +1,11 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import fenben from '../../images copy/Fenbendazole.png';
+import ReactPlayer from 'react-player';
+import Collapsible from 'react-collapsible';
+import starvecancer from '../../images copy/starvecancer.webp';
+import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import fenben from '../../images copy/IMG_6431.jpeg';
 import fenben2 from '../../images copy/IMG_6433.jpeg';
 import fenben3 from '../../images copy/IMG_6434.jpeg';
@@ -263,6 +268,18 @@ const Hoxsey = ({t}) => {
   <a href="https://youtu.be/0TGjm7wIyUk?si=bw0UwHeh2IPGJxGN">Krebiozen Full Movie</a>
 </p>
           </div>
+      </div>
+       <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
+               <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
+               <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
+               <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+            </Collapsible>
+          </tbody>
+        </table>
+       
       </div>
       <Footer />
     </>
