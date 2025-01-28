@@ -26,8 +26,6 @@ const Info3 = () => {
      <div>
  <iframe
   className="rumble"
-  width="640"
-  height="360"
   src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
   frameBorder="0"
   allowFullScreen
