@@ -26,7 +26,7 @@ const Info3 = () => {
         </p>
         <h4>Detoxification Protocols</h4>
         <ReactPlayer
-      url={cancer} // Replace with your video URL
+      url="https://rumble.com/v6e62ia-dr.-sebi-and-max-gerson-dietary-protocol.html"
       width='100%'
       height='400px'
       controls={true}
