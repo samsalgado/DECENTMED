@@ -18,7 +18,7 @@ const Blog3 = () => {
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Detox Cleanse</h1>
       <ReactPlayer
-      url="https://rumble.com/v6e62ia-dr.-sebi-and-max-gerson-dietary-protocol.html"
+      url="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
       width='100%'
       height='400px'
       controls={true}
