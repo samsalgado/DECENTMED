@@ -17,15 +17,15 @@ const Blog3 = () => {
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Detox Cleanse</h1>
      <div className="video-container">
-  <iframe
-    className="rumble"
-    width="100%"
-    height="400px"
-    src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
-    frameborder="0"
-    allowFullScreen
-    title="Dr. Sebi and Max Gerson Dietary Protocol Video"
-  />
+<iframe
+  className="rumble"
+  width="640"
+  height="360"
+  src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
+  frameBorder="0"
+  allowFullScreen
+  title="Dr. Sebi and Max Gerson Dietary Protocol Video"
+/>
   </div>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
