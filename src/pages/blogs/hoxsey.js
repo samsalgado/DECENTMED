@@ -38,7 +38,7 @@ import hoxsey26 from '../../images copy/IMG_6457.jpeg';
 
 import hoxsey27 from '../../images copy/IMG_6458.jpeg';
 
-import hoxsey28 from '../../imagescopy/IMG_6459.jpeg';
+import hoxsey28 from '../../images copy/IMG_6459.jpeg';
 
 import hoxsey29 from '../../images copy/IMG_6460.jpeg';
 
