@@ -1,9 +1,7 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
-import ReactPlayer from 'react-player';
 import cell from "../../images copy/cell.png";
-import cellular from "../../images copy/Cellular_Regeneration.mp4";
 import "../../App.css";
 const Blog4 = () => {
   return (
@@ -17,7 +15,7 @@ const Blog4 = () => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Can Constipation cause Back Pain?</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Cellular Regeneration</h1>
           <img className='gridimag' src={cell} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -26,14 +24,6 @@ const Blog4 = () => {
       Disease deteriorates people over time. For instance, Parkinson's reduced my grandmother to trembling, hunched over without uttering a word. 
       African Americans are 3x more likely to to die from asthma than whites. Medicine has used black bodies without consent. As distrust of Organized Medicine intensifies people need to understand Prevention.
         </p>
-            <div className='video-container'>
-            <ReactPlayer
-      url={cellular} // Replace with your video URL
-      width='100%'
-      height='400px'
-      controls={true}
-    />
-            </div>
            <p>
            The body has an immense regenerative potential to heal itself. "Let thy food be medicine, and thy medicine be food", Hippocrates, this quote illustrates that fighting disease begins with food. Prevention starts with eating foods that boost the immune system. Consumption of antioxidants like Polyphenols or Beta Carotene assists the immune system in fighting disease before they arrive. Renowed healers, Dr. Sebi and Dr. Gerson found that a mixture of a plant-based diet and detoxification aids in fighting cancer. 
            </p>
