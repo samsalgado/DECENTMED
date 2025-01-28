@@ -85,13 +85,14 @@ const Hoxsey = ({t}) => {
       </h1>
       <div className='container'>
 <iframe
-  class="rumble"
+  className="rumble"
   width="100%"
   height="400px"
-  src="https://rumble.com/embed/v6c1084/?pub=4hu51y"
-  frameborder="0"
-  allowfullscreen
-></iframe>
+  src="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
+  frameBorder="0"
+  allowFullScreen
+  title="You Don’t Have to Die Video"
+/>
         </div>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
