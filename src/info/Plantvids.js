@@ -327,8 +327,17 @@ const PlantVids = () => {
         id:65,
         videoUrl:"https://www.youtube.com/embed/ytbsI1YPWa8",
         name:"Fremont Cottonwood"
+        },
+        {
+        id:66,
+        videoUrl:"https://www.youtube.com/embed/H3bOZOhc-L8",
+        name:"Ceiba speciosa"
+        },
+        {
+        id:67,
+        videoUrl:"https://www.youtube.com/embed/TuuWF91mfyM",
+        name:"Kapok Tree"
         }
-
 
     ]);
     return (
