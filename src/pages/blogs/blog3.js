@@ -1,7 +1,6 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
-import cancer from '../../images copy/cancer.mp4';
 import "../../App.css";
 import ReactPlayer from 'react-player';
 
@@ -19,7 +18,7 @@ const Blog3 = () => {
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Detox Cleanse</h1>
       <ReactPlayer
-      url={cancer} // Replace with your video URL
+      url="https://rumble.com/v6e62ia-dr.-sebi-and-max-gerson-dietary-protocol.html"
       width='100%'
       height='400px'
       controls={true}
