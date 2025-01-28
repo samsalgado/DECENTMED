@@ -24,15 +24,15 @@ const Info3 = () => {
         </p>
         <h4>Detoxification Protocols</h4>
      <div>
-  <iframe
-    className="rumble"
-    width="100%"
-    height="400px"
-    src="https://rumble.com/embed/v6bxnhg/?pub=4hu51y"
-    frameBorder="0"
-    allowFullScreen
-    title="Rumble video player"
-  ></iframe>
+ <iframe
+  className="rumble"
+  width="640"
+  height="360"
+  src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
+  frameBorder="0"
+  allowFullScreen
+  title="Rumble video player"
+/>
 </div>
     </div>
     <div className="title-container">
