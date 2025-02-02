@@ -16,9 +16,11 @@ const Info7 = () => {
       <h1 className="text-center mb-4">Components</h1>        
       <Components />
       </div>
-      
-
     <br></br>
+     <div className="collapsible">
+      <h1 className="text-center mb-4">Additional Services</h1>        
+      <Services />
+      </div>
     <div className='parc'>
    <h2 style={{ textAlign: 'center', margin: '20px 0' }}>Attention Holistic Practitioners</h2>
 
