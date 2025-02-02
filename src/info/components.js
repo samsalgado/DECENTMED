@@ -25,6 +25,10 @@ function Components() {
                     <h4>Branded Content</h4>
                     <p className="edu">Providers get to showcase their content on our Blog page and various Education pages. The education pages are your canvas. All content showcased on the education page will be branded to your respective practice.</p>
                 </div>
+                  <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+                    <h4>Access to Herb & Cancer Studies/Trials</h4>
+                    <p className="edu">Providers get to be the face of our Cancer Studies and various trials for our Herbs and their distinct uses. </p>
+                </div>
             </div>
            
         </div>
