@@ -16,7 +16,7 @@ function Components() {
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>Admin Privilegs on Mobile App</h4>
+                    <h4>Admin Privileges on Mobile App</h4>
                    <p className="edu">There is a mobile app equivalent of this project. Members of the coalition can post content on the mobile app and other admin privileges.</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
