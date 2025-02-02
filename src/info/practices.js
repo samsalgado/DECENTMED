@@ -20,11 +20,11 @@ function Practices() {
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
                     <h3>Chelation</h3>
-                    <img className="img-custo" src={Treatment.chelation} alt="Chelation" />
+                    <img className="img-custom" src={Treatment.chelation} alt="Chelation" />
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
                     <h3>Health Coach</h3>
-                    <img className="img-custo" src={Departments.healthcoach} alt="Chelation" />
+                    <img className="img-custom" src={Departments.healthcoach} alt="Chelation" />
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
                     <NavLink to="/chiropract">
@@ -60,7 +60,7 @@ function Practices() {
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
                     <h3>Stem Cell</h3>
 
-                    <img className="img-custom-s" src={Departments.stemcell} alt="Stem Cell Therapy" />
+                    <img className="img-custom" src={Departments.stemcell} alt="Stem Cell Therapy" />
 
                 </div>
             </div>

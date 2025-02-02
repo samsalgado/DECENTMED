@@ -370,7 +370,7 @@ body {
 .img-custom {
   width: 100%; /* Adjust to your desired size */
   max-width: 200px; /* Set a maximum width */
-  height: auto; /* Maintain aspect ratio */
+  height: 120px; /* Maintain aspect ratio */
 }
 .img-custo {
   width: 100%; /* Adjust to your desired size */
