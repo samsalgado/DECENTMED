@@ -1,6 +1,7 @@
 import React from 'react'
 import Components from './components';
 import './Info7.css';
+import Services from './services';
 const Info7 = () => {
 
   return (
