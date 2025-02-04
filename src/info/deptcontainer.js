@@ -20,6 +20,18 @@ function BlueContainer() {
                         <img className="img-custom" src={Treatment.acupuncture} alt="Acupuncture" />
                     </NavLink>
                 </div>
+                   <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3>Herbal Medicine</h3>
+                    <NavLink to="/herbalmedicine" className="link">
+                        <img className="img-custom" src={Treatment.herbalmedicine} alt="Herbal" />
+                    </NavLink>
+                </div>
+                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3>Hypnotherapy</h3>
+                    <NavLink to="/hypnotherapy" className="link">
+                        <img className="img-custom" src={Treatment.hypnotherapy} alt="Hypno" />
+                    </NavLink>
+                </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3>Chelation</h3>
                     <NavLink to="/chelation" className="link">
