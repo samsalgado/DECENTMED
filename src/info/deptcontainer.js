@@ -26,6 +26,13 @@ function BlueContainer() {
                         <img className="img-custom" src={Treatment.herbalmedicine} alt="Herbal" />
                     </NavLink>
                 </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3>Health Coaches</h3>
+                    <NavLink to="/prevent" className="link">
+                        <img className="img-custom" src={Treatment.prevent} alt="Health Coaching" />
+                    </NavLink>
+                </div>
+                
                  <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3>Hypnotherapy</h3>
                     <NavLink to="/hypnotherapy" className="link">
