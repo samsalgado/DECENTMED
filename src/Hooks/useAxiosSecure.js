@@ -5,7 +5,7 @@ import useAuth from './useAuth';
 
 
  export const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5001', 
+    baseURL: 'https://decentmed-server.vercel.app', 
   });
 
 const useAxiosSecure = () => {

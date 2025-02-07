@@ -11,7 +11,7 @@ const usePaymentHistory = () => {
     queryKey: ['paymentData'],
     enabled: !loading,
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5001/payments-history`);
+      const res = await fetch(`https://decentmed-server.vercel.app/payments-history`);
       return res.json();
     },
   })

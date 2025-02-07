@@ -5,7 +5,7 @@ const PaymentDetails = ({ payments, index, refetch }) => {
   const handleStatus = (payments, status) => {
 
     fetch(
-      `http://localhost:5001/payments-history/${payments._id}/?status=${status}`,
+      `https://decentmed-server.vercel.app/payments-history/${payments._id}/?status=${status}`,
       {
         method: "PATCH",
       }

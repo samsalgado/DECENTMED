@@ -128,7 +128,7 @@ const CheckOutFrom = () => {
           date: new Date(),
         };
 
-        const savePayment = await axios.post('http://localhost:5001/payments', payment);
+        const savePayment = await axios.post('https://decentmed-server.vercel.app/payments', payment);
         if (savePayment.data.insertedId) {
           Swal.fire({
             position: "top-end",
