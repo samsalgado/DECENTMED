@@ -8,7 +8,8 @@ export function Nutrition() {
     const { t } = useTranslation('common');
     return (
         <div>
-            <Helmet>
+{/* helmet */}
+            <Helmet>  
                 <title>{t('Dr Sebi Food List')}</title>
                 <meta name="description" content="Explore Dr. Sebi's nutritional food list to wellness. Discover obesity facts and how you can improve your nutrition. Learn more about Dr. Sebi's nutritional philosophy." />
             </Helmet>
