@@ -7,6 +7,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import { useTranslation } from 'react-i18next';
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -20,7 +21,6 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
- 
   return (
     <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
       {children}
@@ -45,6 +45,7 @@ const BootstrapDialogTitle = (props) => {
 
 export default function CustomizedDialogs({children}) {
   const [open, setOpen] = useState(false);
+ const {t} = useTranslation('common')
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -56,7 +57,7 @@ export default function CustomizedDialogs({children}) {
     
     <div className='buton'>
       <Button style={{marginTop:20, color:'black', textDecoration:'solid'}} variant="outlined"  onClick={handleClickOpen}>
-        Disclaimer
+        {t('Disclaimer')}
       </Button>
       <BootstrapDialog
         onClose={handleClose}
@@ -65,7 +66,7 @@ export default function CustomizedDialogs({children}) {
       >
       
         <BootstrapDialogTitle style={{textAlign:"center"}} id="customized-dialog-title" onClose={handleClose}>
-        ALL CONTENT IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT MEDICAL ADVICE, SEEK ADVICE FROM A MEDICAL PROFESSIONAL REGARDING YOUR CONDITION AND POTENTIAL CURES.
+        {t('ALL CONTENT IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT MEDICAL ADVICE, SEEK ADVICE FROM A MEDICAL PROFESSIONAL REGARDING YOUR CONDITION AND POTENTIAL CURES.')}
         </BootstrapDialogTitle>
         <DialogContent dividers>
           {children}

@@ -6,7 +6,7 @@ import spleen from '../images copy/spleen.png';
 import kidneyacu from '../images copy/kidneyacu.png';
 import { useTranslation } from "react-i18next";
 function Channel() {
-    const { t } = useTranslation();
+    const { t } = useTranslation('common');
     return (
         <div className="container-bblue">
             <div className="row justify-content-center">

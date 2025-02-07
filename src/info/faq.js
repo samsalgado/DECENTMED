@@ -5,7 +5,7 @@ import ANS from './ans';
 import Merlin from './merlin';
 import { useTranslation } from 'react-i18next';
 const FAQ = () => {
-  const {t} = useTranslation();
+  const {t} = useTranslation('common');
   return (
     
     <div className='container'>

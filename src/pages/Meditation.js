@@ -4,7 +4,9 @@ import Footer from '../footer';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export default function Meditation({t}) {
+import { useTranslation } from 'react-i18next';
+export default function Meditation() {
+const { t } = useTranslation('common');
     return (
         <>
                 <Helmet>  {/* Add Helmet component */}
@@ -17,7 +19,7 @@ export default function Meditation({t}) {
         </header>
             <MeditationInfo />
        <br></br>
-        <h1 className='center'>Meditation 101</h1>
+        <h1 className='center'>{t("Meditation 101")}</h1>
       <MeditationVids />
         <footer>
             <Footer />

@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import stress from '../images copy/stress.jpg';
 import insomnia from '../images copy/insomnia.png';
 function Benefits() {
-    const { t } = useTranslation();
+    const { t } = useTranslation('common');
     return (
         <div className="container-bblue">
             <div className="row justify-content-center">

@@ -3,8 +3,9 @@ import Topbar from "./topbar";
 import Footer from '../footer';
 import Homeo from "../info/homeopathypg";
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Homeopathy({t}) {
-
+import { useTranslation } from "react-i18next";
+export function Homeopathy() {
+const { t } = useTranslation('common');
     return( 
     <div>
         <Helmet>  {/* Add Helmet component */}

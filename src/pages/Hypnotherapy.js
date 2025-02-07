@@ -3,7 +3,9 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import HYPNO from '../info/hypno';
-export function Hypnotherapy({t}) {
+import { useTranslation } from 'react-i18next';
+export function Hypnotherapy() {
+const { t } = useTranslation('common');
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}

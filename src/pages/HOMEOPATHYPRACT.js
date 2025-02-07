@@ -6,7 +6,7 @@ import Lotus from '../cards/lotus.png'
 import Shannon from '../cards/heartofwellness.png'
 import { useTranslation } from 'react-i18next'
 export function HomeopathyPract() {
-  const { t } = useTranslation();
+const { t } = useTranslation('common');
 
     return(
         <div>

@@ -5,9 +5,11 @@ import Info7 from '../info/info7';
 import Practices from '../info/practices';
 import Practice from './practices';
 import Topbar from './topbar';
+import { useTranslation } from 'react-i18next';
 
 
-export function Telehealth({ t }) {
+export function Telehealth() {
+const { t } = useTranslation("common");
     return (
         <>
             <Helmet>

@@ -3,8 +3,9 @@ import Nutritionpage from '../info/nutritionpg';
 import Topbar from './topbar';
 import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
+import { useTranslation } from 'react-i18next';
 export function Nutrition() {
-
+const { t } = useTranslation('common');
     return(
         <div>
                     <Helmet>  {/* Add Helmet component */}

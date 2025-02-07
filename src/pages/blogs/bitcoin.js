@@ -3,7 +3,9 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import bitcoin from "../../images copy/btc (1).png";
 import "../../App.css";
-const Bitcoin = ({t}) => {
+import { useTransition } from "react";
+const Bitcoin = () => {
+const {t} = useTransition('common')
   return (
     <>
       <Helmet>

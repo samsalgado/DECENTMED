@@ -3,7 +3,7 @@ import '../App.css';
 import QR from '../images copy/QR.jpg';
 import { useTranslation } from 'react-i18next'
 const Disclaimer = () => {
-  const {t} = useTranslation();
+  const {t} = useTranslation('common');
   return (
     <div className='description'>
     <h3>

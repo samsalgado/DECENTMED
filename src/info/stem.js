@@ -7,11 +7,13 @@ import whystemcell from '../images copy/whystemcell.png';
 import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg';
 import stembenefits from '../images copy/stembenefits.png';
 import stemtype from '../images copy/stem-type.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Stem = () => {
+const {t} = useTranslation('common')
   return (
     <div className='container'>
-      <h1>Stem Cell Therapy</h1>
+      <h1>{t('Stem Cell Therapy')}</h1>
       <iframe
             width="100%"
             height="700px"
@@ -23,7 +25,7 @@ const Stem = () => {
                 <div className="title-container">
         <table className="collapsibles-table">
           <tbody>
-            <Collapsible trigger={<th className="collapsible-trigger">Stem Cell Therapy Explained</th>}>
+            <Collapsible trigger={<th className="collapsible-trigger">{t("Stem Cell Therapy Explained")}</th>}>
                     <img alt='' />
                     <img className='gridima' src={whatisastemcell} alt='What is a stem cell' />
                     <img className='gridimag' src={stemtype} alt='Stem cell types' />

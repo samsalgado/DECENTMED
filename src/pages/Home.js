@@ -4,7 +4,9 @@ import Info from '../info/info';
 import Footer from '../footer';
 
 import { Helmet } from'react-helmet'; // Import Helmet
-export function Home({t}) {
+import { useTranslation } from 'react-i18next';
+export function Home() {
+const { t } = useTranslation('common');
     return (
         <>
         <Helmet>  

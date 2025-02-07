@@ -5,7 +5,7 @@ import Footer from '../footer';
 import Green from '../cards/Green-hypnotherapy.png';
 import { useTranslation } from 'react-i18next'
 export function Hypnopract() {
-  const { t } = useTranslation();
+const { t } = useTranslation('common');
 
     return(
         <div>

@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom';
 import Treatment from './treatment';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 const EducationMenu = () => {
-  const { t } = useTranslation();
+const { t } = useTranslation('common');
   return (
-    <NavDropdown title="Education" id="education-dropdown">
+    <NavDropdown title={t("Education")} id="education-dropdown">
       <ul><NavLink to="/homeopathy">{t('Homeopathy')}
         <img className='coursepic' src={Treatment.homeopath} alt="" />
       </NavLink>

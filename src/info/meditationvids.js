@@ -1,34 +1,30 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
+import { useTranslation } from 'react-i18next';
+
 const MeditationVids = () => {
+    const { t } = useTranslation("common");
     const [plant] = useState([
         {
             id: 1,
             videoUrl: "https://www.youtube.com/embed/uAYmlKc9R-k?si=RcAneTXFZopuzqaC",
-            name: "Enlightenment and Meditation",
+            name: `${t("Enlightenment and Meditation")}`,
         },
-      
-
-{
-            id:2,
-            videoUrl:"https://www.youtube.com/embed/nL_UNpSBFnY?feature=shared",
-            name: "Mindfulness through Meditation"
+        {
+            id: 2,
+            videoUrl: "https://www.youtube.com/embed/nL_UNpSBFnY?feature=shared",
+            name: `${t("Mindfulness through Meditation")}`
         },
-
-{
-            id:4,
-            videoUrl:"https://www.youtube.com/embed/JqHfqYasY6Y?si=Oslq9NBWoGF5y58w",
-            name: "All Things Meditation - All You Need to Know"
+        {
+            id: 4,
+            videoUrl: "https://www.youtube.com/embed/JqHfqYasY6Y?si=Oslq9NBWoGF5y58w",
+            name: `${t("All Things Meditation - All You Need to Know")}`
         },
-
-{
-            id:5,
-            videoUrl:"https://www.youtube.com/embed/GMe5_qOxP1Y?si=r8mZX1ZVPalVFsnq",
-            name: "Mind Rest - Guided Breath Meditation"
+        {
+            id: 5,
+            videoUrl: "https://www.youtube.com/embed/GMe5_qOxP1Y?si=r8mZX1ZVPalVFsnq",
+            name: t("Mind Rest - Guided Breath Meditation")
         }
-
-
-
     ]);
     return (
         <div className="contents">
@@ -42,6 +38,7 @@ const MeditationVids = () => {
 };
 
 const PlantCard = ({ val }) => {
+    const { t } = useTranslation("common");
     const [isInView, setIsInView] = useState(false);
     const videoRef = useRef(null);
 
@@ -89,7 +86,7 @@ const PlantCard = ({ val }) => {
                             justifyContent: "center",
                         }}
                     >
-                        <p>Loading...</p>
+                        <p>{t("Loading...")}</p>
                     </div>
                 )}
                 <h3>{val.name}</h3>
@@ -97,6 +94,5 @@ const PlantCard = ({ val }) => {
         </div>
     );
 }
+
 export default MeditationVids;
-
-

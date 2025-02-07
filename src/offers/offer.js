@@ -7,7 +7,7 @@ import imge from '../images copy/btvc.png'
 import CustomizedDialogs from './dialog'
 import AddtoCart from '../addtocart/addtocart'
 const Offer = () => {
-  const {t} = useTranslation();
+const { t } = useTranslation("common");
   return (
     <div className='box'>
       <CookiesProvider>

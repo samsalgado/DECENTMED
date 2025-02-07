@@ -8,7 +8,7 @@ import gf from '../images copy/gf.png';
 import lemon from '../images copy/lemon.png';
 import { useTranslation } from 'react-i18next'
 function Fruits() {
-    const { t } = useTranslation();
+    const { t } = useTranslation('common');
 
     return (
         <div className="container-bblue">

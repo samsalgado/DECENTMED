@@ -3,7 +3,9 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Chiro from '../info/chiro';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Chiropractic({t}) {
+import { useTranslation } from 'react-i18next';
+export function Chiropractic() {
+const { t } = useTranslation('common');
     return(
         <div>
                     <Helmet>  {/* Add Helmet component */}

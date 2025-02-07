@@ -3,7 +3,7 @@ import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Info.css'; // Import the updated CSS file
 import { useTranslation } from 'react-i18next';
 const ANS = () => {
-  const {t} = useTranslation();
+  const {t} = useTranslation('common');
   return (
     <Container>
       <h3 className="text-center mb-4">{t("FAQ")}</h3> {/* Title for the entire section */}
@@ -43,16 +43,16 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("Who is DECENT MED made for?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                - {t("Alternative Medicine providers")}
+                 {t("- Alternative Medicine providers")}
               </Card.Text>
               <Card.Text>
-                - {t("Those who do not have health insurance")}
+                {t("- Those who do not have health insurance")}
               </Card.Text>
               <Card.Text>
-                - {t("People who have distrust in the current healthcare system")}
+               {t("- People who have distrust in the current healthcare system")}
               </Card.Text>
               <Card.Text>
-                - {t("Bitcoin countries and general Bitcoin users")}
+                 {t("- Bitcoin countries and general Bitcoin users")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -62,13 +62,13 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("What are your goals?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                - {t("howcasing revolutionary treatments to billions of people worldwide")}
+                 {t("- showcasing revolutionary treatments to billions of people worldwide")}
               </Card.Text>
               <Card.Text>
-                - {t("Aid in global Bitcoin adoption")}
+                {t("- Aid in global Bitcoin adoption")}
               </Card.Text>
               <Card.Text>
-                - {t("Decentralize healthcare for 'alternatives' to be widely accepted")}
+                {t("- Decentralize healthcare for 'alternatives' to be widely accepted")}
               </Card.Text>
             </Card.Body>
           </Card>

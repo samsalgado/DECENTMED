@@ -9,7 +9,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import useAuth from '../Hooks/useAuth'
 import { Button } from '@mui/material'
 const Offer2 = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   // const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -47,8 +47,8 @@ const Offer2 = () => {
           <img src={imge} className="pik1 stripe" alt='' />
           <h2>{t('Pay with Credit Card')}</h2>
         </div>
-        <Button onClick={handleClickOpen}>add cart</Button>
-         
+        <Button onClick={handleClickOpen}>{t('add cart')}</Button>
+
       </CookiesProvider>
     </div>
   )

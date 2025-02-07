@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import Offer2 from '../offers/offer2';
 
 const Practice = () => {
-  const { t } = useTranslation();
+const { t } = useTranslation("common");
 
   return (
     <div className='theecontainer'>

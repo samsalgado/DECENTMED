@@ -6,8 +6,9 @@ import PlantVids from '../info/Plantvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Footer from '../footer';
 import '../App.css'
-const HerbalMedicine = ({ t }) => {
-
+import { useTranslation } from 'react-i18next';
+const HerbalMedicine = () => {
+const { t } = useTranslation('common');
   return (
     <div className='wrapper'>
       <Helmet>  {/* Add Helmet component */}
@@ -20,7 +21,7 @@ const HerbalMedicine = ({ t }) => {
       <main className='content'>
         <Herbal />
         <br></br>
-        <h1 className='center'>Encyclopedia of Herbal Medicine</h1>
+        <h1 className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
       </main>
       <footer className='footer'>

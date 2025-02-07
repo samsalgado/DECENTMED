@@ -816,7 +816,7 @@ input[type="submit"]:hover {
 /* Individual plant card styling */
 
 /* Plant container styles herbalmedicine */
-.plant-container  {
+.plant-container {
   display: grid;
   gap: 16px; /* Spacing between items */
   padding: 16px;
@@ -834,8 +834,8 @@ input[type="submit"]:hover {
 
 /* Plant container styles apothecary */
 .plant-containers {
-  display:flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px; /* Spacing between items */
   padding: 16px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -856,7 +856,6 @@ flex-wrap: wrap;
   padding: 8px; /* Internal padding */
   box-sizing: border-box;
 }
-
 
 @media (min-width: 768px) {
   /* Medium devices (3 columns) */
@@ -1178,4 +1177,119 @@ td:last-child {
   .plant-card {
     padding: 24px;
   }
+}
+
+/* Container for the locale change */
+.change-locale {
+  position: relative;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .change-locale {
+    position: relative;
+    left: 12px;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .change-locale {
+    left: 12px;
+  }
+}
+/* Locale change button */
+.change-locale-toggle {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  /* color: #333; */
+  color: #232222;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.change-locale-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Light background on hover */
+}
+
+.change-locale-toggle .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.change-locale-toggle .arrow {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* Locale change menu */
+.change-locale-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem; /* rounded-md */
+  padding:1rem 0rem;
+  width: 140px;
+  z-index: 10;
+  display: none;
+}
+
+/* Show the menu when the class `is-open` is added */
+.change-locale.is-open .change-locale-menu {
+  display: block;
+}
+
+/* Links inside the locale change menu */
+.change-locale-menu .lang {
+  display: block;
+  padding: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.change-locale-menu lang:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Light background on hover */
+}
+
+/* Adding some positioning tweaks for the menu */
+.inset-i-end {
+  right: 0;
+}
+
+/* Mobile Menu styles (Optional) */
+@media (max-width: 768px) {
+  .change-locale-menu {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Custom SVG Arrow Icon */
+.arrow-icon {
+  width: 16px; /* Adjust the size */
+  height: 16px; /* Adjust the size */
+  fill: #333; /* Change color */
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+/* Rotate the arrow when the menu is open */
+.is-open .arrow-icon {
+  transform: rotate(180deg); /* Rotates the arrow when active */
 }

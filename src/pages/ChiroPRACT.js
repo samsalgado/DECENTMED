@@ -5,7 +5,7 @@ import Footer from '../footer';
 import betterhealthsolutions from '../cards/betterheatlhsolutions.png'
 import { useTranslation } from 'react-i18next'
 export function Chiro() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
 
     return(
         <div>

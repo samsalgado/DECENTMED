@@ -3,7 +3,7 @@ import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Info.css'; // Import the updated CSS file
 import { useTranslation } from 'react-i18next'
 const HealthFacts = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
   return (
     <Container>
       <h2 className="text-center mb-4">{t("Health Facts")}</h2> {/* Title for the entire section */}

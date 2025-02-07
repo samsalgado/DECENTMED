@@ -3,10 +3,13 @@ import './acu.css';
 import { Button } from'react-bootstrap';
 import Benefits from "./benefits";
 import Modalities from "./modalities";
+import { useTranslation } from "react-i18next";
 const HYPNO = () => {
+const {t} = useTranslation('common')
+
     return (
         <div className="container">
-            <h1>Hypnotherapy</h1>
+            <h1>{t('Hypnotherapy')}</h1>
     <div>
   <iframe
     className="rumble"
@@ -18,7 +21,7 @@ const HYPNO = () => {
     title="Rumble video player"
   ></iframe>
 </div>
-      <Button variant="primary" href="https://www.green-hypnotherapy.com/" target="_blank">Visit Green Hypnotherapy</Button>  {/* Added Bootstrap Button */}
+      <Button variant="primary" href="https://www.green-hypnotherapy.com/" target="_blank">{t("Visit Green Hypnotherapy")}</Button>  {/* Added Bootstrap Button */}
         <br></br>
         <Benefits />
         <br></br> 

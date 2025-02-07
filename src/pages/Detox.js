@@ -3,7 +3,9 @@ import Topbar from './topbar';
 import Info3 from '../info/info3';
 import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Detox({t}) {
+import { useTranslation } from 'react-i18next';
+export function Detox() {
+const { t } = useTranslation('common');
     return(
         <div>
                     <Helmet>  {/* Add Helmet component */}

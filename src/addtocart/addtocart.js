@@ -10,7 +10,7 @@ import btclightAddress from '../pics/btclight.png';
 
 const AddtoCart = () => {
   const { user } = useContext(AuthContext);
-  const { t } = useTranslation();
+const { t } = useTranslation("common");
   const [name, setName] = useState('');
   const [practice, setPractice] = useState('');
   const [bitcoinAddress, setBitcoinAddress] = useState('');
@@ -100,7 +100,7 @@ const AddtoCart = () => {
           <input type="text" placeholder={t("Medical Practice")} required value={practice} onChange={(e) => setPractice(e.target.value)} />
           <input type="text" placeholder={t("Provide Your Bitcoin Address")} required value={bitcoinAddress} onChange={(e) => setBitcoinAddress(e.target.value)} />
           {error && <p style={{ color: "red" }}>{error}</p>}
-          <button type='submit'>Send Bitcoin</button>
+          <button type='submit'>{t('Send Bitcoin')}</button>
         </form>
 
 

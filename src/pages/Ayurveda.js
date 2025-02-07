@@ -3,7 +3,9 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Ayurvedaa from '../info/ayurveda';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Ayurveda({t}) {
+import { useTranslation } from 'react-i18next';
+export function Ayurveda() {
+const {t} = useTranslation('common');
     return (
         <>
                 <Helmet>  {/* Add Helmet component */}

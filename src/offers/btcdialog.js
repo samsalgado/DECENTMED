@@ -7,6 +7,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import { useTransition } from 'react';
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -20,11 +21,11 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
- 
+
   return (
     <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
       {children}
-      
+
       {onClose ? (
         <IconButton
           aria-label="close"
@@ -43,7 +44,8 @@ const BootstrapDialogTitle = (props) => {
   );
 };
 
-export default function CustomizedDialogs({children}) {
+export default function CustomizedDialogs({ children }) {
+  const { t } = useTransition('common')
   const [open, setOpen] = useState(false);
   const handleClickOpen = () => {
     setOpen(true);
@@ -53,25 +55,25 @@ export default function CustomizedDialogs({children}) {
   };
 
   return (
-    
+
     <div className='buton'>
-      <Button style={{marginTop:20, color:'black', textDecoration:'solid'}} variant="outlined"  onClick={handleClickOpen}>
-        Add to Cart
+      <Button style={{ marginTop: 20, color: 'black', textDecoration: 'solid' }} variant="outlined" onClick={handleClickOpen}>
+        {t('Add to Cart')}
       </Button>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-      
-        <BootstrapDialogTitle style={{textAlign:"center"}} id="customized-dialog-title" onClose={handleClose}>
-            Price:0.0043BTC
+
+        <BootstrapDialogTitle style={{ textAlign: "center" }} id="customized-dialog-title" onClose={handleClose}>
+          Price:0.0043BTC
         </BootstrapDialogTitle>
         <DialogContent dividers>
           {children}
         </DialogContent>
       </BootstrapDialog>
     </div>
-    
+
   );
 }

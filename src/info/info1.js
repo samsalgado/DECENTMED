@@ -2,11 +2,13 @@ import React from 'react';
 import Channel from './channel';
 import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; // Import only acu.css for styling
+import { useTranslation } from 'react-i18next';
 
 const Info1 = () => {
+const {t} = useTranslation('common')
   return (
     <div className='container'>
-      <h1>Acupuncture</h1>
+      <h1>{t('Acupuncture')}</h1>
 
 
       <iframe

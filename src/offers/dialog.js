@@ -9,6 +9,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../pages/Providers/AuthProvider';
 import { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -20,6 +22,7 @@ const BootstrapDialogTitle = (props) => {
 };
 
 export default function CustomizedDialogs({ children }) {
+  const { t } = useTranslation('common')
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -51,10 +54,9 @@ export default function CustomizedDialogs({ children }) {
   const handleClose = () => {
     setOpen(false);
   };
-
   return (
     <div className='buton'>
-      <Button onClick={handleClickOpen}>Add cart</Button>
+      <Button onClick={handleClickOpen}>{t('add cart')}</Button>
 
       <BootstrapDialog
         onClose={handleClose}

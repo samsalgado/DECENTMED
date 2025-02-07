@@ -56,7 +56,7 @@ export default function CustomizedDialogsGo({ children }) {
 
     <div className='buton'>
       <Button style={{ marginTop: 20, color: 'black', textDecoration: 'solid' }} variant="outlined" onClick={handleClickOpen}>
-        Add to Cart
+        {t('Add to Cart')} 
       </Button>
       <BootstrapDialog
         onClose={handleClose}
