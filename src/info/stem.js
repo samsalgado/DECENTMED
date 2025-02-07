@@ -40,10 +40,12 @@ const {t} = useTranslation('common')
         <img src={stembenefits} className="AC" alt="Stem cell benefits" />
       </div>
 
-      <div className="case-studies">
-        <img src={ryantannehill} className="CASESTUDY" alt="Ryan Tannehill" />
-        <img src={jamaalcharles} className="CASESTUDY" alt="Jamaal Charles" />
-      </div>
+     <Collapsible trigger={<th className="collapsible-trigger">{t("Stem Cell Therapy NFL Case Studies")}</th>}>
+  <div className="case-studies">
+    <img src={ryantannehill} className="CASESTUDY" alt="Ryan Tannehill" />
+    <img src={jamaalcharles} className="CASESTUDY" alt="Jamaal Charles" />
+  </div>
+</Collapsible>
     </div>
   );
 }
