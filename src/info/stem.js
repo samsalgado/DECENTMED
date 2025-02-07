@@ -7,6 +7,7 @@ import whystemcell from '../images copy/whystemcell.png';
 import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg';
 import stembenefits from '../images copy/stembenefits.png';
 import stemtype from '../images copy/stem-type.jpg';
+import graphic from '../images copy/src/images copy/Pink Illustrative Simple Healthy Habits Infographic.jpeg';
 import { useTranslation } from 'react-i18next';
 
 const Stem = () => {
@@ -39,8 +40,12 @@ const {t} = useTranslation('common')
       <div>
         <img src={stembenefits} className="AC" alt="Stem cell benefits" />
       </div>
-
-     <Collapsible trigger={<th className="collapsible-trigger">{t("Stem Cell Therapy NFL Case Studies")}</th>}>
+   <Collapsible trigger={<div className="collapsible-trigger">{t("Benefits of Bone Marrow Stem Cells")}</div>}>
+  <div>
+    <img className="chelation-graphic" src={graphic} alt="Bone Marrow Stem Cell Benefits" />
+  </div>
+</Collapsible>
+    <Collapsible trigger={<th className="collapsible-trigger">{t("Stem Cell Therapy NFL Case Studies")}</th>}>
   <div className="case-studies">
     <img src={ryantannehill} className="CASESTUDY" alt="Ryan Tannehill" />
     <img src={jamaalcharles} className="CASESTUDY" alt="Jamaal Charles" />
