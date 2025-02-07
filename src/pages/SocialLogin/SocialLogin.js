@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth.js';
@@ -5,34 +6,42 @@ import './SocialLogin.css';
 
 const SocialLogin = () => {
   const { googleSignIn } = useAuth();
-  // const {googleSignIn} = useContext(AuthContext)
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || '/';
+
   const handleGoogleSignIn = () => {
-    googleSignIn().then((result) => {
-      const loggedUser = result?.user;
-      const saveUser = { name: loggedUser?.displayName, email: loggedUser?.email, role: "user" }
+    googleSignIn()
+      .then((result) => {
+        const loggedUser = result?.user;
+        const saveUser = { name: loggedUser?.displayName, email: loggedUser?.email, role: "user" };
 
-      fetch(`https://decentmed-server.vercel.app/users`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json"
-        },
-        body: JSON.stringify(saveUser)
-        //  axiosSecure.post('/users',saveUser) 
+        fetch(`http://localhost:5001/users`, {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(saveUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log("User saved:", data);
+            navigate(from, { replace: true }); // Proceed to navigate after the user is saved
+          })
+          .catch((error) => {
+            console.error("Error saving user:", error.message);
+          });
       })
-        .then(res => res.json())
-    })
-    navigate(from, { replace: true })
-      .catch(error => {
-        console.log(error.message);
+      .catch((error) => {
+        console.error("Google sign-in error:", error.message); // Handle Google sign-in errors here
+      });
+  };
 
-      })
-  }
   return (
     <div className='social-login'>
-      <button onClick={handleGoogleSignIn} className='google-signin-btn'>Google SignIn</button>
+      <button onClick={handleGoogleSignIn} className='google-signin-btn'>
+        Google SignIn
+      </button>
     </div>
   );
 };

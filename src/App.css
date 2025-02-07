@@ -888,7 +888,8 @@ input[type="submit"]:hover {
   }
 }
 .chelation-graphic {
-  max-width: 90%;
+  max-width: 100%;
+width: 100%;
   height: auto;
   border: 1px solid #ccc;
   margin: 10px;
@@ -1185,10 +1186,11 @@ td:last-child {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .change-locale {
     position: relative;
-    left: 12px;
+    top: 10px;
+    padding-bottom: 12px;
   }
 }
 
@@ -1237,11 +1239,11 @@ td:last-child {
   position: absolute;
   top: 100%;
   right: 0;
-text-align: center;
+  text-align: center;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0.375rem; /* rounded-md */
-  padding:1rem 0rem;
+  padding: 1rem 0rem;
   width: 140px;
   z-index: 10;
   display: none;
@@ -1262,7 +1264,7 @@ text-align: center;
   transition: background-color 0.3s ease;
 }
 
-.change-locale-menu lang:hover {
+.change-locale-menu .lang:hover {
   background-color: rgba(0, 0, 0, 0.05); /* Light background on hover */
 }
 

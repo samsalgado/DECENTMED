@@ -47,7 +47,7 @@ const { t } = useTranslation("common");
 
     setError(""); // Clear any previous error
 
-    axios.post('https://decentmed-server.vercel.app/payments', payment)
+    axios.post('http://localhost:5001/payments', payment)
       .then(data => {
         if (data?.data.insertedId) {
           Swal.fire({
