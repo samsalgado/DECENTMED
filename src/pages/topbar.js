@@ -174,7 +174,7 @@ const Topbar = () => {
       />
     </svg>
   </button>
-
+{/* updated */}
   {showMenu && (
     <div className="change-locale-menu inset-i-end" dir="ltr">
       <span className="lang" onClick={() => changeLang("en")}>English</span>
