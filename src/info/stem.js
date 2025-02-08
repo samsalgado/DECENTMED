@@ -56,7 +56,7 @@ const Stem = () => {
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>
-            <Collapsible trigger={<th className="collapsible-trigger">{t("Stem Cell Therapy Explained")}</th>}>
+            <Collapsible trigger={<th className="collapsible-trigger">{t("Stem Cell Therapy NFL Case Studies")}</th>}>
               <img alt='' />
               <img src={ryantannehill} className="gridimag" alt="Ryan Tannehill" />
               <img src={jamaalcharles} className="gridimag" alt="Jamaal Charles" />
