@@ -2,34 +2,83 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto; /* Adjusted margin for tighter spacing on mobile */
+  margin: 0 auto;
   width: 100%;
+  padding: 0 10px; /* Added padding to avoid touching edges on small screens */
 }
 
 .title-container {
   display: flex;
-  justify-content: center; /* Center elements horizontally */
+  justify-content: center;
   align-items: center;
-  margin: 0px 0;
+  margin: 20px 0;
 }
 
 .chart {
   width: 100%; /* Set width to 100% for mobile responsiveness */
   height: auto;
-  max-width: 600px; /* Optional: Set a maximum width to prevent very large images */
+  max-width: 100%; /* Ensure the image doesn't exceed container width */
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
-/* Responsive Styles for Content (Optional) */
+/* Responsive Styles for Content */
 @media (max-width: 768px) {
   .container {
     padding: 1rem; /* Add padding for better spacing on mobile */
   }
+
   .title-container {
     font-size: 1.2rem; /* Adjust font size for better readability */
   }
-  .pr { /* Assuming this is your content class */
-    font-size: 0.9rem; /* Adjust font size for content */
-    line-height: 1.5; /* Adjust line-height for better readability */
+}
+
+/* Video container maintains aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  bottom: 20px;
+}
+
+/* Make the iframe responsive */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  border: 0;
+}
+.vitamin {
+  top: 10px;
+}
+
+/* Responsive Design - Adjust video for different screen sizes */
+@media (max-width: 1024px) {
+  /* Medium devices */
+  .video-container {
+    max-width: 950px; /* Limit the width of the video on medium devices */
+    padding-bottom: 56.25%; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Small devices */
+  .video-container {
+    max-width: 100%; /* Video takes full width */
+    padding-bottom: 56.25%; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small devices */
+  .video-container {
+    max-width: 100%; /* Ensure full width */
+    padding-bottom: 75%; /* Slightly taller video for smaller screens */
   }
 }

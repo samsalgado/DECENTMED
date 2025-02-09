@@ -8,7 +8,7 @@ import coq10 from '../images copy/coq10.png';
 import K from '../images copy/K.jpg';
 import vitB from '../images copy/vitB.png';
 import curcumin from '../images copy/curcumin.png';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 function Vitamins() {
     const { t } = useTranslation("common");
@@ -54,11 +54,11 @@ function Vitamins() {
                     <h4>{t('Vitamin K')}</h4>
                     <img className='gridimage' src={K} alt='' />
                     <p className="e">
-                        {t('The body does not naturally produce vitamin K. Dandelion root is high in vitamin K, which helps with bone health and blood clotting. Some')}
+                        {t('The body does not naturally produce vitamin K. Dandelion root is high in vitamin K, which helps with bone health and blood clotting. Some studies indicate dandelion root is effective in colorectoral cancer. Other great sources of vitamin K are greens like kale, blueberries, kiwi and avocado.')}
                         <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5341965/'>
-                            {t('studies')}
+                            {t('Studies')}.
                         </a> 
-                        {t(' indicate dandelion root is effective in colorectal cancer. Other great sources of vitamin K are greens like kale, blueberries, kiwi and avocado.')}
+                        
                     </p>
                 </div>
 

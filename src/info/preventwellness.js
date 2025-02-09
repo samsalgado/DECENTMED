@@ -17,7 +17,7 @@ const PreventWellness = () => {
       <img src={preventchart} className="chart" alt="logo" />
 
       <br></br>
-      <div className='pr'>
+      <div className='video-container'>
      
         <iframe
           width="100%"
@@ -30,7 +30,9 @@ const PreventWellness = () => {
        
       </div>
    
-      <Vitamins />
+     <div className='vitamin'>
+ <Vitamins />
+</div>
     </div>
   );
 }
