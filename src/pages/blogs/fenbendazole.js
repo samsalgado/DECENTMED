@@ -121,9 +121,6 @@ const Fen = ({t}) => {
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
         </p>
-        <p>
-        <img className='gridimag' src={spanish1} alt="logo" />
-           </p>
            <p>
            <img className='gridimag' src={spanish2} alt="logo" />
            </p>
