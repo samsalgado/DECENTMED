@@ -1,6 +1,42 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import spanish from '../../images copy/IMG_6976.jpeg';
+import spanish2 from '../../images copy/IMG_6977.jpeg';
+import spanish3 from '../../images copy/IMG_6978.jpeg';
+import spanish4 from '../../images copy/IMG_6979.jpeg';
+import spanish5 from '../../images copy/IMG_6980.jpeg';
+import spanish6 from '../../images copy/IMG_6981.jpeg';
+import spanish7 from '../../images copy/IMG_6982.jpeg';
+import spanish8 from '../../images copy/IMG_6983.jpeg';
+import spanish9 from '../../images copy/IMG_6984.jpeg';
+import spanish10 from '../../images copy/IMG_6985.jpeg';
+import spanish11 from '../../images copy/IMG_6986.jpeg';
+import spanish12 from '../../images copy/IMG_6987.jpeg';
+import spanish13 from '../../images copy/IMG_6988.jpeg';
+import spanish14 from '../../images copy/IMG_6989.jpeg';
+import spanish15 from '../../images copy/IMG_6990.jpeg';
+import spanish16 from '../../images copy/IMG_6991.jpeg';
+import spanish17 from '../../images copy/IMG_6992.jpeg';
+import spanish18 from '../../images copy/IMG_6993.jpeg';
+import spanish19 from '../../images copy/IMG_6994.jpeg';
+import spanish20 from '../../images copy/IMG_6995.jpeg';
+import spanish21 from '../../images copy/IMG_6996.jpeg';
+import spanish22 from '../../images copy/IMG_6997.jpeg';
+import spanish23 from '../../images copy/IMG_6998.jpeg';
+import spanish24 from '../../images copy/IMG_6999.jpeg';
+import spanish25 from '../../images copy/IMG_7001.jpeg';
+import spanish26 from '../../images copy/IMG_7002.jpeg';
+import spanish27 from '../../images copy/IMG_7003.jpeg';
+import spanish28 from '../../images copy/IMG_7004.jpeg';
+import spanish29 from '../../images copy/IMG_7005.jpeg';
+import spanish30 from '../../images copy/IMG_7006.jpeg';
+import spanish31 from '../../images copy/IMG_7007.jpeg';
+import spanish32 from '../../images copy/IMG_7008.jpeg';
+import spanish33 from '../../images copy/IMG_7009.jpeg';
+import spanish34 from '../../images copy/IMG_7010.jpeg';
+import spanish35 from '../../images copy/IMG_7011.jpeg';
+import spanish36 from '../../images copy/IMG_7012.jpeg';
 import fenbenn from '../../images copy/Fenbendazole.png';
 import Collapsible from 'react-collapsible';
 import starvecancer from '../../images copy/starvecancer.webp';
@@ -263,6 +299,149 @@ const Hoxsey = ({t}) => {
   <a href="https://youtu.be/0TGjm7wIyUk?si=bw0UwHeh2IPGJxGN">Krebiozen Full Movie</a>
 </p>
           </div>
+      </div>
+        <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">Ivermectin in Spanish</th>}>
+                      <div className='container'>
+          <p>
+          <img className='gridimag' src={spanish} alt="logo" />
+        </p>
+           <p>
+           <img className='gridimag' src={spanish2} alt="logo" />
+           </p>
+           <p>
+            <img className='gridimag' src={spanish3} alt="logo" />
+           </p>
+           <p>
+            <img className='gridimag' src={spanish4} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish5} alt="pic" />
+           </p>
+           <p>
+            <img className='gridimag' src={spanish6} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish7} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish8} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish9} alt="pic" />
+           </p>
+            <p>
+                <img className='gridimag' src={spanish10} alt="pic" />
+            </p>
+            <p>
+                <img className='gridimag' src={spanish11} alt="pic" />
+            </p>
+            <p>
+                <img className='gridimag' src={spanish12} alt="pic" />
+            </p>
+  <p>
+                <img className='gridimag' src={spanish13} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish14} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish15} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish16} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish17} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish18} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish19} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish20} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish21} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish22} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish23} alt="pic" />
+            </p>
+
+ <p>
+                <img className='gridimag' src={spanish24} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish25} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish26} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish27} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish28} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish29} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish30} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish31} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish32} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish33} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish34} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish35} alt="pic" />
+            </p>
+
+<p>
+                <img className='gridimag' src={spanish36} alt="pic" />
+            </p>
+
+</div>
+            </Collapsible>
+          </tbody>
+        </table>
+       
       </div>
        <div>
         <table className="collapsibles-table">
