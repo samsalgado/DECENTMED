@@ -160,6 +160,7 @@ const Fen = ({t}) => {
   <p>       
           <img className='gridimag' src={spanish13} alt="pic" />
             </p>
+            </div>
             </Collapsible>
           </tbody>
         </table>
