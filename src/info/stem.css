@@ -18,6 +18,9 @@
   transition: background 0.3s ease-in-out;
 }
 
+.container h1{
+padding-bottom: 30px;
+}
 /* Ensure the collapsible container stretches properly */
 .title-container {
   flex: 1;
