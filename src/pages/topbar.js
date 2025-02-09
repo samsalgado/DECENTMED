@@ -213,50 +213,42 @@ const Topbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [isAdmin, isAdminLoading] = useAdmin();
   const [showMenu, setShowMenu] = useState(false);
+  const [selectedLang, setSelectedLang] = useState(null); // Default language
+  
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
   };
 
-  // Function to change language
-  const changeLang = (lang) => {
-    i18n.changeLanguage(lang); // Change language in i18n instance
-    setCookie("preferredLanguage", lang, 365); // Set the language in the cookie
-    console.log("Language changed to:", lang);
+   // Function to change language
+ const changeLang = (lang) => {
+    i18n.changeLanguage(lang)
+      .then(() => {
+        localStorage.setItem("preferredLanguage", lang);
+        setSelectedLang(lang);
+
+      })
+      .catch(err => console.error("Language change error:", err));
   };
 
-  // Function to set a cookie
-  const setCookie = (name, value, days) => {
-    const expirationDate = new Date();
-    expirationDate.setDate(expirationDate.getDate() + days);
-    const cookieString = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; expires=${expirationDate.toUTCString()}; path=/`;
-    document.cookie = cookieString;
-  };
-
-  // Function to get a cookie
-  const getCookie = (name) => {
-    const decodedName = encodeURIComponent(name);
-    const cookies = document.cookie.split(";");
-    for (let i = 0; i < cookies.length; i++) {
-      const cookie = cookies[i].trim();
-      if (cookie.startsWith(decodedName + "=")) {
-        return decodeURIComponent(cookie.substring(decodedName.length + 1));
-      }
-    }
-    return null;
-  };
-
-  // UseEffect hook to check the cookie on page load
+  // UseEffect hook to check localStorage on page load
   useEffect(() => {
-    const languageCookie = getCookie("preferredLanguage");
-    const initialLanguage = languageCookie || "en"; // Default to "en" if no cookie is found
-    i18n.changeLanguage(initialLanguage); // Set the language on page load
-
-  }, [i18n]); // Make sure it only runs once, on component mount
+    const storedLang = localStorage.getItem("preferredLanguage") || "en"; 
+    i18n.changeLanguage(storedLang)
+      .then(() => {
+        setSelectedLang(storedLang);
+      })
+      .catch(err => console.error("Error loading language:", err));
+  }, [i18n]); // ✅ Empty dependency array to prevent re-runs
 
   const handleLogOut = () => {
     logOut().then(() => {}).then(window.location.reload());
   };
+
+  // ✅ If language is not loaded, show "Loading..." (Prevents broken UI)
+    if (!selectedLang) {
+    return <div>Loading...</div>; 
+  }
 
   return (
     <div className='topbar'>
@@ -305,6 +297,7 @@ const Topbar = () => {
             aria-label="Change locale"
             onClick={toggleMenu}
           >
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

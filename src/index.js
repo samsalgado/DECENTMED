@@ -8,14 +8,17 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 
+
 import english from './lang/en.json';
 import dutch from './lang/nl.json';
 import espanol from './lang/es.json';
 import francais from './lang/fr.json';
 import hindi from './lang/hi.json';
+const preferredLang = localStorage.getItem("preferredLanguage") || "en";
 
 i18next.init({
-  lng: "en",
+ lng: preferredLang,
+  fallbackLng: "en",
   resources: {
     en: {
       common: english
