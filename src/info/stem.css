@@ -1,76 +1,86 @@
-.container {
-  padding: 2rem; /* Add padding for better content spacing */
-  width: 100%; /* Ensure full width */
-  box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.title-container {
-  text-align: center; /* Center title text */
-}
-
+/* Make sure th is full width */
 .collapsibles-table {
-  margin: 0 auto; /* Center table horizontally */
-  width: 80%; /* Adjust table width as needed */
-  max-width: 100%; /* Ensure table does not overflow on smaller screens */
+  width: 100%;
 }
 
-.gridimag,
-.gridima,
-.gridimage {
-  width: 100%; /* Ensure images fill their container */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 600px; /* Adjust maximum width of grid images */
-  margin: 10px auto; /* Center images horizontally with margin */
-  object-fit: cover; /* Maintain aspect ratio */
+.collapsible-trigger {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
 }
 
-.AC {
-  width: 80%;
-  max-width: 350px; /* Adjust maximum width of AC image */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Correctly handle inline-block display */
-  margin: 5px auto 10px; /* Adjust margin for spacing around image */
-  /* Consider using other methods for positioning rather than negative margins */
+/* Ensure the collapsible container stretches properly */
+.title-container {
+  flex: 1;
+  min-width: 300px;
 }
 
-.CASESTUDY {
-  width: 100%; /* Ensure images fill their container */
-  max-width: 500px; /* Adjust maximum width of case study images */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Correctly handle inline-block display */
-  margin: 10px auto; /* Add margin for spacing around images */
+/* Rotate icon on collapse */
+.Collapsible__trigger-expanded .icon {
+  transform: rotate(180deg);
 }
 
-.case-studies {
-  display: flex; /* Arrange case studies horizontally */
-  justify-content: center; /* Center case studies */
-  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+/* Icon styling */
+.icon {
+  margin-left: auto; /* Push icon to the right */
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .collapsibles-table {
-    width: 100%; /* Adjust table width to full width on smaller screens */
-  }
-.chelation-graphic {
-  max-width: 90%;
-  height: auto;
-  border: 1px solid #ccc;
-  margin: 10px;
-}
-@media (max-width: 768px) {
-  .pr {
-    text-indent: 10px; /* Further reduce indent on smaller screens */
+  .collapsible-section {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-  .gridimag,
-  .gridima,
-  .gridimage,
-  .CASESTUDY {
-    max-width: 90%; /* Ensure images scale down to fit their container on smaller screens */
+/* Video container maintains aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1250px; /* Prevents video from being too wide on large screens */
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+/* Make the iframe responsive */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive Design - Adjust video for different screen sizes */
+@media (max-width: 1024px) { /* Medium devices */
+  .video-container {
+    max-width: 800px;
+    padding-bottom: 56.25%; /* Maintain 16:9 ratio */
   }
 }
-@media (max-width: 768px) {
-  .AC {
-    max-width: 80%; /* Adjust max-width for smaller screens */
+
+@media (max-width: 768px) { /* Small devices */
+  .video-container {
+    max-width: 100%;
+    padding-bottom: 56.25%; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) { /* Extra small devices */
+  .video-container {
+    max-width: 100%;
+    padding-bottom: 75%; /* Slightly taller video for smaller screens */
   }
 }
