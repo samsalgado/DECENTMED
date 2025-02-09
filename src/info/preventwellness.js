@@ -18,9 +18,7 @@ const PreventWellness = () => {
 
       <br></br>
       <div className='pr'>
-        <p>
-          {t('Preventive Wellness Description 1')}
-        </p>
+     
         <iframe
           width="100%"
           height="700px"
@@ -29,10 +27,7 @@ const PreventWellness = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
-        <p>
-          {t('Preventive Wellness Description 2')}
-          <a href='https://gerson.org/'>{t('Cancer Treatments')}</a> {t('Description of Gerson')} <a href='https://drsebiscellfood.com/'>{t('Dr. Sebi Diet')}</a> {t('Description of Dr. Sebi Diet')}
-        </p>
+       
       </div>
    
       <Vitamins />
