@@ -1,6 +1,23 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import spanish from '../../images copy/IMG_6958.jpeg';
+import spanish2 from '../../images copy/IMG_6959.jpeg';
+import spanish3 from '../../images copy/IMG_6960.jpeg';
+import spanish4 from '../../images copy/IMG_6962.jpeg';
+import spanish5 from '../../images copy/IMG_6963.jpeg';
+import spanish6 from '../../images copy/IMG_6964.jpeg';
+import spanish7 from '../../images copy/IMG_6965.jpeg';
+import spanish8 from '../../images copy/IMG_6966.jpeg';
+import spanish9 from '../../images copy/IMG_6967.jpeg';
+import spanish10 from '../../images copy/IMG_6968.jpeg';
+import spanish11 from '../../images copy/IMG_6969.jpeg';
+import spanish12 from '../../images copy/IMG_6970.jpeg';
+import spanish13 from '../../images copy/IMG_6971.jpeg';
+import spanish14 from '../../images copy/IMG_6972.jpeg';
+import spanish15 from '../../images copy/IMG_6973.jpeg';
+import spanish16 from '../../images copy/IMG_6974.jpeg';
+import spanish17 from '../../images copy/IMG_6975.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import fenbenn from '../../images copy/Fenbendazole.png';
 import Collapsible from 'react-collapsible';
@@ -107,6 +124,72 @@ const Ivermectin = ({t}) => {
            <a href="https://www.sciencedirect.com/science/article/pii/S1043661820315152">Source 4</a>
            </p>
           </div>
+      </div>
+       <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">Ivermectin in Spanish</th>}>
+                      <div className='container'>
+          <p>
+          <img className='gridimag' src={spanish} alt="logo" />
+        </p>
+           <p>
+           <img className='gridimag' src={spanish2} alt="logo" />
+           </p>
+           <p>
+            <img className='gridimag' src={spanish3} alt="logo" />
+           </p>
+           <p>
+            <img className='gridimag' src={spanish4} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish5} alt="pic" />
+           </p>
+           <p>
+            <img className='gridimag' src={spanish6} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish7} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish8} alt="pic" />
+           </p>
+           <p>
+           <img className='gridimag' src={spanish9} alt="pic" />
+           </p>
+            <p>
+                <img className='gridimag' src={spanish10} alt="pic" />
+            </p>
+            <p>
+                <img className='gridimag' src={spanish11} alt="pic" />
+            </p>
+            <p>
+                <img className='gridimag' src={spanish12} alt="pic" />
+            </p>
+  <p>
+                <img className='gridimag' src={spanish13} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish14} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish15} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish16} alt="pic" />
+            </p>
+
+  <p>
+                <img className='gridimag' src={spanish17} alt="pic" />
+            </p>
+</div>
+            </Collapsible>
+          </tbody>
+        </table>
+       
       </div>
        <div>
         <table className="collapsibles-table">
