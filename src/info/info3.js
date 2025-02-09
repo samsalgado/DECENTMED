@@ -22,9 +22,9 @@ const Info3 = () => {
         <p>
           {t('A detox cleanses the body. A water detox cleanse can flush out the body\'s toxins. The 3 day cleanse detox will restore your cells to ketosis. When detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.')}
           <a href='https://gerson.org/'> {t('Cancer')}</a>
-          {t(' treatments globally like the Gerson Therapy and')}
+          {t('treatments globally like the Gerson Therapy and')}
           <a href='https://drsebiscellfood.com/'> {t('Dr. Sebi diet')}</a>
-          {t(' use forms of Detoxification to cleanse the body from toxins that cause cancer.')}
+          {t('use forms of Detoxification to cleanse the body from toxins that cause cancer.')}
         </p>
 
         <h4>{t('Detoxification Protocols')}</h4>

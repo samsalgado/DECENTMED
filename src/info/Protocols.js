@@ -17,10 +17,10 @@ const Protocols = () => {
                 {t('- Dr. William Kelley: Nutrition detoxification for cancer patients')}
               </Card.Text>
               <Card.Text>
-                {t('- Dr Sebi: Detoxification protocol using Sea Moss and an alkaline "green" diet to cleanse the liver and colon.')}
+                {t(`- Dr Sebi: Detoxification protocol using Sea Moss and an alkaline 'green' diet to cleanse the liver and colon.`)}
               </Card.Text>
               <Card.Text>
-                {t('- Dr. Gerson: Detoxification protocol with raw juices and vegetables an ')}
+                {t('- Dr. Gerson: Detoxification protocol with raw juices and vegetables an')}
                 <a href="https://gerson.org/coffee-enema-8-things-you-need-to-know/?gad_source=1&gclid=Cj0KCQjwrKu2BhDkARIsAD7GBou-t43MHZkA6SM-wjvUkmRmEzwQmXIXOxDcZGRzQpRiFIJbC_TWLgYaAgZtEALw_wcB">
                   {t('coffee enemas')}
                 </a> 

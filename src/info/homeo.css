@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   margin: 20px auto;
-  width: 100%; /* Removed fixed width, use full viewport width */
+  width: 100%; /* Full width for container */
   grid-row: 2; /* Place container in the second row */
 }
 
 .thecontainer {
   display: grid;
   grid-template-rows: auto 1fr; /* Define grid rows */
+  gap: 20px; /* Add space between rows */
 }
 
 .title-container {
@@ -20,44 +21,71 @@
 }
 
 .title-container img:first-child {
-  width: 200px; /* Adjust width as needed */
+  width: 100%; /* Adjust width of the first image */
 }
 
 .title-container img:last-child {
-  width: 50px; /* Adjust width as needed */
+  width: 50px; /* Adjust width of the last image */
 }
 
-.collapsibles-table {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+/* Set image height to 50% of the viewport height on large/medium devices */
+img {
+  width: 100%; /* Ensure full width */
+  height: 40vh; /* Set image height to 40% of the viewport height */
+  top: 20px;
 }
 
-.collapsibles-table th,
-.collapsibles-table td {
-  text-align: left;
-  padding: 1rem; /* Use rem for better scaling on mobile */
-  border-bottom: 1px solid #ddd;
-}
-
-/* Responsive Styles for .pic */
+/* Responsive Image for small devices */
 .pic {
   height: auto;
-  width: 100%; /* Set width to 100% for full-width on mobile */
-  max-width: 400px; /* Optional: Set a max-width to prevent very large images */
+  width: 100%; /* Full width */
+  max-width: 400px; /* Optional max width for large images */
 }
 
-/* Additional Media Queries (Optional) */
+/* Additional Media Queries */
 @media (max-width: 768px) {
   .title-container {
-    /* Adjust styles for title container on smaller screens */
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; /* Stack title elements vertically */
+    text-align: center; /* Center text */
   }
-  .title-container img {
-    width: 100%; /* Adjust image width for smaller screens */
-  }
-  .pic{
-    object-fit: contain; /* Scales image to fit container while maintaining aspect ratio */
 
+  .title-container img {
+    width: 100%; /* Ensure images take full width */
+  }
+
+  .pic {
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+
+  .collapsibles-table {
+    grid-template-columns: 1fr; /* One column layout */
+  }
+
+  /* Adjust image height for smaller screens */
+  img {
+    height: 30vh; /* Reduce height for smaller devices */
+  }
+
+  iframe {
+    height: auto; /* Adjust iframe height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px auto; /* Reduce margin on extra small screens */
+  }
+
+  .pic {
+    max-width: 100%; /* Full width on small devices */
+  }
+
+  .title-container {
+    margin-bottom: 15px; /* Reduce margin for compact layout */
+  }
+
+  /* Further adjust image height for very small screens */
+  img {
+    height: 25vh; /* Further reduce image height on very small screens */
   }
 }
