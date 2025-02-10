@@ -131,7 +131,7 @@ const Ivermectin = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Ivermectin in Spanish</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">Ivermectina en Español</th>}>
                       <div className='container'>
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
@@ -197,7 +197,7 @@ const Ivermectin = ({t}) => {
       <div>
        <table className="collapsibles-table">
           <tbody> 
-      <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in Dutch</div>}>
+      <Collapsible trigger={<div className="collapsible-trigger">Ivermectine in het Nederlands</div>}>
   <Ivermectinedutch />
 </Collapsible>
 </tbody>
@@ -206,7 +206,7 @@ const Ivermectin = ({t}) => {
 <div>
   <table className="collapsibles-table">
           <tbody> 
-      <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in Hindi</div>}>
+      <Collapsible trigger={<div className="collapsible-trigger">आईवर्मेक्टिन हिंदी में</div>}>
   <Ivermectinhindi />
 </Collapsible>
 </tbody>
@@ -215,7 +215,7 @@ const Ivermectin = ({t}) => {
   <div>
        <table className="collapsibles-table">
           <tbody> 
-      <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in French</div>}>
+      <Collapsible trigger={<div className="collapsible-trigger">Ivermectine en français</div>}>
   <Ivermectinfrench />
 </Collapsible>
 </tbody>
