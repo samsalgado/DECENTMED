@@ -2,6 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import Ivermectinedutch from './dutch';
+import Ivermectinhindi from './hindi';
 import spanish from '../../images copy/IMG_6958.jpeg';
 import spanish2 from '../../images copy/IMG_6959.jpeg';
 import spanish3 from '../../images copy/IMG_6960.jpeg';
@@ -197,6 +198,15 @@ const Ivermectin = ({t}) => {
           <tbody> 
       <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in Dutch</div>}>
   <Ivermectinedutch />
+</Collapsible>
+</tbody>
+</table>
+</div>
+<div>
+  <table className="collapsibles-table">
+          <tbody> 
+      <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in Dutch</div>}>
+  <Ivermectinhindi />
 </Collapsible>
 </tbody>
 </table>
