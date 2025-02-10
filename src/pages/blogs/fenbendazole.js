@@ -1,6 +1,7 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import Fenhindi from './fenhindi';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import Collapsible from 'react-collapsible';
@@ -163,6 +164,16 @@ const Fen = ({t}) => {
         </table>
        
       </div>
+      <div>
+  <table className="collapsibles-table">
+    <tbody>
+        <th className="collapsible-trigger">फेनबेंडाज़ोल हिंदी में</th>
+          <Collapsible trigger="फेनबेंडाज़ोल हिंदी में">
+            <Fenhindi />
+          </Collapsible>
+    </tbody>
+  </table>
+</div>
        <div>
         <table className="collapsibles-table">
           <tbody> 
