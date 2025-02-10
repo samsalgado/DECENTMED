@@ -292,9 +292,6 @@ const Hoxsey = ({t}) => {
               <p>
                 <img className='gridimag' src={hoxsey42} alt="pic" />
             </p>
-          <p>
-            <a href="https://docs.google.com/presentation/d/11ioJ2uKusayB5mbCPyp9BjtM_D49qY_CaQdf0Rk8ORg/edit">Slide Show</a>   
-           </p>
            <p>
             <a href="https://www.dropbox.com/scl/fi/lips9wksb1voy7wwcvi01/YouDontHaveToDie_HarryHoxsey.pdf?rlkey=95a8mmfufb4vfei6os3249aq5&st=0o8e265b&dl=0">You Don’t Have to Die Full Book</a>   
            </p>
