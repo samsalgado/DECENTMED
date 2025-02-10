@@ -167,8 +167,7 @@ const Fen = ({t}) => {
       <div>
   <table className="collapsibles-table">
     <tbody>
-        <th className="collapsible-trigger">फेनबेंडाज़ोल हिंदी में</th>
-          <Collapsible trigger="फेनबेंडाज़ोल हिंदी में">
+               <Collapsible trigger={<div className="collapsible-trigger">फेनबेंडाज़ोल हिंदी में</div>}>
             <Fenhindi />
           </Collapsible>
     </tbody>
