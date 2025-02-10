@@ -304,7 +304,7 @@ const Hoxsey = ({t}) => {
         <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Ivermectin in Spanish</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">Hoxsey Tratamiento en Español</th>}>
                       <div className='container'>
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
