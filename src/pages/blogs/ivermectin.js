@@ -205,7 +205,7 @@ const Ivermectin = ({t}) => {
 <div>
   <table className="collapsibles-table">
           <tbody> 
-      <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in Dutch</div>}>
+      <Collapsible trigger={<div className="collapsible-trigger">Ivermectin in Hindi</div>}>
   <Ivermectinhindi />
 </Collapsible>
 </tbody>
