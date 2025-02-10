@@ -2,6 +2,8 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import Hoxseyfr from './hoxseyfr';
+import Hoxseyhindi from './hoxseyhindi';
+import Hoxseydutch from './hoxseydutch';
 import spanish from '../../images copy/IMG_6976.jpeg';
 import spanish2 from '../../images copy/IMG_6977.jpeg';
 import spanish3 from '../../images copy/IMG_6978.jpeg';
@@ -449,6 +451,24 @@ const Hoxsey = ({t}) => {
           <tbody> 
           <Collapsible trigger={<th className="collapsible-trigger">Hoxsey en français</th>}>
           <Hoxseyfr />
+          </Collapsible>
+          </tbody>
+        </table>
+      </div>
+       <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">Hoxsey-kankerbehandeling in het Nederlands</th>}>
+          <Hoxseydutch />
+          </Collapsible>
+          </tbody>
+        </table>
+      </div>
+       <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">हॉक्ससी कैंसर उपचार हिंदी में</th>}>
+          <Hoxseyhindi />
           </Collapsible>
           </tbody>
         </table>
