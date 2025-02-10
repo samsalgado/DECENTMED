@@ -13,7 +13,7 @@ import spanish12 from '../../images copy/IMG_7215.jpeg';
 import spanish13 from '../../images copy/IMG_7216.jpeg';
 import spanish14 from '../../images copy/IMG_7217.jpeg';
 import spanish15 from '../../images copy/IMG_7220.jpeg';
-import spanish16 from '../../images copy/ IMG_7221.jpeg';
+import spanish16 from '../../images copy/IMG_7221.jpeg';
 import "../../App.css";
 const Hoxseydutch = ({ t }) => {
   const images = [
