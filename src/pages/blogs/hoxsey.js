@@ -1,6 +1,7 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import Hoxseyfr from './hoxseyfr';
 import spanish from '../../images copy/IMG_6976.jpeg';
 import spanish2 from '../../images copy/IMG_6977.jpeg';
 import spanish3 from '../../images copy/IMG_6978.jpeg';
@@ -442,6 +443,15 @@ const Hoxsey = ({t}) => {
           </tbody>
         </table>
        
+      </div>
+       <div>
+        <table className="collapsibles-table">
+          <tbody> 
+          <Collapsible trigger={<th className="collapsible-trigger">Hoxsey en français</th>}>
+          <Hoxseyfr />
+          </Collapsible>
+          </tbody>
+        </table>
       </div>
        <div>
         <table className="collapsibles-table">
