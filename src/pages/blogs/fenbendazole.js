@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import Fenhindi from './fenhindi';
 import Fenfrance from './fenfr';
+import Fendutch from './fendutch';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import Collapsible from 'react-collapsible';
@@ -179,6 +180,15 @@ const Fen = ({t}) => {
     <tbody>
                <Collapsible trigger={<div className="collapsible-trigger">Fenbendazole en français</div>}>
             <Fenfrance />
+          </Collapsible>
+    </tbody>
+  </table>
+</div>
+<div>
+  <table className="collapsibles-table">
+    <tbody>
+               <Collapsible trigger={<div className="collapsible-trigger">Fenbendazol in het Nederlands</div>}>
+            <Fendutch />
           </Collapsible>
     </tbody>
   </table>
