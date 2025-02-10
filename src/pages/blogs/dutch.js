@@ -16,65 +16,20 @@ import spanish15 from '../../images copy/IMG_7068.jpeg';
 import spanish16 from '../../images copy/IMG_7069.jpeg';
 import spanish17 from '../../images copy/IMG_7070.jpeg';
 import "../../App.css";
-          const Ivermectinedutch = ({t}) => {
-return {
+const Ivermectinedutch = ({ t }) => {
+  const images = [
+    spanish, spanish2, spanish3, spanish4, spanish5, spanish6, spanish7, spanish8, 
+    spanish9, spanish10, spanish11, spanish12, spanish13, spanish14, spanish15, 
+    spanish16, spanish17
+  ];
 
-        <div className='container'>
-          <p>
-          <img className='gridimag' src={spanish} alt="logo" />
-        </p>
-           <p>
-           <img className='gridimag' src={spanish2} alt="logo" />
-           </p>
-           <p>
-            <img className='gridimag' src={spanish3} alt="logo" />
-           </p>
-           <p>
-            <img className='gridimag' src={spanish4} alt="pic" />
-           </p>
-           <p>
-           <img className='gridimag' src={spanish5} alt="pic" />
-           </p>
-           <p>
-            <img className='gridimag' src={spanish6} alt="pic" />
-           </p>
-           <p>
-           <img className='gridimag' src={spanish7} alt="pic" />
-           </p>
-           <p>
-           <img className='gridimag' src={spanish8} alt="pic" />
-           </p>
-           <p>
-           <img className='gridimag' src={spanish9} alt="pic" />
-           </p>
-            <p>
-                <img className='gridimag' src={spanish10} alt="pic" />
-            </p>
-            <p>
-                <img className='gridimag' src={spanish11} alt="pic" />
-            </p>
-            <p>
-                <img className='gridimag' src={spanish12} alt="pic" />
-            </p>
-  <p>
-                <img className='gridimag' src={spanish13} alt="pic" />
-            </p>
-
-  <p>
-                <img className='gridimag' src={spanish14} alt="pic" />
-            </p>
-
-  <p>
-                <img className='gridimag' src={spanish15} alt="pic" />
-            </p>
-
-  <p>
-                <img className='gridimag' src={spanish16} alt="pic" />
-            </p>
-
-  <p>
-                <img className='gridimag' src={spanish17} alt="pic" />
-            </p>
-</div>
+  return (
+    <div className="container">
+      {images.map((image, index) => (
+        <img key={index} className="gridimag" src={image} alt="pic" />
+      ))}
+    </div>
+  );
+};
 
 export default Ivermectinedutch;
