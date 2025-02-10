@@ -18,7 +18,7 @@ import spanish17 from '../../images copy/IMG_7070.jpeg';
 import "../../App.css";
           const Ivermectinedutch = ({t}) => {
 return {
-<>
+
         <div className='container'>
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
