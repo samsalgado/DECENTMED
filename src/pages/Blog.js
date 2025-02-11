@@ -1,28 +1,28 @@
 import React from 'react';
-import Topbar from './topbar';
-import Footer from '../footer';
-import Fagen from "../images copy/IMG_6505.jpeg";
-import B17 from "../images copy/B17.png";
-import hypnotherapy from "../images copy/hypno.png";
-import batana from "../images copy/batana.png";
-import hepB from "../images copy/hepB.png";
-import nutritionbenefits from "../images copy/nutritionbenefits.png";
-import '../App.css';
-import Fenbendazole from '../images copy/Fenbendazole.png';
-import Ivermectin from '../images copy/IVERMECTINCANCER.jpeg';
-import shroom from '../images copy/shroom.webp';
-import chirotreat from '../images copy/chirotreats.png';
-import montreal from "../images copy/montreal.png";
-import consult from "../images copy/consult.png";
-import RoseOil from '../images copy/roseoil.png';
-import cancerimg from "../images copy/cancerimg.png";
-import cell from "../images copy/cell.png";
-import acuneed from '../images copy/acuneed.png';
-import constipation from '../images copy/constipation.png';
-import blogs from '../images copy/blogs.png';
-import depression from '../images copy/depression.jpg';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
+import '../App.css';
+import Footer from '../footer';
+import acuneed from '../images copy/acuneed.png';
+import B17 from "../images copy/B17.png";
+import batana from "../images copy/batana.png";
+import blogs from '../images copy/blogs.png';
+import cancerimg from "../images copy/cancerimg.png";
+import cell from "../images copy/cell.png";
+import chirotreat from '../images copy/chirotreats.png';
+import constipation from '../images copy/constipation.png';
+import consult from "../images copy/consult.png";
+import depression from '../images copy/depression.jpg';
+import Fenbendazole from '../images copy/Fenbendazole.png';
+import hepB from "../images copy/hepB.png";
+import hypnotherapy from "../images copy/hypno.png";
+import Fagen from "../images copy/IMG_6505.jpeg";
+import Ivermectin from '../images copy/IVERMECTINCANCER.jpeg';
+import montreal from "../images copy/montreal.png";
+import nutritionbenefits from "../images copy/nutritionbenefits.png";
+import RoseOil from '../images copy/roseoil.png';
+import shroom from '../images copy/shroom.webp';
+import Topbar from './topbar';
 const BlogPage = () => {
 const { t } = useTranslation("common");
   return (
@@ -285,7 +285,7 @@ const { t } = useTranslation("common");
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('The Importance of Nutrition')}</h2>
     <div className='pr'>
     <p>
-    {t(`I am not a doctor or nutritionist, however, I am a developer and researcher who understands the value of showcasing Holistic Medicine to the public. Of the nine practices on the platform: Homeopathy, PRP, Hypnotherapy, Stem Cell Therapy, Chelation, Chiropractic, Ayurveda, and Acupuncture; Nutrition is the most valuable because it encompasses general elements of the others. I did not know that the Standard American Diet was insufficient for the vitamins humans lack. Humans lack vitamins A, D, E, and K, so nutritionists create diet plans specific to each person.`)} 
+    {t(`I am not a doctor or nutritionist, however, I am a developer and researcher who understands the value of showcasing Holistic Medicine to the public. Of the nine practices on the platform: Homeopathy, PRP, Hypnotherapy, Stem Cell Therapy, Chelation, Chiropractic, Ayurveda, and Acupuncture; Nutrition is the most valuable because it encompasses general elements of the others. I did not know that the Standard American Diet was insufficient for the vitamins humans lack. Humans lack vitamins A, D, E, and K, so nutritionists create diet plans specific to each person. Dr. Sebi was a herbalist who understood the correlation between diet and plants. His diet protocol might not be attainable for some people — a nutritionist can tailor a diet around different philosophies on health that work within someone’s capabilities. The most important element of a nutritionist is trust — have the confidence knowing that they have data on you and expertise in the health field.`)} 
         </p>
       </div>
     </div>

@@ -47,7 +47,9 @@ import spanish12 from '../../images copy/IMG_6956.jpeg';
 import spanish13 from '../../images copy/IMG_6957.jpeg';
 
 import "../../App.css";
-const Fen = ({t}) => {
+import { useTranslation } from "react-i18next";
+const Fen = () => {
+const {t} = useTranslation('common')
   return (
     <>
       <Helmet>
@@ -109,10 +111,10 @@ const Fen = ({t}) => {
                 <img className='gridimag' src={fenben13} alt="pic" />
             </p>
            <p>
-            <a href="https://ar.iiarjournals.org/content/44/9/3725#:~:text=Fenbendazole%20has%20been%20found%20to,primarily%20by%20disrupting%20energy%20metabolism.">Source 1</a>   
+            <a href="https://ar.iiarjournals.org/content/44/9/3725#:~:text=Fenbendazole%20has%20been%20found%20to,primarily%20by%20disrupting%20energy%20metabolism.">{t('Source 1')}</a>   
            </p>
            <p>
-           <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437363/">Source 2</a>
+           <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437363/">{t('Source 2')}</a>
            </p>
           </div>
       </div>
@@ -196,7 +198,7 @@ const Fen = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
                <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
                <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>

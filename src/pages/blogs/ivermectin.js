@@ -43,7 +43,9 @@ import ivermectin15 from '../../images copy/ivermectin15.jpeg';
 import ivermectin16 from '../../images copy/ivermectin16.jpeg';
 import ivermectin17 from '../../images copy/ivermectin17.jpeg';
 import "../../App.css";
-const Ivermectin = ({t}) => {
+import { useTranslation } from "react-i18next";
+const Ivermectin = () => {
+const {t} = useTranslation('common')
   return (
     <>
       <Helmet>
@@ -115,16 +117,16 @@ const Ivermectin = ({t}) => {
                 <img className='gridimag' src={ivermectin17} alt="pic" />
             </p>
            <p>
-            <a href="https://go.drugbank.com/drugs/DB00602">Source 1</a>   
+            <a href="https://go.drugbank.com/drugs/DB00602">{t('Source 1')}</a>   
            </p>
            <p>
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7505114/">Source 2</a>   
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7505114/">{t('Source 2')}</a>   
            </p>
            <p>
-            <a href="https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2022-02421#:~:text=Ivermectin%20may%20help%20block%20the,with%20triple%20negative%20breast%20cancer.">Source 3</a>   
+            <a href="https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2022-02421#:~:text=Ivermectin%20may%20help%20block%20the,with%20triple%20negative%20breast%20cancer.">{t('Source 3')}</a>   
            </p>
            <p>
-           <a href="https://www.sciencedirect.com/science/article/pii/S1043661820315152">Source 4</a>
+           <a href="https://www.sciencedirect.com/science/article/pii/S1043661820315152">{t('Source 4')}</a>
            </p>
           </div>
       </div>
