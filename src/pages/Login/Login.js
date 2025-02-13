@@ -76,7 +76,7 @@ const {t} = useTranslation('common')
                   minLength: { value: 6, message: "Password must be at least 6 characters" },
                   pattern: { value: /^(?=.*?[A-Z])(?=.*?[!@#$%^&*])/, message: "Password must contain at least one capital letter and one special character" }
                 })}
-                placeholder="Enter Password"
+                placeholder={t("Enter Password")}
               />
               <span className="password-toggle" onClick={() => setShow(!show)}>
                 {show ? <FaEyeSlash /> : <FaEye />}
@@ -91,7 +91,7 @@ const {t} = useTranslation('common')
             <input
               className="login-button"
               type="submit"
-              value="Login"
+              value={t("Login")}
             />
           </form>
           <p className="login-footer">

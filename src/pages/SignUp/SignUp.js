@@ -81,7 +81,7 @@ setError(error)
 
             type="email"
             {...register("email", { required: t("Email is required") })}
-            placeholder={t("Enter email")}
+            placeholder={t("Enter your email")}
           />
           {errors.email && <p className="error-message">{errors.email.message}</p>}
         </div>
