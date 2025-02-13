@@ -82,7 +82,7 @@ const { t } = useTranslation("common");
       <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Dry Needling vs Acupuncture')}</h2>
       <div className='pr'>
       <p>
-       {t(' Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases, working to relieve the trigger point symptom.')}
+       {t('Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases, working to relieve the trigger point symptom.')}
       </p>
      
       </div>
@@ -133,8 +133,7 @@ const { t } = useTranslation("common");
     <div className='pr'>
         <p>
          {t(`A detox cleanses the body. A water detox is a way to flush out the body's toxins. A water detox ranges from 1-3 days to restore the cells to ketosis. Furthermore, when detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.`)} 
-         <a href='https://gerson.org/'> {t('Cancer')}</a> {t('treatments globally like the Gerson Therapy and')} <a href='https://drsebiscellfood.com/'>Dr. Sebi diet</a> use forms of Green Diets and Detoxification to cleanse the body from toxins that cause cancer. 
-        </p>
+         <a href='https://gerson.org/'> {t('Cancer')}</a> {t('treatments globally like the Gerson Therapy and')} <a href='https://drsebiscellfood.com/'>{t('Dr. Sebi diet')}</a> {t('use forms of Green Diets and Detoxification to cleanse the body from toxins that cause cancer.')}</p>
         <div className='container'>
     <a href='/blog4'>
     <figure>
@@ -167,7 +166,7 @@ const { t } = useTranslation("common");
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Vitamin B: Vitamin B17 - The Mysterious Case of Cancer')}</h2>
     <div className='pr'>
         <p>
-        {t(`According to the book World Without Cancer: The Story of Vitamin B17 by G. Edward Griffin, "Vitamin B17(Laetrile) can destroy cancer cells". In this article, we will explore the components of Laetrile, the book's claim and why vitamin B17 or Laetrile is illegal in the United States.`)}
+        {t(`According to the book World Without Cancer: The Story of Vitamin B17 by G. Edward Griffin, 'Vitamin B17(Laetrile) can destroy cancer cells'. In this article, we will explore the components of Laetrile, the book's claim and why vitamin B17 or Laetrile is illegal in the United States.`)}
         </p>
         <div className='container'>
     <a href='/cancer'>
@@ -235,8 +234,7 @@ const { t } = useTranslation("common");
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Acupuncture Montreal')}</h2>
     <div className='pr'>
         <p>
-        Mass immigration in Canada has its advantages and disadvantages; assimilation led to Canadians adopting Traditional Chinese Medicine (TCM). Acupuncture Montreal adoption began with British Columbia adding acupuncture to the <a href="https://pubmed.ncbi.nlm.nih.gov/25555597/">Canadian Medical Services Plan in 2008.</a> Ontario and British Columbia have the highest adoption of acupuncture among the ten provinces of Canada. Regulation in Canada is varied among the provinces. For instance, <a href="https://acupuncturecanada.org/acupuncture-101/regulation-and-education/#:~:text=Medical%20doctors%20and%20dentists%20may,but%20Quebec%20and%20British%20Columbia.">chiropractors can use acupuncture everywhere but in British Columbia and Quebec.</a> British Columbia has most regulations regarding the provinces.
-        </p>
+        {t('Mass immigration in Canada has its advantages and disadvantages; assimilation led to Canadians adopting Traditional Chinese Medicine (TCM). Acupuncture Montreal adoption began with British Columbia adding acupuncture to the')}<a href="https://pubmed.ncbi.nlm.nih.gov/25555597/">{t('Canadian Medical Services Plan in 2008.')}</a> {t('Ontario and British Columbia have the highest adoption of acupuncture among the ten provinces of Canada. Regulation in Canada is varied among the provinces. For instance')} <a href="https://acupuncturecanada.org/acupuncture-101/regulation-and-education/#:~:text=Medical%20doctors%20and%20dentists%20may,but%20Quebec%20and%20British%20Columbia.">{t('chiropractors can use acupuncture everywhere but in British Columbia and Quebec.')}</a> {t('British Columbia has most regulations regarding the provinces.')}</p>
     
       </div>
         </div>
@@ -252,8 +250,7 @@ const { t } = useTranslation("common");
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Pain Pill for Back: Best Chiropractor Near Me')}</h2>
     <div className='pr'>
         <p>
-        Back pain effects an estimated "80% of the US population". As people age, pain becomes more and more frequent. According to <a href="https://nida.nih.gov/news-events/news-releases/2024/05/over-115-million-pills-containing-illicit-fentanyl-seized-by-law-enforcement-in-2023">NIDA</a>: "Over 115 million pills containing illicit fentanyl seized by law enforcement in 2023", if this the seized number, imagine the actual number of pills containing fentanyl last year. The "War on Drugs" was a collosal failure in the United States; Oregon decriminalized drugs in its state. However, this decision hasn't worked either, resulting in rampant drug use, overdose, homelessness and fentanyl deaths. Pain pills, or opioids have a long history of abuse and addiction. "In 2022, over 107,000 people died of a drug overdose, with 75% of those deaths involving an opioid." According to WebMD: "Estimated 3 million Americans suffer from OUD (Opioid Use Disorder)". Chiropractors take a holistic perspective, the body can heal itself. Chiropractic techniques are 40% more effective than medical care for lower back pain. Suffering from back pain? Type: "best chiropractor near me" instead of using pain pills for back. 
-        </p>    
+        {t('Back pain effects an estimated "80% of the US population". As people age, pain becomes more and more frequent. According to')}  <a href="https://nida.nih.gov/news-events/news-releases/2024/05/over-115-million-pills-containing-illicit-fentanyl-seized-by-law-enforcement-in-2023">{t('NIDA')}</a>: {t('Over 115 million pills containing illicit fentanyl seized by law enforcement in 2023, if this the seized number, imagine the actual number of pills containing fentanyl last year. The "War on Drugs" was a collosal failure in the United States; Oregon decriminalized drugs in its state. However, this decision has not worked either, resulting in rampant drug use, overdose, homelessness and fentanyl deaths. Pain pills, or opioids have a long history of abuse and addiction. In 2022, over 107,000 people died of a drug overdose, with 75% of those deaths involving an opioid. According to WebMD: Estimated 3 million Americans suffer from OUD (Opioid Use Disorder). Chiropractors take a holistic perspective, the body can heal itself. Chiropractic techniques are 40% more effective than medical care for lower back pain. Suffering from back pain? Type: best chiropractor near me instead of using pain pills for back.')}</p>    
       </div>
         </div>
         <div className='container'>
@@ -307,7 +304,7 @@ const { t } = useTranslation("common");
     <a href='https://lern-herstory.com/stories/f/mushrooms-relationships'>
     <figure>
         <img className='gridimag' src={shroom} alt="logo" />
-          <figcaption>{t('Click on image for blog by Julie P. Fry on Mushrooms')}</figcaption>
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
         </figure>
       </a>
       </div>
@@ -324,7 +321,7 @@ const { t } = useTranslation("common");
     <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
     <figure>
         <img className='gridimag' src={Fagen} alt="logo" />
-          <figcaption>{t('Click on image for blog by Nutritionist Randee Fagen')}</figcaption>
+          <figcaption>{t('Click on image for full Blog')} - Nutritionist Randee Fagen</figcaption>
         </figure>
       </a>
       </div>
@@ -340,7 +337,7 @@ const { t } = useTranslation("common");
     <a href='/blog16'>
     <figure>
         <img className='gridimag' src={RoseOil} alt="logo" />
-          <figcaption>{t('Click on image for blog')}</figcaption>
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
         </figure>
       </a>
       </div>

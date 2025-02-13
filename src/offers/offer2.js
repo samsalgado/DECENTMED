@@ -23,12 +23,12 @@ const Offer2 = () => {
 
     else {
       Swal.fire({
-        title: 'Please Login First',
+        title: t('Please Login First'),
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Login Now'
+        confirmButtonText: t('Login Now')
       }).then((result) => {
         if (result.isConfirmed) {
           navigate('/login', { state: { from: location } })

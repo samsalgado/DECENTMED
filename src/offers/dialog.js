@@ -37,12 +37,12 @@ export default function CustomizedDialogs({ children }) {
 
     else {
       Swal.fire({
-        title: 'Please Login First',
+        title: t('Please Login First'),
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Login Now'
+        confirmButtonText: t('Login Now')
       }).then((result) => {
         if (result.isConfirmed) {
           navigate('/login', { state: { from: location } })
@@ -64,7 +64,7 @@ export default function CustomizedDialogs({ children }) {
         open={open}
       >
         <BootstrapDialogTitle style={{ textAlign: "center" }} id="customized-dialog-title" onClose={handleClose}>
-          Subscription: Initial Payment: 0.0017 BTC ($100)
+          {t('Subscription: Initial Payment')}: 0.0017 BTC ($100)
         </BootstrapDialogTitle>
         <DialogContent dividers>
           {children}

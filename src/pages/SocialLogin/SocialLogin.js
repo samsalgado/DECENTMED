@@ -3,13 +3,14 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth.js';
 import './SocialLogin.css';
+import { useTranslation } from 'react-i18next';
 
 const SocialLogin = () => {
   const { googleSignIn } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || '/';
-
+  const { t } = useTranslation('common')
   const handleGoogleSignIn = () => {
     googleSignIn()
       .then((result) => {
@@ -40,7 +41,7 @@ const SocialLogin = () => {
   return (
     <div className='social-login'>
       <button onClick={handleGoogleSignIn} className='google-signin-btn'>
-        Google SignIn
+        {t('Google SignIn')}
       </button>
     </div>
   );

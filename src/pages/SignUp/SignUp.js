@@ -9,6 +9,7 @@ import { AuthContext } from '../Providers/AuthProvider';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Topbar from '../topbar';
 import './SignUp.css';
+import { useTranslation } from 'react-i18next';
 
 const Register = () => {
   const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
@@ -17,6 +18,7 @@ const Register = () => {
   const { createUser, updatePhoto } = useContext(AuthContext);
   const navigate = useNavigate();
 const [error, setError] = useState('');
+const {t} = useTranslation('common')
   const onSubmit = (data) => {
     createUser(data.email, data.password)
       .then(result => {
@@ -54,7 +56,7 @@ setError(error)
 
   return (
 <>      <Helmet>
-  <title> signup</title>
+  <title> {t('signup')}</title>
 </Helmet>
 
   <header>
@@ -62,38 +64,38 @@ setError(error)
   </header>
   <div className="register-container">
     <div className="register-form-container">
-      <h2 className="register-title">Create an account</h2>
+      <h2 className="register-title">{t('Create an account')}</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">{t('Name')}</label>
           <input
             type="text"
-            {...register("name", { required: "Name is required" })}
-            placeholder="Enter Name"
+            {...register("name", { required: t("Name is required") })}
+            placeholder={t("Enter Name")}
           />
           {errors.name && <p className="error-message">{errors.name.message}</p>}
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">{t('Email')}</label>
           <input
 
             type="email"
-            {...register("email", { required: "Email is required" })}
-            placeholder="Enter email"
+            {...register("email", { required: t("Email is required") })}
+            placeholder={t("Enter email")}
           />
           {errors.email && <p className="error-message">{errors.email.message}</p>}
         </div>
 
         <div className="form-group password-field">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">{t('Password')}</label>
           <input
                type={show ? 'text' : 'password'}
             {...register("password", {
-              required: "Password is required",
+              required:t( "Password is required"),
               minLength: { value: 6, message: "Password must be at least 6 characters" },
               pattern: { value: /^(?=.*?[A-Z])(?=.*?[!@#$%^&*])/, message: "Password must contain at least one capital letter and one special character" }
             })}
-            placeholder="Enter Password"
+            placeholder={t("Enter Password")}
           />
    <span className="password-toggle" onClick={() => setShow(!show)}>
                 {show ? <FaEyeSlash /> : <FaEye />}
@@ -101,31 +103,31 @@ setError(error)
           {errors.password && <p className="error-message">{errors.password.message}</p>}
         </div>
         <div className="form-group password-field">
-          <label htmlFor="confirm">Confirm Password</label>
+          <label htmlFor="confirm">{t('Confirm Password')}</label>
           <input
 
                type={show ? 'text' : 'password'}
             {...register("confirm", {
-              required: "Confirm Password is required",
-              validate: value => value === password || "Passwords do not match"
+              required: t("Confirm Password is required"),
+              validate: value => value === password || t("Passwords do not match")
             })}
-            placeholder="Confirm Password"
+            placeholder={t("Confirm Password")}
           />
    <span className="password-toggle" onClick={() => setShow(!show)}>
                 {show ? <FaEyeSlash /> : <FaEye />}
               </span>
           {errors.confirm && <p className="error-message">{errors.confirm.message}</p>}
         </div>
-        <input type="submit" value="Sign Up" className="submit-button" />
+        <input type="submit" value={t("Sign Up")} className="submit-button" />
       </form>
  {error && (
                 <p className="login-error">{error.message}</p>
               )}
       <p className="already-account">
-        Already have an account? <Link to="/login">Login</Link>
+        {t('Already have an account?')}   <Link to="/login">{t('Login')}</Link>
       </p>
     </div>
-    <div className="divider">Or</div>
+    <div className="divider">{t('Or')}</div>
     <SocialLogin />
   </div>
   <footer className='footer'>

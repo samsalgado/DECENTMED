@@ -11,6 +11,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import Topbar from '../topbar';
 import './Login.css'; // Import the custom CSS
 import { AuthContext } from '../Providers/AuthProvider';
+import { useTranslation } from 'react-i18next';
 
 const Login = () => {
   const { signInUser } = useContext(AuthContext);
@@ -19,7 +20,7 @@ const Login = () => {
   const from = location?.state?.from?.pathname || '/';
   const [show, setShow] = useState(false);
   const [error, setError] = useState('');
-
+const {t} = useTranslation('common')
   const {
     register,
     handleSubmit,
@@ -30,10 +31,10 @@ const Login = () => {
       .then((result) => {
         setError('');
         Swal.fire({
-          title: 'Success!',
-          text: 'Do you want to continue',
+          title: t('Success!'),
+          text: t('Do you want to continue'),
           icon: 'success',
-          confirmButtonText: 'Welcome',
+          confirmButtonText: t('Welcome'),
         });
         navigate(from, { replace: true });
       })
@@ -43,22 +44,22 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title> login</title>
+        <title> {t('login')}</title>
       </Helmet>
       <header>
         <Topbar />
       </header>
       <div className="login-container">
         <div className="login-form-container">
-          <h2 className="login-title">Login</h2>
+          <h2 className="login-title">{t('Login')}</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="login-field">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t('Email')}</label>
               <input
                 className="login-input"
                 type="email"
                 {...register('email', { required: 'Email is required' })} 
-                placeholder="Enter your email"
+                placeholder={t("Enter your email")}
 
               />
               {errors.email && (
@@ -66,7 +67,7 @@ const Login = () => {
               )}
             </div>
             <div className="login-field password-field">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">{t('Password')}</label>
               <input
                 className="login-input"
                 type={show ? 'text' : 'password'}
@@ -94,10 +95,10 @@ const Login = () => {
             />
           </form>
           <p className="login-footer">
-            Don't have an account? <Link to="/signin" className="login-link">Sign Up</Link>
+            {t(`Don't have an account?`)}<Link to="/signin" className="login-link">{t('Sign Up')}</Link>
           </p>
         </div>
-        <div className="divider">Or</div>
+        <div className="divider">{t('Or')}</div>
         <SocialLogin />
       </div>
       <footer className='footer'>
