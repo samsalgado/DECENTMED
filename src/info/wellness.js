@@ -1,5 +1,5 @@
 import React from 'react';
-import './Info.css'; // Import the CSS file
+import '../info/Info.css'; // Import the CSS file
 import { useTranslation } from 'react-i18next'; // Import the translation hook
 
 const WellnessInro = () => {

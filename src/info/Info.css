@@ -86,8 +86,31 @@
   align-items: center; /* Or justify-content for centering content horizontally */
 }
 
-@media (max-width: 768px) {
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Limit the width on large screens */
+  margin: 0 auto; /* Center the video */
+ 
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .video-container {
-    padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+    max-width: 700px; /* Reduce max width slightly for medium screens */
+    
   }
 }
+
+@media (max-width: 768px) {
+  .video-container {
+    max-width: 100%; /* Use full width for smaller devices */
+  }
+}
+

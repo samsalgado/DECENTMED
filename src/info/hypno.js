@@ -10,7 +10,7 @@ const {t} = useTranslation('common')
     return (
         <div className="container">
             <h1>{t('Hypnotherapy')}</h1>
-    <div>
+    <div className='video-container'>
   <iframe
     className="rumble"
     width="100%"
