@@ -35,7 +35,7 @@ export function Chiro() {
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
-      <h5>Dr. Abbas Khayami</h5>
+      <h5>{t('Dr. Abbas Khayami')}</h5>
       <p>
       {t("In Scottsdale, AZ, chiropractic care could be just what you need! This type of healthcare focuses on diagnosing and treating problems with your muscles, bones, and joints, particularly those related to your spine. Chiropractors, as healthcare professionals, can help enhance nerve function, reduce pain, and promote healing through techniques like spinal adjustments.")}
       </p>
