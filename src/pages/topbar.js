@@ -214,18 +214,19 @@ const Topbar = () => {
   const [isAdmin, isAdminLoading] = useAdmin();
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null); // Default language
-  
+
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
   };
 
-   // Function to change language
- const changeLang = (lang) => {
+  // Function to change language
+  const changeLang = (lang) => {
     i18n.changeLanguage(lang)
       .then(() => {
         localStorage.setItem("preferredLanguage", lang);
         setSelectedLang(lang);
+        window.location.reload(); // Refresh page after language change
 
       })
       .catch(err => console.error("Language change error:", err));
@@ -233,7 +234,7 @@ const Topbar = () => {
 
   // UseEffect hook to check localStorage on page load
   useEffect(() => {
-    const storedLang = localStorage.getItem("preferredLanguage") || "en"; 
+    const storedLang = localStorage.getItem("preferredLanguage") || "en";
     i18n.changeLanguage(storedLang)
       .then(() => {
         setSelectedLang(storedLang);
@@ -242,12 +243,12 @@ const Topbar = () => {
   }, [i18n]); // ✅ Empty dependency array to prevent re-runs
 
   const handleLogOut = () => {
-    logOut().then(() => {}).then(window.location.reload());
+    logOut().then(() => { }).then(window.location.reload());
   };
 
   // ✅ If language is not loaded, show "Loading..." (Prevents broken UI)
-    if (!selectedLang) {
-    return <div>Loading...</div>; 
+  if (!selectedLang) {
+    return <div>Loading...</div>;
   }
 
   return (
