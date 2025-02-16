@@ -58,7 +58,7 @@ const { t } = useTranslation('common');
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/prevent">{t('Preventive Medicine')}
+        <NavLink to="/prevent">{t('Preventive Wellness')}
           <img className='coursepic' src={Treatment.prevent} alt="" />
         </NavLink>
       </ul>
