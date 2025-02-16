@@ -333,7 +333,27 @@ const {t} = useTranslation('common')
         id:67,
         videoUrl:"https://www.youtube.com/embed/TuuWF91mfyM",
         name:`${t('Kapok Tree')}`
-    }
+    },
+    {
+        id:68,
+        videoUrl:"https://www.youtube.com/embed/LKAckTLt6Ic",
+        name:`${t('Koa Tree')}`
+    },
+    {
+        id:69,
+        videoUrl:"https://www.youtube.com/embed/Hv9HGwnH0Ug",
+        name:`${t('Firecracker Plant')}`
+    },
+    {
+      id:70,
+      videoUrl:"https://www.youtube.com/embed/xnMR4ZUdz_A",
+      name:`${t('Fragrant Inula')}`
+      },
+      {
+      id:71,
+      videoUrl:"https://www.youtube.com/embed/oNwiVguspDA",
+      name:`${t('Golden Dewdrops')}`
+      }
 ]);
 
     return (
