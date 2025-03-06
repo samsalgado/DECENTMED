@@ -34,7 +34,7 @@ import { About } from './pages/About';
 import { Homeopathy } from './pages/Homeopathy';
 import { Acupuncture } from './pages/Acupuncture';
 import { Ayurveda } from './pages/Ayurveda';
-import { Digital Marketing } from './pages/Marketing';
+import { Marketing } from './pages/DigitalMarketing';
 import { Chiropractic } from './pages/Chiropractic';
 import { Chelation } from './pages/Chelation';
 import { Telehealth } from './pages/Telehealth';
