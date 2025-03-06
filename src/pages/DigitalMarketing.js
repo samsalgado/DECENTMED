@@ -3,7 +3,7 @@ import SEO from '../info/seo';
 import Topbar from './topbar';
 import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Digital Marketing({t}) {
+export function Marketing({t}) {
 
     return(
         <div>
