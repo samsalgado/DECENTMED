@@ -11,14 +11,14 @@ function Services() {
                 <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Services")}</h2>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t("Video Marketing, Editing & Data-Driven Strategies")}</h4>
+                    <h4>{t("Data Analytics")}</h4>
                     <iframe 
                         width="100%" 
                         height="200" 
                         src="https://www.youtube.com/embed/1MuMf83gtiY" 
                         frameBorder="0" 
                         allowFullScreen
-                        title="Data-Driven SEO Solutions"
+                        title="SEO Solutions"
                     ></iframe>
                 </div>
 
@@ -27,7 +27,7 @@ function Services() {
                     <iframe 
                         width="100%" 
                         height="200" 
-                        src="https://www.youtube.com/embed/2frVcbOSXRU" 
+                        src="https://www.youtube.com/embed/2frVcbOSXRU"
                         frameBorder="0" 
                         allowFullScreen
                         title="SEO Auditing & Reporting"
