@@ -34,6 +34,7 @@ import { About } from './pages/About';
 import { Homeopathy } from './pages/Homeopathy';
 import { Acupuncture } from './pages/Acupuncture';
 import { Ayurveda } from './pages/Ayurveda';
+import { Digital Marketing } from './pages/DigitalMarketing';
 import { Chiropractic } from './pages/Chiropractic';
 import { Chelation } from './pages/Chelation';
 import { Telehealth } from './pages/Telehealth';
@@ -105,6 +106,7 @@ function App() {
           <Route path="/chiropractic" element={<Chiropractic t={t} />} />
           <Route path="/acu" element={<Acupuncture t={t} />} />
           <Route path="/chelation" element={<Chelation t={t} />} />
+          <Route path="/digitalmarketing" element={<DigitalMarketing t={t} />} />
           <Route path="/homeopathy" element={<Homeopathy t={t} />} />
           <Route path="/telehealth" element={<Telehealth t={t} />} />
           <Route path="/about" element={<About t={t} />} />
