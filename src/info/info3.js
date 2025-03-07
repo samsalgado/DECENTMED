@@ -2,6 +2,7 @@ import React from 'react';
 import "../App.css";
 import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
+import './Info.css';
 import Protocols from './Protocols';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
@@ -10,7 +11,7 @@ const Info3 = () => {
 
   return (
     <div className='container'>
-      <h1>{t('Detox')}</h1>
+      <h1 className='title'>{t('Detox')}</h1>
 
       <Fruits />
       <div className="collapsible"></div>
