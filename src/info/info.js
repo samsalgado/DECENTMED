@@ -11,7 +11,7 @@ const Info = () => {
 
   return (
     <div className='container'>
-      <h1>{t('Decent Med')}</h1>
+      <h1 className='title'>{t('Decent Med')}</h1>
       <WellnessInro />
       <BlueContainer />
 
