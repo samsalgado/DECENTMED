@@ -1,6 +1,7 @@
 import React from 'react'
 import preventchart from '../images copy/prevemt.png';
 import Vitamins from './vitamins';
+import './Info.css';
 import "./prevent.css";
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +11,7 @@ const PreventWellness = () => {
   return (
     <div className='container'>
       <div className="title-container">
-        <h1>{t('Preventive Wellness')}</h1>
+        <h1 className="title">{t('Preventive Wellness')}</h1>
       </div>
       <div className="collapsible">
       </div>
