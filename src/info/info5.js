@@ -3,6 +3,7 @@ import "../App.css";
 import Forum from './forum';
 import quote from '../images copy/quote.png';
 import homeo from '../images copy/homeo.png';
+import './Info.css';
 import b from '../images copy/b.png';
 import cys from '../images copy/cys.png';
 import gluta from '../images copy/gluta.png';
@@ -19,7 +20,7 @@ const Info5 = () => {
   return (
     <div className='container'>
       <div className="title-container">
-        <h1>{t('Nutrition')}</h1>
+        <h1 className="title">{t('Nutrition')}</h1>
         <div><img src={homeo} className="HOMEO" alt="logo" /></div>
 
         <table className="collapsibles-table">
