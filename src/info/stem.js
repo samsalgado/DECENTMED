@@ -8,6 +8,7 @@ import jamaalcharles from '../images copy/JamaalCharles.png';
 import whystemcell from '../images copy/whystemcell.png';
 import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg';
 import stembenefits from '../images copy/stembenefits.png';
+import './Info.css';
 import stemtype from '../images copy/stem-type.jpg';
 import graphic from '../images copy/Pink-Illustrative-Simple-Healthy-Habits-Infographic.jpeg';
 import { useTranslation } from 'react-i18next';
@@ -17,7 +18,7 @@ const Stem = () => {
 
   return (
     <div className='container'>
-      <h1>{t('Stem Cell Therapy')}</h1>
+      <h1 className='title'>{t('Stem Cell Therapy')}</h1>
 
       {/* Responsive Video */}
       <div className="video-container">
