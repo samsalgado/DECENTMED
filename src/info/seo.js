@@ -1,5 +1,6 @@
 import React from 'react';
 import Services from './service.js';
+import './Info.css';
 import './acu.css'; // Import only acu.css for styling
 import { useTranslation } from 'react-i18next';
 
@@ -7,7 +8,7 @@ const SEO = () => {
 const {t} = useTranslation('common')
   return (
     <div className='container'>
-      <h1>{t('Digital Marketing Agency')}</h1>
+      <h1 className='title'>{t('Digital Marketing Agency')}</h1>
 
 
       <iframe
