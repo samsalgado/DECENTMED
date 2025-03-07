@@ -13,7 +13,9 @@
   max-width: 80%; /* Decrease max width for modals */
   margin: 10px auto; /* Center the card with reduced margin */
 }
-
+.title {
+      font-family: sans-serif;
+}
 .signup {
   text-align: center;
 
