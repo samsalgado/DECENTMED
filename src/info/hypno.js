@@ -1,5 +1,6 @@
 import React from "react";
 import './acu.css'; 
+import './Info.css';
 import { Button } from'react-bootstrap';
 import Benefits from "./benefits";
 import Modalities from "./modalities";
@@ -9,7 +10,7 @@ const {t} = useTranslation('common')
 
     return (
         <div className="container">
-            <h1>{t('Hypnotherapy')}</h1>
+            <h1 className='title'>{t('Hypnotherapy')}</h1>
     <div className='video-container'>
   <iframe
     className="rumble"
