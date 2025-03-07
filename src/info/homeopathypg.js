@@ -1,5 +1,6 @@
 import React from 'react';
 import "./homeo.css";
+import './Info.css';
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
 
@@ -9,7 +10,7 @@ const Homeo = () => {
   return (
     <div className='thecontainer'>
       <div className='container'>
-        <h1>{t('Homeopathy')}</h1>
+        <h1 className='title'>{t('Homeopathy')}</h1>
         <iframe
           width="100%"
           height="475"
