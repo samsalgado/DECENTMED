@@ -1,5 +1,6 @@
 import React from 'react';
 import "../App.css";
+import './Info.css';
 import ayurveda from "../images copy/ayurveda-science.png";
 import Elements from './elements';
 import { useTranslation } from 'react-i18next';
@@ -9,7 +10,7 @@ const Ayurvedaa = () => {
   
   return (
     <div className='container'>
-      <h1>{t('Ayurveda Experience')}</h1>
+      <h1 className='title'>{t('Ayurveda Experience')}</h1>
       <img className='gridimag' src={ayurveda} alt={t('Ayurveda Science')} />
 
       <div className="title-container">
