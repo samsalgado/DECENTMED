@@ -1,5 +1,6 @@
 import React from 'react';
 import "../App.css";
+import './Info.css';
 import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +9,7 @@ const MeditationInfo = () => {
 
   return (
     <div className='container'>
-      <h1>{t('Meditation')}</h1>
+      <h1 className="title">{t('Meditation')}</h1>
       <iframe width="100%" height={500} src="https://www.youtube.com/embed/cQ-pEQZrVvw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
       <div style={{ marginTop: '20px', width: '100%' }}>
