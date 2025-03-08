@@ -36,7 +36,7 @@ const { t } = useTranslation("common");
         <Topbar />
         </header>
         <div className='container'>
-        <h1 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Health & Wellness Blogs")}</h1>
+        <h1 style={{ textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("Health & Wellness Blogs")}</h1>
        <img className='gridimag' src={blogs} alt="logo" />
        </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
