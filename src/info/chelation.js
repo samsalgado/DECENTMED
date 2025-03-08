@@ -30,21 +30,25 @@ const Pgchelation = () => {
         <Button variant="primary" href="http://crossroadsnaturopathic.com/" target="_blank">
           {t("Visit Crossroads Naturopathic")}
         </Button>
-<div className="title-container">
+      </div>
+
+      {/* Title and Collapsible Content with Table Structure */}
+      <div className="title-container">
         <table className="collapsibles-table">
           <tbody>
-            <Collapsible trigger={
-    <th className="collapsible-trigger">
-                {t("Chelation 101 (Heavy Metal Detox)")}
-                </th>
-              }
-            >
-          <div className="collapsible-content">
-            <img className='chelation-graphic' src={graphic} alt="Chelation 101" />
-            <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
-            <img className='dual' src={chelationbenefits} alt="Chelation Benefits" />
-          </div>
-        </Collapsible>
+            <tr>
+              <th className="collapsible-trigger">
+                <Collapsible trigger={t("Chelation 101 (Heavy Metal Detox)")}>
+                  <div className="collapsible-content">
+                    <img className='chelation-graphic' src={graphic} alt="Chelation 101" />
+                    <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
+                    <img className='dual' src={chelationbenefits} alt="Chelation Benefits" />
+                  </div>
+                </Collapsible>
+              </th>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
     </div>
