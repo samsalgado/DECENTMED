@@ -259,6 +259,26 @@ body {
   background-color: #f5f5f5; /* Light gray background */
   padding: 10px 30px; /* Add some padding */
 }
+/* Ensures buttons are centered and stacked on top of each other */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adds spacing above buttons */
+  margin-bottom: 20px; /* Adds spacing below buttons */
+}
+
+.button-container .btn {
+  margin-bottom: 10px; /* Adds spacing between buttons */
+}
+
+/* Optional: Style collapsible content if needed */
+.collapsible-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
 
 .me-auto a {
   margin-right: 25px;
