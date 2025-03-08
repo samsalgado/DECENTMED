@@ -262,11 +262,11 @@ body {
 /* Ensures buttons are centered and stacked on top of each other */
 .button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px; /* Adds spacing above buttons */
-  margin-bottom: 20px; /* Adds spacing below buttons */
+  flex-direction: column;    /* Stack buttons vertically */
+  align-items: center;       /* Center buttons horizontally */
+  justify-content: center;   /* Center vertically (if the parent has extra height) */
+  margin-top: 20px;          /* Add space above the buttons */
+  margin-bottom: 20px;       /* Add space below the buttons */
 }
 
 .button-container .btn {
