@@ -43,6 +43,7 @@ const Pgchelation = () => {
                     <img className='chelation-graphic' src={graphic} alt="Chelation 101" />
                     <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
                     <img className='dual' src={chelationbenefits} alt="Chelation Benefits" />
+                    <img />
                   </div>
                 </Collapsible>
               </th>
