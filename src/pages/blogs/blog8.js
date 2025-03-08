@@ -17,7 +17,7 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
       <a href='/apoth'>
     <figure>
     <img className='gridimag' src={batana} alt="logo" />
