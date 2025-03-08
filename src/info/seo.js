@@ -1,6 +1,6 @@
 import React from 'react';
 import Services from './service.js';
-import './Info.css';
+import './Info.css'; 
 import './acu.css'; // Import only acu.css for styling
 import { useTranslation } from 'react-i18next';
 
