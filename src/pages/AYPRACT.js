@@ -21,7 +21,9 @@ export function AYPract() {
             </header>
 
             <div class="container">
-            <h1>{t("Ayurveda")}</h1>
+            <h1 style={{ 
+    fontFamily: 'sans-serif' 
+  }}>{t("Ayurveda")}</h1>
  
   <div class="row" >
     <div class="col-md-4">
