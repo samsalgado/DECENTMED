@@ -15,7 +15,7 @@ const Blog15 = ({t}) => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Orange Pill: Onboarding Suriname onto Bitcoin')}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Orange Pill: Onboarding Suriname onto Bitcoin')}
       </h1>
       <a href="https://btcpay0.voltageapp.io/apps/WYdgLYf994wmcnonsQdN1UrWZ6K/crowdfund">
       <figure>
