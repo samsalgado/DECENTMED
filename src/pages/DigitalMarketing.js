@@ -1,6 +1,7 @@
 import '../App.css';
 import SEO from '../info/seo';
 import Topbar from './topbar';
+import AuditVids from '../info/audits';
 import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
 export function Marketing({t}) {
@@ -15,6 +16,8 @@ export function Marketing({t}) {
             <Topbar />
             </header>
             <SEO />
+        <br></br>
+        <AuditVids />
             <footer>
                 <Footer />
             </footer>
