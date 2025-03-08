@@ -10,7 +10,7 @@ chelation: require("../images copy/chelation.png"),
 homeopath: require("../images copy/homeopathy.png"),
 hypnotherapy:require("../images copy/hypno.png"),
 herbalmedicine:require("../images copy/HERBALMEDICINE.png"),
-meditation:require("../images copy/meditation.jpg")
-
+meditation:require("../images copy/meditation.jpg"),
+seo:require("../images copy/Untitled design.png")
 };
 export default Treatment;
