@@ -18,7 +18,7 @@ const Blog10 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
         <img className='gridimag' src={cancerimg} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
