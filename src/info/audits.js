@@ -5,11 +5,7 @@ import { useTranslation } from 'react-i18next';
 const AuditVids = () => {
     const { t } = useTranslation("common");
     const [plant] = useState([
-        {
-            id: 1,
-            videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-            name: `${t("SEO Audit: Jesania P")}`,
-        },
+      
         {
             id: 2,
             videoUrl: "https://www.youtube.com/embed/7OhJgp8Tjyw",
@@ -26,15 +22,17 @@ const AuditVids = () => {
             name: t("SEO Audit: Brandy Health Coaching")
         },
         {
-            id: 6,
-            videoUrl: "https://www.youtube.com/embed/Y1aDTHEaYWo?si=uxusvlopPSC7QXXY",
-            name: t("SEO Audit: Southern Right Acupuncture")
+            id:6,
+            videoUrl: "https://www.youtube.com/embed/GfeeJE82FYA?si=oGNYrZEY0FNe8uOp",
+            name: t("SEO Audit: Acupuncture in Oxford")
+
         },
         {
             id: 7,
             videoUrl: "https://www.youtube.com/embed/Y1aDTHEaYWo?si=uxusvlopPSC7QXXY",
             name: t("SEO Audit: Southern Right Acupuncture")
         },
+       
         {
             id: 8,
             videoUrl: "https://www.youtube.com/embed/7cgLrZ4IeV0?si=xPiDnmKYNDIl65RF",
