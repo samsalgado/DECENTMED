@@ -15,6 +15,7 @@ const treatmentLinks = {
   hypnotherapy: "https://themerlingroupworld.com/hypnotherapy",
   herbalmedicine: "https://themerlingroupworld.com/herbal-medicine",
   meditation: "https://themerlingroupworld.com/meditation",
+  seo:"https://themerlingroupworld.com/digitalmarketing"
 }
 const Grid = () => {
   const [columns, setColumns] = useState(2);
