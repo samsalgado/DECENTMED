@@ -243,6 +243,7 @@ body {
 .center {
   text-align: center;
   align-self: center;
+  fontFamily: 'sans-serif'; 
 }
 .hidden {
   display: none;
