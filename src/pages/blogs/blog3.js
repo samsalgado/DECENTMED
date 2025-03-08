@@ -15,7 +15,7 @@ const Blog3 = () => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>Detox Cleanse</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>Detox Cleanse</h1>
      <div className="video-container">
 <iframe
   className="rumble"
