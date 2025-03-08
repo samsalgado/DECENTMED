@@ -17,7 +17,7 @@ const {t} = useTransition('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("What is Bitcoin?")}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("What is Bitcoin?")}</h1>
           <img className='gridimag' src={bitcoin} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
