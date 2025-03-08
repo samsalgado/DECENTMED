@@ -14,7 +14,7 @@ const Blog11 = () => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>When Will The Last Bitcoin be Mined?
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>When Will The Last Bitcoin be Mined?
       </h1>
       <div className="container">
       <div className='video-container'>
