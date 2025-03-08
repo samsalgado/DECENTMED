@@ -17,7 +17,7 @@ const Blog4 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Cellular Regeneration')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Cellular Regeneration')}</h1>
         <img className='gridimag' src={cell} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
