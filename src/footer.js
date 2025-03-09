@@ -11,10 +11,10 @@ const Footer = () => {
 <div className="footer-container">
 <div className='socials'>
         <a href='https://twitter.com/ttf123457'>
-            <img src={x} alt='' className='Logo' />
+            <img src={x} alt='logo' className='Logo' />
         </a>
         <a href='https://www.youtube.com/playlist?list=PL8Q31etEj6NEEZGvqEw0UAOUG4O0ucsiz'>
-            <img src={youtube} alt='' className='Logo'  />
+            <img src={youtube} alt='Youtube' className='Logo'  />
         </a>
         </div>
           <div><img src={LOGO} className="Logo" alt="logo" /></div>

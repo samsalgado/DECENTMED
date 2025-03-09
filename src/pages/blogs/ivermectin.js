@@ -226,7 +226,7 @@ const {t} = useTranslation('common')
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
                <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
