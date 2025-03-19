@@ -22,15 +22,15 @@ const AdditionalServices = () => {
   ];
 
   return (
-    <Container>
+    <Container fluid>
       <h2 className="text-center mb-4">{t("Additional Services")}</h2>
-      <Row>
-        <Col md={4}>
+      <Row className="justify-content-center">
+        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card className="card mb-4">
             <Card.Header className='card-header' as="h5">{t("Additional Services")}</Card.Header>
             <Card.Body>
               {services.map((service, index) => (
-                <Card.Text key={index}>{t(`- ${service}`)}</Card.Text>
+                <Card.Text key={index}>{t(service)}</Card.Text>
               ))}
             </Card.Body>
           </Card>
