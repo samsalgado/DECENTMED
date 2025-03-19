@@ -1,99 +1,85 @@
-/* Container styles */
-.container {
+/* General Container */
+.container-fluid {
   width: 100%; /* Ensure full width on all devices */
-  max-width: 1200px; /* Limit max-width for larger screens */
-  margin: 0 auto; /* Center container */
   padding: 15px; /* Ensure some padding around the container */
 }
 
-/* Card styles */
 .card {
-  border-radius: 8px; /* Optional: rounded corners for the cards */
-  border: 1px solid #ddd; /* Light border for better visibility */
-  max-width: 80%; /* Decrease max width for modals */
-  margin: 10px auto; /* Center the card with reduced margin */
-}
-.title {
-      font-family: sans-serif;
-}
-.signup {
-  text-align: center;
-
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 100%; /* Let the card take full width in all scenarios */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column; /* Ensure card elements are stacked properly */
 }
 
+/* Card Header */
 .card-header {
-  background-color: #87CEEB; /* Sky blue background for the header */
-  color: white; /* White text color for the header */
-  font-size: 1.25rem; /* Adjust header font size */
-  padding: 10px; /* Add padding for better spacing */
-}
-
-.intro-image {
-  max-width: 100%; /* Keep image responsive */
-  height: auto;
-  border: 2px solid #ddd; /* Optional border */
-  border-radius: 8px; /* Optional rounded corners */
+  background-color: #87CEEB; /* Sky blue */
+  color: white;
+  font-size: 1.25rem;
+  padding: 10px;
 }
 
 .card-body {
-  background-color: #f9f9f9; /* Light background for the card body */
-  font-size: 1rem; /* Default font size */
-  padding: 10px; /* Reduce padding inside the card body */
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  padding: 10px;
 }
 
-/* Mobile styles */
+.card-text {
+  margin: 5px 0; /* Adds spacing between list items */
+}
+
+/* Media Queries for Mobile & Tablet */
 @media (max-width: 768px) {
-  .card {
-    max-width: 100%; /* Use full width on mobile */
-    margin: 5px; /* Less margin on mobile */
-  }
-  
   .card-header {
-    font-size: 1.1rem; /* Adjust header font size for smaller screens */
+    font-size: 1.1rem;
   }
 
   .card-body {
-    font-size: 0.9rem; /* Adjust body font size for smaller screens */
+    font-size: 0.9rem;
   }
 
-  .container {
+  .container-fluid {
     padding: 10px;
   }
 }
 
 @media (max-width: 576px) {
   .card-header {
-    font-size: 1rem; /* Further reduce header font size for extra-small screens */
+    font-size: 1rem;
   }
 
   .card-body {
-    font-size: 0.85rem; /* Further reduce body font size for extra-small screens */
+    font-size: 0.85rem;
   }
 
-  .container {
-    padding: 10px; /* Reduce padding on extra-small screens */
+  .container-fluid {
+    padding: 5px;
   }
 }
 
-/* Styles for larger screens */
+/* For Larger Screens */
 @media (min-width: 769px) {
   .card {
-    max-width: 500px; /* Set a smaller max width for laptops */
+    max-width: 500px; /* Set smaller max-width on larger screens */
   }
 }
 
+/* Flexbox Layout for Responsiveness */
 .flex-container {
   display: flex;
-  flex-direction: column; /* Or row for horizontal layout */
-  align-items: center; /* Or justify-content for centering content horizontally */
+  flex-direction: column; 
+  align-items: center;
 }
 
+/* For Video Containers */
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Limit the width on large screens */
-  margin: 0 auto; /* Center the video */
- 
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .video-container iframe {
@@ -102,17 +88,14 @@
   border: none;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .video-container {
-    max-width: 700px; /* Reduce max width slightly for medium screens */
-    
+    max-width: 700px; /* Slightly reduce for medium screens */
   }
 }
 
 @media (max-width: 768px) {
   .video-container {
-    max-width: 100%; /* Use full width for smaller devices */
+    max-width: 100%; /* Full width for smaller devices */
   }
 }
-
