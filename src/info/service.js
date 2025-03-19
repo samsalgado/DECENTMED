@@ -57,7 +57,28 @@ function Services() {
                         title="YouTube & Social Media SEO"
                     ></iframe>
                 </div>
-
+                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+                    <h4>{t("Screaming Frog, Ahrefs, SEMRush (AI-driven SEO)")}</h4>
+                    <iframe 
+                        width="100%" 
+                        height="200" 
+                        src="https://www.youtube.com/embed/Uzz6wWANRow"
+                        frameBorder="0" 
+                        allowFullScreen
+                        title="AI in SEO"
+                    ></iframe>
+                </div>
+                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+                    <h4>{t("Prompt Engineering")}</h4>
+                    <iframe 
+                        width="100%" 
+                        height="200" 
+                        src="https://www.youtube.com/embed/87ceOSYVn5E"
+                        frameBorder="0" 
+                        allowFullScreen
+                        title="AI in SEO"
+                    ></iframe>
+                </div>
             </div>
         </div>
     );
