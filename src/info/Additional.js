@@ -23,7 +23,7 @@ const AdditionalServices = () => {
 
   return (
     <Container>
-      <h2 className="text-center mb-4">{t("Health Facts")}</h2>
+      <h2 className="text-center mb-4">{t("Additional Services")}</h2>
       <Row>
         <Col md={4}>
           <Card className="card mb-4">
