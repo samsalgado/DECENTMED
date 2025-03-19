@@ -1,5 +1,6 @@
 import '../App.css';
 import SEO from '../info/seo';
+import AdditionalServices from '../info/Additional';
 import Topbar from './topbar';
 import AuditVids from '../info/audits';
 import Reviews from '../info/reviews';
@@ -18,6 +19,7 @@ export function Marketing({t}) {
             </header>
             <SEO />
         <br></br>
+        <AdditionalServices />
         <AuditVids />
         <Reviews />
             <footer>
