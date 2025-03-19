@@ -47,6 +47,11 @@ const AuditVids = () => {
             id: 10,
             videoUrl: "https://www.youtube.com/embed/bp9yks-Wm2s" ,
             name: t("Why You Should Use YouTube for Marketing > Traditional SEO")
+        },
+         {
+            id: 11,
+            videoUrl: "https://www.youtube.com/embed/efCrNBIBF8k" ,
+            name: t("SEO Audit: Wellness Body Bar")
         }
     ]);
     return (
