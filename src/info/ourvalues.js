@@ -22,7 +22,7 @@ function Values() {
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Advanced Features')}</h4>
-                    <p className="edu">{t('Features of the platform include: data analytics, social media marketing, additional offering creation, interview showcases and AI-driven solutions.')}</p>
+                    <p className="edu">{t('Features of the platform include: Data Analytics, Social Media Marketing, Additional Offering Creation, interview showcases and AI-driven Solutions.')}</p>
                 </div>
             </div>
         </div>
