@@ -14,7 +14,7 @@ function Values() {
                 </div> 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Showcasing Alternatives')}</h4>
-                    <p className="edu">{t('Deemed as "alternative" in the 1970s, we strive to showcase and deepen understanding of Holistic Medicine. Furthermore, funding studies and partnering with doctors that practice unique treatment offerings.')}</p>
+                    <p className="edu">{t('Deemed as "alternative" in the 1970s, we strive to showcase and deepen the understanding of Holistic Medicine. Furthermore, funding studies and partnering with doctors that practice unique treatment offerings.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
                     <h4>{t('Treatment of Chronic Conditions')}</h4>
