@@ -17,8 +17,8 @@ const Info = () => {
 
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
-      <Values />
      </div>
+     <Values />
       <br />
       <h3>{t('Why Us?')}</h3>
       <div className='pr'>
