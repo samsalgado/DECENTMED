@@ -1,3 +1,5 @@
+# Values Component
+
 import React from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
@@ -41,7 +43,7 @@ function Values() {
                             backgroundPosition: 'center',
                             border: 'none',
                             height: '560px',
-                            width:'1000px',
+                            width:'100%',
                             color: 'white',
                         }}
                     >
