@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
-import backgroundImage from './background.jpg';
+import backgroundImage from '../images copy/background.jpg';
 
 function Values() {
     const { t } = useTranslation("common");
