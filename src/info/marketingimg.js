@@ -2,7 +2,7 @@ import React from "react";
 import '../App.css';
 import backgroundImage from '../images copy/background.jpg';
 
-function Values() {
+function Marketing() {
     const learnmore = () => {
         window.location.href = 'https://themerlingroupworld.com/digitalmarketing'
     }
@@ -53,4 +53,4 @@ function Values() {
     );
 }
 
-export default Values;
+export default Marketing;
