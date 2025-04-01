@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import './marketingimg.css';
 import backgroundImage from '../images copy/background.jpg';
 
 function Marketing() {
