@@ -1,6 +1,6 @@
 import React from "react";
 import '../App.css';
-import backgroundImage from './background.jpg';
+import backgroundImage from '../images copy/background.jpg';
 
 function Values() {
     const learnmore = () => {
