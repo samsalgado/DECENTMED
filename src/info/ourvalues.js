@@ -1,13 +1,9 @@
 import React from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
-import backgroundImage from '../images copy/background.jpg';
-
 function Values() {
     const { t } = useTranslation("common");
-    const learnmore = () => {
-        window.location.href = 'https://themerlingroupworld.com/digitalmarketing'
-    }
+    
     return (
         <>
         <div className="container-bblue">
