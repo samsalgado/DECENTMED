@@ -1,0 +1,57 @@
+.container-bblue {
+  background-color: #001f3d; /* Example background color for the blue section */
+  padding: 30px;
+}
+
+.edu {
+  font-size: 14px;
+  color: #666; /* Text color for the descriptions */
+}
+
+.marketing-section {
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  height: 400px; /* Height for the section with the background image */
+  padding: 50px 0; /* Adds padding for spacing */
+  display: flex; /* Flexbox for centering the content */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  text-align: center; /* Centers the text */
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay for text contrast */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  color: white; /* Makes the title stand out */
+}
+
+p {
+  font-size: 16px;
+  color: white; /* Makes the description text stand out */
+}
+.topbar {
+  position: inherit;
+  width: 100%;
+  flex-direction: row;
+  height: 10%;
+}
+.center {
+  align-items: center;
+}
+.btn {
+  background-color: #007bff; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darkens the button on hover */
+}
