@@ -20,7 +20,7 @@ const Info = () => {
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
      </div>
      <Values />
-    <br></br>
+    <br />
     <Marketing />
       <br />
       <h3>{t('Why Us?')}</h3>
