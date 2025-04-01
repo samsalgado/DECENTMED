@@ -3,6 +3,7 @@ import './Info.css';
 import HealthFacts from './Health';
 import BlueContainer from './deptcontainer';
 import WellnessInro from './wellness';
+import Marketing from './marketingimg';
 import Values from './ourvalues';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
@@ -19,6 +20,7 @@ const Info = () => {
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
      </div>
      <Values />
+    <Marketing />
       <br />
       <h3>{t('Why Us?')}</h3>
       <div className='pr'>
