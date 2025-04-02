@@ -4,73 +4,16 @@
   padding: 15px; /* Ensure some padding around the container */
 }
 
-.card {
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  max-width: 100%; /* Let the card take full width in all scenarios */
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column; /* Ensure card elements are stacked properly */
-}
-
-/* Card Header */
-.card-header {
-  background-color: #87CEEB; /* Sky blue */
-  color: white;
-  font-size: 1.25rem;
-  padding: 10px;
-}
-
-.card-body {
-  background-color: #f9f9f9;
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.card-text {
-  margin: 5px 0; /* Adds spacing between list items */
-}
-
-/* Media Queries for Mobile & Tablet */
-@media (max-width: 768px) {
-  .card-header {
-    font-size: 1.1rem;
-  }
-
-  .card-body {
-    font-size: 0.9rem;
-  }
-
-  .container-fluid {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-header {
-    font-size: 1rem;
-  }
-
-  .card-body {
-    font-size: 0.85rem;
-  }
-
-  .container-fluid {
-    padding: 5px;
-  }
-}
-
-/* For Larger Screens */
-@media (min-width: 769px) {
-  .card {
-    max-width: 500px; /* Set smaller max-width on larger screens */
-  }
+.digital {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 /* Flexbox Layout for Responsiveness */
 .flex-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 }
 
@@ -97,5 +40,48 @@
 @media (max-width: 768px) {
   .video-container {
     max-width: 100%; /* Full width for smaller devices */
+  }
+}
+
+.image-container {
+  background-image: url("/src/images copy/digitalbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 অনুপাতের জন্য (9/16 = 0.5625) */
+  position: relative;
+  overflow: hidden;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: yellow;
+  text-align: right;
+  max-width: 40%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* small device */
+@media (max-width: 768px) {
+  .image-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .text-content {
+    width: 90%;
+    max-height: 90%;
+    top: 50%;
+    box-sizing: border-box;
+    overflow-y: auto;
   }
 }

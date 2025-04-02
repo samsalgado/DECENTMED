@@ -8,6 +8,9 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const Info = () => {
   const { t } = useTranslation("common"); // Access translation function
+  const learnmore = () => {
+    window.location.href = 'https://themerlingroupworld.com/telehealth'
+  }
 
   return (
     <div className='container'>
@@ -17,8 +20,31 @@ const Info = () => {
 
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
-     </div>
-     <Values />
+      </div>
+      <Values />
+
+      <div className='digital'>
+        <div className="image-container">
+          <div className="text-content">
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Content Creation'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Video Editing'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Advertising'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Custom Storytelling'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Automation'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Data Reporting'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'SEO (Local & National)'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Webinar Creation'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Social Media Optimization'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Custom Page Creation'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Conversion Optimization'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Branding & Consultation'}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Email Marketing'}</p>
+            <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{'Learn More'}</button>
+          </div>
+        </div>
+      </div>
+
+
       <h3>{t('Why Us?')}</h3>
       <div className='pr'>
         <h4>{t('Monetization of Medicine')}</h4>
