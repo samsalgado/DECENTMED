@@ -16,7 +16,16 @@
   flex-direction: column;
   align-items: center;
 }
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes it take the full height of the viewport */
+}
 
+.signup {
+  text-align: center;
+}
 /* For Video Containers */
 .video-container {
   position: relative;
