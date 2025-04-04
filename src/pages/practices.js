@@ -19,13 +19,11 @@ const { t } = useTranslation("common");
           allowFullScreen
         ></iframe>
       </div>
-      <div className='offers'>
         <div className="signup-container">
         <h1 className="signup">{t('Sign Up')}</h1>
         </div>
         <Offer />
         <Offer2 />
-      </div>
     </div>
   );
 };
