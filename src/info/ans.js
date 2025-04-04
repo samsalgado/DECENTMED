@@ -13,7 +13,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("Who is The Merlin Group?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                {t("We are Bitcoin consultants and developers integrating the world onto Bitcoin via large scale projects that change the world.")}
+                {t("We are an education platform that showcases Holistic Medicine and helps providers grow their business using AI-driven marketing strategies, social media management and unique offerings that helps our clients WIN.")}
               </Card.Text>
             </Card.Body>
           </Card>
