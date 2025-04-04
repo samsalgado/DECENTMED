@@ -321,7 +321,32 @@ body {
 .me-auto {
   gap: 10px;
 }
+.box p {
+  word-break: break-all; /* Break long words like BTC addresses */
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
 
+/* Mobile optimization */
+@media (max-width: 480px) {
+  .box p {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .box h2 {
+    font-size: 18px;
+  }
+
+  .box h3 {
+    font-size: 16px;
+  }
+}
 .REACT {
   margin: 2rem auto;
   width: 90%;
