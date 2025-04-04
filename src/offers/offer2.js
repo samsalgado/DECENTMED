@@ -45,7 +45,7 @@ const Offer2 = () => {
 
         <div>
           <img src={imge} alt='' />
-          <h2>{t('Pay with Credit Card')}</h2>
+          <h2>{t('Pay with Paypal (Scan QR Code Above)')}</h2>
           <h3>$250: Including Marketing, Security, Social Media, & Telehealth</h3>
         </div>
         <Button onClick={handleClickOpen}>{t('add cart')}</Button>
