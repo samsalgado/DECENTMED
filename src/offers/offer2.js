@@ -3,7 +3,7 @@ import "../App.css"
 import { CookiesProvider } from 'react-cookie'
 // import CustomizedDialogs from './dialog'
 import { useTranslation } from 'react-i18next'
-import imge from '../images copy/stripe.jpg';
+import imge from '../images copy/IMG_8423.jpeg';
 import Swal from 'sweetalert2'
 import { useLocation, useNavigate } from 'react-router-dom'
 import useAuth from '../Hooks/useAuth'
@@ -46,6 +46,7 @@ const Offer2 = () => {
         <div>
           <img src={imge} className="pik1 stripe" alt='' />
           <h2>{t('Pay with Credit Card')}</h2>
+          <h3>$250: Including Marketing, Security, Social Media, & Telehealth</h3>
         </div>
         <Button onClick={handleClickOpen}>{t('add cart')}</Button>
 
