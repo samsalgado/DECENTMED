@@ -79,7 +79,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("Why healthcare?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                {t("We have both witnessed the corruption of the healthcare system. After the pandemic, we notice the catastrophic shift in the current system and want to provide a cheaper alternatives to healthcare globally.")}
+                {t("We have witnessed the corruption of the healthcare system. After the pandemic, we noticed the catastrophic shift in the current system and want to provide a cheaper alternatives to healthcare globally.")}
               </Card.Text>
             </Card.Body>
           </Card>
