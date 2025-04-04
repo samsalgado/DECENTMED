@@ -222,13 +222,14 @@ body {
 .box {
   border: 10px solid #ccc; /* Example border color */
   margin: 5% auto; /* Center with responsive margin */
-  padding: 10px; /* Reduce padding for a tighter look */
+  padding: 20px; /* Increase padding for more space inside the box */
   text-align: center;
   display: flex;
   flex-direction: column; /* Arrange elements vertically */
-  width: 80%; /* Set a specific width */
-  max-width: 600px; /* Limit max width for larger screens */
+  width: 90%; /* Increase the width to make the box larger */
+  max-width: 800px; /* Increase max width for larger screens */
 }
+
 .thecontainer {
   display: flex;
   flex-direction: column;
