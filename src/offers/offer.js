@@ -15,7 +15,7 @@ const { t } = useTranslation("common");
         <div>
           <img src={imge} className="pik1 bitc" alt=''  />
           <h2>{t('Pay with Bitcoin')}</h2>
-          <h4>$250: Inlcuding Marketing, Security, Social Media, & Telehealth</h4>
+          <h3>$250: Including Marketing, Security, Social Media, & Telehealth</h3>
           </div>
         <CustomizedDialogs>
           <AddtoCart />
