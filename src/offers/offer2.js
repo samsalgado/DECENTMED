@@ -44,7 +44,7 @@ const Offer2 = () => {
       <CookiesProvider>
 
         <div>
-          <img src={imge} className="pik1 stripe" alt='' />
+          <img src={imge} alt='' />
           <h2>{t('Pay with Credit Card')}</h2>
           <h3>$250: Including Marketing, Security, Social Media, & Telehealth</h3>
         </div>
