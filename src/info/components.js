@@ -9,15 +9,21 @@ function Components() {
     <div className="container-bblue">
       <div className="row justify-content-center">
         <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-          <h4>{t('Digital Business Card')}</h4>
+          <h4>{t('Digital Marketing Services')}</h4>
           <p className="edu">
-            {t('Showcase your company with a direct link to your booking page. The practices above will take users to a scrollview of As the project scales, there will be built-in 24 hour scheduler. Finally, all providers on the platform receive a showcase interview for your Telehealth portal.')}
+            {t('We showcase your Holistic Medicine company using AI-driven marketing strategies, data analytics, and social media management to drive business growth.')}
+          </p>
+        </div> 
+     <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+          <h4>{t('Telehealth Services')}</h4>
+          <p className="edu">
+            {t('Our website is translated into multiple languages: Spanish, French, Dutch, Arabic (more if nec.) and English. We offer telehealth services to connect you with patients throughout the world.')}
           </p>
         </div> 
         <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-          <h4>{t('Access to Client Databases')}</h4>
+          <h4>{t('Content Creation')}</h4>
           <p className="edu">
-            {t('You will gain access to patients who signup for forms throughout the application.')}
+            {t('Transforming your content into videos for social media and your website. Video production or documentary creation for your company.')}
           </p>
         </div>
         <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
@@ -27,15 +33,15 @@ function Components() {
           </p>
         </div>
         <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-          <h4>{t('Branded Content')}</h4>
+          <h4>{t('Backlink Service')}</h4>
           <p className="edu">
-            {t('Providers get to showcase their content on our Blog page and various Education pages. The education pages are your canvas. All content showcased on the education page will be branded to your respective practice.')}
+            {t('Providers get access to backlinks via Blogs, videos and branded content. The education pages are your canvas. All content showcased on the education page will be branded to your respective practice. We strive to create residual income for our providers; creating E-Books, Webinars or other content to sell to your audience')}
           </p>
         </div>
         <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-          <h4>{t('Access to Herb & Cancer Studies/Trials')}</h4>
+          <h4>{t('Profit Share')}</h4>
           <p className="edu">
-            {t('Providers get to be the face of our Cancer Studies and various trials for our Herbs and their distinct uses.')}
+            {t('Providers get access to profits from our Apothecary and showcased Cancer documentaries.')}
           </p>
         </div>
       </div>
