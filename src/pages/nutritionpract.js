@@ -19,7 +19,7 @@ const { t } = useTranslation('common');
 
             <div class="container">
             <h1>{t("Nutrition")}</h1>
-            <h2>{t{Look no further when searching nutritionist near me on Google. We have the best nutritionist from around the world to serve you!")</h2>
+            <h2>{t{"Look no further when searching nutritionist near me on Google. We have the best nutritionist from around the world to serve you!")</h2>
  <div class="row">
     <div class="col-md-4">
     </div>
