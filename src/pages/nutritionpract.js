@@ -11,7 +11,7 @@ const { t } = useTranslation('common');
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Nutritionist Near Me")}</title>  
-        <meta name="description" content={t("Nutritionist near me? Look no further than our fantastic nutritionists that can assist you on your pathway to wellness.")} />
+        <meta name="description" content={t("Searching Nutritionist near me? Look no further than our fantastic nutritionists that can assist you on your pathway to wellness.")} />
       </Helmet>
             <header>
             <Topbar />
@@ -19,7 +19,7 @@ const { t } = useTranslation('common');
 
             <div class="container">
             <h1>{t("Nutrition")}</h1>
-            <h2>{t("Look no further when searching nutritionist near me on Google. We have the best nutritionist from around the world to serve you!")}</h2>
+            <h2>{t("Searching Nutritionist Near me? We have you covered!")}</h2>
  <div class="row">
     <div class="col-md-4">
     </div>
