@@ -55,8 +55,10 @@ function Practices() {
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
+                <NavLink to='/nutritionpract'>
                     <h3>{t("Nutrition")}</h3>
                     <img className="img-custom" src={Departments.nutriton} alt={t("Nutrition")} />
+              </NavLink>                                                      
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4">
                     <h3>{t("Stem Cell Therapy")}</h3>
