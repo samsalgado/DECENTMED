@@ -44,6 +44,7 @@ import { Apoth } from './pages/Apoth';
 import { Chiro } from './pages/ChiroPRACT';
 import { Hypnopract } from './pages/hypnopract';
 import { AYPract } from './pages/AYPRACT';
+import {Nutritionpract} from './pages/nutritionpract';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 import SignUp from './pages/SignUp/SignUp';
 import StripePayment from './pages/StripePayment/StripePayment';
@@ -72,6 +73,7 @@ function App() {
           <Route path="/stemcell" element={<StemCell t={t} />} />
           <Route path="/ayurveda" element={<Ayurveda t={t} />} />
           <Route path="/blog" element={<BlogPage t={t} />} />
+          <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
           <Route path="/apoth" element={<Apoth t={t} />} />
           <Route path="/blog1" element={<Blog1 t={t} />} />
           <Route path="/blog17" element={<Blog17 t={t} />} />
