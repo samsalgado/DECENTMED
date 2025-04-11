@@ -2,6 +2,7 @@ import '../App.css';
 import Nutritionpage from '../info/nutritionpg';
 import Topbar from './topbar';
 import Footer from '../footer';
+import NutritionVids from '../info/nutritionvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 export function Nutrition() {
@@ -18,6 +19,9 @@ export function Nutrition() {
                 <Topbar />
             </header>
             <Nutritionpage />
+        <br></br>
+        <h1 className='center'>{t("Functional Nutrition")}</h1>
+      <NutritionVids />
             <footer className='foot'>
                 <Footer />
             </footer>
