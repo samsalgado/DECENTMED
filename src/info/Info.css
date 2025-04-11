@@ -9,7 +9,38 @@
   margin-bottom: 10px;
   width: 100%;
 }
+/* Info.css */
 
+/* Styling for the card itself */
+.card {
+  background-color: #f8f9fa; /* Light gray background for the entire card */
+  border: 1px solid #dee2e6; /* Bootstrap default border color */
+  border-radius: 0.25rem; /* Bootstrap default border radius */
+}
+
+/* Styling for the card header */
+.card-header {
+  background-color: #e9ecef; /* Slightly darker gray for the header */
+  color: #212529; /* Dark text color for readability */
+  font-size: 1.25rem; /* Consistent font size for headers (matches h5) */
+  padding: 0.75rem 1.25rem; /* Bootstrap default padding */
+  border-bottom: 1px solid #dee2e6; /* Border to separate header from body */
+}
+
+/* Styling for the card body */
+.card-body {
+  background-color: #f8f9fa; /* Same background as the card for consistency */
+  color: #212529; /* Dark text color for readability */
+  font-size: 1rem; /* Consistent font size for the body text */
+  padding: 1.25rem; /* Bootstrap default padding */
+}
+
+/* Ensure the card text inside the body follows the same styling */
+.card-text {
+  font-size: 1rem; /* Match the body font size */
+  color: #212529; /* Match the body text color */
+  margin-bottom: 0.5rem; /* Space between paragraphs */
+}
 /* Flexbox Layout for Responsiveness */
 .flex-container {
   display: flex;
