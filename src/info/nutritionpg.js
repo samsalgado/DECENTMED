@@ -37,6 +37,7 @@ const Nutritionpage = () => {
               <div className="collapsible-content">
                 <img className='griddimage' src={labs} alt="Functional Nutrition Resources"/>
                  <img className='griddimage' src={brain} alt="Functional Nutrition Resources"/>
+    <img alt='' />
               </div>
             </Collapsible>                   
           </tbody>
