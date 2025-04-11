@@ -18,7 +18,17 @@
   padding: 30px;
   border-radius: 10px;
 }
+.collapsible-content {
+  padding: 16px;
+  text-align: center; /* Center the image */
+}
 
+.griddimage {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
 .marketing-section {
   background-size: cover; /* Ensures the image covers the entire container */
   background-position: center; /* Centers the background image */
