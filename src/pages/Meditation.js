@@ -3,6 +3,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
+import MedBenefits from '../info/mediationbenefits';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 export default function Meditation() {
@@ -18,6 +19,8 @@ const { t } = useTranslation('common');
         <Topbar />
         </header>
             <MeditationInfo />
+         <br />
+      <MedBenefits />
        <br></br>
         <h1 className='center'>{t("Meditation 101")}</h1>
       <MeditationVids />
