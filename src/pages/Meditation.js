@@ -3,7 +3,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
-import MedBenefits from '../info/mediationbenefits';
+import MedBenefits from '../info/meditationbenefits';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 export default function Meditation() {
