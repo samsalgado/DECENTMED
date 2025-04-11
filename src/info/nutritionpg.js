@@ -2,6 +2,8 @@ import React from 'react'
 import "../App.css";
 import Collapsible from 'react-collapsible';
 import obese from '../images copy/obese.png';
+import labs from '../images copy/8.jpg';
+import brain from '../images copy/9.jpg';
 import './Info.css';
 import drsebi from '../images copy/drsebi.jpeg';
 import { useTranslation } from 'react-i18next';
@@ -31,6 +33,12 @@ const Nutritionpage = () => {
                 <img alt='' />
               </tr>
             </Collapsible>
+                <Collapsible trigger={<th className="collapsible-trigger">{t('Functional Nutrition Resources')}</th>}>
+              <div className="collapsible-content">
+                <img className='griddimage' src={labs} alt="Functional Nutrition Resources"/>
+                 <img className='griddimage' src={brain} alt="Functional Nutrition Resources"/>
+              </div>
+            </Collapsible>                   
           </tbody>
         </table>
       </div>
