@@ -35,6 +35,16 @@ const NutritionVids = () => {
             id: 7,
             videoUrl: "https://www.youtube.com/embed/alQWiJn3YV8",
             name: `${t("Fighting Heart Disease ft Lori Graham")}`
+        },
+        {
+            id: 8,
+            videoUrl: "https://www.youtube.com/embed/g-V7DWerpvM",
+            name: `${t("Omega 6 vs Omega 3 (Best Olive Oils without seed oils)")}`
+        },
+          {
+            id: 9,
+            videoUrl: "https://www.youtube.com/embed/Z5ijM3SOSEk",
+            name: `${t("Lowering Blood Sugar is crucial for Menopause")}`
         }
 
     ]);
