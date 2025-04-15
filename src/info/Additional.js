@@ -7,6 +7,7 @@ const AdditionalServices = () => {
   const { t } = useTranslation('common');
   const services = [
     "AI-driven Content Creation",
+    "AI-Enhanced Holistic Consultation",
     "Web Design",
     "YouTube Growth Strategies",
     "AI Automation & Video Editing",
