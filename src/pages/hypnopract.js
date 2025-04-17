@@ -20,7 +20,8 @@ const { t } = useTranslation('common');
 
             <div class="container">
             <h1>{t("Hypnotherapy")}</h1>
- 
+              <h2>{t("Searching Hypnotherapy Near me? We have you covered!")}</h2>
+
   <div class="row">
     <div class="col-md-4">
     </div>
