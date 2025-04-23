@@ -36,7 +36,7 @@ const { t } = useTranslation('common');
       </a>
       <div>
       <ReactPlayer
-url="https://www.youtube.com/embed/Lz60aWbAI4Y?si=d9m5dVAgmJooSSwb"
+url="https://www.youtube.com/embed/Wezd6eo9Cfo"
 height='400px'
 width="100%"
 controls={true}
