@@ -9,11 +9,10 @@ const { t } = useTranslation("common");
     <>
     <div className='box'>
       <CookiesProvider>
-        
         <div>
           <img src={imge} className="pik1 bitc" alt=''  />
           <h2>{t('Pay with Bitcoin')}</h2>
-          <h4 className='btcaddress'> BTC Address: bc1q4kkfy6apvfy5maf6c3f24utq925x64t622z20c </h4>
+          <p className='btcaddress'> BTC Address: bc1q4kkfy6apvfy5maf6c3f24utq925x64t622z20c </p>
           </div>
       </CookiesProvider>
     </div>
