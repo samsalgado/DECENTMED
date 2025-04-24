@@ -13,7 +13,7 @@ const { t } = useTranslation("common");
         <div>
           <img src={imge} className="pik1 bitc" alt=''  />
           <h2>{t('Pay with Bitcoin')}</h2>
-          <h4> BTC Address: bc1q4kkfy6apvfy5maf6c3f24utq925x64t622z20c </h4>
+          <h4 className='btcaddress'> BTC Address: bc1q4kkfy6apvfy5maf6c3f24utq925x64t622z20c </h4>
           </div>
       </CookiesProvider>
     </div>

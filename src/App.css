@@ -1410,3 +1410,21 @@ td:last-child {
     font-size: 1.25rem;
   }
 }
+.btcaddress::-webkit-scrollbar {
+  display: none;
+}
+.btcaddress {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+@media (max-width: 600px) {
+  .btcadress{
+    white-space: nowrap;
+    overflow-x: auto;
+    display: block;
+    font-family: monospace;
+    font-size: 0.95rem;
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+}

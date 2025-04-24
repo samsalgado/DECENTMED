@@ -10,9 +10,7 @@ const Offer2 = () => {
   // const [open, setOpen] = useState(false);
   return (
     <div className='box'>
-
       <CookiesProvider>
-
         <div>
           <img src={imge} alt='' />
           <h2>{t('Pay with Paypal (Scan QR Code Above)')}</h2>
