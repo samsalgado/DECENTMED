@@ -198,20 +198,16 @@
 
 
 
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useTranslation } from 'react-i18next';
 import '../App.css';
-import useAdmin from "../Hooks/useAdmin";
 import LOGO from "../images copy/LOGO.png";
 import EducationMenu from './EducationMenu';
-import { AuthContext } from "./Providers/AuthProvider";
 
 const Topbar = () => {
   const { t, i18n } = useTranslation("common");
-  const { user, logOut } = useContext(AuthContext);
-  const [isAdmin, isAdminLoading] = useAdmin();
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null); // Default language
 
@@ -240,16 +236,7 @@ const Topbar = () => {
         setSelectedLang(storedLang);
       })
       .catch(err => console.error("Error loading language:", err));
-  }, [i18n]); // ✅ Empty dependency array to prevent re-runs
-
-  const handleLogOut = () => {
-    logOut().then(() => { }).then(window.location.reload());
-  };
-
-  // ✅ If language is not loaded, show "Loading..." (Prevents broken UI)
-  if (!selectedLang) {
-    return <div>Loading...</div>;
-  }
+  }, [i18n, selectedLang]); // ✅ Empty dependency array to prevent re-runs
 
   return (
     <div className='topbar'>
@@ -266,29 +253,8 @@ const Topbar = () => {
             <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
             <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
             <Nav.Link href='/about'>{t('About Us')}</Nav.Link>
-
-            {!isAdminLoading && isAdmin && (
-              <Nav.Link href='/dashboard'>
-                {t('Dashboard')}
-              </Nav.Link>
-            )}
           </Nav>
 
-          {user ? (
-            <button
-              style={{
-                backgroundColor: 'blue', gap: '10px', color: 'white', padding: '8px 18px',
-                fontWeight: "bold", border: 'none', borderRadius: '5px'
-              }}
-              onClick={handleLogOut} className="l"> {t('LogOut')} </button>
-          ) : (
-            <Nav.Link
-              style={{
-                backgroundColor: 'blue', color: 'white',
-                padding: '8px 18px', fontWeight: "bold", border: 'none', borderRadius: '5px',
-              }}
-              href='/login'> {t('Login')} </Nav.Link>
-          )}
 
         </Navbar.Collapse>
 

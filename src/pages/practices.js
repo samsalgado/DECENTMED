@@ -3,7 +3,7 @@ import '../info/Info.css'; // Import the CSS file
 import Offer from '../offers/offer';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import Offer2 from '../offers/offer2';
-
+import Pricing from './pricingtiers';
 const Practice = () => {
 const { t } = useTranslation("common");
 
@@ -22,6 +22,7 @@ const { t } = useTranslation("common");
         <div className="signup-container">
         <h1 className="signup">{t('Sign Up')}</h1>
         </div>
+        <Pricing />
         <Offer />
         <Offer2 />
     </div>

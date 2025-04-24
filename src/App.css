@@ -46,6 +46,15 @@
   height: auto;
   aspect-ratio: 16 / 9;
 }
+.signup-container {
+  margin-top: 30px; /* Add margin between sections */
+  text-align: center;
+}
+
+.signup {
+  font-size: 1.5rem;
+  margin-bottom: 30px; /* Add margin to the bottom of the heading */
+}
 .description-container.show {
   background-color: lightblue; /* Visual feedback on click */
 }
@@ -186,7 +195,9 @@
   margin-left: 30%;
   margin-top: 0%;
 }
-
+.Pricing {
+  margin-top: 30px; /* Spacing above the pricing section */
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -271,7 +282,7 @@ body {
 .center {
   text-align: center;
   align-self: center;
-  fontFamily: 'sans-serif'; 
+  font-family: 'sans-serif'; 
 }
 .hidden {
   display: none;
@@ -430,8 +441,13 @@ body {
   padding: [desired padding amount];
 }
 .theecontainer {
-  width: 100%;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 1200px;
+  padding: 20px; /* Padding for spacing */
   box-sizing: border-box;
 }
 .link {
@@ -715,6 +731,11 @@ select {
   align-items: center; /* Maintain centered content */
   margin: 0 auto; /* Remove margin for better mobile spacing */
   width: 100%; /* Use full viewport width */
+}
+.video-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px; /* Add margin for spacing between video and next section */
 }
 /* Video container for responsiveness */
 .video-container iframe {
@@ -1373,4 +1394,19 @@ td:last-child {
 /* Rotate the arrow when the menu is open */
 .is-open .arrow-icon {
   transform: rotate(180deg); /* Rotates the arrow when active */
+}
+@media (max-width: 768px) {
+  /* Mobile responsiveness */
+  .theecontainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .video-container iframe {
+    height: 200px; /* Smaller height for mobile devices */
+  }
+
+  .signup {
+    font-size: 1.25rem;
+  }
 }

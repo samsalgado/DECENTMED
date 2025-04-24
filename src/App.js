@@ -46,18 +46,15 @@ import { Hypnopract } from './pages/hypnopract';
 import { AYPract } from './pages/AYPRACT';
 import {Nutritionpract} from './pages/nutritionpract';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
-import SignUp from './pages/SignUp/SignUp';
-import StripePayment from './pages/StripePayment/StripePayment';
+//import SignUp from './pages/SignUp/SignUp';
+//import StripePayment from './pages/StripePayment/StripePayment';
 import Topbar from './pages/topbar';
-import Login from './pages/Login/Login';
-import AuthProvider from './pages/Providers/AuthProvider';
+//import Login from './pages/Login/Login';
 import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-import AddtoCart from './addtocart/addtocart';
-import PrivateRoute from './PrivateRoute/PrivateRoute';
-import Dashboard from './Dashboard/Dashboard';
+//import AddtoCart from './addtocart/addtocart';
 
 function App() {
   const { t } = useTranslation();
@@ -66,7 +63,6 @@ function App() {
   const queryClient = new QueryClient()
   return (
     < QueryClientProvider client={queryClient} >
-      <AuthProvider>
         <Routes>
           <Route exact path="/" element={<Home t={t} />} />
           <Route path="/404" element={<NotFound />} />
@@ -113,14 +109,8 @@ function App() {
           <Route path="/telehealth" element={<Telehealth t={t} />} />
           <Route path="/about" element={<About t={t} />} />
           <Route path="/blog7" element={<Blog7 t={t} />} />
-          <Route path="/login" element={<Login t={t} />} />
-          <Route path="/signin" element={<SignUp t={t} />} />
-          <Route path="/stripepay" element={<StripePayment t={t} />} />
-          <Route path="/addtocart" element={<AddtoCart t={t} />} />
-          <Route path="/dashboard" element={<PrivateRoute  ><Dashboard t={t} /></PrivateRoute>} />
           <Route element={<Topbar t={t} />} />
         </Routes>
-      </AuthProvider>
     </QueryClientProvider >
   )
 }

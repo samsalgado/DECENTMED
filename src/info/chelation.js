@@ -7,7 +7,6 @@ import chelationgraphic from '../images copy/chelationgraphic.png';
 import chelationbenefits from '../images copy/chelationbenefits.png';
 import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-
 const Pgchelation = () => {
   const { t } = useTranslation('common');
 
@@ -43,7 +42,7 @@ const Pgchelation = () => {
                     <img className='chelation-graphic' src={graphic} alt="Chelation 101" />
                     <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
                     <img className='dual' src={chelationbenefits} alt="Chelation Benefits" />
-                    <img />
+                    <img alt='chelation' />
                   </div>
                 </Collapsible>
               </th>
