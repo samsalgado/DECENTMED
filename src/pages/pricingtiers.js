@@ -5,16 +5,16 @@ import tier2 from '../images copy/500.png';
 import tier3 from "../images copy/1000.png";
 import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
-import supabase from "./supabase";
+//import supabase from "./supabase";
 export function Pricing() {
   const [selectedTier, setSelectedTier] = useState(null);
-  const [tierDetails,setTierDetails] = useState([]);
+  //const [tierDetails,setTierDetails] = useState([]);
   const handleChange = async (e) => {
     const value = e.target.value;
     setSelectedTier(value);
-    await getTiers(value);
+    //await getTiers(value);
   }
-  const getTiers = async (tier) => {
+ /* const getTiers = async (tier) => {
     try {
       const {data, error} = await supabase
       .from('Pricing_tiers')
@@ -30,11 +30,11 @@ export function Pricing() {
       console.error('Error while fetching tiers:', err);
     }
     }
-    
+    */
   useEffect(() => {
     console.log("Tier:", selectedTier);
-    console.log("Tier Details:", tierDetails);
-  }, [selectedTier, tierDetails]); 
+    //console.log("Tier Details:", tierDetails);
+  }, [selectedTier]); 
     return(
         <div className="title-container">
         <table className="collapsibles-table">
