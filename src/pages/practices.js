@@ -8,11 +8,12 @@ const Practice = () => {
 const { t } = useTranslation("common");
 
   return (
-    <div className='theecontainer'>
+    
+<div className='container'>
+<div className='theecontaine'>
       <div className='video-container'>
         <iframe
-          width="100%"
-          height="315"
+height='315'
           src="https://www.youtube.com/embed/85HJDyVHU1o?si=HP3go149es0YvcsO"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -26,6 +27,7 @@ const { t } = useTranslation("common");
         <Offer />
         <Offer2 />
     </div>
+</div>
   );
 };
 

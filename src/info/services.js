@@ -8,7 +8,7 @@ function Services() {
   return (
     <div className="container-bblue">
       <div className="row justify-content-center">
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Technical SEO')}</h4>
           <p className="edu">
             {t('- SEO & Social Media Audits')} <br />
@@ -19,7 +19,7 @@ function Services() {
           </p>
         </div> 
 
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Holistic Telehealth Conferences')}</h4>
           <p className="edu">
             {t('- Hosting virtual & onsite holistic medicine conferences')} <br />
@@ -28,7 +28,7 @@ function Services() {
           </p>
         </div> 
 
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Social Media Marketing')}</h4>
           <p className="edu">
             {t('- Managing social media accounts')} <br />
@@ -37,7 +37,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Website Management')}</h4>
           <p className="edu">
             {t('- Custom page development')} <br />
@@ -46,7 +46,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Web Analytics & Reporting')}</h4>
           <p className="edu">
             {t('- Weekly SEO audits using SEMRush, Moz, Google Search Console, and other tools')} <br />
@@ -54,7 +54,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Translated Website')}</h4>
           <p className="edu">
             {t('- Expand reach with multilingual support')} <br />
@@ -62,7 +62,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Security Services')}</h4>
           <p className="edu">
             {t('- Specialized security for healthcare data & providers')} <br />

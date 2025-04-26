@@ -100,7 +100,7 @@ const Blog6 = () => {
                 <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
                 <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
                 <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
-                <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+                <a className=""  href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
               </Collapsible>
             </tbody>
           </table>

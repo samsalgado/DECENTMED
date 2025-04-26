@@ -36,7 +36,8 @@ export function Pricing() {
     //console.log("Tier Details:", tierDetails);
   }, [selectedTier]); 
     return(
-        <div className="title-container">
+       <div className="">
+ <div className="title-container">
         <table className="collapsibles-table">
             <tbody>
               <tr>
@@ -57,6 +58,7 @@ export function Pricing() {
         </tbody>
           </table>
       </div>
+</div>
     )
   };
 export default Pricing;

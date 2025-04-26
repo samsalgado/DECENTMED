@@ -118,7 +118,7 @@ const {t} = useTranslation('common')
            </p>
           </div>
       </div>
-      <div>
+      <div className="container">
         <table className="collapsibles-table">
           <tbody> 
           <Collapsible trigger={<th className="collapsible-trigger">Fenbendazole in Spanish</th>}>
@@ -168,7 +168,7 @@ const {t} = useTranslation('common')
         </table>
        
       </div>
-      <div>
+      <div className="container">
   <table className="collapsibles-table">
     <tbody>
                <Collapsible trigger={<div className="collapsible-trigger">फेनबेंडाज़ोल हिंदी में</div>}>
@@ -177,7 +177,7 @@ const {t} = useTranslation('common')
     </tbody>
   </table>
 </div>
- <div>
+ <div className="container">
   <table className="collapsibles-table">
     <tbody>
                <Collapsible trigger={<div className="collapsible-trigger">Fenbendazole en français</div>}>
@@ -186,7 +186,7 @@ const {t} = useTranslation('common')
     </tbody>
   </table>
 </div>
-<div>
+<div className="container">
   <table className="collapsibles-table">
     <tbody>
                <Collapsible trigger={<div className="collapsible-trigger">Fenbendazol in het Nederlands</div>}>
@@ -195,14 +195,16 @@ const {t} = useTranslation('common')
     </tbody>
   </table>
 </div>
-       <div>
+       <div className="container">
         <table className="collapsibles-table">
           <tbody> 
           <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
-               <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
-               <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
-              <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
-               <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+               <a href="/fenbendazole"> <img className="gridimag" src={fenben} alt='' /> </a>
+               <a href="/ivermectin"> <img className="gridimag" src={IVERMECTINCANCER} alt="img" /> </a>
+              <a href="/hoxsey"> <img className="gridimag" src={hhoxsey} alt='' /> </a>
+              <div className="book">
+ <a  href="https://www.howtostarvecancer.com/"> 
+<img className="" style={{ width: '100%',height:'100%', }} src={starvecancer} alt="img"  /> </a></div>
             </Collapsible>
           </tbody>
         </table>

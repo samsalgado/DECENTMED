@@ -21,7 +21,7 @@ const { t } = useTranslation("common");
             <header>
                 <Topbar />
             </header>
-            <div>
+            <div className='container'>
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
             <Practice />
