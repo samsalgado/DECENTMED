@@ -20,8 +20,8 @@ const {t} = useTranslation('common')
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-<div>
-      <img className='gridimag' src={acuchart} alt='Ac' />
+<div className='acupen'>
+      <img className='gridmag' src={acuchart} alt='Ac' />
       </div>
     <Channel />
     </div>

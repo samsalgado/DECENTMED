@@ -3,16 +3,16 @@ import '../App.css'; // Make sure CSS is linked
 import Treatment from '../pages/treatment'; // Treatment images
 const treatmentLinks = {
   homeopath: "https://themerlingroupworld.com/homeopathy",
-  prevent: "https://themerlingroupworld.com/prevent-wellness",
+  prevent: "https://themerlingroupworld.com/prevent",
   detox: "https://themerlingroupworld.com/detox",
-  acupuncture: "https://themerlingroupworld.com/acupuncture",
+  acupuncture: "https://themerlingroupworld.com/acu",
   ayurveda: "https://themerlingroupworld.com/ayurveda",
   stemcell: "https://themerlingroupworld.com/stemcell",
   nutriton: "https://themerlingroupworld.com/nutrition",
   chiro: "https://themerlingroupworld.com/chiropractic",
   chelation: "https://themerlingroupworld.com/chelation",
   hypnotherapy: "https://themerlingroupworld.com/hypnotherapy",
-  herbalmedicine: "https://themerlingroupworld.com/herbal-medicine",
+  herbalmedicine: "https://themerlingroupworld.com/herbalmedicine",
   meditation: "https://themerlingroupworld.com/meditation",
   seo: "https://themerlingroupworld.com/digitalmarketing"
 };
