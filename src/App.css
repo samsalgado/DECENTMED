@@ -379,10 +379,60 @@ body {
   max-height: 80vh;
   padding: 1rem;
 }
-.grid-container {
+
+.grid-contain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default XS - 1 column */
+  gap: 15px; /* Gap between images */
+  padding: 15px;
+}
+
+.grid-item {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.grid-imag {
+  width: 100%;
+  height: 80px; /* ছোট ইমেজ */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-imag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Small Devices (≥576px) */
+@media (min-width: 576px) {
+  .grid-contain {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Medium Devices (≥768px) */
+@media (min-width: 768px) {
+  .grid-contain {
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  }
+}
+
+/* Large Devices (≥1024px) */
+@media (min-width: 1024px) {
+  .grid-contain {
+    grid-template-columns: repeat(7, 1fr); /* 6 columns */
+  }
+}
+
+
+
+/* .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px; /* Adjust spacing between grid items */
+  grid-gap: 20px; 
 }
 .grid-rw {
   display: flex;
@@ -399,10 +449,10 @@ body {
   grid-template-columns: repeat(
     auto-fill,
     minmax(100px, 1fr)
-  ); /* Adjust minmax values as needed */
+  ); 
 
   justify-content: flex-start;
-}
+} */
 
 /* Basic table styles */
 .collapsibles-table {
@@ -516,7 +566,7 @@ body {
 .grid-image {
   max-width: 100%; /* Adjust width based on column count */
   height: 70px; /* Set image height */
-  object-fit: cover; /* Crop images to fit while maintaining aspect ratio */
+   /* object-fit: cover; */
   margin: 0px;
   top: 20px;
 }
@@ -565,6 +615,7 @@ height: 600px;
   width: 100px; /* Adjust size as needed for mobile */
   height: auto;
 }
+
 
 .Logo {
   align-items: left;

@@ -1,0 +1,148 @@
+.footer {
+  background: linear-gradient(to right, #112128, #235260, #176384);
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+}
+
+.footer-section h2, 
+.footer-section h3 {
+  margin-bottom: 20px;
+}
+
+.footer-section p, 
+.footer-section a, 
+.footer-section li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-section form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-section form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  flex: 1;
+}
+
+.footer-section form button {
+  padding: 10px;
+  border: none;
+  background-color: #ff4c60;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+.facebook{
+color: rgb(17, 164, 243);
+}
+.facebook:hover{
+color:rgb(54, 177, 243);
+}
+
+.whatsapp{
+color: rgb(104, 251, 104);
+}
+.whatsapp:hover{
+color: rgb(61, 227, 61);
+}
+
+.tweet{
+color: rgb(29, 161, 242);
+}
+.youtube{
+color:rgb(246, 21, 21);
+}
+.imgdiv{
+width: 100%;
+margin-top: 0;
+}
+.Logo {
+  width: 200px; /* Adjust size as needed for mobile */
+  height: 70px;
+}
+.decent{
+font-style: italic;
+font-weight: bold;
+
+color:rgb(22, 250, 231)
+}
+
+.geyser{
+width: 350px;
+height: 130px;
+}
+.geyserImg{
+width: 100%;
+height: 100%;
+}
+
+/* .social-icons a:hover {
+  color: #ff4c60;
+} */
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
