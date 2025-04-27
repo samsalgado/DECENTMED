@@ -118,11 +118,13 @@ color:rgb(22, 250, 231)
 
 .geyser{
 width: 350px;
-height: 130px;
+height: 80px;
+
 }
 .geyserImg{
 width: 100%;
 height: 100%;
+
 }
 
 /* .social-icons a:hover {
