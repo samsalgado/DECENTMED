@@ -27,8 +27,8 @@ import Topbar from './topbar';
 const BlogPage = () => {
 const { t } = useTranslation("common");
   return (
-    <>
-        <Helmet>
+    <div>
+    <Helmet>
         <title>Blogs</title>  
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Learn about how to maintain and grow your health! Explore our Wellness Blogs to learn from providers worldwide. Learn more about how to experience vitality." />
@@ -50,7 +50,6 @@ const { t } = useTranslation("common");
           <figcaption>{t("Click on image for full Blog")}</figcaption>
         </figure>
       </a>
-
       </div>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -65,7 +64,6 @@ const { t } = useTranslation("common");
       </div>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}> {t('Can Constipation cause Back Pain?')}
     </h2>
-    
     <div className='pr'>
     <p>
     {t('An estimated “80% of the population will have significant back pain. According to the NIH, “15% of the US population deal with chronic constipation”, a statistic that highlights the American diet. Our bodies are interconnected systems; constipation causes stool buildup and affects the sacral nerve. Yes, constipation can cause back pain, specifically lower back pain.')}
@@ -358,8 +356,9 @@ const { t } = useTranslation("common");
       </a>
       </div>
         </div>
+        </div>
     <Footer />
-    </>
+    </div>
   );
 };
 
