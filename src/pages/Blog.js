@@ -358,7 +358,6 @@ const { t } = useTranslation("common");
       </a>
       </div>
         </div>
-    </div>
     <Footer />
     </>
   );
