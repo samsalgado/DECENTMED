@@ -62,7 +62,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("What are your goals?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("- showcasing revolutionary treatments to billions of people worldwide")}
+                 {t("- Showcasing revolutionary treatments to billions of people worldwide")}
               </Card.Text>
               <Card.Text>
                 {t("- Aid in global Bitcoin adoption")}
