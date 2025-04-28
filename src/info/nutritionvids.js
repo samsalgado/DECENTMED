@@ -45,8 +45,37 @@ const NutritionVids = () => {
             id: 9,
             videoUrl: "https://www.youtube.com/embed/Z5ijM3SOSEk",
             name: `${t("Lowering Blood Sugar is crucial for Menopause")}`
+        },
+        {
+            id: 10,
+            videoUrl: "https://www.youtube.com/embed/hMOVS5iimqM",
+            name: `${t("Senior Nutrition: Combatting Joint Pain")}`
+        },
+        {
+            id: 11,
+            videoUrl: "https://www.youtube.com/embed/DOMwCgo3peA",
+            name: `${t("Nutrify Your Life: Customer Testimonial")}`
+        },
+        {
+            id: 12,
+            videoUrl: "https://www.youtube.com/embed/alQWiJn3YV8",
+            name: `${t("Senior Wellness Tips")}`
+        },
+         {
+            id: 13,
+            videoUrl: "https://www.youtube.com/embed/Fu6xOytlYjs",
+            name: `${t("Vitamin D Deficiency Tips")}`
+        },
+{
+            id: 14,
+            videoUrl: "https://www.youtube.com/embed/2rVUfHZg954",
+            name: `${t("Truth About Healthy Aging")}`
+        },
+        {
+            id:15,
+            videoUrl: "https://www.youtube.com/embed/ExaUfmORhqM",
+            name: `${t("Dysfunctional Medicine: Exposing Conventional Medicine")}`
         }
-
     ]);
     return (
         <div className="contents">
