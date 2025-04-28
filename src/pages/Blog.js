@@ -347,7 +347,7 @@ const { t } = useTranslation("common");
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Unlock a Calm and Balanced Mind with This Natural Supplement')}</h2>
     <div className='pr'>
         <p>
-        {t('In our fast-paced world, stress and anxiety have become all too common. As a result, many individuals are seeking natural remedies to alleviate these persistent feelings of unease. One such remedy that has garnered attention in the Western world in recent years is Ashwagandha, a powerful adaptogenic herb with a long history in Ayurvedic medicine. Let's talk about how Ashwagandha supports those dealing with anxiety.')} 
+        {t('In our fast-paced world, stress and anxiety have become all too common. As a result, many individuals are seeking natural remedies to alleviate these persistent feelings of unease. One such remedy that has garnered attention in the Western world in recent years is Ashwagandha, a powerful adaptogenic herb with a long history in Ayurvedic medicine.')} 
         </p>
         <div className='container'>
     <a href='https://www.green-hypnotherapy.com/the-green-thumb'>
