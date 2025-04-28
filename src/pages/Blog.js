@@ -341,6 +341,7 @@ const { t } = useTranslation("common");
       </a>
       </div>
         </div>
+        </div>
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Unlock a Calm and Balanced Mind with This Natural Supplement')}</h2>
     <div className='pr'>
