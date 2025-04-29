@@ -75,6 +75,11 @@ const NutritionVids = () => {
             id:15,
             videoUrl: "https://www.youtube.com/embed/ExaUfmORhqM",
             name: `${t("Dysfunctional Medicine: Exposing Conventional Medicine")}`
+        },
+        {
+            id:16,
+            videoUrl: "https://www.youtube.com/embed/qvjIy5i9OHQ",
+            name: `${t("Dysfunctional Medicine")}`
         }
     ]);
     return (
