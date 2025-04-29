@@ -2,6 +2,7 @@ import React from 'react'
 import "./chiro.css";
 import Collapsible from 'react-collapsible';
 import stats from '../images copy/stats.jpg';
+import treats from '../images copy/IMG_8939.jpeg';
 import chirotreat from '../images copy/chirotreats.png';
 import chiropractorstats from '../images copy/chiropractor-stats.png';
 import { useTranslation } from 'react-i18next';
@@ -35,7 +36,7 @@ const {t} = useTranslation('common')
             <Collapsible trigger={<th className="collapsible-trigger">{t('Chiropractic Benefits')}</th>}>
               <tr className="image-container">
                 <img alt='' />
-                <img className='image' src={chiropractorstats} alt='' />
+                <img className='image' src={treats} alt='' />
                 <img className='image' src={chirotreat} alt='' />
                 <img alt='' />
               </tr>
