@@ -33,7 +33,7 @@ const {t} = useTranslation('common')
         <table className="collapsibles-table">
           <tbody>
             <Collapsible trigger={<th className="collapsible-trigger">{t('Chiropractic Benefits')}</th>}>
-              <tr className="image-container">
+              <tr className="image-contain">
                 <img alt='' />
                 <img className='image' src={chiropractorstats} alt='' />
                 <img className='image' src={chirotreat} alt='' />

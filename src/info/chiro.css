@@ -6,10 +6,6 @@
     padding: 2rem;
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-}
 
 .image { /* Renamed .imag for clarity */
     display: inline-block;
@@ -49,7 +45,7 @@
         flex-direction: column;
     }
 
-    .image-container {
+    .image-contain {
         flex-direction: column;
     }
 
