@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import HYPNO from '../info/hypno';
+import Hypnovids from '../info/hypnovids';
 import { useTranslation } from 'react-i18next';
 export function Hypnotherapy() {
 const { t } = useTranslation('common');
@@ -17,6 +18,9 @@ const { t } = useTranslation('common');
             <Topbar />
             </header>
             <HYPNO />
+            <br></br>
+            <h1 className='center'>{t("Online Hypnotherapy")}</h1>
+      <Hypnovids />
             <footer>
                 <Footer />
             </footer>

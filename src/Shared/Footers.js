@@ -25,10 +25,10 @@ const Footers = () => {
         <div className="social-icons">
           <h3>Social Media</h3>
           <div className="social-icons">
-            <a href="Use https://www.linkedin.com/company/themerlingroupworld/"><FaLinkedin className='facebook' /></a>
+            <a href="https://www.linkedin.com/company/themerlingroupworld/"><FaLinkedin className='facebook' /></a>
             <a href='https://twitter.com/ttf123457'><FaTwitter className='tweet' /></a>
-            <a href="#" className='whatsapp'><FaWhatsapp /></a>
-            <a href='https://www.youtube.com/playlist?list=PL8Q31etEj6NEEZGvqEw0UAOUG4O0ucsiz'><FaYoutube className='youtube' /></a>
+            <a href="https://wa.me/18137664900" className='whatsapp'><FaWhatsapp /></a>
+            <a href='https://www.youtube.com/@DCNTMD'><FaYoutube className='youtube' /></a>
 
           </div>
         </div>

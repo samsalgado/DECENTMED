@@ -8,6 +8,7 @@ import B17 from "../images copy/B17.png";
 import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
 import cancerimg from "../images copy/cancerimg.png";
+import green from "../images copy/green.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
 import constipation from '../images copy/constipation.png';
@@ -26,8 +27,8 @@ import Topbar from './topbar';
 const BlogPage = () => {
 const { t } = useTranslation("common");
   return (
-    <>
-        <Helmet>
+    <div>
+    <Helmet>
         <title>Blogs</title>  
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Learn about how to maintain and grow your health! Explore our Wellness Blogs to learn from providers worldwide. Learn more about how to experience vitality." />
@@ -49,7 +50,6 @@ const { t } = useTranslation("common");
           <figcaption>{t("Click on image for full Blog")}</figcaption>
         </figure>
       </a>
-
       </div>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -64,7 +64,6 @@ const { t } = useTranslation("common");
       </div>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}> {t('Can Constipation cause Back Pain?')}
     </h2>
-    
     <div className='pr'>
     <p>
     {t('An estimated “80% of the population will have significant back pain. According to the NIH, “15% of the US population deal with chronic constipation”, a statistic that highlights the American diet. Our bodies are interconnected systems; constipation causes stool buildup and affects the sacral nerve. Yes, constipation can cause back pain, specifically lower back pain.')}
@@ -342,9 +341,25 @@ const { t } = useTranslation("common");
       </a>
       </div>
         </div>
-    </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Unlock a Calm and Balanced Mind with This Natural Supplement')}</h2>
+    <div className='pr'>
+        <p>
+        {t('In our fast-paced world, stress and anxiety have become all too common. As a result, many individuals are seeking natural remedies to alleviate these persistent feelings of unease. One such remedy that has garnered attention in the Western world in recent years is Ashwagandha, a powerful adaptogenic herb with a long history in Ayurvedic medicine.')} 
+        </p>
+        <div className='container'>
+    <a href='https://www.green-hypnotherapy.com/the-green-thumb'>
+    <figure>
+        <img className='gridimag' src={green} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
     <Footer />
-    </>
+    </div>
   );
 };
 
