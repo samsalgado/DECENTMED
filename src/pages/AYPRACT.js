@@ -47,7 +47,7 @@ width="100%"
 controls={true}
 />
 </div>
-      <h5>Stacy Theodossin - The Healing Goddess      </h5>
+      <h5>{t("Stacy Theodossin - The Healing Goddess")}</h5>
       <p>
       {t("After Stacy graduated from San Diego State University in 1992, she moved to the Detroit area and began her career in sales and marketing.  She traveled the world and climbed the corporate ladder. But something was missing.  Before long, she was back to her studies – this time in Ayurvedic Medicine.  Her own journey to health and healing, through Ayurveda, had already begun a few years earlier -- when she was a patient with her own chronic health conditions. When she had the opportunity to deepen her knowledge, she jumped at the chance.  At first, it was from an academic standpoint.  She couldn’t wrap her mind around how it all worked.  After hours and years of study and residency, she found the answers she sought. Then, her mission was clear – she needed to teach others how to HEAL & TRANSFORM their own lives through Ayurveda, the 'wisdom of life.")}
       </p>
@@ -61,7 +61,7 @@ controls={true}
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
-      <h5>Yogi Sanji - (Sanjivana)      </h5>
+      <h5>{t(Yogi Sanji - (Sanjivana)"}</h5>
       <p>
       {t("My name is Yogi Sanji (Sanjivana), and my expertise is meditation and spiritual mentoring. I am a former monk of 20 years and have extensive experience teaching meditation to individuals and large groups. Meditation is my passion, interest, and life. I help people reach their goals of happiness, peace, and liberation through the practice of meditation and mindfulness. I teach meditation based on ancient traditions and doctrines which include deep insights, concentration, mindfulness, relaxation, and healing meditations.  Sanjivana Kularathna - Serenity Meditations Meditation Teacher, Spiritual- Counselor, Therapist, Tutor, Mentor, Life Coach Energy work healing  Working for Charities, Suicide p evention , Trauma Recovery , Rehabilitation, Sober Therapy and rebuilding lives.")}
       </p>
