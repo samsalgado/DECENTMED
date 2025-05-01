@@ -8,6 +8,7 @@ import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
 //import supabase from "./supabase";
 export function Pricing() {
+  const { t } = useTranslation();
   const [selectedTier, setSelectedTier] = useState(null);
   //const [tierDetails,setTierDetails] = useState([]);
   const handleChange = async (e) => {
@@ -43,7 +44,7 @@ export function Pricing() {
             <tbody>
               <tr>
               <th className="collapsible-trigger">
-       <Collapsible trigger={"Pricing Tiers"}>
+       <Collapsible trigger={t("Pricing Tiers")}>
         <div className='collapsible-content'>
         <input type='radio' onClick={handleChange} name='Tier' value="Tier 1"></input>
         <img src={tier1} alt="tier 1" />
