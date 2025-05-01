@@ -25,7 +25,7 @@ const Footers = () => {
         </div>
 
         <div className="social-icons">
-          <h3>Social Media</h3>
+          <h3>{t('Social Media')}</h3>
           <div className="social-icons">
             <a href="https://www.linkedin.com/company/themerlingroupworld/"><FaLinkedin className='facebook' /></a>
             <a href='https://twitter.com/ttf123457'><FaTwitter className='tweet' /></a>
