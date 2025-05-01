@@ -8,7 +8,7 @@ import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
 //import supabase from "./supabase";
 export function Pricing() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
   const [selectedTier, setSelectedTier] = useState(null);
   //const [tierDetails,setTierDetails] = useState([]);
   const handleChange = async (e) => {
