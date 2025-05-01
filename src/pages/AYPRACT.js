@@ -8,7 +8,7 @@ import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
 export function AYPract() {
   const { t } = useTranslation();
-
+  console.log(t("Ayurveda"));
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
