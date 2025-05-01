@@ -1,5 +1,6 @@
 import "../App.css";
 import '../info/Info.css';
+import { useTranslation } from 'react-i18next'
 import tier1 from "../images copy/250.png";
 import tier2 from '../images copy/500.png';
 import tier3 from "../images copy/1000.png";
