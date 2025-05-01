@@ -1,9 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import Geyser from '../images copy/geyser.png'
+import {useTranslation } from 'react-i18next';
 import { FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 
 const Footers = () => {
+  const {t} = useTranslation('common')
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -11,14 +13,14 @@ const Footers = () => {
           <h3 className='decent'>DECENT MED</h3>
           {/* <div className='imgdiv'><img src={LOGO} className="Logo" alt="logo" /></div> */}
           <p>
-            We are an education platform that showcases Holistic Medicine and helps providers grow their business using AI-driven marketing strategies, social media management and unique offerings that helps our clients WIN.
+  {t('We are an education platform that showcases Holistic Medicine and helps providers grow their business using AI-driven marketing strategies, social media management and unique offerings that helps our clients WIN.')}
           </p>
         </div>
 
         <div className="footer-section office">
-          <h3>Office</h3>
+          <h3>{t('Office')}</h3>
           <p>Verlengde Keizer St 17B, Paramaribo, Suriname</p>
-          <p>Email: themerlingroupworld@gmail.com</p>
+          <p>{t('Email: themerlingroupworld@gmail.com')}</p>
           <p className='geyser'><a  href="https://geyser.fund/project/decentmedpubliccancercure/"> <img src={Geyser} className='geyserImg' alt="" /></a></p>
         </div>
 
