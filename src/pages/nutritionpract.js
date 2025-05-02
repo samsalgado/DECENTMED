@@ -42,7 +42,7 @@ width="100%"
 controls={true}
 />
 </div>
-  <h5>Nutrify Your Life: </h5>
+  <h5>{t("Nutrify Your Life:")}</h5>
       <p>
       {t("Welcome to Nutrifyourlife, where I am on a mission to revolutionize healthcare and empower individuals to take control of their health through diet and lifestyle modifications. My personalized functional medicine and nutrition sessions are tailored to your specific needs and goals whether it's weight loss, managing chronic conditions, or improving overall well-being. I work closely with you to create a customized plan that aligns with your preferences and health goals.")}
       </p>

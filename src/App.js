@@ -45,7 +45,9 @@ import { Chiro } from './pages/ChiroPRACT';
 import { Hypnopract } from './pages/hypnopract';
 import { AYPract } from './pages/AYPRACT';
 import {Nutritionpract} from './pages/nutritionpract';
-import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
+import {Coaching} from './pages/coach';
+import {HomeopathyPract} from './pages/HOMEOPATHYPRACT';
+import { Acupract} from './pages/acupract';
 //import SignUp from './pages/SignUp/SignUp';
 //import StripePayment from './pages/StripePayment/StripePayment';
 import Topbar from './pages/topbar';
@@ -68,6 +70,8 @@ function App() {
           <Route path="/404" element={<NotFound />} />
           <Route path="/stemcell" element={<StemCell t={t} />} />
           <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+          <Route path="/coaching" element={<Coaching t={t} />} />
+          <Route path="/acupuncturists" element={<Acupract t={t} />} />
           <Route path="/blog" element={<BlogPage t={t} />} />
           <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
           <Route path="/apoth" element={<Apoth t={t} />} />
