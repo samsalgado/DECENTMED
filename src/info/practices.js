@@ -20,16 +20,20 @@ function Practices() {
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <NavLink to="/acupuncturists">
                         <h3 className="card-title-fixed" >{t("Acupuncture")}</h3>
                         <img className="img-custom" src={Treatment.acupuncture} alt={t("Acupuncture")} />
+                    </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <h3 className="card-title-fixed" >{t("Chelation")}</h3>
                         <img className="img-custom" src={Treatment.chelation} alt={t("Chelation")} />
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <NavLink to="/coaching">
                         <h3 className="card-title-fixed" >{t("Health Coach")}</h3>
                         <img className="img-custom" src={Departments.healthcoach} alt={t("Health Coach")} />
+                    </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to="/chiropract">
