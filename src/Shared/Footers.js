@@ -13,7 +13,7 @@ const Footers = () => {
           <h3 className='decent'>DECENT MED</h3>
           {/* <div className='imgdiv'><img src={LOGO} className="Logo" alt="logo" /></div> */}
           <p>
-  {t('We are a video education platform that showcases Holistic Medicine and helps providers grow their business using AI-driven marketing strategies, social media management and other unique offerings that helps our clients WIN.')}
+  {t('intro_paragraph')}
           </p>
         </div>
 
