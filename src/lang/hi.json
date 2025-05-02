@@ -25,8 +25,11 @@
 "Pricing Tiers": "मूल्य स्तर",
   "Broadcast these revolutionary holistic treatments to billions of people around the world":"इन क्रांतिकारी समग्र उपचारों को दुनिया भर के अरबों लोगों तक प्रसारित करें",
   "Find Practioner": "चिकित्सक खोजें",
+<<<<<<< HEAD
   "We have witnessed the corruption of the healthcare system. After the pandemic, we noticed the catastrophic shift in the current system and want to provide a cheaper alternatives to healthcare globally.":"हमने स्वास्थ्य सेवा प्रणाली में भ्रष्टाचार देखा है। महामारी के बाद, हमने मौजूदा प्रणाली में भयावह बदलाव देखा है और वैश्विक स्तर पर स्वास्थ्य सेवा के लिए एक सस्ता विकल्प प्रदान करना चाहते हैं।",
   "Cancer": "कैंसर",
+=======
+>>>>>>> 55efd0c (Save progress before updating to commit 0ad3836)
   "Blogs": "ब्लॉग",
   "In our ever-changing world, stress and anxiety have become commonplace. As a result, many people are looking for natural remedies to relieve this persistent discomfort. Ashwagandha, a powerful adaptogenic herb long used in Ayurvedic medicine, is one such remedy that has gained significant interest in the West in recent years.": "हमारी लगातार बदलती दुनिया में, तनाव और चिंता आम बात हो गई है। नतीजतन, कई लोग इस लगातार असुविधा से राहत पाने के लिए प्राकृतिक उपचार की तलाश कर रहे हैं। अश्वगंधा, एक शक्तिशाली एडाप्टोजेनिक जड़ी बूटी है जिसका उपयोग आयुर्वेदिक चिकित्सा में लंबे समय से किया जाता है, एक ऐसा ही उपाय है जिसने हाल के वर्षों में पश्चिम में महत्वपूर्ण रुचि प्राप्त की है।",
   "About Us": "हमारे बारे में",
@@ -41,7 +44,6 @@
   "Chelation": "कीलेशन",
   "Chiropractic": "काइरोप्रैक्टिक",
   "Naturopathy": "नेचुरोपैथी",
-  "Hypnotherapy": "हिप्नोथेरेपी",
   "Ayurveda": "आयुर्वेद",
   "Nutrition": "पोषण",
   "Have you ever wondered how people used to live healthier and longer lives? Before traditional medicine, there was wellness. Our ancestors experienced vitality - living off the land. This decade has uncovered the hidden truth about traditional healthcare. Medicine is not about surviving; it is about wellness. Medicine should cure sometimes, relieve often, and comfort always. Our goal is to promote vitality. We are personally and professionally invested in the re-emergence of regenerative medicine and broadening access to revolutionary therapies. Treatments like homeopathy operate on the belief that the body can heal via plants and minerals to stimulate the healing process.": "क्या आपने कभी सोचा है कि लोग पहले कैसे स्वस्थ और लंबे जीवन जीते थे? पारंपरिक चिकित्सा से पहले, वहाँ स्वास्थ्य था। हमारे पूर्वजों ने जीवंतता का अनुभव किया - वे भूमि से जीते थे। इस दशक ने पारंपरिक स्वास्थ्य देखभाल के बारे में छिपी हुई सच्चाई को उजागर किया है। चिकित्सा सिर्फ जीवित रहने के बारे में नहीं है; यह स्वास्थ्य के बारे में है। चिकित्सा कभी-कभी इलाज करनी चाहिए, अक्सर राहत देनी चाहिए, और हमेशा आराम देना चाहिए। हमारा उद्देश्य जीवंतता को बढ़ावा देना है। हम पुन: उत्पत्ति चिकित्सा के पुनरुत्थान में व्यक्तिगत और पेशेवर रूप से निवेशित हैं और क्रांतिकारी उपचारों तक पहुँच को व्यापक बनाने में लगे हुए हैं। होम्योपैथी जैसे उपचार इस विश्वास पर कार्य करते हैं कि शरीर पौधों और खनिजों के माध्यम से उपचार प्रक्रिया को उत्तेजित कर सकता है।",

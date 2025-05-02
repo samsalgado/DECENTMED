@@ -19,9 +19,7 @@ const {t} = useTranslation('common')
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-
       <div><img src={stats} className="FACTS" alt="logo" /></div>
-
       <div className='par'>
         <p>
           {t('The war on drugs has been a colossal failure. Since its inception, the drug war has decimated countries, incarcerated black men, and overdose deaths increases. Since 1999, drug overdoses have tripled in the last two decades. Furthermore, the figures are from 2020, a period plagued by a global pandemic. With Fentanyl on the rise in the 2020s, the numbers are only increasing. Alternative treatments like Chiropractic are non-invasive and align the body. An estimated 80% of the population will have significant back pain.')}
@@ -36,21 +34,15 @@ const {t} = useTranslation('common')
             <Collapsible trigger={<th className="collapsible-trigger">{t('Chiropractic Benefits')}</th>}>
               <tr className="image-contain">
                 <img alt='' />
-                <img className='image' src={chiropractorstats} alt='' />
-                <img className='image' src={chirotreat} alt='' />
+                <img src={chiropractorstats} alt='' />
+                <img src={chirotreat} alt='' />
                 <img alt='' />
               </tr>
-
             </Collapsible>
-
           </tbody>
         </table>
-
       </div>
-
     </div>
-
   )
 }
-
 export default Chiro;
