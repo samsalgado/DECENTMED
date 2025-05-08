@@ -1,6 +1,7 @@
 import React from 'react'
 import preventchart from '../images copy/prevemt.png';
 import Vitamins from './vitamins';
+import Coachingvids from './coachingvids';
 import './Info.css';
 import "./prevent.css";
 import { useTranslation } from 'react-i18next';
@@ -33,6 +34,9 @@ const PreventWellness = () => {
    
      <div className='vitamin'>
  <Vitamins />
+  <br></br>
+  <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>
+  <Coachingvids />
 </div>
     </div>
   );
