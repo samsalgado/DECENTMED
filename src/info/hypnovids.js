@@ -30,8 +30,22 @@ const Hypnovids = () => {
             id: 6,
             videoUrl: "https://www.youtube.com/embed/eLynvmE1pWs",
             name: `${t("The KEY to Healing childhood Wounds")}`
+        },
+        {
+            id: 7,
+            videoUrl: "https://www.youtube.com/embed/Wq5dDr24iaM?si=eOk4jHcp1-iP5yBs",
+            name: `${t("The OverSoul")}`
+        },
+        {
+            id:8,
+            videoUrl:"https://www.youtube.com/embed/lwPD6Ug3PAk",
+            name: `${t("Tampa Healing: CPTSD")}`
+        },
+       {
+            id:9,
+            videoUrl:"https://www.youtube.com/embed/7VBO0_v4bmw",
+            name: `${t("Releasing Soul Ties")}`
         }
-       
     ]);
     return (
         <div className="contents">
