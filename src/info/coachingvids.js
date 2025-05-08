@@ -50,7 +50,7 @@ const Coachingvids = () => {
        {
             id:10,
             videoUrl:"https://www.youtube.com/embed/FS8qgpDiQWY?si=usMtoLYqYBAUioEW",
-            name: `${t("RUnlock the secrets to accelerating your metabolism")}`
+            name: `${t("Unlock the secrets to accelerating your metabolism")}`
         }
     ]);
     return (
