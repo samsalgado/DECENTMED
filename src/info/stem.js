@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Collapsible from 'react-collapsible';
 import "./stem.css"; // Adjusted path for CSS
@@ -9,6 +8,31 @@ import whystemcell from '../images copy/whystemcell.png';
 import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg';
 import stembenefits from '../images copy/stembenefits.png';
 import './Info.css';
+import whystemcellspanish from '../images copy/IMG_9256.jpeg';
+
+import whystemcelldutch from '../images copy/IMG_9257.jpeg';
+
+import whystemcellfrench from '../images copy/IMG_9258.jpeg';
+
+import whystemcellhindi from '../images copy/IMG_9259.jpeg';
+
+import benefitsofstemcellhindi from '../images copy/IMG_9260.jpeg';
+
+import benefitsofstemcellspanish from '../images copy/IMG_9261.jpeg';
+
+import benefitsofstemcellfrench from '../images copy/IMG_9293.jpeg';
+import stemcelltranslated from '../images copy/IMG_9266.jpeg';
+import benefitsofstemcelldutch from '../images copy/IMG_9294.jpeg';
+
+import bonemarrowspanish from '../images copy/IMG_9262.jpeg';
+
+import bonemarrowfrench from '../images copy/IMG_9263.jpeg';
+
+import bonemarrowhindi from '../images copy/IMG_9264.jpeg';
+
+import bonemarrowdutch from '../images copy/IMG_9265.jpeg';
+
+import stemcelltranslated from '../images copy/IMG_9266.jpeg';
 import stemtype from '../images copy/stem-type.jpg';
 import graphic from '../images copy/Pink-Illustrative-Simple-Healthy-Habits-Infographic.jpeg';
 import { useTranslation } from 'react-i18next';
@@ -47,6 +71,15 @@ const Stem = () => {
                 <img className='gridimag' src={whatisastemcell} alt='What is a stem cell' />
                 <img className='gridimag' src={stemtype} alt='Stem cell types' />
                 <img className='gridimag' src={whystemcell} alt='Why stem cell' />
+                <img className='gridimag' src={stemcelltranslated} alt='Why stem cell' />
+                <img className='gridimag' src={whystemcellspanish} alt='Why stem cell' />
+                <img className='gridimag' src={benefitsofstemcellspanish} alt='Why stem cell' />
+                <img className='gridimag' src={whystemcellhindi} alt='Why stem cell' />
+                 <img className='gridimag' src={benefitsofstemcellhindi} alt='Why stem cell' />
+                <img className='gridimag' src={whystemcelldutch} alt='Why stem cell' />
+                <img className='gridimag' src={benefitsofstemcelldutch} alt='Why stem cell' />
+                <img className='gridimag' src={whystemcellfrench} alt='Why stem cell' />
+                <img className='gridimag' src={benefitsofstemcellfrench} alt='Why stem cell' />
                 <img alt='' />
               </Collapsible>
             </tbody>
@@ -64,7 +97,11 @@ const Stem = () => {
                 }
               >
                 <img alt='' />
+                <img className="gridimag" src={bonemarrowspanish} alt="Bone Marrow Stem Cell Benefits" />
                 <img className="gridimag" src={graphic} alt="Bone Marrow Stem Cell Benefits" />
+                <img className="gridimag" src={bonemarrowfrench} alt="Bone Marrow Stem Cell Benefits" />
+                <img className="gridimag" src={bonemarrowhindi} alt="Bone Marrow Stem Cell Benefits" />
+                <img className="gridimag" src={bonemarrowdutch} alt="Bone Marrow Stem Cell Benefits" />
                 <img alt='' />
               </Collapsible>
             </tbody>
