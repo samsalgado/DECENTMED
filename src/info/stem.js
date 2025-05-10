@@ -23,9 +23,9 @@ import benefitsofstemcellspanish from '../images copy/IMG_9261.jpeg';
 import benefitsofstemcellfrench from '../images copy/IMG_9293.jpeg';
 import benefitsofstemcelldutch from '../images copy/IMG_9294.jpeg';
 
-import bonemarrowspanish from '../images copy/IMG_9262.jpeg';
+import bonemarrowspanish from '../images copy/IMG_9262.png';
 
-import bonemarrowfrench from '../images copy/IMG_9263.jpeg';
+import bonemarrowfrench from '../images copy/IMG_9263.png';
 
 import bonemarrowhindi from '../images copy/IMG_9264.jpeg';
 
