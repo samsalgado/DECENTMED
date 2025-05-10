@@ -14,7 +14,7 @@ const Nutritionpage = () => {
   return (
     <div className='container'>
       <h1 className="title">{t('Nutrition')}</h1>
-      <iframe width="100%" height="650px" src="https://www.youtube.com/embed/2sZbrRXHJiU?si=kW8BOV3isy3SsQiD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <iframe width="100%" height="650px" src="https://www.youtube.com/embed/0k7Nm4Z8Z2Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
       <div className="title-container">
         <table className="collapsibles-table">
