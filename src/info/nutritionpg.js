@@ -17,7 +17,8 @@ import cogES from '../images copy/IMG_9277.jpeg';
 import cogFR from '../images copy/IMG_9278.jpeg'; 
 import drsebi from '../images copy/drsebi.jpeg';
 import { useTranslation } from 'react-i18next';
-
+import cogDutch from '../images copy/IMG_9279.jpeg';
+import cogHindi from '../images copy/IMG_9280.jpeg';
 const Nutritionpage = () => {
   const { t } = useTranslation("common");
 
@@ -43,7 +44,7 @@ const Nutritionpage = () => {
                 <img className='gridimage' src={drSebiFrench} alt='' />
                 <img className='gridimage' src={drSebINT} alt='' />
                 <img className='gridimage' src={drSebiHindi} alt='' />
-                <img className='gridimage' src={drsebiES} alt='' />
+                <img className='gridimage' src={drSebiES} alt='' />
                 <img alt='' />
               </tr>
             </Collapsible>
