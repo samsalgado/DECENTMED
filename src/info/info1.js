@@ -4,7 +4,7 @@ import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; // Import only acu.css for styling
 import { useTranslation } from 'react-i18next';
-
+import acutreatsIN from '../images copy/IMG_9305.jpeg';
 const Info1 = () => {
 const {t} = useTranslation('common')
   return (
@@ -22,6 +22,7 @@ const {t} = useTranslation('common')
           ></iframe>
 <div className='acupen'>
       <img className='gridmag' src={acuchart} alt='Ac' />
+       <img className='gridmag' src={acutreatsIN} alt='Ac' />
       </div>
     <Channel />
     </div>
