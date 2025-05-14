@@ -15,7 +15,7 @@ const {t} = useTranslation('common')
       <iframe
             width="100%"
             height={315}
-            src="https://www.youtube.com/embed/cJIHng7oaWM?si=zzIkenFP5H3l6ahb"
+            src="https://www.youtube.com/embed/ZEwCi-Iw4-U"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
