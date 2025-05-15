@@ -24,7 +24,7 @@ const {t} = useTranslation('common')
 <div className='acupen'>
       <img className='gridmag' src={acuchart} alt='Ac' />
        <img className='gridmag' src={acutreatsIN} alt='Ac' />
-        <img className='gridimag' src={burnout} alt='oceantreis' />
+        <img className='gridmag' src={burnout} alt='oceantreis' />
       </div>
     <Channel />
     </div>
