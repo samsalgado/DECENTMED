@@ -28,7 +28,8 @@ img {
   width: 110%; /* Ensure images fill their container */
   height: auto; /* Maintain aspect ratio */
   max-width: 600px; /* Adjust maximum width of grid images */
-  margin: 10px; /* Add margin around images */
+  margin: 10px auto; /* Center horizontally with auto margin */
+  display: block; /* Needed to apply margin:auto to images */
   object-fit: cover; /* Maintain aspect ratio */
 }
 .ayurveda-image {
