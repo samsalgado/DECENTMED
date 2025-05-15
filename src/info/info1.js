@@ -2,7 +2,7 @@ import React from 'react';
 import Channel from './channel';
 import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
-import './acu.css'; // Import only acu.css for styling
+import './acu.css'; 
 import { useTranslation } from 'react-i18next';
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
@@ -11,8 +11,6 @@ const {t} = useTranslation('common')
   return (
     <div className='container'>
       <h1 className='title'>{t('Acupuncture')}</h1>
-
-
       <iframe
             width="100%"
             height={315}
@@ -24,7 +22,7 @@ const {t} = useTranslation('common')
 <div className='acupen'>
       <img className='gridmag' src={acuchart} alt='Ac' />
        <img className='gridmag' src={acutreatsIN} alt='Ac' />
-        <img className='gridimag' src={burnout} alt='oceantreis' />
+      <img className='gridimag' src={burnout} alt='oceantreis' />
       </div>
     <Channel />
     </div>
@@ -32,4 +30,4 @@ const {t} = useTranslation('common')
   )
 }
 
-export default Info1
+export default Info1;
