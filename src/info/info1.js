@@ -22,8 +22,10 @@ const {t} = useTranslation('common')
 <div className='acupen'>
       <img className='gridmag' src={acuchart} alt='Ac' />
        <img className='gridmag' src={acutreatsIN} alt='Ac' />
-      <img className='gridimag' src={burnout} alt='oceantreis' />
-      </div>
+    <a href="https://oceantreis.com/" target="_blank" rel="noopener noreferrer">
+    <img className='gridimag' src={burnout} alt='oceantreis' />
+  </a>      
+  </div>
     <Channel />
     </div>
     
