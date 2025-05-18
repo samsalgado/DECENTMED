@@ -228,7 +228,7 @@ const Hoxsey = ({t}) => {
   className="rumble" 
   width="100%" 
   height="400px" 
-  src="https://rumble.com/embed/v6c1084/?pub=4hu51y" 
+  src="https://drive.google.com/file/d/1JsO6uRAF1QfqSH1mZweBb29IEeyLeyTG/preview" 
   frameBorder="0" 
   allowFullScreen 
   title="You Don’t Have to Die Video" 
