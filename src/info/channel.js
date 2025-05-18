@@ -21,7 +21,7 @@ function Channel() {
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t("Acupuncture Points")}</h4>
-                    <img className='imgg' src={channels} alt='' />                 
+                    <img className='gridimag' src={channels} alt='' />                 
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t("Acupuncture Treatment")}</h4>

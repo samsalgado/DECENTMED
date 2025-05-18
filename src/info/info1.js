@@ -6,6 +6,8 @@ import './acu.css';
 import { useTranslation } from 'react-i18next';
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
+import Acuvids from '../info/acuvids';
+import acuben from '../images copy/acuben.png';
 const Info1 = () => {
 const {t} = useTranslation('common')
   return (
@@ -26,6 +28,9 @@ const {t} = useTranslation('common')
     <img className='gridimag' src={burnout} alt='oceantreis' />
   </a>      
   </div>
+  <h1>{t("Top 10 Benefits of Acupuncture")}</h1>
+  <img className='gridimag' src={acuben} alt='Ac' />
+  <Acuvids />
     <Channel />
     </div>
     
