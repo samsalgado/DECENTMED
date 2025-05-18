@@ -10,19 +10,19 @@ function Values() {
             <div className="row justify-content-center">
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Education')}</h4>
-                    <p className="edu">{t('Video Education Platform about Holistic Medicine and its various modalities. Our team offers interviews to all providers on the platform and seeks to collaborate with them to create educational series for their specific modality.')}</p>
+                    <p className="edu">{t('Video Education Platform featuring each Holistic Medicine modality. Our team offers interviews to all providers on the platform and seeks to collaborate with them to create educational series for their specific modality.')}</p>
                 </div> 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Showcasing Alternatives')}</h4>
-                    <p className="edu">{t('Deemed as "alternative" in the 1970s, we strive to showcase and deepen the understanding of Holistic Medicine. Furthermore, funding studies and partnering with doctors that practice unique treatment offerings.')}</p>
+                    <p className="edu">{t("Deemed as 'alternative' in the 1970s, we strive to showcase and deepen the understanding of Holistic Medicine. Furthermore, funding studies and partnering with doctors that practice unique treatment offerings.")}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
-                    <h4>{t('Treatment of Chronic Conditions')}</h4>
-                    <p className="edu">{t('Our goal is to re-invest into the doctors on the platform to fund their research and studies.')}</p>
+                    <h4>{t('Webinars & Collaborative Summits')}</h4>
+                    <p className="edu">{t('Our platform is censorship-resistant. Via Blockchain tools like Nostr - provider research and studies are publicly posted without fear of interference.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Advanced Features')}</h4>
-                    <p className="edu">{t('Features of the platform include: Data Analytics, Social Media Marketing, additional offering creation, interview showcases and AI-driven Solutions. For providers that do not have a website, we build custom pages.')}</p>
+                    <h4>{t('Holistic Marketing')}</h4>
+                    <p className="edu">{t('Our telehealth directory operates as a marketing agency - managing provider social media, SEO on their website, backlinks to their site, video interviews, data analytics, conversion tracking and custom-built webpages - ensuring that holistic medicine grows in market share.')}</p>
                 </div>
             </div>
         </div>

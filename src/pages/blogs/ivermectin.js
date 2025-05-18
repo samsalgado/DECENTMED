@@ -1,3 +1,4 @@
+import React, {useEffect, useCallback} from 'react';
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
@@ -23,6 +24,8 @@ import spanish16 from '../../images copy/IMG_6974.jpeg';
 import spanish17 from '../../images copy/IMG_6975.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import fenbenn from '../../images copy/Fenbendazole.png';
+import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
+import { nip19 } from 'nostr-tools';
 import Collapsible from 'react-collapsible';
 import starvecancer from '../../images copy/starvecancer.webp';
 import fenben from '../../images copy/ivermectin1.jpeg';
@@ -45,7 +48,79 @@ import ivermectin17 from '../../images copy/ivermectin17.jpeg';
 import "../../App.css";
 import { useTranslation } from "react-i18next";
 const Ivermectin = () => {
-const {t} = useTranslation('common')
+const {t} = useTranslation('common');
+    const publishToNostr = useCallback(async () => {
+      const nsec = process.env.REACT_APP_NSEC;
+        if (!nsec) {
+        console.error('Missing nsec key');
+        return;
+      }
+  
+      try {
+        const { type, data: sk } = nip19.decode(nsec);
+        if (type !== 'nsec') {
+          console.error('Invalid nsec format');
+          return;
+        }
+        const pubkey=getPublicKey(sk);
+      const content = `  
+      Estudios de caso de ivermectina:
+        https://themerlingroupworld.com/static/media/IMG_6958.1b4b69b80399123fdf45.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6959.eeb86e4c9dcf5b7513ed.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6960.3cf0ef6404d60d98a6f1.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6962.01ae6da054d5cb62d3c8.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6963.41b9bc16852cfcf985d6.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6964.910441d7bcae6741a769.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6965.72a397eb35e89b3b0c5a.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6966.0fda165cae7aa188f191.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6967.170d7a61144a2108eae2.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6967.170d7a61144a2108eae2.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6968.dc35c1f078c94a423590.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6969.4dabe6955a8df094c65a.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6970.e012bbc4d427a676a25e.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6971.b0a703210acdec4c2250.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6972.fbc24ad601736c5d5ce5.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6973.f083f33fe51b64acefae.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6974.99220964f881f8809caf.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6975.b67271b5980bd67a61c5.jpeg
+      `;
+        const event = {
+          kind: 1,
+          created_at: Math.floor(Date.now() / 1000),
+          tags: [
+            ["t", "health"],
+            ["t", "cancer"],
+            ["t", "spanish"],
+            ["t", "ivermectina"]
+          ],              
+            content,
+          pubkey,
+        };
+        const signedEvent = finalizeEvent(event, sk);
+        const pool = new SimplePool();
+        const relays = ['wss://relay.damus.io','wss://nos.lol'];
+        await Promise.all(
+          relays.map(async (relay) => {
+            try {
+              let r = await pool.ensureRelay(relay);
+              await r.publish(signedEvent);
+              console.log(`Published to ${relay}`);
+            } catch (err) {
+              console.error(`Failed to publish to ${relay}:`, err);
+            }
+          })
+        );
+  
+        console.log('Published to Nostr!');
+        pool.close(relays); // Clean up connections
+      } catch (error) {
+        console.error('Error publishing to Nostr:', error);
+      }
+    }, []);
+    useEffect (() => {
+      publishToNostr();
+    }, [publishToNostr]);
+  
   return (
     <>
       <Helmet>

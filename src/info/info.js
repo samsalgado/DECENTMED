@@ -16,6 +16,7 @@ const Info = () => {
     <div className='container'>
       <h1 className='title'>{t('Decent Med')}</h1>
       <WellnessInro />
+      <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{'Providers: Join Platform'}</button>
       <BlueContainer />
 
       <div className="title-container">
@@ -26,20 +27,20 @@ const Info = () => {
       <div className='digital'>
         <div className="image-container">
           <div className="text-content">
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Content Creation'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Video Editing'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Advertising'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Custom Storytelling'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Automation'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Data Reporting'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'SEO (Local & National)'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Webinar Creation'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Social Media Optimization'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Custom Page Creation'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Conversion Optimization'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Branding & Consultation'}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{'Email Marketing'}</p>
-            <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{'Learn More'}</button>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Content Creation')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Video Editing')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('AI-Enhanced Strategy')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Custom Storytelling')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Consulting')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Data Reporting')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('SEO (Local & National)')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Webinar Creation')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Social Media Optimization')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Custom Page Creation')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Conversion Optimization')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Branding & Consultation')}</p>
+            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Email Marketing')}</p>
+            <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{t("Learn More")}</button>
           </div>
         </div>
       </div>

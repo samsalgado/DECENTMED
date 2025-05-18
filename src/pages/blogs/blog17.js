@@ -6,7 +6,7 @@ import "../../App.css";
 const Blog17 = () => {
   return (
     <>
-      <Helmet>
+    <Helmet>
         <title>How to Accept Bitcoin Payments as a Business</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="What is Bitcoin? Bitcoin is speculative to some and hope for others. Explore how to accept Bitcoin as payment!" />
@@ -51,7 +51,6 @@ const Blog17 = () => {
                 allowFullScreen
               ></iframe>
             </div>
-
       <p>
       What’s one thing that separates Bitcoin from other currencies — control over your money? Unfortunately, Crypto.com and Swiss Bitcoin Pay are not self-custody, meaning, your “keys” or seed random word seed phrase are controlled by the app and not in your full control. Conversely, Muun Wallet is self-custody and enables you to create a self-custodial wallet where the user has full control. When creating your wallet, set a 4-digit password to keep your wallet safe. After setting your password, the wallet is created for full security, you should back up your wallet with a random seed phrase.        </p>
         <p>
@@ -78,5 +77,4 @@ const Blog17 = () => {
   );
 };
 
-export default Blog17; // Default export
-
+export default Blog17; 
