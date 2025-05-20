@@ -14,7 +14,6 @@ export function Nutrition() {
                 <title>{t('Dr Sebi Food List')}</title>
                 <meta name="description" content="Explore Dr. Sebi's nutritional food list to wellness. Discover obesity facts and how you can improve your nutrition. Learn more about Dr. Sebi's nutritional philosophy." />
             </Helmet>
-
             <header>
                 <Topbar />
             </header>

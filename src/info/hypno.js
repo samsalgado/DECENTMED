@@ -5,6 +5,8 @@ import { Button } from'react-bootstrap';
 import Benefits from "./benefits";
 import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
+import Collapsible from 'react-collapsible';
+import Hypnostudies from "./hypnostudy";
 const HYPNO = () => {
 const {t} = useTranslation('common')
 
@@ -27,6 +29,9 @@ const {t} = useTranslation('common')
         <Benefits />
         <br></br> 
         <Modalities />
+        <Collapsible trigger={<th className="collapsible-trigger">{t("Hypnotherapy Case Study")}</th>}>
+        <Hypnostudies />
+        </Collapsible>
         </div>
     )
 }

@@ -7,6 +7,7 @@ import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
 import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
+import mike from "../images copy/lanenaturopathy.png";
 import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
 import cell from "../images copy/cell.png";
@@ -353,6 +354,22 @@ const { t } = useTranslation("common");
     <figure>
         <img className='gridimag' src={green} alt="logo" />
           <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Ways to Improve Your Sleep Quality')}</h2>
+    <div className='pr'>
+        <p>
+        {t(`Here are some natural ways to improve your sleep quality and overall health.`)} 
+        </p>
+        <div className='container'>
+    <a href='/naturopathylane'>
+    <figure>
+        <img className='gridimag' src={mike} alt="logo" />
+          <figcaption>{t('Click on image for full Blog by Michael Lane')}</figcaption>
         </figure>
       </a>
       </div>

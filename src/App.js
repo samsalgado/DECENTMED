@@ -17,6 +17,7 @@ import Blog11 from './pages/blogs/blog11';
 import Blog16 from './pages/blogs/blog16';
 import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
+import Mike from './pages/blogs/mike';
 import Blog15 from './pages/blogs/blog15';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
@@ -68,6 +69,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home t={t} />} />
           <Route path="/404" element={<NotFound />} />
+          <Route path="/naturopathylane" element={<Mike t={t} />} />
           <Route path="/stemcell" element={<StemCell t={t} />} />
           <Route path="/ayurveda" element={<Ayurveda t={t} />} />
           <Route path="/coaching" element={<Coaching t={t} />} />
