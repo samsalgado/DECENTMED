@@ -7,7 +7,6 @@ import Practice from './practices';
 import Topbar from './topbar';
 import { useTranslation } from 'react-i18next';
 
-
 export function Telehealth() {
 const { t } = useTranslation("common");
     return (
@@ -17,7 +16,6 @@ const { t } = useTranslation("common");
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content={t("Connect with healthcare providers virtually! Explore our Telehealth Directory to find a doctor offering online consultations. Learn more about the benefits of telehealth.")} />
             </Helmet>
-
             <header>
                 <Topbar />
             </header>
@@ -27,7 +25,6 @@ const { t } = useTranslation("common");
             <Practice />
             <div>
                 <Practices />
-
             </div>
             <div>
                 <Info7 />

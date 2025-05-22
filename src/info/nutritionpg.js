@@ -49,30 +49,24 @@ const Nutritionpage = () => {
             }
             const pubkey=getPublicKey(sk);
          const content = `  
-Casestudy van Harry Hoxsey's kankerbehandeling en de voordelen ervan (Nederlands):  https://themerlingroupworld.com/static/media/IMG_7203.d4aa0b2132ac45dd6a9a.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7204.96e2c9b3d128857226d2.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7205.71b2b91bff05ba9595b0.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7206.05dd696283037d7b6a11.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7207.49811d11985cb1c261a6.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7208.ec5234835316b82609e8.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7209.6d77b7e01a3cb4d5b4e2.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7210.c5db31af7d5a60c69ef7.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7211.6b033b6c91bb70c15ec0.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7213.0e29671d096d26c976a5.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7214.d25b944770b07a151363.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7215.b8f4300b1c7548851d09.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7216.caa724f4a8cc00cbf1c9.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7217.3b90e85e69e6105e21e0.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7220.8e4d1e606c38b57bf9aa.jpeg
-  https://themerlingroupworld.com/static/media/IMG_7221.43b2c3ed88710bb82d60.jpeg
+        Nutrition Casestudy:  
+        https://themerlingroupworld.com/static/media/nutritioncase1.2c994c42d19299d772ce.png  
+        https://themerlingroupworld.com/static/media/nutritioncase2.eaf273a62790b6af5cc9.png  
+        https://themerlingroupworld.com/static/media/nutritioncase3.fc57940d0fe43ec49b3f.png  
+        https://themerlingroupworld.com/static/media/nutritioncase4.3c26739b575f6fe21e9e.png  
+        https://themerlingroupworld.com/static/media/nutritioncase5.b48cace7d70f003c1e16.png  
+        https://themerlingroupworld.com/static/media/nutritioncase6.420a251621460ec53a34.png 
+        https://themerlingroupworld.com/static/media/nutritioncase7.3e35f04ad4a0fd798856.png  
+        https://themerlingroupworld.com/static/media/nutritioncase8.f01cb35b743d2b90dba3.png  
+        https://themerlingroupworld.com/static/media/nutritioncase9.20cdd18c8872bbbc8612.png
+        https://themerlingroupworld.com/static/media/nutritioncase10.ded3e58c5405eb88c79c.png
     `;
             const event = {
               kind: 1,
               created_at: Math.floor(Date.now() / 1000),
               tags: [
                 ["t", "health"],
-                ["t", "dutch"],
-                ["t", "cancer"]
+                ["t", "nutrition"]
               ],              
             content,
               pubkey,

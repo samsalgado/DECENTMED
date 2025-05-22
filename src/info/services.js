@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 
 function Services() {
   const { t } = useTranslation("common");
-
   return (
     <div className="container-bblue">
       <div className="row justify-content-center">
@@ -18,7 +17,6 @@ function Services() {
             {t('- Goal: Achieve top Google rankings')}
           </p>
         </div> 
-
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Holistic Telehealth Conferences')}</h4>
           <p className="edu">
@@ -27,7 +25,6 @@ function Services() {
             {t('- Focus on education & industry promotion')}
           </p>
         </div> 
-
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Social Media Marketing')}</h4>
           <p className="edu">
@@ -36,7 +33,6 @@ function Services() {
             {t('- Enhancing online presence')}
           </p>
         </div>
-
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Website Management')}</h4>
           <p className="edu">
@@ -45,7 +41,6 @@ function Services() {
             {t('- Marketing & analytics integration')}
           </p>
         </div>
-
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Web Analytics & Reporting')}</h4>
           <p className="edu">
@@ -53,7 +48,6 @@ function Services() {
             {t('- Data-driven insights to optimize performance')}
           </p>
         </div>
-
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Translated Website')}</h4>
           <p className="edu">
@@ -61,7 +55,6 @@ function Services() {
             {t('- Available in Spanish, Dutch, Portuguese, Hindi, and more')}
           </p>
         </div>
-
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Security Services')}</h4>
           <p className="edu">

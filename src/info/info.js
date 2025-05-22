@@ -16,8 +16,8 @@ const Info = () => {
     <div className='container'>
       <h1 className='title'>{t('Decent Med')}</h1>
       <WellnessInro />
-      <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{'Providers: Join Platform'}</button>
       <BlueContainer />
+      <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{'Providers: Join Trusted Network'}</button>
 
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>

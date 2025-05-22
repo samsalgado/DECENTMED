@@ -1,6 +1,11 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
-import './Info.css'; // Import the updated CSS file
+import './Info.css';
+// Import the updated CSS file
+//When do I pay vs
+//Who is The Merlin Group
+//What is DECENTMED
+//move button down
 import { useTranslation } from 'react-i18next';
 const ANS = () => {
   const {t} = useTranslation('common');
@@ -20,10 +25,10 @@ const ANS = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Is the platform a subscription service?")}</Card.Header>
+            <Card.Header className='card-header' as="h5">{t("What is DECENTMED?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("As of 2024, the platform is not a subscription service. In the future, we might make the shift to a subscription service for providers. Everyday users will never have to pay a subscription to a subscription fee for this platform.")}
+                 {t("We are a video education platform showcasing holistic medicine via Telehealth, a global Apothecary and decentralized technology to publicize provider studies and help obtain funding for their work.")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -40,40 +45,39 @@ const ANS = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Who is DECENT MED made for?")}</Card.Header>
+            <Card.Header className='card-header' as="h5">{t("Who is DECENTMED made for?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("- Alternative Medicine providers")}
+                 {t("- Holistic providers")}
               </Card.Text>
               <Card.Text>
                 {t("- Those who do not have health insurance")}
               </Card.Text>
               <Card.Text>
-               {t("- People who have distrust in the current healthcare system")}
+                {t("- Health insurance")}
               </Card.Text>
               <Card.Text>
-                 {t("- Bitcoin countries and general Bitcoin users")}
+               {t("- People who would like to try holistic medicine")}
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("What are your goals?")}</Card.Header>
+            <Card.Header className='card-header' as="h5">{t("Can holistic treatments help with my specific condition?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("- Broadcast these revolutionary Holistic treatments to billions of people worldwide")}
+                 {t("- Our providers are qualified to help with a multiplicity of ailments like depression, burnout, diabetes, weight loss, and more")}
               </Card.Text>
               <Card.Text>
-                {t("- Aid in global Bitcoin adoption")}
+                {t("- It’s best to schedule an initial consultation, where the practitioner can assess your condition and determine whether their approach is a good fit or if a referral to another type of care is recommended.")}
               </Card.Text>
               <Card.Text>
-                {t("- Decentralize healthcare for 'alternatives' to be widely accepted")}
+                {t("- Holistic practitioners consider your whole health picture, including lifestyle, nutrition, emotional well-being, and environment, to create a personalized care plan that complements conventional treatments if needed.")}
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
-
         <Col md={4}>
           <Card className="card mb-4">
             <Card.Header className='card-header' as="h5">{t("Why healthcare?")}</Card.Header>
@@ -90,4 +94,3 @@ const ANS = () => {
 };
 
 export default ANS;
-

@@ -1,4 +1,7 @@
 /* General Container */
+*{
+  font-family: sans-serif; 
+}
 .container-fluid {
   width: 100%; /* Ensure full width on all devices */
   padding: 15px; /* Ensure some padding around the container */
@@ -49,14 +52,15 @@
 }
 .signup-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-
 .signup {
   text-align: center;
+  font-size: 2rem;
+  margin: -1rem;
+  font-weight: bold;
 }
-
 /* For Video Containers */
 .video-container {
   position: relative;

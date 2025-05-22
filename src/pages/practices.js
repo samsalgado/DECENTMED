@@ -4,6 +4,7 @@ import Offer from '../offers/offer';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import Offer2 from '../offers/offer2';
 import Pricing from './pricingtiers';
+import price from '../images copy/sales.png';
 const Practice = () => {
 const { t } = useTranslation("common");
 
@@ -22,6 +23,7 @@ height='315'
       </div>
         <div className="signup-container">
         <h1 className="signup">{t('Sign Up')}</h1>
+        <img className='gridimag' src={price} alt='' />
         </div>
         <Pricing />
         <Offer />

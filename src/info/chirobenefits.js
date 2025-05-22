@@ -3,7 +3,6 @@ import chiropractorstats from '../images copy/chiropractor-stats.png';
 import React from "react";
 import '../App.css';
 import { useTransition } from 'react';
-
 function Benefits() {
 const {t} = useTransition('common')
     return (
@@ -16,5 +15,4 @@ const {t} = useTransition('common')
         </div>
     );
 }
-
 export default Benefits;
