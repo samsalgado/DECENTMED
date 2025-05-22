@@ -5,9 +5,9 @@ import obese from '../images copy/obese.png';
 import labs from '../images copy/8.jpg';
 import brain from '../images copy/9.jpg';
 import './Info.css';
-//import {useEffect, useCallback} from 'react';
-//import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
-//import { nip19 } from 'nostr-tools';
+import {useEffect, useCallback} from 'react';
+import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
+import { nip19 } from 'nostr-tools';
 import drSebiES from '../images copy/IMG_9273.jpeg';
 import NUTES from '../images copy/IMG_9306.jpeg';
 import NUTFR from '../images copy/IMG_9307.jpeg';
@@ -34,7 +34,7 @@ import cogDutch from '../images copy/IMG_9279.jpeg';
 import cogHindi from '../images copy/IMG_9280.jpeg';
 const Nutritionpage = () => {
   const { t } = useTranslation("common");
-      /* const publishToNostr = useCallback(async () => {
+ const publishToNostr = useCallback(async () => {
           const nsec = process.env.REACT_APP_NSEC;
             if (!nsec) {
             console.error('Missing nsec key');
@@ -95,7 +95,7 @@ const Nutritionpage = () => {
         useEffect (() => {
           publishToNostr();
         }, [publishToNostr]);
-  */
+
   return (
     <div className='container'>
       <h1 className="title">{t('Nutrition')}</h1>

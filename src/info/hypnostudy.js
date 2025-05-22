@@ -1,5 +1,5 @@
 import React from 'react';
-//import {useEffect, useCallback} from 'react';
+import {useEffect, useCallback} from 'react';
 import caseA from '../images copy/caseA.png';
 import caseB from '../images copy/caseB.png';
 import caseC from '../images copy/caseC.png';
@@ -7,12 +7,12 @@ import caseD from '../images copy/caseD.png';
 import caseE from '../images copy/caseE.png';
 import caseF from '../images copy/caseF.png';
 import caseH from '../images copy/caseH.png';
-//import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
-//import { nip19 } from 'nostr-tools';
+import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
+import { nip19 } from 'nostr-tools';
 import caseG from '../images copy/caseG.png';
 import "../App.css";
 const Hypnostudies = ({ t }) => {
-      /* const publishToNostr = useCallback(async () => {
+ const publishToNostr = useCallback(async () => {
           const nsec = process.env.REACT_APP_NSEC;
             if (!nsec) {
             console.error('Missing nsec key');
@@ -72,7 +72,7 @@ const Hypnostudies = ({ t }) => {
         useEffect (() => {
           publishToNostr();
         }, [publishToNostr]);
-  */
+
   const images = [
     caseA, caseB, caseC, caseD, caseE, caseF, caseG, caseH
   ];
