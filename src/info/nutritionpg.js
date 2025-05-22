@@ -48,19 +48,19 @@ const Nutritionpage = () => {
               return;
             }
             const pubkey=getPublicKey(sk);
-         const content = `  
-        Nutrition Casestudy:  
-        https://themerlingroupworld.com/static/media/nutritioncase1.2c994c42d19299d772ce.png  
-        https://themerlingroupworld.com/static/media/nutritioncase2.eaf273a62790b6af5cc9.png  
-        https://themerlingroupworld.com/static/media/nutritioncase3.fc57940d0fe43ec49b3f.png  
-        https://themerlingroupworld.com/static/media/nutritioncase4.3c26739b575f6fe21e9e.png  
-        https://themerlingroupworld.com/static/media/nutritioncase5.b48cace7d70f003c1e16.png  
-        https://themerlingroupworld.com/static/media/nutritioncase6.420a251621460ec53a34.png 
-        https://themerlingroupworld.com/static/media/nutritioncase7.3e35f04ad4a0fd798856.png  
-        https://themerlingroupworld.com/static/media/nutritioncase8.f01cb35b743d2b90dba3.png  
-        https://themerlingroupworld.com/static/media/nutritioncase9.20cdd18c8872bbbc8612.png
-        https://themerlingroupworld.com/static/media/nutritioncase10.ded3e58c5405eb88c79c.png
-    `;
+            const content = [
+              "Nutrition Casestudy:",
+              "https://themerlingroupworld.com/static/media/nutritioncase1.2c994c42d19299d772ce.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase2.eaf273a62790b6af5cc9.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase3.fc57940d0fe43ec49b3f.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase4.3c26739b575f6fe21e9e.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase5.b48cace7d70f003c1e16.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase6.420a251621460ec53a34.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase7.3e35f04ad4a0fd798856.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase8.f01cb35b743d2b90dba3.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase9.20cdd18c8872bbbc8612.png",
+              "https://themerlingroupworld.com/static/media/nutritioncase10.ded3e58c5405eb88c79c.png"
+            ].join("\n");            
             const event = {
               kind: 1,
               created_at: Math.floor(Date.now() / 1000),
@@ -68,12 +68,18 @@ const Nutritionpage = () => {
                 ["t", "health"],
                 ["t", "nutrition"]
               ],              
-            content,
+              content,
               pubkey,
             };
             const signedEvent = finalizeEvent(event, sk);
             const pool = new SimplePool();
-            const relays = ['wss://relay.damus.io','wss://nos.lol'];
+            const relays = [
+              'wss://relay.damus.io',
+              'wss://nos.lol',
+              'wss://relay.snort.social',
+              'wss://nostr.wine',
+              'wss://eden.nostr.land'
+            ];        
             await Promise.all(
               relays.map(async (relay) => {
                 try {

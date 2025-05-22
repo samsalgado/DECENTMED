@@ -3,7 +3,8 @@ import "../App.css"
 import { CookiesProvider } from 'react-cookie'
 // import CustomizedDialogs from './dialog'
 import { useTranslation } from 'react-i18next'
-import imge from '../images copy/IMG_8423.jpeg';
+import imge from '../images copy/paypal.jpg';
+import { NavLink } from 'react-router-dom';
 const Offer2 = () => {
   const { t } = useTranslation("common");
 
@@ -12,8 +13,11 @@ const Offer2 = () => {
     <div className='box'>
       <CookiesProvider>
         <div>
-          <img src={imge} alt='' />
-          <h2>{t('Pay with Paypal (Scan QR Code Above)')}</h2>
+          <img src={imge} className="pik1 bitc" alt='' />
+          <h2>{t('Pay with Paypal')}</h2>
+          <NavLink to="https://www.paypal.com/paypalme/DECENTMED">
+          https://www.paypal.com/paypalme/DECENTMED
+          </NavLink>
         </div>
       </CookiesProvider>
     </div>

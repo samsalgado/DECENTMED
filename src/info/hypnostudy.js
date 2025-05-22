@@ -26,46 +26,57 @@ const Hypnostudies = ({ t }) => {
               return;
             }
             const pubkey=getPublicKey(sk);
-         const content = `  
-        Hypnotherapy Casestudy :
-        https://themerlingroupworld.com/static/media/caseA.2dc17c4d662e97cb71da.png
-        https://themerlingroupworld.com/static/media/caseB.10618e5d4dce7e1b7664.png
-        https://themerlingroupworld.com/static/media/caseC.69095241c42714d4b3d6.png
-        https://themerlingroupworld.com/static/media/caseD.f5b6c555243c3fe13dc4.png
-        https://themerlingroupworld.com/static/media/caseE.908b80c496726bcb1b5d.png
-        https://themerlingroupworld.com/static/media/caseF.8062bc635529f3fa2690.png
-        https://themerlingroupworld.com/static/media/caseG.a00dc6c84a83bb73da47.png
-        https://themerlingroupworld.com/static/media/caseH.8e9d67ebe296858dc603.png
-    `;
+            const content = [
+              "Hypnotherapy Casestudy:",
+              "https://themerlingroupworld.com/static/media/caseA.2dc17c4d662e97cb71da.png",
+              "https://themerlingroupworld.com/static/media/caseB.10618e5d4dce7e1b7664.png",
+              "https://themerlingroupworld.com/static/media/caseC.69095241c42714d4b3d6.png",
+              "https://themerlingroupworld.com/static/media/caseD.f5b6c555243c3fe13dc4.png",
+              "https://themerlingroupworld.com/static/media/caseE.908b80c496726bcb1b5d.png",
+              "https://themerlingroupworld.com/static/media/caseF.8062bc635529f3fa2690.png",
+              "https://themerlingroupworld.com/static/media/caseG.a00dc6c84a83bb73da47.png",
+              "https://themerlingroupworld.com/static/media/caseH.8e9d67ebe296858dc603.png"
+            ].join("\n");
             const event = {
-              kind: 1,
-              created_at: Math.floor(Date.now() / 1000),
-              tags: [
-                ["t", "health"],
-                ["t", "hypnotherapy"],
-                ["t", "bitcoin"]
-              ],              
-            content,
-              pubkey,
-            };
-            const signedEvent = finalizeEvent(event, sk);
-            const pool = new SimplePool();
-            const relays = ['wss://relay.damus.io','wss://nos.lol'];
-            await Promise.all(
-              relays.map(async (relay) => {
-                try {
-                  let r = await pool.ensureRelay(relay);
-                  await r.publish(signedEvent);
-                  console.log(`Published to ${relay}`);
-                } catch (err) {
-                  console.error(`Failed to publish to ${relay}:`, err);
-                }
-              })
-            );
-      
-            console.log('Published to Nostr!');
-            pool.close(relays); // Clean up connections
-          } catch (error) {
+            kind: 1,
+            created_at: Math.floor(Date.now() / 1000),
+            tags: [
+              ["t", "health"],
+              ["t", "hypnotherapy"],
+              ["t", "bitcoin"]
+            ],
+      content,
+      pubkey,
+    };
+    
+    const signedEvent = finalizeEvent(event, sk);
+    const pool = new SimplePool();
+    const relays = [
+      'wss://relay.damus.io',
+      'wss://nos.lol',
+      'wss://relay.snort.social',
+      'wss://nostr.wine',
+      'wss://eden.nostr.land'
+    ];
+        
+    await Promise.all(
+      relays.map(async (relay) => {
+        try {
+          const r = await pool.ensureRelay(relay);
+          const ok = await r.publish(signedEvent);
+          if (ok) {
+            console.log(`✅ Published to ${relay}`);
+          } else {
+            console.warn(`⚠️ Relay ${relay} rejected the event`);
+          }
+        } catch (err) {
+          console.error(`❌ Failed to publish to ${relay}:`, err);
+        }
+      })
+    );
+    
+    console.log('🎉 Published to Nostr!');
+    pool.close(relays);          } catch (error) {
             console.error('Error publishing to Nostr:', error);
           }
         }, []);
