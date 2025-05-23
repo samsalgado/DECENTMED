@@ -12,7 +12,6 @@ import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import { useTranslation } from 'react-i18next';
 import { nip19 } from 'nostr-tools';
 import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
-
 const Blog6 = () => {
   const { t } = useTranslation('common');
   const publishToNostr = useCallback(async () => {
@@ -21,7 +20,6 @@ const Blog6 = () => {
       console.error('Missing nsec key');
       return;
     }
-
     try {
       const { type, data: sk } = nip19.decode(nsec);
       if (type !== 'nsec') {
@@ -81,7 +79,7 @@ const Blog6 = () => {
           ["t", "cancer"],
           ["t", "vitamin B17"]
         ],              
-  content,
+        content,
         pubkey,
       };
       const signedEvent = finalizeEvent(event, sk);
@@ -98,7 +96,6 @@ const Blog6 = () => {
           }
         })
       );
-
       console.log('Published to Nostr!');
       pool.close(relays); // Clean up connections
     } catch (error) {
@@ -107,9 +104,7 @@ const Blog6 = () => {
   }, []);
   useEffect (() => {
     publishToNostr();
-  }, [publishToNostr]);
-
-  
+  }, [publishToNostr]);  
   return (
     <>
       <Helmet>
@@ -148,7 +143,6 @@ const Blog6 = () => {
             {t("Aside from injection, B12 can be in clams, oysters, mussels, crabs and sardines. Vitamin B17, or Laetrile, is the most controversial vitamin (component) B family.")}
             {t("According to the book")} <span style={{ fontStyle: 'italic' }}><a href="https://www.amazon.com/World-Without-Cancer-Story-Vitamin/dp/0912986506">{t("World Without Cancer: The Story of Vitamin B17")}   </a></span> {t("by G. Edward Griffin, 'Vitamin B17(Laetrile) can destroy cancer cells'. In this article, we will explore the components of Laetrile, the book's claim and why vitamin B17 or Laetrile is illegal in the United States.")}
           </p>
-
           <p>
             {t(`What are the natural alternatives to Rogaine? Dr. Sebi argued that people should not eat cooked oils, like Palm or soybeans. However, the oil is extracted from American Palm Oil or Batana oil is extracted from the nuts and forms a rich in antioxidants and vitamin E. According to pfaf.org: 'the oil from nuts is expected to stimulate hair loss and combat dandruff'. Does batana oil work? The Tawira tribe is known as 'people of beautiful hair', and attributes their hair success to batana oil. Dr. Sebi claimed, 'The enzymes in it sink into the hair and revive the dead hair follicles', pairing scalp application of batana oil and a vegetarian diet maximizes results (according to Dr. Sebi)`)}
           </p>
@@ -211,5 +205,4 @@ const Blog6 = () => {
   );
 };
 
-export default Blog6; // Default export
-
+export default Blog6;

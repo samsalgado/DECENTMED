@@ -34,7 +34,6 @@ const Pgchelation = () => {
           {t("Visit Crossroads Naturopathic")}
         </Button>
       </div>
-
       {/* Title and Collapsible Content with Table Structure */}
       <div className="title-container">
         <table className="collapsibles-table">

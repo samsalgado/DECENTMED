@@ -51,6 +51,7 @@ const Stem = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+        
       </div>
 
       {/* Flex container for equal width collapsibles */}
