@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 
 function Practices() {
     const { t } = useTranslation("common");
-
     return (
         <div className="container">
             <div className="container-blue">

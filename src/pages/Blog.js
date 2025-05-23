@@ -10,6 +10,7 @@ import blogs from '../images copy/blogs.png';
 import mike from "../images copy/lanenaturopathy.png";
 import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
+import tammy from "../images copy/tammy.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
 import constipation from '../images copy/constipation.png';
@@ -321,7 +322,23 @@ const { t } = useTranslation("common");
     <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
     <figure>
         <img className='gridimag' src={Fagen} alt="logo" />
-          <figcaption>{t('Click on image for full Blog')} - Nutritionist Randee Fagen</figcaption>
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('How Feeling Your Emotions Can Improve Your Well-Being By: Tammy Machmali')}</h2>
+    <div className='pr'>
+        <p>
+{t(`Have you ever wondered why some people seem so disconnected from their emotions?`)}        
+</p>
+        <div className='container'>
+    <a href='https://www.tammymachmali.com/blog-tammy-machmali-holistic-healing-empowering-energy-work/forgiveness-for-healing-7ra44-yzmfe-sfhar-p2gxd-3yrd4'>
+    <figure>
+        <img className='gridimag' src={tammy} alt="logo" />
+          <figcaption>{t('Experience Transformation')}</figcaption>
         </figure>
       </a>
       </div>

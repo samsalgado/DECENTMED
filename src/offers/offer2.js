@@ -24,4 +24,4 @@ const Offer2 = () => {
   )
 }
 
-export default Offer2
+export default Offer2;
