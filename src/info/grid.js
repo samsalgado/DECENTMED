@@ -10,11 +10,11 @@ const treatmentLinks = {
   stemcell: "https://themerlingroupworld.com/stemcell",
   nutriton: "https://themerlingroupworld.com/nutrition",
   chiro: "https://themerlingroupworld.com/chiropractic",
-  chelation: "https://themerlingroupworld.com/chelation",
-  hypnotherapy: "https://themerlingroupworld.com/hypnotherapy",
-  herbalmedicine: "https://themerlingroupworld.com/herbalmedicine",
-  meditation: "https://themerlingroupworld.com/meditation",
-  seo: "https://themerlingroupworld.com/digitalmarketing"
+  chelation:"https://themerlingroupworld.com/chelation",
+  hypnotherapy:"https://themerlingroupworld.com/hypnotherapy",
+  herbalmedicine:"https://themerlingroupworld.com/herbalmedicine",
+  meditation:"https://themerlingroupworld.com/meditation",
+  seo:"https://themerlingroupworld.com/digitalmarketing"
 };
 
 const Grid = () => {

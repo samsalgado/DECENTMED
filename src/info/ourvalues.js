@@ -18,7 +18,7 @@ function Values() {
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
                     <h4>{t('Webinars & Collaborative Summits')}</h4>
-                    <p className="edu">{t('Our platform is censorship-resistant. Via Blockchain tools like Nostr - provider research and studies are publicly posted without fear of interference.')}</p>
+                    <p className="edu">{t('We offer webinars and collaborative summits to build your authority and expertise in your modality in holistic medicine. We will market your current webinars and summits, and build our own DECENTMED summits for each individual modality. We decentralize data to help providers collaborate with one another to optimize treatment options.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Holistic Marketing')}</h4>
