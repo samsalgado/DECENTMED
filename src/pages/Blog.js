@@ -95,20 +95,6 @@ const { t } = useTranslation("common");
         </figure>
       </a>
       </div>
-      <div className='pr'>
-      <p>
-        {t('Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases, working to relieve the trigger point symptom.')}
-      </p>
-     
-      </div>
-      <div className='container'>
-      <a href='/blog2'>
-    <figure>
-        <img className='gridimag' src={acuneed} alt="logo" />
-          <figcaption>{t('Click on image for full Blog')}</figcaption>
-        </figure>
-      </a>
-      </div>
 
     </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
