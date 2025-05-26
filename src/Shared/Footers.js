@@ -19,7 +19,7 @@ const Footers = () => {
 
         <div className="footer-section office">
           <h3>{t('Office')}</h3>
-          <p>Verlengde Keizer St 17B, Paramaribo, Suriname</p>
+          <p>5830 E 2ND ST Casper, WY 82609</p>
           <p>{t('Email: themerlingroupworld@gmail.com')}</p>
           <p className='geyser'><a  href="https://geyser.fund/project/decentmedpubliccancercure/"> <img src={Geyser} className='geyserImg' alt="" /></a></p>
         </div>

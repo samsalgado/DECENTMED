@@ -24,7 +24,7 @@ const {t} = useTranslation('common')
       </div>
     <img src={homeo} className="HOMEO" alt="logo" />
 <br></br>
-    </div>
+  </div>
   )
 }
 
