@@ -23,7 +23,6 @@ const Footers = () => {
           <p>{t('Email: themerlingroupworld@gmail.com')}</p>
           <p className='geyser'><a  href="https://geyser.fund/project/decentmedpubliccancercure/"> <img src={Geyser} className='geyserImg' alt="" /></a></p>
         </div>
-
         <div className="social-icons">
           <h3>{t('Social Media')}</h3>
           <div className="social-icons">

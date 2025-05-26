@@ -41,8 +41,10 @@ function Practices() {
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <NavLink to="/naturopathicproviders">
                         <h3 className="card-title-fixed" >{t("Naturopathy")}</h3>
                         <img className="img-custom" src={Departments.naturopathy} alt={t("Naturopathy")} />
+                        </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/hypnopract'>

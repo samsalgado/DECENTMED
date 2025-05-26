@@ -17,7 +17,7 @@ import case4 from '../images copy/nutritioncase4.png';
 import case5 from '../images copy/nutritioncase5.png';
 import case6 from '../images copy/nutritioncase6.png';
 import case7 from '../images copy/nutritioncase7.png';
-import case8 from '../images copy/nutritioncase8.png';
+import case8 from '../images copy/CASE8.png';
 import case9 from '../images copy/nutritioncase9.png';
 import case10 from '../images copy/nutritioncase10.png';
 import drSebiHindi from '../images copy/IMG_9274.jpeg';

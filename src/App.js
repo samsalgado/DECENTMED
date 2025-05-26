@@ -49,6 +49,8 @@ import {Nutritionpract} from './pages/nutritionpract';
 import {Coaching} from './pages/coach';
 import {HomeopathyPract} from './pages/HOMEOPATHYPRACT';
 import { Acupract} from './pages/acupract';
+import { Natpract} from './pages/naturopathics';
+import { Naturopathy } from './pages/Naturopathy';
 //import SignUp from './pages/SignUp/SignUp';
 //import StripePayment from './pages/StripePayment/StripePayment';
 import Topbar from './pages/topbar';
@@ -75,6 +77,8 @@ function App() {
           <Route path="/coaching" element={<Coaching t={t} />} />
           <Route path="/acupuncturists" element={<Acupract t={t} />} />
           <Route path="/blog" element={<BlogPage t={t} />} />
+          <Route path="/naturopathy" element={<Naturopathy t={t} />} />
+          <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
           <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
           <Route path="/apoth" element={<Apoth t={t} />} />
           <Route path="/blog1" element={<Blog1 t={t} />} />

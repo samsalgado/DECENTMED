@@ -40,7 +40,7 @@ const Info = () => {
             <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Conversion Optimization')}</p>
             <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Branding & Consultation')}</p>
             <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Email Marketing')}</p>
-            <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{t("Learn More")}</button>
+            <button style={{display:'flex', textTransform: 'capitalize' }} onClick={learnmore} className="btn btn-primary">{t("Learn More")}</button>
           </div>
         </div>
       </div>

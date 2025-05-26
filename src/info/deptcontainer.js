@@ -77,6 +77,12 @@ function BlueContainer() {
                         <img className="img-custom" src={Treatment.stemcell} alt={t('Stem Cell Therapy')} />
                     </NavLink>
                 </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Naturopathy')}</h3>
+                    <NavLink to="/naturopathy" className="link">
+                        <img className="img-custom" src={Treatment.naturopathy} alt={t('Naturopathy')} />
+                    </NavLink>
+                </div>
             </div>
         </div>
     );
