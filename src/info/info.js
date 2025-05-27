@@ -18,12 +18,10 @@ const Info = () => {
       <WellnessInro />
       <BlueContainer />
       <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{'Providers: Join Trusted Network'}</button>
-
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
       </div>
       <Values />
-
       <div className='digital'>
         <div className="image-container">
           <div className="text-content">
