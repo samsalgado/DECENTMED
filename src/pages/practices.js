@@ -8,8 +8,7 @@ import price from '../images copy/sales.png';
 const Practice = () => {
 const { t } = useTranslation("common");
 
-  return (
-    
+  return ( 
 <div className='container'>
 <div className='theecontaine'>
       <div className='video-container'>
