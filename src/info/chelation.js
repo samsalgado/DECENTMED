@@ -27,7 +27,6 @@ const Pgchelation = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-
       {/* Button Container - Centering and Stacking */}
       <div className="button-container">
         <Button variant="primary" href="http://crossroadsnaturopathic.com/" target="_blank">

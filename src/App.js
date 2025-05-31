@@ -1,5 +1,6 @@
 import { Routes } from 'react-router';
 import './App.css';
+import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import { Route } from 'react-router-dom';
 import { Home } from './pages/Home';
@@ -75,6 +76,7 @@ function App() {
           <Route path="/stemcell" element={<StemCell t={t} />} />
           <Route path="/ayurveda" element={<Ayurveda t={t} />} />
           <Route path="/coaching" element={<Coaching t={t} />} />
+          <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
           <Route path="/acupuncturists" element={<Acupract t={t} />} />
           <Route path="/blog" element={<BlogPage t={t} />} />
           <Route path="/naturopathy" element={<Naturopathy t={t} />} />
