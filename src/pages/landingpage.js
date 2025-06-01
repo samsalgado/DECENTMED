@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../info/Info.css';
 import { Button } from 'react-bootstrap';
 import { Download } from 'lucide-react';
-import businessplan from '../images copy/businessplan.png';
+import businessplan from '../images copy/graph.png';
 const FileUploadDownload = () => {
   const [hasDownloaded, setHasDownloaded] = useState(false);
   
