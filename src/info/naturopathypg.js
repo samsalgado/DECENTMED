@@ -3,7 +3,8 @@ import "./homeo.css";
 import './Info.css';
 import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
-
+import Collapsible from 'react-collapsible';
+import NatStudy from './naturopathystudy';
 const Naturo = () => {
   const { t } = useTranslation('common');
   return (
@@ -18,6 +19,10 @@ const Naturo = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+        <br></br>
+        <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
+        <NatStudy />
+        </Collapsible>
         <br></br>
         <a href="https://meridianpassagewellness.com" target="_blank" rel="noopener noreferrer">
         <br></br>
