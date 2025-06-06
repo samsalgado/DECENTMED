@@ -31,8 +31,8 @@ const Reviews = () => {
             <img className="gridimag" src={graphic4} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic5} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic} alt="Bone Marrow Stem Cell Benefits" />
-      <img className="gridimag" src={graphic6} alt="Bone Marrow Stem Cell Benefits" />
-      <img alt='' />
+            <img className="gridimag" src={graphic6} alt="Bone Marrow Stem Cell Benefits" />
+            <img alt='' />
     </Collapsible>
   </tbody>
 </table>

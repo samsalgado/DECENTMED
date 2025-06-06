@@ -1,10 +1,12 @@
 import React from 'react';
-import '../info/Info.css';
+import '../info/page.css';
+import { useTranslation } from 'react-i18next'
 import { Button } from 'react-bootstrap';
+import Collapsible from 'react-collapsible';
 import Footer from '../footer';
 import businessplan from '../images copy/graph.png';
 const FileUploadDownload = () => {
-
+  const { t } = useTranslation('common');
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
@@ -34,10 +36,53 @@ const FileUploadDownload = () => {
             Want a personalized plan for your specific practice?
           </p>
           <Button variant="primary" href="https://themerlingroupworld.com/telehealth" target="_blank">
-          Custom Plan for your Business
+          Buy Now
         </Button>
         </div>
-
+ <div>
+        <table className="collapsible-wrapper">
+            <tbody>
+              <tr>
+              <th className="collapsible-trigger">
+       <Collapsible trigger={t("Pricing Tiers")}>
+       <div className='container'>
+      <iframe
+            width="100%"
+            height={315}
+            src="https://www.youtube.com/embed/sp01eyKfRXo?si=BHrqC0krHruggX_q" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          </div>
+        <div className='collapsible-content'>
+        <div className='container'>
+      <iframe
+            width="100%"
+            height={315}
+            src="https://www.youtube.com/embed/FUNvCaWryFg?si=dzQGc4lgOw369E_x" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          </div>
+        <div className='container'>
+      <iframe
+            width="100%"
+            height={315}
+            src="https://www.youtube.com/embed/SZxnqvve4I4?si=ojLMwYTO5fxhUkGp" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          </div>
+        </div>
+        </Collapsible>
+        </th>
+        </tr>
+        </tbody>
+          </table>
+      </div>
         <img src={businessplan} className="gridimag" alt="quote" />
       </div>
       <footer>
