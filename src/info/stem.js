@@ -46,7 +46,7 @@ const Stem = () => {
       {/* Responsive Video */}
       <div className="video-container">
         <iframe
-          src="https://www.youtube.com/embed/AWyJ0Ek-dsE?si=mPK1R_JCMuTvWh6c"
+          src="https://www.youtube.com/embed/MjDP_a3fhjQ?si=xZx3gE9QeeOmjpsN"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
