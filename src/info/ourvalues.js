@@ -26,7 +26,6 @@ function Values() {
                 </div>
             </div>
         </div>
-       
         </>
     );
 }
