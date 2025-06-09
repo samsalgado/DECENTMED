@@ -40,18 +40,7 @@ export function Marketing() {
             <AdditionalServices />
             <AuditVids />
             
-            <h1 
-                style={{
-                    fontFamily: 'sans-serif',
-                    width: "100%",
-                    textAlign: 'center',
-                    fontSize: '2rem',
-                    margin: '1rem 0', // Reduced margin for mobile
-                    padding: '0 1rem', // Add horizontal padding
-                }}
-            >
-                {t("Buy Now")}
-            </h1>
+         
 
             {/* Centered image with mobile optimization */}
             <div style={{

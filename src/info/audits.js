@@ -30,6 +30,18 @@ const AuditVids = () => {
                     <PlantCard key={key} val={val} />
                 ))}
             </div>
+            <h1 
+                style={{
+                    fontFamily: 'sans-serif',
+                    width: "100%",
+                    textAlign: 'center',
+                    fontSize: '2rem',
+                    margin: '1rem 0', // Reduced margin for mobile
+                    padding: '0 1rem', // Add horizontal padding
+                }}
+            >
+                {t("Buy Now")}
+            </h1>
         </div>
     );
 };
