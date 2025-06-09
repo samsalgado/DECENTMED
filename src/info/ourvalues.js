@@ -13,16 +13,16 @@ function Values() {
                     <p className="edu">{t('Video Education Platform featuring each Holistic Medicine modality. Our team offers interviews to all providers on the platform and seeks to collaborate with them to create educational series for their specific modality.')}</p>
                 </div> 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Showcasing Alternatives')}</h4>
-                    <p className="edu">{t("Deemed as 'alternative' in the 1970s, we strive to showcase and deepen the understanding of Holistic Medicine. Furthermore, funding studies and partnering with doctors that practice unique treatment offerings.")}</p>
+                    <h4>{t('Standardized Documentation')}</h4>
+                    <p className="edu">{t("Boosting evidence-based claims by posting provider studies on our platform and a decentralized network.")}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
-                    <h4>{t('Webinars & Collaborative Summits')}</h4>
-                    <p className="edu">{t('We offer webinars and collaborative summits to build your authority and expertise in your modality in holistic medicine. We will market your current webinars and summits, and build our own DECENTMED summits for each individual modality. We decentralize data to help providers collaborate with one another to optimize treatment options.')}</p>
+                    <h4>{t('Decentralized Insurance')}</h4>
+                    <p className="edu">{t('One issue holistic medicine faces is low insurance reimbursements. By joining our platform, providers get equity in our apothecary. The sales from the apothecary are stored on a blockchain. The equity will be used to make treatments less expensive while funding providers from the apothecary.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Holistic Marketing')}</h4>
-                    <p className="edu">{t('Our telehealth directory operates as a marketing agency - managing provider social media, SEO on their website, backlinks to their site, video interviews, data analytics, conversion tracking and custom-built webpages - ensuring that holistic medicine grows in market share.')}</p>
+                    <p className="edu">{t('Facilitating patient acquisition and management via video marketing, active social marketing strategies and management systems for website and social media to differentiate your practice.')}</p>
                 </div>
             </div>
         </div>

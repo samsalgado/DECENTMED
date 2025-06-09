@@ -1,37 +1,68 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
-import './Info.css'; // Import the updated CSS file
+import './Info.css';
 import { useTranslation } from 'react-i18next';
 
 const AdditionalServices = () => {
   const { t } = useTranslation('common');
+
   const services = [
-    "AI-driven Content Creation",
-    "AI-Enhanced Holistic Consultation",
-    "Web Design",
-    "YouTube Growth Strategies",
-    "AI Automation & Video Editing",
-    "Video Content Creation",
-    "Social Media Management",
-    "Email Marketing",
-    "Omnichannel Marketing Strategy",
-    "Video Repurposing",
-    "Community-driven SEO",
-    "Multi-language SEO",
-    "Amazon SEO",
-    "Brand Storytelling"
+    t("- Custom-Built CRM for patient acquisition and retention"),
+    t("- Video Marketing Services"),
+    t("- Active Social Marketing Strategies for your website and social media"),
+    t("- AI-Enhanced Marketing strategies and automation for your business"),
+  ];
+
+  const issue_2 = [
+    t("- Boosting evidence-based claims by posting provider studies on our platform and a decentralized network"),
+    t("- You can standardize documentation by posting studies from providers"),
+    t("- Standardized data and information on our platform show to insurance companies that holistic medicine works"),
+  ];
+
+  const points = [
+    t("- The studies are stored on a relay network that makes censorship more difficult and mark the beginning of long-term data"),
+    t("- The information is showcased on our telehealth platform, backlinking to your content and enhancing your professional credibility"),
+    t("- Using video marketing, you can establish your practice as an authority in the industry"),
   ];
 
   return (
     <Container fluid>
-      <h2 className="text-center mb-4">{t("Additional Services")}</h2>
+      <h2 className="text-center mb-4">{t("Pain Points & Our Offerings")}</h2>
       <Row className="justify-content-center">
         <Col xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Additional Services")}</Card.Header>
+            <Card.Header className="card-header" as="h5">
+              {t("Patient Management & Acquisition")}
+            </Card.Header>
             <Card.Body>
               {services.map((service, index) => (
-                <Card.Text key={index}>{t(service)}</Card.Text>
+                <Card.Text key={index}>{service}</Card.Text>
+              ))}
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+          <Card className="card mb-4">
+            <Card.Header className="card-header" as="h5">
+              {t("Insurance Reimbursement")}
+            </Card.Header>
+            <Card.Body>
+              {issue_2.map((issue, index) => (
+                <Card.Text key={index}>{issue}</Card.Text>
+              ))}
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+          <Card className="card mb-4">
+            <Card.Header className="card-header" as="h5">
+              {t("No Long-Term Data")}
+            </Card.Header>
+            <Card.Body>
+              {points.map((point, index) => (
+                <Card.Text key={index}>{point}</Card.Text>
               ))}
             </Card.Body>
           </Card>
