@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
-
 const AuditVids = () => {
     const { t } = useTranslation("common");
-    const [plant] = useState([
-      
+    const [plant] = useState([      
         {
             id: 2,
             videoUrl: "https://www.youtube.com/embed/LSYp-NAs8hE",

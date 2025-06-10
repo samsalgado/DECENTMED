@@ -28,10 +28,10 @@ const { t } = useTranslation('common');
   <div class="row">
     <div class="col-md-6">
       <h3>{t("Nutrify Your Life")}</h3>
-      <a href='https://www.nutrifyourlife.com/'>
+      <a href="tel:+12038295349">
     <figure>
         <img src={Nutrifyourlife} alt="logo" />
-          <figcaption>{t("View Website")}</figcaption>
+          <figcaption>{t("Contact")}</figcaption>
         </figure>
       </a>
       <div>
