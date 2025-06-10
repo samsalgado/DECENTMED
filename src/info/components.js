@@ -6,7 +6,7 @@ function Components() {
   const { t } = useTranslation("common");
 
   return (
-    <div className="container-bblue">
+    <div className="container-blue">
       <div className="row justify-content-center">
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Digital Marketing Services')}</h4>

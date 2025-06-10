@@ -7,7 +7,7 @@ const AuditVids = () => {
         {
             id: 2,
             videoUrl: "https://www.youtube.com/embed/LSYp-NAs8hE",
-            name: `${t("5 Action Steps to Increase Patient Conversions")}`
+            name: `${t("5 Action Steps to Increase Patient Acquisition")}`
         }
         ]);
     return (
@@ -21,7 +21,7 @@ const AuditVids = () => {
                     fontSize: '2rem',  // Default font size
                 }}
             >
-                {t("5 Action Steps to Increase Patient Conversions")}
+                {t("5 Action Steps to Increase Patient Acquisition")}
             </h1>
             <div className="plant-container">
                 {plant.map((val, key) => (

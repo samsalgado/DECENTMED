@@ -1,9 +1,9 @@
 import "../App.css";
 import '../info/Info.css';
 import { useTranslation } from 'react-i18next'
-import tier1 from "../images copy/250.png";
-import tier2 from '../images copy/500.png';
-import tier3 from "../images copy/1000.png";
+import tier1 from "../images copy/FREETIER.jpg";
+import tier2 from '../images copy/TIER2.jpg';
+import tier3 from "../images copy/tier3.jpg";
 import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
 //import supabase from "./supabase";
@@ -45,41 +45,12 @@ export function Pricing() {
               <tr>
               <th className="collapsible-trigger">
        <Collapsible trigger={t("Pricing Tiers")}>
-       <div className='container'>
-      <iframe
-            width="100%"
-            height={315}
-            src="https://www.youtube.com/embed/sp01eyKfRXo?si=BHrqC0krHruggX_q" 
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-          </div>
         <div className='collapsible-content'>
         <input type='radio' onClick={handleChange} name='Tier' value="Tier 1"></input>
         <img src={tier1} alt="tier 1" />
-        <div className='container'>
-      <iframe
-            width="100%"
-            height={315}
-            src="https://www.youtube.com/embed/FUNvCaWryFg?si=dzQGc4lgOw369E_x" 
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-          </div>
+      
        <input type='radio' onClick={handleChange} name='Tier' value="Tier 2"></input>
         <img src={tier2} alt="Tier2" /> 
-        <div className='container'>
-      <iframe
-            width="100%"
-            height={315}
-            src="https://www.youtube.com/embed/SZxnqvve4I4?si=ojLMwYTO5fxhUkGp" 
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-          </div>
         <input type='radio' onClick={handleChange} name='Tier' value="Tier 3"></input>
         <img  src={tier3} alt="Tier3" />
         <img alt="" />

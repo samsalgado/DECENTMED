@@ -5,61 +5,50 @@ import { useTranslation } from "react-i18next";
 function Services() {
   const { t } = useTranslation("common");
   return (
-    <div className="container-bblue">
+    <div className="container-blue">
       <div className="row justify-content-center">
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Technical SEO')}</h4>
+          <h4>{t('Ensuring Visibility in a Decentralized World')}</h4>
           <p className="edu">
-            {t('- SEO & Social Media Audits')} <br />
-            {t('- Keyword optimization')} <br />
-            {t('- Improving page speed & web performance')} <br />
-            {t('- Growing backlinks')} <br />
+            {t('- Interview Showcases to grow public awareness')} <br />
+            {t('- Keyword optimization to ensure that your practice gets in front of your target market')} <br />
             {t('- Goal: Achieve top Google rankings')}
           </p>
         </div> 
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Holistic Telehealth Conferences')}</h4>
+          <h4>{t('Holistic Summits & Conferences')}</h4>
           <p className="edu">
             {t('- Hosting virtual & onsite holistic medicine conferences')} <br />
-            {t('- Topics: Acupuncture, Chiropractic, Nutrition, Preventive Medicine, Stem Cell Therapy, Ayurveda, Chelation, Naturopathy, Hypnotherapy, and Homeopathy')} <br />
+            {t('- Paid providers receive speaking engagements and percent of sales from summits')} <br />
             {t('- Focus on education & industry promotion')}
           </p>
         </div> 
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Social Media Marketing')}</h4>
+          <h4>{t('Increase your Patient Bookings')}</h4>
           <p className="edu">
-            {t('- Managing social media accounts')} <br />
-            {t('- Developing custom strategies for growth & engagement')} <br />
-            {t('- Enhancing online presence')}
+            {t('- Active Social Marketing Strategies to increase patient acquisition')} <br />
+            {t('- Analytics to ensure that your practice is growing')}
           </p>
         </div>
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Website Management')}</h4>
+          <h4>{t('Streamlined Patient Management & Automated Followup')}</h4>
           <p className="edu">
-            {t('- Custom page development')} <br />
-            {t('- Backend security & maintenance')} <br />
-            {t('- Marketing & analytics integration')}
+            {t('- New technology into your website and business to ensure that your CRM system is efficient')} <br />
+            {t('- AI Integration into your website for increased patient acquisition, management and retention')}
           </p>
         </div>
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Web Analytics & Reporting')}</h4>
+          <h4>{t('Global Reach')}</h4>
           <p className="edu">
-            {t('- Weekly SEO audits using SEMRush, Moz, Google Search Console, and other tools')} <br />
-            {t('- Data-driven insights to optimize performance')}
+            {t('- Expand reach with multilingual pages')} <br />
+            {t('- Available in Spanish, Dutch, French, Hindi, and more')}
           </p>
         </div>
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Translated Website')}</h4>
+          <h4>{t('Increased Thought Leadership for Holistic Medicine')}</h4>
           <p className="edu">
-            {t('- Expand reach with multilingual support')} <br />
-            {t('- Available in Spanish, Dutch, Portuguese, Hindi, and more')}
-          </p>
-        </div>
-        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Security Services')}</h4>
-          <p className="edu">
-            {t('- Specialized security for healthcare data & providers')} <br />
-            {t('- Security auditing & development to protect sensitive information')}
+            {t('- Publishing provider studies and showcase interviews to grow awareness')} <br />
+            {t('- Dispelling misconceptions about holistic medicine by showcasing holistic treatments and therapies')}
           </p>
         </div>
       </div>

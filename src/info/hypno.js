@@ -13,17 +13,27 @@ const {t} = useTranslation('common')
     return (
         <div className="container">
             <h1 className='title'>{t('Hypnotherapy')}</h1>
-    <div className='video-container'>
-  <iframe
-    className="rumble"
-    width="100%"
-    height="400px"
-    src="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
-    frameBorder="0"
-    allowFullScreen
-    title="Rumble video player"
-  ></iframe>
-</div>
+            <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '20px 0'
+      }}>
+        <iframe
+          className="centered-video"
+          width="100%"
+          height="400px"
+          src="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
+          frameBorder="0"
+          allowFullScreen
+          title="Rumble video player"
+          style={{
+            maxWidth: '800px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+          }}
+        />
+      </div>
       <Button variant="primary" href="https://www.green-hypnotherapy.com/" target="_blank">{t("Visit Green Hypnotherapy")}</Button>  {/* Added Bootstrap Button */}
         <br></br>
         <Benefits />

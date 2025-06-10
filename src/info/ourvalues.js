@@ -6,7 +6,7 @@ function Values() {
     
     return (
         <>
-        <div className="container-bblue">
+        <div className="container-blue">
             <div className="row justify-content-center">
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h4>{t('Education')}</h4>

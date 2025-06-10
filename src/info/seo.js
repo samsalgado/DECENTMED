@@ -8,8 +8,13 @@ const SEO = () => {
 const {t} = useTranslation('common')
   return (
     <div className='container'>
-      <h1 className='title'>{t('Digital Marketing Agency')}</h1>
+      <h1 className='title'>{t('Patient Acquisition Engine')}</h1>
 
+      <blockquote className="quote">
+        {t("'I really was drawn to your vision of how you can help people with this type of platform'")}
+        <br></br>
+        {t("- Stacy Theodossin")}
+      </blockquote>
 
       <iframe
             width="100%"

@@ -4,7 +4,7 @@ import Offer from '../offers/offer';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import Offer2 from '../offers/offer2';
 import Pricing from './pricingtiers';
-import price from '../images copy/sales.png';
+import price from '../images copy/TIERS.png';
 const Practice = () => {
 const { t } = useTranslation("common");
 

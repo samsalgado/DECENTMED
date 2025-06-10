@@ -787,8 +787,8 @@ button[type="submit"] {
 }
 
 .container-blue {
-  background-color: #87ceeb; /* Bootstrap primary blue color */
-  border: 2px solid white; /* Darker blue border */
+  background-color: whitesmoke; /* Bootstrap primary blue color */
+  border: 2px solid whitesmoke; /* Darker blue border */
   padding: 20px; /* Add some padding inside the container */
   border-radius: 8px; /* Optional: rounded corners */
   color: black; /* White text color for contrast */

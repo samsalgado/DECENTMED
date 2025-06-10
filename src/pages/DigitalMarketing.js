@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState } from "react";
+import React from "react";
 import '../App.css';
 import SEO from '../info/seo';
 import { useTranslation } from 'react-i18next';
@@ -9,20 +9,11 @@ import Offer2 from '../offers/offer2';
 import Offer from '../offers/offer';
 import Reviews from '../info/reviews';
 import Footer from '../footer';
-import price from '../images copy/PRICE.png';
+import price from '../images copy/tier3.jpg';
 import { Helmet } from 'react-helmet';
 
 export function Marketing() {
     const { t } = useTranslation("common");
-
-    const [plant] = useState([
-        {
-            id: 2,
-            videoUrl: "https://www.youtube.com/embed/rJU-KT9vdf0?si=JLRrDgZal4jhFesk",
-            name: `${t("Premium Price Explanation")}`
-        }
-    ]);
-
     return(
         <div>
             <Helmet>
@@ -62,19 +53,6 @@ export function Marketing() {
                 />
             </div>
 
-            {/* Video container with reduced spacing */}
-            <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                width: '100%',
-                padding: '0 1rem',
-                marginBottom: '1rem',
-            }}>
-                {plant.map((val, key) => (
-                    <PlantCard key={key} val={val} />
-                ))}
-            </div>
-            
             <Offer2 />
             <Offer />
             <Reviews />
@@ -85,75 +63,3 @@ export function Marketing() {
     )
 }
 
-const PlantCard = ({ val }) => {
-    const { t } = useTranslation("common");
-    const [isInView, setIsInView] = useState(false);
-    const videoRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsInView(true);
-                        observer.disconnect();
-                    }
-                });
-            },
-            { threshold: 0.2 }
-        );
-
-        if (videoRef.current) {
-            observer.observe(videoRef.current);
-        }
-
-        return () => observer.disconnect();
-    }, []);
-
-    return (
-        <div style={{
-            width: '100%',
-            maxWidth: '800px', // Limit max width
-        }}>
-            <div ref={videoRef} style={{
-                width: '100%',
-                marginBottom: '1rem',
-            }}>
-                {isInView ? (
-                    <iframe
-                        width="100%"
-                        height="315"
-                        title="Video"
-                        src={val.videoUrl}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        loading="lazy"
-                        style={{
-                            border: 'none',
-                            borderRadius: '8px',
-                        }}
-                    />
-                ) : (
-                    <div
-                        style={{
-                            width: "100%",
-                            height: "315px",
-                            backgroundColor: "#ccc",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            borderRadius: '8px',
-                        }}
-                    >
-                        <p>{t("Loading...")}</p>
-                    </div>
-                )}
-                <h3 style={{
-                    textAlign: 'center',
-                    margin: '0.5rem 0 0 0', // Reduced margin
-                    fontSize: '1.2rem',
-                }}>{val.name}</h3>
-            </div>
-        </div>
-    );
-}

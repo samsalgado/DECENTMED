@@ -27,7 +27,7 @@ const AdditionalServices = () => {
 
   return (
     <Container fluid>
-      <h2 className="text-center mb-4">{t("Pain Points & Our Offerings")}</h2>
+      <h2 className="text-center mb-4">{t("Pain Points & Our Solutions")}</h2>
       <Row className="justify-content-center">
         <Col xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card className="card mb-4">

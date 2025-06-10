@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 function Fruits() {
     const { t } = useTranslation('common');
     return (
-        <div className="container-bblue">
+        <div className="container-blue">
             <div className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Best Fruits, Spices and Vegetables for Detox")}</h2>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
