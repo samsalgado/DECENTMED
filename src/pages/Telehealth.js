@@ -22,10 +22,20 @@ const { t } = useTranslation("common");
             <div className='container'>
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
-            <Practice />
+            <div className='video-container'>
+        <iframe
+height='315'
+          src="https://www.youtube.com/embed/9jbz_nHvS9A"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
             <div>
                 <Practices />
             </div>
+            <Practice />
+            
             <div>
                 <Info7 />
             </div>

@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 function Practices() {
     const { t } = useTranslation("common");
     return (
+        <>
         <div className="container">
             <div className="container-blue">
                 <h1 className="text-center mb-4">{t("Telehealth Practices")}</h1>
@@ -71,6 +72,7 @@ function Practices() {
                 </div>
             </div>
         </div>
+        </>
 
     );
 }

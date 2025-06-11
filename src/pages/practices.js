@@ -12,15 +12,7 @@ const { t } = useTranslation("common");
   return ( 
 <div className='container'>
 <div className='theecontaine'>
-      <div className='video-container'>
-        <iframe
-height='315'
-          src="https://www.youtube.com/embed/9jbz_nHvS9A"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
+     
         <div className="signup-container">
         <h1 className="signup">{t('Sign Up')}</h1>
         <img   style={{
