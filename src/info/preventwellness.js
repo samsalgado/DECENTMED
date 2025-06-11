@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 
 const PreventWellness = () => {
   const { t } = useTranslation("common");
-
   return (
     <div className='container'>
       <div className="title-container">
