@@ -27,7 +27,7 @@ const { t } = useTranslation('common');
   <div class="row">
     <div class="col-md-6">
       <h3>{t("Ocean Treis Medical")}</h3>
-      <a href='https://oceantreis.com/'>
+      <a href='https://oceantreismedical.acubliss.app/portal/booking/nettie-criscio/bradenton/'>
     <figure>
         <img src={Treis} alt="logo" />
           <figcaption>{t("View Website")}</figcaption>

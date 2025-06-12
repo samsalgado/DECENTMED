@@ -20,7 +20,7 @@ const { t } = useTranslation('common');
             <HYPNO />
             <br></br>
             <h1 className='center'>{t("Online Hypnotherapy")}</h1>
-      <Hypnovids />
+            <Hypnovids />
             <footer>
                 <Footer />
             </footer>

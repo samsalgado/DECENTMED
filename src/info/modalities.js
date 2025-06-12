@@ -6,7 +6,7 @@ const Modalities = () => {
   const { t } = useTranslation('common');
   return (
     <Container>
-      <h2 className="text-center mb-4">{t("Hypnotherapy Modalities")}</h2> {/* Title for the entire section */}
+      <h2 className="text-center mb-4">{t("Hypnotherapy Modalities")}</h2>
       <Row>
         <Col md={4}>
           <Card className="card mb-4">

@@ -1,78 +1,43 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
-
 const AuditVids = () => {
     const { t } = useTranslation("common");
-    const [plant] = useState([
-      
+    const [plant] = useState([      
         {
             id: 2,
-            videoUrl: "https://www.youtube.com/embed/7OhJgp8Tjyw",
-            name: `${t("SEO Audit: Tammy Machmali")}`
-        },
-        {
-            id: 4,
-            videoUrl: "https://www.youtube.com/embed/DU5HXGwFNxs?si=vp8oaLsPsd8wUH9y",
-            name: `${t("SEO Audit: Pratha Ayurveda")}`
-        },
-        {
-            id: 5,
-            videoUrl: "https://www.youtube.com/embed/w-yYRJ5j5ks?si=lbbH72bkAkFIc-Ir",
-            name: t("SEO Audit: Brandy Health Coaching")
-        },
-        {
-            id:6,
-            videoUrl: "https://www.youtube.com/embed/GfeeJE82FYA?si=oGNYrZEY0FNe8uOp",
-            name: t("SEO Audit: Acupuncture in Oxford")
-
-        },
-        {
-            id: 7,
-            videoUrl: "https://www.youtube.com/embed/Y1aDTHEaYWo?si=uxusvlopPSC7QXXY",
-            name: t("SEO Audit: Southern Right Acupuncture")
-        },
-       
-        {
-            id: 8,
-            videoUrl: "https://www.youtube.com/embed/7cgLrZ4IeV0?si=xPiDnmKYNDIl65RF",
-            name: t("SEO Audit: Enzi Jones")
-        },
-        {
-            id: 9,
-            videoUrl: "https://www.youtube.com/embed/Kosw6zLecaI?si=f8GdgoE80uStqjW6" ,
-            name: t("YouTube SEO Audit: Dr. Namuun Bat")
-        },
-        {
-            id: 10,
-            videoUrl: "https://www.youtube.com/embed/bp9yks-Wm2s" ,
-            name: t("Why You Should Use YouTube for Marketing > Traditional SEO")
-        },
-         {
-            id: 11,
-            videoUrl: "https://www.youtube.com/embed/efCrNBIBF8k" ,
-            name: t("SEO Audit: Wellness Body Bar")
+            videoUrl: "https://www.youtube.com/embed/LSYp-NAs8hE",
+            name: `${t("5 Action Steps to Increase Patient Acquisition")}`
         }
-    ]);
+        ]);
     return (
         <div className="contents">
             {/* The main title should be outside the map loop */}
             <h1 
                 style={{
                     fontFamily: 'sans-serif',
+                    width:"100%",
                     textAlign: 'center',
                     fontSize: '2rem',  // Default font size
-                    margin: '20px 0',   // Margin for spacing
-                    padding: '0 10px',  // Padding for better alignment on smaller screens
                 }}
             >
-                {t("SEO Audit Videos")}
+                {t("5 Action Steps to Increase Patient Acquisition")}
             </h1>
             <div className="plant-container">
                 {plant.map((val, key) => (
                     <PlantCard key={key} val={val} />
                 ))}
             </div>
+            <h1 
+                style={{
+                    fontFamily: 'sans-serif',
+                    width: "100%",
+                    textAlign: 'center',
+                    fontSize: '2rem',
+                }}
+            >
+                {t("Buy Now")}
+            </h1>
         </div>
     );
 };

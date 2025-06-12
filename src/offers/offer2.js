@@ -1,39 +1,7 @@
-
-// import "../App.css"
-// import { CookiesProvider } from 'react-cookie'
-// // import CustomizedDialogs from './dialog'
-// import { useTranslation } from 'react-i18next'
-// import imge from '../images copy/IMG_8423.jpeg';
-// import { NavLink } from "react-router-dom";
-// const Offer2 = () => {
-//   const { t } = useTranslation("common");
-
-//   // const [open, setOpen] = useState(false);
-//   return (
-//     <div className='box'>
-//       <CookiesProvider>
-//         <div>
-//           <img src={imge} alt='' />
-//          <h2>{t('Pay with Paypal (Scan QR Code Above)')}</h2> 
-//  <NavLink to="https://www.paypal.com/paypalme/DECENTMED">
-//           https://www.paypal.com/paypalme/DECENTMED
-//           </NavLink>
-// </div>
-//       </CookiesProvider>
-//     </div>
-//   )
-// }
-
-// export default Offer2
-
-
-
-
 import "../App.css";
-import { useTranslation } from 'react-i18next';
-import imge from '../images copy/IMG_8423.jpeg';
 import { useNavigate } from "react-router-dom";
-
+import { useTranslation } from 'react-i18next'
+import imge from '../images copy/paypal.jpg';
 const Offer2 = () => {
   const { t } = useTranslation("common");
   const navigate = useNavigate();
@@ -55,8 +23,8 @@ const Offer2 = () => {
   return (
     <div className='box'>
       <div>
-        <img src={imge} alt='' />
-        <h2>{t('Pay with Paypal (Scan QR Code Above)')}</h2>
+        <img src={imge} className="pik1 bitc" alt='' />
+        <h2>{t('Pay with Paypal')}</h2>
         <a
           href="https://www.paypal.com/paypalme/DECENTMED"
           onClick={handlePaypalClick}
@@ -70,4 +38,3 @@ const Offer2 = () => {
 };
 
 export default Offer2;
-

@@ -11,6 +11,7 @@ homeopath: require("../images copy/homeopathy.png"),
 hypnotherapy:require("../images copy/hypno.png"),
 herbalmedicine:require("../images copy/HERBALMEDICINE.png"),
 meditation:require("../images copy/meditation.jpg"),
+naturopathy:require("../images copy/naturopathyy.png"),
 seo:require("../images copy/Untitled design.png")
 };
 export default Treatment;

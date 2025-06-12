@@ -7,8 +7,8 @@ import { useTranslation } from "react-i18next";
 
 function Practices() {
     const { t } = useTranslation("common");
-
     return (
+        <>
         <div className="container">
             <div className="container-blue">
                 <h1 className="text-center mb-4">{t("Telehealth Practices")}</h1>
@@ -42,8 +42,10 @@ function Practices() {
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <NavLink to="/naturopathicproviders">
                         <h3 className="card-title-fixed" >{t("Naturopathy")}</h3>
                         <img className="img-custom" src={Departments.naturopathy} alt={t("Naturopathy")} />
+                        </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/hypnopract'>
@@ -70,6 +72,7 @@ function Practices() {
                 </div>
             </div>
         </div>
+        </>
 
     );
 }

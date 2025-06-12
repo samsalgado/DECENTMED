@@ -1,5 +1,9 @@
 import React from 'react'
 import "./chiro.css";
+import chiroFR from '../images copy/IMG_9300.jpeg';
+import chiroES from '../images copy/IMG_9301.jpeg';
+import chiroHI from '../images copy/IMG_9303.jpeg';
+import chiroNL from '../images copy/IMG_9311.jpeg';
 import Collapsible from 'react-collapsible';
 import stats from '../images copy/stats.jpg';
 // import treats from '../images copy/IMG_8939.jpeg';
@@ -36,6 +40,10 @@ const {t} = useTranslation('common')
                 <img alt='' />
                 <img src={chiropractorstats} alt='' />
                 <img src={chirotreat} alt='' />
+                <img src={chiroNL} alt='' />
+                <img src={chiroHI} alt='' />
+                <img src={chiroES} alt='' />
+                <img src={chiroFR} alt='' />
                 <img alt='' />
               </tr>
             </Collapsible>

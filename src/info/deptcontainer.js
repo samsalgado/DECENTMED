@@ -9,7 +9,7 @@ function BlueContainer() {
 
     return (
         <div className="container-blue">
-            <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Departments')}</h1>
+            <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Treatment Options')}</h1>
             <div className="row justify-content-center">
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Homeopathy')}</h3>
@@ -75,6 +75,12 @@ function BlueContainer() {
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Stem Cell Therapy')}</h3>
                     <NavLink to="/stemcell" className="link">
                         <img className="img-custom" src={Treatment.stemcell} alt={t('Stem Cell Therapy')} />
+                    </NavLink>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Naturopathy')}</h3>
+                    <NavLink to="/naturopathy" className="link">
+                        <img className="img-custom" src={Treatment.naturopathy} alt={t('Naturopathy')} />
                     </NavLink>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 /* Pgchelation.css */
-
+*{
+  font-family: sans-serif; 
+}
 .content-wrapper {  /* New style for content wrapper */
     display: flex;  /* Use flexbox for responsive layout (placeholder) */
     flex-direction: column;  /* Stack elements on mobile (placeholder) */

@@ -80,6 +80,21 @@ const NutritionVids = () => {
             id:16,
             videoUrl: "https://www.youtube.com/embed/qvjIy5i9OHQ",
             name: `${t("Dysfunctional Medicine")}`
+        },
+        {
+            id:17,
+            videoUrl: "https://www.youtube.com/embed/smXBeGUGNOM?si=rxm8RPZvmuQtiZNJ",
+            name: `${t("Nutrition Tips for Menopause")}`
+        },
+        {
+            id:18,
+            videoUrl: "https://www.youtube.com/embed/x1WhJ5T5V0Y?si=1ngM05oGrMkktJuU",
+            name: `${t("Top Functional Medicine Solutions for Menopause Relief: What You Need to Know")}`
+        },
+        {
+            id:19,
+            videoUrl: "https://www.youtube.com/embed/xG6Liji9gPw",
+            name: `${t("Truth about Cholesterol")}`
         }
     ]);
     return (

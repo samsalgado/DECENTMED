@@ -1,6 +1,10 @@
 import React from 'react';
 import "../App.css";
 import './Info.css';
+import chelationgraphicES from '../images copy/IMG_9296.jpeg';
+import chelationgraphicNL from '../images copy/IMG_9297.jpeg';
+import chelationgraphicHI from '../images copy/IMG_9310.jpeg';
+import chelationgraphicFR from '../images copy/IMG_9298.jpeg';
 import Collapsible from 'react-collapsible';
 import graphic from '../images copy/chelation101.png';
 import chelationgraphic from '../images copy/chelationgraphic.png';
@@ -23,14 +27,12 @@ const Pgchelation = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-
       {/* Button Container - Centering and Stacking */}
       <div className="button-container">
         <Button variant="primary" href="http://crossroadsnaturopathic.com/" target="_blank">
           {t("Visit Crossroads Naturopathic")}
         </Button>
       </div>
-
       {/* Title and Collapsible Content with Table Structure */}
       <div className="title-container">
         <table className="collapsibles-table">
@@ -40,6 +42,10 @@ const Pgchelation = () => {
                 <Collapsible trigger={t("Chelation 101 (Heavy Metal Detox)")}>
                   <div className="collapsible-content">
                     <img className='chelation-graphic' src={graphic} alt="Chelation 101" />
+                    <img className='chelation-graphic' src={chelationgraphicES} alt="Chelation 101" />
+                    <img className='chelation-graphic' src={chelationgraphicNL} alt="Chelation 101" />
+                    <img className='chelation-graphic' src={chelationgraphicHI} alt="Chelation 101" />
+                    <img className='chelation-graphic' src={chelationgraphicFR} alt="Chelation 101" />
                     <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
                     <img className='dual' src={chelationbenefits} alt="Chelation Benefits" />
                     <img alt='' />

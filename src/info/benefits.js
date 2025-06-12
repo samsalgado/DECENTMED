@@ -11,7 +11,7 @@ import insomnia from '../images copy/insomnia.png';
 function Benefits() {
     const { t } = useTranslation('common');
     return (
-        <div className="container-bblue">
+        <div className="container-blue">
             <div className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of Hypnotherapy")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">

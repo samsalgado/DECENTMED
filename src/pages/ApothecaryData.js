@@ -6,7 +6,7 @@ import '../App.css'
 import { useTranslation } from 'react-i18next';
 const ApothecaryData = ({ val }) => {
   const { t } = useTranslation('common')
-  const { image, name, price, medrating, description } = val;
+  const { image, name, medrating, description } = val;
 
   //  Modal create
   const [show, setShow] = useState(false);
@@ -32,7 +32,6 @@ const ApothecaryData = ({ val }) => {
         }}
       />
       <h3>{name}</h3>
-      <h3>{price} BTC</h3>
       <h3>{t('Medical Rating')} : {medrating}</h3>
       <>
         <Button variant="primary" size="sm" onClick={handleShow}>

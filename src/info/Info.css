@@ -1,14 +1,21 @@
 /* General Container */
+* {
+  font-family: sans-serif; 
+}
+
 .container-fluid {
   width: 100%; /* Ensure full width on all devices */
   padding: 15px; /* Ensure some padding around the container */
+  font-family: sans-serif;
 }
 
 .digital {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+  font-family: sans-serif;
 }
+
 /* Info.css */
 
 /* Styling for the card itself */
@@ -16,6 +23,7 @@
   background-color: #f8f9fa; /* Light gray background for the entire card */
   border: 1px solid #dee2e6; /* Bootstrap default border color */
   border-radius: 0.25rem; /* Bootstrap default border radius */
+  font-family: sans-serif;
 }
 
 /* Styling for the card header */
@@ -23,6 +31,7 @@
   background-color: #e9ecef; /* Slightly darker gray for the header */
   color: #212529; /* Dark text color for readability */
   font-size: 1.25rem; /* Consistent font size for headers (matches h5) */
+  font-family: sans-serif;
   padding: 0.75rem 1.25rem; /* Bootstrap default padding */
   border-bottom: 1px solid #dee2e6; /* Border to separate header from body */
 }
@@ -32,6 +41,7 @@
   background-color: #f8f9fa; /* Same background as the card for consistency */
   color: #212529; /* Dark text color for readability */
   font-size: 1rem; /* Consistent font size for the body text */
+  font-family: sans-serif;
   padding: 1.25rem; /* Bootstrap default padding */
 }
 
@@ -39,22 +49,31 @@
 .card-text {
   font-size: 1rem; /* Match the body font size */
   color: #212529; /* Match the body text color */
+  font-family: sans-serif;
   margin-bottom: 0.5rem; /* Space between paragraphs */
 }
+
 /* Flexbox Layout for Responsiveness */
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: sans-serif;
 }
+
 .signup-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  font-family: sans-serif;
 }
 
 .signup {
   text-align: center;
+  font-size: 2rem;
+  margin: -1rem;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 /* For Video Containers */
@@ -64,6 +83,7 @@
   height: 200px;
   max-width: 800px;
   margin: 0 auto;
+  font-family: sans-serif;
 }
 
 .video-container iframe {
@@ -84,6 +104,7 @@
     height: 200px;
   }
 }
+
 @media (max-width: 1040px) {
   .video-container {
     max-width: 100%; /* Full width for smaller devices */
@@ -101,6 +122,7 @@
   padding-top: 56.25%; /* 16:9 অনুপাতের জন্য (9/16 = 0.5625) */
   position: relative;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
 .text-content {
@@ -115,6 +137,7 @@
   max-width: 40%;
   box-sizing: border-box;
   overflow-y: auto;
+  font-family: sans-serif;
 }
 
 /* small device */

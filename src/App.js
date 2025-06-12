@@ -1,5 +1,6 @@
 import { Routes } from 'react-router';
 import './App.css';
+import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import { Route } from 'react-router-dom';
 import { Home } from './pages/Home';
@@ -17,6 +18,7 @@ import Blog11 from './pages/blogs/blog11';
 import Blog16 from './pages/blogs/blog16';
 import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
+import Mike from './pages/blogs/mike';
 import Blog15 from './pages/blogs/blog15';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
@@ -48,6 +50,8 @@ import {Nutritionpract} from './pages/nutritionpract';
 import {Coaching} from './pages/coach';
 import {HomeopathyPract} from './pages/HOMEOPATHYPRACT';
 import { Acupract} from './pages/acupract';
+import { Natpract} from './pages/naturopathics';
+import { Naturopathy } from './pages/Naturopathy';
 // import SignUp from './pages/SignUp/SignUp';
 //import StripePayment from './pages/StripePayment/StripePayment';
 import Topbar from './pages/topbar';
@@ -70,11 +74,15 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home t={t} />} />
           <Route path="/404" element={<NotFound />} />
+          <Route path="/naturopathylane" element={<Mike t={t} />} />
           <Route path="/stemcell" element={<StemCell t={t} />} />
           <Route path="/ayurveda" element={<Ayurveda t={t} />} />
           <Route path="/coaching" element={<Coaching t={t} />} />
+          <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
           <Route path="/acupuncturists" element={<Acupract t={t} />} />
           <Route path="/blog" element={<BlogPage t={t} />} />
+          <Route path="/naturopathy" element={<Naturopathy t={t} />} />
+          <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
           <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
           <Route path="/apoth" element={<Apoth t={t} />} />
           <Route path="/blog1" element={<Blog1 t={t} />} />

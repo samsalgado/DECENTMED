@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import Lotus from '../cards/lotus.png'
-import Shannon from '../cards/heartofwellness.png'
 import { useTranslation } from 'react-i18next'
 export function HomeopathyPract() {
 const { t } = useTranslation('common');
@@ -45,24 +44,6 @@ const { t } = useTranslation('common');
 
 
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <h3>{t("Heart of Wellness")}</h3>
-      <a href='https://heartofwellness.org/'>
-    <figure>
-        <img src={Shannon} alt="logo" />
-          <figcaption>{t("View Website")}</figcaption>
-        </figure>
-      </a>
-      <h5>t{("Tim Shannon ND")}</h5>
-      <p>
-      {t("At Heart of Wellness, we offer a variety of services including family medicine and naturopathic services provided by our team of Naturopathic Physicians, Certified Nutritionist, and practitioners of Acupuncture & Asian Medicine. We also offer Massage Therapy and Physical Therapy to ensure that we are able to cater to your every need. Our focus is on healing your whole being, including your physical, emotional, mental, and spiritual well-being. We have a team of open-minded doctors who listen to and educate you, empowering you on your journey to optimum health and well-being with safe and effective treatments. Our facility has been rated as the number one health and medical center in the Olympia Washington area, and we encourage you to schedule an appointment and experience a different kind of healthcare.")}
-      </p>
-    </div>
-
-
-  </div>
-
 </div>
 
             <footer>

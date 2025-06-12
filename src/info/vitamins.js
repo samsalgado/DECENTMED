@@ -9,12 +9,10 @@ import K from '../images copy/K.jpg';
 import vitB from '../images copy/vitB.png';
 import curcumin from '../images copy/curcumin.png';
 import { useTranslation } from "react-i18next";
-
 function Vitamins() {
     const { t } = useTranslation("common");
-
     return (
-        <div className="container-bblue">
+        <div className="container-blue">
             <div className="row justify-content-center">
                 <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t('Best Vitamins and Antioxidants')}</h2>
 

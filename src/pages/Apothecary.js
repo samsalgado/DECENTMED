@@ -1697,7 +1697,6 @@ const {t} = useTranslation('common')
       
           {plant.map((val) => (
             <ApothecaryData val={val} key={val.id}>
-
             </ApothecaryData>))
           }
       </div>

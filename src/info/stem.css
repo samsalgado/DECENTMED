@@ -1,3 +1,6 @@
+*{
+  font-family: sans-serif; 
+}
 /* Make sure th is full width */
 .collapsibles-table {
   width: 100%;

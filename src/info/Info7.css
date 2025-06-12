@@ -1,5 +1,7 @@
 /* Info7.css */
-
+*{
+  font-family: sans-serif; 
+}
 .container {
     /* Adjust width and margins for better mobile experience */
     width: 100%; /* Make container fluid-width */

@@ -13,6 +13,10 @@ const { t } = useTranslation('common');
         <img className='coursepic' src={Treatment.homeopath} alt="" />
       </NavLink>
       </ul>
+      <ul><NavLink to="/naturopathy">{t('Naturopathy')}
+        <img className='coursepic' src={Treatment.naturopathy} alt="" />
+      </NavLink>
+      </ul>
       <ul><NavLink to="/herbalmedicine">{t('Herbal Medicine')}
         <img className='coursepic' src={Treatment.herbalmedicine} alt="" />
       </NavLink>

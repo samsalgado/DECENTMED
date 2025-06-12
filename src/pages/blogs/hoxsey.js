@@ -1,9 +1,12 @@
+import React, {useEffect, useCallback} from 'react';
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import Hoxseyfr from './hoxseyfr';
 import Hoxseyhindi from './hoxseyhindi';
 import Hoxseydutch from './hoxseydutch';
+import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
+import { nip19 } from 'nostr-tools';
 import spanish from '../../images copy/IMG_6976.jpeg';
 import spanish2 from '../../images copy/IMG_6977.jpeg';
 import spanish3 from '../../images copy/IMG_6978.jpeg';
@@ -113,6 +116,100 @@ import hoxsey42 from '../../images copy/IMG_6472.jpeg'; //
 
 import "../../App.css";
 const Hoxsey = ({t}) => {
+    const publishToNostr = useCallback(async () => {
+        const nsec = process.env.REACT_APP_NSEC;
+          if (!nsec) {
+          console.error('Missing nsec key');
+          return;
+        }
+    
+        try {
+          const { type, data: sk } = nip19.decode(nsec);
+          if (type !== 'nsec') {
+            console.error('Invalid nsec format');
+            return;
+          }
+          const pubkey=getPublicKey(sk);
+        const content = `  
+        Casestudy of Harry Hoxsey Cancer Treatment and its Benefits:
+        https://themerlingroupworld.com/static/media/IMG_6431.acf7f40f702010cd5e28.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6433.44e128119a9d201a8d62.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6434.a4984aa8f6d6a8f88e66.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6435.39b006434c7bf0ad3ad8.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6436.d9af10853f9966f2c022.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6437.7fab1fd4f966d8f8f14f.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6439.658f58eb408fb6ecbc46.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6438.8ff78573d53d5e64043a.jpeg
+        https://themerlingroupworld.com/static/media/themerlingroupworld.com.b34679884b73873fe783.png
+        https://themerlingroupworld.com/static/media/IMG_6441.900adbf584a23d702d27.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6442.025a8668b11f6cc3b86c.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6443.189eed483edf5675f8c3.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6445.24df8b8482d9777ab0ab.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6444.fd3a111237b7b5b380fd.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6446.0e083c8d3ef73058c91a.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6447.b75983872bdad727a573.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6448.36a1acb563248d31a3f8.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6449.e7c59cbbfb54159482ba.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6451.debbbb791f0a3d72a286.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6452.1966f0fe8822627be161.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6453.9466e13a85ae149728b0.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6454.a18798c2c5de05c6818c.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6455.aea2a0e700879bf05eea.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6456.c52ce87ca7a90c0718ee.png
+        https://themerlingroupworld.com/static/media/IMG_6457.32aa8604b63598acea37.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6458.147dd6f70477160d1dd9.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6459.79b45981292c1ec33cc7.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6460.21414926c18726efc039.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6460.21414926c18726efc039.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6461.26bea2f33cb6bf393c87.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6462.a85b0eaba4a7080b5138.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6462.a85b0eaba4a7080b5138.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6463.b088b404ebbbca723fdb.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6464.7a08c34ed05c0c271005.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6465.98abe499b886303df6f1.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6466.75fcaae11b142a1454c8.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6467.2691d55150e4bf3b3246.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6468.f50067714190d31c21ff.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6469.682163398ebfc916fb25.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6470.663b6f7b7f6ee10855f6.jpeg
+        https://themerlingroupworld.com/static/media/IMG_6471.cc9eaacf3cd924333ff2.jpeg
+
+  `;
+          const event = {
+            kind: 1,
+            created_at: Math.floor(Date.now() / 1000),
+            tags: [
+              ["t", "health"],
+              ["t", "cancer"]
+            ],              
+          content,
+            pubkey,
+          };
+          const signedEvent = finalizeEvent(event, sk);
+          const pool = new SimplePool();
+          const relays = ['wss://relay.damus.io','wss://nos.lol'];
+          await Promise.all(
+            relays.map(async (relay) => {
+              try {
+                let r = await pool.ensureRelay(relay);
+                await r.publish(signedEvent);
+                console.log(`Published to ${relay}`);
+              } catch (err) {
+                console.error(`Failed to publish to ${relay}:`, err);
+              }
+            })
+          );
+    
+          console.log('Published to Nostr!');
+          pool.close(relays); // Clean up connections
+        } catch (error) {
+          console.error('Error publishing to Nostr:', error);
+        }
+      }, []);
+      useEffect (() => {
+        publishToNostr();
+      }, [publishToNostr]);
+
   return (
     <>
       <Helmet>
@@ -131,7 +228,7 @@ const Hoxsey = ({t}) => {
   className="rumble" 
   width="100%" 
   height="400px" 
-  src="https://rumble.com/embed/v6c1084/?pub=4hu51y" 
+  src="https://drive.google.com/file/d/1JsO6uRAF1QfqSH1mZweBb29IEeyLeyTG/preview" 
   frameBorder="0" 
   allowFullScreen 
   title="You Don’t Have to Die Video" 

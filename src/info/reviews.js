@@ -9,6 +9,8 @@ import graphic3 from '../images copy/IMG_7979.jpeg';
 import graphic4 from '../images copy/IMG_7980.jpeg';
 import graphic5 from '../images copy/IMG_7981.jpeg';
 import graphic6 from '../images copy/IMG_7977.jpeg';
+import newreview from '../images copy/newreview.png';
+import lori from '../images copy/IMG_9733.jpg';
 import { useTranslation } from 'react-i18next';
 
 const Reviews = () => {
@@ -24,13 +26,15 @@ const Reviews = () => {
         </th>
       }
     >
+            <img className="gridimag" src={lori} alt="Bone Marrow Stem Cell Benefits" />
+            <img className="gridimag" src={newreview} alt="Testimonial" />
             <img className="gridimag" src={graphic2} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic3} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic4} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic5} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic} alt="Bone Marrow Stem Cell Benefits" />
-      <img className="gridimag" src={graphic6} alt="Bone Marrow Stem Cell Benefits" />
-      <img alt='' />
+            <img className="gridimag" src={graphic6} alt="Bone Marrow Stem Cell Benefits" />
+            <img alt='' />
     </Collapsible>
   </tbody>
 </table>

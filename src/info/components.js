@@ -6,7 +6,7 @@ function Components() {
   const { t } = useTranslation("common");
 
   return (
-    <div className="container-bblue">
+    <div className="container-blue">
       <div className="row justify-content-center">
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h4>{t('Digital Marketing Services')}</h4>
@@ -20,31 +20,25 @@ function Components() {
             {t('Our website is translated into multiple languages: Spanish, French, Dutch, Arabic (more if nec.) and English. We offer telehealth services to connect you with patients throughout the world.')}
           </p>
         </div> 
-        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Content Creation')}</h4>
-          <p className="edu">
-            {t('Transforming your content into videos for social media and your website. Video production or documentary creation for your company.')}
-          </p>
+            <div className="row justify-content-center">
+                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+                    <h4>{t('Education')}</h4>
+                    <p className="edu">{t('Video Education Platform featuring each Holistic Medicine modality. Our team offers interviews to all providers on the platform and seeks to collaborate with them to create educational series for their specific modality.')}</p>
+                </div> 
+                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+                    <h4>{t('Standardized Documentation')}</h4>
+                    <p className="edu">{t("Boosting evidence-based claims by posting provider studies on our platform and a decentralized network.")}</p>
+                </div>
+                <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
+                    <h4>{t('Decentralized Insurance')}</h4>
+                    <p className="edu">{t('One issue holistic medicine faces is low insurance reimbursements. By joining our platform, providers get equity in our apothecary. The sales from the apothecary are stored on a blockchain. The equity will be used to make treatments less expensive while funding providers from the apothecary.')}</p>
+                </div>
+                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+                    <h4>{t('Holistic Marketing')}</h4>
+                    <p className="edu">{t('Facilitating patient acquisition and management via video marketing, active social marketing strategies and management systems for website and social media to differentiate your practice.')}</p>
+                </div>
+            </div>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Admin Privileges on Mobile App')}</h4>
-          <p className="edu">
-            {t('There is a mobile app equivalent of this project. Members of the coalition can post content on the mobile app and other admin privileges.')}
-          </p>
-        </div>
-        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Backlink Service')}</h4>
-          <p className="edu">
-            {t('Providers get access to backlinks via Blogs, videos and branded content. The education pages are your canvas. All content showcased on the education page will be branded to your respective practice. We strive to create residual income for our providers; creating E-Books, Webinars or other content to sell to your audience')}
-          </p>
-        </div>
-        <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h4>{t('Profit Share')}</h4>
-          <p className="edu">
-            {t('Providers get access to profits from our Apothecary and showcased Cancer documentaries.')}
-          </p>
-        </div>
-      </div>
     </div>
   );
 }

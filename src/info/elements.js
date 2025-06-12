@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 function Elements() {
     const { t } = useTranslation('common');
     return (
-        <div className="container-bblue">
+        <div className="container-blue">
             <div className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Ayurvedic Elements")}</h2>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">

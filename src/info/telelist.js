@@ -1,6 +1,6 @@
 import React from 'react';
 import './Tele.css';
-
+//Providers
 const Directory = () => {
   const treatments = [ // Assuming Treatment is an array of image objects or paths
     { name: 'Acupuncture', src: require('../images copy/acupuncture.png'), alt: 'Acupuncture' },
@@ -13,11 +13,10 @@ const Directory = () => {
     {name: 'PRP', src: require('../images copy/PRP.png'), alt: 'PRP' },
     {name:'Nutritionist', src: require('../images copy/nutrition.png'), alt: 'Nutritionist'},
     {name: 'Hypnotherapist', src: require('../images copy/hypno.png'), alt: 'Hypnotherapist'},
-    // Add an empty object if there are less than 8 treatments
   ];
 
   const columns = 5;
-  const rows = Math.ceil(treatments.length / columns); // Calculate rows
+  const rows = Math.ceil(treatments.length / columns); 
 
   return (
     <div className="grid">
@@ -25,15 +24,13 @@ const Directory = () => {
         <div key={rowIndex} className="gridrow">
           {Array.from({ length: columns }).map((_, columnIndex) => {
             const index = rowIndex * columns + columnIndex;
-            const treatment = treatments[index]; // Get treatment object by index
-
-            if (!treatment) return null; // Handle potential out-of-bounds access
+            const treatment = treatments[index]; 
+            if (!treatment) return null;
 
             return (
                 <>
-
               <img
-                key={treatment.name} // Important for performance with dynamic content
+                key={treatment.name} 
                 src={treatment.src}
                 alt={treatment.alt}
                 className="gridimage"

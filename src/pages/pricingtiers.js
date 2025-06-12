@@ -1,9 +1,9 @@
 import "../App.css";
 import '../info/Info.css';
 import { useTranslation } from 'react-i18next'
-import tier1 from "../images copy/250.png";
-import tier2 from '../images copy/500.png';
-import tier3 from "../images copy/1000.png";
+import tier1 from "../images copy/FREETIER.jpg";
+import tier2 from '../images copy/TIER2.jpg';
+import tier3 from "../images copy/tier3.jpg";
 import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
 //import supabase from "./supabase";
@@ -48,6 +48,7 @@ export function Pricing() {
         <div className='collapsible-content'>
         <input type='radio' onClick={handleChange} name='Tier' value="Tier 1"></input>
         <img src={tier1} alt="tier 1" />
+      
        <input type='radio' onClick={handleChange} name='Tier' value="Tier 2"></input>
         <img src={tier2} alt="Tier2" /> 
         <input type='radio' onClick={handleChange} name='Tier' value="Tier 3"></input>
