@@ -9,7 +9,7 @@ import Offer2 from '../offers/offer2';
 import Offer from '../offers/offer';
 import Reviews from '../info/reviews';
 import Footer from '../footer';
-import price from '../images copy/tier3.jpg';
+import price from "../images copy/TIER_3.png";
 import { Helmet } from 'react-helmet';
 
 export function Marketing() {
