@@ -13,6 +13,7 @@ import english from './lang/en.json';
 import dutch from './lang/nl.json';
 import espanol from './lang/es.json';
 import francais from './lang/fr.json';
+import chinese from './lang/ch.json';
 import hindi from './lang/hi.json';
 const preferredLang = localStorage.getItem("preferredLanguage") || "en";
 
@@ -31,6 +32,9 @@ i18next.init({
     },
     fr: {
       common: francais
+    },
+    ch: {
+      common: chinese
     },
     hi: {
       common: hindi

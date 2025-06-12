@@ -12,7 +12,7 @@ import './CheckOutForm.css';
 
 const CheckOutFrom = () => {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
   const [clientSecret, setClientSecret] = useState('');
   const stripe = useStripe();
   const elements = useElements();

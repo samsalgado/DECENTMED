@@ -1,140 +1,228 @@
-import React, { useContext, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import { useForm } from 'react-hook-form';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import React, { useState } from 'react';
+import axios from 'axios';
+import '../Styles/AuthForm.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Swal from 'sweetalert2';
-import Footer from '../../footer';
-import { AuthContext } from '../Providers/AuthProvider';
-import SocialLogin from '../SocialLogin/SocialLogin';
-import Topbar from '../topbar';
-import './SignUp.css';
 import { useTranslation } from 'react-i18next';
 
-const Register = () => {
-  const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
-  const password = watch("password");
-  const [show, setShow] = useState(false);
-  const { createUser, updatePhoto } = useContext(AuthContext);
+const SignUp = () => {
+  const [user, setUser] = useState({ name: '', email: '', password: '' });
+  const [error, setError] = useState('');
   const navigate = useNavigate();
-const [error, setError] = useState('');
-const {t} = useTranslation('common')
-  const onSubmit = (data) => {
-    createUser(data.email, data.password)
-      .then(result => {
-        updatePhoto(data.name).then((result) => {
+  const [showPassword, setShowPassword] = useState(false); // 👁️ Show/hide toggle
+  const [loading, setLoading] = useState(false); // 🔄 loader state
+  const { t } = useTranslation('common');
 
-          const saveUser = { name: data.name, email: data.email,role:"user"  };
-          fetch(`https://decentmed-server.vercel.app/users`, {
-            method: "POST",
-            headers: {
-              "content-type": "application/json"
-            },
-            body: JSON.stringify(saveUser)
-          })
-            .then(res => res.json())
-            .then(data => {
-            });
-          reset();
-          Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Sign Up Successful',
-            showConfirmButton: false,
-            timer: 1500
-          });
-          navigate('/');
-        })
-          .catch(error => {
-  setError(error)
-          });
-      })
-      .catch(error => {
-setError(error)
-      });
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+    setError('');
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true); // 🔄 start loader
+    if (user.password.length < 6) {
+      setError('Password must be at least 6 characters');
+      return;
+    }
+
+    try {
+      const res = await axios.post(
+        'http://localhost:5001/users',
+        user,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Signup Successful!',
+          text: 'Welcome to our platform!',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        }).then(() => {
+          const redirect = localStorage.getItem("redirectAfterSignup");
+          if (redirect === "paypal") {
+            localStorage.removeItem("redirectAfterSignup");
+            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          } else {
+            navigate("/");
+          }
+        });
+      }
+
+
+    } catch (err) {
+      console.log("Error response:", err.response?.data);
+      setError(err.response?.data?.message || 'Signup failed');
+    }
+    finally {
+      setLoading(false); // 🔄 Stop loader
+    }
+  };
+
+
   return (
-<>      <Helmet>
-  <title> {t('signup')}</title>
-</Helmet>
+    <div className="auth-form-container">
+      <form className="auth-form" onSubmit={handleSubmit}>
+        <h2>{t("Create Account")}</h2>
+        {error && <p className="error">{error}</p>}
+        {loading && <div className="loader"></div>}
 
-  <header>
-    <Topbar />
-  </header>
-  <div className="register-container">
-    <div className="register-form-container">
-      <h2 className="register-title">{t('Create an account')}</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-group">
-          <label htmlFor="name">{t('Name')}</label>
-          <input
-            type="text"
-            {...register("name", { required: t("Name is required") })}
-            placeholder={t("Enter Name")}
-          />
-          {errors.name && <p className="error-message">{errors.name.message}</p>}
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">{t('Email')}</label>
-          <input
+        <input
+          type="text"
+          name="name"
+          placeholder={t("Full Name")}
+          value={user.name}
+          onChange={handleChange}
+          required
+        />
 
-            type="email"
-            {...register("email", { required: t("Email is required") })}
-            placeholder={t("Enter your email")}
+        <input
+          type="email"
+          name="email"
+          placeholder={t("Email Address")}
+          value={user.email}
+          onChange={handleChange}
+          required
+        />
+
+        <div className="password-field">
+          <input
+            type={showPassword ? "text" : "password"}
+            name="password"
+            placeholder={t("Password")}
+            value={user.password}
+            onChange={handleChange}
+            required
           />
-          {errors.email && <p className="error-message">{errors.email.message}</p>}
+          <span
+            className="eye-icon"
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? <FaEyeSlash /> : <FaEye />}
+          </span>
         </div>
 
-        <div className="form-group password-field">
-          <label htmlFor="password">{t('Password')}</label>
-          <input
-               type={show ? 'text' : 'password'}
-            {...register("password", {
-              required:t( "Password is required"),
-              minLength: { value: 6, message: "Password must be at least 6 characters" },
-              pattern: { value: /^(?=.*?[A-Z])(?=.*?[!@#$%^&*])/, message: "Password must contain at least one capital letter and one special character" }
-            })}
-            placeholder={t("Enter Password")}
-          />
-   <span className="password-toggle" onClick={() => setShow(!show)}>
-                {show ? <FaEyeSlash /> : <FaEye />}
-              </span>
-          {errors.password && <p className="error-message">{errors.password.message}</p>}
-        </div>
-        <div className="form-group password-field">
-          <label htmlFor="confirm">{t('Confirm Password')}</label>
-          <input
+        <button type="submit" disabled={loading}>
+          {loading ? <>{t("Sign Up")}...</> :<>{t("Sign Up")}</> }
+        </button>
 
-               type={show ? 'text' : 'password'}
-            {...register("confirm", {
-              required: t("Confirm Password is required"),
-              validate: value => value === password || t("Passwords do not match")
-            })}
-            placeholder={t("Confirm Password")}
-          />
-   <span className="password-toggle" onClick={() => setShow(!show)}>
-                {show ? <FaEyeSlash /> : <FaEye />}
-              </span>
-          {errors.confirm && <p className="error-message">{errors.confirm.message}</p>}
-        </div>
-        <input type="submit" value={t("Sign Up")} className="submit-button" />
+        <p> {t("Already have an account?")}<Link to="/signin">{t("Sign In")}</Link></p>
       </form>
- {error && (
-                <p className="login-error">{error.message}</p>
-              )}
-      <p className="already-account">
-        {t('Already have an account?')}   <Link to="/login">{t('Login')}</Link>
-      </p>
     </div>
-    <div className="divider">{t('Or')}</div>
-    <SocialLogin />
-  </div>
-  <footer className='footer'>
-    <Footer />
-  </footer>
-</>
   );
 };
 
-export default Register;
+export default SignUp;
+
+
+
+
+
+
+
+
+
+
+// /components/SignUp.js
+// import React, { useState } from 'react';
+// import axios from 'axios';
+// import './AuthForm.css';
+// import { useNavigate } from 'react-router-dom';
+
+// const SignUp = () => {
+//   const [user, setUser] = useState({ name: '', email: '', password: '' });
+//   const [error, setError] = useState('');
+//   const [success, setSuccess] = useState('')
+//   const navigate = useNavigate();
+
+//   const handleChange = (e) => {
+//     setUser({ ...user, [e.target.name]: e.target.value });
+//     setError('');
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     if (user.password.length < 6) {
+//       setError('Password must be at least 6 characters');
+//       return;
+//     }
+//     try {
+//       await axios.post('http://localhost:5001/users', user);
+//       setSuccess('singup success')
+//       navigate('/signin');
+// console.log('hello111222');
+//     } catch (err) {
+//       setError(err.response?.data?.message || 'Signup failed');
+//     }
+//   };
+
+//   return (
+//     <div className="auth-form-container">
+//       <form className="auth-form" onSubmit={handleSubmit}>
+//         <h2>Create Account</h2>
+//         {error && <p className="error">{error}</p>}
+//         <p>{success}</p>
+//         <input type="text" name="name" placeholder="Full Name" value={user.name} onChange={handleChange} required />
+//         <input type="email" name="email" placeholder="Email Address" value={user.email} onChange={handleChange} required />
+//         <input type="password" name="password" placeholder="Password" value={user.password} onChange={handleChange} required />
+//         <button type="submit">Sign Up</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default SignUp;
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import axios from 'axios';
+// import './AuthForm.css';
+// import { useNavigate } from 'react-router-dom';
+
+// const SignUp = () => {
+//   const [user, setUser] = useState({ name: '', email: '', password: '' });
+//   const navigate = useNavigate();
+
+//   const handleChange = (e) => {
+//     setUser({ ...user, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       await axios.post('http://localhost:5000/api/signup', user);
+//       alert('Signup successful!');
+//       navigate('/signin');
+//     } catch (error) {
+//       alert('Signup failed: ' + error.response.data.message);
+//     }
+//   };
+
+//   return (
+//     <div className="auth-form">
+//       <h2>Sign Up</h2>
+//       <form onSubmit={handleSubmit}>
+//         <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required />
+//         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
+//         <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
+//         <button type="submit">Sign Up</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default SignUp;
+

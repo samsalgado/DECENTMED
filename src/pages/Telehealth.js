@@ -7,7 +7,6 @@ import Practice from './practices';
 import Topbar from './topbar';
 import { useTranslation } from 'react-i18next';
 
-
 export function Telehealth() {
 const { t } = useTranslation("common");
     return (
@@ -24,10 +23,10 @@ const { t } = useTranslation("common");
             <div className='container'>
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
+
             <Practice />
             <div>
                 <Practices />
-
             </div>
             <div>
                 <Info7 />

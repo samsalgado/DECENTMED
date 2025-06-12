@@ -61,7 +61,7 @@ controls={true}
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
-      <h5>{t('Yogi Sanji - (Sanjivana)')}      </h5>
+      <h5>{t('Yogi Sanji - (Sanjivana)')}</h5>
       <p>
       {t("My name is Yogi Sanji (Sanjivana), and my expertise is meditation and spiritual mentoring. I am a former monk of 20 years and have extensive experience teaching meditation to individuals and large groups. Meditation is my passion, interest, and life. I help people reach their goals of happiness, peace, and liberation through the practice of meditation and mindfulness. I teach meditation based on ancient traditions and doctrines which include deep insights, concentration, mindfulness, relaxation, and healing meditations. Sanjivana Kularathna - Serenity Meditations Meditation Teacher, Spiritual- Counselor, Therapist, Tutor, Mentor, Life Coach Energy work healing Working for Charities, Suicide prevention , Trauma Recovery , Rehabilitation, Sober Therapy and rebuilding lives.")}
       </p>

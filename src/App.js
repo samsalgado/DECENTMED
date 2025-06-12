@@ -48,7 +48,7 @@ import {Nutritionpract} from './pages/nutritionpract';
 import {Coaching} from './pages/coach';
 import {HomeopathyPract} from './pages/HOMEOPATHYPRACT';
 import { Acupract} from './pages/acupract';
-//import SignUp from './pages/SignUp/SignUp';
+// import SignUp from './pages/SignUp/SignUp';
 //import StripePayment from './pages/StripePayment/StripePayment';
 import Topbar from './pages/topbar';
 //import Login from './pages/Login/Login';
@@ -56,6 +56,8 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import SignUp from './pages/SignUp/SignUp';
+import SignIn from './pages/Login/SignIn';
 //import AddtoCart from './addtocart/addtocart';
 
 function App() {
@@ -114,6 +116,8 @@ function App() {
           <Route path="/about" element={<About t={t} />} />
           <Route path="/blog7" element={<Blog7 t={t} />} />
           <Route element={<Topbar t={t} />} />
+          <Route path="/signup" element={<SignUp t={t} />} />
+          <Route path="/signin" element={<SignIn t={t} />} />
         </Routes>
     </QueryClientProvider >
   )

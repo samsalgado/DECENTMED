@@ -210,6 +210,13 @@ const Topbar = () => {
   const { t, i18n } = useTranslation("common");
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null); // Default language
+  const isLoggedIn = !!localStorage.getItem('token');
+
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    window.location.reload();
+  };
 
 
   const toggleMenu = () => {
@@ -253,6 +260,16 @@ const Topbar = () => {
             <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
             <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
             <Nav.Link href='/about'>{t('About Us')}</Nav.Link>
+            
+              {isLoggedIn ? (
+                <Nav.Link onClick={handleLogout}>{t('LogOut')}</Nav.Link>
+              ) : (
+                <Nav.Link href="/signup">
+                  {t("Sign Up")}
+                </Nav.Link>
+              )}
+          
+            {/* <Nav.Link href='/signup'>{t('Sign Up')}</Nav.Link> */}
           </Nav>
 
 
@@ -295,6 +312,7 @@ const Topbar = () => {
               <span className="lang" onClick={() => changeLang("es")}>Español</span>
               <span className="lang" onClick={() => changeLang("nl")}>Dutch</span>
               <span className="lang" onClick={() => changeLang("fr")}>Français</span>
+              <span className="lang" onClick={() => changeLang("ch")}>Chinese</span>
               <span className="lang" onClick={() => changeLang("hi")}>Hindi</span>
             </div>
           )}
