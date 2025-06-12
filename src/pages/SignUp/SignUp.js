@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import axios from 'axios';
-import '../Styles/AuthForm.css';
-import { Link, useNavigate } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import Swal from 'sweetalert2';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import '../Styles/AuthForm.css';
 
 const SignUp = () => {
   const [user, setUser] = useState({ name: '', email: '', password: '' });
@@ -29,7 +29,7 @@ const SignUp = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:5001/users',
+        'https://decentmed-server.vercel.app/users',
         user,
         {
           headers: {
@@ -156,7 +156,7 @@ export default SignUp;
 //       return;
 //     }
 //     try {
-//       await axios.post('http://localhost:5001/users', user);
+//       await axios.post('https://decentmed-server.vercel.app/users', user);
 //       setSuccess('singup success')
 //       navigate('/signin');
 // console.log('hello111222');

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import axios from 'axios';
-import '../Styles/AuthForm.css';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'; // ✅ SweetAlert import
-import { useTranslation } from 'react-i18next';
+import '../Styles/AuthForm.css';
 
 const SignIn = () => {
   const [user, setUser] = useState({ email: '', password: '' });
@@ -21,9 +21,9 @@ const SignIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+https://decentmed-server.vercel.app/
     try {
-      const res = await axios.post('http://localhost:5001/signin', user);
+      const res = await axios.post('https://decentmed-server.vercel.app/signin', user);
 
       localStorage.setItem('token', res.data.token);
 
