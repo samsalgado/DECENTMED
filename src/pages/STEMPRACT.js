@@ -21,7 +21,6 @@ export function StemPract() {
           fontFamily: 'sans-serif'
         }}>{t("Stem Cell Therapy")}</h1>
           <h2>{t("Searching Stem Cell Therapy Near me? We have you covered!")}</h2>
-
         <div class="row" >
           <div class="col-md-4">
           </div>
