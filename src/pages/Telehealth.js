@@ -22,8 +22,6 @@ export function Telehealth() {
             <div className='container'>
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
-
-            <Practice />
             <div className='video-container'>
                 <iframe
                     height='315'
@@ -33,11 +31,8 @@ export function Telehealth() {
                     allowFullScreen
                 ></iframe>
             </div>
-            <div>
-                <Practices />
-            </div>
+            <Practices />
             <Practice />
-
             <div>
                 <Info7 />
             </div>

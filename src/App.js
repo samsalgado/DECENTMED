@@ -62,6 +62,7 @@ import {
 } from '@tanstack/react-query'
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/Login/SignIn';
+import { StemPract } from './pages/STEMPRACT';
 //import AddtoCart from './addtocart/addtocart';
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
           <Route path="/stemcell" element={<StemCell t={t} />} />
           <Route path="/ayurveda" element={<Ayurveda t={t} />} />
           <Route path="/coaching" element={<Coaching t={t} />} />
+          <Route path="/stemcellproviders" element={<StemPract t={t} />} />
           <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
           <Route path="/acupuncturists" element={<Acupract t={t} />} />
           <Route path="/blog" element={<BlogPage t={t} />} />
