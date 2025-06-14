@@ -2,7 +2,6 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
-import ReactPlayer from 'react-player';
 import Treis from '../cards/oceantreis.jpg';
 import { useTranslation } from 'react-i18next'
 export function Acupract() {
@@ -34,12 +33,14 @@ const { t } = useTranslation('common');
         </figure>
       </a>
       <div>
-      <ReactPlayer
-url="https://www.youtube.com/embed/8jIWHpmePZ8"
-height='400px'
-width="100%"
-controls={true}
-/>
+      <iframe
+  src="https://drive.google.com/file/d/1hmNaUgvbJ7nI5rmKIliGsLDsmEmdUsoJ/preview"
+  width="100%"
+  height="315px"
+  title="Acupuncture"
+  allow="autoplay"
+  allowFullScreen
+></iframe>
 </div>
   <h5>{t("Ocean Treis Medical:")}</h5>
       <p>

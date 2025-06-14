@@ -2,7 +2,6 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
-import ReactPlayer from 'react-player';
 import Nutrifyourlife from '../cards/nutrifyourlife.jpg';
 import { useTranslation } from 'react-i18next'
 export function Nutritionpract() {
@@ -35,12 +34,15 @@ const { t } = useTranslation('common');
         </figure>
       </a>
       <div>
-      <ReactPlayer
-url="https://www.youtube.com/embed/Wezd6eo9Cfo"
-height='400px'
-width="100%"
-controls={true}
-/>
+      <iframe
+  src="https://drive.google.com/file/d/1FAa9HGZ_ABcLCE-75EbRyitItoW5FFmg/preview"
+  width="100%"
+  height="355px"
+  allow="autoplay"
+  title='nutrition provider'
+  frameBorder="0"
+  allowFullScreen
+></iframe>
 </div>
   <h5>{t("Nutrify Your Life:")}</h5>
       <p>

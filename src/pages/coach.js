@@ -2,7 +2,6 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
-import ReactPlayer from 'react-player';
 import Gorilla from '../cards/gorilla.png';
 import { useTranslation } from 'react-i18next'
 export function Coaching() {
@@ -35,12 +34,21 @@ const { t } = useTranslation('common');
         </figure>
       </a>
       <div>
-      <ReactPlayer
-url="https://www.youtube.com/embed/wjfii_CWOtk?si=UlgWyCOtFki3S-Rp"
-height='400px'
-width="100%"
-controls={true}
-/>
+      <iframe
+  src="https://drive.google.com/file/d/1Z0qVqBe8ukAEMHmKQtzqtWhWx1orq1ri/preview"
+  width="100%"
+  title="John Craig" 
+  height="355px"
+  allow="autoplay"
+  frameBorder="0"
+  allowFullScreen
+  style={{
+    borderRadius: '12px',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+    border: 'none',
+    overflow: 'hidden'
+  }}
+></iframe>
 </div>
   <h5>{t("Gorilla and She Coaching:")}</h5>
       <p>

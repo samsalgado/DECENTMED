@@ -29,23 +29,21 @@ import drsebi from '../images copy/drsebi.jpeg';
 import { useTranslation } from 'react-i18next';
 import cogDutch from '../images copy/IMG_9279.jpeg';
 import cogHindi from '../images copy/IMG_9280.jpeg';
-
 const Nutritionpage = () => {
   const { t } = useTranslation("common");
 
   return (
     <div className='container'>
       <h1 className="title">{t('Nutrition')}</h1>
-      
       <iframe 
-        width="100%" 
-        height="650px" 
-        src="https://www.youtube.com/embed/0k7Nm4Z8Z2Y" 
-        title="YouTube video player" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowFullScreen
-      />
-
+  width="100%" 
+  height="650px" 
+  src="https://rumble.com/embed/v6skowd/?pub=4hu51y" 
+  title="Video player" 
+  allow="autoplay" 
+  allowFullScreen
+  frameBorder="0"
+/>
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>

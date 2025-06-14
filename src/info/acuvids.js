@@ -7,24 +7,8 @@ const Acuvids = () => {
     const [plant] = useState([
         {
             id: 1,
-            videoUrl: "https://www.youtube.com/embed/MjjOA27WWRk",
+            videoUrl:"https://drive.google.com/file/d/1_sNxbwxBreVHlcA0cZsNjr6S0L0R_Z-u/preview",
             name: t("Burnout from Work - Use Acupuncture")
-            
-        },
-        {
-            id: 2,
-            videoUrl: "https://www.youtube.com/embed/2-Gs2-D5HVw" ,
-            name: `${t("Nettie Criscio AP")}`
-        },
-        {
-            id: 4,
-            videoUrl: "https://www.youtube.com/embed/YDNUIv1zamQ",
-            name: `${t("How to Stop Choosing the Wrong Relationships")}`
-        },
-        {
-            id: 6,
-            videoUrl: "https://www.youtube.com/embed/b8A2ZfP8vxY",
-            name: `${t("Acupuncture Treatment (What to know)")}`
         }
     ]);
     return (

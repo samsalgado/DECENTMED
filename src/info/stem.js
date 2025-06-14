@@ -46,12 +46,11 @@ const Stem = () => {
       {/* Responsive Video */}
       <div className="video-container">
         <iframe
-          src="https://www.youtube.com/embed/MjDP_a3fhjQ?si=xZx3gE9QeeOmjpsN"
+          src="https://drive.google.com/file/d/1ECrjiFNkxNs2RU1EtobXh3AbWFkrmAut/preview"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
-        
       </div>
 
       {/* Flex container for equal width collapsibles */}

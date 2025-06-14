@@ -22,15 +22,15 @@ export function Telehealth() {
             <div className='container'>
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
-            <div className='video-container'>
-                <iframe
-                    height='315'
-                    src="https://www.youtube.com/embed/9jbz_nHvS9A"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
-            </div>
+            <iframe
+  src="https://drive.google.com/file/d/1OmxzLGYcDnO1zC9hAhiExE1n7xoVMtDR/preview"
+  width="100%"
+  height="315px"
+  allow="autoplay"
+  allowFullScreen
+  frameBorder="0"
+  title='DecentMed'
+></iframe>
             <Practices />
             <Practice />
             <div>

@@ -227,7 +227,7 @@ const Hoxsey = ({t}) => {
 <iframe 
   className="rumble" 
   width="100%" 
-  height="400px" 
+  height="400px"
   src="https://drive.google.com/file/d/1JsO6uRAF1QfqSH1mZweBb29IEeyLeyTG/preview" 
   frameBorder="0" 
   allowFullScreen 

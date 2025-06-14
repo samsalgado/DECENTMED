@@ -65,7 +65,7 @@ const {t} = useTranslation('common')
       </h1>
       <div className='container'>
     <iframe width='100%' height='700px'
- src="https://www.youtube.com/embed/NWIDl_FOexQ?si=lNYCdwUMzlmqfGt6"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+ src="https://drive.google.com/file/d/1NTZT1DQGzBkUQMTAfIkgZDOsQAqI90jt/preview"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
 
       </div>

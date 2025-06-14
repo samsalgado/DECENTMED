@@ -2,7 +2,6 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
-import ReactPlayer from 'react-player';
 import Stacy from '../cards/healinggoddess.png'
 import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
@@ -39,14 +38,23 @@ export function AYPract() {
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
-      <div>
-      <ReactPlayer
-url="https://www.youtube.com/embed/pM79ofh3cUM"
-height='400px'
-width="100%"
-controls={true}
-/>
-</div>
+      <div className="video-wrapper">
+        <iframe
+          width="100%"
+          height="515"
+          src="https://drive.google.com/file/d/1D8iq7LsXMgercG-_td7e7gQexodAfzSv/preview"
+          title="Patient Acquisition Engine Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{
+            borderRadius: '12px',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
+            border: 'none',
+            overflow: 'hidden'
+          }}
+        />
+      </div>
+
       <h5>{t('Stacy Theodossin - The Healing Goddess')}      </h5>
       <p>
       {t("After Stacy graduated from San Diego State University in 1992, she moved to the Detroit area and began her career in sales and marketing. She traveled the world and climbed the corporate ladder. But something was missing. Before long, she was back to her studies – this time in Ayurvedic Medicine. Her own journey to health and healing, through Ayurveda, had already begun a few years earlier -- when she was a patient with her own chronic health conditions. When she had the opportunity to deepen her knowledge, she jumped at the chance. At first, it was from an academic standpoint. She couldn’t wrap her mind around how it all worked. After hours and years of study and residency, she found the answers she sought. Then, her mission was clear – she needed to teach others how to HEAL & TRANSFORM their own lives through Ayurveda, the 'wisdom of life.")}
