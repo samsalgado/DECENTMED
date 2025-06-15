@@ -38,7 +38,7 @@ const { t } = useTranslation('common');
       </p>
       <p>{t("How much are our services?")}</p>
       <p>{t("Quantum leap bodywork is R1000 for 60 min and R1600 for 120 min. R1600 for online consultation.")}</p>
-
+      <iframe src="https://iframe.iono.fm/chan/123" title='Homeopathy Podcast' width="100%" height="450" frameborder="0"></iframe>
     </div>
   </div>
   <div class="row">
