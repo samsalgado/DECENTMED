@@ -6,354 +6,225 @@ const {t} = useTranslation('common')
   const [plant] = useState([
     {
         id: 1,
-        videoUrl: "https://www.youtube.com/embed/YeZBT6KMp8w?si=cLSpPZ8nMSpaW45L",
+        videoUrl: "https://drive.google.com/file/d/1BuzdZ_vKZAZsMxEGT1tTIjQ7ivr6u4l_/preview",
         name: `${t('Goldenseal Herb')}`,
     },
     {
-        id: 2,
-        videoUrl: "https://www.youtube.com/embed/gFhV5Si6z68?si=Ivd6tBkIi8BLBRK9",
-        name: `${t('Bidens Pilosa Plant')}`
-    },
-    {
         id: 3,
-        videoUrl: "https://www.youtube.com/embed/b5lzqiSX-4E?si=6Trxzvh1F6CfwASs",
+        videoUrl: "https://drive.google.com/file/d/1BS4fA9VaoW_C0uK6zoGsdrDLb8kUdunR/preview",
         name: `${t('Echinacea')}`
     },
     {
-        id: 4,
-        videoUrl: "https://www.youtube.com/embed/P0-ujiQysaU?si=dnBYTjZJjFpPthYe",
-        name: `${t('Heliconia Metallica')}`
-    },
-    {
         id: 5,
-        videoUrl: "https://www.youtube.com/embed/uWE9z7yda0Y?si=vZLmF4OzxHlA0kCy",
+        videoUrl: "https://drive.google.com/file/d/1AWBxTGqCFm4vp_LurBYSKzg9hmydlNec/preview",
         name: `${t('Golden raintree')}`
     },
     {
         id: 6,
-        videoUrl: "https://www.youtube.com/embed/9-56XDGZ9h8?si=fml-0i_oqFbAYLkf",
+        videoUrl: "https://drive.google.com/file/d/1W39LpYI4FEOsGi_E0QVsEHHQIdnvi_cA/preview",
         name: `${t('Platycadus Orientalis')}`
     },
     {
         id: 7,
-        videoUrl: "https://www.youtube.com/embed/ZlwdkZLJgDY?si=MrAuHKiGkgLDgEKe",
+        videoUrl: "https://drive.google.com/file/d/1aXufzeFI-OJd3WeyxIwcigW_6Hn42AHo/preview",
         name: `${t('Plumbago')}`
     },
     {
-        id: 8,
-        videoUrl: "https://www.youtube.com/embed/-46uMGNFoAs?si=4RHGWTQoJjfKrKAR",
-        name: `${t('Plumeria')}`
-    },
-    {
         id: 9,
-        videoUrl: "https://www.youtube.com/embed/3T2u80WxRKA?si=EtfEbgbzXKThmS_N",
+        videoUrl: "https://drive.google.com/file/d/1z3Ou0u47IJW_J867Z1-eeFVcy8r15nAs/preview",
         name: `${t('Aloe Vera')}`
     },
     {
         id: 10,
-        videoUrl: "https://www.youtube.com/embed/xCqygRzrUMY?si=cTBrmpovANZ3VxEm",
+        videoUrl: "https://drive.google.com/file/d/1pVJMlbtEVcjVzXxUnZHgued9TGcjNScX/preview",
         name: `${t('Crepe Myrtle')}`
     },
-    {
-        id: 11,
-        videoUrl: "https://www.youtube.com/embed/-MatPZb-rxg?si=POCZ2jMXpaFuLEcF",
-        name: `${t('Silver Maple')}`
-    },
+    
     {
         id: 12,
-        videoUrl: "https://www.youtube.com/embed/hs-11vr5wWY?si=zKD-ykhakh6Io_7E",
+        videoUrl: "https://drive.google.com/file/d/1scDfw1j37oyHR6H773ApzOTzljIfnfR5/preview",
         name: `${t('Elderberry')}`
     },
     {
         id: 13,
-        videoUrl: "https://www.youtube.com/embed/Paz8kPCdOo8?si=tj590SAxlckR5dCM",
+        videoUrl: "https://drive.google.com/file/d/1_TIY-5mPSCgq5tCF4HBScDd7aXXJKnMq/preview",
         name: `${t('Dandelion Root')}`
     },
     {
         id: 14,
-        videoUrl: "https://www.youtube.com/embed/ZOhZXi8uotk?si=3TE8JgMgIa-zrJXF",
+        videoUrl: "https://drive.google.com/file/d/1xqvayT504gteyWX80L43kWCPRyvJCGPC/preview",
         name: `${t('Quercus Robur')}`
     },
     {
         id: 15,
-        videoUrl: "https://www.youtube.com/embed/_Vr2qoEaeuE?si=xI6XKlZiQAoUhCWL",
+        videoUrl: "https://drive.google.com/file/d/1QpSfEjfGyvCdp83weEHhPLP3ArrbkNhe/preview",
         name: `${t('Virginia Mountain Mint')}`
     },
     {
         id: 16,
-        videoUrl: "https://www.youtube.com/embed/4y_JFUMup54?si=1nNXdQV4UIyt3R9T",
+        videoUrl: "https://drive.google.com/file/d/1bOyjNdcUJ7Mr3PGgRTv9R-gpNvFqrlvi/preview",
         name: `${t('Wild Bergamot')}`
     },
     {
         id: 17,
-        videoUrl: "https://www.youtube.com/embed/R5vBTjyIrLE?si=LNkrjGktNoHu_zEk",
+        videoUrl: "https://drive.google.com/file/d/1SRC7udJIgIJyZsp3GYYzxlLCB6LvFEAe/preview",
         name: `${t('Moringa')}`
     },
     {
         id: 18,
-        videoUrl: "https://www.youtube.com/embed/FuiEgNf8PnQ?si=3Xy_-jfr-1Da1hgq",
+        videoUrl: "https://drive.google.com/file/d/1S-EdvImf_6DusccEqzuBteyAPo0UbRzQ/preview",
         name: `${t('Great Lobelia')}`
     },
     {
         id: 19,
-        videoUrl: "https://www.youtube.com/embed/-dIargQTX7E?si=4MBG7DeTx9-8U3if",
+        videoUrl: "https://drive.google.com/file/d/1kkkkElaJh7WyTn2meUrN_iHFvfg1Yq6K/preview",
         name: `${t('Jewelweed')}`
     },
     {
         id: 20,
-        videoUrl: "https://www.youtube.com/embed/Wef_Dyif_vA?si=ClPB06JRDKWEGYMs",
+        videoUrl: "https://drive.google.com/file/d/1RxLBiAmTbte08UFUMued5FzJBRmEIhPl/preview",
         name: `${t('Rhus Typhina')}`
     },
     {
         id: 21,
-        videoUrl: "https://www.youtube.com/embed/MnV10TKtl2A?si=MO_WJhWg6yol4lKX",
+        videoUrl: "https://drive.google.com/file/d/1A1Jz9ejlCmAbJjWrEyh8eVmCv8dxuAYk/preview",
         name: `${t('African Tulip Tree')}`
     },
-    {
-        id: 22,
-        videoUrl: "https://www.youtube.com/embed/yMgXrBoJqSs?si=cWXXhaR9EHU6JyOr",
-        name: `${t('Rosa Nutkana')}`
-    },
-    {
-        id: 24,
-        videoUrl: "https://www.youtube.com/embed/M5IPjiJ3G50?si=hlVjfeqfZ9sgE74g",
-        name: `${t('Black Locust Tree')}`
-    },
-    {
-        id: 25,
-        videoUrl: "https://www.youtube.com/embed/khZ7BudeLXs?si=GZD71rOGzEMT7nl4",
-        name: `${t('Centaurea scabiosa')}`
-    },
-    {
-        id: 26,
-        videoUrl: "https://www.youtube.com/embed/f4J1_yG8HZ8?si=-sYxCm1uJpv4n9dO",
-        name: `${t('Tansy')}`
-    },
+    
+    
+    
     {
         id: 27,
-        videoUrl: "https://www.youtube.com/embed/qwuF1WNS5vY?si=f4bVyLkWL7NzbJUs",
+        videoUrl: "https://drive.google.com/file/d/1sifshmL4pyuHB2YnpubbxcQl12YnArmr/preview",
         name: `${t('Hawthorn')}`
     },
-    {
-        id: 28,
-        videoUrl: "https://www.youtube.com/embed/wdhm2q9XGj0?si=XEr50Jdz5fZ8G0tM",
-        name: `${t('Ox-Eye Daisy')}`
-    },
+    
     {
         id: 29,
-        videoUrl: "https://www.youtube.com/embed/dMK5IY8IChQ?si=l92ZqGTMMLnVINyf",
+        videoUrl: "https://drive.google.com/file/d/1B7onN62i98GnLRhwyD8in7ji3vETh3A3/preview",
         name: `${t('Silver Birch')}`
     },
-    {
-        id: 30,
-        videoUrl: "https://www.youtube.com/embed/CodmjSsZoZ0?si=KRh8G2cUL7O5ni7W",
-        name: `${t('Melilotus Albus')}`
-    },
+   
     {
         id: 31,
-        videoUrl: "https://www.youtube.com/embed/sef5Ro1O9D0?si=1NGE9WGQBtOPP64N",
+        videoUrl: "https://drive.google.com/file/d/1ERMXHM1-HrlRfKTkniWgjYwyYkLvNY_F/preview",
         name: `${t('Purple Loosestrife')}`
     },
     {
         id: 32,
-        videoUrl: "https://www.youtube.com/embed/3Z5-Mf92H6k?si=I9FCQ43uZZOXTT-9",
+        videoUrl: "https://drive.google.com/file/d/1ODDEdscTPzE_HQbSnnVrKJbvCRECzSLY/preview",
         name: `${t('Burmuda Grass')}`
     },
-    {
-        id: 33,
-        videoUrl: "https://www.youtube.com/embed/5ubbxpponns?si=6PuwFbQ8tLKRIOBy",
-        name: `${t('Spiny Amaranth')}`
-    },
-    {
-        id: 34,
-        videoUrl: "https://www.youtube.com/embed/oWL3Fm4xL80?si=1sV1mQF-RsvYi2xD",
-        name: `${t('Thyme-Leaf Sandwort')}`
-    },
-    {
-        id: 35,
-        videoUrl: "https://www.youtube.com/embed/Mt9mz7jQEwk?si=i0JwoKaL33eu9yEs",
-        name: `${t('Piripiri')}`
-    },
+  
     {
         id: 36,
-        videoUrl: "https://www.youtube.com/embed/rfd8Xtl6jcE?si=RKrb9pkXAPWerS3C",
+        videoUrl: "https://drive.google.com/file/d/1IZWL3wlQpkHRH42YZBkslqczpV-22Q0U/preview",
         name: `${t('Lavender')}`
     },
     {
         id: 37,
-        videoUrl: "https://www.youtube.com/embed/oV7UQRXu6X0?si=GqGYmGUcQ2engYhV",
+        videoUrl: "https://drive.google.com/file/d/1KzbloPOa5z9Mymainc-JNZ8Pk9_z-Kcc/preview",
         name: `${t('Angels Trumpet')}`
     },
     {
         id: 38,
-        videoUrl: "https://www.youtube.com/embed/XnzEMpsR6WM?si=GFB7KnQehfxnCrSl",
+        videoUrl: "https://drive.google.com/file/d/1omRAFRJOarQFBa406HbxA-LSoBHvKo8o/preview",
         name: `${t('Indian Almond Leaf')}`
     },
-    {
-        id: 39,
-        videoUrl: "https://www.youtube.com/embed/KbpKmu4NZeg?si=3fop_upSQmrW_r16",
-        name: `${t('Peumus Boldus')}`
-    },
-    {
-        id: 40,
-        videoUrl: "https://www.youtube.com/embed/xQiCRN_gie8",
-        name: `${t('English Ivy')}`
-    },
+   
     {
         id: 41,
-        videoUrl: "https://www.youtube.com/embed/TAekH3a9fRU?si=ZB0OxqxnBaC0nUay",
+        videoUrl: "https://drive.google.com/file/d/15YqsYVW9W_9NyECrtZCzj72REzqEV66p/preview",
         name: `${t('Wedelia')}`
     },
-    {
-        id: 42,
-        videoUrl: "https://www.youtube.com/embed/N1ztMOfIkGw?si=p848MXDle08nZRVc",
-        name: `${t('Bush Candle Tree')}`
-    },
+    
     {
         id: 43,
-        videoUrl: "https://www.youtube.com/embed/lcKeU_AKQeQ",
+        videoUrl: "https://drive.google.com/file/d/117i79_KVKIVZPkbtQT_LuP5dEQuvO6AC/preview",
         name: `${t('Heavenly Bamboo')}`
     },
-    {
-        id: 44,
-        videoUrl: "https://www.youtube.com/embed/u0EopIpcrAw",
-        name: `${t('Chinese Holly')}`
-    },
-    {
-        id: 45,
-        videoUrl: "https://www.youtube.com/embed/mRSnRX53QNc",
-        name: `${t('Johnny Jump Up')}`
-    },
+   
+    
     {
         id: 46,
-        videoUrl: "https://www.youtube.com/embed/SlWgwzVn0rM",
+        videoUrl: "https://drive.google.com/file/d/1v2YJ0KV8nFz5PO9H6lWmSC0oBEiaz_VZ/preview",
         name: `${t('Chinese Witch Hazel')}`
     },
-    {
-        id: 47,
-        videoUrl: "https://www.youtube.com/embed/_dA-c1F9aew",
-        name: `${t('Bigleaf Hydrangea')}`
-    },
+    
     {
         id: 48,
-        videoUrl: "https://www.youtube.com/embed/1cB4G1oVtxk",
+        videoUrl: "https://drive.google.com/file/d/1QptS5Ghu21gUdOvrdJbRi7AKNSQgb4TM/preview",
         name: `${t('Oriental bittersweet')}`
     },
-    {
-        id: 49,
-        videoUrl: "https://www.youtube.com/embed/_aZqcCtMDNs",
-        name: `${t('Common Boxwood')}`
-    },
+   
     {
         id: 50,
-        videoUrl:"https://youtube.com/embed/vEiwD8mdxe4",
+        videoUrl:"https://drive.google.com/file/d/1lX3CLM1UuaTQK62xN9FFUqdmG5go_8tn/preview",
         name: `${t('Winged Spindle Tree')}`
     },
-    {
-        id: 51,
-        videoUrl:"https://www.youtube.com/embed/ITqIATgSwH0",
-        name: `${t('French Lavender')}`
-    },
+   
     {
         id:52,
-        videoUrl:"https://www.youtube.com/embed/hVaT0GEhKnA",
-        name: `${t('Rosin Weed Plant')}`
+        videoUrl:"https://drive.google.com/file/d/1Tern4WH4keiPoXM2_NE7z2XX3hiGSBWS/preview",
+        name: `${t('Black Willow')}`
     },
     {
         id:53,
-        videoUrl: "https://www.youtube.com/embed/dmbJUMaZq_s?feature=share",
+        videoUrl: "https://drive.google.com/file/d/1b-AD95XdSYsMdGdQaQTaWfFcfeeiYr6S/preview",
         name: `${t('Blackberry')}`
     },
-    {
-        id:54,
-        videoUrl:"https://www.youtube.com/embed/qLXaDR1qZ_U",
-        name: `${t('Slender Amaranth')}`
-    },
-    {
-        id:55,
-        videoUrl: "https://www.youtube.com/embed/lrE0nYyiaPs",
-        name: `${t('Coral Tree')}`
-    },
+    
+   
     {
         id:56,
-        videoUrl:"https://www.youtube.com/embed/d1tr1oj8hIY",
-        name: `${t('Lily of the Nile')}`
+        videoUrl:"https://drive.google.com/file/d/1myFYkL_Fe9pH5sbaCvt-4UvnYZMld2iD/preview",
+        name: `${t('Ditch Lily')}`
     },
     {
         id:57,
-        videoUrl:"https://www.youtube.com/embed/rHbqtcfKuZ8",
+        videoUrl:"https://drive.google.com/file/d/1s17zt5RpHUTDUcOIc6xXvAwbpkhOCFni/preview",
         name: `${t('Lily Magnolia')}`
     },
-    {
-        id:58,
-        videoUrl:"https://www.youtube.com/embed/Z-7UP5tMma8",
-        name: `${t('Sweet Gum Tree')}`
-    },
+    
     {
         id:59,
-        videoUrl:"https://www.youtube.com/embed/8uOE2r6bkaw",
+        videoUrl:"https://drive.google.com/file/d/1S8p1iDeD5tZL7AtuJY146fwFuYkqjX_6/preview",
         name: `${t('Mulberry')}`
     },
-    {
-        id:60,
-        videoUrl:"https://www.youtube.com/embed/d1El8YLjMbM",
-        name: `${t('Camellia')}`
-    },
+    
     {
         id:61,
-        videoUrl:"https://www.youtube.com/embed/D2cNN0u-thY",
+        videoUrl:"https://drive.google.com/file/d/1pkh6LmwSe9GmFixRbNGWgl8-at5MFofS/preview",
         name: `${t('Oleander')}`
     },
-    {
-        id:62,
-        videoUrl:"https://www.youtube.com/embed/p_7yHzi8jRE",
-        name:`${t('Ditch Lily')}`
-    },
+   
     {
         id:63,
-        videoUrl:"https://www.youtube.com/embed/h9ZDNtHrMuM",
+        videoUrl:"https://drive.google.com/file/d/1K3fFqslGlgV3aTCxPOp521O5l1_vnZvH/preview",
         name:`${t('Rose Tea')}`
     },
     {
         id:64,
-        videoUrl:"https://www.youtube.com/embed/H1vAnonkeSM",
+        videoUrl:"https://drive.google.com/file/d/1VBU5CAtMyvIpK0GLkUnRJSAL-mTIgFTZ/preview",
         name:`${t('Wild Sage')}`
     },
     {
         id:65,
-        videoUrl:"https://www.youtube.com/embed/ytbsI1YPWa8",
+        videoUrl:"https://drive.google.com/file/d/15dulWo-MNc4p4WVqXHo1ohCWdvCnUKyM/preview",
         name:`${t('Fremont Cottonwood')}`
     },
-    {
-        id:66,
-        videoUrl:"https://www.youtube.com/embed/H3bOZOhc-L8",
-        name:`${t('Ceiba speciosa')}`
-    },
+    
     {
         id:67,
-        videoUrl:"https://www.youtube.com/embed/TuuWF91mfyM",
+        videoUrl:"https://drive.google.com/file/d/1eQLEzNs_HPuOVuZJXX_qDCe6JhpwYv9a/preview",
         name:`${t('Kapok Tree')}`
     },
     {
         id:68,
-        videoUrl:"https://www.youtube.com/embed/LKAckTLt6Ic",
-        name:`${t('Koa Tree')}`
-    },
-    {
-        id:69,
-        videoUrl:"https://www.youtube.com/embed/Hv9HGwnH0Ug",
-        name:`${t('Firecracker Plant')}`
-    },
-    {
-      id:70,
-      videoUrl:"https://www.youtube.com/embed/xnMR4ZUdz_A",
-      name:`${t('Fragrant Inula')}`
-      },
-      {
-      id:71,
-      videoUrl:"https://www.youtube.com/embed/oNwiVguspDA",
-      name:`${t('Golden Dewdrops')}`
-      }
+        videoUrl:"https://drive.google.com/file/d/1jbFntKpQ-QTTSnz9wqJN-rmaWEg2qTrV/preview",
+        name:`${t('Benefits of Turmeric')}`
+
+    }
 ]);
 
     return (
@@ -398,7 +269,7 @@ const PlantCard = ({ val }) => {
                     <iframe
                         width="100%"
                         height="315"
-                        title="Video"
+                        title={`${val.name} Plant Video`}
                         src={val.videoUrl}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -418,8 +289,8 @@ const PlantCard = ({ val }) => {
                         <p>Loading...</p>
                     </div>
                 )}
-                <h3>{val.name}</h3>
             </div>
+            <h3>{val.name}</h3>
         </div>
     );
 }
