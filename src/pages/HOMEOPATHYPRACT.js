@@ -36,6 +36,9 @@ const { t } = useTranslation('common');
       <p>
       {t("We are applying the best of ancient and modern medicine to resolve difficult cases. The integrative medicine looks at the whole person, not at the disease symptoms. We are educating professionals and public of missing links in medicine. We are doing an ongoing research to enable us to use the best diagnostic and healing methods for the highest benefit of the patient. We are running courses for health professionals and laymen on various topics. We have projects on Corporate Health Management, HIV/AIDS/TB, crime, etc. We only work with people that have a genuine desire to change their lifestyle, transform and heal themselves on spiritual, mental, emotional and physical level.")}
       </p>
+      <p>{t("How much are our services?")}</p>
+      <p>{t("Quantum leap bodywork is R1000 for 60 min and R1600 for 120 min. R1600 for online consultation.")}</p>
+
     </div>
   </div>
   <div class="row">
