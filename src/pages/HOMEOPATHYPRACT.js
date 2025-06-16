@@ -26,7 +26,7 @@ const { t } = useTranslation('common');
   <div class="row">
     <div class="col-md-4">
       <h3>{t("Riches of Health")}</h3>
-      <a href='https://lotuspotentiaholistics.org/'>
+      <a href='https://www.richesofhealth.co.za/index.php?'>
       <figure>
         <img src={svet} alt="logo" />
           <figcaption>{t("View Website")}</figcaption>
