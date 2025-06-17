@@ -1,8 +1,8 @@
 import React from 'react';
 import '../info/Info.css'; // Import the CSS file
-import Offer from '../offers/offer';
+//import Offer from '../offers/offer';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
-import Offer2 from '../offers/offer2';
+//import Offer2 from '../offers/offer2';
 import Pricing from './pricingtiers';
 import price from '../images copy/PRICETIERRS.png';
 import { Button } from 'react-bootstrap';
@@ -23,12 +23,10 @@ const { t } = useTranslation("common");
         </div>
         <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
         <Button variant="primary" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
-          {t("Book Meeting")}
+          {t("Inquire about Pricing")}
         </Button>
       </div>
         <Pricing />
-        <Offer />
-        <Offer2 />
     </div>
 </div>
   );

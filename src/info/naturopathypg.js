@@ -13,12 +13,13 @@ const Naturo = () => {
         <h1 className='title'>{t('Naturopathy')}</h1>
         <iframe
           width="100%"
-          height="475"
-          src="https://www.youtube.com/embed/ztQkWx8YtRg?si=Yl4RRHUOkSiZ0Hst"
-          title="YouTube video player"
+          height="515"
+          src="https://drive.google.com/file/d/1By4SB2sG5sYqbOuo2n8JuPHDKnFZRt-5/preview"
+          title="Patient Acquisition Engine Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-        ></iframe>
+        />
+  
         <br></br>
         <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
         <NatStudy />

@@ -21,7 +21,7 @@ const Ayurvedaa = () => {
         <Elements />
       </div>
 
-      <iframe width="100%" height={500} src="https://www.youtube.com/embed/p_gfCxVZO_g" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <iframe width="100%" height={500} src="https://drive.google.com/file/d/1fFqRB-Z-QIq6t3DSjkBmvkXjBddLsnOG/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       
       <br />
 
@@ -38,7 +38,7 @@ const Ayurvedaa = () => {
         <p>4. {t('4. Truly intuitive')}</p>
       </div>
 
-      <iframe width="100%" height={315} src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=6L1vMYZEMeNPaCH-" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <iframe width="100%" height={315} src="https://drive.google.com/file/d/1D_amsczAnFyuk4pharUzZSZQcYaKefvw/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     </div>
   );
 }

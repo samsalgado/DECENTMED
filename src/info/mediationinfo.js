@@ -10,7 +10,7 @@ const MeditationInfo = () => {
   return (
     <div className='container'>
       <h1 className="title">{t('Meditation')}</h1>
-      <iframe width="100%" height={500} src="https://www.youtube.com/embed/cQ-pEQZrVvw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <iframe width="100%" height={500} src="https://drive.google.com/file/d/1gR__NvCEmnlJpOsJDUadgCDBSM-LZzCS/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
       <div style={{ marginTop: '20px', width: '100%' }}>
         <Button style={{ marginRight: '20px' }} variant="primary" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>

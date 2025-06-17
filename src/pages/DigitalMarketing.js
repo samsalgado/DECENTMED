@@ -30,9 +30,6 @@ export function Marketing() {
             
             <AdditionalServices />
             <AuditVids />
-            
-         
-
             {/* Centered image with mobile optimization */}
             <div style={{
                 display: 'flex',

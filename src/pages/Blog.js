@@ -10,6 +10,7 @@ import blogs from '../images copy/blogs.png';
 import mike from "../images copy/lanenaturopathy.png";
 import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
+import golf from "../images copy/golf.jpg";
 import tammy from "../images copy/tammy.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
@@ -95,7 +96,22 @@ const { t } = useTranslation("common");
         </figure>
       </a>
       </div>
-
+    </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('How Chiropractic Care Can Accelerate Recovery from Common Sports Injuries')}</h2>
+    <div className='pr'>
+    <p>
+    {t("Recover Faster from Sports Injuries with Expert Chiropractic Care in Miami Beach When you're active, injuries can feel like an unexpected detour.")}
+    </p>
+    <div className='container'>
+    <a href='https://www.drnarson.com/blog/1325688-how-chiropractic-care-can-accelerate-recovery-from-common-sports-injuries'>
+    <figure>
+        <img className='gridimag' src={golf} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+</div>  
     </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h2>

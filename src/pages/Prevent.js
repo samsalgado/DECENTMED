@@ -14,7 +14,6 @@ export function Prevent() {
             <Topbar />
             </header>
             <PreventWellness />
-            
             <footer>
                 <Footer />
             </footer>

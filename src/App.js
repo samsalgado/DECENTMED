@@ -1,8 +1,7 @@
-import { Routes } from 'react-router';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
-import { Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
@@ -46,89 +45,107 @@ import { Apoth } from './pages/Apoth';
 import { Chiro } from './pages/ChiroPRACT';
 import { Hypnopract } from './pages/hypnopract';
 import { AYPract } from './pages/AYPRACT';
-import {Nutritionpract} from './pages/nutritionpract';
-import {Coaching} from './pages/coach';
-import {HomeopathyPract} from './pages/HOMEOPATHYPRACT';
-import { Acupract} from './pages/acupract';
-import { Natpract} from './pages/naturopathics';
+import { Nutritionpract } from './pages/nutritionpract';
+import { Coaching } from './pages/coach';
+import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
+import { Acupract } from './pages/acupract';
+import { Natpract } from './pages/naturopathics';
 import { Naturopathy } from './pages/Naturopathy';
-// import SignUp from './pages/SignUp/SignUp';
-//import StripePayment from './pages/StripePayment/StripePayment';
-import Topbar from './pages/topbar';
-//import Login from './pages/Login/Login';
+import SignUp from './pages/SignUp/SignUp';
+import SignIn from './pages/Login/SignIn';
 import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-import SignUp from './pages/SignUp/SignUp';
-import SignIn from './pages/Login/SignIn';
-//import AddtoCart from './addtocart/addtocart';
+import { StemPract } from './pages/STEMPRACT';
+import React, { useEffect, useState } from 'react';
+import SignupPopup from './Components/SignupPopup';
 
 function App() {
   const { t } = useTranslation();
+  const queryClient = new QueryClient();
 
-  // Create a client
-  const queryClient = new QueryClient()
+  const location = useLocation();
+  // Popup state
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token && location.pathname !== '/signin' && location.pathname !== '/signup') {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 5000);
+      return () => clearTimeout(timer);
+    } else {
+     
+      setShowPopup(false);
+    }
+  }, [location.pathname]);
+
   return (
-    < QueryClientProvider client={queryClient} >
-        <Routes>
-          <Route exact path="/" element={<Home t={t} />} />
-          <Route path="/404" element={<NotFound />} />
-          <Route path="/naturopathylane" element={<Mike t={t} />} />
-          <Route path="/stemcell" element={<StemCell t={t} />} />
-          <Route path="/ayurveda" element={<Ayurveda t={t} />} />
-          <Route path="/coaching" element={<Coaching t={t} />} />
-          <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
-          <Route path="/acupuncturists" element={<Acupract t={t} />} />
-          <Route path="/blog" element={<BlogPage t={t} />} />
-          <Route path="/naturopathy" element={<Naturopathy t={t} />} />
-          <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
-          <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
-          <Route path="/apoth" element={<Apoth t={t} />} />
-          <Route path="/blog1" element={<Blog1 t={t} />} />
-          <Route path="/blog17" element={<Blog17 t={t} />} />
-          <Route path="/blog2" element={<Blog2 t={t} />} />
-          <Route path="/blog3" element={<Blog3 t={t} />} />
-          <Route path="/herbalmedicine" element={<HerbalMedicine t={t} />} />
-          <Route path='/hypnopract' element={<Hypnopract t={t} />} />
-          <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
-          <Route path='/chiropract' element={<Chiro t={t} />} />
-          <Route path='/meditation' element={<Meditation t={t} />} />
-          <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
-          <Route path="/blog4" element={<Blog4 t={t} />} />
-          <Route path="/blog11" element={<Blog11 t={t} />} />
-          <Route path="/cancer" element={<Blog6 t={t} />} />
-          <Route path="/blog5" element={<Blog5 t={t} />} />
-          <Route path="/blog15" element={<Blog15 t={t} />} />
-          <Route path="/blog15" element={<Blog15 t={t} />} />
-          <Route path="/bitcoin" element={<Bitcoin t={t}/>} />
-          <Route path="/ivermectin" element={<Ivermectin t={t} />} />
-          <Route path="/hoxsey" element={<Hoxsey t={t} />} />
-          <Route path="/fenbendazole" element={<Fen t={t} />} />
-          <Route path="/prevent" element={<Prevent t={t} />} />
-          <Route path="/blog8" element={<Blog8 t={t} />} />
-          <Route path="/blog9" element={<Blog9 t={t} />} />
-          <Route path="/blog16" element={<Blog16 t={t} />} />
-          <Route path="/blog10" element={<Blog10 t={t} />} />
-          <Route path="/blog12" element={<Blog12 t={t} />} />
-          <Route path="/blog14" element={<Blog14 t={t} />} />
-          <Route path="/detox" element={<Detox t={t} />} />
-          <Route path="/hypnotherapy" element={<Hypnotherapy t={t} />} />
-          <Route path="/nutrition" element={<Nutrition t={t} />} />
-          <Route path="/chiropractic" element={<Chiropractic t={t} />} />
-          <Route path="/acu" element={<Acupuncture t={t} />} />
-          <Route path="/chelation" element={<Chelation t={t} />} />
-          <Route path="/digitalmarketing" element={<Marketing t={t} />} />
-          <Route path="/homeopathy" element={<Homeopathy t={t} />} />
-          <Route path="/telehealth" element={<Telehealth t={t} />} />
-          <Route path="/about" element={<About t={t} />} />
-          <Route path="/blog7" element={<Blog7 t={t} />} />
-          <Route element={<Topbar t={t} />} />
-          <Route path="/signup" element={<SignUp t={t} />} />
-          <Route path="/signin" element={<SignIn t={t} />} />
-        </Routes>
-    </QueryClientProvider >
-  )
+    <QueryClientProvider client={queryClient}>
+      {/* <Topbar t={t} /> */}
+
+      <Routes>
+        <Route exact path="/" element={<Home t={t} />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path="/naturopathylane" element={<Mike t={t} />} />
+        <Route path="/stemcell" element={<StemCell t={t} />} />
+        <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+        <Route path="/coaching" element={<Coaching t={t} />} />
+        <Route path="/stemcellproviders" element={<StemPract t={t} />} />
+        <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
+        <Route path="/acupuncturists" element={<Acupract t={t} />} />
+        <Route path="/blog" element={<BlogPage t={t} />} />
+        <Route path="/naturopathy" element={<Naturopathy t={t} />} />
+        <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
+        <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
+        <Route path="/apoth" element={<Apoth t={t} />} />
+        <Route path="/blog1" element={<Blog1 t={t} />} />
+        <Route path="/blog17" element={<Blog17 t={t} />} />
+        <Route path="/blog2" element={<Blog2 t={t} />} />
+        <Route path="/blog3" element={<Blog3 t={t} />} />
+        <Route path="/herbalmedicine" element={<HerbalMedicine t={t} />} />
+        <Route path='/hypnopract' element={<Hypnopract t={t} />} />
+        <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
+        <Route path='/chiropract' element={<Chiro t={t} />} />
+        <Route path='/meditation' element={<Meditation t={t} />} />
+        <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
+        <Route path="/blog4" element={<Blog4 t={t} />} />
+        <Route path="/blog11" element={<Blog11 t={t} />} />
+        <Route path="/cancer" element={<Blog6 t={t} />} />
+        <Route path="/blog5" element={<Blog5 t={t} />} />
+        <Route path="/blog15" element={<Blog15 t={t} />} />
+        <Route path="/bitcoin" element={<Bitcoin t={t} />} />
+        <Route path="/ivermectin" element={<Ivermectin t={t} />} />
+        <Route path="/hoxsey" element={<Hoxsey t={t} />} />
+        <Route path="/fenbendazole" element={<Fen t={t} />} />
+        <Route path="/prevent" element={<Prevent t={t} />} />
+        <Route path="/blog8" element={<Blog8 t={t} />} />
+        <Route path="/blog9" element={<Blog9 t={t} />} />
+        <Route path="/blog16" element={<Blog16 t={t} />} />
+        <Route path="/blog10" element={<Blog10 t={t} />} />
+        <Route path="/blog12" element={<Blog12 t={t} />} />
+        <Route path="/blog14" element={<Blog14 t={t} />} />
+        <Route path="/detox" element={<Detox t={t} />} />
+        <Route path="/hypnotherapy" element={<Hypnotherapy t={t} />} />
+        <Route path="/nutrition" element={<Nutrition t={t} />} />
+        <Route path="/chiropractic" element={<Chiropractic t={t} />} />
+        <Route path="/acu" element={<Acupuncture t={t} />} />
+        <Route path="/chelation" element={<Chelation t={t} />} />
+        <Route path="/digitalmarketing" element={<Marketing t={t} />} />
+        <Route path="/homeopathy" element={<Homeopathy t={t} />} />
+        <Route path="/telehealth" element={<Telehealth t={t} />} />
+        <Route path="/about" element={<About t={t} />} />
+        <Route path="/blog7" element={<Blog7 t={t} />} />
+        <Route path="/signup" element={<SignUp t={t} />} />
+        <Route path="/signin" element={<SignIn t={t} />} />
+      </Routes>
+
+      {/* Show signup popup if user is not logged in */}
+      {showPopup && <SignupPopup onClose={() => setShowPopup(false)} />}
+    </QueryClientProvider>
+  );
 }
 
 export default App;

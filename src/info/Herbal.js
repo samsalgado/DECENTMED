@@ -11,11 +11,20 @@ const {t} = useTranslation('common')
         <h1 className='title'>{t('Herbal Medicine')}</h1>
         <div className="video-container">
         <iframe
-          src="https://www.youtube.com/embed/hDEbSxpnJhY?si=Is35CdcfP550htKY"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+  src="https://drive.google.com/file/d/1qbnYhsRJpEOCuK2L-MdyjV-wgMp8UAJe/preview"
+  width="100%"
+  title='Herbal Homepage'
+  height="355px"
+  allow="autoplay"
+  frameBorder="0"
+  allowFullScreen
+  style={{
+    borderRadius: '12px',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+    border: 'none',
+    overflow: 'hidden'
+  }}
+></iframe>
         </div>
         <div className="button-container">
         <Button variant="primary" href="https://www.paulhaider.com/" target="_blank">
