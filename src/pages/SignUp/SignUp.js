@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
 
 const SignUp = () => {
-  const [user, setUser] = useState({ name: '', email: '', password: '' });
+const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false); // 👁️ Show/hide toggle
@@ -71,52 +71,80 @@ const SignUp = () => {
 
   return (
     <div className="auth-form-container">
-      <form className="auth-form" onSubmit={handleSubmit}>
-        <h2>{t("Create Account")}</h2>
-        {error && <p className="error">{error}</p>}
-        {loading && <div className="loader"></div>}
+  
+     <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
+  {/* Close icon */}
+  <div
+    onClick={() => navigate("/")}
+    style={{
+      position: "absolute",
+      top: "20px",
+      right: "20px",
+      fontSize: "20px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      background: "transparent",
+      border: "none",
+      color: "#333"
+    }}
+  >
+    ❌
+  </div>
+<h2>{t("Create Account")}</h2>
+  {error && <p className="error">{error}</p>}
+  {loading && <div className="loader"></div>}
 
-        <input
-          type="text"
-          name="name"
-          placeholder={t("Full Name")}
-          value={user.name}
-          onChange={handleChange}
-          required
-        />
+  <input
+    type="text"
+    name="name"
+    placeholder={t("Full Name")}
+    value={user.name}
+    onChange={handleChange}
+    required
+  />
 
-        <input
-          type="email"
-          name="email"
-          placeholder={t("Email Address")}
-          value={user.email}
-          onChange={handleChange}
-          required
-        />
+  <input
+    type="email"
+    name="email"
+    placeholder={t("Email Address")}
+    value={user.email}
+    onChange={handleChange}
+    required
+  />
 
-        <div className="password-field">
-          <input
-            type={showPassword ? "text" : "password"}
-            name="password"
-            placeholder={t("Password")}
-            value={user.password}
-            onChange={handleChange}
-            required
-          />
-          <span
-            className="eye-icon"
-            onClick={() => setShowPassword(!showPassword)}
-          >
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
-          </span>
-        </div>
+  <div className="password-field">
+    <input
+      type={showPassword ? "text" : "password"}
+      name="password"
+      placeholder={t("Password")}
+      value={user.password}
+      onChange={handleChange}
+      required
+    />
+    <span
+      className="eye-icon"
+      onClick={() => setShowPassword(!showPassword)}
+    >
+      {showPassword ? <FaEyeSlash /> : <FaEye />}
+    </span>
+  </div>
 
-        <button type="submit" disabled={loading}>
-          {loading ? <>{t("Sign Up")}...</> :<>{t("Sign Up")}</> }
-        </button>
+  {/* ✅ NEW CODE INPUT */}
+  <input
+    type="text"
+    name="code"
+    placeholder={t("Affiliate Code (optional)")}
+    value={user.code}
+    onChange={handleChange}
+  />
 
-        <p> {t("Already have an account?")}<Link to="/signin">{t("Sign In")}</Link></p>
-      </form>
+  <button type="submit" disabled={loading}>
+    {loading ? <>{t("Sign Up")}...</> :<>{t("Sign Up")}</> }
+  </button>
+
+  <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
+</form>
+
     </div>
   );
 };

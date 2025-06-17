@@ -2,8 +2,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2'; // ✅ SweetAlert import
+import { Link, useNavigate } from 'react-router-dom'; // ✅ useNavigate add korlam
+import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
 
 const SignIn = () => {
@@ -12,6 +12,7 @@ const SignIn = () => {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const { t } = useTranslation('common');
+  const navigate = useNavigate(); // ✅ navigate for close
 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -21,13 +22,11 @@ const SignIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-https://decentmed-server.vercel.app/
     try {
       const res = await axios.post('https://decentmed-server.vercel.app/signin', user);
 
       localStorage.setItem('token', res.data.token);
 
-      // ✅ SweetAlert Success Popup
       Swal.fire({
         icon: 'success',
         title: 'Login Successful!',
@@ -47,12 +46,33 @@ https://decentmed-server.vercel.app/
   };
 
   return (
-    <div className="auth-form-container">
-      <form className="auth-form" onSubmit={handleSubmit}>
+    <div className="auth-form-container" >
+   
+
+      <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
+   {/* ✅ Responsive Close Icon */}
+      <div
+        onClick={() => navigate("/")}
+        style={{
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+          fontSize: "24px",
+          fontWeight: "bold",
+          cursor: "pointer",
+          color: "#333",
+          background: "transparent",
+          border: "none",
+          zIndex: 10
+        }}
+      >
+        ❌
+      </div>
+
         <h2>{t("Login")}</h2>
 
         {error && <p className="error">{error}</p>}
-        {loading && <div className="loader"></div>} {/* ✅ Spinner loader */}
+        {loading && <div className="loader"></div>}
 
         <input
           type="email"
@@ -84,7 +104,7 @@ https://decentmed-server.vercel.app/
         </button>
 
         <p>
-         { t('Don’t have an account?')} <Link to="/signup">{t('Sign Up')}</Link>
+          {t('Don’t have an account?')} <Link to="/signup">{t('Sign Up')}</Link>
         </p>
       </form>
     </div>
