@@ -7,7 +7,7 @@ import Practice from '../practices';
 import Info7 from '../../info/info7';
 import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
-import { GoogleLogin } from "react-google-login";
+
 const SignUp = () => {
 const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
   const [error, setError] = useState('');
@@ -15,10 +15,6 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
   const [showPassword, setShowPassword] = useState(false); // 👁️ Show/hide toggle
   const [loading, setLoading] = useState(false); // 🔄 loader state
   const { t } = useTranslation('common');
-  const responseGoogle = (response) => {
-    console.log("Google response:", response);
-    // Send the token to the backend for verification
-  };
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
     setError('');
@@ -35,7 +31,7 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
     try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
-// 'http://localhost:5001/users',
+'http://localhost:5001/users',
         user,
         {
           headers: {
@@ -149,13 +145,6 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
   <button type="submit" disabled={loading}>
     {loading ? <>{t("Sign Up")}...</> :<>{t("Sign Up")}</> }
   </button>
-  <GoogleLogin
-      clientId={process.env.REACT_APP_PROVIDER_ID}
-      buttonText="Sign Up with Google"
-      onSuccess={responseGoogle}
-      onFailure={responseGoogle}
-      cookiePolicy={"single_host_origin"}
-    />
   <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
 </form>
 </div>
