@@ -5,12 +5,22 @@ import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import NatStudy from './naturopathystudy';
+import { Button } from 'react-bootstrap';
 const Naturo = () => {
   const { t } = useTranslation('common');
   return (
     <div className='thecontainer'>
       <div className='container'>
         <h1 className='title'>{t('Naturopathy')}</h1>
+        <div className="container-bbblue">
+      <div>
+      <p>{t("Naturopathy is a holistic approach to healthcare that emphasizes the body's innate ability to heal itself using natural therapies and lifestyle changes. It aims to address the root cause of illness rather than just managing symptoms. Prescription overdose is expected to exceed 80,000 in 2025 according to the CDC, opting for naturopathic medicine is safer and more effective.")}</p>
+      <br></br>
+      <Button variant="primary" href="https://themerlingroupworld.com/homeopract" target="_blank">
+                {t("Try Naturopathy")}
+            </Button>
+      </div>
+    </div>
         <iframe
           width="100%"
           height="515"

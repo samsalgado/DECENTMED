@@ -10,6 +10,11 @@
   margin: 0 auto;
   border-radius: 10px;
 }
+.google-login-button {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
 
 .register-title {
   margin-bottom: 2rem;
@@ -17,7 +22,15 @@
   font-weight: bold;
   text-align: center;
 }
-
+.auth-form-container {
+  display: flex;
+  flex-direction: column; /* Stack forms vertically */
+  align-items: center;
+  justify-content: flex-start; /* Push content above the fold */
+  height: 100vh;
+  overflow-y: auto; /* Prevent scroll issues */
+  padding-top: 20px;
+}
 /* Form Group Styles */
 .form-group {
   margin-bottom: 1rem;
@@ -41,7 +54,22 @@
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
-
+.auth-form {
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
 /* Submit Button */
 .submit-button {
   width: 100%;

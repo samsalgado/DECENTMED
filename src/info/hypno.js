@@ -34,7 +34,7 @@ const {t} = useTranslation('common')
           }}
         />
       </div>
-      <Button variant="primary" href="https://www.green-hypnotherapy.com/" target="_blank">{t("Visit Green Hypnotherapy")}</Button>  {/* Added Bootstrap Button */}
+      <Button variant="primary" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         <br></br>
         <Benefits />
         <br></br> 

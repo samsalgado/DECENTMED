@@ -15,8 +15,6 @@ const { t } = useTranslation('common');
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          // In real implementation, you'd use reverse geocoding API
-          // For demo, we'll just set a default
           setUserLocation('Detect location...');
         },
         (error) => {
@@ -190,6 +188,7 @@ const { t } = useTranslation('common');
                                 objectFit: 'contain' 
                               }} 
                             />
+                            
                           </div>
                           <div>
                           <iframe

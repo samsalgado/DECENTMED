@@ -7,7 +7,6 @@ import svet from "../cards/svetoslav.png";
 import { useTranslation } from 'react-i18next'
 export function HomeopathyPract() {
 const { t } = useTranslation('common');
-
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
@@ -21,8 +20,7 @@ const { t } = useTranslation('common');
 
             <div class="container">
             <h1>{t("Homeopathy")}</h1>
-             <h2>{t("Searching Homeopathy Near me? We have you covered!")}</h2>
-
+            <p>{t("Whether you're searching for homeopathy near you or prefer online consultations, our featured practitioners offer both in-person and virtual homeopathic services.")}</p>
   <div class="row">
     <div class="col-md-4">
       <h3>{t("Riches of Health")}</h3>

@@ -15,7 +15,10 @@
   width: 100%;
   font-family: sans-serif;
 }
-
+.text-content {
+  flex: 1; /* Allows the text section to take more space */
+  max-width: 60%; /* Adjust as needed */
+}
 /* Info.css */
 
 /* Styling for the card itself */

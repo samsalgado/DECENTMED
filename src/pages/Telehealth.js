@@ -1,12 +1,10 @@
 import { Helmet } from 'react-helmet'; // Import Helmet
 import '../App.css';
 import Footer from '../footer';
-import Info7 from '../info/info7';
 import Practices from '../info/practices';
-import Practice from './practices';
 import Topbar from './topbar';
 import { useTranslation } from 'react-i18next';
-
+import { Button } from 'react-bootstrap';
 export function Telehealth() {
     const { t } = useTranslation("common");
     return (
@@ -33,13 +31,11 @@ export function Telehealth() {
                     allowFullScreen
                 ></iframe>
             </div>
-            <div>
                 <Practices />
-            </div>
-            <Practice />
-
-            <div>
-                <Info7 />
+            <div style={{ textAlign: 'center' }}>
+            <Button variant="primary" href="https://themerlingroupworld.com/signup" target="_blank">
+                {t("Providers: Signup")}
+            </Button>
             </div>
             <br></br>
             <footer>

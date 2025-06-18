@@ -1,11 +1,13 @@
 import React from 'react'
 import "./chiro.css";
+import "../App.css";
 import chiroFR from '../images copy/IMG_9300.jpeg';
 import chiroES from '../images copy/IMG_9301.jpeg';
 import chiroHI from '../images copy/IMG_9303.jpeg';
 import chiroNL from '../images copy/IMG_9311.jpeg';
 import Collapsible from 'react-collapsible';
 import stats from '../images copy/stats.jpg';
+import {Button} from 'react-bootstrap';
 // import treats from '../images copy/IMG_8939.jpeg';
 import chirotreat from '../images copy/chirotreats.png';
 import chiropractorstats from '../images copy/chiropractor-stats.png';
@@ -15,8 +17,17 @@ const {t} = useTranslation('common')
   return (
     <div className='container'>
       <h1>{t("Chiropractic")}</h1>
-      <div><img src={stats} className="FACTS" alt="logo" /></div>
-      <div className='par'>
+      <div className="container-bbblue">
+      <div>
+      <p className="p">{t(" Chiropractors use hands-on spinal manipulation and other manual techniques to help restore mobility, relieve pain, and support the body’s natural ability to heal itself without drugs or surgery. People often seek chiropractic care for back pain, neck pain, headaches, and posture-related issues, especially those caused by sedentary lifestyles or physical stress. It’s also valued for promoting overall wellness and nervous system function. According to the American Chiropractic Association, over 35 million Americans visit a chiropractor each year, highlighting its popularity.")}</p>
+      <br></br>
+      <Button variant="primary" href="https://themerlingroupworld.com/chiropract" target="_blank">
+                {t("Get Chiropractic Care")}
+            </Button>
+      </div>
+      <div><img src={stats} className="gridimage" alt="logo" /></div>
+      </div>
+      <div>
         <p>
           {t('The war on drugs has been a colossal failure. Since its inception, the drug war has decimated countries, incarcerated black men, and overdose deaths increases. Since 1999, drug overdoses have tripled in the last two decades. Furthermore, the figures are from 2020, a period plagued by a global pandemic. With Fentanyl on the rise in the 2020s, the numbers are only increasing. Alternative treatments like Chiropractic are non-invasive and align the body. An estimated 80% of the population will have significant back pain.')}
         </p>

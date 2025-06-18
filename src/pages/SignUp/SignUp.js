@@ -3,9 +3,12 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
+import Practice from '../practices';
+import Info7 from '../../info/info7';
 import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
-
+import PublicSignUp from './PublicSignup';
+import { GoogleLogin } from "react-google-login";
 const SignUp = () => {
 const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
   const [error, setError] = useState('');
@@ -13,7 +16,10 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
   const [showPassword, setShowPassword] = useState(false); // 👁️ Show/hide toggle
   const [loading, setLoading] = useState(false); // 🔄 loader state
   const { t } = useTranslation('common');
-
+  const responseGoogle = (response) => {
+    console.log("Google response:", response);
+    // Send the token to the backend for verification
+  };
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
     setError('');
@@ -51,7 +57,8 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
           const redirect = localStorage.getItem("redirectAfterSignup");
           if (redirect === "paypal") {
             localStorage.removeItem("redirectAfterSignup");
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+            //Replace with Stripe like you did before
+            //window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
           } else {
             navigate("/");
           }
@@ -70,8 +77,8 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
 
 
   return (
+    <>
     <div className="auth-form-container">
-  
      <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
   {/* Close icon */}
   <div
@@ -90,6 +97,7 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
   >
     ❌
   </div>
+  <h2>{t("Provider Signup")}</h2>
 <h2>{t("Create Account")}</h2>
   {error && <p className="error">{error}</p>}
   {loading && <div className="loader"></div>}
@@ -141,11 +149,21 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
   <button type="submit" disabled={loading}>
     {loading ? <>{t("Sign Up")}...</> :<>{t("Sign Up")}</> }
   </button>
-
+  <GoogleLogin
+      clientId={process.env.REACT_APP_PROVIDER_ID}
+      buttonText="Sign Up with Google"
+      onSuccess={responseGoogle}
+      onFailure={responseGoogle}
+      cookiePolicy={"single_host_origin"}
+    />
   <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
 </form>
+<PublicSignUp />
+</div>
+<Practice />
+<Info7 />
 
-    </div>
+    </>
   );
 };
 

@@ -785,6 +785,19 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+.container-bbblue {
+  background-color: whitesmoke; /* Soft background color */
+  display: flex;
+  align-items: flex-start;
+  gap: 30px; /* Increased gap between text and image */
+  padding: 40px;
+}
+.p {
+  font-size: 0.9rem; /* Makes text bigger - adjust as needed */
+  line-height: 1.6; /* Improves readability */
+  margin: 0; /* Removes default paragraph margins */
+  flex: 1; /* Text takes up available space */
+}
 
 .container-blue {
   background-color: whitesmoke; /* Bootstrap primary blue color */
