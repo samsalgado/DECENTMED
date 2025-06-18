@@ -49,6 +49,21 @@ const {t} = useTranslation('common')
 ></iframe>
         </div>        
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .container-bbblue {
+            flex-direction: column !important;
+          }
+          .content-wrapper {
+            text-align: center !important;
+          }
+          .centered-video {
+            max-width: 280px !important;
+            margin-top: 20px !important;
+            height: 200px !important;
+          }
+        }
+      `}</style>
     <img src={homeo} className="HOMEO" alt="logo" />
 <br></br>
   </div>

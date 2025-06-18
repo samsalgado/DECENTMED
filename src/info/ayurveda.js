@@ -47,7 +47,9 @@ const Ayurvedaa = () => {
         }
       }
     `}</style>
-   
+   <br></br>
+   <br></br>
+   <br></br>
       <div className="collapsible">
         <Elements />
       </div>

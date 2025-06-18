@@ -33,8 +33,6 @@ const {t} = useTranslation('common')
         </div>
         <iframe
           className="centered-video"
-          width="100%"
-          height="400px"
           src="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
           frameBorder="0"
           allowFullScreen
@@ -47,6 +45,21 @@ const {t} = useTranslation('common')
         />
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .container-bbblue {
+            flex-direction: column !important;
+          }
+          .content-wrapper {
+            text-align: center !important;
+          }
+          .centered-video {
+            max-width: 280px !important;
+            margin-top: 20px !important;
+            height: 200px !important;
+          }
+        }
+      `}</style>
         <br></br>
         <Benefits />
         <br></br> 
