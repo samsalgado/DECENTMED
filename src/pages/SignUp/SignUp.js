@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
 
 const SignUp = () => {
-const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
+  const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false); // 👁️ Show/hide toggle
@@ -31,7 +31,7 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
     try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
-'http://localhost:5001/users',
+        // 'http://localhost:5001/users',
         user,
         {
           headers: {
@@ -71,85 +71,146 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
     }
   };
 
+  // NEW: Google One Tap Sign-In
+  useEffect(() => {
+    const handleGoogleSignUp = async (response) => {
+      // decode credential JWT if needed, or send directly to backend
+      console.log("Google credential:", response.credential);
+
+      try {
+        const res = await axios.post(
+          'https://decentmed-server.vercel.app/google-signup',
+          { credential: response.credential },
+          {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          }
+        );
+
+        if (res.data.token) {
+          localStorage.setItem('token', res.data.token);
+          Swal.fire({
+            icon: 'success',
+            title: 'Google Signin Successful!',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            navigate("/");
+          });
+        }
+      } catch (err) {
+        console.error("Google signin failed:", err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Google signin failed!',
+          text: err.response?.data?.message || 'Please try again.'
+        });
+      }
+    };
+
+    // Load Google Identity Services script
+    const script = document.createElement('script');
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.onload = () => {
+      window.google.accounts.id.initialize({
+        // client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+        client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
+        callback: handleGoogleSignUp
+      });
+
+      window.google.accounts.id.renderButton(
+        document.getElementById("googleSignUpDiv"),
+        { theme: "outline", size: "large", text: "signin_with" }
+      );
+    };
+    document.body.appendChild(script);
+  }, [navigate]);
+
 
   return (
     <>
-    <div className="auth-form-container">
-     <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
-  {/* Close icon */}
-  <div
-    onClick={() => navigate("/")}
-    style={{
-      position: "absolute",
-      top: "20px",
-      right: "20px",
-      fontSize: "20px",
-      fontWeight: "bold",
-      cursor: "pointer",
-      background: "transparent",
-      border: "none",
-      color: "#333"
-    }}
-  >
-    ❌
-  </div>
-  <h2>{t("Provider Signup")}</h2>
-<h2>{t("Create Account")}</h2>
-  {error && <p className="error">{error}</p>}
-  {loading && <div className="loader"></div>}
+      <div className="auth-form-container">
+        <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
+          {/* Close icon */}
+          <div
+            onClick={() => navigate("/")}
+            style={{
+              position: "absolute",
+              top: "20px",
+              right: "20px",
+              fontSize: "20px",
+              fontWeight: "bold",
+              cursor: "pointer",
+              background: "transparent",
+              border: "none",
+              color: "#333"
+            }}
+          >
+            ❌
+          </div>
+          <h2>{t("Provider Signup")}</h2>
+          <h2>{t("Create Account")}</h2>
+          {error && <p className="error">{error}</p>}
+          {loading && <div className="loader"></div>}
 
-  <input
-    type="text"
-    name="name"
-    placeholder={t("Full Name")}
-    value={user.name}
-    onChange={handleChange}
-    required
-  />
+          <input
+            type="text"
+            name="name"
+            placeholder={t("Full Name")}
+            value={user.name}
+            onChange={handleChange}
+            required
+          />
 
-  <input
-    type="email"
-    name="email"
-    placeholder={t("Email Address")}
-    value={user.email}
-    onChange={handleChange}
-    required
-  />
+          <input
+            type="email"
+            name="email"
+            placeholder={t("Email Address")}
+            value={user.email}
+            onChange={handleChange}
+            required
+          />
 
-  <div className="password-field">
-    <input
-      type={showPassword ? "text" : "password"}
-      name="password"
-      placeholder={t("Password")}
-      value={user.password}
-      onChange={handleChange}
-      required
-    />
-    <span
-      className="eye-icon"
-      onClick={() => setShowPassword(!showPassword)}
-    >
-      {showPassword ? <FaEyeSlash /> : <FaEye />}
-    </span>
-  </div>
+          <div className="password-field">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder={t("Password")}
+              value={user.password}
+              onChange={handleChange}
+              required
+            />
+            <span
+              className="eye-icon"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
+          </div>
 
-  {/* ✅ NEW CODE INPUT */}
-  <input
-    type="text"
-    name="code"
-    placeholder={t("Affiliate Code (optional)")}
-    value={user.code}
-    onChange={handleChange}
-  />
+          {/* ✅ NEW CODE INPUT */}
+          <input
+            type="text"
+            name="code"
+            placeholder={t("Affiliate Code (optional)")}
+            value={user.code}
+            onChange={handleChange}
+          />
 
-  <button type="submit" disabled={loading}>
-    {loading ? <>{t("Sign Up")}...</> :<>{t("Sign Up")}</> }
-  </button>
-  <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
-</form>
-</div>
-<Practice />
-<Info7 />
+          <button type="submit" disabled={loading}>
+            {loading ? <>{t("Sign Up")}...</> : <>{t("Sign Up")}</>}
+          </button>
+          <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
+
+          <div style={{ margin: "20px 0", textAlign: "center" }}>
+            <div id="googleSignUpDiv"></div>
+          </div>
+        </form>
+      </div>
+      <Practice />
+      <Info7 />
 
     </>
   );

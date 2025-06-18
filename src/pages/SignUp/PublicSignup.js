@@ -17,10 +17,10 @@ const PublicSignUp = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-     try {
+    try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
-'http://localhost:5001/users',
+        // 'http://localhost:5001/users',
         user,
         {
           headers: {
@@ -57,43 +57,83 @@ const PublicSignUp = () => {
     }
   };
 
+
+  // NEW: Google One Tap Sign-In
   useEffect(() => {
-    const loadGoogleAPI = () => {
-      const script = document.createElement("script");
-      script.src = "https://apis.google.com/js/platform.js";
-      script.async = true;
-      script.onload = () => {
-        if (window.gapi) {
-          window.gapi.load("auth2", () => {
-            console.log("Google API initialized!");
+    const handleGoogleSignUp = async (response) => {
+      // decode credential JWT if needed, or send directly to backend
+      console.log("Google credential:", response.credential);
+
+      try {
+        const res = await axios.post(
+          'https://decentmed-server.vercel.app/google-signup',
+          { credential: response.credential },
+          {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          }
+        );
+
+        if (res.data.token) {
+          localStorage.setItem('token', res.data.token);
+          Swal.fire({
+            icon: 'success',
+            title: 'Google Signin Successful!',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            navigate("/");
           });
         }
-      };
-      document.body.appendChild(script);
+      } catch (err) {
+        console.error("Google signin failed:", err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Google signin failed!',
+          text: err.response?.data?.message || 'Please try again.'
+        });
+      }
     };
-    loadGoogleAPI();
-  }, []);
-  
-  console.log("Google Client ID:", process.env.REACT_APP_PUBLIC_ID);
+
+    // Load Google Identity Services script
+    const script = document.createElement('script');
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.onload = () => {
+      window.google.accounts.id.initialize({
+        // client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+        client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
+        callback: handleGoogleSignUp
+      });
+
+      window.google.accounts.id.renderButton(
+        document.getElementById("googleSignUpDiv"),
+        { theme: "outline", size: "large", text: "signin_with" }
+      );
+    };
+    document.body.appendChild(script);
+  }, [navigate]);
+
   return (
     <div className="auth-form-container">
-      <form className="auth-form"  style={{ position: "relative" }} onSubmit={handleSubmit}>
-      <div
-    onClick={() => navigate("/")}
-    style={{
-      position: "absolute",
-      top: "20px",
-      right: "20px",
-      fontSize: "20px",
-      fontWeight: "bold",
-      cursor: "pointer",
-      background: "transparent",
-      border: "none",
-      color: "#333"
-    }}
-  >
-    ❌
-  </div>
+      <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
+        <div
+          onClick={() => navigate("/")}
+          style={{
+            position: "absolute",
+            top: "20px",
+            right: "20px",
+            fontSize: "20px",
+            fontWeight: "bold",
+            cursor: "pointer",
+            background: "transparent",
+            border: "none",
+            color: "#333"
+          }}
+        >
+          ❌
+        </div>
         <h2>Public Signup</h2>
         <h2>Create an Account</h2>
         {error && <p className="error">{error}</p>}
@@ -101,9 +141,12 @@ const PublicSignUp = () => {
         <input type="email" name="email" placeholder="Email Address" onChange={handleChange} required />
         <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
         <button type="submit">Sign Up</button>
-  
-
         <p>Already have an account? <Link to="/signin">Sign In</Link></p>
+
+        <div style={{ margin: "20px 0", textAlign: "center" }}>
+          <div id="googleSignUpDiv"></div>
+        </div>
+
       </form>
     </div>
   );
