@@ -8,7 +8,7 @@ const SignupOptions = () => {
   return (
     <div className="auth-form-container">
       <div className="auth-form">
-        <h2>Select Signup Type</h2>
+        <h2>Joining as Provider or Patient?</h2>
         <button onClick={() => navigate('/signup/public')}>Public User</button>
         <button onClick={() => navigate('/signup/provider')}>Provider</button>
       </div>
