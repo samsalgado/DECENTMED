@@ -131,6 +131,7 @@ const { t } = useTranslation('common');
                     style={{
                       height: '50px',
                       fontSize: '16px',
+                      width:'200px',
                       paddingLeft: '40px',
                       border: '2px solid #dee2e6',
                       borderRadius: '6px'

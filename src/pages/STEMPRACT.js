@@ -75,6 +75,7 @@ export function StemPract() {
                     onChange={(e) => setLocation(e.target.value)}
                     style={{
                       height: '50px',
+                      width:'200px',
                       fontSize: '16px',
                       paddingLeft: '40px',
                       border: '2px solid #dee2e6',
