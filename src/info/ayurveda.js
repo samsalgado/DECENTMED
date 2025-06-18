@@ -52,12 +52,10 @@ const Ayurvedaa = () => {
    <br></br>
       <div className="collapsible">
         <Elements />
-      </div>
-
-      <iframe width="100%" height={500} src="https://drive.google.com/file/d/1fFqRB-Z-QIq6t3DSjkBmvkXjBddLsnOG/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-      
+        <br></br>
+        <iframe width="100%" height={550} src="https://drive.google.com/file/d/1fFqRB-Z-QIq6t3DSjkBmvkXjBddLsnOG/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </div>   
       <br />
-
       <div className='pr'>
         <h3>{t('What is Ayurveda?')}</h3>
         <p>
