@@ -65,7 +65,7 @@ const PlantCard = ({ val }) => {
                     <div
                         style={{
                             width: "100%",
-                            height: "315px",
+                            height: "305px",
                             backgroundColor: "#ccc",
                             display: "flex",
                             alignItems: "center",

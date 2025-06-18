@@ -15,26 +15,49 @@ import { useTranslation } from 'react-i18next';
 const Chiro = () => {
 const {t} = useTranslation('common')
   return (
-    <div className='container'>
-      <h1>{t("Chiropractic")}</h1>
-      <div className="container-bbblue">
-      <div>
-      <p className="p">{t(" Chiropractors use hands-on spinal manipulation and other manual techniques to help restore mobility, relieve pain, and support the body’s natural ability to heal itself without drugs or surgery. People often seek chiropractic care for back pain, neck pain, headaches, and posture-related issues, especially those caused by sedentary lifestyles or physical stress. It’s also valued for promoting overall wellness and nervous system function. According to the American Chiropractic Association, over 35 million Americans visit a chiropractor each year, highlighting its popularity.")}</p>
+    <div className='container mobile-optimized'>
+      <h1 className='title mobile-title'>{t("Chiropractic")}</h1>
+      <div className="container-bbblue" style={{
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: '20px'
+    }}>
+      <div className='content-wrapper' style={{
+        flex: '1'
+      }}>
+      <p className="pr">{t("Chiropractors use hands-on spinal manipulation and other manual techniques to help restore mobility, relieve pain, and support the body’s natural ability to heal itself without drugs or surgery. People often seek chiropractic care for back pain, neck pain, headaches, and posture-related issues, especially those caused by sedentary lifestyles or physical stress. It’s also valued for promoting overall wellness and nervous system function. According to the American Chiropractic Association, over 35 million Americans visit a chiropractor each year, highlighting its popularity.")}</p>
+      <p className="pr">
+        {t('The war on drugs has been a colossal failure. Since its inception, the drug war has decimated countries, incarcerated black men, and overdose deaths increases. Since 1999, drug overdoses have tripled in the last two decades. Furthermore, the figures are from 2020, a period plagued by a global pandemic. With Fentanyl on the rise in the 2020s, the numbers are only increasing. Alternative treatments like Chiropractic are non-invasive and align the body. An estimated 80% of the population will have significant back pain.')}
+        </p>
+        <p className="pr">
+          {t('An estimated 65% of American adults seek care for neck or back pain in their lifetime. Extrapolating that figure, 36% of Americans do not know if surgery is effective for their pain. Chiropractic care is 40% (estimate) more effective for treating back pain. Chiropractors remove neurological interference and restore proper biomechanics to the spine. Moreover, chiropractic care supports the immune system, improves sleep, improves behavior, improves brain development, and benefits development in both adults and children.')}
+        </p>
       <br></br>
       <Button variant="primary" href="https://themerlingroupworld.com/chiropract" target="_blank">
                 {t("Get Chiropractic Care")}
             </Button>
       </div>
-      <div><img src={stats} className="gridimage" alt="logo" /></div>
+      <div><img src={stats} className="gridimage" alt="logo" style={{
+        maxWidth: '400px',
+        width: '100%',
+        height: 'auto'
+      }} /></div>
       </div>
-      <div>
-        <p>
-          {t('The war on drugs has been a colossal failure. Since its inception, the drug war has decimated countries, incarcerated black men, and overdose deaths increases. Since 1999, drug overdoses have tripled in the last two decades. Furthermore, the figures are from 2020, a period plagued by a global pandemic. With Fentanyl on the rise in the 2020s, the numbers are only increasing. Alternative treatments like Chiropractic are non-invasive and align the body. An estimated 80% of the population will have significant back pain.')}
-        </p>
-        <p>
-          {t('An estimated 65% of American adults seek care for neck or back pain in their lifetime. Extrapolating that figure, 36% of Americans do not know if surgery is effective for their pain. Chiropractic care is 40% (estimate) more effective for treating back pain. Chiropractors remove neurological interference and restore proper biomechanics to the spine. Moreover, chiropractic care supports the immune system, improves sleep, improves behavior, improves brain development, and benefits development in both adults and children.')}
-        </p>
-      </div>
+      <style jsx>{`
+      @media (max-width: 768px) {
+        .container-bbblue {
+          flex-direction: column !important;
+        }
+        .content-wrapper {
+          text-align: center !important;
+        }
+        .gridimag {
+          max-width: 280px !important;
+          margin-top: 20px !important;
+        }
+      }
+    `}</style>
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>

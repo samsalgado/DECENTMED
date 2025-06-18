@@ -40,31 +40,47 @@ const Stem = () => {
   const { t } = useTranslation('common')
 
   return (
-    <div className='container'>
+    <div className='container mobile-optimized'>
       <h1 className='title'>{t('Stem Cell Therapy')}</h1>
-
-      {/* Responsive Video */}
-      <div className="video-container">
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '20px 0'
+      }}>
+         <div className="container-bbblue" style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '20px'
+      }}>
+        <div className='content-wrapper' style={{
+          flex: '1'
+        }}>
+           <p className='pr'>{t("Stem cell therapy is a form of regenerative medicine that uses stem cells to repair or replace damaged tissues and cells in the body. Stem cell therapy for knees is my first experience with using stem cells for regenerative medicine. Many athletes like Ryan Tannehill, Kobe Bryant, Jamaal Charles, LaRon Landry, David Njoku, Chris Johnson, Peyton Manning and more have used mesenchymal stem cells for their recovery. Peyton Manning had an NFL MVP season after using stem cells for his neck injury recovery. Ryan Tannehill extended his career after using stem cell therapy for knee (ACL) tears. Mesenchymal stem cells are multi-potent - stemming from various tissues in the body. MSCs are primarily found in Adipose tissue, Umbical chords, Bone Marrow and even the placenta.")}</p>
+            <p className='pr'>{t("An interesting development in the stem cell therapy community is the use of stem cells for neurodegenerative diseases like Autism. Although the stem cell cost is expensive, the benefits of treating Autism and other neurodegenerative diseases are revolutionary. Our platform not only posts case studies to address limited long-term data concerns. Finally, we provide reimbursements from our apothecary to make the stem cell therapy cost less expensive.")}</p>
+            <Button variant="primary" href="https://themerlingroupworld.com/stemcellproviders" target="_blank">
+                          {t("Find Providers")}
+            </Button>
+      </div>
         <iframe
           src="https://drive.google.com/file/d/1ECrjiFNkxNs2RU1EtobXh3AbWFkrmAut/preview"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          style={{
+            maxWidth: '400px',
+            width: '100%',
+            height: 'auto'
+          }}    
         ></iframe>
       </div>
-
+      </div>
       {/* Flex container for equal width collapsibles */}
       <div className="collapsible-section">
         <div className="title-container">
-       
           <table className="collapsibles-table">
-          
             <tbody>
-            <div className="button-container">
-            <Button variant="primary" href="https://themerlingroupworld.com/stemcellproviders" target="_blank">
-                {t("Find Providers")}
-              </Button>
-              </div>
               <Collapsible 
                 trigger={
                   <th className="collapsible-trigger">

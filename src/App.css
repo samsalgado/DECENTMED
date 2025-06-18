@@ -10,6 +10,23 @@
   pointer-events: none;
   animation: App-logo-spin infinite 20s linear;
 }
+.mobile-optimized {
+  padding: 10px 15px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.mobile-container {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.mobile-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  padding: 0 10px;
+}
 .description-container {
   cursor: pointer; /* Indicate clickability */
   padding: 5px 10px;
@@ -785,11 +802,16 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+.container-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .container-bbblue {
   background-color: whitesmoke; /* Soft background color */
   display: flex;
   align-items: flex-start;
-  gap: 30px; /* Increased gap between text and image */
+  gap: 20px; /* Increased gap between text and image */
   padding: 40px;
 }
 .p {
@@ -808,7 +830,9 @@ button[type="submit"] {
   margin: 0 auto;
 }
 .container-bblue {
-  background-color: #87ceeb; /* Bootstrap primary blue color */
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke; /* Bootstrap primary blue color */
   border: 2px solid white; /* Darker blue border */
   padding: 20px; /* Add some padding inside the container */
   border-radius: 8px; /* Optional: rounded corners */
@@ -878,6 +902,12 @@ input[type="submit"]:hover {
   .content {
     padding-bottom: 60px;
   }
+}
+.gridimagee {
+  max-width: 100%;
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 300px;
 }
 
 /* General styles for footer images */
@@ -1525,5 +1555,38 @@ td:last-child {
     font-size: 0.95rem;
     padding: 0.25rem;
     border-radius: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .mobile-optimized {
+    padding: 8px 12px;
+  }
+  
+  .mobile-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .mobile-container {
+    padding: 12px;
+  }
+  
+  .mobile-text {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  .mobile-subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0 12px 0;
+  }
+  
+  .mobile-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .video-container iframe {
+    height: 250px;
   }
 }

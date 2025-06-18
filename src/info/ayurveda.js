@@ -9,21 +9,44 @@ const Ayurvedaa = () => {
   const { t } = useTranslation("common");
   
   return (
-    <div className='container'>
-      <h1 className='title'>{t('Ayurveda Experience')}</h1>
-      <div className="container-bbblue">
-      <div>
-      <p>{t("Ayurveda, an ancient healing system, offers a holistic approach to wellness by balancing the body, mind, and spirit through natural remedies and personalized treatments. Unlike conventional medicine, Ayurveda focuses on preventing illness rather than just treating symptoms, using herbs, diet, and lifestyle adjustments tailored to each individual's constitution. Patients seeking gentle, long-term healing often turn to Ayurveda for its ability to address root causes rather than temporary relief.")}</p>
-      <br></br>
-      <Button variant="primary" href="https://themerlingroupworld.com/ayurvedicmedicine" target="_blank">
-                {t("Experience Ayurveda")}
-            </Button>
+    <div className='container mobile-optimized'>
+    <h1 className='title mobile-title'>{t('Ayurveda Experience')}</h1>
+    <div className="container-bbblue" style={{
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: '20px'
+    }}>
+      <div className='content-wrapper' style={{
+        flex: '1'
+      }}>
+        <p className='pr'>{t("Ayurveda, an ancient healing system, offers a holistic approach to wellness by balancing the body, mind, and spirit through natural remedies and personalized treatments. Unlike conventional medicine, Ayurveda focuses on preventing illness rather than just treating symptoms, using herbs, diet, and lifestyle adjustments tailored to each individual's constitution. Patients seeking gentle, long-term healing often turn to Ayurveda for its ability to address root causes rather than temporary relief.")}</p>
+        <br></br>
+        <Button variant="primary" href="https://themerlingroupworld.com/ayurvedicmedicine" target="_blank">
+          {t("Experience Ayurveda")}
+        </Button>
       </div>
-      <img className='gridimag' src={ayurveda} alt={t('Ayurveda Science')} />
+      <img className='gridimag' src={ayurveda} alt={t('Ayurveda Science')} style={{
+        maxWidth: '400px',
+        width: '100%',
+        height: 'auto'
+      }} />
     </div>
-      <div className="title-container">
-        {/* You can add content here if needed */}
-      </div>
+    
+    <style jsx>{`
+      @media (max-width: 768px) {
+        .container-bbblue {
+          flex-direction: column !important;
+        }
+        .content-wrapper {
+          text-align: center !important;
+        }
+        .gridimag {
+          max-width: 280px !important;
+          margin-top: 20px !important;
+        }
+      }
+    `}</style>
    
       <div className="collapsible">
         <Elements />

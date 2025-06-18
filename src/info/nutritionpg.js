@@ -32,24 +32,44 @@ import cogDutch from '../images copy/IMG_9279.jpeg';
 import cogHindi from '../images copy/IMG_9280.jpeg';
 const Nutritionpage = () => {
   const { t } = useTranslation("common");
-
   return (
-    <div className='container'>
+    <div className='container mobile-optimized'>
       <h1 className="title">{t('Nutrition')}</h1>
-      <iframe 
-  width="100%" 
-  height="650px" 
-  src="https://rumble.com/embed/v6skowd/?pub=4hu51y" 
-  title="Video player" 
-  allow="autoplay" 
-  allowFullScreen
-  frameBorder="0"
-/>
-<div className="button-container">
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '20px 0'
+      }}>
+         <div className="container-bbblue" style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '20px'
+      }}>
+        <div className='content-wrapper' style={{
+          flex: '1'
+        }}>
+          <p className='pr'>{t("If you are searching nutritionist near me, look no further than our holistic nutritionists offering traditional and alkaline diet recipes to reach your optimal self. For example, our nutritionists assist clients with the best plans rich in B vitamins, vitamin D, vitamin C and more. We provide nutritionists for a wide range of people, Lori Graham is a former OT and a functional nutritionist who helps menopausal women lower their blood sugar and reduce menopausal symptoms.")}</p>
             <Button variant="primary" href="https://themerlingroupworld.com/nutritionpract" target="_blank">
                 {t("Find Providers")}
               </Button>
-              </div>
+        </div>
+      <iframe 
+      width="100%" 
+      height="650px" 
+      src="https://rumble.com/embed/v6skowd/?pub=4hu51y" 
+      title="Video player" 
+      allow="autoplay" 
+      allowFullScreen
+      style={{
+        maxWidth: '400px',
+        width: '100%',
+        height: 'auto'
+      }}
+    />
+    </div>
+    </div>
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>

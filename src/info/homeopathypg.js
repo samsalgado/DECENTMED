@@ -7,18 +7,29 @@ const Homeo = () => {
   const { t } = useTranslation('common');
 
   return (
-    <div className='thecontainer'>
-      <div className='container'>
+    <div className='thecontainer mobile-optimized'>
         <h1 className='title'>{t('Homeopathy')}</h1>
-        <div className="container-bbblue">
-      <div>
-      <p>{t("Homeopathy is a system of alternative medicine developed in the late 18th century by German physician Samuel Hahnemann. It is based on the principle of 'like cures like', meaning that a substance that causes symptoms in a healthy person can be used in highly diluted form to treat similar symptoms in someone who is ill. Homeopathy is safer and has shown benefits for a myriad of diseases and ailments.")}</p>
-      <br></br>
+        <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '20px 0'
+      }}>
+        <div className="container-bbblue"style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '20px'
+      }}>
+      <div className='content-wrapper' style={{
+          flex: '1'
+        }}>
+      <p className='pr'>{t("Homeopathy is a system of alternative medicine developed in the late 18th century by German physician Samuel Hahnemann. It is based on the principle of 'like cures like', meaning that a substance that causes symptoms in a healthy person can be used in highly diluted form to treat similar symptoms in someone who is ill. Homeopathy is safer and has shown benefits for a myriad of diseases and ailments. In this video, Dr. Tim Shannon talks about off-label drugs in cancer treatments, and the role of Homeopathy in treating ADD.")}</p>
+     
       <Button variant="primary" href="https://themerlingroupworld.com/homeopract" target="_blank">
                 {t("Try Homeopathy")}
             </Button>
       </div>
-    </div>
         <iframe
           width="100%"
           height="475"
@@ -26,7 +37,14 @@ const Homeo = () => {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          style={{
+            maxWidth: '400px',
+            width: '100%',
+            height: 'auto'
+          }}
         ></iframe>
+         </div>
+         </div>
         <br />
         <br />
         <img src={quote} className="TELEa" alt="quote" />
@@ -34,7 +52,7 @@ const Homeo = () => {
           {/* Add any collapsible content if needed */}
         </div>
       </div>
-    </div>
+
   );
 };
 

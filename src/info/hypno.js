@@ -11,7 +11,7 @@ const HYPNO = () => {
 const {t} = useTranslation('common')
 
     return (
-        <div className="container">
+      <div className='container mobile-optimized'>
             <h1 className='title'>{t('Hypnotherapy')}</h1>
             <div style={{
         display: 'flex',
@@ -19,6 +19,18 @@ const {t} = useTranslation('common')
         alignItems: 'center',
         margin: '20px 0'
       }}>
+         <div className="container-bbblue" style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '20px'
+      }}>
+        <div className='content-wrapper' style={{
+          flex: '1'
+        }}>
+          <p className='pr'>{t("Hypnotherapy is a therapeutic technique that uses guided hypnosis to help individuals achieve a relaxed, focused state of mind, increasing their suggestibility and enabling them to address various issues. Hypnotherapy helps to break subconscious blocks that arise throughout people's lives. Utilize hypnotherapy to empower yourself and become your optimal YOU.")}</p>
+          <Button variant="primary" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
+        </div>
         <iframe
           className="centered-video"
           width="100%"
@@ -28,19 +40,20 @@ const {t} = useTranslation('common')
           allowFullScreen
           title="Rumble video player"
           style={{
-            maxWidth: '800px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+            maxWidth: '400px',
+            width: '100%',
+            height: 'auto'
           }}
         />
+        </div>
       </div>
-      <Button variant="primary" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         <br></br>
         <Benefits />
         <br></br> 
         <Modalities />
         <Collapsible trigger={<th className="collapsible-trigger">{t("Hypnotherapy Case Study")}</th>}>
         <Hypnostudies />
+        <Button variant="primary" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </Collapsible>
         </div>
     )

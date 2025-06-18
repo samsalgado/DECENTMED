@@ -1,5 +1,4 @@
 import React from 'react'
-import preventchart from '../images copy/prevemt.png';
 import Vitamins from './vitamins';
 import Coachingvids from './coachingvids';
 import './Info.css';
@@ -15,18 +14,12 @@ const PreventWellness = () => {
       </div>
       <div className="collapsible">
       </div>
-      
-      <img src={preventchart} className="chart" alt="logo" />
+      <Vitamins />
+      <Button variant="primary" href="https://themerlingroupworld.com/coaching" target="_blank">
+   {t("Find Wellness Coaches")}
+     </Button>
       <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>
   <Coachingvids />
-  <Button variant="primary" href="https://themerlingroupworld.com/coaching" target="_blank">
-                      {t("Find Wellness Coaches")}
-                  </Button>
-      <br></br>
-     <div className='vitamin'>
- <Vitamins />
-  <br></br>
-</div>
     </div>
   );
 }
