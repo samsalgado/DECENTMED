@@ -7,7 +7,6 @@ import Practice from '../practices';
 import Info7 from '../../info/info7';
 import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
-import PublicSignUp from './PublicSignup';
 import { GoogleLogin } from "react-google-login";
 const SignUp = () => {
 const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
@@ -36,6 +35,7 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
     try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
+// 'http://localhost:5001/users',
         user,
         {
           headers: {
@@ -158,7 +158,6 @@ const [user, setUser] = useState({ name: '', email: '', password: '', code: '' }
     />
   <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
 </form>
-<PublicSignUp />
 </div>
 <Practice />
 <Info7 />

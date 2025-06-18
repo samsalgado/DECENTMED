@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/AuthForm.css";
+import Swal from "sweetalert2";
 const PublicSignUp = () => {
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
@@ -16,11 +17,43 @@ const PublicSignUp = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await axios.post("https://decentmed-server.vercel.app/users", user); // ✅ Correct Vercel backend
-      alert("Signup successful!");
+     try {
+      const res = await axios.post(
+        'https://decentmed-server.vercel.app/users',
+// 'http://localhost:5001/users',
+        user,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Signup Successful!',
+          text: 'Welcome to our platform!',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        }).then(() => {
+          const redirect = localStorage.getItem("redirectAfterSignup");
+          if (redirect === "paypal") {
+            localStorage.removeItem("redirectAfterSignup");
+            //Replace with Stripe like you did before
+            //window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          } else {
+            navigate("/");
+          }
+        });
+      }
+
+
     } catch (err) {
-      setError(err.response?.data?.message || "Signup failed");
+      console.log("Error response:", err.response?.data);
+      setError(err.response?.data?.message || 'Signup failed');
     }
   };
 
