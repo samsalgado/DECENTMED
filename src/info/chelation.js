@@ -7,6 +7,7 @@ import chelationgraphicHI from '../images copy/IMG_9310.jpeg';
 import chelationgraphicFR from '../images copy/IMG_9298.jpeg';
 import Collapsible from 'react-collapsible';
 import graphic from '../images copy/chelation101.png';
+import { Button } from 'react-bootstrap';
 import chelationgraphic from '../images copy/chelationgraphic.png';
 import chelationbenefits from '../images copy/chelationbenefits.png';
 //import { Button } from 'react-bootstrap';
@@ -19,6 +20,11 @@ const Pgchelation = () => {
       <h1 className='title'>{t("Chelation")}</h1>
       <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
       {/* Title and Collapsible Content with Table Structure */}
+        <div className="button-container">
+              <Button variant="primary" href="https://themerlingroupworld.com/telehealth" target="_blank">
+                {t("Find Providers")}
+              </Button>
+            </div>
       <div className="title-container">
 
         <table className="collapsibles-table">

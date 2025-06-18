@@ -5,6 +5,7 @@ import obese from '../images copy/obese.png';
 import labs from '../images copy/8.jpg';
 import brain from '../images copy/9.jpg';
 import './Info.css';
+import { Button } from 'react-bootstrap';
 import drSebiES from '../images copy/IMG_9273.jpeg';
 import NUTES from '../images copy/IMG_9306.jpeg';
 import NUTFR from '../images copy/IMG_9307.jpeg';
@@ -44,6 +45,11 @@ const Nutritionpage = () => {
   allowFullScreen
   frameBorder="0"
 />
+<div className="button-container">
+            <Button variant="primary" href="https://themerlingroupworld.com/nutritionpract" target="_blank">
+                {t("Find Providers")}
+              </Button>
+              </div>
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>

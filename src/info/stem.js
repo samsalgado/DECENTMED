@@ -9,7 +9,7 @@ import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg
 import stembenefits from '../images copy/stembenefits.png';
 import './Info.css';
 import whystemcellspanish from '../images copy/IMG_9256.jpeg';
-
+import { Button } from 'react-bootstrap';
 import whystemcelldutch from '../images copy/IMG_9257.jpeg';
 
 import whystemcellfrench from '../images copy/IMG_9258.jpeg';
@@ -56,8 +56,15 @@ const Stem = () => {
       {/* Flex container for equal width collapsibles */}
       <div className="collapsible-section">
         <div className="title-container">
+       
           <table className="collapsibles-table">
+          
             <tbody>
+            <div className="button-container">
+            <Button variant="primary" href="https://themerlingroupworld.com/stemcellproviders" target="_blank">
+                {t("Find Providers")}
+              </Button>
+              </div>
               <Collapsible 
                 trigger={
                   <th className="collapsible-trigger">

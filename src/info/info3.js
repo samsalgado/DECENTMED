@@ -5,7 +5,7 @@ import Fruits from './fruits';
 import './Info.css';
 import Protocols from './Protocols';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
-
+import { Button } from 'react-bootstrap';
 const Info3 = () => {
   const { t } = useTranslation("common"); // Access translation function
 
@@ -14,6 +14,10 @@ const Info3 = () => {
       <h1 className='title'>{t('Detox')}</h1>
 
       <Fruits />
+            <Button variant="primary" href="https://themerlingroupworld.com/telehealth" target="_blank">
+                      {t("Discover Holistic Providers")}
+                  </Button>
+      <br></br>
       <div className="collapsible"></div>
 
       <div><img className='FACTS' src={DETOXIMG} alt="logo" /></div>

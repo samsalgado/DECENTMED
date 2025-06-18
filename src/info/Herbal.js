@@ -27,8 +27,8 @@ const {t} = useTranslation('common')
 ></iframe>
         </div>
         <div className="button-container">
-        <Button variant="primary" href="https://www.paulhaider.com/" target="_blank">
-          {t("Visit Dr. Paul Haider's Site")}
+        <Button variant="primary" href="https://themerlingroupworld.com/apoth" target="_blank">
+          {t("Explore Apothecary")}
         </Button>
       </div>
     <img src={homeo} className="HOMEO" alt="logo" />
