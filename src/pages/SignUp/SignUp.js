@@ -74,6 +74,11 @@ const SignUp = () => {
 
   // NEW: Google One Tap Sign-In
   useEffect(() => {
+const currentUrl = new URL(window.location.href);
+  if (!currentUrl.searchParams.get("redirect")) {
+    currentUrl.searchParams.set("redirect", "paypal");
+    window.history.replaceState({}, '', currentUrl);
+  }
     const handleGoogleSignUp = async (response) => {
       // decode credential JWT if needed, or send directly to backend
       console.log("Google credential:", response.credential);

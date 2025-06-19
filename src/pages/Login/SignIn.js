@@ -47,6 +47,13 @@ const SignIn = () => {
 
   // NEW: Google One Tap Sign-In
   useEffect(() => {
+const currentUrl = new URL(window.location.href);
+  if (!currentUrl.searchParams.get("redirect")) {
+    currentUrl.searchParams.set("redirect", "paypal");
+    window.history.replaceState({}, '', currentUrl);
+    console.log("✅ Google One Tap: redirect param ensured:", currentUrl.href);
+  }
+
     const handleGoogleSignUp = async (response) => {
       // decode credential JWT if needed, or send directly to backend
       console.log("Google credential:", response.credential);
@@ -72,14 +79,16 @@ const SignIn = () => {
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
           }).then(() => {
-            const redirect = localStorage.getItem("redirectAfterSignup");
-            if (redirect === "paypal") {
-              localStorage.removeItem("redirectAfterSignup");
-              window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
-            } else {
-              navigate("/");
-            }
-          });
+          // ✅ USE URL PARAM INSTEAD OF localStorage FOR BETTER RELIABILITY
+          const urlParams = new URLSearchParams(window.location.search);
+          const redirect = urlParams.get("redirect");
+
+          if (redirect === "paypal") {
+            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          } else {
+            navigate("/");
+          }
+        });
         }
       } catch (err) {
         console.error("Google signin failed:", err);
@@ -174,9 +183,6 @@ const SignIn = () => {
 
         <div style={{ margin: "20px 0", textAlign: "center" }}>
           <div id="googleSignUpDiv"
-            onClick={() => {
-              localStorage.setItem("redirectAfterSignup", "paypal");
-            }}
           ></div>
         </div>
 
