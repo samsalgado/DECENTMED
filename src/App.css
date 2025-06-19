@@ -267,6 +267,11 @@ body {
   margin: 0;
   padding: 0;
 }
+.box-container{
+  margin: 20px auto;
+  width: 100%;
+  max-width: 70%;
+}
 .box {
   border: 10px solid #ccc; /* Example border color */
   margin: 5% auto; /* Center with responsive margin */

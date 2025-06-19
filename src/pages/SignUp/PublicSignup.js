@@ -43,7 +43,7 @@ const PublicSignUp = () => {
           if (redirect === "paypal") {
             localStorage.removeItem("redirectAfterSignup");
             //Replace with Stripe like you did before
-            //window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
           } else {
             navigate("/");
           }
@@ -67,6 +67,8 @@ const PublicSignUp = () => {
       try {
         const res = await axios.post(
           'https://decentmed-server.vercel.app/google-signup',
+          // 'http://localhost:5001/google-signup',
+        
           { credential: response.credential },
           {
             headers: {
@@ -83,7 +85,13 @@ const PublicSignUp = () => {
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
           }).then(() => {
-            navigate("/");
+            const redirect = localStorage.getItem("redirectAfterSignup");
+            if (redirect === "paypal") {
+              localStorage.removeItem("redirectAfterSignup");
+              window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+            } else {
+              navigate("/");
+            }
           });
         }
       } catch (err) {
@@ -144,7 +152,11 @@ const PublicSignUp = () => {
         <p>Already have an account? <Link to="/signin">Sign In</Link></p>
 
         <div style={{ margin: "20px 0", textAlign: "center" }}>
-          <div id="googleSignUpDiv"></div>
+          <div id="googleSignUpDiv"
+            onClick={() => {
+              localStorage.setItem("redirectAfterSignup", "paypal");
+            }}
+          ></div>
         </div>
 
       </form>

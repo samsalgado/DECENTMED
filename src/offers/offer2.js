@@ -21,17 +21,19 @@ const Offer2 = () => {
   };
 
   return (
-    <div className='box'>
-      <div>
-        <img src={imge} className="pik1 bitc" alt='' />
-        <h2>{t('Pay with Paypal')}</h2>
-        <a
-          href="https://www.paypal.com/paypalme/DECENTMED"
-          onClick={handlePaypalClick}
-          style={{ color: 'blue', textDecoration: 'underline' }}
-        >
-          https://www.paypal.com/paypalme/DECENTMED
-        </a>
+    <div className="container">
+      <div className='box'>
+        <div>
+          <img src={imge} className="pik1 bitc" alt='' />
+          <h2>{t('Pay with Paypal')}</h2>
+          <a
+            href="https://www.paypal.com/paypalme/DECENTMED"
+            onClick={handlePaypalClick}
+            style={{ color: 'blue', textDecoration: 'underline' }}
+          >
+            https://www.paypal.com/paypalme/DECENTMED
+          </a>
+        </div>
       </div>
     </div>
   );

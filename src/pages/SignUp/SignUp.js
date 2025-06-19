@@ -7,6 +7,7 @@ import Practice from '../practices';
 import Info7 from '../../info/info7';
 import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
+import Offer2 from '../../offers/offer2';
 
 const SignUp = () => {
   const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
@@ -54,7 +55,7 @@ const SignUp = () => {
           if (redirect === "paypal") {
             localStorage.removeItem("redirectAfterSignup");
             //Replace with Stripe like you did before
-            //window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
           } else {
             navigate("/");
           }
@@ -96,8 +97,14 @@ const SignUp = () => {
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
           }).then(() => {
+          const redirect = localStorage.getItem("redirectAfterSignup");
+          if (redirect === "paypal") {
+            localStorage.removeItem("redirectAfterSignup");
+            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          } else {
             navigate("/");
-          });
+          }
+        });
         }
       } catch (err) {
         console.error("Google signin failed:", err);
@@ -210,6 +217,7 @@ const SignUp = () => {
         </form>
       </div>
       <Practice />
+      <Offer2/>
       <Info7 />
 
     </>

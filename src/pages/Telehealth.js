@@ -33,7 +33,7 @@ export function Telehealth() {
             </div>
                 <Practices />
             <div style={{ textAlign: 'center' }}>
-            <Button variant="primary" href="https://themerlingroupworld.com/signup" target="_blank">
+            <Button variant="primary" href="https://themerlingroupworld.com/signup/provider" target="_blank">
                 {t("Providers: Signup")}
             </Button>
             </div>

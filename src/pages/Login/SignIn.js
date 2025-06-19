@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom'; // ✅ useNavigate add korlam
@@ -45,29 +45,94 @@ const SignIn = () => {
     }
   };
 
+  // NEW: Google One Tap Sign-In
+  useEffect(() => {
+    const handleGoogleSignUp = async (response) => {
+      // decode credential JWT if needed, or send directly to backend
+      console.log("Google credential:", response.credential);
+
+      try {
+        const res = await axios.post(
+          'https://decentmed-server.vercel.app/google-signup',
+          // 'http://localhost:5001/google-signup',
+         
+          { credential: response.credential },
+          {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          }
+        );
+
+        if (res.data.token) {
+          localStorage.setItem('token', res.data.token);
+          Swal.fire({
+            icon: 'success',
+            title: 'Google Signin Successful!',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            const redirect = localStorage.getItem("redirectAfterSignup");
+            if (redirect === "paypal") {
+              localStorage.removeItem("redirectAfterSignup");
+              window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+            } else {
+              navigate("/");
+            }
+          });
+        }
+      } catch (err) {
+        console.error("Google signin failed:", err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Google signin failed!',
+          text: err.response?.data?.message || 'Please try again.'
+        });
+      }
+    };
+
+    // Load Google Identity Services script
+    const script = document.createElement('script');
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.onload = () => {
+      window.google.accounts.id.initialize({
+        // client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+        client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
+        callback: handleGoogleSignUp
+      });
+
+      window.google.accounts.id.renderButton(
+        document.getElementById("googleSignUpDiv"),
+        { theme: "outline", size: "large", text: "signin_with" }
+      );
+    };
+    document.body.appendChild(script);
+  }, [navigate]);
+
   return (
     <div className="auth-form-container" >
-   
+
 
       <form className="auth-form" style={{ position: "relative" }} onSubmit={handleSubmit}>
-   {/* ✅ Responsive Close Icon */}
-      <div
-        onClick={() => navigate("/")}
-        style={{
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-          fontSize: "24px",
-          fontWeight: "bold",
-          cursor: "pointer",
-          color: "#333",
-          background: "transparent",
-          border: "none",
-          zIndex: 10
-        }}
-      >
-        ❌
-      </div>
+        {/* ✅ Responsive Close Icon */}
+        <div
+          onClick={() => navigate("/")}
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            fontSize: "24px",
+            fontWeight: "bold",
+            cursor: "pointer",
+            color: "#333",
+            background: "transparent",
+            border: "none",
+            zIndex: 10
+          }}
+        >
+          ❌
+        </div>
 
         <h2>{t("Login")}</h2>
 
@@ -106,6 +171,15 @@ const SignIn = () => {
         <p>
           {t('Don’t have an account?')} <Link to="/signup">{t('Sign Up')}</Link>
         </p>
+
+        <div style={{ margin: "20px 0", textAlign: "center" }}>
+          <div id="googleSignUpDiv"
+            onClick={() => {
+              localStorage.setItem("redirectAfterSignup", "paypal");
+            }}
+          ></div>
+        </div>
+
       </form>
     </div>
   );
