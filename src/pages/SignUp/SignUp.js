@@ -51,10 +51,10 @@ const SignUp = () => {
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'OK'
         }).then(() => {
-          const redirect = localStorage.getItem("redirectAfterSignup");
+         // ✅ always read fresh URL param:
+          const urlParams = new URLSearchParams(window.location.search);
+          const redirect = urlParams.get("redirect");
           if (redirect === "paypal") {
-            localStorage.removeItem("redirectAfterSignup");
-            //Replace with Stripe like you did before
             window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
           } else {
             navigate("/");
@@ -102,9 +102,10 @@ const currentUrl = new URL(window.location.href);
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
           }).then(() => {
-          const redirect = localStorage.getItem("redirectAfterSignup");
+         // ✅ always read fresh URL param:
+          const urlParams = new URLSearchParams(window.location.search);
+          const redirect = urlParams.get("redirect");
           if (redirect === "paypal") {
-            localStorage.removeItem("redirectAfterSignup");
             window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
           } else {
             navigate("/");
