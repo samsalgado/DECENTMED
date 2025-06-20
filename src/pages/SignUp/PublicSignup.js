@@ -41,13 +41,13 @@ const PublicSignUp = () => {
         }).then(() => {
           // ✅ USE URL PARAM INSTEAD OF localStorage FOR BETTER RELIABILITY
           const urlParams = new URLSearchParams(window.location.search);
-          const redirect = urlParams.get("redirect");
+          //const redirect = urlParams.get("redirect");
 
-          if (redirect === "paypal") {
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
-          } else {
-            navigate("/");
-          }
+          //if (redirect === "paypal") {
+            //window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          //} else {
+            //navigate("/");
+          //}
         });
       }
 

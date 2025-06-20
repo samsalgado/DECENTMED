@@ -23,24 +23,6 @@ const Info = () => {
       </div>
       <Values />
       <div className='digital'>
-        <div className="image-container">
-          <div className="text-content">
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Content Creation')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Video Editing')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('AI-Enhanced Strategy')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Custom Storytelling')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Consulting')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Data Reporting')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('SEO (Local & National)')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Webinar Creation')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Social Media Optimization')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Custom Page Creation')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Conversion Optimization')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Branding & Consultation')}</p>
-            <p style={{ textAlign: 'left', color: '#FFFF00', }}>{t('Email Marketing')}</p>
-            <button style={{display:'flex', textTransform: 'capitalize' }} onClick={learnmore} className="btn btn-primary">{t("Learn More")}</button>
-          </div>
-        </div>
       </div>
 
 

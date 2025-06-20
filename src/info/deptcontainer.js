@@ -30,9 +30,9 @@ function BlueContainer() {
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Health Coaches')}</h3>
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Wellness Coaches')}</h3>
                     <NavLink to="/prevent" className="link">
-                        <img className="img-custom" src={Treatment.prevent} alt={t('Health Coaching')} />
+                        <img className="img-custom" src={Treatment.prevent} alt={t('Wellness Coaching')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">

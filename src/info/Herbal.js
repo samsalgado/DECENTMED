@@ -2,7 +2,7 @@ import React from 'react'
 import "./homeo.css";
 import './Info.css';
 import { Button } from 'react-bootstrap';
-import homeo from '../images copy/homeo.png';
+import homeo from '../images copy/meme3.png';
 import { useTranslation } from 'react-i18next';
 const Herbal = () => {
 const {t} = useTranslation('common')
