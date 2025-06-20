@@ -39,12 +39,10 @@ const PublicSignUp = () => {
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'OK'
         }).then(() => {
-          // ✅ USE URL PARAM INSTEAD OF localStorage FOR BETTER RELIABILITY
           const urlParams = new URLSearchParams(window.location.search);
-          const redirect = urlParams.get("redirect");
-
-          if (redirect === "paypal") {
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          const redirectTo = urlParams.get("from");
+          if (redirectTo) {
+            window.location.href = redirectTo;
           } else {
             navigate("/");
           }
@@ -60,29 +58,25 @@ const PublicSignUp = () => {
 
 
   // NEW: Google One Tap Sign-In
+
   useEffect(() => {
-const currentUrl = new URL(window.location.href);
-  if (!currentUrl.searchParams.get("redirect")) {
-    currentUrl.searchParams.set("redirect", "paypal");
-    window.history.replaceState({}, '', currentUrl);
-    console.log("✅ Google One Tap: redirect param ensured:", currentUrl.href);
-  }
+    const currentUrl = new URL(window.location.href);
+    // ✅ fallback 'from' param না থাকলে set করবেন না!
+    if (!currentUrl.searchParams.get("from")) {
+      console.log("✅ No 'from' param found. Will fallback to home '/' after login.");
+    } else {
+      console.log("✅ Found 'from':", currentUrl.searchParams.get("from"));
+    }
 
     const handleGoogleSignUp = async (response) => {
-      // decode credential JWT if needed, or send directly to backend
       console.log("Google credential:", response.credential);
 
       try {
         const res = await axios.post(
           'https://decentmed-server.vercel.app/google-signup',
           // 'http://localhost:5001/google-signup',
-        
           { credential: response.credential },
-          {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          }
+          { headers: { 'Content-Type': 'application/json' } }
         );
 
         if (res.data.token) {
@@ -93,15 +87,14 @@ const currentUrl = new URL(window.location.href);
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
           }).then(() => {
-           // ✅ always read fresh URL param:
-          const urlParams = new URLSearchParams(window.location.search);
-          const redirect = urlParams.get("redirect");
-          if (redirect === "paypal") {
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
-          } else {
-            navigate("/");
-          }
-        });
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectTo = urlParams.get("from");
+            if (redirectTo) {
+              window.location.href = redirectTo;
+            } else {
+              navigate("/");
+            }
+          });
         }
       } catch (err) {
         console.error("Google signin failed:", err);
@@ -113,13 +106,11 @@ const currentUrl = new URL(window.location.href);
       }
     };
 
-    // Load Google Identity Services script
     const script = document.createElement('script');
     script.src = "https://accounts.google.com/gsi/client";
     script.async = true;
     script.onload = () => {
       window.google.accounts.id.initialize({
-        // client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
         client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
         callback: handleGoogleSignUp
       });
@@ -130,7 +121,9 @@ const currentUrl = new URL(window.location.href);
       );
     };
     document.body.appendChild(script);
+
   }, [navigate]);
+
 
   return (
     <div className="auth-form-container">

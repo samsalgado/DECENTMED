@@ -27,6 +27,7 @@ const SignIn = () => {
 
       localStorage.setItem('token', res.data.token);
 
+      // ✅ Login Success Redirect
       Swal.fire({
         icon: 'success',
         title: 'Login Successful!',
@@ -34,8 +35,15 @@ const SignIn = () => {
         showConfirmButton: false,
         timer: 1800
       }).then(() => {
-        window.location.href = 'https://www.paypal.com/paypalme/DECENTMED';
+        const urlParams = new URLSearchParams(window.location.search);
+        const redirectTo = urlParams.get("from");
+        if (redirectTo) {
+          window.location.href = redirectTo;
+        } else {
+          navigate("/");
+        }
       });
+
 
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed');
@@ -47,77 +55,70 @@ const SignIn = () => {
 
   // NEW: Google One Tap Sign-In
   useEffect(() => {
-const currentUrl = new URL(window.location.href);
-  if (!currentUrl.searchParams.get("redirect")) {
-    currentUrl.searchParams.set("redirect", "paypal");
-    window.history.replaceState({}, '', currentUrl);
-    console.log("✅ Google One Tap: redirect param ensured:", currentUrl.href);
+  const currentUrl = new URL(window.location.href);
+  // ✅ fallback 'from' param না থাকলে set করবেন না!
+  if (!currentUrl.searchParams.get("from")) {
+    console.log("✅ No 'from' param found. Will fallback to home '/' after login.");
+  } else {
+    console.log("✅ Found 'from':", currentUrl.searchParams.get("from"));
   }
 
-    const handleGoogleSignUp = async (response) => {
-      // decode credential JWT if needed, or send directly to backend
-      console.log("Google credential:", response.credential);
+  const handleGoogleSignUp = async (response) => {
+    console.log("Google credential:", response.credential);
 
-      try {
-        const res = await axios.post(
-          'https://decentmed-server.vercel.app/google-signup',
+    try {
+      const res = await axios.post(
+        'https://decentmed-server.vercel.app/google-signup',
           // 'http://localhost:5001/google-signup',
-         
-          { credential: response.credential },
-          {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          }
-        );
+        { credential: response.credential },
+        { headers: { 'Content-Type': 'application/json' } }
+      );
 
-        if (res.data.token) {
-          localStorage.setItem('token', res.data.token);
-          Swal.fire({
-            icon: 'success',
-            title: 'Google Signin Successful!',
-            confirmButtonColor: '#3085d6',
-            confirmButtonText: 'OK'
-          }).then(() => {
-          // ✅ USE URL PARAM INSTEAD OF localStorage FOR BETTER RELIABILITY
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+        Swal.fire({
+          icon: 'success',
+          title: 'Google Signin Successful!',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        }).then(() => {
           const urlParams = new URLSearchParams(window.location.search);
-          const redirect = urlParams.get("redirect");
-
-          if (redirect === "paypal") {
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
+          const redirectTo = urlParams.get("from");
+          if (redirectTo) {
+            window.location.href = redirectTo;
           } else {
             navigate("/");
           }
         });
-        }
-      } catch (err) {
-        console.error("Google signin failed:", err);
-        Swal.fire({
-          icon: 'error',
-          title: 'Google signin failed!',
-          text: err.response?.data?.message || 'Please try again.'
-        });
       }
-    };
-
-    // Load Google Identity Services script
-    const script = document.createElement('script');
-    script.src = "https://accounts.google.com/gsi/client";
-    script.async = true;
-    script.onload = () => {
-      window.google.accounts.id.initialize({
-        // client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
-        client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
-        callback: handleGoogleSignUp
+    } catch (err) {
+      console.error("Google signin failed:", err);
+      Swal.fire({
+        icon: 'error',
+        title: 'Google signin failed!',
+        text: err.response?.data?.message || 'Please try again.'
       });
+    }
+  };
 
-      window.google.accounts.id.renderButton(
-        document.getElementById("googleSignUpDiv"),
-        { theme: "outline", size: "large", text: "signin_with" }
-      );
-    };
-    document.body.appendChild(script);
-  }, [navigate]);
+  const script = document.createElement('script');
+  script.src = "https://accounts.google.com/gsi/client";
+  script.async = true;
+  script.onload = () => {
+    window.google.accounts.id.initialize({
+      client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
+      callback: handleGoogleSignUp
+    });
+
+    window.google.accounts.id.renderButton(
+      document.getElementById("googleSignUpDiv"),
+      { theme: "outline", size: "large", text: "signin_with" }
+    );
+  };
+  document.body.appendChild(script);
+
+}, [navigate]);
+
 
   return (
     <div className="auth-form-container" >

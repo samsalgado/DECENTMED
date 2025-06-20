@@ -51,14 +51,8 @@ const SignUp = () => {
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'OK'
         }).then(() => {
-         // ✅ always read fresh URL param:
-          const urlParams = new URLSearchParams(window.location.search);
-          const redirect = urlParams.get("redirect");
-          if (redirect === "paypal") {
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
-          } else {
-            navigate("/");
-          }
+          // ✅ always read fresh URL param:
+          navigate("/stripepay")
         });
       }
 
@@ -74,11 +68,6 @@ const SignUp = () => {
 
   // NEW: Google One Tap Sign-In
   useEffect(() => {
-const currentUrl = new URL(window.location.href);
-  if (!currentUrl.searchParams.get("redirect")) {
-    currentUrl.searchParams.set("redirect", "paypal");
-    window.history.replaceState({}, '', currentUrl);
-  }
     const handleGoogleSignUp = async (response) => {
       // decode credential JWT if needed, or send directly to backend
       console.log("Google credential:", response.credential);
@@ -86,6 +75,7 @@ const currentUrl = new URL(window.location.href);
       try {
         const res = await axios.post(
           'https://decentmed-server.vercel.app/google-signup',
+          // 'http://localhost:5001/google-signup',
           { credential: response.credential },
           {
             headers: {
@@ -102,15 +92,9 @@ const currentUrl = new URL(window.location.href);
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
           }).then(() => {
-         // ✅ always read fresh URL param:
-          const urlParams = new URLSearchParams(window.location.search);
-          const redirect = urlParams.get("redirect");
-          if (redirect === "paypal") {
-            window.location.href = "https://www.paypal.com/paypalme/DECENTMED";
-          } else {
-            navigate("/");
-          }
-        });
+            // ✅ always read fresh URL param:
+           navigate("/stripepay")
+          });
         }
       } catch (err) {
         console.error("Google signin failed:", err);
@@ -223,7 +207,7 @@ const currentUrl = new URL(window.location.href);
         </form>
       </div>
       <Practice />
-      <Offer2/>
+      <Offer2 />
       <Info7 />
 
     </>

@@ -62,6 +62,8 @@ import React, { useEffect, useState } from 'react';
 import SignupPopup from './Components/SignupPopup';
 import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
+import StripePayment from './pages/StripePayment/StripePayment';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 function App() {
   const { t } = useTranslation();
@@ -71,21 +73,21 @@ function App() {
   // Popup state
   const [showPopup, setShowPopup] = useState(false);
 
- useEffect(() => {
-  const token = localStorage.getItem('token');
-  if (
-    !token &&
-    !location.pathname.startsWith('/signup') &&
-    location.pathname !== '/signin'
-  ) {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 5000);
-    return () => clearTimeout(timer);
-  } else {
-    setShowPopup(false);
-  }
-}, [location.pathname]);
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (
+      !token &&
+      !location.pathname.startsWith('/signup') &&
+      location.pathname !== '/signin'
+    ) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 90000);
+      return () => clearTimeout(timer);
+    } else {
+      setShowPopup(false);
+    }
+  }, [location.pathname]);
 
 
   return (
@@ -144,6 +146,7 @@ function App() {
         <Route path="/telehealth" element={<Telehealth t={t} />} />
         <Route path="/about" element={<About t={t} />} />
         <Route path="/blog7" element={<Blog7 t={t} />} />
+        <Route path="/stripepay" element={<PrivateRoute><StripePayment t={t} /></PrivateRoute>} />
         <Route path="/signup" element={<SignupOptions />} />
         <Route path="/signup/public" element={<PublicSignUp t={t} />} />
         <Route path="/signup/provider" element={<SignUp t={t} />} />

@@ -31,11 +31,11 @@ export function Telehealth() {
                     allowFullScreen
                 ></iframe>
             </div>
-                <Practices />
+            <Practices />
             <div style={{ textAlign: 'center' }}>
-            <Button variant="primary" href="https://themerlingroupworld.com/signup/provider" target="_blank">
-                {t("Providers: Signup")}
-            </Button>
+                <Button variant="primary" href="https://themerlingroupworld.com/signup/provider" target="_blank">
+                    {t("Providers: Signup")}
+                </Button>
             </div>
             <br></br>
             <footer>
