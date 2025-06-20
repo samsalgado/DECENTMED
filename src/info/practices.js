@@ -32,7 +32,7 @@ function Practices() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to="/coaching">
                         <h3 className="card-title-fixed" >{t("Wellness Coach")}</h3>
-                        <img className="img-custom" src={Departments.healthcoach} alt={t("Health Coach")} />
+                        <img className="img-custom" src={Departments.prevent} alt={t("Health Coach")} />
                     </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
