@@ -19,7 +19,6 @@ const treatmentLinks = {
 
 const Grid = () => {
   const treatmentNames = Object.keys(Treatment);
-
   return (
    <div className='containe'>
  <div className="grid-contain">

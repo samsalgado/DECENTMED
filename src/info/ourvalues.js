@@ -21,8 +21,22 @@ function Values() {
                     <p className="edu">{t('One issue holistic medicine faces is low insurance reimbursements. By joining our platform, providers get equity in our apothecary. The sales from the apothecary are stored on a blockchain. The equity will be used to make treatments less expensive while funding providers from the apothecary.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Holistic Marketing')}</h4>
-                    <p className="edu">{t('Facilitating patient acquisition and management via video marketing, active social marketing strategies and management systems for website and social media to differentiate your practice.')}</p>
+                <h4>
+        <a 
+            href="https://themerlingroupworld.com/digitalmarketing" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{
+                color: '#1E90FF', // Cute blue color
+                textDecoration: 'none', // Remove underline
+                transition: 'color 0.3s ease', // Smooth color transition
+            }}
+            onMouseEnter={(e) => e.target.style.color = '#6495ED'} // Slightly lighter blue on hover
+            onMouseLeave={(e) => e.target.style.color = '#1E90FF'} // Back to original blue
+        >
+            {t('Holistic Marketing')}
+        </a>
+    </h4>                    <p className="edu">{t('Facilitating patient acquisition and management via video marketing, active social marketing strategies and management systems for website and social media to differentiate your practice.')}</p>
                 </div>
             </div>
         </div>
