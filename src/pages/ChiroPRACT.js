@@ -131,7 +131,6 @@ export function Chiro() {
           </div>
         </div>
 
-        {/* Results Section */}
         {showResults && (
           <div className="results-section">
             {isArizonaLocation ? (
