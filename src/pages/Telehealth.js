@@ -20,7 +20,6 @@ export function Telehealth() {
             <div className='container'>
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
-
             {/* <Practice /> */}
             <div className='video-container'>
                 <iframe

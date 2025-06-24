@@ -18,6 +18,7 @@ import Blog16 from './pages/blogs/blog16';
 import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
 import Mike from './pages/blogs/mike';
+import { HolisticHealers } from './pages/holistichealers';
 import Blog15 from './pages/blogs/blog15';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
@@ -117,6 +118,7 @@ function App() {
         <Route path='/hypnopract' element={<Hypnopract t={t} />} />
         <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
         <Route path='/chiropract' element={<Chiro t={t} />} />
+        <Route path='/holistichealers' element={<HolisticHealers t={t} />} />
         <Route path='/meditation' element={<Meditation t={t} />} />
         <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
         <Route path="/blog4" element={<Blog4 t={t} />} />

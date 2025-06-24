@@ -11,7 +11,8 @@ const Departments = {
     stem:require('../images copy/stem.png'),
     naturopathy: require("../images copy/naturopathyy.png"), 
     chiro: require("../images copy/Chiropractic.png"),
-    hypnotherapy: require("../images copy/hypno.png"), 
+    hypnotherapy: require("../images copy/hypno.png"),
+    HEALERS:require("../images copy/HEALERS.png"), 
     chelation: require("../images copy/chelation.png")
     };
     export default Departments;
