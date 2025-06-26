@@ -3,22 +3,21 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 //import ReactPlayer from 'react-player';
-import JenB from '../cards/divineintuition.png';
+import JenB from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import { useTranslation } from 'react-i18next'
 export function HolisticHealers() {
 const { t } = useTranslation('common');
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Holistic Health Practitioners")}</title>  
-        <meta name="description" content={t("Searching psychic near me? Look no further than our variety page that features psychics, psychedelic providers, various coaches, and more.")} />
+        <title>{t("Emotional Eating Coach")}</title>  
+        <meta name="description" content={t("If you want one of the best emotional eating books, look no further than the duo of Michelle Holzberger and emotional eating coach Vickie Todd.")} />
       </Helmet>
             <header>
             <Topbar />
             </header>
-
             <div class="container">
-            <h1>{t("Pyschics, Mediums, & Psychedelic Therapy Support")}</h1>
+            <h1>{t("Emotional Eating Coaches and Emotional Eating Books")}</h1>
  <div class="row">
     <div class="col-md-4">
     </div>
@@ -26,11 +25,13 @@ const { t } = useTranslation('common');
 
   <div class="row">
     <div class="col-md-6">
-      <h3>{t("Divine Intuitions")}</h3>
-      <a href='https://divineintuitionsjennyb.com/book-now/'>
+      <h3>{t("Solve your Out of Control Eating")}</h3>
+      <h4>{t("Vickie Todd")}</h4>
+      <h4>{t("Michele Holzberger")}</h4>
+      <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
     <figure>
         <img src={JenB} alt="logo" />
-          <figcaption>{t("Book Now")}</figcaption>
+          <figcaption>{t("Buy Book")}</figcaption>
         </figure>
       </a>
       {/*
@@ -44,9 +45,9 @@ controls={true}
 </div>
 */      
 }
-  <h5>{t("Divine Intuitions:")}</h5>
+  <h5>{t("Solve your Out of Control Eating:")}</h5>
       <p>
-      {t(" My name is Jenny B and I am a Divine Intuitive. As a Medium, my mission is to provide help & comfort to my clients so they can talk to a loved one, make an important decision and more!")}
+      {t("This book isn't about quick fixes or miracle diets; it's about understanding the 'whys' behind your eating habits. Learn from patients who share their own experiences and dive into their world, one filled with self-discovery and 'ah-ha' moments of how the past affects today’s choices. You too will discover groundbreaking connections, relatable anecdotes, and a roadmap to a healthier relationship with food.")}
       </p>
     </div>
   </div>

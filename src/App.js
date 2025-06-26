@@ -118,7 +118,7 @@ function App() {
         <Route path='/hypnopract' element={<Hypnopract t={t} />} />
         <Route path='/homeopract' element={<HomeopathyPract t={t} />} />
         <Route path='/chiropract' element={<Chiro t={t} />} />
-        <Route path='/holistichealers' element={<HolisticHealers t={t} />} />
+        <Route path='/emotionaleatingcoach' element={<HolisticHealers t={t} />} />
         <Route path='/meditation' element={<Meditation t={t} />} />
         <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
         <Route path="/blog4" element={<Blog4 t={t} />} />

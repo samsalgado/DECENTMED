@@ -12,7 +12,7 @@ const Departments = {
     naturopathy: require("../images copy/naturopathyy.png"), 
     chiro: require("../images copy/Chiropractic.png"),
     hypnotherapy: require("../images copy/hypno.png"),
-    HEALERS:require("../images copy/HEALERS.png"), 
+    HEALERS:require("../images copy/binge.png"), 
     chelation: require("../images copy/chelation.png")
     };
     export default Departments;
