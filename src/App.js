@@ -44,6 +44,7 @@ import Blog3 from './pages/blogs/blog3';
 import Blog4 from './pages/blogs/blog4';
 import { Apoth } from './pages/Apoth';
 import { Chiro } from './pages/ChiroPRACT';
+import { Breathwork } from './pages/breathworkers';
 import { Hypnopract } from './pages/hypnopract';
 import { AYPract } from './pages/AYPRACT';
 import { Nutritionpract } from './pages/nutritionpract';
@@ -106,6 +107,7 @@ function App() {
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
+        <Route path="/breathwork" element={<Breathwork t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />

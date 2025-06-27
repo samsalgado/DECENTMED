@@ -74,10 +74,15 @@ function Practices() {
                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to='/emotionaleatingcoach'>
                         <h3 className="card-title-fixed" >{t("Emotional Eating Books")}</h3>
-                        <img className="img-custom" src={Departments.HEALERS} alt={t("Stem Cell")} />
+                        <img className="img-custom" src={Departments.HEALERS} alt={t("Emotional Eating Relief")} />
                         </NavLink>
                    </div>
-                    
+                   <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <NavLink to='/breathwork'>
+                        <h3 className="card-title-fixed" >{t("Somatic Breathwork")}</h3>
+                        <img className="img-custom" src={Departments.BREATH} alt={t("Somatic Breathwork")} />
+                        </NavLink>
+                   </div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,8 @@ const Departments = {
     naturopathy: require("../images copy/naturopathyy.png"), 
     chiro: require("../images copy/Chiropractic.png"),
     hypnotherapy: require("../images copy/hypno.png"),
-    HEALERS:require("../images copy/binge.png"), 
+    HEALERS:require("../images copy/binge.png"),
+    BREATH:require("../images copy/breathworkk.png"), 
     chelation: require("../images copy/chelation.png")
     };
     export default Departments;
