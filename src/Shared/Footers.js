@@ -3,12 +3,16 @@ import './Footer.css';
 import Geyser from '../images copy/geyser.png'
 import {useTranslation } from 'react-i18next';
 import { FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
-
+import SYOOCE from '../images copy/SYOOCE.png'
 const Footers = () => {
   const {t} = useTranslation('common')
   return (
     <footer className="footer">
       <div className="footer-container">
+      <div className="footer-section office">
+      <h3 className='decent'>Products We Trust</h3>
+      <a  href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN"> <img src={SYOOCE} className='geyserImg' alt="" /></a>
+      </div>
         <div className="footer-section about">
           <h3 className='decent'>DECENT MED</h3>
           {/* <div className='imgdiv'><img src={LOGO} className="Logo" alt="logo" /></div> */}
@@ -21,7 +25,9 @@ const Footers = () => {
           <h3>{t('Office')}</h3>
           <p>5830 E 2ND ST Casper, WY 82609</p>
           <p>{t('Email: themerlingroupworld@gmail.com')}</p>
-          <p className='geyser'><a  href="https://geyser.fund/project/decentmedpubliccancercure/"> <img src={Geyser} className='geyserImg' alt="" /></a></p>
+          <p className='geyser'>
+            <a  href="https://geyser.fund/project/decentmedpubliccancercure/"> 
+            <img src={Geyser} className='geyserImg' alt="" /></a></p>
         </div>
         <div className="social-icons">
           <h3>{t('Social Media')}</h3>
@@ -30,7 +36,6 @@ const Footers = () => {
             <a href='https://twitter.com/ttf123457'><FaTwitter className='tweet' /></a>
             <a href="https://wa.me/18137664900" className='whatsapp'><FaWhatsapp /></a>
             <a href='https://www.youtube.com/@DCNTMD'><FaYoutube className='youtube' /></a>
-
           </div>
         </div>
         {/* <div className="footer-section newsletter">
