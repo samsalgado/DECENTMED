@@ -10,7 +10,7 @@ const Footers = () => {
     <footer className="footer">
       <div className="footer-container">
       <div className="footer-section office">
-      <h3 className='decent'>Products We Trust</h3>
+      <h3 className='decent'>{t("Products We Trust")}</h3>
       <a  href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN"> <img src={SYOOCE} className='geyserImg' alt="" /></a>
       </div>
         <div className="footer-section about">
