@@ -51,6 +51,7 @@ import { Nutritionpract } from './pages/nutritionpract';
 import { Coaching } from './pages/coach';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 import { Acupract } from './pages/acupract';
+import { Breathworkk } from './pages/Breathwork';
 import { Natpract } from './pages/naturopathics';
 import { Naturopathy } from './pages/Naturopathy';
 import SignUp from './pages/SignUp/SignUp';
@@ -102,6 +103,7 @@ function App() {
         <Route path="/naturopathylane" element={<Mike t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+        <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
