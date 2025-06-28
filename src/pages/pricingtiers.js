@@ -1,7 +1,7 @@
 import "../App.css";
 import '../info/Info.css';
 import { useTranslation } from 'react-i18next'
-import tier1 from "../images copy/FREE_TIER.png";
+import tier1 from "../images copy/BASIC.png";
 import tier2 from '../images copy/TIER_TWO.png';
 import tier3 from "../images copy/TIER_THREE.png";
 import Collapsible from 'react-collapsible';
