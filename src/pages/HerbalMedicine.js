@@ -10,6 +10,8 @@ import { useTranslation } from 'react-i18next';
 const HerbalMedicine = () => {
 const { t } = useTranslation('common');
   return (
+    <main className="page-content">
+
     <div className='wrapper'>
       <Helmet>  {/* Add Helmet component */}
         <title>{t("Encyclopedia of Herbal Medicine")}</title>
@@ -28,7 +30,7 @@ const { t } = useTranslation('common');
         <Footer />
       </footer>
     </div>
-
+</main>
   )
 }
 

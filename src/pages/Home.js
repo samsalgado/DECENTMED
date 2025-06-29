@@ -56,6 +56,7 @@ export function Home() {
 
   return (
     <>
+    <main className="page-content">
       <Helmet>
         <title>{t('Decent Med')}</title>
         <meta
@@ -138,7 +139,7 @@ export function Home() {
     </div>
   </div>
 )}
-
+</main>
     </>
   );
 }

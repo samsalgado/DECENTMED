@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 export function Natpract() {
 const { t } = useTranslation('common');
     return(
+      <main className="page-content">
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Naturopathy Near Me")}</title>  
@@ -56,6 +57,7 @@ controls={true}
                 <Footer />
             </footer>
         </div>
+        </main>
     )
     
 }

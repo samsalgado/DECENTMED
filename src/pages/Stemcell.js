@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 export function StemCell() {
 const {t} = useTranslation('common')
     return(
+        <main className="page-content">
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t('Stem Cell Therapy')}</title>  
@@ -22,6 +23,7 @@ const {t} = useTranslation('common')
                 <Footer />
             </footer>
         </div>
+        </main>
     )
     }
 

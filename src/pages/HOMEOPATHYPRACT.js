@@ -42,6 +42,8 @@ export function HomeopathyPract() {
   };
 
   return (
+    <main className="page-content">
+
     <div>
       <Helmet>
         <title>{t("Homeopathy Near Me")}</title>  
@@ -280,5 +282,6 @@ export function HomeopathyPract() {
         <Footer />
       </footer>
     </div>
+    </main>
   );
 }

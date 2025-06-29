@@ -37,6 +37,7 @@ export function StemPract() {
   };
 
   return(
+    <main className="page-content">
     <div>
       <Helmet>
         <title>{t("Find Stem Cell Therapy Near You - Location-Based Treatment")}</title>  
@@ -198,5 +199,6 @@ export function StemPract() {
         <Footer />
       </footer>
     </div>
+    </main>
   )
 }

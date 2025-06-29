@@ -9,6 +9,7 @@ export function Telehealth() {
     const { t } = useTranslation("common");
     return (
         <>
+        <main className="page-content">
             <Helmet>
                 <title>{t('Telehealth Services')}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +41,7 @@ export function Telehealth() {
             <footer>
                 <Footer />
             </footer>
+            </main>
         </>
     )
 }

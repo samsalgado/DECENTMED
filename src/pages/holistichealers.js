@@ -8,6 +8,8 @@ import { useTranslation } from 'react-i18next'
 export function HolisticHealers() {
 const { t } = useTranslation('common');
     return(
+      <main className="page-content">
+
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Emotional Eating Coach")}</title>  
@@ -68,6 +70,7 @@ controls={true}
                 <Footer />
             </footer>
         </div>
+        </main>
     )
     
 }

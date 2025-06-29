@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 export function Homeopathy() {
 const { t } = useTranslation('common');
     return( 
+        <main className="page-content">
+
     <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Homeopathy Near Me")}</title>  
@@ -20,6 +22,7 @@ const { t } = useTranslation('common');
             <Footer />
         </footer>
     </div>
+    </main>
     )
 }
 

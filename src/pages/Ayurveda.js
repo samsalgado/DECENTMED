@@ -8,7 +8,9 @@ export function Ayurveda() {
 const {t} = useTranslation('common');
     return (
         <>
-                <Helmet>  {/* Add Helmet component */}
+         <main className="page-content">
+        
+        <Helmet>  {/* Add Helmet component */}
         <title>{t("Ayurveda Experience")}</title>  
         <meta name="description" content={t("Discover the transformative power of the Ayurveda Experience! Explore ancient practices for mind-body balance, natural healing, and a path to well-being. Learn more.")} />
       </Helmet>
@@ -22,6 +24,7 @@ const {t} = useTranslation('common');
         <footer>
             <Footer />
         </footer>
+        </main>
     </>
     )
 }

@@ -40,6 +40,7 @@ export function Apoth() {
   const { t } = useTranslation('common');
 
   return (
+    <main className="page-content">
     <div className='wrapper'>
       <Helmet>
         <title>{t('Apothecary')}</title>
@@ -59,5 +60,6 @@ export function Apoth() {
         <Footer />
       </footer>
     </div>
+    </main>
   );
 }

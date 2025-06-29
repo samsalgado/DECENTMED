@@ -8,6 +8,8 @@ export function Coaching() {
 const { t } = useTranslation('common');
     return(
         <div>
+                          <main className="page-content">
+
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Health Coaching Near Me")}</title>  
         <meta name="description" content={t("Searching Health Coach Near me? Look no further than our fantastic health coaches that can assist you on your pathway to wellness.")} />
@@ -60,6 +62,7 @@ const { t } = useTranslation('common');
             <footer>
                 <Footer />
             </footer>
+            </main>
         </div>
     )
     

@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 export function Nutrition() {
     const { t } = useTranslation('common');
     return (
+        <main className="page-content">
         <div>
 {/* helmet */}
             <Helmet>  
@@ -25,6 +26,7 @@ export function Nutrition() {
                 <Footer />
             </footer>
         </div>
+        </main>
     )
 }
 

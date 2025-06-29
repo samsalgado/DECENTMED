@@ -57,6 +57,8 @@ export function Chiro() {
 
   return(
     <div>
+     <main className="page-content">
+
       <Helmet>
         <title>{t("Find Chiropractors Near You - Location-Based Chiropractic Care")}</title>  
         <meta name="description" content={t("Find chiropractors in your area. Enter your location to see available chiropractic care providers near you.")} />
@@ -256,6 +258,7 @@ export function Chiro() {
       <footer>
         <Footer />
       </footer>
+      </main>
     </div>
   )
 }

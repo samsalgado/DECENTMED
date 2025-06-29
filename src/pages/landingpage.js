@@ -9,6 +9,7 @@ const FileUploadDownload = () => {
   const { t } = useTranslation('common');
 
   return (
+    <main className="page-content">
     <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
       <div className="bg-white rounded-xl shadow-2xl p-8">
         <div className="text-center mb-8">
@@ -89,6 +90,7 @@ const FileUploadDownload = () => {
             <Footer />
         </footer>
     </div>
+    </main>
   );
 };
 

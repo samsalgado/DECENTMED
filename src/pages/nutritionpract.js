@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 export function Nutritionpract() {
 const { t } = useTranslation('common');
     return(
+      <main className="page-content">
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Nutritionist Near Me")}</title>  
@@ -55,6 +56,7 @@ const { t } = useTranslation('common');
                 <Footer />
             </footer>
         </div>
+        </main>
     )
     
 }

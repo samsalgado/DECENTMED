@@ -31,6 +31,7 @@ const BlogPage = () => {
 const { t } = useTranslation("common");
   return (
     <div>
+      <main className="page-content">
     <Helmet>
         <title>Blogs</title>  
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -395,6 +396,7 @@ const { t } = useTranslation("common");
         </div>
         </div>
     <Footer />
+    </main>
     </div>
   );
 };

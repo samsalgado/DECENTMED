@@ -4,6 +4,70 @@
 .App {
   text-align: center;
 }
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.App {
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.topbar {
+  animation: slideFadeDown 0.7s ease-out;
+  z-index: 1000; /* Optional: to ensure it stays on top */
+  position: relative;
+}
+/* Smooth hover effect for links or buttons */
+button, a {
+  transition: all 0.3s ease;
+}
+@keyframes topbarEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes contentEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-content {
+  animation: contentEntrance 0.7s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.topbar {
+  animation: topbarEntrance 0.6s ease-out forwards;
+  position: relative;
+  z-index: 1000;
+}
+
+button:hover, a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Add a subtle background gradient */
+body {
+  background-color: #ffffff; /* Replace with your original color */
+  margin: 0;
+  padding: 0;
+}
+
 
 .App-logo {
   height: 40vmin;

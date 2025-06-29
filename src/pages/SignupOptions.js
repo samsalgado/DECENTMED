@@ -6,6 +6,7 @@ const SignupOptions = () => {
   const navigate = useNavigate();
 
   return (
+    <main className="page-content">
     <div className="auth-form-container">
       <div className="auth-form">
         <h2>Joining as Provider or Patient?</h2>
@@ -13,6 +14,7 @@ const SignupOptions = () => {
         <button onClick={() => navigate('/signup/provider')}>Provider</button>
       </div>
     </div>
+    </main>
   );
 };
 

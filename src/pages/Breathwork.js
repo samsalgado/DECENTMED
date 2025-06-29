@@ -8,6 +8,8 @@ export function Breathworkk() {
 const { t } = useTranslation('common');
     return(
         <div>
+         <main className="page-content">
+
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Somatic Breathwork")}</title>  
         <meta name="description" content={t("Learn about Somatic breathwork and its benefits! Discover the ancient wisdom and techniques used to help people cope with stress, anxiety, and mental health challenges. Learn more.")} />
@@ -20,6 +22,7 @@ const { t } = useTranslation('common');
             <footer>
                 <Footer />
             </footer>
+            </main>
         </div>
     )
     

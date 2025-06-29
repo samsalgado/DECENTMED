@@ -11,6 +11,7 @@ import { Button } from 'react-bootstrap';
 const Practice = () => {
   const { t } = useTranslation("common");
   return (
+    <main className="page-content">
     <div className='container'>
       <div className='theecontaine'>
 
@@ -31,6 +32,7 @@ const Practice = () => {
 
       </div>
     </div>
+    </main>
   );
 };
 

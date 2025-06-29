@@ -9,6 +9,8 @@ export function Breathwork() {
 const { t } = useTranslation('common');
     return(
         <div>
+        <main className="page-content">
+
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Somatic Breathwork")}</title>  
         <meta name="description" content={t("If you want one of the best emotional eating books, look no further than the duo of Michelle Holzberger and emotional eating coach Vickie Todd.")} />
@@ -56,6 +58,7 @@ controls={true}
             <footer>
                 <Footer />
             </footer>
+            </main>
         </div>
     )
     

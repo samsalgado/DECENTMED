@@ -10,6 +10,7 @@ export default function Meditation() {
 const { t } = useTranslation('common');
     return (
         <>
+                        <main className="page-content">
                 <Helmet>  {/* Add Helmet component */}
         <title>{t("Sleep Meditation")}</title>  
         <meta name="description" content={t("Discover the transformative power of Meditation! Sleep meditation and more; how meditation can help you heal. Learn more.")} />
@@ -27,6 +28,7 @@ const { t } = useTranslation('common');
         <footer>
             <Footer />
         </footer>
+        </main>
     </>
     )
 }
