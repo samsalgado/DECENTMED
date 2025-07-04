@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 //import ReactPlayer from 'react-player';
-import JenB from '../cards/scarlett.JPG';
+import JenB from '../cards/att.3juUqLnN5jR9MBSm-yFs7CaifEZLD3n87K_waEZAkWI.jpeg';
 import { useTranslation } from 'react-i18next'
 export function Breathwork() {
 const { t } = useTranslation('common');
