@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './ScrollToTop';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import { Home } from './pages/Home';
@@ -96,7 +97,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* <Topbar t={t} /> */}
-
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
         <Route path="/404" element={<NotFound />} />
