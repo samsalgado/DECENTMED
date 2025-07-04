@@ -46,10 +46,10 @@ controls={true}
 */      
 }
   <h5>{t("Scartlett Dee, Somatic Breathwork Coach:")}</h5>
-      <p>
+      <p style={{ textAlign: 'left' }}>
       {t("Scarlett has over 30 years of experience in yoga, healing, and self-mastery. She guides transformational breathwork journeys that help release stored trauma, regulate the nervous system, and support deep emotional healing. Her sessions offer a powerful reset—reducing stress, calming anxiety, and rebuilding confidence from the inside out. Scarlett’s work is both grounding and expansive, helping clients overcome inner challenges and return to a state of clarity, presence, and aligned self-leadership.")}
       </p>
-      <p>
+      <p style={{ textAlign: 'left' }}>
         {t("Scarlett is a certified: 9D Breathwork Coach & Facilitator, Hypnotherapist, Holistic Therapist, Tantra & Yoga Teacher Trainer")}
       </p>
     </div>
