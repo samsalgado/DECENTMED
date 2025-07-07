@@ -8,6 +8,7 @@ import './Info.css';
 import { Button } from 'react-bootstrap';
 import drSebiES from '../images copy/IMG_9273.jpeg';
 import NUTES from '../images copy/IMG_9306.jpeg';
+import AJA from '../images copy/AJA.png';
 import NUTFR from '../images copy/IMG_9307.jpeg';
 import NUTNL from '../images copy/IMG_9308.jpeg';
 import NUTHindi from '../images copy/IMG_9309.jpeg';
@@ -123,20 +124,25 @@ const Nutritionpage = () => {
               </tr>
             </Collapsible>
             <Collapsible trigger={<th className="collapsible-trigger">{t('Functional Nutrition Resources')}</th>}>
-              <div className="collapsible-content">
-                <img className='griddimage' src={labs} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={brain} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={cogHindi} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={cogDutch} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={cogFR} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={cogES} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={NUTHindi} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={NUTNL} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={NUTFR} alt="Functional Nutrition Resources"/>
-                <img className='griddimage' src={NUTES} alt="Functional Nutrition Resources"/>
-                <img alt='' />
-              </div>
-            </Collapsible>                   
+            <div className="collapsible-content">
+  <div>
+    <a href="https://www.ajasupplements.com/pages/4factor" alt="ajasupplements">
+      <img className='griddimage' src={AJA} alt="Functional Nutrition Resources"/>
+      <img alt='' />
+    </a>
+  </div>
+  <img className='griddimage' src={labs} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={brain} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={cogHindi} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={cogDutch} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={cogFR} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={cogES} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={NUTHindi} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={NUTNL} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={NUTFR} alt="Functional Nutrition Resources"/>
+  <img className='griddimage' src={NUTES} alt="Functional Nutrition Resources"/>
+  <img alt='' />
+</div>            </Collapsible>                   
           </tbody>
         </table>
       </div>

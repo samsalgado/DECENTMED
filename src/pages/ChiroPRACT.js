@@ -3,7 +3,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import betterhealthsolutions from '../cards/betterheatlhsolutions.png'
+import betterhealthsolutions from '../images copy/drk.png'
 import { useTranslation } from 'react-i18next'
 
 export function Chiro() {
@@ -177,12 +177,12 @@ export function Chiro() {
                           </div>
                           <div className="col-md-3 text-end">
                             <a 
-                              href='https://drkhayami.com/' 
+                              href="tel:+14809456900" 
                               className="btn btn-outline-primary"
                               target="_blank" 
                               rel="noopener noreferrer"
                             >
-                              {t("View Profile")}
+                              {t("Contact")}
                             </a>
                           </div>
                         </div>

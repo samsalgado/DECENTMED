@@ -34,7 +34,7 @@ const Naturo = () => {
         <iframe
           width="100%"
           height="515"
-          src="https://drive.google.com/file/d/1By4SB2sG5sYqbOuo2n8JuPHDKnFZRt-5/preview"
+          src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
           title="Patient Acquisition Engine Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

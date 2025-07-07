@@ -20,6 +20,7 @@ import Blog1 from './pages/blogs/blog1';
 import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
 import Blog15 from './pages/blogs/blog15';
+import Blog18 from './pages/blogs/blog18';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
 import Blog17 from './pages/blogs/blog17';
@@ -116,6 +117,7 @@ function App() {
         <Route path="/apoth" element={<Apoth t={t} />} />
         <Route path="/blog1" element={<Blog1 t={t} />} />
         <Route path="/blog17" element={<Blog17 t={t} />} />
+        <Route path="/blog18" element={<Blog18 t={t} />} />
         <Route path="/blog2" element={<Blog2 t={t} />} />
         <Route path="/blog3" element={<Blog3 t={t} />} />
         <Route path="/herbalmedicine" element={<HerbalMedicine t={t} />} />
