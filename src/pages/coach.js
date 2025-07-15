@@ -20,7 +20,7 @@ const { t } = useTranslation('common');
             </header>
 
             <div class="container">
-            <h1>{t("Health Coaching")}</h1>
+            <h1>{t("Certified Coaches for Health, Empowerment, Trauma & More")}</h1>
             <h2>{t("Searching Health Coach Near me? We have you covered!")}</h2>
  <div class="row">
     <div class="col-md-4">
