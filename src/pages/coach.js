@@ -71,9 +71,7 @@ const { t } = useTranslation('common');
      
   <h5>{t("Ramona Crabtree-Falkner: Transformational Empowerment Coach")}</h5>
       <p>
-        {t("I see you. You’re a dedicated, high-achieving professional woman who seems to have it all together on the outside, yet inside, you feel exhausted, overwhelmed, and disconnected. You’re juggling responsibilities, meeting expectations, and giving your all to your career, family, and the world—yet you feel like something is missing. I know this struggle well because I’ve been exactly where you are. I spent years hustling—building a business, pushing through exhaustion, and ignoring what my body and spirit needed—until it all caught up with me. Burnout, health challenges, and a deep sense of disconnect forced me to stop and reassess. I had to learn to prioritize myself, set boundaries, and embrace aligned action instead of constantly striving.
-Now, I live what I teach. I choose balance, make space for joy, and trust my intuition to guide me forward. And I help women like you do the same.
-")}
+        {t("I see you. You’re a dedicated, high-achieving professional woman who seems to have it all together on the outside, yet inside, you feel exhausted, overwhelmed, and disconnected. You’re juggling responsibilities, meeting expectations, and giving your all to your career, family, and the world—yet you feel like something is missing. I know this struggle well because I’ve been exactly where you are. I spent years hustling—building a business, pushing through exhaustion, and ignoring what my body and spirit needed—until it all caught up with me. Burnout, health challenges, and a deep sense of disconnect forced me to stop and reassess. I had to learn to prioritize myself, set boundaries, and embrace aligned action instead of constantly striving. Now, I live what I teach. I choose balance, make space for joy, and trust my intuition to guide me forward. And I help women like you do the same.")}
       </p>
     </div>
   </div>
