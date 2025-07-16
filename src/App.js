@@ -21,6 +21,7 @@ import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
 import Blog15 from './pages/blogs/blog15';
 import Blog18 from './pages/blogs/blog18';
+import { Transformational } from './pages/transform';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
 import Blog17 from './pages/blogs/blog17';
@@ -68,7 +69,6 @@ import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
 import StripePayment from './pages/StripePayment/StripePayment';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
-
 function App() {
   const { t } = useTranslation();
   const queryClient = new QueryClient();
@@ -114,6 +114,7 @@ function App() {
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
+        <Route path="/transformationalcoaching" element={<Transformational t={t} />} />
         <Route path="/apoth" element={<Apoth t={t} />} />
         <Route path="/blog1" element={<Blog1 t={t} />} />
         <Route path="/blog17" element={<Blog17 t={t} />} />
