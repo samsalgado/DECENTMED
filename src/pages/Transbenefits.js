@@ -33,12 +33,12 @@ const {t} = useTranslation('common')
           <p className='pr'>{t("- Live authentically and intuitively")}</p>     
           <Button variant="primary" href="https://themerlingroupworld.com/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
         </div>
-*<iframe
+<iframe
           className="centered-video"
-          src="https://www.youtube.com/embed/KKcxxz7Q7cY?si=Q3mDGYSi8ERfF1LX"
+          src="https://www.youtube.com/embed/hgHkSicJ6xc?si=P4xxLg4CeQ_grt5g"
           frameBorder="0"
           allowFullScreen
-          title="Rumble video player"
+          title="YouTube video player"
           style={{
             maxWidth: '500px',
             width: '100%',
