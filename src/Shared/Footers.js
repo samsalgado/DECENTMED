@@ -28,7 +28,7 @@ const Footers = () => {
               </a>
             </div>
             <div className="col-6">
-              <a href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN">
+              <a href="https://www.lifewave.com/awicks">
                 <img src={lifewave} className='product-img' alt="" />
               </a>
             </div>
