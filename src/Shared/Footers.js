@@ -5,6 +5,7 @@ import {useTranslation } from 'react-i18next';
 import { FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import SYOOCE from '../images copy/SYOOCE.png';
 import AJA from '../images copy/AJAA.png';
+import lifewave from '../images copy/lifewave.png';
 
 
 const Footers = () => {
@@ -20,9 +21,15 @@ const Footers = () => {
                 <img src={AJA} className='product-img' alt="" />
               </a>
             </div>
+            
             <div className="col-6">
               <a href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN">
                 <img src={SYOOCE} className='product-img' alt="" />
+              </a>
+            </div>
+            <div className="col-6">
+              <a href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN">
+                <img src={lifewave} className='product-img' alt="" />
               </a>
             </div>
           </div>
