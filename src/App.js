@@ -19,6 +19,7 @@ import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
 import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
+import {AppliedKinesiology} from './pages/AK';
 import Blog15 from './pages/blogs/blog15';
 import Blog18 from './pages/blogs/blog18';
 import { Transformational } from './pages/transform';
@@ -110,6 +111,7 @@ function App() {
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
+        <Route path="/ak" element={<AppliedKinesiology t={t} />} />
         <Route path="/breathwork" element={<Breathwork t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
