@@ -4,6 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Ramona from '../cards/IMG_0587.jpeg';
 import Gorilla from '../cards/gorilla.png';
+import Anil from '../cards/anil.png';
 import { useTranslation } from 'react-i18next'
 export function Coaching() {
 const { t } = useTranslation('common');
@@ -72,6 +73,38 @@ const { t } = useTranslation('common');
   <h5>{t("Ramona Crabtree-Falkner: Transformational Empowerment Coach")}</h5>
       <p>
         {t("Ramona Crabtree-Falkner is a Transformational Empowerment Coach, retreat leader, and speaker who helps professional women reclaim their energy, realign with purpose, and rise empowered in life and work. With over 20 years of experience in holistic wellness and mindfulness, she creates spaces for growth, healing, and authentic connection. She guides women on a path to Reclaim Energy. Realign Purpose. Rise Empowered.")}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+    <h3>{t("Anil Narain Matai: Spirtual Coach")}</h3>
+    <a href="mailto:anil.matai@gmail.com">
+    <figure>
+        <img src={Anil} alt="logo" />
+          <figcaption>{t("Contact")}</figcaption>
+        </figure>
+      </a>
+      <div>
+      {/*<iframe
+  src="https://drive.google.com/file/d/1Z0qVqBe8ukAEMHmKQtzqtWhWx1orq1ri/preview"
+  width="100%"
+  title="John Craig" 
+  height="355px"
+  allow="autoplay"
+  frameBorder="0"
+  allowFullScreen
+  style={{
+    borderRadius: '12px',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+    border: 'none',
+    overflow: 'hidden'
+  }}
+></iframe>
+*/}
+</div>
+      <p>
+        {t("I'm Anil N Matai, a dedicated poet, philosopher, and spiritual guide on a mission to share the timeless wisdom of Sufi thought through my spiritually enriching poems. Deeply committed to exploring the intricacies of the human soul's journey, consciousness, and the pursuit of spiritual awakening. My poetic work delves into themes of spirituality, love, and the eternal quest for a deeper connection with the divine. Inspiring and guiding others on their spiritual path, urging them to discover profound truths within. Through eloquent verses and profound insights, I encourage reflection, challenge material illusions, and invite a journey of self-discovery.")}
       </p>
     </div>
   </div>
