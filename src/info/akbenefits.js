@@ -42,7 +42,7 @@ function Benefits() {
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4> {t("Light Force Adjustment")}</h4>
+                    <h4> {t("")}</h4>
                     <img className='gridimage' src={light} alt='' />
                     <p className="e">
                          {t("Incorporating muscle testing to help determine which approach is best for you including activator instrument, manual therapy, nutritional supplements, acupuncture, etc.")}
