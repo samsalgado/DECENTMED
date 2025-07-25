@@ -35,6 +35,8 @@ import BlogPage from './pages/Blog';
 import { Hypnotherapy } from './pages/Hypnotherapy';
 import Blog6 from './pages/blogs/cancer';
 import Blog10 from './pages/blogs/blog10';
+import Blog19 from './pages/blogs/blog19';
+import Ramona from './pages/blogs/ramona';
 import { About } from './pages/About';
 import { Homeopathy } from './pages/Homeopathy';
 import { Acupuncture } from './pages/Acupuncture';
@@ -132,6 +134,8 @@ function App() {
         <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
         <Route path="/blog4" element={<Blog4 t={t} />} />
         <Route path="/blog11" element={<Blog11 t={t} />} />
+        <Route path="/ramona" element={<Ramona t={t} />} />
+        <Route path="/blog19" element={<Blog19 t={t} />} />
         <Route path="/cancer" element={<Blog6 t={t} />} />
         <Route path="/blog5" element={<Blog5 t={t} />} />
         <Route path="/blog15" element={<Blog15 t={t} />} />

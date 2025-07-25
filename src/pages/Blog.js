@@ -5,6 +5,9 @@ import '../App.css';
 import Footer from '../footer';
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
+import ramona from "../images copy/ramona.jpeg";
+import lions from "../images copy/lions.png";
+import ak from "../images copy/1753114292278.jpeg";
 import cup from "../images copy/cup.jpg";
 import drk from "../images copy/drk.png";
 import moon from "../images copy/moon.png";
@@ -50,13 +53,46 @@ const { t } = useTranslation("common");
        <img className='gridimag' src={blogs} alt="logo" />
        </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fenbendazole for Cancer")}</h2>
       <div className='container'>
       <a href='/fenbendazole'>
     <figure>
         <img className='gridimag' src={Fenbendazole} alt="logo" />
           <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Applied Kinesiology with Acupuncture and Chiropractic for Autism")}</h2>
+      <div className='container'>
+      <a href='/'>
+    <figure>
+        <img className='gridimag' src={ak} alt="logo" />
+          <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Corporate Mindfulness")}</h2>
+      <div className='container'>
+      <a href='/ramona'>
+    <figure>
+        <img className='gridimag' src={ramona} alt="logo" />
+          <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Lion's Mane Supplement Benefits")}</h2>
+      <div className='container'>
+      <a href='https://peakformsupplements.com/products/lions-mane-elite'>
+    <figure>
+        <img className='gridimag' src={lions} alt="logo" />
+          <figcaption>{t("Access the best Lion's Mane supplements for improved mental clarity.")}</figcaption>
         </figure>
       </a>
       </div>
