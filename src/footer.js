@@ -9,7 +9,6 @@ const Footer = () => {
   return (
 <div>
 <div className="containe">
-
         <Grid />
         </div>
       <Footers></Footers>

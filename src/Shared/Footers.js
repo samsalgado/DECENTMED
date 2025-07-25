@@ -6,8 +6,6 @@ import { FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import SYOOCE from '../images copy/SYOOCE.png';
 import AJA from '../images copy/AJAA.png';
 import lifewave from '../images copy/lifewave.png';
-
-
 const Footers = () => {
   const {t} = useTranslation('common')
   return (
@@ -34,7 +32,6 @@ const Footers = () => {
             </div>
           </div>
         </div>
-
         <div className="footer-section about">
           <h3 className='decent'>DECENT MED</h3>
           {/* <div className='imgdiv'><img src={LOGO} className="Logo" alt="logo" /></div> */}
