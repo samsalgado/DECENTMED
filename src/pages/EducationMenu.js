@@ -41,6 +41,16 @@ const { t } = useTranslation('common');
           <img className='coursepic' src={Treatment.acupuncture} alt="" />
         </NavLink>
       </ul>
+       <ul>
+        <NavLink to="/ak">{t('Applied Kinesiology')}
+          <img className='coursepic' src={Treatment.ak} alt="" />
+        </NavLink>
+      </ul>
+      <ul>
+        <NavLink to="/transformationalcoaching">{t('Transformational Empowerment Coaching')}
+          <img className='coursepic' src={Treatment.empower} alt="" />
+        </NavLink>
+      </ul>
       <ul>
         <NavLink to="/chelation">{t('Chelation')}
           <img className='coursepic' src={Treatment.chelation} alt="" />

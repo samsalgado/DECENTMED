@@ -3,7 +3,9 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import betterhealthsolutions from '../cards/betterheatlhsolutions.png'
+import amy from "../images copy/amy.jpeg";
+import prices from "../images copy/prices.png";
+import betterhealthsolutions from '../images copy/drk.png'
 import { useTranslation } from 'react-i18next'
 
 export function Chiro() {
@@ -12,6 +14,7 @@ export function Chiro() {
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isArizonaLocation, setIsArizonaLocation] = useState(false);
+  const [isStLouisLocation, setIsStLouisLocation] = useState(false);
 
   // Auto-detect user location on page load
   useEffect(() => {
@@ -40,12 +43,21 @@ export function Chiro() {
       'arizona', 'az', 'scottsdale', 'phoenix', 'tempe', 'mesa', 
       'paradise valley', 'fountain hills', 'carefree', 'glendale'
     ];
-    
+    const stLouisTerms = [
+      'missouri', 'mo', 'st charles', 'St. Charles', 'Saint Louis', 'st louis', 'Belleville','belleville',
+      'kansas city', 'kc', 'carefree', 'Kansas City', 'Troy', 'Alton', 'troy', 'alton', 'edwardsville', 'Edwardsville'
+    ];
+
     const isAZ = arizonaTerms.some(term => 
+      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
+    );
+
+    const isStLouis = stLouisTerms.some(term => 
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
     );
     
     setIsArizonaLocation(isAZ);
+    setIsStLouisLocation(isStLouis);
     setShowResults(true);
   };
 
@@ -139,7 +151,7 @@ export function Chiro() {
               <>
                 <h2 className="mb-4">{t("Chiropractors in")} {location}</h2>
                 
-                {/* Chiropractor Listing */}
+                {/* Dr. Abbas Khayami - Arizona */}
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -177,14 +189,82 @@ export function Chiro() {
                           </div>
                           <div className="col-md-3 text-end">
                             <a 
-                              href='https://drkhayami.com/' 
+                              href="tel:+14809456900" 
                               className="btn btn-outline-primary"
                               target="_blank" 
                               rel="noopener noreferrer"
                             >
-                              {t("View Profile")}
+                              {t("Contact")}
                             </a>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : isStLouisLocation ? (
+              <>
+                <h2 className="mb-4">{t("Chiropractors in")} {location}</h2>
+                
+                {/* Dr. Carl - St. Louis */}
+                <div className="row mb-4">
+                  <div className="col-md-12">
+                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body">
+                        <div className="row">
+                          <div className="col-md-2 text-center">
+                            <img 
+                              src={amy} 
+                              alt="The Center for Natural Health" 
+                              style={{ 
+                                maxWidth: '100px', 
+                                maxHeight: '100px', 
+                                objectFit: 'contain' 
+                              }} 
+                            />
+                          </div>
+                          <div className="col-md-7">
+                            <h3 className="h4 mb-1">{t('Dr. Amy Wicks')}</h3>
+                            <p className="text-muted mb-2">{t("The Center for Natural Health")}</p>
+                            
+                            <p className="mb-2">
+                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                              {t("St. Charles, Missouri")}
+                            </p>
+                            
+                            <div className="mb-2">
+                              <span className="badge bg-light text-dark me-1">{t("Applied Kinesiology")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Autism")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("NAET Treatment (Nambudripad's Allergy Elimnation Techniques)")}</span>
+                            </div>
+                            
+                            <p className="card-text small">
+                              {t("Dr. Wicks' passion is to help others that seem to have nowhere else to turn.  She specializes in treating hard to treat conditions including (but not limited to) back pain, headaches, neurological conditions, digestive issues, arthritis, food sensitivities, seasonal allergies, and many more. When the body is functioning optimally, the way it was designed, then it has the ability to heal itself.  With adjustments, proper nutrition and balancing the body's systems using AK and CK procedures and/or NAET, it is then able to function optimally.")}
+                            </p>
+                          </div>
+                          <div className="col-md-5 text-end">
+                          <img 
+                              src={prices} 
+                              alt="The Center for Natural Health" 
+                              style={{ 
+                                maxWidth: '550px', 
+                                maxHeight: '420px', 
+                                objectFit: 'cover',
+                                width: '100%'
+                              }}
+                            />
+                            <a 
+                              href="tel:+16367245757" 
+                              className="btn btn-outline-primary"
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                            >
+                              {t("Contact")}
+                            </a>
+                            
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -197,25 +277,40 @@ export function Chiro() {
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
                   <h3>{t("No chiropractors available in")} {location}</h3>
                   <p className="text-muted">
-                    {t("We currently don't have any chiropractors listed in your area. Our services are currently available in Arizona.")}
+                    {t("We currently don't have any chiropractors listed in your area. Our services are currently available in Arizona and Missouri.")}
                   </p>
                   
                   <div className="mt-4">
                     <h5>{t("Available Locations:")}</h5>
                     <p className="text-primary">
                       {t("Scottsdale, Phoenix, Tempe, Mesa, Paradise Valley - Arizona")}
+                      <br />
+                      {t("St. Louis, St. Charles, Troy, Alton, Edwardsville - Missouri")}
                     </p>
                   </div>
                   
-                  <button 
-                    className="btn btn-primary mt-3"
-                    onClick={() => {
-                      setLocation('Scottsdale, AZ');
-                      setIsArizonaLocation(true);
-                    }}
-                  >
-                    {t("View Arizona Chiropractors")}
-                  </button>
+                  <div className="mt-3">
+                    <button 
+                      className="btn btn-primary me-2"
+                      onClick={() => {
+                        setLocation('Scottsdale, AZ');
+                        setIsArizonaLocation(true);
+                        setIsStLouisLocation(false);
+                      }}
+                    >
+                      {t("View Arizona Chiropractors")}
+                    </button>
+                    <button 
+                      className="btn btn-outline-primary"
+                      onClick={() => {
+                        setLocation('St. Louis, MO');
+                        setIsArizonaLocation(false);
+                        setIsStLouisLocation(true);
+                      }}
+                    >
+                      {t("View Missouri Chiropractors")}
+                    </button>
+                  </div>
                 </div>
               </div>
             )}

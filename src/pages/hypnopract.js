@@ -28,7 +28,7 @@ export function Hypnopract() {
     const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
 
     // Check if location contains Tampa-related terms
-    const tampaTerms = ['tampa', 'Tampa', 'fl', 'Florida', 'FL'];
+    const tampaTerms = ['tampa', 'usa', 'USA', 'united states', 'Tampa', 'fl', 'Florida', 'FL'];
 
     const isTampa = tampaTerms.some(term =>
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
@@ -41,7 +41,6 @@ export function Hypnopract() {
 
   return (
     <main className="page-content">
-
     <div>
       <Helmet>
         <title>{t("Hypnotherapy Near Me")}</title>

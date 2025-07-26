@@ -5,13 +5,21 @@ import '../App.css';
 import Footer from '../footer';
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
+import ramona from "../images copy/ramona.jpeg";
+import lions from "../images copy/lions.png";
+import ak from "../images copy/1753114292278.jpeg";
+import cup from "../images copy/cup.jpg";
+import drk from "../images copy/drk.png";
+import moon from "../images copy/moon.png";
 import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
 import mike from "../images copy/lanenaturopathy.png";
+import img from "../images copy/img.png";
 import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
 import golf from "../images copy/golf.jpg";
 import tammy from "../images copy/tammy.png";
+import imgg from "../images copy/imgg.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
 import constipation from '../images copy/constipation.png';
@@ -45,13 +53,46 @@ const { t } = useTranslation("common");
        <img className='gridimag' src={blogs} alt="logo" />
        </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fenbendazole for Cancer")}</h2>
       <div className='container'>
       <a href='/fenbendazole'>
     <figure>
         <img className='gridimag' src={Fenbendazole} alt="logo" />
           <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Applied Kinesiology with Acupuncture and Chiropractic for Autism")}</h2>
+      <div className='container'>
+      <a href='/'>
+    <figure>
+        <img className='gridimag' src={ak} alt="logo" />
+          <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Corporate Mindfulness")}</h2>
+      <div className='container'>
+      <a href='/ramona'>
+    <figure>
+        <img className='gridimag' src={ramona} alt="logo" />
+          <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Lion's Mane Supplement Benefits")}</h2>
+      <div className='container'>
+      <a href='https://peakformsupplements.com/products/lions-mane-elite'>
+    <figure>
+        <img className='gridimag' src={lions} alt="logo" />
+          <figcaption>{t("Access the best Lion's Mane supplements for improved mental clarity.")}</figcaption>
         </figure>
       </a>
       </div>
@@ -130,6 +171,22 @@ const { t } = useTranslation("common");
       </div>
 </div>  
     </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h2>
+    <div className='pr'>
+    <p>
+    {t("Tuesday, July 8, 2025, is expected to be under a severe weather advisory. Severe hot weather causes dehydration and intensifies existing back pain. Let's outline the top five stretches for back pain in Scottsdale.")}
+    </p>
+    <div className='container'>
+    <a href='/blog18'>
+    <figure>
+        <img className='gridimag' src={drk} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+</div>  
+    </div>
     <br></br>
     <br></br>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -146,8 +203,7 @@ const { t } = useTranslation("common");
         </figure>
       </a>
       </div>
-        </div>
-        
+      </div>
     </div>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('What is Acupuncture?')}</h2>
@@ -380,6 +436,54 @@ const { t } = useTranslation("common");
         </div>
         </div>
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Want More Energy? Why Functional Workouts Boost Metabolism & Testosterone')}</h2>
+    <div className='pr'>
+        <p>
+        {t("Want More Energy? Why Functional Workouts Boost Metabolism & Testosterone Feeling sluggish? Struggling with low energy, stubborn belly fat, or a dip in motivation? After 40, your metabolism slows, testosterone levels drop, and traditional workouts stop delivering results. The solution? Functional training. By activating multiple muscle groups, increasing calorie burn, and naturally supporting testosterone production, it helps you regain strength, energy, and focus. Compound movements like squats, deadlifts, and carries fire up your metabolism, while high-intensity functional workouts optimize hormone levels. If you're ready to ditch fatigue and start feeling like your younger self again, it's time to train smarter—not...")} 
+        </p>
+        <div className='container'>
+    <a href='https://www.ajasupplements.com/blogs/all-blogs/want-more-energy-why-functional-workouts-boost-metabolism-amp-testosterone'>
+    <figure>
+        <img className='gridimag' src={img} alt="logo" />
+          <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Why Functional Fitness Becomes More Important as You Age')}</h2>
+    <div className='pr'>
+        <p>
+        {t("Why Functional Fitness Becomes More Important as You Age When you were younger, you could push through workouts without much thought—skipping warm-ups, lifting heavy with bad form, and bouncing back quickly. But after 40, your metabolism slows, mobility decreases, and injuries take longer to heal. That’s why functional fitness isn’t just a trend; it’s a necessity for staying strong, mobile, and pain-free for life. Functional training focuses on real-world movement patterns—bending, lifting, carrying, and rotating—building strength that translates beyond the gym. It helps improve mobility, strengthen joints, and reduce injury risk, making it the smart way to train as you...")} 
+        </p>
+        <div className='container'>
+    <a href='https://www.ajasupplements.com/blogs/all-blogs/why-functional-fitness-becomes-more-important-as-you-age'>
+    <figure>
+        <img className='gridimag' src={imgg} alt="logo" />
+          <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Jyotish New Moon ~ June 25, 2025')}</h2>
+    <div className='pr'>
+        <p>
+        {t(`A powerful Jyotish New Moon in Ardra awakens karmic healing, soul intention, and divine transformation. June 25, 2025.`)} 
+        </p>
+        <div className='container'>
+    <a href='https://michelleberrybliss.com/2025/06/23/jyotish-new-moon-june-2025-ardra-sadhana-sankalpa/'>
+    <figure>
+        <img className='gridimag' src={moon} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Ways to Improve Your Sleep Quality')}</h2>
     <div className='pr'>
         <p>
@@ -390,6 +494,22 @@ const { t } = useTranslation("common");
     <figure>
         <img className='gridimag' src={mike} alt="logo" />
           <figcaption>{t('Click on image for full Blog by Michael Lane')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('5 Reasons You Should Incorporate Therapeutic Cupping Into Your Health and Wellness Routine!')}</h2>
+    <div className='pr'>
+        <p>
+        {t(`Highlighting the benefits of using cupping for your wellness routine.`)} 
+        </p>
+        <div className='container'>
+    <a href='https://www.tcnh-stl.com/cuppingblog'>
+    <figure>
+        <img className='gridimag' src={cup} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
         </figure>
       </a>
       </div>

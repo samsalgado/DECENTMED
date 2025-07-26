@@ -7,6 +7,7 @@ import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
+import  MassPract from './pages/Mass';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
 import Blog8 from './pages/blogs/blog8';
@@ -19,7 +20,10 @@ import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
 import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
+import {AppliedKinesiology} from './pages/AK';
 import Blog15 from './pages/blogs/blog15';
+import Blog18 from './pages/blogs/blog18';
+import { Transformational } from './pages/transform';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
 import Blog17 from './pages/blogs/blog17';
@@ -32,6 +36,8 @@ import BlogPage from './pages/Blog';
 import { Hypnotherapy } from './pages/Hypnotherapy';
 import Blog6 from './pages/blogs/cancer';
 import Blog10 from './pages/blogs/blog10';
+import Blog19 from './pages/blogs/blog19';
+import Ramona from './pages/blogs/ramona';
 import { About } from './pages/About';
 import { Homeopathy } from './pages/Homeopathy';
 import { Acupuncture } from './pages/Acupuncture';
@@ -67,7 +73,6 @@ import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
 import StripePayment from './pages/StripePayment/StripePayment';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
-
 function App() {
   const { t } = useTranslation();
   const queryClient = new QueryClient();
@@ -109,13 +114,17 @@ function App() {
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
+        <Route path="/ak" element={<AppliedKinesiology t={t} />} />
         <Route path="/breathwork" element={<Breathwork t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
+        <Route path="/transformationalcoaching" element={<Transformational t={t} />} />
         <Route path="/apoth" element={<Apoth t={t} />} />
         <Route path="/blog1" element={<Blog1 t={t} />} />
+                <Route path="/massagetherapy" element={<MassPract t={t} />} />
         <Route path="/blog17" element={<Blog17 t={t} />} />
+        <Route path="/blog18" element={<Blog18 t={t} />} />
         <Route path="/blog2" element={<Blog2 t={t} />} />
         <Route path="/blog3" element={<Blog3 t={t} />} />
         <Route path="/herbalmedicine" element={<HerbalMedicine t={t} />} />
@@ -127,6 +136,8 @@ function App() {
         <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
         <Route path="/blog4" element={<Blog4 t={t} />} />
         <Route path="/blog11" element={<Blog11 t={t} />} />
+        <Route path="/ramona" element={<Ramona t={t} />} />
+        <Route path="/blog19" element={<Blog19 t={t} />} />
         <Route path="/cancer" element={<Blog6 t={t} />} />
         <Route path="/blog5" element={<Blog5 t={t} />} />
         <Route path="/blog15" element={<Blog15 t={t} />} />

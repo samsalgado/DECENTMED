@@ -4,13 +4,17 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import Treis from '../cards/oceantreis.jpg';
+import Erica from '../cards/erica.png';
 import { useTranslation } from 'react-i18next'
+
 export function Acupract() {
 const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isTampaLocation, setIsTampaLocation] = useState(false);
+  const [isMilwaukeeLocation, setIsMilwaukeeLocation] = useState(false);
+
  useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -25,6 +29,7 @@ const { t } = useTranslation('common');
       setUserLocation('Enter your location');
     }
   }, []);
+
   const handleSearch = () => {
     if (!location.trim()) return;
   
@@ -32,76 +37,39 @@ const { t } = useTranslation('common');
     const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
   
     // Check if location contains Tampa-related terms
-    const tampaTerms = ['tampa', 'Tampa, fl', 'fl', 'Florida', 'FL'];
+    const tampaTerms = ['tampa', 'Tampa, fl', 'fl', 'Florida', 'FL', 'bradenton', 'sarasota'];
     const isTP = tampaTerms.some(term => 
+      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
+    );
+
+    // Check if location contains Milwaukee-related terms
+    const milwaukeeTerms = ['milwaukee', 'wisconsin', 'wi', 'WI'];
+    const isMW = milwaukeeTerms.some(term => 
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
     );
   
     setLocation(capitalizedLocation);  // Set the capitalized location in state
     setIsTampaLocation(isTP);
+    setIsMilwaukeeLocation(isMW);
     setShowResults(true);
   };
   
-
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleSearch();
     }
   };
-/*
-        <div>
-        <Helmet>
-        <title>{t("Acupuncturist Near Me")}</title>  
-        <meta name="description" content={t("Searching Acupuncturist near me? Look no further than our fantastic acupuncturist that can assist you on your pathway to wellness.")} />
-      </Helmet>
-            <header>
-            <Topbar />
-            </header>
-            <div class="container">
-            <h1>{t("Acupuncture")}</h1>
-            <h2>{t("Searching Acupuncturist Near me? We have you covered!")}</h2>
- <div class="row">
-    <div class="col-md-4">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <h3>{t("Ocean Treis Medical")}</h3>
-      <a href='https://oceantreismedical.acubliss.app/portal/booking/nettie-criscio/bradenton/'>
-    <figure>
-        <img src={Treis} alt="logo" />
-          <figcaption>{t("View Website")}</figcaption>
-        </figure>
-      </a>
-      <div>
-      <iframe
-  src="https://drive.google.com/file/d/1hmNaUgvbJ7nI5rmKIliGsLDsmEmdUsoJ/preview"
-  width="100%"
-  height="315px"
-  title="Acupuncture"
-  allow="autoplay"
-  allowFullScreen
-></iframe>
-</div>
-  <h5>{t("Ocean Treis Medical:")}</h5>
-      <p>
-      {t("ocean")}
-      </p>
-    </div>
-  </div>
-</div>
-*/
-    return(
-        <div>
-        <Helmet>  {/* Add Helmet component */}
+  return(
+    <div>
+      <Helmet>
         <title>{t("Acupuncturist Near Me")}</title>  
         <meta name="description" content={t("Searching Acupuncturist near me? Look no further than our fantastic acupuncturist that can assist you on your pathway to wellness.")} />
       </Helmet>
-            <header>
-            <Topbar />
-            </header>
-            <div className="container">
+      <header>
+        <Topbar />
+      </header>
+      <div className="container">
         {/* Search Bar Section */}
         <div className="search-section" style={{ 
           background: '#f8f9fa', 
@@ -173,7 +141,7 @@ const { t } = useTranslation('common');
               <>
                 <h2 className="mb-4">{t("Acupuncturists in")} {location}</h2>
                 
-                {/* Chiropractor Listing */}
+                {/* Tampa Acupuncturist Listing */}
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -189,23 +157,21 @@ const { t } = useTranslation('common');
                                 objectFit: 'contain' 
                               }} 
                             />
-                            
                           </div>
                           <div>
-                          <iframe
-  style={{
-    borderRadius: "8px",
-    boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
-  }}
-  src="https://drive.google.com/file/d/1hmNaUgvbJ7nI5rmKIliGsLDsmEmdUsoJ/preview"
-  width="100%"
-  height="305px"
-  title="Acupuncture"
-  allow="autoplay"
-  allowFullScreen
-></iframe>
-
-                        </div>
+                            <iframe
+                              style={{
+                                borderRadius: "8px",
+                                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
+                              }}
+                              src="https://drive.google.com/file/d/1hmNaUgvbJ7nI5rmKIliGsLDsmEmdUsoJ/preview"
+                              width="100%"
+                              height="305px"
+                              title="Acupuncture"
+                              allow="autoplay"
+                              allowFullScreen
+                            />
+                          </div>
                           <div className="col-md-7">
                             <h3 className="h4 mb-1">{t('Dr. Nettie Criscio')}</h3>
                             <p className="text-muted mb-2">{t("Ocean Treis Medical")}</p>
@@ -241,31 +207,133 @@ const { t } = useTranslation('common');
                   </div>
                 </div>
               </>
+            ) : isMilwaukeeLocation ? (
+              <>
+                <h2 className="mb-4">{t("Acupuncturists in")} {location}</h2>
+                
+                {/* Milwaukee Acupuncturist Listing */}
+                <div className="row mb-4">
+                  <div className="col-md-12">
+                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body">
+                        <div className="row">
+                          <div className="col-md-2 text-center">
+                            <img 
+                              src={Erica} 
+                              alt="Erica - Acupuncturist" 
+                              style={{ 
+                                maxWidth: '300px', 
+                                maxHeight: '300px', 
+                                objectFit: 'contain',
+                                borderRadius: '8px'
+                              }} 
+                            />
+                          </div>
+                          <div className="col-md-7">
+                            <h3 className="h4 mb-1">{t("Erica Zernzach")}</h3>
+                            <p className="text-muted mb-2">{t("A Right Path Wellness")}</p>
+                            
+                            <p className="mb-2">
+                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                              {t("Milwaukee, Wisconsin")}
+                            </p>
+                            
+                            <div className="mb-2">
+                              <span className="badge bg-light text-dark me-1">{t("EZ Method Academy")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("EZ Method Apothecary")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Wellness Care")}</span>
+                            </div>
+                            
+                            <p className="card-text small">
+                              {t("At A Right Path Wellness, our mission is to promote total wellness through holistic medicine—restoring balance within your body, mind and spirit. Certified in the ancient practice of Eastern Medicine, our practitioners activate your body’s innate healing abilities—empowering our community by showing you that the path to transformation is right within your reach.")}
+                            </p>
+                            
+                            <div className="contact-info small text-muted">
+                              <p className="mb-1">
+                                <i className="fas fa-phone me-2"></i>
+                                {t("+1(414) 651-2850")}
+                              </p>
+                              <p className="mb-1">
+                                <i className="fas fa-envelope me-2"></i>
+                                {t("Erica@ARightPath.com")}
+                              </p>
+                              <p className="mb-1">
+                                <i className="fas fa-clock me-2"></i>
+                                {t("128 E Morgan Ave Milwaukee, WI 53207")}
+                              </p>
+                              <p className="mb-1">
+                                <i className="fas fa-clock me-2"></i>
+                                {t("M-F 10-8pm")}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="col-md-3 text-end">
+                          <a 
+                              href='https://arightpath.com/bookanappointment/' 
+                              className="btn btn-outline-primary"
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                            >
+                              {t("Book Appointment")}
+                            </a>
+                            <br />
+                            <a 
+                              href='mailto:Erica@ARightPath.com' 
+                              className="btn btn-outline-primary mb-2"
+                            >
+                              {t("Contact")}
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
             ) : (
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
                   <h3>{t("No acupuncturists available in")} {location}</h3>
                   <p className="text-muted">
-                    {t("We currently don't have any acupuncturists listed in your area. Our services are currently available in Tampa, Fl.")}
+                    {t("We currently don't have any acupuncturists listed in your area. Our services are currently available in Tampa, FL and Milwaukee, WI.")}
                   </p>
                   
                   <div className="mt-4">
                     <h5>{t("Available Locations:")}</h5>
-                    <p className="text-primary">
-                      {t("Tampa, Florida")}
-                    </p>
+                    <div className="d-flex justify-content-center gap-4">
+                      <div>
+                        <p className="text-primary mb-1">
+                          {t("Tampa, Florida")}
+                        </p>
+                        <button 
+                          className="btn btn-outline-primary btn-sm"
+                          onClick={() => {
+                            setLocation('Tampa, FL');
+                            setIsTampaLocation(true);
+                            setIsMilwaukeeLocation(false);
+                          }}
+                        >
+                          {t("View Tampa")}
+                        </button>
+                      </div>
+                      <div>
+                        <p className="text-primary mb-1">
+                          {t("Milwaukee, Wisconsin")}
+                        </p>
+                        <button 
+                          className="btn btn-outline-primary btn-sm"
+                          onClick={() => {
+                            setLocation('Milwaukee, WI');
+                            setIsMilwaukeeLocation(true);
+                            setIsTampaLocation(false);
+                          }}
+                        >
+                          {t("View Milwaukee")}
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <button 
-                    className="btn btn-primary mt-3"
-                    onClick={() => {
-                      setLocation('Tampa, Fl');
-                      setIsTampaLocation(true);
-                    }}
-                  >
-                    {t("View Tampa Acupuncturists")}
-                  </button>
                 </div>
               </div>
             )}
@@ -301,13 +369,41 @@ const { t } = useTranslation('common');
                 </div>
               </div>
             </div>
+
+            {/* Quick Access to Available Locations */}
+            <div className="mt-5">
+              <h4 className="mb-3">{t("Available Locations")}</h4>
+              <div className="d-flex justify-content-center gap-3">
+                <button 
+                  className="btn btn-primary"
+                  onClick={() => {
+                    setLocation('Tampa, FL');
+                    setIsTampaLocation(true);
+                    setIsMilwaukeeLocation(false);
+                    setShowResults(true);
+                  }}
+                >
+                  {t("Tampa, Florida")}
+                </button>
+                <button 
+                  className="btn btn-primary"
+                  onClick={() => {
+                    setLocation('Milwaukee, WI');
+                    setIsMilwaukeeLocation(true);
+                    setIsTampaLocation(false);
+                    setShowResults(true);
+                  }}
+                >
+                  {t("Milwaukee, Wisconsin")}
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>
-            <footer>
-                <Footer />
-            </footer>
-        </div>
-    )
-    
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  )
 }
