@@ -1530,5 +1530,16 @@
   "Create Account": "Créer un compte",
   "Don’t have an account?": "Vous n'avez pas de compte ?",
   "Signing In": "Connexion en cours",
-  "LogOut": "Déconnexion"
+  "LogOut": "Déconnexion",
+  "Provider Signup": "Inscription du fournisseur",
+  "Public Signup": "Inscription publique",
+  "Create an Account": "Créer un compte",
+  "Sign In": "Se connecter",
+  "Don’t have an account?": "Vous n'avez pas de compte ?",
+  "Signing In": "Connexion en cours",
+  "Affiliate Code (optional)": "Code affilié (optionnel)",
+  "Joining as Provider or Patient?": "Vous rejoignez en tant que prestataire ou patient ?",
+  "Public User": "Utilisateur public",
+  "Provider": "Fournisseur"
+
 }

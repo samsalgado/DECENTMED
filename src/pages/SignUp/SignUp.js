@@ -148,14 +148,14 @@ const SignUp = () => {
             ❌
           </div>
           <h2>{t("Provider Signup")}</h2>
-          <h2>{t("Create Account")}</h2>
+          <h2>{t("Create an Account")}</h2>
           {error && <p className="error">{error}</p>}
           {loading && <div className="loader"></div>}
 
           <input
             type="text"
             name="name"
-            placeholder={t("Full Name")}
+            placeholder={t("Name")}
             value={user.name}
             onChange={handleChange}
             required
@@ -164,7 +164,7 @@ const SignUp = () => {
           <input
             type="email"
             name="email"
-            placeholder={t("Email Address")}
+            placeholder={t("Email")}
             value={user.email}
             onChange={handleChange}
             required

@@ -6,10 +6,12 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/AuthForm.css";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 const PublicSignUp = () => {
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { t } = useTranslation('common');
 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -144,14 +146,14 @@ const PublicSignUp = () => {
         >
           ❌
         </div>
-        <h2>Public Signup</h2>
-        <h2>Create an Account</h2>
+        <h2>{t('Public Signup')}</h2>
+        <h2>{t('Create an Account')}</h2>
         {error && <p className="error">{error}</p>}
-        <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email Address" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-        <button type="submit">Sign Up</button>
-        <p>Already have an account? <Link to="/signin">Sign In</Link></p>
+        <input type="text" name="name" placeholder={t("Name")} onChange={handleChange} required />
+        <input type="email" name="email" placeholder={t("Email")} onChange={handleChange} required />
+        <input type="password" name="password" placeholder={t("Password")} onChange={handleChange} required />
+        <button type="submit">{t('Sign Up')}</button>
+        <p>{t('Already have an account?')} <Link to="/signin">{t('Sign In')}</Link></p>
 
         <div style={{ margin: "20px 0", textAlign: "center" }}>
           <div id="googleSignUpDiv"

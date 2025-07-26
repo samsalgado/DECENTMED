@@ -152,7 +152,7 @@ const SignIn = () => {
         <input
           type="email"
           name="email"
-          placeholder={t("Email Address")}
+          placeholder={t("Email")}
           value={user.email}
           onChange={handleChange}
           required
