@@ -7,6 +7,7 @@ import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
+import { MassPract } from './pages/Mass';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
 import Blog8 from './pages/blogs/blog8';
@@ -121,6 +122,7 @@ function App() {
         <Route path="/transformationalcoaching" element={<Transformational t={t} />} />
         <Route path="/apoth" element={<Apoth t={t} />} />
         <Route path="/blog1" element={<Blog1 t={t} />} />
+                <Route path="/massagetherapy" element={<MassPract t={t} />} />
         <Route path="/blog17" element={<Blog17 t={t} />} />
         <Route path="/blog18" element={<Blog18 t={t} />} />
         <Route path="/blog2" element={<Blog2 t={t} />} />
