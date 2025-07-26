@@ -47,11 +47,6 @@ const { t } = useTranslation('common');
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/ak">{t('Applied Kinesiology')}
-          <img className='coursepic' src={Treatment.ak} alt="" />
-        </NavLink>
-      </ul>
-      <ul>
         <NavLink to="/transformationalcoaching">{t('Transformational Empowerment Coaching')}
           <img className='coursepic' src={Treatment.empower} alt="" />
         </NavLink>
