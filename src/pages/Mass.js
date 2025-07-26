@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import jezy from '../images copy/IMG_0827.jpeg'; // ✅ Ensure this path is correct in your project
 
-const MassPract = () => {
+export default function MassPract() {
   const { t } = useTranslation();
 
   const [location, setLocation] = useState('');
@@ -97,7 +97,6 @@ const MassPract = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default MassPract;
