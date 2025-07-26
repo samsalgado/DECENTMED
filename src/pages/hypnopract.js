@@ -41,7 +41,6 @@ export function Hypnopract() {
 
   return (
     <main className="page-content">
-
     <div>
       <Helmet>
         <title>{t("Hypnotherapy Near Me")}</title>

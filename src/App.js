@@ -7,7 +7,7 @@ import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
-import { MassPract } from './pages/Mass';
+import  MassPract from './pages/Mass';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
 import Blog8 from './pages/blogs/blog8';

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
+import Topbar from './topbar';
+import Footer from '../footer';
 import jezy from '../images copy/IMG_0827.jpeg'; // ✅ Ensure this path is correct in your project
-
+import "../App.css";
 export default function MassPract() {
-  const { t } = useTranslation();
-
+  const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isWashLocation, setIsWashLocation] = useState(false);
@@ -36,26 +37,29 @@ export default function MassPract() {
   };
 
   return (
-    <div className="container my-5">
+    <main className="page-content">
+    <div>
       <Helmet>
         <title>{t('Find a Practitioner')} - DecentMed</title>
       </Helmet>
-
+    <header>
+      <Topbar />      
+    </header>
       <h1 className="text-center mb-4">{t('Find a Practitioner')}</h1>
-      <p className="text-center mb-4">
+      <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '2rem' }} className="text-center mb-8">
         {t('Enter your location to find holistic practitioners near you.')}
       </p>
 
       <div className="row justify-content-center mb-4">
-        <div className="col-md-6">
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder={t('Enter your city')}
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
+  <div className="wide-search">
+    <div className="input-group">
+      <input
+        type="text"
+        className="form-control"
+        placeholder={t('Enter your city')}
+        value={location}
+        onChange={(e) => setLocation(e.target.value)}
+      />
             <button className="btn btn-primary" onClick={handleSearch}>
               {t('Search')}
             </button>
@@ -75,12 +79,14 @@ export default function MassPract() {
                   style={{ maxWidth: '300px', height: 'auto' }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">JeZy</h5>
+                  <h5 className="card-title">JeZy, LMT</h5>
                   <p className="card-text">
-                    Enabling you to be your best awesome self!
+                    MA00008631
                   </p>
+                  <p className="card-text">
+                    {t("Licensed Massage Therapist/Certified Qigong Instructor/Facilitator to being your Best Awesome Self!")}                  </p>
                   <a href="tel:+12532260225" className="btn btn-primary">
-                    Call Now
+                    {t("Contact")}
                   </a>
                 </div>
               </div>
@@ -90,13 +96,16 @@ export default function MassPract() {
               <p>{t('We currently do not have providers listed in your area.')}</p>
               <p>
                 {t('Want to be the first?')}{' '}
-                <a href="mailto:info@decentmed.com">info@decentmed.com</a>
+                <a href="mailto:themerlingroupworld@gmail.com">{t("themerlingroupworld@gmail.com")}</a>
               </p>
             </div>
           )}
         </div>
+        
       )}
-    </div>
+      <footer><Footer /></footer>
+      </div>
+      </main>
   )
 }
 
