@@ -310,6 +310,7 @@ const Topbar = () => {
               <span className="lang" onClick={() => changeLang("fr")}>Français</span>
               <span className="lang" onClick={() => changeLang("ch")}>Chinese</span>
               <span className="lang" onClick={() => changeLang("hi")}>Hindi</span>
+              <span className="lang" onClick={() => changeLang("ar")}>Arabic</span>
             </div>
           )}
         </div>

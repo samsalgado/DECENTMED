@@ -1583,5 +1583,15 @@
   "Create Account": "Account aanmaken",
   "Don’t have an account?": "Heb je geen account?",
   "Signing In": "Aan het inloggen",
-  "LogOut": "Uitloggen"
+  "LogOut": "Uitloggen",
+  "Provider Signup": "Aanmelden als aanbieder",
+"Public Signup": "Openbare registratie",
+  "Create an Account": "Account aanmaken",
+  "Sign In": "Inloggen",
+  "Don’t have an account?": "Heb je geen account?",
+  "Signing In": "Bezig met inloggen",
+  "Affiliate Code (optional)": "Partnercode (optioneel)",
+  "Joining as Provider or Patient?": "Wordt u lid als aanbieder of patiënt?",
+  "Public User": "Openbare gebruiker",
+  "Provider": "Aanbieder"
 }
