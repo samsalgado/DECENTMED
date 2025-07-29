@@ -251,7 +251,7 @@ const Topbar = () => {
           </Navbar.Brand>
           <Nav className="me-auto">
             <EducationMenu />
-            <Nav.Link href="/telehealth">{t('Find Practioner')}</Nav.Link>
+            <Nav.Link href="/telehealth">{t('Find Practitioner')}</Nav.Link>
             <Nav.Link href="/cancer">{t('Cancer')}</Nav.Link>
             <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
             <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
