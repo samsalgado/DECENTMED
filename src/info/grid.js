@@ -12,6 +12,7 @@ const treatmentLinks = {
   chiro: "https://themerlingroupworld.com/chiropractic",
   empower:"https://themerlingroupworld.com/transformationalcoaching",
   ak:"https://themerlingroupworld.com/ak",
+  breathwork:"https://themerlingroupworld.com/breath",
   chelation:"https://themerlingroupworld.com/chelation",
   hypnotherapy:"https://themerlingroupworld.com/hypnotherapy",
   herbalmedicine:"https://themerlingroupworld.com/herbalmedicine",
