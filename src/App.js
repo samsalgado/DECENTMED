@@ -21,6 +21,7 @@ import Blog1 from './pages/blogs/blog1';
 import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
 import {AppliedKinesiology} from './pages/AK';
+import {AKPract} from './pages/kin';
 import Blog15 from './pages/blogs/blog15';
 import Blog18 from './pages/blogs/blog18';
 import { Transformational } from './pages/transform';
@@ -111,6 +112,7 @@ function App() {
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
+        <Route path="/akpract" element={<AKPract t={t} />} />
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />

@@ -13,6 +13,7 @@ const Departments = {
     chiro: require("../images copy/Chiropractic.png"),
     hypnotherapy: require("../images copy/hypno.png"),
     HEALERS:require("../images copy/binge.png"),
+    freq:require("../images copy/screenshot.png"),
     BREATH:require("../images copy/breathworkk.png"), 
     chelation: require("../images copy/chelation.png")
     };

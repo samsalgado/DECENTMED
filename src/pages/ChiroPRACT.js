@@ -7,6 +7,12 @@ import amy from "../images copy/amy.jpeg";
 import prices from "../images copy/prices.png";
 import betterhealthsolutions from '../images copy/drk.png'
 import { useTranslation } from 'react-i18next'
+// Remote Page: Frequency Medicine:
+//Dr. Amy Wicks
+//BioChemistry
+//Supplements & Herbs
+//Homeopathy
+//Emotional Work
 
 export function Chiro() {
   const { t } = useTranslation('common');
@@ -207,7 +213,6 @@ export function Chiro() {
               <>
                 <h2 className="mb-4">{t("Chiropractors in")} {location}</h2>
                 
-                {/* Dr. Carl - St. Louis */}
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -234,8 +239,8 @@ export function Chiro() {
                             </p>
                             
                             <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Applied Kinesiology")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Autism")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Complex Disorders")}</span>
                               <span className="badge bg-light text-dark me-1">{t("NAET Treatment (Nambudripad's Allergy Elimnation Techniques)")}</span>
                             </div>
                             
