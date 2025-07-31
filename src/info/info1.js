@@ -142,8 +142,8 @@ const Info1 = () => {
 
       {/* Keep original 3 images section unchanged */}
       <div className='acupen'>
-        <img className='gridmag' src={acuchart} alt='Ac' />
-        <img className='gridmag' src={acutreatsIN} alt='Ac' />
+        <img className='gridimag' src={acuchart} alt='Ac' />
+        <img className='gridimag' src={acutreatsIN} alt='Ac' />
         <a href="https://oceantreis.com/" target="_blank" rel="noopener noreferrer">
           <img className='gridimag' src={burnout} alt='oceantreis' />
         </a>      
