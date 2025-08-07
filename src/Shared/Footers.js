@@ -4,7 +4,6 @@ import Geyser from '../images copy/geyser.png'
 import {useTranslation } from 'react-i18next';
 import { FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import SYOOCE from '../images copy/SYOOCE.png';
-import AJA from '../images copy/AJAA.png';
 import lifewave from '../images copy/lifewave.png';
 const Footers = () => {
   const {t} = useTranslation('common')
@@ -13,13 +12,6 @@ const Footers = () => {
       <div className="footer-container">
         <div className="footer-section products">
           <h3 className='decent'>{t("Products We Trust")}</h3>
-          <div className="row">
-            <div className="col-6">
-              <a href="https://www.ajasupplements.com/collections/all">
-                <img src={AJA} className='product-img' alt="" />
-              </a>
-            </div>
-            
             <div className="col-6">
               <a href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN">
                 <img src={SYOOCE} className='product-img' alt="" />
