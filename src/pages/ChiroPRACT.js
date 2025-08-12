@@ -268,8 +268,22 @@ export function Chiro() {
                               {t("Contact")}
                             </a>
                             
+
                           </div>
-                          
+                          <div className="col-md-6">
+                                <iframe
+                                  src="https://drive.google.com/file/d/1t4ouK9Afjmmc7PaIYsWM3ALrS0Phkbqf/preview"
+                                  title='Acupuncture'
+                                  allow="autoplay"
+                                  style={{
+                                    width: '100%',
+                                    height: '300px',
+                                    borderRadius: '4px',
+                                    border: 'none'
+                                  }}    
+                                  allowFullScreen
+                                />
+                              </div>
                         </div>
                       </div>
                     </div>
