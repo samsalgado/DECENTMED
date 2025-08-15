@@ -54,9 +54,6 @@ const ANS = () => {
                 {t("- Those who do not have health insurance")}
               </Card.Text>
               <Card.Text>
-                {t("- Health insurance")}
-              </Card.Text>
-              <Card.Text>
                {t("- People who would like to try holistic medicine")}
               </Card.Text>
             </Card.Body>
