@@ -13,8 +13,8 @@ const WellnessInro = () => {
           height="315"
           src="https://drive.google.com/file/d/1IbhfjOZ4FIe6nuOlhLepQDUCqYcyONEx/preview"
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowfullscreen        
         ></iframe>
       </div>
       <div className='flex-container'>
