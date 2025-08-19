@@ -27,6 +27,12 @@ const { t } = useTranslation('common');
         </NavLink>
       </ul>
       <ul>
+        <NavLink to="/mindset">{t('Mindset Coaching')}
+          <img className='coursepic' src={Treatment.mindset} alt="" />
+        </NavLink>
+      </ul>
+
+      <ul>
         <NavLink to="/breath">{t('Breathwork')}
           <img className='coursepic' src={Treatment.breathwork} alt="" />
         </NavLink>
