@@ -79,7 +79,6 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
-
 <div class="row">
     <div class="col-md-6">
       <h3>{t("Authentic Life Journey")}</h3>
