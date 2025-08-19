@@ -7,6 +7,7 @@ import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
 import Priscilla from '../cards/priscilla.jpg';
 import { useTranslation } from 'react-i18next'
+
 export function Coaching() {
 const { t } = useTranslation('common');
     return(
@@ -21,20 +22,28 @@ const { t } = useTranslation('common');
             <Topbar />
             </header>
 
-            <div class="container">
+            <div className="container">
             <h1>{t("Certified Coaches for Health, Empowerment, Trauma & More")}</h1>
             <h2>{t("Searching Health Coach Near me? We have you covered!")}</h2>
- <div class="row">
-    <div class="col-md-4">
+ <div className="row">
+    <div className="col-md-4">
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
+  <div className="row">
+    <div className="col-md-6">
       <h3>{t("Gorilla and She Coaching")}</h3>
       <a href='https://www.gorillaandshecoaching.com/'>
     <figure>
-        <img src={Gorilla} alt="logo" />
+        <img 
+          src={Gorilla} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
@@ -62,12 +71,20 @@ const { t } = useTranslation('common');
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
+  <div className="row">
+    <div className="col-md-6">
     <h3>{t("Priscilla Wmk - Mindset Coach")}</h3>
     <a href='https://source.dynamitelifestyle.com/book-discovery-call-40/priscilla-wmk'>
     <figure>
-        <img src={Priscilla} alt="logo" />
+        <img 
+          src={Priscilla} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
           <figcaption>{t("Free Discovery Call")}</figcaption>
         </figure>
       </a>
@@ -75,16 +92,24 @@ const { t } = useTranslation('common');
         {t("I help individuals and entrepreneurs who want to achieve more to break through mental blocks, align with their highest potential and magnetize the success they truly desire.I help them understand the transformative power of their mindset and how it directly impacts their results in all areas of their life.")}
       </p>
       <p>
-        {t("I work together with my incredible mentor Kim Calvert who I was trained by. She was the late Bob Proctor’s #1 (and his only Executive Diamond pin holder, his highest global recognition) and went from £4.20 to an 8-figure entrepreneur by applying what we teach.")}
+        {t("I work together with my incredible mentor Kim Calvert who I was trained by. She was the late Bob Proctor's #1 (and his only Executive Diamond pin holder, his highest global recognition) and went from £4.20 to an 8-figure entrepreneur by applying what we teach.")}
       </p>
     </div>
   </div>
-<div class="row">
-    <div class="col-md-6">
+<div className="row">
+    <div className="col-md-6">
       <h3>{t("Authentic Life Journey")}</h3>
       <a href='https://authenticlifejourney.com/'>
     <figure>
-        <img src={Ramona} alt="logo" />
+        <img 
+          src={Ramona} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
@@ -95,12 +120,20 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
+  <div className="row">
+    <div className="col-md-6">
     <h3>{t("Anil Narain Matai: Spirtual Coach")}</h3>
     <a href="mailto:anil.matai@gmail.com">
     <figure>
-        <img src={Anil} alt="logo" />
+        <img 
+          src={Anil} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
           <figcaption>{t("Contact")}</figcaption>
         </figure>
       </a>

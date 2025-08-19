@@ -27,7 +27,7 @@ const {t} = useTranslation('common')
         }}>
          
           <p className="pr"><h2>{t("Mindset Coaching")}</h2></p>
-          <p className='pr'>{t("A mindset coach helps you with getting a deeper understanding of who you really are. Try a mindset coach that gets to learn the science of achievement and the science of mind so you can create change at the root cause which lasts.")}</p>
+          <p className='pr'>{t("A mindset coach helps you with getting a deeper understanding of who you really are. Try a mindset coach that can help you learn the science of achievement and the science of the mind so that you can create change at the root cause which lasts.")}</p>
         <Button variant="primary" href="https://themerlingroupworld.com/coaching" target="_blank">
          {t("Try Coaching")}
         </Button>        
