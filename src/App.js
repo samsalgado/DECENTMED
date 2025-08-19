@@ -3,6 +3,7 @@ import './App.css';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import { Home } from './pages/Home';
+import {Mindset} from './pages/Thoughts';
 import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
@@ -109,6 +110,7 @@ function App() {
         <Route path="/naturopathylane" element={<Mike t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+        <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />

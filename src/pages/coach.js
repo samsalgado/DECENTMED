@@ -5,6 +5,7 @@ import Footer from '../footer';
 import Ramona from '../cards/IMG_0587.jpeg';
 import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
+import Priscilla from '../cards/priscilla.jpg';
 import { useTranslation } from 'react-i18next'
 export function Coaching() {
 const { t } = useTranslation('common');
@@ -60,6 +61,25 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-6">
+    <h3>{t("Priscilla Wmk - Mindset Coach")}</h3>
+    <a href='https://source.dynamitelifestyle.com/book-discovery-call-40/priscilla-wmk'>
+    <figure>
+        <img src={Priscilla} alt="logo" />
+          <figcaption>{t("Free Discovery Call")}</figcaption>
+        </figure>
+      </a>
+      <p>
+        {t("I help individuals and entrepreneurs who want to achieve more to break through mental blocks, align with their highest potential and magnetize the success they truly desire.I help them understand the transformative power of their mindset and how it directly impacts their results in all areas of their life.")}
+      </p>
+      <p>
+        {t("I work together with my incredible mentor Kim Calvert who I was trained by. She was the late Bob Proctor’s #1 (and his only Executive Diamond pin holder, his highest global recognition) and went from £4.20 to an 8-figure entrepreneur by applying what we teach.")}
+      </p>
+    </div>
+  </div>
+
 <div class="row">
     <div class="col-md-6">
       <h3>{t("Authentic Life Journey")}</h3>
