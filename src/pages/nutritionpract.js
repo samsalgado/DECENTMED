@@ -2,6 +2,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import krisina from "../images copy/kristina.png";
 import Nutrifyourlife from '../cards/nutrifyourlife.jpg';
 import { useTranslation } from 'react-i18next'
 export function Nutritionpract() {
@@ -51,7 +52,27 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
-</div>
+
+<div class="row">
+    <div class="col-md-6">
+      <h3>{t("Thrive Results Coaching")}</h3>
+      <a href="tel:+12039847989">
+    <figure>
+        <img src={krisina} style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }} alt="logo" />
+          <figcaption>{t("Contact")}</figcaption>
+        </figure>
+      </a>
+  <h5>{t("Kristina Hess Clinical Nutritionist:")}</h5>
+      <p>
+      {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. Kristina is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology. Her speciality is to combine detailed personalization with ninja-level implementation for your accountability and compliance so that you get the best results (since knowing what to do and then not doing it, doesn’t help you whatsoever). Sessions with Kristina might include EFT, MB-EAT exercises, the Tiny Habits method and Heartmath to improve your psychology & behavior around food.")}
+      </p>
+    </div>
+  </div>
+  </div>
             <footer>
                 <Footer />
             </footer>

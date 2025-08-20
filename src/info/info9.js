@@ -61,8 +61,11 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
-      <a href="https://source.dynamitelifestyle.com/the-source-code-challenge/priscilla-wmk" target="_blank" rel="noopener noreferrer">
+     <a href="https://source.dynamitelifestyle.com/the-source-code-challenge/priscilla-wmk" target="_blank" rel="noopener noreferrer">
+      <figure>
           <img className='gridimag' src={dyn} alt='21 Day Challenge' />
+        <figcaption>{t("Join 21 Day Challenge")}</figcaption>
+        </figure>
         </a> 
         <br></br>
         <Benefitts />

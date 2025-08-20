@@ -5,6 +5,7 @@ import Footer from '../footer';
 import Ramona from '../cards/IMG_0587.jpeg';
 import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
+import Kristina from "../images copy/kristina.png";
 import Priscilla from '../cards/priscilla.jpg';
 import { useTranslation } from 'react-i18next'
 
@@ -33,7 +34,7 @@ const { t } = useTranslation('common');
   <div className="row">
     <div className="col-md-6">
       <h3>{t("Gorilla and She Coaching")}</h3>
-      <a href='https://www.gorillaandshecoaching.com/'>
+      <a href='https://www.gorillaandshecoaching.com/schedule/30-minute-metabolic-acceleration-call'>
     <figure>
         <img 
           src={Gorilla} 
@@ -44,7 +45,7 @@ const { t } = useTranslation('common');
             borderRadius: '8px'
           }}
         />
-          <figcaption>{t("View Website")}</figcaption>
+          <figcaption>{t("Book Discovery Call")}</figcaption>
         </figure>
       </a>
       <div>
@@ -120,6 +121,30 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
+  <div className="row">
+    <div className="col-md-6">
+    <h3>{t("Thrive Results Coaching")}</h3>
+    <a href='https://secure.gethealthie.com/users/sign_up/clients?invite_code=52421d'>
+    <figure>
+        <img 
+          src={Kristina} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Book Session")}</figcaption>
+        </figure>
+      </a>
+      <h5>{t("Kristina Hess: Premiere Health Coach")}</h5>
+      <p>
+        {t("Kristina is a premiere health coach and licensed dietitian-nutritionist with a functional and integrative approach. Kristina is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.  Her speciality is to combine detailed personalization with ninja-level implementation for your accountability and compliance so that you get the best results (since knowing what to do and then not doing it, doesn’t help you whatsoever).   Sessions with Kristina might include EFT, MB-EAT exercises, the Tiny Habits method and Heartmath to improve your psychology & behavior around food.")}
+      </p>
+    </div>
+  </div>
+
   <div className="row">
     <div className="col-md-6">
     <h3>{t("Anil Narain Matai: Spirtual Coach")}</h3>
