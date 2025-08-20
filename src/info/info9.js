@@ -39,9 +39,9 @@ const {t} = useTranslation('common')
           allowFullScreen
           title="YouTube video player"
           style={{
-            maxWidth: '400px',
+            maxWidth: '450px',
             width: '100%',
-            height: 'auto'
+            height: '350px'
           }}
         />
         </div>
