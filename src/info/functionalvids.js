@@ -2,50 +2,26 @@ import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
 
-const NutritionVids = () => {
+const FuncVids = () => {
     const { t } = useTranslation("common");
     const [plant] = useState([
+        
         {
             id:1,
-            videoUrl:"https://www.youtube.com/embed/WaEkkJ0j48Q?si=6znjzlyDoZLDS0Gp",
-            name:`${t("Kristina Hess featuring Catherine Arnston")}`
+            videoUrl:"https://www.youtube.com/embed/-fm6pwSGcUU?si=ysZi1D8aGn20THg3",
+            name:`${t("The Devastating Truth About Why Your Healthy Diet Isn't Working")}`
         },
-    
         {
             id:2,
-            videoUrl:"https://www.youtube.com/embed/bkcDmVEfDpw?si=gcGIIyZvcdA9hnKa",
-            name:`${t("The 3 Legs of Autoimmune Conditions")}`
+            videoUrl: "https://drive.google.com/file/d/18yp2Ua9zqubpxzA7E2UPIyOOEZ-1zqxI/preview",
+            name: `${t("Dysfunctional Medicine: Exposing Conventional Medicine")}`
         },
         {
             id:3,
-            videoUrl:"https://www.youtube.com/embed/qqlfc6pFbZ8?si=k84E8WY1XRet85sJ",
-            name:`${t("10 Ways to Prevent Insulin Resistance")}`
-        },
-        {
-            id:4,
-            videoUrl:"https://www.youtube.com/embed/TufWkz7m8gk?si=Z1UTz-DcaoRdAyDg",
-            name:`${t("Cortisol Hormone")}`
-        },
-        {
-            id:5,
-            videoUrl:"https://www.youtube.com/embed/MshrK5tShGc?si=AcaNMRiQSLFeEPsQ",
-            name:`${t("Reversing your Diet")}`
-        },
-        {
-            id:6,
-            videoUrl:"https://www.youtube.com/embed/bxbMGQ4Kgkc?si=AAj4Kkvyk0bTZAtb",
-            name:`${t("Reversing PCOS")}`
-        },
-        {
-            id:7,
-            videoUrl:"https://www.youtube.com/embed/N_ZJ7BzCZH0?si=orVFQQUn8f-1EWU3",
-            name:`${t("Natural Remedies for Depression")}`
-        },
-        {
-            id:8,
-            videoUrl:"https://www.youtube.com/embed/oj0leCvttM4?si=yla8rv7jl_4Dmg0t",
-            name:`${t("How NOT to Reverse Diet and why you need to do it")}`
+            videoUrl: "https://drive.google.com/file/d/1JEapKS8tjSO4OA09tRAOHvZMlmeBb5jX/preview",
+            name: `${t("Dysfunctional Medicine")}`
         }
+
     ]);
     return (
         <div className="contents">
@@ -117,4 +93,4 @@ const PlantCard = ({ val }) => {
     );
 }
 
-export default NutritionVids;
+export default FuncVids;

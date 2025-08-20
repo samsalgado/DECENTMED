@@ -2,49 +2,34 @@ import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
 
-const NutritionVids = () => {
+const ClinVids = () => {
     const { t } = useTranslation("common");
     const [plant] = useState([
         {
             id:1,
-            videoUrl:"https://www.youtube.com/embed/WaEkkJ0j48Q?si=6znjzlyDoZLDS0Gp",
-            name:`${t("Kristina Hess featuring Catherine Arnston")}`
+            videoUrl:"https://www.youtube.com/embed/NT7KB15cy0Y?si=FUOym2PDvOHOalAk",
+            name:`${t("Nutrigenomics")}`
         },
     
         {
             id:2,
-            videoUrl:"https://www.youtube.com/embed/bkcDmVEfDpw?si=gcGIIyZvcdA9hnKa",
-            name:`${t("The 3 Legs of Autoimmune Conditions")}`
+            videoUrl:"https://www.youtube.com/embed/KXxR0FTPmW8?si=iPRlXggVolqrPHYW",
+            name:`${t("3 Important Questions for Weight Loss")}`
         },
         {
             id:3,
-            videoUrl:"https://www.youtube.com/embed/qqlfc6pFbZ8?si=k84E8WY1XRet85sJ",
-            name:`${t("10 Ways to Prevent Insulin Resistance")}`
+            videoUrl:"https://www.youtube.com/embed/4FMYD6wjp74?si=L8kp2NN45VqA0B7n",
+            name:`${t("CRAFTING YOUR IDEAL DIET - KRISTINA HESS LECTURE AT KETO SYMPOSIUM NYC 2022")}`
         },
         {
             id:4,
-            videoUrl:"https://www.youtube.com/embed/TufWkz7m8gk?si=Z1UTz-DcaoRdAyDg",
-            name:`${t("Cortisol Hormone")}`
+            videoUrl:"https://www.youtube.com/embed/HGaKE9gxYzY?si=40IqfPwwawevZt35",
+            name:`${t("Build Resilience with Precision Nutrition for Longevity and Healthy Aging.")}`
         },
         {
             id:5,
-            videoUrl:"https://www.youtube.com/embed/MshrK5tShGc?si=AcaNMRiQSLFeEPsQ",
-            name:`${t("Reversing your Diet")}`
-        },
-        {
-            id:6,
-            videoUrl:"https://www.youtube.com/embed/bxbMGQ4Kgkc?si=AAj4Kkvyk0bTZAtb",
-            name:`${t("Reversing PCOS")}`
-        },
-        {
-            id:7,
-            videoUrl:"https://www.youtube.com/embed/N_ZJ7BzCZH0?si=orVFQQUn8f-1EWU3",
-            name:`${t("Natural Remedies for Depression")}`
-        },
-        {
-            id:8,
-            videoUrl:"https://www.youtube.com/embed/oj0leCvttM4?si=yla8rv7jl_4Dmg0t",
-            name:`${t("How NOT to Reverse Diet and why you need to do it")}`
+            videoUrl:"https://www.youtube.com/embed/xe2fFDVxxgA?si=Qkzkg9-YIlNeXv3T",
+            name:`${t("Genetics and personalized nutrition: why is this so important?")}`
         }
     ]);
     return (
@@ -117,4 +102,4 @@ const PlantCard = ({ val }) => {
     );
 }
 
-export default NutritionVids;
+export default ClinVids;

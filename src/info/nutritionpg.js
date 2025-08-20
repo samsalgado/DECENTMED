@@ -5,6 +5,7 @@ import obese from '../images copy/obese.png';
 import labs from '../images copy/8.jpg';
 import brain from '../images copy/9.jpg';
 import './Info.css';
+import NutritionVids from '../info/nutritionvids';
 import { Button } from 'react-bootstrap';
 import drSebiES from '../images copy/IMG_9273.jpeg';
 import NUTES from '../images copy/IMG_9306.jpeg';
@@ -106,6 +107,9 @@ const Nutritionpage = () => {
                 <img className='gridimage' src={drSebiES} alt='' />
                 <img alt='' />
               </tr>
+            </Collapsible>
+            <Collapsible trigger={<th className="collapsible-trigger">{t('Clinical Nutritionist')}</th>}>
+             <NutritionVids />
             </Collapsible>
             <Collapsible trigger={<th className="collapsible-trigger">{t('Case Studies')}</th>}>
               <tr>
