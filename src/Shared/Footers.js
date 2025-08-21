@@ -3,9 +3,7 @@ import './Footer.css';
 import Geyser from '../images copy/geyser.png';
 import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
-import SYOOCE from '../images copy/SYOOCE.png';
-import lifewave from '../images copy/lifewave.png';
-import linda from "../images copy/linda.png";
+import { Button } from 'react-bootstrap';
 
 const Footers = () => {
   const { t } = useTranslation('common');
@@ -17,31 +15,10 @@ const Footers = () => {
         {/* Products Section */}
         <div className="footer-section products">
           <h3 className="decent">{t("Products We Trust")}</h3>
+          <Button variant="primary" href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
+           {t("Shop")}
+            </Button>
           <div style={{display: 'flex', flexDirection: 'column'}}>
-            {/* First Row */}
-            <div style={{display: 'flex'}}>
-              <div style={{flex: 1}}>
-                <a href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN">
-                  <img src={SYOOCE} className="product-img" alt="Solve Your Out Of Control Eating" />
-                </a>
-              </div>
-              <div style={{flex: 1}}>
-                <a href="https://www.lifewave.com/awicks">
-                  <img src={lifewave} className="product-img" alt="Lifewave" />
-                </a>
-              </div>
-            </div>
-            {/* Second Row */}
-            <div style={{display: 'flex'}}>
-              <div style={{flex: 1}}>
-                <a href="https://sites.google.com/view/aplgo-products/product-details#h.7cz5b0j717v7">
-                  <img src={linda} className="product-img" alt="APL-GO" />
-                </a>
-              </div>
-              <div style={{flex: 1}}>
-                {/* Fourth spot - add another image here if you want */}
-              </div>
-            </div>
           </div>
         </div>
 
@@ -54,8 +31,15 @@ const Footers = () => {
         {/* Office Section */}
         <div className="footer-section office">
           <h3>{t('Office')}</h3>
+          <p>📞 <a href="tel:+18137664900">Call Us: +1 (813) 766-4900</a></p>
           <p>5830 E 2ND ST Casper, WY 82609</p>
-          <p>{t('Email: themerlingroupworld@gmail.com')}</p>
+          <p></p>
+          <p>
+    {t('Email:')}{' '}
+    <a href="mailto:samuel@themerlingroupworld.com">
+      samuel@themerlingroupworld.com
+    </a>
+  </p>
           <p className="geyser">
             <a href="https://geyser.fund/project/decentmedpubliccancercure/">
               <img src={Geyser} className="geyserImg" alt="Geyser Fund" />
@@ -81,9 +65,7 @@ const Footers = () => {
             </a>
           </div>
         </div>
-
       </div>
-
       {/* Footer Bottom */}
       <div className="footer-bottom">
         themerlingroupworld © 2025 - All Rights Reserved

@@ -33,6 +33,7 @@ import Blog17 from './pages/blogs/blog17';
 import { Detox } from './pages/Detox';
 import { StemCell } from './pages/Stemcell';
 import { NotFound } from './pages/NotFound';
+import { Shop } from './pages/products';
 import Blog2 from './pages/blogs/blog2';
 import { Nutrition } from './pages/Nutrition';
 import BlogPage from './pages/Blog';
@@ -128,7 +129,8 @@ function App() {
         <Route path="/transformationalcoaching" element={<Transformational t={t} />} />
         <Route path="/apoth" element={<Apoth t={t} />} />
         <Route path="/blog1" element={<Blog1 t={t} />} />
-                <Route path="/massagetherapy" element={<MassPract t={t} />} />
+        <Route path="/shop" element={<Shop t={t} />} />
+        <Route path="/massagetherapy" element={<MassPract t={t} />} />
         <Route path="/blog17" element={<Blog17 t={t} />} />
         <Route path="/blog18" element={<Blog18 t={t} />} />
         <Route path="/blog2" element={<Blog2 t={t} />} />
