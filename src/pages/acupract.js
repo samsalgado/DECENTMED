@@ -190,7 +190,7 @@ const { t } = useTranslation('common');
                             </div>
                             
                             <p className="card-text small">
-                              {t("At Ocean Treis Medical, we provide expert acupuncture treatments designed to relieve stress, reduce anxiety, and restore balance. Our holistic approach goes beyond temporary relief—helping you achieve lasting calm, better sleep, improved digestion, and overall well-being. Think of it as a reset button for your mind and body, so you can feel more grounded, energized, and at ease in your daily life.")}
+                              {t("At Ocean Treis Medical, we provide expert acupuncture treatments designed to relieve stress, reduce anxiety, and restore balance. Our holistic approach goes beyond temporary relief—helping you achieve lasting calm, better sleep, improved digestion, and overall well-being. Think of it as a reset button for your mind and body, so you can feel more grounded, energized, and at ease in your daily life. Aside from burnout, Ocean Treis has fascial acupuncture. Fascial Acupuncture has many benefits, like reducing wrinkles and looking young. If you are in Tampa, search fascial acupuncture near me.")}
                             </p>
                           </div>
                           <div className="col-md-3 text-end">

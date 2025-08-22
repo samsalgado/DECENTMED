@@ -62,16 +62,38 @@ const Ayurvedaa = () => {
           {t(`Ayurveda is a holistic healing system developed in India based on the delicate balance between mind, body, and spirit. The goal of Ayurveda is promoting good health instead of fighting disease. The goal is to cleanse your body of undigested food, which stay in your body and lead to illness. The process is called 'panchakarma', designed to reduce your symptoms and restore harmony and balance. Other processes used are blood purification, massage, medical oils, herbs, enemas, and laxatives.`)}
         </p>
         <h3>{t('Why Choose Ayurveda?')}</h3>
-        <p> {t('1. Truly embrace individual')}</p>
-        <p> {t('2. Foster self-awareness')}</p>
-        <p> {t('3. Focuses on prevention and the root cause of illness')}</p>
-        <p> {t('4. Truly intuitive')}</p>
+        <div>
+  <p style={{textAlign: "left"}}>{t('1. Truly embrace individual')}</p>
+  <p style={{textAlign: "left"}}>{t('2. Foster self-awareness')}</p>
+  <p style={{textAlign: "left"}}>{t('3. Focuses on prevention and the root cause of illness')}</p>
+  <p style={{textAlign: "left"}}>{t('4. Truly intuitive')}</p>
+</div>
         <Button variant="primary" href="https://themerlingroupworld.com/ayurvedicmedicine" target="_blank">
                 {t("Experience Ayurveda")}
         </Button>
       </div>
       <br></br>
-      <iframe width="100%" height={500} src="https://drive.google.com/file/d/1D_amsczAnFyuk4pharUzZSZQcYaKefvw/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <div className="video-container" style={{
+  width: '100vw',
+  marginLeft: 'calc(-50vw + 50%)',
+  marginRight: 'calc(-50vw + 50%)',
+  height: '56.25vw', // 16:9 aspect ratio
+  maxHeight: '80vh', // Don't exceed 80% of viewport height
+  minHeight: '400px'
+}}>
+  <iframe 
+    width="100%" 
+    height="100%" 
+    src="https://drive.google.com/file/d/1D_amsczAnFyuk4pharUzZSZQcYaKefvw/preview" 
+    title={t('YouTube video player')} 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowFullScreen
+    style={{
+      border: 'none',
+      objectFit: 'contain'
+    }}
+  />
+</div>
     </div>
   );
 }

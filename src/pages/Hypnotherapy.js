@@ -21,7 +21,7 @@ const { t } = useTranslation('common');
             </header>
             <HYPNO />
             <br></br>
-            <h1 className='center'>{t("Online Hypnotherapy")}</h1>
+            <h1 className='center'>{t("Hypnotherapy Services")}</h1>
             <Hypnovids />
             <footer>
                 <Footer />
