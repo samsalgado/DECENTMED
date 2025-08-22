@@ -16,7 +16,6 @@ import Blog8 from './pages/blogs/blog8';
 import Meditation from './pages/Meditation';
 import Blog7 from './pages/blogs/blog7';
 import Blog9 from './pages/blogs/blog9';
-import Blog11 from './pages/blogs/blog11';
 import { ReviewPage } from './pages/reviewpage';
 import Blog16 from './pages/blogs/blog16';
 import HerbalMedicine from './pages/HerbalMedicine';
@@ -25,7 +24,6 @@ import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
 import {AppliedKinesiology} from './pages/AK';
 import {AKPract} from './pages/kin';
-import Blog15 from './pages/blogs/blog15';
 import Blog18 from './pages/blogs/blog18';
 import { Transformational } from './pages/transform';
 import Blog12 from './pages/blogs/blog12';
@@ -125,12 +123,10 @@ function App() {
         <Route path='/meditation' element={<Meditation t={t} />} />
         <Route path='/ayurvedicmedicine' element={<AYPract t={t} />} />
         <Route path="/blog4" element={<Blog4 t={t} />} />
-        <Route path="/blog11" element={<Blog11 t={t} />} />
         <Route path="/ramona" element={<Ramona t={t} />} />
         <Route path="/blog19" element={<Blog19 t={t} />} />
         <Route path="/cancer" element={<Blog6 t={t} />} />
         <Route path="/blog5" element={<Blog5 t={t} />} />
-        <Route path="/blog15" element={<Blog15 t={t} />} />
         <Route path="/bitcoin" element={<Bitcoin t={t} />} />
         <Route path="/ivermectin" element={<Ivermectin t={t} />} />
         <Route path="/hoxsey" element={<Hoxsey t={t} />} />
