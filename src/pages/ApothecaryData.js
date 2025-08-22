@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import "../info/Info.css";
 import Modal from 'react-bootstrap/Modal';
 import Description from '../info/description';
 import '../App.css'
@@ -34,7 +35,7 @@ const ApothecaryData = ({ val }) => {
       <h3>{name}</h3>
       <h3>{t('Medical Rating')} : {medrating}</h3>
       <>
-        <Button variant="primary" size="sm" onClick={handleShow}>
+        <Button className="custom-btn" size="sm" onClick={handleShow}>
           <h3>{t('Description')}</h3>
         </Button>
         <Modal

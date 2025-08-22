@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import Practice from '../practices';
 import Info7 from '../../info/info7';
+import "../../info/Info.css";
 import Swal from 'sweetalert2';
 import '../Styles/AuthForm.css';
 import Offer2 from '../../offers/offer2';
@@ -48,7 +49,7 @@ const SignUp = () => {
           icon: 'success',
           title: 'Signup Successful!',
           text: 'Welcome to our platform!',
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: '#027360',
           confirmButtonText: 'OK'
         }).then(() => {
           // ✅ always read fresh URL param:
@@ -89,7 +90,7 @@ const SignUp = () => {
           Swal.fire({
             icon: 'success',
             title: 'Google Signin Successful!',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#027360',
             confirmButtonText: 'OK'
           }).then(() => {
             // ✅ always read fresh URL param:
@@ -196,7 +197,7 @@ const SignUp = () => {
             onChange={handleChange}
           />
 
-          <button type="submit" disabled={loading}>
+          <button className="custom-btn" type="submit" disabled={loading}>
             {loading ? <>{t("Sign Up")}...</> : <>{t("Sign Up")}</>}
           </button>
           <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>

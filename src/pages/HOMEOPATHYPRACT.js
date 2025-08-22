@@ -1,6 +1,7 @@
 import '../App.css';
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import "../info/Info.css";
 import Topbar from './topbar';
 import Footer from '../footer';
 import Lotus from '../cards/lotus.png';
@@ -97,7 +98,7 @@ export function HomeopathyPract() {
                   }}></i>
                 </div>
                 <button
-                  className="btn btn-primary"
+                  className="custom-btn"
                   onClick={handleSearch}
                   style={{
                     height: '50px',

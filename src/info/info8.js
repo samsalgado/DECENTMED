@@ -27,7 +27,7 @@ const {t} = useTranslation('common')
          
           <p className="pr"><h2>{t("Seeking Applied Kinesiology near me?")}</h2></p>
           <p className='pr'>{t("Applied Kinesiology (AK) is a holistic approach of treating muscle weakness and imbalance by working with the nervous system, lymphatic system, vascular system and nutrition. The Center for Natural Health provides AK with acupuncture, NAET and homeopathy (not limited) to identify underlying causes of health problems that go undetected.")}</p>
-          <Button variant="primary" href="https://tcnh.janeapp.com/#/naet-jmt" target="_blank">{t("Try Applied Kinesiology Today")}</Button>  {/* Added Bootstrap Button */}
+          <Button className="custom-btn" href="https://tcnh.janeapp.com/#/naet-jmt" target="_blank">{t("Try Applied Kinesiology Today")}</Button>  {/* Added Bootstrap Button */}
         </div>
         <iframe
           className="centered-video"

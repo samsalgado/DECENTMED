@@ -2,6 +2,7 @@ import React from 'react';
 import '../info/page.css';
 import { useTranslation } from 'react-i18next'
 import { Button } from 'react-bootstrap';
+import "../info/Info.css";
 import Collapsible from 'react-collapsible';
 import Footer from '../footer';
 import businessplan from '../images copy/graph.png';
@@ -36,7 +37,7 @@ const FileUploadDownload = () => {
           <p className="text-gray-600 mb-4">
             Want a personalized plan for your specific practice?
           </p>
-          <Button variant="primary" href="https://themerlingroupworld.com/telehealth" target="_blank">
+          <Button className="custom-btn" href="https://themerlingroupworld.com/telehealth" target="_blank">
           Buy Now
         </Button>
         </div>

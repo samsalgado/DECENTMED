@@ -1,6 +1,7 @@
 import React from 'react';
 import './Info.css';
 import HealthFacts from './Health';
+import { Button } from 'react-bootstrap';
 import BlueContainer from './deptcontainer';
 import WellnessInro from './wellness';
 import Values from './ourvalues';
@@ -17,7 +18,10 @@ const Info = () => {
       <h1 className='title'>{t('Decent Med')}</h1>
       <WellnessInro />
       <BlueContainer />
-      <button style={{display:'flex'}} onClick={learnmore} className="btn btn-primary">{t('Providers: Join Trusted Network')}</button>
+      <Button onClick={learnmore} className="custom-btn">
+  {t('Providers: Join Trusted Network')}
+</Button>
+
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
       </div>

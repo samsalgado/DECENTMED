@@ -16,6 +16,7 @@ hypnotherapy:require("../images copy/hypno.png"),
 herbalmedicine:require("../images copy/HERBALMEDICINE .png"),
 meditation:require("../images copy/meditation.jpg"),
 naturopathy:require("../images copy/naturopathyy.png"),
+nutri:require("../images copy/nutrig.png"),
 seo:require("../images copy/1755842387280.jpeg")
 };
 export default Treatment;

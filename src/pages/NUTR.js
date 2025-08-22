@@ -31,7 +31,7 @@ const {t} = useTranslation('common')
           <p className='pr'>{t("- Specialized lab packages that take the guesswork out of deciding what to eat")}</p>
           <p className='pr'>{t("- Stool Testing")}</p>
           <p className='pr'>{t("- Food Sensitivity Testing")}</p>
-          <Button variant="primary" href="https://themerlingroupworld.com/nutritionpract" target="_blank">{t("Find Providers")}</Button>  {/* Added Bootstrap Button */}
+          <Button className="custom-btn" href="https://themerlingroupworld.com/nutritionpract" target="_blank">{t("Find Providers")}</Button>  {/* Added Bootstrap Button */}
         </div>
         <iframe
           className="centered-video"

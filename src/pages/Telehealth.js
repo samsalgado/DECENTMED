@@ -3,6 +3,7 @@ import '../App.css';
 import Footer from '../footer';
 import Practices from '../info/practices';
 import Topbar from './topbar';
+import "../info/Info.css";
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
 export function Telehealth() {
@@ -33,7 +34,7 @@ export function Telehealth() {
             </div>
             <Practices />
             <div style={{ textAlign: 'center' }}>
-                <Button variant="primary" href="https://themerlingroupworld.com/signup/provider" target="_blank">
+                <Button className="custom-btn" href="https://themerlingroupworld.com/signup/provider" target="_blank">
                     {t("Providers: Signup")}
                 </Button>
             </div>

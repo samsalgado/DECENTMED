@@ -117,7 +117,7 @@ const { t } = useTranslation('common');
                 </div>
                 
                 <button
-                  className="btn btn-primary"
+                  className="custom-btn"
                   onClick={handleSearch}
                   style={{
                     height: '50px',
@@ -309,7 +309,7 @@ const { t } = useTranslation('common');
                           {t("Tampa, Florida")}
                         </p>
                         <button 
-                          className="btn btn-outline-primary btn-sm"
+                          className="custom-btn"
                           onClick={() => {
                             setLocation('Tampa, FL');
                             setIsTampaLocation(true);
@@ -324,7 +324,7 @@ const { t } = useTranslation('common');
                           {t("Milwaukee, Wisconsin")}
                         </p>
                         <button 
-                          className="btn btn-outline-primary btn-sm"
+                          className="custom-btn"
                           onClick={() => {
                             setLocation('Milwaukee, WI');
                             setIsMilwaukeeLocation(true);
@@ -377,7 +377,8 @@ const { t } = useTranslation('common');
               <h4 className="mb-3">{t("Available Locations")}</h4>
               <div className="d-flex justify-content-center gap-3">
                 <button 
-                  className="btn btn-primary"
+             className="custom-btn"
+
                   onClick={() => {
                     setLocation('Tampa, FL');
                     setIsTampaLocation(true);
@@ -388,7 +389,8 @@ const { t } = useTranslation('common');
                   {t("Tampa, Florida")}
                 </button>
                 <button 
-                  className="btn btn-primary"
+                                           className="custom-btn"
+
                   onClick={() => {
                     setLocation('Milwaukee, WI');
                     setIsMilwaukeeLocation(true);

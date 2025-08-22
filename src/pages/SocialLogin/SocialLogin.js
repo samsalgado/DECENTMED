@@ -3,6 +3,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth.js';
 import './SocialLogin.css';
+import "../../info/Info.css";
 import { useTranslation } from 'react-i18next';
 
 const SocialLogin = () => {

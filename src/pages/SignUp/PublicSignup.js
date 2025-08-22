@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/AuthForm.css";
+import "../../info/Info.css";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
 const PublicSignUp = () => {
@@ -38,7 +39,7 @@ const PublicSignUp = () => {
           icon: 'success',
           title: 'Signup Successful!',
           text: 'Welcome to our platform!',
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: '#027360',
           confirmButtonText: 'OK'
         }).then(() => {
           const urlParams = new URLSearchParams(window.location.search);
@@ -86,7 +87,7 @@ const PublicSignUp = () => {
           Swal.fire({
             icon: 'success',
             title: 'Google Signin Successful!',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#027360',
             confirmButtonText: 'OK'
           }).then(() => {
             const urlParams = new URLSearchParams(window.location.search);
@@ -152,7 +153,7 @@ const PublicSignUp = () => {
         <input type="text" name="name" placeholder={t("Name")} onChange={handleChange} required />
         <input type="email" name="email" placeholder={t("Email")} onChange={handleChange} required />
         <input type="password" name="password" placeholder={t("Password")} onChange={handleChange} required />
-        <button type="submit">{t('Sign Up')}</button>
+        <button className="custom-btn" type="submit">{t('Sign Up')}</button>
         <p>{t('Already have an account?')} <Link to="/signin">{t('Sign In')}</Link></p>
 
         <div style={{ margin: "20px 0", textAlign: "center" }}>

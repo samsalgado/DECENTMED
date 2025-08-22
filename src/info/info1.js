@@ -111,13 +111,12 @@ const Info1 = () => {
             </p>
             
             <Button 
-              variant="primary" 
+              className="custom-btn"
               href="https://themerlingroupworld.com/acupuncturists" 
               target="_blank"
               style={buttonStyle}
               onMouseOver={(e) => {
                 e.target.style.transform = 'translateY(-2px)';
-                e.target.style.boxShadow = '0 4px 12px rgba(0,123,255,0.3)';
               }}
               onMouseOut={(e) => {
                 e.target.style.transform = 'translateY(0)';

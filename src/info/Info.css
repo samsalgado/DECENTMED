@@ -8,6 +8,14 @@
   padding: 15px; /* Ensure some padding around the container */
   font-family: sans-serif;
 }
+.custom-btn {
+  background-color: #027360 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 
 .digital {
   margin-top: 10px;

@@ -31,7 +31,7 @@ const {t} = useTranslation('common')
           {t('An estimated 65% of American adults seek care for neck or back pain in their lifetime. Extrapolating that figure, 36% of Americans do not know if surgery is effective for their pain. Chiropractic care is 40% (estimate) more effective for treating back pain. Chiropractors remove neurological interference and restore proper biomechanics to the spine. Moreover, chiropractic care supports the immune system, improves sleep, improves behavior, improves brain development, and benefits development in both adults and children.' )}
         </p>
       <br></br>
-      <Button variant="primary" href="https://themerlingroupworld.com/chiropract" target="_blank">
+      <Button className="custom-btn" href="https://themerlingroupworld.com/chiropract" target="_blank">
                 {t("Get Chiropractic Care")}
             </Button>
       </div>

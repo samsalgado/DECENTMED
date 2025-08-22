@@ -3,6 +3,8 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
+import "../info/Info.css";
+
 import amy from "../images copy/amy.jpeg";
 import prices from "../images copy/prices.png";
 import betterhealthsolutions from '../images copy/drk.png'
@@ -131,7 +133,7 @@ export function Chiro() {
                 </div>
                 
                 <button
-                  className="btn btn-primary"
+                  className="custom-btn"
                   onClick={handleSearch}
                   style={{
                     height: '50px',
@@ -309,7 +311,7 @@ export function Chiro() {
                   
                   <div className="mt-3">
                     <button 
-                      className="btn btn-primary me-2"
+                      className="custom-btn"
                       onClick={() => {
                         setLocation('Scottsdale, AZ');
                         setIsArizonaLocation(true);
@@ -319,7 +321,7 @@ export function Chiro() {
                       {t("View Arizona Chiropractors")}
                     </button>
                     <button 
-                      className="btn btn-outline-primary"
+                     className="custom-btn"
                       onClick={() => {
                         setLocation('St. Louis, MO');
                         setIsArizonaLocation(false);

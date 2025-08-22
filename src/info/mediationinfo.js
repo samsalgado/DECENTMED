@@ -14,7 +14,7 @@ const MeditationInfo = () => {
 
       <div style={{ marginTop: '20px', width: '100%' }}>
         <Button style={{ marginRight: '20px' }} variant="primary" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>
-        <Button variant="primary" href="mailto:serenitymeditation2021@gmail.com" target="_blank">{t('Contact')}</Button>
+        <Button className="custom-btn" href="mailto:serenitymeditation2021@gmail.com" target="_blank">{t('Contact')}</Button>
       </div>
       
       <br />

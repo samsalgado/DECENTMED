@@ -53,7 +53,7 @@ const Nutritionpage = () => {
           flex: '1'
         }}>
           <p className='pr'>{t("If you are searching nutritionist near me, look no further than our holistic nutritionists offering traditional and alkaline diet recipes to reach your optimal self. For example, our nutritionists assist clients with the best plans rich in B vitamins, vitamin D, vitamin C and more. We provide nutritionists for a wide range of people, Lori Graham is a former OT and a functional nutritionist who helps menopausal women lower their blood sugar and reduce menopausal symptoms.")}</p>
-            <Button variant="primary" href="https://themerlingroupworld.com/nutritionpract" target="_blank">
+            <Button className="custom-btn" href="https://themerlingroupworld.com/nutritionpract" target="_blank">
                 {t("Find Providers")}
               </Button>
         </div>

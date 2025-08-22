@@ -21,7 +21,7 @@ const Pgchelation = () => {
       <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
       {/* Title and Collapsible Content with Table Structure */}
         <div className="button-container">
-              <Button variant="primary" href="https://themerlingroupworld.com/telehealth" target="_blank">
+              <Button className="custom-btn" href="https://themerlingroupworld.com/telehealth" target="_blank">
                 {t("Find Providers")}
               </Button>
             </div>

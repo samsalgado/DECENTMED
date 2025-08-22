@@ -221,7 +221,7 @@ const CheckOutForm = () => {
           }}
         />
 
-        <button type="submit" disabled={!stripe || !amount || isProcessing}>
+        <button className="custom-btn" type="submit" disabled={!stripe || !amount || isProcessing}>
           {isProcessing ? 'Processing...' : `Pay $${amount}`}
         </button>
 

@@ -79,7 +79,7 @@ const SignIn = () => {
         Swal.fire({
           icon: 'success',
           title: 'Google Signin Successful!',
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: '#027360',
           confirmButtonText: 'OK'
         }).then(() => {
           const urlParams = new URLSearchParams(window.location.search);

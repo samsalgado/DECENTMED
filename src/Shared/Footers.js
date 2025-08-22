@@ -18,7 +18,8 @@ const Footers = () => {
           <h3 style={{textAlign: 'center', marginTop: '-10px'}}className="footer-section about">{t("Products We Trust")}</h3>
           <div style={{display: 'flex', flexDirection: 'column'}}>
 
-          <Button variant="primary" href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
+          <Button   style={{ fontWeight: 'bold' }}
+variant="secondary" href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
            {t("Shop")}
             </Button>
           </div>
@@ -43,7 +44,8 @@ const Footers = () => {
     <a href="mailto:samuel@themerlingroupworld.com">
       samuel@themerlingroupworld.com
     </a>
-    <Button variant="primary" href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">
+    <Button   style={{ fontWeight: 'bold' }}
+variant="secondary" href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">
            {t("OUR REVIEWS")}
             </Button>
   </p>

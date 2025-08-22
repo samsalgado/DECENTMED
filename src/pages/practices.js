@@ -24,7 +24,7 @@ const Practice = () => {
           }} src={price} alt='' />
         </div>
         <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
-          <Button variant="primary" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
+          <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
             {t("Inquire about Pricing")}
           </Button>
         </div>

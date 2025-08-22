@@ -2,22 +2,23 @@ import React from 'react';
 import '../App.css'; // Make sure CSS is linked
 import Treatment from '../pages/treatment'; // Treatment images
 const treatmentLinks = {
-  homeopath: "https://themerlingroupworld.com/homeopathy",
-  prevent: "https://themerlingroupworld.com/prevent",
-  detox: "https://themerlingroupworld.com/detox",
-  acupuncture: "https://themerlingroupworld.com/acu",
-  ayurveda: "https://themerlingroupworld.com/ayurveda",
-  stemcell: "https://themerlingroupworld.com/stemcell",
-  nutriton: "https://themerlingroupworld.com/nutrition",
-  chiro: "https://themerlingroupworld.com/chiropractic",
-  empower:"https://themerlingroupworld.com/transformationalcoaching",
-  ak:"https://themerlingroupworld.com/ak",
-  breathwork:"https://themerlingroupworld.com/breath",
-  chelation:"https://themerlingroupworld.com/chelation",
-  hypnotherapy:"https://themerlingroupworld.com/hypnotherapy",
-  herbalmedicine:"https://themerlingroupworld.com/herbalmedicine",
-  meditation:"https://themerlingroupworld.com/meditation",
-  seo:"https://themerlingroupworld.com/digitalmarketing"
+  homeopath: "https://decentmed.themerlingroupworld.com/homeopathy",
+  prevent: "https://decentmed.themerlingroupworld.com/prevent",
+  detox: "https://decentmed.themerlingroupworld.com/detox",
+  acupuncture: "https://decentmed.themerlingroupworld.com/acu",
+  ayurveda: "https://decentmed.themerlingroupworld.com/ayurveda",
+  stemcell: "https://decentmed.themerlingroupworld.com/stemcell",
+  nutriton: "https://decentmed.themerlingroupworld.com/nutrition",
+  chiro: "https://decentmed.themerlingroupworld.com/chiropractic",
+  empower:"https://decentmed.themerlingroupworld.com/transformationalcoaching",
+  ak:"https://decentmed.themerlingroupworld.com/ak",
+  nutri:"https://decentmed.themerlingroupworld.com/nutrigenomics",
+  breathwork:"https://decentmed.themerlingroupworld.com/breath",
+  chelation:"https://decentmed.themerlingroupworld.com/chelation",
+  hypnotherapy:"https://decentmed.themerlingroupworld.com/hypnotherapy",
+  herbalmedicine:"https://decentmed.themerlingroupworld.com/herbalmedicine",
+  meditation:"https://tdecentmed.hemerlingroupworld.com/meditation",
+  seo:"https://decentmed.themerlingroupworld.com/digitalmarketing"
 };
 
 const Grid = () => {

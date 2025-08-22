@@ -5,6 +5,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import jezy from '../images copy/IMG_0827.jpeg'; // ✅ Ensure this path is correct in your project
 import "../App.css";
+import "../info/Info.css";
 export default function MassPract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -60,7 +61,7 @@ export default function MassPract() {
         value={location}
         onChange={(e) => setLocation(e.target.value)}
       />
-            <button className="btn btn-primary" onClick={handleSearch}>
+            <button className="custom-btn" onClick={handleSearch}>
               {t('Search')}
             </button>
           </div>

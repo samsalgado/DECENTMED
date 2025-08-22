@@ -62,7 +62,7 @@ export function Hypnopract() {
               onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
               style={{ height: '50px', fontSize: '16px', borderRadius: '6px' }}
             />
-            <button className="btn btn-primary" onClick={handleSearch} style={{ height: '50px', padding: '0 2rem' }}>
+            <button className="custom-btn" onClick={handleSearch} style={{ height: '50px', padding: '0 2rem' }}>
               <i className="fas fa-search me-2"></i>{t("Search")}
             </button>
           </div>
@@ -140,7 +140,7 @@ export function Hypnopract() {
                     {t("We currently don't have any hypnotherapists listed in your area. Our services are currently available in Tampa, FL.")}
                   </p>
                   <button 
-                    className="btn btn-primary mt-3"
+                    className="custom-btn"
                     onClick={() => {
                       setLocation('Tampa, FL');
                       setIsTampaLocation(true);

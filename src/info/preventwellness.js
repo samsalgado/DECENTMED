@@ -15,7 +15,7 @@ const PreventWellness = () => {
       <div className="collapsible">
       </div>
       <Vitamins />
-      <Button variant="primary" href="https://themerlingroupworld.com/coaching" target="_blank">
+      <Button className="custom-btn" href="https://themerlingroupworld.com/coaching" target="_blank">
    {t("Find Wellness Coaches")}
      </Button>
       <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>

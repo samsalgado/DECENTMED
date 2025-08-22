@@ -3,6 +3,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
+import "../info/Info.css";
 import { useTranslation } from 'react-i18next'
 
 export function StemPract() {
@@ -93,7 +94,7 @@ export function StemPract() {
                 </div>
                 
                 <button
-                  className="btn btn-primary"
+                  className="custom-btn"
                   onClick={handleSearch}
                   style={{
                     height: '50px',
