@@ -32,6 +32,23 @@ const {t} = useTranslation('common')
       </div>
 
     <Services />
+    <div className="video-wrapper">
+    <h2 className='title'>{t('Holistic Medicine Marketing Audiobook')}</h2>
+        <iframe
+          width="100%"
+          height="500px"
+          src="https://www.youtube.com/embed/oeLGYCDN_Uo?si=0EWb6lt6MDXPZ6CE"
+          title="Patient Acquisition Engine Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{
+            borderRadius: '12px',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
+            border: 'none',
+            overflow: 'hidden'
+          }}
+        />
+      </div>
     </div>
     
   )

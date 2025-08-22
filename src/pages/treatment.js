@@ -7,8 +7,8 @@ stemcell: require("../images copy/Regenerative Ma.png"),
 nutriton: require("../images copy/nutrition.png"), 
 chiro: require("../images copy/Chiropractic.png"),
 empower: require("../images copy/traans.png"), 
-ak: require("../images copy/ak.png"),
-mindset:require("../images copy/mindset.jpg"),
+ak: require("../images copy/dmedddd (4).png"),
+mindset:require("../images copy/mindd.png"),
 chelation: require("../images copy/chelation.png"),
 homeopath: require("../images copy/homeo.png"),
 breathwork:require("../images copy/breathworkk.png"),
@@ -16,6 +16,6 @@ hypnotherapy:require("../images copy/hypno.png"),
 herbalmedicine:require("../images copy/HERBALMEDICINE .png"),
 meditation:require("../images copy/meditation.jpg"),
 naturopathy:require("../images copy/naturopathyy.png"),
-seo:require("../images copy/Untitled design.png")
+seo:require("../images copy/1755842387280.jpeg")
 };
 export default Treatment;

@@ -1,8 +1,8 @@
-.footer {
-  background: linear-gradient(to right, #112128, #235260, #176384);
-  color: #fff;
-  padding: 50px 20px 20px;
-  font-family: 'Poppins', sans-serif;
+.footer {   
+  background: linear-gradient(to right, #027360, #035d4f, #027360);   
+  color: #fff;   
+  padding: 50px 20px 20px;   
+  font-family: 'Poppins', sans-serif; 
 }
 .footer-section.products .products-row {
   display: flex;
