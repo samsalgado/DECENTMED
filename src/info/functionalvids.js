@@ -13,11 +13,16 @@ const FuncVids = () => {
         },
         {
             id:2,
+            videoUrl:"https://www.youtube.com/embed/oj0leCvttM4?si=yla8rv7jl_4Dmg0t",
+            name:`${t("How NOT to Reverse Diet and why you need to do it")}`
+        },
+        {
+            id:3,
             videoUrl: "https://drive.google.com/file/d/18yp2Ua9zqubpxzA7E2UPIyOOEZ-1zqxI/preview",
             name: `${t("Dysfunctional Medicine: Exposing Conventional Medicine")}`
         },
         {
-            id:3,
+            id:4,
             videoUrl: "https://drive.google.com/file/d/1JEapKS8tjSO4OA09tRAOHvZMlmeBb5jX/preview",
             name: `${t("Dysfunctional Medicine")}`
         }

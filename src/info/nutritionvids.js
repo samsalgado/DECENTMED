@@ -5,47 +5,19 @@ import { useTranslation } from 'react-i18next';
 const NutritionVids = () => {
     const { t } = useTranslation("common");
     const [plant] = useState([
+      
+      
         {
             id:1,
-            videoUrl:"https://www.youtube.com/embed/WaEkkJ0j48Q?si=6znjzlyDoZLDS0Gp",
-            name:`${t("Kristina Hess featuring Catherine Arnston")}`
+            videoUrl: "https://www.youtube.com/embed/hwr6p-iE2Rc?si=9L26-0oCBLzR0O8g",
+            name:`${t("The 3x4 Blueprint")}`
         },
-    
         {
             id:2,
-            videoUrl:"https://www.youtube.com/embed/bkcDmVEfDpw?si=gcGIIyZvcdA9hnKa",
-            name:`${t("The 3 Legs of Autoimmune Conditions")}`
-        },
-        {
-            id:3,
-            videoUrl:"https://www.youtube.com/embed/qqlfc6pFbZ8?si=k84E8WY1XRet85sJ",
-            name:`${t("10 Ways to Prevent Insulin Resistance")}`
-        },
-        {
-            id:4,
-            videoUrl:"https://www.youtube.com/embed/TufWkz7m8gk?si=Z1UTz-DcaoRdAyDg",
-            name:`${t("Cortisol Hormone")}`
-        },
-        {
-            id:5,
-            videoUrl:"https://www.youtube.com/embed/MshrK5tShGc?si=AcaNMRiQSLFeEPsQ",
-            name:`${t("Reversing your Diet")}`
-        },
-        {
-            id:6,
-            videoUrl:"https://www.youtube.com/embed/bxbMGQ4Kgkc?si=AAj4Kkvyk0bTZAtb",
-            name:`${t("Reversing PCOS")}`
-        },
-        {
-            id:7,
-            videoUrl:"https://www.youtube.com/embed/N_ZJ7BzCZH0?si=orVFQQUn8f-1EWU3",
-            name:`${t("Natural Remedies for Depression")}`
-        },
-        {
-            id:8,
-            videoUrl:"https://www.youtube.com/embed/oj0leCvttM4?si=yla8rv7jl_4Dmg0t",
-            name:`${t("How NOT to Reverse Diet and why you need to do it")}`
+            videoUrl:"https://www.youtube.com/embed/LP8sNt1Z5bE?si=dq3gFIuAlKcq_036",
+            name:`${t("GLP-1 Works until this happens...")}`
         }
+
     ]);
     return (
         <div className="contents">
