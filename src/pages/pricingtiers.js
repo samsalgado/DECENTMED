@@ -1,9 +1,8 @@
 import "../App.css";
 import '../info/Info.css';
 import { useTranslation } from 'react-i18next'
-import tier1 from "../images copy/BASIC.png";
-import tier2 from '../images copy/TIER_TWO.png';
-import tier3 from "../images copy/TIER_THREE.png";
+import tier2 from '../images copy/tier4.png';
+import tier3 from "../images copy/tier3.png";
 import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
 //import supabase from "./supabase";
@@ -46,8 +45,6 @@ export function Pricing() {
               <th className="collapsible-trigger">
        <Collapsible trigger={t("Pricing Tiers")}>
         <div className='collapsible-content'>
-        <input type='radio' onClick={handleChange} name='Tier' value="Tier 1"></input>
-        <img src={tier1} alt="tier 1" />
        <input type='radio' onClick={handleChange} name='Tier' value="Tier 2"></input>
         <img src={tier2} alt="Tier2" /> 
         <input type='radio' onClick={handleChange} name='Tier' value="Tier 3"></input>

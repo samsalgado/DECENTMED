@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import Pricing from './pricingtiers';
 import price from '../images copy/PRICETIERRS.png';
 import { Button } from 'react-bootstrap';
-
+import Reviews from '../info/reviews';
 
 const Practice = () => {
   const { t } = useTranslation("common");
@@ -29,7 +29,7 @@ const Practice = () => {
           </Button>
         </div>
         <Pricing />
-
+        <Reviews />
       </div>
     </div>
     </main>

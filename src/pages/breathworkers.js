@@ -1,6 +1,5 @@
 
-import { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
@@ -11,47 +10,7 @@ import { useTranslation } from 'react-i18next'
 
 export function Breathwork() {
   const { t } = useTranslation('common');
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
-  const [status, setStatus] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
-
-    try {
-      await axios.post(
-        'https://rest.gohighlevel.com/v1/contacts/',
-        {
-          firstName: formData.name,
-          email: formData.email,
-          phone: formData.phone
-        },
-        {
-          headers: {
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6Ikg2VUtCRW8yemtZZ3JuMWlsb05OIiwidmVyc2lvbiI6MSwiaWF0IjoxNzUxMTU0Nzk4ODI3LCJzdWIiOiJvZHdablZ0V040UFl4eG9EQ1J0ciJ9.0HzNO1zHGhpJ9cxcwHU_p9Ch5uDNGLQnpQV8DaGloVQ',
-            'Content-Type': 'application/json'
-          }
-        }
-      );
-
-      // 2️⃣ Backend API for Email (replace with your backend URL)
-      await axios.post('https://decentmed-server.vercel.app/send-email', {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone
-      });
-
-      setStatus('Success! We will contact you shortly.');
-      setFormData({ name: '', email: '', phone: '' });
-    } catch (error) {
-      console.error(error);
-      setStatus('Failed to send. Try again.');
-    }
-  };
 
   return (
     <div>
@@ -74,25 +33,22 @@ export function Breathwork() {
               <figure>
                 <img src={JenB} alt="Scarlett" />
               </figure> <br />
-              <figcaption className='scarle'>{t("Contact Scarlett Dee")}</figcaption>
 
-              {/* Contact Form */}
-              <form onSubmit={handleSubmit} className="contact-form">
-                <div>
-                  <label>Name</label>
-                  <input type="text" name="name" placeholder='Enter your name' value={formData.name} onChange={handleChange} required />
-                </div>
-                <div>
-                  <label>Email</label>
-                  <input type="email" name="email" placeholder='Enter your email' value={formData.email} onChange={handleChange} required />
-                </div>
-                <div>
-                  <label>Phone</label>
-                  <input type="tel" name="phone" placeholder='Enter your phone number' value={formData.phone} onChange={handleChange} required />
-                </div>
-                <button type="submit">Submit</button>
-              </form>
-              <p>{status}</p>
+              <a
+                href="mailto:info@tribe-yoga.com"
+                className="email-button"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 20px",
+                  background: "#6c63ff",
+                  color: "#fff",
+                  borderRadius: "8px",
+                  textDecoration: "none",
+                  marginTop: "10px",
+                }}
+              >
+                📧 Email Scarlett
+              </a>
 
               <h5>{t("Scartlett Dee, Somatic Breathwork Coach:")}</h5>
               <p>

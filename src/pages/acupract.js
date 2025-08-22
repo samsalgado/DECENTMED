@@ -62,6 +62,8 @@ const { t } = useTranslation('common');
 
   return(
     <div>
+    <main className="page-content">
+
       <Helmet>
         <title>{t("Acupuncturist Near Me")}</title>  
         <meta name="description" content={t("Searching Acupuncturist near me? Look no further than our fantastic acupuncturist that can assist you on your pathway to wellness.")} />
@@ -404,6 +406,7 @@ const { t } = useTranslation('common');
       <footer>
         <Footer />
       </footer>
+      </main>
     </div>
   )
 }

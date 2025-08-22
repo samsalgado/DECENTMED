@@ -35,26 +35,31 @@ export function AYPract() {
       <h3>{t("Healing Goddess")}</h3>
       <a href='https://healinggoddessproducts.com/'>
     <figure>
-        <img src={Stacy} alt="logo" />
+        <img src={Stacy}    style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }} alt="logo" />
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
-      <div className="video-wrapper">
-        <iframe
-          width="100%"
-          height="515"
-          src="https://drive.google.com/file/d/1D8iq7LsXMgercG-_td7e7gQexodAfzSv/preview"
-          title="Patient Acquisition Engine Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          style={{
-            borderRadius: '12px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
-            border: 'none',
-            overflow: 'hidden'
-          }}
-        />
-      </div>
+      <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.15)" }}>
+  <iframe
+    src="https://drive.google.com/file/d/1D8iq7LsXMgercG-_td7e7gQexodAfzSv/preview"
+    title="Patient Acquisition Engine Video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      border: "0",
+      borderRadius: "12px"
+    }}
+  />
+</div>
 
       <h5>{t('Stacy Theodossin - The Healing Goddess')}      </h5>
       <p>
@@ -66,7 +71,11 @@ export function AYPract() {
       <h3>{t("Yogi Sanjivana")}</h3>
       <a href=' https://sanjivana.com/'>
     <figure>
-        <img style={{width:"100%"}}  src={Yogi} alt="logo" />
+        <img    style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}  src={Yogi} alt="logo" />
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>

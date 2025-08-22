@@ -8,8 +8,8 @@ import { useTranslation } from 'react-i18next'
 export function Natpract() {
 const { t } = useTranslation('common');
     return(
-      <main className="page-content">
         <div>
+        <main className="page-content">
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Naturopathy Near Me")}</title>  
         <meta name="description" content={t("Searching Nutritionist near me? Look no further than our fantastic nutritionists that can assist you on your pathway to wellness.")} />
@@ -56,8 +56,8 @@ controls={true}
             <footer>
                 <Footer />
             </footer>
+            </main>
         </div>
-        </main>
     )
     
 }
