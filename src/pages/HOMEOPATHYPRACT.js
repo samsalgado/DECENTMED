@@ -46,7 +46,7 @@ export function HomeopathyPract() {
       <main className="page-content">
       <Helmet>
         <title>{t("Homeopathy Near Me")}</title>  
-        <meta name="description" content={t("Homeopathy near me? Look no further than great homeopaths that can assist you holistically, and provide you wholeness.")} />
+        <meta name="description" content={t("Homeopathy near to me? Look no further than great homeopaths that can assist you holistically, and provide you wholeness.")} />
       </Helmet>
 
       <header>
@@ -63,7 +63,7 @@ export function HomeopathyPract() {
           <div className="row justify-content-center">
             <div className="col-md-10">
               <h1>{t("Homeopathy")}</h1>
-              <p>{t("Whether you're searching for homeopathy near you or prefer online consultations, our featured practitioners offer both in-person and virtual homeopathic services.")}</p>
+              <p>{t("Whether you're searching for homeopathy near to me​ our featured practitioners offer both in-person and virtual homeopathic services.")}</p>
               <div className="search-bar-container" style={{
                 display: 'flex',
                 gap: '10px',

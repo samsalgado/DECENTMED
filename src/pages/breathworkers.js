@@ -47,7 +47,7 @@ export function Breathwork() {
                   marginTop: "10px",
                 }}
               >
-                📧 Email Scarlett
+                {t("Email Scarlett")}
               </a>
 
               <h5>{t("Scartlett Dee, Somatic Breathwork Coach:")}</h5>

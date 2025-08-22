@@ -25,7 +25,7 @@ const {t} = useTranslation('common')
  <div className='content-wrapper' style={{
           flex: '1'
         }}>
-         <p className='pr'>{t("The body has an immense regenerative potential to heal itself. Herbal medicine is the real traditional medicine, every single pharmaceutical drug has a plant root. This page is my encyclopedia of herbal medicine, highlighting herbal plants from around the world. For the last few months, I traveled throughout North America, South America, and Central America to document these plants. Explore our encyclopedia of herbal medicine, and learn how these plants can help your body heal itself.")}</p>
+         <p className='pr'>{t("The body has an immense regenerative potential to heal itself. Herbal medicine is the real traditional medicine, every single pharmaceutical drug has a plant root. This page is my encyclopedia of herbal medicine, highlighting herbal plants from around the world. For the last few months, I traveled throughout North America, South America, and Central America to document these plants. Explore our encyclopedia of herbal medicine, and learn how these plants can help your body heal itself. Explore our medicinal herbal recipes​ from around the world below.")}</p>
          <Button variant="primary" href="https://themerlingroupworld.com/apoth" target="_blank">
           {t("Explore Apothecary")}
         </Button>
