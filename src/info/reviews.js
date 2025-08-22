@@ -3,14 +3,9 @@ import Collapsible from 'react-collapsible';
 import "./stem.css"; 
 import { FaChevronDown } from 'react-icons/fa'; // Importing icon
 import './Info.css';
-import graphic from '../images copy/IMG_7976.jpeg';
-import graphic2 from '../images copy/IMG_7978.jpeg';
-import graphic3 from '../images copy/IMG_7979.jpeg';
-import graphic4 from '../images copy/IMG_7980.jpeg';
-import graphic5 from '../images copy/IMG_7981.jpeg';
 import graphic6 from '../images copy/IMG_7977.jpeg';
 import newreview from '../images copy/newreview.png';
-import newreviews from '../images copy/newreview.jpg';
+import newreviews from '../images copy/newonw.png';
 import lori from '../images copy/IMG_9733.jpg';
 import { useTranslation } from 'react-i18next';
 
@@ -30,11 +25,6 @@ const Reviews = () => {
              <img className="gridimag" src={newreviews} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={lori} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={newreview} alt="Testimonial" />
-            <img className="gridimag" src={graphic2} alt="Bone Marrow Stem Cell Benefits" />
-            <img className="gridimag" src={graphic3} alt="Bone Marrow Stem Cell Benefits" />
-            <img className="gridimag" src={graphic4} alt="Bone Marrow Stem Cell Benefits" />
-            <img className="gridimag" src={graphic5} alt="Bone Marrow Stem Cell Benefits" />
-            <img className="gridimag" src={graphic} alt="Bone Marrow Stem Cell Benefits" />
             <img className="gridimag" src={graphic6} alt="Bone Marrow Stem Cell Benefits" />
             <img alt='' />
     </Collapsible>

@@ -17,6 +17,7 @@ import Meditation from './pages/Meditation';
 import Blog7 from './pages/blogs/blog7';
 import Blog9 from './pages/blogs/blog9';
 import Blog11 from './pages/blogs/blog11';
+import { ReviewPage } from './pages/reviewpage';
 import Blog16 from './pages/blogs/blog16';
 import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
@@ -94,6 +95,7 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
+        <Route path="/reviews" element={<ReviewPage t={t} />}/>
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
