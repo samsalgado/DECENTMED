@@ -22,27 +22,27 @@ const Mike = () => {
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
-        <h3>{t(`Avoid electronic devices before bedtime`)}</h3>
+        <h2>{t(`Avoid electronic devices before bedtime`)}</h2>
           <p>
             {t(`The blue light emitted by electronic devices like phones, tablets, and computers can suppress the production of melatonin, which is a hormone that helps regulate sleep. It’s best to avoid using these devices at least an hour before bedtime.`)}
           </p>
-           <h3>{t(`Stick to a consistent sleep schedule`)}</h3>
+           <h2>{t(`Stick to a consistent sleep schedule`)}</h2>
           <p>
             {t(`Your body naturally produces circadian rhythms that help regulate your sleep-wake cycle. Trying to stay up late or sleep in on weekends can disrupt this natural rhythm and make it harder to fall asleep at night. Staying on a consistent sleep schedule is essential for good sleep quality.`)}
           </p>
-          <h3>{t(`Create a relaxing bedtime ritual for better sleep`)}</h3>
+          <h2>{t(`Create a relaxing bedtime ritual for better sleep`)}</h2>
           <p>
             {t(`Developing a calming bedtime routine can help signal to your body that it’s time to wind down and get ready for sleep. Some examples include taking a warm bath, practicing deep breathing exercises or meditation, reading a book, or listening to relaxing music.`)}
           </p>
-          <h3>{t(`Make your bedroom sleep-friendly`)}</h3>
+          <h2>{t(`Make your bedroom sleep-friendly`)}</h2>
           <p>
             {t(`Your bedroom should be a quiet, dark, and cool place that promotes good sleep. Consider investing in blackout curtains, using headphones, or installing a white noise machine if needed. Keeping the temperature between 60-67 degrees Fahrenheit is also ideal for good sleep quality.`)}
           </p>
-          <h3>{t(`Exercise regularly to promote better sleep`)}</h3>
+          <h2>{t(`Exercise regularly to promote better sleep`)}</h2>
           <p>
             {t(`Regular exercise has been shown to improve sleep quality by reducing stress and anxiety levels. Aim for at least 30 minutes of moderate exercise per day, preferably in the evening when it’s time to wind down for bedtime.`)}
           </p>
-          <h3>{t(`Eat a healthy diet`)}</h3>
+          <h2>{t(`Eat a healthy diet`)}</h2>
           <p>
             {t(`What you eat can have a significant impact on your sleep quality. Avoid consuming caffeine and alcohol close to bedtime, as they can interfere with good sleep. Instead, focus on eating a balanced diet that includes plenty of fruits, vegetables, whole grains, lean protein, and healthy fats.`)}
           </p>

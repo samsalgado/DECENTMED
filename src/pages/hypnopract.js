@@ -100,8 +100,8 @@ export function Hypnopract() {
                         ></iframe>                        
                         </div>
                           <div className="col-md-7">
-                            <h3 className="h4 mb-1">{t('Sarah Green')}</h3>
-                            <p className="text-muted mb-2">{t("Green Hypnotherapy")}</p>
+                            <h2 className="h4 mb-1">{t('Green Hypnotherapy')}</h2>
+                            <p className="text-muted mb-2">{t("Sarah Green")}</p>
                             <p className="mb-2">
                               <i className="fas fa-map-marker-alt text-primary me-2"></i>
                               {t("Tampa, Florida")}

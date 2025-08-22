@@ -28,7 +28,7 @@ const Blog4 = () => {
           <p>
             {t(`The body has an immense regenerative potential to heal itself. 'Let thy food be medicine, and thy medicine be food', Hippocrates, this quote illustrates that fighting disease begins with food. Prevention starts with eating foods that boost the immune system. Consumption of antioxidants like Polyphenols or Beta Carotene assists the immune system in fighting disease before they arrive. Renowed healers, Dr. Sebi and Dr. Gerson found that a mixture of a plant-based diet and detoxification aids in fighting cancer.`)}
           </p>
-          <h5>{t('Cellular Regeneration')}</h5>
+          <h2>{t('Cellular Regeneration')}</h2>
           <p>
             {t(`A detox cleanses the body. A water detox is a way to flush out the body's toxins. A water detox ranges from 1-3 days to restore the cells to ketosis. Furthermore, when detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.`)}
             <a href='https://gerson.org/'> {t('Cancer')}</a> {t('treatments globally like the Gerson Therapy and')}<a href='https://drsebiscellfood.com/'>{t('Dr. Sebi diet')}</a> {t('use forms of Green Diets and Detoxification to cleanse the body from toxins that cause cancer.')}

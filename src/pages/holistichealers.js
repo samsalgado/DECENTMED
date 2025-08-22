@@ -27,9 +27,9 @@ const { t } = useTranslation('common');
 
   <div class="row">
     <div class="col-md-6">
-      <h3>{t("Solve your Out of Control Eating")}</h3>
-      <h5>{t("Vickie Todd")}</h5>
-      <h5>{t("Michele Holzberger")}</h5>
+      <h2>{t("Solve your Out of Control Eating")}</h2>
+      <h3>{t("Vickie Todd")}</h3>
+      <h3>{t("Michele Holzberger")}</h3>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
     <figure>
         <img src={JenB} alt="logo" />
@@ -47,7 +47,7 @@ controls={true}
 </div>
 */      
 }
-  <h5>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h5>
+  <h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
       <p>
         {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
       </p>

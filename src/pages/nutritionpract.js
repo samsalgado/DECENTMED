@@ -20,7 +20,7 @@ const { t } = useTranslation('common');
 
             <div class="container">
             <h1>{t("Nutrition")}</h1>
-            <h2>{t("Searching Nutritionist Near me? We have you covered!")}</h2>
+            <p>{t("Searching Nutritionist Near me? We have you covered!")}</p>
  <div class="row">
     <div class="col-md-4">
     </div>
@@ -28,7 +28,7 @@ const { t } = useTranslation('common');
 
   <div class="row">
     <div class="col-md-6">
-      <h3>{t("Nutrify Your Life")}</h3>
+      <h2>{t("Nutrify Your Life")}</h2>
       <a href="tel:+12038295349">
     <figure>
         <img src={Nutrifyourlife} alt="logo" />
@@ -46,7 +46,7 @@ const { t } = useTranslation('common');
   allowFullScreen
 ></iframe>
 </div>
-  <h5>{t("Nutrify Your Life:")}</h5>
+  <h3>{t("Nutrify Your Life:")}</h3>
       <p>
       {t("Welcome to Nutrifyourlife, where I am on a mission to revolutionize healthcare and empower individuals to take control of their health through diet and lifestyle modifications. My personalized functional medicine and nutrition sessions are tailored to your specific needs and goals whether it's weight loss, managing chronic conditions, or improving overall well-being. I work closely with you to create a customized plan that aligns with your preferences and health goals.")}
       </p>
@@ -55,7 +55,7 @@ const { t } = useTranslation('common');
 
 <div class="row">
     <div class="col-md-6">
-      <h3>{t("Thrive Results Coaching")}</h3>
+      <h2>{t("Thrive Results Coaching")}</h2>
       <a href="tel:+12039847989">
     <figure>
         <img src={krisina} style={{
@@ -66,7 +66,7 @@ const { t } = useTranslation('common');
           <figcaption>{t("Contact")}</figcaption>
         </figure>
       </a>
-  <h5>{t("Kristina Hess Clinical Nutritionist:")}</h5>
+  <h3>{t("Kristina Hess Clinical Nutritionist:")}</h3>
       <p>
       {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. Kristina is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology. Her speciality is to combine detailed personalization with ninja-level implementation for your accountability and compliance so that you get the best results (since knowing what to do and then not doing it, doesn’t help you whatsoever). Sessions with Kristina might include EFT, MB-EAT exercises, the Tiny Habits method and Heartmath to improve your psychology & behavior around food.")}
       </p>

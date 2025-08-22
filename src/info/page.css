@@ -1,4 +1,7 @@
 /* Collapsible Wrapper - Centers the entire collapsible */
+* {
+  font-family: sans-serif;
+}
 .collapsible-wrapper {
     display: flex;
     flex-direction: column;
@@ -6,7 +9,27 @@
     width: 100%;
     margin: 2rem 0;
   }
-  
+  h1 {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
   /* Collapsible Trigger - Centers the clickable header */
   .collapsible-trigger-centered {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

@@ -19,7 +19,7 @@ const MeditationInfo = () => {
       
       <br />
       <div className='pr'>
-        <h3>{t('Morning Meditation')}</h3>
+        <h2>{t('Morning Meditation')}</h2>
         <p>{t('In recent years, meditation has gained recognition not just as a relaxation technique, but as a powerful tool for healing the mind, body, and spirit. With roots in various spiritual traditions, modern research is uncovering the profound benefits of meditation on mental and physical health.')}</p>
         
         <h2>{t('Understanding Meditation')}</h2>

@@ -10,7 +10,7 @@ const Modalities = () => {
       <Row>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Parts Therapy")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Parts Therapy")}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("- Core Transformation to transform negative subconscious beliefs.")}
@@ -20,7 +20,7 @@ const Modalities = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Regression Therapy")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Regression Therapy")}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("- Get to the root of long-term issues that often stem from childhood trauma(s) that occurred before age 7 and helps the client to transform their pain and mental anguish into healing and wholeness.")}
@@ -30,7 +30,7 @@ const Modalities = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Past-Life Regression")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Past-Life Regression")}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("- Access your past-life to discover spots that you are missing.")}

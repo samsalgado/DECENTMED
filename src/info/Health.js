@@ -10,7 +10,7 @@ const HealthFacts = () => {
       <Row>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Healthcare Realities")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Healthcare Realities")}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("- Estimated $455 billion spent on healthcare yearly is lost each year to fraud and corruption.")}
@@ -23,7 +23,7 @@ const HealthFacts = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Obesity Statistics")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Obesity Statistics")}</Card.Header>
             <Card.Body>
               <Card.Text>
                 {t("- 1/3 Adults in the United States are obese.")}
@@ -39,7 +39,7 @@ const HealthFacts = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t('Water and Degenerative Disease')}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t('Water and Degenerative Disease')}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("- Our current water supply is processed and does not hydrate because the molecules are too big for capillaries.")}

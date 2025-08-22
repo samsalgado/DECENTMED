@@ -41,8 +41,8 @@ export function AKPract() {
                             />
                           </div>
                           <div className="col-md-7">
-                            <h3 className="h4 mb-1">{t('Dr. Amy Wicks')}</h3>
-                            <p className="text-muted mb-2">{t("The Center for Natural Health")}</p>
+                            <h2 className="h4 mb-1">{t('The Center for Natural Health')}</h2>
+                            <p className="text-muted mb-2">{t("Dr. Amy Wicks")}</p>
                             
                             <p className="mb-2">
                               <i className="fas fa-map-marker-alt text-primary me-2"></i>

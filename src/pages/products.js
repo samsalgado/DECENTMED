@@ -27,7 +27,7 @@ const { t } = useTranslation('common');
   </div>
   <div className="row">
     <div className="col-md-6">
-      <h3>{t("Solve your Out of Control Eating")}</h3>
+      <h2>{t("Solve your Out of Control Eating")}</h2>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
     <figure>
         <img 
@@ -45,7 +45,7 @@ const { t } = useTranslation('common');
       <div>
      
 </div>
-<h5>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h5>
+<h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
 <p>
         {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
       </p>
@@ -66,7 +66,7 @@ const { t } = useTranslation('common');
 
   <div className="row">
     <div className="col-md-6">
-    <h3>{t("Lifewave Patch")}</h3>
+    <h2>{t("Lifewave Patch")}</h2>
     <a href='https://www.lifewave.com/awicks'>
     <figure>
         <img 
@@ -88,7 +88,7 @@ const { t } = useTranslation('common');
   </div>
 <div className="row">
     <div className="col-md-6">
-      <h3>{t("Happy DNA Candy")}</h3>
+      <h2>{t("Happy DNA Candy")}</h2>
       <a href='https://sites.google.com/view/lindamcbee806080/home'>
     <figure>
         <img 

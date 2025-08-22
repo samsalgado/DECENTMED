@@ -1,3 +1,6 @@
+*{
+  font-family: sans-serif; 
+}
 .auth-form-container {
   display: flex;
   justify-content: center;
@@ -5,6 +8,27 @@
   height: 100vh; /* Full screen height */
   background-color: #f4f6f8;
 }
+h1 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}  
 
 .auth-form {
   background-color: #fff;

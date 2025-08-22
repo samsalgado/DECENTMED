@@ -11,7 +11,7 @@ const Protocols = () => {
       <Row>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t('Detoxification Protocols')}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t('Detoxification Protocols')}</Card.Header>
             <Card.Body>
               <Card.Text>
                 {t('- Dr. William Kelley: Nutrition detoxification for cancer patients')}
@@ -31,7 +31,7 @@ const Protocols = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t('Benefits of Preventive Wellness')}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t('Benefits of Preventive Wellness')}</Card.Header>
             <Card.Body>
               <Card.Text>
                 {t('- Make well-informed lifestyle choices')}
@@ -47,7 +47,7 @@ const Protocols = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t('Benefits of Water Detox')}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t('Benefits of Water Detox')}</Card.Header>
             <Card.Body>
               <Card.Text>
                 {t('- Aids in digestion')}

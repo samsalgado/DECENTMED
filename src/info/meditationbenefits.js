@@ -10,7 +10,7 @@ const MedBenefits = () => {
       <Row>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Mental Health Benefits")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Mental Health Benefits")}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("1. Reduction of Stress and Anxiety: Numerous studies have demonstrated that meditation can significantly lower stress levels. By promoting relaxation and reducing the production of stress hormones like cortisol, meditation helps individuals manage anxiety and improve their overall mood. Sleep meditation helps you sleep and overcome Insomnia.")}
@@ -29,7 +29,7 @@ const MedBenefits = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Physical Health Benefits")}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t("Physical Health Benefits")}</Card.Header>
             <Card.Body>
               <Card.Text>
                 {t("1. Lower Blood Pressure")}
@@ -45,7 +45,7 @@ const MedBenefits = () => {
         </Col>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t('Getting Started with Meditation')}</Card.Header>
+            <Card.Header className='card-header' as="h3">{t('Getting Started with Meditation')}</Card.Header>
             <Card.Body>
               <Card.Text>
                  {t("- Start Small. Begin with just a few minutes each day, gradually increasing the duration as you become more comfortable.")}

@@ -9,13 +9,13 @@ const WellnessInro = () => {
     <div className='theecontainer'>
       <div className='video-container'>
       <iframe
-  width="100%"
-  height="315"
-  src="https://drive.google.com/file/d/1IbhfjOZ4FIe6nuOlhLepQDUCqYcyONEx/preview?embedded=true"
-  title="Video player"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-  allowfullscreen
-></iframe>
+      width="100%"
+      height="315"
+      src="https://drive.google.com/file/d/1IbhfjOZ4FIe6nuOlhLepQDUCqYcyONEx/preview?embedded=true"
+      title="Video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+      allowfullscreen
+    ></iframe>
       </div>
       <div className='flex-container'>
         <div className='paragraph-container'>

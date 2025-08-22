@@ -32,7 +32,7 @@ const Info3 = () => {
           {t('use forms of Detoxification to cleanse the body from toxins that cause cancer.')}
         </p>
 
-        <h4>{t('Detoxification Protocols')}</h4>
+        <h2>{t('Detoxification Protocols')}</h2>
         <div>
           <iframe
             className="rumble"

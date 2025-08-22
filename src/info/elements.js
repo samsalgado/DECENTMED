@@ -13,28 +13,28 @@ function Elements() {
             <div className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Ayurvedic Elements")}</h2>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t("Space")}</h4>
+                    <h3>{t("Space")}</h3>
                     <img className='gridimage' src={SPACE} alt='' />
                    
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t("Air")}</h4>
+                    <h3>{t("Air")}</h3>
                     <img className='gridimage' src={AIR} alt='' />
                     
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t("Fire")}</h4>
+                    <h3>{t("Fire")}</h3>
                     <img className='gridimage' src={fire} alt='' />
                   
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t("Water")}</h4>
+                    <h3>{t("Water")}</h3>
                     <img className='gridimage' src={AGUA} alt='' />
                    
                 </div>
               
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t("Earth")}</h4>
+                    <h3>{t("Earth")}</h3>
                     <img className='gridimage' src={EARTH} alt='' />
                 </div>
             </div>

@@ -29,7 +29,7 @@ export function Breathwork() {
 
           <div className="row">
             <div className="col-md-6">
-              <h3>{t("Scarlett Dee")}</h3>
+              <h2>{t("Scarlett Dee")}</h2>
               <figure>
                 <img src={JenB} alt="Scarlett" />
               </figure> <br />
@@ -50,7 +50,7 @@ export function Breathwork() {
                 {t("Email Scarlett")}
               </a>
 
-              <h5>{t("Scartlett Dee, Somatic Breathwork Coach:")}</h5>
+              <h3>{t("Scartlett Dee, Somatic Breathwork Coach:")}</h3>
               <p>
                 {t("Scarlett has over 30 years of experience in yoga, healing, and self-mastery. She guides transformational breathwork journeys that help release stored trauma, regulate the nervous system, and support deep emotional healing. Her sessions offer a powerful reset—reducing stress, calming anxiety, and rebuilding confidence from the inside out. Scarlett’s work is both grounding and expansive, helping clients overcome inner challenges and return to a state of clarity, presence, and aligned self-leadership.")}
               </p>

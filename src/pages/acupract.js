@@ -302,7 +302,7 @@ const { t } = useTranslation('common');
                   </p>
                   
                   <div className="mt-4">
-                    <h5>{t("Available Locations:")}</h5>
+                    <h3>{t("Available Locations:")}</h3>
                     <div className="d-flex justify-content-center gap-4">
                       <div>
                         <p className="text-primary mb-1">
@@ -355,17 +355,17 @@ const { t } = useTranslation('common');
                 <div className="row">
                   <div className="col-md-4 mb-3">
                     <i className="fas fa-user-md fa-2x text-primary mb-2"></i>
-                    <h5>{t("Licensed Professionals")}</h5>
+                    <h3>{t("Licensed Professionals")}</h3>
                     <p className="small text-muted">{t("Qualified and experienced acupuncturists")}</p>
                   </div>
                   <div className="col-md-4 mb-3">
                     <i className="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
-                    <h5>{t("Location-Based")}</h5>
+                    <h3>{t("Location-Based")}</h3>
                     <p className="small text-muted">{t("Find practitioners near you")}</p>
                   </div>
                   <div className="col-md-4 mb-3">
                     <i className="fas fa-star fa-2x text-primary mb-2"></i>
-                    <h5>{t("Holistic Care")}</h5>
+                    <h3>{t("Holistic Care")}</h3>
                     <p className="small text-muted">{t("Professional treatment and service")}</p>
                   </div>
                 </div>
@@ -374,7 +374,7 @@ const { t } = useTranslation('common');
 
             {/* Quick Access to Available Locations */}
             <div className="mt-5">
-              <h4 className="mb-3">{t("Available Locations")}</h4>
+              <h2 className="mb-3">{t("Available Locations")}</h2>
               <div className="d-flex justify-content-center gap-3">
                 <button 
              className="custom-btn"

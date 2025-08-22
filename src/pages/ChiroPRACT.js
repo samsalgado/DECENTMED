@@ -176,7 +176,7 @@ export function Chiro() {
                             />
                           </div>
                           <div className="col-md-7">
-                            <h3 className="h4 mb-1">{t('Dr. Abbas Khayami')}</h3>
+                            <h2 className="h4 mb-1">{t('Dr. Abbas Khayami')}</h2>
                             <p className="text-muted mb-2">{t("Better Health Solutions")}</p>
                             
                             <p className="mb-2">
@@ -231,7 +231,7 @@ export function Chiro() {
                             />
                           </div>
                           <div className="col-md-7">
-                            <h3 className="h4 mb-1">{t('Dr. Amy Wicks')}</h3>
+                            <h2 className="h4 mb-1">{t('Dr. Amy Wicks')}</h2>
                             <p className="text-muted mb-2">{t("The Center for Natural Health")}</p>
                             
                             <p className="mb-2">
@@ -295,13 +295,13 @@ export function Chiro() {
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h3>{t("No chiropractors available in")} {location}</h3>
+                  <h2>{t("No chiropractors available in")} {location}</h2>
                   <p className="text-muted">
                     {t("We currently don't have any chiropractors listed in your area. Our services are currently available in Arizona and Missouri.")}
                   </p>
                   
                   <div className="mt-4">
-                    <h5>{t("Available Locations:")}</h5>
+                    <h3>{t("Available Locations:")}</h3>
                     <p className="text-primary">
                       {t("Scottsdale, Phoenix, Tempe, Mesa, Paradise Valley - Arizona")}
                       <br />
@@ -350,17 +350,17 @@ export function Chiro() {
                 <div className="row">
                   <div className="col-md-4 mb-3">
                     <i className="fas fa-user-md fa-2x text-primary mb-2"></i>
-                    <h5>{t("Licensed Professionals")}</h5>
+                    <h3>{t("Licensed Professionals")}</h3>
                     <p className="small text-muted">{t("Qualified and experienced chiropractors")}</p>
                   </div>
                   <div className="col-md-4 mb-3">
                     <i className="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
-                    <h5>{t("Location-Based")}</h5>
+                    <h3>{t("Location-Based")}</h3>
                     <p className="small text-muted">{t("Find practitioners near you")}</p>
                   </div>
                   <div className="col-md-4 mb-3">
                     <i className="fas fa-star fa-2x text-primary mb-2"></i>
-                    <h5>{t("Quality Care")}</h5>
+                    <h3>{t("Quality Care")}</h3>
                     <p className="small text-muted">{t("Professional treatment and service")}</p>
                   </div>
                 </div>

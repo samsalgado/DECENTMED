@@ -24,9 +24,6 @@ const Blog5 = () => {
         <div className='pr'>
           <p>
             {t('According to the')}<a href="https://www.cdc.gov/" alt=''> {t('CDC,')}</a> {t(`there were 70360 opioid deaths in 2019. In an industry where the body divides into parts, acupuncture balances the flow of energy or life force believed to flow through pathways in your body. Acupuncture can relieve pain, nausea, vomiting, osteoarthritis and respiratory disorders at a reduced price and without the struggles of opioid addiction. Acupuncture works with the body's connective tissue that messages to your brain that alter brain chemistry in an effective and non-destructive way.`)}
-          </p>
-
-          <p>
             {t('According to')} <a href="https://pubmed.ncbi.nlm.nih.gov/" alt=''>{t('Pubmed,')}</a> {t(`'the average cost of opioids is $67.98'. The approximate total of an entire treatment of acupuncture is $1000. Unlike opioids, acupuncture approximates the number of treatments it takes for treatment. Opioids range in price, and the cost of addiction is valuable to the toll it takes on your life.`)}
           </p>
           <p>
@@ -37,10 +34,6 @@ const Blog5 = () => {
           </p>
           <p>
             {t(`Acupuncture can treat (NOT MEDICAL CLAIM/ADVICE. CONSULT A MEDICAL PROFESSIONAL.) uterine fibroids, which affect roughly 70% of women. Acupuncture may treat digestive disorders, osteoarthritis, high blood pressure, and rheumatoid arthritis. Another type of acupuncture is gemstone acupuncture, a process comprised of gua sha, cupping, and gemstones placed on the body. Acupuncture is widely available: type 'acupuncture near me' and find an acupuncturist near you. Acupuncture is an alternative to pharmaceuticals for pain and other ailments.`)}
-          </p>
-
-          <p>
-
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const { t } = useTranslation('common');
 
             <div className="container">
             <h1>{t("Certified Coaches for Health, Empowerment, Trauma & More")}</h1>
-            <h2>{t("Searching Health Coach Near me? We have you covered!")}</h2>
+            <p>{t("Searching Health Coach Near me? We have you covered!")}</p>
  <div className="row">
     <div className="col-md-4">
     </div>
@@ -33,7 +33,7 @@ const { t } = useTranslation('common');
 
   <div className="row">
     <div className="col-md-6">
-      <h3>{t("Gorilla and She Coaching")}</h3>
+      <h2>{t("Gorilla and She Coaching")}</h2>
       <a href='https://www.gorillaandshecoaching.com/schedule/30-minute-metabolic-acceleration-call'>
     <figure>
         <img 
@@ -65,7 +65,7 @@ const { t } = useTranslation('common');
   }}
 ></iframe>
 </div>
-  <h5>{t("Gorilla and She Coaching:")}</h5>
+  <h3>{t("Gorilla and She Coaching:")}</h3>
       <p>
         {t("gorilla")}
       </p>
@@ -74,7 +74,7 @@ const { t } = useTranslation('common');
 
   <div className="row">
     <div className="col-md-6">
-    <h3>{t("Priscilla Wmk - Mindset Coach")}</h3>
+    <h2>{t("Priscilla Wmk - Mindset Coach")}</h2>
     <a href='https://source.dynamitelifestyle.com/book-discovery-call-40/priscilla-wmk'>
     <figure>
         <img 
@@ -99,7 +99,7 @@ const { t } = useTranslation('common');
   </div>
 <div className="row">
     <div className="col-md-6">
-      <h3>{t("Authentic Life Journey")}</h3>
+      <h2>{t("Authentic Life Journey")}</h2>
       <a href='https://authenticlifejourney.com/'>
     <figure>
         <img 
@@ -115,7 +115,7 @@ const { t } = useTranslation('common');
         </figure>
       </a>
      
-  <h5>{t("Ramona Crabtree-Falkner: Transformational Empowerment Coach")}</h5>
+  <h3>{t("Ramona Crabtree-Falkner: Transformational Empowerment Coach")}</h3>
       <p>
         {t("Ramona Crabtree-Falkner is a Transformational Empowerment Coach, retreat leader, and speaker who helps professional women reclaim their energy, realign with purpose, and rise empowered in life and work. With over 20 years of experience in holistic wellness and mindfulness, she creates spaces for growth, healing, and authentic connection. She guides women on a path to Reclaim Energy. Realign Purpose. Rise Empowered.")}
       </p>
@@ -123,7 +123,7 @@ const { t } = useTranslation('common');
   </div>
   <div className="row">
     <div className="col-md-6">
-    <h3>{t("Thrive Results Coaching")}</h3>
+    <h2>{t("Thrive Results Coaching")}</h2>
     <a href='https://secure.gethealthie.com/users/sign_up/clients?invite_code=52421d'>
     <figure>
         <img 
@@ -138,7 +138,7 @@ const { t } = useTranslation('common');
           <figcaption>{t("Book Session")}</figcaption>
         </figure>
       </a>
-      <h5>{t("Kristina Hess: Premiere Health Coach")}</h5>
+      <h3>{t("Kristina Hess: Premiere Health Coach")}</h3>
       <p>
         {t("Kristina is a premiere health coach and licensed dietitian-nutritionist with a functional and integrative approach. Kristina is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.  Her speciality is to combine detailed personalization with ninja-level implementation for your accountability and compliance so that you get the best results (since knowing what to do and then not doing it, doesn’t help you whatsoever).   Sessions with Kristina might include EFT, MB-EAT exercises, the Tiny Habits method and Heartmath to improve your psychology & behavior around food.")}
       </p>
@@ -147,7 +147,7 @@ const { t } = useTranslation('common');
 
   <div className="row">
     <div className="col-md-6">
-    <h3>{t("Anil Narain Matai: Spirtual Coach")}</h3>
+    <h2>{t("Anil Narain Matai: Spirtual Coach")}</h2>
     <a href="mailto:anil.matai@gmail.com">
     <figure>
         <img 

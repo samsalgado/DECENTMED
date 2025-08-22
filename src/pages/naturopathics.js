@@ -20,7 +20,7 @@ const { t } = useTranslation('common');
 
             <div class="container">
             <h1>{t("Naturopathy")}</h1>
-            <h2>{t("Searching Naturopathy Near me? We have you covered!")}</h2>
+            <p>{t("Searching Naturopathy Near me? We have you covered!")}</p>
  <div class="row">
     <div class="col-md-4">
     </div>
@@ -28,7 +28,7 @@ const { t } = useTranslation('common');
 
   <div class="row">
     <div class="col-md-6">
-      <h3>{t("Meridian Passage Wellness")}</h3>
+      <h2>{t("Meridian Passage Wellness")}</h2>
       <a href='https://meridianpassagewellness.com/book-now/'>
     <figure>
         <img src={Meridian} alt="logo" />
@@ -46,7 +46,7 @@ controls={true}
 </div>
 */      
 }
-  <h5>{t("Meridian Passage Wellness:")}</h5>
+  <h3>{t("Meridian Passage Wellness:")}</h3>
       <p>
       {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you’re dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health. Join me and begin your personalized healing journey today.")}
       </p>

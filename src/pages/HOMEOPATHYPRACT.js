@@ -134,7 +134,7 @@ export function HomeopathyPract() {
                           }} />
                         </div>
                         <div className="col-md-7">
-                          <h3 className="h4 mb-1">{t('Dr. Svetoslav Bulatov')}</h3>
+                          <h2 className="h4 mb-1">{t('Dr. Svetoslav Bulatov')}</h2>
                           <p className="text-muted mb-2">{t("Riches of Health")}</p>
                           
                           <p className="mb-2">
@@ -179,7 +179,7 @@ export function HomeopathyPract() {
                 <div className="col-md-12">
                   <div className="card" style={{ border: '1px solid #dee2e6' }}>
                     <div className="card-body">
-                      <h4 className="mb-3">{t("Listen to Our Homeopathy Podcast")}</h4>
+                      <h3 className="mb-3">{t("Listen to Our Homeopathy Podcast")}</h3>
                       <iframe 
                         src="https://iframe.iono.fm/chan/123" 
                         title="Homeopathy Podcast" 
@@ -206,7 +206,7 @@ export function HomeopathyPract() {
                           }} />
                         </div>
                         <div className="col-md-7">
-                          <h3 className="h4 mb-1">{t('Kelechi Obasi')}</h3>
+                          <h2 className="h4 mb-1">{t('Kelechi Obasi')}</h2>
                           <p className="text-muted mb-2">{t("Lotus Potencia Holistics")}</p>
                           
                           <p className="mb-2">
@@ -257,17 +257,17 @@ export function HomeopathyPract() {
                   <div className="row">
                     <div className="col-md-4 mb-3">
                       <i className="fas fa-user-md fa-2x text-primary mb-2"></i>
-                      <h5>{t("Licensed Professionals")}</h5>
+                      <h3>{t("Licensed Professionals")}</h3>
                       <p className="small text-muted">{t("Qualified and experienced homeopaths")}</p>
                     </div>
                     <div className="col-md-4 mb-3">
                       <i className="fas fa-video fa-2x text-primary mb-2"></i>
-                      <h5>{t("Telehealth Available")}</h5>
+                      <h3>{t("Telehealth Available")}</h3>
                       <p className="small text-muted">{t("Online consultations available worldwide")}</p>
                     </div>
                     <div className="col-md-4 mb-3">
                       <i className="fas fa-leaf fa-2x text-primary mb-2"></i>
-                      <h5>{t("Natural Healing")}</h5>
+                      <h3>{t("Natural Healing")}</h3>
                       <p className="small text-muted">{t("Holistic treatment and natural remedies")}</p>
                     </div>
                   </div>

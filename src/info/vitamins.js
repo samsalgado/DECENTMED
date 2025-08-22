@@ -17,7 +17,7 @@ function Vitamins() {
                 <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t('Best Vitamins and Antioxidants')}</h2>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Vitamin D')}</h4>
+                    <h3>{t('Vitamin D')}</h3>
                     <img className='gridimage' src={d} alt='' />
                     <p className="e">
                         {t('Humans do not naturally produce vitamin D. Vitamin D benefits include: calcium absorption, immune system support and cardiovascular health. Found primarily in fruits like orange, grapefruit, lemon, kiwi and broccoli.')}
@@ -25,7 +25,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Vitamin A')}</h4>
+                    <h3>{t('Vitamin A')}</h3>
                     <img className='gridimage' src={a} alt='' />
                     <p className="e">
                         {t('Great for the immune system bone health, cancer prevention (apricot) and fighting acne and aging. Humans do not naturally produce vitamin A. Found primarily in fruits like apricots, nectarine, cantaloupe, passion fruit and sweet potato.')}
@@ -33,7 +33,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('CoQ10')}</h4>
+                    <h3>{t('CoQ10')}</h3>
                     <img className='eve' src={coq10} alt='' />
                     <p className="e">
                         {t('This antioxidant converts food into energy. It helps fight diabetes, fertility, cancer and headaches. It is highest in liver, strawberries and oranges and seeds like lentils.')}
@@ -41,7 +41,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Vitamin E')}</h4>
+                    <h3>{t('Vitamin E')}</h3>
                     <img className='mimi' src={VitaminE} alt='' />
                     <p className="e">
                         {t('Great for immune health, this vitamin has antioxidant properties. Vitamin E is found in avocado, broccoli, olives, kiwi and seeds.')}
@@ -49,7 +49,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Vitamin K')}</h4>
+                    <h3>{t('Vitamin K')}</h3>
                     <img className='gridimage' src={K} alt='' />
                     <p className="e">
                         {t('The body does not naturally produce vitamin K. Dandelion root is high in vitamin K, which helps with bone health and blood clotting. Some studies indicate dandelion root is effective in colorectoral cancer. Other great sources of vitamin K are greens like kale, blueberries, kiwi and avocado.')}
@@ -61,7 +61,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Curcumin')}</h4>
+                    <h3>{t('Curcumin')}</h3>
                     <img className='gridimage' src={curcumin} alt='' />
                     <p className="e">
                         {t('Known for its strong orange pigment, curcumin is an antioxidant and component of turmeric. Curcumin is one of the strongest anti-inflammatory and antioxidants. There are many benefits to consuming curcumin.')}
@@ -69,7 +69,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Vitamin B')}</h4>
+                    <h3>{t('Vitamin B')}</h3>
                     <img className='gridimage' src={vitB} alt='' />
                     <p className="e">
                         {t('The body does not naturally produce vitamin B. Some doctors theorize that disease stems from a vitamin B deficiency. Vitamin B12, B6 and other complex vitamins convert food into energy and help to strengthen the immune system. Although indirectly associated, B17 (Laetrile), found in the nitriloside family (bitter almond, apricot seed), plays a pivotal role in cancer prevention.')}
@@ -77,7 +77,7 @@ function Vitamins() {
                 </div>
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h4>{t('Glutathione')}</h4>
+                    <h3>{t('Glutathione')}</h3>
                     <img className='gridimage' src={gluta} alt='' />
                     <p className="e">
                         {t('This antioxidant aids the immune system, fighting free radicals and regeneration of vitamins E and C.')}
