@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
@@ -71,35 +71,15 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { StemPract } from './pages/STEMPRACT';
-import React, { useEffect, useState } from 'react';
-import SignupPopup from './Components/SignupPopup';
+import React from 'react';
 import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
 import StripePayment from './pages/StripePayment/StripePayment';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+
 function App() {
   const { t } = useTranslation();
   const queryClient = new QueryClient();
-
-  const location = useLocation();
-  // Popup state
-  const [showPopup, setShowPopup] = useState(false);
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (
-      !token &&
-      !location.pathname.startsWith('/signup') &&
-      location.pathname !== '/signin'
-    ) {
-      const timer = setTimeout(() => {
-        setShowPopup(true);
-      }, 90000);
-      return () => clearTimeout(timer);
-    } else {
-      setShowPopup(false);
-    }
-  }, [location.pathname]);
 
 
   return (
@@ -178,8 +158,6 @@ function App() {
         <Route path="/signin" element={<SignIn t={t} />} />
       </Routes>
 
-      {/* Show signup popup if user is not logged in */}
-      {showPopup && <SignupPopup onClose={() => setShowPopup(false)} />}
     </QueryClientProvider>
   );
 }
