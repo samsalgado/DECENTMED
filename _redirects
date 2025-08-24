@@ -1,1 +1,10 @@
- /* /index.html 200
+# Redirect old domains to new domain
+https://themerlingroupworld.com/* https://decentmed.org/:splat 301!
+https://www.themerlingroupworld.com/* https://decentmed.org/:splat 301!
+https://decentmed.themerlingroupworld.com/* https://decentmed.org/:splat 301!
+http://themerlingroupworld.com/* https://decentmed.org/:splat 301!
+http://www.themerlingroupworld.com/* https://decentmed.org/:splat 301!
+http://decentmed.themerlingroupworld.com/* https://decentmed.org/:splat 301!
+
+# Serve React app for all other requests
+/* /index.html 200
