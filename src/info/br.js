@@ -9,7 +9,7 @@ const {t} = useTranslation('common')
 
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Breathwork')}</h1>
+            <h1 className='title'>{t('Somatic Breathwork')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -27,7 +27,7 @@ const {t} = useTranslation('common')
         }}>
          
           <p className="pr"><h2>{t("What is Breathwork?")}</h2></p>
-          <p className='pr'>{t("Breathwork is the practice of consciously using the breath to regulate your physical, emotional, and mental state. By shifting the rhythm, depth, and pattern of your breathing, you can calm the nervous system, release stored tension, increase clarity, and access deeper states of awareness. It’s a powerful tool for healing, transformation, and self-connection, helping you move out of survival mode and into presence, vitality, and emotional freedom. Breathwork can be gentle and grounding or deep and activating, depending on the intention and technique used.")}</p>
+          <p className='pr'>{t("Breathwork is the practice of consciously using the breath to regulate your physical, emotional, and mental state. By shifting the rhythm, depth, and pattern of your breathing, you can calm the nervous system, release stored tension, increase clarity, and access deeper states of awareness. It’s a powerful tool for healing, transformation, and self-connection, helping you move out of survival mode and into presence, vitality, and emotional freedom. Breathwork can be gentle and grounding or deep and activating, depending on the intention and technique used. Seeking somatic breathwork near me? Click the button below to find great breathwork coaches.")}</p>
           <Button className="custom-btn" href="https://themerlingroupworld.com/breathwork" target="_blank">{t("Find Breathwork Coach")}</Button>  {/* Added Bootstrap Button */}
         </div>
         <iframe

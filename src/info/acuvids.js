@@ -9,6 +9,12 @@ const Acuvids = () => {
             id: 1,
             videoUrl:"https://drive.google.com/file/d/1_sNxbwxBreVHlcA0cZsNjr6S0L0R_Z-u/preview",
             name: t("Burnout from Work - Use Acupuncture")
+        },
+        {
+            id:2,
+            videoUrl:"https://www.youtube.com/embed/JJjX3G06TnQ",
+            name: t("Acupuncture for Pinched Nerve (Acupressure)")
+
         }
     ]);
     return (

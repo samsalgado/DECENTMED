@@ -57,11 +57,22 @@ const Ayurvedaa = () => {
       </div>   
       <br />
       <div className='pr'>
-        <h3>{t('What is Ayurveda?')}</h3>
+        <h2>{t('What is Ayurveda?')}</h2>
         <p>
           {t(`Ayurveda is a holistic healing system developed in India based on the delicate balance between mind, body, and spirit. The goal of Ayurveda is promoting good health instead of fighting disease. The goal is to cleanse your body of undigested food, which stay in your body and lead to illness. The process is called 'panchakarma', designed to reduce your symptoms and restore harmony and balance. Other processes used are blood purification, massage, medical oils, herbs, enemas, and laxatives.`)}
         </p>
-        <h3>{t('Why Choose Ayurveda?')}</h3>
+        <br></br>
+        <h2>{t('Types of Ayurvedic Oil')}</h2>
+        <div>
+  <p style={{textAlign: "left"}}>{t('1. Dhanwantharam, Bala oil - Massage (Abhyanga)')}</p>
+  <p style={{textAlign: "left"}}>{t('2. Bhringraj, Neelibhringadi - Hair and scalp care')}</p>
+  <p style={{textAlign: "left"}}>{t('3. Mahanarayan oil - Joint pain relief')}</p>
+  <p style={{textAlign: "left"}}>{t('4. Kumkumadi oil (for glow), Neem oil - Skin conditions')}</p>
+  <p style={{textAlign: "left"}}>{t('5. Brahmi or Ashwagandha oil - Stress and sleep')}</p>
+
+</div>
+
+        <h2>{t('Why Choose Ayurveda?')}</h2>
         <div>
   <p style={{textAlign: "left"}}>{t('1. Truly embrace individual')}</p>
   <p style={{textAlign: "left"}}>{t('2. Foster self-awareness')}</p>
