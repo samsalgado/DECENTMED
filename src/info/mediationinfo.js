@@ -13,7 +13,7 @@ const MeditationInfo = () => {
       <iframe width="100%" height={500} src="https://drive.google.com/file/d/1gR__NvCEmnlJpOsJDUadgCDBSM-LZzCS/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
       <div style={{ marginTop: '20px', width: '100%' }}>
-        <Button style={{ marginRight: '20px' }} variant="primary" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>
+        <Button style={{ marginRight: '20px' }} className="custom-btn" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>
         <Button className="custom-btn" href="mailto:serenitymeditation2021@gmail.com" target="_blank">{t('Contact')}</Button>
       </div>
       

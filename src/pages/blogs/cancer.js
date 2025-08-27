@@ -119,14 +119,12 @@ const Blog6 = () => {
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
         </h1>
         <div className='container'>
-          <div className='video-container'>
             <ReactPlayer
               url="https://www.dropbox.com/scl/fi/40iuefd3qdbo0h34vssq2/The-Curious-Case-of-Cancer-Vitamin-B17.mp4?rlkey=pejf34o2ndr5erb9ksde3qbkz&st=oibbui7r&dl=0" // Replace with your video URL
               width='100%'
               height='400px'
               controls={true}
             />
-          </div>
         </div>
 
       </div>
