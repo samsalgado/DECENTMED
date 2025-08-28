@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import Ramona from '../cards/IMG_0587.jpeg';
+import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
 import Kristina from "../images copy/kristina.png";
 import Priscilla from '../cards/priscilla.jpg';
@@ -29,7 +30,6 @@ const { t } = useTranslation('common');
     <div className="col-md-4">
     </div>
   </div>
-
 
   <div className="row">
     <div className="col-md-6">
@@ -104,6 +104,46 @@ const { t } = useTranslation('common');
     </div>
   </div>
 
+  <div className="row">
+    <div className="col-md-6">
+      <h2>{t("Gorilla and She Coaching")}</h2>
+      <a href='https://www.gorillaandshecoaching.com/schedule/30-minute-metabolic-acceleration-call'>
+    <figure>
+        <img 
+          src={Gorilla} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Book Discovery Call")}</figcaption>
+        </figure>
+      </a>
+      <div>
+      <iframe
+  src="https://drive.google.com/file/d/1Z0qVqBe8ukAEMHmKQtzqtWhWx1orq1ri/preview"
+  width="100%"
+  title="John Craig" 
+  height="355px"
+  allow="autoplay"
+  frameBorder="0"
+  allowFullScreen
+  style={{
+    borderRadius: '12px',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+    border: 'none',
+    overflow: 'hidden'
+  }}
+></iframe>
+</div>
+  <h3>{t("Gorilla and She Coaching:")}</h3>
+      <p>
+        {t("gorilla")}
+      </p>
+    </div>
+  </div>
   <div className="row">
     <div className="col-md-6">
     <h2>{t("Anil Narain Matai: Spirtual Coach")}</h2>
