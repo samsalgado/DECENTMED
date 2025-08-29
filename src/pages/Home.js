@@ -16,7 +16,6 @@ export function Home() {
       <main className="page-content">
         <Helmet>
           <title>{t('DecentMed')}</title>
-          <meta name="google-site-verification" content="EH68myzmbZ32ld5UQOAL-tWi52c5FHLitCEQHpWF4Y8" />
           <meta
             name="description"
             content={t(
