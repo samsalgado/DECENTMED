@@ -11,7 +11,7 @@ const WellnessInro = () => {
       <iframe
       width="100%"
       height="315"
-      src="https://drive.google.com/file/d/1IbhfjOZ4FIe6nuOlhLepQDUCqYcyONEx/preview?embedded=true"
+      src="https://drive.google.com/file/d/1euCo7zW6nTn_XxaaAMWmg5h1_xuctvtW/preview?embedded=true"
       title="Video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
       allowfullscreen

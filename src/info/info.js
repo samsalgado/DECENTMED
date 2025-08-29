@@ -15,13 +15,12 @@ const Info = () => {
 
   return (
     <div className='container'>
-      <h1 className='title'>{t('Decent Med')}</h1>
+      <h1 className='title'>{t('DecentMed')}</h1>
       <WellnessInro />
       <BlueContainer />
       <Button onClick={learnmore} className="custom-btn">
   {t('Providers: Join Trusted Network')}
 </Button>
-
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
       </div>

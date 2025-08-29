@@ -15,11 +15,11 @@ export function Home() {
     <>
       <main className="page-content">
         <Helmet>
-          <title>{t('Decent Med')}</title>
+          <title>{t('DecentMed')}</title>
           <meta
             name="description"
             content={t(
-              "Decent Med: explore a holistic approach to healthcare! We focus on natural healing and wellness practices that address the mind, body, and spirit. Learn more about holistic medicine and its benefits."
+              "DecentMed: a holistic medicine information portal that connects patients with providers. Explore how holistic medicine is right for you!"
             )}
           />
         </Helmet>

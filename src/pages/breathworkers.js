@@ -36,8 +36,7 @@ export function Breathwork() {
 
               <a
                 href="mailto:info@tribe-yoga.com"
-                className="email-button"
-                style={{
+                className="custom-btn"                style={{
                   display: "inline-block",
                   padding: "10px 20px",
                   background: "#6c63ff",
