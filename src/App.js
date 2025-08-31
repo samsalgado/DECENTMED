@@ -105,7 +105,7 @@ function App() {
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/ak" element={<AppliedKinesiology t={t} />} />
-        <Route path="/breathwork" element={<Breathwork  providerEmail="provider@example.com"  t={t} />} />
+        <Route path="/breathwork" element={<Breathwork  providerEmail="samueljuansalgado@gmail.com"  t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />

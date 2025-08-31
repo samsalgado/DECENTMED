@@ -69,24 +69,54 @@
 // }
 
 
-import { useState } from 'react';
-import axios from 'axios';
+
 import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 //import ReactPlayer from 'react-player';
 import JenB from '../cards/scarlett.JPG';
 import { useTranslation } from 'react-i18next';
 import PhoneInput from 'react-phone-input-2'; // ✅ Import
 import 'react-phone-input-2/lib/style.css'; // ✅ Styles for phone input
+import axios from 'axios';
 
 export function Breathwork({ providerEmail }) {
-  const { t } = useTranslation('common');
+
 useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { t } = useTranslation('common');
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    try {
+      await axios.post("https://decentmed-server.vercel.app/send-email", {
+        ...formData,
+        providerEmail,
+      });
+
+      setStatus("Email sent successfully!");
+    } catch (error) {
+      console.error(error);
+      setStatus("Failed to send email");
+    }
+  };
+
 
   return (
     <div>
