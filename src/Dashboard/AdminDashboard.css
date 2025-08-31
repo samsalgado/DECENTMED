@@ -1,0 +1,80 @@
+.admin-dashboard-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.admin-dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.provider-select {
+  margin-bottom: 20px;
+}
+
+.provider-select select {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.slots-section h3,
+.all-bookings h3 {
+  margin-bottom: 10px;
+}
+
+.slot-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.slot-row input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.slot-row button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slot-row button:hover { background-color: #005fa3; }
+
+.slots-section button {
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.slots-section button:first-of-type { background-color: #28a745; color: #fff; margin-right: 10px; }
+.slots-section button:last-of-type { background-color: #0077cc; color: #fff; }
+
+.all-bookings table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.all-bookings th,
+.all-bookings td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+
+.all-bookings th {
+  background-color: #f0f0f0;
+}

@@ -3,12 +3,12 @@ import './App.css';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import { Home } from './pages/Home';
-import {Mindset} from './pages/Thoughts';
+import { Mindset } from './pages/Thoughts';
 import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
-import  MassPract from './pages/Mass';
+import MassPract from './pages/Mass';
 import { Nutrigenomics } from './pages/Nutrigenomics';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
@@ -22,8 +22,8 @@ import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
 import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
-import {AppliedKinesiology} from './pages/AK';
-import {AKPract} from './pages/kin';
+import { AppliedKinesiology } from './pages/AK';
+import { AKPract } from './pages/kin';
 import Blog18 from './pages/blogs/blog18';
 import { Transformational } from './pages/transform';
 import Blog12 from './pages/blogs/blog12';
@@ -75,6 +75,9 @@ import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
 import StripePayment from './pages/StripePayment/StripePayment';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import ProviderDashboard from './Dashboard/ProviderDashboard';
+import AdminDashboard from './Dashboard/AdminDashboard';
+import ScrollTop from './Components/ScrollTop';
 
 function App() {
   const { t } = useTranslation();
@@ -84,7 +87,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* <Topbar t={t} /> */}
-
+      <ScrollTop />
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
         <Route path="/404" element={<NotFound />} />
@@ -93,7 +96,7 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
-        <Route path="/reviews" element={<ReviewPage t={t} />}/>
+        <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
@@ -102,7 +105,7 @@ function App() {
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/ak" element={<AppliedKinesiology t={t} />} />
-        <Route path="/breathwork" element={<Breathwork t={t} />} />
+        <Route path="/breathwork" element={<Breathwork  providerEmail="provider@example.com"  t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
@@ -154,6 +157,20 @@ function App() {
         <Route path="/signup/public" element={<PublicSignUp t={t} />} />
         <Route path="/signup/provider" element={<SignUp t={t} />} />
         <Route path="/signin" element={<SignIn t={t} />} />
+
+        {/* Telehealth Providers Dashboard (for regular users) */}
+        <Route path="/provider-dashboard" element={
+          <PrivateRoute>
+            <ProviderDashboard t={t} />
+          </PrivateRoute>
+        } />
+
+        {/* Admin Dashboard */}
+        <Route path="/admin-dashboard" element={
+          <PrivateRoute adminOnly={true}>
+            <AdminDashboard t={t} />
+          </PrivateRoute>
+        } />
       </Routes>
 
     </QueryClientProvider>

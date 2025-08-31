@@ -4,7 +4,7 @@ import Info from '../info/info';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import Footer from '../footer';
-import React from 'react'; // Removed useState and useEffect as they are no longer needed
+// import BookingForm from './BookingForm/BookingForm';
 
 export function Home() {
   const { t } = useTranslation('common');
@@ -27,7 +27,7 @@ export function Home() {
         <header>
           <Topbar t={t} />
         </header>
-
+        {/* <BookingForm token={localStorage.getItem('token')} ></BookingForm> */}
         <Info t={t} />
 
         <br />
