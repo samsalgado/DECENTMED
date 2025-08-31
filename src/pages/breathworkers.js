@@ -106,6 +106,7 @@ useEffect(() => {
 
     try {
       await axios.post("https://decentmed-server.vercel.app/send-email", {
+      // await axios.post("http://localhost:5000/send-email", {
         ...formData,
         providerEmail,
       });
