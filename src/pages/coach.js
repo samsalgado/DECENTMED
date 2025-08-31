@@ -48,6 +48,23 @@ const { t } = useTranslation('common');
           <figcaption>{t("Free Discovery Call")}</figcaption>
         </figure>
       </a>
+            <div>
+            <iframe
+        src="https://drive.google.com/file/d/1Kmm58fe3qd53eouhOZgz05W75wc06GGl/preview"
+        width="100%"
+        title="Priscilla" 
+        height="355px"
+        allow="autoplay"
+        frameBorder="0"
+        allowFullScreen
+        style={{
+          borderRadius: '12px',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+          border: 'none',
+          overflow: 'hidden'
+        }}
+      ></iframe>
+      </div>
       <p>
         {t("I help individuals and entrepreneurs who want to achieve more to break through mental blocks, align with their highest potential and magnetize the success they truly desire.I help them understand the transformative power of their mindset and how it directly impacts their results in all areas of their life.")}
       </p>
