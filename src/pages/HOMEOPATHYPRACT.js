@@ -13,6 +13,9 @@ export function HomeopathyPract() {
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (navigator.geolocation) {

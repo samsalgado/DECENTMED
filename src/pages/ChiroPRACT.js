@@ -23,6 +23,9 @@ export function Chiro() {
   const [showResults, setShowResults] = useState(false);
   const [isArizonaLocation, setIsArizonaLocation] = useState(false);
   const [isStLouisLocation, setIsStLouisLocation] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Auto-detect user location on page load
   useEffect(() => {

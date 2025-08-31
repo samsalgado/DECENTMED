@@ -14,6 +14,9 @@ const { t } = useTranslation('common');
   const [showResults, setShowResults] = useState(false);
   const [isTampaLocation, setIsTampaLocation] = useState(false);
   const [isMilwaukeeLocation, setIsMilwaukeeLocation] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
  useEffect(() => {
     if (navigator.geolocation) {

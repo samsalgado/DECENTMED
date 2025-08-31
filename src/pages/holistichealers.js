@@ -1,12 +1,16 @@
 import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
+import { useEffect } from 'react';
 import Footer from '../footer';
 //import ReactPlayer from 'react-player';
 import JenB from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import { useTranslation } from 'react-i18next'
 export function HolisticHealers() {
 const { t } = useTranslation('common');
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return(
       <main className="page-content">
 

@@ -2,11 +2,16 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import { useEffect } from 'react';
 import krisina from "../images copy/kristina.png";
 import Nutrifyourlife from '../cards/nutrifyourlife.jpg';
 import { useTranslation } from 'react-i18next'
 export function Nutritionpract() {
 const { t } = useTranslation('common');
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
     return(
       <main className="page-content">
         <div>

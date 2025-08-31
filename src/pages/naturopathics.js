@@ -4,9 +4,14 @@ import Topbar from './topbar';
 import Footer from '../footer';
 //import ReactPlayer from 'react-player';
 import Meridian from '../cards/meridian.png';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
 export function Natpract() {
 const { t } = useTranslation('common');
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
     return(
         <div>
         <main className="page-content">

@@ -2,11 +2,15 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import { useEffect } from 'react';
 import Stacy from '../cards/healinggoddess.png'
 import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
 export function AYPract() {
   const { t } = useTranslation('common');
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     return(
         <div>

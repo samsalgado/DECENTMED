@@ -8,9 +8,13 @@ import Anil from '../cards/anil.png';
 import Kristina from "../images copy/kristina.png";
 import Priscilla from '../cards/priscilla.jpg';
 import { useTranslation } from 'react-i18next'
-
+import { useEffect } from 'react';
 export function Coaching() {
 const { t } = useTranslation('common');
+ useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return(
         <div>
         <main className="page-content">

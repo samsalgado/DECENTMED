@@ -11,8 +11,9 @@ export function Hypnopract() {
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isTampaLocation, setIsTampaLocation] = useState(false);
-
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         () => setUserLocation('Detect location...'),

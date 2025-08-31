@@ -1,6 +1,7 @@
 import '../App.css';
 import Topbar from './topbar';
 import Footer from '../footer';
+import { useEffect } from 'react';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
 import MedBenefits from '../info/meditationbenefits';
@@ -8,6 +9,9 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 export default function Meditation() {
 const { t } = useTranslation('common');
+ useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <>
                         <main className="page-content">

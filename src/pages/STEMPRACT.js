@@ -14,6 +14,8 @@ export function StemPract() {
 
   // Auto-detect user location on page load
   useEffect(() => {
+        window.scrollTo(0, 0);
+    
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
