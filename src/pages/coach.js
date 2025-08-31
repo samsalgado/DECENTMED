@@ -90,7 +90,18 @@ const { t } = useTranslation('common');
           <figcaption>{t("View Website")}</figcaption>
         </figure>
       </a>
-     
+      <iframe
+          className="centered-video"
+          src="https://www.youtube.com/embed/hgHkSicJ6xc?si=P4xxLg4CeQ_grt5g"
+          frameBorder="0"
+          allowFullScreen
+          title="YouTube video player"
+          style={{
+            maxWidth: '500px',
+            width: '100%',
+            height: 'auto'
+          }}
+        />
   <h3>{t("Ramona Crabtree-Falkner: Transformational Empowerment Coach")}</h3>
       <p>
         {t("Ramona Crabtree-Falkner is a Transformational Empowerment Coach, retreat leader, and speaker who helps professional women reclaim their energy, realign with purpose, and rise empowered in life and work. With over 20 years of experience in holistic wellness and mindfulness, she creates spaces for growth, healing, and authentic connection. She guides women on a path to Reclaim Energy. Realign Purpose. Rise Empowered.")}
