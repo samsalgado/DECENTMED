@@ -84,7 +84,7 @@ import axios from 'axios';
 
 export function Breathwork({ providerEmail }) {
 
-useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -106,7 +106,7 @@ useEffect(() => {
 
     try {
       await axios.post("https://decentmed-server.vercel.app/send-email", {
-      // await axios.post("http://localhost:5000/send-email", {
+        // await axios.post("http://localhost:5000/send-email", {
         ...formData,
         providerEmail,
       });
@@ -183,7 +183,10 @@ useEffect(() => {
                     }}
                   />
                 </div>
-                <button type="submit">Submit</button>
+                <button style={{
+                  backgroundColor: "#00695C",  color: "#fff",  border: "none", boxShadow: "none", outline: "none"
+                }}
+                  type="submit">Submit</button>
               </form>
               <p>{status}</p>
 
