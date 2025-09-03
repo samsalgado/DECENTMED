@@ -12,48 +12,55 @@ const Footers = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        
+
         {/* Products Section */}
         <div className="footer-section office">
-          <h3 style={{textAlign: 'center', marginTop: '-10px'}}className="footer-section about">{t("Products We Trust")}</h3>
-          <div style={{display: 'flex', flexDirection: 'column'}}>
+          <h3 style={{ textAlign: 'center', marginTop: '-10px' }} className="footer-section about">{t("Products We Trust")}</h3>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
 
-          <Button   style={{ fontWeight: 'bold' }}
-variant="secondary" href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
-           {t("Shop")}
+            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }} href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
+              {t("Shop")}
             </Button>
           </div>
         </div>
 
         {/* About Section */}
-        
-        <div style={{textAlign: 'center', marginTop: '-10px'}}className="footer-section about">
-        <img src={LOGO} className="Logo" alt="logo" />
-        <br></br>
-        <br></br>
-        <p>{t('intro_paragraph')}</p>
+
+        <div style={{ textAlign: 'center', marginTop: '-10px' }} className="footer-section about">
+          <img src={LOGO} className="Logo" alt="logo" />
+          <br></br>
+          <br></br>
+          <p>{t('intro_paragraph')}</p>
         </div>
 
         {/* Office Section */}
         <div className="footer-section office">
-        <h3 style={{textAlign: 'center'}}>{t('Office')}</h3>
-        <p>📞 <a href="tel:+18137664900">Call Us: +1 (813) 766-4900</a></p>
+          <h3 style={{ textAlign: 'center' }}>{t('Office')}</h3>
+          <p>📞 <a href="tel:+18137664900">Call Us: +1 (813) 766-4900</a></p>
           <p>5830 E 2ND ST Casper, WY 82609</p>
+          
+          
+            {t('Email:')}{' '}
+            <a href="mailto:samuel@themerlingroupworld.com">
+              samuel@themerlingroupworld.com
+            </a>
+          </p>
           <p>
     {t('Email:')}
     <a href="mailto:samuel@themerlingroupworld.com">
       samuel@themerlingroupworld.com
     </a>
-    <Button   style={{ fontWeight: 'bold' }}
-variant="secondary" href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">
-           {t("OUR REVIEWS")}
+            <Button
+              style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}
+              href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">
+              {t("OUR REVIEWS")}
             </Button>
-  </p>
+          </p>
         </div>
 
         {/* Social Icons Section */}
-        <div style={{marginTop: '10px'}}className="footer-section social-icons">
-          <h3 style={{textAlign: 'center'}}>{t('Social Media')}</h3>
+        <div style={{ marginTop: '10px' }} className="footer-section social-icons">
+          <h3 style={{ textAlign: 'center' }}>{t('Social Media')}</h3>
           <div className="social-icons-list">
             <a href="https://www.linkedin.com/company/themerlingroupworld/">
               <FaLinkedin className="facebook" />
@@ -68,7 +75,7 @@ variant="secondary" href="https://decentmed.themerlingroupworld.com/reviews" tar
               <FaYoutube className="youtube" />
             </a>
             <a href="https://geyser.fund/project/decentmedpubliccancercure/">
-            <img src={Geyser} className="geyserImg" alt="Geyser Fund" />
+              <img src={Geyser} className="geyserImg" alt="Geyser Fund" />
             </a>
 
           </div>

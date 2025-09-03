@@ -23,7 +23,7 @@ const PublicSignUp = () => {
     try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
-        // 'http://localhost:5001/users',
+        // 'http://localhost:5000/users',
         user,
         {
           headers: {

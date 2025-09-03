@@ -1659,6 +1659,89 @@ td:last-child {
     margin-bottom: 15px;
   }
   
+/* Scarlett De Email Form */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.contact-form div {
+  margin-bottom: 18px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 5px rgba(0, 102, 255, 0.2);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0066ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #004bcc;
+}
+
+.contact-form p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: green;
+  text-align: center;
+}
+
+.scarle{
+font-size: 25px;
+font-weight: 600;
+padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-form {
+    padding: 35px 40px;
+    max-width: 600px;
+  }
+}
+
+
   .mobile-container {
     padding: 12px;
   }
