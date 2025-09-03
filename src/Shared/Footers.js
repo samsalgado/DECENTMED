@@ -43,10 +43,6 @@ const Footers = () => {
               samuel@themerlingroupworld.com
             </a>
           <p>
-    {t('Email:')}
-    <a href="mailto:samuel@themerlingroupworld.com">
-      samuel@themerlingroupworld.com
-    </a>
             <Button
               style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}
               href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">

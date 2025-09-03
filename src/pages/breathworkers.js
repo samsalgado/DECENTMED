@@ -79,9 +79,7 @@ import { useEffect, useState } from 'react';
 import JenB from '../cards/scarlett.JPG';
 import { useTranslation } from 'react-i18next';
 import PhoneInput from 'react-phone-input-2'; // ✅ Import
-import 'react-phone-input-2/lib/style.css'; // ✅ Styles for phone input
 import axios from 'axios';
-
 export function Breathwork({ providerEmail }) {
 
   useEffect(() => {
