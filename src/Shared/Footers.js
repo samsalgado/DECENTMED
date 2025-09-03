@@ -38,13 +38,10 @@ const Footers = () => {
           <h3 style={{ textAlign: 'center' }}>{t('Office')}</h3>
           <p>📞 <a href="tel:+18137664900">Call Us: +1 (813) 766-4900</a></p>
           <p>5830 E 2ND ST Casper, WY 82609</p>
-          
-          
             {t('Email:')}{' '}
             <a href="mailto:samuel@themerlingroupworld.com">
               samuel@themerlingroupworld.com
             </a>
-          </p>
           <p>
     {t('Email:')}
     <a href="mailto:samuel@themerlingroupworld.com">
