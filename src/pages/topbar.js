@@ -199,7 +199,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useTranslation } from 'react-i18next';
 import '../App.css';
-import LOGO from "../images copy/LOGO.png";
+import LOGO from "../images copy/IMG_1493.jpeg";
 import EducationMenu from './EducationMenu';
 
 const Topbar = () => {
