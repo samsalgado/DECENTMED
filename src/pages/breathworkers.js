@@ -70,9 +70,8 @@ console.log(setFormData);
 
               {/* Contact Form */}
               <form onSubmit={handleSubmit} className="contact-form">
-              <div style={{ marginTop: "20px" }}>
                 <iframe
-                  src="https://www.cognitoforms.com/f/QLZd_Lg6oEmOhHz0oQSkVQ/1"
+                  src="https://www.cognitoforms.com/f/QLZd_Lg6oEmOhHz0oQSkVQ/1" 
                   allow="payment"
                   style={{ border: 0, width: "100%" }}
                   height="600"
@@ -80,7 +79,6 @@ console.log(setFormData);
                   required
                 ></iframe>
                 <script src="https://www.cognitoforms.com/f/iframe.js"></script>
-              </div>
               </form>
               <p>{status}</p>
 

@@ -93,7 +93,7 @@ body {
 
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
   animation: App-logo-spin infinite 20s linear;
 }
@@ -738,8 +738,8 @@ height: 600px;
 
 .Logo {
   align-items: left;
-  height: 9vmin;
-  width: fit-content;
+  height: 19vmin;
+  width:auto;
   position: relative;
 }
 

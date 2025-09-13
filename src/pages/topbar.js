@@ -199,9 +199,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useTranslation } from 'react-i18next';
 import '../App.css';
-import LOGO from "../images copy/IMG_1493.jpeg";
+import LOGO from "../images copy/goklKk.png";
 import EducationMenu from './EducationMenu';
-
+import Conditions from "./conditions";
 const Topbar = () => {
   const { t, i18n } = useTranslation("common");
   const [showMenu, setShowMenu] = useState(false);
@@ -251,8 +251,8 @@ const Topbar = () => {
           </Navbar.Brand>
           <Nav className="me-auto">
             <EducationMenu />
+            <Conditions />
             <Nav.Link href="/telehealth">{t('Find Practitioner')}</Nav.Link>
-            <Nav.Link href="/cancer">{t('Cancer')}</Nav.Link>
             <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
             <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
             <Nav.Link href='/about'>{t('About Us')}</Nav.Link>
