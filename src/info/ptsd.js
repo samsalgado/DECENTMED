@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Channel from './channel';
 import './Info.css';
-import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; 
 import { useTranslation } from 'react-i18next';
-import acutreatsIN from '../images copy/IMG_9305.jpeg';
-import burnout from '../images copy/burnout.jpeg';
-import Acuvids from '../info/acuvids';
-import acuben from '../images copy/acuben.png';
+import PTSDvids from './ptsdvids';
 import { Button } from 'react-bootstrap';
 
 const Ptsdd = () => {
@@ -112,7 +107,7 @@ const Ptsdd = () => {
             
             <Button 
               className="custom-btn"
-              href="https://www.soulwarriorsretreat.com/" 
+              href="https://www.soulwarriorsretreat.com/retreats" 
               target="_blank"
               style={buttonStyle}
               onMouseOver={(e) => {
@@ -123,13 +118,13 @@ const Ptsdd = () => {
                 e.target.style.boxShadow = 'none';
               }}
             >
-              {t("Explore Acupuncture")}
+              {t("Get Help")}
             </Button>
           </div>
           
           <div style={iframeWrapperStyle}>
             <iframe
-              src="https://drive.google.com/file/d/1K8LQQCKq2hwwxP3dTbaj7OxmWxChpcwq/preview"
+              src="https://www.youtube.com/embed/YEhDB72Mz5Y?si=rsENZd36-mSHY59y"
               title='CPTSD vs PTSD'
               allow="autoplay"
               style={iframeStyle}
@@ -138,19 +133,9 @@ const Ptsdd = () => {
           </div>
         </div>
       </div>
-
-      <div className='acupen'>
-        <img className='gridimag' src={acuchart} alt='Ac' />
-        <img className='gridimag' src={acutreatsIN} alt='Ac' />
-        <a href="https://oceantreis.com/" target="_blank" rel="noopener noreferrer">
-          <img className='gridimag' src={burnout} alt='oceantreis' />
-        </a>      
-      </div>
       
-      <h1>{t("Top 10 Benefits of Acupuncture")}</h1>
-      <img className='gridimag' src={acuben} alt='Ac' />
-      <Acuvids />
-      <Channel />
+      <h1>{t("PTSD Help")}</h1>
+      <PTSDvids />
     </div>
   );
 }

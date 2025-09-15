@@ -11,7 +11,7 @@ const { t } = useTranslation('common');
         <ul><NavLink to="/cancer">{t('Cancer')}
       </NavLink>
       </ul>
-      <ul><NavLink to="/homeopathy">{t('Sinus Conditions')}
+      <ul><NavLink to="/ptsd">{t('PTSD')}
       </NavLink>
       </ul>
       <ul><NavLink to="/homeopathy">{t('ADD')}

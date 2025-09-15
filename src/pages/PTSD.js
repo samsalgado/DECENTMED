@@ -1,7 +1,7 @@
 import "../App.css";
 import Topbar from "./topbar";
 import Footer from '../footer';
-import Info1 from '../info/info1';
+import Ptsdd from "../info/ptsd";
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
 export function PTSD() {
@@ -17,7 +17,7 @@ const { t } = useTranslation('common');
         <header>
             <Topbar />
         </header>
-       
+       <Ptsdd />
         <footer>
             <Footer />
         </footer>

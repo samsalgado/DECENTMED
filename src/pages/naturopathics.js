@@ -1,68 +1,331 @@
+import React, { useState, useEffect } from 'react';
 import '../App.css';
-import { Helmet } from 'react-helmet'; // Import Helmet
+import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-//import ReactPlayer from 'react-player';
 import Meridian from '../cards/meridian.png';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
+
 export function Natpract() {
-const { t } = useTranslation('common');
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  const { t } = useTranslation('common');
+  const [location, setLocation] = useState('');
+  const [userLocation, setUserLocation] = useState('');
+  const [showResults, setShowResults] = useState(false);
+  const [isWashingtonLocation, setIsWashingtonLocation] = useState(false);
 
-    return(
-        <div>
-        <main className="page-content">
-        <Helmet>  {/* Add Helmet component */}
-        <title>{t("Naturopathy Near Me")}</title>  
-        <meta name="description" content={t("Searching Nutritionist near me? Look no further than our fantastic nutritionists that can assist you on your pathway to wellness.")} />
-      </Helmet>
-            <header>
-            <Topbar />
-            </header>
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-            <div class="container">
-            <h1>{t("Naturopathy")}</h1>
-            <p>{t("Searching Naturopathy Near me? We have you covered!")}</p>
- <div class="row">
-    <div class="col-md-4">
-    </div>
-  </div>
+  // Auto-detect user location on page load
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setUserLocation('Detect location...');
+        },
+        (error) => {
+          setUserLocation('Enter your location');
+        }
+      );
+    } else {
+      setUserLocation('Enter your location');
+    }
+  }, []);
 
-  <div class="row">
-    <div class="col-md-6">
-      <h2>{t("Meridian Passage Wellness")}</h2>
-      <a href='https://meridianpassagewellness.com/book-now/'>
-    <figure>
-        <img src={Meridian} alt="logo" />
-          <figcaption>{t("Book Now")}</figcaption>
-        </figure>
-      </a>
-      {/*
-      <div>
-      <ReactPlayer
-url="https://www.youtube.com/embed/Wezd6eo9Cfo"
-height='400px'
-width="100%"
-controls={true}
-/>
-</div>
-*/      
-}
-  <h3>{t("Meridian Passage Wellness:")}</h3>
-      <p>
-      {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you’re dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health. Join me and begin your personalized healing journey today.")}
-      </p>
-    </div>
-  </div>
-</div>
-            <footer>
-                <Footer />
-            </footer>
-            </main>
-        </div>
-    )
+  const handleSearch = () => {
+    if (!location.trim()) return;
+    const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
+
+    // Check if location contains Washington/Pacific Northwest terms
+    const washingtonTerms = [
+      'washington', 'wa', 'port townsend', 'seattle', 'spokane', 'tacoma', 'bellevue',
+      'vancouver', 'kent', 'everett', 'renton', 'federal way', 'yakima', 'bellingham',
+      'kennewick', 'auburn', 'pasco', 'marysville', 'lakewood', 'redmond', 'shoreline',
+      'richland', 'kirkland', 'burien', 'covington', 'walla walla', 'olympia'
+    ];
+
+    const isWashington = washingtonTerms.some(term => 
+      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
+    );
     
+    setIsWashingtonLocation(isWashington);
+    setShowResults(true);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
+  return (
+    <div>
+      <main className="page-content">
+        <Helmet>
+          <title>{t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")}</title>  
+          <meta name="description" content={t("Find naturopathic doctors in your area. Enter your location to see available naturopathy practitioners near you.")} />
+        </Helmet>
+
+        <header>
+          <Topbar />
+        </header>
+
+        <div className="container">
+          {/* Search Bar Section */}
+          <div className="search-section" style={{ 
+            background: '#f8f9fa', 
+            padding: '2rem 0', 
+            marginBottom: '2rem',
+            borderRadius: '8px'
+          }}>
+            <div className="row justify-content-center">
+              <div className="col-md-10">
+                <h1 className="text-center mb-4">{t("Find Naturopathic Doctors Near You")}</h1>
+                
+                <div className="search-bar-container" style={{
+                  display: 'flex',
+                  gap: '10px',
+                  maxWidth: '800px',
+                  margin: '0 auto',
+                  padding: '0 1rem'
+                }}>
+                  <div style={{ flex: '1', position: 'relative' }}>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder={userLocation}
+                      value={location}
+                      onChange={(e) => setLocation(e.target.value)}
+                      onKeyPress={handleKeyPress}
+                      style={{
+                        height: '50px',
+                        fontSize: '16px',
+                        width:'200px',
+                        paddingLeft: '40px',
+                        border: '2px solid #dee2e6',
+                        borderRadius: '6px'
+                      }}
+                    />
+                    <i className="fas fa-map-marker-alt" style={{
+                      position: 'absolute',
+                      left: '12px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      color: '#6c757d'
+                    }}></i>
+                  </div>
+                  
+                  <button
+                    className="custom-btn"
+                    onClick={handleSearch}
+                    style={{
+                      height: '50px',
+                      padding: '0 2rem',
+                      background: '#007bff',
+                      border: 'none',
+                      borderRadius: '6px',
+                      fontWeight: '500'
+                    }}
+                  >
+                    <i className="fas fa-search me-2"></i>
+                    {t("Search")}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {showResults && (
+            <div className="results-section">
+              {isWashingtonLocation ? (
+                <>
+                  <h2 className="mb-4">{t("Naturopathic Doctors in")} {location}</h2>
+                  
+                  {/* Kristen Barnes - Washington Local */}
+                  <div className="row mb-4">
+                    <div className="col-md-12">
+                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                        <div className="card-body">
+                          <div className="row">
+                            <div className="col-md-2 text-center">
+                              <img 
+                                src={Meridian} 
+                                alt="Meridian Passage Wellness" 
+                                style={{ 
+                                  maxWidth: '100px', 
+                                  maxHeight: '100px', 
+                                  objectFit: 'contain' 
+                                }} 
+                              />
+                            </div>
+                            <div className="col-md-7">
+                              <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
+                              <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
+                              
+                              <p className="mb-2">
+                                <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                                {t("Port Townsend, Washington")}
+                                <span className="ms-2">
+                                  <i className="fas fa-video text-success me-1"></i>
+                                  {t("Telehealth Available")}
+                                </span>
+                              </p>
+                              
+                              <div className="mb-2">
+                                <span className="badge bg-primary text-white me-1">{t("LOCAL WASHINGTON")}</span>
+                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Integrative Therapies")}</span>
+                              </div>
+                              
+                              <p className="card-text small">
+                                {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
+                              </p>
+                            </div>
+                            <div className="col-md-3 text-end">
+                              <a 
+                                href="https://meridianpassagewellness.com/book-now/" 
+                                className="btn btn-primary"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                              >
+                                {t("Book Now")}
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className="mb-4">{t("Naturopathic Doctors serving")} {location}</h2>
+                  
+                  {/* Kristen Barnes - Available via Telehealth */}
+                  <div className="row mb-4">
+                    <div className="col-md-12">
+                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                        <div className="card-body">
+                          <div className="row">
+                            <div className="col-md-2 text-center">
+                              <img 
+                                src={Meridian} 
+                                alt="Meridian Passage Wellness" 
+                                style={{ 
+                                  maxWidth: '100px', 
+                                  maxHeight: '100px', 
+                                  objectFit: 'contain' 
+                                }} 
+                              />
+                            </div>
+                            <div className="col-md-7">
+                              <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
+                              <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
+                              
+                              <p className="mb-2">
+                                <i className="fas fa-video text-success me-2"></i>
+                                {t("Available via Telehealth")}
+                                <span className="ms-2">
+                                  <i className="fas fa-map-marker-alt text-primary me-1"></i>
+                                  {t("Based in Washington")}
+                                </span>
+                              </p>
+                              
+                              <div className="mb-2">
+                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Mind-Body-Spirit")}</span>
+                              </div>
+                              
+                              <p className="card-text small">
+                                {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
+                                <br />
+                                <strong className="text-success">{t("Now offering virtual consultations - connect with Kristen from anywhere!")}</strong>
+                              </p>
+                            </div>
+                            <div className="col-md-3 text-end">
+                              <a 
+                                href="tel:+1206567827" 
+                                className="btn btn-outline-primary mb-2"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                              >
+                                {t("Book Telehealth Session")}
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Information about telehealth services */}
+                  <div className="row mb-4">
+                    <div className="col-md-12">
+                      <div className="alert alert-info">
+                        <h4 className="alert-heading">
+                          <i className="fas fa-info-circle me-2"></i>
+                          {t("Telehealth Naturopathic Services Available")}
+                        </h4>
+                        <p className="mb-0">
+                          {t("While we don't have local naturopathic doctors in your immediate area, Kristen Barnes from Meridian Passage Wellness offers comprehensive telehealth consultations. Experience holistic naturopathic care and integrative therapies from the comfort of your home!")}
+                        </p>
+                        <hr />
+                        <p className="mb-0">
+                          <strong>{t("For local in-person consultations, our services are available in:")}</strong>
+                          <br />
+                          {t("Washington: Port Townsend, Seattle, Spokane, Tacoma, Bellevue, Vancouver, and surrounding areas")}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+
+          {/* Default content when no search performed */}
+          {!showResults && (
+            <div className="default-content text-center" style={{ padding: '2rem 0' }}>
+              <h2>{t("Professional Naturopathic Care")}</h2>
+              <p className="lead text-muted">
+                {t("Enter your location above to find qualified naturopathic doctors in your area")}
+              </p>
+              
+              <div className="row justify-content-center mt-4">
+                <div className="col-md-8">
+                  <div className="row">
+                    <div className="col-md-4 mb-3">
+                      <i className="fas fa-leaf fa-2x text-primary mb-2"></i>
+                      <h3>{t("Licensed Naturopaths")}</h3>
+                      <p className="small text-muted">{t("Qualified and experienced naturopathic doctors")}</p>
+                    </div>
+                    <div className="col-md-4 mb-3">
+                      <i className="fas fa-heart fa-2x text-primary mb-2"></i>
+                      <h3>{t("Holistic Approach")}</h3>
+                      <p className="small text-muted">{t("Mind, body, and spirit healing")}</p>
+                    </div>
+                    <div className="col-md-4 mb-3">
+                      <i className="fas fa-video fa-2x text-primary mb-2"></i>
+                      <h3>{t("Telehealth Available")}</h3>
+                      <p className="small text-muted">{t("Virtual consultations for your convenience")}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <footer>
+          <Footer />
+        </footer>
+      </main>
+    </div>
+  );
 }
