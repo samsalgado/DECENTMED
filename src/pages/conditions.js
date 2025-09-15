@@ -32,13 +32,6 @@ const { t } = useTranslation('common');
       <ul><NavLink to="/detox">{t('Kidney Disease')}
       </NavLink>
       </ul>
-      <ul><NavLink to="/herbalmedicine">{t('Herbal Medicine')}
-      </NavLink>
-      </ul>
-      <ul>
-        <NavLink to="/detox">{t('Detox')}
-        </NavLink>
-      </ul>
       <ul>
         <NavLink to="/nutrigenomics">{t('Weight Loss')}
         </NavLink>
