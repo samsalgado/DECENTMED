@@ -40,7 +40,7 @@ const Footers = () => {
           <p>5830 E 2ND ST Casper, WY 82609</p>
             {t('Email:')}{' '}
             <a href="mailto:samuel@themerlingroupworld.com">
-              samuel@themerlingroupworld.com
+              admin@decentmed.org
             </a>
           <p>
             <Button
@@ -75,9 +75,7 @@ const Footers = () => {
         </div>
       </div>
       {/* Footer Bottom */}
-      <div className="footer-bottom">
-        themerlingroupworld © 2025 - All Rights Reserved
-      </div>
+    
     </footer>
   );
 };
