@@ -282,15 +282,6 @@ const {t} = useTranslation('common')
     source: 'https://www.friendsofqueensparkbushland.org.au/banksia-attenuata/#:~:text=Banksia%20attenuataCommon%20name%3A%20Candle%20Banksia&text=Aboriginal%20name%3A%20Piara.,and%20as%20a%20refreshing%20drink.'
 },
 {
-    id: 31,
-    image: Plants.batflower,
-    name: t('Batflower'),
-    price: 0.0000194320248,
-    description: t('Tacca chantrieri is rare, but sometimes available from online nurseries. A white variety (Tacca integrifolia) of this plant exists, but my sources tell me that White Bat Flower is not as easy to grow indoors.'),
-    medrating: 0,
-    source: ' https://www.guide-to-houseplants.com/bat-flower.html'
-},
-{
     id: 32,
     image: Plants.orchid,
     name: t('Orchid'),
@@ -480,15 +471,6 @@ const {t} = useTranslation('common')
         description: t('Little used...'),
         medrating: 2,
         source: ' https://pfaf.org/User/Plant.aspx?LatinName=Iberis+amara'
-      },
-      {
-        id: 53,
-        image: Plants.Juniperuscommunis,
-        name: t('Juniperus communis'),
-        price: 0.000284320248,
-        description:t('Traditionally...') ,
-        medrating: 0,
-        source: ' https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4897106/'
       },
       {
         id: 54,
@@ -1342,15 +1324,6 @@ const {t} = useTranslation('common')
         price: 0.00012947463609338055,
         medrating: 2,
         source: "https://pfaf.org/user/Plant.aspx?LatinName=Terminalia+catappa"
-      },
-      {
-        id: 149,
-        image: Plants.justiciasecunda,
-        name: t("Justicia secunda"),
-        description: t('Justicia secunda...'),
-        price: 0.000213128420,
-        medrating: 0,
-        source: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9952096/"
       },
       {
         id: 151,
