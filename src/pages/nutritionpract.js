@@ -154,7 +154,7 @@ export function Nutritionpract() {
             <div className="results-section">
               {(isCromwellLocation && isDarienLocation) ? (
                 <>
-                  <h2 className="mb-4">{t("Nutritionists in")} {location}</h2>
+                  <h2 className="mb-4">{t("Nutritionists in")} {location.toUpperCase()}</h2>
                   
                   {/* Both practitioners when searching Connecticut generally */}
                   {/* Lori - Cromwell Area */}
@@ -420,7 +420,7 @@ export function Nutritionpract() {
                 </>
               ) : (
                 <>
-                  <h2 className="mb-4">{t("Nutritionists serving")} {location}</h2>
+                  <h2 className="mb-4">{t("Nutritionists serving")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                   
                   {/* Lori - Available via Telehealth */}
                   <div className="row mb-4">

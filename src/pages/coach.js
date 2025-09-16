@@ -186,7 +186,7 @@ export function Coaching() {
 
           {showResults && (
             <div className="results-section">
-              <h2 className="mb-4">{t("Health Coaches serving")} {location}</h2>
+              <h2 className="mb-4">{t("Health Coaches serving")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
               
               {/* Kristina - USA */}
               {showKristina && (

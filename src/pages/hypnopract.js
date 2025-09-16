@@ -73,7 +73,7 @@ export function Hypnopract() {
           <div className="results-section">
             {isTampaLocation ? (
               <>
-                <h2>{t("Hypnotherapists in")} {location}</h2>
+                <h2>{t("Hypnotherapists in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -136,7 +136,7 @@ export function Hypnopract() {
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h3>{t("No hypnotherapists available in")} {location}</h3>
+                  <h3>{t("No hypnotherapists available in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h3>
                   <p className="text-muted">
                     {t("We currently don't have any hypnotherapists listed in your area. Our services are currently available in Tampa, FL.")}
                   </p>

@@ -128,7 +128,8 @@ export function AYPract() {
                   fontSize: '16px',
                   border: '2px solid #ddd',
                   borderRadius: '8px',
-                  outline: 'none'
+                  outline: 'none',
+                  textTransform: 'uppercase',
                 }}
                 onKeyPress={(e) => e.key === 'Enter' && handleLocationSearch()}
               />

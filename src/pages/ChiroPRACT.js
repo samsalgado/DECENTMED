@@ -215,7 +215,7 @@ export function Chiro() {
               </>
             ) : isStLouisLocation ? (
               <>
-                <h2 className="mb-4">{t("Chiropractors in")} {location}</h2>
+                <h2 className="mb-4">{t("Chiropractors in")}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
                 <div className="row mb-4">
                   <div className="col-md-12">
@@ -298,7 +298,7 @@ export function Chiro() {
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h2>{t("No chiropractors available in")} {location}</h2>
+                  <h2>{t("No chiropractors available in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                   <p className="text-muted">
                     {t("We currently don't have any chiropractors listed in your area. Our services are currently available in Arizona and Missouri.")}
                   </p>

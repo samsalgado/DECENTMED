@@ -214,7 +214,7 @@ const { t } = useTranslation('common');
               </>
             ) : isMilwaukeeLocation ? (
               <>
-                <h2 className="mb-4">{t("Acupuncturists in")} {location}</h2>
+                <h2 className="mb-4">{t("Acupuncturists in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
                 {/* Milwaukee Acupuncturist Listing */}
                 <div className="row mb-4">
@@ -299,7 +299,7 @@ const { t } = useTranslation('common');
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h3>{t("No acupuncturists available in")} {location}</h3>
+                  <h3>{t("No acupuncturists available in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h3>
                   <p className="text-muted">
                     {t("We currently don't have any acupuncturists listed in your area. Our services are currently available in Tampa, FL and Milwaukee, WI.")}
                   </p>

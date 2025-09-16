@@ -140,7 +140,7 @@ export function Natpract() {
             <div className="results-section">
               {isWashingtonLocation ? (
                 <>
-                  <h2 className="mb-4">{t("Naturopathic Doctors in")} {location}</h2>
+                  <h2 className="mb-4">{t("Naturopathic Doctors in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                   
                   {/* Kristen Barnes - Washington Local */}
                   <div className="row mb-4">

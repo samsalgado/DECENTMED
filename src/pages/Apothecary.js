@@ -272,15 +272,6 @@ const {t} = useTranslation('common')
     medrating: 4,
     source: 'https://pfaf.org/user/Plant.aspx?LatinName=Bacopa+monnieri'
   },
-  {
-    id: 30,
-    image: Plants.banksiaattenuata,
-    name: t('banksia attenuata'),
-    price: 0.000123421261019921195002480,
-    description: t('An infusion of the flowers was used to relieve coughs and cold and as a refreshing drink.'),
-    medrating: 0,
-    source: 'https://www.friendsofqueensparkbushland.org.au/banksia-attenuata/#:~:text=Banksia%20attenuataCommon%20name%3A%20Candle%20Banksia&text=Aboriginal%20name%3A%20Piara.,and%20as%20a%20refreshing%20drink.'
-  },
 {
     id: 30,
     image: Plants.banksiaattenuata,
@@ -1455,7 +1446,7 @@ const {t} = useTranslation('common')
         id: 159,
         image: Plants.cannaindica,
         name: t("Canna indica"),
-        description: t('The plant used in...'),
+        description: t("The plant is used in the treatment of women's complaints[218]. A decoction of the root with fermented rice is used in the treatment of gonorrhoea and amenorrhoea[218]. The plant is also considered to be demulcent, diaphoretic and diuretic[218]."),
         price: 0.0001433107819444356,
         medrating: 2,
         source: "https://pfaf.org/user/plant.aspx?latinname=Canna+indica"
