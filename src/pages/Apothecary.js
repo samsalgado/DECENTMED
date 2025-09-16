@@ -827,15 +827,6 @@ const {t} = useTranslation('common')
         source: ' https://pfaf.org/user/Plant.aspx?LatinName=Valeriana+officinalis'
       },
       {
-        id: 91,
-        image: Plants.verbascumikaricum,
-        name: t('Verbascum ikaricum.png'),
-        price: 0.000071920248,
-        description: t('The native...'),
-        medrating: 0,
-        source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:811159-1'
-      },
-      {
         id: 92,
         image: Plants.greatmullein,
         name: t('Verbascum thapsus'),
@@ -1360,15 +1351,6 @@ const {t} = useTranslation('common')
         price: 0.000213128420,
         medrating: 0,
         source: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9952096/"
-      },
-      {
-        id: 150,
-        image: Plants.minnieroot,
-        name: t("Popping Pod"),
-        description: t('In folk...'),
-        price: 0.00014359520,
-        medrating: "N/A",
-        source: "https://www.inaturalist.org/taxa/291119-Ruellia-tuberosa"
       },
       {
         id: 151,
