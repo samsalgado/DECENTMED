@@ -1,6 +1,7 @@
 import React from 'react';
 import "./homeo.css";
 import './Info.css';
+import totalcare from '../images copy/totalcare.png';
 import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
@@ -62,9 +63,13 @@ const Naturo = () => {
           }
         }
       `}</style>
+       <a href="https://www.totalcarehealthsolutions.com/" target="_blank" rel="noopener noreferrer">
+                  <img className='gridimag' src={totalcare} alt='oceantreis' />
+                </a> 
         <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
         <NatStudy />
         </Collapsible>
+        
         <br></br>
         <a href="https://meridianpassagewellness.com" target="_blank" rel="noopener noreferrer">
         <br></br>

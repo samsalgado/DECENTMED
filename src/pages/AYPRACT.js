@@ -24,7 +24,7 @@ export function AYPract() {
       availabilityType: "telehealth",
       image: Stacy,
       website: "https://healinggoddessproducts.com/",
-      description: t("After Stacy graduated from San Diego State University in 1992, she moved to the Detroit area and began her career in sales and marketing. She traveled the world and climbed the corporate ladder. But something was missing. Before long, she was back to her studies – this time in Ayurvedic Medicine. Her own journey to health and healing, through Ayurveda, had already begun a few years earlier -- when she was a patient with her own chronic health conditions. When she had the opportunity to deepen her knowledge, she jumped at the chance. At first, it was from an academic standpoint. She couldn't wrap her mind around how it all worked. After hours and years of study and residency, she found the answers she sought. Then, her mission was clear – she needed to teach others how to HEAL & TRANSFORM their own lives through Ayurveda, the 'wisdom of life."),
+      description: t("after_stacy_graduated"),
       video: "https://drive.google.com/file/d/1D8iq7LsXMgercG-_td7e7gQexodAfzSv/preview",
       servesGlobally: true,
       countries: ["USA", "Canada", "UK", "Australia", "worldwide"]
@@ -101,7 +101,7 @@ export function AYPract() {
 
         <div className="container">
           <h1 style={{ fontFamily: 'sans-serif' }}>
-            {t("Find Ayurveda Practitioners Near You")}
+            {t("Find an Ayurvedic Medical Practitioner Near You")}
           </h1>
 
           {/* Location Search Section */}
@@ -215,7 +215,7 @@ export function AYPract() {
                       height: 'auto',
                       borderRadius: '8px'
                     }} alt={practitioner.name} />
-                    <figcaption>{t("View Website")}</figcaption>
+                    <figcaption>{t("Contact")}</figcaption>
                   </figure>
                 </a>
                 

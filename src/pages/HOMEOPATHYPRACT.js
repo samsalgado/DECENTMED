@@ -66,12 +66,13 @@ export function HomeopathyPract() {
         }}>
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h1>{t("Homeopathy")}</h1>
+              <h1 style={{textAlign:'center'}}>{t("Homeopathy")}</h1>
               <p>{t("Whether you're searching for homeopathy near to me​ our featured practitioners offer both in-person and virtual homeopathic services.")}</p>
               <div className="search-bar-container" style={{
                 display: 'flex',
                 gap: '10px',
                 maxWidth: '800px',
+                textAlign:"center",
                 margin: '0 auto',
                 padding: '0 1rem'
               }}>
@@ -220,7 +221,7 @@ export function HomeopathyPract() {
                           <div className="mb-2">
                             <span className="badge bg-light text-dark me-1">{t("Holistic Medicine")}</span>
                             <span className="badge bg-light text-dark me-1">{t("Energy Healing")}</span>
-                            <span className="badge bg-light text-dark me-1">{t("Traditional Medicine")}</span>
+                            <span className="badge bg-light text-dark me-1">{t("Self Healing Techniques")}</span>
                           </div>
                           
                           <p className="card-text small">
@@ -229,7 +230,7 @@ export function HomeopathyPract() {
                         </div>
                         <div className="col-md-3 text-end">
                           <a 
-                            href='https://lotuspotentiaholistics.org' 
+                            href='https://linktr.ee/kelechiobasi' 
                             className="btn btn-outline-primary mb-2"
                             target="_blank" 
                             rel="noopener noreferrer"

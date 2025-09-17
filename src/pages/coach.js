@@ -207,23 +207,23 @@ export function Coaching() {
                             />
                           </div>
                           <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Kristina')}</h2>
-                            <p className="text-muted mb-2">{t("Health Coach")}</p>
+                            <h2 className="h4 mb-1">{t('THRIVE Results Coaching')}</h2>
+                            <p className="text-muted mb-2">{t("Kristina Hess CNS, LDN, Health Coach")}</p>
                             
                             <p className="mb-2">
                               <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("United States")}
+                              {t("30 Old Kings Hwy S Darien, Connecticut United States")}
                             </p>
                             
                             <div className="mb-2">
                               <span className="badge bg-success text-white me-1">{t("USA")}</span>
                               <span className="badge bg-light text-dark me-1">{t("Health Coaching")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Wellness")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Lifestyle")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
                             </div>
                             
                             <p className="card-text small">
-                              {t("Professional health coaching services focused on sustainable lifestyle changes and wellness transformation.")}
+                              {t("kristina_bio")}
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
@@ -260,24 +260,37 @@ export function Coaching() {
                             />
                           </div>
                           <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Ramona')}</h2>
-                            <p className="text-muted mb-2">{t("Health Coach")}</p>
+                            <h2 className="h4 mb-1">{t('Authentic Life Journey')}</h2>
+                            <p className="text-muted mb-2">{t("Ramona Crabtree-Falkner Transformational Empowerment Coach")}</p>
                             
                             <p className="mb-2">
                               <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("Florida, USA")}
+                              {t("Clermont, Florida, USA")}
                             </p>
                             
                             <div className="mb-2">
                               <span className="badge bg-success text-white me-1">{t("Florida")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Health Coaching")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Wellness")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Lifestyle")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Realign Purpose")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Mindfulness")}</span>
                             </div>
                             
                             <p className="card-text small">
-                              {t("Professional health coaching services in Florida, specializing in personalized wellness programs and lifestyle transformation.")}
+                              {t("empowerment_statement")}
                             </p>
+                            <iframe
+          className="centered-video"
+          src="https://www.youtube.com/embed/hgHkSicJ6xc?si=P4xxLg4CeQ_grt5g"
+          frameBorder="0"
+          allowFullScreen
+          title="YouTube video player"
+          style={{
+            maxWidth: '550px',
+            width: '100%',
+            height: 'auto'
+          }}
+        />
+
                           </div>
                           <div className="col-md-3 text-end">
                             <a 
@@ -333,7 +346,7 @@ export function Coaching() {
                             </div>
                             
                             <p className="card-text small">
-                              {t("I help individuals and entrepreneurs who want to achieve more to break through mental blocks, align with their highest potential and magnetize the success they truly desire. I help them understand the transformative power of their mindset and how it directly impacts their results in all areas of their life.")}
+                              {t("des")}
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
@@ -410,7 +423,7 @@ export function Coaching() {
                             </div>
                             
                             <p className="card-text small">
-                              {t("Specialized coaching for metabolic health and acceleration. Expert guidance for transformative health results and sustainable lifestyle changes.")}
+                              {t("Specialized coaching for metabolic health and acceleration. Expert guidance for transformative health results and sustainable lifestyle changes. Lose 20–50 lbs+ of belly fat with sports nutritionist-led metabolism coaching that raises basal metabolic rate (BMR).")}
                             </p>
                           </div>
                           <div className="col-md-3 text-end">

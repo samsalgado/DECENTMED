@@ -95,7 +95,7 @@ export function Nutritionpract() {
           }}>
             <div className="row justify-content-center">
               <div className="col-md-10">
-                <h1 className="text-center mb-4">{t("Find Nutritionists Near You")}</h1>
+                <h1 className="text-center mb-4">{t("Find a Clinical Nutritionist, Holistic Nutritionist or Functional Nutritionist Near You")}</h1>
                 
                 <div className="search-bar-container" style={{
                   display: 'flex',
@@ -176,27 +176,24 @@ export function Nutritionpract() {
                             </div>
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Nutrify Your Life')}</h2>
-                              <p className="text-muted mb-2">{t("Lori - Functional Medicine & Nutrition")}</p>
+                              <p className="text-muted mb-2">{t("Lori Graham Functional Nutritionist")}</p>
                               
                               <p className="mb-2">
                                 <i className="fas fa-map-marker-alt text-primary me-2"></i>
                                 {t("Cromwell, Connecticut")}
-                                <span className="ms-2">
-                                  <i className="fas fa-video text-success me-1"></i>
-                                  {t("Telehealth Available")}
-                                </span>
+                               
                               </p>
                               
                               <div className="mb-2">
                                 <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Chronic Conditions")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Lower Blood Sugar")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Personalized Nutrition")}</span>
                               </div>
                               
                               <p className="card-text small">
-                                {t("Welcome to Nutrifyourlife, where I am on a mission to revolutionize healthcare and empower individuals to take control of their health through diet and lifestyle modifications. My personalized functional medicine and nutrition sessions are tailored to your specific needs and goals whether it's weight loss, managing chronic conditions, or improving overall well-being.")}
+                                {t("TeXt")}
                               </p>
                             </div>
                             <div className="col-md-3 text-end">
@@ -260,8 +257,8 @@ export function Nutritionpract() {
                               </p>
                               
                               <div className="mb-2">
-                                <span className="badge bg-light text-dark me-1">{t("Functional & Integrative")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Ketogenic Approach")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
                               </div>
@@ -309,7 +306,7 @@ export function Nutritionpract() {
                             </div>
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Nutrify Your Life')}</h2>
-                              <p className="text-muted mb-2">{t("Lori - Functional Medicine & Nutrition")}</p>
+                              <p className="text-muted mb-2">{t("Lori Graham Functional Nutrition")}</p>
                               
                               <p className="mb-2">
                                 <i className="fas fa-map-marker-alt text-primary me-2"></i>
@@ -444,8 +441,7 @@ export function Nutritionpract() {
                               <p className="text-muted mb-2">{t("Lori - Functional Medicine & Nutrition")}</p>
                               
                               <p className="mb-2">
-                                <i className="fas fa-video text-success me-2"></i>
-                                {t("Available via Telehealth")}
+                                
                                 <span className="ms-2">
                                   <i className="fas fa-map-marker-alt text-primary me-1"></i>
                                   {t("Based in Connecticut")}
@@ -453,7 +449,6 @@ export function Nutritionpract() {
                               </p>
                               
                               <div className="mb-2">
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Chronic Conditions")}</span>

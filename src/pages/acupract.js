@@ -188,12 +188,12 @@ const { t } = useTranslation('common');
                             
                             <div className="mb-2">
                               <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Stress Managment")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Stress Management")}</span>
                               <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
                             </div>
                             
                             <p className="card-text small">
-                              {t("At Ocean Treis Medical, we provide expert acupuncture treatments designed to relieve stress, reduce anxiety, and restore balance. Our holistic approach goes beyond temporary relief—helping you achieve lasting calm, better sleep, improved digestion, and overall well-being. Think of it as a reset button for your mind and body, so you can feel more grounded, energized, and at ease in your daily life. Aside from burnout, Ocean Treis has fascial acupuncture. Fascial Acupuncture has many benefits, like reducing wrinkles and looking young. If you are in Tampa, search fascial acupuncture near me.")}
+                              {t("text")}
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
