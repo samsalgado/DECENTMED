@@ -2,7 +2,6 @@ import React from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
 import ClinVids from "./clinvid";
-import shop from "../images copy/shop.png";
 import { Button } from'react-bootstrap';
 import { useTranslation } from "react-i18next";
 const Nutri = () => {
@@ -62,12 +61,9 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
-      <a href="https://thriveresultscoaching.com/store/?orderby=popularity" target="_blank" rel="noopener noreferrer">
-      <figure>
-          <img className='gridimag' src={shop} alt='Shop' />
-        <figcaption>{t("Shop")}</figcaption>
-        </figure>
-        </a> 
+     <iframe title="vimeo-player" src="https://player.vimeo.com/video/715588945?h=76c2c1fff8" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+     <Button className="custom-btn" href="https://thriveresultscoaching.com/testimonials/" target="_blank">{t("More Reviews")}</Button>  {/* Added Bootstrap Button */}
+
         <br></br>
         <h1 className='center'>{t("Seeking Holistic Nutritionist Near me? We have you covered:")}</h1>
         <ClinVids />

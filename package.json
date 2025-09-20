@@ -5,6 +5,7 @@
   "private": false,
   "dependencies": {
     "@adyen/api-library": "^20.0.0",
+    "@calcom/embed-react": "^1.5.3",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@lightninglabs/lnc-web": "^0.3.1-alpha",
@@ -40,6 +41,7 @@
     "qrcode.react": "^4.2.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
+    "react-calendly": "^4.4.0",
     "react-collapsible": "^2.10.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.3.1",

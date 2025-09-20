@@ -16,7 +16,6 @@ export function Nutritionpract() {
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isCromwellLocation, setIsCromwellLocation] = useState(false);
-  const [isDarienLocation, setIsDarienLocation] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,26 +43,17 @@ export function Nutritionpract() {
     if (!location.trim()) return;
     const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
 
-    // Check if location contains Connecticut-related terms
+    // Check if location contains Connecticut-related terms for Lori's in-person services
     const cromwellTerms = [
       'cromwell', 'connecticut', 'ct', 'middletown', 'portland', 'durham', 
       'berlin', 'rocky hill', 'hartford county', 'middlesex county'
-    ];
-    const darienTerms = [
-      'darien', 'stamford', 'connecticut', 'ct', 'norwalk', 'westport', 'new canaan', 'wilton',
-      'fairfield county', 'greenwich', 'ridgefield', 'fairfield'
     ];
 
     const isCromwell = cromwellTerms.some(term => 
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
     );
-
-    const isDarien = darienTerms.some(term => 
-      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
-    );
     
     setIsCromwellLocation(isCromwell);
-    setIsDarienLocation(isDarien);
     setShowResults(true);
   };
 
@@ -152,142 +142,11 @@ export function Nutritionpract() {
 
           {showResults && (
             <div className="results-section">
-              {(isCromwellLocation && isDarienLocation) ? (
-                <>
-                  <h2 className="mb-4">{t("Nutritionists in")} {location.toUpperCase()}</h2>
-                  
-                  {/* Both practitioners when searching Connecticut generally */}
-                  {/* Lori - Cromwell Area */}
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={Nutrifyourlife} 
-                                alt="Nutrify Your Life" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                            <div className="col-md-7">
-                              <h2 className="h4 mb-1">{t('Nutrify Your Life')}</h2>
-                              <p className="text-muted mb-2">{t("Lori Graham Functional Nutritionist")}</p>
-                              
-                              <p className="mb-2">
-                                <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                                {t("Cromwell, Connecticut")}
-                               
-                              </p>
-                              
-                              <div className="mb-2">
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Lower Blood Sugar")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Personalized Nutrition")}</span>
-                              </div>
-                              
-                              <p className="card-text small">
-                                {t("TeXt")}
-                              </p>
-                            </div>
-                            <div className="col-md-3 text-end">
-                              <a 
-                                href="tel:+12038295349" 
-                                className="btn btn-outline-primary"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Contact")}
-                              </a>
-                            </div>
-                          </div>
-                          
-                          {/* Video Section for Lori */}
-                          <div className="row mt-3">
-                            <div className="col-md-6">
-                              <iframe
-                                src="https://drive.google.com/file/d/1FAa9HGZ_ABcLCE-75EbRyitItoW5FFmg/preview"
-                                title='Nutrify Your Life'
-                                allow="autoplay"
-                                style={{
-                                  width: '100%',
-                                  height: '300px',
-                                  borderRadius: '4px',
-                                  border: 'none'
-                                }}    
-                                allowFullScreen
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Kristina - Darien Area */}
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={krisina} 
-                                alt="Thrive Results Coaching" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                            <div className="col-md-7">
-                              <h2 className="h4 mb-1">{t('Thrive Results Coaching')}</h2>
-                              <p className="text-muted mb-2">{t("Kristina - Licensed Dietitian-Nutritionist")}</p>
-                              
-                              <p className="mb-2">
-                                <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                                {t("Darien, Connecticut")}
-                              </p>
-                              
-                              <div className="mb-2">
-                                <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
-                              </div>
-                              
-                              <p className="card-text small">
-                                {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. She is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.")}
-                              </p>
-                            </div>
-                            <div className="col-md-3 text-end">
-                              <a 
-                                href="tel:+12039847989" 
-                                className="btn btn-outline-primary"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Contact")}
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ) : isCromwellLocation ? (
+              {isCromwellLocation ? (
                 <>
                   <h2 className="mb-4">{t("Nutritionists in")} {location}</h2>
                   
-                  {/* Lori - Cromwell Area */}
+                  {/* Lori - Cromwell Area In-Person */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -310,13 +169,14 @@ export function Nutritionpract() {
                               
                               <p className="mb-2">
                                 <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                                {t("Cromwell, Connecticut")}
+                                {t("Stamford, Connecticut")}
                               </p>
                               
                               <div className="mb-2">
+                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Chronic Conditions")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Lower Blood Sugar")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Personalized Nutrition")}</span>
                               </div>
                               
@@ -337,7 +197,7 @@ export function Nutritionpract() {
                           </div>
                           
                           {/* Video Section for Lori */}
-                          <div className="row mt-3">
+                          <div className="row mt-3 justify-content-center">
                             <div className="col-md-6">
                               <iframe
                                 src="https://drive.google.com/file/d/1FAa9HGZ_ABcLCE-75EbRyitItoW5FFmg/preview"
@@ -357,12 +217,8 @@ export function Nutritionpract() {
                       </div>
                     </div>
                   </div>
-                </>
-              ) : isDarienLocation ? (
-                <>
-                  <h2 className="mb-4">{t("Nutritionists in")} {location}</h2>
-                  
-                  {/* Kristina - Darien Area */}
+
+                  {/* Kristina - Virtual Services */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -381,16 +237,17 @@ export function Nutritionpract() {
                             </div>
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Thrive Results Coaching')}</h2>
-                              <p className="text-muted mb-2">{t("Kristina - Licensed Dietitian-Nutritionist")}</p>
-                              
+                              <p className="text-muted mb-2">{t("Kristina Hess - Clinical Nutritionist")}</p>
+                  
                               <p className="mb-2">
-                                <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                                {t("Darien, Connecticut")}
+                                <i className="fas fa-globe text-primary me-2"></i>
+                                {t("USA (Virtual Consultations Only)")}
                               </p>
                               
                               <div className="mb-2">
-                                <span className="badge bg-light text-dark me-1">{t("Functional & Integrative")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Ketogenic Approach")}</span>
+                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
                               </div>
@@ -399,16 +256,7 @@ export function Nutritionpract() {
                                 {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. She is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.")}
                               </p>
                             </div>
-                            <div className="col-md-3 text-end">
-                              <a 
-                                href="tel:+12039847989" 
-                                className="btn btn-outline-primary"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Contact")}
-                              </a>
-                            </div>
+                             
                           </div>
                         </div>
                       </div>
@@ -438,17 +286,17 @@ export function Nutritionpract() {
                             </div>
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Nutrify Your Life')}</h2>
-                              <p className="text-muted mb-2">{t("Lori - Functional Medicine & Nutrition")}</p>
+                              <p className="text-muted mb-2">{t("Lori Graham - Functional Medicine & Nutrition")}</p>
                               
                               <p className="mb-2">
-                                
                                 <span className="ms-2">
                                   <i className="fas fa-map-marker-alt text-primary me-1"></i>
-                                  {t("Based in Connecticut")}
+                                  {t("Based in Stamford, Connecticut")}
                                 </span>
                               </p>
                               
                               <div className="mb-2">
+                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Chronic Conditions")}</span>
@@ -458,7 +306,7 @@ export function Nutritionpract() {
                               <p className="card-text small">
                                 {t("Welcome to Nutrifyourlife, where I am on a mission to revolutionize healthcare and empower individuals to take control of their health through diet and lifestyle modifications. My personalized functional medicine and nutrition sessions are tailored to your specific needs and goals whether it's weight loss, managing chronic conditions, or improving overall well-being.")}
                                 <br />
-                                <strong className="text-success">{t("Now offering virtual consultations - connect with Lori from anywhere!")}</strong>
+                                <strong className="text-success">{t("lori")}</strong>
                               </p>
                             </div>
                             <div className="col-md-3 text-end">
@@ -475,21 +323,83 @@ export function Nutritionpract() {
                           
                           {/* Video Section for Lori */}
                           <div className="row mt-3">
-                            <div className="col-md-6">
+                            <div>
                               <iframe
                                 src="https://drive.google.com/file/d/1FAa9HGZ_ABcLCE-75EbRyitItoW5FFmg/preview"
                                 title='Nutrify Your Life'
                                 allow="autoplay"
-                                style={{
+                                 style={{
                                   width: '100%',
                                   height: '300px',
                                   borderRadius: '4px',
-                                  border: 'none'
+                                  border: 'none',
+                                  display: 'block',
+                                  margin: '0 auto'
                                 }}    
                                 allowFullScreen
                               />
                             </div>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Kristina - Virtual Services Available Everywhere */}
+                  <div className="row mb-4">
+                    <div className="col-md-12">
+                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                        <div className="card-body">
+                          <div className="row">
+                            <div className="col-md-2 text-center">
+                              <img 
+                                src={krisina} 
+                                alt="Thrive Results Coaching" 
+                                style={{ 
+                                  maxWidth: '100px', 
+                                  maxHeight: '100px', 
+                                  objectFit: 'contain' 
+                                }} 
+                              />
+                            </div>
+                               
+                            <div className="col-md-7">
+                              <h2 style={{textAlign: 'center'}} className="h4 mb-1">{t('Thrive Results Coaching')}</h2>
+                              <p className="text-muted mb-2">{t("Kristina Hess - Clinical Nutritionist")}</p>
+                              
+                              <p className="mb-2">
+                                <i className="fas fa-globe text-primary me-2"></i>
+                                {t("Virtual Consultations Only")}
+                              </p>
+                              
+                              <div className="mb-2">
+                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Functional & Integrative")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Personalized Plans")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
+                                <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
+                              </div>
+                               
+                              <p className="card-text small">
+                                {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. She is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.")}
+                              </p>
+                          
+                              <strong className="text-success">{t("kristina")}</strong>
+                            <iframe width="570" height="355" src="https://www.youtube.com/embed/bz7bhIAwu5o?si=Vhtpg9bwUuV658g9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            </div>
+                            <div className="col-md-3 text-end">
+                              <a 
+                                href="tel:+12039847989" 
+                                className="btn btn-outline-primary mb-2"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                              >
+                                {t("Contact for Telehealth")}
+                              </a>
+                            </div>
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -504,13 +414,13 @@ export function Nutritionpract() {
                           {t("Telehealth Services Available")}
                         </h4>
                         <p className="mb-0">
-                          {t("While we don't have local nutritionists in your immediate area, Lori from Nutrify Your Life offers comprehensive telehealth consultations. Experience personalized functional medicine and nutrition guidance from the comfort of your home!")}
+                          {t("Experience personalized nutrition guidance from certified professionals through comprehensive telehealth consultations, available nationwide!")}
                         </p>
                         <hr />
                         <p className="mb-0">
-                          <strong>{t("For local in-person consultations, our services are available in:")}</strong>
+                          <strong>{t("For local in-person consultations, Lori's services are available in:")}</strong>
                           <br />
-                          {t("Connecticut: Cromwell, Middletown, Portland, Durham, Berlin, Darien, Stamford, Norwalk, Westport, New Canaan")}
+                          {t("Connecticut: Stamford, Cromwell, Middletown, Portland, Durham, Berlin, Rocky Hill and surrounding areas")}
                         </p>
                       </div>
                     </div>
@@ -546,9 +456,11 @@ export function Nutritionpract() {
                       <h3>{t("Personalized Care")}</h3>
                       <p className="small text-muted">{t("Tailored nutrition plans and wellness support")}</p>
                     </div>
+                    
                   </div>
                 </div>
               </div>
+              
             </div>
           )}
         </div>

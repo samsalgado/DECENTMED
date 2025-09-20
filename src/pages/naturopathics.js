@@ -6,6 +6,7 @@ import Footer from '../footer';
 import Meridian from '../cards/meridian.png';
 import { useTranslation } from 'react-i18next';
 import drtess from '../cards/drtess.png';
+import { PopupWidget } from 'react-calendly';
 
 export function Natpract() {
   const { t } = useTranslation('common');
@@ -14,6 +15,7 @@ export function Natpract() {
   const [showResults, setShowResults] = useState(false);
   const [isWashingtonLocation, setIsWashingtonLocation] = useState(false);
   const [isKansas, setIsKansas] = useState(false);
+  const [showCalendlyModal, setShowCalendlyModal] = useState(false); // State for modal
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -39,7 +41,6 @@ export function Natpract() {
     if (!location.trim()) return;
     const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
 
-    // Check if location contains Washington/Pacific Northwest terms
     const washingtonTerms = [
       'washington', 'wa', 'port townsend', 'seattle', 'spokane', 'tacoma', 'bellevue',
       'vancouver', 'kent', 'everett', 'renton', 'federal way', 'yakima', 'bellingham',
@@ -47,7 +48,7 @@ export function Natpract() {
       'richland', 'kirkland', 'burien', 'covington', 'walla walla', 'olympia'
     ];
     const kansasTerms = [
-      'kansas', 'kansas city', 'north kansas city', 'gladstone','overland park', 'raymore', 'liberty', 'belton', 'independence', 'lees summit', 'blue springs', 'grandview', 'raytown', 'riverside',
+      'kansas', 'kansas city', 'north kansas city', 'gladstone', 'overland park', 'raymore', 'liberty', 'belton', 'independence', 'lees summit', 'blue springs', 'grandview', 'raytown', 'riverside',
       'platte city', 'olathe', 'leawood', 'fairway', 'prairie village', 'shawnee', 'lenexa', 'merriam', 'roeland park'
     ];
     const isWashington = washingtonTerms.some(term => 
@@ -68,7 +69,7 @@ export function Natpract() {
     }
   };
 
-  // Dr. Tess Card Component
+  // Dr. Tess Card Component with Calendly
   const DrTessCard = () => (
     <div className="row mb-4">
       <div className="col-md-12">
@@ -87,40 +88,32 @@ export function Natpract() {
                 />
               </div>
               <div className="col-md-7">
-                <h2 className="h4 mb-1">{t('Total Health Solutions')}</h2>
-                <p className="text-muted mb-2">{t("Dr. Tess Volner - Naturopathic Doctor")}</p>
+                <h2 className="h4 mb-1">{t('Total Care Health Solutions')}</h2>
+                <p className="text-muted mb-2">{t("Dr. Teresa Volner - Naturopathic Doctor")}</p>
                 
                 <p className="mb-2">
                   <i className="fas fa-video text-success me-2"></i>
                   {t("Telehealth Available")}
-                  
                 </p>
                 
                 <div className="mb-2">
                   <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                   <span className="badge bg-light text-dark me-1">{t("Blood Sugar to Balance")}</span>
-                  <span className="badge bg-light text-dark me-1">{t("Customized Plans")}</span>
-                  <span className="badge bg-light text-dark me-1">{t("Internal Medicine and Natural Medicine")}</span>
+                  <span className="badge bg-light text-dark me-1">{t("Lab Testing")}</span>
+                  <span className="badge bg-light text-dark me-1">{t("Integrative Medicine vs Functional Medicine")}</span>
                 </div>
                 
                 <p className="card-text small">
-                  {t("Dr. Tess Volner provides comprehensive naturopathic care with a focus on personalized treatment plans. Specializing in integrative medicine, she combines traditional naturopathic principles with modern healthcare approaches to address your unique health needs.")}
+                  {t("Total Care Health Solutions provides comprehensive naturopathic care with a focus on personalized treatment plans. Specializing in integrative medicine, she combines traditional naturopathic principles with modern healthcare approaches to address your unique health needs.")}
                   <br />
                   <strong className="text-success">{t("Available for virtual consultations worldwide!")}</strong>
                 </p>
               </div>
               <div className="col-md-3 text-end">
+                
+                <br />
                 <a 
-                  href="https://joinnow.live/s/JT6hcz" 
-                  className="btn btn-primary mb-2"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  {t("Book Consultation")}
-                </a>
-                <br></br>
-                <a 
-                  href="tel:+19133838505" 
+                  href="tel:+19135224473" 
                   className="btn btn-primary mb-2"
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -128,10 +121,12 @@ export function Natpract() {
                   {t("Contact")}
                 </a>
               </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
+     
     </div>
   );
 
@@ -148,7 +143,6 @@ export function Natpract() {
         </header>
 
         <div className="container">
-          {/* Search Bar Section */}
           <div className="search-section" style={{ 
             background: '#f8f9fa', 
             padding: '2rem 0', 
@@ -177,7 +171,7 @@ export function Natpract() {
                       style={{
                         height: '50px',
                         fontSize: '16px',
-                        width:'200px',
+                        width: '200px',
                         paddingLeft: '40px',
                         border: '2px solid #dee2e6',
                         borderRadius: '6px'
@@ -217,11 +211,7 @@ export function Natpract() {
               {isWashingtonLocation ? (
                 <>
                   <h2 className="mb-4">{t("Naturopathic Doctors in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
-                  
-                  {/* Dr. Tess - Shows everywhere */}
                   <DrTessCard />
-
-                  {/* Kristen Barnes - Washington Local */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -241,7 +231,6 @@ export function Natpract() {
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
                               <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
-                              
                               <p className="mb-2">
                                 <i className="fas fa-map-marker-alt text-primary me-2"></i>
                                 {t("Port Townsend, Washington")}
@@ -250,7 +239,6 @@ export function Natpract() {
                                   {t("Telehealth Available")}
                                 </span>
                               </p>
-                              
                               <div className="mb-2">
                                 <span className="badge bg-primary text-white me-1">{t("LOCAL WASHINGTON")}</span>
                                 <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
@@ -258,11 +246,10 @@ export function Natpract() {
                                 <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Psychedelic Medicine and Fascia Healing")}</span>
                               </div>
-                              
                               <p className="card-text small">
                                 {t("Text")}
                               </p>
-                                      <iframe
+                                                            <iframe
           width="100%"
           height="515"
           src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
@@ -277,6 +264,7 @@ export function Natpract() {
         />
 
                             </div>
+                            
                             <div className="col-md-3 text-end">
                               <a 
                                 href="https://meridianpassagewellness.com/book-now/" 
@@ -287,6 +275,7 @@ export function Natpract() {
                                 {t("Book Now")}
                               </a>
                             </div>
+                            
                           </div>
                         </div>
                       </div>
@@ -296,11 +285,7 @@ export function Natpract() {
               ) : isKansas ? (
                 <>
                   <h2 className="mb-4">{t("Naturopathic Doctors in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
-                  
-                  {/* Dr. Tess - Shows everywhere */}
                   <DrTessCard />
-
-                  {/* Kristen Barnes - Available via Telehealth for Kansas */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -320,7 +305,6 @@ export function Natpract() {
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
                               <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
-                              
                               <p className="mb-2">
                                 <i className="fas fa-video text-success me-2"></i>
                                 {t("Available via Telehealth")}
@@ -329,14 +313,12 @@ export function Natpract() {
                                   {t("Based in Washington")}
                                 </span>
                               </p>
-                              
                               <div className="mb-2">
                                 <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
                               </div>
-                              
                               <p className="card-text small">
                                 {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
                                 <br />
@@ -352,8 +334,7 @@ export function Natpract() {
                               >
                                 {t("Book Telehealth Session")}
                               </a>
-                              <br>
-                              </br>
+                              <br />
                               <a 
                                 href="tel:+1206567827" 
                                 className="btn btn-outline-primary mb-2"
@@ -362,7 +343,6 @@ export function Natpract() {
                               >
                                 {t("Contact")}
                               </a>
-
                             </div>
                           </div>
                         </div>
@@ -373,11 +353,7 @@ export function Natpract() {
               ) : (
                 <>
                   <h2 className="mb-4">{t("Naturopathic Doctors serving")} {location}</h2>
-                  
-                  {/* Dr. Tess - Shows everywhere */}
                   <DrTessCard />
-
-                  {/* Kristen Barnes - Available via Telehealth */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -397,7 +373,6 @@ export function Natpract() {
                             <div className="col-md-7">
                               <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
                               <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
-                              
                               <p className="mb-2">
                                 <i className="fas fa-video text-success me-2"></i>
                                 {t("Available via Telehealth")}
@@ -406,7 +381,6 @@ export function Natpract() {
                                   {t("Based in Washington")}
                                 </span>
                               </p>
-                              
                               <div className="mb-2">
                                 <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
@@ -414,7 +388,6 @@ export function Natpract() {
                                 <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
                                 <span className="badge bg-light text-dark me-1">{t("Mind-Body-Spirit")}</span>
                               </div>
-                              
                               <p className="card-text small">
                                 {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
                                 <br />
@@ -436,8 +409,6 @@ export function Natpract() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Information about telehealth services */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="alert alert-info">
@@ -462,14 +433,12 @@ export function Natpract() {
             </div>
           )}
 
-          {/* Default content when no search performed */}
           {!showResults && (
             <div className="default-content text-center" style={{ padding: '2rem 0' }}>
               <h2>{t("Professional Naturopathic Care")}</h2>
               <p className="lead text-muted">
                 {t("Enter your location above to find qualified naturopathic doctors in your area")}
               </p>
-              
               <div className="row justify-content-center mt-4">
                 <div className="col-md-8">
                   <div className="row">

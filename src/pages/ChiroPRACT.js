@@ -4,7 +4,8 @@ import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
 import "../info/Info.css";
-
+import process from "../images copy/process.png";
+import drtess from '../cards/drtess.png';
 import amy from "../images copy/amy.jpeg";
 import prices from "../images copy/prices.png";
 import betterhealthsolutions from '../images copy/drk.png'
@@ -23,6 +24,7 @@ export function Chiro() {
   const [showResults, setShowResults] = useState(false);
   const [isArizonaLocation, setIsArizonaLocation] = useState(false);
   const [isStLouisLocation, setIsStLouisLocation] = useState(false);
+  const [isKansaCity, setKansasCity] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -58,7 +60,10 @@ export function Chiro() {
       'missouri', 'mo', 'st charles', 'St. Charles', 'Saint Louis', 'st louis', 'Belleville','belleville',
       'kansas city', 'kc', 'carefree', 'Kansas City', 'Troy', 'Alton', 'troy', 'alton', 'edwardsville', 'Edwardsville'
     ];
-
+const kansasTerms = [
+      'kansas', 'kansas city', 'north kansas city', 'gladstone','overland park', 'raymore', 'liberty', 'belton', 'independence', 'lees summit', 'blue springs', 'grandview', 'raytown', 'riverside',
+      'platte city', 'olathe', 'leawood', 'fairway', 'prairie village', 'shawnee', 'lenexa', 'merriam', 'roeland park'
+    ];
     const isAZ = arizonaTerms.some(term => 
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
     );
@@ -66,8 +71,12 @@ export function Chiro() {
     const isStLouis = stLouisTerms.some(term => 
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
     );
-    
+        const isKansas = kansasTerms.some(term => 
+      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
+    );
+
     setIsArizonaLocation(isAZ);
+    setKansasCity(isKansas);
     setIsStLouisLocation(isStLouis);
     setShowResults(true);
   };
@@ -234,8 +243,8 @@ export function Chiro() {
                             />
                           </div>
                           <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Dr. Amy Wicks')}</h2>
-                            <p className="text-muted mb-2">{t("The Center for Natural Health")}</p>
+                            <h2 className="h4 mb-1">{t('The Center for Natural Health')}</h2>
+                            <p className="text-muted mb-2">{t("Dr. Amy Wicks")}</p>
                             
                             <p className="mb-2">
                               <i className="fas fa-map-marker-alt text-primary me-2"></i>
@@ -288,6 +297,68 @@ export function Chiro() {
                                   allowFullScreen
                                 />
                               </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+              ) : isKansaCity ? (
+              <>
+              <h2 className="mb-4">{t("Chiropractors in ")}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
+                
+                <div className="row mb-4">
+                  <div className="col-md-12">
+                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body">
+                        <div className="row">
+                          <div className="col-md-2 text-center">
+                            <img 
+                              src={drtess} 
+                              alt="Total Care Chiropractic" 
+                              style={{ 
+                                maxWidth: '100px', 
+                                maxHeight: '100px', 
+                                objectFit: 'contain' 
+                              }} 
+                            />
+                          </div>
+                          <div className="col-md-7">
+                            <h2 className="h4 mb-1">{t('Total Care Chiropractic')}</h2>
+                            <p className="text-muted mb-2">{t("Dr. Teresa Volner")}</p>
+                            
+                            <p className="mb-2">
+                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                              {t("6308 College Boulevard Overland Park, KS 66211")}
+                            </p>
+                            
+                            <div className="mb-2">
+                              <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Spinal Decompression near me")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Portable Hyperbaric Oxygen Chamber")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Holistic Health Labs")}</span>
+                            </div>
+                            
+                            <p className="card-text small">
+                              {t("Discover comprehensive wellness solutions at Total Care Chiropractic today. Without medications, we treat a range of conditions using chiropractic care, supplements, advanced alternative therapies (like hyperbaric chamber & Emsella®), and more. Dr. Tess Volner is an experienced Doctor of Chiropractic and Natural Medicine, having worked in the field 10 years now & keeping up-to-date with advancements in the fields of chiropractic and natural medicine. Let's enhance your well-being today!")}
+                            </p>
+                          </div>
+                          <div className="col-md-5 text-end">
+                          <img 
+                              src={process} 
+                              alt="Total Care Chiropractic" 
+                              style={{ 
+                                maxWidth: '550px', 
+                                maxHeight: '420px', 
+                                objectFit: 'cover',
+                                width: '100%'
+                              }}
+                            />
+                            
+                            
+
+                          </div>
+                          
                         </div>
                       </div>
                     </div>

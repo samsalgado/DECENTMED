@@ -108,14 +108,8 @@ const { t } = useTranslation('common');
         <NavLink to="/nutrition">{t('High Blood Sugar')}
         </NavLink>
       </ul>
-      <ul>
-        <NavLink to="/chiropractic">{t('Chiropractic')}
-        </NavLink>
-      </ul>
-      <ul>
-        <NavLink to="/prevent">{t('Preventive Wellness')}
-        </NavLink>
-      </ul>
+     
+     
       <ul>
         <NavLink to="/meditation">{t('High Blood Pressure')}
         </NavLink>
