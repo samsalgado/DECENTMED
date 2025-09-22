@@ -9,7 +9,7 @@ import drtess from '../cards/drtess.png';
 import amy from "../images copy/amy.jpeg";
 import prices from "../images copy/prices.png";
 import betterhealthsolutions from '../images copy/drk.png'
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 // Remote Page: Frequency Medicine:
 //Dr. Amy Wicks
 //BioChemistry
@@ -22,6 +22,7 @@ export function Chiro() {
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
+  const [showCarepatronModal, setShowCarepatronModal] = useState(false);
   const [isArizonaLocation, setIsArizonaLocation] = useState(false);
   const [isStLouisLocation, setIsStLouisLocation] = useState(false);
   const [isKansaCity, setKansasCity] = useState(false);
@@ -58,11 +59,11 @@ export function Chiro() {
     ];
     const stLouisTerms = [
       'missouri', 'mo', 'st charles', 'St. Charles', 'Saint Louis', 'st louis', 'Belleville','belleville',
-      'kansas city', 'kc', 'carefree', 'Kansas City', 'Troy', 'Alton', 'troy', 'alton', 'edwardsville', 'Edwardsville'
+       'carefree', 'Troy', 'Alton', 'troy', 'alton', 'edwardsville', 'Edwardsville'
     ];
 const kansasTerms = [
       'kansas', 'kansas city', 'north kansas city', 'gladstone','overland park', 'raymore', 'liberty', 'belton', 'independence', 'lees summit', 'blue springs', 'grandview', 'raytown', 'riverside',
-      'platte city', 'olathe', 'leawood', 'fairway', 'prairie village', 'shawnee', 'lenexa', 'merriam', 'roeland park'
+      'platte city', 'olathe', 'Kansas City', 'leawood', 'fairway', 'prairie village', 'shawnee', 'lenexa', 'merriam', 'roeland park', 'kc'
     ];
     const isAZ = arizonaTerms.some(term => 
       capitalizedLocation.toLowerCase().includes(term.toLowerCase())
@@ -168,7 +169,7 @@ const kansasTerms = [
           <div className="results-section">
             {isArizonaLocation ? (
               <>
-                <h2 className="mb-4">{t("Chiropractors in")} {location}</h2>
+                <h2 className="mb-4">{t("Chiropractors in")}{" "} {location}</h2>
                 
                 {/* Dr. Abbas Khayami - Arizona */}
                 <div className="row mb-4">
@@ -224,7 +225,7 @@ const kansasTerms = [
               </>
             ) : isStLouisLocation ? (
               <>
-                <h2 className="mb-4">{t("Chiropractors in")}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
+                <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
                 <div className="row mb-4">
                   <div className="col-md-12">
@@ -268,7 +269,7 @@ const kansasTerms = [
                               style={{ 
                                 maxWidth: '550px', 
                                 maxHeight: '420px', 
-                                objectFit: 'cover',
+                                objectFit: 'contain',
                                 width: '100%'
                               }}
                             />
@@ -305,7 +306,7 @@ const kansasTerms = [
               </>
               ) : isKansaCity ? (
               <>
-              <h2 className="mb-4">{t("Chiropractors in ")}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
+              <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
                 <div className="row mb-4">
                   <div className="col-md-12">
@@ -331,7 +332,7 @@ const kansasTerms = [
                               <i className="fas fa-map-marker-alt text-primary me-2"></i>
                               {t("6308 College Boulevard Overland Park, KS 66211")}
                             </p>
-                            
+                           
                             <div className="mb-2">
                               <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
                               <span className="badge bg-light text-dark me-1">{t("Spinal Decompression near me")}</span>
@@ -342,23 +343,83 @@ const kansasTerms = [
                             <p className="card-text small">
                               {t("Discover comprehensive wellness solutions at Total Care Chiropractic today. Without medications, we treat a range of conditions using chiropractic care, supplements, advanced alternative therapies (like hyperbaric chamber & Emsella®), and more. Dr. Tess Volner is an experienced Doctor of Chiropractic and Natural Medicine, having worked in the field 10 years now & keeping up-to-date with advancements in the fields of chiropractic and natural medicine. Let's enhance your well-being today!")}
                             </p>
-                          </div>
-                          <div className="col-md-5 text-end">
-                          <img 
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div>
+                            <img 
                               src={process} 
                               alt="Total Care Chiropractic" 
-                              style={{ 
+                             style={{ 
                                 maxWidth: '550px', 
                                 maxHeight: '420px', 
-                                objectFit: 'cover',
+                                objectFit: 'contain',
                                 width: '100%'
-                              }}
+                              }} 
                             />
-                            
-                            
-
                           </div>
-                          
+                          </div>
+                         <div className="col-md-3 text-end">
+                            <div>
+                              <style>
+                                {`@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);`}
+                              </style>
+                              <a 
+                                href="https://book.carepatron.com/Decent-Med/Total-Care?p=nBwv3S8xTH.PDFTlda2j.Q&s=2QnHnlj.&e=b"
+                                rel="noopener" 
+                                title="Book appointment"
+                                style={{
+                                  WebkitTextSizeAdjust: '100%',
+                                  WebkitFontSmoothing: 'antialiased',
+                                  display: 'inline-flex',
+                                  WebkitBoxAlign: 'center',
+                                  alignItems: 'center',
+                                  WebkitBoxPack: 'center',
+                                  justifyContent: 'center',
+                                  position: 'relative',
+                                  WebkitTapHighlightColor: 'transparent',
+                                  outline: 0,
+                                  border: 0,
+                                  margin: 0,
+                                  cursor: 'pointer',
+                                  userSelect: 'none',
+                                  verticalAlign: 'middle',
+                                  WebkitAppearance: 'none',
+                                  textDecoration: 'none',
+                                  fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
+                                  fontWeight: 500,
+                                  letterSpacing: '0.02857em',
+                                  transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+                                  color: '#fff',
+                                  backgroundColor: '#027360',
+                                  textTransform: 'none',
+                                  boxSizing: 'border-box',
+                                  borderRadius: '4px',
+                                  boxShadow: 'none',
+                                  minWidth: 0,
+                                  overflow: 'hidden',
+                                  whiteSpace: 'nowrap',
+                                  textOverflow: 'ellipsis',
+                                  height: '36px',
+                                  padding: '6px 16px',
+                                  fontSize: '14px',
+                                  lineHeight: '26px'
+                                }}
+                                target="_blank"
+                              >
+                                {t("Book Consultation")}
+                              </a>
+                            </div>
+                            <br />
+                            <a 
+                              href="tel:+19135224473" 
+                              className="btn btn-primary mb-2"
+                              target="_blank" 
+                              style={{                                  color: '#fff',
+                              backgroundColor: '#027360',}}
+                              rel="noopener noreferrer"
+                            >
+                              {t("Contact")}
+                            </a>
+                          </div>    
                         </div>
                       </div>
                     </div>
@@ -369,7 +430,7 @@ const kansasTerms = [
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h2>{t("No chiropractors available in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
+                  <h2>{t("No chiropractors available in ")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                   <p className="text-muted">
                     {t("We currently don't have any chiropractors listed in your area. Our services are currently available in Arizona and Missouri.")}
                   </p>

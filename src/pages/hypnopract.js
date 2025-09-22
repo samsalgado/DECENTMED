@@ -117,14 +117,24 @@ export function Hypnopract() {
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
-                            <a 
-                              href="tel:+18134856761"
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Contact")}
-                            </a>
+                              <a 
+                                href="https://calendly.com/greenhypnotherapy/new-meeting"
+                                className="btn btn-outline-primary"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                              >
+                                {t("Initial Consultation")}
+                              </a>
+                          </div>
+                            <div className="col-md-3 text-end">
+                              <a 
+                                href="https://calendly.com/greenhypnotherapy/new-meeting-1"
+                                className="btn btn-outline-primary"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                              >
+                                {t("Book Follow-up Consultation")}
+                              </a>
                           </div>
                         </div>
                       </div>

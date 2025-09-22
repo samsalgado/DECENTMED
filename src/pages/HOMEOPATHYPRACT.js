@@ -7,7 +7,6 @@ import Footer from '../footer';
 import Lotus from '../cards/lotus.png';
 import svet from "../cards/svetoslav.png";
 import { useTranslation } from 'react-i18next';
-
 export function HomeopathyPract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -162,7 +161,7 @@ export function HomeopathyPract() {
                         </div>
                         <div className="col-md-3 text-end">
                           <a 
-                            href='https://richesofhealth.com' 
+                            href='https://www.richesofhealth.co.za/distant-consultation.php' 
                             className="btn btn-outline-primary mb-2"
                             target="_blank" 
                             rel="noopener noreferrer"
@@ -230,7 +229,7 @@ export function HomeopathyPract() {
                         </div>
                         <div className="col-md-3 text-end">
                           <a 
-                            href='https://linktr.ee/kelechiobasi' 
+                            href='https://app.sidekickai.com/u/KelechiObasi/Lotuspotentia' 
                             className="btn btn-outline-primary mb-2"
                             target="_blank" 
                             rel="noopener noreferrer"

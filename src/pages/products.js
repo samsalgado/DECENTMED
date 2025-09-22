@@ -2,6 +2,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import obasi from "../images copy/obasi.png";
 import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import lifewave from '../images copy/lifewave.png';
 import linda from "../images copy/linda.png";
@@ -63,7 +64,28 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
-
+  <div className="row">
+    <div className="col-md-6">
+      <h2>{t("Kelechi Obasi Product Bundle")}</h2>
+      <a href='https://selar.com/m/kelechiobasi'>
+    <figure>
+        <img 
+          src={obasi} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Buy")}</figcaption>
+        </figure>
+      </a>
+      <div>
+     
+</div>
+    </div>
+  </div>
   <div className="row">
     <div className="col-md-6">
     <h2>{t("Lifewave Patch")}</h2>
