@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import Topbar from './topbar';
@@ -9,6 +9,36 @@ import '../info/Info.css';
 // Import images and assets
 import krisina from '../images copy/kristina.png';
 import Nutrifyourlife from '../cards/nutrifyourlife.jpg';
+
+// ✅ Calendly Embed Component (inline, so no extra file needed)
+function CalendlyEmbed({ url, height = 700 }) {
+  const widgetRef = useRef(null);
+
+  useEffect(() => {
+    const existingScript = document.getElementById('calendly-widget-script');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.id = 'calendly-widget-script';
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    const interval = setInterval(() => {
+      if (window.Calendly && widgetRef.current) {
+        window.Calendly.initInlineWidget({
+          url,
+          parentElement: widgetRef.current,
+        });
+        clearInterval(interval);
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [url]);
+
+  return <div ref={widgetRef} style={{ minWidth: '320px', height }} />;
+}
 
 export function Nutritionpract() {
   const { t } = useTranslation('common');
@@ -218,7 +248,7 @@ export function Nutritionpract() {
                     </div>
                   </div>
 
-                  {/* Kristina - Virtual Services */}
+                  {/* Kristina - Virtual Services with Working Calendly */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -256,7 +286,11 @@ export function Nutritionpract() {
                                 {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. She is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.")}
                               </p>
                             </div>
-                             
+                          </div>
+                          
+                          {/* Calendly Embed */}
+                          <div className="col-md-12 mt-4">
+                            <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
                           </div>
                         </div>
                       </div>
@@ -345,7 +379,7 @@ export function Nutritionpract() {
                     </div>
                   </div>
 
-                  {/* Kristina - Virtual Services Available Everywhere */}
+                  {/* Kristina - Virtual Services Available Everywhere with Working Calendly */}
                   <div className="row mb-4">
                     <div className="col-md-12">
                       <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -385,8 +419,6 @@ export function Nutritionpract() {
                               </p>
                           
                               <strong className="text-success">{t("kristina")}</strong>
-                            <iframe width="570" height="355" src="https://www.youtube.com/embed/bz7bhIAwu5o?si=Vhtpg9bwUuV658g9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                             </div>
                             <div className="col-md-3 text-end">
                               <a 
@@ -400,6 +432,10 @@ export function Nutritionpract() {
                             </div>
                           </div>
                           
+                          {/* Calendly Embed */}
+                          <div className="col-md-12 mt-4">
+                            <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
+                          </div>
                         </div>
                       </div>
                     </div>

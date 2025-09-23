@@ -197,15 +197,54 @@ const { t } = useTranslation('common');
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
-                            <a 
-                              href='https://oceantreismedical.acubliss.app/portal/booking/nettie-criscio/bradenton/' 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Book Appointment")}
-                            </a>
-                          </div>
+      <style>
+        {`@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');`}
+      </style>
+      <a
+        href="https://book.carepatron.com/Ocean-Treis-Medical/Dr--Nettie?p=.MG7pzmtQCi.vG7CRJViDA&s=mjaA41Jt&e=b"
+        rel="noopener"
+        title="Book Appointment"
+        style={{
+          WebkitTextSizeAdjust: '100%',
+          WebkitFontSmoothing: 'antialiased',
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          position: 'relative',
+          WebkitTapHighlightColor: 'transparent',
+          outline: 0,
+          border: 0,
+          margin: 0,
+          cursor: 'pointer',
+          userSelect: 'none',
+          verticalAlign: 'middle',
+          WebkitAppearance: 'none',
+          textDecoration: 'none',
+          fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+          fontWeight: 500,
+          letterSpacing: '0.02857em',
+          transition:
+            'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)',
+          color: '#fff',
+          backgroundColor: '#027360',
+          textTransform: 'none',
+          boxSizing: 'border-box',
+          borderRadius: '4px',
+          boxShadow: 'none',
+          minWidth: 0,
+          overflow: 'hidden',
+          whiteSpace: 'nowrap',
+          textOverflow: 'ellipsis',
+          height: '36px',
+          padding: '6px 16px',
+          fontSize: '14px',
+          lineHeight: '26px',
+        }}
+      >
+        {("Book Appointment")}
+      </a>
+    </div>
+                         
                         </div>
                       </div>
                     </div>
@@ -274,7 +313,7 @@ const { t } = useTranslation('common');
                           </div>
                           <div className="col-md-3 text-end">
                           <a 
-                              href='https://arightpath.com/bookanappointment/' 
+                              href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPK2rLwi2wW2Hcqnt45ru7xeMoXQ+UT3hcGgeFxwrNLxGas3EMbzye4U2WX/rwf9IYZDynb6+Fown6mYs0Nsk2BpT/NOiWu3gMIcjcx54KqTH4KyXa+URS5nvKy0AYp2ZueRDkn+eBaJi7meUvXLTDXuq6vGXcmPbRvasfHZGyLLi3eTPR9LgIPuOV4rK6W8Mya2KAv2FiUoQp1+s5fGqk7Y6y9hJHqSoM/MbpsZgQNkcbKgYpo1kmmLazM4XJ0T8yemk74007Ie4gqUguNOUYnQSWCu0K0dQ82ppPe7skL2I6ONF41SWIDf0BZzllZwb9PdAonfaRTwO9vxqKxZgGnyeREkAacIaUiHXeIo3euKsuPqhY41zH7o61bax3lThDNWgkwyPDFc5MvnIyiJvy4=' 
                               className="btn btn-outline-primary"
                               target="_blank" 
                               rel="noopener noreferrer"

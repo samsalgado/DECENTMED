@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect, useState } from 'react';
-import Stacy from '../cards/healinggoddess.png'
+import Stacy from '../cards/stacy.png'
+import stacyservices from "../cards/stacyservices.png";
 import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
 
@@ -23,9 +24,10 @@ export function AYPract() {
       availability: t("Telehealth Available Worldwide"),
       availabilityType: "telehealth",
       image: Stacy,
-      website: "https://healinggoddessproducts.com/",
-      description: t("after_stacy_graduated"),
-      video: "https://drive.google.com/file/d/1D8iq7LsXMgercG-_td7e7gQexodAfzSv/preview",
+      services:stacyservices,
+      website:`<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" background-color:#c9d4b8 src="https://form.carepatron.com/Forms/W2P9db6rKWDS7Botx?&e=i" style="border:0;"></iframe></div>`,
+      embedCode: `<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px;background-color:#c9d4b8"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" src="https://form.carepatron.com/Forms/W2P9db6rKWDS7Botx?&e=i" style="border:0;"></iframe></div>`,      description: t("after_stacy_graduated"),
+      video: "https://www.youtube.com/embed/ZaEGTAKvhSs?si=hlMEbykkS5kWNywN",
       servesGlobally: true,
       countries: ["USA", "Canada", "UK", "Australia", "worldwide"]
     },
@@ -38,6 +40,7 @@ export function AYPract() {
       availabilityType: "international",
       image: Yogi,
       website: "https://sanjivana.com/",
+      embedCode:`<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" src="https://form.carepatron.com/Forms/ACHhOOdCBO7ckKYPU?&e=i" style="border:0;"></iframe></div>`,
       description: t("My name is Yogi Sanji (Sanjivana), and my expertise is meditation and spiritual mentoring. I am a former monk of 20 years and have extensive experience teaching meditation to individuals and large groups. Meditation is my passion, interest, and life. I help people reach their goals of happiness, peace, and liberation through the practice of meditation and mindfulness. I teach meditation based on ancient traditions and doctrines which include deep insights, concentration, mindfulness, relaxation, and healing meditations. Sanjivana Kularathna - Serenity Meditations Meditation Teacher, Spiritual- Counselor, Therapist, Tutor, Mentor, Life Coach Energy work healing Working for Charities, Suicide prevention , Trauma Recovery , Rehabilitation, Sober Therapy and rebuilding lives."),
       servesGlobally: true,
       countries: ["India", "USA", "Canada", "UK", "Australia", "worldwide"]
@@ -208,16 +211,50 @@ export function AYPract() {
                   </div>
                 </div>
 
-                <a href={practitioner.website} target="_blank" rel="noopener noreferrer">
-                  <figure>
-                    <img src={practitioner.image} style={{
-                      maxWidth: '100%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }} alt={practitioner.name} />
-                    <figcaption>{t("Contact")}</figcaption>
-                  </figure>
-                </a>
+                {/* Display image without link */}
+                <figure>
+                  <img src={practitioner.image} style={{
+                    maxWidth: '100%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }} alt={practitioner.name} />
+                </figure>
+
+                {/* Add contact button - with special handling for Yogi's embed code */}
+                <div style={{ marginBottom: '20px' }}>
+                  {practitioner.embedCode ? (
+                    // Render the embed code for Yogi Sanjivana
+                    <div dangerouslySetInnerHTML={{ __html: practitioner.embedCode }} />
+                  ) : (
+                    // Regular button for other practitioners
+                    <button 
+                      onClick={() => window.open(practitioner.website, '_blank')}
+                      style={{
+                        padding: '15px 30px',
+                        backgroundColor: '#027360',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '8px',
+                        cursor: 'pointer',
+                        fontSize: '18px',
+                        fontWeight: 'bold',
+                        textDecoration: 'none',
+                        display: 'inline-block',
+                        marginBottom: '10px'
+                      }}
+                    >
+                      📞 {t("Contact")} {practitioner.title}
+                    </button>
+                  )}
+                </div>
+
+                {practitioner.services && (
+                  <img src={practitioner.services} style={{
+                        maxWidth: '100%',
+                        height: 'auto',
+                        borderRadius: '8px'
+                      }} alt={practitioner.name} />
+                )}
                 
                 {practitioner.video && (
                   <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.15)", marginBottom: '20px' }}>

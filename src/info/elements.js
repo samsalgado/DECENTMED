@@ -38,6 +38,7 @@ function Elements() {
                     <img className='gridimage' src={EARTH} alt='' />
                 </div>
             </div>
+       
         </div>
     );
 }

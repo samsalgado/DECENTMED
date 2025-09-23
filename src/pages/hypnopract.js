@@ -125,8 +125,6 @@ export function Hypnopract() {
                               >
                                 {t("Initial Consultation")}
                               </a>
-                          </div>
-                            <div className="col-md-3 text-end">
                               <a 
                                 href="https://calendly.com/greenhypnotherapy/new-meeting-1"
                                 className="btn btn-outline-primary"

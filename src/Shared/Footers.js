@@ -18,7 +18,7 @@ const Footers = () => {
           <h3 style={{ textAlign: 'center', marginTop: '-10px' }} className="footer-section about">{t("Products We Trust")}</h3>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
 
-            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }} href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
+            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }} href="https://decentmed.org/shop" target="_blank">
               {t("Shop")}
             </Button>
           </div>
@@ -45,7 +45,7 @@ const Footers = () => {
           <p>
             <Button
               style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}
-              href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">
+              href="https://decentmed.org/reviews" target="_blank">
               {t("OUR REVIEWS")}
             </Button>
           </p>

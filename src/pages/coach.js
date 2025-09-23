@@ -25,14 +25,13 @@ export function Coaching() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Auto-detect user location on page load
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        (position) => {
+        () => {
           setUserLocation('Detect location...');
         },
-        (error) => {
+        () => {
           setUserLocation('Enter your location');
         }
       );
@@ -42,60 +41,58 @@ export function Coaching() {
   }, []);
 
   const handleSearch = () => {
-    if (!location.trim()) return;
+    if (!location.trim()) {
+      setShowAnil(true);
+      setShowJohn(true);
+      setShowPriscilla(true);
+      setShowKristina(true);
+      setShowRamona(true);
+      setShowResults(true);
+      return;
+    }
+
     const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
 
-    // Define location terms for each coach
     const indiaTerms = [
       'india', 'mumbai', 'delhi', 'bangalore', 'kolkata', 'chennai', 'hyderabad',
       'pune', 'ahmedabad', 'surat', 'jaipur', 'lucknow', 'kanpur', 'nagpur',
       'pakistan', 'bangladesh', 'sri lanka', 'nepal', 'bhutan', 'maldives',
       'afghanistan', 'karachi', 'lahore', 'islamabad', 'dhaka', 'colombo', 'kathmandu'
-    ];
+    ].map(term => term.toLowerCase());
 
     const ukTerms = [
       'uk', 'united kingdom', 'england', 'scotland', 'wales', 'northern ireland',
       'london', 'manchester', 'birmingham', 'glasgow', 'liverpool', 'edinburgh',
       'bristol', 'leeds', 'sheffield', 'cardiff', 'belfast', 'britain', 'gb'
-    ];
+    ].map(term => term.toLowerCase());
 
     const kenyaTerms = [
       'kenya', 'nairobi', 'mombasa', 'kisumu', 'nakuru', 'eldoret',
       'africa', 'east africa', 'uganda', 'tanzania', 'rwanda', 'ethiopia'
-    ];
+    ].map(term => term.toLowerCase());
 
     const usaTerms = [
       'usa', 'united states', 'america', 'us', 'connecticut', 'ct', 'darien',
       'stamford', 'norwalk', 'westport', 'new york', 'ny', 'new jersey', 'nj',
       'tri-state', 'tristate', 'manhattan', 'brooklyn', 'queens', 'bronx'
-    ];
+    ].map(term => term.toLowerCase());
 
     const floridaTerms = [
       'florida', 'fl', 'clermont', 'orlando', 'tampa', 'miami', 'jacksonville',
       'tallahassee', 'gainesville', 'ocala', 'lakeland', 'kissimmee'
-    ];
+    ].map(term => term.toLowerCase());
 
-    // Check which coaches to show based on location
-    const isIndia = indiaTerms.some(term => 
-      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
-    );
-    const isUK = ukTerms.some(term => 
-      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
-    );
-    const isKenya = kenyaTerms.some(term => 
-      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
-    );
-    const isUSA = usaTerms.some(term => 
-      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
-    );
-    const isFlorida = floridaTerms.some(term => 
-      capitalizedLocation.toLowerCase().includes(term.toLowerCase())
-    );
+    const lowerCaseLocation = capitalizedLocation.toLowerCase();
 
-    // Set which coaches to show
+    const isIndia = indiaTerms.some(term => lowerCaseLocation.includes(term));
+    const isUK = ukTerms.some(term => lowerCaseLocation.includes(term));
+    const isKenya = kenyaTerms.some(term => lowerCaseLocation.includes(term));
+    const isUSA = usaTerms.some(term => lowerCaseLocation.includes(term));
+    const isFlorida = floridaTerms.some(term => lowerCaseLocation.includes(term));
+
     setShowAnil(isIndia);
-    setShowJohn(isUK || true); // John does telehealth, so always show
-    setShowPriscilla(isKenya || true); // Priscilla shows for all
+    setShowJohn(isUK || true); 
+    setShowPriscilla(isKenya || true);
     setShowKristina(isUSA);
     setShowRamona(isFlorida || isUSA);
     setShowResults(true);
@@ -290,7 +287,6 @@ export function Coaching() {
             height: 'auto'
           }}
         />
-
                           </div>
                           <div className="col-md-3 text-end">
                             <a 
@@ -356,7 +352,7 @@ export function Coaching() {
                               target="_blank" 
                               rel="noopener noreferrer"
                             >
-                              {t("Free Discovery Call")}
+                            {t("Free Discovery Call")}
                             </a>
                           </div>
                         </div>
@@ -427,13 +423,13 @@ export function Coaching() {
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
-                            <a 
-                              href="https://www.gorillaandshecoaching.com/schedule/30-minute-metabolic-acceleration-call" 
+                            <a
+                              href="https://book.carepatron.com/John-Craig/John-?p=O3qUeu8jRmmaRzG7scOCTg&s=-XtLcg-i&e=b"
+                              rel="noopener"
+                              title="Book Appointment"
                               className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
                             >
-                              {t("Book Discovery Call")}
+                              {t("Book Appointment")}
                             </a>
                           </div>
                         </div>
@@ -501,7 +497,7 @@ export function Coaching() {
                           </div>
                           <div className="col-md-3 text-end">
                             <a 
-                              href="mailto:anil.matai@gmail.com" 
+                              href="https://calendly.com/anil-narain-matai/1-2-1" 
                               className="btn btn-outline-primary"
                               target="_blank" 
                               rel="noopener noreferrer"

@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 const Info = () => {
   const { t } = useTranslation("common"); // Access translation function
   const learnmore = () => {
-    window.location.href = 'https://themerlingroupworld.com/telehealth'
+    window.location.href = 'https://decentmed.org/telehealth'
   }
 
   return (

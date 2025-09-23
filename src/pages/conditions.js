@@ -14,6 +14,12 @@ const { t } = useTranslation('common');
       <ul><NavLink to="/ptsd">{t('PTSD')}
       </NavLink>
       </ul>
+      <ul><NavLink to="/mindset">{t('Poor Self-Image')}
+      </NavLink>
+      </ul>
+       <ul><NavLink to="/mindset">{t('Lacking Mental Clarity')}
+      </NavLink>
+      </ul>
       <ul><NavLink to="/homeopathy">{t('ADD')}
       </NavLink>
       </ul>

@@ -112,7 +112,7 @@ const Info1 = () => {
             
             <Button 
               className="custom-btn"
-              href="https://themerlingroupworld.com/acupuncturists" 
+              href="https://decentmed.org/acupuncturists" 
               target="_blank"
               style={buttonStyle}
               onMouseOver={(e) => {

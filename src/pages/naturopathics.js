@@ -249,23 +249,11 @@ export function Natpract() {
                               <p className="card-text small">
                                 {t("Text")}
                               </p>
-                                                            <iframe
-          width="100%"
-          height="515"
-          src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
-          title="Patient Acquisition Engine Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          style={{
-            maxWidth: '400px',
-            width: '100%',
-            height: 'auto'
-          }}    
-        />
-
+                                                          
                             </div>
-                            
                             <div className="col-md-3 text-end">
+        
+
                               <a 
                                 href="https://meridianpassagewellness.com/book-now/" 
                                 className="btn btn-primary"
@@ -275,8 +263,22 @@ export function Natpract() {
                                 {t("Book Now")}
                               </a>
                             </div>
-                            
-                          </div>
+                          <div className="d-flex justify-content-center mb-3">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
+                          title="Patient Acquisition Engine Video"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          style={{
+                            border: 0,
+                            maxWidth: '100%',
+                            height: 'auto'
+                          }}
+                        />
+                      </div>
+                        </div>
                         </div>
                       </div>
                     </div>

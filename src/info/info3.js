@@ -14,7 +14,7 @@ const Info3 = () => {
       <h1 className='title'>{t('Detox')}</h1>
 
       <Fruits />
-            <Button className="custom-btn" href="https://themerlingroupworld.com/telehealth" target="_blank">
+            <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}
                   </Button>
       <br></br>
