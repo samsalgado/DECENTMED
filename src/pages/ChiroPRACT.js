@@ -273,16 +273,56 @@ const kansasTerms = [
                                 width: '100%'
                               }}
                             />
-                            <a 
-                              href="tel:+16367245757" 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Contact")}
-                            </a>
-                            
-
+                            <div>
+                              <style>
+                                {`@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);`}
+                              </style>
+                              <a 
+                                href="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=b"
+                                rel="noopener" 
+                                title="Book Appointment"
+                                style={{
+                                  WebkitTextSizeAdjust: '100%',
+                                  WebkitFontSmoothing: 'antialiased',
+                                  display: 'inline-flex',
+                                  WebkitBoxAlign: 'center',
+                                  alignItems: 'center',
+                                  WebkitBoxPack: 'center',
+                                  justifyContent: 'center',
+                                  position: 'relative',
+                                  WebkitTapHighlightColor: 'transparent',
+                                  outline: 0,
+                                  border: 0,
+                                  margin: 0,
+                                  cursor: 'pointer',
+                                  userSelect: 'none',
+                                  verticalAlign: 'middle',
+                                  WebkitAppearance: 'none',
+                                  textDecoration: 'none',
+                                  fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
+                                  fontWeight: 500,
+                                  letterSpacing: '0.02857em',
+                                  transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+                                  color: '#fff',
+                                  backgroundColor: '#027360',
+                                  textTransform: 'none',
+                                  boxSizing: 'border-box',
+                                  borderRadius: '4px',
+                                  boxShadow: 'none',
+                                  minWidth: 0,
+                                  overflow: 'hidden',
+                                  whiteSpace: 'nowrap',
+                                  textOverflow: 'ellipsis',
+                                  height: '36px',
+                                  padding: '6px 16px',
+                                  fontSize: '14px',
+                                  lineHeight: '26px'
+                                }}
+                                target="_blank"
+                              >
+                                {t("Book Appointment")}
+                              </a>
+                            </div>                         
                           </div>
                           <div className="col-md-6">
                                 <iframe

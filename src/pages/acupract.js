@@ -191,7 +191,6 @@ const { t } = useTranslation('common');
                               <span className="badge bg-light text-dark me-1">{t("Stress Management")}</span>
                               <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
                             </div>
-                            
                             <p className="card-text small">
                               {t("text")}
                             </p>
