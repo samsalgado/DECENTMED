@@ -31,6 +31,14 @@ const Footers = () => {
           <br></br>
           <br></br>
           <p>{t('intro_paragraph')}</p>
+          <a
+  href="/HIPAA Compliance Policy.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', padding: '10px 15px', borderRadius: '5px', textDecoration: 'none', display: 'inline-block', marginTop: '10px' }}
+>
+  {t("View HIPAA Compliance Policy (PDF)")}
+</a>
         </div>
 
         {/* Office Section */}
