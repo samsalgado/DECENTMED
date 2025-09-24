@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
@@ -9,7 +9,6 @@ import Anil from '../cards/anil.png';
 import Kristina from "../images copy/kristina.png";
 import Priscilla from '../cards/priscilla.jpg';
 import { useTranslation } from 'react-i18next';
-
 export function Coaching() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -20,6 +19,35 @@ export function Coaching() {
   const [showPriscilla, setShowPriscilla] = useState(false);
   const [showKristina, setShowKristina] = useState(false);
   const [showRamona, setShowRamona] = useState(false);
+  const [regionPriority, setRegionPriority] = useState('global'); // 'uk', 'india', 'global'
+function CalendlyEmbed({ url, height = 700 }) {
+  const widgetRef = useRef(null);
+
+  useEffect(() => {
+    const existingScript = document.getElementById('calendly-widget-script');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.id = 'calendly-widget-script';
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    const interval = setInterval(() => {
+      if (window.Calendly && widgetRef.current) {
+        window.Calendly.initInlineWidget({
+          url,
+          parentElement: widgetRef.current,
+        });
+        clearInterval(interval);
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [url]);
+
+  return <div ref={widgetRef} style={{ minWidth: '320px', height }} />;
+}
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -48,6 +76,7 @@ export function Coaching() {
       setShowKristina(true);
       setShowRamona(true);
       setShowResults(true);
+      setRegionPriority('global');
       return;
     }
 
@@ -90,6 +119,15 @@ export function Coaching() {
     const isUSA = usaTerms.some(term => lowerCaseLocation.includes(term));
     const isFlorida = floridaTerms.some(term => lowerCaseLocation.includes(term));
 
+    // Set region priority for ordering
+    if (isUK) {
+      setRegionPriority('uk');
+    } else if (isIndia) {
+      setRegionPriority('india');
+    } else {
+      setRegionPriority('global');
+    }
+
     setShowAnil(isIndia);
     setShowJohn(isUK || true); 
     setShowPriscilla(isKenya || true);
@@ -102,6 +140,367 @@ export function Coaching() {
     if (e.key === 'Enter') {
       handleSearch();
     }
+  };
+
+  // Component rendering functions
+  const renderKristina = () => (
+    showKristina && (
+      <div className="row mb-4" key="kristina">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Kristina} 
+                    alt="Kristina" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('THRIVE Results Coaching')}</h2>
+                  <p className="text-muted mb-2">{t("Kristina Hess CNS, LDN, Health Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("30 Old Kings Hwy S Darien, Connecticut United States")}
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("USA")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Health Coaching")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("kristina_bio")}
+                  </p>
+                </div>
+                <div className="col-md-3 text-end">
+                  {/* Calendly Embed */}
+                          <div className="col-md-12 mt-4">
+                            <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
+  const renderRamona = () => (
+    showRamona && (
+      <div className="row mb-4" key="ramona">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Ramona} 
+                    alt="Ramona" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Authentic Life Journey')}</h2>
+                  <p className="text-muted mb-2">{t("Ramona Crabtree-Falkner Transformational Empowerment Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("Clermont, Florida, USA")}
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("Florida")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Realign Purpose")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Mindfulness")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("empowerment_statement")}
+                  </p>
+                  <iframe
+        className="centered-video"
+        src="https://www.youtube.com/embed/hgHkSicJ6xc?si=P4xxLg4CeQ_grt5g"
+        frameBorder="0"
+        allowFullScreen
+        title="YouTube video player"
+        style={{
+          maxWidth: '550px',
+          width: '100%',
+          height: 'auto'
+        }}
+      />
+                </div>
+                <div className="col-md-3 text-end">
+                  <a 
+                    href="https://authenticlifejourney.as.me/schedule/f3645bcd/?categories[]=FREE%20Exploratory%20Call"  
+                    className="btn btn-outline-primary"
+                  >
+                    {t("Contact")}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
+  const renderPriscilla = () => (
+    showPriscilla && (
+      <div className="row mb-4" key="priscilla">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Priscilla} 
+                    alt="Priscilla Wmk" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Priscilla Wmk')}</h2>
+                  <p className="text-muted mb-2">{t("Mindset Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("Kenya")}
+                    <span className="ms-2">
+                      <i className="fas fa-video text-success me-1"></i>
+                      {t("Global Telehealth Available")}
+                    </span>
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("Global Coaching")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Mindset Transformation")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Mental Blocks")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Success Alignment")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("des")}
+                  </p>
+                </div>
+                <div className="col-md-3 text-end">
+                  <a 
+                    href="https://source.dynamitelifestyle.com/book-discovery-call-40/priscilla-wmk" 
+                    className="btn btn-outline-primary"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                  {t("Free Discovery Call")}
+                  </a>
+                </div>
+              </div>
+              
+              {/* Video Section for Priscilla */}
+              <div className="row mt-3">
+                <div className="col-md-6">
+                  <iframe
+                    src="https://drive.google.com/file/d/1Kmm58fe3qd53eouhOZgz05W75wc06GGl/preview"
+                    title='Priscilla Wmk'
+                    allow="autoplay"
+                    style={{
+                      width: '100%',
+                      height: '300px',
+                      borderRadius: '4px',
+                      border: 'none'
+                    }}    
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
+  const renderJohn = () => (
+    showJohn && (
+      <div className="row mb-4" key="john">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Gorilla} 
+                    alt="Gorilla and She Coaching" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Gorilla and She Coaching')}</h2>
+                  <p className="text-muted mb-2">{t("John Craig - Metabolic Health Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("United Kingdom")}
+                    <span className="ms-2">
+                      <i className="fas fa-video text-success me-1"></i>
+                      {t("Telehealth Available")}
+                    </span>
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Acceleration Coaching")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Health Transformation")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("Specialized coaching for metabolic health and acceleration. Expert guidance for transformative health results and sustainable lifestyle changes. Lose 20–50 lbs+ of belly fat with sports nutritionist-led metabolism coaching that raises basal metabolic rate (BMR).")}
+                  </p>
+                   <iframe
+                    src="https://drive.google.com/file/d/1Z0qVqBe8ukAEMHmKQtzqtWhWx1orq1ri/preview"
+                    title='John Craig'
+                    allow="autoplay"
+                    style={{
+                      width: '100%',
+                      height: '300px',
+                      borderRadius: '4px',
+                      border: 'none'
+                    }}    
+                    allowFullScreen
+                  />
+                </div>
+                <div className="col-md-3 text-end">
+                  <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
+                    <iframe 
+                      title={t("Carepatron Online Booking")} 
+                      alt={t("Book appointments online via Carepatron")} 
+                      width="100%" 
+                      height="100%" 
+                      src="https://book.carepatron.com/John-Craig/John-?p=O3qUeu8jRmmaRzG7scOCTg&s=-XtLcg-i&e=i" 
+                      style={{ border: 0 }}
+                    />
+                    
+                  </div>
+                </div>                        
+                </div>
+              
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
+  const renderAnil = () => (
+    showAnil && (
+      <div className="row mb-4" key="anil">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Anil} 
+                    alt="Anil Narain Matai" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Anil Narain Matai')}</h2>
+                  <p className="text-muted mb-2">{t("Spiritual Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("India & South Asian Region")}
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-light text-dark me-1">{t("Spiritual Guidance")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Sufi Wisdom")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Soul Journey")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Consciousness")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("I'm Anil N Matai, a dedicated poet, philosopher, and spiritual guide on a mission to share the timeless wisdom of Sufi thought through my spiritually enriching poems. Deeply committed to exploring the intricacies of the human soul's journey, consciousness, and the pursuit of spiritual awakening.")}
+                  </p>
+                </div>
+                <div className="col-md-3 text-end">
+                  <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
+                    <iframe 
+                      title={t("Schedule Appointment")} 
+                      width="100%" 
+                      height="100%" 
+                      src="https://calendly.com/anil-narain-matai/1-2-1" 
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
+  // Function to render coaches in priority order
+  const renderCoachesInOrder = () => {
+    const coaches = [];
+    
+    if (regionPriority === 'uk') {
+      // UK region: John first, then others
+      coaches.push(renderJohn());
+      coaches.push(renderAnil());
+      coaches.push(renderPriscilla());
+      coaches.push(renderKristina());
+      coaches.push(renderRamona());
+    } else if (regionPriority === 'india') {
+      // India region: Anil first, then others
+      coaches.push(renderAnil());
+      coaches.push(renderJohn());
+      coaches.push(renderPriscilla());
+      coaches.push(renderKristina());
+      coaches.push(renderRamona());
+    } else {
+      // Global/default order: Priscilla and John always shown, others as per original logic
+      coaches.push(renderKristina());
+      coaches.push(renderRamona());
+      coaches.push(renderPriscilla());
+      coaches.push(renderJohn());
+      coaches.push(renderAnil());
+    }
+    
+    return coaches.filter(Boolean); // Remove null/undefined entries
   };
 
   return (
@@ -185,332 +584,8 @@ export function Coaching() {
             <div className="results-section">
               <h2 className="mb-4">{t("Health Coaches serving")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
               
-              {/* Kristina - USA */}
-              {showKristina && (
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Kristina} 
-                              alt="Kristina" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('THRIVE Results Coaching')}</h2>
-                            <p className="text-muted mb-2">{t("Kristina Hess CNS, LDN, Health Coach")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("30 Old Kings Hwy S Darien, Connecticut United States")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-success text-white me-1">{t("USA")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Health Coaching")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("kristina_bio")}
-                            </p>
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <a 
-                               href="tel:+1(203)984-7989"  
-                              className="btn btn-outline-primary"
-                            >
-                              {t("Contact")}
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Ramona - Florida/USA */}
-              {showRamona && (
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Ramona} 
-                              alt="Ramona" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Authentic Life Journey')}</h2>
-                            <p className="text-muted mb-2">{t("Ramona Crabtree-Falkner Transformational Empowerment Coach")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("Clermont, Florida, USA")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-success text-white me-1">{t("Florida")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Realign Purpose")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Mindfulness")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("empowerment_statement")}
-                            </p>
-                            <iframe
-          className="centered-video"
-          src="https://www.youtube.com/embed/hgHkSicJ6xc?si=P4xxLg4CeQ_grt5g"
-          frameBorder="0"
-          allowFullScreen
-          title="YouTube video player"
-          style={{
-            maxWidth: '550px',
-            width: '100%',
-            height: 'auto'
-          }}
-        />
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <a 
-                              href="https://authenticlifejourney.as.me/schedule/f3645bcd/?categories[]=FREE%20Exploratory%20Call"  
-                              className="btn btn-outline-primary"
-                            >
-                              {t("Contact")}
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Priscilla - Always shows */}
-              {showPriscilla && (
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Priscilla} 
-                              alt="Priscilla Wmk" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Priscilla Wmk')}</h2>
-                            <p className="text-muted mb-2">{t("Mindset Coach")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("Kenya")}
-                              <span className="ms-2">
-                                <i className="fas fa-video text-success me-1"></i>
-                                {t("Global Telehealth Available")}
-                              </span>
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-success text-white me-1">{t("Global Coaching")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Mindset Transformation")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Mental Blocks")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Success Alignment")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("des")}
-                            </p>
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <a 
-                              href="https://source.dynamitelifestyle.com/book-discovery-call-40/priscilla-wmk" 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                            {t("Free Discovery Call")}
-                            </a>
-                          </div>
-                        </div>
-                        
-                        {/* Video Section for Priscilla */}
-                        <div className="row mt-3">
-                          <div className="col-md-6">
-                            <iframe
-                              src="https://drive.google.com/file/d/1Kmm58fe3qd53eouhOZgz05W75wc06GGl/preview"
-                              title='Priscilla Wmk'
-                              allow="autoplay"
-                              style={{
-                                width: '100%',
-                                height: '300px',
-                                borderRadius: '4px',
-                                border: 'none'
-                              }}    
-                              allowFullScreen
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* John Craig - UK + Telehealth (Always shows) */}
-              {showJohn && (
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Gorilla} 
-                              alt="Gorilla and She Coaching" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Gorilla and She Coaching')}</h2>
-                            <p className="text-muted mb-2">{t("John Craig - Metabolic Health Coach")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("United Kingdom")}
-                              <span className="ms-2">
-                                <i className="fas fa-video text-success me-1"></i>
-                                {t("Telehealth Available")}
-                              </span>
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Acceleration Coaching")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Health Transformation")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("Specialized coaching for metabolic health and acceleration. Expert guidance for transformative health results and sustainable lifestyle changes. Lose 20–50 lbs+ of belly fat with sports nutritionist-led metabolism coaching that raises basal metabolic rate (BMR).")}
-                            </p>
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <a
-                              href="https://book.carepatron.com/John-Craig/John-?p=O3qUeu8jRmmaRzG7scOCTg&s=-XtLcg-i&e=b"
-                              rel="noopener"
-                              title="Book Appointment"
-                              className="btn btn-outline-primary"
-                            >
-                              {t("Book Appointment")}
-                            </a>
-                          </div>
-                        </div>
-                        
-                        {/* Video Section for John */}
-                        <div className="row mt-3">
-                          <div className="col-md-6">
-                            <iframe
-                              src="https://drive.google.com/file/d/1Z0qVqBe8ukAEMHmKQtzqtWhWx1orq1ri/preview"
-                              title='John Craig'
-                              allow="autoplay"
-                              style={{
-                                width: '100%',
-                                height: '300px',
-                                borderRadius: '4px',
-                                border: 'none'
-                              }}    
-                              allowFullScreen
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Anil - India & Related Countries */}
-              {showAnil && (
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Anil} 
-                              alt="Anil Narain Matai" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Anil Narain Matai')}</h2>
-                            <p className="text-muted mb-2">{t("Spiritual Coach")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("India & South Asian Region")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Spiritual Guidance")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Sufi Wisdom")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Soul Journey")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Consciousness")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("I'm Anil N Matai, a dedicated poet, philosopher, and spiritual guide on a mission to share the timeless wisdom of Sufi thought through my spiritually enriching poems. Deeply committed to exploring the intricacies of the human soul's journey, consciousness, and the pursuit of spiritual awakening.")}
-                            </p>
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <a 
-                              href="https://calendly.com/anil-narain-matai/1-2-1" 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Contact")}
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+              {/* Render coaches in priority order */}
+              {renderCoachesInOrder()}
 
               {/* Show message if no location-specific coaches but still show global ones */}
               {!showAnil && !showKristina && !showRamona && (showJohn || showPriscilla) && (

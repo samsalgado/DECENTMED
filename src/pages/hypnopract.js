@@ -117,23 +117,28 @@ export function Hypnopract() {
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
-                              <a 
-                                href="https://calendly.com/greenhypnotherapy/new-meeting"
-                                className="btn btn-outline-primary"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Initial Consultation")}
-                              </a>
-                              <a 
-                                href="https://calendly.com/greenhypnotherapy/new-meeting-1"
-                                className="btn btn-outline-primary"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Book Follow-up Consultation")}
-                              </a>
+                          {/* Calendly inline embed */}
+                          <div style={{ width: '100%', height: '500px', marginBottom: '15px' }}>
+                            <iframe
+                              src="https://calendly.com/greenhypnotherapy/new-meeting?embed_domain=localhost&embed_type=Inline"
+                              width="100%"
+                              height="100%"
+                              frameBorder="0"
+                              title={t("Schedule Initial Consultation")}
+                              style={{ border: 0 }}
+                            />
                           </div>
+                          
+                          {/* Follow-up button */}
+                          <a 
+                            href="https://calendly.com/greenhypnotherapy/new-meeting-1"
+                            className="btn btn-outline-primary"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            {t("Book Follow-up Consultation")}
+                          </a>
+                        </div>
                         </div>
                       </div>
                     </div>

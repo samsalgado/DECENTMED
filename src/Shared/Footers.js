@@ -36,12 +36,13 @@ const Footers = () => {
         {/* Office Section */}
         <div className="footer-section office">
           <h3 style={{ textAlign: 'center' }}>{t('Office')}</h3>
-          <p>📞 <a href="tel:+18137664900">Call Us: +1 (813) 766-4900</a></p>
+          <div className="text-center">
+            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}
+                     href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
+              {t("Book a Call")}
+            </Button>
+          </div>          
           <p>5830 E 2ND ST Casper, WY 82609</p>
-            {t('Email:')}{' '}
-            <a href="mailto:samuel@themerlingroupworld.com">
-              admin@decentmed.org
-            </a>
           <p>
             <Button
               style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}

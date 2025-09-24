@@ -6,7 +6,6 @@ import Footer from '../footer';
 import Meridian from '../cards/meridian.png';
 import { useTranslation } from 'react-i18next';
 import drtess from '../cards/drtess.png';
-import { PopupWidget } from 'react-calendly';
 
 export function Natpract() {
   const { t } = useTranslation('common');
@@ -15,7 +14,6 @@ export function Natpract() {
   const [showResults, setShowResults] = useState(false);
   const [isWashingtonLocation, setIsWashingtonLocation] = useState(false);
   const [isKansas, setIsKansas] = useState(false);
-  const [showCalendlyModal, setShowCalendlyModal] = useState(false); // State for modal
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -113,12 +111,12 @@ export function Natpract() {
                 
                 <br />
                 <a 
-                  href="tel:+19135224473" 
+                  href="https://totalcarehealthsolutions.com/login" 
                   className="btn btn-primary mb-2"
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  {t("Contact")}
+                  {t("Join Today")}
                 </a>
               </div>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

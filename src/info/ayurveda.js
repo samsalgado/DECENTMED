@@ -23,7 +23,7 @@ const Ayurvedaa = () => {
       }}>
         <p className='pr'>{t("Ayurveda, an ancient healing system, offers a holistic approach to wellness by balancing the body, mind, and spirit through natural remedies and personalized treatments. Unlike conventional medicine, Ayurveda focuses on preventing illness rather than just treating symptoms, using herbs, diet, and lifestyle adjustments tailored to each individual's constitution. Patients seeking gentle, long-term healing often turn to Ayurveda for its ability to address root causes rather than temporary relief.")}</p>
         <br></br>
-        <Button className="custom-btn" href="https://themerlingroupworld.com/ayurvedicmedicine" target="_blank">
+        <Button className="custom-btn" href="https://decentmed.org/ayurvedicmedicine" target="_blank">
           {t("Experience Ayurveda")}
         </Button>
       </div>

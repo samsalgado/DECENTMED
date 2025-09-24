@@ -92,14 +92,16 @@ export function AKPract() {
                           width: '100%'
                         }}
                       />
-                      <a 
-                        href="tel:+16367245757" 
-                        className="btn btn-outline-primary"
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        {t("Contact")}
-                      </a>
+                      <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
+                      <iframe 
+                        title={t("Carepatron Online Booking")} 
+                        alt={t("Book appointments online via Carepatron")} 
+                        width="100%" 
+                        height="100%" 
+                        src="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=i" 
+                        style={{ border: 0 }}
+                      />
+                    </div>
                     </div>
                     <div className="col-md-6">
                       <iframe

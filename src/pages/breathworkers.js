@@ -2,12 +2,11 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 //import ReactPlayer from 'react-player';
 import JenB from '../cards/scarlett.JPG';
 import { useTranslation } from 'react-i18next';
 //import PhoneInput from 'react-phone-input-2'; // ✅ Import
-import axios from 'axios';
 
 export function Breathwork({ providerEmail }) {
 
@@ -16,9 +15,6 @@ export function Breathwork({ providerEmail }) {
   }, []);
 
   const { t } = useTranslation('common');
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
-  const [status, setStatus] = useState('');
-
   //const handleChange = (e) => {
     //setFormData({ ...formData, [e.target.name]: e.target.value });
  // };
@@ -28,23 +24,7 @@ export function Breathwork({ providerEmail }) {
   };
   */
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
-
-    try {
-      await axios.post("https://decentmed-server.vercel.app/send-email", {
-        ...formData,
-        providerEmail,
-      });
-
-      setStatus("Email sent successfully!");
-    } catch (error) {
-      console.error(error);
-      setStatus("Failed to send email");
-    }
-  };
-console.log(setFormData);
+  
   return (
     <div>
       <main className="page-content">
@@ -69,15 +49,15 @@ console.log(setFormData);
               <br />
 
               {/* Contact Form */}
-              <div>
+             <div>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   </style>
   <a 
-    href="https://book.carepatron.com/Scarlett-Dee/Scarlett-?p=aJmLuXtkR3esU9i7t2nEJg&s=KIVRtyGw&i=05vqrMEX&e=b"
-    rel="noopener"
+    href="https://book.carepatron.com/Scarlett-Dee/Scarlett-?p=aJmLuXtkR3esU9i7t2nEJg&s=KIVRtyGw&e=b"
+    rel="noopener noreferrer"
     target="_blank"
-    title="Book appointment"
+    title={t("Book Appointment")}
     style={{
       WebkitTextSizeAdjust: '100%',
       WebkitFontSmoothing: 'antialiased',
@@ -114,7 +94,7 @@ console.log(setFormData);
       lineHeight: '26px'
     }}
   >
-    {t("Book appointment")}
+    {t("Book Appointment")}
   </a>
 </div>
               <h5>{t("Scarlett Dee, Somatic Breathwork Coach:")}</h5>

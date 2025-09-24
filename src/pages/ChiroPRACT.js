@@ -22,7 +22,6 @@ export function Chiro() {
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
-  const [showCarepatronModal, setShowCarepatronModal] = useState(false);
   const [isArizonaLocation, setIsArizonaLocation] = useState(false);
   const [isStLouisLocation, setIsStLouisLocation] = useState(false);
   const [isKansaCity, setKansasCity] = useState(false);
@@ -225,125 +224,90 @@ const kansasTerms = [
               </>
             ) : isStLouisLocation ? (
               <>
-                <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
-                
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={amy} 
-                              alt="The Center for Natural Health" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('The Center for Natural Health')}</h2>
-                            <p className="text-muted mb-2">{t("Dr. Amy Wicks")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("St. Charles, Missouri")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Complex Disorders")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("NAET Treatment (Nambudripad's Allergy Elimnation Techniques)")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("Dr. Wicks' passion is to help others that seem to have nowhere else to turn.  She specializes in treating hard to treat conditions including (but not limited to) back pain, headaches, neurological conditions, digestive issues, arthritis, food sensitivities, seasonal allergies, and many more. When the body is functioning optimally, the way it was designed, then it has the ability to heal itself.  With adjustments, proper nutrition and balancing the body's systems using AK and CK procedures and/or NAET, it is then able to function optimally.")}
-                            </p>
-                          </div>
-                          <div className="col-md-5 text-end">
-                          <img 
-                              src={prices} 
-                              alt="The Center for Natural Health" 
-                              style={{ 
-                                maxWidth: '550px', 
-                                maxHeight: '420px', 
-                                objectFit: 'contain',
-                                width: '100%'
-                              }}
-                            />
-                            <div>
-                              <style>
-                                {`@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);`}
-                              </style>
-                              <a 
-                                href="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=b"
-                                rel="noopener" 
-                                title="Book Appointment"
-                                style={{
-                                  WebkitTextSizeAdjust: '100%',
-                                  WebkitFontSmoothing: 'antialiased',
-                                  display: 'inline-flex',
-                                  WebkitBoxAlign: 'center',
-                                  alignItems: 'center',
-                                  WebkitBoxPack: 'center',
-                                  justifyContent: 'center',
-                                  position: 'relative',
-                                  WebkitTapHighlightColor: 'transparent',
-                                  outline: 0,
-                                  border: 0,
-                                  margin: 0,
-                                  cursor: 'pointer',
-                                  userSelect: 'none',
-                                  verticalAlign: 'middle',
-                                  WebkitAppearance: 'none',
-                                  textDecoration: 'none',
-                                  fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                                  fontWeight: 500,
-                                  letterSpacing: '0.02857em',
-                                  transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-                                  color: '#fff',
-                                  backgroundColor: '#027360',
-                                  textTransform: 'none',
-                                  boxSizing: 'border-box',
-                                  borderRadius: '4px',
-                                  boxShadow: 'none',
-                                  minWidth: 0,
-                                  overflow: 'hidden',
-                                  whiteSpace: 'nowrap',
-                                  textOverflow: 'ellipsis',
-                                  height: '36px',
-                                  padding: '6px 16px',
-                                  fontSize: '14px',
-                                  lineHeight: '26px'
-                                }}
-                                target="_blank"
-                              >
-                                {t("Book Appointment")}
-                              </a>
-                            </div>                         
-                          </div>
-                          <div className="col-md-6">
-                                <iframe
-                                  src="https://drive.google.com/file/d/1t4ouK9Afjmmc7PaIYsWM3ALrS0Phkbqf/preview"
-                                  title='Acupuncture'
-                                  allow="autoplay"
-                                  style={{
-                                    width: '100%',
-                                    height: '300px',
-                                    borderRadius: '4px',
-                                    border: 'none'
-                                  }}    
-                                  allowFullScreen
-                                />
-                              </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </>
+  <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
+  
+  <div className="row mb-4">
+    <div className="col-md-12">
+      <div className="card" style={{ border: '1px solid #dee2e6' }}>
+        <div className="card-body">
+          <div className="row">
+            <div className="col-md-2 text-center">
+              <img 
+                src={amy} 
+                alt="The Center for Natural Health" 
+                style={{ 
+                  maxWidth: '100px', 
+                  maxHeight: '100px', 
+                  objectFit: 'contain' 
+                }} 
+              />
+            </div>
+            <div className="col-md-7">
+              <h2 className="h4 mb-1">{t('The Center for Natural Health')}</h2>
+              <p className="text-muted mb-2">{t("Dr. Amy Wicks")}</p>
+              
+              <p className="mb-2">
+                <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                {t("St. Charles, Missouri")}
+              </p>
+              
+              <div className="mb-2">
+                <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
+                <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Complex Disorders")}</span>
+                <span className="badge bg-light text-dark me-1">{t("NAET Treatment (Nambudripad's Allergy Elimnation Techniques)")}</span>
+              </div>
+              
+              <p className="card-text small">
+                {t("Dr. Wicks' passion is to help others that seem to have nowhere else to turn.  She specializes in treating hard to treat conditions including (but not limited to) back pain, headaches, neurological conditions, digestive issues, arthritis, food sensitivities, seasonal allergies, and many more. When the body is functioning optimally, the way it was designed, then it has the ability to heal itself.  With adjustments, proper nutrition and balancing the body's systems using AK and CK procedures and/or NAET, it is then able to function optimally.")}
+              </p>
+              <div className="col-md-6">
+              <iframe
+                src="https://drive.google.com/file/d/1t4ouK9Afjmmc7PaIYsWM3ALrS0Phkbqf/preview"
+                title='Acupuncture'
+                allow="autoplay"
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  borderRadius: '4px',
+                  border: 'none'
+                }}    
+                allowFullScreen
+              />
+            </div>
+            </div>
+            <div className="col-md-3 text-end">
+              <img 
+                src={prices} 
+                alt="The Center for Natural Health" 
+                style={{ 
+                  maxWidth: '100%', 
+                  maxHeight: '200px', 
+                  objectFit: 'contain',
+                  width: '100%',
+                  marginBottom: '15px'
+                }}
+              />
+              
+              <div style={{ display: 'grid', width: '100%', minWidth: '280px', height: '400px' }}>
+                <iframe 
+                  title={t("Carepatron Online Booking")} 
+                  alt={t("Book appointments online via Carepatron")} 
+                  width="100%" 
+                  height="100%" 
+                  src="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=i" 
+                  style={{ border: 0 }}
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* Video section below the main content */}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</>
               ) : isKansaCity ? (
               <>
               <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
@@ -399,55 +363,17 @@ const kansasTerms = [
                           </div>
                          <div className="col-md-3 text-end">
                             <div>
-                              <style>
-                                {`@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);`}
-                              </style>
-                              <a 
-                                href="https://book.carepatron.com/Decent-Med/Total-Care?p=nBwv3S8xTH.PDFTlda2j.Q&s=2QnHnlj.&e=b"
-                                rel="noopener" 
-                                title="Book appointment"
-                                style={{
-                                  WebkitTextSizeAdjust: '100%',
-                                  WebkitFontSmoothing: 'antialiased',
-                                  display: 'inline-flex',
-                                  WebkitBoxAlign: 'center',
-                                  alignItems: 'center',
-                                  WebkitBoxPack: 'center',
-                                  justifyContent: 'center',
-                                  position: 'relative',
-                                  WebkitTapHighlightColor: 'transparent',
-                                  outline: 0,
-                                  border: 0,
-                                  margin: 0,
-                                  cursor: 'pointer',
-                                  userSelect: 'none',
-                                  verticalAlign: 'middle',
-                                  WebkitAppearance: 'none',
-                                  textDecoration: 'none',
-                                  fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                                  fontWeight: 500,
-                                  letterSpacing: '0.02857em',
-                                  transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-                                  color: '#fff',
-                                  backgroundColor: '#027360',
-                                  textTransform: 'none',
-                                  boxSizing: 'border-box',
-                                  borderRadius: '4px',
-                                  boxShadow: 'none',
-                                  minWidth: 0,
-                                  overflow: 'hidden',
-                                  whiteSpace: 'nowrap',
-                                  textOverflow: 'ellipsis',
-                                  height: '36px',
-                                  padding: '6px 16px',
-                                  fontSize: '14px',
-                                  lineHeight: '26px'
-                                }}
-                                target="_blank"
-                              >
-                                {t("Book Consultation")}
-                              </a>
                             </div>
+                           <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
+                            <iframe 
+                              title={t("Carepatron Online Booking")} 
+                              alt={t("Book appointments online via Carepatron")} 
+                              width="100%" 
+                              height="100%" 
+                              src="https://book.carepatron.com/Decent-Med/Total-Care?p=nBwv3S8xTH.PDFTlda2j.Q&s=2QnHnlj.&i=e9iHKeft&e=i" 
+                              style={{ border: 0 }}
+                            />
+                          </div>
                             <br />
                             <a 
                               href="tel:+19135224473" 

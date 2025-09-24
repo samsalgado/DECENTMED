@@ -31,7 +31,7 @@ const {t} = useTranslation('common')
           <p className='pr'>{t("- Release stress and burnout")}</p>
           <p className='pr'>{t("- Embrace self-care without guilt")}</p>
           <p className='pr'>{t("- Live authentically and intuitively")}</p>     
-          <Button className="custom-btn" href="https://themerlingroupworld.com/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
+          <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
         </div>
 <iframe
           className="centered-video"
