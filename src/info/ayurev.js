@@ -15,12 +15,12 @@ function Principles() {
                     <div className="col-12 col-sm-8 col-md-6 text-center mb-4">
                     <img className='gridimage' src={princ} alt='' />
                     <img className='gridimage' src={principles} alt='' />
+
                     
                 </div>
-                    <div className="col-12 col-sm-8 col-md-6 text-center mb-4">
-                    <img className='gridimag' src={doshas} alt='' />
-                     <img className='gridimag' src={stacyd} alt='' />
-                </div>
+                    <img className='gridimag' src={stacyd} alt='' style={{width: '100%', height: 'auto'}} />
+                      <img className='gridimag' src={doshas} alt='' style={{width: '100%', height: 'auto'}} />
+
 <Button 
   as="a" 
   href="https://healinggoddess.com"
