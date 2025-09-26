@@ -17,7 +17,7 @@ const Practice = () => {
 
         <div className="signup-container">
           <h1 className="signup">{t('Sign Up')}</h1>
-<iframe class="rumble" title="signup" width="640" height="360" src="https://rumble.com/embed/v6x8bpu/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>  </div>
+<iframe class="rumble" title="signup" width="640" height="360" src="https://www.youtube.com/embed/QgPSbbJTmbM?si=zwssl9LVDH_xWLXp" frameborder="0" allowfullscreen></iframe>  </div>
         
         <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
           <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
@@ -33,3 +33,4 @@ const Practice = () => {
 };
 
 export default Practice;
+
