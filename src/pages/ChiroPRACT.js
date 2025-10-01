@@ -288,16 +288,18 @@ const kansasTerms = [
                 }}
               />
               
-              <div style={{ display: 'grid', width: '100%', minWidth: '280px', height: '400px' }}>
-                <iframe 
-                  title={t("Carepatron Online Booking")} 
-                  alt={t("Book appointments online via Carepatron")} 
-                  width="100%" 
-                  height="100%" 
-                  src="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=i" 
-                  style={{ border: 0 }}
-                />
-              </div>
+<div style={{display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px'}}>
+<iframe title="Carepatron Online Booking" 
+
+style={{ border: 0 }}
+
+alt="Book appointments online via Carepatron" width="100%" height="100%" 
+
+src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Teresa?p=J2kttqPqTiCjLVl6UMymig&s=Yh0KM2FQ&e=i">
+
+</iframe>
+
+</div>
             </div>
           </div>
           

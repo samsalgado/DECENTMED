@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import '../App.css';
+import energy from "../images copy/tel.png";
+import sleep from "../images copy/nutrifysleep.png";
 import Footer from '../footer';
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
@@ -19,6 +21,7 @@ import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
 import golf from "../images copy/golf.jpg";
 import tammy from "../images copy/tammy.png";
+import acup from "../images copy/acup.jpg";
 import imgg from "../images copy/imgg.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
@@ -58,6 +61,28 @@ const { t } = useTranslation("common");
       <a href='/fenbendazole'>
     <figure>
         <img className='gridimag' src={Fenbendazole} alt="logo" />
+          <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Nutrition for Longevity: Prevent Energy Crisis as you Age")}</h2>
+      <div className='container'>
+      <a href='https://www.nutrifyourlife.com/blog/prevent-energy-crisis-as-you-age'>
+    <figure>
+        <img className='gridimag' src={energy} alt="logo" />
+          <figcaption>{t("Click on image for full Blog")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      </div>
+           <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t("Nutrition for Longevity: The Sleep Longevity")}</h2>
+      <div className='container'>
+      <a href='https://www.nutrifyourlife.com/blog/the-sleep-longevity-connection'>
+    <figure>
+        <img className='gridimag' src={sleep} alt="logo" />
           <figcaption>{t("Click on image for full Blog")}</figcaption>
         </figure>
       </a>
@@ -139,7 +164,7 @@ const { t } = useTranslation("common");
       </a>
       </div>
     </div>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('How Chiropractic Care Can Accelerate Recovery from Common Sports Injuries')}</h2>
     <div className='pr'>
     <p>
@@ -149,6 +174,22 @@ const { t } = useTranslation("common");
     <a href='https://www.drnarson.com/blog/1325688-how-chiropractic-care-can-accelerate-recovery-from-common-sports-injuries'>
     <figure>
         <img className='gridimag' src={golf} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+</div>  
+    </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Acupuncture and Traditional Oriental Medicine')}</h2>
+    <div className='pr'>
+    <p>
+    {t("subp")}
+    </p>
+    <div className='container'>
+    <a href='https://meridianpassagewellness.com/acupuncture-and-oriental-medicine/'>
+    <figure>
+        <img className='gridimag' src={acup} alt="logo" />
           <figcaption>{t('Click on image for full Blog')}</figcaption>
         </figure>
       </a>
@@ -175,7 +216,7 @@ const { t } = useTranslation("common");
     <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h2>
     <div className='pr'>
     <p>
-    {t("Tuesday, July 8, 2025, is expected to be under a severe weather advisory. Severe hot weather causes dehydration and intensifies existing back pain. Let's outline the top five stretches for back pain in Scottsdale.")}
+    {t("ts")}
     </p>
     <div className='container'>
     <a href='/blog18'>

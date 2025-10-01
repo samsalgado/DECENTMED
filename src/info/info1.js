@@ -3,6 +3,9 @@ import Channel from './channel';
 import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; 
+import OCTT from "../images copy/OCTrv.png";
+import oct from "../images copy/OCT.png";
+import Collapsible from 'react-collapsible';
 import { useTranslation } from 'react-i18next';
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
@@ -150,6 +153,37 @@ const Info1 = () => {
       
       <h1>{t("Top 10 Benefits of Acupuncture")}</h1>
       <img className='gridimag' src={acuben} alt='Ac' />
+      <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Tampa')}</th>}>
+  <div className="row">
+    <div className="col-12 col-md-6 mb-3">
+      <img src={oct} alt="Acupuncture Tampa" style={{
+        width: '100%',
+        maxWidth: '500px',
+        height: 'auto',
+        objectFit: 'contain'
+      }} />
+    </div>
+    <div className="col-12 col-md-6 mb-3">
+      <img src={OCTT} alt="Acupuncture Tampa" style={{
+        width: '100%',
+        maxWidth: '500px',
+        height: 'auto',
+        objectFit: 'contain'
+      }} />
+    </div>
+  </div>
+
+  <style jsx>{`
+    @media (max-width: 768px) {
+      .row > div {
+        text-align: center;
+      }
+      .row img {
+        max-width: 350px !important;
+      }
+    }
+  `}</style>
+</Collapsible>
       <Acuvids />
       <Channel />
     </div>
