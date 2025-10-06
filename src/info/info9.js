@@ -25,16 +25,18 @@ const {t} = useTranslation('common')
         <div className='content-wrapper' style={{
           flex: '1'
         }}>
-         
           <p className="pr"><h2>{t("Mindset Coaching")}</h2></p>
           <p className='pr'>{t("A mindset coach helps you with getting a deeper understanding of who you really are. Try a mindset coach that can help you learn the science of achievement and the science of the mind so that you can create change at the root cause which lasts.")}</p>
+          <p className="pr">{t("I’m Priscilla, a mindset coach passionate about helping individuals and entrepreneurs understand the transformative power of their mindset and how it directly impacts their results in all areas of their life so they can create their lives by design.")}</p>
+          <p className="pr">{t("Why I’m so passionate about this, because I was stuck for years with personal and professional results that I did not like and couldn’t seem to change. My greatest pain was an almost 7 year journey to having a healthy baby with 3 losses along the way. I’m blessed to now be a mum to an amazing 2 year old boy!")}</p>
+          <p className="pr">{t("What turned everything around for me was mentorship. I got to understand that the reason so many things in my life weren’t working was because I didn’t know who I really am and sadly I didn’t love or value myself and had many limiting beliefs holding me back from what I desired and my results were a reflection of that. Through mentorship I got to understand who I am, what I really want, how to shift habits and beliefs that weren’t serving me and most importantly, I truly fell in love with me for the first time in my life. As a result of my life turning around so beautifully, I trained under my mentor to be able to teach others the phenomenal material which changed my life and that’s what I do now.")}</p>
         <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
          {t("Try Coaching")}
         </Button>        
         </div>
         <iframe
           className="centered-video"
-          src="https://www.youtube.com/embed/Nn_mUgp2v20"
+          src="https://www.youtube.com/embed/ya7yJQAjhi8?si=bDZPQpX5ROFThuv1"
           frameBorder="0"
           allowFullScreen
           title="YouTube video player"
