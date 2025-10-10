@@ -369,16 +369,16 @@ const kansasTerms = [
                          <div className="col-md-3 text-end">
                             <div>
                             </div>
-                           <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
-                            <iframe 
-                              title={t("Carepatron Online Booking")} 
-                              alt={t("Book appointments online via Carepatron")} 
-                              width="100%" 
-                              height="100%" 
-                              src="https://book.carepatron.com/Decent-Med/Total-Care?p=nBwv3S8xTH.PDFTlda2j.Q&s=2QnHnlj.&i=e9iHKeft&e=i" 
-                              style={{ border: 0 }}
-                            />
-                          </div>
+                          <div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px">
+                          <iframe 
+                            title="Carepatron Online Booking" 
+                            alt="Book appointments online via Carepatron" 
+                            width="100%" 
+                            height="100%" 
+                            src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Teresa?p=J2kttqPqTiCjLVl6UMymig&s=Yh0KM2FQ&e=i" 
+                            style="border:0;">
+                          </iframe>
+                        </div>
                             <br />
                             <a 
                               href="tel:+19135224473" 
