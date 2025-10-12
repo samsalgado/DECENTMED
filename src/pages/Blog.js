@@ -320,7 +320,6 @@ const { t } = useTranslation("common");
         <p>
         {t(`Because of his astounding results, Sebi grew a mega-following and a massive herbal empire. Among his products, is batana oil - a potential solution to hair loss. On popular social media apps TikTok and YouTube, batana oil has recently become popular online for its potential hair growth. Let's explore batana oil and its possible benefits for your hair.`)}
         </p>
-    
       </div>
         </div>
         <div className='container'>
@@ -336,7 +335,6 @@ const { t } = useTranslation("common");
     <div className='pr'>
         <p>
         {t('Mass immigration in Canada has its advantages and disadvantages; assimilation led to Canadians adopting Traditional Chinese Medicine (TCM). Acupuncture Montreal adoption began with British Columbia adding acupuncture to the')}<a href="https://pubmed.ncbi.nlm.nih.gov/25555597/">{t('Canadian Medical Services Plan in 2008.')}</a> {t('Ontario and British Columbia have the highest adoption of acupuncture among the ten provinces of Canada. Regulation in Canada is varied among the provinces. For instance')} <a href="https://acupuncturecanada.org/acupuncture-101/regulation-and-education/#:~:text=Medical%20doctors%20and%20dentists%20may,but%20Quebec%20and%20British%20Columbia.">{t('chiropractors can use acupuncture everywhere but in British Columbia and Quebec.')}</a> {t('British Columbia has most regulations regarding the provinces.')}</p>
-    
       </div>
         </div>
         <div className='container'>

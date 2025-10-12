@@ -1,8 +1,13 @@
 import React from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
+import Collapsible from 'react-collapsible';
 import { Button } from'react-bootstrap';
+import ramyoga from "../images copy/ramyoga.png";
+import slow from "../images copy/slowdown.png";
 import TsBenefits from "./tben";
+import flow from "../images copy/flow.png";
+import r from "../images copy/r.png";
 import { useTranslation } from "react-i18next";
 const Benefitts = () => {
 const {t} = useTranslation('common')
@@ -63,6 +68,17 @@ const {t} = useTranslation('common')
         }
       `}</style>
         <br></br>
+            <Collapsible trigger={<th className="collapsible-trigger">{t('Self Care Journal')}</th>}>
+              <tr>
+                <a href="https://www.linkedin.com/pulse/flow-feeling-honoring-your-emotions-work-life-ramona-crabtree-falkner-4rrve/?trackingId=XKJ1BW5BQ3quljT4fWOovg%3D%3D">
+                <img className='gridimage' src={flow} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
+                </a>
+                <a href="https://www.linkedin.com/pulse/season-changed-everything-why-reclaiming-empowerment-ramona-zyc3e/?trackingId=e35q3gM%2BSYu%2BcRFjLRwiuQ%3D%3D">
+                <img className='gridimage' src={r} alt='The Season That Changed Everything: Why Reclaiming Empowerment Is Just the Beginning' /> </a>
+                <a href="https://www.linkedin.com/pulse/yoga-awareness-month-why-isnt-luxury-women-healthcare-ramona-kaize/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage' src={ramyoga} alt='yoga awareness month' /></a>
+                <a href="https://www.linkedin.com/pulse/why-slowing-down-most-powerful-move-you-can-make-crabtree-falkner-3gwae/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage'src={slow} alt='Why Slowing Down is the Most Powerful Move You Can Make' /></a>
+              </tr>
+            </Collapsible>
         <TsBenefits />
         </div>
     )
