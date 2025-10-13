@@ -15,10 +15,10 @@ const ANS = () => {
       <Row>
         <Col md={4}>
           <Card className="card mb-4">
-            <Card.Header className='card-header' as="h5">{t("Who is The Merlin Group?")}</Card.Header>
+            <Card.Header className='card-header' as="h5">{t("Who is The Merlin Group World?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                {t("We are an education platform that showcases Holistic Medicine and helps providers grow their business using AI-driven marketing strategies, social media management and unique offerings that helps our clients WIN.")}
+                {t("We are strategists that utlize new-aged technology to solve real-world problems.")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -28,7 +28,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("What is DECENTMED?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("We are a video education platform showcasing holistic medicine via Telehealth, a global Apothecary and decentralized technology to publicize provider studies and help obtain funding for their work.")}
+                 {t("We are a holistic medicine information portal that connects patients with providers.")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -38,7 +38,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("What is your core mission statement?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-               {t("The Merlin Group is personally and professionally invested in the re-emergence of revolutionary therapies.")}
+               {t("The Merlin Group World is personally and professionally invested in the re-emergence of revolutionary therapies.")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -48,13 +48,13 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("Who is DECENTMED made for?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("- Holistic providers")}
+                 {t("- Providers looking for more patients")}
               </Card.Text>
               <Card.Text>
                 {t("- Those who do not have health insurance")}
               </Card.Text>
               <Card.Text>
-               {t("- People who would like to try holistic medicine")}
+               {t("- Everyone, because Holistic medicine has a far better success rate than conventional")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -65,12 +65,6 @@ const ANS = () => {
             <Card.Body>
               <Card.Text>
                  {t("- Our providers are qualified to help with a multiplicity of ailments like depression, burnout, diabetes, weight loss, and more")}
-              </Card.Text>
-              <Card.Text>
-                {t("- It’s best to schedule an initial consultation, where the practitioner can assess your condition and determine whether their approach is a good fit or if a referral to another type of care is recommended.")}
-              </Card.Text>
-              <Card.Text>
-                {t("- Holistic practitioners consider your whole health picture, including lifestyle, nutrition, emotional well-being, and environment, to create a personalized care plan that complements conventional treatments if needed.")}
               </Card.Text>
             </Card.Body>
           </Card>
