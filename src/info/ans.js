@@ -38,7 +38,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("What is your core mission statement?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-               {t("The Merlin Group World is personally and professionally invested in the re-emergence of revolutionary therapies.")}
+               {t("3some")}
               </Card.Text>
             </Card.Body>
           </Card>
