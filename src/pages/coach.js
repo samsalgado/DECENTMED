@@ -8,6 +8,7 @@ import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
 import Kristina from "../images copy/kristina.png";
 import Priscilla from '../cards/priscilla.jpg';
+import jimp from '../cards/jimp.png';
 import { useTranslation } from 'react-i18next';
 export function Coaching() {
   const { t } = useTranslation('common');
@@ -16,6 +17,7 @@ export function Coaching() {
   const [showResults, setShowResults] = useState(false);
   const [showAnil, setShowAnil] = useState(false);
   const [showJohn, setShowJohn] = useState(false);
+  const [showJim, setShowJim] = useState(false);
   const [showPriscilla, setShowPriscilla] = useState(false);
   const [showKristina, setShowKristina] = useState(false);
   const [showRamona, setShowRamona] = useState(false);
@@ -74,6 +76,7 @@ function CalendlyEmbed({ url, height = 700 }) {
       setShowJohn(true);
       setShowPriscilla(true);
       setShowKristina(true);
+      setShowJim(true);
       setShowRamona(true);
       setShowResults(true);
       setRegionPriority('global');
@@ -105,6 +108,9 @@ function CalendlyEmbed({ url, height = 700 }) {
       'stamford', 'norwalk', 'westport', 'new york', 'ny', 'new jersey', 'nj',
       'tri-state', 'tristate', 'manhattan', 'brooklyn', 'queens', 'bronx'
     ].map(term => term.toLowerCase());
+        const westCoast = [
+          'nevada', 'utah', 'las vegas', 'reno', 'nv', 'sparks', 'golden valley', 'hidden valley', 'chester', 'westwood', 'janesville'
+    ].map(term => term.toLowerCase());
 
     const floridaTerms = [
       'florida', 'fl', 'clermont', 'orlando', 'tampa', 'miami', 'jacksonville',
@@ -118,6 +124,7 @@ function CalendlyEmbed({ url, height = 700 }) {
     const isKenya = kenyaTerms.some(term => lowerCaseLocation.includes(term));
     const isUSA = usaTerms.some(term => lowerCaseLocation.includes(term));
     const isFlorida = floridaTerms.some(term => lowerCaseLocation.includes(term));
+    const isNV = westCoast.some(term => lowerCaseLocation.includes(term));
 
     // Set region priority for ordering
     if (isUK) {
@@ -133,6 +140,7 @@ function CalendlyEmbed({ url, height = 700 }) {
     setShowPriscilla(isKenya || true);
     setShowKristina(isUSA);
     setShowRamona(isFlorida || isUSA);
+    setShowJim(isNV || isUSA);
     setShowResults(true);
   };
 
@@ -186,6 +194,57 @@ function CalendlyEmbed({ url, height = 700 }) {
                           <div className="col-md-12 mt-4">
                             <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
                           </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+  const renderJim = () => (
+    showKristina && (
+      <div className="row mb-4" key="kristina">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={jimp} 
+                    alt="Amazing Life Design" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Amazing Life Design')}</h2>
+                  <p className="text-muted mb-2">{t("Jim Pehkonen, Life Architect")}</p>
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("Reno, NV 89508 United States")}
+                  </p>                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("Cognitive-Behavioral Therapy and Psychology")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Trauma Coaching for Men")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Unlock your True Potential")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Mindfulness")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("jim_bio")}
+                  </p>
+                </div>
+               <div className="col-md-3 text-end">
+                  <a 
+                    href="mailto:jim@amazinglifedesign.com"
+                    className="btn btn-outline-primary"
+                  >
+                    {t("Contact")}
+                  </a>
                 </div>
               </div>
             </div>
@@ -340,7 +399,7 @@ function CalendlyEmbed({ url, height = 700 }) {
   );
 
   const renderJohn = () => (
-    showJohn && (
+    showJim && (
       <div className="row mb-4" key="john">
         <div className="col-md-12">
           <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -484,6 +543,7 @@ function CalendlyEmbed({ url, height = 700 }) {
       coaches.push(renderPriscilla());
       coaches.push(renderKristina());
       coaches.push(renderRamona());
+      coaches.push(renderJim());
     } else if (regionPriority === 'india') {
       // India region: Anil first, then others
       coaches.push(renderAnil());
@@ -498,6 +558,8 @@ function CalendlyEmbed({ url, height = 700 }) {
       coaches.push(renderPriscilla());
       coaches.push(renderJohn());
       coaches.push(renderAnil());
+      coaches.push(renderJim());
+
     }
     
     return coaches.filter(Boolean); // Remove null/undefined entries
