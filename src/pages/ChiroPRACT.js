@@ -114,9 +114,10 @@ const kansasTerms = [
               <div className="search-bar-container" style={{
                 display: 'flex',
                 gap: '10px',
-                maxWidth: '800px',
+                maxWidth: '100%',
                 margin: '0 auto',
-                padding: '0 1rem'
+                padding: '0 1rem',
+                flexWrap: 'wrap'
               }}>
                 <div style={{ flex: '1', position: 'relative' }}>
                   <input
@@ -129,7 +130,7 @@ const kansasTerms = [
                     style={{
                       height: '50px',
                       fontSize: '16px',
-                      width:'200px',
+                      width:'100%',
                       paddingLeft: '40px',
                       border: '2px solid #dee2e6',
                       borderRadius: '6px'
@@ -176,12 +177,12 @@ const kansasTerms = [
                     <div className="card" style={{ border: '1px solid #dee2e6' }}>
                       <div className="card-body">
                         <div className="row">
-                          <div className="col-md-2 text-center">
+                          <div className="col-md-2 col-12 text-center mb-3">
                             <img 
                               src={betterhealthsolutions} 
                               alt="Better Health Solutions" 
                               style={{ 
-                                maxWidth: '100px', 
+                                maxWidth: '100%', 
                                 maxHeight: '100px', 
                                 objectFit: 'contain' 
                               }} 
@@ -346,7 +347,7 @@ const kansasTerms = [
                             <p className="card-text small">
                               {t("Discover comprehensive wellness solutions at Total Care Chiropractic today. Without medications, we treat a range of conditions using chiropractic care, supplements, advanced alternative therapies (like hyperbaric chamber & Emsella®), and more. Dr. Tess Volner is an experienced Doctor of Chiropractic and Natural Medicine, having worked in the field 10 years now & keeping up-to-date with advancements in the fields of chiropractic and natural medicine. Let's enhance your well-being today!")}
                             </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <div>
                             <img 
                               src={process} 
@@ -363,15 +364,29 @@ const kansasTerms = [
                          <div className="col-md-3 text-end">
                             <div>
                             </div>
-<div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
-  <iframe 
-    title="Carepatron Online Booking" 
-    alt="Book appointments online via Carepatron" 
-    width="100%" 
-    height="100%" 
-    src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Teresa?p=J2kttqPqTiCjLVl6UMymig&s=Yh0KM2FQ&e=i" 
-    style={{ border: 0 }}>
-  </iframe>
+<div 
+  style={{ 
+    display: 'grid', 
+    width: '100%', 
+    height: 'auto',
+    minHeight: '400px',
+    maxHeight: '90vh',
+    overflow: 'hidden'
+  }}
+>
+  <iframe
+    title="Carepatron Online Booking"
+    alt="Book appointments online via Carepatron"
+    width="100%"
+    height="100%"
+    src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Teresa?p=J2kttqPqTiCjLVl6UMymig&s=Yh0KM2FQ&e=i"
+    style={{
+      border: 0,
+      width: '100%',
+      height: '100%',
+      minHeight: '400px'
+    }}
+  />
 </div>
                             <br />
                             <a 
