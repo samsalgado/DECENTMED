@@ -4,6 +4,7 @@ import './Info.css';
 import { Button } from'react-bootstrap';
 import Benefits from "./brbenefits";
 import { useTranslation } from "react-i18next";
+import ultt from "../images copy/ultt.png";
 const BREATH = () => {
 const {t} = useTranslation('common')
 
@@ -60,6 +61,9 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
+       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
         <br></br>
         <Benefits />
         </div>

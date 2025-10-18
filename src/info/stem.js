@@ -8,6 +8,7 @@ import whystemcell from '../images copy/whystemcell.png';
 import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg';
 import stembenefits from '../images copy/stembenefits.png';
 import './Info.css';
+import ultt from "../images copy/ultt.png";
 import whystemcellspanish from '../images copy/IMG_9256.jpeg';
 import { Button } from 'react-bootstrap';
 import whystemcelldutch from '../images copy/IMG_9257.jpeg';
@@ -63,6 +64,7 @@ const Stem = () => {
                           {t("Find Providers")}
             </Button>
       </div>
+      
         <iframe
           src="https://drive.google.com/file/d/1ECrjiFNkxNs2RU1EtobXh3AbWFkrmAut/preview"
           title="YouTube video player"
@@ -91,6 +93,9 @@ const Stem = () => {
           }
         }
       `}</style>
+       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
       {/* Flex container for equal width collapsibles */}
       <div className="collapsible-section">
         <div className="title-container">

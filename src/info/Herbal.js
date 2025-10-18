@@ -2,7 +2,7 @@ import React from 'react'
 import "./homeo.css";
 import './Info.css';
 import { Button } from 'react-bootstrap';
-import homeo from '../images copy/meme3.png';
+//import homeo from '../images copy/meme3.png';
 import { useTranslation } from 'react-i18next';
 const Herbal = () => {
 const {t} = useTranslation('common')
@@ -64,8 +64,10 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
-    <img src={homeo} className="HOMEO" alt="logo" />
-<br></br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HADN0rR9ctQ?si=lcH_ZW2hPJk2znuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br></br>
+           <Button className="custom-btn" href="https://theultimatehealthhack.com/" target="_blank">
+          {t("Explore")}
+        </Button>
   </div>
   )
 }

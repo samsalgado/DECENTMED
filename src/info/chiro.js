@@ -1,6 +1,7 @@
 import React from 'react'
 import "./chiro.css";
 import "../App.css";
+import ultt from "../images copy/ultt.png";
 import chiroFR from '../images copy/IMG_9300.jpeg';
 import chiroES from '../images copy/IMG_9301.jpeg';
 import chiroHI from '../images copy/IMG_9303.jpeg';
@@ -106,6 +107,9 @@ const {t} = useTranslation('common')
           </tbody>
         </table>
       </div>
+       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+              <img src={ultt} className='gridimag' alt="quote" />
+              </a>
     </div>
   )
 }

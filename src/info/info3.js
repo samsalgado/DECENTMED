@@ -6,6 +6,7 @@ import './Info.css';
 import Protocols from './Protocols';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { Button } from 'react-bootstrap';
+import ultt from "../images copy/ultt.png";
 const Info3 = () => {
   const { t } = useTranslation("common"); // Access translation function
 
@@ -31,9 +32,10 @@ const Info3 = () => {
           <a href='https://drsebiscellfood.com/'> {t('Dr. Sebi diet')}</a>
           {t('use forms of Detoxification to cleanse the body from toxins that cause cancer.')}
         </p>
-
-        <h2>{t('Detoxification Protocols')}</h2>
-        <div>
+        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+                      <img src={ultt} className="gridimag" alt="quote" />
+                      </a>
+        <div className="gridimag">
           <iframe
             className="rumble"
             src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"

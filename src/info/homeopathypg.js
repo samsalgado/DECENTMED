@@ -3,6 +3,7 @@ import "../App.css";
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
+import ultt from "../images copy/ultt.png";
 const Homeo = () => {
   const { t } = useTranslation('common');
 
@@ -63,6 +64,9 @@ const Homeo = () => {
       `}</style>
         <br />
         <br />
+        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className="TELEa" alt="quote" />
+        </a>
         <img src={quote} className="TELEa" alt="quote" />
         <div className="collapsible">
           {/* Add any collapsible content if needed */}

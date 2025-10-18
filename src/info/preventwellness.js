@@ -3,6 +3,7 @@ import Vitamins from './vitamins';
 import Coachingvids from './coachingvids';
 import './Info.css';
 import "./prevent.css";
+import ultt from "../images copy/ultt.png";
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
 const PreventWellness = () => {
@@ -20,6 +21,9 @@ const PreventWellness = () => {
      </Button>
       <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>
   <Coachingvids />
+   <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+          <img src={ultt} className='gridimag' alt="quote" />
+          </a>
     </div>
   );
 }

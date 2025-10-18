@@ -12,7 +12,6 @@ const CheckOutForm = () => {
   const elements = useElements();
   const [clientSecret, setClientSecret] = useState('');
   const [user, setUser] = useState({ name: '', email: '' });
-  // const [practice, setPractice] = useState('');
   const [amount, setAmount] = useState('');
   const [message, setMessage] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -20,6 +19,7 @@ const CheckOutForm = () => {
   const location = useLocation();
   const navigate = useNavigate();
   console.log(clientSecret);
+  
   // ✅ Custom Axios instance with token header
   const axiosSecure = axios.create({
     baseURL: 'https://decentmed-server.vercel.app',
@@ -93,15 +93,14 @@ const CheckOutForm = () => {
       setMessage('Please enter a valid amount greater than 0 USD.');
       return;
     }
-    // if (amountInUSD < 100) {
-    //   setMessage('The minimum amount for payment is 100 USD.');
-    //   return;
-    // }
 
     setIsProcessing(true);
 
     try {
-      const res = await axiosSecure.post('/create-payment-intent', { price: amountInUSD });
+      // ✅ ONLY FIX: Convert dollars to cents before sending to backend
+      const amountInCents = Math.round(amountInUSD * 100);
+      
+      const res = await axiosSecure.post('/create-payment-intent', { price: amountInCents });
       const fetchedClientSecret = res.data.clientSecret;
 
       if (!fetchedClientSecret || !fetchedClientSecret.includes("_secret_")) {
@@ -130,7 +129,6 @@ const CheckOutForm = () => {
         const payment = {
           name: user.name,
           email: user.email,
-          // practice: practice,
           price: amountInUSD,
           status: paymentIntent.status,
           transaction: paymentIntent.id,
@@ -164,7 +162,6 @@ const CheckOutForm = () => {
       </h2>
 
       <h4>{t('Join the Coalition')}</h4>
-      {/* <p>{t("Initial Payment of $100. Let's change the healthcare industry forever!")}</p> */}
 
       <form className='fields' onSubmit={handleSubmit}>
         <input
@@ -174,14 +171,6 @@ const CheckOutForm = () => {
           onChange={(e) => setUser({ ...user, name: e.target.value })}
           required
         />
-
-        {/* <input
-          type="text"
-          placeholder="Medical Practice"
-          value={practice}
-          onChange={(e) => setPractice(e.target.value)}
-          required
-        /> */}
 
         <input
           style={{
@@ -232,3 +221,5 @@ const CheckOutForm = () => {
 };
 
 export default CheckOutForm;
+
+

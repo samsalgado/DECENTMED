@@ -6,6 +6,7 @@ import Elements from './elements';
 import Principles from './ayurev';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
+import ultt from "../images copy/ultt.png";
 const Ayurvedaa = () => {
   const { t } = useTranslation("common");
   
@@ -33,7 +34,9 @@ const Ayurvedaa = () => {
         height: 'auto'
       }} />
     </div>
-    
+     <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
     <style jsx>{`
       @media (max-width: 768px) {
         .container-bbblue {
