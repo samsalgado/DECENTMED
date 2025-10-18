@@ -70,79 +70,84 @@ function CalendlyEmbed({ url, height = 700 }) {
     }
   }, []);
 
-  const handleSearch = () => {
-    if (!location.trim()) {
-      setShowAnil(true);
-      setShowJohn(true);
-      setShowPriscilla(true);
-      setShowKristina(true);
-      setShowJim(true);
-      setShowRamona(true);
-      setShowResults(true);
-      setRegionPriority('global');
-      return;
-    }
-
-    const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
-
-    const indiaTerms = [
-      'india', 'mumbai', 'delhi', 'bangalore', 'kolkata', 'chennai', 'hyderabad',
-      'pune', 'ahmedabad', 'surat', 'jaipur', 'lucknow', 'kanpur', 'nagpur',
-      'pakistan', 'bangladesh', 'sri lanka', 'nepal', 'bhutan', 'maldives',
-      'afghanistan', 'karachi', 'lahore', 'islamabad', 'dhaka', 'colombo', 'kathmandu'
-    ].map(term => term.toLowerCase());
-
-    const ukTerms = [
-      'uk', 'united kingdom', 'england', 'scotland', 'wales', 'northern ireland',
-      'london', 'manchester', 'birmingham', 'glasgow', 'liverpool', 'edinburgh',
-      'bristol', 'leeds', 'sheffield', 'cardiff', 'belfast', 'britain', 'gb'
-    ].map(term => term.toLowerCase());
-
-    const kenyaTerms = [
-      'kenya', 'nairobi', 'mombasa', 'kisumu', 'nakuru', 'eldoret',
-      'africa', 'east africa', 'uganda', 'tanzania', 'rwanda', 'ethiopia'
-    ].map(term => term.toLowerCase());
-
-    const usaTerms = [
-      'usa', 'united states', 'america', 'us', 'connecticut', 'ct', 'darien',
-      'stamford', 'norwalk', 'westport', 'new york', 'ny', 'new jersey', 'nj',
-      'tri-state', 'tristate', 'manhattan', 'brooklyn', 'queens', 'bronx'
-    ].map(term => term.toLowerCase());
-        const westCoast = [
-          'nevada', 'utah', 'las vegas', 'reno', 'nv', 'sparks', 'golden valley', 'hidden valley', 'chester', 'westwood', 'janesville'
-    ].map(term => term.toLowerCase());
-
-    const floridaTerms = [
-      'florida', 'fl', 'clermont', 'orlando', 'tampa', 'miami', 'jacksonville',
-      'tallahassee', 'gainesville', 'ocala', 'lakeland', 'kissimmee'
-    ].map(term => term.toLowerCase());
-
-    const lowerCaseLocation = capitalizedLocation.toLowerCase();
-
-    const isIndia = indiaTerms.some(term => lowerCaseLocation.includes(term));
-    const isUK = ukTerms.some(term => lowerCaseLocation.includes(term));
-    const isKenya = kenyaTerms.some(term => lowerCaseLocation.includes(term));
-    const isUSA = usaTerms.some(term => lowerCaseLocation.includes(term));
-    const isFlorida = floridaTerms.some(term => lowerCaseLocation.includes(term));
-    const isNV = westCoast.some(term => lowerCaseLocation.includes(term));
-
-    // Set region priority for ordering
-    if (isUK) {
-      setRegionPriority('uk');
-    } else if (isIndia) {
-      setRegionPriority('india');
-    } else {
-      setRegionPriority('global');
-    }
-
-    setShowAnil(isIndia);
-    setShowJohn(isUK || true); 
-    setShowPriscilla(isKenya || true);
-    setShowKristina(isUSA);
-    setShowRamona(isFlorida || isUSA);
-    setShowJim(isNV || isUSA);
+const handleSearch = () => {
+  if (!location.trim()) {
+    setShowAnil(true);
+    setShowJohn(true);
+    setShowPriscilla(true);
+    setShowKristina(true);
+    setShowJim(true);
+    setShowRamona(true);
     setShowResults(true);
-  };
+    setRegionPriority('global');
+    return;
+  }
+
+  const capitalizedLocation = location.replace(/\b\w/g, (char) => char.toUpperCase());
+
+const indiaTerms = [
+    'india', 'mumbai', 'delhi', 'bangalore', 'kolkata', 'chennai', 'hyderabad',
+    'pune', 'ahmedabad', 'surat', 'jaipur', 'lucknow', 'kanpur', 'nagpur',
+    'pakistan', 'bangladesh', 'sri lanka', 'nepal', 'bhutan', 'maldives',
+    'afghanistan', 'karachi', 'lahore', 'islamabad', 'dhaka', 'colombo', 'kathmandu'
+  ].map(term => term.toLowerCase());
+
+  const ukTerms = [
+    'uk', 'united kingdom', 'england', 'scotland', 'wales', 'northern ireland',
+    'london', 'manchester', 'birmingham', 'glasgow', 'liverpool', 'edinburgh',
+    'bristol', 'leeds', 'sheffield', 'cardiff', 'belfast', 'britain', 'gb'
+  ].map(term => term.toLowerCase());
+
+  const kenyaTerms = [
+    'kenya', 'nairobi', 'mombasa', 'kisumu', 'nakuru', 'eldoret',
+    'africa', 'east africa', 'uganda', 'tanzania', 'rwanda', 'ethiopia'
+  ].map(term => term.toLowerCase());
+
+  const usaTerms = [
+    'usa', 'united states', 'america', 'us', 'connecticut', 'ct', 'darien',
+    'stamford', 'norwalk', 'westport', 'new york', 'ny', 'new jersey', 'nj',
+    'tri-state', 'tristate', 'manhattan', 'brooklyn', 'queens', 'bronx'
+  ].map(term => term.toLowerCase());
+
+  const westCoast = [
+    'nevada', 'utah', 'las vegas', 'reno', 'nv', 'sparks', 'golden valley', 'hidden valley', 'chester', 'westwood', 'janesville'
+  ].map(term => term.toLowerCase());
+
+  const floridaTerms = [
+    'florida', 'fl', 'clermont', 'orlando', 'tampa', 'miami', 'jacksonville',
+    'tallahassee', 'gainesville', 'ocala', 'lakeland', 'kissimmee'
+  ].map(term => term.toLowerCase());
+
+  const lowerCaseLocation = capitalizedLocation.toLowerCase();
+
+  const isIndia = indiaTerms.some(term => lowerCaseLocation.includes(term));
+  const isUK = ukTerms.some(term => lowerCaseLocation.includes(term));
+  const isKenya = kenyaTerms.some(term => lowerCaseLocation.includes(term));
+  const isUSA = usaTerms.some(term => lowerCaseLocation.includes(term));
+  const isFlorida = floridaTerms.some(term => lowerCaseLocation.includes(term));
+  const isNV = westCoast.some(term => lowerCaseLocation.includes(term));
+
+  // Set region priority for ordering
+  if (isNV) {
+    setRegionPriority('nv'); // Nevada gets Jim first
+  } else if (isUSA || isFlorida) {
+    setRegionPriority('usa'); // USA gets Kristina first
+  } else if (isUK) {
+    setRegionPriority('uk');
+  } else if (isIndia) {
+    setRegionPriority('india');
+  } else {
+    setRegionPriority('global');
+  }
+
+  setShowAnil(isIndia);
+  setShowJohn(true); // Always show John
+  setShowPriscilla(true); // Always show Priscilla
+  setShowKristina(isUSA || isFlorida); // Show for any USA location
+  setShowRamona(isFlorida || isUSA);
+  setShowJim(isNV || isUSA);
+  setShowResults(true);
+};
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -203,7 +208,7 @@ function CalendlyEmbed({ url, height = 700 }) {
     )
   );
   const renderJim = () => (
-    showKristina && (
+    showJim && (
       <div className="row mb-4" key="kristina">
         <div className="col-md-12">
           <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -399,7 +404,7 @@ function CalendlyEmbed({ url, height = 700 }) {
   );
 
   const renderJohn = () => (
-    showJim && (
+    showJohn && (
       <div className="row mb-4" key="john">
         <div className="col-md-12">
           <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -533,38 +538,53 @@ function CalendlyEmbed({ url, height = 700 }) {
   );
 
   // Function to render coaches in priority order
-  const renderCoachesInOrder = () => {
-    const coaches = [];
-    
-    if (regionPriority === 'uk') {
-      // UK region: John first, then others
-      coaches.push(renderJohn());
-      coaches.push(renderAnil());
-      coaches.push(renderPriscilla());
-      coaches.push(renderKristina());
-      coaches.push(renderRamona());
-      coaches.push(renderJim());
-    } else if (regionPriority === 'india') {
-      // India region: Anil first, then others
-      coaches.push(renderAnil());
-      coaches.push(renderJohn());
-      coaches.push(renderPriscilla());
-      coaches.push(renderKristina());
-      coaches.push(renderRamona());
-    } else {
-      // Global/default order: Priscilla and John always shown, others as per original logic
-      coaches.push(renderKristina());
-      coaches.push(renderRamona());
-      coaches.push(renderPriscilla());
-      coaches.push(renderJohn());
-      coaches.push(renderAnil());
-      coaches.push(renderJim());
-
-    }
-    
-    return coaches.filter(Boolean); // Remove null/undefined entries
-  };
-
+const renderCoachesInOrder = () => {
+  const coaches = [];
+  
+  if (regionPriority === 'nv') {
+    // Nevada: Jim first, then others
+    coaches.push(renderJim());
+    coaches.push(renderKristina());
+    coaches.push(renderRamona());
+    coaches.push(renderJohn());
+    coaches.push(renderPriscilla());
+    coaches.push(renderAnil());
+  } else if (regionPriority === 'usa') {
+    // USA (non-Nevada): Kristina first
+    coaches.push(renderKristina());
+    coaches.push(renderRamona());
+    coaches.push(renderJim());
+    coaches.push(renderJohn());
+    coaches.push(renderPriscilla());
+    coaches.push(renderAnil());
+  } else if (regionPriority === 'uk') {
+    // UK region: John first, then others
+    coaches.push(renderJohn());
+    coaches.push(renderPriscilla());
+    coaches.push(renderAnil());
+    coaches.push(renderKristina());
+    coaches.push(renderRamona());
+    coaches.push(renderJim());
+  } else if (regionPriority === 'india') {
+    // India region: Anil first, then others
+    coaches.push(renderAnil());
+    coaches.push(renderJohn());
+    coaches.push(renderPriscilla());
+    coaches.push(renderKristina());
+    coaches.push(renderRamona());
+    coaches.push(renderJim());
+  } else {
+    // Global/default order
+    coaches.push(renderJohn());
+    coaches.push(renderPriscilla());
+    coaches.push(renderKristina());
+    coaches.push(renderRamona());
+    coaches.push(renderAnil());
+    coaches.push(renderJim());
+  }
+  
+  return coaches.filter(Boolean); // Remove null/undefined entries
+};
   return (
     <div>
       <main className="page-content">
