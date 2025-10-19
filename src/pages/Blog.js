@@ -7,6 +7,7 @@ import sleep from "../images copy/nutrifysleep.png";
 import Footer from '../footer';
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
+import sumac from "../images copy/sumac.png";
 import ramona from "../images copy/ramona.jpeg";
 import lions from "../images copy/lions.png";
 import ak from "../images copy/1753114292278.jpeg";
@@ -548,6 +549,22 @@ const { t } = useTranslation("common");
     <a href='https://www.tcnh-stl.com/cuppingblog'>
     <figure>
         <img className='gridimag' src={cup} alt="logo" />
+          <figcaption>{t('Click on image for full Blog')}</figcaption>
+        </figure>
+      </a>
+      </div>
+        </div>
+        </div>
+          <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h2 style={{textDecoration:'underline', textAlign: 'center', margin: '20px 0' }}>{t('What is Sumac?')}</h2>
+    <div className='pr'>
+        <p>
+        {t(`Sumac is a healing spice for burning fats and eliminating free radicals.`)} 
+        </p>
+        <div className='container'>
+    <a href='https://stress-management-experts.com/sumac-is-a-healing-spice-for-burning-fats-and-eliminating-free-radicals/'>
+    <figure>
+        <img className='gridimag' src={sumac} alt="logo" />
           <figcaption>{t('Click on image for full Blog')}</figcaption>
         </figure>
       </a>
