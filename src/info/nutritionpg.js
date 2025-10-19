@@ -4,7 +4,7 @@ import Collapsible from 'react-collapsible';
 import obese from '../images copy/obese.png';
 import labs from '../images copy/8.jpg';
 import brain from '../images copy/9.jpg';
-import ultt from "../images copy/ultt.png";
+//import ultt from "../images copy/ultt.png";
 import './Info.css';
 import NutritionVids from '../info/nutritionvids';
 import { Button } from 'react-bootstrap';
@@ -228,9 +228,7 @@ const Nutritionpage = () => {
           </tbody>
         </table>
       </div>
-       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+     
     </div>
   );
 }

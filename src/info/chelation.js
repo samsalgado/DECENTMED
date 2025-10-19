@@ -26,9 +26,7 @@ const Pgchelation = () => {
                 {t("Find Providers")}
               </Button>
             </div>
-             <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+      
 
       <div className="title-container">
 
@@ -52,6 +50,9 @@ const Pgchelation = () => {
           </tbody>
         </table>
       </div>
+       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
     </div>
   );
 }

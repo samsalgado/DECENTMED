@@ -34,9 +34,7 @@ const Ayurvedaa = () => {
         height: 'auto'
       }} />
     </div>
-     <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+  
     <style jsx>{`
       @media (max-width: 768px) {
         .container-bbblue {
@@ -110,6 +108,9 @@ const Ayurvedaa = () => {
     }}
   />
 </div>
+ <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
     </div>
   );
 }

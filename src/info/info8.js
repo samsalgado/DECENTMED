@@ -3,7 +3,6 @@ import './acu.css';
 import './Info.css';
 import { Button } from'react-bootstrap';
 import Benefits from "./akbenefits";
-import ultt from "../images copy/ultt.png";
 import { useTranslation } from "react-i18next";
 const Info8 = () => {
 const {t} = useTranslation('common')
@@ -59,9 +58,6 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
-       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
         <br></br>
         <Benefits />
         </div>

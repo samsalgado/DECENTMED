@@ -93,9 +93,7 @@ const Stem = () => {
           }
         }
       `}</style>
-       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+    
       {/* Flex container for equal width collapsibles */}
       <div className="collapsible-section">
         <div className="title-container">
@@ -169,6 +167,9 @@ const Stem = () => {
           </table>
         </div>
       </div>
+        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className="TELEa" alt="quote" />
+        </a>
     </div>
   );
 }

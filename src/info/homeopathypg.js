@@ -64,13 +64,12 @@ const Homeo = () => {
       `}</style>
         <br />
         <br />
-        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className="TELEa" alt="quote" />
-        </a>
         <img src={quote} className="TELEa" alt="quote" />
         <div className="collapsible">
-          {/* Add any collapsible content if needed */}
         </div>
+          <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className="TELEa" alt="quote" />
+        </a>
       </div>
 
   );

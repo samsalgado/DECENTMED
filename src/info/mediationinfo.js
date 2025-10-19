@@ -3,7 +3,7 @@ import "../App.css";
 import './Info.css';
 import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import ultt from "../images copy/ultt.png";
+//import ultt from "../images copy/ultt.png";
 const MeditationInfo = () => {
   const { t } = useTranslation("common");
 
@@ -25,9 +25,7 @@ const MeditationInfo = () => {
         <h2>{t('Understanding Meditation')}</h2>
         <p>{t('Meditation encompasses a variety of practices designed to promote focused attention and heightened awareness. Techniques may include mindfulness, breath awareness, and visualization, among others. Regardless of the approach, the core aim remains the same: to cultivate a state of inner calm and clarity.')}</p>
       </div>
- <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+
     </div>
   );
 }

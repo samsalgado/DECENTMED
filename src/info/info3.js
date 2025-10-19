@@ -32,9 +32,6 @@ const Info3 = () => {
           <a href='https://drsebiscellfood.com/'> {t('Dr. Sebi diet')}</a>
           {t('use forms of Detoxification to cleanse the body from toxins that cause cancer.')}
         </p>
-        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-                      <img src={ultt} className="gridimag" alt="quote" />
-                      </a>
         <div className="gridimag">
           <iframe
             className="rumble"
@@ -49,7 +46,9 @@ const Info3 = () => {
       <div className="title-container">
         <Protocols />
       </div>
-
+        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+                      <img src={ultt} className="gridimag" alt="quote" />
+        </a>
     </div>
   );
 }

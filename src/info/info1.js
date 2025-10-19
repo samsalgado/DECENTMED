@@ -185,11 +185,12 @@ const Info1 = () => {
     }
   `}</style>
 </Collapsible>
-   <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+
       <Acuvids />
       <Channel />
+         <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
     </div>
   );
 }

@@ -134,7 +134,10 @@ const indiaTerms = [
     setRegionPriority('usa'); // USA gets Kristina first
   } else if (isUK) {
     setRegionPriority('uk');
-  } else if (isIndia) {
+  } else if (isKenya) {
+    setRegionPriority('kenya')
+  }
+  else if (isIndia) {
     setRegionPriority('india');
   } else {
     setRegionPriority('global');
