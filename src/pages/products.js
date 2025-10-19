@@ -21,12 +21,13 @@ const { t } = useTranslation('common');
             </header>
 
             <div className="container">
-            <h1>{t("Products We Trust")}</h1>
+            <h1>{t("Holistic Medicine Books and Related Products")}</h1>
  <div className="row">
     <div className="col-md-4">
     </div>
   </div>
   <div className="row">
+
     <div className="col-md-6">
       <h2>{t("Solve your Out of Control Eating")}</h2>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>

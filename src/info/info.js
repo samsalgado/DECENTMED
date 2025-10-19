@@ -29,11 +29,14 @@ const Info = () => {
       </div>
 
 
-      <h2>{t('Why Us?')}</h2>
+      <h2>{t('Holistic Medicine near Me')}</h2>
       <div className='pr'>
         <h3>{t('Monetization of Medicine')}</h3>
         <p>
-          {t(`Why is there no cure for cancer? Why is obesity and prescription overdose only getting worse? Is profit worth life? Promoting wellness begins with education. The current system monetizes medicine, conversely, treatments deemed alternatives, are cheaper and heavily used in the healthiest nations in the world. The body has an immense regenerative potential to heal itself, but when fighting itself, it's hard for the body to heal itself. Prevention is the initial step, eating a diet high in fruits and vegetables provides the essential antioxidants and nutrients to prevent disease. Pairing a 'green' diet with exercise goes a long way in preventing a trip to the doctor.`)}
+          {t(`Why is there no cure for cancer? Why is obesity and prescription overdose only getting worse? Is profit worth life? Promoting wellness begins with education. The current system monetizes medicine, conversely, treatments deemed alternatives, are cheaper and heavily used in the healthiest nations in the world. The body has an immense regenerative potential to heal itself, but when fighting itself, it's hard for the body to heal itself. Prevention is the initial step in fighting disease.`)}
+        </p>
+        <p>
+          {t("Holistic")}
         </p>
         <p>
           {t(`A detox cleanses the body. A water detox is a way to flush out the body's toxins. A water detox ranges from 1-3 days and restores the cells into ketosis. Furthermore, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.`)}
