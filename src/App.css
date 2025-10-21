@@ -7,27 +7,36 @@
 h1 {
   font-family: sans-serif;
   font-size: 2.5rem;
-  color:"black";  margin-bottom: 1rem;
+  color: "black";
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-family: sans-serif;
   font-size: 2rem;
-  color:"black";  margin-bottom: 1rem;
+  color: "black";
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-family: sans-serif;
   font-size: 1.5rem;
-  color:"black";  margin-bottom: 0.75rem;
+  color: "black";
+  margin-bottom: 0.75rem;
 }
 .App {
   text-align: center;
 }
 /* Fade-in animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .App {
@@ -40,7 +49,8 @@ h3 {
   position: relative;
 }
 /* Smooth hover effect for links or buttons */
-button, a {
+button,
+a {
   transition: all 0.3s ease;
 }
 @keyframes topbarEntrance {
@@ -76,7 +86,8 @@ button, a {
   z-index: 1000;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -90,7 +101,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -354,7 +364,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.box-container{
+.box-container {
   margin: 20px auto;
   width: 100%;
   max-width: 70%;
@@ -541,8 +551,6 @@ body {
   }
 }
 
-
-
 /* .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -680,7 +688,7 @@ body {
 .grid-image {
   max-width: 100%; /* Adjust width based on column count */
   height: 70px; /* Set image height */
-   /* object-fit: cover; */
+  /* object-fit: cover; */
   margin: 0px;
   top: 20px;
 }
@@ -706,21 +714,21 @@ body {
   margin: auto;
   /* Add other styles like border, etc. */
 }
-.acupen{
-width: 100%;
-margin: 30px;
+.acupen {
+  width: 100%;
+  margin: 30px;
 }
 .gridmag {
   /* Set a consistent width for all images */
   width: 100%; /* Adjust width as desired */
-  height:500px;
+  height: 500px;
   margin-top: 10px;
-padding: 0, 20px;
+  padding: 0, 20px;
 }
 
-.book{
-width: 100%;
-height: 600px;
+.book {
+  width: 100%;
+  height: 600px;
 }
 
 .lemon-image {
@@ -734,7 +742,6 @@ height: 600px;
   width: 100px; /* Adjust size as needed for mobile */
   height: auto;
 }
-
 
 .Logo {
   align-items: left;
@@ -947,8 +954,31 @@ select {
   margin: 0 auto; /* Remove margin for better mobile spacing */
   width: 100%; /* Use full viewport width */
 }
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile এ 1 column */
+  gap: 20px; /* column এর মাঝে ফাঁকা */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* medium device (tablet) থেকে শুরু */
+@media (min-width: 768px) {
+  .container-blog {
+    grid-template-columns: 1fr 1fr; /* 2 column */
+  }
+}
+
+/* large device (desktop) */
+@media (min-width: 1024px) {
+  .container-blog {
+    grid-template-columns: 1fr 1fr; /* 2 column */
+  }
+}
+
 .video-container {
-    width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 /* Video container for responsiveness */
@@ -1653,114 +1683,113 @@ td:last-child {
   .mobile-optimized {
     padding: 8px 12px;
   }
-  
+
   .mobile-title {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
-  
-/* Scarlett De Email Form */
-.contact-form {
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 30px 25px;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
-}
 
-.contact-form div {
-  margin-bottom: 18px;
-}
-
-.contact-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #222;
-}
-
-.contact-form input {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-  box-sizing: border-box;
-}
-
-.contact-form input:focus {
-  outline: none;
-  border-color: #0066ff;
-  box-shadow: 0 0 5px rgba(0, 102, 255, 0.2);
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 14px;
-  background-color: #0066ff;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #004bcc;
-}
-
-.contact-form p {
-  margin-top: 15px;
-  font-size: 14px;
-  color: green;
-  text-align: center;
-}
-
-.scarle{
-font-size: 25px;
-font-weight: 600;
-padding-left: 15px;
-}
-
-@media screen and (max-width: 768px) {
+  /* Scarlett De Email Form */
   .contact-form {
-    padding: 20px 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
   }
-}
 
-@media screen and (min-width: 992px) {
-  .contact-form {
-    padding: 35px 40px;
-    max-width: 600px;
+  .contact-form div {
+    margin-bottom: 18px;
   }
-}
 
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+  }
+
+  .contact-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+
+  .contact-form input:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 5px rgba(0, 102, 255, 0.2);
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0066ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #004bcc;
+  }
+
+  .contact-form p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+  }
+
+  .scarle {
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      padding: 20px 15px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .contact-form {
+      padding: 35px 40px;
+      max-width: 600px;
+    }
+  }
 
   .mobile-container {
     padding: 12px;
   }
-  
+
   .mobile-text {
     font-size: 0.95rem;
     text-align: left;
   }
-  
+
   .mobile-subtitle {
     font-size: 1.2rem;
     margin: 20px 0 12px 0;
   }
-  
+
   .mobile-button {
     font-size: 1rem;
     padding: 10px 20px;
   }
-  
+
   .video-container iframe {
     height: 250px;
   }
@@ -1828,10 +1857,10 @@ padding-left: 15px;
   text-align: center;
 }
 
-.scarle{
-font-size: 25px;
-font-weight: 600;
-padding-left: 15px;
+.scarle {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 15px;
 }
 
 @media screen and (max-width: 768px) {
