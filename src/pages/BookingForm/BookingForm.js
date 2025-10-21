@@ -228,7 +228,7 @@
 // }
 
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 
 export default function BookingForm({ token }) {
@@ -241,15 +241,15 @@ console.log("TOKEN:43434", token);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  const config = { headers: { Authorization: `Bearer ${token}` } };
-
+const config = useMemo(() => ({
+    headers: { Authorization: `Bearer ${token}` } 
+}), [token]);
   // Fetch providers
-  useEffect(() => {
+useEffect(() => {
     axios.get("http://localhost:5000/api/providers", config)
-      .then(res => setProviders(res.data))
-      .catch(err => console.log(err));
-  }, []);
-
+        .then(res => setProviders(res.data))
+        .catch(err => console.log(err));
+}, [config]); // ✅ Only re-runs when 'token' (via 'config') changes.
   // Fetch slots when provider changes
   useEffect(() => {
     if (!selectedProvider) {

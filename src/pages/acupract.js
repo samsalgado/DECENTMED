@@ -188,24 +188,28 @@ const { t } = useTranslation('common');
                             
                             <div className="mb-2">
                               <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Stress Managment")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Stress Management")}</span>
                               <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
                             </div>
-                            
                             <p className="card-text small">
-                              {t("At Ocean Treis Medical, we provide expert acupuncture treatments designed to relieve stress, reduce anxiety, and restore balance. Our holistic approach goes beyond temporary relief—helping you achieve lasting calm, better sleep, improved digestion, and overall well-being. Think of it as a reset button for your mind and body, so you can feel more grounded, energized, and at ease in your daily life. Aside from burnout, Ocean Treis has fascial acupuncture. Fascial Acupuncture has many benefits, like reducing wrinkles and looking young. If you are in Tampa, search fascial acupuncture near me.")}
+                              {t("text")}
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
-                            <a 
-                              href='https://oceantreismedical.acubliss.app/portal/booking/nettie-criscio/bradenton/' 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Book Appointment")}
-                            </a>
-                          </div>
+                            <div className="col-md-3 text-end">
+                            <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
+                              <iframe 
+                                title={t("Carepatron Online Booking")} 
+                                alt={t("Book appointments online via Carepatron")} 
+                                width="100%" 
+                                height="100%" 
+                                src="https://book.carepatron.com/Ocean-Treis-Medical/Dr--Nettie?p=.MG7pzmtQCi.vG7CRJViDA&s=mjaA41Jt&e=i" 
+                                style={{ border: 0 }}
+                              />
+                            </div>
+                        </div>
+                      </div>
+                         
                         </div>
                       </div>
                     </div>
@@ -214,7 +218,7 @@ const { t } = useTranslation('common');
               </>
             ) : isMilwaukeeLocation ? (
               <>
-                <h2 className="mb-4">{t("Acupuncturists in")} {location}</h2>
+                <h2 className="mb-4">{t("Acupuncturists in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
                 {/* Milwaukee Acupuncturist Listing */}
                 <div className="row mb-4">
@@ -274,7 +278,7 @@ const { t } = useTranslation('common');
                           </div>
                           <div className="col-md-3 text-end">
                           <a 
-                              href='https://arightpath.com/bookanappointment/' 
+                              href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPK2rLwi2wW2Hcqnt45ru7xeMoXQ+UT3hcGgeFxwrNLxGas3EMbzye4U2WX/rwf9IYZDynb6+Fown6mYs0Nsk2BpT/NOiWu3gMIcjcx54KqTH4KyXa+URS5nvKy0AYp2ZueRDkn+eBaJi7meUvXLTDXuq6vGXcmPbRvasfHZGyLLi3eTPR9LgIPuOV4rK6W8Mya2KAv2FiUoQp1+s5fGqk7Y6y9hJHqSoM/MbpsZgQNkcbKgYpo1kmmLazM4XJ0T8yemk74007Ie4gqUguNOUYnQSWCu0K0dQ82ppPe7skL2I6ONF41SWIDf0BZzllZwb9PdAonfaRTwO9vxqKxZgGnyeREkAacIaUiHXeIo3euKsuPqhY41zH7o61bax3lThDNWgkwyPDFc5MvnIyiJvy4=' 
                               className="btn btn-outline-primary"
                               target="_blank" 
                               rel="noopener noreferrer"
@@ -299,7 +303,7 @@ const { t } = useTranslation('common');
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h3>{t("No acupuncturists available in")} {location}</h3>
+                  <h3>{t("No acupuncturists available in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h3>
                   <p className="text-muted">
                     {t("We currently don't have any acupuncturists listed in your area. Our services are currently available in Tampa, FL and Milwaukee, WI.")}
                   </p>

@@ -1,15 +1,15 @@
 import React from 'react';
 import Components from './components';
 import './Info7.css';
-import Services from './services';
 import { useTranslation } from 'react-i18next';
 
 const Info7 = () => {
   const { t } = useTranslation("common");
 
   return (
+    
     <div className='container'>
-      
+
       <div className="title-container">
    
       </div>
@@ -17,11 +17,7 @@ const Info7 = () => {
         <h1 className="text-center mb-4">{t('Components')}</h1>        
         <Components />
       </div>
-      <br />
-      <div className="collapsible">
-        <h1 className="text-center mb-4">{t('Additional Services')}</h1>        
-        <Services />
-      </div>
+      
       <div className='parc'>
         <h2 style={{ textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif'}}>{t('Attention Holistic Practitioners')}</h2>
         <p>

@@ -1,10 +1,13 @@
 import React from 'react'
 import "./chiro.css";
 import "../App.css";
+import ultt from "../images copy/ultt.png";
 import chiroFR from '../images copy/IMG_9300.jpeg';
 import chiroES from '../images copy/IMG_9301.jpeg';
 import chiroHI from '../images copy/IMG_9303.jpeg';
 import chiroNL from '../images copy/IMG_9311.jpeg';
+import reviewtcc from "../images copy/reviewtcc.png";
+import tcc from "../images copy/tcc.png";
 import Collapsible from 'react-collapsible';
 import stats from '../images copy/stats.jpg';
 import {Button} from 'react-bootstrap';
@@ -31,7 +34,7 @@ const {t} = useTranslation('common')
           {t('An estimated 65% of American adults seek care for neck or back pain in their lifetime. Extrapolating that figure, 36% of Americans do not know if surgery is effective for their pain. Chiropractic care is 40% (estimate) more effective for treating back pain. Chiropractors remove neurological interference and restore proper biomechanics to the spine. Moreover, chiropractic care supports the immune system, improves sleep, improves behavior, improves brain development, and benefits development in both adults and children.' )}
         </p>
       <br></br>
-      <Button className="custom-btn" href="https://themerlingroupworld.com/chiropract" target="_blank">
+      <Button className="custom-btn" href="https://decentmed.org/chiropract" target="_blank">
                 {t("Get Chiropractic Care")}
             </Button>
       </div>
@@ -58,6 +61,37 @@ const {t} = useTranslation('common')
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>
+            <Collapsible trigger={<th className="collapsible-trigger">{t('Kansas City Chiropractic')}</th>}>
+  <div className="row">
+    <div className="col-12 col-md-6 mb-3">
+      <img src={tcc} alt="Acupuncture Tampa" style={{
+        width: '100%',
+        maxWidth: '550px',
+        height: 'auto',
+        objectFit: 'contain'
+      }} />
+    </div>
+    <div className="col-12 col-md-6 mb-3">
+      <img src={reviewtcc} alt="Acupuncture Tampa" style={{
+        width: '100%',
+        maxWidth: '550px',
+        height: 'auto',
+        objectFit: 'contain'
+      }} />
+    </div>
+  </div>
+
+  <style jsx>{`
+    @media (max-width: 768px) {
+      .row > div {
+        text-align: center;
+      }
+      .row img {
+        max-width: 350px !important;
+      }
+    }
+  `}</style>
+</Collapsible>
             <Collapsible trigger={<th className="collapsible-trigger">{t('Chiropractic Benefits')}</th>}>
               <tr className="image-contain">
                 <img alt='' />
@@ -73,6 +107,9 @@ const {t} = useTranslation('common')
           </tbody>
         </table>
       </div>
+       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+              <img src={ultt} className='gridimag' alt="quote" />
+              </a>
     </div>
   )
 }

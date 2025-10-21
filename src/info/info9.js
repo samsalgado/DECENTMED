@@ -25,16 +25,18 @@ const {t} = useTranslation('common')
         <div className='content-wrapper' style={{
           flex: '1'
         }}>
-         
           <p className="pr"><h2>{t("Mindset Coaching")}</h2></p>
           <p className='pr'>{t("A mindset coach helps you with getting a deeper understanding of who you really are. Try a mindset coach that can help you learn the science of achievement and the science of the mind so that you can create change at the root cause which lasts.")}</p>
-        <Button className="custom-btn" href="https://themerlingroupworld.com/coaching" target="_blank">
+          <p className="pr">{t("I’m Priscilla, a mindset coach passionate about helping individuals and entrepreneurs understand the transformative power of their mindset and how it directly impacts their results in all areas of their life so they can create their lives by design.")}</p>
+          <p className="pr">{t("boy")}</p>
+          <p className="pr">{t("paulette")}</p>
+        <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
          {t("Try Coaching")}
         </Button>        
         </div>
         <iframe
           className="centered-video"
-          src="https://www.youtube.com/embed/Nn_mUgp2v20"
+          src="https://www.youtube.com/embed/ya7yJQAjhi8?si=bDZPQpX5ROFThuv1"
           frameBorder="0"
           allowFullScreen
           title="YouTube video player"

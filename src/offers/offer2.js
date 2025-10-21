@@ -36,7 +36,6 @@ const Offer2 = () => {
   };
 
   return (
-    <div className="container">
       <div className='box'>
         <CookiesProvider>
           <div>
@@ -50,7 +49,6 @@ const Offer2 = () => {
           }} variant="contained" onClick={handleClickOpen}>{t('add cart')}</Button>
         </CookiesProvider>
       </div>
-    </div>
   );
 
 };

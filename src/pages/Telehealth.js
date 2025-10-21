@@ -26,7 +26,7 @@ export function Telehealth() {
             <div className='video-container'>
                 <iframe
                     height='315'
-                    src="https://drive.google.com/file/d/1BbqYd5A6pyfC7YjvwzvOeYoQblqIe2yj/preview"
+                    src="https://www.youtube.com/embed/V2u8gx0a9-s?si=FMQPby5v5xpQcGWi"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

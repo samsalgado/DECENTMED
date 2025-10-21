@@ -9,6 +9,8 @@ import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
 import MassPract from './pages/Mass';
+import { Trauma } from './pages/Trauma';
+import { PTSD } from './pages/PTSD';
 import { Nutrigenomics } from './pages/Nutrigenomics';
 import Blog5 from './pages/blogs/blog5';
 import Bitcoin from './pages/blogs/bitcoin';
@@ -94,8 +96,10 @@ function App() {
         <Route path="/naturopathylane" element={<Mike t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+        <Route path="/ptsd" element={<PTSD t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
+        <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />

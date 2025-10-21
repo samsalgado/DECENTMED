@@ -3,8 +3,10 @@ import "../App.css";
 import './Info.css';
 import ayurveda from "../images copy/ayurveda-science.png";
 import Elements from './elements';
+import Principles from './ayurev';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
+import ultt from "../images copy/ultt.png";
 const Ayurvedaa = () => {
   const { t } = useTranslation("common");
   
@@ -22,7 +24,7 @@ const Ayurvedaa = () => {
       }}>
         <p className='pr'>{t("Ayurveda, an ancient healing system, offers a holistic approach to wellness by balancing the body, mind, and spirit through natural remedies and personalized treatments. Unlike conventional medicine, Ayurveda focuses on preventing illness rather than just treating symptoms, using herbs, diet, and lifestyle adjustments tailored to each individual's constitution. Patients seeking gentle, long-term healing often turn to Ayurveda for its ability to address root causes rather than temporary relief.")}</p>
         <br></br>
-        <Button className="custom-btn" href="https://themerlingroupworld.com/ayurvedicmedicine" target="_blank">
+        <Button className="custom-btn" href="https://decentmed.org/ayurvedicmedicine" target="_blank">
           {t("Experience Ayurveda")}
         </Button>
       </div>
@@ -32,7 +34,7 @@ const Ayurvedaa = () => {
         height: 'auto'
       }} />
     </div>
-    
+  
     <style jsx>{`
       @media (max-width: 768px) {
         .container-bbblue {
@@ -51,6 +53,7 @@ const Ayurvedaa = () => {
    <br></br>
    <br></br>
       <div className="collapsible">
+        <Principles />
         <Elements />
         <br></br>
         <iframe width="100%" height={550} src="https://drive.google.com/file/d/1fFqRB-Z-QIq6t3DSjkBmvkXjBddLsnOG/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -79,7 +82,7 @@ const Ayurvedaa = () => {
   <p style={{textAlign: "left"}}>{t('3. Focuses on prevention and the root cause of illness')}</p>
   <p style={{textAlign: "left"}}>{t('4. Truly intuitive')}</p>
 </div>
-        <Button className="custom-btn" href="https://themerlingroupworld.com/ayurvedicmedicine" target="_blank">
+        <Button className="custom-btn" href="https://decentmed.org/ayurvedicmedicine" target="_blank">
                 {t("Experience Ayurveda")}
         </Button>
       </div>
@@ -105,6 +108,9 @@ const Ayurvedaa = () => {
     }}
   />
 </div>
+ <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='gridimag' alt="quote" />
+        </a>
     </div>
   );
 }

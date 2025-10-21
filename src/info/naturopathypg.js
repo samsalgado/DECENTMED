@@ -1,11 +1,13 @@
 import React from 'react';
 import "./homeo.css";
 import './Info.css';
+import totalcare from '../images copy/totalcare.png';
 import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import NatStudy from './naturopathystudy';
 import { Button } from 'react-bootstrap';
+import ultt from "../images copy/ultt.png";
 const Naturo = () => {
   const { t } = useTranslation('common');
   return (
@@ -28,7 +30,7 @@ const Naturo = () => {
         }}>
           <h3>{t("Homeopathy vs Naturopathy")}</h3>
       <p>{t("Homeopathy is based on the principle of like cures like, meaning that a substance that causes symptoms in a healthy person can be used in highly diluted form to treat similar symptoms in someone who is ill. Conversely, Naturopathy is a holistic approach to healthcare that emphasizes the body's innate ability to heal itself using natural therapies and lifestyle changes. It aims to address the root cause of illness rather than just managing symptoms. Prescription overdose is expected to exceed 80,000 in 2025 according to the CDC, opting for naturopathic medicine is safer and more effective.")}</p>
-      <Button className="custom-btn" href="https://themerlingroupworld.com/naturopathicproviders" target="_blank">
+      <Button className="custom-btn" href="https://decentmed.org/naturopathicproviders" target="_blank">
                 {t("Try Naturopathy")}
             </Button>
       </div>
@@ -62,13 +64,20 @@ const Naturo = () => {
           }
         }
       `}</style>
+       <a href="https://www.totalcarehealthsolutions.com/" target="_blank" rel="noopener noreferrer">
+                  <img className='gridimag' src={totalcare} alt='oceantreis' />
+                </a> 
         <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
         <NatStudy />
         </Collapsible>
+        
         <br></br>
         <a href="https://meridianpassagewellness.com" target="_blank" rel="noopener noreferrer">
         <br></br>
         <img src={naturopathy} className="TELEa" alt="quote" />
+        </a>
+         <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className='TELEa' alt="quote" />
         </a>
       </div>
   );

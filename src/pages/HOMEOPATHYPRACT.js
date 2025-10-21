@@ -4,10 +4,8 @@ import { Helmet } from 'react-helmet';
 import "../info/Info.css";
 import Topbar from './topbar';
 import Footer from '../footer';
-import Lotus from '../cards/lotus.png';
 import svet from "../cards/svetoslav.png";
 import { useTranslation } from 'react-i18next';
-
 export function HomeopathyPract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -66,12 +64,13 @@ export function HomeopathyPract() {
         }}>
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h1>{t("Homeopathy")}</h1>
+              <h1 style={{textAlign:'center'}}>{t("Homeopathy")}</h1>
               <p>{t("Whether you're searching for homeopathy near to me​ our featured practitioners offer both in-person and virtual homeopathic services.")}</p>
               <div className="search-bar-container" style={{
                 display: 'flex',
                 gap: '10px',
                 maxWidth: '800px',
+                textAlign:"center",
                 margin: '0 auto',
                 padding: '0 1rem'
               }}>
@@ -161,7 +160,7 @@ export function HomeopathyPract() {
                         </div>
                         <div className="col-md-3 text-end">
                           <a 
-                            href='https://richesofhealth.com' 
+                            href='https://www.richesofhealth.co.za/distant-consultation.php' 
                             className="btn btn-outline-primary mb-2"
                             target="_blank" 
                             rel="noopener noreferrer"
@@ -195,55 +194,7 @@ export function HomeopathyPract() {
                 </div>
               </div>
 
-              {/* Second Practitioner - Kelechi Obasi */}
-              <div className="row mb-4">
-                <div className="col-md-12">
-                  <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                    <div className="card-body">
-                      <div className="row">
-                        <div className="col-md-2 text-center">
-                          <img src={Lotus} alt="Kelechi Obasi" style={{ 
-                            maxWidth: '100px', 
-                            maxHeight: '100px', 
-                            objectFit: 'contain' 
-                          }} />
-                        </div>
-                        <div className="col-md-7">
-                          <h2 className="h4 mb-1">{t('Kelechi Obasi')}</h2>
-                          <p className="text-muted mb-2">{t("Lotus Potencia Holistics")}</p>
-                          
-                          <p className="mb-2">
-                            <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                            {t("Africa")} | <i className="fas fa-video text-success me-1"></i>{t("Telehealth Available")}
-                          </p>
-                          
-                          <div className="mb-2">
-                            <span className="badge bg-light text-dark me-1">{t("Holistic Medicine")}</span>
-                            <span className="badge bg-light text-dark me-1">{t("Energy Healing")}</span>
-                            <span className="badge bg-light text-dark me-1">{t("Traditional Medicine")}</span>
-                          </div>
-                          
-                          <p className="card-text small">
-                            {t("Our approach to medicine serves to complete the flow of energy within your energy system, to restore and improve your overall health, mind, soul & body, and our complementary therapies which are a combination of modern and ancient traditional medical practices takes you on that journey for a more fulfilled life.")}
-                          </p>
-                        </div>
-                        <div className="col-md-3 text-end">
-                          <a 
-                            href='https://lotuspotentiaholistics.org' 
-                            className="btn btn-outline-primary mb-2"
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                          >
-                            {t("View Profile")}
-                          </a>
-                          <br />
-                          <small className="text-muted">{t("Telehealth Available")}</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           )}
 

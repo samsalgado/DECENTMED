@@ -1,8 +1,8 @@
 import "../App.css";
 import '../info/Info.css';
 import { useTranslation } from 'react-i18next'
-import tier2 from '../images copy/tier4.png';
-import tier3 from "../images copy/tier3.png";
+import tier2 from '../images copy/tier 1.png';
+import tier3 from "../images copy/tier.png";
 import Collapsible from 'react-collapsible';
 import { useEffect, useState } from 'react';
 //import supabase from "./supabase";

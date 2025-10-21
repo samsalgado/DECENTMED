@@ -2,6 +2,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import obasi from "../images copy/obasi.png";
 import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import lifewave from '../images copy/lifewave.png';
 import linda from "../images copy/linda.png";
@@ -20,12 +21,13 @@ const { t } = useTranslation('common');
             </header>
 
             <div className="container">
-            <h1>{t("Products We Trust")}</h1>
+            <h1>{t("Holistic Medicine Books and Related Products")}</h1>
  <div className="row">
     <div className="col-md-4">
     </div>
   </div>
   <div className="row">
+
     <div className="col-md-6">
       <h2>{t("Solve your Out of Control Eating")}</h2>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
@@ -63,7 +65,28 @@ const { t } = useTranslation('common');
       </p>
     </div>
   </div>
-
+  <div className="row">
+    <div className="col-md-6">
+      <h2>{t("Kelechi Obasi Product Bundle")}</h2>
+      <a href='https://selar.com/m/kelechiobasi'>
+    <figure>
+        <img 
+          src={obasi} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Buy")}</figcaption>
+        </figure>
+      </a>
+      <div>
+     
+</div>
+    </div>
+  </div>
   <div className="row">
     <div className="col-md-6">
     <h2>{t("Lifewave Patch")}</h2>

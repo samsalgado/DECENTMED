@@ -4,7 +4,7 @@ import backgroundImage from '../images copy/background.jpg';
 
 function Marketing() {
     const learnmore = () => {
-        window.location.href = 'https://themerlingroupworld.com/digitalmarketing'
+        window.location.href = 'https://decentmed.org/digitalmarketing'
     }
 
     return (

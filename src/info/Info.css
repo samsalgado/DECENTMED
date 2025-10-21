@@ -55,6 +55,52 @@ h3 {
   font-family: sans-serif;
 }
 
+/* Language Selector Styles */
+.change-locale {
+  position: relative;
+  display: inline-block;
+}
+
+.change-locale-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.change-locale-toggle:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+.change-locale-toggle .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.change-locale-toggle .arrow-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.change-locale.is-open .arrow-icon {
+  transform: rotate(180deg);
+}
+.change-locale-menu {
+  position: absolute;
+  top: 100%;
+  right: auto;
+  left: 0;
+  min-width: max-content;
+}
+/* Menu Positioning - Opens to the LEFT */
 /* Styling for the card header */
 .card-header {
   background-color: #e9ecef; /* Slightly darker gray for the header */
@@ -114,7 +160,15 @@ h3 {
   margin: 0 auto;
   font-family: sans-serif;
 }
+.auth-form {
+  max-height: none;
+  height: auto;
+  overflow: visible;
+}
 
+.auth-form-container {
+  overflow: visible;
+}
 .video-container iframe {
   width: 100%;
   height: 315px;
@@ -183,5 +237,43 @@ h3 {
     top: 50%;
     box-sizing: border-box;
     overflow-y: auto;
+  }
+}
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .search-bar-container {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+
+  .card .row {
+    flex-direction: column;
+  }
+
+  .card .col-md-2,
+  .card .col-md-3,
+  .card .col-md-7 {
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 1rem;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .search-bar-container {
+    flex-direction: column;
+  }
+  iframe, img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }

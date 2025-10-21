@@ -272,15 +272,6 @@ const {t} = useTranslation('common')
     medrating: 4,
     source: 'https://pfaf.org/user/Plant.aspx?LatinName=Bacopa+monnieri'
   },
-  {
-    id: 30,
-    image: Plants.banksiaattenuata,
-    name: t('banksia attenuata'),
-    price: 0.000123421261019921195002480,
-    description: t('An infusion of the flowers was used to relieve coughs and cold and as a refreshing drink.'),
-    medrating: 0,
-    source: 'https://www.friendsofqueensparkbushland.org.au/banksia-attenuata/#:~:text=Banksia%20attenuataCommon%20name%3A%20Candle%20Banksia&text=Aboriginal%20name%3A%20Piara.,and%20as%20a%20refreshing%20drink.'
-  },
 {
     id: 30,
     image: Plants.banksiaattenuata,
@@ -289,15 +280,6 @@ const {t} = useTranslation('common')
     description: t('An infusion of the flowers was used to relieve coughs and cold and as a refreshing drink.'),
     medrating: 0,
     source: 'https://www.friendsofqueensparkbushland.org.au/banksia-attenuata/#:~:text=Banksia%20attenuataCommon%20name%3A%20Candle%20Banksia&text=Aboriginal%20name%3A%20Piara.,and%20as%20a%20refreshing%20drink.'
-},
-{
-    id: 31,
-    image: Plants.batflower,
-    name: t('Batflower'),
-    price: 0.0000194320248,
-    description: t('Tacca chantrieri is rare, but sometimes available from online nurseries. A white variety (Tacca integrifolia) of this plant exists, but my sources tell me that White Bat Flower is not as easy to grow indoors.'),
-    medrating: 0,
-    source: ' https://www.guide-to-houseplants.com/bat-flower.html'
 },
 {
     id: 32,
@@ -489,15 +471,6 @@ const {t} = useTranslation('common')
         description: t('Little used...'),
         medrating: 2,
         source: ' https://pfaf.org/User/Plant.aspx?LatinName=Iberis+amara'
-      },
-      {
-        id: 53,
-        image: Plants.Juniperuscommunis,
-        name: t('Juniperus communis'),
-        price: 0.000284320248,
-        description:t('Traditionally...') ,
-        medrating: 0,
-        source: ' https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4897106/'
       },
       {
         id: 54,
@@ -834,15 +807,6 @@ const {t} = useTranslation('common')
         description: t('Valerian...'),
         medrating: 3,
         source: ' https://pfaf.org/user/Plant.aspx?LatinName=Valeriana+officinalis'
-      },
-      {
-        id: 91,
-        image: Plants.verbascumikaricum,
-        name: t('Verbascum ikaricum.png'),
-        price: 0.000071920248,
-        description: t('The native...'),
-        medrating: 0,
-        source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:811159-1'
       },
       {
         id: 92,
@@ -1362,24 +1326,6 @@ const {t} = useTranslation('common')
         source: "https://pfaf.org/user/Plant.aspx?LatinName=Terminalia+catappa"
       },
       {
-        id: 149,
-        image: Plants.justiciasecunda,
-        name: t("Justicia secunda"),
-        description: t('Justicia secunda...'),
-        price: 0.000213128420,
-        medrating: 0,
-        source: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9952096/"
-      },
-      {
-        id: 150,
-        image: Plants.minnieroot,
-        name: t("Popping Pod"),
-        description: t('In folk...'),
-        price: 0.00014359520,
-        medrating: "N/A",
-        source: "https://www.inaturalist.org/taxa/291119-Ruellia-tuberosa"
-      },
-      {
         id: 151,
         image: Plants.foetida,
         name: t("Mauritius Hemp"),
@@ -1455,7 +1401,7 @@ const {t} = useTranslation('common')
         id: 159,
         image: Plants.cannaindica,
         name: t("Canna indica"),
-        description: t('The plant used in...'),
+        description: t("The plant is used in the treatment of women's complaints[218]. A decoction of the root with fermented rice is used in the treatment of gonorrhoea and amenorrhoea[218]. The plant is also considered to be demulcent, diaphoretic and diuretic[218]."),
         price: 0.0001433107819444356,
         medrating: 2,
         source: "https://pfaf.org/user/plant.aspx?latinname=Canna+indica"

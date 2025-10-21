@@ -2,6 +2,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import ultt from "../images copy/ultt.png";
 import HYPNO from '../info/hypno';
 import Hypnovids from '../info/hypnovids';
 import { useTranslation } from 'react-i18next';
@@ -23,6 +24,9 @@ const { t } = useTranslation('common');
             <br></br>
             <h1 className='center'>{t("Hypnotherapy Services")}</h1>
             <Hypnovids />
+           <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className="TELEa" alt="quote" />
+        </a>
             <footer>
                 <Footer />
             </footer>

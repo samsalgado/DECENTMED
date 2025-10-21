@@ -3,6 +3,7 @@ import "../App.css";
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
+import ultt from "../images copy/ultt.png";
 const Homeo = () => {
   const { t } = useTranslation('common');
 
@@ -27,7 +28,7 @@ const Homeo = () => {
           
       <p className='pr'>{t("Seeking Homeopathy doctors near me? Homeopathy is a system of alternative medicine developed in the late 18th century by German physician Samuel Hahnemann. It is based on the principle of 'like cures like', meaning that a substance that causes symptoms in a healthy person can be used in highly diluted form to treat similar symptoms in someone who is ill. Homeopathy is safer and has shown benefits for a myriad of diseases and ailments. In this video, Dr. Tim Shannon talks about off-label drugs in cancer treatments, and the role of Homeopathy in treating ADD.")}</p>
      
-      <Button className="custom-btn" href="https://themerlingroupworld.com/homeopract" target="_blank">
+      <Button className="custom-btn" href="https://decentmed.org/homeopract" target="_blank">
                 {t("Try Homeopathy")}
             </Button>
       </div>
@@ -65,8 +66,10 @@ const Homeo = () => {
         <br />
         <img src={quote} className="TELEa" alt="quote" />
         <div className="collapsible">
-          {/* Add any collapsible content if needed */}
         </div>
+          <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className="TELEa" alt="quote" />
+        </a>
       </div>
 
   );

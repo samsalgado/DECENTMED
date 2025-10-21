@@ -2,23 +2,23 @@ import React from 'react';
 import '../App.css'; // Make sure CSS is linked
 import Treatment from '../pages/treatment'; // Treatment images
 const treatmentLinks = {
-  homeopath: "https://decentmed.themerlingroupworld.com/homeopathy",
-  prevent: "https://decentmed.themerlingroupworld.com/prevent",
-  detox: "https://decentmed.themerlingroupworld.com/detox",
-  acupuncture: "https://decentmed.themerlingroupworld.com/acu",
-  ayurveda: "https://decentmed.themerlingroupworld.com/ayurveda",
-  stemcell: "https://decentmed.themerlingroupworld.com/stemcell",
-  nutriton: "https://decentmed.themerlingroupworld.com/nutrition",
-  chiro: "https://decentmed.themerlingroupworld.com/chiropractic",
-  empower:"https://decentmed.themerlingroupworld.com/transformationalcoaching",
-  ak:"https://decentmed.themerlingroupworld.com/ak",
-  nutri:"https://decentmed.themerlingroupworld.com/nutrigenomics",
-  breathwork:"https://decentmed.themerlingroupworld.com/breath",
-  chelation:"https://decentmed.themerlingroupworld.com/chelation",
-  hypnotherapy:"https://decentmed.themerlingroupworld.com/hypnotherapy",
-  herbalmedicine:"https://decentmed.themerlingroupworld.com/herbalmedicine",
-  meditation:"https://tdecentmed.hemerlingroupworld.com/meditation",
-  seo:"https://decentmed.themerlingroupworld.com/digitalmarketing"
+  homeopath: "https://decentmed.org/homeopathy",
+  prevent: "https://decentmed.org/prevent",
+  detox: "https://decentmed.org/detox",
+  acupuncture: "https://decentmed.org/acu",
+  ayurveda: "https://decentmed.org/ayurveda",
+  stemcell: "https://decentmed.org/stemcell",
+  nutriton: "https://decentmed.org/nutrition",
+  chiro: "https://decentmed.org/chiropractic",
+  empower:"https://decentmed.org/transformationalcoaching",
+  ak:"https://decentmed.org/ak",
+  nutri:"https://decentmed.org/nutrigenomics",
+  breathwork:"https://decentmed.org/breath",
+  chelation:"https://decentmed.org/chelation",
+  hypnotherapy:"https://decentmed.org/hypnotherapy",
+  herbalmedicine:"https://decentmed.org/herbalmedicine",
+  meditation:"https://tdecentmed.org/meditation",
+  seo:"https://decentmed.org/digitalmarketing"
 };
 
 const Grid = () => {

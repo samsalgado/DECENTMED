@@ -4,7 +4,7 @@ import Geyser from '../images copy/geyser.png';
 import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
-import LOGO from "../images copy/LOGO.png";
+import LOGO from "../images copy/goklKk.png";
 
 const Footers = () => {
   const { t } = useTranslation('common');
@@ -18,7 +18,7 @@ const Footers = () => {
           <h3 style={{ textAlign: 'center', marginTop: '-10px' }} className="footer-section about">{t("Products We Trust")}</h3>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
 
-            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }} href="https://decentmed.themerlingroupworld.com/shop" target="_blank">
+            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }} href="https://decentmed.org/shop" target="_blank">
               {t("Shop")}
             </Button>
           </div>
@@ -31,21 +31,30 @@ const Footers = () => {
           <br></br>
           <br></br>
           <p>{t('intro_paragraph')}</p>
+          <a
+  href="/HIPAA Compliance Policy.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', padding: '10px 15px', borderRadius: '5px', textDecoration: 'none', display: 'inline-block', marginTop: '10px' }}
+>
+  {t("View HIPAA Compliance Policy (PDF)")}
+</a>
         </div>
 
         {/* Office Section */}
         <div className="footer-section office">
           <h3 style={{ textAlign: 'center' }}>{t('Office')}</h3>
-          <p>📞 <a href="tel:+18137664900">Call Us: +1 (813) 766-4900</a></p>
+          <div className="text-center">
+            <Button style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}
+                     href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
+              {t("Book a Call")}
+            </Button>
+          </div>          
           <p>5830 E 2ND ST Casper, WY 82609</p>
-            {t('Email:')}{' '}
-            <a href="mailto:samuel@themerlingroupworld.com">
-              samuel@themerlingroupworld.com
-            </a>
           <p>
             <Button
               style={{ color: 'white', fontWeight: 'bold', backgroundColor: 'green', borderColor: 'green', }}
-              href="https://decentmed.themerlingroupworld.com/reviews" target="_blank">
+              href="https://decentmed.org/reviews" target="_blank">
               {t("OUR REVIEWS")}
             </Button>
           </p>
@@ -75,9 +84,7 @@ const Footers = () => {
         </div>
       </div>
       {/* Footer Bottom */}
-      <div className="footer-bottom">
-        themerlingroupworld © 2025 - All Rights Reserved
-      </div>
+    
     </footer>
   );
 };

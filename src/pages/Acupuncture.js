@@ -2,6 +2,7 @@ import '../App.css';
 import Info1 from '../info/info1';
 import Topbar from './topbar';
 import Footer from '../footer';
+
 import { Helmet } from 'react-helmet'; // Import Helmet
 export function Acupuncture({t}) {
 

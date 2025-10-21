@@ -103,7 +103,7 @@ body {
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
   animation: App-logo-spin infinite 20s linear;
 }
@@ -745,8 +745,8 @@ body {
 
 .Logo {
   align-items: left;
-  height: 9vmin;
-  width: fit-content;
+  height: 19vmin;
+  width:auto;
   position: relative;
 }
 
@@ -1688,6 +1688,19 @@ td:last-child {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
+  
+/* Scarlett De Email Form */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px 25px;
+  font-weight: 'normal';
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
 
   /* Scarlett De Email Form */
   .contact-form {

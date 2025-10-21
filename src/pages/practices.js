@@ -4,28 +4,25 @@ import '../info/Info.css'; // Import the CSS file
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 //import Offer2 from '../offers/offer2';
 import Pricing from './pricingtiers';
-import price from '../images copy/PRICETIERRS.png';
+//import price from '../images copy/PRICETIERRS.png';
 import { Button } from 'react-bootstrap';
 import Reviews from '../info/reviews';
 
 const Practice = () => {
   const { t } = useTranslation("common");
   return (
+    
     <main className="page-content">
+      
     <div className='container'>
       <div className='theecontaine'>
 
         <div className="signup-container">
-          <h1 className="signup">{t('Sign Up')}</h1>
-          <img style={{
-            maxWidth: '100%',
-            height: 'auto',
-            display: 'block',
-          }} src={price} alt='' />
-        </div>
+          <h1 className="signup">{t('Sign Up Process')}</h1>
+<iframe class="rumble" title="signup" width="640" height="360" src="https://www.youtube.com/embed/QgPSbbJTmbM?si=zwssl9LVDH_xWLXp" frameborder="0" allowfullscreen></iframe>  </div>
         <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
           <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
-            {t("Inquire about Pricing")}
+            {t("Book a Call")}
           </Button>
         </div>
         <Pricing />
@@ -37,3 +34,4 @@ const Practice = () => {
 };
 
 export default Practice;
+

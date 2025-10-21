@@ -23,7 +23,7 @@ function Values() {
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <h3>
         <a 
-            href="https://themerlingroupworld.com/digitalmarketing" 
+            href="https://s3visibility.solutions/" 
             target="_blank" 
             rel="noopener noreferrer" 
             style={{
@@ -36,7 +36,7 @@ function Values() {
         >
             {t('Holistic Marketing')}
         </a>
-    </h3>                    <p className="edu">{t('Facilitating patient acquisition and management via video marketing, active social marketing strategies and management systems for website and social media to differentiate your practice.')}</p>
+    </h3>                    <p className="edu">{t('Although our team is comprised of SEO experts, to ensure you get more patients - we have partnered with a digital marketing agency (S3 Visibility) specializing in optimizing the Google ecosystem.')}</p>
                 </div>
             </div>
         </div>

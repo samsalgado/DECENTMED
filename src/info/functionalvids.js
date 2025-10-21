@@ -11,10 +11,10 @@ const FuncVids = () => {
             videoUrl:"https://www.youtube.com/embed/-fm6pwSGcUU?si=ysZi1D8aGn20THg3",
             name:`${t("The Devastating Truth About Why Your Healthy Diet Isn't Working")}`
         },
-        {
+       {
             id:2,
-            videoUrl:"https://www.youtube.com/embed/oj0leCvttM4?si=yla8rv7jl_4Dmg0t",
-            name:`${t("How NOT to Reverse Diet and why you need to do it")}`
+            videoUrl:"https://www.youtube.com/embed/HGaKE9gxYzY?si=40IqfPwwawevZt35",
+            name:`${t("Build Resilience with Precision Nutrition for Longevity and Healthy Aging.")}`
         },
         {
             id:3,

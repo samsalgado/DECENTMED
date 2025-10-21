@@ -73,7 +73,7 @@ export function Hypnopract() {
           <div className="results-section">
             {isTampaLocation ? (
               <>
-                <h2>{t("Hypnotherapists in")} {location}</h2>
+                <h2>{t("Hypnotherapists in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="card" style={{ border: '1px solid #dee2e6' }}>
@@ -117,15 +117,28 @@ export function Hypnopract() {
                             </p>
                           </div>
                           <div className="col-md-3 text-end">
-                            <a 
-                              href="tel:+18134856761"
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Contact")}
-                            </a>
+                          {/* Calendly inline embed */}
+                          <div style={{ width: '100%', height: '500px', marginBottom: '15px' }}>
+                            <iframe
+                              src="https://calendly.com/greenhypnotherapy/new-meeting?embed_domain=localhost&embed_type=Inline"
+                              width="100%"
+                              height="100%"
+                              frameBorder="0"
+                              title={t("Schedule Initial Consultation")}
+                              style={{ border: 0 }}
+                            />
                           </div>
+                          
+                          {/* Follow-up button */}
+                          <a 
+                            href="https://calendly.com/greenhypnotherapy/new-meeting-1"
+                            className="btn btn-outline-primary"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            {t("Book Follow-up Consultation")}
+                          </a>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -136,7 +149,7 @@ export function Hypnopract() {
               <div className="no-results text-center" style={{ padding: '3rem 0' }}>
                 <div className="mb-4">
                   <i className="fas fa-search fa-3x text-muted mb-3"></i>
-                  <h3>{t("No hypnotherapists available in")} {location}</h3>
+                  <h3>{t("No hypnotherapists available in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h3>
                   <p className="text-muted">
                     {t("We currently don't have any hypnotherapists listed in your area. Our services are currently available in Tampa, FL.")}
                   </p>

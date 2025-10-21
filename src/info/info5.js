@@ -4,6 +4,7 @@ import Forum from './forum';
 import quote from '../images copy/quote.png';
 import homeo from '../images copy/homeo.png';
 import './Info.css';
+//import ultt from "../images copy/ultt.png";
 import b from '../images copy/b.png';
 import cys from '../images copy/cys.png';
 import gluta from '../images copy/gluta.png';
@@ -66,8 +67,7 @@ const Info5 = () => {
       <div><img src={quote} className="TELE" alt="logo" /></div>
       <br />
       <div>
-        <Forum />
-      </div>
+        <Forum />      </div>
     </div>
   );
 }

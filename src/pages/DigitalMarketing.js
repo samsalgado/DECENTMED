@@ -9,14 +9,14 @@ import Offer2 from '../offers/offer2';
 import Offer from '../offers/offer';
 import Reviews from '../info/reviews';
 import Footer from '../footer';
-import price from "../images copy/tier3.png";
+import price from "../images copy/tier33.png";
 import { Helmet } from 'react-helmet';
 
 export function Marketing() {
     const { t } = useTranslation("common");
     return(
         <div>
-                            <main className="page-content">
+            <main className="page-content">
 
             <Helmet>
                 <title>{t("Digital Marketing agency near me")}</title>
