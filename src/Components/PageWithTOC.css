@@ -1,0 +1,47 @@
+/* PageWithTOC.css */
+
+/* Main page wrapper */
+.page-with-toc {
+  background: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Content wrapper for TOC scan */
+.page-content-wrapper {
+  display: flex;
+  flex-direction: column; /* Column for TOC on top */
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Main content inside wrapper */
+.page-main-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Page title */
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .page-content-wrapper {
+    padding: 15px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* TOC Container (optional spacing below) */
+.toc-container {
+  margin-bottom: 20px;
+}

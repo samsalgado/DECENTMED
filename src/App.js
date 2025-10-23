@@ -81,6 +81,7 @@ import ProviderDashboard from './Dashboard/ProviderDashboard';
 import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
 
+
 function App() {
   const { t } = useTranslation();
   const queryClient = new QueryClient();
@@ -160,6 +161,7 @@ function App() {
         <Route path="/signup" element={<SignupOptions />} />
         <Route path="/signup/public" element={<PublicSignUp t={t} />} />
         <Route path="/signup/provider" element={<SignUp t={t} />} />
+        <Route path="/provider" element={<SignUp t={t} />} />
         <Route path="/signin" element={<SignIn t={t} />} />
 
         {/* Telehealth Providers Dashboard (for regular users) */}

@@ -1,0 +1,72 @@
+.toc-bar {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 10px 20px;
+  /* margin-top: 122px; top space from navbar/page start */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  overflow-x: auto; /* horizontal scroll if needed */
+  scrollbar-width: thin;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.toc-bar:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.toc-label {
+  font-weight: 600;
+  color: #0056b3;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.toc-links {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex: 1 1 auto;   /* fill remaining space */
+  min-width: 0;     /* important for flex shrinking on small screens */
+}
+
+.toc-item {
+  cursor: pointer;
+  color: #333;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap; /* prevent wrapping */
+}
+
+.toc-item:hover {
+  color: #007bff;
+  background: #f0f8ff;
+  transform: translateY(-2px);
+}
+
+.sub-heading {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .toc-bar {
+    padding: 10px 15px;
+    margin-top: 50px;
+  }
+
+/* ===== Responsive Design ===== */
+
+
+  .toc-links {
+    gap: 8px;
+  }
+}

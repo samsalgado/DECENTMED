@@ -13,7 +13,7 @@ function Fruits() {
     return (
         <div className="container-blue">
             <div className="row justify-content-center">
-            <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Best Fruits, Spices and Vegetables for Detox Tea Detox")}</h2>
+            <h4 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Best Fruits, Spices and Vegetables for Detox Tea Detox")}</h4>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3 className='title'>{t("Turmeric")}</h3>
                     <img className='gridimage' src={turmeric} alt='' />

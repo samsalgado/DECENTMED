@@ -36,7 +36,8 @@ const Offer2 = () => {
   };
 
   return (
-      <div className='box'>
+     <div className="container">
+ <div className='box'>
         <CookiesProvider>
           <div>
             <img src={imge} className="pik1 stripe" alt='' />
@@ -49,6 +50,7 @@ const Offer2 = () => {
           }} variant="contained" onClick={handleClickOpen}>{t('add cart')}</Button>
         </CookiesProvider>
       </div>
+</div>
   );
 
 };

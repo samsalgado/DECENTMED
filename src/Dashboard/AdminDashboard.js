@@ -11,11 +11,11 @@
 //   const config = { headers: { Authorization: `Bearer ${token}` } };
 
 //   useEffect(() => {
-//     axios.get("http://localhost:5000/api/admin/providers", config)
+//     axios.get("https://decentmed-server.vercel.app/api/admin/providers", config)
 //       .then(res => setProviders(res.data))
 //       .catch(err => console.log(err));
 
-//     axios.get("http://localhost:5000/api/admin/bookings", config)
+//     axios.get("https://decentmed-server.vercel.app/api/admin/bookings", config)
 //       .then(res => setBookings(res.data))
 //       .catch(err => console.log(err));
 //   }, []);
@@ -25,7 +25,7 @@
 //   const updateSlots = async () => {
 //     if (!selectedProvider) return;
 //     await axios.patch(
-//       `http://localhost:5000/api/admin/providers/${selectedProvider._id}/slots`,
+//       `https://decentmed-server.vercel.app/api/admin/providers/${selectedProvider._id}/slots`,
 //       { slots },
 //       config
 //     );
@@ -96,7 +96,7 @@
 
 
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getAllBookings, getAllProvidersAdmin } from '../api';
 
 export default function AdminDashboard() {

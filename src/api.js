@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://decentmed-server.vercel.app/api",
 });
 
 export const getProviders = () => API.get('/providers');

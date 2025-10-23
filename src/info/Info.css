@@ -1,6 +1,6 @@
 /* General Container */
 * {
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
 .container-fluid {
@@ -9,30 +9,34 @@
   font-family: sans-serif;
 }
 .custom-btn {
- background-color: #00695C !important;
+  background-color: #00695c !important;
   color: #fff !important;
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
+  /* padding: 10px 10px !important; */
+
+
+
 }
 h1 {
   font-family: sans-serif;
   font-size: 2.5rem;
- 
-  color:"black";
+
+  color: "black";
   margin-bottom: 1rem;
 }
 h2 {
   font-family: sans-serif;
   font-size: 2rem;
-  color:"black";  
+  color: "black";
   margin-bottom: 1rem;
 }
 h3 {
   font-family: sans-serif;
   font-size: 1.5rem;
-  color:"black";
-    margin-bottom: 0.75rem;
+  color: "black";
+  margin-bottom: 0.75rem;
 }
 
 .digital {
@@ -137,19 +141,29 @@ h3 {
 }
 
 .signup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: sans-serif;
+  text-align: center;
+  margin: 40px auto; 
+   max-width: 1200px;
+  width: 100%;
 }
 
 .signup {
-  text-align: center;
+  color: #234743;
+  margin-bottom: 20px;
   font-size: 2rem;
-  margin: -1rem;
-  font-weight: bold;
-  font-family: sans-serif;
 }
+
+/* ✅ Full width, fixed height video */
+.rumble {
+  width: 100%!important;
+  height: 360px; /* keep as your current height */
+  border: solid;
+padding: 30px;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(145, 142, 142, 0.3);
+}
+
 
 /* For Video Containers */
 .video-container {
@@ -272,8 +286,119 @@ h3 {
   .search-bar-container {
     flex-direction: column;
   }
-  iframe, img {
+  iframe,
+  img {
     max-width: 100% !important;
     height: auto !important;
+  }
+}
+
+.pricing-container {
+  padding: 60px 20px;
+  background: #f7fdf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.collapsibles-table {
+  width: 100%;
+}
+
+.collapsible-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #045c50;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.collapsible-trigger:hover {
+  color: #09b350;
+}
+
+/* Rotate chevron when open */
+.collapsible-trigger .icon {
+  transition: transform 0.3s ease;
+}
+
+.collapsible-content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 95%;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+/* Tier Card */
+.tier-card {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tier-card:hover {
+  transform: scale(1.03);
+}
+
+.tier-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tier-card h3 {
+  color: #00695c;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tier-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #00796b;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.tier-button:hover {
+  background-color: #0c312b;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .collapsible-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .collapsible-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tier-card {
+    padding: 15px;
   }
 }

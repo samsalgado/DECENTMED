@@ -194,6 +194,7 @@
 // };
 
 // export default Topbar;
+
 import { useEffect, useState } from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -243,10 +244,10 @@ const Topbar = () => {
 
   return (
     <div className='topbar'>
-      <Navbar bg="light" variant="light" expand="lg" collapseOnSelect>
+      <Navbar className="navbar-container" bg="light" variant="light" expand="lg" collapseOnSelect>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="d-flex align-items-center">
             <div><img src={LOGO} className="Logo" alt="logo" /></div>
           </Navbar.Brand>
           <Nav className="me-auto">
@@ -256,21 +257,20 @@ const Topbar = () => {
             <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
             <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
             <Nav.Link href='/about'>{t('About Us')}</Nav.Link>
-            
-              {isLoggedIn ? (
-                <Nav.Link onClick={handleLogout}>{t('LogOut')}</Nav.Link>
-              ) : (
-                <Nav.Link href="/signup">
-                  {t("Sign Up")}
-                </Nav.Link>
-              )}
-          
+
+            {isLoggedIn ? (
+              <Nav.Link onClick={handleLogout}>{t('LogOut')}</Nav.Link>
+            ) : (
+              <Nav.Link href="/signup"> {t("Sign Up")}</Nav.Link>
+            )}
+
+            <Nav.Link href="/provider"> {t("Provider")}</Nav.Link>
+
             {/* <Nav.Link href='/signup'>{t('Sign Up')}</Nav.Link> */}
           </Nav>
 
 
         </Navbar.Collapse>
-
         <div className={`change-locale mi-start ${showMenu ? "is-open" : ""}`}>
           <button
             className="change-locale-toggle"
@@ -314,6 +314,7 @@ const Topbar = () => {
             </div>
           )}
         </div>
+
       </Navbar>
     </div>
   );

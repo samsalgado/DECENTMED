@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 const EducationMenu = () => {
 const { t } = useTranslation('common');
   return (
-    <NavDropdown title={t("Education")} id="education-dropdown">
+    <NavDropdown title={t("Education")} id="education-dropdown" className="scrollable-dropdown" >
       <ul><NavLink to="/homeopathy">{t('Homeopathy')}
       </NavLink>
       </ul>

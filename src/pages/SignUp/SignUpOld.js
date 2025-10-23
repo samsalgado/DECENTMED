@@ -1,6 +1,7 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -8,7 +9,6 @@ import Footer from '../../footer';
 import { AuthContext } from '../Providers/AuthProvider';
 import Topbar from '../topbar';
 import './SignUp.css';
-import { useTranslation } from 'react-i18next';
 
 const Register = () => {
   const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();

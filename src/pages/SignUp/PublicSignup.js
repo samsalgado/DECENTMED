@@ -1,13 +1,13 @@
 //TASK:
 //ADD VERCEL
 //ADD A WAY TO SIGNUP WITH GOOGLE
-import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
-import "../Styles/AuthForm.css";
-import "../../info/Info.css";
-import Swal from "sweetalert2";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import "../../info/Info.css";
+import "../Styles/AuthForm.css";
 const PublicSignUp = () => {
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
@@ -25,7 +25,7 @@ const PublicSignUp = () => {
     try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
-        // 'http://localhost:5000/users',
+        // 'https://decentmed-server.vercel.app/users',
         user,
         {
           headers: {

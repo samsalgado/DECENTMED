@@ -13,18 +13,18 @@
 //   useEffect(() => { fetchSlots(); fetchBookings(); }, []);
 
 //   const fetchSlots = async () => {
-//     const res = await axios.get(`http://localhost:5000/api/providers/${providerId}/slots`, config);
+//     const res = await axios.get(`https://decentmed-server.vercel.app/api/providers/${providerId}/slots`, config);
 //     setSlots(res.data);
 //   };
 
 //   const fetchBookings = async () => {
-//     const res = await axios.get(`http://localhost:5000/api/bookings/${providerId}`, config);
+//     const res = await axios.get(`https://decentmed-server.vercel.app/api/bookings/${providerId}`, config);
 //     setBookings(res.data);
 //   };
 
 //   const addSlot = async () => {
 //     if (!date || !time) return;
-//     await axios.post(`http://localhost:5000/api/providers/${providerId}/slots`, { slots: [{ date, time, booked:false }] }, config);
+//     await axios.post(`https://decentmed-server.vercel.app/api/providers/${providerId}/slots`, { slots: [{ date, time, booked:false }] }, config);
 //     setDate(""); setTime("");
 //     fetchSlots();
 //   };
@@ -59,7 +59,7 @@
 
 
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProviderList from '../Components/ProviderList';
 import BookingForm from '../pages/BookingForm/BookingForm';
 

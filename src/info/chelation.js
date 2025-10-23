@@ -34,7 +34,7 @@ const Pgchelation = () => {
           <tbody>
             <tr>
               <th className="collapsible-trigger">
-                <Collapsible trigger={t("Chelation 101 (Heavy Metal Detox)")}>
+                <Collapsible trigger= {t(<h3>"Chelation 101 (Heavy Metal Detox)"</h3>)}>
                   <div className="collapsible-content">
                     <img className='chelation-graphic' src={graphic} alt="Chelation 101" />
                     <img className='chelation-graphic' src={chelationgraphicES} alt="Chelation 101" />

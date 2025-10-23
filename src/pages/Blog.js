@@ -58,7 +58,7 @@ const BlogPage = () => {
             <a href='/fenbendazole'>
               <figure>
                 <img className='gridimag' src={Fenbendazole} alt="logo" />
-                <figcaption>{t("Click on image for full Blog")}</figcaption>
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>
           </div>
@@ -69,7 +69,7 @@ const BlogPage = () => {
             <a href='/'>
               <figure>
                 <img className='gridimag' src={ak} alt="logo" />
-                <figcaption>{t("Click on image for full Blog")}</figcaption>
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>
           </div>
@@ -80,7 +80,7 @@ const BlogPage = () => {
             <a href='/ramona'>
               <figure>
                 <img className='gridimag' src={ramona} alt="logo" />
-                <figcaption>{t("Click on image for full Blog")}</figcaption>
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>
           </div>
@@ -92,7 +92,7 @@ const BlogPage = () => {
               <a href='https://peakformsupplements.com/products/lions-mane-elite'>
                 <figure>
                   <img className='gridimag' src={lions} alt="logo" />
-                  <figcaption>{t("Access the best Lion's Mane supplements for improved mental clarity.")}</figcaption>
+                  {/* <figcaption>{t("Access the best Lion's Mane supplements for improved mental clarity.")}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -103,7 +103,7 @@ const BlogPage = () => {
               <a href='/ivermectin'>
                 <figure>
                   <img className='gridimag' src={Ivermectin} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -117,7 +117,7 @@ const BlogPage = () => {
                 <a href='/blog1'>
                   <figure>
                     <img className='gridimag' src={constipation} alt="logo" />
-                    <figcaption>{t('Click on image for full Blog')}</figcaption>
+                    {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                   </figure>
                 </a>
               </div>
@@ -134,7 +134,7 @@ const BlogPage = () => {
             <a href='/blog2'>
               <figure>
                 <img className='gridimag' src={acuneed} alt="logo" />
-                <figcaption>{t('Click on image for full Blog')}</figcaption>
+                {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
               </figure>
             </a>
           </div>
@@ -149,7 +149,7 @@ const BlogPage = () => {
               <a href='https://www.drnarson.com/blog/1325688-how-chiropractic-care-can-accelerate-recovery-from-common-sports-injuries'>
                 <figure>
                   <img className='gridimag' src={golf} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -165,7 +165,7 @@ const BlogPage = () => {
               <a href='/blog10'>
                 <figure>
                   <img className='gridimag' src={cancerimg} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -181,7 +181,7 @@ const BlogPage = () => {
               <a href='/blog18'>
                 <figure>
                   <img className='gridimag' src={drk} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -199,7 +199,7 @@ const BlogPage = () => {
               <a href='/blog4'>
                 <figure>
                   <img className='gridimag' src={cell} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -215,7 +215,7 @@ const BlogPage = () => {
               <a href='/blog5'>
                 <figure>
                   <img className='gridimag' src={consult} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -232,7 +232,7 @@ const BlogPage = () => {
               <a href='/cancer'>
                 <figure>
                   <img className='gridimag' src={B17} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -248,7 +248,7 @@ const BlogPage = () => {
               <a href='https://www.green-hypnotherapy.com/the-green-thumb/page-4'>
                 <figure>
                   <img className='gridimag' src={hypnotherapy} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -265,7 +265,7 @@ const BlogPage = () => {
               <a href='https://needtoknow.news/2024/08/new-study-explores-how-food-choices-shape-mental-health-and-affect-depression/'>
                 <figure>
                   <img className='gridimag' src={depression} alt="logo" />
-                  <figcaption>{t('Click on image for blog by Epoch Times on correlation between Food and Mental Health')}</figcaption>
+                  {/* <figcaption>{t('Click on image for blog by Epoch Times on correlation between Food and Mental Health')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -286,7 +286,7 @@ const BlogPage = () => {
           <a href='/blog7'>
             <figure>
               <img className='gridimag' src={batana} alt="logo" />
-              <figcaption>{t('Click on image for full Blog')}</figcaption>
+              {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
             </figure>
           </a>
         </div>
@@ -302,7 +302,7 @@ const BlogPage = () => {
           <a href='/blog12'>
             <figure>
               <img className='gridimag' src={montreal} alt="logo" />
-              <figcaption>{t('Click on image for full Blog')}</figcaption>
+              {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
             </figure>
           </a>
         </div>
@@ -317,7 +317,7 @@ const BlogPage = () => {
           <a href='/blog14'>
             <figure>
               <img className='gridimag' src={chirotreat} alt="logo" />
-              <figcaption>{t('Click on image for full Blog')}</figcaption>
+              {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
             </figure>
           </a>
         </div>
@@ -334,7 +334,7 @@ const BlogPage = () => {
           <a href='/blog8'>
             <figure>
               <img className='gridimag' src={hepB} alt="logo" />
-              <figcaption>{t('Click on image for full Blog')}</figcaption>
+              {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
             </figure>
           </a>
         </div>
@@ -350,7 +350,7 @@ const BlogPage = () => {
           <a href='/blog9'>
             <figure>
               <img className='gridimag' src={nutritionbenefits} alt="logo" />
-              <figcaption>{t('Click on image for full Blog')}</figcaption>
+              {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
             </figure>
           </a>
         </div>
@@ -364,7 +364,7 @@ const BlogPage = () => {
               <a href='https://lern-herstory.com/stories/f/mushrooms-relationships'>
                 <figure>
                   <img className='gridimag' src={shroom} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -381,7 +381,7 @@ const BlogPage = () => {
               <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
                 <figure>
                   <img className='gridimag' src={Fagen} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -397,7 +397,7 @@ const BlogPage = () => {
               <a href='https://www.tammymachmali.com/blog-tammy-machmali-holistic-healing-empowering-energy-work/forgiveness-for-healing-7ra44-yzmfe-sfhar-p2gxd-3yrd4'>
                 <figure>
                   <img className='gridimag' src={tammy} alt="logo" />
-                  <figcaption>{t('Experience Transformation')}</figcaption>
+                  {/* <figcaption>{t('Experience Transformation')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -413,7 +413,7 @@ const BlogPage = () => {
               <a href='/blog16'>
                 <figure>
                   <img className='gridimag' src={RoseOil} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -429,7 +429,7 @@ const BlogPage = () => {
               <a href='https://www.green-hypnotherapy.com/the-green-thumb'>
                 <figure>
                   <img className='gridimag' src={green} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -445,7 +445,7 @@ const BlogPage = () => {
               <a href='https://www.ajasupplements.com/blogs/all-blogs/want-more-energy-why-functional-workouts-boost-metabolism-amp-testosterone'>
                 <figure>
                   <img className='gridimag' src={img} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -461,7 +461,7 @@ const BlogPage = () => {
               <a href='https://www.ajasupplements.com/blogs/all-blogs/why-functional-fitness-becomes-more-important-as-you-age'>
                 <figure>
                   <img className='gridimag' src={imgg} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -477,7 +477,7 @@ const BlogPage = () => {
               <a href='https://michelleberrybliss.com/2025/06/23/jyotish-new-moon-june-2025-ardra-sadhana-sankalpa/'>
                 <figure>
                   <img className='gridimag' src={moon} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -493,7 +493,7 @@ const BlogPage = () => {
               <a href='/naturopathylane'>
                 <figure>
                   <img className='gridimag' src={mike} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog by Michael Lane')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog by Michael Lane')}</figcaption> */}
                 </figure>
               </a>
             </div>
@@ -509,7 +509,7 @@ const BlogPage = () => {
               <a href='https://www.tcnh-stl.com/cuppingblog'>
                 <figure>
                   <img className='gridimag' src={cup} alt="logo" />
-                  <figcaption>{t('Click on image for full Blog')}</figcaption>
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
             </div>

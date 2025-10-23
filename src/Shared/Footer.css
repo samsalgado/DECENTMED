@@ -1,216 +1,221 @@
-.footer {   
-  background: linear-gradient(to right, #027360, #035d4f, #027360);   
-  color: #fff;   
-  padding: 50px 20px 20px;   
-  font-family: 'Poppins', sans-serif; 
+.footer {
+  background: linear-gradient(135deg, #063a29, #138c56);
+  color: #f8f8f8;
+  padding: 40px 20px 0;
+  font-family: 'Poppins', sans-serif;
 }
-.footer-section.products .products-row {
-  display: flex;
-  flex-direction: row;
-  gap: 15px; /* Adjust spacing between images */
-  align-items: center;
-  justify-content: flex-start; /* or center, space-between, etc. */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
+
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
+   display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🖥️ Default: 5 columns for large screens */
+  gap: 20px;
+  max-width: 1300px;
   margin: auto;
+  align-items: flex-start;
+}
+
+/* 💻 Medium devices (tablets/laptops) → 3 columns */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Small devices (mobiles) → 1 column */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-section {
-  flex: 1 1 200px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
 }
 
-.footer-section h2, 
-.footer-section h3 {
-  margin-bottom: 20px;
-}
-
-.footer-section p, 
-.footer-section a, 
-.footer-section li {
-  font-size: 14px;
-  color: #ccc;
-  margin-bottom: 10px;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li a {
-  text-decoration: none;
-  color: #ccc;
-  transition: color 0.3s;
-}
-
-.footer-section ul li a:hover {
-  color: #fff;
-}
-/* Add this to your existing Footer.css */
-
-.product-img {
-  width: 100%;
-  height: 150px;
-  object-fit:contain;
+/* === Logo Fixed === */
+.footer-logo {
+  width: 150 !important;
+  height: 80px !important;
+  margin: 0 auto 12px;
+  display: block;
   transition: transform 0.3s ease;
 }
 
-.product-img:hover {
+.footer-logo:hover {
   transform: scale(1.05);
 }
 
-/* Override Bootstrap's img-fluid for consistent sizing */
-.product-img.img-fluid {
-  max-width: 150px;
-  height: 200px;
+/* === Text === */
+.footer-intro {
+  font-size: 16px;
+  color: #e3e3e3;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .product-img {
-    width: 120px !important;
-    height: 160px !important;
-  }
-  
-  .product-img.img-fluid {
-    max-width: 120px;
-    height: 160px;
-  }
-}
-
-.footer-section form {
-  display: flex;
-  margin-top: 10px;
-}
-
-.footer-section form input {
-  padding: 10px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  flex: 1;
-}
-
-.footer-section form button {
-  padding: 10px;
-  border: none;
-  background-color: #ff4c60;
+/* === Button === */
+.footer-link-btn {
+  background: #00a86b;
   color: white;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.social-icons {
-  margin-top: 15px;
+.footer-link-btn:hover {
+  background: #04c77d;
+  transform: translateY(-2px);
 }
 
-.social-icons a {
-  margin-right: 10px;
-  font-size: 40px;
-  transition: color 0.3s;
+/* === Title === */
+.footer-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  position: relative;
 }
 
-.facebook{
-  color: rgb(17, 164, 243);
-}
-.facebook:hover{
-  color:rgb(54, 177, 243);
-}
-
-.whatsapp{
-  color: rgb(104, 251, 104);
-}
-.whatsapp:hover{
-  color: rgb(61, 227, 61);
-}
-
-.tweet{
-  color: rgb(29, 161, 242);
-}
-.youtube{
-  color:rgb(246, 21, 21);
-}
-
-.imgdiv{
-  width: 100%;
-  margin-top: 0;
-}
-
-.Logo {
-  width: 200px;
-  height: 70px;
-}
-
-.decent{
-  font-style: italic;
-  font-weight: bold;
-  color:rgb(22, 250, 231)
-}
-
-.geyser{
-  width: 350px;
-  height: 80px;
-}
-
-.geyserImg{
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ensures image maintains aspect ratio */
-}
-
-/* New styles for product images */
-.footer-section.office .geyserImg {
-  max-width: 150px; /* Limit the book cover width */
-  max-height: 200px; /* Limit the book cover height */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain;
+.footer-title::after {
+  content: "";
   display: block;
-  margin: 10px 0;
+  width: 50px;
+  height: 3px;
+  background: #fff;
+  margin: 8px auto;
+  border-radius: 5px;
 }
 
-/* Override for geyser fund image specifically */
-.geyser .geyserImg {
-  width: 100%;
-  height: 100%;
-  max-width: 350px;
-  max-height: 80px;
-  object-fit: contain;
+/* === Quick Links === */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+.footer-list li {
+  margin: 8px 0;
+}
+
+.footer-list a {
+  color: #e3e3e3;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #04c77d;
+}
+
+/* === Office === */
+.footer-address {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #e2e2e2;
+}
+
+.footer-btn {
+  background-color: #00a86b !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  padding: 8px 16px !important;
+  border-radius: 5px !important;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #04c77d !important;
+  transform: translateY(-2px);
+}
+
+/* === Geyser Section === */
+.geyser-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.geyserImgLarge {
+  width: 170px;
+  height: auto;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.geyserImgLarge:hover {
+  transform: scale(1.15);
+}
+
+.geyser-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(0, 168, 107, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.geyser-link:hover .geyser-text {
+  background: rgba(4, 199, 125, 0.5);
+}
+
+/* === Social Icons === */
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
+
+.social-icon.linkedin:hover { color: #0077b5; }
+.social-icon.facebook:hover { color: #1877f2; }
+.social-icon.youtube:hover { color: #ff0000; }
+.social-icon.whatsapp:hover { color: #25d366; }
+
+/* === Footer Bottom === */
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #555;
-  font-size: 13px;
-  color: #aaa;
+  padding: 10px 0;
+  margin-top: 20px;
+padding-bottom: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  color: #ccc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+/* === Responsive Fix === */
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 10px 0 10px;
   }
-  
-  /* Make product images smaller on mobile */
-  .footer-section.office .geyserImg {
-    max-width: 120px;
-    max-height: 160px;
+  .footer-logo {
+    width: 190px;
   }
-  
-  .geyser .geyserImg {
-    max-width: 250px;
-    max-height: 60px;
+  .geyserImgLarge {
+    width: 160px;
+  }
+  .geyser-text {
+    font-size: 13px;
   }
 }

@@ -9,45 +9,45 @@ const Homeo = () => {
 
   return (
     <div className='thecontainer mobile-optimized'>
-        <h1 className='title'>{t('Homeopathy')}</h1>
-        <div style={{
+      <h1 className='title'>{t('Homeopathy')}</h1>
+      <div style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         margin: '20px 0'
       }}>
-        <div className="container-bbblue"style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: '20px'
-      }}>
-      <div className='content-wrapper' style={{
-          flex: '1'
+        <div className="container-bbblue" style={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: '20px'
         }}>
-          
-      <p className='pr'>{t("Seeking Homeopathy doctors near me? Homeopathy is a system of alternative medicine developed in the late 18th century by German physician Samuel Hahnemann. It is based on the principle of 'like cures like', meaning that a substance that causes symptoms in a healthy person can be used in highly diluted form to treat similar symptoms in someone who is ill. Homeopathy is safer and has shown benefits for a myriad of diseases and ailments. In this video, Dr. Tim Shannon talks about off-label drugs in cancer treatments, and the role of Homeopathy in treating ADD.")}</p>
-     
-      <Button className="custom-btn" href="https://decentmed.org/homeopract" target="_blank">
-                {t("Try Homeopathy")}
+          <div className='content-wrapper' style={{
+            flex: '1'
+          }}>
+
+            <p className='pr'>{t("Seeking Homeopathy doctors near me? Homeopathy is a system of alternative medicine developed in the late 18th century by German physician Samuel Hahnemann. It is based on the principle of 'like cures like', meaning that a substance that causes symptoms in a healthy person can be used in highly diluted form to treat similar symptoms in someone who is ill. Homeopathy is safer and has shown benefits for a myriad of diseases and ailments. In this video, Dr. Tim Shannon talks about off-label drugs in cancer treatments, and the role of Homeopathy in treating ADD.")}</p>
+
+            <Button className="custom-btn" href="https://decentmed.org/homeopract" target="_blank">
+              {t("Try Homeopathy")}
             </Button>
+          </div>
+          <iframe
+            width="100%"
+            height="475"
+            src="https://drive.google.com/file/d/1oizepFcjcTm_wlpSzCGOh1eKMYfklaAC/preview"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            style={{
+              maxWidth: '400px',
+              width: '100%',
+              height: 'auto'
+            }}
+          ></iframe>
+        </div>
       </div>
-        <iframe
-          width="100%"
-          height="475"
-          src="https://drive.google.com/file/d/1oizepFcjcTm_wlpSzCGOh1eKMYfklaAC/preview"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          style={{
-            maxWidth: '400px',
-            width: '100%',
-            height: 'auto'
-          }}
-        ></iframe>
-         </div>
-         </div>
-         <style jsx>{`
+      <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
             flex-direction: column !important;
@@ -62,15 +62,16 @@ const Homeo = () => {
           }
         }
       `}</style>
-        <br />
-        <br />
-        <img src={quote} className="TELEa" alt="quote" />
-        <div className="collapsible">
-        </div>
-          <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className="TELEa" alt="quote" />
-        </a>
+      <br />
+      <br />
+      <h3>HIPOCRATES SAID...</h3>
+      <img src={quote} className="TELEa" alt="quote" />
+      <div className="collapsible">
       </div>
+      <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
+        <img src={ultt} className="TELEa" alt="quote" />
+      </a>
+    </div>
 
   );
 };

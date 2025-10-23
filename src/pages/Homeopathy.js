@@ -5,17 +5,14 @@ import Homeo from "../info/homeopathypg";
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
+import PageWithTOC from "../Components/PageWithTOC";
 export function Homeopathy() {
 const { t } = useTranslation('common');
 useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
     return( 
-        <main className="page-content" style={{
-            // Solution 2: Ensure no top margin/padding on main container
-            marginTop: 0,
-            paddingTop: 0
-          }}>
+        <main className="page-content" >
 
     <div>
         <Helmet>  {/* Add Helmet component */}
@@ -25,7 +22,9 @@ useEffect(() => {
         <header>
             <Topbar />
         </header>
+<PageWithTOC  containerId="chiro-wrapper">
         <Homeo />
+                </PageWithTOC>
         <footer>
             <Footer />
         </footer>

@@ -1,10 +1,9 @@
 
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth.js';
-import './SocialLogin.css';
 import "../../info/Info.css";
-import { useTranslation } from 'react-i18next';
+import './SocialLogin.css';
 
 const SocialLogin = () => {
   const { googleSignIn } = useAuth();

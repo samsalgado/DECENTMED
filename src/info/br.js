@@ -1,9 +1,8 @@
-import React from "react";
-import './acu.css'; 
-import './Info.css';
-import { Button } from'react-bootstrap';
-import Benefits from "./brbenefits";
+import { Button } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
+import './acu.css';
+import Benefits from "./brbenefits";
+import './Info.css';
 const BREATH = () => {
 const {t} = useTranslation('common')
 
@@ -29,7 +28,7 @@ const {t} = useTranslation('common')
           <p className="pr"><h2>{t("What is Breathwork?")}</h2></p>
           <p className='pr'>{t("Breathwork is the practice of consciously using the breath to regulate your physical, emotional, and mental state. By shifting the rhythm, depth, and pattern of your breathing, you can calm the nervous system, release stored tension, increase clarity, and access deeper states of awareness. It’s a powerful tool for healing, transformation, and self-connection, helping you move out of survival mode and into presence, vitality, and emotional freedom. Breathwork can be gentle and grounding or deep and activating, depending on the intention and technique used. Seeking somatic breathwork near me? Click the button below to find great breathwork coaches.")}</p>
            <Button className="custom-btn" href="https://decentmed.org/breathwork" target="_blank">{t("Find Breathwork Coach")}</Button>  
-          {/* <Button className="custom-btn" href="http://localhost:3000/breathwork" target="_blank">{t("Find Breathwork Coach")}</Button>  */}
+          {/* <Button className="custom-btn" href="https://decentmed-server.vercel.app/breathwork" target="_blank">{t("Find Breathwork Coach")}</Button>  */}
         </div>
         <iframe
           className="centered-video"

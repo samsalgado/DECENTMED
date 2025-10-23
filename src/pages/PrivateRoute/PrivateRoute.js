@@ -29,7 +29,7 @@ const PrivateRoute = ({ children, adminOnly = false }) => {
 
   if (!token) {
     // Unauthorized ➜ go to SignIn with redirect param
-    return <Navigate to={`/signin?from=${location.pathname}`} replace />;
+    return <Navigate to={`/signup/provider?from=${location.pathname}`} replace />;
   }
 
   if (adminOnly && user?.role !== 'admin') {

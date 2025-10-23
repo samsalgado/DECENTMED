@@ -13,14 +13,14 @@
 //   const config = { headers: { Authorization: `Bearer ${token}` } };
 
 //   useEffect(() => {
-//     axios.get("http://localhost:5000/api/providers", config)
+//     axios.get("https://decentmed-server.vercel.app/api/providers", config)
 //       .then(res => setProviders(res.data))
 //       .catch(err => console.log(err));
 //   }, []);
 
 //   useEffect(() => {
 //     if (!selectedProvider) return;
-//     axios.get(`http://localhost:5000/api/providers/${selectedProvider}/slots`, config)
+//     axios.get(`https://decentmed-server.vercel.app/api/providers/${selectedProvider}/slots`, config)
 //       .then(res => setSlots(res.data.filter(s => !s.booked)))
 //       .catch(err => console.log(err));
 //   }, [selectedProvider]);
@@ -33,7 +33,7 @@
 
 //     try {
 //       const userId = token ? JSON.parse(atob(token.split('.')[1])).id : "guest";
-//       const res = await axios.post("http://localhost:5000/api/bookings", {
+//       const res = await axios.post("https://decentmed-server.vercel.app/api/bookings", {
 //         providerId: selectedProvider,
 //         userId,
 //         userName: name,
@@ -150,7 +150,7 @@
 
 //   // Fetch all providers
 //   useEffect(() => {
-//     axios.get("http://localhost:5000/api/providers", config)
+//     axios.get("https://decentmed-server.vercel.app/api/providers", config)
 //       .then(res => setProviders(res.data))
 //       .catch(err => console.log(err));
 //   }, []);
@@ -162,7 +162,7 @@
 //       setSelectedSlot(null);
 //       return;
 //     }
-//     axios.get(`http://localhost:5000/api/providers/${selectedProvider}/slots`, config)
+//     axios.get(`https://decentmed-server.vercel.app/api/providers/${selectedProvider}/slots`, config)
 //       .then(res => setSlots(res.data.filter(s => !s.booked)))
 //       .catch(err => console.log(err));
 //   }, [selectedProvider]);
@@ -173,7 +173,7 @@
 
 //     try {
 //       const userId = token ? JSON.parse(atob(token.split('.')[1])).id : "guest";
-//       const res = await axios.post("http://localhost:5000/api/bookings", {
+//       const res = await axios.post("https://decentmed-server.vercel.app/api/bookings", {
 //         providerId: selectedProvider,
 //         userId,
 //         userName: name,
@@ -228,8 +228,8 @@
 // }
 
 
-import React, { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
+import { useEffect, useMemo, useState } from 'react';
 
 export default function BookingForm({ token }) {
 console.log("TOKEN:43434", token);
@@ -246,7 +246,7 @@ const config = useMemo(() => ({
 }), [token]);
   // Fetch providers
 useEffect(() => {
-    axios.get("http://localhost:5000/api/providers", config)
+    axios.get("https://decentmed-server.vercel.app/api/providers", config)
         .then(res => setProviders(res.data))
         .catch(err => console.log(err));
 }, [config]); // ✅ Only re-runs when 'token' (via 'config') changes.
@@ -257,7 +257,7 @@ useEffect(() => {
       setSelectedSlot(null);
       return;
     }
-    axios.get(`http://localhost:5000/api/providers/${selectedProvider}/slots`, config)
+    axios.get(`https://decentmed-server.vercel.app/api/providers/${selectedProvider}/slots`, config)
       .then(res => setSlots(res.data.filter(s => !s.booked)))
       .catch(err => console.log(err));
   }, [selectedProvider,config]);
@@ -267,7 +267,7 @@ useEffect(() => {
     if (!selectedProvider || !selectedSlot) return alert("Select provider & slot");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/bookings", {
+      const res = await axios.post("https://decentmed-server.vercel.app/api/bookings", {
         providerId: selectedProvider,
         userName: name,
         userEmail: email,
