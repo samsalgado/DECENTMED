@@ -25,11 +25,10 @@ h3 {
   margin-bottom: 0.75rem;
 } */
 
-
-
 /* Main page titles */
 h1 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -38,21 +37,17 @@ h1 {
   margin: 50px auto 30px;
   position: relative;
   line-height: 1.1;
-
-
 }
-
 
 /* Add thick white outline for emphasis (like poster text) */
 h1 {
   -webkit-text-stroke: 2px #ffffff;
-  text-shadow: 3px 3px 0 #1cc36f, 6px 6px 10px rgba(0,0,0,0.2);
+  text-shadow: 3px 3px 0 #1cc36f, 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Subheadings */
 h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -85,30 +80,31 @@ h2 {
   }
 }
 
-h1, h2, h3 {
-  animation: fadeInUp 0.10s ease forwards;
+h1,
+h2,
+h3 {
+  animation: fadeInUp 0.1s ease forwards;
 }
 
-
 .topbar {
-  position: fixed;   /* সবসময় উপরে থাকবে */
-  top: 0;            /* উপরের দিকে চিপকে থাকবে */
+  position: fixed; /* সবসময় উপরে থাকবে */
+  top: 0;
+  margin-top: 0; /* উপরের দিকে চিপকে থাকবে */
   left: 0;
-  width: 100%;       /* পুরো page-এ ছাপা যাবে */
-  z-index: 1000;     /* সব content এর উপরে থাকবে */
+  width: 100%; /* পুরো page-এ ছাপা যাবে */
+  z-index: 9999; /* সব content এর উপরে থাকবে */
   background-color: #fff; /* navbar background */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   animation: slideFadeDown 0.7s ease-out;
 }
 
 /* Page content top padding দিতে হবে */
 .page-content {
   margin-top: 110px; /* navbar height অনুযায়ী adjust করো */
-  animation: contentEntrance 0.7s ease-out;
-  animation-delay: 0.2s;
+  /* animation: contentEntrance 0.7s ease-out;
+  animation-delay: 0.2s; */
 
 }
-
 
 /* Smooth hover effect for links or buttons */
 button,
@@ -135,8 +131,6 @@ a {
     transform: translateY(0);
   }
 }
-
-
 
 /* .topbar {
   animation: topbarEntrance 0.6s ease-out forwards;
@@ -799,21 +793,20 @@ body {
 
 .Logo {
   align-items: left;
-   height: 7vmin;
-  width: 160px !important;  /* তোমার প্রয়োজন অনুযায়ী বাড়াও */
+  height: 7vmin;
+  width: 160px !important; /* তোমার প্রয়োজন অনুযায়ী বাড়াও */
 
-max-width: 180px !important;
+  max-width: 180px !important;
   position: relative;
 }
 
 @media (max-width: 768px) {
   .Logo {
     width: 150px !important;
-/* height: 90px !important; */
-margin-bottom: 25px !important;
+    /* height: 90px !important; */
+    margin-bottom: 25px !important;
   }
 }
-
 
 .contact {
   text-align: right;
@@ -858,7 +851,7 @@ h4 {
 .pic1 {
   width: 100%; /* Ensure images scale within columns */
   height: auto;
- background-color: white;
+  background-color: white;
 }
 
 .wpr {
@@ -1754,19 +1747,19 @@ td:last-child {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
-  
-/* Scarlett De Email Form */
-.contact-form {
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 30px 25px;
-  font-weight: 'normal';
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
-}
+
+  /* Scarlett De Email Form */
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px 25px;
+    font-weight: "normal";
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+  }
 
   /* Scarlett De Email Form */
   .contact-form {
@@ -1955,7 +1948,6 @@ td:last-child {
   }
 }
 
-
 /* Scrollable dropdown */
 .scrollable-dropdown .dropdown-menu {
   max-height: 450px; /* adjust as needed */
@@ -1968,7 +1960,6 @@ td:last-child {
 }
 
 .scrollable-dropdown .dropdown-menu::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
-
