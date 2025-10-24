@@ -106,9 +106,9 @@ h3 {
 
 }
 /* ✅ For small devices */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .page-content {
-    margin-top: 125px;
+    margin-top: 160px;
   }
 }
 /* Smooth hover effect for links or buttons */
