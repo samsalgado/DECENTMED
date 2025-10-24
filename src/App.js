@@ -72,7 +72,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { StemPract } from './pages/STEMPRACT';
-import React from 'react';
+
 import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
 import StripePayment from './pages/StripePayment/StripePayment';
@@ -80,6 +80,9 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import ProviderDashboard from './Dashboard/ProviderDashboard';
 import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
+import SignupPrompt from './Components/SignupPromt';
+
+
 
 
 function App() {
@@ -91,6 +94,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       {/* <Topbar t={t} /> */}
       <ScrollTop />
+      {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}
+      <SignupPrompt></SignupPrompt>
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
         <Route path="/404" element={<NotFound />} />
@@ -110,7 +115,7 @@ function App() {
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/ak" element={<AppliedKinesiology t={t} />} />
-        <Route path="/breathwork" element={<Breathwork  providerEmail="samueljuansalgado@gmail.com"  t={t} />} />
+        <Route path="/breathwork" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
