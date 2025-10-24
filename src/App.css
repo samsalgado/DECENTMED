@@ -1253,14 +1253,14 @@ input[type="submit"]:hover {
 }
 
 .contain {
-  flex: 1 1 calc(100% - 16px); /* Default for small devices */
+  flex: 1 1 calc(100% - 16px); /* Default for small devices: 1 column */
   max-width: calc(100% - 16px);
   padding: 8px; /* Internal padding */
   box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
-  /* Medium devices (3 columns) */
+  /* Medium devices: 3 columns */
   .contain {
     flex: 1 1 calc(33.33% - 16px);
     max-width: calc(33.33% - 16px);
@@ -1268,12 +1268,13 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 1200px) {
-  /* Large devices (4 columns) */
+  /* Large devices: 5 columns */
   .contain {
-    flex: 1 1 calc(25% - 16px);
-    max-width: calc(25% - 16px);
+    flex: 1 1 calc(20% - 16px);
+    max-width: calc(20% - 16px);
   }
 }
+
 
 .pic1 {
   width: 100%; /* Ensure images scale within columns */

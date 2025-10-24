@@ -178,7 +178,7 @@ const {t} = useTranslation('common')
   name: t('Andrographis paniculata'),
   price: 0.00038119500248,
   description: t(`Green chireta has a long history of traditional medicinal use in India, various parts of South-East Asia, Central America and the Caribbean[310]. The roots and leaves are considered to be alterative, anthelmintic, bitter, febrifuge, stomachic and tonic[46]. There has been a large amount of research into the effects of this plant, several medically active compounds have been identified with a wide range of effective actions[310]. The aerial parts of the plant contain a large number of diterpenes, whilst the presence of flavones in the root has also been reported[310]. Extracts and purified diterpenes and flavonoids have been investigated for a multitude of pharmacological effects. Trials using the leaf extract have concluded that the powdered leaves have the capacity to significantly shorten the duration of common colds and that the leaves can be as effective as paracetamol in relieving the fever and sore throat of people with pharyngotonsilitis[310]. The leaves have also been shown to have significant anti-inflammatory effect and also significantly inhibit oedema[310]. An ethanol extract of the leaves stimulates both antigen-specific and nonspecific immune responses more than the purified leaf extracts. An ethanol extract has also shown significant antipyretic activity. A standardized leaf extract exhibits significant antipyretic properties and is an effective analgesic[310]. The crude water extract of the leaves, as well as the semi-purified n-butanol and aqueous fractions, have shown significant hypotensive activity[310]. In one trial, a 10% infusion of the herb applied intravenously at 1 ml/kg bodyweight reduced the blood pressure by 6-10 mm Hg in 10-20 seconds[310]. An extract of the leaves has also been shown to lower cholesterol levels, whilst antithrombotic effects were also observed. It is believed that these effects might be at least partially due to flavones present in the extract[310]. Administered intraperitoneally, the diterpenes andrographiside and neoandrographolide (found in the leaves) have a significant protective effect on the liver. An extract of the leaves has shown antidiarrhoeal activity[310]. The diterpenes andrographolide and neoandrographolide isolated from the alcoholic extract showed potent antisecretory activity against Escherichia coli enterotoxin induced secretions. Various compounds have shown significant anti-ulcer properties. It is suggested that this effect is due to the antisecretory activity and protective effect on the gastric mucosa[310]. Oral administration of 20 mg of the dry leaf powder for 60 days has an antifertility effect in males[310]. The alcoholic extract of the rhizomes exhibits good in vitro anthelmintic activity against Ascaris lumbricoides[310]. Neoandrographolide, isolated from the leaves, exhibits significant antimalarial activity[310]. Dehydroandrographolide succinic acid monoester, derived from andrographolide, has been found to inhibit the human immunodeficiency virus (HIV) in vitro[310]. A leaf infusion administered intraperitoneally has an LD50 at 71.1 mg/10 g body weight (acute toxicity). At a concentration of 1 mg/kg, it lowers the body temperature at least 2°C[310]. The plant used to be considered an effective remedy against snake bites and it is still used locally for this[310]. It has also been reported as useful to treat insect bites and, in combination with Orthosiphon aristatus, as a remedy for diabetes[310]. An infusion or sap from the crushed leaves has been recommended for the treatment of fever, as a tonic, and for itching skin eruptions[310]. A decoction of the leaves or roots is used against stomach-ache, dysentery, typhus, cholera, influenza and bronchitis, as a vermifuge, and is considered a diuretic[310]. Pills or infusions are also recommended to treat female disorders, dyspepsia, hypertension, rheumatism, gonorrhoea, amenorrhoea, torpid liver and jaundice[310]. Another use is as a poultice on swollen legs or feet, vitiligo and piles[310]. Furthermore, Andrographis paniculata is considered to be anti-inflammatory and immunosuppressive, but reports on antibacterial activity are contradictory[310]. The leaves should be harvested when the inflorescence axis starts to grow because the maximum accumulation of andrographolide is at that stage[310]. The roots are harvested when leaves start discolouring or wilting[310]. Yields of 1 - 1.5 kg fresh weight/plant are obtained from 7-month-old plants[310]. In general, the herb is used fresh and consumed within a few days after collection[310]. However, leaves and roots should be washed and dried in the sun or artificially before storage[310].`),
-  medrating: 4,
+  medrating: 5,
   source: 'https://pfaf.org/user/Plant.aspx?LatinName=Andrographis+paniculata'
 },
 {
@@ -187,7 +187,7 @@ const {t} = useTranslation('common')
   name: t('Andropogon gerardii'),
   price: 0.0001020248,
   description: t("The plant is analgesic, carminative and diuretic[222]. A decoction of the roots is used in the treatment of stomach-aches and flatulence[222, 257]. A tea made from the leaves is used as a wash to relieve fevers and general debility[222, 257]."),
-  medrating: 1,
+  medrating: 4,
   source: 'https://pfaf.org/user/Plant.aspx?LatinName=Andropogon+gerardii'
 },
 {
@@ -1634,14 +1634,15 @@ const {t} = useTranslation('common')
 
     ]
   );
-
+ // Sort descending by rating
+  const sortedPlants = [...plant].sort((a, b) => b.medrating - a.medrating);
 
   return (
 
     <div className='contents'>
       <div   className='plant-containers'>
       
-          {plant.map((val) => (
+          {sortedPlants.map((val) => (
             <ApothecaryData val={val} key={val.id}>
             </ApothecaryData>))
           }

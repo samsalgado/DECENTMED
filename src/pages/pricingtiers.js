@@ -201,8 +201,8 @@ export function Pricing() {
   const [loadingTier, setLoadingTier] = useState(null);
 
   const tiers = [
-    { name: 'Tiers:1', price: 500, img: tier2 },
-    { name: 'Premium Tiers-2', price: 2000, img: tier3 },
+    { name: 'Tiers 1', price: 500, img: tier2 },
+    { name: 'Tiers 2', price: 2000, img: tier3 },
   ];
 
   const handlePayment = (tierName, price) => {

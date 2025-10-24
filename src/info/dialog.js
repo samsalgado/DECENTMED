@@ -57,7 +57,7 @@ export default function CustomizedDialogs({children}) {
     
     <div className='buton'>
       <Button style={{marginTop:20, color:'black', textDecoration:'solid'}} variant="outlined"  onClick={handleClickOpen}>
-        {t('Disclaimer')}
+        {t('Pay')}
       </Button>
       <BootstrapDialog
         onClose={handleClose}

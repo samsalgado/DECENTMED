@@ -1,0 +1,79 @@
+.disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.disclaimer-box {
+  background-color: #d8f3dc; /* light green */
+  color: #081f13; /* dark text */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  position: relative;
+  margin-top: 0;
+}
+
+.disclaimer-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.disclaimer-text {
+  font-size: 16px;
+}
+
+.disclaimer-close-btn,
+.disclaimer-learnmore-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.disclaimer-close-btn {
+  background-color: #0b6e4f; /* dark green */
+}
+
+.disclaimer-learnmore-btn {
+  background-color: #007BFF; /* blue for Learn More */
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 800px) {
+  .disclaimer-box {
+    margin-top: 50px; /* small device top margin */
+    padding: 30px;
+  }
+
+  .disclaimer-box h2 {
+    font-size: 20px;
+  }
+
+  .disclaimer-text {
+    font-size: 14px;
+  }
+
+  .disclaimer-close-btn,
+  .disclaimer-learnmore-btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}

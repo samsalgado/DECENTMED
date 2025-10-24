@@ -7,7 +7,7 @@ export default function SignupPrompt() {
     const isSignedIn = localStorage.getItem("token"); // তোমার JWT বা auth token
     const lastShown = localStorage.getItem("signupPopupLastShown");
     const now = new Date().getTime();
-    const TEN_MINUTES = 10 * 60 * 1000;
+    const TEN_MINUTES = 15 * 60 * 1000;
 
     // যদি user লগইন না করে থাকে
     if (!isSignedIn) {

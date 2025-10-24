@@ -81,6 +81,7 @@ import ProviderDashboard from './Dashboard/ProviderDashboard';
 import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
 import SignupPrompt from './Components/SignupPromt';
+import DisclaimerPopup from './Components/DisclaimerPopup';
 
 
 
@@ -94,6 +95,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       {/* <Topbar t={t} /> */}
       <ScrollTop />
+<DisclaimerPopup></DisclaimerPopup>
       {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}
       <SignupPrompt></SignupPrompt>
       <Routes>

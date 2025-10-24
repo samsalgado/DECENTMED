@@ -136,7 +136,6 @@ const Footers = () => {
               {t("Shop")}
             </Button>
             <li><a href="https://decentmed.org/reviews" target="_blank" rel="noreferrer">{t("Our Reviews")}</a></li>
-            <li><a href="https://decentmed.org/contact" target="_blank" rel="noreferrer">{t("Contact Us")}</a></li>
           </ul>
         </div>
 
