@@ -62,9 +62,9 @@ text-align: center;
 /* Media query for small devices */
 @media screen and (max-width: 800px) {
   .disclaimer-box {
-    margin-top: 135px; /* small device top margin */
+    margin-top: 180px; /* small device top margin */
 width: 100%;   
- padding: 30px;
+ padding: 15px;
   }
 
   .disclaimer-box h2 {

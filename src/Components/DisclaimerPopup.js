@@ -7,7 +7,7 @@ export default function DisclaimerPopup() {
   useEffect(() => {
     const lastShown = localStorage.getItem("disclaimerLastShown");
     const now = new Date().getTime();
-    const TEN_MINUTES = 1 * 60 * 1000;
+    const TEN_MINUTES = 10 * 60 * 1000;
 
     if (!lastShown || now - lastShown > TEN_MINUTES) {
       setShowPopup(true);
