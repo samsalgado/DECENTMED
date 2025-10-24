@@ -105,7 +105,12 @@ h3 {
   animation-delay: 0.2s; */
 
 }
-
+/* ✅ For small devices */
+@media (max-width: 768px) {
+  .page-content {
+    margin-top: 125px;
+  }
+}
 /* Smooth hover effect for links or buttons */
 button,
 a {
