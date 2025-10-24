@@ -32,17 +32,15 @@ h1 {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 7px;
-  color: #084b28; /* Deep green like the one in the image */
+  color: #097e59; /* Calm medical green */
   text-align: center;
   margin: 50px auto 30px;
   position: relative;
   line-height: 1.1;
-}
 
-/* Add thick white outline for emphasis (like poster text) */
-h1 {
+  /* Outline and shadow for professional depth */
   -webkit-text-stroke: 2px #ffffff;
-  text-shadow: 3px 3px 0 #1cc36f, 6px 6px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 0 #0e9c7e, 6px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Subheadings */
@@ -50,41 +48,30 @@ h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.2rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #15c86f;
+  letter-spacing: 2px;
+  color: #13a89e; /* Teal tone for healthcare feel */
   text-align: center;
   margin: 40px auto 20px;
-  text-shadow: 2px 2px 0 #c3f5d1;
+  text-shadow: 1px 1px 0 #d0f3ef;
 }
 
-/* Smaller headings */
-/* h3 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  color: #2b7a4b;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-top: 30px;
-} */
-
-/* Optional: fade-in animation */
+/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
   to {
-    opacity: 2;
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 h1,
-h2,
-h3 {
-  animation: fadeInUp 0.1s ease forwards;
+h2 {
+  animation: fadeInUp 0.5s ease forwards;
 }
+
 
 .topbar {
   position: fixed; /* সবসময় উপরে থাকবে */

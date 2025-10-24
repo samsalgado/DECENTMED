@@ -372,8 +372,8 @@ const CheckOutForm = () => {
       }
     } catch (err) {
       setMessage(err.message || 'An unexpected error occurred.');
- 
-} finally {
+
+    } finally {
       setIsProcessing(false);
     }
   };
@@ -410,6 +410,7 @@ const CheckOutForm = () => {
             style={{
               flex: '1',
               padding: '12px',
+              marginTop: '9px',
               height: '50px',
               border: '1px solid #ccc',
               borderRadius: '6px',
