@@ -9,51 +9,71 @@
   font-size: 2.5rem;
   color: "black";
   margin-bottom: 1rem;
+} */
+
+h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean & professional font */
+  font-weight: 800; /* slightly bold for emphasis without being heavy */
+  font-size: 2.8rem; /* slightly larger for readability */
+  color: #201616; /* deep green, professional healthcare feel */
+  margin-bottom: 1.2rem;
+  line-height: 1.2; /* clean spacing */
+  letter-spacing: 1px; /* subtle spacing for elegance */
+  text-align: center; /* centered headings for a professional look */
+letter-spacing: 2px; /* characters er moddhe gap */
+  word-spacing: 5px;
 }
+
 
 h2 {
   font-family: sans-serif;
   font-size: 2rem;
-  color: "black";
+  color: #2d1e1e;       /* pure black */
+  font-weight: 800;     /* bold */
   margin-bottom: 1rem;
+letter-spacing: 2px; /* characters er moddhe gap */
+  word-spacing: 5px;
 }
 
 h3 {
   font-family: sans-serif;
   font-size: 1.5rem;
-  color: "black";
+  color: #2b2222;       /* pure black */
+  font-weight: 800;     /* bold */
   margin-bottom: 0.75rem;
-} */
+letter-spacing: 4px; /* characters er moddhe gap */
+}
+
 
 /* Main page titles */
-h1 {
+/* h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 7px;
-  color: #097e59; /* Calm medical green */
+  color: #097e59; 
   text-align: center;
   margin: 50px auto 30px;
   position: relative;
   line-height: 1.1;
 
-  /* Outline and shadow for professional depth */
+
   -webkit-text-stroke: 2px #ffffff;
   text-shadow: 2px 2px 0 #0e9c7e, 6px 6px 12px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Subheadings */
-h2 {
+/* h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #13a89e; /* Teal tone for healthcare feel */
+  color: #13a89e; 
   text-align: center;
   margin: 40px auto 20px;
   text-shadow: 1px 1px 0 #d0f3ef;
-}
+} */
 
 /* Animation */
 @keyframes fadeInUp {
@@ -87,7 +107,7 @@ h2 {
 
 /* Page content top padding দিতে হবে */
 .page-content {
-  margin-top: 110px; /* navbar height অনুযায়ী adjust করো */
+  margin-top: 120px; /* navbar height অনুযায়ী adjust করো */
   /* animation: contentEntrance 0.7s ease-out;
   animation-delay: 0.2s; */
 

@@ -11,6 +11,9 @@
   z-index: 9999;
   padding: 20px;
 }
+h2{
+text-align: center;
+}
 
 .disclaimer-box {
   background-color: #d8f3dc; /* light green */

@@ -89,7 +89,7 @@ const BlogPage = () => {
           <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
             <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Lion's Mane Supplement Benefits")}</h2>
             <div className='container'>
-              <a href='https://peakformsupplements.com/products/lions-mane-elite'>
+              <a href='https://peakformsupplements.com/products/lions-mane-elite' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={lions} alt="logo" />
                   {/* <figcaption>{t("Access the best Lion's Mane supplements for improved mental clarity.")}</figcaption> */}
@@ -146,7 +146,7 @@ const BlogPage = () => {
               {t("Recover Faster from Sports Injuries with Expert Chiropractic Care in Miami Beach When you're active, injuries can feel like an unexpected detour.")}
             </p>
             <div className='container'>
-              <a href='https://www.drnarson.com/blog/1325688-how-chiropractic-care-can-accelerate-recovery-from-common-sports-injuries'>
+              <a href='https://www.drnarson.com/blog/1325688-how-chiropractic-care-can-accelerate-recovery-from-common-sports-injuries target="_blank" rel="noopener noreferrer"'>
                 <figure>
                   <img className='gridimag' src={golf} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -194,7 +194,7 @@ const BlogPage = () => {
           <div className='pr'>
             <p>
               {t(`A detox cleanses the body. A water detox is a way to flush out the body's toxins. A water detox ranges from 1-3 days to restore the cells to ketosis. Furthermore, when detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.`)}
-              <a href='https://gerson.org/'> {t('Cancer')}</a> {t('treatments globally like the Gerson Therapy and')} <a href='https://drsebiscellfood.com/'>{t('Dr. Sebi diet')}</a> {t('use forms of Green Diets and Detoxification to cleanse the body from toxins that cause cancer.')}</p>
+              <a href='https://gerson.org/' target="_blank" rel="noopener noreferrer"> {t('Cancer')}</a> {t('treatments globally like the Gerson Therapy and')} <a href='https://drsebiscellfood.com/'>{t('Dr. Sebi diet')}</a> {t('use forms of Green Diets and Detoxification to cleanse the body from toxins that cause cancer.')}</p>
             <div className='container'>
               <a href='/blog4'>
                 <figure>
@@ -245,7 +245,7 @@ const BlogPage = () => {
               {t(`To better understand Hypnotherapy we must first understand Hypnosis. Hypnosis is a natural, yet slightly altered, state of mind where communication and responsiveness with the subconscious mind is present. Hypnosis is being in a state of hypersuggestibility with an increased receptivity to suggestion. This state allows the hypnotherapist to better facilitate communication between the conscious and the subconscious mind.`)}
             </p>
             <div className='container'>
-              <a href='https://www.green-hypnotherapy.com/the-green-thumb/page-4'>
+              <a href='https://www.green-hypnotherapy.com/the-green-thumb/page-4' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={hypnotherapy} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -262,7 +262,7 @@ const BlogPage = () => {
               {t(`A new study from the University of Reading found that a poor-quality diet may be associated with changes in the brain structure that are linked to depression and anxiety.`)}
             </p>
             <div className='container'>
-              <a href='https://needtoknow.news/2024/08/new-study-explores-how-food-choices-shape-mental-health-and-affect-depression/'>
+              <a href='https://needtoknow.news/2024/08/new-study-explores-how-food-choices-shape-mental-health-and-affect-depression/' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={depression} alt="logo" />
                   {/* <figcaption>{t('Click on image for blog by Epoch Times on correlation between Food and Mental Health')}</figcaption> */}
@@ -361,7 +361,7 @@ const BlogPage = () => {
               {t(`For many years now, I have been applying a very particular stipulation to my interpersonal relationships: Anyone who wishes to enter into and sustain a relationship with me of any kind, whether professional or personal, must be willing to consume entheogens with me on a continual and consistent basis. Otherwise, I have found that communication issues and personality barriers seem to arise, and I typically need to end the relationship.`)}
             </p>
             <div className='container'>
-              <a href='https://lern-herstory.com/stories/f/mushrooms-relationships'>
+              <a href='https://lern-herstory.com/stories/f/mushrooms-relationships' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={shroom} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -378,7 +378,7 @@ const BlogPage = () => {
               {t(`In the world of healthcare, a quiet revolution is underway. Patients and practitioners alike are realizing that the traditional 'band-aid' approach—managing symptoms without addressing underlying causes—often falls short. This growing awareness has sparked interest in functional medicine, a patient-centered approach that focuses on uncovering and resolving the root causes of illness. So, what makes functional medicine so transformative? Let’s explore why this approach is reshaping the future of healthcare.`)}
             </p>
             <div className='container'>
-              <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via'>
+              <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={Fagen} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -394,7 +394,7 @@ const BlogPage = () => {
               {t(`Have you ever wondered why some people seem so disconnected from their emotions?`)}
             </p>
             <div className='container'>
-              <a href='https://www.tammymachmali.com/blog-tammy-machmali-holistic-healing-empowering-energy-work/forgiveness-for-healing-7ra44-yzmfe-sfhar-p2gxd-3yrd4'>
+              <a href='https://www.tammymachmali.com/blog-tammy-machmali-holistic-healing-empowering-energy-work/forgiveness-for-healing-7ra44-yzmfe-sfhar-p2gxd-3yrd4' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={tammy} alt="logo" />
                   {/* <figcaption>{t('Experience Transformation')}</figcaption> */}
@@ -426,7 +426,7 @@ const BlogPage = () => {
               {t('In our fast-paced world, stress and anxiety have become all too common. As a result, many individuals are seeking natural remedies to alleviate these persistent feelings of unease. One such remedy that has garnered attention in the Western world in recent years is Ashwagandha, a powerful adaptogenic herb with a long history in Ayurvedic medicine.')}
             </p>
             <div className='container'>
-              <a href='https://www.green-hypnotherapy.com/the-green-thumb'>
+              <a href='https://www.green-hypnotherapy.com/the-green-thumb' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={green} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -442,7 +442,7 @@ const BlogPage = () => {
               {t("Want More Energy? Why Functional Workouts Boost Metabolism & Testosterone Feeling sluggish? Struggling with low energy, stubborn belly fat, or a dip in motivation? After 40, your metabolism slows, testosterone levels drop, and traditional workouts stop delivering results. The solution? Functional training. By activating multiple muscle groups, increasing calorie burn, and naturally supporting testosterone production, it helps you regain strength, energy, and focus. Compound movements like squats, deadlifts, and carries fire up your metabolism, while high-intensity functional workouts optimize hormone levels. If you're ready to ditch fatigue and start feeling like your younger self again, it's time to train smarter—not...")}
             </p>
             <div className='container'>
-              <a href='https://www.ajasupplements.com/blogs/all-blogs/want-more-energy-why-functional-workouts-boost-metabolism-amp-testosterone'>
+              <a href='https://www.ajasupplements.com/blogs/all-blogs/want-more-energy-why-functional-workouts-boost-metabolism-amp-testosterone' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={img} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption> */}
@@ -458,7 +458,7 @@ const BlogPage = () => {
               {t("Why Functional Fitness Becomes More Important as You Age When you were younger, you could push through workouts without much thought—skipping warm-ups, lifting heavy with bad form, and bouncing back quickly. But after 40, your metabolism slows, mobility decreases, and injuries take longer to heal. That’s why functional fitness isn’t just a trend; it’s a necessity for staying strong, mobile, and pain-free for life. Functional training focuses on real-world movement patterns—bending, lifting, carrying, and rotating—building strength that translates beyond the gym. It helps improve mobility, strengthen joints, and reduce injury risk, making it the smart way to train as you...")}
             </p>
             <div className='container'>
-              <a href='https://www.ajasupplements.com/blogs/all-blogs/why-functional-fitness-becomes-more-important-as-you-age'>
+              <a href='https://www.ajasupplements.com/blogs/all-blogs/why-functional-fitness-becomes-more-important-as-you-age' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={imgg} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog by Anthony Amato')}</figcaption> */}
@@ -474,7 +474,7 @@ const BlogPage = () => {
               {t(`A powerful Jyotish New Moon in Ardra awakens karmic healing, soul intention, and divine transformation. June 25, 2025.`)}
             </p>
             <div className='container'>
-              <a href='https://michelleberrybliss.com/2025/06/23/jyotish-new-moon-june-2025-ardra-sadhana-sankalpa/'>
+              <a href='https://michelleberrybliss.com/2025/06/23/jyotish-new-moon-june-2025-ardra-sadhana-sankalpa/' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={moon} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -506,7 +506,7 @@ const BlogPage = () => {
               {t(`Highlighting the benefits of using cupping for your wellness routine.`)}
             </p>
             <div className='container'>
-              <a href='https://www.tcnh-stl.com/cuppingblog'>
+              <a href='https://www.tcnh-stl.com/cuppingblog' target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img className='gridimag' src={cup} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}

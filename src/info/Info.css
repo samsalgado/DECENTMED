@@ -19,7 +19,7 @@
 
 
 }
-h1 {
+/* h1 {
   font-family: sans-serif;
   font-size: 2.5rem;
 
@@ -37,7 +37,42 @@ h3 {
   font-size: 1.5rem;
   color: "black";
   margin-bottom: 0.75rem;
+} */
+
+h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean & professional font */
+  font-weight: 800; /* slightly bold for emphasis without being heavy */
+  font-size: 2.8rem; /* slightly larger for readability */
+  color: #201616; /* deep green, professional healthcare feel */
+  margin-bottom: 1.2rem;
+  line-height: 1.2; /* clean spacing */
+  letter-spacing: 1px; /* subtle spacing for elegance */
+  text-align: center; /* centered headings for a professional look */
+letter-spacing: 4px; /* characters er moddhe gap */
+
 }
+
+
+h2 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #2d1e1e;       /* pure black */
+  font-weight: 800;     /* bold */
+  margin-bottom: 1rem;
+letter-spacing: 2px; /* characters er moddhe gap */
+
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: #2b2222;       /* pure black */
+  font-weight: 800;     /* bold */
+  margin-bottom: 0.75rem;
+letter-spacing: 4px; /* characters er moddhe gap */
+}
+
+
 
 .digital {
   margin-top: 10px;

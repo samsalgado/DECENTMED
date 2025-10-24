@@ -146,7 +146,7 @@ const Footers = () => {
           <Button
             className="footer-btn"
             href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true"
-            target="_blank" rel="noreferrer"
+            target="_blank" rel="noopener noreferrer"
           >
             {t("Book a Call")}
           </Button>
