@@ -371,8 +371,9 @@ const CheckOutForm = () => {
         }
       }
     } catch (err) {
-      setMessage(err.message || 'An unexpected error occurred.');
-    } finally {
+      setMessage(err.response?.data?.message||err.message || 'An unexpected error occurred.');
+console.log(err.response?.data?.message);    
+} finally {
       setIsProcessing(false);
     }
   };
