@@ -5,7 +5,6 @@ import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
-import PageWithTOC from '../Components/PageWithTOC';
 
 export function Chelation() {
 const { t } = useTranslation("common");
@@ -24,9 +23,9 @@ useEffect(() => {
             <header>
             <Topbar />
             </header>
-<PageWithTOC  containerId="chiro-wrapper">
+
             <Pgchelation />
-                </PageWithTOC>
+
             <footer>
                 <Footer />
             </footer>
