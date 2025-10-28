@@ -7,6 +7,7 @@ import ultt from "../images copy/ultt.png";
 import OCTT from "../images copy/OCTrv.png";
 import oct from "../images copy/OCT.png";
 import Collapsible from 'react-collapsible';
+import erica from "../images copy/ericawellness.png";
 import { useTranslation } from 'react-i18next';
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
@@ -157,12 +158,14 @@ const Info1 = () => {
       <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Tampa')}</th>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+19133838505">
       <img src={oct} alt="Acupuncture Tampa" style={{
         width: '100%',
         maxWidth: '500px',
         height: 'auto',
         objectFit: 'contain'
       }} />
+    </a>
     </div>
     <div className="col-12 col-md-6 mb-3">
       <img src={OCTT} alt="Acupuncture Tampa" style={{
@@ -185,7 +188,31 @@ const Info1 = () => {
     }
   `}</style>
 </Collapsible>
+   <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Milwaukee')}</th>}>
+  <div className="row">
+    <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+14146512850">
+      <img src={erica} alt="Acupuncture Milwaukee" style={{
+        width: '100%',
+        maxWidth: '500px',
+        height: 'auto',
+        objectFit: 'contain'
+      }} />
+    </a>
+    </div>
+  </div>
 
+  <style jsx>{`
+    @media (max-width: 768px) {
+      .row > div {
+        text-align: center;
+      }
+      .row img {
+        max-width: 350px !important;
+      }
+    }
+  `}</style>
+</Collapsible>
       <Acuvids />
       <Channel />
          <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
