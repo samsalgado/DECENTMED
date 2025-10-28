@@ -3,6 +3,7 @@ import "./chiro.css";
 import "../App.css";
 import ultt from "../images copy/ultt.png";
 import chiroFR from '../images copy/IMG_9300.jpeg';
+//import betterhealthsolutions from '../images copy/drk.png'
 import chiroES from '../images copy/IMG_9301.jpeg';
 import chiroHI from '../images copy/IMG_9303.jpeg';
 import chiroNL from '../images copy/IMG_9311.jpeg';
@@ -76,7 +77,7 @@ const Chiro = () => {
       </a>
     </div>
     <div className="col-12 col-md-6 mb-3">
-      <a href="tel:9133838505">
+      <a href="tel:+19133838505">
         <img src={reviewtcc} alt="Total Care Chiropractic Review" style={{
           width: '100%',
           maxWidth: '550px',
@@ -87,7 +88,21 @@ const Chiro = () => {
     </div>
   </div>
 </Collapsible>
-
+/*<Collapsible trigger={<h3 className="collapsible-trigger">{t('Scottsdale Chiropractic')}</h3>}>
+  <div className="row">
+    <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+14809456900">
+        <img src={betterhealthsolutions} alt="Better Health Solutions" style={{
+          width: '100%',
+          maxWidth: '550px',
+          height: 'auto',
+          objectFit: 'contain'
+        }} />
+      </a>
+    </div>
+  </div>
+</Collapsible>
+*/
             </div>
           </tbody>
         </table>
