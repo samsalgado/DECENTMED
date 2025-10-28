@@ -67,7 +67,7 @@ const Chiro = () => {
            <Collapsible trigger={<h3 className="collapsible-trigger">{t('Kansas City Chiropractic')}</h3>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
-      <a href="tel:9133838505">
+      <a href="tel:+19133838505">
         <img src={tcc} alt="Total Care Chiropractic" style={{
           width: '100%',
           maxWidth: '550px',
