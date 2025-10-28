@@ -158,7 +158,7 @@ const Info1 = () => {
       <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Tampa')}</th>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
-      <a href="tel:+19133838505">
+      <a href="tel:+18333362326">
       <img src={oct} alt="Acupuncture Tampa" style={{
         width: '100%',
         maxWidth: '500px',
@@ -168,12 +168,14 @@ const Info1 = () => {
     </a>
     </div>
     <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+18333362326">
       <img src={OCTT} alt="Acupuncture Tampa" style={{
         width: '100%',
         maxWidth: '500px',
         height: 'auto',
         objectFit: 'contain'
       }} />
+      </a>
     </div>
   </div>
 
