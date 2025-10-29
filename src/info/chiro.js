@@ -3,7 +3,8 @@ import "./chiro.css";
 import "../App.css";
 import ultt from "../images copy/ultt.png";
 import chiroFR from '../images copy/IMG_9300.jpeg';
-import betterhealthsolutions from '../images copy/drk.png'
+import betterhealthsolutions from '../images copy/drk.png';
+import img2 from "../images copy/Screenshot 2025-10-29 at 2.54.20 PM.png";
 import chiroES from '../images copy/IMG_9301.jpeg';
 import chiroHI from '../images copy/IMG_9303.jpeg';
 import chiroNL from '../images copy/IMG_9311.jpeg';
@@ -100,7 +101,18 @@ const Chiro = () => {
         }} />
       </a>
     </div>
-  </div>
+
+    <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+14809456900">
+        <img src={img2} alt="Better Health Solutions" style={{
+          width: '100%',
+          maxWidth: '550px',
+          height: 'auto',
+          objectFit: 'contain'
+        }} />
+      </a>
+    </div>
+    </div>                                        
 </Collapsible>
 
             </div>
