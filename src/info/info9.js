@@ -3,7 +3,6 @@ import './acu.css';
 import './Info.css';
 import { Button } from'react-bootstrap';
 import Benefitts from "./benefitts";
-import dyn from "../images copy/dyn.jpg";
 import { useTranslation } from "react-i18next";
 const Info9 = () => {
 const {t} = useTranslation('common')
@@ -63,12 +62,6 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
-     <a href="https://source.dynamitelifestyle.com/the-source-code-challenge/priscilla-wmk" target="_blank" rel="noopener noreferrer">
-      <figure>
-          <img className='gridimag' src={dyn} alt='21 Day Challenge' />
-        <figcaption>{t("Join 21 Day Challenge")}</figcaption>
-        </figure>
-        </a> 
         <br></br>
         <Benefitts />
         </div>
