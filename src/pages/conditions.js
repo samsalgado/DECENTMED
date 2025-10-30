@@ -20,7 +20,7 @@ const { t } = useTranslation('common');
        <ul><NavLink to="/mindset">{t('Lacking Mental Clarity')}
       </NavLink>
       </ul>
-      <ul><NavLink to="/homeopathy">{t('ADD')}
+      <ul><NavLink to="/homeopathy">{t('ADD (Attention Deficit Disorder)')}
       </NavLink>
       </ul>
       <ul><NavLink to="/homeopathy">{t('Digestive Issues')}
