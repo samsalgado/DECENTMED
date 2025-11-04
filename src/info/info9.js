@@ -3,6 +3,7 @@ import './acu.css';
 import './Info.css';
 import { Button } from'react-bootstrap';
 import Benefitts from "./benefitts";
+import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.JPG";
 import { useTranslation } from "react-i18next";
 const Info9 = () => {
 const {t} = useTranslation('common')
@@ -62,6 +63,12 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
+    <a href="https://sourceapp.dynamitelifestyle.com/thesource" target="_blank" rel="noopener noreferrer">
+      <figure>
+        <img className='gridimag' src={dyn} alt='21 Day Challenge' />
+        <figcaption>{t("Sign Up")}</figcaption>
+        </figure>
+        </a>
         <br></br>
         <Benefitts />
         </div>
