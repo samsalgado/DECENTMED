@@ -4,7 +4,6 @@ import Footer from '../footer';
 import { useEffect } from 'react';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
-import ultt from "../images copy/ultt.png";
 import MedBenefits from '../info/meditationbenefits';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
@@ -30,9 +29,6 @@ const { t } = useTranslation('common');
        <br></br>
         <h1 className='center'>{t("Meditation 101")}</h1>
       <MeditationVids />
-       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-              <img src={ultt} className='gridimag' alt="quote" />
-              </a>
         <footer>
             <Footer />
         </footer>

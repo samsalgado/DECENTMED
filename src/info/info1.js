@@ -3,7 +3,6 @@ import Channel from './channel';
 import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; 
-import ultt from "../images copy/ultt.png";
 import OCTT from "../images copy/OCTrv.png";
 import oct from "../images copy/OCT.png";
 import Collapsible from 'react-collapsible';
@@ -217,9 +216,7 @@ const Info1 = () => {
 </Collapsible>
       <Acuvids />
       <Channel />
-         <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
+       
     </div>
   );
 }
