@@ -1,10 +1,8 @@
 import React from 'react';
 import '../info/Info.css'; // Import the CSS file
 import { useTranslation } from 'react-i18next'; // Import the translation hook
-
 const WellnessInro = () => {
-  const { t } = useTranslation("common"); // Initialize the translation hook
-
+  const { t } = useTranslation("common"); 
   return (
     <div className='theecontainer'>
       <div className='video-container'>

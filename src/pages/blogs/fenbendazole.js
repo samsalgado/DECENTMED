@@ -7,7 +7,7 @@ import Fendutch from './fendutch';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import Collapsible from 'react-collapsible';
-import starvecancer from '../../images copy/starvecancer.webp';
+import essence from "../../images copy/essence.png";
 import fenben from '../../images copy/Fenbendazole.png';
 import fenben2 from '../../images copy/fenben2.png';
 import fenben3 from '../../images copy/fenben3.png';
@@ -202,9 +202,8 @@ const {t} = useTranslation('common')
                <a href="/fenbendazole"> <img className="gridimag" src={fenben} alt='' /> </a>
                <a href="/ivermectin"> <img className="gridimag" src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img className="gridimag" src={hhoxsey} alt='' /> </a>
-              <div className="book">
- <a  href="https://www.howtostarvecancer.com/"> 
-<img className="" style={{ width: '100%',height:'100%', }} src={starvecancer} alt="img"  /> </a></div>
+              <a href="/funcmed"> <img src={essence} alt="img" /> </a>
+           
             </Collapsible>
           </tbody>
         </table>

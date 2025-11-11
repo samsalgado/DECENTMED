@@ -1,7 +1,6 @@
 import React from 'react'
 import "./chiro.css";
 import "../App.css";
-import ultt from "../images copy/ultt.png";
 import chiroFR from '../images copy/IMG_9300.jpeg';
 import betterhealthsolutions from '../images copy/drk.png';
 import img2 from "../images copy/Screenshot 2025-10-29 at 2.54.20 PM.png";
@@ -145,10 +144,6 @@ const Chiro = () => {
           </tr>
         </Collapsible>
       </div>
-
-      <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-      </a>
     </div>
   )
 }

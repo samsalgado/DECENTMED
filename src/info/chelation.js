@@ -6,7 +6,6 @@ import chelationgraphicNL from '../images copy/IMG_9297.jpeg';
 import chelationgraphicHI from '../images copy/IMG_9310.jpeg';
 import chelationgraphicFR from '../images copy/IMG_9298.jpeg';
 import Collapsible from 'react-collapsible';
-import ultt from "../images copy/ultt.png";
 import graphic from '../images copy/chelation101.png';
 import { Button } from 'react-bootstrap';
 import chelationgraphic from '../images copy/chelationgraphic.png';
@@ -50,9 +49,6 @@ const Pgchelation = () => {
           </tbody>
         </table>
       </div>
-       <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='gridimag' alt="quote" />
-        </a>
     </div>
   );
 }

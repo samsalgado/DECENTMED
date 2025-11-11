@@ -6,7 +6,7 @@ import obasi from "../images copy/obasi.png";
 import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import lifewave from '../images copy/lifewave.png';
 import linda from "../images copy/linda.png";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 export function Shop() {
 const { t } = useTranslation('common');
     return(
@@ -19,7 +19,6 @@ const { t } = useTranslation('common');
             <header>
             <Topbar />
             </header>
-
             <div className="container">
             <h1>{t("Holistic Medicine Books and Related Products")}</h1>
  <div className="row">

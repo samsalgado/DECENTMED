@@ -7,7 +7,7 @@ import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import fenben from '../../images copy/Fenbendazole.png';
 import ReactPlayer from 'react-player';
 import Collapsible from 'react-collapsible';
-import starvecancer from '../../images copy/starvecancer.webp';
+import essence from "../../images copy/essence.png";
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import { useTranslation } from 'react-i18next';
 import { nip19 } from 'nostr-tools';
@@ -190,7 +190,7 @@ const Blog6 = () => {
                 <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
                 <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
                 <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
-                <a className="book"  href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+                <a href="/funcmed"> <img src={essence} alt="img" /> </a>
               </Collapsible>
             </tbody>
           </table>

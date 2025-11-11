@@ -14,7 +14,6 @@ const Ptsdd = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
   const isMobile = windowWidth <= 768;
   const isSmallMobile = windowWidth <= 480;
   const isTablet = windowWidth <= 992 && windowWidth > 768;

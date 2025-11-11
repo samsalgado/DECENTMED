@@ -67,7 +67,8 @@ const Info5 = () => {
       <div><img src={quote} className="TELE" alt="logo" /></div>
       <br />
       <div>
-        <Forum />      </div>
+        <Forum />      
+        </div>
     </div>
   );
 }

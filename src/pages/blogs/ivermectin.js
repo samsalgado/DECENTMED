@@ -26,8 +26,8 @@ import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import fenbenn from '../../images copy/Fenbendazole.png';
 import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
 import { nip19 } from 'nostr-tools';
+import essence from "../../images copy/essence.png";
 import Collapsible from 'react-collapsible';
-import starvecancer from '../../images copy/starvecancer.webp';
 import fenben from '../../images copy/ivermectin1.jpeg';
 import fenben2 from '../../images copy/chemistry.jpeg';
 import fenben3 from '../../images copy/ivermectin2.jpeg';
@@ -304,7 +304,7 @@ const {t} = useTranslation('common');
           <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
-               <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+              <a href="/funcmed"> <img src={essence} alt="img" /> </a>
             </Collapsible>
           </tbody>
         </table>

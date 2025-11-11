@@ -4,7 +4,6 @@ import Collapsible from 'react-collapsible';
 import obese from '../images copy/obese.png';
 import labs from '../images copy/8.jpg';
 import brain from '../images copy/9.jpg';
-//import ultt from "../images copy/ultt.png";
 import './Info.css';
 import NutritionVids from '../info/nutritionvids';
 import { Button } from 'react-bootstrap';
@@ -224,11 +223,11 @@ const Nutritionpage = () => {
   <img className='griddimage' src={NUTFR} alt="Functional Nutrition Resources"/>
   <img className='griddimage' src={NUTES} alt="Functional Nutrition Resources"/>
   <img alt='' />
-</div>            </Collapsible>                   
+</div>            
+</Collapsible>                   
           </tbody>
         </table>
       </div>
-     
     </div>
   );
 }

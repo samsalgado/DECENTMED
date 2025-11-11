@@ -7,10 +7,8 @@ import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
 import Hypnostudies from "./hypnostudy";
-//import ultt from "../images copy/ultt.png";
 const HYPNO = () => {
 const {t} = useTranslation('common')
-
     return (
       <div className='container mobile-optimized'>
             <h1 className='title'>{t('Hypnotherapy')}</h1>
@@ -70,7 +68,6 @@ const {t} = useTranslation('common')
         <Hypnostudies />
         <Button className="custom-btn" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </Collapsible>
-        
         </div>
     )
 }

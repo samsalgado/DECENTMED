@@ -1,9 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from "react";
-
 import '../App.css';
 import Plants from "./Plants";
-
 import ApothecaryData from "./ApothecaryData";
 import { useTranslation } from 'react-i18next';
 

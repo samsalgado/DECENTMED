@@ -8,11 +8,13 @@ import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
+import { Func } from './pages/Func';
 import MassPract from './pages/Mass';
 import { Trauma } from './pages/Trauma';
 import { PTSD } from './pages/PTSD';
 import { Nutrigenomics } from './pages/Nutrigenomics';
 import Blog5 from './pages/blogs/blog5';
+import { FuncMed } from './pages/funcmed';
 import Bitcoin from './pages/blogs/bitcoin';
 import Blog8 from './pages/blogs/blog8';
 import Meditation from './pages/Meditation';
@@ -107,6 +109,7 @@ function App() {
         <Route path="/ptsd" element={<PTSD t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
+        <Route path="/funcmed" element={<Func t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/breath" element={<Breathworkk t={t} />} />
@@ -117,6 +120,8 @@ function App() {
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/ak" element={<AppliedKinesiology t={t} />} />
+        <Route path="/breathwork" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />
+        <Route path="/functionalmedicine" element={<FuncMed t={t} />} />
         <Route path="/breathwork" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />

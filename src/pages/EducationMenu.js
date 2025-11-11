@@ -21,6 +21,10 @@ const { t } = useTranslation('common');
         <NavLink to="/detox">{t('Detox')}
         </NavLink>
       </ul>
+       <ul>
+        <NavLink to="/functionalmedicine">{t('Functional Medicine')}
+        </NavLink>
+      </ul>
       <ul>
         <NavLink to="/nutrigenomics">{t('Nutrigenomics')}
         </NavLink>

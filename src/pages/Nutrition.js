@@ -2,7 +2,6 @@ import '../App.css';
 import Nutritionpage from '../info/nutritionpg';
 import Topbar from './topbar';
 import Footer from '../footer';
-import ultt from "../images copy/ultt.png";
 import { useEffect } from 'react';
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
@@ -30,9 +29,6 @@ export function Nutrition() {
         <br></br>
         <h1 className='center'>{t("Functional Nutrition")}</h1>
       <FuncVids />
-        <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className="TELEa" alt="quote" />
-        </a>
             <footer className='foot'>
                 <Footer />
             </footer>

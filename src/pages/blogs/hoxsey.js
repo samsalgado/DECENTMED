@@ -5,6 +5,7 @@ import Footer from "../../footer";
 import Hoxseyfr from './hoxseyfr';
 import Hoxseyhindi from './hoxseyhindi';
 import Hoxseydutch from './hoxseydutch';
+import essence from "../../images copy/essence.png";
 import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
 import { nip19 } from 'nostr-tools';
 import spanish from '../../images copy/IMG_6976.jpeg';
@@ -45,7 +46,6 @@ import spanish35 from '../../images copy/IMG_7011.jpeg';
 import spanish36 from '../../images copy/IMG_7012.jpeg';
 import fenbenn from '../../images copy/Fenbendazole.png';
 import Collapsible from 'react-collapsible';
-import starvecancer from '../../images copy/starvecancer.webp';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import fenben from '../../images copy/IMG_6431.jpeg';
 import fenben2 from '../../images copy/IMG_6433.jpeg';
@@ -573,7 +573,7 @@ const Hoxsey = ({t}) => {
           <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
                <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
-               <a href="https://www.howtostarvecancer.com/"> <img src={starvecancer} alt="img" style={{ width: '200px', height: 'auto' }} /> </a>
+              <a href="/funcmed"> <img src={essence} alt="img" /> </a>
             </Collapsible>
           </tbody>
         </table>

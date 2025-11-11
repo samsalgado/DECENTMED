@@ -7,7 +7,6 @@ const Info7 = () => {
   const { t } = useTranslation("common");
 
   return (
-    
     <div className='container'>
 
       <div className="title-container">
@@ -30,5 +29,4 @@ const Info7 = () => {
     </div>
   );
 }
-
 export default Info7;

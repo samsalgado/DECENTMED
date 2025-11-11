@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
-
 const PTSDvids = () => {
     const { t } = useTranslation("common");
     const [plant] = useState([

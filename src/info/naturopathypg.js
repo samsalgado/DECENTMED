@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import NatStudy from './naturopathystudy';
 import { Button } from 'react-bootstrap';
-import ultt from "../images copy/ultt.png";
 const Naturo = () => {
   const { t } = useTranslation('common');
   return (
@@ -75,9 +74,6 @@ const Naturo = () => {
         <a href="https://meridianpassagewellness.com" target="_blank" rel="noopener noreferrer">
         <br></br>
         <img src={naturopathy} className="TELEa" alt="quote" />
-        </a>
-         <a href="https://theultimatehealthhack.com/doctors-roundtable-discussion/">
-        <img src={ultt} className='TELEa' alt="quote" />
         </a>
       </div>
   );

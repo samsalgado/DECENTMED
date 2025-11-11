@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Info.css'; // Import the updated CSS file
 import { useTranslation } from 'react-i18next';
-
 const Protocols = () => {
   const { t } = useTranslation("common");
 

@@ -7,7 +7,6 @@ import Stacy from '../cards/stacy.png'
 import stacyservices from "../cards/stacyservices.png";
 import Yogi from '../cards/yogiSanjivana.jpg'
 import { useTranslation } from 'react-i18next'
-
 export function AYPract() {
   const { t } = useTranslation('common');
   const [userLocation, setUserLocation] = useState('');

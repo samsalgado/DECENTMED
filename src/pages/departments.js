@@ -15,6 +15,7 @@ const Departments = {
     HEALERS:require("../images copy/binge.png"),
     freq:require("../images copy/screenshot.png"),
     BREATH:require("../images copy/breathworkk.png"), 
+    Func:require("../images copy/func.png"),
     chelation: require("../images copy/chelation.png")
     };
     export default Departments;

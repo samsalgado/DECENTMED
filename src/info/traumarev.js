@@ -9,7 +9,6 @@ const Trev = () => {
   const images = [
     caseA, caseB, caseD, caseE, caseF
   ];
-
   return (
     <div className="container">
       {images.map((image, index) => (
