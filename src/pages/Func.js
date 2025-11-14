@@ -79,6 +79,8 @@ export function Func() {
                     <p>
                       {t("Dr. Nadia Taylor believes in holistic medicine because it helped to heal her from disease and maladies. She has recently opened up her own holistic healing center, Essence of Life, in Boynton Beach, Florida in September 2025 so that she can help others heal through some of the same modalities that helped her. Dr. Taylor is excited to be back in South Florida after years living elsewhere and is continually looking to make positive changes in the community. She has dedicated her life to a life of service for the betterment of others.")}
                     </p>
+                      
+            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
                     <div className="col-md-5 text-end">
 <div style={{ textAlign: 'center', margin: '20px 0' }}>
   <div style={{ 
@@ -89,6 +91,8 @@ export function Func() {
   }}>
    
   </div>
+         
+
   <a 
     href="https://essenceoflife-wellness.practicebetter.io/#/609c398e2a832607ac9863a1/bookings" 
     target="_blank" 
