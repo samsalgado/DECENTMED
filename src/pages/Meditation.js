@@ -19,7 +19,6 @@ const { t } = useTranslation('common');
         <title>{t("Sleep Meditation")}</title>  
         <meta name="description" content={t("Discover the transformative power of Meditation! Sleep meditation and more; how meditation can help you heal. Learn more.")} />
       </Helmet>
-
         <header>
         <Topbar />
         </header>
