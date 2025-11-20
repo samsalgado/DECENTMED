@@ -23,7 +23,7 @@ function Values() {
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <h3>
         <a 
-            href="https://s3visibility.solutions/" 
+            href="https://decentmed.s3visibility.solutions/" 
             target="_blank" 
             rel="noopener noreferrer" 
             style={{
