@@ -26,7 +26,7 @@ const { t } = useTranslation('common');
     </div>
   </div>
   <div className="row">
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aXfU_SMr2fY?si=JiML9hMTTZLsBHLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div className="col-md-6">
       <h2>{t("Solve your Out of Control Eating")}</h2>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
