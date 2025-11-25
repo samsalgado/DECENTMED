@@ -6,6 +6,8 @@ import betterhealthsolutions from '../images copy/drk.png';
 import img2 from "../images copy/Screenshot 2025-10-29 at 2.54.20 PM.png";
 import chiroES from '../images copy/IMG_9301.jpeg';
 import chiroHI from '../images copy/IMG_9303.jpeg';
+import tcnh from '../images copy/tcnh.png';
+import review from '../images copy/reviewtcnh.png';
 import chiroNL from '../images copy/IMG_9311.jpeg';
 import reviewtcc from "../images copy/reviewtcc.png";
 import tcc from "../images copy/tcc.png";
@@ -67,6 +69,7 @@ const Chiro = () => {
            <Collapsible trigger={<h3 className="collapsible-trigger">{t('Kansas City Chiropractic')}</h3>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
+            <h1>{t('Kansas City Chiropractic')}</h1>
       <a href="tel:+19133838505">
         <img src={tcc} alt="Total Care Chiropractic" style={{
           width: '100%',
@@ -88,9 +91,36 @@ const Chiro = () => {
     </div>
   </div>
 </Collapsible>
+<Collapsible trigger={<h3 className="collapsible-trigger">{t('Chiropractic Saint Louis')}</h3>}>
+  <div className="row">
+    <div className="col-12 col-md-6 mb-3">
+            <h1>{t('Chiropractic Saint Louis')}</h1>
+      <a href="tel:+16367245757">
+        <img src={tcnh} alt="The Center for Natural Health" style={{
+          width: '100%',
+          maxWidth: '550px',
+          height: 'auto',
+          objectFit: 'contain'
+        }} />
+      </a>
+    </div>
+
+    <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+16367245757">
+        <img src={review} alt="Better Health Solutions" style={{
+          width: '100%',
+          maxWidth: '550px',
+          height: 'auto',
+          objectFit: 'contain'
+        }} />
+      </a>
+    </div>
+    </div>                                        
+</Collapsible>
 <Collapsible trigger={<h3 className="collapsible-trigger">{t('Scottsdale Chiropractic')}</h3>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
+      <h1>{t('Scottsdale Chiropractic')}</h1>
       <a href="tel:+14809456900">
         <img src={betterhealthsolutions} alt="Better Health Solutions" style={{
           width: '100%',
@@ -113,7 +143,6 @@ const Chiro = () => {
     </div>
     </div>                                        
 </Collapsible>
-
             </div>
           </tbody>
         </table>
