@@ -1,11 +1,13 @@
 import React from 'react';
 import '../info/Info.css'; // Import the CSS file
-import { useTranslation } from 'react-i18next'; // Import the translation hook
+import { useTranslation } from 'react-i18next';
+import x from "../images copy/1000.png" // Import the translation hook
 const WellnessInro = () => {
   const { t } = useTranslation("common"); 
   return (
     <div className='theecontainer'>
       <div className='video-container'>
+        <img className='gridimage' src={x} alt='' />
       <iframe
       width="100%"
       height="315"

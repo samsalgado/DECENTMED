@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 function BlueContainer() {
     const { t } = useTranslation("common");
-
     return (
         <div className="container-blue">
             <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Treatment Options')}</h1>

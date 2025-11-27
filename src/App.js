@@ -9,6 +9,7 @@ import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
 import { Func } from './pages/Func';
+import {Summit} from './pages/Summit';
 import MassPract from './pages/Mass';
 import { Trauma } from './pages/Trauma';
 import { PTSD } from './pages/PTSD';
@@ -115,6 +116,8 @@ function App() {
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
+        <Route path="/coaching" element={<Coaching t={t} />} />
+        <Route path="/summit" element={<Summit t={t} />} />
         <Route path="/akpract" element={<AKPract t={t} />} />
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
