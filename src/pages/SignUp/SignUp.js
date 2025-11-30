@@ -131,4 +131,55 @@ const SignUp = () => {
               {t("Provider Signup")}
             </h2>
 
-            {error && <p className="text
+            {error && <p className="text-red-600 text-center mb-4">{error}</p>}
+
+            <input type="text" name="name" placeholder={t("Name")} value={user.name} onChange={handleChange} required className="mb-5" />
+            <input type="email" name="email" placeholder={t("Email")} value={user.email} onChange={handleChange} required className="mb-5" />
+
+            <div className="password-field mb-5">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder={t("Password")}
+                value={user.password}
+                onChange={handleChange}
+                required
+              />
+              <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
+
+            <input type="text" name="code" placeholder={t("Affiliate Code (optional)")} value={user.code} onChange={handleChange} className="mb-8" />
+
+            <button className="custom-btn w-full py-4 text-lg font-semibold" type="submit" disabled={loading}>
+              {loading ? 'Signing Up...' : t("Sign Up")}
+            </button>
+
+            <p className="text-center mt-6 text-gray-600">
+              {t("Already have an account?")}{' '}
+              <Link to="/signin" className="text-teal-600 font-semibold hover:underline">
+                {t("Sign In")}
+              </Link>
+            </p>
+
+            <div className="mt-8">
+              <div id="googleSignUpDiv" className="mx-auto max-w-xs"></div>
+            </div>
+
+          </form>
+        </div>
+
+        {/* Rest of the page */}
+        <div className="bg-white">
+          <Practice />
+          <Offer2 />
+          <Info7 />
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default SignUp;
