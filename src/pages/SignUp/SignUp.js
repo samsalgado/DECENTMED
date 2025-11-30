@@ -60,7 +60,6 @@ const SignUp = () => {
     }
   };
 
-  // Fixed Google Sign-In (no more errors!)
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://accounts.google.com/gsi/client';
@@ -77,9 +76,7 @@ const SignUp = () => {
                 credential: response.credential
               });
               localStorage.setItem('token', res.data.token);
-              Swal.fire({ icon: 'success', title: 'Welcome via Google!' }).then(() => {
-                navigate(fromPricing ? '/stripepay' : '/');
-              });
+              Swal.fire({ icon: 'success', title: 'Welcome!' }).then(() => navigate(fromPricing ? '/stripepay' : '/'));
             } catch (err) {
               Swal.fire({ icon: 'error', title: 'Google login failed' });
             }
@@ -94,84 +91,116 @@ const SignUp = () => {
     };
 
     document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
+    return () => { if (document.body.contains(script)) document.body.removeChild(script); };
   }, [navigate, fromPricing]);
 
   return (
     <>
       <Topbar />
 
-      {/* Full screen with safe top padding */}
-      <div className="min-h-screen bg-gray-50 flex flex-col">
+      <div className="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 flex flex-col">
 
-        {/* Form Card – Title never hidden */}
-        <div className="flex-1 flex items-start justify-center px-4 pt-32 pb-10">
-          <form
-            className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 relative"
-            onSubmit={handleSubmit}
-            style={{ paddingTop: 'clamp(110px, 20vh, 170px)' }} // Magic line
-          >
+        <div className="flex-1 flex items-start justify-center px-5 pt-32 pb-12">
+          <div className="w-full max-w-md">
 
-            {/* Close Button – always visible */}
+            {/* Close Button */}
             <button
-              type="button"
               onClick={() => navigate('/')}
-              className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-3xl text-gray-600 z-10"
+              className="fixed top-24 right-6 z-50 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center text-3xl text-gray-700 hover:bg-gray-100"
               style={{ top: 'max(110px, env(safe-area-inset-top, 110px))' }}
             >
               ×
             </button>
 
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-              {t("Provider Signup")}
-            </h2>
+            {/* Card */}
+            <div className="bg-white rounded-3xl shadow-2xl px-8 pt-16 pb-10">
+              
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+                {t("Provider Signup")}
+              </h2>
 
-            {error && <p className="text-red-600 text-center mb-4">{error}</p>}
+              {error && (
+                <div className="bg-red-50 text-red-700 px-4 py-3 rounded-xl text-center mb-6">
+                  {error}
+                </div>
+              )}
 
-            <input type="text" name="name" placeholder={t("Name")} value={user.name} onChange={handleChange} required className="mb-5" />
-            <input type="email" name="email" placeholder={t("Email")} value={user.email} onChange={handleChange} required className="mb-5" />
+              {/* Uniform Inputs */}
+              <div className="space-y-5">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder={t("Name")}
+                  value={user.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full h-14 px-5 text-lg rounded-2xl border-2 border-gray-200 focus:border-teal-500 focus:outline-none transition"
+                />
 
-            <div className="password-field mb-5">
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                placeholder={t("Password")}
-                value={user.password}
-                onChange={handleChange}
-                required
-              />
-              <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder={t("Email")}
+                  value={user.email}
+                  onChange={handleChange}
+                  required
+ required
+                  className="w-full h-14 px-5 text-lg rounded-2xl border-2 border-gray-200 focus:border-teal-500 focus:outline-none transition"
+                />
+
+                <div className="relative">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    placeholder={t("Password")}
+                    value={user.password}
+                    onChange={handleChange}
+                    required
+                    className="w-full h-14 px-5 pr-14 text-lg rounded-2xl border-2 border-gray-200 focus:border-teal-500 focus:outline-none transition"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"
+                  >
+                    {showPassword ? <FaEyeSlash size={22} /> : <FaEye size={22} />}
+                  </button>
+                </div>
+
+                <input
+                  type="text"
+                  name="code"
+                  placeholder={t("Affiliate Code (optional)")}
+                  value={user.code}
+                  onChange={handleChange}
+                  className="w-full h-14 px-5 text-lg rounded-2xl border-2 border-gray-200 focus:border-teal-500 focus:outline-none transition"
+                />
+              </div>
+
+              <button
+                className="w-full mt-10 h-14 bg-gradient-to-r from-teal-600 to-teal-700 text-white text-xl font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-200 disabled:opacity-70"
+                type="submit"
+                disabled={loading}
+              >
+                {loading ? 'Creating Account...' : t("Sign Up")}
+              </button>
+
+              <p className="text-center mt-8 text-gray-600">
+                {t("Already have an account?")}{' '}
+                <Link to="/signin" className="text-teal-600 font-bold hover:underline">
+                  {t("Sign In")}
+                </Link>
+              </p>
+
+              <div className="mt-10">
+                <div id="googleSignUpDiv" className="mx-auto"></div>
+              </div>
+
             </div>
-
-            <input type="text" name="code" placeholder={t("Affiliate Code (optional)")} value={user.code} onChange={handleChange} className="mb-8" />
-
-            <button className="custom-btn w-full py-4 text-lg font-semibold" type="submit" disabled={loading}>
-              {loading ? 'Signing Up...' : t("Sign Up")}
-            </button>
-
-            <p className="text-center mt-6 text-gray-600">
-              {t("Already have an account?")}{' '}
-              <Link to="/signin" className="text-teal-600 font-semibold hover:underline">
-                {t("Sign In")}
-              </Link>
-            </p>
-
-            <div className="mt-8">
-              <div id="googleSignUpDiv" className="mx-auto max-w-xs"></div>
-            </div>
-
-          </form>
+          </div>
         </div>
 
-        {/* Rest of the page */}
-        <div className="bg-white">
+        <div className="bg-white rounded-t-3xl -mt-8 pt-12">
           <Practice />
           <Offer2 />
           <Info7 />
