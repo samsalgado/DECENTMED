@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import './Info.css';
+import { Button } from 'react-bootstrap';
 import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import summit from "../images copy/decentmedsummit.png";
