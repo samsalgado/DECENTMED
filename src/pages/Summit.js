@@ -2,7 +2,7 @@ import '../App.css';
 import Topbar from './topbar';
 import InfoSummit from '../info/infos';
 import { Helmet } from 'react-helmet';
-import { Button } from 'react-bootstrap';
+//import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Footer from '../footer';
 // import BookingForm from './BookingForm/BookingForm';
@@ -28,11 +28,6 @@ export function Summit() {
         <header>
           <Topbar t={t} />
         </header>
-          <div style={{ textAlign: 'center' }}>
-                <Button className="custom-btn" href="https://themerlingroupworld.com/signup/provider" target="_blank">
-                    {t("Providers: Signup")}
-                </Button>
-            </div>
         {/* <BookingForm token={localStorage.getItem('token')} ></BookingForm> */}
         <InfoSummit t={t} />
 
