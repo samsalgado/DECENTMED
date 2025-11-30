@@ -7,7 +7,6 @@ const WellnessInro = () => {
   return (
     <div className='theecontainer'>
       <div className='video-container'>
-        <img className='gridimage' src={x} alt='' />
       <iframe
       width="100%"
       height="315"
