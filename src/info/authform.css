@@ -1,0 +1,131 @@
+/* Global font */
+* {
+  font-family: sans-serif;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* ------------------------------
+   FORM CONTAINER (IMPORTANT FIX)
+--------------------------------*/
+.auth-form-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .auth-form-container {
+    margin-top: 70px;
+  }
+}
+
+.auth-form h2 {
+  margin-top: 0;
+}
+
+/* ------------------------------
+   FORM BOX
+--------------------------------*/
+.auth-form {
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix H2 inside the form */
+.auth-form h2,
+.compact-heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 480px) {
+  .auth-form h2,
+  .compact-heading {
+    font-size: 20px;
+  }
+}
+
+/* ------------------------------
+   INPUTS
+--------------------------------*/
+input,
+.password-field,
+button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* ------------------------------
+   BUTTON
+--------------------------------*/
+.auth-form button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ------------------------------
+   ERROR + LOADER
+--------------------------------*/
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 0.8s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
