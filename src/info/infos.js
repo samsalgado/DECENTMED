@@ -23,6 +23,11 @@ useEffect(() => {
       <div>
         <img className='gridimag' src={summit} alt='' />
       </div>
+        <div style={{ textAlign: 'center' }}>
+                <Button className="custom-btn" href="https://themerlingroupworld.com/signup/provider" target="_blank">
+                    {t("Providers: Signup")}
+                </Button>
+        </div>
       </div>
       <Speakers />
       <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}>
