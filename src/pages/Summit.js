@@ -2,6 +2,7 @@ import '../App.css';
 import Topbar from './topbar';
 import InfoSummit from '../info/infos';
 import { Helmet } from 'react-helmet';
+import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Footer from '../footer';
 // import BookingForm from './BookingForm/BookingForm';
