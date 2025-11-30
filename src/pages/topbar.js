@@ -253,6 +253,7 @@ const Topbar = () => {
           <Nav className="me-auto">
             <EducationMenu />
             <Conditions />
+            <Nav.Link href="/summit">{t("Summit")}</Nav.Link>
             <Nav.Link href="/telehealth">{t('Find Practitioner')}</Nav.Link>
             <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
             <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
