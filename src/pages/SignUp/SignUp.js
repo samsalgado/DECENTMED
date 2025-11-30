@@ -5,7 +5,6 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Footer from '../../footer';
-import "../../info/Info.css";
 import Info7 from '../../info/info7';
 import Offer2 from '../../offers/offer2';
 import Practice from '../practices';
@@ -21,7 +20,6 @@ const SignUp = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // From Pricing page?
   const tierFromPricing = location.state?.tier || '';
   const amountFromPricing = location.state?.amount || '';
   const fromPricing = location.state?.fromPricing || false;
@@ -43,70 +41,94 @@ const SignUp = () => {
     }
 
     try {
-      const res = await axios.post(
-        'https://decentmed-server.vercel.app/users',
-        user,
-        { headers: { 'Content-Type': 'application/json' } }
-      );
+      const res = await axios.post('https://decentmed-server.vercel.app/users', user);
+      localStorage.setItem('token', res.data.token);
 
-      if (res.data.token) {
-        localStorage.setItem('token', res.data.token);
-
-        Swal.fire({
-          icon: 'success',
-          title: 'Signup Successful!',
-          text: 'Welcome to DecentMed!',
-          confirmButtonColor: '#027360',
-        }).then(() => {
-          if (fromPricing && tierFromPricing && amountFromPricing) {
-            navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
-          } else {
-            navigate("/");
-          }
+      Swal.fire({
+        icon: 'success',
+        title: 'Welcome to DecentMed!',
+        confirmButtonColor: '#027360',
+      }).then(() => {
+        navigate(fromPricing ? '/stripepay' : '/', {
+          state: { tier: tierFromPricing, amount: amountFromPricing }
         });
-      }
+      });
     } catch (err) {
-      setError(err.response?.data?.message || 'Signup failed. Try again.');
+      setError(err.response?.data?.message || 'Signup failed');
     } finally {
       setLoading(false);
     }
   };
 
-  // Google Sign-In
+  // Fixed Google Sign-In (no more errors!)
   useEffect(() => {
-    const handleGoogleSignUp = async (response) => {
-      try {
-        const res = await axios.post(
-          'https://decentmed-server.vercel.app/google-signup',
-          { credential: response.credential }
-        );
+    const script = document.createElement('script');
+    script.src = 'https://accounts.google.com/gsi/client';
+    script.async = true;
+    script.defer = true;
 
-        if (res.data.token) {
-          localStorage.setItem('token', res.data.token);
-          Swal.fire({
-            icon: 'success',
-            title: 'Welcome via Google!',
-            confirmButtonColor: '#027360',
-          }).then(() => {
-            if (fromPricing && tierFromPricing && amountFromPricing) {
-              navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
-            } else {
-              navigate('/');
+    script.onload = () => {
+      if (window.google?.accounts?.id) {
+        window.google.accounts.id.initialize({
+          client_id: '1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com',
+          callback: async (response) => {
+            try {
+              const res = await axios.post('https://decentmed-server.vercel.app/google-signup', {
+                credential: response.credential
+              });
+              localStorage.setItem('token', res.data.token);
+              Swal.fire({ icon: 'success', title: 'Welcome via Google!' }).then(() => {
+                navigate(fromPricing ? '/stripepay' : '/');
+              });
+            } catch (err) {
+              Swal.fire({ icon: 'error', title: 'Google login failed' });
             }
-          });
-        }
-      } catch (err) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Google login failed',
-          text: err.response?.data?.message || 'Please try again',
+          }
         });
+
+        window.google.accounts.id.renderButton(
+          document.getElementById('googleSignUpDiv'),
+          { theme: 'outline', size: 'large', width: '100%', text: 'continue_with' }
+        );
       }
     };
 
-    const script = document.createElement('script');
-    script.src = "https://accounts.google.com/gsi/client";
-    script.async = true;
-    script.onload = () => {
-      window.google.accounts.id.initialize({
-        client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun
+    document.body.appendChild(script);
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, [navigate, fromPricing]);
+
+  return (
+    <>
+      <Topbar />
+
+      {/* Full screen with safe top padding */}
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+
+        {/* Form Card – Title never hidden */}
+        <div className="flex-1 flex items-start justify-center px-4 pt-32 pb-10">
+          <form
+            className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 relative"
+            onSubmit={handleSubmit}
+            style={{ paddingTop: 'clamp(110px, 20vh, 170px)' }} // Magic line
+          >
+
+            {/* Close Button – always visible */}
+            <button
+              type="button"
+              onClick={() => navigate('/')}
+              className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-3xl text-gray-600 z-10"
+              style={{ top: 'max(110px, env(safe-area-inset-top, 110px))' }}
+            >
+              ×
+            </button>
+
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+              {t("Provider Signup")}
+            </h2>
+
+            {error && <p className="text
