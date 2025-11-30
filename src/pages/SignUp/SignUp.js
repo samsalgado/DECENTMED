@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Footer from '../../footer';
 import "../../info/Info.css";
+import "../../info/authform.css";
 import Info7 from '../../info/info7';
 import Offer2 from '../../offers/offer2';
 import Practice from '../practices';
@@ -21,6 +22,7 @@ const SignUp = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // ✅ Check if redirected from Pricing page
   const tierFromPricing = location.state?.tier || '';
   const amountFromPricing = location.state?.amount || '';
   const fromPricing = location.state?.fromPricing || false;
@@ -55,16 +57,19 @@ const SignUp = () => {
           title: 'Signup Successful!',
           text: 'Welcome to our platform!',
           confirmButtonColor: '#027360',
+          confirmButtonText: 'OK'
         }).then(() => {
+          // ✅ Redirect to Stripe if coming from Pricing page
           if (fromPricing && tierFromPricing && amountFromPricing) {
             navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
           } else {
-            navigate("/");
+            navigate("/"); // Normal signup redirect
           }
         });
       }
 
     } catch (err) {
+      console.log("Error response:", err.response?.data);
       setError(err.response?.data?.message || 'Signup failed');
     } finally {
       setLoading(false);
@@ -72,46 +77,67 @@ const SignUp = () => {
   };
 
   useEffect(() => {
-    const script = document.createElement("script");
+    // Google Signup integration
+    const handleGoogleSignUp = async (response) => {
+      try {
+        const res = await axios.post(
+          'https://decentmed-server.vercel.app/google-signup',
+          { credential: response.credential },
+          { headers: { 'Content-Type': 'application/json' } }
+        );
+
+        if (res.data.token) {
+          localStorage.setItem('token', res.data.token);
+          Swal.fire({
+            icon: 'success',
+            title: 'Google Signin Successful!',
+            confirmButtonColor: '#027360',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            if (fromPricing && tierFromPricing && amountFromPricing) {
+              navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
+            } else {
+              navigate('/');
+            }
+          });
+        }
+      } catch (err) {
+        console.error("Google signin failed:", err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Google signin failed!',
+          text: err.response?.data?.message || 'Please try again.'
+        });
+      }
+    };
+
+    const script = document.createElement('script');
     script.src = "https://accounts.google.com/gsi/client";
     script.async = true;
     script.onload = () => {
       window.google.accounts.id.initialize({
         client_id: "1055481939354-kahqsmu8kojqr57fkeftafted8umun54.apps.googleusercontent.com",
-        callback: async (response) => {
-          try {
-            const res = await axios.post('https://decentmed-server.vercel.app/google-signup', {
-              credential: response.credential
-            });
-            localStorage.setItem('token', res.data.token);
-            navigate(fromPricing ? '/stripepay' : '/');
-          } catch (err) {
-            console.log(err);
-          }
-        }
+        callback: handleGoogleSignUp
       });
       window.google.accounts.id.renderButton(
         document.getElementById("googleSignUpDiv"),
-        { theme: "outline", size: "large" }
+        { theme: "outline", size: "large", text: "signin_with" }
       );
     };
     document.body.appendChild(script);
-  }, [navigate, fromPricing]);
+  }, [navigate, fromPricing, tierFromPricing, amountFromPricing]);
 
   return (
     <>
       <Topbar />
       <div className="auth-form-container">
-        {/* ONLY CHANGE IS HERE */}
-        <form className="auth-form" style={{ paddingTop: "140px" }} onSubmit={handleSubmit}>
-        {/* was marginTop: '110px' → now paddingTop: "140px" (safe on every phone) */}
-
+<form className="auth-form" style={{ position: "relative", marginTop: '110px' }}>
           <div onClick={() => navigate("/")} style={{
             position: "absolute", top: "30px", right: "20px", fontSize: "20px",
             fontWeight: "bold", cursor: "pointer", background: "transparent", border: "none", color: "#333"
-          }}>X</div>
+          }}>❌</div>
 
-          <h2>{t("Provider Signup")}</h2>
+          <h2 className="compact-heading">{t("Provider Signup")}</h2>
           {error && <p className="error">{error}</p>}
           {loading && <div className="loader"></div>}
 
@@ -135,6 +161,8 @@ const SignUp = () => {
             <div id="googleSignUpDiv"></div>
           </div>
         </form>
+
+
       </div>
       <Practice />
       <Offer2 />
