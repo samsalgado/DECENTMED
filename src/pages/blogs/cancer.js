@@ -116,7 +116,7 @@ const Blog6 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
         </h1>
         <div className='container'>
             <ReactPlayer

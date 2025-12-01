@@ -132,7 +132,7 @@ const {t} = useTranslation('common');
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("Ivermectin for Cancer in Humans")}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("Ivermectin for Cancer in Humans")}
       </h1>
       <div className='container'>
 <iframe width="100%" height="600px" src="https://drive.google.com/file/d/1zg7C8tpSuu_wKKazM_77ko9ucn_OicAb/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
