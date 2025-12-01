@@ -131,7 +131,8 @@ const SignUp = () => {
     <>
       <Topbar />
       <div className="auth-form-container">
-<form className="auth-form" style={{ position: "relative", marginTop: '110px' }}>
+<form className="auth-form" style={{ position: "relative", marginTop: '110px' }}   onSubmit={handleSubmit}
+>
           <div onClick={() => navigate("/")} style={{
             position: "absolute", top: "30px", right: "20px", fontSize: "20px",
             fontWeight: "bold", cursor: "pointer", background: "transparent", border: "none", color: "#333"

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../info/Info.css'; // Import the CSS file
 import { useTranslation } from 'react-i18next';
-import x from "../images copy/1000.png" // Import the translation hook
+//import x from "../images copy/1000.png" // Import the translation hook
 const WellnessInro = () => {
   const { t } = useTranslation("common"); 
   return (
