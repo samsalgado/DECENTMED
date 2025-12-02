@@ -46,7 +46,7 @@ const Stem = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: '20px 0'
+        marginTop: '110px'
       }}>
          <div className="container-bbblue" style={{
         display: 'flex',
