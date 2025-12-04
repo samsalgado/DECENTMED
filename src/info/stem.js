@@ -1,7 +1,7 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import "./stem.css"; // Adjusted path for CSS
-import { FaChevronDown } from 'react-icons/fa'; // Importing icon
+import "./stem.css"; 
+import { FaChevronDown } from 'react-icons/fa';
 import ryantannehill from '../images copy/ryantannehillgraphic.png';
 import jamaalcharles from '../images copy/JamaalCharles.png';
 import whystemcell from '../images copy/whystemcell.png';
@@ -11,31 +11,20 @@ import './Info.css';
 import whystemcellspanish from '../images copy/IMG_9256.jpeg';
 import { Button } from 'react-bootstrap';
 import whystemcelldutch from '../images copy/IMG_9257.jpeg';
-
 import whystemcellfrench from '../images copy/IMG_9258.jpeg';
-
 import whystemcellhindi from '../images copy/IMG_9259.jpeg';
-
 import benefitsofstemcellhindi from '../images copy/IMG_9260.jpeg';
-
 import benefitsofstemcellspanish from '../images copy/IMG_9261.jpeg';
-
 import benefitsofstemcellfrench from '../images copy/IMG_9293.jpeg';
 import benefitsofstemcelldutch from '../images copy/IMG_9294.jpeg';
-
 import bonemarrowspanish from '../images copy/IMG_9262.png';
-
 import bonemarrowfrench from '../images copy/IMG_9263.png';
-
 import bonemarrowhindi from '../images copy/IMG_9264.jpeg';
-
 import bonemarrowdutch from '../images copy/IMG_9265.jpeg';
-
 import stemcelltranslated from '../images copy/IMG_9266.jpeg';
 import stemtype from '../images copy/stem-type.jpg';
 import graphic from '../images copy/Pink-Illustrative-Simple-Healthy-Habits-Infographic.jpeg';
 import { useTranslation } from 'react-i18next';
-
 const Stem = () => {
   const { t } = useTranslation('common')
 
