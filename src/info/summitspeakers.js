@@ -11,24 +11,7 @@ function Speakers() {
         <div className="container-blue">
             <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Speaker Lineup')}</h1>
             <div className="row justify-content-center">
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                       <a 
-            href="https://decentmed.s3visibility.solutions/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={{
-                color: '#1E90FF', // Cute blue color
-                textDecoration: 'none', // Remove underline
-                transition: 'color 0.3s ease', // Smooth color transition
-            }}
-            onMouseEnter={(e) => e.target.style.color = '#6495ED'} // Slightly lighter blue on hover
-            onMouseLeave={(e) => e.target.style.color = '#1E90FF'} // Back to original blue
-        >
-                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Lori Graham: Nutrify Your Life')}</h3></a>
-                    <div className="link">
-                    <iframe src="https://www.youtube.com/embed/dvtBiqgSsoU?si=KGFKbLwZzhWNnyK_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
-                </div>
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                                            <a 
             href="https://www.healinggoddess.com/" 
             target="_blank" 
@@ -43,7 +26,26 @@ function Speakers() {
 >
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Stacy Theodossin: Healing Goddess')}</h3></a>
                     <NavLink to="/acu" className="link">
-<iframe src="https://www.youtube.com/embed/ZaEGTAKvhSs?si=m7WllEoMq8MKNh4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </NavLink>
+<iframe src="https://www.youtube.com/embed/ZaEGTAKvhSs?si=m7WllEoMq8MKNh4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                    </NavLink>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                       <a 
+            href="https://decentmed.s3visibility.solutions/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{
+                color: '#1E90FF', // Cute blue color
+                textDecoration: 'none', // Remove underline
+                transition: 'color 0.3s ease', // Smooth color transition
+            }}
+            onMouseEnter={(e) => e.target.style.color = '#6495ED'} // Slightly lighter blue on hover
+            onMouseLeave={(e) => e.target.style.color = '#1E90FF'} // Back to original blue
+        >
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Lori Graham: Nutrify Your Life')}</h3>
+                    </a>
+                    <div className="link">
+                    <iframe src="https://www.youtube.com/embed/dvtBiqgSsoU?si=KGFKbLwZzhWNnyK_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
         <a 
