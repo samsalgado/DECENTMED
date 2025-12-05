@@ -9,14 +9,18 @@ const InfoSummit = () => {
   const { t } = useTranslation("common"); // Access translation function
   
   useEffect(() => {
-    // Load GHL script once
+    // Create the script tag
     const script = document.createElement("script");
     script.src = "https://link.msgsndr.com/js/form_embed.js";
     script.async = true;
     document.body.appendChild(script);
 
+    // Cleanup function that removes the script tag
     return () => {
-      document.body.removeChild(script);
+      // Only remove the script if it is still in the body
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
