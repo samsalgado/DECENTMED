@@ -1,13 +1,15 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './Info.css';
 import Speakers from './summitspeakers';
-import { useTranslation } from 'react-i18next'; // Import useTranslation hook
+import { useTranslation } from 'react-i18next';
 import summit from "../images copy/decentmedsummit.png";
 import { Button } from 'react-bootstrap';
+
 const InfoSummit = () => {
-  const { t } = useTranslation("common"); // Access translation function
+  const { t } = useTranslation("common");
+
+  // Load GHL embed script once
   useEffect(() => {
-    // Load GHL script once
     const script = document.createElement("script");
     script.src = "https://link.msgsndr.com/js/form_embed.js";
     script.async = true;
@@ -20,52 +22,52 @@ const InfoSummit = () => {
 
   return (
     <div className='container'>
+      {/* Title */}
       <h1 className='title'>{t('DecentMed Summit')}</h1>
+
+      {/* Image + Provider Button */}
       <div className='theecontainer'>
         <div>
-          <img className='gridimag' src={summit} alt='' />
+          <img className='gridimag' src={summit} alt='DecentMed Summit' />
+
           <Button
             href="https://decentmed.org/signup/provider"
             target="_blank"
             rel="noopener noreferrer"
             className="custom-btn"
-            style={{ display: 'block', margin: '10px auto 0' }}
+            style={{ display: 'block', margin: '20px auto 0' }}
           >
             {t("Providers: Signup")}
           </Button>
         </div>
       </div>
+
+      {/* Speaker Section */}
       <Speakers />
-      <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}>
-        <h2 style={{ textAlign: "center", marginBottom: "-30px" }}>
+
+      {/* Header for Register */}
+      <div style={{ width: "100%", maxWidth: "600px", margin: "40px auto 20px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "10px" }}>
           {t("Register")}
         </h2>
       </div>
 
-      <iframe
-        src="https://api.leadconnectorhq.com/widget/form/hbb1megFlHaUKjxVNheq"
+      {/* GHL Form Embed */}
+      <div
+        data-form-id="hbb1megFlHaUKjxVNheq"
+        data-form-name="Summit Registration"
         style={{
           width: "100%",
-          height: "100%",
-          border: "none",
-          borderRadius: "3px"
+          maxWidth: "600px",
+          margin: "0 auto",
+          padding: "10px",
+          background: "white",
+          borderRadius: "8px",
+          boxShadow: "0 0 20px rgba(0,0,0,0.08)"
         }}
-        id="inline-hbb1megFlHaUKjxVNheq"
-        data-layout="{'id':'INLINE'}"
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="Summit Reg"
-        data-height="773"
-        data-layout-iframe-id="inline-hbb1megFlHaUKjxVNheq"
-        data-form-id="hbb1megFlHaUKjxVNheq"
-        title="Summit Reg"
-      />
+      ></div>
     </div>
   );
-}
+};
 
 export default InfoSummit;
