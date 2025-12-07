@@ -3,8 +3,8 @@ import './Info.css';
 import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import summit from "../images copy/decentmedsummit.png";
+import SummitInfo from './infosummit';
 import { Button } from 'react-bootstrap';
-
 const InfoSummit = () => {
   const { t } = useTranslation("common"); // Access translation function
   
@@ -41,8 +41,8 @@ const InfoSummit = () => {
           </Button>
         </div>
       </div>
+      <SummitInfo />
       <Speakers />
-      
       <div style={{ width: "100%", maxWidth: "600px", margin: "20px auto" }}>
         <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
           {t("Register")}
