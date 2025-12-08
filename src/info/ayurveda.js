@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
 const Ayurvedaa = () => {
   const { t } = useTranslation("common");
-  
   return (
     <div className='container mobile-optimized'>
     <h1 className='title mobile-title'>{t('Ayurveda Experience')}</h1>

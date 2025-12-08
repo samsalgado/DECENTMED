@@ -14,15 +14,13 @@ useEffect(() => {
     return (
         <>
          <main className="page-content" style={{
-            // Solution 2: Ensure no top margin/padding on main container
-            marginTop: 0,
+            marginTop: '120px',
             paddingTop: 0
           }}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Ayurveda Experience")}</title>  
         <meta name="description" content={t("Discover the transformative power of the Ayurveda Experience! Explore ancient practices for mind-body balance, natural healing, and a path to well-being. Learn more.")} />
       </Helmet>
-
         <header>
         <Topbar />
         </header>

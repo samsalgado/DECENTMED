@@ -3,6 +3,7 @@ import Topbar from './topbar';
 import Stem from '../info/stem';
 import Footer from '../footer';
 import { useEffect } from 'react';
+import "../App.css";
 
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';

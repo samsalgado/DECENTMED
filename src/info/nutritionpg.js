@@ -71,12 +71,11 @@ const Nutritionpage = () => {
   const { t } = useTranslation("common");
   return (
     <div className='container mobile-optimized'>
-      <h1 className="title">{t('Nutrition')}</h1>
+      <h1 className="title" style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>{t('Nutrition')}</h1>
       <div style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: '20px 0'
       }}>
          <div className="container-bbblue" style={{
         display: 'flex',

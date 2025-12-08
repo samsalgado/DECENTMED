@@ -43,7 +43,6 @@ const ApothecaryData = ({ val }) => {
           {"★".repeat(medrating) + "☆".repeat(5 - medrating)}
         </span>
       </h3>
-
       <Button 
         className="custom-btn" 
         size="sm" 

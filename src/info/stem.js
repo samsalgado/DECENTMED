@@ -30,12 +30,18 @@ const Stem = () => {
 
   return (
     <div className='container mobile-optimized'>
-      <h1 className='title'>{t('Stem Cell Therapy')}</h1>
-      <div style={{
+<h1 className='title' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
+        {t('Stem Cell Therapy')}
+      </h1>
+        <div style={{
         display: 'flex',
+        flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: '110px'
+        alignItems: 'flex-start', // <-- key fix
+        gap: '20px',
+        marginTop: '20px',
+        flexWrap: 'wrap' // responsive wrap
+        
       }}>
          <div className="container-bbblue" style={{
         display: 'flex',
@@ -48,7 +54,7 @@ const Stem = () => {
         }}>
            <p className='pr'>{t("Stem cell therapy is a form of regenerative medicine that uses stem cells to repair or replace damaged tissues and cells in the body. Stem cell therapy for knees is my first experience with using stem cells for regenerative medicine. Many athletes like Ryan Tannehill, Kobe Bryant, Jamaal Charles, LaRon Landry, David Njoku, Chris Johnson, Peyton Manning and more have used mesenchymal stem cells for their recovery. Peyton Manning had an NFL MVP season after using stem cells for his neck injury recovery. Ryan Tannehill extended his career after using stem cell therapy for knee (ACL) tears. Mesenchymal stem cells are multi-potent - stemming from various tissues in the body. MSCs are primarily found in Adipose tissue, Umbical chords, Bone Marrow and even the placenta.")}</p>
             <p className='pr'>{t("An interesting development in the stem cell therapy community is the use of stem cells for neurodegenerative diseases like Autism. Although the stem cell cost is expensive, the benefits of treating Autism and other neurodegenerative diseases are revolutionary. Our platform not only posts case studies to address limited long-term data concerns. Finally, we provide reimbursements from our apothecary to make the stem cell therapy cost less expensive.")}</p>
-            <Button className="custom-btn" href="https://themerlingroupworld.com/stemcellproviders" target="_blank">
+            <Button className="custom-btn" href="https://decentmed.org/stemcellproviders" target="_blank">
                           {t("Find Providers")}
             </Button>
       </div>
