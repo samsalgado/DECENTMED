@@ -1,14 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import './acu.css'; 
 import './Info.css';
-import { Button } from'react-bootstrap';
+import { Button,  Modal } from'react-bootstrap';
 import Benefits from "./benefits";
 import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
 import Hypnostudies from "./hypnostudy";
 const HYPNO = () => {
-const {t} = useTranslation('common')
+const {t} = useTranslation('common');
+  const [showModal, setShowModal] = useState(false);
     return (
       <div className='container mobile-optimized'>
             <h1 className='title'>{t('Hypnotherapy')}</h1>
@@ -44,6 +45,22 @@ const {t} = useTranslation('common')
         />
         </div>
       </div>
+              <Button className="custom-btn" onClick={() => setShowModal(true)}>
+            {t("Transcript")}
+          </Button>
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{t("Transcript")}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>{t("txt")}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            {t("Close")}
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

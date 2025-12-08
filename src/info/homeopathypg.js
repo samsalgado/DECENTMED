@@ -130,7 +130,9 @@ either small doses or in the regular doses but also using off Lael drugs to kill
           ></iframe>
           
         </div>
-        <Button className="custom-btn" onClick={() => setShowModal(true)}>
+
+      </div>
+              <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
           <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
@@ -147,7 +149,6 @@ either small doses or in the regular doses but also using off Lael drugs to kill
         </Modal.Footer>
       </Modal>
 
-      </div>
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
