@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
+import FuncModal from '../info/funcmodal';
 export function Nutrition() {
     const { t } = useTranslation('common');
     useEffect(() => {
@@ -29,6 +30,7 @@ export function Nutrition() {
         <br></br>
         <h1 className='center'>{t("Functional Nutrition")}</h1>
       <FuncVids />
+      <FuncModal />
             <footer className='foot'>
                 <Footer />
             </footer>

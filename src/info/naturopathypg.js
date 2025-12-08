@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./homeo.css";
+import "../App.css";
 import './Info.css';
 import totalcare from '../images copy/totalcare.png';
 import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import NatStudy from './naturopathystudy';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 const Naturo = () => {
   const { t } = useTranslation('common');
+    const [showModal, setShowModal] = useState(false);
   return (
       <div className='container  mobile-optimized'>
         <h1 className='title'>{t('Naturopathy')}</h1>
@@ -36,7 +38,7 @@ const Naturo = () => {
         <iframe
           width="100%"
           height="515"
-          src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
+          src="https://www.youtube.com/embed/38tcMPtyeUA?si=dEYNrakXQonv7CgU"
           title="Patient Acquisition Engine Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
@@ -48,6 +50,27 @@ const Naturo = () => {
         />
       </div>
     </div>
+    <div>
+                    <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">{t('Find Out How Dr. Barnes Can Help You')}</Button>
+    </div>
+    <br></br>
+                  <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                {t("Transcript")}
+              </Button>
+              <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+            <Modal.Header closeButton>
+              <Modal.Title>{t("Transcript")}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <p>{t("naturopathy")}</p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={() => setShowModal(false)}>
+                {t("Close")}
+              </Button>
+            </Modal.Footer>
+          </Modal>
+    
     <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

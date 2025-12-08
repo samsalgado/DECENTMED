@@ -210,6 +210,7 @@ const indiaTerms = [
       </div>
     )
   );
+  
   const renderJim = () => (
     showJim && (
       <div className="row mb-4" key="kristina">
@@ -241,7 +242,9 @@ const indiaTerms = [
                     <span className="badge bg-light text-dark me-1">{t("Unlock your True Potential")}</span>
                     <span className="badge bg-light text-dark me-1">{t("Mindfulness")}</span>
                   </div>
-                  
+                  <div className='jim-container'>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/n3TTyHHPV8M?si=jENiUZ_8GgTM9Dv-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                   <p className="card-text small">
                     {t("jim_bio")}
                   </p>

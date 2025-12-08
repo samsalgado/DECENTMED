@@ -355,10 +355,12 @@ possible for you. So borrow our belief because so many clients have gotten incre
         />
         </div>
       </div>
+            <Button className="custom-btn" href="https://sourceapp.dynamitelifestyle.com/thesource" target="_blank">{t('Find Out How Priscilla Can Help You reach your Potential')}</Button>
+      <br></br>
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
         <Modal.Header closeButton>
           <Modal.Title>{t("Transcript")}</Modal.Title>
         </Modal.Header>

@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./homeo.css";
 import './Info.css';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import homeo from '../images copy/meme3.png';
 import { useTranslation } from 'react-i18next';
 const Herbal = () => {
-const {t} = useTranslation('common')
+const {t} = useTranslation('common');
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
             <h1 className='title'>{t('Herbal Medicine')}</h1>
@@ -49,6 +50,24 @@ const {t} = useTranslation('common')
 ></iframe>
         </div>        
       </div>
+                    <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                  {t("Transcript")}
+                </Button>
+                <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+              <Modal.Header closeButton>
+                <Modal.Title>{t("Transcript")}</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{t("eng")}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  {t("Close")}
+                </Button>
+              </Modal.Footer>
+            </Modal>
+      
+      
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

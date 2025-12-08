@@ -10,7 +10,41 @@
   color: "black";
   margin-bottom: 1rem;
 } */
+/* Custom styles for the modal */
+.custom-modal .modal-dialog {
+  max-width: 90%;  /* Ensures modal doesn't go off-screen */
+  margin: 1.75rem auto;
+  margin-top: 10vh; /* Adjust this if the modal is too high or low */
 
+}
+.jim-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.custom-modal .modal-content {
+  word-wrap: break-word;
+    padding: 20px;  /* Adjust the padding if necessary */
+ /* Breaks long words or sentences to fit the modal */
+}
+
+.custom-modal .modal-header {
+  padding: 10px 20px;  /* Adjust padding for header if necessary */
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  display: flex;
+  justify-content: space-between; /* Adjust button positions */
+  align-items: center;
+}
+.custom-modal .modal-body {
+  max-height: 80vh;  /* Ensures the body doesn't overflow the viewport */
+  overflow-y: auto; 
+  overflow-x: scroll; /* Adds scroll if content is too long */
+}
 h1 {
   font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean & professional font */
   font-weight: 800; /* slightly bold for emphasis without being heavy */

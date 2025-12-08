@@ -1,22 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../App.css";
 import './Info.css';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 //import ultt from "../images copy/ultt.png";
 const MeditationInfo = () => {
   const { t } = useTranslation("common");
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className='container'>
       <h1 className="title">{t('Meditation')}</h1>
       <iframe width="100%" height={500} src="https://drive.google.com/file/d/1gR__NvCEmnlJpOsJDUadgCDBSM-LZzCS/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                          {t("Transcript")}
+                        </Button>
+                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+                      <Modal.Header closeButton>
+                        <Modal.Title>{t("Transcript")}</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <p>{t("yogi")}</p>
+                      </Modal.Body>
+                      <Modal.Footer>
+                        <Button variant="secondary" onClick={() => setShowModal(false)}>
+                          {t("Close")}
+                        </Button>
+                      </Modal.Footer>
+                    </Modal>
 
       <div style={{ marginTop: '20px', width: '100%' }}>
         <Button style={{ marginRight: '20px' }} className="custom-btn" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>
         <Button className="custom-btn" href="mailto:serenitymeditation2021@gmail.com" target="_blank">{t('Contact')}</Button>
       </div>
-      
       <br />
       <div className='pr'>
         <h2>{t('Morning Meditation')}</h2>

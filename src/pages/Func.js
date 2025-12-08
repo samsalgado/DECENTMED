@@ -32,7 +32,6 @@ export function Func() {
         }}>
           <Topbar />
         </header>
-
         <div className="container" style={{
           // Solution 4: Remove any top spacing on container
           marginTop: 0,

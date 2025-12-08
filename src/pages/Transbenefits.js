@@ -133,10 +133,12 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
         />
         </div>
       </div>
+               <Button className="custom-btn" href="https://authenticlifejourney.com/" target="_blank">{t("Experience Transformation")}</Button>  {/* Added Bootstrap Button */}
+      <br></br>
                       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>

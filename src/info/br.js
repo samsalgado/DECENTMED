@@ -72,10 +72,12 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         />
         </div>
       </div>
+                  <Button className="custom-btn" href="https://scarlettdee.com/home" target="_blank">{t('Find Out How Breathwork Can Change your Life')}</Button>
+              <br></br>
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
         <Modal.Header closeButton>
           <Modal.Title>{t("Transcript")}</Modal.Title>
         </Modal.Header>

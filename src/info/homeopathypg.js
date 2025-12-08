@@ -132,22 +132,25 @@ either small doses or in the regular doses but also using off Lael drugs to kill
         </div>
 
       </div>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{t("Transcript")}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>{t(transcriptText)}</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            {t("Close")}
-          </Button>
-        </Modal.Footer>
-      </Modal>
+              <Button className="custom-btn" href="https://www.drtshannon.com/" target="_blank">{t('Find Out How Dr. Shannon Can Help You')}</Button>
+      
+<Button className="custom-btn" onClick={() => setShowModal(true)}>
+  {t("Transcript")}
+</Button>
+
+<Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+  <Modal.Header closeButton>
+    <Modal.Title>{t("Transcript")}</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <p>{t(transcriptText)}</p>
+  </Modal.Body>
+  <Modal.Footer>
+    <Button variant="secondary" onClick={() => setShowModal(false)}>
+      {t("Close")}
+    </Button>
+  </Modal.Footer>
+</Modal>
 
       <style jsx>{`
         @media (max-width: 768px) {

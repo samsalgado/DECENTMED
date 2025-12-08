@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Collapsible from 'react-collapsible';
 import "./stem.css"; 
 import { FaChevronDown } from 'react-icons/fa';
@@ -9,7 +9,7 @@ import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg
 import stembenefits from '../images copy/stembenefits.png';
 import './Info.css';
 import whystemcellspanish from '../images copy/IMG_9256.jpeg';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import whystemcelldutch from '../images copy/IMG_9257.jpeg';
 import whystemcellfrench from '../images copy/IMG_9258.jpeg';
 import whystemcellhindi from '../images copy/IMG_9259.jpeg';
@@ -27,7 +27,8 @@ import graphic from '../images copy/Pink-Illustrative-Simple-Healthy-Habits-Info
 import { useTranslation } from 'react-i18next';
 const Stem = () => {
   const { t } = useTranslation('common')
-
+  const [showModal, setShowModal] = useState(false);
+  
   return (
     <div className='container mobile-optimized'>
 <h1 className='title' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
@@ -58,7 +59,6 @@ const Stem = () => {
                           {t("Find Providers")}
             </Button>
       </div>
-      
         <iframe
           src="https://drive.google.com/file/d/1ECrjiFNkxNs2RU1EtobXh3AbWFkrmAut/preview"
           title="YouTube video player"
@@ -72,6 +72,23 @@ const Stem = () => {
         ></iframe>
       </div>
       </div>
+                    <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                    {t("Transcript")}
+                  </Button>
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+                <Modal.Header closeButton>
+                  <Modal.Title>{t("Transcript")}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p>{t("TEXT")}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={() => setShowModal(false)}>
+                    {t("Close")}
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Vitamins from './vitamins';
 import Coachingvids from './coachingvids';
 import './Info.css';
 import "./prevent.css";
 import { useTranslation } from 'react-i18next';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 const PreventWellness = () => {
   const { t } = useTranslation("common");
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
       <div className="title-container">
@@ -20,6 +21,24 @@ const PreventWellness = () => {
      </Button>
       <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>
   <Coachingvids />
+                 <Button className="custom-btn" href="http://gorillaandshecoaching.com/" target="_blank">{t("Transform your Health")}</Button>  {/* Added Bootstrap Button */}
+  <br></br>
+     <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                    {t("Transcript")}
+                  </Button>
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                <Modal.Header closeButton>
+                  <Modal.Title>{t("Transcript")}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p>{t("johncraig")}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={() => setShowModal(false)}>
+                    {t("Close")}
+                  </Button>
+                </Modal.Footer>
+              </Modal>
     </div>
   );
 }

@@ -43,10 +43,12 @@ const {t} = useTranslation('common');
         />
         </div>
       </div>
+               <Button className="custom-btn" href="http://tcnh-stl.com" target="_blank">{t("Explore Applied Kinesiology")}</Button>  {/* Added Bootstrap Button */}
+      <br></br>
                             <Button className="custom-btn" onClick={() => setShowModal(true)}>
                           {t("Transcript")}
                         </Button>
-                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
                       <Modal.Header closeButton>
                         <Modal.Title>{t("Transcript")}</Modal.Title>
                       </Modal.Header>

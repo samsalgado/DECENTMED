@@ -15,16 +15,6 @@ const FuncVids = () => {
             id:2,
             videoUrl:"https://www.youtube.com/embed/HGaKE9gxYzY?si=40IqfPwwawevZt35",
             name:`${t("Build Resilience with Precision Nutrition for Longevity and Healthy Aging.")}`
-        },
-        {
-            id:3,
-            videoUrl: "https://drive.google.com/file/d/18yp2Ua9zqubpxzA7E2UPIyOOEZ-1zqxI/preview",
-            name: `${t("Dysfunctional Medicine: Exposing Conventional Medicine")}`
-        },
-        {
-            id:4,
-            videoUrl: "https://drive.google.com/file/d/1JEapKS8tjSO4OA09tRAOHvZMlmeBb5jX/preview",
-            name: `${t("Dysfunctional Medicine")}`
         }
 
     ]);

@@ -1,8 +1,10 @@
 import React, {useEffect, useCallback} from 'react';
 import Topbar from "../topbar";
+//import { useState } from 'react';
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import Hoxseyfr from './hoxseyfr';
+//import {Button, Modal} from 'react-bootstrap';
 import Hoxseyhindi from './hoxseyhindi';
 import Hoxseydutch from './hoxseydutch';
 import essence from "../../images copy/essence.png";
@@ -116,6 +118,7 @@ import hoxsey42 from '../../images copy/IMG_6472.jpeg'; //
 
 import "../../App.css";
 const Hoxsey = ({t}) => {
+     //const [showModal, setShowModal] = useState(false);
     const publishToNostr = useCallback(async () => {
         const nsec = process.env.REACT_APP_NSEC;
           if (!nsec) {

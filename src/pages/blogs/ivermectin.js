@@ -26,6 +26,8 @@ import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import fenbenn from '../../images copy/Fenbendazole.png';
 import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
 import { nip19 } from 'nostr-tools';
+import { useState } from "react";
+import {Button, Modal} from 'react-bootstrap';
 import essence from "../../images copy/essence.png";
 import Collapsible from 'react-collapsible';
 import fenben from '../../images copy/ivermectin1.jpeg';
@@ -49,6 +51,8 @@ import "../../App.css";
 import { useTranslation } from "react-i18next";
 const Ivermectin = () => {
 const {t} = useTranslation('common');
+  const [showModal, setShowModal] = useState(false);
+
     const publishToNostr = useCallback(async () => {
       const nsec = process.env.REACT_APP_NSEC;
         if (!nsec) {
@@ -137,7 +141,24 @@ const {t} = useTranslation('common');
       <div className='container'>
 <iframe width="100%" height="600px" src="https://drive.google.com/file/d/1zg7C8tpSuu_wKKazM_77ko9ucn_OicAb/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
+      <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                  {t("Transcript")}
+                </Button>
+                <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+              <Modal.Header closeButton>
+                <Modal.Title>{t("Transcript")}</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{t("ivermectin")}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  {t("Close")}
+                </Button>
+              </Modal.Footer>
+            </Modal>
       </div>
+      
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='container'>
           <p>

@@ -12,7 +12,6 @@ const Info3 = () => {
   return (
     <div className='container'>
       <h1 className='title'>{t('Detox')}</h1>
-
       <Fruits />
             <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}
@@ -43,7 +42,7 @@ const Info3 = () => {
                <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>

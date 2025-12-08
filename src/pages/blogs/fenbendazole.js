@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import Fenhindi from './fenhindi';
 import Fenfrance from './fenfr';
+import { useState } from "react";
 import Fendutch from './fendutch';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
@@ -43,13 +44,16 @@ import spanish10 from '../../images copy/IMG_6954.jpeg';
 import spanish11 from '../../images copy/IMG_6955.jpeg';
 
 import spanish12 from '../../images copy/IMG_6956.jpeg';
-
+import {Button, Modal} from 'react-bootstrap';
 import spanish13 from '../../images copy/IMG_6957.jpeg';
 
 import "../../App.css";
 import { useTranslation } from "react-i18next";
+
 const Fen = () => {
-const {t} = useTranslation('common')
+const {t} = useTranslation('common');
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <Helmet>
@@ -69,6 +73,22 @@ const {t} = useTranslation('common')
 </div>
 
       </div>
+                    <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                  {t("Transcript")}
+                </Button>
+                <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+              <Modal.Header closeButton>
+                <Modal.Title>{t("Transcript")}</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{t("fenbendazole")}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  {t("Close")}
+                </Button>
+              </Modal.Footer>
+            </Modal>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='container'>
           <p>

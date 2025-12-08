@@ -13,11 +13,10 @@ import burnout from '../images copy/burnout.jpeg';
 import Acuvids from '../info/acuvids';
 import acuben from '../images copy/acuben.png';
 import { Button, Modal } from 'react-bootstrap';
-
 const Info1 = () => {
   const {t} = useTranslation('common');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
     const txt = `
     0:00 Tell me about acupuncture and introduce yourself.
 0:02 All right. Well, my name is Nettie Crisio. I am a licensed acupuncturist and I've been
@@ -301,10 +300,12 @@ const Info1 = () => {
         </div>
         
       </div>
-                      <Button className="custom-btn" onClick={() => setShowModal(true)}>
+               <Button className="custom-btn" href="https://oceantreis.com/" target="_blank">{t("Explore Acupuncture")}</Button>  {/* Added Bootstrap Button */}
+      <br></br>
+                  <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                  <Modal show={showModal} className="custom-modal" onHide={() => setShowModal(false)} size="lg" centered>
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -317,8 +318,6 @@ const Info1 = () => {
                   </Button>
                 </Modal.Footer>
               </Modal>
-
-      {/* Keep original 3 images section unchanged */}
       <div className='acupen'>
         <img className='gridimag' src={acuchart} alt='Ac' />
         <img className='gridimag' src={acutreatsIN} alt='Ac' />
