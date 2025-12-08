@@ -1,14 +1,14 @@
-import React from 'react';
+import React,  {useState } from 'react';
 import "../App.css";
 import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
 import './Info.css';
 import Protocols from './Protocols';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 const Info3 = () => {
   const { t } = useTranslation("common"); // Access translation function
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
       <h1 className='title'>{t('Detox')}</h1>
@@ -16,7 +16,7 @@ const Info3 = () => {
       <Fruits />
             <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}
-                  </Button>
+            </Button>
       <br></br>
       <div className="collapsible"></div>
 
@@ -40,6 +40,22 @@ const Info3 = () => {
             title="Rumble video player"
           />
         </div>
+               <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                    {t("Transcript")}
+                  </Button>
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                <Modal.Header closeButton>
+                  <Modal.Title>{t("Transcript")}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p>{t("transcriptTxt")}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={() => setShowModal(false)}>
+                    {t("Close")}
+                  </Button>
+                </Modal.Footer>
+              </Modal>
       </div>
 
       <div className="title-container">
