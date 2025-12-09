@@ -4,6 +4,7 @@ import Footer from "../../footer";
 import chirotreat from '../../images copy/chirotreats.png';
 import "../../App.css";
 import { useTranslation } from "react-i18next";
+import { Button } from "react-bootstrap";
 const Blog14 = () => {
   const { t } = useTranslation('common')
   return (
@@ -17,7 +18,7 @@ const Blog14 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif'}}>{t('Pain Pill for Back: Best Chiropractor Near Me')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Pain Pill for Back: Best Chiropractor Near Me')}
         </h1>
         <img className='gridimag' src={chirotreat} alt="logo" />
       </div>
@@ -33,6 +34,24 @@ const Blog14 = () => {
             {t('Chiropractic care improves brain health and behavior. It is designed to work with the body so that it heals itself. Chiropractic care is corrective care, pain pills is emergency care - choose the one that works with your body chemistry. Furthermore, avoid opioids that are foreign chemistry added to your body to heal you.')}
           </p>
         </div>
+        <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/chiropractic" 
+        target="_blank"
+      >
+        {t("Learn More")}
+      </Button>
       </div>
       <Footer />
     </>

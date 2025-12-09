@@ -5,6 +5,7 @@ import Footer from "../../footer";
 import nutrition from "../../images copy/nutritionbenefits.png";
 import vitamins from '../../images copy/vitamins.webp';
 import Topbar from "../topbar";
+import { Button } from "react-bootstrap";
 const Blog9 = () => {
   const { t } = useTranslation('common')
   return (
@@ -18,7 +19,7 @@ const Blog9 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('The Importance of Nutrition')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('The Importance of Nutrition')}</h1>
         <img className='gridimag' src={nutrition} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -30,7 +31,9 @@ const Blog9 = () => {
             {t(`Do not believe everything you read on the Internet. There is always a new trendy food or diet. What if you are allergic or your body cannot process a certain food? “Let thy food be thy medicine, and thy medicine be thy food is”, a famous quote from physician Hippocrates highlighting the importance of nutrition. Education is a fundamental element of the platform because health in America is a serious problem. Drug overdose is a serious problem in the United States, people do not know what they do not know. My research only goes so far, it takes real nutritionists with decades of experience to get to the root cause of diseases. Take the vitamins A, D, E, and K — the fruits listed in the diagram below are based upon my limited research of B17, Dr. Sebi, and other nutritionists I have studied. A nutritionist understands the quantity of vitamins A, D, E, and K the body needs. Nutritionists understand the specific vitamins each individual is lacking.`)}
           </p>
           <div className="container">
+            <a href="decentmed.org/detox">
             <img className='gridimag' src={vitamins} alt="logo" />
+            </a>
           </div>
           <p>
             {t(`Society is waking up to the reality that the Standard American Diet has set us up for failure. What’s the difference between a nutritionist and a dietician? Dietitians are specially trained nutritionists. Nutrition is more than just food and diet, nutritionists provide tips for clients to have long-term health. Exercise is another fundamental element of nutrition. Nutritionists help their clients develop plans tailored to their workout goals. What makes Michael Jordan, Tom Brady and Serena Williams the greats they are today? This is a convoluted answer — work ethic, giftedness, adversity, I would say coaching. The movie King Richard illustrates the need for coaching in tennis and how their Father built the Williams empire. Phil Jackson, coach of Michael Jordan, Shaquille O'Neal and Kobe Bryant (RIP), won 11 NBA titles as a coach. Michael Jordan is a legend, but Phil Jackson was instrumental in his success. Regarding Tom Brady, there is constant debate on whether his success is attributed to him or his coach Bill Belichick. A great coach maximizes your potential, and a health coach helps you maximize the effectiveness of your nutrition plan.`)}
@@ -42,7 +45,26 @@ const Blog9 = () => {
           <p>
             {t('Contact a nutritionist, you understand the value of nutritionists, once one understands the importance of food. Doctors universally acknowledge that nutrition is important. Seek a nutritionist to receive an in-depth understanding on nutrition and plans to fit the individual.')}
           </p>
+          
         </div>
+          <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/nutrition" 
+        target="_blank"
+      >
+        {t("Learn More")}
+      </Button>
       </div>
       <Footer />
     </>

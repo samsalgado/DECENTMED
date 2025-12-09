@@ -1,5 +1,6 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
 import Footer from "../../footer";
 import constipation from "../../images copy/constipation.png";
 import "../../App.css";
@@ -17,7 +18,7 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Can Constipation cause Back Pain?')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Can Back Pain make you Constipated?')}</h1>
           <img className='gridimag' src={constipation} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -25,11 +26,12 @@ const {t} = useTranslation('common')
             <p>
             {t('An estimated “80% of the population will have significant back pain. According to the NIH, “15% of the US population deal with chronic constipation”, a statistic that highlights the American diet. Our bodies are interconnected systems; constipation causes stool buildup and affects the sacral nerve. Yes, constipation can cause back pain, specifically lower back pain.')}
             </p>
+            <br></br>
             <div className='video-container'>
               <iframe
                 width="100%"
                 height="200"
-                src="https://www.youtube.com/embed/2sZbrRXHJiU?si=MwUT3r0yoO_bvy7S"
+                src="https://www.youtube.com/embed/s0Mz_vWmpzA?si=gPh1tvMdMEY9S45e"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -49,10 +51,28 @@ const {t} = useTranslation('common')
 {t(`Constipation can cause back pain; think of it as a “check engine light” for the body. Ask yourself: “Do I eat enough fruits and vegetables?” “Do I get enough exercise?” “Am I lactose intolerant?” “Do I have sacral nerve damage?”. Prioritizing exercise and nutrition goes a long way in fighting disease. Eat enough fruits and vegetables and try an occasional fast (consult a doctor before doing so) to keep your body healthy. If you do these things and still find yourself struggling with constipation — you might have sacral nerve damage. Treat your body like an interconnected system; what you eat affects your entire body.`)}           
 </p>
           </div>
+               <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/chiropractic" 
+        target="_blank"
+      >
+        {t("Try Chiropractic")}
+      </Button>
       </div>
       <Footer />
     </>
   );
 };
 
-export default Blog1; // Default export
+export default Blog1; 

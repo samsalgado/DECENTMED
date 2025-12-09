@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import '../App.css';
 import Footer from '../footer';
+import detoxxx from "../images copy/detoxxx.png";
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
 import ramona from "../images copy/ramona.jpeg";
@@ -19,6 +20,7 @@ import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
 import golf from "../images copy/golf.jpg";
 import tammy from "../images copy/tammy.png";
+import acuu from "../images copy/acuu.png";
 import imgg from "../images copy/imgg.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
@@ -64,9 +66,31 @@ const BlogPage = () => {
           </div>
         </div>
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("How much Does Acupuncture Cost?")}</h2>
+          <div className='container'>
+            <a href='/acupuncture-cost'>
+              <figure>
+                <img className='gridimag' src={acuu} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Detox and Cleanse Kit")}</h2>
+          <div className='container'>
+            <a href='/detox-cleanse'>
+              <figure>
+                <img className='gridimag' src={detoxxx} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Applied Kinesiology with Acupuncture and Chiropractic for Autism")}</h2>
           <div className='container'>
-            <a href='/'>
+            <a href='/tcnh'>
               <figure>
                 <img className='gridimag' src={ak} alt="logo" />
                 {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
@@ -114,7 +138,7 @@ const BlogPage = () => {
                 {t('An estimated “80% of the population will have significant back pain. According to the NIH, “15% of the US population deal with chronic constipation”, a statistic that highlights the American diet. Our bodies are interconnected systems; constipation causes stool buildup and affects the sacral nerve. Yes, constipation can cause back pain, specifically lower back pain.')}
               </p>
               <div className='container'>
-                <a href='/blog1'>
+                <a href='/can-back-pain-cause-constipation'>
                   <figure>
                     <img className='gridimag' src={constipation} alt="logo" />
                     {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -131,7 +155,7 @@ const BlogPage = () => {
 
           </div>
           <div className='container'>
-            <a href='/blog2'>
+            <a href='/dry-needling-vs-acupuncture'>
               <figure>
                 <img className='gridimag' src={acuneed} alt="logo" />
                 {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -162,7 +186,7 @@ const BlogPage = () => {
               {t(`“Cancer Cases, Deaths in Men Predicted to Surge by 2050”. Currently, cancer is responsible for 1 in 5 deaths in the world. There is no cure for cancer, and statisticians expect cancer deaths to rise. What if I told you that the cure to cancer is found in the foods we eat? The number one fast food chain in the world is McDonald’s. “Canola oil was first created in the early 1970s as a natural oil. But in 1995, Monsanto created a genetically modified version of canola oil. By 2009, over 90 percent of the Canadian canola oil crop was genetically engineered (1).” Dr. Sebi theorized that seed oils are carcinogenic once heated. Let’s explore the relationship between food, cancer, and fruits with powerful preventive properties.`)}
             </p>
             <div className='container'>
-              <a href='/blog10'>
+              <a href='/cancer-prevention'>
                 <figure>
                   <img className='gridimag' src={cancerimg} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -212,7 +236,7 @@ const BlogPage = () => {
               {t('The process of acupuncture is a four-step process beginning with checking the pulse and other vitals. Then, insert the needles into acupuncture points or points where blood, lymph, and nerves can easily access connective tissue. Next, manipulate the needles, and sometimes moxibustion is applied. Moxibustion is a traditional Chinese medical technique that involves burning the herb mugwort to relieve cold or stagnant conditions by stimulating circulation. Finally, topical patches and herbal rub are applied to the post-need injection sites.')}
             </p>
             <div className='container'>
-              <a href='/blog5'>
+              <a href='/acupuncture'>
                 <figure>
                   <img className='gridimag' src={consult} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -283,7 +307,7 @@ const BlogPage = () => {
           </div>
         </div>
         <div className='container'>
-          <a href='/blog7'>
+          <a href='/batana-oil'>
             <figure>
               <img className='gridimag' src={batana} alt="logo" />
               {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -299,7 +323,7 @@ const BlogPage = () => {
           </div>
         </div>
         <div className='container'>
-          <a href='/blog12'>
+          <a href='/acupuncture-montreal'>
             <figure>
               <img className='gridimag' src={montreal} alt="logo" />
               {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -314,7 +338,7 @@ const BlogPage = () => {
           </div>
         </div>
         <div className='container'>
-          <a href='/blog14'>
+          <a href='/benefits-of-chiropractic'>
             <figure>
               <img className='gridimag' src={chirotreat} alt="logo" />
               {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -331,7 +355,7 @@ const BlogPage = () => {
           </div>
         </div>
         <div className='container'>
-          <a href='/blog8'>
+          <a href='/hepatitis-B-specialists'>
             <figure>
               <img className='gridimag' src={hepB} alt="logo" />
               {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
@@ -410,7 +434,7 @@ const BlogPage = () => {
               {t('Rose Oil stems from the petals of Rosa centifolia and Rosa damascena. First, we will explain the medicinal benefits of Rosa centifolia and Rosa damascena, according to PFAF.org.')}
             </p>
             <div className='container'>
-              <a href='/blog16'>
+              <a href='/rose-oil'>
                 <figure>
                   <img className='gridimag' src={RoseOil} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}

@@ -8,6 +8,7 @@ import seatedfold from "../../images copy/seatedforwardfold.png";
 import needle from "../../images copy/needle.jpeg";
 import standing from "../../images copy/standing.png";
 import "../../App.css";
+import { Button } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 const Blog18 = () => {
   const { t } = useTranslation('common');
@@ -22,11 +23,13 @@ const Blog18 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
       </div>
       <div style={{ padding: '0px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
+        <a href="https://decentmed.org/chiropractic">
         <img className='gridimag' src={cancerimg} alt="logo" />
+        </a>
         <p> 
           {t("Tuesday, July 8, 2025, is expected to be under a severe weather advisory. Severe hot weather causes dehydration and intensifies existing back pain. Let's outline the top five stretches for back pain in Scottsdale.")}
           </p>
@@ -46,11 +49,28 @@ const Blog18 = () => {
           <p> {t('Finally, is the Standing Side Stretch for the ribs and cooling. This stretch opens the ribs via deep breathing to cool down the nervous system. This stretch requires you to stand and stretch to each side. This stretch works best in conjunction with slow and rhythmic breathing. In a world of sedentary, stretching is paramount to beat the heat. Yoga and stretching have a myriad of benefits for the body, especially during Arizona or Florida summers. Note, chiropractic adjustments aid the process of loosening the body. If you are in Scottsdale, Arizona visit a chiropractor that can assist you.')} 
           </p>
         </div>
+          <Button 
+  style={{
+    display: 'block',
+    margin: '0 auto',
+    padding: '10px 20px',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '16px',
+    textAlign: 'center',
+    textDecoration: 'none',
+  }}
+  className="custom-btn"
+  href="https://drkhayami.com/" 
+  target="_blank"
+>
+  {t("Visit Better Health Solutions")}
+</Button>
       </div>
       <Footer />
     </>
   );
 };
-
 export default Blog18; 
 

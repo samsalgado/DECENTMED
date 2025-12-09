@@ -1,7 +1,8 @@
-import React, {useEffect, useCallback} from 'react';
+import React, {useEffect, useState, useCallback} from 'react';
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import { Button, Modal } from 'react-bootstrap';
 import "../../App.css";
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import fenben from '../../images copy/Fenbendazole.png';
@@ -14,6 +15,8 @@ import { nip19 } from 'nostr-tools';
 import { getPublicKey, finalizeEvent, SimplePool } from 'nostr-tools';
 const Blog6 = () => {
   const { t } = useTranslation('common');
+    const [showModal, setShowModal] = useState(false);
+
   const publishToNostr = useCallback(async () => {
     const nsec = process.env.REACT_APP_NSEC;
       if (!nsec) {
@@ -126,8 +129,27 @@ const Blog6 = () => {
               controls={true}
             />
         </div>
-
       </div>
+            <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                        {t("Transcript")}
+                      </Button>
+                      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+                    <Modal.Header closeButton>
+                      <Modal.Title>{t("Transcript")}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>{t("transcriptt")}</p>
+                      <p>{t("transcriptt1")}</p>
+                      <p>{t("transcript2")}</p>
+                      <p>{t("transcript3")}</p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button variant="secondary" onClick={() => setShowModal(false)}>
+                        {t("Close")}
+                      </Button>
+                    </Modal.Footer>
+                  </Modal>
+      
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
         

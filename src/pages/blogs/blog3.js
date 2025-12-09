@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import "../../App.css";
 import { useTranslation } from "react-i18next";
-
+import { Button } from "react-bootstrap";
 const Blog3 = () => {
   const {t} = useTranslation('common')
 
@@ -18,18 +18,20 @@ const Blog3 = () => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Detox Cleans')}</h1>
-     <div className="video-container">
-<iframe
-  className="rumble"
-  width="640"
-  height="360"
-  src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
-  frameBorder="0"
-  allowFullScreen
-  title="Dr. Sebi and Max Gerson Dietary Protocol Video"
-/>
-  </div>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Detox and Cleanse Kit')}</h1>
+    <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
+  <iframe
+    className="rumble"
+    width="640"
+    height="360"
+    src="https://rumble.com/embed/v6c31ja/?pub=4hu51y"
+    frameBorder="0"
+    allowFullScreen
+    title="Dr. Sebi and Max Gerson Dietary Protocol Video"
+    style={{ maxWidth: '100%', height: 'auto' }} // Maintain aspect ratio
+  />
+</div>
+
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='pr'>
@@ -44,6 +46,24 @@ const Blog3 = () => {
 </p>
 
           </div>
+               <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/detox" 
+        target="_blank"
+      >
+        {t("Try Detox")}
+      </Button>
       </div>
       <Footer />
     </>

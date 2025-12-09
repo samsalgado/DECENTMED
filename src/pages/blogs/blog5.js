@@ -2,6 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import acu from "../../images copy/ac.png";
+import { Button } from "react-bootstrap";
 import "../../App.css";
 import { useTranslation } from "react-i18next";
 const Blog5 = () => {
@@ -17,7 +18,7 @@ const Blog5 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('What is Acupuncture?')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('What is Acupuncture?')}</h1>
         <img className='gridimag' src={acu} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -36,6 +37,24 @@ const Blog5 = () => {
             {t(`Acupuncture can treat (NOT MEDICAL CLAIM/ADVICE. CONSULT A MEDICAL PROFESSIONAL.) uterine fibroids, which affect roughly 70% of women. Acupuncture may treat digestive disorders, osteoarthritis, high blood pressure, and rheumatoid arthritis. Another type of acupuncture is gemstone acupuncture, a process comprised of gua sha, cupping, and gemstones placed on the body. Acupuncture is widely available: type 'acupuncture near me' and find an acupuncturist near you. Acupuncture is an alternative to pharmaceuticals for pain and other ailments.`)}
           </p>
         </div>
+        <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/acu" 
+        target="_blank"
+      >
+        {t("Explore Acupuncture")}
+      </Button>
       </div>
       <Footer />
     </>

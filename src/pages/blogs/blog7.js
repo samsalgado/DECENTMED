@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import batana from '../../images copy/batana.png';
 import "../../App.css";
+import { Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 const Blog7 = () => {
 const {t} = useTranslation('common');
@@ -17,7 +18,7 @@ const {t} = useTranslation('common');
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
           <img className='gridimag' src={batana} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -35,6 +36,24 @@ const {t} = useTranslation('common');
            {t(`Dr. Sebi and other natural doctors and herbalists believe that the body should consume foods that address what the body cannot produce (vitamins E, B, and C). Dr. Sebi states, 'Best results occur when eating an alkaline diet and cellular-rich foods'`)}
            </p>
           </div>
+          <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/apoth" 
+        target="_blank"
+      >
+        {t("Visit Apothecary")}
+      </Button>
       </div>
       <Footer />
     </>

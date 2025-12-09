@@ -4,6 +4,7 @@ import lifewave from "../../images copy/lifewave.png";
 import Footer from "../../footer";
 import "../../App.css";
 import { useTranslation } from "react-i18next";
+import { Button } from "react-bootstrap";
 const Blog19 = () => {
   const { t } = useTranslation('common')
   return (
@@ -17,7 +18,7 @@ const Blog19 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif'}}>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}
         </h1>
         <a href="https://www.lifewave.com/awicks">
         <img className='gridimag' src={lifewave} alt="logo" />
@@ -36,6 +37,24 @@ const Blog19 = () => {
           <p>
             {t("The Center for Natural Health use chiropractic, acupuncture and Applied Kinesiology in tandem to address root causes to disease and address multisystem disorders like Autism. Using chiropractic helps with the cranial and sacral bones that do not function properly for ASD children. Finally, acupuncture can help with the nuerons improperly forming appropriate synapses. When working in conjunction, multisystem disorders can be addressed.")}
           </p>
+            <Button 
+  style={{
+    display: 'block',
+    margin: '0 auto',
+    padding: '10px 20px',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '16px',
+    textAlign: 'center',
+    textDecoration: 'none',
+  }}
+  className="custom-btn"
+  href="https://decentmed.org/ak" 
+  target="_blank"
+>
+  {t("Learn More")}
+</Button>
         </div>
       </div>
       <Footer />

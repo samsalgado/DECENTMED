@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import montreal from '../../images copy/montreal.png';
 import "../../App.css";
+import { Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 const Blog12 = () => {
 const {t} = useTranslation('common')
@@ -17,7 +18,7 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("Acupuncture Montreal")}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("Acupuncture Montreal")}
       </h1>
       <img className='gridimag' src={montreal} alt="logo" />
 
@@ -35,6 +36,24 @@ const {t} = useTranslation('common')
             {t("Acupuncture in Montreal started with an acupuncture boom in Ontario. Canada has seen an influx of Chinese immigrants and culture. One benefit is the mass adoption of TCM and acupuncture throughout the region. Acupuncture helps with many ailments: fertility,")} <a href="https://www.monacupuncteur.ca/en?pgid=lxqtnlqe-c3dea2c1-e155-4057-b8c1-feb24da43a55">{t('bruxism,')},</a> {t("stress, pain relief and more. In a nation like Canada, acupuncture plays a pivotal role in fighting ailments that traditional medicine would not address.")}
             </p>
         </div>
+        <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/acu" 
+        target="_blank"
+      >
+        {t("Try Acupuncture")}
+      </Button>
         </div>
         <Footer />
         </>

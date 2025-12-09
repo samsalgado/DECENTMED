@@ -6,10 +6,12 @@ import Footer from '../footer';
 import Treis from '../cards/oceantreis.jpg';
 import Erica from '../cards/erica.png';
 import { useTranslation } from 'react-i18next'
+import { Button,  Modal } from 'react-bootstrap';
 
 export function Acupract() {
 const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
+  const [showModal, setShowModal] = useState(false);
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isTampaLocation, setIsTampaLocation] = useState(false);
@@ -62,7 +64,11 @@ const { t } = useTranslation('common');
       handleSearch();
     }
   };
-
+  const txt = `My name is Nettie Criscio. I am a licensed acupuncturist and I just started my practice. I attended East West College of Natural Medicine in Sarasota. I got my master's in Oriental Medicine there, got all of my boards, Florida license and I just started my practice.
+If youre in Tampa, Florida needing acupuncture. Visit Oson Treis Medical. We provide expert acupuncture treatments designed to relieve stress, reduce anxiety and restore balance.
+ Our holistic approach goes beyond temporary relief, helping you achieve lasting calm, better sleep, improved digestion and overall well-being.
+Think of it as a reset button for your mind and body so you can feel more grounded, energized and at ease in your daily life.
+ Visit https://oceantreis.com/.`
   return(
     <div>
     <main className="page-content">
@@ -177,6 +183,23 @@ const { t } = useTranslation('common');
                               allowFullScreen
                             />
                           </div>
+                                            <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                                          {t("Transcript")}
+                                        </Button>
+                                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+                                      <Modal.Header closeButton>
+                                        <Modal.Title>{t("Transcript")}</Modal.Title>
+                                      </Modal.Header>
+                                      <Modal.Body>
+                                        <p>{t(txt)}</p>
+                                      </Modal.Body>
+                                      <Modal.Footer>
+                                        <Button variant="secondary" onClick={() => setShowModal(false)}>
+                                          {t("Close")}
+                                        </Button>
+                                      </Modal.Footer>
+                                    </Modal>
+                          
                           <div className="col-md-7">
                             <h3 className="h4 mb-1">{t('Dr. Nettie Criscio')}</h3>
                             <p className="text-muted mb-2">{t("Ocean Treis Medical")}</p>

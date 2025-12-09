@@ -47,7 +47,7 @@ const { t } = useTranslation('common');
         </NavLink>
       </ul>
        <ul>
-        <NavLink to="/ak">{t('Applied Kinesiology')}
+        <NavLink to="/applied-kinesiology">{t('Applied Kinesiology')}
         </NavLink>
       </ul>
       <ul>

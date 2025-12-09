@@ -4,6 +4,7 @@ import Footer from "../../footer";
 import batana from '../../images copy/hepB.png';
 import "../../App.css";
 import { useTranslation } from "react-i18next";
+import { Button } from "react-bootstrap";
 const Blog8 = () => {
 const {t} = useTranslation('common')
   return (
@@ -17,7 +18,7 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
       <a href='/apoth'>
     <figure>
     <img className='gridimag' src={batana} alt="logo" />
@@ -39,6 +40,24 @@ const {t} = useTranslation('common')
            <p>
            {t('Herbalists operate on the principle that disease stems from deficiency and nutrition. The application of these plants correlates with the functionality of the infected organ. The liver is in charge of detoxification, if the body cannot detoxify toxins then toxins build up in the body — Portulaca grandiflora fights toxins and fights mutation of tumors. Cordydalis yanhusuo cleans the blood, a vital function of the liver is cleaning and filtering blood. Finally, Blighia sapida aids in digestion, another function of the liver. Holistic medicine looks at medicine as interconnected, integrating these plants (not medical advice) helps the liver.')}</p>
           </div>
+          <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/apoth" 
+        target="_blank"
+      >
+        {t("Visit Apothecary")}
+      </Button>
       </div>
       <Footer />
     </>

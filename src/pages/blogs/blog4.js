@@ -2,6 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import cell from "../../images copy/cell.png";
+import { Button } from "react-bootstrap";
 import "../../App.css";
 import { useTranslation } from "react-i18next";
 const Blog4 = () => {
@@ -17,7 +18,7 @@ const Blog4 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Cellular Regeneration')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Cellular Regeneration')}</h1>
         <img className='gridimag' src={cell} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -40,6 +41,24 @@ const Blog4 = () => {
             {t(`It starts with a diet rich in antioxidants and vitamins. Food is medicine, their is more benefit from the plant than the supplement. Second, utilize plants instead of pills to work in conjunction with the body instead of being reliant on pills. An estimated 30 million Americans do not have access to health insurance. Preventive wellness, plants as medicine, and holistic care provide a distinct level of healthcare that keeps the body healthy instead of constantly sick.`)}
           </p>
         </div>
+        <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/detox" 
+        target="_blank"
+      >
+        {t("Try Detox")}
+      </Button>
       </div>
       <Footer />
     </>

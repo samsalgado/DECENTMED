@@ -4,6 +4,7 @@ import Footer from "../../footer";
 import chirotreat from '../../images copy/roseoil.png';
 import "../../App.css";
 import { useTranslation } from "react-i18next";
+import { Button } from "react-bootstrap";
 const Blog16 = () => {
 const {t} = useTranslation('common')
   return (
@@ -17,7 +18,7 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Rose Oil Benefits')}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Rose Oil Benefits')}
       </h1>
           <img className='gridimag' src={chirotreat} alt="logo" />
       </div>
@@ -45,6 +46,24 @@ const {t} = useTranslation('common')
         {t('Aromatherapy involves inhaling essential oils for therapeutic effects. Rose oil stems from the petals of Rosa centifolia and Rosa damascena. The petals are astringent and strong in vitamins A, C, and E. According to studies, rose oil helps most with pain (analgesic) and depression (anti-depressant).')} 
         </p>
           </div>
+        <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/apoth" 
+        target="_blank"
+      >
+        {t("Visit Apothecary")}
+      </Button>
       </div>
       <Footer />
     </>

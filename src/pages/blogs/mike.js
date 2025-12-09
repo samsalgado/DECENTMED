@@ -16,8 +16,9 @@ const Mike = () => {
       <header>
         <Topbar />
       </header>
+
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t('Ways to Improve Your Sleep Quality')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ways to Improve Your Sleep Quality')}</h1>
         <a href='https://www.naturopathylane.com/'> <img className='gridimag' src={cell} alt="logo" /></a>
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>

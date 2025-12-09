@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import ramona from "../../images copy/ramona.jpeg";
 import Footer from "../../footer";
 import "../../App.css";
+import { Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 const Ramona = () => {
   const { t } = useTranslation('common')
@@ -17,12 +18,30 @@ const Ramona = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif'}}>{t('Pain Pill for Back: Best Chiropractor Near Me')}
-        </h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ending Corporate Burnout')}</h1>
         <a href="https://authenticlifejourney.as.me/schedule/f3645bcd/appointment/59514298/calendar/any?appointmentTypeIds[]=59514298">
         <img className='gridimag' src={ramona} alt="logo" />
         </a>
+          <Button 
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://decentmed.org/transformationalcoaching" 
+        target="_blank"
+      >
+        {t("Learn More")}
+      </Button>
       </div>
+      
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
           <p>
@@ -30,19 +49,20 @@ const Ramona = () => {
           <p>
             {t("A review speaks volumes to the impact of coaching. Let's review some reviews from her previous clients. 'Ramona's intuitive guidance and transformative mindfulness techniques gave me the clarity I needed to align with my purpose and manifest the life I always wanted.' 'So much of my growth has come from Authentic Life Journey'. With over 23% (National Institute of Mental Health) of women dealing with anxiety, empowerment is the best path forward.")}
           </p>
-          <iframe
-          className="centered-video"
-          src="https://www.youtube.com/embed/O9i9uQbgszw?si=USPBaFFfJciRX_ol"
-          frameBorder="0"
-          allowFullScreen
-          title="YouTube video player"
-          style={{
-            maxWidth: '500px',
-            width: '100%',
-            height: 'auto'
-          }}
-        />
+         
         </div>
+          <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
+  <iframe
+    className="rumble"
+    width="640"
+    height="360"
+    src="https://www.youtube.com/embed/O9i9uQbgszw?si=USPBaFFfJciRX_ol"
+    frameBorder="0"
+    allowFullScreen
+    title="Dr. Sebi and Max Gerson Dietary Protocol Video"
+    style={{ maxWidth: '100%', height: 'auto' }} // Maintain aspect ratio
+  />
+</div>
       </div>
       <Footer />
     </>
