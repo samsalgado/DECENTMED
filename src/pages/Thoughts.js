@@ -8,7 +8,6 @@ export function Mindset() {
 const { t } = useTranslation('common');
     return(
         <div>
-         <main className="page-content">
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Law of Attraction: Mindset Coach")}</title>  
         <meta name="description" content={t("Seeking a Mindset coach? Learn about Applied Kineiology and its benefits! Discover the techniques used to help with Autism Disorder, pain, and other complex disorders. Learn more.")} />
@@ -20,7 +19,6 @@ const { t } = useTranslation('common');
             <footer>
                 <Footer />
             </footer>
-            </main>
         </div>
     )
     

@@ -45,7 +45,6 @@ export function HomeopathyPract() {
 
   return (
     <div>
-      <main className="page-content">
       <Helmet>
         <title>{t("Homeopathy Near Me")}</title>  
         <meta name="description" content={t("Homeopathy near to me? Look no further than great homeopaths that can assist you holistically, and provide you wholeness.")} />
@@ -235,7 +234,6 @@ export function HomeopathyPract() {
       <footer>
         <Footer />
       </footer>
-    </main>
     </div>
   );
 }

@@ -13,11 +13,6 @@ export function Nutrition() {
         window.scrollTo(0, 0);
       }, []);    
     return (
-<main className="page-content" style={{
-            // Solution 2: Ensure no top margin/padding on main container
-            marginTop: 0,
-            paddingTop: 0
-          }}>
          <div>
             <Helmet>  
                 <title>{t('Dr Sebi Food List')}</title>
@@ -35,7 +30,6 @@ export function Nutrition() {
                 <Footer />
             </footer>
         </div>
-        </main>
     )
 }
 

@@ -13,10 +13,6 @@ useEffect(() => {
 
     return (
         <>
-         <main className="page-content" style={{
-            marginTop: '120px',
-            paddingTop: 0
-          }}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Ayurveda Experience")}</title>  
         <meta name="description" content={t("Discover the transformative power of the Ayurveda Experience! Explore ancient practices for mind-body balance, natural healing, and a path to well-being. Learn more.")} />
@@ -30,7 +26,6 @@ useEffect(() => {
         <footer>
             <Footer />
         </footer>
-        </main>
     </>
     )
 }

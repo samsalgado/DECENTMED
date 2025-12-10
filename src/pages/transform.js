@@ -8,8 +8,6 @@ export function Transformational() {
 const { t } = useTranslation('common');
     return(
         <div>
-         <main className="page-content">
-
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Transformative Coaching")}</title>  
         <meta name="description" content={t("Learn about transformative coaching and its benefits! Discover the ancient wisdom and techniques used to help people cope with stress, burnout, and more. Learn more.")} />
@@ -21,7 +19,6 @@ const { t } = useTranslation('common');
             <footer>
                 <Footer />
             </footer>
-            </main>
         </div>
     )
     

@@ -185,9 +185,9 @@ const Info1 = () => {
   const isSmallMobile = windowWidth <= 480;
   const isTablet = windowWidth <= 992 && windowWidth > 768;
 
-  const containerStyle = {
-    padding: isMobile ? '0 10px' : '0 15px'
-  };
+  //const containerStyle = {
+    //padding: isMobile ? '0 10px' : '0 15px'
+  //};
 
   const titleStyle = {
     textAlign: 'center',
@@ -253,7 +253,7 @@ const Info1 = () => {
   };
 
   return (
-    <div className='container mobile-optimized' style={containerStyle}>
+    <div>
       <h1 className='title' style={titleStyle}>{t('Acupuncture')}</h1>
       
       <div style={mainWrapperStyle}>

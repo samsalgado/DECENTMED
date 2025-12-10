@@ -12,8 +12,6 @@ useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
     return( 
-        <main className="page-content" >
-
     <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Homeopathy Near Me")}</title>  
@@ -29,7 +27,6 @@ useEffect(() => {
             <Footer />
         </footer>
     </div>
-    </main>
     )
 }
 

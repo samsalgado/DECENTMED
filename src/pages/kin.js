@@ -17,11 +17,6 @@ export function AKPract() {
 
   return(
     <div>
-      <main className="page-content" style={{
-        // Solution 2: Ensure no top margin/padding on main container
-        marginTop: 0,
-        paddingTop: 0
-      }}>
         <Helmet>
           <title>{t("Frequency Medicine")}</title>  
           <meta name="description" content={t("Working with complex disorders via frequency medicine. The Center for Natural Health assists you holsitically, utilizing frequencies to communicate with the brain.")} />
@@ -127,7 +122,6 @@ export function AKPract() {
         <footer>
           <Footer />
         </footer>
-      </main>
     </div>
   )
 }

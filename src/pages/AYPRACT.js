@@ -91,7 +91,6 @@ export function AYPract() {
 
   return(
     <div>
-      <main className="page-content">
         <Helmet>
           <title>{t("Ayurveda Near Me")}</title>  
           <meta name="description" content={t("Ayurveda near me? Look no further than great ayurvedists that can assist you holistically, and provide you wholeness.")} />
@@ -298,7 +297,6 @@ export function AYPract() {
         <footer>
           <Footer />
         </footer>
-      </main>
     </div>
   )
 }

@@ -10,9 +10,8 @@ import { useTranslation } from 'react-i18next';
 const HerbalMedicine = () => {
 const { t } = useTranslation('common');
   return (
-    <main className="page-content">
 
-    <div className='wrapper'>
+    <div>
       <Helmet>  {/* Add Helmet component */}
         <title>{t("Encyclopedia of Herbal Medicine")}</title>
         <meta name="description" content={t("Encyclopedia of Herbal Medicine, the body has an immense regenerative potential to heal itself. Let herbal medicine transform your body! Explore how herbal medicine can support your body's natural healing potential. Learn more about herbal medicine and its benefits.")} />
@@ -20,17 +19,14 @@ const { t } = useTranslation('common');
       <header>
         <Topbar />
       </header>
-      <main className='content'>
         <Herbal />
         <br></br>
         <h1 className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
-      </main>
       <footer className='footer'>
         <Footer />
       </footer>
     </div>
-</main>
   )
 }
 

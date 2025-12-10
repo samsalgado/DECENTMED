@@ -1,0 +1,153 @@
+/* ============================================
+   GLOBAL VARIABLES
+   Wrapper.js sets --header-height dynamically.
+   These are only fallbacks before JS runs.
+============================================ */
+
+:root {
+  --header-height: 0px;
+}
+
+
+/* ============================================
+   GLOBAL RESET + PREVENT HORIZONTAL SCROLL
+============================================ */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* prevents mobile overflow */
+  box-sizing: border-box;
+}
+
+/* Ensure all elements respect box sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* ============================================
+   FIXED HEADER (Topbar)
+============================================ */
+
+header,
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: auto !important; /* let content define height */
+  padding: 0;
+  margin: 0;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* ============================================
+   WRAPPER — dynamic offset from header
+============================================ */
+
+.page-wrapper {
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* Fallback padding if JS fails */
+  padding-top: var(--header-height, 60px);
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding-top: calc(var(--header-height) * 0.45) !important;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .Logo {
+    max-width: 90px;
+  }
+}
+
+
+
+/* ============================================
+   MAIN CONTENT
+============================================ */
+
+main {
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent headings from sliding under header */
+h1, .title {
+  margin-top: 0 !important;
+}
+
+/* ============================================
+   NAVBAR FIXES (prevents mobile overflow)
+============================================ */
+
+.navbar-container .navbar-nav {
+  width: 100%;
+  flex-wrap: wrap; /* ✅ allows wrapping instead of overflow */
+}
+
+.navbar-container .nav-link {
+  white-space: nowrap; /* ✅ prevents long links from breaking layout */
+}
+
+/* Logo responsive */
+.Logo {
+  max-width: 120px;
+  height: auto;
+}
+
+html, body {
+  overflow-y: auto;
+}
+
+
+/* ============================================
+   LANGUAGE DROPDOWN FIXES
+============================================ */
+
+.change-locale {
+  max-width: 25vw;
+  overflow: hidden; /* ✅ prevents pushing navbar wider */
+}
+
+.change-locale-toggle span {
+  display: inline-block;
+  max-width: 20vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Dropdown menu safety */
+.change-locale-menu {
+  max-width: 90vw;
+  max-height: 60vh;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+/* ============================================
+   OPTIONAL: FOOTER SAFE AREA
+============================================ */
+
+footer {
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (min-width: 1024px) {
+  .navbar-container .navbar-nav {
+    flex-wrap: nowrap !important;
+  }
+}

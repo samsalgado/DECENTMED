@@ -95,7 +95,6 @@ export function Nutritionpract() {
 
   return (
     <div>
-      <main className="page-content">
         <Helmet>
           <title>{t("Find Nutritionists Near You - Location-Based Nutrition Care")}</title>  
           <meta name="description" content={t("Find nutritionists in your area. Enter your location to see available nutrition practitioners near you.")} />
@@ -504,7 +503,6 @@ export function Nutritionpract() {
         <footer>
           <Footer />
         </footer>
-      </main>
     </div>
   );
 }

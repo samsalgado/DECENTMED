@@ -11,9 +11,6 @@ import Reviews from '../info/reviews';
 const Practice = () => {
   const { t } = useTranslation("common");
   return (
-
-    <main className="">
-
       <div className='container'>
         <div className='theecontaine'>
 
@@ -31,7 +28,6 @@ const Practice = () => {
           <Reviews />
         </div>
       </div>
-    </main>
   );
 };
 

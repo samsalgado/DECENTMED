@@ -54,7 +54,6 @@ export function Chiropractic() {
 
   return (
     <div>
-      <main className="page-content">
         <Helmet>
           <title>{t("Chiropractor Near Me")}</title>  
           <meta 
@@ -86,7 +85,6 @@ export function Chiropractic() {
         <footer>
           <Footer />
         </footer>
-      </main>
     </div>
   );
 }

@@ -40,7 +40,6 @@ export function Apoth() {
   const { t } = useTranslation('common');
 
   return (
-    <main className="page-content">
     <div className='wrapper'>
       <Helmet>
         <title>{t('Apothecary')}</title>
@@ -51,15 +50,12 @@ export function Apoth() {
         <h1 className='center'>{t('Live Drop Coming Soon!')}</h1>
 
       </header>
-      <main className='content'>
         <h1 className='center'>{t('Apothecary')}</h1>
         <br></br>
         <Apothecary />
-      </main>
       <footer className='footer'>
         <Footer />
       </footer>
     </div>
-    </main>
   );
 }

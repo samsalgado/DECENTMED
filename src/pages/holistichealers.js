@@ -12,8 +12,6 @@ useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
     return(
-      <main className="page-content">
-
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Emotional Eating Coach")}</title>  
@@ -74,7 +72,6 @@ controls={true}
                 <Footer />
             </footer>
         </div>
-        </main>
     )
     
 }

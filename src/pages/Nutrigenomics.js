@@ -8,8 +8,6 @@ export function Nutrigenomics() {
 const { t } = useTranslation('common');
     return(
         <div>
-         <main className="page-content">
-
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Nutrigenomics")}</title>  
         <meta name="description" content={t("Discover how Nutrigenomics and Somatic Breathwork can support mental health, reduce stress and anxiety, and restore balance. Explore ancient techniques blended with modern science to enhance your well-being.")} />
@@ -22,7 +20,6 @@ const { t } = useTranslation('common');
             <footer>
                 <Footer />
             </footer>
-            </main>
         </div>
     )
     

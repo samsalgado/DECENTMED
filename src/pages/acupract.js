@@ -71,8 +71,6 @@ Think of it as a reset button for your mind and body so you can feel more ground
  Visit https://oceantreis.com/.`
   return(
     <div>
-    <main className="page-content">
-
       <Helmet>
         <title>{t("Acupuncturist Near Me")}</title>  
         <meta name="description" content={t("Searching Acupuncturist near me? Look no further than our fantastic acupuncturist that can assist you on your pathway to wellness.")} />
@@ -438,7 +436,6 @@ Think of it as a reset button for your mind and body so you can feel more ground
       <footer>
         <Footer />
       </footer>
-      </main>
     </div>
   )
 }

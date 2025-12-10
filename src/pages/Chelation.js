@@ -14,7 +14,6 @@ useEffect(() => {
 
     return(
         <div>
-<main className="page-content">
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Heavy Metal Detox")}</title>  
         <meta name="description" content={t("Learn about heavy metal detoxification with chelation therapy. Explore the potential benefits and safety considerations. Find out if chelation is right for you. Learn more.")} />
@@ -29,7 +28,6 @@ useEffect(() => {
             <footer>
                 <Footer />
             </footer>
-            </main>
         </div>
     )
     }

@@ -14,7 +14,6 @@ export function Summit() {
 
   return (
     <>
-      <main className="page-content">
         <Helmet>
           <title>{t('DecentMed Summit')}</title>
           <meta
@@ -38,7 +37,6 @@ export function Summit() {
         </footer>
 
         {/* I have removed the JSX for the popup from here. */}
-      </main>
     </>
   );
 }

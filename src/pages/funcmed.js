@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 export function FuncMed() {
 const { t } = useTranslation('common');
     return(
-        <main className="page-content">
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Functional Medicine")}</title>  
@@ -21,7 +20,6 @@ const { t } = useTranslation('common');
                 <Footer />
             </footer>
         </div>
-        </main>
     )
     
 }

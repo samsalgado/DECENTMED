@@ -13,7 +13,6 @@ export function ReviewPage() {
     const { t } = useTranslation("common");
     return(
         <div>
-        <main className="page-content">
             <Helmet>
                 <title>{t("Our Reviews")}</title>
                 <meta name="description" content={t("Searching for a digital marketing agency near me?Look no further; we implement data-driven SEO strategies and affordable PPC services like Google Ads or Meta Ads for your company.")} />
@@ -30,7 +29,6 @@ export function ReviewPage() {
             <footer>
                 <Footer />
             </footer>
-            </main>
         </div>
     )
 }

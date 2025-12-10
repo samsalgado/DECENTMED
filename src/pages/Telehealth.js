@@ -59,7 +59,6 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
          `
     return (
         <>
-        <main className="page-content">
             <Helmet>
                 <title>{t('Telehealth Services')}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -107,7 +106,6 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
             <footer>
                 <Footer />
             </footer>
-            </main>
         </>
     )
 }

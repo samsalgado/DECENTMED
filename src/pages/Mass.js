@@ -38,7 +38,6 @@ export default function MassPract() {
   };
 
   return (
-    <main className="page-content">
     <div>
       <Helmet>
         <title>{t('Find a Practitioner')} - DecentMed</title>
@@ -106,7 +105,6 @@ export default function MassPract() {
       )}
       <footer><Footer /></footer>
       </div>
-      </main>
   )
 }
 

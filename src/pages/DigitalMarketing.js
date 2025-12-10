@@ -16,8 +16,6 @@ export function Marketing() {
     const { t } = useTranslation("common");
     return(
         <div>
-            <main className="page-content">
-
             <Helmet>
                 <title>{t("Digital Marketing agency near me")}</title>
                 <meta name="description" content={t("Searching for a digital marketing agency near me?Look no further; we implement data-driven SEO strategies and affordable PPC services like Google Ads or Meta Ads for your company.")} />
@@ -58,7 +56,6 @@ export function Marketing() {
             <footer>
                 <Footer />
             </footer>
-            </main>
         </div>
     )
 }

@@ -8,8 +8,6 @@ export function PTSD() {
 const { t } = useTranslation('common');
     return( 
     <div>
-                        <main className="page-content">
-
         <Helmet>  {/* Add Helmet component */}
         <title>{t("CPTSD vs PTSD")}</title>  
         <meta name="description" content={t("When searching naturopathy near me, remember that the body has an immense regenerative potential to heal itself. Find a naturopathic practitioner near you! Explore how homeopathy can support your body's natural healing potential. Learn more about naturopathy and its benefits.")} />
@@ -21,7 +19,6 @@ const { t } = useTranslation('common');
         <footer>
             <Footer />
         </footer>
-        </main>
     </div>
     )
 }

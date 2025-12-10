@@ -8,6 +8,7 @@ import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
+import Wrapper from './info/Wrapper';
 import { Func } from './pages/Func';
 import {Summit} from './pages/Summit';
 import MassPract from './pages/Mass';
@@ -97,6 +98,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
+       <Wrapper>
       {/* <Topbar t={t} /> */}
       <ScrollTop />
 <DisclaimerPopup></DisclaimerPopup>
@@ -195,7 +197,7 @@ function App() {
           </PrivateRoute>
         } />
       </Routes>
-
+</Wrapper>
     </QueryClientProvider>
   );
 }

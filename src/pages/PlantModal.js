@@ -6,7 +6,6 @@ const PlantModal = ({ isOpen, onClose, plant }) => {
   if (!isOpen) return null;
 
   return (
-    <main className="page-content">
     <div className="modal-overlay">
       <div className="modal-content">
         <button className="modal-close" onClick={onClose}>X</button>
@@ -15,7 +14,6 @@ const PlantModal = ({ isOpen, onClose, plant }) => {
         <a href={plant.source} target="_blank" rel="noopener noreferrer">Source</a>
       </div>
     </div>
-    </main>
   );
 };
 

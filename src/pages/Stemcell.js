@@ -15,11 +15,6 @@ useEffect(() => {
 
     return(
         <div>
-        <main className="page-content"style={{
-            // Solution 2: Ensure no top margin/padding on main container
-            marginTop: 0,
-            paddingTop: 0
-          }}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t('Stem Cell Therapy')}</title>  
         <meta name="description" content="Unlock the potential of stem cell therapy! Explore how stem cells can be used to treat various conditions and promote healing. Learn more about this innovative therapy." />
@@ -33,8 +28,6 @@ useEffect(() => {
             <footer>
                 <Footer />
             </footer>
-            </main>
-
         </div>
     )
     }

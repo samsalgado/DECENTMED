@@ -130,7 +130,6 @@ export function Natpract() {
 
   return (
     <div>
-      <main className="page-content">
         <Helmet>
           <title>{t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")}</title>  
           <meta name="description" content={t("Find naturopathic doctors in your area. Enter your location to see available naturopathy practitioners near you.")} />
@@ -467,7 +466,6 @@ export function Natpract() {
         <footer>
           <Footer />
         </footer>
-      </main>
     </div>
   );
 }

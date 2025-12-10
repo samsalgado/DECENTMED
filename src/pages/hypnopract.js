@@ -42,7 +42,6 @@ export function Hypnopract() {
 
   return (
     <div>
-    <main className="page-content">
       <Helmet>
         <title>{t("Hypnotherapy Near Me")}</title>
         <meta name="description" content={t("Looking for hypnotherapy near you? Find qualified hypnotherapists to assist with therapy and well-being.")} />
@@ -173,7 +172,6 @@ export function Hypnopract() {
           </div>
         )}
       </div>
-      </main>
       <footer><Footer /></footer>
       
     </div>

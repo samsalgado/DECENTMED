@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 export function Hypnotherapy() {
 const { t } = useTranslation('common');
     return(
-        <main className="page-content">
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Hypnotherapy")}</title>  
@@ -27,7 +26,6 @@ const { t } = useTranslation('common');
                 <Footer />
             </footer>
         </div>
-        </main>
     )
     
 }

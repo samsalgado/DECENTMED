@@ -27,7 +27,6 @@ export function Breathwork({ providerEmail }) {
   
   return (
     <div>
-      <main className="page-content">
         <Helmet>
           <title>{t("Somatic Breathwork")}</title>
           <meta name="description" content={t("If you want one of the best emotional eating books...")} />
@@ -115,7 +114,6 @@ export function Breathwork({ providerEmail }) {
         <footer>
           <Footer />
         </footer>
-      </main>
     </div>
   );
 }
