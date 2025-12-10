@@ -300,8 +300,11 @@ const Info1 = () => {
         </div>
         
       </div>
-               <Button className="custom-btn" href="https://oceantreis.com/" target="_blank">{t("Try Acupuncture in Tampa")}</Button>  {/* Added Bootstrap Button */}
       <br></br>
+                  <Button className="custom-btn" onClick={() => window.location.href = 'https://oceantreis.com/'}>
+                    {t("Acupuncture in Tampa")}
+                  </Button>
+
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
