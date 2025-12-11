@@ -65,7 +65,7 @@ const {t} = useTranslation('common');
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("Fenbendazole for Humans with Cancer")}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t("Fenbendazole for Humans with Cancer")}
       </h1>
       <div className='container'>
     <iframe width='100%' height='700px'

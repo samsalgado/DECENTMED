@@ -6,10 +6,12 @@ import Footer from '../footer';
 import Ramona from '../cards/IMG_0587.jpeg';
 import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
+import Lynn from "../cards/lynn.png";
 import Kristina from "../images copy/kristina.png";
 import Priscilla from '../cards/priscilla.jpg';
 import jimp from '../cards/jimp.png';
 import { useTranslation } from 'react-i18next';
+import { Button } from 'react-bootstrap';
 export function Coaching() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -17,6 +19,7 @@ export function Coaching() {
   const [showResults, setShowResults] = useState(false);
   const [showAnil, setShowAnil] = useState(false);
   const [showJohn, setShowJohn] = useState(false);
+  const [showLynn, setShowLynn] = useState(false);
   const [showJim, setShowJim] = useState(false);
   const [showPriscilla, setShowPriscilla] = useState(false);
   const [showKristina, setShowKristina] = useState(false);
@@ -74,6 +77,7 @@ const handleSearch = () => {
   if (!location.trim()) {
     setShowAnil(true);
     setShowJohn(true);
+    setShowLynn(true);
     setShowPriscilla(true);
     setShowKristina(true);
     setShowJim(true);
@@ -91,6 +95,14 @@ const indiaTerms = [
     'pakistan', 'bangladesh', 'sri lanka', 'nepal', 'bhutan', 'maldives',
     'afghanistan', 'karachi', 'lahore', 'islamabad', 'dhaka', 'colombo', 'kathmandu'
   ].map(term => term.toLowerCase());
+ const canadaTerms = [
+  'canada', 'ontario', 'toronto', 'ottawa', 'hamilton', 'kitchener', 'london', 'waterloo', 'niagara falls', 'windsor', 
+  'mississauga', 'brampton', 'sudbury', 'thunder bay', 'kingston', 'guelph', 'barrie', 'markham', 'oakville', 
+  'sarnia', 'sault ste. marie', 'cornwall', 'st. catharines', 'stratford', 'north bay', 'georgian bay', 'algonquin park',
+  'manitoulin island', 'blue mountains', 'prince edward county', 'peterborough', 'cottage country', 'simcoe county',
+  'halton region', 'durham region', 'peel region', 'york region', 'muskoka', 'parry sound', 'bruce peninsula', 
+  'township of king', 'royal ontario museum', 'ontario science centre', 'ontario place', 'etobicoke'
+].map(term => term.toLowerCase());
 
   const ukTerms = [
     'uk', 'united kingdom', 'england', 'scotland', 'wales', 'northern ireland',
@@ -126,7 +138,7 @@ const indiaTerms = [
   const isUSA = usaTerms.some(term => lowerCaseLocation.includes(term));
   const isFlorida = floridaTerms.some(term => lowerCaseLocation.includes(term));
   const isNV = westCoast.some(term => lowerCaseLocation.includes(term));
-
+  const isCanada = canadaTerms.some(term => lowerCaseLocation.includes(term));
   // Set region priority for ordering
   if (isNV) {
     setRegionPriority('nv'); // Nevada gets Jim first
@@ -139,7 +151,9 @@ const indiaTerms = [
   }
   else if (isIndia) {
     setRegionPriority('india');
-  } else {
+  } else if (isCanada) {
+     setRegionPriority('canada');
+  }  else {
     setRegionPriority('global');
   }
 
@@ -149,9 +163,9 @@ const indiaTerms = [
   setShowKristina(isUSA || isFlorida); // Show for any USA location
   setShowRamona(isFlorida || isUSA);
   setShowJim(isNV || isUSA);
+  setShowLynn(isCanada || isUSA); 
   setShowResults(true);
 };
-
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleSearch();
@@ -264,7 +278,53 @@ const indiaTerms = [
       </div>
     )
   );
-
+  const renderLynn = () => (
+    showLynn && (
+      <div className="row mb-4" key="kristina">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Lynn} 
+                    alt="Kristina" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Lynn McIntosh')}</h2>                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("Etobicoke, Ontario, Canada")}
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("Ontario, Canada")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Heal from Narcissism")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Ceritifed Coaching and Hypnosis")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Personal Coaching Programs")}</span>
+                  </div>
+                  <p className="card-text small">
+                    {t("lynn")}
+                  </p>
+                </div>
+                <div className="col-md-3 text-end">
+                          <div className="col-md-12 mt-4">
+                            <Button className="custom-btn" href="https://www.reclaimingyourlifeandjoy.com/consultation-call-application" target="_blank">{t('Contact')}</Button>
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
   const renderRamona = () => (
     showRamona && (
       <div className="row mb-4" key="ramona">
@@ -571,6 +631,15 @@ const renderCoachesInOrder = () => {
     coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderJim());
+  } else if (regionPriority === 'canada') {
+    // UK region: John first, then others
+    coaches.push(renderLynn());
+    coaches.push(renderJohn());
+    coaches.push(renderPriscilla());
+    coaches.push(renderAnil());
+    coaches.push(renderKristina());
+    coaches.push(renderRamona());
+    coaches.push(renderJim());
   } else if (regionPriority === 'india') {
     // India region: Anil first, then others
     coaches.push(renderAnil());
@@ -675,7 +744,7 @@ const renderCoachesInOrder = () => {
               {renderCoachesInOrder()}
 
               {/* Show message if no location-specific coaches but still show global ones */}
-              {!showAnil && !showKristina && !showRamona && (showJohn || showPriscilla) && (
+              {!showAnil && !showLynn && !showKristina && !showRamona && (showJohn || showPriscilla) && (
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="alert alert-info">

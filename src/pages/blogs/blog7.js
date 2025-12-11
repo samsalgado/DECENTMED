@@ -18,7 +18,7 @@ const {t} = useTranslation('common');
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
           <img className='gridimag' src={batana} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>

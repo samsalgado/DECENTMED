@@ -224,7 +224,7 @@ const Hoxsey = ({t}) => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("Harry Hoxsey: You Don’t Have to Die")}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t("Harry Hoxsey: You Don’t Have to Die")}
       </h1>
       <div className='container'>
 <iframe 

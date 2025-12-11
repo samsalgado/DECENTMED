@@ -18,7 +18,7 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("Acupuncture Montreal")}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Acupuncture Montreal")}
       </h1>
       <img className='gridimag' src={montreal} alt="logo" />
 

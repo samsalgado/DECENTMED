@@ -18,7 +18,7 @@ const Blog3 = () => {
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Detox and Cleanse Kit')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Detox and Cleanse Kit')}</h1>
     <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
   <iframe
     className="rumble"

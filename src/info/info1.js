@@ -3,6 +3,14 @@ import Channel from './channel';
 import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; 
+import slide1 from "../images copy/1.png";
+import slide2 from "../images copy/2.png";
+import slide3 from "../images copy/3.png";
+import slide4 from "../images copy/4.png";
+import slide5 from "../images copy/5.png";
+import slide6 from "../images copy/acu5.png";
+import slide7 from "../images copy/acu6.png";
+import slide8 from "../images copy/IMG_2773.jpeg";
 import OCTT from "../images copy/OCTrv.png";
 import oct from "../images copy/OCT.png";
 import Collapsible from 'react-collapsible';
@@ -331,6 +339,101 @@ const Info1 = () => {
       
       <h1>{t("Top 10 Benefits of Acupuncture")}</h1>
       <img className='gridimag' src={acuben} alt='Ac' />
+       <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Case Studies')}</th>}>
+  <div className="row">
+    <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide1} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+     <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide2} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+    <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide3} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+     <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide4} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+     <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide5} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+     <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide6} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+      <div className="col-12 col-md-8 mb-3">
+      <a href="http://www.chineseacupunctureprinceton.com">
+      <img src={slide7} alt="Acupuncture Study" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto'
+       
+      }} />
+    </a>
+    </div>
+    <div className="col-12 col-md-8 mb-3">
+      <a href="tel:+18333362326">
+      <img src={slide8} alt="Acupuncture Tampa" style={{
+        width: '100%',
+        maxWidth: '700px',
+        height: 'auto',
+        objectFit: 'contain'
+      }} />
+      </a>
+    </div>
+  </div>
+
+  <style jsx>{`
+    @media (max-width: 768px) {
+      .row > div {
+        text-align: center;
+      }
+      .row img {
+        max-width: 350px !important;
+      }
+    }
+  `}</style>
+</Collapsible>
       <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Tampa')}</th>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">

@@ -23,7 +23,7 @@ const Blog18 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
       </div>
       <div style={{ padding: '0px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>

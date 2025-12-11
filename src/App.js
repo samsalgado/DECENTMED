@@ -12,6 +12,7 @@ import Wrapper from './info/Wrapper';
 import { Func } from './pages/Func';
 import {Summit} from './pages/Summit';
 import MassPract from './pages/Mass';
+import Blog21 from './pages/blogs/blog21';
 import { Trauma } from './pages/Trauma';
 import { PTSD } from './pages/PTSD';
 import { Nutrigenomics } from './pages/Nutrigenomics';
@@ -41,6 +42,7 @@ import { StemCell } from './pages/Stemcell';
 import { NotFound } from './pages/NotFound';
 import { Shop } from './pages/products';
 import Blog2 from './pages/blogs/blog2';
+import { Lynn } from './pages/lynn';
 import { Nutrition } from './pages/Nutrition';
 import BlogPage from './pages/Blog';
 import { Hypnotherapy } from './pages/Hypnotherapy';
@@ -117,6 +119,7 @@ function App() {
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/breath" element={<Breathworkk t={t} />} />
+        <Route path="/acupuncture-for-migraines" element={<Blog21 t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
@@ -124,6 +127,7 @@ function App() {
         <Route path="/akpract" element={<AKPract t={t} />} />
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
+        <Route path="/lynn" element={<Lynn t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/applied-kinesiology" element={<AppliedKinesiology t={t} />} />
         <Route path="/breathwork" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />

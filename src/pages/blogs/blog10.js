@@ -92,7 +92,7 @@ In a world of misinformation, focus on the undeniable properties of what you are
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
         <img className='gridimag' src={cancerimg} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>

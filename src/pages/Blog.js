@@ -16,6 +16,7 @@ import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
 import mike from "../images copy/lanenaturopathy.png";
 import img from "../images copy/img.png";
+import acu from "../images copy/2412335.jpg";
 import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
 import golf from "../images copy/golf.jpg";
@@ -92,6 +93,17 @@ const BlogPage = () => {
             <a href='/tcnh'>
               <figure>
                 <img className='gridimag' src={ak} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Acupuncture for Migraines")}</h2>
+          <div className='container'>
+            <a href='/acupuncture-for-migraines'>
+              <figure>
+                <img className='gridimag' src={acu} alt="logo" />
                 {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>

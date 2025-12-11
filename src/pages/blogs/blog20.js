@@ -18,7 +18,7 @@ const Blog20 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('How much Does Acupuncture Cost?')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('How much Does Acupuncture Cost?')}
         </h1>
         <a href="https://decentmed.org/acu">
         <img className='gridimag' src={acuu} alt="logo" />

@@ -18,7 +18,7 @@ const Blog19 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}
         </h1>
         <a href="https://www.lifewave.com/awicks">
         <img className='gridimag' src={lifewave} alt="logo" />
