@@ -54,6 +54,7 @@ const Naturo = () => {
                     <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">{t('Find Out How Dr. Barnes Can Help You')}</Button>
     </div>
     <br></br>
+    <div>
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>
                 {t("Transcript")}
               </Button>
@@ -70,7 +71,7 @@ const Naturo = () => {
               </Button>
             </Modal.Footer>
           </Modal>
-    
+    </div>
     <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

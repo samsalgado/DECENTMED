@@ -12,6 +12,13 @@ html, body, #root {
   padding-top: 100px; /* Adjust for navbar height */
   box-sizing: border-box;
 }
+.jim-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
 /* Consistent H1 and H2 styling */
 /* h1 {
   font-family: sans-serif;
@@ -20,39 +27,70 @@ html, body, #root {
   margin-bottom: 1rem;
 } */
 /* Custom styles for the modal */
+/* Mobile optimizations */
+/* Complete mobile-optimized modal CSS */
 .custom-modal .modal-dialog {
-  max-width: 90%;  /* Ensures modal doesn't go off-screen */
-  margin: 1.75rem auto;
-  margin-top: 10vh; /* Adjust this if the modal is too high or low */
-
+  max-width: 90%;
+  margin: 1rem auto;
+  width: 100%;
 }
-.jim-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
+
+@media (min-width: 768px) {
+  .custom-modal .modal-dialog {
+    margin: 1.75rem auto;
+    margin-top: 10vh;
+  }
 }
 
 .custom-modal .modal-content {
-  word-wrap: break-word;
-    padding: 20px;  /* Adjust the padding if necessary */
- /* Breaks long words or sentences to fit the modal */
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .custom-modal .modal-header {
-  padding: 10px 20px;  /* Adjust padding for header if necessary */
+  padding: 15px 20px;
+  flex-shrink: 0;
 }
 
-.custom-modal .modal-header,
-.custom-modal .modal-footer {
-  display: flex;
-  justify-content: space-between; /* Adjust button positions */
-  align-items: center;
-}
 .custom-modal .modal-body {
-  max-height: 80vh;  /* Ensures the body doesn't overflow the viewport */
-  overflow-y: auto; 
-  overflow-x: scroll; /* Adds scroll if content is too long */
+  padding: 0; /* Remove padding for iframe */
+  overflow: hidden; /* Critical for iframe */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-modal .modal-body iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  flex: 1;
+}
+
+/* Mobile optimizations */
+@media (max-width: 576px) {
+  .custom-modal .modal-dialog {
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem);
+  }
+  
+  .custom-modal .modal-content {
+    max-height: calc(100vh - 1rem);
+  }
+  
+  .custom-modal .modal-header {
+    padding: 10px 15px;
+  }
+  
+  .custom-modal .modal-title {
+    font-size: 1rem;
+  }
+  
+  .custom-modal .modal-body iframe {
+    height: calc(100vh - 120px) !important; /* Account for header */
+  }
 }
 h1 {
   font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean & professional font */

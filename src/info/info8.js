@@ -13,9 +13,8 @@ const {t} = useTranslation('common');
             <div style={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
-        margin: '20px 0'
-      }}>
+        alignItems: 'center'
+        }}>
          <div className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
@@ -45,6 +44,7 @@ const {t} = useTranslation('common');
       </div>
                <Button className="custom-btn" href="http://tcnh-stl.com" target="_blank">{t("Explore Applied Kinesiology")}</Button>  {/* Added Bootstrap Button */}
       <br></br>
+      <div>
                             <Button className="custom-btn" onClick={() => setShowModal(true)}>
                           {t("Transcript")}
                         </Button>
@@ -61,6 +61,7 @@ const {t} = useTranslation('common');
                         </Button>
                       </Modal.Footer>
                     </Modal>
+        </div>
       
       <style jsx>{`
         @media (max-width: 768px) {
