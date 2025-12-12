@@ -26,7 +26,7 @@ const Transcript = () => {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <p>{t("ttxt")}</p>
+                    <p>{t("txt")}</p>
                 </Modal.Body>
 
                 <Modal.Footer>

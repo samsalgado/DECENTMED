@@ -5,6 +5,7 @@ import Footer from "../../footer";
 import { Button, Modal } from 'react-bootstrap';
 import "../../App.css";
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
+import ReactDOM from 'react-dom';
 import fenben from '../../images copy/Fenbendazole.png';
 import ReactPlayer from 'react-player';
 import Collapsible from 'react-collapsible';
@@ -119,7 +120,8 @@ const Blog6 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center',  marginTop: '4rem',
+  paddingTop: '3rem', fontFamily: 'sans-serif' }}>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
         </h1>
         <div className='container'>
             <ReactPlayer
@@ -133,7 +135,9 @@ const Blog6 = () => {
             <Button className="custom-btn" onClick={() => setShowModal(true)}>
                         {t("Transcript")}
                       </Button>
-                      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+                      {showModal && ReactDOM.createPortal(
+                      
+                      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="modal-cancer">
                     <Modal.Header closeButton>
                       <Modal.Title>{t("Transcript")}</Modal.Title>
                     </Modal.Header>
@@ -148,7 +152,9 @@ const Blog6 = () => {
                         {t("Close")}
                       </Button>
                     </Modal.Footer>
-                  </Modal>
+                  </Modal>,
+                  document.body
+                      )}
       
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>

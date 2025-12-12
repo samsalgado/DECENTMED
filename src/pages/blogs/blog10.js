@@ -2,9 +2,11 @@ import React, {useEffect, useState, useCallback} from 'react';
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
+import ReactDOM from 'react-dom';
 import ReactPlayer from 'react-player';
 import cancerimg from "../../images copy/cancerimg.png";
 import "../../App.css";
+import "../../info/Info.css";
 import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import { nip19 } from 'nostr-tools';
@@ -92,7 +94,8 @@ In a world of misinformation, focus on the undeniable properties of what you are
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
+        <h1 style={{ textDecoration: 'underline', marginTop: '1.5rem',
+  paddingTop: '1rem', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
         <img className='gridimag' src={cancerimg} alt="logo" />
       </div>
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -115,27 +118,39 @@ In a world of misinformation, focus on the undeniable properties of what you are
                 width='100%'
                 height='400px'
                 controls={true}
-              />
+/>
                       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                         {t("Transcript")}
                       </Button>
-                      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
-                    <Modal.Header closeButton>
-                      <Modal.Title>{t("Transcript")}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                      <p>{t("transcriptt")}</p>
-                      <p>{t("transcriptt1")}</p>
-                      <p>{t("transcript2")}</p>
-                      <p>{t("transcript3")}</p>
-                    </Modal.Body>
-                    <Modal.Footer>
-                      <Button variant="secondary" onClick={() => setShowModal(false)}>
-                        {t("Close")}
-                      </Button>
-                    </Modal.Footer>
-                  </Modal>
-
+{showModal && ReactDOM.createPortal(
+  <Modal 
+    show={showModal} 
+    onHide={() => setShowModal(false)} 
+    className="modal-cancer"
+  >
+    <Modal.Header closeButton>
+      <Modal.Title>{t("Transcript")}</Modal.Title>
+    </Modal.Header>
+    <Modal.Body style={{ 
+      paddingTop: '4rem',
+      overflowY: 'auto',
+      maxHeight: 'calc(100vh - 200px)'
+    }}>
+      <div>
+        <p style={{ marginBottom: '11rem' }}>{t("transcriptt")}</p>
+        <p style={{ marginBottom: '11rem' }}>{t("transcriptt1")}</p>
+        <p style={{ marginBottom: '11rem' }}>{t("transcript2")}</p>
+        <p style={{ marginBottom: '11rem' }}>{t("transcript3")}</p>
+      </div>
+    </Modal.Body>
+    <Modal.Footer>
+      <Button variant="secondary" onClick={() => setShowModal(false)}>
+        {t("Close")}
+      </Button>
+    </Modal.Footer>
+  </Modal>,
+  document.body
+)}
               <br></br>
           <p> {t(`How many times have you eaten an apricot seed? Dr. Ernst T. Krebs Jr. found that cancer stems from a deficiency in a compound in the nitriloside family. Specifically the Prunus Rosacea family: apricot seeds, blackthorn, bitter almonds, peaches, plums, cherries and nectarines. Apricot seeds have a high amount of nitrilosides. At the Sloan-Kettering Cancer Center, researcher Dr. Kanematsu Sugiura found five results: Laetrile stopped metastasis (cancer spreading) in mice, It improved their general health, It inhibited the growth of small tumors, It provided relief from pain, It acted as cancer prevention. Do apricot seeds have cyanide? Roasted apricot seeds have not shown a poisonous effect. Cases involving cyanide poisoning with apricot seeds are usually cloaked in mystery and multi-faceted. Compare two societies, one that consumes high amounts of apricot seeds and one that consumes none.`)} </p>
            

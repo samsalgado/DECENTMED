@@ -17,7 +17,13 @@ const Pgchelation = () => {
 
   return (
     <div className='container'>
-      <h1 className='title'>{t("Chelation")}</h1>
+       <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t("Chelation")}</h1>
       <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
       {/* Title and Collapsible Content with Table Structure */}
         <div className="button-container">

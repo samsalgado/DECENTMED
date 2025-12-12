@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import "../App.css";
 import './Info.css';
 import { Button, Modal } from 'react-bootstrap';
+import ReactDOM from 'react-dom';
 import { useTranslation } from 'react-i18next';
 //import ultt from "../images copy/ultt.png";
 const MeditationInfo = () => {
@@ -10,12 +11,20 @@ const MeditationInfo = () => {
 
   return (
     <div className='container'>
-      <h1 className="title">{t('Meditation')}</h1>
+       <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Meditation')}</h1>
       <iframe width="100%" height={500} src="https://drive.google.com/file/d/1gR__NvCEmnlJpOsJDUadgCDBSM-LZzCS/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <Button className="custom-btn" onClick={() => setShowModal(true)}>
                           {t("Transcript")}
                         </Button>
-                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+                        {showModal && ReactDOM.createPortal(
+                        
+                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                       <Modal.Header closeButton>
                         <Modal.Title>{t("Transcript")}</Modal.Title>
                       </Modal.Header>
@@ -27,7 +36,8 @@ const MeditationInfo = () => {
                           {t("Close")}
                         </Button>
                       </Modal.Footer>
-                    </Modal>
+                    </Modal>,
+                    document.body)}
 
       <div style={{ marginTop: '20px', width: '100%' }}>
         <Button style={{ marginRight: '20px' }} className="custom-btn" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>

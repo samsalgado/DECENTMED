@@ -7,6 +7,7 @@ import ramyoga from "../images copy/ramyoga.png";
 import slow from "../images copy/slowdown.png";
 import TsBenefits from "./tben";
 import flow from "../images copy/flow.png";
+import ReactDOM from 'react-dom';
 import r from "../images copy/r.png";
 import { useTranslation } from "react-i18next";
 const Benefitts = () => {
@@ -95,7 +96,13 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
 `
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t("Transformational Empowerment Coaching")}</h1>
+ <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>              {t("Transformational Empowerment Coaching")}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -138,7 +145,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+                  {showModal && ReactDOM.createPortal(               
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -150,7 +158,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal>,
+              document.body)}
 
       <style jsx>{`
         @media (max-width: 768px) {

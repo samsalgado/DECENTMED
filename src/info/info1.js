@@ -317,8 +317,9 @@ const Info1 = () => {
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
+                  {showModal && ReactDOM.createPortal(
                   
-                  <Modal show={showModal} className="custom-modal" onHide={() => setShowModal(false)} size="lg" centered>
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -330,7 +331,9 @@ const Info1 = () => {
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal>,
+              document.body
+              )}
       <div className='acupen'>
         <img className='gridimag' src={acuchart} alt='Ac' />
         <img className='gridimag' src={acutreatsIN} alt='Ac' />

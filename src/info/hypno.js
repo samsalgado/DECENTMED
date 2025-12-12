@@ -13,7 +13,13 @@ const {t} = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Hypnotherapy')}</h1>
+             <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Hypnotherapy')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -52,7 +58,7 @@ const {t} = useTranslation('common');
             {t("Transcript")}
           </Button>
             {showModal && ReactDOM.createPortal(    
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="transcriptt-modal">
         <Modal.Header closeButton>
           <Modal.Title >{t("Transcript")}</Modal.Title>
         </Modal.Header>

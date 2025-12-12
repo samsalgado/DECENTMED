@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import '../App.css';
 import Footer from '../footer';
 import { useState } from 'react';
+import ReactDOM from 'react-dom';
 import Practices from '../info/practices';
 import Topbar from './topbar';
 import "../info/Info.css";
@@ -83,7 +84,8 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                   {t("Transcript")}
                 </Button>
-                <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+              {showModal && ReactDOM.createPortal(    
+                <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
               <Modal.Header closeButton>
                 <Modal.Title>{t("Transcript")}</Modal.Title>
               </Modal.Header>
@@ -95,7 +97,8 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
                   {t("Close")}
                 </Button>
               </Modal.Footer>
-            </Modal>
+            </Modal>,
+            document.body)}
             <Practices />
             <div style={{ textAlign: 'center' }}>
                 <Button className="custom-btn" href="https://themerlingroupworld.com/signup/provider" target="_blank">

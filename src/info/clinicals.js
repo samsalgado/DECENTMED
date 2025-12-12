@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Button,  Modal } from 'react-bootstrap';
 import "../App.css";
 import './Info.css';
+import ReactDOM from 'react-dom';
 import { useTranslation } from 'react-i18next';
 const Clinicals = () => {
       const { t } = useTranslation("common");
@@ -14,7 +15,8 @@ const Clinicals = () => {
                     <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+                  {showModal && ReactDOM.createPortal(
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -27,7 +29,9 @@ const Clinicals = () => {
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal>,
+              document.body
+              )}
         </>
     
   )

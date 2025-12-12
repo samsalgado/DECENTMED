@@ -234,7 +234,13 @@ const {t} = useTranslation('common')
 25:56 people and the empowerment that will come from the summit. So I'm excited to be a part of it.`
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Functional Medicine')}</h1>
+          <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Functional Medicine')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

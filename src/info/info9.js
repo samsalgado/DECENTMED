@@ -317,7 +317,14 @@ possible for you. So borrow our belief because so many clients have gotten incre
   `
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Mindset Coaching')}</h1>
+           <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>
+              {t('Mindset Coaching')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Vitamins from './vitamins';
 import Coachingvids from './coachingvids';
+import ReactDOM from 'react-dom';
 import './Info.css';
 import "./prevent.css";
 import { useTranslation } from 'react-i18next';
@@ -11,7 +12,13 @@ const PreventWellness = () => {
   return (
     <div className='container'>
       <div className="title-container">
-        <h1 className="title">{t('Preventive Wellness')}</h1>
+         <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Preventive Wellness')}</h1>
       </div>
       <div className="collapsible">
       </div>
@@ -26,7 +33,9 @@ const PreventWellness = () => {
      <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
+                                    {showModal && ReactDOM.createPortal(
+                  
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -38,7 +47,9 @@ const PreventWellness = () => {
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal>,
+              document.body
+              )}
     </div>
   );
 }

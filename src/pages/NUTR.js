@@ -98,7 +98,14 @@ things together right because you are a complex puzzle a very Advanced biochemic
   `
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Nutrigenomics')}</h1>
+             <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>
+              {t('Nutrigenomics')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

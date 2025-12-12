@@ -23,8 +23,12 @@ const Ptsdd = () => {
   };
 
   const titleStyle = {
-    textAlign: 'center',
     marginBottom: isMobile ? '20px' : '30px',
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem',
     fontSize: isSmallMobile ? '1.5rem' : isMobile ? '1.8rem' : '2.5rem'
   };
 
@@ -87,7 +91,7 @@ const Ptsdd = () => {
 
   return (
     <div className='container mobile-optimized' style={containerStyle}>
-      <h1 className='title' style={titleStyle}>{t('CPTSD vs PTSD')}</h1>
+       <h1 style={titleStyle}>{t('CPTSD vs PTSD')}</h1>
       
       <div style={mainWrapperStyle}>
         <div className="container-bbblue" style={containerBbblueStyle}>

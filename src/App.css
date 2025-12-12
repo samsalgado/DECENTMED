@@ -2049,7 +2049,62 @@ td:last-child {
     margin-top: 12vh;
   }
 }
+/* TEST - if this works, text will be RED */
+/* Transcript Modal Cancer */
+.modal-cancer .modal-dialog {
+  margin: 0.5rem !important;
+  max-width: calc(100vw - 1rem) !important;
+  width: calc(100vw - 1rem) !important;
+}
 
+.modal-cancer .modal-content {
+  max-height: calc(100vh - 1rem) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.modal-cancer .modal-header {
+  padding: 1rem !important;
+  flex-shrink: 0 !important;
+}
+
+.modal-cancer .modal-body {
+  padding: 1rem !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  flex: 1 !important;
+}
+
+.modal-cancer .modal-body > div {
+  padding-top: 4rem !important;
+}
+
+.modal-cancer .modal-body p {
+  margin: 0 !important;
+  margin-bottom: 1rem !important;
+  padding: 0 !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.6 !important;
+  width: 100% !important;
+}
+
+.modal-cancer .modal-footer {
+  padding: 1rem !important;
+  flex-shrink: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .modal-cancer .modal-dialog {
+    margin: 2rem auto !important;
+    max-width: 800px !important;
+    width: 90% !important;
+  }
+  
+  .modal-cancer .modal-body > div {
+    padding-top: 0 !important;
+  }
+}
 .custom-modal .modal-content {
   max-height: 95vh;
   display: flex;

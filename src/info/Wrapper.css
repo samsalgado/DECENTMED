@@ -71,7 +71,25 @@ header,
     max-width: 90px;
   }
 }
+/* Fix h1/title cutoff on mobile */
+/* Global heading styles */
+.page-wrapper h1,
+.page-wrapper .title {
+  text-decoration: underline;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 1rem !important;
+  padding-top: 0.5rem !important;
+}
 
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .page-wrapper h1,
+  .page-wrapper .title {
+    margin-top: 1.5rem !important;
+    padding-top: 1rem !important;
+  }
+}
 
 
 /* ============================================

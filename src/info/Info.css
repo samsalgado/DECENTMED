@@ -19,6 +19,24 @@
 
 
 }
+/* Global heading style */
+.title,
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-family: sans-serif;
+   margin-top: '1.5rem';
+  padding-top: '1rem';
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .title,
+  h1 {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+}
 
 /* h1 {
   font-family: sans-serif;
@@ -265,7 +283,6 @@ padding: 30px;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  color: yellow;
   text-align: right;
   max-width: 40%;
   box-sizing: border-box;

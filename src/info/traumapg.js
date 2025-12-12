@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./homeo.css";
 import './Info.css';
+import ReactDOM from 'react-dom';
 import TsBen from './tsben';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
@@ -124,15 +125,19 @@ what I'm going to do is is share a little bit about each of the modalities that 
 
 if you're going to watch the summit, tune into that because hypnotherapy can be just as powerful at accessing some of the subconscious. But, um, I look forward to doing a little bit of a deeper dive for the summit and sharing some of the modalities that I do. Um, yeah, and I if if anyone has questions or they have things that we'd want to answer, I would welcome that feedback um in preparation for the summit. >> Yes. Beautiful. And I look forward if you're listening or watching this, join
 
-the summit. Take a step into exploring all these different alternative ways to heal. I'll be speaking about the mind and I'll be speaking to how we create this experience called life and the impact of traumas. But I look forward to sharing more and I love interactions like this. So, Dr. Barnes, thank you. Descent Med, thank you. And for all of you listening, thank you. Really look forward to assisting you to find your path for healing. >> And make sure to subscribe to both their YouTube channels, the YouTube.comflight
+the summit. Take a step into exploring all these different alternative ways to heal. I'll be speaking about the mind and I'll be speaking to how we create this experience called life and the impact of traumas. But I look forward to sharing more and I love interactions like this. So, Dr. Barnes, thank you. Descent Med, thank you. And for all of you listening, thank you. Really look forward to assisting you to find your path for healing. >> And make sure to subscribe to both their YouTube channels, the YouTube.com the alternative flight
 
-plan and YouTube.comamazl. You can also visit their websites at amazinglifedesign.com for Jim and meridianpassagewwellness.com for Dr. Barnes. Thank you so much for joining us today and this has been the latest episode of Decent Med Spotlight.
-
-
+plan and YouTube.com/amazinglifedesign. You can also visit their websites at amazinglifedesign.com for Jim and meridianpassagewwellness.com for Dr. Barnes. Thank you so much for joining us today and this has been the latest episode of Decent Med Spotlight.
   `
   return (
       <div className='container  mobile-optimized'>
-        <h1 className='title'>{t('Healing Trauma')}</h1>
+        <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Healing Trauma')}</h1>
         <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -175,7 +180,9 @@ plan and YouTube.comamazl. You can also visit their websites at amazinglifedesig
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className='custom-modal'>
+                            {showModal && ReactDOM.createPortal(
+                  
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -187,7 +194,8 @@ plan and YouTube.comamazl. You can also visit their websites at amazinglifedesig
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal>,
+              document.body)}
     <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

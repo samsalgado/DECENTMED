@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import "./homeo.css";
 import "../App.css";
 import './Info.css';
 import totalcare from '../images copy/totalcare.png';
@@ -17,12 +16,21 @@ const Naturo = () => {
   return (
     <>
       <div className='container mobile-optimized'>
-        <h1 className='title'>{t('Naturopathy')}</h1>
+       <h1
+  style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}
+>
+          {t('Naturopathy')}</h1>
         <div style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          margin: '20px 0'
+          
         }}>
           <div className="container-bbblue" style={{
             display: 'flex',

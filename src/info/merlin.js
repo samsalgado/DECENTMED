@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Info.css'; // Import the CSS file
 import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-
+import ReactDOM from 'react-dom';
 const Merlin = () => {
     const {t} = useTranslation('common');
       const [showModal, setShowModal] = useState(false);
@@ -62,7 +62,9 @@ time. I really was drawn to your vision of how you can help people with this typ
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
                {t("Transcript")}
               </Button>
-              <Modal show={showModal} className="custom-modal" onHide={() => setShowModal(false)} size="lg" centered>
+              {showModal && ReactDOM.createPortal(    
+              
+              <Modal show={showModal} className="transcriptt-modal" onHide={() => setShowModal(false)} size="lg" >
               <Modal.Header closeButton>
               <Modal.Title>{t("Transcript")}</Modal.Title>
               </Modal.Header>
@@ -74,7 +76,8 @@ time. I really was drawn to your vision of how you can help people with this typ
           {t("Close")}
          </Button>
          </Modal.Footer>
-          </Modal>
+          </Modal>,
+          document.body)}
         <br></br>
         <Button className="custom-btn" href="https://decentmed.org/signup" target="_blank">{t('Sign Up')}</Button>
     </div>

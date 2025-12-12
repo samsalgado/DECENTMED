@@ -4,6 +4,7 @@ import './Info.css';
 import ayurveda from "../images copy/ayurveda-science.png";
 import Elements from './elements';
 import Principles from './ayurev';
+import ReactDOM from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
 import Transcript from './herbtranscript';
@@ -150,13 +151,17 @@ window and she's like rethought so many things in her life and so she came to me
 ask people to do anything that I'm unwilling to do myself I know how hard it is to make change right and that we have to do things in an incremental way and we build we build from you know what's most important to get us on track at that time and then move forward I came to ayurveda again because of my own health problems and that I make a concerted effort on a daily basis to walk my walk you know and talk my talk I I do the same practices that I'm teaching that I'm encouraging people to
 
 do I try to be like a living example of what ayurveda can do for you you know I hear all the time like gosh you have so much energy and um vitality and so on and I really attribute that to what I learned from Dr Krueger all those years ago and to pay it forward and to educate people like it's my passion to help educate people because you know life is good everything's better when you feel good Body Mind and Spirit you know if you enjoyed this video make sure to click the Subscribe button and visit the
-themerlingroupworld.com/ayurveda for more
-
-
+themerlingroupworld.com/ayurveda for more.
     `
   return (
     <div className='container mobile-optimized'>
-    <h1 className='title mobile-title'>{t('Ayurveda Experience')}</h1>
+     <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Ayurveda Experience')}</h1>
     <div className="container-bbblue" style={{
       display: 'flex',
       flexDirection: 'row',
@@ -205,7 +210,8 @@ themerlingroupworld.com/ayurveda for more
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+                    {showModal && ReactDOM.createPortal(
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="transcriptt-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -217,7 +223,10 @@ themerlingroupworld.com/ayurveda for more
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+              </Modal>,
+              document.body
+              )}
+
       <br />
       <div className='pr'>
         <h2>{t('What is Ayurveda?')}</h2>

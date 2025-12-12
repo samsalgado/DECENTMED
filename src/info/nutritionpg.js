@@ -9,6 +9,7 @@ import NutritionVids from '../info/nutritionvids';
 import { Button,  Modal } from 'react-bootstrap';
 import drSebiES from '../images copy/IMG_9273.jpeg';
 import NUTES from '../images copy/IMG_9306.jpeg';
+import ReactDOM from 'react-dom';
 import L1 from '../images copy/L1.png';
 import L2 from '../images copy/L2.png';
 import L3 from '../images copy/L3.png';
@@ -274,7 +275,13 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
   `  
   return (
     <div className='container mobile-optimized'>
-      <h1 className="title" style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>{t('Nutrition')}</h1>
+       <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>{t('Nutrition')}</h1>
       <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -317,10 +324,12 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
     </div>
          <Button className="custom-btn" href="https://nutrifyourlife.com" target="_blank">{t("Explore Functional Nutrition")}</Button>  {/* Added Bootstrap Button */}
     <br></br>
-                  <Button className="custom-btn" onClick={() => setShowModal(true)}>
+          {showModal && ReactDOM.createPortal(
+            <div>
+              <Button className="custom-btn" onClick={() => setShowModal(true)}>
                 {t("Transcript")}
               </Button>
-              <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+              <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
             <Modal.Header closeButton>
               <Modal.Title>{t("Transcript")}</Modal.Title>
             </Modal.Header>
@@ -332,8 +341,10 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
                 {t("Close")}
               </Button>
             </Modal.Footer>
-          </Modal>
-    
+          </Modal>,
+          </div>
+              )}
+
     <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

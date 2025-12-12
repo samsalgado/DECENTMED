@@ -94,6 +94,11 @@ function Speakers() {
       link: "https://solveyouroutofcontroleating.com/",
       media: <iframe src="https://www.youtube.com/embed/aXfU_SMr2fY?si=L9f2BtP7oQPLZsTY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
     },
+    {
+      name: "Lynn McIntosh",
+      link:"https://reclaimingyourlifeandjoy.com/",
+      media:<iframe src="https://www.youtube.com/embed/kOLzbfUXrM0?si=IBxDoy46ClITqpCm" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+    }
   ];
 
   return (

@@ -13,7 +13,14 @@ const Herbal = () => {
   return (
     <>
       <div className='container'>
-        <h1 className='title'>{t('Herbal Medicine')}</h1>
+        <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>
+    {t('Herbal Medicine')}</h1>
         <div style={{
           display: 'flex',
           justifyContent: 'center',
