@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './acu.css'; 
 import './Info.css';
 import { Button, Modal } from'react-bootstrap';
+import ReactDOM from 'react-dom';
 import Benefitts from "./benefitts";
 import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.JPG";
 import { useTranslation } from "react-i18next";
@@ -357,23 +358,91 @@ possible for you. So borrow our belief because so many clients have gotten incre
       </div>
             <Button className="custom-btn" href="https://sourceapp.dynamitelifestyle.com/thesource" target="_blank">{t('Find Out How Priscilla Can Help You reach your Potential')}</Button>
       <br></br>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
+              <style jsx global>{`
+          .transcriptt-modal-herbal .modal-dialog {
+            margin: 0.5rem;
+            max-width: calc(100vw - 1rem);
+            width: calc(100vw - 1rem);
+          }
+
+          .transcriptt-modal-herbal .modal-content {
+            max-height: calc(100vh - 1rem);
+            display: flex;
+            flex-direction: column;
+          }
+
+          .transcriptt-modal-herbal .modal-header {
+            padding: 1rem;
+            flex-shrink: 0;
+          }
+
+          .transcriptt-modal-herbal .modal-body {
+            padding: 1rem;
+            overflow-y: auto;
+            overflow-x: hidden;
+            flex: 1;
+          }
+
+          .transcriptt-modal-herbal .modal-body p {
+            margin: 0 !important;
+            margin-top: 4rem !important;
+            padding: 0 !important;
+            padding-top: 4rem !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            word-break: break-word !important;
+            line-height: 1.6 !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+          }
+
+          .transcriptt-modal-herbal .modal-footer {
+            padding: 1rem;
+            flex-shrink: 0;
+          }
+
+          @media (min-width: 768px) {
+            .transcriptt-modal-herbal .modal-dialog {
+              margin: 2rem auto;
+              max-width: 800px;
+              width: 90%;
+            }
+          }
+        `}</style>
+
+        <div>
+          <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+        </div>
+        {showModal &&
+  ReactDOM.createPortal(
+    <div>
+      <Modal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        size="lg"
+          className="transcriptt-modal-herbal"
+      >
         <Modal.Header closeButton>
           <Modal.Title>{t("Transcript")}</Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
           <p>{t(txt)}</p>
         </Modal.Body>
+
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShowModal(false)}>
             {t("Close")}
           </Button>
         </Modal.Footer>
       </Modal>
-
+    </div>,
+    document.body
+  )
+}
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

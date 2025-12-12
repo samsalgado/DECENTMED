@@ -18,6 +18,7 @@ html, body, #root {
   align-items: center;
   height: 50vh;
 }
+/* Transcript Modal - optimized for long text content */
 
 /* Consistent H1 and H2 styling */
 /* h1 {
@@ -29,69 +30,28 @@ html, body, #root {
 /* Custom styles for the modal */
 /* Mobile optimizations */
 /* Complete mobile-optimized modal CSS */
-.custom-modal .modal-dialog {
-  max-width: 90%;
-  margin: 1rem auto;
-  width: 100%;
+/* Transcript Modal - Fixed for mobile */
+/* Transcript Modal - Nuclear fix */
+.transcriptt-modal {
+  padding-top: 0 !important;
+}
+
+.transcriptt-modal .modal-dialog {
+  margin: 0.5rem auto !important;
+  max-width: calc(100vw - 1rem) !important;
+  width: calc(100vw - 1rem) !important;
+  transform: none !important; /* Kill Bootstrap's centering transform */
 }
 
 @media (min-width: 768px) {
-  .custom-modal .modal-dialog {
-    margin: 1.75rem auto;
-    margin-top: 10vh;
+  .transcriptt-modal .modal-dialog {
+    margin: 2rem auto !important;
+    max-width: 800px !important;
+    width: 90% !important;
   }
 }
 
-.custom-modal .modal-content {
-  max-height: 95vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* Prevent content overflow */
-}
 
-.custom-modal .modal-header {
-  padding: 15px 20px;
-  flex-shrink: 0;
-}
-
-.custom-modal .modal-body {
-  padding: 0; /* Remove padding for iframe */
-  overflow: hidden; /* Critical for iframe */
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.custom-modal .modal-body iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none;
-  flex: 1;
-}
-
-/* Mobile optimizations */
-@media (max-width: 576px) {
-  .custom-modal .modal-dialog {
-    margin: 0.5rem;
-    max-width: calc(100vw - 1rem);
-  }
-  
-  .custom-modal .modal-content {
-    max-height: calc(100vh - 1rem);
-  }
-  
-  .custom-modal .modal-header {
-    padding: 10px 15px;
-  }
-  
-  .custom-modal .modal-title {
-    font-size: 1rem;
-  }
-  
-  .custom-modal .modal-body iframe {
-    height: calc(100vh - 120px) !important; /* Account for header */
-  }
-}
 h1 {
   font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean & professional font */
   font-weight: 800; /* slightly bold for emphasis without being heavy */
@@ -1560,34 +1520,9 @@ td:last-child {
   transform: scale(1.2);
 }
 
-/* * Modal Background - Now Transparent */
-.modal-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: transparent; /* Set background to transparent */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  overflow: hidden; /* Prevent background scrolling */
-}
 
 /* Modal Container */
-.modal-container {
-  background-color: #fff;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  max-height: 80vh; /* Constrain height */
-  padding: 20px;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  text-align: left;
-}
+
 
 /* Close Button */
 .close-button {
@@ -1600,37 +1535,13 @@ td:last-child {
   cursor: pointer;
 }
 
-/* Modal Content */
-.modal-content {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #333;
-  overflow-y: auto;
-}
+
 
 /* Responsive Modal Content for Small Screens */
-@media (max-width: 600px) {
-  .modal-container {
-    width: 100%;
-    height: 90vh;
-    max-width: none; /* Remove max-width on small screens */
-    max-height: none; /* Remove max-height on small screens */
-    padding: 15px;
-  }
-}
+
 
 /* Button Styling */
-.modal-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+
 
 /* Hover Effect */
 .modal-button:hover {
@@ -2068,3 +1979,203 @@ td:last-child {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
+/* ===== GENERAL MODAL STYLES ===== */
+.modal-content {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .modal-container {
+    width: 100%;
+    height: 90vh;
+    max-width: none;
+    max-height: none;
+    padding: 15px;
+  }
+}
+
+.modal-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.modal-container {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  text-align: left;
+}
+
+/* ===== CUSTOM MODAL (for iframes) ===== */
+.custom-modal .modal-dialog {
+  max-width: 90%;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .custom-modal .modal-dialog {
+    margin: 1.75rem auto;
+    margin-top: 12vh;
+  }
+}
+
+.custom-modal .modal-content {
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 0; /* Override general .modal-content */
+}
+
+.custom-modal .modal-header {
+  padding: 15px 20px;
+  flex-shrink: 0;
+}
+
+.custom-modal .modal-body {
+  padding: 0;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-modal .modal-body iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  flex: 1;
+}
+
+@media (max-width: 576px) {
+  .custom-modal .modal-dialog {
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem);
+  }
+  
+  .custom-modal .modal-content {
+    max-height: calc(100vh - 1rem);
+  }
+  
+  .custom-modal .modal-header {
+    padding: 10px 15px;
+  }
+  
+  .custom-modal .modal-title {
+    font-size: 1rem;
+  }
+  
+  .custom-modal .modal-body iframe {
+    height: calc(100vh - 120px) !important;
+  }
+}
+/* Transcript Modal - Mobile fullscreen, Desktop centered */
+/* Nuclear fix for transcript modal */
+/* Fix the paragraph in transcript modal */
+.transcriptt-modal .modal-body p,
+.custom-modal-body p {
+  display: block !important;
+  margin: 0 !important;
+  margin-top: 4rem !important; /* Added */
+  padding: 0 !important;
+  padding-top: 4rem !important; /* Added */
+  width: 100% !important;
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: pre-wrap !important;
+  line-height: 1.6 !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) {
+  .transcriptt-modal .modal-body p,
+  .custom-modal-body p {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+}
+/* Herbal transcript modal */
+.transcriptt-modal-herbal .modal-dialog {
+  margin: 0.5rem;
+  max-width: calc(100vw - 1rem);
+  width: calc(100vw - 1rem);
+}
+
+@media (min-width: 768px) {
+  .transcriptt-modal-herbal .modal-dialog {
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 90%;
+  }
+}
+
+.transcriptt-modal-herbal .modal-content {
+  max-height: calc(100vh - 1rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.transcriptt-modal-herbal .modal-header {
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+.transcriptt-modal-herbal .modal-body {
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+.transcriptt-modal-herbal .modal-body p.transcript-p {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: pre-wrap !important;
+  line-height: 1.6 !important;
+  box-sizing: border-box !important;
+}
+
+.transcriptt-modal-herbal .modal-footer {
+  padding: 1rem;
+  flex-shrink: 0;
+}
+/* ===== TRANSCRIPT MODAL (for text content) ===== */

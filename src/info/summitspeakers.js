@@ -1,6 +1,5 @@
 import React from "react";
 import '../App.css';
-import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import anil from "../images copy/hateu.png";
 import linda from "../images copy/linda.jpeg";
@@ -99,7 +98,7 @@ function Speakers() {
 
   return (
     <div className="container-blue">
-      <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Speaker Lineup')}</h1>
+      <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Our Speakers')}</h1>
       <div className="row justify-content-center">
         {speakers.map((speaker, index) => (
           <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">

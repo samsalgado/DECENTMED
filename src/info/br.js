@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import './acu.css';
+import ReactDOM from 'react-dom';
 import Benefits from "./brbenefits";
 import './Info.css';
 const BREATH = () => {
@@ -72,12 +73,13 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         />
         </div>
       </div>
-                  <Button className="custom-btn" href="https://scarlettdee.com/home" target="_blank">{t('Find Out How Breathwork Can Change your Life')}</Button>
+            <Button className="custom-btn" href="https://scarlettdee.com/home" target="_blank">{t('Find Out How Breathwork Can Change your Life')}</Button>
               <br></br>
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+            {showModal && ReactDOM.createPortal(
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
         <Modal.Header closeButton>
           <Modal.Title>{t("Transcript")}</Modal.Title>
         </Modal.Header>
@@ -89,8 +91,9 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
             {t("Close")}
           </Button>
         </Modal.Footer>
-      </Modal>
-
+      </Modal>,
+      document.body
+      )}
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

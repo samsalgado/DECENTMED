@@ -4,6 +4,7 @@ import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
 import summit from "../images copy/decentmedsummit.png";
 import SummitInfo from './infosummit';
+import lineup from "../images copy/lineup.png";
 import { Button, Modal } from 'react-bootstrap';
 import "../App.css";
 const InfoSummit = () => {
@@ -67,8 +68,11 @@ const InfoSummit = () => {
           </Modal>
           </div>
         </div>
+        
       </div>
-
+        <img className='gridimag' src={lineup} alt='Speaker lineup' />
+        <Button className="custom-btn" href="https://us06web.zoom.us/j/85951067691?pwd=RaV4yKvjCrY5OAASFah6qcB5bLXhXh.1" target="_blank">{t("Watch Summit")}</Button>  {/* Added Bootstrap Button */}
+        
       <SummitInfo />
       <Speakers />
     </div>

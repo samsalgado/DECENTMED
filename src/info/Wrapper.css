@@ -151,3 +151,19 @@ footer {
     flex-wrap: nowrap !important;
   }
 }
+/* Exclude modals from wrapper padding */
+.modal,
+.modal-backdrop {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Force modals to ignore wrapper offset */
+body > .modal {
+  top: 0 !important;
+}
+
+body > .modal .modal-dialog {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}

@@ -16,6 +16,7 @@ import oct from "../images copy/OCT.png";
 import Collapsible from 'react-collapsible';
 import erica from "../images copy/ericawellness.png";
 import { useTranslation } from 'react-i18next';
+import ReactDOM from 'react-dom';
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
 import Acuvids from '../info/acuvids';
@@ -316,6 +317,7 @@ const Info1 = () => {
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
+                  
                   <Modal show={showModal} className="custom-modal" onHide={() => setShowModal(false)} size="lg" centered>
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>

@@ -3,6 +3,7 @@ import "../App.css";
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
+import ReactDOM from 'react-dom';
 const Homeo = () => {
   const { t } = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
@@ -137,8 +138,24 @@ either small doses or in the regular doses but also using off Lael drugs to kill
 <Button className="custom-btn" onClick={() => setShowModal(true)}>
   {t("Transcript")}
 </Button>
-
-<Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+ <style jsx>{`
+          @media (max-width: 768px) {
+            .container-bbblue {
+              flex-direction: column !important;
+            }
+            .content-wrapper {
+              text-align: center !important;
+            }
+            .centered-video {
+              max-width: 280px !important;
+              margin-top: 20px !important;
+              height: 200px !important;
+            }
+          }
+        `}</style>
+        {showModal && ReactDOM.createPortal(
+<Modal show={showModal} onHide={() => setShowModal(false)}           className="transcriptt-modal"
+>
   <Modal.Header closeButton>
     <Modal.Title>{t("Transcript")}</Modal.Title>
   </Modal.Header>
@@ -150,8 +167,9 @@ either small doses or in the regular doses but also using off Lael drugs to kill
       {t("Close")}
     </Button>
   </Modal.Footer>
-</Modal>
-
+</Modal>,
+ document.body
+      )}
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {

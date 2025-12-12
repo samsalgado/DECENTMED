@@ -6,6 +6,7 @@ import Benefits from "./benefits";
 import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
+import ReactDOM from 'react-dom';
 import Hypnostudies from "./hypnostudy";
 const HYPNO = () => {
 const {t} = useTranslation('common');
@@ -50,9 +51,10 @@ const {t} = useTranslation('common');
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+            {showModal && ReactDOM.createPortal(    
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
         <Modal.Header closeButton>
-          <Modal.Title>{t("Transcript")}</Modal.Title>
+          <Modal.Title >{t("Transcript")}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>{t("txt")}</p>
@@ -62,7 +64,8 @@ const {t} = useTranslation('common');
             {t("Close")}
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal>,
+      document.body)}
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
@@ -78,7 +81,6 @@ const {t} = useTranslation('common');
           }
         }
       `}</style>
-     
         <br></br>
         <Benefits />
         <br></br> 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './acu.css'; 
 import './Info.css';
+import ReactDOM from 'react-dom';
 import { Button, Modal } from'react-bootstrap';
 import Benefitts from "./Ben";
 import { useTranslation } from "react-i18next";
@@ -263,7 +264,9 @@ const {t} = useTranslation('common')
        <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+          {showModal && ReactDOM.createPortal(
+          
+          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
         <Modal.Header closeButton>
           <Modal.Title>{t("Transcript")}</Modal.Title>
         </Modal.Header>
@@ -275,7 +278,9 @@ const {t} = useTranslation('common')
             {t("Close")}
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal>,
+       document.body
+      )}
 
       <style jsx>{`
         @media (max-width: 768px) {

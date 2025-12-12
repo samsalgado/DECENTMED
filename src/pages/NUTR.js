@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
+import ReactDOM from 'react-dom';
 import "../App.css";
 import ClinVids from "./clinvid";
 import { Button, Modal } from'react-bootstrap';
@@ -9,7 +10,7 @@ const Nutri = () => {
 const {t} = useTranslation('common')
   const [showModal, setShowModal] = useState(false);
   const txt = `
-  wasn't yday amazing yeah how about that film I'm so excited to see the rest of the do Series so thank you for being here I'm going to Dive Right In because today we have back to back to back sessions and we got to keep to a very tight schedule um if you haven't yet and you're just arriving today welcome we missed you yesterday it was amazing download app and that has the detailed agenda for you when breaks are happening we do have lunch served today L A little chilly be sitting
+  wasn't yesterday amazing yeah how about that film I'm so excited to see the rest of the do Series so thank you for being here I'm going to Dive Right In because today we have back to back to back sessions and we got to keep to a very tight schedule um if you haven't yet and you're just arriving today welcome we missed you yesterday it was amazing download app and that has the detailed agenda for you when breaks are happening we do have lunch served today L A little chilly be sitting
 
 outside so Jacks all right I'm going to dive into my presentation which is all about how to personalize your ketogenic land and oh let me grab that all right well for those of you who don't know me uh my name is Christina hes I am a licensed dietician nutritionist and um and your host for today um my Approach is functional and integrative which just means that I take a look at how all your systems are interconnected so when someone works with me we take a really deep dive into all the pieces that could potentially
 
@@ -94,8 +95,6 @@ you got to go deeper so there is a good you know to check for toxic load and thi
 for this that I do as well it's um great if again stubborn cases especially with skin issues so if you're not getting the results that you want you know you want to see if it's a hormone imbalance are you eating the wrong foods for you maybe you have sensitivities maybe you do have environmental toxicity maybe it's malabsorption right you know um got bacteria you have a lot of external life stressors who doesn't have that and then this piece not eating for your genetic code and you want to put all these
 
 things together right because you are a complex puzzle a very Advanced biochemical being so thank you so much um
-
-
   `
     return (
       <div className='container mobile-optimized'>
@@ -161,8 +160,9 @@ things together right because you are a complex puzzle a very Advanced biochemic
         <Button className="custom-btn" onClick={() => setShowModal(true)}>
           {t("Transcript")}
         </Button>
+              {showModal && ReactDOM.createPortal(
         
-        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
+        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
           <Modal.Header closeButton>
             <Modal.Title>{t("Transcript")}</Modal.Title>
           </Modal.Header>
@@ -174,8 +174,9 @@ things together right because you are a complex puzzle a very Advanced biochemic
               {t("Close")}
             </Button>
           </Modal.Footer>
-        </Modal>
-        
+        </Modal>,
+        document.body
+      )}
         </div>
     )
 }
