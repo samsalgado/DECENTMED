@@ -72,15 +72,7 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
                 <h1 className='title'>{t('Telehealth Directory')}</h1>
             </div>
             {/* <Practice /> */}
-            <div className='video-container'>
-                <iframe
-                    height='315'
-                    src="https://www.youtube.com/embed/V2u8gx0a9-s?si=FMQPby5v5xpQcGWi"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
-            </div>
+            
       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                   {t("Transcript")}
                 </Button>
