@@ -1,16 +1,13 @@
 import { Helmet } from 'react-helmet'; // Import Helmet
 import '../App.css';
 import Footer from '../footer';
-import { useState } from 'react';
-import ReactDOM from 'react-dom';
 import Practices from '../info/practices';
 import Topbar from './topbar';
 import "../info/Info.css";
 import { useTranslation } from 'react-i18next';
-import {Button, Modal} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 export function Telehealth() {
     const { t } = useTranslation("common");
-         const [showModal, setShowModal] = useState(false);
         const txt = `
          An estimated 35% of Americans have lost trust in the traditional medical system. An estimated 8% of Americans do not have health insurance. That's around 26 to 28 million people. There needs to be an alternative to the traditional medical system. Introducing Dimemed, a holistic medicine information portal that connects patients with providers. At first, we decided to focus solely on the provider. We found three major pain points associated with provider problems. The first one being patient
 
@@ -58,6 +55,7 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
 
 
          `
+         console.log(txt);
     return (
         <>
             <Helmet>
@@ -68,29 +66,6 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
             <header>
                 <Topbar />
             </header>
-            <div className='container'>
-                <h1 className='title'>{t('Telehealth Directory')}</h1>
-            </div>
-            {/* <Practice /> */}
-            
-      <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                  {t("Transcript")}
-                </Button>
-              {showModal && ReactDOM.createPortal(    
-                <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
-              <Modal.Header closeButton>
-                <Modal.Title>{t("Transcript")}</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <p>{t(txt)}</p>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={() => setShowModal(false)}>
-                  {t("Close")}
-                </Button>
-              </Modal.Footer>
-            </Modal>,
-            document.body)}
             <Practices />
             <div style={{ textAlign: 'center' }}>
                 <Button className="custom-btn" href="https://themerlingroupworld.com/signup/provider" target="_blank">
