@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../App.css";
+import case13 from '../images copy/IMG_2793.jpeg';
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
@@ -187,10 +188,11 @@ either small doses or in the regular doses but also using off Lael drugs to kill
       `}</style>
       <br />
       <br />
+            <div className="collapsible">
+        <img src={case13} className="TELEa" alt="quote" />
+      </div>
       <h3>HIPOCRATES SAID...</h3>
       <img src={quote} className="TELEa" alt="quote" />
-      <div className="collapsible">
-      </div>
     </div>
 
   );

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
+import Boundaries from "../info/Boundaries";
 import Collapsible from 'react-collapsible';
 import { Button, Modal } from'react-bootstrap';
 import ramyoga from "../images copy/ramyoga.png";
@@ -176,7 +177,18 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
           }
         }
       `}</style>
-        <br></br>
+     <Collapsible
+  trigger={
+    <div
+      className="collapsible-trigger"
+    >
+      {t("How to Set Boundaries")}
+    </div>
+  }
+>
+  <Boundaries />
+</Collapsible>
+
             <Collapsible trigger={<th className="collapsible-trigger">{t('Self Care Journal')}</th>}>
               <tr>
                 <a href="https://www.linkedin.com/pulse/flow-feeling-honoring-your-emotions-work-life-ramona-crabtree-falkner-4rrve/?trackingId=XKJ1BW5BQ3quljT4fWOovg%3D%3D">
@@ -187,7 +199,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 <a href="https://www.linkedin.com/pulse/yoga-awareness-month-why-isnt-luxury-women-healthcare-ramona-kaize/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage' src={ramyoga} alt='yoga awareness month' /></a>
                 <a href="https://www.linkedin.com/pulse/why-slowing-down-most-powerful-move-you-can-make-crabtree-falkner-3gwae/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage'src={slow} alt='Why Slowing Down is the Most Powerful Move You Can Make' /></a>
               </tr>
-            </Collapsible>
+        </Collapsible>
         <TsBenefits />
         </div>
     )

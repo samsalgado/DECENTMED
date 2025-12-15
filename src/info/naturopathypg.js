@@ -7,8 +7,9 @@ import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import NatStudy from './naturopathystudy';
+import NatExplained from './NatExplained';
 import { Button, Modal } from 'react-bootstrap';
-
+import BloodSugar from './Bloodsugar';
 const Naturo = () => {
   const { t } = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
@@ -73,6 +74,9 @@ const Naturo = () => {
             {t("Transcript")}
           </Button>
         </div>
+        <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Explained")}</th>}>
+          <NatExplained />
+        </Collapsible>
         <style jsx>{`
           @media (max-width: 768px) {
             .container-bbblue {
@@ -93,6 +97,10 @@ const Naturo = () => {
         </a> 
         <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
           <NatStudy />
+        </Collapsible>
+        
+        <Collapsible trigger={<th className="collapsible-trigger">{t("Lower your Blood Sugar")}</th>}>
+          <BloodSugar />
         </Collapsible>
         <br />
         <a href="https://meridianpassagewellness.com" target="_blank" rel="noopener noreferrer">

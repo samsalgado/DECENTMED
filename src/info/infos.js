@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import './Info.css';
 import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
 import summit from "../images copy/decentmedsummit.png";
 import SummitInfo from './infosummit';
 import lineup from "../images copy/lineup.png";
-import { Button, Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import "../App.css";
 const InfoSummit = () => {
   const { t } = useTranslation("common");
-  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -23,7 +22,6 @@ const InfoSummit = () => {
       }
     };
   }, []);
-
   return (
     <div className='container'>
       <h1 className='title'>{t('DecentMed Summit')}</h1>
@@ -31,48 +29,16 @@ const InfoSummit = () => {
       <div className='theecontainer'>
         <div>
           <img className='gridimag' src={summit} alt='' />
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iNvwz2_FGSg?si=ERMvCxq0qY2FbhtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div>
-          <Button
-            onClick={() => setShowModal(true)}
-            className="custom-btn"
-            style={{ display: 'block', margin: '10px auto 0' }}
-          >
-            {t("Register")}
-          </Button>
-
-          {/* 🔥 Registration Modal */}
-          <Modal
-            show={showModal}
-            onHide={() => setShowModal(false)}
-            size="lg"
-            centered
-            className="custom-modal"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title>{t("Register for the Summit")}</Modal.Title>
-            </Modal.Header>
-
-            <Modal.Body>
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/form/hbb1megFlHaUKjxVNheq"
-                style={{
-                  width: "100%",
-                  height: "700px",
-                  border: "none",
-                  borderRadius: "3px"
-                }}
-                title="Summit Reg"
-              />
-            </Modal.Body>
-          </Modal>
+          
           </div>
+          
         </div>
-        
+                <Button className="custom-btn" href="https://www.patreon.com/posts/decentmed-summit-145873819" target="_blank">{t("Buy Summit")}</Button>  {/* Added Bootstrap Button */}
+
       </div>
-        <img className='gridimag' src={lineup} alt='Speaker lineup' />
-        <Button className="custom-btn" href="https://us06web.zoom.us/j/85951067691?pwd=RaV4yKvjCrY5OAASFah6qcB5bLXhXh.1" target="_blank">{t("Watch Summit")}</Button>  {/* Added Bootstrap Button */}
-        
+        <img className='gridimag' src={lineup} alt='Speaker lineup' />        
       <SummitInfo />
       <Speakers />
     </div>
