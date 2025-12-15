@@ -9,7 +9,7 @@ export function Acupuncture({ t }) {
     return (
         <div>
                 <Helmet>  {/* Add Helmet component */}
-                    <title>{t("Dry Needling vs Acupuncture")}</title>
+                    <title>{t("Acupuncture Therapy")}</title>
                     <meta name="description" content={t("Dry Needling vs Acupuncture: Explore the differences and find the right approach for your pain relief needs. Learn more about these alternative therapies.")} />
                 </Helmet>
                 <header>

@@ -28,6 +28,7 @@ import { ReviewPage } from './pages/reviewpage';
 import Blog16 from './pages/blogs/blog16';
 import HerbalMedicine from './pages/HerbalMedicine';
 import Blog1 from './pages/blogs/blog1';
+import BlogAcu from './pages/blogs/blogacu';
 import Mike from './pages/blogs/mike';
 import { HolisticHealers } from './pages/holistichealers';
 import { AppliedKinesiology } from './pages/AK';
@@ -121,6 +122,7 @@ function App() {
         <Route path="/breath" element={<Breathworkk t={t} />} />
         <Route path="/acupuncture-for-migraines" element={<Blog21 t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
+        <Route path="/acupuncture-for-carpal-tunnel" element={<BlogAcu t={t} />} />
         <Route path="/stemcellproviders" element={<StemPract t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/summit" element={<Summit t={t} />} />

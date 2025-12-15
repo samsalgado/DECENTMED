@@ -3,6 +3,9 @@ import Channel from './channel';
 import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
 import './acu.css'; 
+import carpaltunnel from "../images copy/carpaltunnel.png";
+import ac from "../images copy/acuu.png";
+import acuu from "../images copy/2412335.jpg";
 import slide1 from "../images copy/1.png";
 import slide2 from "../images copy/2.png";
 import slide3 from "../images copy/3.png";
@@ -341,7 +344,11 @@ const Info1 = () => {
           <img className='gridimag' src={burnout} alt='oceantreis' />
         </a>      
       </div>
-      
+      <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Resources')}</th>}>
+          <a href="/acupuncture-for-carpal-tunnel"><img className='gridimag' src={carpaltunnel} alt='Acupuncture for Carpal Tunnel' /> </a>
+           <a href="/acupuncture-cost"><img className='gridimag' src={ac} alt='Acupuncture Cost' /> </a>
+          <a href="/acupuncture-for-migraines"><img className='gridimag' src={acuu} alt='Acupuncture for Migraines' /> </a>         
+      </Collapsible>
       <h1>{t("Top 10 Benefits of Acupuncture")}</h1>
       <img className='gridimag' src={acuben} alt='Ac' />
        <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Case Studies')}</th>}>
