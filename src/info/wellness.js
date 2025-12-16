@@ -18,16 +18,24 @@ At DecentMed, we are revolutionizing the health insurance game by offering stake
   */
   return (
     <div className='theecontainer'>
+        <div className='paragraph-container'>
+          <p className='paragraph'>
+            {t("Medicine was never meant to be about survival alone. It was meant to support wellness, balance, and human potential. Our goal is vitality.")}
+          </p>
+          <p className='paragraph'>
+            {t("DecentMed connects people with holistic health practitioners, education, and regenerative therapies worldwide.")}
+          </p>
+        </div>
+      <br></br>
       <div className='video-container'>
       <iframe
       width="100%"
-      height="315"
+      height="215"
       src="https://www.youtube.com/embed/Cv709OOmp-0?si=oghsNOAjLEExQEpx"
       title="Video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
       allowfullscreen
     ></iframe>
-    
       </div>
        <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
@@ -45,13 +53,6 @@ At DecentMed, we are revolutionizing the health insurance game by offering stake
           </Button>
         </Modal.Footer>
       </Modal>
-      <div className='flex-container'>
-        <div className='paragraph-container'>
-          <p className='paragraph'>
-            {t('Have you ever wondered how people used to live healthier and longer lives? Before traditional medicine, there was wellness. Our ancestors experienced vitality - living off the land. This decade has uncovered the hidden truth about traditional healthcare. Medicine is not about surviving; it is about wellness. Medicine should cure sometimes, relieve often, and comfort always. Our goal is to promote vitality. We are personally and professionally invested in the re-emergence of regenerative medicine and broadening access to revolutionary therapies. Treatments like homeopathy operate on the belief that the body can heal via plants and minerals to stimulate the healing process.')}
-          </p>
-        </div>
-      </div>
     </div>
   );
 };

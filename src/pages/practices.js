@@ -13,15 +13,17 @@ const Practice = () => {
   return (
       <div className='container'>
         <div className='theecontaine'>
+<br></br>
+<br></br>
 
        <div className="signup-container">
-            <h1 className="signup">{t('Sign Up Process')}</h1>
+
             <iframe class="rumble" title="signup" height="360"
               src="https://www.youtube.com/embed/QgPSbbJTmbM?si=zwssl9LVDH_xWLXp" frameborder="0" allowfullscreen></iframe>
           </div>
           <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem",marginBottom:'1rem' }}>
             <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
-              {t("Book a Call")}
+              {t("Provider Onboarding Call")}
             </Button>
           </div>
           <Pricing />

@@ -22,7 +22,6 @@ const SignUp = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // ✅ Check if redirected from Pricing page
   const tierFromPricing = location.state?.tier || '';
   const amountFromPricing = location.state?.amount || '';
   const fromPricing = location.state?.fromPricing || false;
@@ -59,11 +58,10 @@ const SignUp = () => {
           confirmButtonColor: '#027360',
           confirmButtonText: 'OK'
         }).then(() => {
-          // ✅ Redirect to Stripe if coming from Pricing page
           if (fromPricing && tierFromPricing && amountFromPricing) {
             navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
           } else {
-            navigate("/"); // Normal signup redirect
+            navigate("/");
           }
         });
       }
@@ -77,7 +75,6 @@ const SignUp = () => {
   };
 
   useEffect(() => {
-    // Google Signup integration
     const handleGoogleSignUp = async (response) => {
       try {
         const res = await axios.post(
@@ -130,44 +127,98 @@ const SignUp = () => {
   return (
     <>
       <Topbar />
+            <h1 style={{marginTop: '3.5rem', 
+    paddingTop: '3rem'
+}}>{t("Provider Registration")}</h1>
+<br></br>
       <div className="auth-form-container">
-<form className="auth-form" style={{ position: "relative", marginTop: '110px' }}   onSubmit={handleSubmit}
->
-          <div onClick={() => navigate("/")} style={{
-            position: "absolute", top: "30px", right: "20px", fontSize: "20px",
-            fontWeight: "bold", cursor: "pointer", background: "transparent", border: "none", color: "#333"
-          }}>❌</div>
-
-          <h2 className="compact-heading">{t("Provider Signup")}</h2>
-          {error && <p className="error">{error}</p>}
-          {loading && <div className="loader"></div>}
-
-          <input type="text" name="name" placeholder={t("Name")} value={user.name} onChange={handleChange} required />
-          <input type="email" name="email" placeholder={t("Email")} value={user.email} onChange={handleChange} required />
-
-          <div className="password-field">
-            <input type={showPassword ? "text" : "password"} name="password" placeholder={t("Password")} value={user.password} onChange={handleChange} required />
-            <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
-          </div>
-
-          <input type="text" name="code" placeholder={t("Affiliate Code (optional)")} value={user.code} onChange={handleChange} />
-
-          <button className="custom-btn" type="submit" disabled={loading}>
-            {loading ? <>{t("Sign Up")}...</> : <>{t("Sign Up")}</>}
+        <div className="auth-form-wrapper">
+          <button
+            type="button"
+            className="close-btn"
+            onClick={() => navigate("/")}
+          >
+            ❌
           </button>
 
-          <p> {t("Already have an account?")} <Link to="/signin">{t("Sign In")}</Link></p>
+          <form className="auth-form" onSubmit={handleSubmit}>
+            <h2 className="compact-heading">
+              {t("Join DecentMed as a Holistic Healthcare Provider")}
+            </h2>
+            <h5 className="compact-heading">
+              {t("Create Provider account to offer holistic and integrative care through DecentMed")}
+            </h5>
+            <p>
+              {t("An active subscription is required to publish and maintain your provider profile.")}
+            </p>
 
-          <div style={{ margin: "15px 0", textAlign: "center" }}>
-            <div id="googleSignUpDiv"></div>
-          </div>
-        </form>
+            {error && <p className="error">{error}</p>}
+            {loading && <div className="loader"></div>}
 
+            <input
+              type="text"
+              name="name"
+              placeholder={t("Name")}
+              value={user.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder={t("Email")}
+              value={user.email}
+              onChange={handleChange}
+              required
+            />
 
+            <div className="password-field">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder={t("Password")}
+                value={user.password}
+                onChange={handleChange}
+                required
+              />
+              <span
+                className="eye-icon"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
+
+            <input
+              type="text"
+              name="code"
+              placeholder={t("Affiliate Code (optional)")}
+              value={user.code}
+              onChange={handleChange}
+            />
+
+            <button className="custom-btn" type="submit" disabled={loading}>
+              {loading
+                ? <>{t("Create Provider Account")}...</>
+                : <>{t("Create Provider Account")}</>
+              }
+            </button>
+
+            <p>
+              {t("Already have an account?")}{" "}
+              <Link to="/signin">{t("Sign In")}</Link>
+            </p>
+            <div className="google-signup-wrapper">
+    <div id="googleSignUpDiv"></div>
+  </div>
+          </form>
+        </div>
       </div>
+
       <Practice />
       <Offer2 />
       <Info7 />
+      <Offer2 />
       <Footer />
     </>
   );

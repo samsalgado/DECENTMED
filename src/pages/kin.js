@@ -87,16 +87,26 @@ export function AKPract() {
                           width: '100%'
                         }}
                       />
-                      <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
-                      <iframe 
-                        title={t("Carepatron Online Booking")} 
-                        alt={t("Book appointments online via Carepatron")} 
-                        width="100%" 
-                        height="100%" 
-                        src="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=i" 
-                        style={{ border: 0 }}
-                      />
-                    </div>
+                     <div style={{
+  width: '100%',
+  maxWidth: '500px',
+  height: '600px',
+  overflow: 'hidden',
+  borderRadius: '8px',
+  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+  marginTop: '20px'
+}}>
+  <iframe 
+    title={t("Carepatron Online Booking")} 
+    src="https://book.carepatron.com/The-Center-for-Natural-Health/Dr--Amy?p=Nha96RlJRf28UsTlNh4uKg&s=AmsO3T6p&e=i" 
+    style={{
+      width: '100%',
+      height: '100%',
+      border: 'none'
+    }}
+  />
+</div>
+
                     </div>
                     <div className="col-md-6">
                       <iframe

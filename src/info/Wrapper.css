@@ -1,36 +1,29 @@
 /* ============================================
    GLOBAL VARIABLES
-   Wrapper.js sets --header-height dynamically.
-   These are only fallbacks before JS runs.
 ============================================ */
-
 :root {
   --header-height: 0px;
 }
 
-
 /* ============================================
-   GLOBAL RESET + PREVENT HORIZONTAL SCROLL
+   GLOBAL RESET
 ============================================ */
-
 html, body, #root {
   margin: 0;
   padding: 0;
   min-height: 100%;
   width: 100%;
-  overflow-x: hidden; /* prevents mobile overflow */
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
-/* Ensure all elements respect box sizing */
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
 /* ============================================
-   FIXED HEADER (Topbar)
+   FIXED HEADER
 ============================================ */
-
 header,
 .topbar {
   position: fixed;
@@ -38,106 +31,88 @@ header,
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: auto !important; /* let content define height */
-  padding: 0;
+  background: #fff;
   margin: 0;
-  background: white;
-  box-sizing: border-box;
+  padding: 0;
 }
 
 /* ============================================
-   WRAPPER — dynamic offset from header
+   PAGE WRAPPER
+   — Clean, predictable, no weird spacing
 ============================================ */
-
 .page-wrapper {
   min-height: 100vh;
-  box-sizing: border-box;
-  /* Fallback padding if JS fails */
+  width: 100%;
+  background: #fff;
   padding-top: var(--header-height, 60px);
 }
 
+/* Desktop adjustment */
 @media (min-width: 1024px) {
   .page-wrapper {
-    padding-top: calc(var(--header-height) * 0.45) !important;
+    padding-top: calc(var(--header-height) * 0.45);
   }
 }
-@media (min-width: 1024px) {
-  .navbar {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
 
-  .Logo {
-    max-width: 90px;
-  }
-}
-/* Fix h1/title cutoff on mobile */
-/* Global heading styles */
+/* ============================================
+   HEADINGS — remove underline + forced spacing
+============================================ */
 .page-wrapper h1,
 .page-wrapper .title {
-  text-decoration: underline;
   text-align: center;
   font-family: sans-serif;
-  margin-top: 1rem !important;
-  padding-top: 0.5rem !important;
+  margin-top: 1rem;
+  padding-top: 0;
+  text-decoration: none;
 }
 
-/* Mobile adjustments */
+/* Mobile tweak */
 @media (max-width: 767px) {
   .page-wrapper h1,
   .page-wrapper .title {
-    margin-top: 1.5rem !important;
-    padding-top: 1rem !important;
+    margin-top: 1.5rem;
+    padding-top: 0;
   }
 }
-
 
 /* ============================================
    MAIN CONTENT
 ============================================ */
-
 main {
   flex: 1;
   width: 100%;
   overflow-x: hidden;
 }
 
-/* Prevent headings from sliding under header */
-h1, .title {
-  margin-top: 0 !important;
-}
-
 /* ============================================
-   NAVBAR FIXES (prevents mobile overflow)
+   NAVBAR FIXES
 ============================================ */
-
 .navbar-container .navbar-nav {
   width: 100%;
-  flex-wrap: wrap; /* ✅ allows wrapping instead of overflow */
+  flex-wrap: wrap;
 }
 
 .navbar-container .nav-link {
-  white-space: nowrap; /* ✅ prevents long links from breaking layout */
+  white-space: nowrap;
 }
 
-/* Logo responsive */
 .Logo {
   max-width: 120px;
   height: auto;
 }
 
-html, body {
-  overflow-y: auto;
+@media (min-width: 1024px) {
+  .navbar-container .navbar-nav {
+    flex-wrap: nowrap;
+  }
 }
 
-
 /* ============================================
-   LANGUAGE DROPDOWN FIXES
+   LANGUAGE DROPDOWN
 ============================================ */
-
 .change-locale {
   max-width: 25vw;
-  overflow: hidden; /* ✅ prevents pushing navbar wider */
+  overflow: hidden;
 }
 
 .change-locale-toggle span {
@@ -148,7 +123,6 @@ html, body {
   white-space: nowrap;
 }
 
-/* Dropdown menu safety */
 .change-locale-menu {
   max-width: 90vw;
   max-height: 60vh;
@@ -157,26 +131,22 @@ html, body {
 }
 
 /* ============================================
-   OPTIONAL: FOOTER SAFE AREA
+   FOOTER
 ============================================ */
-
 footer {
   width: 100%;
   overflow-x: hidden;
 }
-@media (min-width: 1024px) {
-  .navbar-container .navbar-nav {
-    flex-wrap: nowrap !important;
-  }
-}
-/* Exclude modals from wrapper padding */
+
+/* ============================================
+   MODALS
+============================================ */
 .modal,
 .modal-backdrop {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* Force modals to ignore wrapper offset */
 body > .modal {
   top: 0 !important;
 }

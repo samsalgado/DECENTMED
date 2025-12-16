@@ -239,7 +239,7 @@ export function Pricing() {
       }}
     >
       <h2 style={{ textAlign: 'center', color: '#00695C', marginBottom: '20px' }}>
-        {t("Pricing Tiers")}
+        {t("Choose a Plan")}
       </h2>
 
       <div className='title-container'>

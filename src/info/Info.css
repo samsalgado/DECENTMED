@@ -68,7 +68,7 @@ h1 {
   letter-spacing: 1px; /* subtle spacing for elegance */
   text-align: center; /* centered headings for a professional look */
 letter-spacing: 4px; /* characters er moddhe gap */
-
+  text-decoration: none; /* <-- removes underline */
 }
 
 
@@ -218,7 +218,10 @@ padding: 30px;
   box-shadow: 0 4px 20px rgba(145, 142, 142, 0.3);
 }
 
+.paragaph-container{
+    margin-top: -20px;
 
+}
 /* For Video Containers */
 .video-container {
   position: relative;

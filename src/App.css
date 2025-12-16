@@ -127,10 +127,15 @@ letter-spacing: 4px; /* characters er moddhe gap */
     transform: translateY(0);
   }
 }
+.google-signup-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
 
 h1,
 h2 {
   animation: fadeInUp 0.5s ease forwards;
+  text-decoration: none;   /* removes underline */
 }
 
 
