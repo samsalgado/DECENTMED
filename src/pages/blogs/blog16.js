@@ -8,7 +8,9 @@ import { Button } from "react-bootstrap";
 const Blog16 = () => {
 const {t} = useTranslation('common')
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Rose Oil Benefits')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,7 +68,7 @@ const {t} = useTranslation('common')
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

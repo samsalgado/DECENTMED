@@ -119,7 +119,7 @@ function App() {
         <Route path="/funcmed" element={<Func t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
-        <Route path="/breath" element={<Breathworkk t={t} />} />
+        <Route path="/breathwork" element={<Breathworkk t={t} />} />
         <Route path="/acupuncture-for-migraines" element={<Blog21 t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/acupuncture-for-carpal-tunnel" element={<BlogAcu t={t} />} />
@@ -132,9 +132,8 @@ function App() {
         <Route path="/lynn" element={<Lynn t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/applied-kinesiology" element={<AppliedKinesiology t={t} />} />
-        <Route path="/breathwork" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />
+        <Route path="/breathworkers" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />
         <Route path="/functionalmedicine" element={<FuncMed t={t} />} />
-        <Route path="/breathwork" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />
         <Route path="/naturopathy" element={<Naturopathy t={t} />} />
         <Route path="/naturopathicproviders" element={<Natpract t={t} />} />
         <Route path="/nutritionpract" element={<Nutritionpract t={t} />} />
@@ -143,7 +142,7 @@ function App() {
         <Route path="/can-back-pain-cause-constipation" element={<Blog1 t={t} />} />
         <Route path="/shop" element={<Shop t={t} />} />
         <Route path="/massagetherapy" element={<MassPract t={t} />} />
-        <Route path="/blog17" element={<Blog17 t={t} />} />
+        <Route path="/bitcoin" element={<Blog17 t={t} />} />
         <Route path="/blog18" element={<Blog18 t={t} />} />
         <Route path="/dry-needling-vs-acupuncture" element={<Blog2 t={t} />} />
         <Route path="/detox-cleanse" element={<Blog3 t={t} />} />
@@ -159,14 +158,14 @@ function App() {
         <Route path="/tcnh" element={<Blog19 t={t} />} />
         <Route path="/acupuncture-cost" element={<Blog20 t={t} />} />
         <Route path="/cancer" element={<Blog6 t={t} />} />
-        <Route path="/acupuncture" element={<Blog5 t={t} />} />
-        <Route path="/bitcoin" element={<Bitcoin t={t} />} />
+        <Route path="/acupuncture-defined" element={<Blog5 t={t} />} />
+        <Route path="/what-is-bitcoin" element={<Bitcoin t={t} />} />
         <Route path="/ivermectin" element={<Ivermectin t={t} />} />
         <Route path="/hoxsey" element={<Hoxsey t={t} />} />
         <Route path="/fenbendazole" element={<Fen t={t} />} />
         <Route path="/prevent" element={<Prevent t={t} />} />
         <Route path="/hepatitis-B-specialists" element={<Blog8 t={t} />} />
-        <Route path="/blog9" element={<Blog9 t={t} />} />
+        <Route path="/value-of-nutrition" element={<Blog9 t={t} />} />
         <Route path="/rose-oil" element={<Blog16 t={t} />} />
         <Route path="/cancer-prevention" element={<Blog10 t={t} />} />
         <Route path="/acupuncture-montreal" element={<Blog12 t={t} />} />
@@ -175,7 +174,7 @@ function App() {
         <Route path="/hypnotherapy" element={<Hypnotherapy t={t} />} />
         <Route path="/nutrition" element={<Nutrition t={t} />} />
         <Route path="/chiropractic" element={<Chiropractic t={t} />} />
-        <Route path="/acu" element={<Acupuncture t={t} />} />
+        <Route path="/acupuncture" element={<Acupuncture t={t} />} />
         <Route path="/chelation" element={<Chelation t={t} />} />
         <Route path="/digitalmarketing" element={<Marketing t={t} />} />
         <Route path="/homeopathy" element={<Homeopathy t={t} />} />

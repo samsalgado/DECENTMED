@@ -8,11 +8,14 @@ const Blog3 = () => {
   const {t} = useTranslation('common')
 
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Detox Cleanse')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Dry needling vs acupuncture: Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases." />
+        <meta name="description" 
+        content={t("Detox Cleanse: Discover the ultimate guide to resetting your body naturally in 2025. Explore effective detox methods, clean eating habits, and professional tips for a full-body wellness reset.")} />
       </Helmet>
       <header>
         <Topbar />
@@ -66,7 +69,7 @@ const Blog3 = () => {
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

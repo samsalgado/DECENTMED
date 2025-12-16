@@ -13,7 +13,8 @@ export function Nutrition() {
         window.scrollTo(0, 0);
       }, []);    
     return (
-         <div>
+         <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
             <Helmet>  
                 <title>{t('Dr Sebi Food List')}</title>
                 <meta name="description" content="Explore Dr. Sebi's nutritional food list to wellness. Discover obesity facts and how you can improve your nutrition. Learn more about Dr. Sebi's nutritional philosophy." />

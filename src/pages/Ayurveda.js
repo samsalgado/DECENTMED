@@ -12,10 +12,11 @@ useEffect(() => {
   }, []);
 
     return (
-        <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Ayurveda Experience")}</title>  
-        <meta name="description" content={t("Discover the transformative power of the Ayurveda Experience! Explore ancient practices for mind-body balance, natural healing, and a path to well-being. Learn more.")} />
+        <meta name="description" content={t("Experience the future of wellness in 2025. Explore The Ayurveda Experience for AI-guided mind-body balance, natural healing, and personalized holistic health.")} />
       </Helmet>
         <header>
         <Topbar />
@@ -26,6 +27,6 @@ useEffect(() => {
         <footer>
             <Footer />
         </footer>
-    </>
+    </div>
     )
 }

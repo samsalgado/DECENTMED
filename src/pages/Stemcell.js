@@ -14,12 +14,14 @@ useEffect(() => {
   }, []);
 
     return(
-        <div>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t('Stem Cell Therapy')}</title>  
-        <meta name="description" content="Unlock the potential of stem cell therapy! Explore how stem cells can be used to treat various conditions and promote healing. Learn more about this innovative therapy." />
-      </Helmet>
-
+        <meta
+          name="description"
+          content={t("Discover how Mesenchymal Stem Cell therapy supports tissue repair, reduces inflammation, and promotes natural healing for a wide range of conditions.")}        />      
+</Helmet>
             <header>
             <Topbar />
             </header>

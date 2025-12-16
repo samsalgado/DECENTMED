@@ -127,9 +127,12 @@ const SignUp = () => {
   return (
     <>
       <Topbar />
-            <h1 style={{marginTop: '3.5rem', 
-    paddingTop: '3rem'
-}}>{t("Provider Registration")}</h1>
+      <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
+            <h1>{t("Provider Registration")}</h1>
+<br></br>
+<br></br>
 <br></br>
       <div className="auth-form-container">
         <div className="auth-form-wrapper">
@@ -212,6 +215,7 @@ const SignUp = () => {
     <div id="googleSignUpDiv"></div>
   </div>
           </form>
+          </div>
         </div>
       </div>
 

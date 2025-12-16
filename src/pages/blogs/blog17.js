@@ -5,7 +5,9 @@ import bitcoin from "../../images copy/BTC_payments.PNG";
 import "../../App.css";
 const Blog17 = () => {
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
     <Helmet>
         <title>How to Accept Bitcoin Payments as a Business</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,7 +75,7 @@ const Blog17 = () => {
         </div>
     </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

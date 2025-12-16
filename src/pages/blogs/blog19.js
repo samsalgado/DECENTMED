@@ -8,7 +8,9 @@ import { Button } from "react-bootstrap";
 const Blog19 = () => {
   const { t } = useTranslation('common')
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,7 +60,7 @@ const Blog19 = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

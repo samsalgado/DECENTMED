@@ -35,7 +35,7 @@ const { t } = useTranslation('common');
       </ul>
 
       <ul>
-        <NavLink to="/breath">{t('Breathwork')}
+        <NavLink to="/breathwork">{t('Breathwork')}
         </NavLink>
       </ul>
       <ul>
@@ -43,7 +43,7 @@ const { t } = useTranslation('common');
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/acu">{t('Acupuncture')}
+        <NavLink to="/acupuncture">{t('Acupuncture')}
         </NavLink>
       </ul>
        <ul>

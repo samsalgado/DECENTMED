@@ -88,7 +88,8 @@ const kansasTerms = [
   };
 
   return(
-    <div>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t("Find Chiropractors Near You - Location-Based Chiropractic Care")}</title>  
         <meta name="description" content={t("Find chiropractors in your area. Enter your location to see available chiropractic care providers near you.")} />

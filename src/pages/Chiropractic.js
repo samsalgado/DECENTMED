@@ -53,7 +53,8 @@ export function Chiropractic() {
   }, []);
 
   return (
-    <div>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>
           <title>{t("Chiropractor Near Me")}</title>  
           <meta 

@@ -10,7 +10,8 @@ export function Prevent() {
       }, []);
     
     return(
-        <div>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
              <Helmet>  {/* Add Helmet component */}
         <title>Cellular Regeneration</title>  
         <meta name="description" content="Cellular regneration, your health is interconnected to your external environment, energy source, and internal body functions. Explore how preventive wellness can help you in your health journey." />

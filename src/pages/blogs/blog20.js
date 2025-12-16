@@ -1,6 +1,5 @@
 import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
-import acuu from "../../images copy/acuu.png";
 import Footer from "../../footer";
 import "../../App.css";
 import { useTranslation } from "react-i18next";
@@ -8,11 +7,14 @@ import { Button } from "react-bootstrap";
 const Blog20 = () => {
   const { t } = useTranslation('common')
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('How much Does Acupuncture Cost')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Discover the key to addressing Autism disorder. Dr. Amy Wicks and team has been in the holistic health space for over a decade. This article explains the guide to addressing Autism using a multiplicity of modalities." />
+        <meta name="description" 
+    content={t("How Much Does Acupuncture Cost: Compare 2025 treatment prices and factors affecting session rates. Learn about insurance coverage and how to find affordable, high-quality care.")} />
       </Helmet>
       <header>
         <Topbar />
@@ -20,10 +22,35 @@ const Blog20 = () => {
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('How much Does Acupuncture Cost?')}
         </h1>
-        <a href="https://decentmed.org/acu">
-        <img className='gridimag' src={acuu} alt="logo" />
-        </a>
+       
       </div>
+      <div
+  style={{
+    position: 'relative',
+    width: '100%',
+    maxWidth: '800px',
+    margin: '0 auto',
+    paddingBottom: '56.25%', // 16:9 ratio
+    height: 0,
+    overflow: 'hidden',
+    borderRadius: '12px',
+  }}
+>
+  <iframe
+    src="https://www.youtube.com/embed/AqqywgJFzw0"
+    title="YouTube video"
+    frameBorder="0"
+    allowFullScreen
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+    }}
+  />
+</div>
+
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
           <p>
@@ -60,7 +87,7 @@ const Blog20 = () => {
     textDecoration: 'none',
   }}
   className="custom-btn"
-  href="https://decentmed.org/acu" 
+  href="https://decentmed.org/acupuncture" 
   target="_blank"
 >
   {t("Learn More")}
@@ -68,7 +95,7 @@ const Blog20 = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

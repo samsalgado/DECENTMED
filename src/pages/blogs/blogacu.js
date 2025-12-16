@@ -8,7 +8,9 @@ import { Button } from "react-bootstrap";
 const BlogAcu = () => {
   const { t } = useTranslation('common')
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Acupuncture for Carpal Tunnel')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,7 +54,7 @@ const BlogAcu = () => {
     textDecoration: 'none',
   }}
   className="custom-btn"
-  href="https://decentmed.org/acu" 
+  href="https://decentmed.org/acupuncture" 
   target="_blank"
 >
   {t("Learn More")}
@@ -60,7 +62,7 @@ const BlogAcu = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

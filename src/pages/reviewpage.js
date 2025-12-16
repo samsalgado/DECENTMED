@@ -15,7 +15,10 @@ export function ReviewPage() {
         <div>
             <Helmet>
                 <title>{t("Our Reviews")}</title>
-                <meta name="description" content={t("Searching for a digital marketing agency near me?Look no further; we implement data-driven SEO strategies and affordable PPC services like Google Ads or Meta Ads for your company.")} />
+                <meta
+                name="description"
+                content={t("Searching for a digital marketing agency near me? Read our reviews to see how clients benefit from data-driven SEO strategies and affordable PPC services like Google Ads and Meta Ads for their business growth.")}
+                />
             </Helmet>
             <header>
                 <Topbar />

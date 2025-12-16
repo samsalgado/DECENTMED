@@ -8,7 +8,9 @@ import { useTranslation } from "react-i18next";
 const Ramona = () => {
   const { t } = useTranslation('common')
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Corporate Mindfulness')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,13 +61,13 @@ const Ramona = () => {
     src="https://www.youtube.com/embed/O9i9uQbgszw?si=USPBaFFfJciRX_ol"
     frameBorder="0"
     allowFullScreen
-    title="Dr. Sebi and Max Gerson Dietary Protocol Video"
+    title="From Stress to Empowered"
     style={{ maxWidth: '100%', height: 'auto' }} // Maintain aspect ratio
   />
 </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

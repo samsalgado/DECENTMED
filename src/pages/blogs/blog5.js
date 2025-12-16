@@ -8,7 +8,8 @@ import { useTranslation } from "react-i18next";
 const Blog5 = () => {
   const { t } = useTranslation('common');
   return (
-    <>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t('Acupuncture near me')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,14 +51,14 @@ const Blog5 = () => {
           textDecoration: 'none',
         }}
         className="custom-btn"
-        href="https://decentmed.org/acu" 
+        href="https://decentmed.org/acupuncture" 
         target="_blank"
       >
         {t("Explore Acupuncture")}
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

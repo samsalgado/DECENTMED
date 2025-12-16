@@ -55,7 +55,9 @@ const {t} = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t("Fenbendazole for Humans")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -230,7 +232,7 @@ const {t} = useTranslation('common');
        
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

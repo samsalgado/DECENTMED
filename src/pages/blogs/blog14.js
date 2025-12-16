@@ -8,7 +8,9 @@ import { Button } from "react-bootstrap";
 const Blog14 = () => {
   const { t } = useTranslation('common')
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Pain Pill for Back')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +56,7 @@ const Blog14 = () => {
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

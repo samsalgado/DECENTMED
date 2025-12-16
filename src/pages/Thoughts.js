@@ -7,10 +7,11 @@ import { useTranslation } from 'react-i18next';
 export function Mindset() {
 const { t } = useTranslation('common');
     return(
-        <div>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Law of Attraction: Mindset Coach")}</title>  
-        <meta name="description" content={t("Seeking a Mindset coach? Learn about Applied Kineiology and its benefits! Discover the techniques used to help with Autism Disorder, pain, and other complex disorders. Learn more.")} />
+        <meta name="description" content={t("Explore mindset coaching designed to build resilience, improve focus, and support personal growth. Learn how expert mindset coaching can help you overcome obstacles and achieve lasting change.")} />
       </Helmet>
             <header>
             <Topbar />

@@ -8,7 +8,9 @@ import PageWithTOC from '../Components/PageWithTOC';
 export function Detox() {
     const { t } = useTranslation('common');
     return (
-        <div>
+                <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("3 Day Detox Cleanse")}</title>
                     <meta name="description" content={t("3 Day Detox cleanse can clean the body from toxins. A detox cleanse is a great way to reset your cells into ketosis. Jumpstart your health journey!")} />

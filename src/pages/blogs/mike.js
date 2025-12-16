@@ -7,12 +7,16 @@ import { useTranslation } from "react-i18next";
 const Mike = () => {
   const { t } = useTranslation('common');
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Ways to Improve Your Sleep Quality')}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Unlock your body's incredible healing power. The body has an immense regenerative potential to heal itself. Cellular regeneration wakes the body" />
-      </Helmet>
+            <meta
+            name="description"
+            content="Improve your sleep naturally with expert-backed holistic tips from naturopathylane. Discover simple lifestyle, diet, and wellness strategies for deeper, restorative sleep."
+          />      
+  </Helmet>
       <header>
         <Topbar />
       </header>
@@ -54,7 +58,7 @@ const Mike = () => {
 
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

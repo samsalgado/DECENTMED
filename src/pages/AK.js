@@ -7,7 +7,8 @@ import { useTranslation } from 'react-i18next';
 export function AppliedKinesiology() {
 const { t } = useTranslation('common');
     return(
-        <div>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Applied Kinesiology")}</title>  
         <meta name="description" content={t("Seeking Applied Kinesiology near me? Learn about Applied Kineiology and its benefits! Discover the techniques used to help with Autism Disorder, pain, and other complex disorders. Learn more.")} />

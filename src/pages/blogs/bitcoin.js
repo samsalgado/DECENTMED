@@ -7,7 +7,8 @@ import { useTransition } from "react";
 const Bitcoin = () => {
 const {t} = useTransition('common')
   return (
-    <>
+     <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t("What is Bitcoin")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +54,7 @@ const {t} = useTransition('common')
         </div>
     </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

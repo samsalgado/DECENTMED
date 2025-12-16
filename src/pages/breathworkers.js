@@ -26,7 +26,8 @@ export function Breathwork({ providerEmail }) {
 
   
   return (
-    <div>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>
           <title>{t("Somatic Breathwork")}</title>
           <meta name="description" content={t("If you want one of the best emotional eating books...")} />
@@ -52,6 +53,7 @@ export function Breathwork({ providerEmail }) {
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   </style>
+  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
   <a 
     href="https://book.carepatron.com/Scarlett-Dee/Scarlett-?p=aJmLuXtkR3esU9i7t2nEJg&s=KIVRtyGw&e=b"
     rel="noopener noreferrer"
@@ -95,6 +97,7 @@ export function Breathwork({ providerEmail }) {
   >
     {t("Book Appointment")}
   </a>
+  </div>
 </div>
               <h5>{t("Scarlett Dee, Somatic Breathwork Coach:")}</h5>
               <p>

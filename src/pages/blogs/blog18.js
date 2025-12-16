@@ -13,12 +13,12 @@ import { useTranslation } from "react-i18next";
 const Blog18 = () => {
   const { t } = useTranslation('common');
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t('Top 5 Stretches for Back Pain in Scottsdale')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Many medical professions state that diseases like cancer exist from a vitamin B and vitamin B17 deficiency. Explore The Curious Case of Cancer: Everyday Fruit for Prevention." />
-      </Helmet>
+<meta name="description" content="Discover five powerful stretches to ease back pain, recommended by Scottsdale health professionals. Improve mobility, reduce tension, and feel better naturally." />      </Helmet>
       <header>
         <Topbar />
       </header>
@@ -69,7 +69,7 @@ const Blog18 = () => {
 </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 export default Blog18; 

@@ -10,7 +10,7 @@ const { t } = useTranslation('common');
     <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("CPTSD vs PTSD")}</title>  
-        <meta name="description" content={t("When searching naturopathy near me, remember that the body has an immense regenerative potential to heal itself. Find a naturopathic practitioner near you! Explore how homeopathy can support your body's natural healing potential. Learn more about naturopathy and its benefits.")} />
+        <meta name="description" content={t("Navigate 2025's latest insights on CPTSD vs PTSD. Understand the key differences in symptoms, causes, and specialized recovery paths for complex trauma.")} />
       </Helmet>
         <header>
             <Topbar />

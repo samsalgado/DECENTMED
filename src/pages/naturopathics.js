@@ -129,7 +129,8 @@ export function Natpract() {
   );
 
   return (
-    <div>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>
           <title>{t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")}</title>  
           <meta name="description" content={t("Find naturopathic doctors in your area. Enter your location to see available naturopathy practitioners near you.")} />
@@ -148,7 +149,7 @@ export function Natpract() {
           }}>
             <div className="row justify-content-center">
               <div className="col-md-10">
-                <h1 className="text-center mb-4">{t("Naturopathie")}</h1>
+                <h1 className="text-center mb-4">{t("Naturopathic Medicine")}</h1>
                 
                 <div className="search-bar-container" style={{
                   display: 'flex',

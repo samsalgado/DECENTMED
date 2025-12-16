@@ -10,9 +10,11 @@ export function Acupuncture({ t }) {
         <div>
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("Acupuncture Therapy")}</title>
-                    <meta name="description" content={t("Dry Needling vs Acupuncture: Explore the differences and find the right approach for your pain relief needs. Learn more about these alternative therapies.")} />
+                    <meta name="description" 
+                      content={t("Acupuncture Therapy: Learn the key differences in Dry Needling vs Acupuncture, and so much more. Explore how traditional techniques differ in our comprehensive guide.")} />
                 </Helmet>
                 <header>
+
                     <Topbar />
                 </header>
                 <PageWithTOC containerId="chiro-wrapper">

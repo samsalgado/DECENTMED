@@ -8,7 +8,9 @@ import { useTranslation } from "react-i18next";
 const Blog4 = () => {
   const { t } = useTranslation('common');
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Cellular Regeneration')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,7 +63,7 @@ const Blog4 = () => {
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

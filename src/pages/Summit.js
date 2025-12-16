@@ -13,7 +13,8 @@ export function Summit() {
   // I have removed the useState and useEffect for the popup here.
 
   return (
-    <>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '1.5rem'}}>
         <Helmet>
           <title>{t('DecentMed Summit')}</title>
           <meta
@@ -37,6 +38,6 @@ export function Summit() {
         </footer>
 
         {/* I have removed the JSX for the popup from here. */}
-    </>
+    </div>
   );
 }

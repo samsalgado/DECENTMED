@@ -41,7 +41,8 @@ export function Hypnopract() {
   };
 
   return (
-    <div>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t("Hypnotherapy Near Me")}</title>
         <meta name="description" content={t("Looking for hypnotherapy near you? Find qualified hypnotherapists to assist with therapy and well-being.")} />

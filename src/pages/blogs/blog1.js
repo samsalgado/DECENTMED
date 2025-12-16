@@ -8,7 +8,8 @@ import { useTranslation } from "react-i18next";
 const Blog1 = () => {
 const {t} = useTranslation('common')
   return (
-    <>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t('Can Constipation cause Back Pain')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,7 +72,7 @@ const {t} = useTranslation('common')
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

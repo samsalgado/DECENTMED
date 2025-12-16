@@ -16,11 +16,11 @@ export function Func() {
 
   return(
     <div>
-      <main className="page-content" style={{
+      <main className="page-content" 
         // Solution 2: Ensure no top margin/padding on main container
-        marginTop: 0,
-        paddingTop: 0
-      }}>
+       style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}
+      >
         <Helmet>
           <title>{t("Functional Medicine")}</title>  
           <meta name="description" content={t("Working with complex disorders and cancers via functional medicine. Essence of Life Wellness Center assists you holsitically, utilizing frequencies to communicate with the brain.")} />

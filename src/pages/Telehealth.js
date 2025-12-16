@@ -69,7 +69,7 @@ and chiropractic for complex diseases like autism. Active social marketing, vide
             <Practices />
             <div style={{ textAlign: 'center' }}>
                 <Button className="custom-btn" href="https://themerlingroupworld.com/signup/provider" target="_blank">
-                    {t("Providers: Signup")}
+                    {t("Create Provider Account")}
                 </Button>
             </div>
             <br></br>

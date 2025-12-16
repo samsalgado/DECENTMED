@@ -843,27 +843,32 @@ min-height: 100%;
   margin: 5px;
   top: 20px;
 }
-.logo {
-  width: 120px; /* Adjust size as needed for mobile */
-  height: auto;
-}
-
+/* General Logo Styling */
+/* Base logo styling */
 .Logo {
-  align-items: left;
-  height: 7vmin;
-  width: 160px !important; /* তোমার প্রয়োজন অনুযায়ী বাড়াও */
-
-  max-width: 180px !important;
-  position: relative;
+  width: 80px; /* Default size for desktop */
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
+/* Tablet and smaller devices */
 @media (max-width: 768px) {
   .Logo {
-    width: 150px !important;
-    /* height: 90px !important; */
-    margin-bottom: 25px !important;
+    width: 60px;
   }
 }
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .Logo {
+    width: 40px;
+  }
+}
+
+
 
 .contact {
   text-align: right;
@@ -1203,7 +1208,7 @@ input[type="submit"]:hover {
   }
 
   .logo {
-    width: 80px;
+    width: 10px;
   }
 }
 
@@ -1238,9 +1243,6 @@ input[type="submit"]:hover {
     margin: 3px; /* Reduce margins */
   }
 
-  .logo {
-    width: 60px;
-  }
 
   .nav-link {
     font-size: 14px;

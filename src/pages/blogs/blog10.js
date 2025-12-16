@@ -84,7 +84,9 @@ In a world of misinformation, focus on the undeniable properties of what you are
   }, [publishToNostr]);
 
   return (
-    <>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -191,7 +193,7 @@ In a world of misinformation, focus on the undeniable properties of what you are
       </Button>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -10,13 +10,16 @@ const Blog21 = () => {
   const { t } = useTranslation('common');
 
   return (
-    <>
+            <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
+
       <Helmet>
         <title>{t('Acupuncture for Migraines')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta 
           name="description" 
-          content="Discover how acupuncture for migraines can provide natural, effective relief. Dr. Amy Wicks and her holistic health team share proven modalities and guidance for managing migraine symptoms through integrative care." 
+          content=
+          "Discover how acupuncture for migraines can provide natural, effective relief. Learn how this traditional therapy helps reduce migraine frequency, ease tension, and support long‑term wellness."
         />
       </Helmet>
 
@@ -28,7 +31,7 @@ const Blog21 = () => {
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>
           {t('Acupuncture for Migraines')}
         </h1>
-        <a href="https://decentmed.org/acu">
+        <a href="https://decentmed.org/acupuncture">
           <img className='gridimag' src={acuu} alt="logo" />
         </a>
       </div>
@@ -90,7 +93,7 @@ const Blog21 = () => {
             textDecoration: 'none',
           }}
           className="custom-btn"
-          href="https://decentmed.org/acu"
+          href="https://decentmed.org/acupuncture"
           target="_blank"
         >
           {t("Learn More")}
@@ -98,7 +101,7 @@ const Blog21 = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

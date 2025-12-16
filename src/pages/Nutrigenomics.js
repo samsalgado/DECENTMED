@@ -7,12 +7,12 @@ import { useTranslation } from 'react-i18next';
 export function Nutrigenomics() {
 const { t } = useTranslation('common');
     return(
-        <div>
+        <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Nutrigenomics")}</title>  
-        <meta name="description" content={t("Discover how Nutrigenomics and Somatic Breathwork can support mental health, reduce stress and anxiety, and restore balance. Explore ancient techniques blended with modern science to enhance your well-being.")} />
+        <meta name="description" content={t("Discover the best nutrigenomics services for weight management. Learn how DNA‑based nutrition can optimize metabolism, support healthy weight goals, and improve overall wellness.")} />
       </Helmet>
-
             <header>
             <Topbar />
             </header>

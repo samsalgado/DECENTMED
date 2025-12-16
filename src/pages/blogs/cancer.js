@@ -110,7 +110,8 @@ const Blog6 = () => {
     publishToNostr();
   }, [publishToNostr]);  
   return (
-    <>
+    <div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>
       <Helmet>
         <title>{t("Vitamin B17")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -120,8 +121,7 @@ const Blog6 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center',  marginTop: '4rem',
-  paddingTop: '3rem', fontFamily: 'sans-serif' }}>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
+        <h1>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
         </h1>
         <div className='container'>
             <ReactPlayer
@@ -227,7 +227,7 @@ const Blog6 = () => {
 
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
