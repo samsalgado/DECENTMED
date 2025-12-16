@@ -8,8 +8,8 @@ import Footer from '../footer';
 export function Home() {
   const { t } = useTranslation('common');
   return (
-    <>
-      <Helmet>
+<div style={{textAlign: 'center', marginTop: '80px', 
+    paddingTop: '2rem'}}>      <Helmet>
         <title>{t('DecentMed')}</title>
         <meta
           name="description"
@@ -24,6 +24,6 @@ export function Home() {
         <footer>
           <Footer />
         </footer>
-     </>
+     </div>
   );
 }

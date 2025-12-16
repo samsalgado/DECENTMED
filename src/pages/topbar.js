@@ -9,8 +9,8 @@ import Conditions from "./conditions";
 
 const Topbar = () => {
   const { t, i18n } = useTranslation("common");
-  const [showMenu, setShowMenu] = useState(false);
-  const [selectedLang, setSelectedLang] = useState(null); 
+  const [showMenu, setShowMenu] = useState(false);      // language dropdown
+  const [selectedLang, setSelectedLang] = useState(null);
   const isLoggedIn = !!localStorage.getItem('token');
 
   const handleLogout = () => {
@@ -18,13 +18,12 @@ const Topbar = () => {
     window.location.reload();
   };
 
-  const toggleMenu = () => setShowMenu(prev => !prev);
-
   const changeLang = (lang) => {
     i18n.changeLanguage(lang)
       .then(() => {
         localStorage.setItem("preferredLanguage", lang);
-        setSelectedLang(lang); 
+        setSelectedLang(lang);
+        setShowMenu(false);
       })
       .catch(err => console.error("Language change error:", err));
   };
@@ -38,64 +37,178 @@ const Topbar = () => {
 
   return (
     <div className='topbar'>
-      <Navbar bg="light" variant="light" expand="lg" collapseOnSelect className="navbar-container">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        style={{
+          backgroundColor: "#00695c",
+          padding: "0.75rem 2rem",
+          boxShadow: "0 2px 6px rgba(0,0,0,0.06)",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          zIndex: 1000
+        }}
+      >
         <Navbar.Brand href="/" className="d-flex align-items-center">
           <img src={LOGO} className="Logo" alt="logo" />
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto flex-column flex-lg-row">
             <EducationMenu />
             <Conditions />
-            <Nav.Link href="/summit">{t("Summit")}</Nav.Link>
-            <Nav.Link href="/telehealth">{t('Find Practitioner')}</Nav.Link>
-            <Nav.Link href='/blog'>{t('Blogs')}</Nav.Link>
-            <Nav.Link href="/apoth">{t('Apothecary')}</Nav.Link>
-            <Nav.Link href='/about'>{t('About Us')}</Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+              onMouseLeave={(e) => e.target.style.color = "white"}
+              href="/summit"
+            >
+              {t("Summit")}
+            </Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+              onMouseLeave={(e) => e.target.style.color = "white"}
+              href="/telehealth"
+            >
+              {t('Find Practitioner')}
+            </Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+              onMouseLeave={(e) => e.target.style.color = "white"}
+              href="/blog"
+            >
+              {t('Blogs')}
+            </Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+              onMouseLeave={(e) => e.target.style.color = "white"}
+              href="/apoth"
+            >
+              {t('Apothecary')}
+            </Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+              onMouseLeave={(e) => e.target.style.color = "white"}
+              href="/about"
+            >
+              {t('About Us')}
+            </Nav.Link>
+
             {isLoggedIn ? (
-              <Nav.Link onClick={handleLogout}>{t('LogOut')}</Nav.Link>
+              <Nav.Link
+                style={{ color: "white", transition: "0.2s" }}
+                onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+                onMouseLeave={(e) => e.target.style.color = "white"}
+                onClick={handleLogout}
+              >
+                {t('LogOut')}
+              </Nav.Link>
             ) : (
-              <Nav.Link href="/signup">{t("Sign Up")}</Nav.Link>
+              <Nav.Link
+                style={{ color: "white", transition: "0.2s" }}
+                onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+                onMouseLeave={(e) => e.target.style.color = "white"}
+                href="/signup"
+              >
+                {t("Sign Up")}
+              </Nav.Link>
             )}
-            <Nav.Link href="/provider">{t("Provider")}</Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
+              onMouseLeave={(e) => e.target.style.color = "white"}
+              href="/provider"
+            >
+              {t("Provider")}
+            </Nav.Link>
           </Nav>
+
+          {/* LANGUAGE DROPDOWN - open on hover */}
+          <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
+            <div
+              style={{ position: "relative", maxWidth: "180px" }}
+              onMouseEnter={() => setShowMenu(true)}
+              onMouseLeave={() => setShowMenu(false)}
+            >
+              <button
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: "white",
+                  fontWeight: 500,
+                  padding: "0.5rem 1rem",
+                  fontSize: "0.95rem",
+                  cursor: "pointer",
+                  width: "100%",
+                  textAlign: "right",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap"
+                }}
+                aria-label="Change locale"
+              >
+                {selectedLang ? selectedLang.toUpperCase() : t("language")}
+              </button>
+
+              {showMenu && (
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "100%",
+                    right: 0,
+                    zIndex: 999,
+                    backgroundColor: "white",
+                    boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                    borderRadius: "4px",
+                    overflow: "auto",
+                    maxHeight: "60vh",
+                    minWidth: "140px",
+                    maxWidth: "240px",
+                    wordWrap: "break-word"
+                  }}
+                >
+                  {[
+                    { code: "en", label: "English" },
+                    { code: "es", label: "Español" },
+                    { code: "nl", label: "Dutch" },
+                    { code: "fr", label: "Français" },
+                    { code: "ch", label: "Chinese" },
+                    { code: "hi", label: "Hindi" },
+                    { code: "ar", label: "Arabic" }
+                  ].map(({ code, label }) => (
+                    <span
+                      key={code}
+                      style={{
+                        display: "block",
+                        padding: "0.5rem 1rem",
+                        fontSize: "0.9rem",
+                        cursor: "pointer",
+                        color: "#00695c"
+                      }}
+                      onClick={() => changeLang(code)}
+                    >
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         </Navbar.Collapse>
-
-        {/* Language Dropdown */}
-        <div className={`change-locale ${showMenu ? "is-open" : ""}`} style={{ position: 'relative' }}>
-          <button
-            className="change-locale-toggle"
-            aria-label="Change locale"
-            onClick={toggleMenu}
-          >
-            <span>{selectedLang ? selectedLang.toUpperCase() : t("language")}</span>
-          </button>
-
-       {showMenu && (
-  <div className="change-locale-menu" style={{
-    position: 'absolute',
-    top: '100%',
-    right: 0,
-    zIndex: 999,
-    backgroundColor: 'white',
-    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-    borderRadius: '4px',
-    overflow: 'auto',        // allow scrolling if too tall
-    maxHeight: '60vh',       // never go off screen vertically
-    minWidth: '120px',
-    maxWidth: '90vw',        // never overflow viewport horizontally
-    wordWrap: 'break-word'   // wrap long words if necessary
-  }}>
-    <span className="lang" onClick={() => changeLang("English")}>English</span>
-    <span className="lang" onClick={() => changeLang("es")}>Español</span>
-    <span className="lang" onClick={() => changeLang("nl")}>Dutch</span>
-    <span className="lang" onClick={() => changeLang("fr")}>Français</span>
-    <span className="lang" onClick={() => changeLang("ch")}>Chinese</span>
-    <span className="lang" onClick={() => changeLang("hi")}>Hindi</span>
-    <span className="lang" onClick={() => changeLang("ar")}>Arabic</span>
-  </div>
-)}
-        </div>
       </Navbar>
     </div>
   );

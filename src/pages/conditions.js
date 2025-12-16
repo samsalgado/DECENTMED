@@ -1,13 +1,30 @@
 // EducationMenu.js
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 const Conditions = () => {
 const { t } = useTranslation('common');
+ const [show, setShow] = useState(false);
+  const handleMouseEnter = () => setShow(true);
+  const handleMouseLeave = () => setShow(false);
   return (
-    <NavDropdown title={t("Conditions")} id="education-dropdown" className='scrollable-dropdown'>
+    <NavDropdown title={<span style={{ color: "white" }}>{t("Conditions")}</span>} id="education-dropdown" className='scrollable-dropdown' show={show} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <span style={{ display: "none" }}>
+    <style>
+      
+      {`
+        .dropdown-toggle::after {
+          border-top-color: white !important;
+        }
+          .dropdown-toggle:hover {
+        text-decoration: underline !important;
+        text-decoration-color: white !important;
+      }
+      `}
+    </style>
+  </span>   
         <ul><NavLink to="/cancer">{t('Cancer')}
       </NavLink>
       </ul>

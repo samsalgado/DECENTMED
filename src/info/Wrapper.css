@@ -17,7 +17,7 @@ html, body, #root {
   padding: 0;
   min-height: 100%;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -28,18 +28,16 @@ html, body, #root {
 /* ============================================
    FIXED HEADER
 ============================================ */
-header,
 .topbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #fff;
+  background: transparent; /* let navbar-container control color */
   margin: 0;
   padding: 0;
 }
-
 /* ============================================
    PAGE WRAPPER
    — Clean, predictable, no weird spacing
@@ -128,7 +126,7 @@ main {
 
 .change-locale-toggle span {
   display: inline-block;
-  max-width: 20vw;
+  max-width: 200vw;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -138,7 +136,6 @@ main {
   max-width: 90vw;
   max-height: 60vh;
   overflow: auto;
-  word-wrap: break-word;
 }
 
 /* ============================================
