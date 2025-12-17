@@ -250,21 +250,20 @@ const Info1 = () => {
     transition: 'all 0.3s ease'
   };
 
-  const iframeWrapperStyle = {
-    flex: isMobile || isTablet ? 'none' : '0 0 400px',
-    width: '100%',
-    maxWidth: isMobile || isTablet ? '100%' : '400px'
-  };
+const iframeWrapperStyle = {
+  flex: isMobile || isTablet ? 'none' : '0 0 450px', // bumped from 400px
+  width: '100%',
+  maxWidth: isMobile || isTablet ? '100%' : '460px' // bumped from 420px
+};
 
-  const iframeStyle = {
-    width: '100%',
-    height: isSmallMobile ? '200px' : isMobile ? '250px' : isTablet ? '280px' : '315px',
-    border: 'none',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
-  };
-
-  return (
+const iframeStyle = {
+  width: '100%',
+  height: isSmallMobile ? '210px' : isMobile ? '260px' : isTablet ? '290px' : '330px', // slight bump
+  border: 'none',
+  borderRadius: '8px',
+  boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+}; 
+ return (
     <div>
       <h1 className='title' style={titleStyle}>{t('Acupuncture')}</h1>
       
