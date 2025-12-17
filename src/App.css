@@ -1186,13 +1186,7 @@ select {
   margin: 0 auto;
 }
 /* Video container for responsiveness */
-.video-container iframe {
-  border: none;
-  border-radius: 8px;
-  aspect-ratio: 16/9; /* Maintain a proper aspect ratio for the iframe */
-  width: 100%;
-  height: 200px;
-}
+
 input[type="submit"]:hover {
   background-color: #45a049;
 }
@@ -1775,9 +1769,7 @@ td:last-child {
     padding: 10px;
   }
 
-  .video-container iframe {
-    height: 200px; /* Smaller height for mobile devices */
-  }
+ 
 
   .signup {
     font-size: 1.25rem;

@@ -65,47 +65,49 @@ const PlantCard = ({ val }) => {
     return (
         <div className="plant-card">
             <div
-                className="video-container"
                 ref={videoRef}
                 style={{
                     position: "relative",
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9
+                    maxWidth: "400px",
+                    aspectRatio: "16/9",
                     overflow: "hidden",
                     borderRadius: "8px",
                     backgroundColor: "#000",
                 }}
-            >
+                >
                 {isInView ? (
-                    <iframe
-                        src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
-                        title={val.name}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                        allowFullScreen
-                        loading="lazy"
-                        style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            border: "none",
-                        }}
-                    />
-                ) : (
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            backgroundColor: "#ccc",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}
-                    >
+    <iframe
+      src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
+      title={val.name}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      allowFullScreen
+      loading="lazy"
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        border: "none",
+        zIndex: 1,
+        pointerEvents: "auto",
+      }}
+    />
+  ) : (
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#ccc",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
                         <p>{t("Loading...")}</p>
                     </div>
                 )}

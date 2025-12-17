@@ -262,71 +262,66 @@ const PlantCard = ({ val }) => {
         return () => observer.disconnect();
     }, []);
 
-    return (
-        <div className="plant-card">
-            <div
-            className="video-container"
-            ref={videoRef}
-            style={{
-                position: "relative",
-                width: "100%",
-                paddingTop: "56.25%", // 16:9 aspect ratio
-                overflow: "hidden",
-                borderRadius: "8px",
-                backgroundColor: "#000",
-            }}
-            >                
-            {isInView ? (
-            <iframe
-                title={`${val.name} Plant Video`}
-                src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                allowFullScreen
-                loading="lazy"
-                style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    border: "none",
-                    touchAction: "manipulation",
-                    pointerEvents: "auto",
-                    zIndex: 1,
-                }}
-  onTouchStart={(e) => {
-        const iframe = e.currentTarget;
-        if (iframe.requestFullscreen) {
-          iframe.requestFullscreen();
-        } else if (iframe.webkitRequestFullscreen) {
-          iframe.webkitRequestFullscreen();
-        } else if (iframe.msRequestFullscreen) {
-          iframe.msRequestFullscreen();
-        }
+return (
+  <div className="plant-card">
+    <div
+      ref={videoRef}
+      style={{
+        position: "relative",
+        width: "100%",
+        paddingTop: "56.25%", // 16:9 aspect ratio
+        overflow: "hidden",
+        borderRadius: "8px",
+        backgroundColor: "#000",
       }}
-    />
-
-                ) : (
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            backgroundColor: "#ccc",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}
-                        >
-                        <p>Loading...</p>
-                    </div>
-                )}
-            </div>
-            <h3>{val.name}</h3>
+    >
+      {isInView ? (
+        <iframe
+          title={`${val.name} Plant Video`}
+          src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowFullScreen
+          loading="lazy"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: "none",
+            touchAction: "manipulation",
+            pointerEvents: "auto",
+            zIndex: 1,
+          }}
+          onTouchStart={(e) => {
+            const iframe = e.currentTarget;
+            if (iframe.requestFullscreen) iframe.requestFullscreen();
+            else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+            else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+          }}
+        />
+      ) : (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#ccc",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <p>Loading...</p>
         </div>
-    );
+      )}
+    </div>
+
+    <h3>{val.name}</h3>
+  </div>
+);
 }
 export default PlantVids;
 
