@@ -69,32 +69,32 @@ const PlantCard = ({ val }) => {
                 style={{
                     position: "relative",
                     width: "100%",
-                    maxWidth: "400px",
                     aspectRatio: "16/9",
-                    overflow: "hidden",
+                    overflow: "visible",
                     borderRadius: "8px",
                     backgroundColor: "#000",
                 }}
                 >
-                {isInView ? (
-    <iframe
-      src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
-      title={val.name}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-      allowFullScreen
-      loading="lazy"
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        border: "none",
-        zIndex: 1,
-        pointerEvents: "auto",
-      }}
-    />
-  ) : (
+   {isInView ? (
+        <iframe
+          title={`${val.name} Plant Video`}
+          src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowFullScreen
+          loading="lazy"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: "none",
+            touchAction: "manipulation",
+            pointerEvents: "auto",
+            zIndex: 1,
+          }}
+        />
+      ) : (
     <div
       style={{
         position: "absolute",

@@ -269,8 +269,8 @@ return (
       style={{
         position: "relative",
         width: "100%",
-        paddingTop: "56.25%", // 16:9 aspect ratio
-        overflow: "hidden",
+        paddingTop: "56.25%",
+        overflow: "visible",
         borderRadius: "8px",
         backgroundColor: "#000",
       }}
@@ -292,12 +292,6 @@ return (
             touchAction: "manipulation",
             pointerEvents: "auto",
             zIndex: 1,
-          }}
-          onTouchStart={(e) => {
-            const iframe = e.currentTarget;
-            if (iframe.requestFullscreen) iframe.requestFullscreen();
-            else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
-            else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
           }}
         />
       ) : (
