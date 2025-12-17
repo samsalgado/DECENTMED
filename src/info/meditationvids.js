@@ -65,35 +65,35 @@ const PlantCard = ({ val }) => {
     return (
         <div className="plant-card">
             <div
-                ref={videoRef}
-                style={{
-                    position: "relative",
-                    width: "100%",
-                    aspectRatio: "16/9",
-                    overflow: "visible",
-                    borderRadius: "8px",
-                    backgroundColor: "#000",
-                }}
-                >
-   {isInView ? (
-        <iframe
-          title={`${val.name} Plant Video`}
-          src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-          allowFullScreen
-          loading="lazy"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
+        ref={videoRef}
+        style={{
+            position: "relative",
             width: "100%",
-            height: "100%",
-            border: "none",
-            touchAction: "manipulation",
-            pointerEvents: "auto",
-            zIndex: 1,
-          }}
-        />
+            paddingTop: "56.25%", // 16:9 aspect ratio
+            overflow: "hidden",
+            borderRadius: "8px",
+            backgroundColor: "#000",
+        }}
+        >
+   {isInView ? (
+       <iframe
+            title={`${val.name} Plant Video`}
+            src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowFullScreen
+            loading="lazy"
+            style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: "none",
+                touchAction: "manipulation",
+                pointerEvents: "auto",
+                zIndex: 1,
+            }}
+            />
       ) : (
     <div
       style={{
