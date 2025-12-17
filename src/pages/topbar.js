@@ -12,10 +12,9 @@ const Topbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null);
   const isLoggedIn = !!localStorage.getItem("token");
-  const [show, setShow] = useState(false);
-
-  const handleMouseEnter = () => setShow(true);
-  const handleMouseLeave = () => setShow(false);
+  //const [show, setShow] = useState(false);
+  //const handleMouseEnter = () => setShow(true);
+  //const handleMouseLeave = () => setShow(false);
 
   const handleLogout = () => {
     localStorage.removeItem("token");

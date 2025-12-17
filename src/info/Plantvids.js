@@ -6,27 +6,27 @@ const {t} = useTranslation('common')
   const [plant] = useState([
     {
         id: 1,
-        videoUrl: "https://drive.google.com/file/d/1BuzdZ_vKZAZsMxEGT1tTIjQ7ivr6u4l_/preview",
+        videoUrl: "https://www.youtube.com/embed/YeZBT6KMp8w?si=XRu8vUg6rYv7vvnC",
         name: `${t('Goldenseal Herb')}`,
     },
     {
         id: 3,
-        videoUrl: "https://drive.google.com/file/d/1BS4fA9VaoW_C0uK6zoGsdrDLb8kUdunR/preview",
+        videoUrl: "https://www.youtube.com/embed/b5lzqiSX-4E?si=rwEdg1MwNiEhD1ng",
         name: `${t('Echinacea')}`
     },
     {
         id: 5,
-        videoUrl: "https://drive.google.com/file/d/1AWBxTGqCFm4vp_LurBYSKzg9hmydlNec/preview",
+        videoUrl: "https://www.youtube.com/embed/uWE9z7yda0Y?si=9gT_XisbmWJYHI0G",
         name: `${t('Golden raintree')}`
     },
     {
         id: 6,
-        videoUrl: "https://drive.google.com/file/d/1W39LpYI4FEOsGi_E0QVsEHHQIdnvi_cA/preview",
+        videoUrl: "https://www.youtube.com/embed/9-56XDGZ9h8?si=GI3r_jllL5l1N0n9",
         name: `${t('Platycadus Orientalis')}`
     },
     {
         id: 7,
-        videoUrl: "https://drive.google.com/file/d/1aXufzeFI-OJd3WeyxIwcigW_6Hn42AHo/preview",
+        videoUrl: "https://www.youtube.com/embed/ZlwdkZLJgDY?si=iq8kj0cG7Eiama9i",
         name: `${t('Plumbago')}`
     },
     {
