@@ -25,22 +25,27 @@ export default function DisclaimerPopup() {
         <h2>Disclaimer</h2>
         <div className="disclaimer-text">
           <p>
-            The information provided on this platform is for educational and informational purposes only. It is not intended to replace professional medical advice, diagnosis, or treatment.
+            The information provided on this platform, including any resources, recommendations, or materials shared, is for educational purposes only. It is not intended to diagnose, treat, cure, or prevent any disease.
           </p>
           <p>
-            Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition or wellness program.
+            Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition or wellness program.
           </p>
           <p>
-            Never disregard professional medical advice or delay in seeking it because of something you have read or seen on this platform.
+            Never disregard professional medical advice or delay seeking it because of something you have read or seen on this platform.
           </p>
           <p>
             DecentMed and its contributors do not claim to diagnose, treat, cure, or prevent any disease. Statements or discussions about health topics are for general educational awareness and should not be interpreted as individualized medical guidance.
           </p>
           <p>
+            The content shared on this platform is not a substitute for professional medical advice, diagnosis, or treatment.
+          </p>
+          <p>
+            The FDA has not evaluated any of the information, products, or services provided on this platform.
+          </p>
+          <p>
             Reliance on any information provided by DecentMed, its guests, or linked resources is solely at your own discretion and risk.
           </p>
         </div>
-
         <div style={{ display: "flex", justifyContent: "center", gap: "15px", marginTop: "30px" }}>
           <button 
             className="disclaimer-close-btn" 

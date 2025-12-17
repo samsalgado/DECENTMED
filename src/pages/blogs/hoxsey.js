@@ -233,8 +233,7 @@ const Hoxsey = ({t}) => {
   className="rumble" 
   width="100%" 
   height="400px"
-  src="https://drive.google.com/file/d/1JsO6uRAF1QfqSH1mZweBb29IEeyLeyTG/preview" 
-  frameBorder="0" 
+  src="https://www.dropbox.com/scl/fi/rhyieoeqoh24cyyr2m88t/HOXSEY.mp4?rlkey=raunscglrr3c6s2oh3bbm2xtm&st=whlrnuno&raw=1"  frameBorder="0" 
   allowFullScreen 
   title="You Don’t Have to Die Video" 
 />
@@ -575,7 +574,7 @@ const Hoxsey = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Cancer Cures</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t("Additional Resources")}</th>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
                <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/funcmed"> <img src={essence} alt="img" /> </a>

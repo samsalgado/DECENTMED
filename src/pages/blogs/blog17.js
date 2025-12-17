@@ -5,8 +5,7 @@ import bitcoin from "../../images copy/BTC_payments.PNG";
 import "../../App.css";
 const Blog17 = () => {
   return (
-        <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
     <Helmet>
         <title>How to Accept Bitcoin Payments as a Business</title>

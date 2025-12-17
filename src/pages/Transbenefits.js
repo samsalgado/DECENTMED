@@ -136,7 +136,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
           style={{
             maxWidth: '500px',
             width: '100%',
-            height: 'auto'
+            height: '250px'
           }}
         />
         </div>

@@ -8,8 +8,7 @@ import { useTranslation } from "react-i18next";
 const Ramona = () => {
   const { t } = useTranslation('common')
   return (
-            <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
       <Helmet>
         <title>{t('Corporate Mindfulness')}</title>

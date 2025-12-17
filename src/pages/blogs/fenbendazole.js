@@ -55,8 +55,7 @@ const {t} = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
 
   return (
-            <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+              <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
       <Helmet>
         <title>{t("Fenbendazole for Humans")}</title>
@@ -71,7 +70,7 @@ const {t} = useTranslation('common');
       </h1>
       <div className='container'>
     <iframe width='100%' height='700px'
- src="https://drive.google.com/file/d/1NTZT1DQGzBkUQMTAfIkgZDOsQAqI90jt/preview"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+ src="https://www.youtube.com/embed/NWIDl_FOexQ?si=aD9fp4XfGQtmlUoq"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
 
       </div>
@@ -220,12 +219,11 @@ const {t} = useTranslation('common');
        <div className="container">
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Reources')}</th>}>
                <a href="/fenbendazole"> <img className="gridimag" src={fenben} alt='' /> </a>
                <a href="/ivermectin"> <img className="gridimag" src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img className="gridimag" src={hhoxsey} alt='' /> </a>
               <a href="/funcmed"> <img src={essence} alt="img" /> </a>
-           
             </Collapsible>
           </tbody>
         </table>

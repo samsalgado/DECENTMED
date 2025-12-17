@@ -68,7 +68,7 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
           style={{
             maxWidth: '400px',
             width: '100%',
-            height: 'auto'
+            height: '250px'
           }}
         />
         </div>

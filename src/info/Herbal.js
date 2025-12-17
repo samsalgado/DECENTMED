@@ -9,7 +9,20 @@ import { useTranslation } from 'react-i18next';
 const Herbal = () => {
   const { t } = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
+  const txt = `
+  welcome to treis de febrero Park let's explore looking for medicinal plants and that's George Washington yes we're in Argentina but that is George Washington and we're in the Park:
+ ditch Lily juice of the roots has been shown to be effective for arsonic poisoning a tea made from The Boiled Roots is used as a diuretic all right let's keep looking this plant right here zip medicinal Mexican cypress two out of five according to pfaf the bark is a stringent the leaves can help with
 
+headaches and cuts but most importantly the essential oil from the leaves in hexane Leaf extracts has shown antifungal activity against skin pathogens which support the use against skin diseases finally a crude ethanol extract of the leaves has shown cytoxicity in the range of cancer cell lines with cancer death being due to eposis so behind me is Harin deas The Garden of The Poets and this right here is the iceberg plant so let's go inside among the beauty is the china Rose and the hybrid t- Rose the china
+
+Rose is rich in vitamins a c and e its flavonoids and other bioactivity compounds s have shown an incidence of helping with reversing the growth of cancers it's currently under investigation for helping with cancer not only that but the fruit is applied to sprains ulcers and wounds finally the flowers are anod a Minogue and help with women's complaints let's see if this is medicinal it is not medicinal but guess what is the black willow rated three out of five according to pfaf the bark is
+
+anod anti-inflammatory anti-erotic antiseptic astringent diaphoretic diuretic feuge hypnotic sedative and tonic the fresh bark contains salicin which probably decomposes and aisc acid in the human body this is closely related to aspirin it's also used as an anod and feuge and an ingredient in Spring tonics the bark is removed during the summer and dried for later use the leaves are used internally for minor feverish illnesses and colic finally the bark of the species is used interchangeably with
+
+s Alba taken internally for the treatment of rheumatism arthritis gout inflammatory stages of autoimmune diseases diarrhea dentary feverish illnesses neuralgia and headache final medicinal plan of the day is oleander cre two out of according to pfaf the leaves and flowers are cardiotonic diaphoretic diuretic emetic expectorant and statory a decoction of the leaves has been applied externally in the treatment of Scabies and to reduce swelling this poisonous plant contains a powerful cardiac Toxin and should only be used
+
+with Extreme Caution the root is powerfully resolvent because of its poisonous nature it is only used externally Shout Out Jose miti Jose Marti behind me this is uh ala Miguel Hernandez is Robin J tagor anel AIS AAS he's an escor and a poet then we got this beauty right here foran Felix dead right here Raphael Alberti fedo Garcia LCA guak gabron Khalil gabron there look at that beauty shout out Ruben doio that concludes exploring a beautiful Park in parque de palermo
+  `
   return (
     <>
       <div className='container'>
@@ -41,7 +54,7 @@ const Herbal = () => {
             </div>
               
             <iframe
-              src="https://drive.google.com/file/d/1qbnYhsRJpEOCuK2L-MdyjV-wgMp8UAJe/preview"
+              src="https://www.youtube.com/embed/fZNT5bD3MQg?si=wAHkF-p0tCZsQYzx"
               width="100%"
               title='Herbal Homepage'
               allow="autoplay"
@@ -155,7 +168,7 @@ const Herbal = () => {
             <Modal.Title>{t("Transcript")}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>{t("eng")}</p>
+            <p>{t(txt)}</p>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowModal(false)}>

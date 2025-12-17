@@ -8,8 +8,7 @@ import { Button } from "react-bootstrap";
 const Blog16 = () => {
 const {t} = useTranslation('common')
   return (
-        <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
       <Helmet>
         <title>{t('Rose Oil Benefits')}</title>

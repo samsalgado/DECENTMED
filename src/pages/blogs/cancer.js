@@ -110,8 +110,7 @@ const Blog6 = () => {
     publishToNostr();
   }, [publishToNostr]);  
   return (
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+           <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t("Vitamin B17")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -214,7 +213,7 @@ const Blog6 = () => {
         <div>
           <table className="collapsibles-table">
             <tbody>
-              <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
+              <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
                 <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
                 <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
                 <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>

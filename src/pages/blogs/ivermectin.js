@@ -139,7 +139,7 @@ const {t} = useTranslation('common');
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Ivermectin for Cancer in Humans")}
       </h1>
       <div className='container'>
-<iframe width="100%" height="600px" src="https://drive.google.com/file/d/1zg7C8tpSuu_wKKazM_77ko9ucn_OicAb/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+<iframe width="100%" height="600px" src="https://www.youtube.com/embed/Mmig5oGD1iE?si=QiKNPMC8ATboFcV1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                   {t("Transcript")}
@@ -323,7 +323,7 @@ const {t} = useTranslation('common');
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t('Cancer Cures')}</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Reources')}</th>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
               <a href="/funcmed"> <img src={essence} alt="img" /> </a>

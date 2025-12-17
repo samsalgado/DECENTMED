@@ -302,8 +302,7 @@ const Info1 = () => {
           
           <div style={iframeWrapperStyle}>
             <iframe
-              src="https://drive.google.com/file/d/1K8LQQCKq2hwwxP3dTbaj7OxmWxChpcwq/preview"
-              title='Acupuncture'
+              src="https://www.youtube.com/embed/elo9Rh_6UAY?si=-RtZVGRP9Hx1B1xi"               title='Acupuncture'
               allow="autoplay"
               style={iframeStyle}
               allowFullScreen

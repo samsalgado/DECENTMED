@@ -18,7 +18,7 @@ const MeditationInfo = () => {
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Meditation')}</h1>
-      <iframe width="100%" height={500} src="https://drive.google.com/file/d/1gR__NvCEmnlJpOsJDUadgCDBSM-LZzCS/preview" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <iframe width="100%" height={500}     src="https://www.dropbox.com/scl/fi/y5kpcrwpmrobc663kooos/Serenity-Meditation.mp4?rlkey=t87qsx58r2mc9h5xim06lbf34&st=tdfjf5q9&raw=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <Button className="custom-btn" onClick={() => setShowModal(true)}>
                           {t("Transcript")}
                         </Button>

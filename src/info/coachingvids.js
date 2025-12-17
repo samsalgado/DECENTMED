@@ -7,8 +7,8 @@ const Coachingvids = () => {
     const [plant] = useState([
         {
             id: 1,
-            videoUrl: "https://drive.google.com/file/d/12nH4ZCop90R-9PubX1GGcjN7qS0Ww0b0/preview",
-            name: t("Stop Making Excuses: Health Coaching Motivation")
+            videoUrl:"https://www.youtube.com/embed/z7bKpFl8qGA?si=e1llD8eNVGhdieKR",
+            name: t("Six Steps for Fat Loss")
             
         }
     ]);

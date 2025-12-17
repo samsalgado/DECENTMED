@@ -119,15 +119,15 @@ either small doses or in the regular doses but also using off Lael drugs to kill
           </div>
           <iframe
             width="100%"
-            height="475"
-            src="https://drive.google.com/file/d/1oizepFcjcTm_wlpSzCGOh1eKMYfklaAC/preview"
+            height="575px"
+            src="https://www.youtube.com/embed/j7bV-Ig45kg?si=PqSUSoaYsodH6nb5"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             style={{
-              maxWidth: '400px',
+              maxWidth: '450px',
               width: '100%',
-              height: 'auto'
+              height: '250px'
             }}
           ></iframe>
           

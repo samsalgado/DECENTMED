@@ -66,7 +66,9 @@ const Chiro = () => {
         <table className="collapsibles-table">
           <tbody>
             <div id="clinics">
-         
+         <Collapsible trigger={<h3 className="collapsible-trigger">{t("Lower Blood Sugar")}</h3>}>
+  <BloodSugar />
+</Collapsible>
            <Collapsible trigger={<h3 className="collapsible-trigger">{t('Kansas City Chiropractic')}</h3>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
@@ -93,9 +95,7 @@ const Chiro = () => {
      
   </div>
 </Collapsible>
- <Collapsible trigger={<th className="collapsible-trigger">{t("Lower Blood Sugar")}</th>}>
-          <BloodSugar />
-        </Collapsible>
+
 <Collapsible trigger={<h3 className="collapsible-trigger">{t('Chiropractic Saint Louis')}</h3>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">

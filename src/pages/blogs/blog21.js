@@ -10,8 +10,7 @@ const Blog21 = () => {
   const { t } = useTranslation('common');
 
   return (
-            <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
       <Helmet>
         <title>{t('Acupuncture for Migraines')}</title>

@@ -204,7 +204,7 @@ themerlingroupworld.com/ayurveda for more.
         <Principles />
         <Elements />
         <br></br>
-        <iframe width="100%" height={550} src="https://drive.google.com/file/d/1fFqRB-Z-QIq6t3DSjkBmvkXjBddLsnOG/preview" title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe width="100%" height={550} src="https://www.youtube.com/embed/Y32t5F81XCc?si=IPuvCmEujPuEcH3K"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
       
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
@@ -267,8 +267,7 @@ themerlingroupworld.com/ayurveda for more.
   <iframe 
     width="100%" 
     height="100%" 
-    src="https://drive.google.com/file/d/1D_amsczAnFyuk4pharUzZSZQcYaKefvw/preview" 
-    title={t('YouTube video player')} 
+    src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=O63KyChKYrVWpkyw"     title={t('YouTube video player')} 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowFullScreen
     style={{
