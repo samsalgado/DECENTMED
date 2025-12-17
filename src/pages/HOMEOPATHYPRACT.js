@@ -44,8 +44,8 @@ export function HomeopathyPract() {
   };
 
   return (
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
       <Helmet>
         <title>{t("Homeopathy Near Me")}</title>  
         <meta name="description" content={t("Homeopathy near to me? Look no further than great homeopaths that can assist you holistically, and provide you wholeness.")} />

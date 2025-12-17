@@ -1,42 +1,62 @@
 import { useEffect, useState } from "react";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { useTranslation } from 'react-i18next';
-import '../App.css';
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { useTranslation } from "react-i18next";
+import "../App.css";
 import LOGO from "../images copy/goklKk.png";
-import EducationMenu from './EducationMenu';
+import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
 
 const Topbar = () => {
   const { t, i18n } = useTranslation("common");
-  const [showMenu, setShowMenu] = useState(false);      // language dropdown
+  const [showMenu, setShowMenu] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null);
-  const isLoggedIn = !!localStorage.getItem('token');
+  const isLoggedIn = !!localStorage.getItem("token");
+  const [show, setShow] = useState(false);
+
+  const handleMouseEnter = () => setShow(true);
+  const handleMouseLeave = () => setShow(false);
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     window.location.reload();
   };
 
+  const toggleMenu = () => setShowMenu((prev) => !prev);
+
   const changeLang = (lang) => {
-    i18n.changeLanguage(lang)
+    i18n
+      .changeLanguage(lang)
       .then(() => {
         localStorage.setItem("preferredLanguage", lang);
         setSelectedLang(lang);
         setShowMenu(false);
       })
-      .catch(err => console.error("Language change error:", err));
+      .catch((err) => console.error("Language change error:", err));
   };
 
   useEffect(() => {
     const storedLang = localStorage.getItem("preferredLanguage") || "en";
-    i18n.changeLanguage(storedLang)
+    i18n
+      .changeLanguage(storedLang)
       .then(() => setSelectedLang(storedLang))
-      .catch(err => console.error("Error loading language:", err));
+      .catch((err) => console.error("Error loading language:", err));
   }, [i18n]);
 
   return (
-    <div className='topbar'>
+    <>
+    <style>
+{`
+  @media (max-width: 768px) {
+    #language-dropdown {
+      left: 0 !important;
+      right: auto !important;
+      max-width: 90vw !important;
+    }
+  }
+`}
+</style>
+    <div className="topbar-wrapper">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -44,11 +64,8 @@ const Topbar = () => {
           backgroundColor: "#00695c",
           padding: "0.75rem 2rem",
           boxShadow: "0 2px 6px rgba(0,0,0,0.06)",
-          position: "fixed",
-          top: 0,
-          left: 0,
           width: "100%",
-          zIndex: 1000
+          zIndex: 1000,
         }}
       >
         <Navbar.Brand href="/" className="d-flex align-items-center">
@@ -60,12 +77,18 @@ const Topbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto flex-column flex-lg-row">
             <EducationMenu />
-            <Conditions />
+            <div
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
+            >
+              <Conditions />
+            </div>
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-              onMouseLeave={(e) => e.target.style.color = "white"}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="/summit"
             >
               {t("Summit")}
@@ -73,54 +96,54 @@ const Topbar = () => {
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-              onMouseLeave={(e) => e.target.style.color = "white"}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="/telehealth"
             >
-              {t('Find Practitioner')}
+              {t("Find Practitioner")}
             </Nav.Link>
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-              onMouseLeave={(e) => e.target.style.color = "white"}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="/blog"
             >
-              {t('Blogs')}
+              {t("Blogs")}
             </Nav.Link>
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-              onMouseLeave={(e) => e.target.style.color = "white"}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="/apoth"
             >
-              {t('Apothecary')}
+              {t("Apothecary")}
             </Nav.Link>
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-              onMouseLeave={(e) => e.target.style.color = "white"}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="/about"
             >
-              {t('About Us')}
+              {t("About Us")}
             </Nav.Link>
 
             {isLoggedIn ? (
               <Nav.Link
                 style={{ color: "white", transition: "0.2s" }}
-                onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-                onMouseLeave={(e) => e.target.style.color = "white"}
+                onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+                onMouseLeave={(e) => (e.target.style.color = "white")}
                 onClick={handleLogout}
               >
-                {t('LogOut')}
+                {t("LogOut")}
               </Nav.Link>
             ) : (
               <Nav.Link
                 style={{ color: "white", transition: "0.2s" }}
-                onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-                onMouseLeave={(e) => e.target.style.color = "white"}
+                onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+                onMouseLeave={(e) => (e.target.style.color = "white")}
                 href="/signup"
               >
                 {t("Sign Up")}
@@ -129,21 +152,17 @@ const Topbar = () => {
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => e.target.style.color = "#ffffff"}
-              onMouseLeave={(e) => e.target.style.color = "white"}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="/provider"
             >
               {t("Provider")}
             </Nav.Link>
           </Nav>
 
-          {/* LANGUAGE DROPDOWN - open on hover */}
+          {/* LANGUAGE DROPDOWN */}
           <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
-            <div
-              style={{ position: "relative", maxWidth: "180px" }}
-              onMouseEnter={() => setShowMenu(true)}
-              onMouseLeave={() => setShowMenu(false)}
-            >
+            <div style={{ position: "relative", maxWidth: "180px" }}>
               <button
                 style={{
                   background: "transparent",
@@ -157,15 +176,17 @@ const Topbar = () => {
                   textAlign: "right",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
-                  whiteSpace: "nowrap"
+                  whiteSpace: "nowrap",
                 }}
                 aria-label="Change locale"
+                onClick={toggleMenu}
               >
                 {selectedLang ? selectedLang.toUpperCase() : t("language")}
               </button>
 
               {showMenu && (
                 <div
+                  id="language-dropdown"
                   style={{
                     position: "absolute",
                     top: "100%",
@@ -178,7 +199,7 @@ const Topbar = () => {
                     maxHeight: "60vh",
                     minWidth: "140px",
                     maxWidth: "240px",
-                    wordWrap: "break-word"
+                    wordWrap: "break-word",
                   }}
                 >
                   {[
@@ -188,7 +209,7 @@ const Topbar = () => {
                     { code: "fr", label: "Français" },
                     { code: "ch", label: "Chinese" },
                     { code: "hi", label: "Hindi" },
-                    { code: "ar", label: "Arabic" }
+                    { code: "ar", label: "Arabic" },
                   ].map(({ code, label }) => (
                     <span
                       key={code}
@@ -197,7 +218,7 @@ const Topbar = () => {
                         padding: "0.5rem 1rem",
                         fontSize: "0.9rem",
                         cursor: "pointer",
-                        color: "#00695c"
+                        color: "#00695c",
                       }}
                       onClick={() => changeLang(code)}
                     >
@@ -211,6 +232,7 @@ const Topbar = () => {
         </Navbar.Collapse>
       </Navbar>
     </div>
+    </>
   );
 };
 

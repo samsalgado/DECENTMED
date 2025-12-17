@@ -13,8 +13,8 @@ const { t } = useTranslation('common');
         window.scrollTo(0, 0);
       }, []);
     return (
-        <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
                 <Helmet>  {/* Add Helmet component */}
         <title>{t("Sleep Meditation")}</title>  
         <meta name="description" content={t("Discover the transformative power of Meditation! Sleep meditation and more; how meditation can help you heal. Learn more.")} />

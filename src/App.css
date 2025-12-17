@@ -9,7 +9,7 @@ html, body, #root {
 }
 
 #root {
-  padding-top: 100px; /* Adjust for navbar height */
+  padding-top: 0px; /* Adjust for navbar height */
   box-sizing: border-box;
 }
 .jim-container {
@@ -139,17 +139,6 @@ h2 {
 }
 
 
-.topbar {
-  position: fixed; /* সবসময় উপরে থাকবে */
-  top: 0;
-  margin-top: 0; /* উপরের দিকে চিপকে থাকবে */
-  left: 0;
-  width: 100%; /* পুরো page-এ ছাপা যাবে */
-  z-index: 9999; /* সব content এর উপরে থাকবে */
-  background-color: #fff; /* navbar background */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  animation: slideFadeDown 0.7s ease-out;
-}
 
 /* Page content top padding দিতে হবে */
 .page-content {
@@ -190,11 +179,7 @@ a {
   }
 }
 
-/* .topbar {
-  animation: topbarEntrance 0.6s ease-out forwards;
-  position: relative;
-  z-index: 1000;
-} */
+
 
 button:hover,
 a:hover {
@@ -392,6 +377,9 @@ body {
   position: relative;
   top: 10px; /* Adjust top position as needed */
   margin: 0 auto; /* Center the elements horizontally */
+}
+.topbar-wrapper + .container {
+  margin-top: 0 !important;
 }
 
 .HOME {

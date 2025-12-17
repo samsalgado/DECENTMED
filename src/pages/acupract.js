@@ -70,8 +70,8 @@ If youre in Tampa, Florida needing acupuncture. Visit Oson Treis Medical. We pro
 Think of it as a reset button for your mind and body so you can feel more grounded, energized and at ease in your daily life.
  Visit https://oceantreis.com/.`
   return(
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
       <Helmet>
         <title>{t("Acupuncturist Near Me")}</title>  
         <meta name="description" content={t("Searching Acupuncturist near me? Look no further than our fantastic acupuncturist that can assist you on your pathway to wellness.")} />

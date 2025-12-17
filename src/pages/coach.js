@@ -661,8 +661,8 @@ const renderCoachesInOrder = () => {
   return coaches.filter(Boolean); // Remove null/undefined entries
 };
   return (
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
         <Helmet>
           <title>{t("Find Health Coaches Near You - Location-Based Coaching Services")}</title>  
           <meta name="description" content={t("Find certified health coaches in your area. Enter your location to see available coaching professionals near you.")} />

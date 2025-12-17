@@ -15,7 +15,7 @@ const Naturo = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <>
+    <div>
       <div className='container mobile-optimized'>
        <h1
   style={{
@@ -131,7 +131,7 @@ const Naturo = () => {
         </Modal>,
         document.body
       )}
-    </>
+    </div>
   );
 };
 

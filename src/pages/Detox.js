@@ -8,8 +8,7 @@ import PageWithTOC from '../Components/PageWithTOC';
 export function Detox() {
     const { t } = useTranslation('common');
     return (
-                <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+         <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("3 Day Detox Cleanse")}</title>

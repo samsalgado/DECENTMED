@@ -90,8 +90,8 @@ export function AYPract() {
   const practitionersToShow = showAllPractitioners ? practitioners : filteredPractitioners;
 
   return(
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
         <Helmet>
           <title>{t("Ayurveda Near Me")}</title>  
           <meta name="description" content={t("Ayurveda near me? Look no further than great ayurvedists that can assist you holistically, and provide you wholeness.")} />

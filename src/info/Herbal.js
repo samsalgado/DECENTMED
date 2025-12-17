@@ -37,10 +37,9 @@ const Herbal = () => {
               flex: '1'
             }}>
               <p className='pr'>{t("The body has an immense regenerative potential to heal itself. Herbal medicine is the real traditional medicine, every single pharmaceutical drug has a plant root. This page is my encyclopedia of herbal medicine, highlighting herbal plants from around the world. For the last few months, I traveled throughout North America, South America, and Central America to document these plants. Explore our encyclopedia of herbal medicine, and learn how these plants can help your body heal itself. Explore our medicinal herbal recipes from around the world below.")}</p>
-              <Button className="custom-btn" href="https://decentmed.org/apoth" target="_blank">
-                {t("Explore Apothecary")}
-              </Button>
+            
             </div>
+              
             <iframe
               src="https://drive.google.com/file/d/1qbnYhsRJpEOCuK2L-MdyjV-wgMp8UAJe/preview"
               width="100%"
@@ -58,13 +57,18 @@ const Herbal = () => {
                 height: "355px"
               }}
             />
-          </div>        
+            
+          </div>    
+              
         </div>
-
-        <div>
-          <Button className="custom-btn" onClick={() => setShowModal(true)}>
+ <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
+        <div>
+         
+              <br></br>
+              <br></br>
+         
         </div>
 
         <style jsx>{`

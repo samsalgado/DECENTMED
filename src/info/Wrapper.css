@@ -28,16 +28,7 @@ html, body, #root {
 /* ============================================
    FIXED HEADER
 ============================================ */
-.topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: transparent; /* let navbar-container control color */
-  margin: 0;
-  padding: 0;
-}
+
 /* ============================================
    PAGE WRAPPER
    — Clean, predictable, no weird spacing
@@ -46,7 +37,7 @@ html, body, #root {
   min-height: 100vh;
   width: 100%;
   background: #fff;
-  padding-top: var(--header-height, 60px);
+  padding-top:0px;
 }
 
 .signup-container {
@@ -61,6 +52,12 @@ html, body, #root {
     padding: 2rem;
   }
 }
+.container {
+  margin-top: 0 !important;
+}
+.topbar-wrapper + .container {
+  margin-top: 0 !important;
+}
 
 
 /* ============================================
@@ -70,10 +67,11 @@ html, body, #root {
 .page-wrapper .title {
   text-align: center;
   font-family: sans-serif;
-  margin-top: 1rem;
+  margin-top: 0;
   padding-top: 0;
   text-decoration: none;
 }
+
 
 /* Mobile tweak */
 @media (max-width: 767px) {

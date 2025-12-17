@@ -94,8 +94,8 @@ export function Nutritionpract() {
   };
 
   return (
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+  <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
         <Helmet>
           <title>{t("Find Nutritionists Near You - Location-Based Nutrition Care")}</title>  
           <meta name="description" content={t("Find nutritionists in your area. Enter your location to see available nutrition practitioners near you.")} />

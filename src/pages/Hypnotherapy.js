@@ -8,8 +8,8 @@ import { useTranslation } from 'react-i18next';
 export function Hypnotherapy() {
 const { t } = useTranslation('common');
     return(
-        <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Hypnotherapy")}</title>  
         <meta name="description" content={t("Learn about Hypnotherapy and its benefits! Discover the ancient wisdom and techniques used to help people cope with stress, anxiety, and mental health challenges. Learn more.")} />

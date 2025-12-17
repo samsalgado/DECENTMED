@@ -15,12 +15,8 @@ export function Func() {
   }, []);
 
   return(
-    <div>
-      <main className="page-content" 
-        // Solution 2: Ensure no top margin/padding on main container
-       style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}
-      >
+  <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
         <Helmet>
           <title>{t("Functional Medicine")}</title>  
           <meta name="description" content={t("Working with complex disorders and cancers via functional medicine. Essence of Life Wellness Center assists you holsitically, utilizing frequencies to communicate with the brain.")} />
@@ -123,7 +119,7 @@ export function Func() {
         <footer>
           <Footer />
         </footer>
-      </main>
+
     </div>
   )
 }

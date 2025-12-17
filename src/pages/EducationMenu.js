@@ -6,10 +6,51 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 const EducationMenu = () => {
 const { t } = useTranslation('common');
- const [show, setShow] = useState(false);
-  const handleMouseEnter = () => setShow(true);
-  const handleMouseLeave = () => setShow(false);
+const isTouch = typeof window !== "undefined" && "ontouchstart" in window;
+const [show, setShow] = useState(false);
+const handleMouseEnter = () => {
+  if (!isTouch) setShow(true);
+};
+const handleMouseLeave = () => {
+  if (!isTouch) setShow(false);
+};
+const handleClick = () => {
+  if (isTouch) setShow(prev => !prev);
+};
   return (
+    <>
+    <style>
+  {`
+    /* Make the actual toggle white */
+    #education-dropdown {
+      color: white !important;
+    }
+
+    /* Kill Bootstrap's SVG (if present) and draw our own white arrow */
+    #education-dropdown::after {
+      background-image: none !important;
+      border-top: 0.35em solid white !important;
+      border-right: 0.35em solid transparent !important;
+      border-left: 0.35em solid transparent !important;
+      margin-left: 0.4em !important;
+      vertical-align: 0.15em;
+      content: "" !important;
+      display: inline-block !important;
+    }
+
+    /* Underline on hover */
+    #education-dropdown:hover {
+      text-decoration: underline !important;
+      text-decoration-color: white !important;
+    }
+
+    /* Keep arrow white on hover/focus */
+    #education-dropdown:hover::after,
+    #education-dropdown:focus::after {
+      border-top-color: white !important;
+    }
+  `}
+</style>
 <NavDropdown
   title={
     <span style={{ color: "white" }}>
@@ -21,22 +62,9 @@ const { t } = useTranslation('common');
   show={show}
   onMouseEnter={handleMouseEnter}
   onMouseLeave={handleMouseLeave}
+  onClick={handleClick}
 >
-  {/* Inline style injection to force arrow white */}
-  <span style={{ display: "none" }}>
-    <style>
-      
-      {`
-        .dropdown-toggle::after {
-          border-top-color: white !important;
-        }
-          .dropdown-toggle:hover {
-        text-decoration: underline !important;
-        text-decoration-color: white !important;
-      }
-      `}
-    </style>
-  </span> 
+  
       <ul><NavLink to="/homeopathy">{t('Homeopathy')}
       </NavLink>
       </ul>
@@ -112,6 +140,7 @@ const { t } = useTranslation('common');
         </NavLink>
       </ul>
     </NavDropdown>
+    </>
   );
 };
 

@@ -191,8 +191,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import tier2 from '../images copy/tier 1.png';
-import tier3 from "../images copy/tier.png";
+import tier2 from '../images copy/TIER1.png';
+import tier3 from "../images copy/TIER2 (3).png";
 import '../info/Info.css';
 
 export function Pricing() {

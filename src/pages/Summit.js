@@ -13,8 +13,8 @@ export function Summit() {
   // I have removed the useState and useEffect for the popup here.
 
   return (
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '1.5rem'}}>
+  <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+
         <Helmet>
           <title>{t('DecentMed Summit')}</title>
           <meta
