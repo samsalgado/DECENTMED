@@ -31,63 +31,63 @@ const {t} = useTranslation('common')
     },
     {
         id: 9,
-        videoUrl: "https://drive.google.com/file/d/1z3Ou0u47IJW_J867Z1-eeFVcy8r15nAs/preview",
+        videoUrl: "https://www.youtube.com/embed/3T2u80WxRKA?si=K1kignC1IW9K0_sG",
         name: `${t('Aloe Vera')}`
     },
     {
         id: 10,
-        videoUrl: "https://drive.google.com/file/d/1pVJMlbtEVcjVzXxUnZHgued9TGcjNScX/preview",
+        videoUrl: "https://www.youtube.com/embed/xCqygRzrUMY?si=dPVlg1OPRB1li84s",
         name: `${t('Crepe Myrtle')}`
     },
     
     {
         id: 12,
-        videoUrl: "https://drive.google.com/file/d/1scDfw1j37oyHR6H773ApzOTzljIfnfR5/preview",
+        videoUrl: "https://www.youtube.com/embed/hs-11vr5wWY?si=MQ3Rm13QX6UB1AyE",
         name: `${t('Elderberry')}`
     },
     {
         id: 13,
-        videoUrl: "https://drive.google.com/file/d/1_TIY-5mPSCgq5tCF4HBScDd7aXXJKnMq/preview",
+        videoUrl: "https://www.youtube.com/embed/Paz8kPCdOo8?si=3umT0Wsro5hHNUqy",
         name: `${t('Dandelion Root')}`
     },
     {
         id: 14,
-        videoUrl: "https://drive.google.com/file/d/1xqvayT504gteyWX80L43kWCPRyvJCGPC/preview",
+        videoUrl: "https://www.youtube.com/embed/ZOhZXi8uotk?si=3IHZQWbjiRHmyCXU",
         name: `${t('Quercus Robur')}`
     },
     {
         id: 15,
-        videoUrl: "https://drive.google.com/file/d/1QpSfEjfGyvCdp83weEHhPLP3ArrbkNhe/preview",
+        videoUrl: "https://www.youtube.com/embed/_Vr2qoEaeuE?si=jYH0rpsK2Ur16OAf",
         name: `${t('Virginia Mountain Mint')}`
     },
     {
         id: 16,
-        videoUrl: "https://drive.google.com/file/d/1bOyjNdcUJ7Mr3PGgRTv9R-gpNvFqrlvi/preview",
+        videoUrl: "https://www.youtube.com/embed/4y_JFUMup54?si=1FmQd8IXTygPChjg",
         name: `${t('Wild Bergamot')}`
     },
     {
         id: 17,
-        videoUrl: "https://drive.google.com/file/d/1SRC7udJIgIJyZsp3GYYzxlLCB6LvFEAe/preview",
+        videoUrl: "https://www.youtube.com/embed/R5vBTjyIrLE?si=5_F3Ty0iUTibWbeZ",
         name: `${t('Moringa')}`
     },
     {
         id: 18,
-        videoUrl: "https://drive.google.com/file/d/1S-EdvImf_6DusccEqzuBteyAPo0UbRzQ/preview",
+        videoUrl: "https://www.youtube.com/embed/FuiEgNf8PnQ?si=AMsIMxij8ciSwDoX",
         name: `${t('Great Lobelia')}`
     },
     {
         id: 19,
-        videoUrl: "https://drive.google.com/file/d/1kkkkElaJh7WyTn2meUrN_iHFvfg1Yq6K/preview",
+        videoUrl: "https://www.youtube.com/embed/-dIargQTX7E?si=ILtANxrDFOeEOyeK",
         name: `${t('Jewelweed')}`
     },
     {
         id: 20,
-        videoUrl: "https://drive.google.com/file/d/1RxLBiAmTbte08UFUMued5FzJBRmEIhPl/preview",
+        videoUrl: "https://www.youtube.com/embed/Wef_Dyif_vA?si=2Phhh5E_wfslmdnO",
         name: `${t('Rhus Typhina')}`
     },
     {
         id: 21,
-        videoUrl: "https://drive.google.com/file/d/1A1Jz9ejlCmAbJjWrEyh8eVmCv8dxuAYk/preview",
+        videoUrl: "https://www.youtube.com/embed/MnV10TKtl2A?si=HAC6FN2MNEqu5COE",
         name: `${t('African Tulip Tree')}`
     },
     
@@ -95,19 +95,19 @@ const {t} = useTranslation('common')
     
     {
         id: 27,
-        videoUrl: "https://drive.google.com/file/d/1sifshmL4pyuHB2YnpubbxcQl12YnArmr/preview",
+        videoUrl: "https://www.youtube.com/embed/qwuF1WNS5vY?si=resMOtEnnRUD3bAB",
         name: `${t('Hawthorn')}`
     },
     
     {
         id: 29,
-        videoUrl: "https://drive.google.com/file/d/1B7onN62i98GnLRhwyD8in7ji3vETh3A3/preview",
+        videoUrl: "https://www.youtube.com/embed/-MatPZb-rxg?si=4f0WW41-XcIHbPEt",
         name: `${t('Silver Birch')}`
     },
    
     {
         id: 31,
-        videoUrl: "https://drive.google.com/file/d/1ERMXHM1-HrlRfKTkniWgjYwyYkLvNY_F/preview",
+        videoUrl: "https://www.youtube.com/embed/sef5Ro1O9D0?si=lAZKOYp_4abDkjZk",
         name: `${t('Purple Loosestrife')}`
     },
     {
@@ -266,15 +266,30 @@ const PlantCard = ({ val }) => {
         <div className="plant-card">
             <div className="video-container" ref={videoRef}>
                 {isInView ? (
-                    <iframe
-                        width="100%"
-                        height="315"
-                        title={`${val.name} Plant Video`}
-                        src={val.videoUrl}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        loading="lazy"
-                    />
+                  <iframe
+  width="100%"
+  height="315"
+  title={`${val.name} Plant Video`}
+  src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+  allowFullScreen
+  loading="lazy"
+  style={{
+    border: "none",
+    touchAction: "manipulation",
+  }}
+  onTouchStart={(e) => {
+    const iframe = e.currentTarget;
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  }}
+/>
+
                 ) : (
                     <div
                         style={{
