@@ -270,7 +270,7 @@ return (
         position: "relative",
         width: "100%",
         paddingTop: "56.25%",
-        overflow: "visible",
+         overflow: "hidden", 
         borderRadius: "8px",
         backgroundColor: "#000",
       }}
