@@ -269,7 +269,7 @@ return (
       style={{
         position: "relative",
         width: "100%",
-        paddingTop: "56.25%",
+        paddingTop: "75%",
          overflow: "hidden", 
         borderRadius: "8px",
         backgroundColor: "#000",
