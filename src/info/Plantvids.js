@@ -269,8 +269,8 @@ return (
       style={{
         position: "relative",
         width: "100%",
-        paddingTop: "75%",
-         overflow: "hidden", 
+        height: "315px",     // fixed height = fullscreen button visible
+        overflow: "hidden",  // prevents parent overlap
         borderRadius: "8px",
         backgroundColor: "#000",
       }}
