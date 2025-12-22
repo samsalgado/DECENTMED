@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
-
 const MeditationVids = () => {
     const { t } = useTranslation("common");
-
     const [plant] = useState([
         {
             id: 1,

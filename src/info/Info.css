@@ -363,18 +363,7 @@ padding: 30px;
   width: 100%;
 }
 
-.collapsible-trigger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  cursor: pointer;
-  color: #045c50;
-  padding: 10px;
-  transition: color 0.3s ease;
-}
+.collapsible-trgger { display:inline; align-items: center; justify-content: center; width: 200px; padding: 10px; font-weight: bold; font-size: 16px; color: #2f4f2f; background-color: #f0f0f0; text-align:justify; cursor: pointer; }
 
 .collapsible-trigger:hover {
   color: #09b350;

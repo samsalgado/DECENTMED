@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import "./homeo.css";
 import './Info.css';
 import ReactDOM from 'react-dom';
+import book1 from "../images copy/book1.jpg";
+import book2 from "../images copy/book2.jpg";
 import TsBen from './tsben';
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
@@ -210,8 +212,24 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
             height: 200px !important;
           }
         }
+  .collapsible-trgger {
+  display: flex;
+  width: 250px; /* or use 100% if inside a table layout */
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #2f4f2f; /* dark green */
+  background-color: #f0f0f0; /* light gray */
+  text-align: center;
+}
+
       `}</style>
-        <Collapsible trigger={<th className="collapsible-trigger">{t("Testimonials")}</th>}>
+              <Collapsible trigger={<div className="collapsible-trigger">{t("Resources")}</div>}>
+        <a href="https://www.amazon.com/Handbook-Human-Potential-Accessible-Personal/dp/B0G4J3JXKK/ref=sr_1_1?crid=1LMFQIDRNTC4I&dib=eyJ2IjoiMSJ9.pjgTbL2HmvhiV03i3tu_KSLHL8HpvWtIy4uoZLOHMnfh87vrOpD6RSEBMm-tsS2arI_I3b-NojrmDS9q0N34yxJNtvYt9qd-71XevY2aYYE.Vj_fGKnU_us7s3QAjSHSInuWtFxxRkWAxJ-TdruXhzQ&dib_tag=se&keywords=handbook+for+human+potential+an+accessible+guide+to+personal+growth&nsdOptOutParam=true&qid=1766436381&sprefix=Handbook+for+human+po%2Caps%2C122&sr=8-1"> <img src={book1} alt="img" /> </a>
+        <a href="https://www.amazon.com/Wounds-Wisdom-Art-Healing-Trauma/dp/B0D8QNYCDK/ref=sr_1_4?crid=21ALF1LZPXSSH&dib=eyJ2IjoiMSJ9.MCes-FKwfcB0U6nV0hGmG9CRQPdERvi8LZdmsPpzHDTvF0nQabY4B8E7rkuYB9f5oBYHzkdLLAuXQPtRmv0IZcnf316y-LzntfvR1g8wpguwVpbDNnyaJ0IwjbQ-jJCaEs8udkrnW9kIINdTm9dXAXLVN1IYCB5bjsqeSMUOw4X7LnciqHBaG-7-LauZM2xdA9EH0oIetuIQbK-glHkQ4aqWJOEn07EhqGYxo5KGX0o.w4J2XMhKsqHhAnZehlR2Xp2L5HS4G-aWeHKKmtZCgPg&dib_tag=se&keywords=wounds+to+wisdom&qid=1766436621&sprefix=wounds+to+wisdom%2Caps%2C74&sr=8-4"> <img src={book2} alt="img" /> </a>
+        </Collapsible>
+        <br></br>
+        <Collapsible trigger={<div className="collapsible-trigger">{t("Client Testimonials")}</div>}>
         <Trev />
         </Collapsible>
         <br></br>
