@@ -100,7 +100,7 @@ import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 import LOGO from "../images copy/goklKk.png";
-
+import alignable from "../images copy/alignable.png";
 const Footers = () => {
   const { t } = useTranslation('common');
 
@@ -142,6 +142,7 @@ const Footers = () => {
         {/* ===== Office ===== */}
         <div className="footer-section office">
           <h3 className="footer-title">{t("Office")}</h3>
+                      <img src={alignable} className="geyserImgLarge" alt="Alignable" />
           <p className="footer-address">5830 E 2ND ST Casper, WY 82609</p>
           <Button
             className="footer-btn"
