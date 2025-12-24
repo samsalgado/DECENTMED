@@ -43,10 +43,12 @@ const Offer2 = () => {
             <img src={imge} className="pik1 stripe" alt='' />
             <h2>{t('Pay with Credit Card')}</h2>
           </div>
-          <Button style={{
+          <Button             className="custom-btn"
+ style={{
             width: '30%',
             display: 'block',
             margin: '20px auto'
+
           }} variant="contained" onClick={handleClickOpen}>{t('add cart')}</Button>
         </CookiesProvider>
       </div>

@@ -118,9 +118,12 @@ const Footers = () => {
             href="/HIPAA Compliance Policy.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="footer-link-btn"
+            className="custom-btn"
           >
+            <Button className="custom-btn"
+>
             {t("View HIPAA Compliance Policy (PDF)")}
+          </Button>
           </a>
         </div>
 
@@ -129,7 +132,7 @@ const Footers = () => {
           <h3 className="footer-title">{t("Products We Trust")}</h3>
           <ul className="footer-list">
             <Button style={{width:'130px'}}
-              className="footer-btn"
+              className="custom-btn"
               href="https://decentmed.org/shop" target="_blank" rel="noreferrer"
             
             >
@@ -145,7 +148,7 @@ const Footers = () => {
                       <img src={alignable} className="geyserImgLarge" alt="Alignable" />
           <p className="footer-address">5830 E 2ND ST Casper, WY 82609</p>
           <Button
-            className="footer-btn"
+            className="custom-btn"
             href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true"
             target="_blank" rel="noopener noreferrer"
           >
@@ -180,7 +183,7 @@ const Footers = () => {
             style={{ marginTop: '15px' }}
           >
             <img src={Geyser} className="geyserImgLarge" alt="Support DecentMed on Geyser Fund" />
-            <span className="geyser-text">Donate via Geyser Fund</span>
+            <Button className="custom-btn">Donate via Geyser Fund</Button>
           </a>
         </div>
 

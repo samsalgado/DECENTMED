@@ -222,7 +222,6 @@ const SignUp = () => {
       <Practice />
       <Offer2 />
       <Info7 />
-      <Offer2 />
       <Footer />
     </>
   );
