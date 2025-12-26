@@ -238,6 +238,7 @@ export function Pricing() {
         padding: '50px 20px',
       }}
     >
+
       <h2 style={{ textAlign: 'center', color: '#00695C', marginBottom: '20px' }}>
         {t("Choose a Plan")}
       </h2>
