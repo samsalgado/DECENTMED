@@ -9,6 +9,7 @@ import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
 import Wrapper from './info/Wrapper';
+//<Route path="/lynn" element={<Lynn t={t} />} />
 import { Func } from './pages/Func';
 import {Summit} from './pages/Summit';
 import MassPract from './pages/Mass';
@@ -43,7 +44,7 @@ import { StemCell } from './pages/Stemcell';
 import { NotFound } from './pages/NotFound';
 import { Shop } from './pages/products';
 import Blog2 from './pages/blogs/blog2';
-import { Lynn } from './pages/lynn';
+//import { Lynn } from './pages/lynn';
 import { Nutrition } from './pages/Nutrition';
 import BlogPage from './pages/Blog';
 import { Hypnotherapy } from './pages/Hypnotherapy';
@@ -129,7 +130,6 @@ function App() {
         <Route path="/akpract" element={<AKPract t={t} />} />
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
-        <Route path="/lynn" element={<Lynn t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
         <Route path="/applied-kinesiology" element={<AppliedKinesiology t={t} />} />
         <Route path="/breathworkers" element={<Breathwork providerEmail="samueljuansalgado@gmail.com" t={t} />} />

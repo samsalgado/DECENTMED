@@ -4,7 +4,6 @@ import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
 import summit from "../images copy/decentmedsummit.png";
 import SummitInfo from './infosummit';
-import lineup from "../images copy/lineup.png";
 import { Button } from 'react-bootstrap';
 import "../App.css";
 const InfoSummit = () => {
@@ -38,7 +37,6 @@ const InfoSummit = () => {
                 <Button className="custom-btn" href="https://www.patreon.com/posts/decentmed-summit-145873819" target="_blank">{t("Buy Summit")}</Button>  {/* Added Bootstrap Button */}
 
       </div>
-        <img className='gridimag' src={lineup} alt='Speaker lineup' />        
       <SummitInfo />
       <Speakers />
     </div>
