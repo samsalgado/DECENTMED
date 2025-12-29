@@ -67,7 +67,7 @@ const Topbar = () => {
           zIndex: 1000,
         }}
       >
-        <Navbar.Brand href="/" className="d-flex align-items-center">
+        <Navbar.Brand href="https://decentmed.org/" className="d-flex align-items-center">
           <img src={LOGO} className="Logo" alt="logo" />
         </Navbar.Brand>
 
@@ -88,7 +88,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="/summit"
+              href="https://decentmed.org/summit"
             >
               {t("Summit")}
             </Nav.Link>
@@ -97,7 +97,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="/telehealth"
+              href="https://decentmed.org/telehealth"
             >
               {t("Find Practitioner")}
             </Nav.Link>
@@ -106,7 +106,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="/blog"
+              href="https://decentmed.org/blog"
             >
               {t("Blogs")}
             </Nav.Link>
@@ -115,7 +115,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="/apoth"
+              href="https://decentmed.org/apoth"
             >
               {t("Apothecary")}
             </Nav.Link>
@@ -124,7 +124,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="/about"
+              href="https://decentmed.org/about"
             >
               {t("About Us")}
             </Nav.Link>
@@ -143,7 +143,7 @@ const Topbar = () => {
                 style={{ color: "white", transition: "0.2s" }}
                 onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
                 onMouseLeave={(e) => (e.target.style.color = "white")}
-                href="/signup"
+                href="https://decentmed.org/signup"
               >
                 {t("Sign Up")}
               </Nav.Link>
@@ -153,7 +153,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="/provider"
+              href="https://decentmed.org/provider"
             >
               {t("Provider")}
             </Nav.Link>

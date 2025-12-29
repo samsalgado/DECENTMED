@@ -65,78 +65,78 @@ const handleClick = () => {
   onClick={handleClick}
 >
   
-      <ul><NavLink to="/homeopathy">{t('Homeopathy')}
+      <ul><NavLink to="https://decentmed.org/homeopathy">{t('Homeopathy')}
       </NavLink>
       </ul>
-      <ul><NavLink to="/naturopathy">{t('Naturopathy')}
+      <ul><NavLink to="https://decentmed.org/naturopathy">{t('Naturopathy')}
       </NavLink>
       </ul>
-      <ul><NavLink to="/herbalmedicine">{t('Herbal Medicine')}
+      <ul><NavLink to="https://decentmed.org/herbalmedicine">{t('Herbal Medicine')}
       </NavLink>
       </ul>
       <ul>
-        <NavLink to="/detox">{t('Detox')}
+        <NavLink to="https://decentmed.org/detox">{t('Detox')}
         </NavLink>
       </ul>
        <ul>
-        <NavLink to="/functionalmedicine">{t('Functional Medicine')}
+        <NavLink to="https://decentmed.org/functionalmedicine">{t('Functional Medicine')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/nutrigenomics">{t('Nutrigenomics')}
+        <NavLink to="https://decentmed.org/nutrigenomics">{t('Nutrigenomics')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/mindset">{t('Mindset Coaching')}
+        <NavLink to="https://decentmed.org/mindset">{t('Mindset Coaching')}
         </NavLink>
       </ul>
 
       <ul>
-        <NavLink to="/breathwork">{t('Breathwork')}
+        <NavLink to="https://decentmed.org/breathwork">{t('Breathwork')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/hypnotherapy">{t('Hypnotherapy')}
+        <NavLink to="https://decentmed.org/hypnotherapy">{t('Hypnotherapy')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/acupuncture">{t('Acupuncture')}
+        <NavLink to="https://decentmed.org/acupuncture">{t('Acupuncture')}
         </NavLink>
       </ul>
        <ul>
-        <NavLink to="/applied-kinesiology">{t('Applied Kinesiology')}
+        <NavLink to="https://decentmed.org/applied-kinesiology">{t('Applied Kinesiology')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/transformationalcoaching">{t('Transformational Empowerment Coaching')}
+        <NavLink to="https://decentmed.org/transformationalcoaching">{t('Transformational Empowerment Coaching')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/chelation">{t('Chelation')}
+        <NavLink to="https://decentmed.org/chelation">{t('Chelation')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/stemcell">{t('Stem Cell')}
+        <NavLink to="https://decentmed.org/stemcell">{t('Stem Cell')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/ayurveda">{t('Ayurveda')}
+        <NavLink to="https://decentmed.org/ayurveda">{t('Ayurveda')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/nutrition">{t('Nutrition')}
+        <NavLink to="https://decentmed.org/nutrition">{t('Nutrition')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/chiropractic">{t('Chiropractic')}
+        <NavLink to="https://decentmed.org/chiropractic">{t('Chiropractic')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/prevent">{t('Preventive Wellness')}
+        <NavLink to="https://decentmed.org/prevent">{t('Preventive Wellness')}
         </NavLink>
       </ul>
       <ul>
-        <NavLink to="/meditation">{t('Meditation')}
+        <NavLink to="https://decentmed.org/meditation">{t('Meditation')}
         </NavLink>
       </ul>
     </NavDropdown>
