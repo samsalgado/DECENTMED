@@ -175,12 +175,6 @@ const {t} = useTranslation('common')
         name: `${t('Blackberry')}`
     },
     
-   
-    {
-        id:57,
-        videoUrl:"https://drive.google.com/file/d/1s17zt5RpHUTDUcOIc6xXvAwbpkhOCFni/preview",
-        name: `${t('Lily Magnolia')}`
-    },
     
     {
         id:59,
