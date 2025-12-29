@@ -24,6 +24,33 @@ const {t} = useTranslation('common')
     source: 'https://pfaf.org/user/Plant.aspx?LatinName=Abies+balsamea'
   },
   {
+    id:184,
+    image:Plants.Echinacea,
+    name:t("Echinacea"),
+    price:0.000734,
+    description:t("Echinacea is one of the world's most important medicinal herbs. Research shows that it has the ability to raise the body's resistance to bacterial and viral infections by stimulating the immune system[254]. It is also antibiotic and helps to relieve allergies[254]. Plants in this genus were probably the most frequently used of all North American Indian herbal remedies. They had a very wide range of applications and many of these uses have been confirmed by modern science. The plant has a general stimulatory effect on the immune system and is widely used in modern herbal treatments[222]. There has been some doubt over the ability of the body to absorb the medicinally active ingredients orally (intravenous injections being considered the only effective way to administer the plant), but recent research has demonstrated significant absorption from orally administered applications[222]. In Germany over 200 pharmaceutical preparations are made from Echinacea[222]. The roots and the whole plant are considered particularly beneficial in the treatment of sores, wounds, burns etc, possessing cortisone-like and antibacterial activity[222]. The plant was used by North American Indians as a universal application to treat the bites and stings of all types of insects[213]. An infusion of the plant was also used to treat snakebites[213]. The root is adaptogen, alterative, antiseptic, depurative, digestive, sialagogue[4, 21, 61, 165]. It is harvested in the autumn and dried for later use[238]. The plant has been used as a diaphoretic[213]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Echinacea for common cold, cough and bronchitis, fevers and cold, urinary tract infections, inflammation of the mouth and pharynx, increase resistance to infection, wounds and burns (see [302] for critics of commission E)."),
+    medrating:5,
+    source:'https://pfaf.org/user/Plant.aspx?LatinName=Echinacea'
+  },
+  {
+    id:185,
+    image:Plants.Goldenrod,
+    name:t("Goldenrod"),
+    price:0.0002320248,
+    description:t("Goldenrod is a safe and gentle remedy for a number of disorders. In particular, it is a valuable astringent remedy treating wounds and bleeding, whilst it is particularly useful in the treatment of urinary tract disorders, being used both for serious ailments such as nephritis and for more common problems such as cystitis[254]. The plant contains saponins that are antifungal and act specifically against the Candida fungus which is the cause of vaginal and oral thrush[238, 254]. It also contains rutin which is used to treat capillary fragility, and phenolic glycosides which are anti-inflammatory[238]. The leaves and flowering tops are anthelmintic, anti-inflammatory, antiseptic, aromatic, astringent, carminative, diaphoretic, mildly diuretic, febrifuge and stimulant[4, 7, 9, 21, 147, 165]. A good vulnerary herb, it has also proved of value when used internally in the treatment of urinary infections, chronic catarrh, skin diseases, influenza, whooping cough, bladder and kidney stones etc[4, 238]. Due to its mild action, goldenrod is used to treat gastro-enteritis in children[254]. It makes an excellent mouthwash in the treatment of thrush[7]. The plant is gathered in the summer and dried for later use[7]. The seed is anticoagulant, astringent and carminative[218]. A homeopathic remedy is made from the plant[9]. It is used in the treatment of kidney and bladder disorders, rheumatism and arthritis[9]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Solidago virgaurea for infection of the urinary tract, kidney & bladder stones (see [302] for critics of commission E)."),
+    medrating:3,
+    source:"https://pfaf.org/user/plant.aspx?latinname=solidago+virgaurea"
+  },
+  {
+    id:186,
+    image:Plants.Plantain,
+    name:t("Plantain"),
+    price:0.0002320248,
+    description:t("Common plantain is a safe and effective treatment for bleeding, it quickly staunches blood flow and encourages the repair of damaged tissue[254]. The leaves are astringent, demulcent, deobstruent, depurative, diuretic, expectorant, haemostatic and refrigerant[4, 7, 9, 21, 147, 165, 172, 238]. Internally, they are used in the treatment of a wide range of complaints including diarrhoea, gastritis, peptic ulcers, irritable bowel syndrome, haemorrhage, haemorrhoids, cystitis, bronchitis, catarrh, sinusitis, asthma and hay fever[238, 254]. They are used externally in treating skin inflammations, malignant ulcers, cuts, stings etc[4]. The heated leaves are used as a wet dressing for wounds, swellings etc[213, 222]. The root is a remedy for the bite of rattlesnakes, it is used in equal portions with Marrubium vulgare[207]. The seeds are used in the treatment of parasitic worms[213]. Plantain seeds contain up to 30% mucilage which swells up in the gut, acting as a bulk laxative and soothing irritated membranes[238]. Sometimes the seed husks are used without the seeds[238]. A distilled water made from the plant makes an excellent eye lotion[7]."),
+    medrating:3,
+    source:"https://pfaf.org/user/plant.aspx?LatinName=Plantago+major"
+  },
+  {
     id: 2,
     image: Plants.rhusglabra,
     name: t('Rhus Glabra'),
