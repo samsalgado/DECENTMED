@@ -74,9 +74,9 @@ return (
       <ul><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
       <ul><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
       <ul><NavLink to="https://decentmed.org/nutrigenomics">{t('Weight Loss')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/breath">{t('Insomnia')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/breath">{t('Stored Trauma')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/breath">{t('Stress')}</NavLink></ul>
+      <ul><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
+      <ul><NavLink to="https://decentmed.org/breathwork">{t('Stored Trauma')}</NavLink></ul>
+      <ul><NavLink to="https://decentmed.org/breathwork">{t('Stress')}</NavLink></ul>
       <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Subconscious Blocks')}</NavLink></ul>
       <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Fear')}</NavLink></ul>
       <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Low Self-Esteem')}</NavLink></ul>
