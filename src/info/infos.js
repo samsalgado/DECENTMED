@@ -28,7 +28,7 @@ const InfoSummit = () => {
       <div className='theecontainer'>
         <div>
           <img className='gridimag' src={summit} alt='' />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iNvwz2_FGSg?si=ERMvCxq0qY2FbhtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iNvwz2_FGSg?si=GPjYbA2nrKt6X4dl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div>
           
           </div>

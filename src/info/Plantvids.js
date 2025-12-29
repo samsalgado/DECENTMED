@@ -177,11 +177,6 @@ const {t} = useTranslation('common')
     
    
     {
-        id:56,
-        videoUrl:"https://www.youtube.com/embed/rHbqtcfKuZ8?si=NBeEQjUsbrthNfyx",
-        name: `${t('Ditch Lily')}`
-    },
-    {
         id:57,
         videoUrl:"https://drive.google.com/file/d/1s17zt5RpHUTDUcOIc6xXvAwbpkhOCFni/preview",
         name: `${t('Lily Magnolia')}`
