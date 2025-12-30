@@ -1,7 +1,7 @@
 import React from 'react';
 import './Info.css';
 import HealthFacts from './Health';
-import { Button } from 'react-bootstrap';
+//import { Button } from 'react-bootstrap';
 import BlueContainer from './deptcontainer';
 import WellnessInro from './wellness';
 import Values from './ourvalues';
@@ -9,18 +9,11 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const Info = () => {
   const { t } = useTranslation("common"); // Access translation function
-  const learnmore = () => {
-    window.location.href = 'https://decentmed.org/signup/provider'
-  }
-
   return (
     <div className='container'>
       <h1 className='title'>{t('DecentMed')}</h1>
       <WellnessInro />
       <BlueContainer />
-      <Button onClick={learnmore} className="custom-btn">
-  {t('Providers: Join Trusted Network')}
-</Button>
       <div className="title-container">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
       </div>

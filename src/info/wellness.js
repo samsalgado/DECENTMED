@@ -6,7 +6,10 @@ import { Button, Modal } from 'react-bootstrap';
 const WellnessInro = () => {
   const { t } = useTranslation("common"); 
     const [showModal, setShowModal] = useState(false);
-  /*const transcriptText = `
+  const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
+    /*const transcriptText = `
 Experience DecentMed - a video education portal connecting patients with providers. 
 All of the information comes from providers. Homeopathy, Naturopathy, Herbal medicine, Nutrigenomics, Mindset Coaching, empowerment. 
 We showcase all different types of coaching - somatic breathwork, hypnotherapy. We post provider studies to validate the effectiveness of their work and create a history of their work. 
@@ -23,9 +26,12 @@ At DecentMed, we are revolutionizing the health insurance game by offering stake
             {t("Medicine was never meant to be about survival alone. It was meant to support wellness, balance, and human potential. Our goal is vitality.")}
           </p>
           <p className='paragraph'>
-            {t("DecentMed connects people with holistic health practitioners, education, and regenerative therapies worldwide.")}
+            {t("DecentMed connects people with holistic health practitioners (all information stems from providers), education, and regenerative therapies worldwide.")}
           </p>
         </div>
+         <Button onClick={learnmore} className="custom-btn">
+          {t('Providers: Join Trusted Network')}
+        </Button>
       <br></br>
       <div className='video-container'>
       <iframe
