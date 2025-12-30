@@ -95,10 +95,11 @@
 
 import React from 'react';
 import './Footer.css';
-import Geyser from '../images copy/geyser.png';
+//import Geyser from '../images copy/geyser.png';
 import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
+import Inspire from "../images copy/Inspire.png";
 import LOGO from "../images copy/goklKk.png";
 import alignable from "../images copy/alignable.png";
 const Footers = () => {
@@ -182,14 +183,11 @@ const Footers = () => {
             className="geyser-link"
             style={{ marginTop: '15px' }}
           >
-            <img src={Geyser} className="geyserImgLarge" alt="Support DecentMed on Geyser Fund" />
-            <Button className="custom-btn">Donate via Geyser Fund</Button>
+            <img src={Inspire} className="geyserImgLarge" alt="Support DecentMed on Geyser Fund" />
+            <Button className="custom-btn">Support our Charity of Choice</Button>
           </a>
         </div>
-
       </div>
-
-      {/* ===== Footer Bottom ===== */}
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} DecentMed — All Rights Reserved.</p>
       </div>
