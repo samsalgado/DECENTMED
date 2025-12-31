@@ -61,7 +61,7 @@ const SignUp = () => {
     navigate('/stripepay', { 
       state: { 
         tier: tierFromPricing || "basic",
-        amount: amountFromPricing || 29.99
+        amount: amountFromPricing || 500
       } 
     });
   });
@@ -98,7 +98,7 @@ const SignUp = () => {
     navigate('/stripepay', { 
       state: { 
         tier: tierFromPricing || "basic",
-        amount: amountFromPricing || 29.99
+        amount: amountFromPricing || 500
       } 
     });
   });
