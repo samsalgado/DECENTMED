@@ -90,9 +90,6 @@
 // };
 
 // export default Footers;
-
-
-
 import React from 'react';
 import './Footer.css';
 //import Geyser from '../images copy/geyser.png';
@@ -104,7 +101,6 @@ import LOGO from "../images copy/goklKk.png";
 import alignable from "../images copy/alignable.png";
 const Footers = () => {
   const { t } = useTranslation('common');
-
   return (
     <footer className="footer">
       <div className="footer-container">

@@ -3,7 +3,9 @@ import './acu.css';
 import './Info.css';
 import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
+import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
+import Confidence from "./confidence";
 import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.JPG";
 import { useTranslation } from "react-i18next";
 const Info9 = () => {
@@ -345,10 +347,13 @@ possible for you. So borrow our belief because so many clients have gotten incre
           <p className="pr">{t("I’m Priscilla, a mindset coach passionate about helping individuals and entrepreneurs understand the transformative power of their mindset and how it directly impacts their results in all areas of their life so they can create their lives by design.")}</p>
           <p className="pr">{t("boy")}</p>
           <p className="pr">{t("paulette")}</p>
+          <p className="pr"><h3>{t("Bethany Stone: Overcoming Corporate Burnout")}</h3></p>
+          <p className="pr">{t("wildflower")}</p>
         <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
          {t("Try Coaching")}
         </Button>        
         </div>
+        
         <iframe
           className="centered-video"
           src="https://www.youtube.com/embed/ya7yJQAjhi8?si=bDZPQpX5ROFThuv1"
@@ -361,9 +366,14 @@ possible for you. So borrow our belief because so many clients have gotten incre
             height: '350px'
           }}
         />
+        
         </div>
+        
       </div>
-            <Button className="custom-btn" href="https://sourceapp.dynamitelifestyle.com/thesource" target="_blank">{t('Find Out How Priscilla Can Help You reach your Potential')}</Button>
+       <Button className="custom-btn" onClick={() => setShowModal(true)}>
+            {t("Transcript")}
+          </Button>
+            <Button className="custom-btn" href="https://www.thrivingbynature.com/" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
       <br></br>
               <style jsx global>{`
           .transcriptt-modal-herbal .modal-dialog {
@@ -417,11 +427,10 @@ possible for you. So borrow our belief because so many clients have gotten incre
             }
           }
         `}</style>
-
+        <a href="https://calendly.com/thrivingbynaturecoaching/30min?" alt="Thriving by Nature">
+        <img className='gridimag' src={thrivingbynature} alt='21 Day Challenge' />
+        </a>
         <div>
-          <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
         </div>
         {showModal &&
   ReactDOM.createPortal(
@@ -473,6 +482,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         </a>
         <br></br>
         <Benefitts />
+        <Confidence />
         </div>
     )
 }
