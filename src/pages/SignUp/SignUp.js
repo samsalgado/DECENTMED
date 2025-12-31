@@ -49,22 +49,24 @@ const SignUp = () => {
       );
 
       if (res.data.token) {
-        localStorage.setItem('token', res.data.token);
+  localStorage.setItem('token', res.data.token);
 
-        Swal.fire({
-          icon: 'success',
-          title: 'Signup Successful!',
-          text: 'Welcome to our platform!',
-          confirmButtonColor: '#027360',
-          confirmButtonText: 'OK'
-        }).then(() => {
-          if (fromPricing && tierFromPricing && amountFromPricing) {
-            navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
-          } else {
-            navigate("/");
-          }
-        });
-      }
+  Swal.fire({
+    icon: 'success',
+    title: 'Signup Successful!',
+    text: 'Please complete your subscription to activate your provider account.',
+    confirmButtonColor: '#027360',
+    confirmButtonText: 'Continue to Payment'
+  }).then(() => {
+    navigate('/stripepay', { 
+      state: { 
+        tier: tierFromPricing || "basic",
+        amount: amountFromPricing || 29.99
+      } 
+    });
+  });
+}
+
 
     } catch (err) {
       console.log("Error response:", err.response?.data);
@@ -84,20 +86,24 @@ const SignUp = () => {
         );
 
         if (res.data.token) {
-          localStorage.setItem('token', res.data.token);
-          Swal.fire({
-            icon: 'success',
-            title: 'Google Signin Successful!',
-            confirmButtonColor: '#027360',
-            confirmButtonText: 'OK'
-          }).then(() => {
-            if (fromPricing && tierFromPricing && amountFromPricing) {
-              navigate('/stripepay', { state: { tier: tierFromPricing, amount: amountFromPricing } });
-            } else {
-              navigate('/');
-            }
-          });
-        }
+  localStorage.setItem('token', res.data.token);
+
+  Swal.fire({
+    icon: 'success',
+    title: 'Google Signin Successful!',
+    text: 'Please complete your subscription to activate your provider account.',
+    confirmButtonColor: '#027360',
+    confirmButtonText: 'Continue to Payment'
+  }).then(() => {
+    navigate('/stripepay', { 
+      state: { 
+        tier: tierFromPricing || "basic",
+        amount: amountFromPricing || 29.99
+      } 
+    });
+  });
+}
+
       } catch (err) {
         console.error("Google signin failed:", err);
         Swal.fire({
