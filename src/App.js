@@ -61,6 +61,7 @@ import { Chiropractic } from './pages/Chiropractic';
 import { Chelation } from './pages/Chelation';
 import { Telehealth } from './pages/Telehealth';
 import Blog3 from './pages/blogs/blog3';
+import ChooseProviderTier from './pages/SignUp/ChooseProviderTier';
 import Blog4 from './pages/blogs/blog4';
 import { Apoth } from './pages/Apoth';
 import { Chiro } from './pages/ChiroPRACT';
@@ -128,6 +129,7 @@ function App() {
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/summit" element={<Summit t={t} />} />
         <Route path="/akpract" element={<AKPract t={t} />} />
+        <Route path="/choose-provider-tier" element={<ChooseProviderTier />} />
         <Route path="/holisticbusinessplan" element={<FileUploadDownload t={t} />} />
         <Route path="/acupuncturists" element={<Acupract t={t} />} />
         <Route path="/blog" element={<BlogPage t={t} />} />
