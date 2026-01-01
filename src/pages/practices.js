@@ -7,8 +7,6 @@ import Pricing from './pricingtiers';
 //import price from '../images copy/PRICETIERRS.png';
 import { Button } from 'react-bootstrap';
 import Reviews from '../info/reviews';
-import offer from "../images copy/offerr.png";
-
 const Practice = () => {
   const { t } = useTranslation("common");
   return (
@@ -16,9 +14,7 @@ const Practice = () => {
         <div className='theecontaine'>
 <br></br>
 <br></br>
-
        <div className="signup-container">
-
             <iframe class="rumble" title="signup" height="360"
               src="https://www.youtube.com/embed/QgPSbbJTmbM?si=zwssl9LVDH_xWLXp" frameborder="0" allowfullscreen></iframe>
           </div>
@@ -27,7 +23,6 @@ const Practice = () => {
               {t("Provider Onboarding Call")}
             </Button>
           </div>
-          <img src={offer} className='gridimag' alt='offer' />
           <Pricing />
           <Reviews />
         </div>

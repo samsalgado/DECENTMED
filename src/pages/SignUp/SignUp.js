@@ -19,12 +19,10 @@ const SignUp = () => {
   const [loading, setLoading] = useState(false);
   const { t } = useTranslation('common');
   const navigate = useNavigate();
-
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
     setError('');
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
