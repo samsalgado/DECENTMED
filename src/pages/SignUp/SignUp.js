@@ -44,29 +44,35 @@ const SignUp = () => {
     try {
       const res = await axios.post(
         'https://decentmed-server.vercel.app/users',
-        user,
+        {
+          name: user.name,
+          email: user.email,
+          password: user.password,
+          code: user.code,
+          role: "provider",
+          createdAt: new Date().toISOString()
+        },
         { headers: { 'Content-Type': 'application/json' } }
       );
 
       if (res.data.token) {
-  localStorage.setItem('token', res.data.token);
+        localStorage.setItem('token', res.data.token);
 
-  Swal.fire({
-    icon: 'success',
-    title: 'Signup Successful!',
-    text: 'Please complete your subscription to activate your provider account.',
-    confirmButtonColor: '#027360',
-    confirmButtonText: 'Continue to Payment'
-  }).then(() => {
-    navigate('/stripepay', { 
-      state: { 
-        tier: tierFromPricing || "Tier 1",
-        amount: amountFromPricing || 500
-      } 
-    });
-  });
-}
-
+        Swal.fire({
+          icon: 'success',
+          title: 'Signup Successful!',
+          text: 'Please complete your subscription to activate your provider account.',
+          confirmButtonColor: '#027360',
+          confirmButtonText: 'Continue to Payment'
+        }).then(() => {
+          navigate('/stripepay', { 
+            state: { 
+              tier: tierFromPricing || "Tier 1",
+              amount: amountFromPricing || 500
+            } 
+          });
+        });
+      }
 
     } catch (err) {
       console.log("Error response:", err.response?.data);
@@ -86,23 +92,23 @@ const SignUp = () => {
         );
 
         if (res.data.token) {
-  localStorage.setItem('token', res.data.token);
+          localStorage.setItem('token', res.data.token);
 
-  Swal.fire({
-    icon: 'success',
-    title: 'Google Signin Successful!',
-    text: 'Please complete your subscription to activate your provider account.',
-    confirmButtonColor: '#027360',
-    confirmButtonText: 'Continue to Payment'
-  }).then(() => {
-    navigate('/stripepay', { 
-      state: { 
-        tier: tierFromPricing || "Tier 1",
-        amount: amountFromPricing || 500
-      } 
-    });
-  });
-}
+          Swal.fire({
+            icon: 'success',
+            title: 'Google Signin Successful!',
+            text: 'Please complete your subscription to activate your provider account.',
+            confirmButtonColor: '#027360',
+            confirmButtonText: 'Continue to Payment'
+          }).then(() => {
+            navigate('/stripepay', { 
+              state: { 
+                tier: tierFromPricing || "Tier 1",
+                amount: amountFromPricing || 500
+              } 
+            });
+          });
+        }
 
       } catch (err) {
         console.error("Google signin failed:", err);
@@ -133,94 +139,89 @@ const SignUp = () => {
   return (
     <>
       <Topbar />
-      <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+      <div style={{textAlign: 'center', marginTop: '80px', paddingTop: '2rem'}}>
+        <h1>{t("Provider Registration")}</h1>
+        <br /><br /><br />
 
-            <h1>{t("Provider Registration")}</h1>
-<br></br>
-<br></br>
-<br></br>
-      <div className="auth-form-container">
-        <div className="auth-form-wrapper">
-          <button
-            type="button"
-            className="close-btn"
-            onClick={() => navigate("/")}
-          >
-            ❌
-          </button>
+        <div className="auth-form-container">
+          <div className="auth-form-wrapper">
+            <button
+              type="button"
+              className="close-btn"
+              onClick={() => navigate("/")}
+            >
+              ❌
+            </button>
 
-          <form className="auth-form" onSubmit={handleSubmit}>
-            <h2 className="compact-heading">
-              {t("Join DecentMed as a Holistic Healthcare Provider")}
-            </h2>
-            <h5 className="compact-heading">
-              {t("Create Provider account to offer holistic and integrative care through DecentMed")}
-            </h5>
-            <p>
-              {t("An active subscription is required to publish and maintain your provider profile.")}
-            </p>
+            <form className="auth-form" onSubmit={handleSubmit}>
+              <h2 className="compact-heading">
+                {t("Join DecentMed as a Holistic Healthcare Provider")}
+              </h2>
+              <h5 className="compact-heading">
+                {t("Create Provider account to offer holistic and integrative care through DecentMed")}
+              </h5>
+              <p>
+                {t("An active subscription is required to publish and maintain your provider profile.")}
+              </p>
 
-            {error && <p className="error">{error}</p>}
-            {loading && <div className="loader"></div>}
+              {error && <p className="error">{error}</p>}
+              {loading && <div className="loader"></div>}
 
-            <input
-              type="text"
-              name="name"
-              placeholder={t("Name")}
-              value={user.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder={t("Email")}
-              value={user.email}
-              onChange={handleChange}
-              required
-            />
-
-            <div className="password-field">
               <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                placeholder={t("Password")}
-                value={user.password}
+                type="text"
+                name="name"
+                placeholder={t("Name")}
+                value={user.name}
                 onChange={handleChange}
                 required
               />
-              <span
-                className="eye-icon"
-                onClick={() => setShowPassword(!showPassword)}
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </span>
-            </div>
+              <input
+                type="email"
+                name="email"
+                placeholder={t("Email")}
+                value={user.email}
+                onChange={handleChange}
+                required
+              />
 
-            <input
-              type="text"
-              name="code"
-              placeholder={t("Affiliate Code (optional)")}
-              value={user.code}
-              onChange={handleChange}
-            />
+              <div className="password-field">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  placeholder={t("Password")}
+                  value={user.password}
+                  onChange={handleChange}
+                  required
+                />
+                <span
+                  className="eye-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+              </div>
 
-            <button className="custom-btn" type="submit" disabled={loading}>
-              {loading
-                ? <>{t("Create Provider Account")}...</>
-                : <>{t("Create Provider Account")}</>
-              }
-            </button>
+              <input
+                type="text"
+                name="code"
+                placeholder={t("Affiliate Code (optional)")}
+                value={user.code}
+                onChange={handleChange}
+              />
 
-            <p>
-              {t("Already have an account?")}{" "}
-              <Link to="/signin">{t("Sign In")}</Link>
-            </p>
-            <div className="google-signup-wrapper">
-    <div id="googleSignUpDiv"></div>
-  </div>
-          </form>
+              <button className="custom-btn" type="submit" disabled={loading}>
+                {loading ? `${t("Create Provider Account")}...` : t("Create Provider Account")}
+              </button>
+
+              <p>
+                {t("Already have an account?")}{" "}
+                <Link to="/signin">{t("Sign In")}</Link>
+              </p>
+
+              <div className="google-signup-wrapper">
+                <div id="googleSignUpDiv"></div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
