@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import tier0 from '../../images copy/0.png';
-import tier2 from '../../images copy/pp.png';
-import tier3 from "../../images copy/TIER2.png";
+import tier0 from "../../cards/0.png";
+import tier2 from "../../cards/pp.png";
+import tier3 from "../../cards/2.png";
 import { useTranslation } from 'react-i18next';
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');
