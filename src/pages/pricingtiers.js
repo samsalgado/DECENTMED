@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import tier2 from '../images copy/pp.png';
-import tier3 from "../images copy/TIER2.png";
+import tier2 from '../cards/pp.png';
+import tier3 from "../cards/2.png";
 import '../info/Info.css';
-import tier0 from "../images copy/0.png";
+import tier0 from "../cards/0.png";
 
 export function Pricing() {
   const { t } = useTranslation('common');
