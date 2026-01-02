@@ -125,6 +125,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
           <p className='pr'>{t("- Release stress and burnout")}</p>
           <p className='pr'>{t("- Embrace self-care without guilt")}</p>
           <p className='pr'>{t("- Live authentically and intuitively")}</p>     
+          {//<p><h3>{t("Jessica Javens: Transformational Coaching")}</h3></p>    
+}
           <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
         </div>
 <iframe

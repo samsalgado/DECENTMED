@@ -375,6 +375,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
           </Button>
             <Button className="custom-btn" href="https://www.thrivingbynature.com/" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
       <br></br>
+
               <style jsx global>{`
           .transcriptt-modal-herbal .modal-dialog {
             margin: 0.5rem;
@@ -427,6 +428,19 @@ possible for you. So borrow our belief because so many clients have gotten incre
             }
           }
         `}</style>
+        <iframe
+          className="centered-video"
+          src="https://www.youtube.com/embed/9pUjEybptCQ?si=TTYSFG3DjqPRagLk"
+          frameBorder="0"
+          allowFullScreen
+          title="YouTube video player"
+          style={{
+            maxWidth: '575px',
+            width: '100%',
+            height: '350px'
+          }}
+        />
+       
         <a href="https://calendly.com/thrivingbynaturecoaching/30min?" alt="Thriving by Nature">
         <img className='gridimag' src={thrivingbynature} alt='21 Day Challenge' />
         </a>

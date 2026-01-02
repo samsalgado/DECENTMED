@@ -8,6 +8,8 @@ import obasi from "../images copy/obasi.png";
 import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import lifewave from '../images copy/lifewave.png';
 import linda from "../images copy/linda.png";
+import purium from "../images copy/purium.png";
+import forever from "../images copy/forever.png";
 import { useTranslation } from 'react-i18next';
 export function Shop() {
 const { t } = useTranslation('common');
@@ -192,6 +194,28 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
      
 </div>
     </div>
+    
+  </div>
+    <div className="row">
+    <div className="col-md-6">
+      <h2>{t("Purium Product Bundle")}</h2>
+      <a href='https://ishoppurium.com/homepage?giftcard=JessicaJavens'>
+    <figure>
+        <img 
+          src={purium} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Buy")}</figcaption>
+        </figure>
+      </a>
+      <div>   
+</div>
+    </div>
   </div>
   <div className="row">
     <div className="col-md-6">
@@ -212,6 +236,28 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </a>
       <p>
         {t("Harness your body's flow of energy with X39.")}
+      </p>
+    </div>
+  </div>
+   <div className="row">
+    <div className="col-md-6">
+    <h2>{t("Forever Living Aloe Vera")}</h2>
+    <a href='https://foreverliving.com/shop/usa/en-us/products'>
+    <figure>
+        <img 
+          src={forever} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Buy Now")}</figcaption>
+        </figure>
+      </a>
+      <p>
+        {t("weeknd")}
       </p>
     </div>
   </div>

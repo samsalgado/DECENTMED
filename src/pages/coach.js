@@ -8,6 +8,7 @@ import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
 import Lynn from "../cards/lynn.png";
 import Kristina from "../images copy/kristina.png";
+import Jessica from "../cards/jessica.jpg";
 import Priscilla from '../cards/priscilla.jpg';
 import jimp from '../cards/jimp.png';
 import { useTranslation } from 'react-i18next';
@@ -21,6 +22,7 @@ export function Coaching() {
   const [showJohn, setShowJohn] = useState(false);
   const [showLynn, setShowLynn] = useState(false);
   const [showJim, setShowJim] = useState(false);
+  const [showJessica, setShowJessica] = useState(false);
   const [showPriscilla, setShowPriscilla] = useState(false);
   const [showKristina, setShowKristina] = useState(false);
   const [showRamona, setShowRamona] = useState(false);
@@ -79,6 +81,7 @@ const handleSearch = () => {
     setShowJohn(true);
     setShowLynn(true);
     setShowPriscilla(true);
+    setShowJessica(true);
     setShowKristina(true);
     setShowJim(true);
     setShowRamona(true);
@@ -114,7 +117,37 @@ const indiaTerms = [
     'kenya', 'nairobi', 'mombasa', 'kisumu', 'nakuru', 'eldoret',
     'africa', 'east africa', 'uganda', 'tanzania', 'rwanda', 'ethiopia'
   ].map(term => term.toLowerCase());
-
+ const brazil = [
+  // Major Cities
+  "são paulo", "rio de janeiro", "brasília", "salvador", "fortaleza",
+  "belo horizonte", "manaus", "curitiba", "recife", "porto alegre",
+  "belém", "goiânia", "guarulhos", "campinas", "são luís",
+  "são gonçalo", "maceió", "duque de caxias", "natal", "teresina",
+  "campo grande", "nova iguaçu", "são bernardo do campo", "joão pessoa",
+  "santo andré", "osasco", "jaboatão dos guararapes", "são josé dos campos",
+  "ribeirão preto", "uberlândia", "sorocaba", "contagem", "aracaju",
+  "feira de santana", "cuiabá", "joinville", "juiz de fora", "londrina",
+  "aparecida de goiânia", "ananindeua", "porto velho", "serra", "niterói",
+  "caxias do sul", "macapá", "campos dos goytacazes", "florianópolis",
+  "vila velha", "são joão de meriti", "mauá", "betim", "carapicuíba",
+  
+  // States
+  "acre", "alagoas", "amapá", "amazonas", "bahia", "ceará",
+  "distrito federal", "espírito santo", "goiás", "maranhão",
+  "mato grosso", "mato grosso do sul", "minas gerais", "pará",
+  "paraíba", "paraná", "pernambuco", "piauí", "rio de janeiro",
+  "rio grande do norte", "rio grande do sul", "rondônia", "roraima",
+  "santa catarina", "são paulo", "sergipe", "tocantins",
+  
+  // Regions
+  "norte", "nordeste", "centro-oeste", "sudeste", "sul",
+  "amazônia", "pantanal", "cerrado", "caatinga", "mata atlântica",
+  "pampa", "sertão",
+  
+  // Notable Areas/Territories
+  "fernando de noronha", "ilha de marajó", "arquipélago de abrolhos",
+  "ilhabela", "ilha grande", "ilha do mel"
+].map(term => term.toLowerCase());
   const usaTerms = [
     'usa', 'united states', 'america', 'us', 'connecticut', 'ct', 'darien',
     'stamford', 'norwalk', 'westport', 'new york', 'ny', 'new jersey', 'nj',
@@ -131,7 +164,7 @@ const indiaTerms = [
   ].map(term => term.toLowerCase());
 
   const lowerCaseLocation = capitalizedLocation.toLowerCase();
-
+  const isBrazil = brazil.some(term => lowerCaseLocation.includes(term));
   const isIndia = indiaTerms.some(term => lowerCaseLocation.includes(term));
   const isUK = ukTerms.some(term => lowerCaseLocation.includes(term));
   const isKenya = kenyaTerms.some(term => lowerCaseLocation.includes(term));
@@ -163,6 +196,7 @@ const indiaTerms = [
   setShowKristina(isUSA || isFlorida); // Show for any USA location
   setShowRamona(isFlorida || isUSA);
   setShowJim(isNV || isUSA);
+  setShowJessica(isUSA || isBrazil);
   setShowLynn(isCanada || isUSA); 
   setShowResults(true);
 };
@@ -317,6 +351,58 @@ const indiaTerms = [
                           <div className="col-md-12 mt-4">
                             <Button className="custom-btn" href="https://www.reclaimingyourlifeandjoy.com/consultation-call-application" target="_blank">{t('Contact')}</Button>
                           </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+   const renderJessica = () => (
+    showJessica && (
+      <div className="row mb-4" key="ramona">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={Jessica} 
+                    alt="Jessica Javens" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Glow Inside Out')}</h2>
+                  <p className="text-muted mb-2">{t("Jessica Javens Life Mastery Consultant & Wellness Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("USA & Brazil")}
+                  </p>
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("Florida")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Life Master")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Helping people overcome challenges and unlock their true potential.")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Holistic well-being")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("jessica")}
+                  </p>              
+                </div>
+                <div className="col-md-3 text-end">
+                  <a 
+                    href="https://jessicajavens.com/glow-inside-out.html"  
+                    className="btn btn-outline-primary"
+                  >
+                    {t("Contact")}
+                  </a>
                 </div>
               </div>
             </div>
@@ -621,6 +707,7 @@ const renderCoachesInOrder = () => {
     coaches.push(renderRamona());
     coaches.push(renderJim());
     coaches.push(renderJohn());
+    coaches.push(renderJessica());
     coaches.push(renderPriscilla());
     coaches.push(renderAnil());
   } else if (regionPriority === 'uk') {
@@ -648,7 +735,10 @@ const renderCoachesInOrder = () => {
     coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderJim());
-  } else {
+  } else if (regionPriority === 'brazil') {
+        coaches.push(renderJessica());
+  } 
+  else {
     // Global/default order
     coaches.push(renderJohn());
     coaches.push(renderPriscilla());
@@ -795,7 +885,6 @@ const renderCoachesInOrder = () => {
             </div>
           )}
         </div>
-
         <footer>
           <Footer />
         </footer>
