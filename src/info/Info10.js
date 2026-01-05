@@ -1,9 +1,14 @@
 import React from "react";
 import './acu.css'; 
 import './Info.css';
+import event0 from "../images copy/event0.png";
 import event from "../images copy/events.png";
 import event1 from "../images copy/event1.png";
 import event2 from "../images copy/event2.png";
+import event3 from "../images copy/evnt.png";
+import event4 from "../images copy/event4.png";
+import event5 from "../images copy/event5.png";
+import event6 from "../images copy/cistern.png";
 import { Button } from'react-bootstrap';
 import HealingBen from "./healben";
 import { useTranslation } from "react-i18next";
@@ -84,6 +89,22 @@ const {t} = useTranslation('common')
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
+  
+   <a href="https://buffalobayou.org/event/2025-light-sound-meditation-cistern/" alt="Thriving by Nature">
+        <img className='gridimag' src={event0} alt='21 Day Challenge' />
+        </a>
+         <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
+        <img className='gridimag' src={event3} alt='21 Day Challenge' />
+        </a>
+         <a href="https://fareharbor.com/embeds/book/buffalobayou/items/246138/calendar/2021/04/?flow=404814&fbclid=IwAR06_Hdi53MrbqsSv6pl2t1zOLtgXAhn_bcsdUjGxv8yCUB2cJjYD60r_dI&full-items=yes" alt="Thriving by Nature">
+        <img className='gridimag' src={event4} alt='21 Day Challenge' />
+        </a>
+         <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
+        <img className='gridimag' src={event5} alt='21 Day Challenge' />
+        </a>
+         <a href="https://fareharbor.com/embeds/book/buffalobayou/items/246138/calendar/2026/01/?flow=404814&fbclid=IwAR06_Hdi53MrbqsSv6pl2t1zOLtgXAhn_bcsdUjGxv8yCUB2cJjYD60r_dI&full-items=yes" alt="Thriving by Nature">
+        <img className='gridimag' src={event6} alt='21 Day Challenge' />
+        </a>
         <a href="https://www.eventbrite.com/e/walking-the-path-of-peace-a-transformative-meditation-journey-tickets-1979217173846" alt="Thriving by Nature">
         <img className='gridimag' src={event} alt='21 Day Challenge' />
         </a>
