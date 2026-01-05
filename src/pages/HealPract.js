@@ -3,12 +3,9 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect, useState } from 'react';
-import Stacy from '../cards/stacy.png';
-import Saumil from '../cards/Saumil.png';
-import stacyservices from "../cards/stacyservices.png";
-import Yogi from '../cards/yogiSanjivana.jpg';
-import { useTranslation } from 'react-i18next';
-export function AYPract() {
+import Saumil from '../cards/Saumil.png'
+import { useTranslation } from 'react-i18next'
+export function HealPract() {
   const { t } = useTranslation('common');
   const [userLocation, setUserLocation] = useState('');
   const [filteredPractitioners, setFilteredPractitioners] = useState([]);
@@ -16,25 +13,10 @@ export function AYPract() {
 
   // Define practitioners data
   const practitioners = [
-    {
-      id: 1,
-      name: t('Stacy Theodossin - The Healing Goddess'),
-      title: t("Healing Goddess"),
-      location: "Detroit, Michigan, USA",
-      availability: t("Telehealth Available Worldwide"),
-      availabilityType: "telehealth",
-      image: Stacy,
-      services:stacyservices,
-      website:`<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" background-color:#c9d4b8 src="https://form.carepatron.com/Forms/W2P9db6rKWDS7Botx?&e=i" style="border:0;"></iframe></div>`,
-      embedCode: `<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px;background-color:#c9d4b8"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" src="https://form.carepatron.com/Forms/W2P9db6rKWDS7Botx?&e=i" style="border:0;"></iframe></div>`,      description: t("after_stacy_graduated"),
-      video: "https://www.youtube.com/embed/ZaEGTAKvhSs?si=hlMEbykkS5kWNywN",
-      servesGlobally: true,
-      countries: ["USA", "Canada", "UK", "Australia", "worldwide"]
-    },
      {
       id: 1,
       name: t('Saumil Manek'),
-      title: t("Saum"),      
+      title: t("Saum"),
       location: "Houston, Texas, USA",
       availability: t("Available Nationwide"),
       availabilityType: "telehealth",
@@ -45,21 +27,7 @@ export function AYPract() {
       description: t("Saumil and Lillian Manek are the founders and lead facilitators of Union is Creation, a Houston-based wellness organization specializing in sound healing, meditation, and mindful movement. Together, they have guided thousands of participants through restorative experiences designed to support stress management, nervous system reset, and emotional well-being. Their work is especially tailored for professionals operating in high-performance and high-stress environments, including healthcare, corporate, and community settings."),
       servesGlobally: true,
       countries: ["USA"]
-    },
-    {
-      id: 2,
-      name: t('Yogi Sanji - (Sanjivana)'),
-      title: t("Yogi Sanjivana"),
-      location: "India",
-      availability: t("International Sessions Available"),
-      availabilityType: "international",
-      image: Yogi,
-      website: "https://sanjivana.com/",
-      embedCode:`<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" src="https://form.carepatron.com/Forms/ACHhOOdCBO7ckKYPU?&e=i" style="border:0;"></iframe></div>`,
-      description: t("My name is Yogi Sanji (Sanjivana), and my expertise is meditation and spiritual mentoring. I am a former monk of 20 years and have extensive experience teaching meditation to individuals and large groups. Meditation is my passion, interest, and life. I help people reach their goals of happiness, peace, and liberation through the practice of meditation and mindfulness. I teach meditation based on ancient traditions and doctrines which include deep insights, concentration, mindfulness, relaxation, and healing meditations. Sanjivana Kularathna - Serenity Meditations Meditation Teacher, Spiritual- Counselor, Therapist, Tutor, Mentor, Life Coach Energy work healing Working for Charities, Suicide prevention , Trauma Recovery , Rehabilitation, Sober Therapy and rebuilding lives."),
-      servesGlobally: true,
-      countries: ["India", "USA", "Canada", "UK", "Australia", "worldwide"]
-    }
+    }      
   ];
 
   useEffect(() => {
@@ -109,8 +77,8 @@ export function AYPract() {
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Ayurveda Near Me")}</title>  
-          <meta name="description" content={t("Ayurveda near me? Look no further than great ayurvedists that can assist you holistically, and provide you wholeness.")} />
+          <title>{t("Sound Bowl Healing Near Me")}</title>  
+          <meta name="description" content={t("Seeking sound bowl healing near me? Look no further than great sound healers that can assist you holistically, and provide you wholeness.")} />
         </Helmet>
 
         <header>
@@ -119,7 +87,7 @@ export function AYPract() {
 
         <div className="container">
           <h1 style={{ fontFamily: 'sans-serif' }}>
-            {t("Find an Ayurvedic Medical Practitioner Near You")}
+            {t("Find Sound Bowl Healing Near You")}
           </h1>
 
           {/* Location Search Section */}
@@ -284,7 +252,6 @@ export function AYPract() {
                     </button>
                   )}
                 </div>
-
                 {practitioner.services && (
                   <img src={practitioner.services} style={{
                         maxWidth: '100%',

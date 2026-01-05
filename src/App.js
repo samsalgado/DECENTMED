@@ -9,6 +9,8 @@ import Ivermectin from './pages/blogs/ivermectin';
 import Hoxsey from './pages/blogs/hoxsey';
 import { Prevent } from './pages/Prevent';
 import Wrapper from './info/Wrapper';
+import { HealPract } from './pages/HealPract';
+import { Soundhealing } from './pages/soundhealing';
 //<Route path="/lynn" element={<Lynn t={t} />} />
 import { Func } from './pages/Func';
 import {Summit} from './pages/Summit';
@@ -111,6 +113,8 @@ function App() {
       <SignupPrompt></SignupPrompt>
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
+        <Route path="/soundhealing" element={<Soundhealing />} />
+        <Route path="/soundhealers" element={<HealPract />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/naturopathylane" element={<Mike t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
