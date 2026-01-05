@@ -1,14 +1,14 @@
 import React from "react";
 import '../App.css';
 import para from '../images copy/para.png';
-import focus from '../images copy/focus.png';
-import img3 from '../images copy/stress.jpg';
-import vibe from '../images copy/vibe.png';
+import focus from '../images copy/no.png';
+import img3 from '../images copy/sounds.png';
+import vibe from '../images copy/tension.png';
 import serene from '../images copy/serene.png';
-import support from '../images copy/peace.png';
-import selfcare from "../images copy/selfcare.png";
+import support from '../images copy/supportt.png';
+import selfcare from "../images copy/self.png";
 import { useTranslation } from "react-i18next";
-import img6 from '../images copy/img6.png';
+import img6 from '../images copy/mental.png';
 function Healben() {
     const { t } = useTranslation('common');
     return (
