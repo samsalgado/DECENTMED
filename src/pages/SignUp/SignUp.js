@@ -123,6 +123,7 @@ const SignUp = () => {
       <div style={{ textAlign: 'center', marginTop: '80px', paddingTop: '2rem' }}>
         <h1>{t("Provider Registration")}</h1>
         <br></br>
+        <br></br>
         <div className="auth-form-container">
           <div className="auth-form-wrapper">
             <button
