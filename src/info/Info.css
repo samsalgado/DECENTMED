@@ -358,11 +358,13 @@ padding: 30px;
   justify-content: center;
   text-align: center;
 }
-
+.collapsible-triggger { display: table-cell; width: 100%; padding: 16px; font-size: 1.2rem; font-weight: bold; text-align: left; vertical-align: middle; background-color: #f0f0f0; color: #2f4f2f; border-bottom: 1px solid #ddd; }
 .collapsibles-table {
   width: 100%;
 }
-
+.collapsible-triggger:hover {
+  color: #09b350;
+}
 .collapsible-trgger { display:inline; align-items: center; justify-content: center; width: 200px; padding: 10px; font-weight: bold; font-size: 16px; color: #2f4f2f; background-color: #f0f0f0; text-align:justify; cursor: pointer; }
 
 .collapsible-trigger:hover {
