@@ -5,6 +5,10 @@ import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
 import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
+import group from "../images copy/group.png";
+import europe from "../images copy/europe.png";
+import bethanyspeaks from "../images copy/bethanyspeaks.png";
+import specialoffer from "../images copy/specialoffer.png";
 import Confidence from "./confidence";
 import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.JPG";
 import { useTranslation } from "react-i18next";
@@ -443,6 +447,18 @@ possible for you. So borrow our belief because so many clients have gotten incre
        
         <a href="https://calendly.com/thrivingbynaturecoaching/30min?" alt="Thriving by Nature">
         <img className='gridimag' src={thrivingbynature} alt='21 Day Challenge' />
+        </a>
+         <a href="https://www.thrivingbynature.com/special-offer" alt="Thriving by Nature">
+        <img className='gridimag' src={specialoffer} alt='21 Day Challenge' />
+        </a>
+         <a href="https://calendly.com/thrivingbynaturecoaching/growth-mindset-group" alt="Thriving by Nature">
+        <img className='gridimag' src={group} alt='Growth Mindset Group' />
+        </a>
+         <a href="https://calendly.com/thrivingbynaturecoaching/speaker-inquiry-booking" alt="Thriving by Nature">
+        <img className='gridimag' src={bethanyspeaks} alt='Bethany Stone Speaker Inquiry' />
+        </a>
+         <a href="https://www.thrivingbynature.com/river-cruise" alt="Thriving by Nature">
+        <img className='gridimag' src={europe} alt='21 Day Challenge' />
         </a>
         <div>
         </div>

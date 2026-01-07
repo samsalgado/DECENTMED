@@ -89,7 +89,6 @@ const {t} = useTranslation('common')
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
-  
    <a href="https://buffalobayou.org/event/2025-light-sound-meditation-cistern/" alt="Thriving by Nature">
         <img className='gridimag' src={event0} alt='21 Day Challenge' />
         </a>
