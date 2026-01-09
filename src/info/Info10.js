@@ -48,6 +48,29 @@ const {t} = useTranslation('common')
         </div>
         
       </div>
+    <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}}>
+  <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }}
+    src="https://www.youtube.com/embed/fMwMZZcSFr0" 
+    allowFullScreen>
+  </iframe>
+</div>
        <Button className="custom-btn" href="https://unioniscreation.com/" target="_blank">{t('Experience Sound Healing')}</Button>
       <br></br>
                   <h1 style={{
