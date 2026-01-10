@@ -80,13 +80,89 @@ const {t} = useTranslation('common')
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Healing Sounds Testimonial')}</h1>
-             <div>
-            <iframe class="rumble" title="Sound Healing" width="640" height="360"   src="https://www.youtube.com/embed/V77nj2hLZtg" frameborder="0" allowfullscreen></iframe>
-          <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/Fk1kKCbr184" frameborder="0" allowfullscreen></iframe>
+             <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}}>
+            <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }}
+               src="https://www.youtube.com/embed/V77nj2hLZtg" frameborder="0" allowfullscreen></iframe>
           </div>
-            <div>
-            <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/4oWQToBMxpE" frameborder="0" allowfullscreen></iframe>
-            <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/TIdvnXPirrg" frameborder="0" allowfullscreen></iframe>
+                    <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}}>
+               <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }}
+           src="https://www.youtube.com/embed/Fk1kKCbr184" frameborder="0" allowfullscreen></iframe>
+          </div>
+                             <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}}>
+                   <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }} 
+            src="https://www.youtube.com/embed/4oWQToBMxpE" frameborder="0" allowfullscreen></iframe>
+            </div>
+     <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}}>
+                   <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }}
+             src="https://www.youtube.com/embed/TIdvnXPirrg" frameborder="0" allowfullscreen></iframe>
             </div>
       <style jsx>{`
         @media (max-width: 768px) {
