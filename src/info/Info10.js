@@ -1,13 +1,11 @@
 import React from "react";
 import './acu.css'; 
 import './Info.css';
-import event0 from "../images copy/event0.png";
+import event0 from "../images copy/eventt.png";
 import event from "../images copy/events.png";
 import event1 from "../images copy/event1.png";
 import event2 from "../images copy/event2.png";
-import event3 from "../images copy/evnt.png";
 import event4 from "../images copy/event4.png";
-import event5 from "../images copy/event5.png";
 import event6 from "../images copy/cistern.png";
 import { Button } from'react-bootstrap';
 import HealingBen from "./healben";
@@ -48,25 +46,10 @@ const {t} = useTranslation('common')
         </div>
         
       </div>
-    <div style={{
-  position: 'relative',
-  width: '100%',
-  maxWidth: '360px',
-  margin: '0 auto',
-  aspectRatio: '9/16'
-}}>
+    <div className="vertical-video">
   <iframe 
     className="rumble" 
     title="Sound Healing" 
-    style={{
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      borderRadius: '8px',
-      border: 'none'
-    }}
     src="https://www.youtube.com/embed/fMwMZZcSFr0" 
     allowFullScreen>
   </iframe>
@@ -166,6 +149,7 @@ const {t} = useTranslation('common')
             </div>
       <style jsx>{`
         @media (max-width: 768px) {
+        body, html { background: none !important; background-color: transparent !important; }
           .container-bbblue {
             flex-direction: column !important;
           }
@@ -188,18 +172,14 @@ const {t} = useTranslation('common')
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
-   <a href="https://buffalobayou.org/event/2025-light-sound-meditation-cistern/" alt="Thriving by Nature">
+   <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
         <img className='gridimag' src={event0} alt='21 Day Challenge' />
         </a>
-         <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
-        <img className='gridimag' src={event3} alt='21 Day Challenge' />
-        </a>
+         
          <a href="https://fareharbor.com/embeds/book/buffalobayou/items/246138/calendar/2021/04/?flow=404814&fbclid=IwAR06_Hdi53MrbqsSv6pl2t1zOLtgXAhn_bcsdUjGxv8yCUB2cJjYD60r_dI&full-items=yes" alt="Thriving by Nature">
         <img className='gridimag' src={event4} alt='21 Day Challenge' />
         </a>
-         <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
-        <img className='gridimag' src={event5} alt='21 Day Challenge' />
-        </a>
+       
          <a href="https://fareharbor.com/embeds/book/buffalobayou/items/246138/calendar/2026/01/?flow=404814&fbclid=IwAR06_Hdi53MrbqsSv6pl2t1zOLtgXAhn_bcsdUjGxv8yCUB2cJjYD60r_dI&full-items=yes" alt="Thriving by Nature">
         <img className='gridimag' src={event6} alt='21 Day Challenge' />
         </a>
