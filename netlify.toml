@@ -1,3 +1,7 @@
-[build.environment]
-SECRETS_SCAN_SMART_DETECTION_ENABLED = "true"
-SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "AIzaSyDNubnZrraH6dZXD9ZH8oePqpdPyDfN3OE"
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[secrets_scan]
+  smart_detection_enabled = true
+  omit_values = ["AIzaSyDNubnZrraH6dZXD9ZH8oePqpdPyDfN3OE"]
