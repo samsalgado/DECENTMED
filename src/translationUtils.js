@@ -1,13 +1,13 @@
-const API_KEY = "AIzaSyDNubnZrraH6dZXD9ZH8oePqpdPyDfN3OE"; // Replace with your API Key
+const API_KEY = process.env.REACT_APP_API_KEY; // pulled from Netlify env vars
 
 // Fetch translation from Google Translate API
 export const fetchTranslation = async (key, lng) => {
   const response = await fetch(
-    `https://translation.googleapis.com/language/translate/v2?key=AIzaSyDNubnZrraH6dZXD9ZH8oePqpdPyDfN3OE`, 
+    `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}`, 
     {
       method: "POST",
       body: JSON.stringify({
-        q: key,        // The key/text that needs to be translated
+        q: key,        // The text that needs to be translated
         target: lng,   // Target language (e.g., 'es' for Spanish)
       }),
       headers: { "Content-Type": "application/json" },
