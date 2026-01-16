@@ -214,7 +214,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
         <br></br>
         <TsBenefits />
                           <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Join Trusted Network')}
+                                  {t('Providers: Signup Here')}
                 </Button> 
         </div>
     )

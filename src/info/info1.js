@@ -20,15 +20,19 @@ import Collapsible from 'react-collapsible';
 import erica from "../images copy/ericawellness.png";
 import { useTranslation } from 'react-i18next';
 import ReactDOM from 'react-dom';
+import { Button } from 'react-bootstrap';
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
 import Acuvids from '../info/acuvids';
 import acuben from '../images copy/acuben.png';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 const Info1 = () => {
   const {t} = useTranslation('common');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showModal, setShowModal] = useState(false);
+   const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
     const txt = `
     0:00 Tell me about acupuncture and introduce yourself.
 0:02 All right. Well, my name is Nettie Crisio. I am a licensed acupuncturist and I've been
@@ -506,7 +510,10 @@ const iframeStyle = {
 </Collapsible>
       <Acuvids />
       <Channel />
-       
+      <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Signup Here')}
+                </Button> 
+
     </div>
   );
 }

@@ -31,7 +31,7 @@ const { t } = useTranslation('common');
         <h1 className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
                                    <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Join Trusted Network')}
+                                  {t('Providers: Signup Here')}
                 </Button> 
 
       <footer className='footer'>

@@ -287,7 +287,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
   </div>
                                      <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Join Trusted Network')}
+                                  {t('Providers: Signup Here')}
                 </Button> 
 
 </div>

@@ -27,7 +27,7 @@ export function Detox() {
                 <PageWithTOC  containerId="chiro-wrapper">
                 <Info3 />
                 <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Join Trusted Network')}
+                                  {t('Providers: Signup Here')}
                 </Button> 
                 </PageWithTOC>
                 <footer>

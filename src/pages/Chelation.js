@@ -28,7 +28,7 @@ useEffect(() => {
 
             <Pgchelation />
   <Button onClick={learnmore} className="custom-btn">
-                          {t('Providers: Join Trusted Network')}
+                          {t('Providers: Signup Here')}
                         </Button> 
             <footer>
                 <Footer />

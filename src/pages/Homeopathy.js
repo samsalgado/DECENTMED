@@ -28,7 +28,7 @@ useEffect(() => {
 <PageWithTOC  containerId="chiro-wrapper">
         <Homeo />
                            <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Join Trusted Network')}
+                                  {t('Providers: Signup Here')}
                 </Button> 
 
                 </PageWithTOC>

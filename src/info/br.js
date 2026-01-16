@@ -116,7 +116,7 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         <br></br>
         <Benefits />
                  <Button onClick={learnmore} className="custom-btn">
-                          {t('Providers: Join Trusted Network')}
+                          {t('Providers: Signup Here')}
                   </Button>       
         
         </div>
