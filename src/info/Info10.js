@@ -11,7 +11,11 @@ import { Button } from'react-bootstrap';
 import HealingBen from "./healben";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
-const {t} = useTranslation('common')
+const {t} = useTranslation('common');
+  const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
+
     return (
       <div className='container mobile-optimized'>
           <h1 style={{
@@ -193,7 +197,10 @@ const {t} = useTranslation('common')
         <img className='gridimag' src={event2} alt='21 Day Challenge' />
         </a>
         <br></br>
-        <HealingBen />       
+        <HealingBen />
+         <Button onClick={learnmore} className="custom-btn">
+                  {t('Providers: Join Trusted Network')}
+                </Button>       
         </div>
     )
 }

@@ -44,13 +44,16 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import PageWithTOC from '../Components/PageWithTOC';
-
+import { Button } from 'react-bootstrap';
 export function Chiropractic() {
   const { t } = useTranslation('common');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+    const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
 
   return (
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
@@ -81,6 +84,10 @@ export function Chiropractic() {
 
 <PageWithTOC containerId="chiro-wrapper">
       <Chiro />
+               <Button onClick={learnmore} className="custom-btn">
+                        {t('Providers: Join Trusted Network')}
+                      </Button>       
+      
     </PageWithTOC>
 
         <footer>

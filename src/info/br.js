@@ -35,6 +35,10 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
 
 
   `
+  const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
+
     return (
       <div className='container mobile-optimized'>
             <h1 className='title'>{t('Somatic Breathwork')}</h1>
@@ -111,6 +115,10 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
       `}</style>
         <br></br>
         <Benefits />
+                 <Button onClick={learnmore} className="custom-btn">
+                          {t('Providers: Join Trusted Network')}
+                  </Button>       
+        
         </div>
     )
 }

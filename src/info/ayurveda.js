@@ -153,6 +153,9 @@ ask people to do anything that I'm unwilling to do myself I know how hard it is 
 do I try to be like a living example of what ayurveda can do for you you know I hear all the time like gosh you have so much energy and um vitality and so on and I really attribute that to what I learned from Dr Krueger all those years ago and to pay it forward and to educate people like it's my passion to help educate people because you know life is good everything's better when you feel good Body Mind and Spirit you know if you enjoyed this video make sure to click the Subscribe button and visit the
 themerlingroupworld.com/ayurveda for more.
     `
+    const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
   return (
     <div className='container mobile-optimized'>
      <h1 style={{
@@ -277,6 +280,9 @@ themerlingroupworld.com/ayurveda for more.
   />
 </div>
 <Transcript />
+         <Button onClick={learnmore} className="custom-btn">
+                  {t('Providers: Join Trusted Network')}
+                </Button>       
 
     </div>
   );

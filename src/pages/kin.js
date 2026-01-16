@@ -6,7 +6,6 @@ import prices from "../images copy/prices.png";
 import Footer from '../footer';
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react';
-
 export function AKPract() {
   const { t } = useTranslation('common');
 
@@ -14,7 +13,7 @@ export function AKPract() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return(
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 

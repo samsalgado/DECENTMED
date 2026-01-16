@@ -2,11 +2,15 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import { Button } from 'react-bootstrap';
 import HYPNO from '../info/hypno';
 import Hypnovids from '../info/hypnovids';
 import { useTranslation } from 'react-i18next';
 export function Hypnotherapy() {
 const { t } = useTranslation('common');
+        const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
     return(
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -22,7 +26,10 @@ const { t } = useTranslation('common');
             <br></br>
             <h1 className='center'>{t("Hypnotherapy Services")}</h1>
             <Hypnovids />
-        
+                                   <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
+
             <footer>
                 <Footer />
             </footer>

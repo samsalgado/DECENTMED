@@ -2,6 +2,7 @@ import '../App.css';
 import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
 import MedBenefits from '../info/meditationbenefits';
@@ -12,6 +13,9 @@ const { t } = useTranslation('common');
  useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
+        const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
     return (
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -28,6 +32,9 @@ const { t } = useTranslation('common');
        <br></br>
         <h1 className='center'>{t("Meditation 101")}</h1>
       <MeditationVids />
+                <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
         <footer>
             <Footer />
         </footer>

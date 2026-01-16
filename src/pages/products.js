@@ -103,6 +103,9 @@ flooding and you know, different things like that that correspond to behaviors l
 of diet failures, cravings, and eating disorders. This has been the latest episode of Decent Med Spotlight featuring how to solve your out of control eating with Dr. Vicky Todd and Michelle Hollesburgger. Ladies, thank you so much for joining us today.
 
 `
+ const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
@@ -283,6 +286,10 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </p>
     </div>
   </div>
+                                     <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
+
 </div>
             <footer>
                 <Footer />

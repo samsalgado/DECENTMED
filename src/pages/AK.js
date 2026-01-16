@@ -2,10 +2,14 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
+import {Button} from 'react-bootstrap';
 import Info8 from '../info/info8';
 import { useTranslation } from 'react-i18next';
 export function AppliedKinesiology() {
 const { t } = useTranslation('common');
+const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
@@ -16,6 +20,9 @@ const { t } = useTranslation('common');
             <Topbar />
             </header>
             <Info8 />
+         <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
             <footer>
                 <Footer />
             </footer>

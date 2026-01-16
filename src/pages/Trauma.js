@@ -1,11 +1,15 @@
 import "../App.css";
 import Topbar from "./topbar";
 import Footer from '../footer';
+import { Button } from "react-bootstrap";
 import Traumapg from "../info/traumapg";
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
 export function Trauma() {
 const { t } = useTranslation('common');
+const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
     return( 
     <div>
         <Helmet>  {/* Add Helmet component */}
@@ -17,6 +21,9 @@ const { t } = useTranslation('common');
             <Topbar />
         </header>
         <Traumapg />
+                          <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
         <footer>
             <Footer />
         </footer>

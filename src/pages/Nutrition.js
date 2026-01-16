@@ -3,6 +3,7 @@ import Nutritionpage from '../info/nutritionpg';
 import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
@@ -11,7 +12,10 @@ export function Nutrition() {
     const { t } = useTranslation('common');
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);    
+      }, []);
+      const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
     return (
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -27,6 +31,9 @@ export function Nutrition() {
         <h1 className='center'>{t("Functional Nutrition")}</h1>
       <FuncVids />
       <FuncModal />
+                                   <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
             <footer className='foot'>
                 <Footer />
             </footer>

@@ -1,11 +1,15 @@
 import "../App.css";
 import Topbar from "./topbar";
 import Footer from '../footer';
+import { Button } from "react-bootstrap";
 import Naturo from "../info/naturopathypg";
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
 export function Naturopathy() {
 const { t } = useTranslation('common');
+        const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
     return( 
         <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -18,6 +22,10 @@ const { t } = useTranslation('common');
             <Topbar />
         </header>
         <Naturo />
+              <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
+
         <footer>
             <Footer />
         </footer>

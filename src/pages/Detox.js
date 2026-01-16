@@ -1,12 +1,17 @@
 import '../App.css';
 import Topbar from './topbar';
 import Info3 from '../info/info3';
+import { Button } from 'react-bootstrap';
 import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import PageWithTOC from '../Components/PageWithTOC';
 export function Detox() {
     const { t } = useTranslation('common');
+        const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
+
     return (
          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -21,6 +26,9 @@ export function Detox() {
 
                 <PageWithTOC  containerId="chiro-wrapper">
                 <Info3 />
+                <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
                 </PageWithTOC>
                 <footer>
                     <Footer />

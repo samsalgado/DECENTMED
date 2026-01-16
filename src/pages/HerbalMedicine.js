@@ -10,6 +10,9 @@ import '../App.css'
 import { useTranslation } from 'react-i18next';
 const HerbalMedicine = () => {
 const { t } = useTranslation('common');
+        const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
   return (
 <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -27,6 +30,10 @@ const { t } = useTranslation('common');
           </Button>
         <h1 className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
+                                   <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
+
       <footer className='footer'>
         <Footer />
       </footer>

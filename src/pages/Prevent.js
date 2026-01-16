@@ -1,14 +1,19 @@
 import '../App.css';
 import Topbar from './topbar';
 import Footer from '../footer';
+import { Button } from 'react-bootstrap';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import PreventWellness from '../info/preventwellness';
 import { Helmet } from 'react-helmet'; // Import Helmet
 export function Prevent() {
+      const { t } = useTranslation('common');
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
-    
+      const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }   
     return(
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -20,6 +25,9 @@ export function Prevent() {
             <Topbar />
             </header>
             <PreventWellness />
+                                         <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
             <footer>
                 <Footer />
             </footer>

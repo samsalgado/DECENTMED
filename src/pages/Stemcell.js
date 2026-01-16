@@ -3,6 +3,7 @@ import Topbar from './topbar';
 import Stem from '../info/stem';
 import Footer from '../footer';
 import { useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 import "../App.css";
 
 import { Helmet } from 'react-helmet'; // Import Helmet
@@ -12,6 +13,9 @@ const {t} = useTranslation('common')
 useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+   const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
 
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
@@ -25,6 +29,9 @@ useEffect(() => {
             <Topbar />
             </header>
             <Stem />
+                             <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button>
             <br></br>
             <footer>
                 <Footer />

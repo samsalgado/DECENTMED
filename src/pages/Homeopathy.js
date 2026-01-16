@@ -1,6 +1,7 @@
 import "../App.css";
 import Topbar from "./topbar";
 import Footer from '../footer';
+import { Button } from "react-bootstrap";
 import Homeo from "../info/homeopathypg";
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet'; // Import Helmet
@@ -8,6 +9,9 @@ import { useTranslation } from "react-i18next";
 import PageWithTOC from "../Components/PageWithTOC";
 export function Homeopathy() {
 const { t } = useTranslation('common');
+        const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
 useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -23,6 +27,10 @@ useEffect(() => {
         </header>
 <PageWithTOC  containerId="chiro-wrapper">
         <Homeo />
+                           <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Join Trusted Network')}
+                </Button> 
+
                 </PageWithTOC>
         <footer>
             <Footer />

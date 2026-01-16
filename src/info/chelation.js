@@ -14,7 +14,6 @@ import chelationbenefits from '../images copy/chelationbenefits.png';
 import { useTranslation } from 'react-i18next';
 const Pgchelation = () => {
   const { t } = useTranslation('common');
-
   return (
     <div className='container'>
        <h1 style={{
@@ -54,6 +53,7 @@ const Pgchelation = () => {
             </tr>
           </tbody>
         </table>
+        
       </div>
     </div>
   );
