@@ -13,6 +13,8 @@ import { HealPract } from './pages/HealPract';
 import { Soundhealing } from './pages/soundhealing';
 //<Route path="/lynn" element={<Lynn t={t} />} />
 import { Func } from './pages/Func';
+import {Energy} from './pages/Energy';
+import { EnergyPract } from './pages/EnergyPract';
 import {Summit} from './pages/Summit';
 import MassPract from './pages/Mass';
 import Blog21 from './pages/blogs/blog21';
@@ -121,10 +123,12 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
+        <Route path="/energyhealers" element={<EnergyPract t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
+        <Route path="/energyhealing" element={<Energy t={t} />} />
         <Route path="/breathwork" element={<Breathworkk t={t} />} />
         <Route path="/acupuncture-for-migraines" element={<Blog21 t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />

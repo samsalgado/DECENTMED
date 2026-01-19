@@ -74,6 +74,9 @@ const handleClick = () => {
       <ul><NavLink to="https://decentmed.org/herbalmedicine">{t('Herbal Medicine')}
       </NavLink>
       </ul>
+       <ul><NavLink to="https://decentmed.org/energyhealing">{t('Energy Healing')}
+      </NavLink>
+      </ul>
       <ul>
         <NavLink to="https://decentmed.org/detox">{t('Detox')}
         </NavLink>

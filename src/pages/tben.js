@@ -76,7 +76,4 @@ function TsBenefits() {
         </div>
     );
 }
-
 export default TsBenefits;
-
-

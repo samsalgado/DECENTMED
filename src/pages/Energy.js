@@ -1,0 +1,131 @@
+import React, {useState} from "react";
+import '../info/acu.css'; 
+import '../info/Info.css';
+import product from "../images copy/reviewss.png";
+import Collapsible from 'react-collapsible';
+import { Button, Modal } from'react-bootstrap';
+import EsBenefits from "./eben";
+import thc2 from  "../images copy/thc2.png";
+import thc4 from  "../images copy/thc4.png";
+import thc6 from  "../images copy/thc6.png";
+import thc7 from  "../images copy/thc7.png";
+import thc8 from  "../images copy/thc8.png";
+import thc9 from  "../images copy/thc9.png";
+import thc5 from "../images copy/thc5.png";
+import thc1 from  "../images copy/thc1.png";
+import thc3 from  "../images copy/thc3.png";
+import ReactDOM from 'react-dom';
+import { useTranslation } from "react-i18next";
+export function Energy () {
+const {t} = useTranslation('common');
+const [showModal, setShowModal] = useState(false);
+const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }    
+    return (
+      <div className='container mobile-optimized'>
+ <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>              {t("Intuitive Energy Healing")}</h1>
+            <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '20px 0'
+      }}>
+         <div className="container-bbblue" style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '20px'
+      }}>
+        <div className='content-wrapper' style={{
+          flex: '1'
+        }}>
+         
+          <p className="pr"><h2>{t("Tap into Remote Energy Healing")}</h2></p>
+          <p className='pr'>{t("- Helps alleviate physical pain")}</p>
+          <p className='pr'>{t("- Navigation through emotional distress")}</p>
+          <p className='pr'>{t("- Clears monkey mind (anxiety) of the mind")}</p>
+          <p className='pr'>{t("- Clearing major generational, conditions and illnesses")}</p>     
+          {//<p><h3>{t("Jessica Javens: Transformational Coaching")}</h3></p>    
+}
+          <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>  {/* Added Bootstrap Button */}
+        </div>
+          <iframe 
+      width="100%" 
+      height="650px" 
+      src="https://www.youtube.com/embed/rQZYIf6fSlg?si=iLpeX-_Ygu5nzQSt" 
+      title="Video player" 
+      allow="autoplay" 
+      allowFullScreen
+      style={{
+        maxWidth: '400px',
+        width: '100%',
+        height: 'auto'
+      }}
+    />
+        </div>
+      </div>
+      <br></br>
+    
+                  {showModal && ReactDOM.createPortal(               
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
+                <Modal.Header closeButton>
+                  <Modal.Title>{t("Transcript")}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={() => setShowModal(false)}>
+                    {t("Close")}
+                  </Button>
+                </Modal.Footer>
+              </Modal>,
+              document.body)}
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .container-bbblue {
+            flex-direction: column !important;
+          }
+          .content-wrapper {
+            text-align: center !important;
+          }
+          .centered-video {
+            max-width: 280px !important;
+            margin-top: 20px !important;
+            height: 200px !important;
+          }
+        }
+      `}</style>
+            <Collapsible trigger={<th className="collapsible-triggger">{t('Energy Healing Education')}</th>}>
+              <tr>
+                <img className='gridimage' src={thc1} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc2} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc3} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc4} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc5} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc6} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc7} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc8} alt='Energy Healer near me' />
+                  <img className='gridimage' src={thc9} alt='Energy Healer near me' />
+              </tr>
+        </Collapsible>
+        <br></br>
+                        <a href="https://www.totalhealingcentre.com/">
+                <img className='gridimage' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
+                <figcaption>{t("Signup")}</figcaption>
+                </a>
+        <br></br>
+        <EsBenefits />
+                          <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Signup Here')}
+                </Button> 
+        </div>
+    )
+}

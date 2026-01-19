@@ -2,12 +2,13 @@
 * {
   font-family: sans-serif;
 }
-
+.image-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .container-fluid {
   width: 100%; /* Ensure full width on all devices */
   padding: 15px; /* Ensure some padding around the container */
   font-family: sans-serif;
 }
+.collapsible-wrapper { display: flex; justify-content: center; /* centers horizontally */ margin: 20px 0; /* optional spacing */ }
 .custom-btn {
   background-color: #00695c !important;
   color: #fff !important;
