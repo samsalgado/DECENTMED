@@ -16,8 +16,8 @@ const Benefitts = () => {
 const {t} = useTranslation('common');
 const [showModal, setShowModal] = useState(false);
 const learnmore = () => {
-    window.location.href = 'https://decentmed.org/signup/provider'
-  }    
+  window.location.href = 'https://decentmed.org/signup/provider'
+}    
 const txt = `
 Ramona Crabtree Faulner. I'm the owner of Authentic Life Journey. I'm a transformational empowerment coach, speaker, author, and retreat facilitator. So, I have been working in the holistic wellness field for over 20 years. Started out as massage therapist, worked my way into yoga and meditation and energy work. And over that time I had my own journey that I experienced of healing and growth and expansion that included uh you know dropping into spaces of needing to break through hustle mentality and burnout. And as I
 
@@ -99,6 +99,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
 
 
 `
+
+
     return (
       <div className='container mobile-optimized'>
  <h1 style={{

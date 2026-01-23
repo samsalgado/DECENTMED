@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import tier2 from '../cards/pp.png';
+import tier2 from '../images copy/ppp.png';
 import tier3 from "../cards/2.png";
 import '../info/Info.css';
 import tier0 from "../cards/AdvertisingTier.png";
