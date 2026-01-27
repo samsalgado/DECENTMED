@@ -17,8 +17,8 @@ function Values() {
                     <p className="edu">{t("Boosting evidence-based claims by posting provider studies on our platform and a decentralized network.")}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
-                    <h3>{t('Decentralized Insurance')}</h3>
-                    <p className="edu">{t('One issue holistic medicine faces is low insurance reimbursements. By joining our platform, providers get equity in our apothecary. The sales from the apothecary are stored on a blockchain. The equity will be used to make treatments less expensive while funding providers from the apothecary.')}</p>
+                    <h3>{t('Decentralized Medicine Payout')}</h3>
+                    <p className="edu">{t('We offer provider payouts from our Apothecary, Content Library and various Affiliate Programs like Promeed.com, Wish Garden Herbs and more.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <h3>
@@ -36,7 +36,8 @@ function Values() {
         >
             {t('Holistic Marketing')}
         </a>
-    </h3>                    <p className="edu">{t('Although our team is comprised of SEO experts, to ensure you get more patients - we have partnered with a digital marketing agency (S3 Visibility) specializing in optimizing the Google ecosystem.')}</p>
+    </h3>
+    <p className="edu">{t('Although our team is comprised of SEO experts, to ensure you get more patients - we have partnered with a digital marketing agency (S3 Visibility) specializing in optimizing the Google ecosystem.')}</p>
                 </div>
             </div>
         </div>

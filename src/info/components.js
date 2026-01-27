@@ -30,8 +30,8 @@ function Components() {
                     <p className="edu">{t("We publish your studies, reviews and researh to validate the effectiveness of your treatment method.")}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
-                    <h3>{t('Insurance Reimbursement')}</h3>
-                    <p className="edu">{t('We offer providers stake in our Apothecary for insurance reimbursement.')}</p>
+                    <h3>{t('Decentralized Medicine Payout')}</h3>
+                    <p className="edu">{t('We offer provider payouts from our Apothecary, Content Library and various Affiliate Programs like Promeed.com, Wish Garden Herbs and more.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t('International Credibility')}</h3>

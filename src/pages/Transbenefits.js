@@ -99,8 +99,6 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
 
 
 `
-
-
     return (
       <div className='container mobile-optimized'>
  <h1 style={{
