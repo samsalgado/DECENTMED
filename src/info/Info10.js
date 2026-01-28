@@ -1,12 +1,12 @@
 import React from "react";
 import './acu.css'; 
 import './Info.css';
-import event0 from "../images copy/eventt.png";
-import event from "../images copy/events.png";
-import event1 from "../images copy/event1.png";
-import event2 from "../images copy/event2.png";
-import event4 from "../images copy/event4.png";
-import event6 from "../images copy/cistern.png";
+import event0 from "../images copy/soundbath0.png";
+import event from "../images copy/yogaesp.png";
+import event1 from "../images copy/discoverygreen.png";
+import event2 from "../images copy/tulum.png";
+import event4 from "../images copy/pathofpeace.png";
+import event6 from "../images copy/ashtanga.png";
 import { Button } from'react-bootstrap';
 import HealingBen from "./healben";
 import { useTranslation } from "react-i18next";
@@ -177,24 +177,24 @@ const {t} = useTranslation('common');
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
    <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
-        <img className='gridimag' src={event0} alt='21 Day Challenge' />
+        <img className='gridimag' src={event0} alt='Soundbath in the Sky' />
         </a>
          
-         <a href="https://fareharbor.com/embeds/book/buffalobayou/items/246138/calendar/2021/04/?flow=404814&fbclid=IwAR06_Hdi53MrbqsSv6pl2t1zOLtgXAhn_bcsdUjGxv8yCUB2cJjYD60r_dI&full-items=yes" alt="Thriving by Nature">
-        <img className='gridimag' src={event4} alt='21 Day Challenge' />
+         <a href="https://www.eventbrite.com/e/walking-the-path-of-peace-a-transformative-meditation-journey-tickets-1979217173846" alt="Thriving by Nature">
+        <img className='gridimag' src={event4} alt='Walking the Path of Peace – A Transformative Meditation Journey' />
         </a>
        
-         <a href="https://fareharbor.com/embeds/book/buffalobayou/items/246138/calendar/2026/01/?flow=404814&fbclid=IwAR06_Hdi53MrbqsSv6pl2t1zOLtgXAhn_bcsdUjGxv8yCUB2cJjYD60r_dI&full-items=yes" alt="Thriving by Nature">
-        <img className='gridimag' src={event6} alt='21 Day Challenge' />
+         <a href="https://danaguerrayoga.com/spi-retreat-2%2F20-2%2F22%2F26">
+        <img className='gridimag' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
         </a>
-        <a href="https://www.eventbrite.com/e/walking-the-path-of-peace-a-transformative-meditation-journey-tickets-1979217173846" alt="Thriving by Nature">
-        <img className='gridimag' src={event} alt='21 Day Challenge' />
+        <a href="https://www.eventbrite.com/e/clase-de-yoga-y-meditacion-de-sonido-en-espanol-tickets-1981592083264?utm_experiment=test_share_listing&aff=ebdsshios&sg=7a4e794b9d12b8a3f4e8678c16e9e1f35735553342284a297b019fdf079ba2256048608c9bd5854f090ade83973649271d5be69a2c9391177f36b12d992dbd527e5e029f0f8af00c36c7abce24" alt="Thriving by Nature">
+        <img className='gridimag' src={event} alt='Clase de Yoga y Meditación de Sonido en Español' />
         </a>
-        <a href="https://danaguerrayoga.com/spi-retreat-2%2F20-2%2F22%2F26" alt="Thriving by Nature">
-        <img className='gridimag' src={event1} alt='21 Day Challenge' />
+        <a href="https://www.eventbrite.com/e/the-grounding-hour-yoga-for-mind-body-tickets-1981591197615?utm_experiment=test_share_listing&aff=ebdsshios&sg=7a4e794b9d12b8a3f4e8678c16e9e1f35735553342284a297b019fdf079ba2256048608c9bd5854f090ade83973649271d5be69a2c9391177f36b12d992dbd527e5e029f0f8af00c36c7abce24" alt="Thriving by Nature">
+        <img className='gridimag' src={event1} alt='The Grounding Hour: Yoga for Mind & Body' />
         </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSelJkLwEJnFEbUDOeOsyzxxMGQ-Ca38x6jOmKGq7bmhMVIiIw/viewform?pli=1" alt="Thriving by Nature">
-        <img className='gridimag' src={event2} alt='21 Day Challenge' />
+        <a href="https://my-site-67hyw2es-unioniscreation.wix-vibe.com/" alt="Thriving by Nature">
+        <img className='gridimag' src={event2} alt='REBIRTH: Your Tulum Journey Begins' />
         </a>
         <br></br>
         <HealingBen />
