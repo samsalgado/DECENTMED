@@ -5,6 +5,8 @@ import product from "../images copy/reviewss.png";
 import Collapsible from 'react-collapsible';
 import { Button, Modal } from'react-bootstrap';
 import EsBenefits from "./eben";
+import { Helmet } from "react-helmet";
+import Topbar from "./topbar";
 import thc2 from  "../images copy/thc2.png";
 import thc4 from  "../images copy/thc4.png";
 import thc6 from  "../images copy/thc6.png";
@@ -23,7 +25,16 @@ const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }    
     return (
-      <div className='container mobile-optimized'>
+         <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+                <Helmet>  {/* Add Helmet component */}
+                    <title>{t("3 Day Detox Cleanse")}</title>
+                    <meta name="description" content={t("3 Day Detox cleanse can clean the body from toxins. A detox cleanse is a great way to reset your cells into ketosis. Jumpstart your health journey!")} />
+                </Helmet>
+
+                <header>
+                    <Topbar />
+                </header>
+
  <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
