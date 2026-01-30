@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import '../App.css';
 import Footer from '../footer';
+import acuu from "../../images copy/fertility.png";
 import detoxxx from "../images copy/detoxxx.png";
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
@@ -82,6 +83,17 @@ const BlogPage = () => {
             <a href='/detox-cleanse'>
               <figure>
                 <img className='gridimag' src={detoxxx} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fertility and Naturopathic Medicine")}</h2>
+          <div className='container'>
+            <a href='/fertiility'>
+              <figure>
+                <img className='gridimag' src={acuu} alt="logo" />
                 {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>

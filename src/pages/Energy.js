@@ -129,7 +129,7 @@ const learnmore = () => {
         </Collapsible>
         <br></br>
                         <a href="https://www.totalhealingcentre.com/">
-                <img className='gridimage' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
+                <img className='gridimag' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
                 <figcaption>{t("Signup")}</figcaption>
                 </a>
         <br></br>

@@ -20,6 +20,7 @@ import MassPract from './pages/Mass';
 import Blog21 from './pages/blogs/blog21';
 import { Trauma } from './pages/Trauma';
 import { PTSD } from './pages/PTSD';
+import Blog22 from './pages/blogs/blog22';
 import { Nutrigenomics } from './pages/Nutrigenomics';
 import Blog5 from './pages/blogs/blog5';
 import { FuncMed } from './pages/funcmed';
@@ -127,6 +128,7 @@ function App() {
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
+        <Route path="/fertiility" element={<Blog22 t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/energyhealing" element={<Energy t={t} />} />
         <Route path="/breathwork" element={<Breathworkk t={t} />} />
