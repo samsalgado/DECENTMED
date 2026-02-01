@@ -26,6 +26,7 @@ import Blog5 from './pages/blogs/blog5';
 import { FuncMed } from './pages/funcmed';
 import Bitcoin from './pages/blogs/bitcoin';
 import Blog8 from './pages/blogs/blog8';
+import Blog24 from './pages/blogs/blog24';
 import Meditation from './pages/Meditation';
 import Blog7 from './pages/blogs/blog7';
 import Blog9 from './pages/blogs/blog9';
@@ -97,6 +98,7 @@ import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
 import SignupPrompt from './Components/SignupPromt';
 import DisclaimerPopup from './Components/DisclaimerPopup';
+import Blog23 from './pages/blogs/blog23';
 
 
 
@@ -124,11 +126,13 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
+         <Route path="/conversionoptimizationconsulting" element={<Blog24 t={t} />} />
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/fertiility" element={<Blog22 t={t} />} />
+        <Route path="/holistichealthmarketing" element={<Blog23 t={t} />} />
         <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/energyhealing" element={<Energy t={t} />} />
         <Route path="/breathwork" element={<Breathworkk t={t} />} />

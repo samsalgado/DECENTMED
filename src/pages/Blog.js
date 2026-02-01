@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import '../App.css';
 import Footer from '../footer';
-import acuu from "../../images copy/fertility.png";
+import fert from "../images copy/fertility.png";
 import detoxxx from "../images copy/detoxxx.png";
 import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
@@ -11,7 +11,9 @@ import ramona from "../images copy/ramona.jpeg";
 import lions from "../images copy/lions.png";
 import ak from "../images copy/1753114292278.jpeg";
 import cup from "../images copy/cup.jpg";
+import conversion from "../images copy/conversion.png";
 import drk from "../images copy/drk.png";
+import conversions from "../images copy/conversion.png";
 import moon from "../images copy/moon.png";
 import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
@@ -58,9 +60,20 @@ const BlogPage = () => {
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fenbendazole for Cancer")}</h2>
           <div className='container'>
-            <a href='/fenbendazole'>
+            <a href='/fenbendazole'> 
               <figure>
                 <img className='gridimag' src={Fenbendazole} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Experience a Conversion Rate Optimization Consultant")}</h2>
+          <div className='container'>
+            <a href='/conversionoptimizationconsulting'> 
+              <figure>
+                <img className='gridimag' src={conversions} alt="logo" />
                 {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>
@@ -88,12 +101,23 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Holistic Health Marketing")}</h2>
+          <div className='container'>
+            <a href='/holistichealthmarketing'>
+              <figure>
+                <img className='gridimag' src={conversion} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
          <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fertility and Naturopathic Medicine")}</h2>
           <div className='container'>
             <a href='/fertiility'>
               <figure>
-                <img className='gridimag' src={acuu} alt="logo" />
+                <img className='gridimag' src={fert} alt="logo" />
                 {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
               </figure>
             </a>

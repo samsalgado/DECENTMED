@@ -9,9 +9,9 @@ function Components() {
     <div className="container-blue">
       <div className="row justify-content-center">
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h3>{t('Digital Marketing Consultancy')}</h3>
+          <h3>{t('Conversion Optimization Consulting')}</h3>
           <p className="edu">
-            {t('We have partnered with a full-service digital marketing agency (S3 Visibility) specializing in optimizing the Google Ecosystem.')}
+            {t('We optimize your Google Business Profile, website and social media for conversions to increase your sales.')}
           </p>
         </div> 
      <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
