@@ -69,13 +69,13 @@ const learnmore = () => {
     </div>
     <div style={{
       flex: '1',
-      minWidth: '300px',
+      minWidth: '400px',
       position: 'relative',
       paddingBottom: '56.25%',
       height: 0
     }}>
       <iframe 
-        src="https://streamyard.com/e/5t3q84nbxymk" 
+        src="https://www.youtube.com/embed/BGjJ4usFVXo" 
         width="100%" 
         height="100%" 
         frameBorder="0" 
