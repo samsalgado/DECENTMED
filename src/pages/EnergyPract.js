@@ -23,7 +23,7 @@ export function EnergyPract() {
       image: Charlotte,
       website:"https://thcclc.com/",
       embedCode:`<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" src="https://book.carepatron.com/Total-Healing-Centre/charlotte?p=.1lVzAWBTimCNLZG5Hb7Pg&s=WnJ9JJSr&e=i" style="border:0;"></iframe></div>`,
-//      video:"https://www.youtube.com/embed/tUI8bQYmjjc?si=p7LFqkSwRIqFGJEX",
+      video:"https://streamyard.com/e/5t3q84nbxymk",
       description: t("With years of experience in health and wellness, our founder is dedicated to helping clients reach their fullest potential. Through one-on-one sessions and group workshops, you will receive the guidance and motivation needed to transform your life."),
       servesGlobally: true,
       countries: ["USA"]

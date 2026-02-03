@@ -42,46 +42,57 @@ const learnmore = () => {
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>              {t("Intuitive Energy Healing")}</h1>
-            <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: '20px 0'
-      }}>
-         <div className="container-bbblue" style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: '20px'
-      }}>
-        <div className='content-wrapper' style={{
-          flex: '1'
-        }}>
-         
-          <p className="pr"><h2>{t("Tap into Remote Energy Healing")}</h2></p>
-          <p className='pr'>{t("- Helps alleviate physical pain")}</p>
-          <p className='pr'>{t("- Navigation through emotional distress")}</p>
-          <p className='pr'>{t("- Clears monkey mind (anxiety) of the mind")}</p>
-          <p className='pr'>{t("- Clearing major generational, conditions and illnesses")}</p>     
-          {//<p><h3>{t("Jessica Javens: Transformational Coaching")}</h3></p>    
-}
-          <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>  {/* Added Bootstrap Button */}
-        </div>
-          <iframe 
-      width="100%" 
-      height="650px" 
-      src="https://www.youtube.com/embed/rQZYIf6fSlg?si=iLpeX-_Ygu5nzQSt" 
-      title="Video player" 
-      allow="autoplay" 
-      allowFullScreen
-      style={{
-        maxWidth: '400px',
-        width: '100%',
-        height: 'auto'
-      }}
-    />
-        </div>
-      </div>
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  margin: '20px 0'
+}}>
+  <div className="container-bbblue" style={{
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '20px',
+    maxWidth: '1200px',
+    width: '100%'
+  }}>
+    <div className='content-wrapper' style={{
+      flex: '1',
+      minWidth: '300px'
+    }}>
+      <h2>{t("Tap into Remote Energy Healing")}</h2>
+      <p className='pr'>{t("- Helps alleviate physical pain")}</p>
+      <p className='pr'>{t("- Navigation through emotional distress")}</p>
+      <p className='pr'>{t("- Clears monkey mind (anxiety) of the mind")}</p>
+      <p className='pr'>{t("- Clearing major generational, conditions and illnesses")}</p>
+      <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
+    </div>
+    <div style={{
+      flex: '1',
+      minWidth: '300px',
+      position: 'relative',
+      paddingBottom: '56.25%',
+      height: 0
+    }}>
+      <iframe 
+        src="https://streamyard.com/e/5t3q84nbxymk" 
+        width="100%" 
+        height="100%" 
+        frameBorder="0" 
+        title="Embed recording" 
+        allowFullScreen 
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          left: "0px",
+          top: "0px",
+          overflow: "hidden"
+        }}
+      />
+    </div>
+  </div>
+</div>      
       <br></br>
     
                   {showModal && ReactDOM.createPortal(               
