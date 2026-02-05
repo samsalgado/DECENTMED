@@ -5,6 +5,7 @@ import product from "../images copy/reviewss.png";
 import Collapsible from 'react-collapsible';
 import { Button, Modal } from'react-bootstrap';
 import EsBenefits from "./eben";
+import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
 import thc2 from  "../images copy/thc2.png";
@@ -93,6 +94,9 @@ const learnmore = () => {
     </div>
   </div>
 </div>      
+<a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <br></br>
     
                   {showModal && ReactDOM.createPortal(               

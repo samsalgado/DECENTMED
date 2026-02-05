@@ -8,6 +8,7 @@ import event2 from "../images copy/tulum.png";
 import event4 from "../images copy/pathofpeace.png";
 import event6 from "../images copy/ashtanga.png";
 import { Button } from'react-bootstrap';
+import spectraspray from "../images copy/spectraspray.png";
 import HealingBen from "./healben";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
@@ -60,6 +61,10 @@ const {t} = useTranslation('common');
 </div>
        <Button className="custom-btn" href="https://unioniscreation.com/" target="_blank">{t('Experience Sound Healing')}</Button>
       <br></br>
+       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+                  <img className='gridimag' src={spectraspray} alt='spectra spray' />
+                   </a>
+                       <br></br>  
                   <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',

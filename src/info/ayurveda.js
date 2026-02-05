@@ -5,6 +5,7 @@ import ayurveda from "../images copy/ayurveda-science.png";
 import Elements from './elements';
 import Principles from './ayurev';
 import ReactDOM from 'react-dom';
+import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
 import Transcript from './herbtranscript';
@@ -202,7 +203,10 @@ themerlingroupworld.com/ayurveda for more.
     `}</style>
    <br></br>
    <br></br>
-   <br></br>
+    <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
+                <br></br>
       <div className="collapsible">
         <Principles />
         <Elements />

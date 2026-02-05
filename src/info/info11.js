@@ -4,6 +4,7 @@ import './Info.css';
 import ReactDOM from 'react-dom';
 import { Button, Modal } from'react-bootstrap';
 import Benefitts from "./Ben";
+import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
 const {t} = useTranslation('common')
@@ -303,6 +304,9 @@ const {t} = useTranslation('common')
           }
         }
       `}</style>
+       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+                  <img className='gridimag' src={spectraspray} alt='spectra spray' />
+                   </a>
         <br></br>
         <Benefitts />       
         </div>

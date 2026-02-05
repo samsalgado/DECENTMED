@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Footer from '../footer';
 import { Button, Modal } from 'react-bootstrap';
 import obasi from "../images copy/obasi.png";
+import spectraspray from "../images copy/spectraspray.png";
 import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import lifewave from '../images copy/lifewave.png';
 import linda from "../images copy/linda.png";
@@ -176,6 +177,8 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </p>
     </div>
   </div>
+  <br></br>
+
   <div className="row">
     <div className="col-md-6">
       <h2>{t("Kelechi Obasi Product Bundle")}</h2>
@@ -283,6 +286,35 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </a>
            <p>
         {t("An extensive review, the product line is plant-based and features some of the highest performing herbs in the world: Moringa, Turmeric, Elderberry, Rosemary and more. The product line extends beyond products. She also has services to help health coaches and Energy healers.")}
+      </p>
+    </div>
+  </div>
+  <div className="row">
+    <div className="col-md-6">
+      <h2>{t("Spectra Spray")}</h2>
+      <a href='https://www.spectraspray.com/shop'>
+    <figure>
+        <img 
+          src={spectraspray} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+          <figcaption>{t("Buy Now")}</figcaption>
+        </figure>
+      </a>
+              <iframe width="100%" height={550} src="https://www.youtube.com/embed/At7Gc-qjbsc?si=3BMcLVIB7FKUxPUC"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+           <p>
+        {t("Our Mission: To provide easy to use, highly effective, on-the-go health products that change lives everyday.")}
+      </p>
+          <p>
+        {t("Our Vision: To support every lifestyle, with natural solutions helping people stay well, sleep well and live life to the fullest.")}
+      </p>
+          <p>
+        {t("Our Products: With an advanced micro-emulsion technology, our natural high-quality oral sprays provide direct absorption without binders, fillers, artificial color, dyes or allergens.")}
       </p>
     </div>
   </div>

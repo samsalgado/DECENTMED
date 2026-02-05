@@ -4,7 +4,7 @@ import './acu.css';
 import { useTranslation } from 'react-i18next';
 import PTSDvids from './ptsdvids';
 import { Button } from 'react-bootstrap';
-
+import spectraspray from "../images copy/spectraspray.png";
 const Ptsdd = () => {
   const {t} = useTranslation('common');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -136,7 +136,9 @@ const Ptsdd = () => {
           </div>
         </div>
       </div>
-      
+       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <h1>{t("PTSD Help")}</h1>
       <PTSDvids />
     </div>

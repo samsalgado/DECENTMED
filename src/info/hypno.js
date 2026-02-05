@@ -6,6 +6,7 @@ import Benefits from "./benefits";
 import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
+import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 import Hypnostudies from "./hypnostudy";
 const HYPNO = () => {
@@ -87,6 +88,9 @@ const {t} = useTranslation('common');
           }
         }
       `}</style>
+       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
         <br></br>
         <Benefits />
         <br></br> 

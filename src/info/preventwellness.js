@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Vitamins from './vitamins';
 import Coachingvids from './coachingvids';
 import ReactDOM from 'react-dom';
+import spectraspray from "../images copy/spectraspray.png";
 import './Info.css';
 import "./prevent.css";
 import { useTranslation } from 'react-i18next';
@@ -22,7 +23,11 @@ const PreventWellness = () => {
       </div>
       <div className="collapsible">
       </div>
+       
       <Vitamins />
+      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
    {t("Find Wellness Coaches")}
      </Button>

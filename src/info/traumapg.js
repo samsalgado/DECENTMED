@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import book1 from "../images copy/book1.jpg";
 import book2 from "../images copy/book2.jpg";
 import TsBen from './tsben';
+import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import Trev from './traumarev';
@@ -177,6 +178,9 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
         />
       </div>
     </div>
+      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
              <Button className="custom-btn" href="https://amazinglifedesign.com/" target="_blank">{t("Experience Trauma Relief")}</Button>  {/* Added Bootstrap Button */}
                 <br></br>
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>

@@ -23,7 +23,7 @@ const Info5 = () => {
       <div className="title-container">
         <h1 className="title">{t('Nutrition')}</h1>
         <div><img src={homeo} className="HOMEO" alt="logo" /></div>
-
+ 
         <table className="collapsibles-table">
           <tbody> 
             <Collapsible trigger={<th className="collapsible-title">{t('Best Antioxidants for Your Immune System')}</th>}>

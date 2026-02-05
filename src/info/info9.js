@@ -5,6 +5,7 @@ import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
 import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
+import spectraspray from "../images copy/spectraspray.png";
 import group from "../images copy/group.png";
 import europe from "../images copy/europe.png";
 import bethanyspeaks from "../images copy/bethanyspeaks.png";
@@ -444,7 +445,9 @@ possible for you. So borrow our belief because so many clients have gotten incre
             height: '350px'
           }}
         />
-       
+        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
         <a href="https://calendly.com/thrivingbynaturecoaching/30min?" alt="Thriving by Nature">
         <img className='gridimag' src={thrivingbynature} alt='21 Day Challenge' />
         </a>

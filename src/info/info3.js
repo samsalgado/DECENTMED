@@ -3,6 +3,7 @@ import "../App.css";
 import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
 import './Info.css';
+import spectraspray from "../images copy/spectraspray.png";
 import Protocols from './Protocols';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { Button, Modal } from 'react-bootstrap';
@@ -16,6 +17,10 @@ const Info3 = () => {
             <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}
             </Button>
+            <br></br>
+            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <br></br>
       <div className="collapsible"></div>
 

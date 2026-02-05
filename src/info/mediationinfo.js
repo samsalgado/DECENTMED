@@ -4,6 +4,7 @@ import './Info.css';
 import { Button, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import { useTranslation } from 'react-i18next';
+import spectraspray from "../images copy/spectraspray.png";
 //import ultt from "../images copy/ultt.png";
 const MeditationInfo = () => {
   const { t } = useTranslation("common");
@@ -38,7 +39,9 @@ const MeditationInfo = () => {
                       </Modal.Footer>
                     </Modal>,
                     document.body)}
-
+  <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <div style={{ marginTop: '20px', width: '100%' }}>
         <Button style={{ marginRight: '20px' }} className="custom-btn" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>
         <Button className="custom-btn" href="mailto:serenitymeditation2021@gmail.com" target="_blank">{t('Contact')}</Button>

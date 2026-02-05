@@ -28,6 +28,7 @@ const { t } = useTranslation('common');
         </header>
             <MeditationInfo />
          <br />
+         
       <MedBenefits />
        <br></br>
         <h1 className='center'>{t("Meditation 101")}</h1>

@@ -4,6 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
+import spectraspray from "../images copy/spectraspray.png";
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
@@ -27,6 +28,9 @@ export function Nutrition() {
             </header>
             <Nutritionpage />
         <br></br>
+         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
         <h1 className='center'>{t("Functional Nutrition")}</h1>
       <FuncVids />
       <FuncModal />

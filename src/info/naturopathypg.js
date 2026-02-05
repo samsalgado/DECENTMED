@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import "../App.css";
 import './Info.css';
+import spectraspray from "../images copy/spectraspray.png";
 import totalcare from '../images copy/totalcare.png';
 import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
@@ -64,6 +65,9 @@ const Naturo = () => {
           </div>
         </div>
         <div>
+           <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
           <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">
             {t('Find Out How Dr. Barnes Can Help You')}
           </Button>

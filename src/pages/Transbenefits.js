@@ -8,6 +8,7 @@ import { Button, Modal } from'react-bootstrap';
 import ramyoga from "../images copy/ramyoga.png";
 import slow from "../images copy/slowdown.png";
 import TsBenefits from "./tben";
+import spectraspray from "../images copy/spectraspray.png";
 import flow from "../images copy/flow.png";
 import ReactDOM from 'react-dom';
 import r from "../images copy/r.png";
@@ -167,7 +168,9 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 </Modal.Footer>
               </Modal>,
               document.body)}
-
+ <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
@@ -192,6 +195,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
     </div>
   }
 >
+ 
   <Boundaries />
 </Collapsible>
 

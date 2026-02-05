@@ -21,6 +21,7 @@ import erica from "../images copy/ericawellness.png";
 import { useTranslation } from 'react-i18next';
 import ReactDOM from 'react-dom';
 import { Button } from 'react-bootstrap';
+import spectraspray from "../images copy/spectraspray.png";
 import acutreatsIN from '../images copy/IMG_9305.jpeg';
 import burnout from '../images copy/burnout.jpeg';
 import Acuvids from '../info/acuvids';
@@ -339,6 +340,9 @@ const iframeStyle = {
               </Modal>,
               document.body
               )}
+              <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
       <div className='acupen'>
         <img className='gridimag' src={acuchart} alt='Ac' />
         <img className='gridimag' src={acutreatsIN} alt='Ac' />

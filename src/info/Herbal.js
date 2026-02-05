@@ -5,7 +5,7 @@ import './Info.css';
 import { Button, Modal } from 'react-bootstrap';
 import homeo from '../images copy/meme3.png';
 import { useTranslation } from 'react-i18next';
-
+import spectraspray from "../images copy/spectraspray.png";
 const Herbal = () => {
   const { t } = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
@@ -78,7 +78,9 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
             {t("Transcript")}
           </Button>
         <div>
-         
+          <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
               <br></br>
               <br></br>
          

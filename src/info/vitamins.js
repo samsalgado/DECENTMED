@@ -4,7 +4,7 @@ import d from '../images copy/d.png';
 import gluta from '../images copy/gluta.png';
 import a from '../images copy/a.jpg';
 import VitaminE from '../images copy/vitaminE.png';
-import coq10 from '../images copy/coq10.png';
+import coq10 from '../images copy/COQ10.png';
 import K from '../images copy/K.jpg';
 import vitB from '../images copy/vitB.png';
 import curcumin from '../images copy/curcumin.png';
@@ -15,7 +15,6 @@ function Vitamins() {
         <div className="container-blue">
             <div className="row justify-content-center">
                 <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t('Best Vitamins and Antioxidants')}</h2>
-
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t('Vitamin D')}</h3>
                     <img className='gridimage' src={d} alt='' />
