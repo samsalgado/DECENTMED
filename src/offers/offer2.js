@@ -2,7 +2,6 @@
 import "../App.css";
 import { CookiesProvider } from 'react-cookie';
 import { useTranslation } from 'react-i18next';
-import imge from '../images copy/stripe.jpg';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
@@ -40,7 +39,6 @@ const Offer2 = () => {
  <div className='box'>
         <CookiesProvider>
           <div>
-            <img src={imge} className="pik1 stripe" alt='' />
             <h2>{t('Pay with Credit Card')}</h2>
           </div>
           <Button             className="custom-btn"

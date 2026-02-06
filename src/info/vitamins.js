@@ -4,7 +4,7 @@ import d from '../images copy/d.png';
 import gluta from '../images copy/gluta.png';
 import a from '../images copy/a.jpg';
 import VitaminE from '../images copy/vitaminE.png';
-import coq10 from '../images copy/COQ10.png';
+import coq10 from '../cards/c.png';
 import K from '../images copy/K.jpg';
 import vitB from '../images copy/vitB.png';
 import curcumin from '../images copy/curcumin.png';
