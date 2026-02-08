@@ -8,7 +8,7 @@ function BlueContainer() {
     const { t } = useTranslation("common");
     return (
         <div className="container-blue">
-            <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Treatment Options')}</h1>
+            <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Holistic Health Collective')}</h1>
             <div className="row justify-content-center">
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Homeopathy')}</h3>
