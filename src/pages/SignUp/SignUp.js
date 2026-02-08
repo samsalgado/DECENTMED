@@ -124,6 +124,7 @@ const SignUp = () => {
         <h1>{t("Provider Registration")}</h1>
         <br></br>
         <br></br>
+        <br></br>
         <div className="auth-form-container">
           <div className="auth-form-wrapper">
             <button
