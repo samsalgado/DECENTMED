@@ -15,7 +15,7 @@ export function HealPract() {
   const practitioners = [
      {
       id: 1,
-      name: t('Saumil Manek'),
+      name: t('UNIONisCREATION™'),
       title: t("Saum"),
       location: "Houston, Texas, USA",
       availability: t("Available Nationwide"),

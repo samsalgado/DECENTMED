@@ -1,7 +1,7 @@
 import React from "react";
 import './acu.css'; 
 import './Info.css';
-import event0 from "../images copy/soundbath0.png";
+//import event0 from "../images copy/soundbath0.png";
 import event from "../images copy/yogaesp.png";
 import event1 from "../images copy/discoverygreen.png";
 import event2 from "../images copy/tulum.png";
@@ -59,7 +59,7 @@ const {t} = useTranslation('common');
     allowFullScreen>
   </iframe>
 </div>
-       <Button className="custom-btn" href="https://unioniscreation.com/" target="_blank">{t('Experience Sound Healing')}</Button>
+       <Button className="custom-btn" href="https://unioniscreation.com/" target="_blank">{t('Experience Sound Healing (UNIONisCREATION™)')}</Button>
       <br></br>
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
                   <img className='gridimag' src={spectraspray} alt='spectra spray' />
@@ -181,9 +181,6 @@ const {t} = useTranslation('common');
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
-   <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740" alt="Thriving by Nature">
-        <img className='gridimag' src={event0} alt='Soundbath in the Sky' />
-        </a>
          
          <a href="https://www.eventbrite.com/e/walking-the-path-of-peace-a-transformative-meditation-journey-tickets-1979217173846" alt="Thriving by Nature">
         <img className='gridimag' src={event4} alt='Walking the Path of Peace – A Transformative Meditation Journey' />

@@ -51,7 +51,7 @@ const Blog19 = () => {
     textDecoration: 'none',
   }}
   className="custom-btn"
-  href="https://decentmed.org/ak" 
+  href="https://decentmed.org/applied-kinesiology" 
   target="_blank"
 >
   {t("Learn More")}
