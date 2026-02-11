@@ -69,7 +69,6 @@ const {t} = useTranslation('common');
                       </Modal.Footer>
                     </Modal>
         </div>
-      
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
