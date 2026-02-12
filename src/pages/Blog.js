@@ -269,7 +269,7 @@ const BlogPage = () => {
               {t(`A detox cleanses the body. A water detox is a way to flush out the body's toxins. A water detox ranges from 1-3 days to restore the cells to ketosis. Furthermore, when detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.`)}
               <a href='https://gerson.org/' target="_blank" rel="noopener noreferrer"> {t('Cancer')}</a> {t('treatments globally like the Gerson Therapy and')} <a href='https://drsebiscellfood.com/'>{t('Dr. Sebi diet')}</a> {t('use forms of Green Diets and Detoxification to cleanse the body from toxins that cause cancer.')}</p>
             <div className='container'>
-              <a href='/blog4'>
+              <a href='/cellular-regeneration'>
                 <figure>
                   <img className='gridimag' src={cell} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
