@@ -59,7 +59,10 @@ export function Chiropractic() {
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Chiropractor Near Me")}</title>  
+          <title>{t("Chiropractor Near Me")}</title> 
+                                          <meta name="description" content={t('Seeking Chiropractic Near Me - Location-Based Chiropractic Care')} />
+                <meta property="og:title" content={t('Chiropractic Near Me')} />
+ 
           <meta 
             name="description" 
             content={t("When searching chiropractor near me, we have the volume of chiropractors worldwide. Find a chiropractors near you! Explore how chiropractors can support your body's natural healing potential. Learn more about chiropractic care and its benefits.")} 

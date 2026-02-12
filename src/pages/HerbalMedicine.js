@@ -18,6 +18,9 @@ const { t } = useTranslation('common');
 
       <Helmet>  {/* Add Helmet component */}
         <title>{t("Encyclopedia of Herbal Medicine")}</title>
+                           <meta property="og:title" content={t("Encyclopedia of Herbal Medicine")} />                
+        <meta name="description" content={t("Experience Encyclopedia of Herbal Medicine")} />
+
         <meta name="description" content={t("Encyclopedia of Herbal Medicine, the body has an immense regenerative potential to heal itself. Let herbal medicine transform your body! Explore how herbal medicine can support your body's natural healing potential. Learn more about herbal medicine and its benefits.")} />
       </Helmet>
       <header>

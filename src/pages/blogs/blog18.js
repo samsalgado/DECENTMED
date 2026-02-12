@@ -16,6 +16,8 @@ const Blog18 = () => {
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t('Top 5 Stretches for Back Pain in Scottsdale')}</title>
+               <meta property="og:title" content="Top 5 Stretches for Back Pain in Scottsdale" />                
+        <meta name="description" content="Top 5 Stretches for Back Pain in Scottsdale" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Discover five powerful stretches to ease back pain, recommended by Scottsdale health professionals. Improve mobility, reduce tension, and feel better naturally." />      </Helmet>
       <header>

@@ -10,6 +10,8 @@ export function Acupuncture({ t }) {
         <div>
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("Acupuncture Therapy")}</title>
+                    <meta name="description" content={t('Seeking Acupuncture Near Me? Learn Acupuncture Therapy from global experts')} />
+            <meta property="og:title" content={t('Acupuncture Therapy')} />
                     <meta name="description" 
                       content={t("Acupuncture Therapy: Learn the key differences in Dry Needling vs Acupuncture, and so much more. Explore how traditional techniques differ in our comprehensive guide.")} />
                 </Helmet>

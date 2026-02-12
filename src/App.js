@@ -3,6 +3,7 @@ import './App.css';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import { Home } from './pages/Home';
+import BrowserOnly from "./Components/BrowserOnly";
 import { Mindset } from './pages/Thoughts';
 import Fen from './pages/blogs/fenbendazole';
 import Ivermectin from './pages/blogs/ivermectin';
@@ -110,12 +111,13 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-       <Wrapper>
-      {/* <Topbar t={t} /> */}
+       <BrowserOnly>
       <ScrollTop />
 <DisclaimerPopup></DisclaimerPopup>
       {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}
       <SignupPrompt></SignupPrompt>
+      </BrowserOnly>
+      <Wrapper>
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
         <Route path="/soundhealing" element={<Soundhealing />} />

@@ -12,6 +12,9 @@ const {t} = useTranslation('common')
 
       <Helmet>
         <title>{t('Dry Needling vs Acupuncture')}</title>
+                                                  <meta property="og:title" content={t("Dry Needling vs Acupuncture")} />                
+        <meta name="description" content={t("Dry Needling vs Acupuncture")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Dry needling vs acupuncture: Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases." />
       </Helmet>

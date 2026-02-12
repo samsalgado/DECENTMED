@@ -755,6 +755,9 @@ const renderCoachesInOrder = () => {
 
         <Helmet>
           <title>{t("Find Health Coaches Near You - Location-Based Coaching Services")}</title>  
+                                          <meta name="description" content={t('Find Health Coaches Near You - Location-Based Coaching Services')} />
+                <meta property="og:title" content={t('Find Health Coaches Near You - Location-Based Coaching Services')} />
+
           <meta name="description" content={t("Find certified health coaches in your area. Enter your location to see available coaching professionals near you.")} />
         </Helmet>
 

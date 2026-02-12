@@ -47,6 +47,8 @@ const BlogPage = () => {
     <div>
         <Helmet>
           <title>Blogs</title>
+                <meta name="description" content={t('DecentMed Blogs')} />
+                <meta property="og:title" content={t('Holistic Health Blogs')} />          
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="description" content="Learn about how to maintain and grow your health! Explore our Wellness Blogs to learn from providers worldwide. Learn more about how to experience vitality." />
         </Helmet>

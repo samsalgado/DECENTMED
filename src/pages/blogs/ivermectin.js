@@ -129,6 +129,8 @@ const {t} = useTranslation('common');
     <>
       <Helmet>
         <title>{t("Ivermectin for Cancer")}</title>
+                                <meta property="og:title" content="Ivermectin for Cancer" />                
+        <meta name="description" content="Ivermectin for Cancer" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={t("Documenting the efficacy of Ivermectin for Cancer in humans. Take a journey into the world of cancer research, in the pursuit of a cure.")} />
       </Helmet>

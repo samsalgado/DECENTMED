@@ -11,6 +11,9 @@ const {t} = useTranslation('common');
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t('Batana Oil Benefits')}</title>
+    <meta property="og:title" content={t("Batana Oil Benefits")} />                
+        <meta name="description" content={t("Batana Oil Benefits")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Discover the hidden secret about hair growth. Batana oil is rich in vitamin E, learn more about batana oil benefits." />
       </Helmet>

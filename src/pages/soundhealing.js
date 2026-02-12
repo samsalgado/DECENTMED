@@ -10,6 +10,8 @@ const { t } = useTranslation('common');
      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Healing Sounds")}</title>  
+                    <meta property="og:title" content={t("Healing Sounds")} />                
+        <meta name="description" content={t("Healing Sounds")} />        
             <meta name="description" content={t("Discover the power of healing sounds to reduce stress, enhance relaxation, and promote emotional well-being. Experience therapeutic sound frequencies that support your journey to inner peace and balance.")} />      </Helmet>
             <header>
             <Topbar />

@@ -43,6 +43,8 @@ export function Apoth() {
     <div className='wrapper'>
       <Helmet>
         <title>{t('Apothecary')}</title>
+                <meta name="description" content={t('Apothecary')} />
+                <meta property="og:title" content={t('Global Plant Apothecary')} />
         <meta name="description" content={t('Discover the world of natural wellness at Your Apothecary Name! Explore our selection of herbal remedies, essential oils, and holistic products to support your health and well-being. Learn more about the benefits of natural healing approaches.')} />
       </Helmet>
       <header>

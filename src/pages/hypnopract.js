@@ -45,6 +45,8 @@ export function Hypnopract() {
 
       <Helmet>
         <title>{t("Hypnotherapy Near Me")}</title>
+                <meta property="og:title" content={t("Hypnotherapy Near Me")} />                
+        <meta name="description" content={t("Hypnotherapy Near Me")} />        
         <meta name="description" content={t("Looking for hypnotherapy near you? Find qualified hypnotherapists to assist with therapy and well-being.")} />
       </Helmet>
 

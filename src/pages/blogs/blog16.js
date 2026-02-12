@@ -12,6 +12,8 @@ const {t} = useTranslation('common')
 
       <Helmet>
         <title>{t('Rose Oil Benefits')}</title>
+                                                        <meta property="og:title" content={t("Rose Oil Benefits")} />                
+        <meta name="description" content={t("Rose Oil Benefits")} />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Rose Oil Benefits: ose oil stems from the petals of Rosa centifolia and Rosa damascena. The petals are astringent and strong in vitamins A,C, and E." />
       </Helmet>

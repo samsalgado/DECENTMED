@@ -219,6 +219,8 @@ const Hoxsey = ({t}) => {
 
       <Helmet>
         <title>{t("You Don’t Have to Die")}</title>
+                        <meta property="og:title" content="You Don’t Have to Die" />                
+        <meta name="description" content="You Don’t Have to Die" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={t("Documenting the efficacy of Cancer treatments. You Don’t Have to Die by Harry Hoxsey outlines history and proof of his cancer treatment and its efficacy.")} />
       </Helmet>

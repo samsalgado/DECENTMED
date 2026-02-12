@@ -12,6 +12,9 @@ const {t} = useTranslation('common')
 
         <Helmet>
             <title>{t("Montreal Acupuncture")}</title>
+                                        <meta property="og:title" content={t("Montreal Acupuncture")} />                
+        <meta name="description" content={t("Montreal Acupuncture")} />        
+
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={t("Acupuncture Montreal: Showcasing practioners throughout the Quebec province and Montreal area as a whole. Read this article to learn more about Acupuncture.")} />
         </Helmet>

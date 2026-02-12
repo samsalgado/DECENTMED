@@ -15,6 +15,9 @@ const { t } = useTranslation('common');
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Functional Medicine")}</title>  
+         <meta property="og:title" content={t("Functional Medicine")} />                
+        <meta name="description" content={t("Functional Medicine")} />
+
         <meta name="description" content={t("Learn about Functional Medicine and its benefits! Discover the ancient wisdom and techniques used to help people cope with lifestyle changes and mental health challenges. Learn more.")} />
       </Helmet>
             <header>

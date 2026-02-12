@@ -28,8 +28,10 @@ const learnmore = () => {
     return (
          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
                 <Helmet>  {/* Add Helmet component */}
-                    <title>{t("3 Day Detox Cleanse")}</title>
-                    <meta name="description" content={t("3 Day Detox cleanse can clean the body from toxins. A detox cleanse is a great way to reset your cells into ketosis. Jumpstart your health journey!")} />
+                    <title>{t("Intuitive Energy Healing")}</title>
+                                    <meta property="og:title" content={t('Intuitive Energy Healing')} />                
+                <meta name="description" content={t("Experience Intuitive Energy Healing")} />
+                    <meta name="description" content={t("Seeking Energy Healing near me? Experience intuitive energy healing from around the world.")} />
                 </Helmet>
 
                 <header>

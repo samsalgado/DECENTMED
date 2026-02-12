@@ -12,6 +12,9 @@ const Blog3 = () => {
 
       <Helmet>
         <title>{t('Detox Cleanse')}</title>
+                                                          <meta property="og:title" content={t("Detox Cleanse")} />                
+        <meta name="description" content={t("Detox Cleanse")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" 
         content={t("Detox Cleanse: Discover the ultimate guide to resetting your body naturally in 2025. Explore effective detox methods, clean eating habits, and professional tips for a full-body wellness reset.")} />

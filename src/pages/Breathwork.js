@@ -11,6 +11,9 @@ const { t } = useTranslation('common');
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Somatic Breathwork")}</title>  
+                        <meta name="description" content={t('Experience Somatic Breathwork from global experts')} />
+                <meta property="og:title" content={t('Somatic Breathwork')} />
+
         <meta name="description" content={t("Learn about Somatic breathwork and its benefits! Discover the ancient wisdom and techniques used to help people cope with stress, anxiety, and mental health challenges. Learn more.")} />
       </Helmet>
 

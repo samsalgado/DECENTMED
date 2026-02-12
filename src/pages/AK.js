@@ -13,7 +13,10 @@ const learnmore = () => {
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Applied Kinesiology")}</title>  
+        <title>{t("Applied Kinesiology")}</title> 
+                    <meta name="description" content={t('Seeking Applied Kinesiology Near Me? Experience Applied Kinesiology')} />
+            <meta property="og:title" content={t('Applied Kinesiology')} />
+ 
         <meta name="description" content={t("Seeking Applied Kinesiology near me? Learn about Applied Kineiology and its benefits! Discover the techniques used to help with Autism Disorder, pain, and other complex disorders. Learn more.")} />
       </Helmet>
             <header>

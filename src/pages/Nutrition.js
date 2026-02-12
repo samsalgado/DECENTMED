@@ -21,6 +21,9 @@ export function Nutrition() {
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
             <Helmet>  
                 <title>{t('Dr Sebi Food List')}</title>
+                                <meta property="og:title" content={t("Dr Sebi Food List & Nutrition Education")} />                
+        <meta name="description" content={t("Dr Sebi Food List")} />        
+
                 <meta name="description" content="Explore Dr. Sebi's nutritional food list to wellness. Discover obesity facts and how you can improve your nutrition. Learn more about Dr. Sebi's nutritional philosophy." />
             </Helmet>
             <header>

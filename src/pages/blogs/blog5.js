@@ -11,6 +11,9 @@ const Blog5 = () => {
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t('Acupuncture near me')}</title>
+                                                                          <meta property="og:title" content={t("Acupuncture near me")} />                
+        <meta name="description" content={t("Acupuncture near me")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Looking for acupuncture services close to home? Discover qualified acupuncturists offering holistic treatments for a range of health concerns." />
       </Helmet>

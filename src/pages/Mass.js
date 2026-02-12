@@ -41,6 +41,9 @@ export default function MassPract() {
     <div>
       <Helmet>
         <title>{t('Find a Practitioner')} - DecentMed</title>
+                <meta property="og:title" content={t("Find a Practitioner")} />                
+        <meta name="description" content={t("Find a Practitioner")} />        
+
       </Helmet>
     <header>
       <Topbar />      

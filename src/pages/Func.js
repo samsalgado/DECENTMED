@@ -18,7 +18,10 @@ export function Func() {
   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Functional Medicine")}</title>  
+          <title>{t("Functional Medicine")}</title> 
+                                                        <meta property="og:title" content={t("Functional Medicine")} />                
+                <meta name="description" content={t("Functional Medicine")} />
+ 
           <meta name="description" content={t("Working with complex disorders and cancers via functional medicine. Essence of Life Wellness Center assists you holsitically, utilizing frequencies to communicate with the brain.")} />
         </Helmet>
         <header style={{

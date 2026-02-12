@@ -11,6 +11,9 @@ const Blog20 = () => {
 
       <Helmet>
         <title>{t('How much Does Acupuncture Cost')}</title>
+                               <meta property="og:title" content="How much Does Acupuncture Cost" />                
+        <meta name="description" content="How much Does Acupuncture Cost" />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" 
     content={t("How Much Does Acupuncture Cost: Compare 2025 treatment prices and factors affecting session rates. Learn about insurance coverage and how to find affordable, high-quality care.")} />

@@ -13,7 +13,10 @@ const learnmore = () => {
     return( 
     <div>
         <Helmet>  {/* Add Helmet component */}
-  <title>{t("Trauma Systems Therapy & Trauma Release Exercises")}</title>        
+  <title>{t("Trauma Systems Therapy & Trauma Release Exercises")}</title>     
+                          <meta property="og:title" content={t("Trauma Systems Therapy & Trauma Release Exercises")} />                
+        <meta name="description" content={t("Trauma Systems Therapy & Trauma Release Exercises")} />        
+   
   <meta name="description" 
     content={t("Discover trauma systems therapy combined with trauma release exercises to support healing and resilience. Learn how expert trauma coaches and practitioners help men release stress, restore balance, and improve overall wellbeing.")} />    
      </Helmet>

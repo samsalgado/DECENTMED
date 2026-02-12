@@ -74,6 +74,8 @@ Think of it as a reset button for your mind and body so you can feel more ground
 
       <Helmet>
         <title>{t("Acupuncturist Near Me")}</title>  
+            <meta name="description" content={t('Seeking Acupuncturist Near Me? Location-based Telehealth for Acupuncture')} />
+            <meta property="og:title" content={t('Acupuncturist Near Me')} />
         <meta name="description" content={t("Searching Acupuncturist near me? Look no further than our fantastic acupuncturist that can assist you on your pathway to wellness.")} />
       </Helmet>
       <header>

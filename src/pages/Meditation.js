@@ -20,7 +20,9 @@ const { t } = useTranslation('common');
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
                 <Helmet>  {/* Add Helmet component */}
-        <title>{t("Sleep Meditation")}</title>  
+        <title>{t("Sleep Meditation")}</title> 
+                        <meta property="og:title" content={t("Sleep Meditation")} />                
+        <meta name="description" content={t("Sleep Meditation")} />        
         <meta name="description" content={t("Discover the transformative power of Meditation! Sleep meditation and more; how meditation can help you heal. Learn more.")} />
       </Helmet>
         <header>

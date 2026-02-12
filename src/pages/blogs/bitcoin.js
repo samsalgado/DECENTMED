@@ -11,6 +11,9 @@ const {t} = useTransition('common')
     paddingTop: '2rem'}}>
       <Helmet>
         <title>{t("What is Bitcoin")}</title>
+                                  <meta property="og:title" content={t("What is Bitcoin")} />                
+        <meta name="description" content={t("What is Bitcoin")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={t("What is Bitcoin? Bitcoin is this simplified world, a way to transact and exchange person-to-person without a 'middleman.'")} />
       </Helmet>

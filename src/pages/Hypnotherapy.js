@@ -16,6 +16,9 @@ const { t } = useTranslation('common');
 
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Hypnotherapy")}</title>  
+                        <meta property="og:title" content={t("Hypnotherapy")} />                
+        <meta name="description" content={t("Hypnotherapy")} />        
+
         <meta name="description" content={t("Learn about Hypnotherapy and its benefits! Discover the ancient wisdom and techniques used to help people cope with stress, anxiety, and mental health challenges. Learn more.")} />
       </Helmet>
 

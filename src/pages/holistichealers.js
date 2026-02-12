@@ -15,6 +15,8 @@ useEffect(() => {
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Emotional Eating Coach")}</title>  
+        <meta property="og:title" content={t("Emotional Eating Coach")} />                
+        <meta name="description" content={t("Emotional Eating Coach")} />
         <meta name="description" content={t("If you want one of the best emotional eating books, look no further than the duo of Michelle Holzberger and emotional eating coach Vickie Todd.")} />
       </Helmet>
             <header>

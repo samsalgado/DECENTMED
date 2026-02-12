@@ -78,6 +78,8 @@ export function HealPract() {
 
         <Helmet>
           <title>{t("Sound Bowl Healing Near Me")}</title>  
+                   <meta property="og:title" content={t("Sound Bowl Healing Near Me")} />                
+        <meta name="description" content={t("Experience Sound Bowl Healing Near You")} />
           <meta name="description" content={t("Seeking sound bowl healing near me? Look no further than great sound healers that can assist you holistically, and provide you wholeness.")} />
         </Helmet>
 

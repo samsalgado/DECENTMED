@@ -13,6 +13,9 @@ const Blog9 = () => {
 
       <Helmet>
         <title>{t('The Importance of Nutrition')}</title>
+                    <meta property="og:title" content={t("The Importance of Nutrition")} />                
+        <meta name="description" content={t("The Importance of Nutrition")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Discover why nutrition is crucial for optimal health, energy levels, and overall well-being. Learn about essential nutrients, balanced diets, and how to make informed food choices." />
       </Helmet>

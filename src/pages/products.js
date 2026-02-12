@@ -111,6 +111,9 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Products")}</title>  
+                                                          <meta property="og:title" content={t("Products")} />                
+        <meta name="description" content={t("Products")} />        
+
         <meta name="description" content={t("Seeking Holistic products that help you meet your health needs. We only work with the best products in the world!")} />
       </Helmet>
             <header>

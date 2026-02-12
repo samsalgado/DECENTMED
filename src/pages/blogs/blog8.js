@@ -12,6 +12,9 @@ const {t} = useTranslation('common')
 
       <Helmet>
         <title>{t('Hepatitis B: Herbal Medicine On Hep B')}</title>
+            <meta property="og:title" content={t("Hepatitis B: Herbal Medicine On Hep B")} />                
+        <meta name="description" content={t("Hepatitis B: Herbal Medicine On Hep B")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Hepatitis B: Herbal Medicine On Hep B. Currently, there is no cure to Hepatitis B, let's explore some plants that help in fighting hep B." />
       </Helmet>

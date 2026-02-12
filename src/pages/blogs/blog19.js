@@ -12,6 +12,8 @@ const Blog19 = () => {
 
       <Helmet>
         <title>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}</title>
+                       <meta property="og:title" content="Applied Kinesiology with Acupuncture and Chiropractic for Autism" />                
+        <meta name="description" content="Applied Kinesiology with Acupuncture and Chiropractic for Autism" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Discover the key to addressing Autism disorder. Dr. Amy Wicks and team has been in the holistic health space for over a decade. This article explains the guide to addressing Autism using a multiplicity of modalities." />
       </Helmet>

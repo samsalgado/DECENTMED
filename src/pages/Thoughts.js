@@ -14,6 +14,9 @@ const learnmore = () => {
      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Law of Attraction: Mindset Coach")}</title>  
+                <meta property="og:title" content={t("Law of Attraction: Mindset Coach")} />                
+        <meta name="description" content={t("Mindset Coaching")} />        
+
         <meta name="description" content={t("Explore mindset coaching designed to build resilience, improve focus, and support personal growth. Learn how expert mindset coaching can help you overcome obstacles and achieve lasting change.")} />
       </Helmet>
             <header>

@@ -16,6 +16,8 @@ const Blog23 = () => {
 
       <Helmet>
         <title>{t('Holistic Health Marketing')}</title>
+                <meta property="og:title" content="Holistic Health Marketing" />                
+        <meta name="description" content="Holistic Health Marketing" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta 
           name="description" 

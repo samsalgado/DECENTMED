@@ -12,6 +12,8 @@ const BlogAcu = () => {
 
       <Helmet>
         <title>{t('Acupuncture for Carpal Tunnel')}</title>
+                <meta property="og:title" content="Conversion Rate Optimization Consultant" />                
+        <meta name="description" content="Conversion Rate Optimization Consultant" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Learn how acupuncture for carpal tunnel can provide relief. Dr. Amy Wicks and her holistic health team offer a range of treatments, including acupuncture, to address pain and discomfort associated with carpal tunnel syndrome." />
       </Helmet>

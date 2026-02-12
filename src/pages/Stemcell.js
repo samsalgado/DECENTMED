@@ -21,6 +21,8 @@ useEffect(() => {
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
         <title>{t('Stem Cell Therapy')}</title>  
+        <meta property="og:title" content={t("Stem Cell Therapy")} />                
+        <meta name="description" content={t("Stem Cell Therapy")} />        
         <meta
           name="description"
           content={t("Discover how Mesenchymal Stem Cell therapy supports tissue repair, reduces inflammation, and promotes natural healing for a wide range of conditions.")}        />      

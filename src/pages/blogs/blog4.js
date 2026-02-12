@@ -12,6 +12,9 @@ const Blog4 = () => {
 
       <Helmet>
         <title>{t('Cellular Regeneration')}</title>
+                                                                  <meta property="og:title" content={t("Cellular Regeneration")} />                
+        <meta name="description" content={t("Cellular Regeneration")} />        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Unlock your body's incredible healing power. The body has an immense regenerative potential to heal itself. Cellular regeneration wakes the body" />
       </Helmet>

@@ -16,6 +16,8 @@ const Blog24 = () => {
 
       <Helmet>
         <title>{t('Conversion Rate Optimization Consultant')}</title>
+        <meta property="og:title" content="Conversion Rate Optimization Consultant" />                
+        <meta name="description" content="Conversion Rate Optimization Consultant" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta 
           name="description" 

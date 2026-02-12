@@ -77,7 +77,10 @@ export function EnergyPract() {
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Energy Healer Near Me")}</title>  
+          <title>{t("Energy Healer Near Me")}</title> 
+                                              <meta property="og:title" content={t("Energy Healer Near Me")} />                
+                <meta name="description" content={t("Seeking Energy Healer Near Me? Experience lasting change!")} />
+ 
           <meta name="description" content={t("Seeking energy healer near me? Look no further than great energy healers that can assist you holistically, and provide you wholeness.")} />
         </Helmet>
         <header>

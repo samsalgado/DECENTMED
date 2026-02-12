@@ -12,6 +12,8 @@ const {t} = useTranslation('common')
 
       <Helmet>
         <title>{t('Can Constipation cause Back Pain')}</title>
+                                          <meta property="og:title" content={t("Can Constipation cause Back Pain")} />                
+        <meta name="description" content={t("Can Constipation cause Back Pain")} />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Can constipation cause back pain? Yes, think of it as a “check engine light” for the body. Learn about how to maintain and grow your health!" />
       </Helmet>
