@@ -6,6 +6,7 @@ import Benefits from "./benefits";
 import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
+import ss from "../images copy/ss.png";
 import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 import Hypnostudies from "./hypnostudy";
@@ -37,6 +38,11 @@ const {t} = useTranslation('common');
           flex: '1'
         }}>
           <p className='pr'>{t("Hypnotherapy is a therapeutic technique that uses guided hypnosis to help individuals achieve a relaxed, focused state of mind, increasing their suggestibility and enabling them to address various issues. Hypnotherapy helps to break subconscious blocks that arise throughout people's lives. Utilize hypnotherapy to empower yourself and become your optimal YOU.")}</p>
+          <h2 className='pr'>{t("Shea Shulman Therapy: Hypnotherapy for Trauma")}</h2>
+          <p className='pr'>-{t("Clients are not required to re-live painful or traumatic experiences.")}</p>
+          <p className='pr'>-{t("My hypnotherapy methodology creates fast, noticeable change beginning in the very first session.")}</p>
+          <p className="pr">-{t("By working directly with the subconscious mind, I help clients eplace trauma, fear, doubt, grief, guilt, shame, stress, and anxiety with strength, certainty, emotional freedom, and the ability to move forward with confidence and happiness.")}</p>
+          <p className="pr">-{t("Therapy is healing, restorative, empowering and life-changing")}</p>
           <Button className="custom-btn" href="https://decentmed.org/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </div>
         <iframe
@@ -91,6 +97,7 @@ const {t} = useTranslation('common');
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+              <div className="pr"> <span className="click-here">Click here:</span> <a href="https://sheashulmantherapy.com/" alt="spectra spray"> <img className="gridimag" src={ss} alt="spectra spray" /> </a> </div>
         <br></br>
         <Benefits />
         <br></br> 

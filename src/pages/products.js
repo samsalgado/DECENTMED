@@ -286,6 +286,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         />
           <figcaption>{t("Buy Now")}</figcaption>
         </figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S1j-Oxijls8?si=NqXQ_XaZgUqIhTWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </a>
            <p>
         {t("An extensive review, the product line is plant-based and features some of the highest performing herbs in the world: Moringa, Turmeric, Elderberry, Rosemary and more. The product line extends beyond products. She also has services to help health coaches and Energy healers.")}

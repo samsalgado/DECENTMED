@@ -5,20 +5,21 @@ const treatmentLinks = {
   homeopath: "https://decentmed.org/homeopathy",
   prevent: "https://decentmed.org/prevent",
   detox: "https://decentmed.org/detox",
-  acupuncture: "https://decentmed.org/acu",
+  acupuncture: "https://decentmed.org/acupuncture",
   ayurveda: "https://decentmed.org/ayurveda",
   stemcell: "https://decentmed.org/stemcell",
   nutriton: "https://decentmed.org/nutrition",
   chiro: "https://decentmed.org/chiropractic",
   empower:"https://decentmed.org/transformationalcoaching",
-  ak:"https://decentmed.org/ak",
+  ak:"https://decentmed.org/applied-kinesiology",
   nutri:"https://decentmed.org/nutrigenomics",
-  breathwork:"https://decentmed.org/breath",
+  breathwork:"https://decentmed.org/breathwork",
   chelation:"https://decentmed.org/chelation",
   hypnotherapy:"https://decentmed.org/hypnotherapy",
   herbalmedicine:"https://decentmed.org/herbalmedicine",
   meditation:"https://tdecentmed.org/meditation",
-  seo:"https://decentmed.org/digitalmarketing"
+  soundhealing:"https://decentmed.org/soundhealing",
+  energyhealing:"https://decentmed.org/energyhealing"
 };
 
 const Grid = () => {

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
 import Green from '../cards/Green-hypnotherapy.png';
+import shea from "../cards/shea.png";
 import { useTranslation } from 'react-i18next';
 export function Hypnopract() {
   const { t } = useTranslation('common');
@@ -140,6 +141,75 @@ export function Hypnopract() {
                           >
                             {t("Book Follow-up Consultation")}
                           </a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div className="row mb-4">
+                  <div className="col-md-12">
+                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body">
+                        <div className="row">
+                          <div className="col-md-2 text-center">
+                            <img 
+                              src={shea} 
+                              alt="Shea Shulman Therapy" 
+                              style={{ maxWidth: '300px', maxHeight: '300px', objectFit: 'contain' }} 
+                            />
+                          </div>
+                          <div>
+                          <iframe
+                          style={{
+                            borderRadius: "8px",
+                            boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
+                          }}
+                          src=""
+                          width="100%"
+                          height="305px"
+                          title="Acupuncture"
+                          allow="autoplay"
+                          allowFullScreen
+                        ></iframe>                        
+                        </div>
+                          <div className="col-md-7">
+                            <h2 className="h4 mb-1">{t('Shea Shulman Therapy')}</h2>
+                            <p className="text-muted mb-2">{t("Shea Shulman")}</p>
+                            <p className="mb-2">
+                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                              {t("Tampa Bay, Florida")}
+                            </p>
+                            <div className="mb-2">
+                              <span className="badge bg-light text-dark me-1">{t("Subconscious Reprogramming")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("EMDR")}</span>
+                              <span className="badge bg-light text-dark me-1">{t("Overcome Trauma")}</span>
+                            </div>
+                            <p className="card-text small">
+                              {t("shea_bio")}
+                            </p>
+                          </div>
+                          <div className="col-md-3 text-end">
+                          {/* Calendly inline embed */}
+                         <div style={{ width: '100%', height: '500px', marginBottom: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <a
+                              href="https://clients.mindbodyonline.com/ASP/adm/adm_appt_search.asp?studioid=5750436&trn=0&prodGroupId=&lvl=&catid=&prodid=&date=2%2F17%2F2026&classid=0&tg=&stype=%2D9&loc=1&vt=&justloggedin=&pMode=0&view=&sSU=&qParam=&page=&optForwardingLink=&nLgIn="
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{
+                                padding: '15px 30px',
+                                backgroundColor: '#4CAF50',
+                                color: '#fff',
+                                fontSize: '20px',
+                                borderRadius: '8px',
+                                textDecoration: 'none',
+                                fontWeight: '600',
+                              }}
+                            >
+                              {t("Book")}
+                            </a>
+                          </div>
+                        
                         </div>
                         </div>
                       </div>

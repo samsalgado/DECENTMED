@@ -12,11 +12,12 @@ mindset:require("../images copy/mindd.png"),
 chelation: require("../images copy/chelation.png"),
 homeopath: require("../images copy/homeo.png"),
 breathwork:require("../images copy/breathworkk.png"),
+energy: require("../images copy/energy.png"),
 hypnotherapy:require("../images copy/hypno.png"),
 herbalmedicine:require("../images copy/HERBALMEDICINE .png"),
 meditation:require("../images copy/meditation.jpg"),
 naturopathy:require("../images copy/naturopathyy.png"),
 nutri:require("../images copy/nutrig.png"),
-seo:require("../images copy/1755842387280.jpeg")
+soundhealing:require("../images copy/sh.png")
 };
 export default Treatment;

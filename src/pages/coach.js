@@ -7,6 +7,7 @@ import Ramona from '../cards/IMG_0587.jpeg';
 import Gorilla from '../cards/gorilla.png';
 import Anil from '../cards/anil.png';
 import Lynn from "../cards/lynn.png";
+import caroline from "../cards/caroline.png";
 import Kristina from "../images copy/kristina.png";
 import Jessica from "../cards/jessica.jpg";
 import Priscilla from '../cards/priscilla.jpg';
@@ -19,6 +20,7 @@ export function Coaching() {
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [showAnil, setShowAnil] = useState(false);
+  const [showCaroline, setShowCaroline] = useState(false);
   const [showJohn, setShowJohn] = useState(false);
   const [showLynn, setShowLynn] = useState(false);
   const [showJim, setShowJim] = useState(false);
@@ -79,6 +81,7 @@ const handleSearch = () => {
   if (!location.trim()) {
     setShowAnil(true);
     setShowJohn(true);
+    setShowCaroline(true);
     setShowLynn(true);
     setShowPriscilla(true);
     setShowJessica(true);
@@ -98,6 +101,13 @@ const indiaTerms = [
     'pakistan', 'bangladesh', 'sri lanka', 'nepal', 'bhutan', 'maldives',
     'afghanistan', 'karachi', 'lahore', 'islamabad', 'dhaka', 'colombo', 'kathmandu'
   ].map(term => term.toLowerCase());
+  const kcMoTerms = [
+  'kansas city', 'kc', 'kansas city missouri', 'kansas city mo',
+  'missouri', 'mo', 'st louis', 'springfield', 'columbia',
+  'independence', 'lee\'s summit', 'st. joseph', 'blue springs',
+  'overland park', 'olathe', 'lenexa', 'shawnee'
+].map(term => term.toLowerCase());
+
  const canadaTerms = [
   'canada', 'ontario', 'toronto', 'ottawa', 'hamilton', 'kitchener', 'london', 'waterloo', 'niagara falls', 'windsor', 
   'mississauga', 'brampton', 'sudbury', 'thunder bay', 'kingston', 'guelph', 'barrie', 'markham', 'oakville', 
@@ -164,6 +174,7 @@ const indiaTerms = [
   ].map(term => term.toLowerCase());
 
   const lowerCaseLocation = capitalizedLocation.toLowerCase();
+  const isKCMo = kcMoTerms.some(term => lowerCaseLocation.includes(term));
   const isBrazil = brazil.some(term => lowerCaseLocation.includes(term));
   const isIndia = indiaTerms.some(term => lowerCaseLocation.includes(term));
   const isUK = ukTerms.some(term => lowerCaseLocation.includes(term));
@@ -189,13 +200,17 @@ const indiaTerms = [
   }  else {
     setRegionPriority('global');
   }
+  if (isKCMo) {
+        setRegionPriority('kc');
 
+  }
   setShowAnil(isIndia);
   setShowJohn(true); // Always show John
   setShowPriscilla(true); // Always show Priscilla
   setShowKristina(isUSA || isFlorida); // Show for any USA location
   setShowRamona(isFlorida || isUSA);
   setShowJim(isNV || isUSA);
+  setShowCaroline(isKCMo);
   setShowJessica(isUSA || isBrazil);
   setShowLynn(isCanada || isUSA); 
   setShowResults(true);
@@ -258,7 +273,58 @@ const indiaTerms = [
       </div>
     )
   );
-  
+    const renderCaroline = () => (
+    showCaroline && (
+      <div className="row mb-4" key="kristina">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={caroline} 
+                    alt="Caroline McQueen" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('CDM Health and Wellness')}</h2>
+                  <p className="text-muted mb-2">{t("Caroline McQueen Integrative Health Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("Kansas City, KS United States")}
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("USA")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Integrative Health and Wellness Coach")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Nutrition")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Blood Sugar Regulation")}</span>
+                  </div>
+                  
+                  <p className="card-text small">
+                    {t("caroline_bio")}
+                  </p>
+                </div>
+                <div className="col-md-3 text-end">
+                  {/* Calendly Embed */}
+                          <div className="col-md-12 mt-4">
+                            <CalendlyEmbed url="https://calendly.com/cedowey/30min" height={700} />
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
   const renderJim = () => (
     showJim && (
       <div className="row mb-4" key="kristina">
@@ -707,6 +773,7 @@ const renderCoachesInOrder = () => {
     coaches.push(renderRamona());
     coaches.push(renderJim());
     coaches.push(renderJohn());
+    coaches.push(renderCaroline());
     coaches.push(renderJessica());
     coaches.push(renderPriscilla());
     coaches.push(renderAnil());
@@ -738,6 +805,9 @@ const renderCoachesInOrder = () => {
   } else if (regionPriority === 'brazil') {
         coaches.push(renderJessica());
   } 
+  else if (regionPriority === 'kc') {
+    coaches.push(renderCaroline());
+  }
   else {
     // Global/default order
     coaches.push(renderJohn());

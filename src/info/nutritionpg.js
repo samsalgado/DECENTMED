@@ -322,7 +322,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
     />
     </div>
     </div>
-         <Button className="custom-btn" href="https://nutrifyourlife.com" target="_blank">{t("Explore Functional Nutrition")}</Button>  {/* Added Bootstrap Button */}
+         <Button className="custom-btn" href="https://lori-graham.com/home-233571" target="_blank">{t("Explore Functional Nutrition")}</Button>  {/* Added Bootstrap Button */}
     <br></br>
           {showModal && ReactDOM.createPortal(
             <div>

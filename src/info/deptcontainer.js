@@ -18,8 +18,20 @@ function BlueContainer() {
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Acupuncture')}</h3>
-                    <NavLink to="/acu" className="link">
+                    <NavLink to="/acupuncture" className="link">
                         <img className="img-custom" src={Treatment.acupuncture} alt={t('Acupuncture')} />
+                    </NavLink>
+                </div>
+                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Energy Healing')}</h3>
+                    <NavLink to="/energyhealing" className="link">
+                        <img className="img-custom" src={Treatment.energy} alt={t('Energy Healing')} />
+                    </NavLink>
+                </div>
+                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Sound Healing')}</h3>
+                    <NavLink to="/soundhealing" className="link">
+                        <img className="img-custom" src={Treatment.soundhealing} alt={t('Sound Healing')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
@@ -65,6 +77,18 @@ function BlueContainer() {
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Breathwork')}</h3>
+                    <NavLink to="/breathwork" className="link">
+                        <img className="img-custom" src={Treatment.breathwork} alt={t('Breathwork')} />
+                    </NavLink>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Meditation')}</h3>
+                    <NavLink to="/meditation" className="link">
+                        <img className="img-custom" src={Treatment.meditation} alt={t('Meditation')} />
+                    </NavLink>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Nutrition')}</h3>
                     <NavLink to="/nutrition" className="link">
                         <img className="img-custom" src={Treatment.nutriton} alt={t('Nutrition')} />
@@ -80,6 +104,24 @@ function BlueContainer() {
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Naturopathy')}</h3>
                     <NavLink to="/naturopathy" className="link">
                         <img className="img-custom" src={Treatment.naturopathy} alt={t('Naturopathy')} />
+                    </NavLink>
+                </div>
+                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Applied Kinesiology')}</h3>
+                    <NavLink to="/applied-kinesiology" className="link">
+                        <img className="img-custom" src={Treatment.ak} alt={t('Applied Kinesiology')} />
+                    </NavLink>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Transformational Empowerment Coaching')}</h3>
+                    <NavLink to="/transformationalcoaching" className="link">
+                        <img className="img-custom" src={Treatment.empower} alt={t('Transformational Empowerment Coaching')} />
+                    </NavLink>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Mindset Coaching')}</h3>
+                    <NavLink to="/mindset" className="link">
+                        <img className="img-custom" src={Treatment.mindset} alt={t('Mindset Coaching')} />
                     </NavLink>
                 </div>
             </div>

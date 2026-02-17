@@ -8,6 +8,7 @@ import EsBenefits from "./eben";
 import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
+import Footer from "../footer";
 import thc2 from  "../images copy/thc2.png";
 import thc4 from  "../images copy/thc4.png";
 import thc6 from  "../images copy/thc6.png";
@@ -99,6 +100,8 @@ const learnmore = () => {
 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
       <br></br>
     
                   {showModal && ReactDOM.createPortal(               
@@ -154,6 +157,10 @@ const learnmore = () => {
                           <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
+               <footer>
+              <Footer />
+            </footer>
+
         </div>
     )
 }

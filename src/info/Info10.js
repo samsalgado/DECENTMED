@@ -5,7 +5,7 @@ import './Info.css';
 import event from "../images copy/yogaesp.png";
 import event1 from "../images copy/discoverygreen.png";
 import event2 from "../images copy/tulum.png";
-import event4 from "../images copy/pathofpeace.png";
+//import event4 from "../images copy/pathofpeace.png";
 import event6 from "../images copy/ashtanga.png";
 import { Button } from'react-bootstrap';
 import spectraspray from "../images copy/spectraspray.png";
@@ -182,9 +182,6 @@ const {t} = useTranslation('common');
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
          
-         <a href="https://www.eventbrite.com/e/walking-the-path-of-peace-a-transformative-meditation-journey-tickets-1979217173846" alt="Thriving by Nature">
-        <img className='gridimag' src={event4} alt='Walking the Path of Peace – A Transformative Meditation Journey' />
-        </a>
        
          <a href="https://danaguerrayoga.com/spi-retreat-2%2F20-2%2F22%2F26">
         <img className='gridimag' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
