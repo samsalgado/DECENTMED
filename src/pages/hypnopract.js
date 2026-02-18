@@ -165,7 +165,7 @@ export function Hypnopract() {
                             borderRadius: "8px",
                             boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
                           }}
-                          src=""
+                          src="https://www.youtube.com/embed/tWy0oFz82yw?si=FVQbe1o75aOv1ZZR"
                           width="100%"
                           height="305px"
                           title="Acupuncture"
