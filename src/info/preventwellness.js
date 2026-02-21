@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Vitamins from './vitamins';
 import Coachingvids from './coachingvids';
 import ReactDOM from 'react-dom';
+import HealthCoaching from './healthcoaching';
 import spectraspray from "../images copy/spectraspray.png";
 import './Info.css';
 import cdm from "../images copy/cdm.png";
@@ -57,6 +58,7 @@ const PreventWellness = () => {
               </Modal>,
               document.body
               )}
+            <HealthCoaching />
     </div>
   );
 }

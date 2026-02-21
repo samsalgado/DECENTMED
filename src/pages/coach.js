@@ -303,10 +303,12 @@ const indiaTerms = [
                   <div className="mb-2">
                     <span className="badge bg-success text-white me-1">{t("USA")}</span>
                     <span className="badge bg-light text-dark me-1">{t("Integrative Health and Wellness Coach")}</span>
-                    <span className="badge bg-light text-dark me-1">{t("Nutrition")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Functional Nutrition")}</span>
                     <span className="badge bg-light text-dark me-1">{t("Blood Sugar Regulation")}</span>
                   </div>
-                  
+                  <div className='jim-container'>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ac1DvrGlIDQ?si=SMd9SVsPBr17Btuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                   <p className="card-text small">
                     {t("caroline_bio")}
                   </p>
