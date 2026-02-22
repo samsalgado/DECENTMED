@@ -79,6 +79,7 @@ const {t} = useTranslation('common');
         </Modal.Footer>
       </Modal>,
       document.body)}
+     
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
@@ -94,9 +95,18 @@ const {t} = useTranslation('common');
           }
         }
       `}</style>
+      
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+             <iframe
+              src="https://www.youtube.com/embed/DHsu659Guf0?si=wxdFEzmppJc6QqyJ"
+              title='Hypnotherapy for Trauma'
+              allow="autoplay"
+              width="900"
+              height="506"
+              allowFullScreen
+            />
               <div className="pr"> <span className="click-here">Click here:</span> <a href="https://sheashulmantherapy.com/" alt="spectra spray"> <img className="gridimag" src={ss} alt="spectra spray" /> </a> </div>
         <br></br>
         <Benefits />
