@@ -13,7 +13,14 @@ const {t} = useTranslation('common')
   // Source:
   const [plant] = useState(
     [
-
+  {
+    id:0,
+    image:Plants.wish,
+    name: t("Shop With Wish Garden Herbs"),
+    description: t('Affiliate Program Live Now!'),
+    medrating: 5,
+    source: 'https://www.wishgardenherbs.com/collections/sale'
+  },
   {
     id: 1,
     image: Plants.abiesbalsema,
@@ -1663,16 +1670,16 @@ const {t} = useTranslation('common')
   const sortedPlants = [...plant].sort((a, b) => b.medrating - a.medrating);
 
   return (
-
+<>
     <div className='contents'>
       <div   className='plant-containers'>
-      
           {sortedPlants.map((val) => (
             <ApothecaryData val={val} key={val.id}>
             </ApothecaryData>))
           }
       </div>
     </div>
+    </>
   );
 };
 

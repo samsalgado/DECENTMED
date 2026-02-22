@@ -1,4 +1,5 @@
 const Plants = {
+wish: require("../images copy/wish.png"),
 sweetacacia: require('../images copy/Acaciafarnesiana.png'),
 bermudagrass:require('../images copy/bermudagrass.png'),
 abiesbalsema: require('../images copy/abiesbalsamea.png'),

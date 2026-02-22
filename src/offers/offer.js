@@ -1,18 +1,15 @@
 import React from 'react'
 import { CookiesProvider } from 'react-cookie'
-import { useTranslation } from 'react-i18next'
 import "../App.css"
-import imge from '../images copy/imge.png'
+import crypto from "../images copy/crypto.png";
 const Offer = () => {
-const { t } = useTranslation("common");
   return (
     <>
     <div className='box'>
       <CookiesProvider>
         <div>
-          <img src={imge} className="pik1 bitc" alt=''  />
-          <h2>{t('Pay with Bitcoin')}</h2>
-          <p className='btcaddress'> BTC Address: bc1q4kkfy6apvfy5maf6c3f24utq925x64t622z20c </p>
+          <img src={crypto} className="gridimag" alt=''  />
+          <p>BTC Address: bc1q2jm4xuhj2phtlf4rkszcy r3fxqftxv4tmlkk4s</p>
           </div>
       </CookiesProvider>
     </div>

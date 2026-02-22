@@ -99,6 +99,7 @@ import { Button } from 'react-bootstrap';
 import Inspire from "../images copy/Inspire.png";
 import LOGO from "../images copy/goklKk.png";
 import alignable from "../images copy/alignable.png";
+import wish from "../images copy/wish.png";
 const Footers = () => {
   const { t } = useTranslation('common');
   return (
@@ -135,6 +136,14 @@ const Footers = () => {
             >
               {t("Shop")}
             </Button>
+            <a
+  href="https://www.awin1.com/cread.php?awinmid=59505&amp;awinaffid=2733802&amp;ued=https%3A%2F%2Fwww.wishgardenherbs.com%2Fcollections%2Fsale"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src={wish} className="geyserImgLarge" alt="Alignable" />
+</a>
+
             <li><a href="https://decentmed.org/reviews" target="_blank" rel="noreferrer">{t("Our Reviews")}</a></li>
           </ul>
         </div>
