@@ -7,6 +7,8 @@ import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
 import ss from "../images copy/ss.png";
+import ssreview from "../images copy/ssreview.png";
+import greenreview from "../images copy/greenreview.png";
 import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 import Hypnostudies from "./hypnostudy";
@@ -37,6 +39,7 @@ const {t} = useTranslation('common');
         <div className='content-wrapper' style={{
           flex: '1'
         }}>
+          <h1>{t("What is Hypnotherapy?")}</h1>
           <p className='pr'>{t("Hypnotherapy is a therapeutic technique that uses guided hypnosis to help individuals achieve a relaxed, focused state of mind, increasing their suggestibility and enabling them to address various issues. Hypnotherapy helps to break subconscious blocks that arise throughout people's lives. Utilize hypnotherapy to empower yourself and become your optimal YOU.")}</p>
           <h2 className='pr'>{t("Shea Shulman Therapy: Hypnotherapy for Trauma")}</h2>
           <p className='pr'>-{t("Clients are not required to re-live painful or traumatic experiences.")}</p>
@@ -59,7 +62,7 @@ const {t} = useTranslation('common');
         />
         </div>
       </div>
-            <Button className="custom-btn" href="https://www.green-hypnotherapy.com/" target="_blank">{t('Find Out How Hypnotherapy Can Help You')}</Button>
+            <Button className="custom-btn" href="https://www.decentmed.org/hypnopract" target="_blank">{t('Find Out How Hypnotherapy Can Help You')}</Button>
       <br></br>
               <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
@@ -99,7 +102,9 @@ const {t} = useTranslation('common');
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-             <iframe
+            <Collapsible trigger={<h3 className="collapsible-trigger">{t('Shea Shulman Therapy')}</h3>}>
+  <div className="row">
+     <iframe
               src="https://www.youtube.com/embed/DHsu659Guf0?si=wxdFEzmppJc6QqyJ"
               title='Hypnotherapy for Trauma'
               allow="autoplay"
@@ -107,7 +112,41 @@ const {t} = useTranslation('common');
               height="506"
               allowFullScreen
             />
-              <div className="pr"> <span className="click-here">Click here:</span> <a href="https://sheashulmantherapy.com/" alt="spectra spray"> <img className="gridimag" src={ss} alt="spectra spray" /> </a> </div>
+    <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+19415879198">
+        <img src={ssreview} alt="Shea Shulman Therapy Review" style={{
+          width: '100%',
+          maxWidth: '550px',
+          height: 'auto',
+          objectFit: 'contain'
+        }} />
+      </a>
+    </div>
+  </div>
+     <img className='gridimage' src={ss} alt='SHEA SHULMAN THERAPY' />
+</Collapsible>
+  <Collapsible trigger={<h3 className="collapsible-trigger">{t('Green Hypnotherapy')}</h3>}>
+  <div className="row">
+     <iframe
+              src="https://www.youtube.com/embed/Bab0AX_GRQw?si=_9GuTnJVa3PtVXal"
+              title='Green Hypnotherapy'
+              allow="autoplay"
+              width="900"
+              height="506"
+              allowFullScreen
+            />
+    <div className="col-12 col-md-6 mb-3">
+      <a href="tel:+18134856761">
+        <img src={greenreview} alt="Green Hypnotherapy Review" style={{
+          width: '100%',
+          maxWidth: '550px',
+          height: 'auto',
+          objectFit:'fill'
+        }} />
+      </a>
+    </div>
+  </div>
+</Collapsible>
         <br></br>
         <Benefits />
         <br></br> 
