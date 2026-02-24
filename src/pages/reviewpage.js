@@ -2,7 +2,6 @@ import React from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
 import Topbar from './topbar';
-import Offer2 from '../offers/offer2';
 import Reviews from '../info/reviews';
 import Footer from '../footer';
 import Pricing from "./pricingtiers";
@@ -28,7 +27,6 @@ export function ReviewPage() {
             <Reviews />
             {/* Centered image with mobile optimization */}
             <Pricing />
-            <Offer2 />
             <footer>
                 <Footer />
             </footer>

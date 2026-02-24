@@ -11,9 +11,8 @@ export default function MassPract() {
   const [location, setLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isWashLocation, setIsWashLocation] = useState(false);
-
   const washTerms = [
-    'washington', 'wa', 'seattle', 'port townsend', 'olympia'
+    'washington', 'wa', 'seattle', 'port townsend', 'olympia', 'seattle'
   ];
 
   useEffect(() => {
@@ -49,7 +48,7 @@ export default function MassPract() {
       <Topbar />      
     </header>
       <h1 className="text-center mb-4">{t('Find a Practitioner')}</h1>
-      <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '2rem' }} className="text-center mb-8">
+      <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '1rem' }} className="text-center mb-8">
         {t('Enter your location to find holistic practitioners near you.')}
       </p>
 
@@ -88,7 +87,7 @@ export default function MassPract() {
                   </p>
                   <p className="card-text">
                     {t("Licensed Massage Therapist/Certified Qigong Instructor/Facilitator to being your Best Awesome Self!")}                  </p>
-                  <a href="tel:+12532260225" className="btn btn-primary">
+                  <a href="tel:+12532260225" className="btn custom-btn">
                     {t("Contact")}
                   </a>
                 </div>
