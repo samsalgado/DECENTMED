@@ -39,7 +39,7 @@ export default function MassPract() {
   return (
     <div>
       <Helmet>
-        <title>{t('Find a Practitioner')} - DecentMed</title>
+        <title>{t('Massage Therapy')} - DecentMed</title>
                 <meta property="og:title" content={t("Find a Practitioner")} />                
         <meta name="description" content={t("Find a Practitioner")} />        
 
@@ -47,7 +47,7 @@ export default function MassPract() {
     <header>
       <Topbar />      
     </header>
-      <h1 className="text-center mb-4">{t('Find a Practitioner')}</h1>
+      <h1 className="text-center mb-4">{t('Find Massage Therapist')}</h1>
       <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '1rem' }} className="text-center mb-8">
         {t('Enter your location to find holistic practitioners near you.')}
       </p>
