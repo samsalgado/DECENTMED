@@ -3,7 +3,6 @@ import './acu.css';
 import './Info.css';
 import { Button,  Modal } from'react-bootstrap';
 import Benefits from "./benefits";
-import Modalities from "./modalities";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
 import ss from "../images copy/ss.png";
@@ -150,7 +149,6 @@ const {t} = useTranslation('common');
         <br></br>
         <Benefits />
         <br></br> 
-        <Modalities />
         <Collapsible trigger={<th className="collapsible-trigger">{t("Hypnotherapy Case Study")}</th>}>
         <Hypnostudies />
         <Button className="custom-btn" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}

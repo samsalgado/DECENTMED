@@ -42,7 +42,6 @@ export default function MassPract() {
         <title>{t('Massage Therapy')} - DecentMed</title>
                 <meta property="og:title" content={t("Find a Practitioner")} />                
         <meta name="description" content={t("Find a Practitioner")} />        
-
       </Helmet>
     <header>
       <Topbar />      
