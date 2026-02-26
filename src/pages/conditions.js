@@ -64,35 +64,35 @@ return (
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
     >
-      <ul><NavLink to="https://decentmed.org/cancer">{t('Cancer')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/ptsd">{t('PTSD')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/mindset">{t('Lacking Mental Clarity')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/homeopathy">{t('ADD (Attention Deficit Disorder)')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/homeopathy">{t('Digestive Issues')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/trauma">{t('Trauma')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/naturopathy">{t('Chronic Fatigue')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/nutrigenomics">{t('Weight Loss')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/breathwork">{t('Stored Trauma')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/breathwork">{t('Stress')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Subconscious Blocks')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Fear')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Low Self-Esteem')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/hypnotherapy">{t('Imposter Syndrome')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/acupuncture">{t('Neck Pain')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/acupuncture">{t('Poor Circulation')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/acupuncture">{t('Osteoarthritis')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/acupuncture">{t('Corporate Burnout')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/applied-kinesiology">{t('Autism')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/applied-kinesiology">{t('Anxiety')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/transformationalcoaching">{t('Burnout')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/chelation">{t('Heart Disease')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/stemcell">{t('Knee Pain')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/ayurveda">{t('Prevention')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/nutrition">{t('High Blood Sugar')}</NavLink></ul>
-      <ul><NavLink to="https://decentmed.org/meditation">{t('High Blood Pressure')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/cancer">{t('Cancer')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ptsd">{t('PTSD')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/mindset">{t('Mental Clarity')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('ADD')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('Digestion')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/trauma">{t('Trauma')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Chronic Fatigue')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Weight Loss')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Stored Trauma')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Stress')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Subconscious Blocks')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Fear')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Low Self-Esteem')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Imposter Syndrome')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Neck Pain')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Poor Circulation')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Osteoarthritis')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Corporate Burnout')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/applied-kinesiology">{t('Autism')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/applied-kinesiology">{t('Anxiety')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/transformationalcoaching">{t('Burnout')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chelation">{t('Heart Disease')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/stemcell">{t('Knee Pain')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Prevention')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('Diabetes')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/meditation">{t('Blood Pressure')}</NavLink></ul>
     </NavDropdown>
   </>
 );
