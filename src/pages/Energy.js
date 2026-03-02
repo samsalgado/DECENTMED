@@ -65,10 +65,10 @@ const learnmore = () => {
       minWidth: '300px'
     }}>
       <h2>{t("Tap into Remote Energy Healing")}</h2>
-      <p className='pr'>{t("- Helps alleviate physical pain")}</p>
-      <p className='pr'>{t("- Navigation through emotional distress")}</p>
-      <p className='pr'>{t("- Clears monkey mind (anxiety) of the mind")}</p>
-      <p className='pr'>{t("- Clearing major generational, conditions and illnesses")}</p>
+      <p className='pr'>-{t("Helps alleviate physical pain")}</p>
+      <p className='pr'>-{t("Navigation through emotional distress")}</p>
+      <p className='pr'>-{t("Clears monkey mind (anxiety) of the mind")}</p>
+      <p className='pr'>-{t("Clearing major generational, conditions and illnesses")}</p>
       <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
     </div>
     <div style={{
@@ -78,6 +78,7 @@ const learnmore = () => {
       paddingBottom: '56.25%',
       height: 0
     }}>
+      
       <iframe 
         src="https://www.youtube.com/embed/BGjJ4usFVXo" 
         width="100%" 
@@ -94,16 +95,17 @@ const learnmore = () => {
           overflow: "hidden"
         }}
       />
+     
     </div>
   </div>
-</div>      
+</div>     
+ 
 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-                           <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <br></br>
-    
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ugSZ9oeYm8c?si=bgDwSaZPqgYuXu9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   {showModal && ReactDOM.createPortal(               
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
@@ -150,7 +152,7 @@ const learnmore = () => {
         <br></br>
                         <a href="https://www.totalhealingcentre.com/">
                 <img className='gridimag' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
-                <figcaption>{t("Signup")}</figcaption>
+                <figcaption>{t("Sign up")}</figcaption>
                 </a>
         <br></br>
         <EsBenefits />

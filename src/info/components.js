@@ -11,31 +11,24 @@ function Components() {
         <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
           <h3>{t('Conversion Optimization Consulting')}</h3>
           <p className="edu">
-            {t('We optimize your Google Business Profile, website and social media for conversions to increase your sales.')}
+            {t('We offer a system tailored conversion system designed to increasing patient acquisition for providers. Our strategies stretch beyond our website, offering comprehensive sales and marketing services tailored to meeting your goals.')}
           </p>
         </div> 
      <div className="col-12 col-sm-6 col-md-4 text-center mb-4">
-          <h3>{t('Telehealth Services')}</h3>
+          <h3>{t('Innovative Telehealth')}</h3>
           <p className="edu">
-            {t('Local or Telehealth Directory in which providers receive a Video Interview for portal and HIPAA Compliant CRM (Carepatron) systems for booking, handling insurance claims and enabled with Stripe. Note that we can embed your own calendar if you prefer.')}
+            {t('Unlike other telehealth platforms, our location-based telehealth directory is designed for system optimization and patient acquisition. DecentMed offers a CRM called Carepatron equipped with insurance capabilities, calendar, Google Suite, Zoom and paired with Stripe. Our goal is system optimization, providers can either utilize their own systems, receive training on our systems or we can manage the CRM for you.')}
           </p>
         </div> 
             <div className="row justify-content-center">
-                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h3>{t('Education')}</h3>
-                    <p className="edu">{t('To grow awareness in your modality and increase patient acquisition, we publish your educational content on the platform - video, written and graphic content.')}</p>
-                </div> 
-                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
-                    <h3>{t('Published Studies')}</h3>
-                    <p className="edu">{t("We publish your studies, reviews and researh to validate the effectiveness of your treatment method.")}</p>
-                </div>
+              
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4"> 
-                    <h3>{t('Decentralized Medicine Payout')}</h3>
-                    <p className="edu">{t('We offer provider payouts from our Apothecary, Content Library and various Affiliate Programs like Promeed.com, Wish Garden Herbs and more.')}</p>
+                    <h3>{t('Decentralized Medicine')}</h3>
+                    <p className="edu">{t('At DecentMed, we post provider studies, educational content and testimonials on a decentralized network (Nostr) to combat censorship, validate the effectiveness of your work and increase patient acquisition for providers. We strive to create a new system of healthcare that works for both the patient and provider. To accomplish this feat, we offer equity in the project to providers via affiliate programs (15%), content library (5%) and Global Apothecary (5%). The apothecary will also payout patients in order to make treatments more affordable overtime.')}</p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t('Holistic Health Collective')}</h3>
-                    <p className="edu">{t('Available in English, Spanish, French, Dutch, Simplified Chinese, Arabic and Hindi to establish your authority internationally. Furthermore, we will host international webinars and live Summits for providers to grow their referral networks and overall awareness of holistic medicine.')}</p>
+                    <p className="edu">{t('Our platform is available in English, Spanish, French, Dutch, Simplified Chinese, Arabic and Hindi (plans to add more) to offer holistic medicine globally. Furthermore, we will host international webinars and live Summits for providers to grow their referral networks, authority and overall awareness of holistic medicine.')}</p>
                 </div>
             </div>
         </div>

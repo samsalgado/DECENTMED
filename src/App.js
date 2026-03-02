@@ -17,6 +17,7 @@ import { Func } from './pages/Func';
 import {Energy} from './pages/Energy';
 import { EnergyPract } from './pages/EnergyPract';
 import {Summit} from './pages/Summit';
+import {ADHD} from "./pages/ADHD";
 import MassPract from './pages/Mass';
 import Blog21 from './pages/blogs/blog21';
 import { Trauma } from './pages/Trauma';
@@ -126,6 +127,7 @@ function App() {
         <Route path="/naturopathylane" element={<Mike t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
+        <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
          <Route path="/conversionoptimizationconsulting" element={<Blog24 t={t} />} />

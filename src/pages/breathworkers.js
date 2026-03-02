@@ -26,8 +26,7 @@ export function Breathwork({ providerEmail }) {
 
   
   return (
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+    <div>
         <Helmet>
           <title>{t("Somatic Breathwork")}</title>
                                   <meta name="description" content={t('Experience Somatic Breathwork from global experts')} />

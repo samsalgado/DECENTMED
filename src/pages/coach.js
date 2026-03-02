@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
+import amber from "../images copy/amber.png";
 import Footer from '../footer';
 import Ramona from '../cards/IMG_0587.jpeg';
 import Gorilla from '../cards/gorilla.png';
@@ -23,6 +24,7 @@ export function Coaching() {
   const [showCaroline, setShowCaroline] = useState(false);
   const [showJohn, setShowJohn] = useState(false);
   const [showLynn, setShowLynn] = useState(false);
+  const [showAmber, setShowAmber] = useState(false);
   const [showJim, setShowJim] = useState(false);
   const [showJessica, setShowJessica] = useState(false);
   const [showPriscilla, setShowPriscilla] = useState(false);
@@ -86,6 +88,7 @@ const handleSearch = () => {
     setShowPriscilla(true);
     setShowJessica(true);
     setShowKristina(true);
+    setShowAmber(true);
     setShowJim(true);
     setShowRamona(true);
     setShowResults(true);
@@ -205,6 +208,7 @@ const indiaTerms = [
 
   }
   setShowAnil(isIndia);
+  setShowAmber(true);
   setShowJohn(true); // Always show John
   setShowPriscilla(true); // Always show Priscilla
   setShowKristina(isUSA || isFlorida); // Show for any USA location
@@ -326,6 +330,63 @@ const indiaTerms = [
       </div>
     )
   );
+    const renderCarol = () => (
+    showAmber && (
+      <div className="row mb-4" key="amben">
+        <div className="col-md-12">
+          <div className="card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-md-2 text-center">
+                  <img 
+                    src={amber} 
+                    alt="Amber" 
+                    style={{ 
+                      maxWidth: '100px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain' 
+                    }} 
+                  />
+                </div>
+                <div className="col-md-7">
+                  <h2 className="h4 mb-1">{t('Completion and Calm')}</h2>
+                  <p className="text-muted mb-2">{t("Amber Caroll: ADHD Coach")}</p>
+                  
+                  <p className="mb-2">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    {t("United States")}
+                  </p>
+                  
+                  <div className="mb-2">
+                    <span className="badge bg-success text-white me-1">{t("USA")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Overcome")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("ADHD")}</span>
+                    <span className="badge bg-light text-dark me-1">{t("Execute and Thrive")}</span>
+                  </div>
+                  <div className='jim-container'>
+                    </div>
+                  <p className="card-text small">
+                    {t("amber_bio")}
+                  </p>
+                </div>
+                          <div style={{ display: "grid", width: "100%", height: "100%", minWidth: "320px", minHeight: "600px" }}>
+              <iframe
+                title="Carepatron Online Booking"
+                alt="Book appointments online via Carepatron"
+                width="100%"
+                height="100%"
+                src="https://book.carepatron.com/Completion---Calm/Amber?p=sF14-ydjTWO2Bza56sZQuw&s=1TB14MHi&e=i"
+                style={{ border: 0 }}
+              />
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  );
+
 
   const renderJim = () => (
     showJim && (
@@ -773,6 +834,7 @@ const renderCoachesInOrder = () => {
     // USA (non-Nevada): Kristina first
     coaches.push(renderKristina());
     coaches.push(renderRamona());
+    coaches.push(renderCarol());
     coaches.push(renderJim());
     coaches.push(renderJohn());
     coaches.push(renderCaroline());

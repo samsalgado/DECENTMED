@@ -66,6 +66,7 @@ return (
     >
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/cancer">{t('Cancer')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ptsd">{t('PTSD')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/adhd">{t('ADHD')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/mindset">{t('Mental Clarity')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('ADD')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('Digestion')}</NavLink></ul>

@@ -13,7 +13,7 @@ const Info7 = () => {
    
       </div>
       <div className="collapsible">
-        <h1 className="text-center mb-4">{t('Components')}</h1>        
+        <h1 className="text-center mb-4">{t('Why DecentMed?')}</h1>        
         <Components />
       </div>
       
