@@ -298,7 +298,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
         }}>
           <p className='pr'>{t("If you are searching nutritionist near me, look no further than our holistic nutritionists offering traditional and alkaline diet recipes to reach your optimal self. For example, our nutritionists assist clients with the best plans rich in B vitamins, vitamin D, vitamin C and more. We provide nutritionists for a wide range of people, Lori Graham is a former OT and a functional nutritionist who helps menopausal women lower their blood sugar and reduce menopausal symptoms.")}</p>
             <h3>{t("Nutrition for Longevity")}</h3>
-            <a href="https://www.nutrifyourlife.com/blog/an-understanding-of-aging-and-supplement-absorption"><h5>{t("Your Absorption Optimization Action Plan")}</h5></a>
+            <a href="https://lori-graham.com/blogs"><h5>{t("Your Absorption Optimization Action Plan")}</h5></a>
               <p className='pr'>{t("- Test, Don't Guess: Comprehensive micronutrient and genetic testing")}</p>
               <p className='pr'>{t("- Address the Foundation: Optimize stomach acid and gut health")}</p>
               <p className='pr'>{t("- Personalize Your Protocol: Choose forms and doses based on YOUR genetics and deficiencies")}</p>
