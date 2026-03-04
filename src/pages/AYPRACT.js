@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect, useState } from 'react';
 import Stacy from '../cards/stacy.png';
-import Saumil from '../cards/Saumil.png';
+import angela from '../cards/angela.jpg';
 import stacyservices from "../cards/stacyservices.png";
 import Yogi from '../cards/yogiSanjivana.jpg';
 import { useTranslation } from 'react-i18next';
@@ -33,16 +33,27 @@ export function AYPract() {
     },
      {
       id: 1,
-      name: t('Saumil Manek'),
-      title: t("Saum"),      
-      location: "Houston, Texas, USA",
+      name: t('Angela Romero'),
+      title: t("Ground Roots Health Collective"),      
+      location: "Chino, California, USA",
       availability: t("Available Nationwide"),
       availabilityType: "telehealth",
-      image: Saumil,
-      website:"https://unioniscreation.com/soundhealinghub",
-      embedCode:`mailto:Unioniscreation@gmail.com`,
-      video:"https://www.youtube.com/embed/tUI8bQYmjjc?si=p7LFqkSwRIqFGJEX",
-      description: t("Saumil and Lillian Manek are the founders and lead facilitators of Union is Creation, a Houston-based wellness organization specializing in sound healing, meditation, and mindful movement. Together, they have guided thousands of participants through restorative experiences designed to support stress management, nervous system reset, and emotional well-being. Their work is especially tailored for professionals operating in high-performance and high-stress environments, including healthcare, corporate, and community settings."),
+      image: angela,
+      website:"https://grhc.love/",
+      embedCode: `
+<iframe 
+  src="https://api.leadconnectorhq.com/widget/booking/QsBkEsLjXbDspNI0Zpa8" 
+  style="width: 100%; height: 4000px; border: none; overflow: hidden;" 
+  scrolling="no" 
+  id="8VZVOAkBmJSx41JmTpTl_1772583051855">
+</iframe>
+<script 
+  src="https://link.msgsndr.com/js/form_embed.js" 
+  type="text/javascript">
+</script>
+`,
+     video:"https://www.youtube.com/embed/E_KQIobaqF8?si=mgpDLlsIkVOQH1z4",
+      description: t("I guide women in perimenopause how to balance hormones naturally using lab testing, Ayurvedic principles, diet, and nervous system regulation — without relying on band-aid solutions. Angela Romero is an Ayurvedic & Integrative Holistic Hormone Practitioner specializing in natural hormone balance and perimenopause support. She is the founder of Ground Roots Health Collective, where she combines advanced lab testing, AO scans, personalized nutrition, lifestyle restructuring, herbal medicine, and targeted supplementation to help women restore energy, regulate hormones, and heal from the root. Her mission is to help women reclaim their health through ancient wisdom and modern holistic healing."),
       servesGlobally: true,
       countries: ["USA"]
     },

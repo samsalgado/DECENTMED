@@ -5,7 +5,11 @@ import ayurveda from "../images copy/ayurveda-science.png";
 import Elements from './elements';
 import Principles from './ayurev';
 import ReactDOM from 'react-dom';
+import pain3 from "../images copy/pain3.png";
 import spectraspray from "../images copy/spectraspray.png";
+import pain1 from "../images copy/pain1.png";
+import pain2 from "../images copy/pain2.png";
+import pain4 from "../images copy/pain4.png";
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
 import Transcript from './herbtranscript';
@@ -157,6 +161,9 @@ themerlingroupworld.com/ayurveda for more.
     const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+   const pain = () => {
+    window.location.href = 'https://grhc.love/painrelief'
+  }
   return (
     <div className='container mobile-optimized'>
      <h1 style={{
@@ -176,6 +183,8 @@ themerlingroupworld.com/ayurveda for more.
         flex: '1'
       }}>
         <p className='pr'>{t("Ayurveda, an ancient healing system, offers a holistic approach to wellness by balancing the body, mind, and spirit through natural remedies and personalized treatments. Unlike conventional medicine, Ayurveda focuses on preventing illness rather than just treating symptoms, using herbs, diet, and lifestyle adjustments tailored to each individual's constitution. Patients seeking gentle, long-term healing often turn to Ayurveda for its ability to address root causes rather than temporary relief.")}</p>
+        <p className='pr'>{t("Ayurveda is a 5,000-year-old system of natural medicine that views the body as an intelligent, interconnected system of energy, digestion, hormones, emotions, and environment. Instead of masking symptoms, it focuses on identifying root imbalances and restoring harmony through food, herbs, lifestyle rhythms, detoxification, and nervous system support. Ayurveda honors a woman’s unique constitution and stage of life — especially during perimenopause — helping her move through transition with strength, clarity, and vitality.")}</p>
+        <p className='pr'>{t("Angela blends ancient Ayurvedic wisdom with modern functional tools to create a truly integrative path to healing. Her work combines lab testing, AO scans, personalized diet and lifestyle protocols, custom herbal formulations, and strategic supplement recommendations. By addressing hormones, digestion, detoxification, and nervous system balance together, she helps women move through perimenopause with clarity, strength, and renewed vitality — without relying on quick fixes.")}</p>
         <br></br>
         <Button className="custom-btn" href="https://decentmed.org/ayurvedicmedicine" target="_blank">
           {t("Experience Ayurveda")}
@@ -203,10 +212,26 @@ themerlingroupworld.com/ayurveda for more.
     `}</style>
    <br></br>
    <br></br>
-    <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+      <h2>{t("Ayurvedic Oil & Related Ayurvedic Treatments for Pain")}</h2>
+     <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
+            <img className='gridimage' src={pain1} alt='Ayurvedic Oil Pain Treatment' />
+             </a>
+              <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
+            <img className='gridimage' src={pain2} alt='Ayurvedic Oil Pain Treatment' />
+             </a>
+   <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
+            <img className='gridimage' src={pain3} alt='Ayurvedic Oil Pain Treatment' />
+             </a>
+             <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
+            <img className='gridimage' src={pain4} alt='Ayurvedic Oil Pain Treatment' />
+             </a>
+              <Button className="custom-btn" onClick={pain}>
+                    {t("Experience Pain Relief")}
+                  </Button>
+                <br></br>
+                 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-                <br></br>
       <div className="collapsible">
         <Principles />
         <Elements />
@@ -257,6 +282,17 @@ themerlingroupworld.com/ayurveda for more.
   <p style={{textAlign: "left"}}>{t('2. Foster self-awareness')}</p>
   <p style={{textAlign: "left"}}>{t('3. Focuses on prevention and the root cause of illness')}</p>
   <p style={{textAlign: "left"}}>{t('4. Truly intuitive')}</p>
+</div>
+ <h2>{t('Benefits of Ayurveda')}</h2>
+        <div>
+  <p style={{textAlign: "left"}}>-{t('Root-cause hormone evaluation (labs + scans)')}</p>
+  <p style={{textAlign: "left"}}>-{t('Personalized diet and lifestyle plans')}</p>
+  <p style={{textAlign: "left"}}>-{t('Custom herbal blends')}</p>
+  <p style={{textAlign: "left"}}>-{t('Strategic supplement guidance')}</p>
+    <p style={{textAlign: "left"}}>-{t('Nervous system regulation support')}</p>
+  <p style={{textAlign: "left"}}>-{t('Gut and detox optimization')}</p>
+  <p style={{textAlign: "left"}}>-{t('Sustainable vitality restoration')}</p>
+  <p style={{textAlign: "left"}}>-{t('Clear, step-by-step implementation')}</p>
 </div>
         <Button className="custom-btn" href="https://decentmed.org/ayurvedicmedicine" target="_blank">
                 {t("Experience Ayurveda")}

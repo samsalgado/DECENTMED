@@ -6,6 +6,8 @@ import doshas from "../images copy/doshas.png";
 import stacyd from "../images copy/stacyd.png";
 import { Button } from "react-bootstrap";
 import { useTranslation } from 'react-i18next'
+import doshass from "../images copy/doshass.png";
+import ayurvedicgraphic from "../images copy/ayurvedicgraphic.png";
 function Principles() {
     const { t } = useTranslation('common');
     return (
@@ -20,6 +22,12 @@ function Principles() {
                 </div>
                     <img className='gridimag' src={stacyd} alt='' style={{width: '100%', height: 'auto'}} />
                       <img className='gridimag' src={doshas} alt='' style={{width: '100%', height: 'auto'}} />
+                      <a href='https://grhc.love/aboutayurvedaandholisticherbalism' alt="spectra spray">
+            <img className='gridimage' src={ayurvedicgraphic} alt='spectra spray' />
+             </a>
+              <a href='https://grhc.love/aboutayurvedaandholisticherbalism' alt="spectra spray">
+            <img className='gridimage' src={doshass} alt='Ayurvedic Doshas' />
+             </a>
 
 <Button 
   as="a" 
