@@ -26,7 +26,7 @@ At DecentMed, we are revolutionizing the health insurance game by offering stake
             {t("Medicine was never meant to be about survival alone. It was meant to support wellness, balance, and human potential. Our goal is vitality.")}
           </p>
           <p className='paragraph'>
-            {t("DecentMed connects people with holistic health practitioners (all information stems from providers), education, and regenerative therapies worldwide.")}
+            {t("We are “decentralized medicine”, posting provider studies and educational content on a decentralized network to combat censorship, increase awareness of holistic medicine. DecentMed connects people with holistic health practitioners (all information stems from providers), education, and regenerative therapies worldwide.")}
           </p>
         </div>
          <Button onClick={learnmore} className="custom-btn">

@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import "../App.css";
-import LOGO from "../images copy/goklKk.png";
+import LOGO from "../images copy/dmed.png";
 import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
 

@@ -97,7 +97,7 @@ import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 import Inspire from "../images copy/Inspire.png";
-import LOGO from "../images copy/goklKk.png";
+import LOGO from "../images copy/dmed.png";
 import alignable from "../images copy/alignable.png";
 import wish from "../images copy/wish.png";
 const Footers = () => {
