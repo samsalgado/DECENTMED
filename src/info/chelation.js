@@ -34,7 +34,20 @@ const Pgchelation = () => {
         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-
+ <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/utcEUI2EGyQ?si=fDVB9fC04fWMPR9D"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
       <div className="title-container">
 
         <table className="collapsibles-table">

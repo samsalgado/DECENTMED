@@ -68,6 +68,66 @@ const Naturo = () => {
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+             <div>
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/GjPp6HbNvI8?si=_vYO1vXwk_V2CRSv"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+<div>
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/TvwiLlOiGOg?si=9TzkewcMx1TETCvi"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+            <div>
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/OfAtApyAIx8?si=kK19TOFl0pf3KPKH"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+             <div>
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/bI_c90p2zMQ?si=UsEfhVCzyJ18TTvU"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
           <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">
             {t('Find Out How Dr. Barnes Can Help You')}
           </Button>
@@ -96,13 +156,72 @@ const Naturo = () => {
             }
           }
         `}</style>
+        
         <a href="https://www.totalcarehealthsolutions.com/" target="_blank" rel="noopener noreferrer">
           <img className='gridimag' src={totalcare} alt='oceantreis' />
         </a> 
+        <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/NdDj3Nadzas?si=Dna9qwheTXmFnhod"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/BNlE5YCF_wA?si=A75KY-XtmhcONAB4"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+              <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/--x4UjwtoCM?si=SOJCPAEUWgPjobgL"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/Oks2b45acDQ?si=PKcUCrMtQ7JkCKF5"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <Button className="custom-btn" href="https://totalcarehealthsolutions.com/" target="_blank">
+            {t('Find Out How Dr. Volner Can Help You')}
+          </Button>
         <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
           <NatStudy />
         </Collapsible>
-        
         <Collapsible trigger={<th className="collapsible-trigger">{t("Lower your Blood Sugar")}</th>}>
           <BloodSugar />
         </Collapsible>

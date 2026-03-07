@@ -1,11 +1,7 @@
 import React from "react";
 import './acu.css'; 
 import './Info.css';
-//import event0 from "../images copy/soundbath0.png";
-import event from "../images copy/cisternn.png";
-import event2 from "../images copy/tulum.png";
-//import event4 from "../images copy/pathofpeace.png";
-import event6 from "../images copy/soundbathsky.png";
+import event6 from "../images copy/airtable.png";
 import { Button } from'react-bootstrap';
 import spectraspray from "../images copy/spectraspray.png";
 import HealingBen from "./healben";
@@ -55,6 +51,30 @@ const {t} = useTranslation('common');
     className="rumble" 
     title="Sound Healing" 
     src="https://www.youtube.com/embed/fMwMZZcSFr0" 
+    allowFullScreen>
+  </iframe>
+</div>
+ <div className="vertical-video">
+  <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    src="https://www.youtube.com/embed/8ZHDsRhrUVc?si=TiAhnZhE-iOqm7Kc" 
+    allowFullScreen>
+  </iframe>
+</div>
+<div className="vertical-video">
+  <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    src="https://www.youtube.com/embed/ncNrRRyriVU?si=9uadKu3OfnUF59XS" 
+    allowFullScreen>
+  </iframe>
+</div>
+<div className="vertical-video">
+  <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    src="https://www.youtube.com/embed/KZSLD5k6H9Y?si=yItvGxx2DKOibhMO" 
     allowFullScreen>
   </iframe>
 </div>
@@ -134,6 +154,7 @@ const {t} = useTranslation('common');
     }} 
             src="https://www.youtube.com/embed/4oWQToBMxpE" frameborder="0" allowfullscreen></iframe>
             </div>
+            
      <div style={{
   position: 'relative',
   width: '100%',
@@ -182,15 +203,10 @@ const {t} = useTranslation('common');
   }}>{t('Events')}</h1>
          
        
-         <a href="https://www.eventbrite.com/e/soundbath-in-the-sky-spinning-sky-lounge-tickets-1975579591740?aff=AirtblesDEC">
-        <img className='gridimag' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+         <a href="https://airtable.com/appzQKVIm0Fbh56Jo/shrcUTpEXH6Q4yC0k/tbllSz2OJz9xGEGHw">
+        <img className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
         </a>
-        <a href="https://buffalobayou.org/event/sound-healing-meditation-180/" alt="Thriving by Nature">
-        <img className='gridimag' src={event} alt='Clase de Yoga y Meditación de Sonido en Español' />
-        </a>
-        <a href="https://my-site-67hyw2es-unioniscreation.wix-vibe.com/" alt="Thriving by Nature">
-        <img className='gridimag' src={event2} alt='REBIRTH: Your Tulum Journey Begins' />
-        </a>
+        
         <br></br>
         <HealingBen />
          <Button onClick={learnmore} className="custom-btn">

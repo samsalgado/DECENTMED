@@ -191,8 +191,22 @@ either small doses or in the regular doses but also using off Lael drugs to kill
                   <img className='gridimag' src={spectraspray} alt='spectra spray' />
                    </a>
       <br />
+        
       <br />
+
             <div className="collapsible">
+              <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/4Ic5SBPO1ZA?si=tIxF3h4pfFRjDrQQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            style={{
+              maxWidth: '450px',
+              width: '100%',
+              height: '450px'
+            }}
+          ></iframe>
         <img src={case13} className="TELEa" alt="quote" />
       </div>
       <h3>HIPOCRATES SAID...</h3>

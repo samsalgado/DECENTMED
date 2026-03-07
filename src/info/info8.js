@@ -5,6 +5,7 @@ import { Button, Modal } from'react-bootstrap';
 import Benefits from "./akbenefits";
 import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from "react-i18next";
+import body from "../images copy/body.jpg"
 const Info8 = () => {
 const {t} = useTranslation('common');
     const [showModal, setShowModal] = useState(false);
@@ -49,6 +50,7 @@ const {t} = useTranslation('common');
         />
         </div>
       </div>
+                  <img className='gridimag' src={body} alt='TCNH' />
                <Button className="custom-btn" href="http://tcnh-stl.com" target="_blank">{t("Explore Applied Kinesiology")}</Button>  {/* Added Bootstrap Button */}
       <br></br>
       <div>

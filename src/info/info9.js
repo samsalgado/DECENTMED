@@ -507,12 +507,227 @@ possible for you. So borrow our belief because so many clients have gotten incre
           }
         }
       `}</style>
+      
     <a href="https://sourceapp.dynamitelifestyle.com/thesource" target="_blank" rel="noopener noreferrer">
+      
       <figure>
         <img className='gridimag' src={dyn} alt='21 Day Challenge' />
         <figcaption>{t("Sign Up")}</figcaption>
         </figure>
         </a>
+        <br></br>
+         <br></br>
+        <h1 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>
+              {t('Holistic Business Coach')}</h1>
+            <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '20px 0'
+      }}></div>
+      <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/zJ8LzxAJY3M?si=QfwisiHKJbGp4J_W"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/SV1FwUQLlRI?si=GY-fhng4wLC0Ywzw"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+               <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/J9iXoONiyzw?si=Gkgomds54OWbnMmO" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/zdDSojRXOPs?si=zQPV8CJzkjezazx7" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+              <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/6LZUIq3EWmQ?si=eXrzAwDNDnwaPU81"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/3_2MI8pJaj8?si=lOs0Mfo3lca5QM3e"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/kVhN1-60D0I?si=Bmx-yksDscBPgxEf"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/qnyiODM-8Sw?si=-S_yPTcMxk1JE1WI"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/XuhLwo9peSs?si=m5gHfh816JSgJN6p"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/7eUDjuAeQ_w?si=NNbEsWtgdCQJc_39"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/MtYUEgHJUR8?si=_1PODi4eY_GACYG1"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/qlW4p2NxV5Y?si=LNd6rR3o92m5cWto"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+                <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/v4zwBUfw2-Q?si=ltXbasNI_M42APEL"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/_sT7QCXy-Sw?si=OUKaiNBVnhA2T8H6"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+          <Button className="custom-btn" href="https://calendly.com/thrivingbynaturecoaching/30min?" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
         <br></br>
         <Benefitts />
         <Confidence />

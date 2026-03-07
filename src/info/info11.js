@@ -4,6 +4,7 @@ import './Info.css';
 import ReactDOM from 'react-dom';
 import { Button, Modal } from'react-bootstrap';
 import Benefitts from "./Ben";
+import event6 from "../images copy/taylorholistic.png"
 import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
@@ -266,6 +267,8 @@ const {t} = useTranslation('common')
         </div>
         
       </div>
+              <img className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+
        <Button className="custom-btn" href="https://essenceoflife.us/" target="_blank">{t('How Dr. Taylor Serves Boyton Beach, FL')}</Button>
       <br></br>
        <Button className="custom-btn" onClick={() => setShowModal(true)}>

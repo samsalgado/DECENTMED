@@ -49,7 +49,7 @@ const {t} = useTranslation('common');
         </div>
         <iframe
           className="centered-video"
-          src="https://rumble.com/embed/v6c1np4/?pub=4hu51y"
+          src="https://www.youtube.com/embed/65_dl3YowUI?si=Z7_t_F15anEquKTu"
           frameBorder="0"
           allowFullScreen
           title="Rumble video player"
@@ -111,16 +111,21 @@ const {t} = useTranslation('common');
               height="506"
               allowFullScreen
             />
+              <iframe
+              src="https://www.youtube.com/embed/NHyLltg_8_U?si=brtFn2UwCzmUDyGE"
+              title='Hypnotherapy for Trauma'
+              allow="autoplay"
+              width="900"
+              height="506"
+              allowFullScreen
+            />
     <div className="col-12 col-md-6 mb-3">
       <a href="tel:+19415879198">
-        <img src={ssreview} alt="Shea Shulman Therapy Review" style={{
-          width: '100%',
-          maxWidth: '550px',
-          height: 'auto',
-          objectFit: 'contain'
-        }} />
+        <img src={ssreview} className="gridimage" alt="Shea Shulman Therapy Review" />
       </a>
+      
     </div>
+    
   </div>
      <img className='gridimage' src={ss} alt='SHEA SHULMAN THERAPY' />
 </Collapsible>

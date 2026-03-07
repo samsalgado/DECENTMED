@@ -214,7 +214,27 @@ const {t} = useTranslation('common')
         videoUrl:"https://www.youtube.com/embed/Hoj5NH7j9Fc?si=DufJFWdfR2mUS4Ik",
         name:`${t('Benefits of Turmeric')}`
 
-    }
+    },
+     {
+        id:69,
+       videoUrl:"https://www.youtube.com/embed/0mQCvle8iLw?si=WCIgQO1d7FrY202R",
+        name:`${t('Herrontown Woods Plant Tour')}`
+    },
+     {
+        id:70,
+       videoUrl:"https://www.youtube.com/embed/rowAcAdwk-I?si=xeBcGSanjB2sblto",
+        name:`${t('Lemon Balm')}`
+    },
+     {
+        id:71,
+       videoUrl:"https://www.youtube.com/embed/Mj5Gz1vQdZE?si=",
+        name:`${t('Autumn Sage')}`
+    },
+     {
+        id:72,
+videoUrl:"https://www.youtube.com/embed/be6Q2KXN96o?si=",
+        name:`${t('Lantana')}`
+    },
 ]);
 
     return (

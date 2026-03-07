@@ -15,7 +15,17 @@ const FuncVids = () => {
             id:2,
             videoUrl:"https://www.youtube.com/embed/HGaKE9gxYzY?si=40IqfPwwawevZt35",
             name:`${t("Build Resilience with Precision Nutrition for Longevity and Healthy Aging.")}`
-        }
+        },
+        {
+            id:3,
+            videoUrl:"https://www.youtube.com/embed/qqYcx52tvy4?si=hDANgqJAobTUb8ma",
+            name:`${t("Women's Health with Lori Graham")}`
+        },
+        {
+            id:3,
+            videoUrl:"https://www.youtube.com/embed/2w59PmoZIUU?si=ZuJdDNsGCISv4IRB",
+            name:`${t("Honest Health with Lori Graham")}`
+        },  
 
     ]);
     return (

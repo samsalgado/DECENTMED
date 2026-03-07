@@ -95,7 +95,22 @@ const Chiro = () => {
           objectFit: 'contain'
         }} />
       </a>
-    </div>
+      </div>
+       <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/x-p50YGASDY?si=TWUQBMQJJr79s4sy"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+    
      
   </div>
 </Collapsible>

@@ -148,6 +148,78 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
         />
         </div>
       </div>
+       <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/0WAOPweMgFk?si=Hl73Gx7vAPhT0osa"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/TuthiGHaJj4?si=ijcJ-ioLEBU1ynRR"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/YTxJu2JFyaM?si=Xkr2cPJ0GjJo51i5"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/ARlmUkq1VNs?si=bBTnI8_sELzMvozr"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/9wfZk-JRgpo?si=F73l4GPAglrHtEPh"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            
+            
                <Button className="custom-btn" href="https://authenticlifejourney.com/" target="_blank">{t("Experience Transformation")}</Button>  {/* Added Bootstrap Button */}
       <br></br>
                       <Button className="custom-btn" onClick={() => setShowModal(true)}>
@@ -216,6 +288,161 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 <figcaption>{t("Signup")}</figcaption>
                 </a>
         <br></br>
+        <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/2YCXlgQlXL0?si=BX9CKBwgQ9CDknT8"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/YmXilRV4yaM?si=k3o1uGIOJQDp6rTs"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/c77_odmiexQ?si=nQeFps64GjmSDrjY"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/-JIJNOeW1yE?si=vyWImxQW9pgqFW-A"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/Em8pFdAdEGI?si=CMliuXJLwLuC8qLD"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/F2YIbP1Fnr0?si=LZu8DrvzcR9XtOq9"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/zL39mCvZJmA?si=2ToBxo-y4188vrgj"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/cX_68XibDlQ?si=r_2mKvOGmiydb8WT"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/-eW6TAUT_DU?si=fu2kxS-2R5CR99YD"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/8xI_WBwX6CY?si=-BntLu190uc0NzuT"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/YFBGTp_9_-8?si=S0NfXzdlczRjoLQC"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+          <Button className="custom-btn" href="https://jessicajavens.com/" target="_blank">{t("Experience Transformation")}</Button>
         <TsBenefits />
                           <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}

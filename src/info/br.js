@@ -78,11 +78,121 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         />
         </div>
       </div>
+       <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/Wb9jVBEv1As?si=oQT3FDLAPhkmhlm6"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/O_EI-_EfWgM?si=Gnm8sThS2ag2pVxs"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/O_EI-_EfWgM?si=Gnm8sThS2ag2pVxs"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/lzxs70WJVt8?si=DS6cZ4Nxq4OoXLe8"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/f2ZV5AiVpwM?si=pFyYp5TiZNGYT3PW"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/OIy9AgS_8VY?si=hYz6fTeRXrMDh8sj"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/orAf3WRVdgM?si=jZnOOghU2CecGqNo"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimag'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/OUEKGEmYCZQ?si=n9pozp3LIwmwOxcO"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
             <Button className="custom-btn" href="https://scarlettdee.com/home" target="_blank">{t('Find Out How Breathwork Can Change your Life')}</Button>
               <br></br>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+             
             {showModal && ReactDOM.createPortal(
           <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
         <Modal.Header closeButton>
@@ -119,6 +229,7 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
              <br></br>
+
         <Benefits />
                  <Button onClick={learnmore} className="custom-btn">
                           {t('Providers: Signup Here')}

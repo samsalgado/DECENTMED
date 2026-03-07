@@ -45,6 +45,11 @@ const Hypnovids = () => {
             id:9,
             videoUrl:"https://www.youtube.com/embed/7VBO0_v4bmw",
             name: `${t("Releasing Soul Ties")}`
+        },
+         {
+            id:9,
+            videoUrl:"https://www.youtube.com/embed/UfWUv1QoIec?si=BZUgPCyAHjpTnXpO",
+            name: `${t("Hypnotherapy 101")}`
         }
     ]);
     return (
