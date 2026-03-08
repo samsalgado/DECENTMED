@@ -181,6 +181,20 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+              <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/hKOmN_-gEwc?si=Pq-NCQ-HW8vWh_wJ"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
              <Button className="custom-btn" href="https://amazinglifedesign.com/" target="_blank">{t("Experience Trauma Relief")}</Button>  {/* Added Bootstrap Button */}
                 <br></br>
                   <Button className="custom-btn" onClick={() => setShowModal(true)}>
