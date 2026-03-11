@@ -49,8 +49,6 @@ export function Apoth() {
       </Helmet>
       <header>
         <Topbar />
-        <h1 className='center'>{t('Live Drop Coming Soon!')}</h1>
-
       </header>
         <h1 className='center'>{t('Apothecary')}</h1>
         <br></br>
