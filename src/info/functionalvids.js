@@ -25,8 +25,42 @@ const FuncVids = () => {
             id:3,
             videoUrl:"https://www.youtube.com/embed/2w59PmoZIUU?si=ZuJdDNsGCISv4IRB",
             name:`${t("Honest Health with Lori Graham")}`
+        },
+        {
+            id:4,
+            videoUrl:"https://www.youtube.com/embed/i2qgCodSdlA",
+            name:`${t("Aging Gracefully with Lori Graham")}`
+        },
+         {
+            id:4,
+            videoUrl:"https://www.youtube.com/embed/8K0jfnoyvTc",
+            name:`${t("State of Natural Medicine with Lori Graham")}`
+        },
+         {
+            id:5,
+            videoUrl:"https://www.youtube.com/embed/U0M03Reegos",
+            name:`${t("Functional Medicine is for Nourishing")}`
+        },
+        {
+            id:6,
+            videoUrl:"https://www.youtube.com/embed/hD1qb8Jibgw",
+            name:`${t("How to Tell If Your Glucose Pattern Is Actually Getting Better (Without Waiting 90 Days for Your A1C")}`
+        },
+            {
+            id:7,
+            videoUrl:"https://www.youtube.com/embed/bBqu541ces8",
+            name:`${t("The Truth About Fruit and Blood Sugar (And Why 'Eat More Fruit' Is Bad Advice for Type 2)")}`
+        },   
+        {
+            id:8,
+            videoUrl:"https://www.youtube.com/embed/fA93EMLAuEw",
+            name:`${t("Blood Sugar Control")}`
         },  
-
+        {
+            id:9,
+            videoUrl:"https://www.youtube.com/embed/q1LDlydc8eo?si=QTqLG6ROvY1ovsQk",
+            name:`${t("Blood Sugar Quiz")}`
+        }
     ]);
     return (
         <div className="contents">
