@@ -30,7 +30,7 @@ At DecentMed, we are revolutionizing the health insurance game by offering stake
       allowfullscreen
     ></iframe>
       </div>
-      <Button onClick={learnmore} className="custom-btn">
+      <Button onClick={learnmore} target='_blank' className="custom-btn">
           {t('Providers: Join Trusted Network')}
         </Button>
     </div>
