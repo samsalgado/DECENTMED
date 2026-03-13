@@ -898,6 +898,7 @@ const renderCoachesInOrder = () => {
         <header>
           <Topbar />
         </header>
+                                                          <div className="container-blue">
 
         <div className="container">
           {/* Search Bar Section */}
@@ -1021,6 +1022,7 @@ const renderCoachesInOrder = () => {
               </div>
             </div>
           )}
+        </div>
         </div>
         <footer>
           <Footer />

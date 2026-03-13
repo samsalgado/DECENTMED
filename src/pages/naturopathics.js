@@ -143,7 +143,8 @@ export function Natpract() {
           <Topbar />
         </header>
 
-        <div className="container">
+                                                          <div className="container-blue">
+
           <div className="search-section" style={{ 
             background: '#f8f9fa', 
             padding: '2rem 0', 
@@ -438,6 +439,7 @@ export function Natpract() {
 
           {!showResults && (
             <div className="default-content text-center" style={{ padding: '2rem 0' }}>
+              
               <h2>{t("Professional Naturopathic Care")}</h2>
               <p className="lead text-muted">
                 {t("Enter your location above to find qualified naturopathic doctors in your area")}

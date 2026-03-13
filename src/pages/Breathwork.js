@@ -1,5 +1,4 @@
 import '../App.css';
-import PageWithTOC from '../Components/PageWithTOC';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
@@ -20,10 +19,9 @@ const { t } = useTranslation('common');
             <header>
             <Topbar />
             </header>
-<PageWithTOC containerId="chiro-wrapper">
 
             <BREATH />
-</PageWithTOC>
+
 
             <footer>
                 <Footer />

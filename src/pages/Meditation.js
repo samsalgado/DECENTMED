@@ -30,14 +30,20 @@ const { t } = useTranslation('common');
         </header>
             <MeditationInfo />
          <br />
-         
+                            <div className="container-blue">
+
       <MedBenefits />
+      </div>
        <br></br>
+                   <div className="container-blue">
+
         <h1 className='center'>{t("Meditation 101")}</h1>
       <MeditationVids />
+      
                 <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
+                </div>
         <footer>
             <Footer />
         </footer>

@@ -21,6 +21,8 @@ const Blog14 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t('Pain Pill for Back: Best Chiropractor Near Me')}
         </h1>
@@ -56,6 +58,7 @@ const Blog14 = () => {
       >
         {t("Learn More")}
       </Button>
+      </div>
       </div>
       <Footer />
     </div>

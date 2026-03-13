@@ -21,6 +21,8 @@ const Blog20 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('How much Does Acupuncture Cost?')}
         </h1>
@@ -94,6 +96,7 @@ const Blog20 = () => {
 >
   {t("Learn More")}
 </Button>
+</div>
         </div>
       </div>
       <Footer />

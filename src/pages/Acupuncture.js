@@ -3,7 +3,6 @@ import Info1 from '../info/info1';
 import Topbar from './topbar';
 import Footer from '../footer';
 import { Helmet } from 'react-helmet'; // Import Helmet
-import PageWithTOC from '../Components/PageWithTOC';
 export function Acupuncture({ t }) {
 
     return (
@@ -19,9 +18,7 @@ export function Acupuncture({ t }) {
 
                     <Topbar />
                 </header>
-                <PageWithTOC containerId="chiro-wrapper">
                     <Info1 />
-                </PageWithTOC>
                 <footer>
                     <Footer />
                 </footer>

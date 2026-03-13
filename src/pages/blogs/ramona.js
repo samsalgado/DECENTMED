@@ -20,6 +20,8 @@ const Ramona = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ending Corporate Burnout')}</h1>
         <a href="https://authenticlifejourney.as.me/schedule/f3645bcd/appointment/59514298/calendar/any?appointmentTypeIds[]=59514298">
@@ -66,6 +68,7 @@ const Ramona = () => {
     style={{ maxWidth: '100%', height: 'auto' }} // Maintain aspect ratio
   />
 </div>
+      </div>
       </div>
       <Footer />
     </div>

@@ -28,8 +28,10 @@ export function Summit() {
         <header>
           <Topbar t={t} />
         </header>
+
         {/* <BookingForm token={localStorage.getItem('token')} ></BookingForm> */}
         <InfoSummit t={t} />
+       
 
         <br />
 

@@ -17,13 +17,9 @@ const Pgchelation = () => {
   const { t } = useTranslation('common');
   return (
     <div className='container'>
-       <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t("Chelation")}</h1>
+       <h1 className="logotitle">{t("Chelation")}</h1>
+                    <div className="container-blue">
+
       <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
       {/* Title and Collapsible Content with Table Structure */}
         <div className="button-container">
@@ -69,7 +65,7 @@ const Pgchelation = () => {
             </tr>
           </tbody>
         </table>
-        
+        </div>
       </div>
     </div>
   );

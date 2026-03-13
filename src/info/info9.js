@@ -15,6 +15,9 @@ import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.
 import { useTranslation } from "react-i18next";
 const Info9 = () => {
 const {t} = useTranslation('common');
+const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }  
   const [showModal, setShowModal] = useState(false);
   const txt = `
   Thank you so much, Samuel. I am a mindset coach. Um, I work with an incredible company called Dynamite Lifestyle. And what we do is we help you to understand the transformative power of your mindset in creating your results, right? We're all about being able to create your life by design rather than by default. Um, just a little bit about um, Dynamite Lifestyle. So, the CEO is my incredible mentor, Kim Calbertt, and she was mentored by the late Bob Proctctor, and she was actually Bob Proctctor's number one consultant.
@@ -324,13 +327,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
   `
     return (
       <div className='container mobile-optimized'>
-           <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>
+           <h1 className="logotitle">
               {t('Mindset Coaching')}</h1>
             <div style={{
         display: 'flex',
@@ -433,6 +430,8 @@ possible for you. So borrow our belief because so many clients have gotten incre
             }
           }
         `}</style>
+                                         <div className="container-blue">
+
         <iframe
           className="centered-video"
           src="https://www.youtube.com/embed/9pUjEybptCQ?si=TTYSFG3DjqPRagLk"
@@ -731,6 +730,10 @@ possible for you. So borrow our belief because so many clients have gotten incre
         <br></br>
         <Benefitts />
         <Confidence />
+            <Button onClick={learnmore} target='_blank' className="custom-btn">
+                                          {t('Providers: Signup Here')}
+                        </Button>
+        </div>
         </div>
     )
 }

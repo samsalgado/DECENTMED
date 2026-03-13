@@ -134,13 +134,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
   `
   return (
       <div className='container  mobile-optimized'>
-        <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Healing Trauma')}</h1>
+        <h1 className='logotitle'>{t('Healing Trauma')}</h1>
         <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -178,6 +172,8 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
         />
       </div>
     </div>
+                                                   <div className="container-blue">
+
       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -242,6 +238,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
 }
 
       `}</style>
+      </div>
               <Collapsible trigger={<div className="collapsible-trigger">{t("Resources")}</div>}>
         <a href="https://www.amazon.com/Handbook-Human-Potential-Accessible-Personal/dp/B0G4J3JXKK/ref=sr_1_1?crid=1LMFQIDRNTC4I&dib=eyJ2IjoiMSJ9.pjgTbL2HmvhiV03i3tu_KSLHL8HpvWtIy4uoZLOHMnfh87vrOpD6RSEBMm-tsS2arI_I3b-NojrmDS9q0N34yxJNtvYt9qd-71XevY2aYYE.Vj_fGKnU_us7s3QAjSHSInuWtFxxRkWAxJ-TdruXhzQ&dib_tag=se&keywords=handbook+for+human+potential+an+accessible+guide+to+personal+growth&nsdOptOutParam=true&qid=1766436381&sprefix=Handbook+for+human+po%2Caps%2C122&sr=8-1"> <img src={book1} alt="img" /> </a>
         <a href="https://www.amazon.com/Wounds-Wisdom-Art-Healing-Trauma/dp/B0D8QNYCDK/ref=sr_1_4?crid=21ALF1LZPXSSH&dib=eyJ2IjoiMSJ9.MCes-FKwfcB0U6nV0hGmG9CRQPdERvi8LZdmsPpzHDTvF0nQabY4B8E7rkuYB9f5oBYHzkdLLAuXQPtRmv0IZcnf316y-LzntfvR1g8wpguwVpbDNnyaJ0IwjbQ-jJCaEs8udkrnW9kIINdTm9dXAXLVN1IYCB5bjsqeSMUOw4X7LnciqHBaG-7-LauZM2xdA9EH0oIetuIQbK-glHkQ4aqWJOEn07EhqGYxo5KGX0o.w4J2XMhKsqHhAnZehlR2Xp2L5HS4G-aWeHKKmtZCgPg&dib_tag=se&keywords=wounds+to+wisdom&qid=1766436621&sprefix=wounds+to+wisdom%2Caps%2C74&sr=8-4"> <img src={book2} alt="img" /> </a>

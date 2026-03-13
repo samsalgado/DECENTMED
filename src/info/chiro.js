@@ -21,10 +21,13 @@ import chiropractorstats from '../images copy/chiropractor-stats.png';
 import { useTranslation } from 'react-i18next';
 import BloodSugar from './Bloodsugar';
 const Chiro = () => {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation('common');
+  const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
   return (
     <div className='container mobile-optimized'>
-      <h1 className='title mobile-title'>{t("Chiropractic")}</h1>
+      <h1 className="logotitle">{t("Chiropractic")}</h1>
       <div className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
@@ -63,9 +66,12 @@ const Chiro = () => {
         }
       }
     `}</style>
+                                                     <div className="container-blue">
+
      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+             
       <div className="title-container">
         <table className="collapsibles-table">
           <tbody>
@@ -196,6 +202,10 @@ const Chiro = () => {
             <img alt='' />
           </tr>
         </Collapsible>
+      </div>
+       <Button onClick={learnmore} className="custom-btn">
+                        {t('Providers: Signup Here')}
+                      </Button>  
       </div>
     </div>
   )

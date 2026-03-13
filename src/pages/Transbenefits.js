@@ -106,8 +106,10 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
     textDecoration: 'underline',
     textAlign: 'center',
     fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
+    marginTop: '3.5rem',
+      fontSize: '43px',
+      fontWeight:'800',
+    paddingTop: '2rem'
   }}>              {t("Transformational Empowerment Coaching")}</h1>
             <div style={{
         display: 'flex',
@@ -133,6 +135,9 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
           {//<p><h3>{t("Jessica Javens: Transformational Coaching")}</h3></p>    
 }
           <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
+          <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                    {t("Transcript")}
+                  </Button>
         </div>
 <iframe
           className="centered-video"
@@ -149,6 +154,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
         </div>
       </div>
        <div className='gridimage'>
+                  <div className="container-blue">
+
               <iframe
               height="515"
               src="https://www.youtube.com/embed/0WAOPweMgFk?si=Hl73Gx7vAPhT0osa"
@@ -218,13 +225,14 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            
+                      <div className="container-blue">
+
             
                <Button className="custom-btn" href="https://authenticlifejourney.com/" target="_blank">{t("Experience Transformation")}</Button>  {/* Added Bootstrap Button */}
+              </div>
+
       <br></br>
-                      <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
+                    
                   {showModal && ReactDOM.createPortal(               
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
@@ -240,6 +248,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 </Modal.Footer>
               </Modal>,
               document.body)}
+                        <div className="container-blue">
+
  <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -270,7 +280,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
  
   <Boundaries />
 </Collapsible>
-
+</div>
             <Collapsible trigger={<th className="collapsible-triggger">{t('Self Care Journal')}</th>}>
               <tr>
                 <a href="https://www.linkedin.com/pulse/flow-feeling-honoring-your-emotions-work-life-ramona-crabtree-falkner-4rrve/?trackingId=XKJ1BW5BQ3quljT4fWOovg%3D%3D">
@@ -282,12 +292,19 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 <a href="https://www.linkedin.com/pulse/why-slowing-down-most-powerful-move-you-can-make-crabtree-falkner-3gwae/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage'src={slow} alt='Why Slowing Down is the Most Powerful Move You Can Make' /></a>
               </tr>
         </Collapsible>
+        </div>
         <br></br>
+                  <div className="container-blue">
+
+
                         <a href="https://ramonacrabtreefalkner.com/purposefulpause">
                 <img className='gridimage' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
                 <figcaption>{t("Signup")}</figcaption>
                 </a>
+                </div>
         <br></br>
+                  <div className="container-blue">
+
         <div className='gridimage'>
               <iframe
               height="515"
@@ -447,6 +464,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                           <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
+        </div>
         </div>
     )
 }

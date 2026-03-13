@@ -1,38 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 import tier2 from '../images copy/tier11.png';
-import tier3 from "../images copy/bigtier.png";
+import tier3 from "../images copy/bigtierr.png";
 import '../info/Info.css';
-import tier0 from "../images copy/adtier.png";
+import tier0 from "../images copy/ad.png";
+
 export function Pricing() {
   const { t } = useTranslation('common');
-  const navigate = useNavigate();
-  const [loadingTier, setLoadingTier] = useState(null);
 
   const tiers = [
-    {name: 'Tier 0',  price:500, img:tier0},
+    { name: 'Advertising Tier', price: 500, img: tier0 },
     { name: 'Tier 1', price: 1500, img: tier2 },
     { name: 'Tier 2', price: 2500, img: tier3 }
   ];
-
-  const handlePayment = (tierName, price) => {
-    if (loadingTier) return; // prevent double click
-    setLoadingTier(tierName);
-
-    const token = localStorage.getItem('token');
-
-    setTimeout(() => {
-      if (!token) {
-        navigate('/signup/provider', {
-          state: { tier: tierName, amount: price, fromPricing: true }
-        });
-      } else {
-        navigate('/stripepay', { state: { tier: tierName, amount: price } });
-      }
-      setLoadingTier(null);
-    }, 800); // short delay to show loading spinner
-  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -49,9 +29,8 @@ export function Pricing() {
         padding: '50px 20px',
       }}
     >
-
       <h2 style={{ textAlign: 'center', color: '#00695C', marginBottom: '20px' }}>
-        {t("Choose a Plan")}
+        {t("Select Tier to Join DecentMed")}
       </h2>
 
       <div className='title-container'>
@@ -77,6 +56,7 @@ export function Pricing() {
                 cursor: 'pointer',
                 transition: 'transform 0.3s ease',
               }}
+              onClick={() => window.location.href = "https://decentmed.org/choose-provider-tier"}
               onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.03)')}
               onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
             >
@@ -90,70 +70,14 @@ export function Pricing() {
                   marginBottom: '15px',
                 }}
               />
-              <h3 style={{ color: '#00695C', fontSize: '1.2rem' }}>
-                {tier.name} - ${tier.price}
-              </h3>
 
-              <button
-                style={{
-                  marginTop: '10px',
-                  padding: '10px 20px',
-                  border: 'none',
-                  backgroundColor: loadingTier === tier.name ? '#b0b0b0' : '#00796B',
-                  color: '#fff',
-                  borderRadius: '8px',
-                  cursor: loadingTier === tier.name ? 'not-allowed' : 'pointer',
-                  fontSize: '1rem',
-                  transition: 'background-color 0.3s ease',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  gap: '8px',
-                }}
-                onClick={() => handlePayment(tier.name, tier.price)}
-                disabled={loadingTier === tier.name}
-                onMouseEnter={(e) => {
-                  if (loadingTier !== tier.name)
-                    e.target.style.backgroundColor = '#004d40';
-                }}
-                onMouseLeave={(e) => {
-                  if (loadingTier !== tier.name)
-                    e.target.style.backgroundColor = '#00796B';
-                }}
-              >
-                {loadingTier === tier.name ? (
-                  <>
-                    <span
-                      className="spinner"
-                      style={{
-                        width: '16px',
-                        height: '16px',
-                        border: '2px solid #fff',
-                        borderTop: '2px solid transparent',
-                        borderRadius: '50%',
-                        animation: 'spin 0.8s linear infinite',
-                      }}
-                    ></span>
-                    Processing...
-                  </>
-                ) : (
-                  <>Select ${tier.price} Tier</>
-                )}
-              </button>
+              <h3 style={{ color: '#00695C', fontSize: '1.2rem' }}>
+                {tier.name}
+              </h3>
             </div>
           ))}
         </div>
       </div>
-
-      {/* Spinner Animation */}
-      <style>
-        {`
-          @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
-        `}
-      </style>
     </div>
   );
 }

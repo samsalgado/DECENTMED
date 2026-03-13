@@ -21,6 +21,8 @@ const {t} = useTranslation('common')
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
       <a href='/apoth'>
@@ -62,6 +64,7 @@ const {t} = useTranslation('common')
       >
         {t("Visit Apothecary")}
       </Button>
+      </div>
       </div>
       <Footer />
     </div>

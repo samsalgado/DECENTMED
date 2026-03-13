@@ -46,12 +46,10 @@ import Blog18 from './pages/blogs/blog18';
 import { Transformational } from './pages/transform';
 import Blog12 from './pages/blogs/blog12';
 import Blog14 from './pages/blogs/blog14';
-import Blog17 from './pages/blogs/blog17';
 import { Detox } from './pages/Detox';
 import { StemCell } from './pages/Stemcell';
 import { NotFound } from './pages/NotFound';
 import { Shop } from './pages/products';
-import Blog2 from './pages/blogs/blog2';
 //import { Lynn } from './pages/lynn';
 import { Nutrition } from './pages/Nutrition';
 import BlogPage from './pages/Blog';
@@ -162,9 +160,7 @@ function App() {
         <Route path="/can-back-pain-cause-constipation" element={<Blog1 t={t} />} />
         <Route path="/shop" element={<Shop t={t} />} />
         <Route path="/massagetherapy" element={<MassPract t={t} />} />
-        <Route path="/bitcoin" element={<Blog17 t={t} />} />
         <Route path="/blog18" element={<Blog18 t={t} />} />
-        <Route path="/dry-needling-vs-acupuncture" element={<Blog2 t={t} />} />
         <Route path="/detox-cleanse" element={<Blog3 t={t} />} />
         <Route path="/herbalmedicine" element={<HerbalMedicine t={t} />} />
         <Route path='/hypnopract' element={<Hypnopract t={t} />} />

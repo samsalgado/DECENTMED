@@ -14,13 +14,7 @@ const {t} = useTranslation('common');
 
     return (
       <div className='container mobile-optimized'>
-          <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Certified Sound Healing')}</h1>
+          <h1 className="logotitle">{t('Sound Healing')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -46,6 +40,8 @@ const {t} = useTranslation('common');
         </div>
         
       </div>
+                      <div className="container-blue">
+
     <div className="vertical-video">
   <iframe 
     className="rumble" 
@@ -193,6 +189,7 @@ const {t} = useTranslation('common');
         }
       `}</style>
         <br></br>
+      </div>
 
       <h1 style={{
     textDecoration: 'underline',

@@ -10,7 +10,7 @@ const FAQ = () => {
   return (
     
     <div className='container'>
-              <h1>{t("About Us")}</h1>
+              <h1 className='logotitle'>{t("About Us")}</h1>
             <Merlin />
             <div>
             <a href='https://www.spectraspray.com/shop' alt="spectra spray">

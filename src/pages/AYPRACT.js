@@ -127,6 +127,7 @@ export function AYPract() {
         <header>
           <Topbar />
         </header>
+                                                          <div className="container-blue">
 
         <div className="container">
           <h1 style={{ fontFamily: 'sans-serif' }}>
@@ -343,7 +344,7 @@ export function AYPract() {
             </div>
           )}
         </div>
-
+        </div>
         <footer>
           <Footer />
         </footer>

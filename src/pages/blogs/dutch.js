@@ -99,10 +99,13 @@ const Ivermectinedutch = ({ t }) => {
   ];
 
   return (
+                         <div className="container-blue">
+
     <div className="container">
       {images.map((image, index) => (
         <img key={index} className="gridimag" src={image} alt="pic" />
       ))}
+    </div>
     </div>
   );
 };

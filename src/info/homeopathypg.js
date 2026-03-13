@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../App.css";
+import './Info.css';
 import case13 from '../images copy/IMG_2793.jpeg';
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
@@ -94,8 +95,11 @@ that's conspicuous about itin it's been shown to block like cancer Pathways that
 either small doses or in the regular doses but also using off Lael drugs to kill the stem cells so there's many different options out there it's a very promising Frontier in cancer and cancer treatment and probably one of the best places for people to look into it for themselves is a wonderful book called how to starve cancer it's written by a British woman by the name of Jane mcleland who used this to save her own life twice for incurable cancers
 `
   return (
-    <div className='thecontainer mobile-optimized'>
-      <h1 className='title'>{t('Homeopathy')}</h1>
+    <div>
+    <div className='thecontainer mobile-optimized='>
+                      <div className="container-blue">
+
+      <h1 className='logotitle'>{t('Homeopathy')}</h1>
       <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -131,10 +135,12 @@ either small doses or in the regular doses but also using off Lael drugs to kill
               height: '250px'
             }}
           ></iframe>
-          
+        
         </div>
 
       </div>
+                <div className="container-blue">
+
               <Button className="custom-btn" href="https://www.drtshannon.com/" target="_blank">{t('Find Out How Dr. Shannon Can Help You')}</Button>
       
 <Button className="custom-btn" onClick={() => setShowModal(true)}>
@@ -192,7 +198,7 @@ either small doses or in the regular doses but also using off Lael drugs to kill
                    </a>
       <br />
         
-      <br />
+      </div>
 
             <div className="collapsible">
               <iframe
@@ -212,7 +218,8 @@ either small doses or in the regular doses but also using off Lael drugs to kill
       <h3>HIPOCRATES SAID...</h3>
       <img src={quote} className="TELEa" alt="quote" />
     </div>
-
+    </div>
+</div>
   );
 };
 

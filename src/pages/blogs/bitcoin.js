@@ -62,4 +62,3 @@ const {t} = useTransition('common')
 };
 
 export default Bitcoin; // Default export
-

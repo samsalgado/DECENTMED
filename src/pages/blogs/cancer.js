@@ -123,7 +123,9 @@ const Blog6 = () => {
         <Topbar />
       </header>
       <div className='container'>
-        <h1>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
+                                  <div className="container-blue">
+
+        <h1 className='logotitle'>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
         </h1>
         <div className='container'>
             <ReactPlayer
@@ -133,10 +135,13 @@ const Blog6 = () => {
               controls={true}
             />
         </div>
+                
+
       </div>
             <Button className="custom-btn" onClick={() => setShowModal(true)}>
                         {t("Transcript")}
                       </Button>
+                      </div>
                       {showModal && ReactDOM.createPortal(
                       
                       <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="modal-cancer">
@@ -160,7 +165,8 @@ const Blog6 = () => {
       
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
-        
+                                          <div className="container-blue">
+
           <p>
             {t("B vitamins convert food into energy and help to strengthen the immune system.")}
             {t("Moreover, the vitamin B Complex is a mixture of various B vitamins.")}
@@ -212,8 +218,11 @@ const Blog6 = () => {
           <p>
             {t("In summary, disease stems from a deficiency in vitamin B (A, D, E, K) - vitamin B consumption benefits the body. B17 (Laetrile) is a controversial component similar to vitamin B and primarily found in 'bitter almond, apricot, blackthorn, cherry, nectarine, peach and plum'; adding these fruits to your diet is no harm and could benefit your nutrition. Dr. Krebs claimed, 'Healthy adults should get a minimum of 50 milligrams of B17 daily'. Regarding cancer, Laetrile is not a treatment method in the global West - Europe, USA, and Canada. However, alternative cancer treatment in Mexico and other developing nations uses Laetrile. The body is an interconnected system. Furthermore, people should value nutrition -including vitamin B and complex B vitamins for disease prevention.")}
           </p>
+          </div>
         </div>
         <div>
+                                                    <div className="container-blue">
+
           <table className="collapsibles-table">
             <tbody>
               <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
@@ -224,9 +233,8 @@ const Blog6 = () => {
               </Collapsible>
             </tbody>
           </table>
-
+          </div>
         </div>
-
       </div>
       <Footer />
     </div>

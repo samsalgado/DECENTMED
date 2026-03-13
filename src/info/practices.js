@@ -11,7 +11,7 @@ function Practices() {
         <>
         <div className="container">
             <div className="container-blue">
-                <h1 className="text-center mb-4">{t("Telehealth Practices")}</h1>
+                <h1 className='logotitle'>{t("Telehealth Practices")}</h1>
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/homeopract'>
@@ -84,7 +84,7 @@ function Practices() {
                         </NavLink>
                     </div>
                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                    <NavLink to='/breathwork'>
+                    <NavLink to='/breathworkers'>
                         <h3 className="card-title-fixed" >{t("Somatic Breathwork")}</h3>
                         <img className="img-custom" src={Departments.BREATH} alt={t("Somatic Breathwork")} />
                         </NavLink>

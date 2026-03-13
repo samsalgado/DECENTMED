@@ -11,16 +11,12 @@ const Info = () => {
   const { t } = useTranslation("common"); // Access translation function
   return (
     <div className='container'>
-      <h1 className='title'>{t('DecentMed')}</h1>
-      <WellnessInro />
+      <h1 className='logotitle'>{t('DecentMed')}</h1>
       <BlueContainer />
-      <div className="title-container">
+      <WellnessInro />
+          <div className="container-blue">
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
-      </div>
       <Values />
-      <div className='digital'>
-      </div>
-
 
       <h2>{t('Holistic Medicine near Me')}</h2>
       <div className='pr'>
@@ -42,6 +38,7 @@ const Info = () => {
           </a>
           {t('Stars like Kobe Bryant, Peyton Manning, Ryan Tannehill, Desean Jackson, and Jamaal Charles (among others) have all used Stem Cell Therapy for ailments.')}
         </p>
+        </div>
       </div>
       <br />
       <HealthFacts />

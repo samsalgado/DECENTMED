@@ -20,6 +20,8 @@ const {t} = useTranslation('common');
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
           <img className='gridimag' src={batana} alt="logo" />
@@ -59,6 +61,7 @@ const {t} = useTranslation('common');
       </Button>
       </div>
       <Footer />
+    </div>
     </div>
   );
 };

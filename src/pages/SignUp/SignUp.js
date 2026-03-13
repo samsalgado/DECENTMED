@@ -121,10 +121,14 @@ const SignUp = () => {
     <>
       <Topbar />
       <div style={{ textAlign: 'center', marginTop: '80px', paddingTop: '2rem' }}>
-        <h1>{t("Provider Registration")}</h1>
+        <h1 className='logotitle'>{t("Registration")}</h1>
+                                              <div className="container-blue">
+
+         <Practice />
+         </div>
         <br></br>
         <br></br>
-        <br></br>
+      
         <div className="auth-form-container">
           <div className="auth-form-wrapper">
             <button
@@ -210,10 +214,12 @@ const SignUp = () => {
           </div>
         </div>
       </div>
+                                      <div className="container-blue">
 
-      <Practice />
+     
       <Offer2 />
       <Info7 />
+      </div>
       <Footer />
     </>
   );

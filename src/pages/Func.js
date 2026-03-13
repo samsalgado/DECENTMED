@@ -31,6 +31,8 @@ export function Func() {
         }}>
           <Topbar />
         </header>
+                                                                  <div className="container-blue">
+
         <div className="container" style={{
           // Solution 4: Remove any top spacing on container
           marginTop: 0,
@@ -118,7 +120,7 @@ export function Func() {
             </div>
           </div>
         </div>
-
+      </div>
         <footer>
           <Footer />
         </footer>

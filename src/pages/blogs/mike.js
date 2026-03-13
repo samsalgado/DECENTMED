@@ -21,6 +21,7 @@ const Mike = () => {
       <header>
         <Topbar />
       </header>
+                     <div className="container-blue">
 
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ways to Improve Your Sleep Quality')}</h1>
@@ -56,7 +57,7 @@ const Mike = () => {
             {t(`By incorporating these natural strategies into your routine, you may find it easier to fall asleep faster, stay asleep longer, and wake up feeling refreshed and rejuvenated.`)}
           </p>
         </div>
-
+      </div>
       </div>
       <Footer />
     </div>

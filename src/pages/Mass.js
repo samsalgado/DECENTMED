@@ -38,6 +38,8 @@ export default function MassPract() {
 
   return (
     <div>
+                                                                <div className="container-blue">
+
       <Helmet>
         <title>{t('Massage Therapy')} - DecentMed</title>
                 <meta property="og:title" content={t("Find a Practitioner")} />                
@@ -67,7 +69,7 @@ export default function MassPract() {
           </div>
         </div>
       </div>
-
+      </div>
       {showResults && (
         <div className="row justify-content-center">
           {isWashLocation ? (

@@ -8,26 +8,26 @@ import spectraspray from "../images copy/spectraspray.png";
 import './Info.css';
 import cdm from "../images copy/cdm.png";
 import "./prevent.css";
+
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
 const PreventWellness = () => {
   const { t } = useTranslation("common");
+  const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }   
   const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
       <div className="title-container">
-         <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Preventive Wellness')}</h1>
+         <h1 className='logotitle'>{t('Preventive Wellness')}</h1>
       </div>
       <div className="collapsible">
       </div>
        
       <Vitamins />
+                                                       <div className="container-blue">
+
       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -61,6 +61,10 @@ const PreventWellness = () => {
               document.body
               )}
             <HealthCoaching />
+                                   <Button onClick={learnmore} className="custom-btn">
+                                  {t('Providers: Signup Here')}
+                </Button> 
+            </div>
     </div>
   );
 }

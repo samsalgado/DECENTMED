@@ -18,6 +18,8 @@ const Blog17 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>What is Bitcoin?</h1>
           <img className='gridimag' src={bitcoin} alt="logo" />
@@ -73,6 +75,7 @@ const Blog17 = () => {
         <p>
         Finally, accepting payments is great. But you need a Bitcoin savings account. For maximum security, purchasing a cold wallet puts more security over your money. A cold wallet is a device not connected to the internet. The most secure cold wallet is Coldcard because it doesn’t need to be connected to a device like Trezor or Ledger. Instead, the device uses an SD card to make it less susceptible to hacking. To conclude, accept Bitcoin via Lightning with wallets like Muun, Swiss Bitcoin Pay, or Blink (outside the US) and utilize a cold wallet like Coldcard, Trezor, or Ledger as a savings account.
         </p>
+        </div>
         </div>
         </div>
     </div>

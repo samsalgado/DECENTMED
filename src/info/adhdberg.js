@@ -11,13 +11,7 @@ const {t} = useTranslation('common');
         <div>
       <div className='container mobile-optimized'>
        <h1
-  style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}
+  className="logotitle"
 >
           {t('ADHD Iceberg')}</h1>
         <div style={{
@@ -61,10 +55,13 @@ const {t} = useTranslation('common');
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+                                                            <div className="container-blue">
+
            <Button className="custom-btn" href="https://www.decentmed.org/coaching" target="_blank">{t('Find Out How An AHDH Coach Can Help You')}</Button>
            <a href='https://calendly.com/ambernacolle/15-30min' alt="ADHD Iceberg">
             <img className='gridimag' src={adhd} alt='ADHD Iceberg' />
              </a>
+             </div>
         </div>
     </div>
     </div>

@@ -1,11 +1,10 @@
-import React, { useState }  from 'react';
+import React from 'react';
 import '../info/Info.css'; // Import the CSS file
 import { useTranslation } from 'react-i18next';
-import { Button, Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 //import x from "../images copy/1000.png" // Import the translation hook
 const WellnessInro = () => {
   const { t } = useTranslation("common"); 
-    const [showModal, setShowModal] = useState(false);
   const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
@@ -21,44 +20,19 @@ At DecentMed, we are revolutionizing the health insurance game by offering stake
   */
   return (
     <div className='theecontainer'>
-        <div className='paragraph-container'>
-          <p className='paragraph'>
-            {t("Medicine was never meant to be about survival alone. It was meant to support wellness, balance, and human potential. Our goal is vitality.")}
-          </p>
-          <p className='paragraph'>
-            {t("sneako")}
-          </p>
-        </div>
-         <Button onClick={learnmore} className="custom-btn">
-          {t('Providers: Join Trusted Network')}
-        </Button>
-      <br></br>
       <div className='video-container'>
       <iframe
       width="100%"
       height="215"
-      src="https://www.youtube.com/embed/Cv709OOmp-0?si=oghsNOAjLEExQEpx"
+      src="https://www.youtube.com/embed/Cv709OOmp-0?si=sIVi491FUOaKvMoJ"
       title="Video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
       allowfullscreen
     ></iframe>
       </div>
-       <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
-          <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{t("Transcript")}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>{t("transcriptText")}</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            {t("Close")}
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <Button onClick={learnmore} className="custom-btn">
+          {t('Providers: Join Trusted Network')}
+        </Button>
     </div>
   );
 };

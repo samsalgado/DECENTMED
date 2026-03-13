@@ -227,6 +227,7 @@ const Hoxsey = ({t}) => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t("Harry Hoxsey: You Don’t Have to Die")}
       </h1>
@@ -583,7 +584,7 @@ const Hoxsey = ({t}) => {
             </Collapsible>
           </tbody>
         </table>
-       
+       </div>
       </div>
       <Footer />
     </div>

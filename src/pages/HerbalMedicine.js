@@ -31,9 +31,12 @@ const { t } = useTranslation('common');
          <Button className="custom-btn" href="https://decentmed.org/apoth" target="_blank">
           {t("Explore Apothecary")}
           </Button>
+                                  <div className="container-blue">
+
         <h1 className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
-                                   <Button onClick={learnmore} className="custom-btn">
+        </div>
+                                   <Button onClick={learnmore} target='_blank' className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
 

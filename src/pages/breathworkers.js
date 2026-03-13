@@ -37,6 +37,7 @@ export function Breathwork({ providerEmail }) {
         <header>
           <Topbar />
         </header>
+       <div className="container-blue">
 
         <div className="container">
           <h1>{t("Somatic Breathwork & Breathwork Coaches")}</h1>
@@ -114,7 +115,7 @@ export function Breathwork({ providerEmail }) {
             </div>
           </div>
         </div>
-
+        </div>
         <footer>
           <Footer />
         </footer>

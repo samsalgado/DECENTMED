@@ -270,7 +270,7 @@ const iframeStyle = {
 }; 
  return (
     <div>
-      <h1 className='title' style={titleStyle}>{t('Acupuncture')}</h1>
+      <h1 className="logotitle" style={titleStyle}>{t('Acupuncture')}</h1>
       
       <div style={mainWrapperStyle}>
         <div className="container-bbblue" style={containerBbblueStyle}>
@@ -316,7 +316,9 @@ const iframeStyle = {
         
       </div>
       <br></br>
-                  <Button className="custom-btn" onClick={() => window.location.href = 'https://oceantreis.com/'}>
+                                               <div className="container-blue">
+
+                  <Button className="custom-btn"  onClick={() => window.location.href = 'https://oceantreis.com/'}>
                     {t("Acupuncture in Tampa")}
                   </Button>
 
@@ -518,6 +520,7 @@ const iframeStyle = {
                                   {t('Providers: Signup Here')}
                 </Button> 
 
+    </div>
     </div>
   );
 }

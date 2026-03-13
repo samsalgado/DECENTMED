@@ -20,6 +20,8 @@ const BlogAcu = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Acupuncture for Carpal Tunnel')}
         </h1>
@@ -60,6 +62,7 @@ const BlogAcu = () => {
 >
   {t("Learn More")}
 </Button>
+        </div>
         </div>
       </div>
       <Footer />

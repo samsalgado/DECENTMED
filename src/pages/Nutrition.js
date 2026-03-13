@@ -31,6 +31,8 @@ export function Nutrition() {
             </header>
             <Nutritionpage />
         <br></br>
+                                                 <div className="container-blue">
+
          <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -40,6 +42,7 @@ export function Nutrition() {
                                    <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
+                </div>
             <footer className='foot'>
                 <Footer />
             </footer>

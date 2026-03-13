@@ -22,6 +22,8 @@ const Blog9 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('The Importance of Nutrition')}</h1>
         <img className='gridimag' src={nutrition} alt="logo" />
@@ -71,6 +73,7 @@ const Blog9 = () => {
       </Button>
       </div>
       <Footer />
+    </div>
     </div>
   );
 };

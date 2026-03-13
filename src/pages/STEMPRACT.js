@@ -40,8 +40,7 @@ export function StemPract() {
   };
 
   return(
-    <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+    <div>
       <Helmet>
         <title>{t("Find Stem Cell Therapy Near You - Location-Based Treatment")}</title>  
                 <meta property="og:title" content={t("Find Stem Cell Therapy Near You - Location-Based Treatment")} />                
@@ -53,6 +52,7 @@ export function StemPract() {
       <header>
         <Topbar />
       </header>
+                                                          <div className="container-blue">
 
       <div className="container">
         {/* Search Bar Section */}
@@ -200,7 +200,7 @@ export function StemPract() {
           </div>
         )}
       </div>
-
+        </div>
       <footer>
         <Footer />
       </footer>

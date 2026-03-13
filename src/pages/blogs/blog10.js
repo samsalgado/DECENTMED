@@ -97,6 +97,8 @@ In a world of misinformation, focus on the undeniable properties of what you are
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', marginTop: '1.5rem',
   paddingTop: '1rem', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h1>
@@ -193,6 +195,7 @@ In a world of misinformation, focus on the undeniable properties of what you are
       >
         {t("Explore Cancer Information")}
       </Button>
+      </div>
       </div>
       <Footer />
     </div>

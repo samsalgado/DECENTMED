@@ -22,16 +22,6 @@ const Ptsdd = () => {
     padding: isMobile ? '0 10px' : '0 15px'
   };
 
-  const titleStyle = {
-    marginBottom: isMobile ? '20px' : '30px',
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem',
-    fontSize: isSmallMobile ? '1.5rem' : isMobile ? '1.8rem' : '2.5rem'
-  };
-
   const mainWrapperStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -91,7 +81,7 @@ const Ptsdd = () => {
 
   return (
     <div className='container mobile-optimized' style={containerStyle}>
-       <h1 style={titleStyle}>{t('CPTSD vs PTSD')}</h1>
+       <h1 className='logotitle'>{t('CPTSD vs PTSD')}</h1>
       
       <div style={mainWrapperStyle}>
         <div className="container-bbblue" style={containerBbblueStyle}>
@@ -136,11 +126,14 @@ const Ptsdd = () => {
           </div>
         </div>
       </div>
+                                        <div className="container-blue">
+
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
       <h1>{t("PTSD Help")}</h1>
       <PTSDvids />
+    </div>
     </div>
   );
 }

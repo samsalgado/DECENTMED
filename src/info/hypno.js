@@ -63,7 +63,7 @@ const {t} = useTranslation('common');
       </div>
             <Button className="custom-btn" href="https://www.decentmed.org/hypnopract" target="_blank">{t('Find Out How Hypnotherapy Can Help You')}</Button>
       <br></br>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
+              <Button className="custom-btn" target="_blank" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
             {showModal && ReactDOM.createPortal(    
@@ -101,6 +101,8 @@ const {t} = useTranslation('common');
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+                                                      <div className="container-blue">
+
             <Collapsible trigger={<h3 className="collapsible-trigger">{t('Shea Shulman Therapy')}</h3>}>
   <div className="row">
      <iframe
@@ -158,6 +160,7 @@ const {t} = useTranslation('common');
         <Hypnostudies />
         <Button className="custom-btn" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </Collapsible>
+        </div>
         </div>
     )
 }

@@ -39,13 +39,7 @@ const learnmore = () => {
                     <Topbar />
                 </header>
 
- <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>              {t("Intuitive Energy Healing")}</h1>
+ <h1 className="logotitle">              {t("Energy Healing")}</h1>
 <div style={{
   display: 'flex',
   justifyContent: 'center',
@@ -103,6 +97,8 @@ const learnmore = () => {
 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+                                              <div className="container-blue">
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/CTmY6wEpTdA?si=1aGXOoQ7jGXH2Ub6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -170,7 +166,7 @@ const learnmore = () => {
                <footer>
               <Footer />
             </footer>
-
+ </div>
         </div>
     )
 }

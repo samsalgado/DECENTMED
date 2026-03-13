@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import TableOfContents from '../Components/TableOfContents';
 import './PageWithTOC.css';
+import "../App.css";
 
 
 const PageWithTOC = ({ children, title, containerId = 'main-content' }) => {
@@ -10,7 +11,7 @@ const PageWithTOC = ({ children, title, containerId = 'main-content' }) => {
   }, []);
 
   return (
-    <main className="page-with-toc">
+    <main>
 
       {/* Main content wrapper for TOC scan */}
       <div

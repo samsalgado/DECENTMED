@@ -107,6 +107,7 @@ export function Nutritionpract() {
         <header>
           <Topbar />
         </header>
+                                                          <div className="container-blue">
 
         <div className="container">
           {/* Search Bar Section */}
@@ -503,7 +504,7 @@ export function Nutritionpract() {
             </div>
           )}
         </div>
-
+          </div>
         <footer>
           <Footer />
         </footer>

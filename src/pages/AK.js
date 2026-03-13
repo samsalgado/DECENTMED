@@ -23,7 +23,7 @@ const learnmore = () => {
             <Topbar />
             </header>
             <Info8 />
-         <Button onClick={learnmore} className="custom-btn">
+         <Button onClick={learnmore} target="_blank" className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
             <footer>

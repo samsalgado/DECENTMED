@@ -1,66 +1,65 @@
-import React, { useEffect, useState } from "react";
-import "./DisclaimerPopup.css"; // CSS file import
+import React, { useState, useEffect } from "react";
 
 export default function DisclaimerPopup() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const lastShown = localStorage.getItem("disclaimerLastShown");
-    const now = new Date().getTime();
-    const TEN_MINUTES = 10 * 60 * 1000;
-
-    if (!lastShown || now - lastShown > TEN_MINUTES) {
+    // 30 minutes = 1800000 ms
+    const timer = setTimeout(() => {
       setShowPopup(true);
-      localStorage.setItem("disclaimerLastShown", now.toString());
-    }
-  }, []);
+    }, 1800000);
 
-  const handleClose = () => setShowPopup(false);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (!showPopup) return null;
 
   return (
-    <div className="disclaimer-overlay" onClick={handleClose}>
-      <div className="disclaimer-box" onClick={(e) => e.stopPropagation()}>
+    <div style={overlayStyle}>
+      <div style={popupStyle}>
         <h2>Disclaimer</h2>
-        <div className="disclaimer-text">
-          <p>
-            The information provided on this platform, including any resources, recommendations, or materials shared, is for educational purposes only. It is not intended to diagnose, treat, cure, or prevent any disease.
-          </p>
-          <p>
-            Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition or wellness program.
-          </p>
-          <p>
-            Never disregard professional medical advice or delay seeking it because of something you have read or seen on this platform.
-          </p>
-          <p>
-            DecentMed and its contributors do not claim to diagnose, treat, cure, or prevent any disease. Statements or discussions about health topics are for general educational awareness and should not be interpreted as individualized medical guidance.
-          </p>
-          <p>
-            The content shared on this platform is not a substitute for professional medical advice, diagnosis, or treatment.
-          </p>
-          <p>
-            The FDA has not evaluated any of the information, products, or services provided on this platform.
-          </p>
-          <p>
-            Reliance on any information provided by DecentMed, its guests, or linked resources is solely at your own discretion and risk.
-          </p>
-        </div>
-        <div style={{ display: "flex", justifyContent: "center", gap: "15px", marginTop: "30px" }}>
-          <button 
-            className="disclaimer-close-btn" 
-            onClick={handleClose}
-          >
-            Close
-          </button>
-          <button 
-            className="disclaimer-learnmore-btn" 
-            onClick={() => window.location.href="/chelation"} // Link to Chelation page
-          >
-            Learn More
-          </button>
-        </div>
+        <p>
+          This website provides general wellness information and is not a
+          substitute for professional medical advice.
+        </p>
+
+        <button style={buttonStyle} onClick={() => setShowPopup(false)}>
+          Close
+        </button>
       </div>
     </div>
   );
 }
+
+const overlayStyle = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100vw",
+  height: "100vh",
+  background: "rgba(0,0,0,0.5)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  zIndex: 9999,
+};
+
+const popupStyle = {
+  background: "#fff",
+  padding: "30px",
+  borderRadius: "12px",
+  width: "90%",
+  maxWidth: "400px",
+  textAlign: "center",
+  boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
+};
+
+const buttonStyle = {
+  marginTop: "20px",
+  padding: "10px 20px",
+  background: "#00796B",
+  color: "#fff",
+  border: "none",
+  borderRadius: "8px",
+  cursor: "pointer",
+};

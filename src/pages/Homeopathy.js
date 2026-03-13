@@ -6,7 +6,6 @@ import Homeo from "../info/homeopathypg";
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
-import PageWithTOC from "../Components/PageWithTOC";
 export function Homeopathy() {
 const { t } = useTranslation('common');
         const learnmore = () => {
@@ -27,13 +26,11 @@ useEffect(() => {
         <header>
             <Topbar />
         </header>
-<PageWithTOC  containerId="chiro-wrapper">
         <Homeo />
-                           <Button onClick={learnmore} className="custom-btn">
+                           <Button onClick={learnmore} target="_blank" className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
 
-                </PageWithTOC>
         <footer>
             <Footer />
         </footer>

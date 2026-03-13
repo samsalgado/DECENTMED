@@ -99,13 +99,7 @@ things together right because you are a complex puzzle a very Advanced biochemic
   `
     return (
       <div className='container mobile-optimized'>
-             <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>
+             <h1 className="logotitle">
               {t('Nutrigenomics')}</h1>
             <div style={{
         display: 'flex',
@@ -161,11 +155,15 @@ things together right because you are a complex puzzle a very Advanced biochemic
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+                             <div className="container-blue">
+
      <iframe title="vimeo-player" src="https://player.vimeo.com/video/715588945?h=76c2c1fff8" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
-     <Button className="custom-btn" href="https://thriveresultscoaching.com/testimonials/" target="_blank">{t("More Reviews")}</Button>  {/* Added Bootstrap Button */}
       <br></br>
       <Button className="custom-btn" href="https://thriveresultscoaching.com/" target="_blank">{t('Find Out How Nutrigenomics Can Help You')}</Button>
-        <br></br>
+        </div>
+             <Button className="custom-btn" href="https://thriveresultscoaching.com/testimonials/" target="_blank">{t("More Reviews")}</Button>  {/* Added Bootstrap Button */}
+                             <div className="container-blue">
+
         <h1 className='center'>{t("Seeking Holistic Nutritionist Near me? We have you covered:")}</h1>
         <ClinVids />
         <Button className="custom-btn" onClick={() => setShowModal(true)}>
@@ -188,6 +186,7 @@ things together right because you are a complex puzzle a very Advanced biochemic
         </Modal>,
         document.body
       )}
+        </div>
         </div>
     )
 }

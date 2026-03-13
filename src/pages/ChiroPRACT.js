@@ -88,7 +88,7 @@ const kansasTerms = [
   };
 
   return(
-   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+   <div style={{ width: "100%", margin: 0, padding: 0 }}>
 
       <Helmet>
         <title>{t("Find Chiropractors Near You - Location-Based Chiropractic Care")}</title> 
@@ -101,6 +101,7 @@ const kansasTerms = [
       <header>
         <Topbar />
       </header>
+       <div className="container-blue">
 
       <div className="container">
         {/* Search Bar Section */}
@@ -491,6 +492,7 @@ const kansasTerms = [
       <footer>
         <Footer />
       </footer>
+      </div>
     </div>
   )
 }

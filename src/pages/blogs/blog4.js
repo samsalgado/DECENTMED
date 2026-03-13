@@ -21,6 +21,8 @@ const Blog4 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Cellular Regeneration')}</h1>
         <img className='gridimag' src={cell} alt="logo" />
@@ -63,6 +65,7 @@ const Blog4 = () => {
       >
         {t("Try Detox")}
       </Button>
+      </div>
       </div>
       <Footer />
     </div>

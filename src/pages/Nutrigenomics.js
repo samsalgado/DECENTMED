@@ -22,7 +22,7 @@ const { t } = useTranslation('common');
             <Topbar />
             </header>
             <Nutri />
-                                               <Button onClick={learnmore} className="custom-btn">
+                                               <Button onClick={learnmore} target="_blank" className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
 

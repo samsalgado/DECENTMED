@@ -140,6 +140,8 @@ const {t} = useTranslation('common');
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Ivermectin for Cancer in Humans")}
       </h1>
+                           <div className="container-blue">
+
       <div className='container'>
 <iframe width="100%" height="600px" src="https://www.youtube.com/embed/Mmig5oGD1iE?si=QiKNPMC8ATboFcV1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
@@ -332,7 +334,7 @@ const {t} = useTranslation('common');
             </Collapsible>
           </tbody>
         </table>
-       
+       </div>
       </div>
       <Footer />
     </>

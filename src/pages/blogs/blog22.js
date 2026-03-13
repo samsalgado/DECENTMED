@@ -27,6 +27,7 @@ const Blog22 = () => {
       <header>
         <Topbar />
       </header>
+                     <div className="container-blue">
 
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>
@@ -81,6 +82,7 @@ const Blog22 = () => {
         >
           {t("Learn More")}
         </Button>
+      </div>
       </div>
       <Footer />
     </div>

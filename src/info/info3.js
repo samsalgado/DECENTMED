@@ -12,12 +12,14 @@ const Info3 = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
-      <h1 className='title'>{t('Detox')}</h1>
+      <h1 className='logotitle'>{t('Detox')}</h1>
       <Fruits />
             <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}
             </Button>
             <br></br>
+                            <div className="container-blue">
+
             <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -65,6 +67,7 @@ const Info3 = () => {
       <div className="title-container">
         <Protocols />
       </div>
+    </div>
     </div>
   );
 }

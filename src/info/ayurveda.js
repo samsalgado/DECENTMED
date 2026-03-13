@@ -166,13 +166,7 @@ themerlingroupworld.com/ayurveda for more.
   }
   return (
     <div className='container mobile-optimized'>
-     <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Ayurveda Experience')}</h1>
+     <h1 className="logotitle">{t('Ayurveda Experience')}</h1>
     <div className="container-bbblue" style={{
       display: 'flex',
       flexDirection: 'row',
@@ -225,6 +219,8 @@ themerlingroupworld.com/ayurveda for more.
              <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
             <img className='gridimage' src={pain4} alt='Ayurvedic Oil Pain Treatment' />
              </a>
+                       <div className="container-blue">
+
                 <iframe width="100%" height={550} src="https://www.youtube.com/embed/fq3-RO6vc54?si=ll3WkLxskSh_oGMY"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
               <Button className="custom-btn" onClick={pain}>
                     {t("Experience Pain Relief")}
@@ -324,7 +320,7 @@ themerlingroupworld.com/ayurveda for more.
          <Button onClick={learnmore} className="custom-btn">
                   {t('Providers: Signup Here')}
                 </Button>       
-
+    </div>
     </div>
   );
 }

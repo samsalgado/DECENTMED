@@ -21,6 +21,8 @@ const {t} = useTranslation('common')
         <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Acupuncture Montreal")}
       </h1>
@@ -58,6 +60,7 @@ const {t} = useTranslation('common')
       >
         {t("Try Acupuncture")}
       </Button>
+      </div>
         </div>
         <Footer />
         </div>

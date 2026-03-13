@@ -23,6 +23,8 @@ const Blog18 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
       </div>
@@ -68,6 +70,7 @@ const Blog18 = () => {
 >
   {t("Visit Better Health Solutions")}
 </Button>
+      </div>
       </div>
       <Footer />
     </div>

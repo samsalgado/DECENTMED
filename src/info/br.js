@@ -42,7 +42,7 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
 
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Somatic Breathwork')}</h1>
+            <h1 className='logotitle'>{t('Somatic Breathwork')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -78,6 +78,8 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         />
         </div>
       </div>
+                      <div className="container-blue">
+
        <div className='gridimag'>
               <iframe
               height="515"
@@ -235,6 +237,7 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
                           {t('Providers: Signup Here')}
                   </Button>       
         
+        </div>
         </div>
     )
 }

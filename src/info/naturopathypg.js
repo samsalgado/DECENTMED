@@ -14,18 +14,13 @@ import BloodSugar from './Bloodsugar';
 const Naturo = () => {
   const { t } = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
-
+    const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
   return (
     <div>
       <div className='container mobile-optimized'>
-       <h1
-  style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}
+       <h1 className='logotitle'
 >
           {t('Naturopathy')}</h1>
         <div style={{
@@ -65,6 +60,11 @@ const Naturo = () => {
           </div>
         </div>
         <div>
+           <Button className="custom-btn" onClick={() => setShowModal(true)}>
+            {t("Transcript")}
+          </Button>
+                          <div className="container-blue">
+
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -131,13 +131,12 @@ const Naturo = () => {
           <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">
             {t('Find Out How Dr. Barnes Can Help You')}
           </Button>
+          
         </div>
-        <br />
-        <div>
-          <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+        
         </div>
+       
+        
         <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Explained")}</th>}>
           <NatExplained />
         </Collapsible>
@@ -156,7 +155,8 @@ const Naturo = () => {
             }
           }
         `}</style>
-        
+                        <div className="container-blue">
+
         <a href="https://www.totalcarehealthsolutions.com/" target="_blank" rel="noopener noreferrer">
           <img className='gridimag' src={totalcare} alt='oceantreis' />
         </a> 
@@ -230,6 +230,9 @@ const Naturo = () => {
           <br />
           <img src={naturopathy} className="TELEa" alt="quote" />
         </a>
+         <Button onClick={learnmore} target="_blank" className="custom-btn">
+                                  {t('Providers: Signup Here')}
+                </Button> 
       </div>
 
       {/* Portal: Render modal at body level, outside wrapper */}
@@ -254,6 +257,8 @@ const Naturo = () => {
         </Modal>,
         document.body
       )}
+       </div>
+        
     </div>
   );
 };

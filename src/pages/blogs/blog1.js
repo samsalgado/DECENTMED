@@ -21,9 +21,12 @@ const {t} = useTranslation('common')
         <Topbar />
       </header>
       <div className='container'>
+
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Can Back Pain make you Constipated?')}</h1>
           <img className='gridimag' src={constipation} alt="logo" />
       </div>
+                     <div className="container-blue">
+
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='pr'>
             <p>
@@ -72,6 +75,7 @@ const {t} = useTranslation('common')
       >
         {t("Try Chiropractic")}
       </Button>
+      </div>
       </div>
       <Footer />
     </div>

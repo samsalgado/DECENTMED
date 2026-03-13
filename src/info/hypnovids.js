@@ -53,6 +53,7 @@ const Hypnovids = () => {
         }
     ]);
     return (
+        
         <div className="contents">
             <div className="plant-container">
                 {plant.map((val, key) => (
@@ -90,6 +91,8 @@ const PlantCard = ({ val }) => {
 
     return (
         <div className="plant-card">
+                                                     <div className="container-blue">
+
             <div className="video-container" ref={videoRef}>
                 {isInView ? (
                     <iframe
@@ -117,6 +120,7 @@ const PlantCard = ({ val }) => {
                 )}
                 <h3>{val.name}</h3>
             </div>
+        </div>
         </div>
     );
 }

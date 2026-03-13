@@ -5,7 +5,6 @@ import '../App.css';
 import Footer from '../footer';
 import fert from "../images copy/fertility.png";
 import detoxxx from "../images copy/detoxxx.png";
-import acuneed from '../images copy/acuneed.png';
 import B17 from "../images copy/B17.png";
 import ramona from "../images copy/ramona.jpeg";
 import lions from "../images copy/lions.png";
@@ -55,8 +54,10 @@ const BlogPage = () => {
         <header>
           <Topbar />
         </header>
+                                                                          <div className="container-blue">
+
         <div className='container'>
-          <h1 style={{ textAlign: 'center', margin: '20px 0', fontFamily: 'sans-serif' }}>{t("Health & Wellness Blogs")}</h1>
+          <h1 className='logotitle'>{t("Health & Wellness Blogs")}</h1>
           <img className='gridimag' src={blogs} alt="logo" />
         </div>
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -196,22 +197,8 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Dry Needling vs Acupuncture')}</h2>
-          <div className='pr'>
-            <p>
-              {t('Acupuncture is a technique for balancing the flow of energy, or life force flowing through pathways in your body. Dry needling serves a purpose for musculoskeletal disorders and diseases, working to relieve the trigger point symptom.')}
-            </p>
-
-          </div>
-          <div className='container'>
-            <a href='/dry-needling-vs-acupuncture'>
-              <figure>
-                <img className='gridimag' src={acuneed} alt="logo" />
-                {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
-              </figure>
-            </a>
-          </div>
-        </div>
+          
+          
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('How Chiropractic Care Can Accelerate Recovery from Common Sports Injuries')}</h2>
           <div className='pr'>
@@ -557,8 +544,10 @@ const BlogPage = () => {
               </a>
             </div>
           </div>
+          </div>
         </div>
         <Footer />
+    </div>
     </div>
   );
 };

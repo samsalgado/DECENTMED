@@ -20,6 +20,8 @@ const Blog5 = () => {
       <header>
         <Topbar />
       </header>
+                           <div className="container-blue">
+
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('What is Acupuncture?')}</h1>
         <img className='gridimag' src={acu} alt="logo" />
@@ -58,6 +60,7 @@ const Blog5 = () => {
       >
         {t("Explore Acupuncture")}
       </Button>
+      </div>
       </div>
       <Footer />
     </div>

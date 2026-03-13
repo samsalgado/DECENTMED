@@ -29,10 +29,12 @@ import spectraspray from "../images copy/spectraspray.png";
 const Stem = () => {
   const { t } = useTranslation('common')
   const [showModal, setShowModal] = useState(false);
-  
+   const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  } 
   return (
     <div className='container mobile-optimized'>
-<h1 className='title' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
+<h1 className='logotitle' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
         {t('Stem Cell Therapy')}
       </h1>
         <div style={{
@@ -107,6 +109,8 @@ const Stem = () => {
      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+                       <div className="container-blue">
+
       {/* Flex container for equal width collapsibles */}
       <div className="collapsible-section">
         <div className="title-container">
@@ -178,7 +182,12 @@ const Stem = () => {
               </Collapsible>
             </tbody>
           </table>
+          
         </div>
+         <Button onClick={learnmore} className="custom-btn">
+                                          {t('Providers: Signup Here')}
+                        </Button> 
+      </div>
       </div>
     </div>
   );

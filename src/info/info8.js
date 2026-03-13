@@ -11,13 +11,7 @@ const {t} = useTranslation('common');
     const [showModal, setShowModal] = useState(false);
     return (
       <div className='container mobile-optimized'>
-             <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Applied Kinesiology')}</h1>
+             <h1 className="logotitle">{t('Applied Kinesiology')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -50,6 +44,8 @@ const {t} = useTranslation('common');
         />
         </div>
       </div>
+                                               <div className="container-blue">
+
                   <img className='gridimag' src={body} alt='TCNH' />
                <Button className="custom-btn" href="http://tcnh-stl.com" target="_blank">{t("Explore Applied Kinesiology")}</Button>  {/* Added Bootstrap Button */}
       <br></br>
@@ -91,6 +87,7 @@ const {t} = useTranslation('common');
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
         <Benefits />
+        </div>
         </div>
     )
 }

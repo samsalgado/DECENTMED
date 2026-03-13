@@ -52,7 +52,10 @@ export function Apoth() {
       </header>
         <h1 className='center'>{t('Apothecary')}</h1>
         <br></br>
+                                                                  <div className="container-blue">
+
         <Apothecary />
+        </div>
       <footer className='footer'>
         <Footer />
       </footer>

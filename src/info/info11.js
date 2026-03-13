@@ -8,7 +8,10 @@ import event6 from "../images copy/taylorholistic.png"
 import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
-const {t} = useTranslation('common')
+const {t} = useTranslation('common');
+ const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
   const [showModal, setShowModal] = useState(false);
   const txt = `She's an actual MD in functional medicine. We do have a functional medicine nutritionist on
 0:06 our platform, but it's great to have a functional medicine doctor. Hi, I'm Dr. Nadia Taylor. I love
@@ -236,13 +239,7 @@ const {t} = useTranslation('common')
 25:56 people and the empowerment that will come from the summit. So I'm excited to be a part of it.`
     return (
       <div className='container mobile-optimized'>
-          <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Functional Medicine')}</h1>
+          <h1 className="logotitle">{t('Functional Medicine')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -260,20 +257,23 @@ const {t} = useTranslation('common')
         }}>
           <p className='pr'>{t("A thorough understanding of your lifestyle and habits is the cornerstone of better health. Our Holistic Evaluation offers clients in Florida an all-encompassing assessment. We meticulously review your diet and daily routines, forming a personalized nutrition and exercise strategy. Dr. Nadia Taylor believes in holistic medicine because it helped to heal her from disease and maladies. She has recently opened up her own holistic healing center, Essence of Life, in Boynton Beach, Florida in September 2025 so that she can help others heal through some of the same modalities that helped her. Dr. Taylor is excited to be back in South Florida after years living elsewhere and is continually looking to make positive changes in the community. She has dedicated her life to a life of service for the betterment of others.")}</p>
           <Button className="custom-btn" href="https://decentmed.org/funcmed" target="_blank">{t("Book Functional Medicine Session")}</Button>  {/* Added Bootstrap Button */}
+        <br />
+        <br />
+        <Button className="custom-btn" onClick={() => setShowModal(true)}>
+            {t("Transcript")}
+          </Button>
         </div>
          <div>
             <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-        
       </div>
               <img className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                <div className="container-blue">
 
        <Button className="custom-btn" href="https://essenceoflife.us/" target="_blank">{t('How Dr. Taylor Serves Boyton Beach, FL')}</Button>
       <br></br>
-       <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+      
           {showModal && ReactDOM.createPortal(
           
           <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
@@ -311,7 +311,11 @@ const {t} = useTranslation('common')
                   <img className='gridimag' src={spectraspray} alt='spectra spray' />
                    </a>
         <br></br>
-        <Benefitts />       
+        <Benefitts /> 
+            <Button onClick={learnmore} target='_blank' className="custom-btn">
+                                  {t('Providers: Signup Here')}
+                </Button>       
+        </div>
         </div>
     )
 }

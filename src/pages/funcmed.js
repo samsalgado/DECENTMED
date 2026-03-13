@@ -3,13 +3,10 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import Info11 from '../info/info11';
-import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 export function FuncMed() {
 const { t } = useTranslation('common');
-        const learnmore = () => {
-    window.location.href = 'https://decentmed.org/signup/provider'
-  }
+       
 
     return(
         <div>
@@ -24,9 +21,7 @@ const { t } = useTranslation('common');
             <Topbar />
             </header>
            <Info11 />
-                           <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Signup Here')}
-                </Button> 
+                       
 
             <footer>
                 <Footer />

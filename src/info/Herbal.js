@@ -26,13 +26,7 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
   return (
     <>
       <div className='container'>
-        <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>
+        <h1 className="logotitle">
     {t('Herbal Medicine')}</h1>
         <div style={{
           display: 'flex',
@@ -50,7 +44,9 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
               flex: '1'
             }}>
               <p className='pr'>{t("The body has an immense regenerative potential to heal itself. Herbal medicine is the real traditional medicine, every single pharmaceutical drug has a plant root. This page is my encyclopedia of herbal medicine, highlighting herbal plants from around the world. For the last few months, I traveled throughout North America, South America, and Central America to document these plants. Explore our encyclopedia of herbal medicine, and learn how these plants can help your body heal itself. Explore our medicinal herbal recipes from around the world below.")}</p>
-            
+            <Button className="custom-btn" onClick={() => setShowModal(true)}>
+            {t("Transcript")}
+          </Button>
             </div>
               
             <iframe
@@ -74,10 +70,12 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
           </div>    
               
         </div>
- <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+
         <div>
+                                 <div className="container-blue">
+
+          <br />
+
           <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -154,9 +152,9 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
             }
           }
         `}</style>
+        <img className='gridimage' src={homeo} alt='21 Day Challenge' />
 
-        <img className='gridimag' src={homeo} alt='21 Day Challenge' />
-
+      </div>
       </div>
 
       {/* Portal: Render modal at body level, outside wrapper */}
