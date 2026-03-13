@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2';
 import Footer from '../../footer';
 import "../../info/Info.css";
 import "../../info/authform.css";
@@ -142,10 +141,10 @@ const SignUp = () => {
 
             <form className="auth-form" onSubmit={handleSubmit}>
               <h2 className="compact-heading">
-                {t("Join DecentMed as a Holistic Healthcare Provider")}
+                {t("Signup to join DecentMed as a Holistic Healthcare Provider")}
               </h2>
               <h5 className="compact-heading">
-                {t("Create Provider account to offer holistic and integrative care through DecentMed")}
+                {t("Providers: Select your Tier to activate your subscription.")}
               </h5>
               <p>
                 {t("An active subscription is required to publish and maintain your provider profile.")}
