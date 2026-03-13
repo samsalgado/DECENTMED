@@ -23,8 +23,10 @@ const InfoSummit = () => {
   }, []);
   return (
     <div className='container'>
-      <h1 className='title'>{t('DecentMed Summit')}</h1>
+                                         <div className="container-blue">
 
+      <h1 className='title'>{t('DecentMed Summit')}</h1>
+</div>
       <div className='theecontainer'>
                                                                        <div className="container-blue">
 

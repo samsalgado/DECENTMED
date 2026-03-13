@@ -19,8 +19,11 @@ const PreventWellness = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
+                                         <div className="container-blue">
+
       <div className="title-container">
          <h1 className='logotitle'>{t('Preventive Wellness')}</h1>
+         </div>
       </div>
       <div className="collapsible">
       </div>

@@ -27,7 +27,10 @@ const Chiro = () => {
   }
   return (
     <div className='container mobile-optimized'>
+                                         <div className="container-blue">
+
       <h1 className="logotitle">{t("Chiropractic")}</h1>
+      </div>
       <div className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',

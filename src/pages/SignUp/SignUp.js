@@ -121,7 +121,10 @@ const SignUp = () => {
     <>
       <Topbar />
       <div style={{ textAlign: 'center', marginTop: '80px', paddingTop: '2rem' }}>
+                                           <div className="container-blue">
+
         <h1 className='logotitle'>{t("Registration")}</h1>
+        </div>
                                               <div className="container-blue">
 
          <Practice />

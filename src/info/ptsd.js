@@ -81,8 +81,10 @@ const Ptsdd = () => {
 
   return (
     <div className='container mobile-optimized' style={containerStyle}>
+                                         <div className="container-blue">
+
        <h1 className='logotitle'>{t('CPTSD vs PTSD')}</h1>
-      
+      </div>
       <div style={mainWrapperStyle}>
         <div className="container-bbblue" style={containerBbblueStyle}>
           <div className='content-wrapper' style={contentWrapperStyle}>

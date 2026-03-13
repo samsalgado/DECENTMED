@@ -50,7 +50,10 @@ export function Apoth() {
       <header>
         <Topbar />
       </header>
+                                         <div className="container-blue">
+
         <h1 className='center'>{t('Apothecary')}</h1>
+        </div>
         <br></br>
                                                                   <div className="container-blue">
 
