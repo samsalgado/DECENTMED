@@ -96,8 +96,6 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import ProviderDashboard from './Dashboard/ProviderDashboard';
 import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
-import SignupPrompt from './Components/SignupPromt';
-import DisclaimerPopup from './Components/DisclaimerPopup';
 import Blog23 from './pages/blogs/blog23';
 
 
@@ -112,9 +110,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
        <BrowserOnly>
       <ScrollTop />
-<DisclaimerPopup></DisclaimerPopup>
       {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}
-      <SignupPrompt></SignupPrompt>
       </BrowserOnly>
       <Wrapper>
       <Routes>
