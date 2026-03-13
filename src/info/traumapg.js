@@ -134,7 +134,10 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
   `
   return (
       <div className='container  mobile-optimized'>
+                                           <div className="container-blue">
+
         <h1 className='logotitle'>{t('Healing Trauma')}</h1>
+        </div>
         <div style={{
         display: 'flex',
         justifyContent: 'center',

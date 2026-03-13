@@ -34,9 +34,12 @@ const Stem = () => {
   } 
   return (
     <div className='container mobile-optimized'>
+                                         <div className="container-blue">
+
 <h1 className='logotitle' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
         {t('Stem Cell Therapy')}
       </h1>
+      </div>
         <div style={{
         display: 'flex',
         flexDirection: 'row',

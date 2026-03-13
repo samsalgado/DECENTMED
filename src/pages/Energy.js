@@ -38,8 +38,10 @@ const learnmore = () => {
                 <header>
                     <Topbar />
                 </header>
+                   <div className="container-blue">
 
- <h1 className="logotitle">              {t("Energy Healing")}</h1>
+ <h1 className="logotitle">{t("Energy Healing")}</h1>
+ </div>
 <div style={{
   display: 'flex',
   justifyContent: 'center',

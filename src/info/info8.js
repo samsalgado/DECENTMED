@@ -11,7 +11,10 @@ const {t} = useTranslation('common');
     const [showModal, setShowModal] = useState(false);
     return (
       <div className='container mobile-optimized'>
+                                           <div className="container-blue">
+
              <h1 className="logotitle">{t('Applied Kinesiology')}</h1>
+             </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

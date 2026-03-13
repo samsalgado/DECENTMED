@@ -11,7 +11,10 @@ const Info = () => {
   const { t } = useTranslation("common"); // Access translation function
   return (
     <div className='container'>
+                           <div className="container-blue">
+
       <h1 className='logotitle'>{t('DecentMed')}</h1>
+      </div>
       <BlueContainer />
       <WellnessInro />
           <div className="container-blue">
@@ -41,7 +44,10 @@ const Info = () => {
         </div>
       </div>
       <br />
+      <div className="container-blue">
+
       <HealthFacts />
+      </div>
     </div>
   );
 }

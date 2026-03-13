@@ -42,7 +42,10 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
 
     return (
       <div className='container mobile-optimized'>
+                                   <div className="container-blue">
+
             <h1 className='logotitle'>{t('Somatic Breathwork')}</h1>
+            </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

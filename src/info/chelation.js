@@ -17,7 +17,10 @@ const Pgchelation = () => {
   const { t } = useTranslation('common');
   return (
     <div className='container'>
+                                         <div className="container-blue">
+
        <h1 className="logotitle">{t("Chelation")}</h1>
+       </div>
                     <div className="container-blue">
 
       <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />

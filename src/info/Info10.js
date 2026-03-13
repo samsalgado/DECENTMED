@@ -14,7 +14,10 @@ const {t} = useTranslation('common');
 
     return (
       <div className='container mobile-optimized'>
+                           <div className="container-blue">
+
           <h1 className="logotitle">{t('Sound Healing')}</h1>
+          </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

@@ -16,6 +16,8 @@ const {t} = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
     return (
       <div className='container mobile-optimized'>
+                                           <div className="container-blue">
+
              <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
@@ -23,6 +25,7 @@ const {t} = useTranslation('common');
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Hypnotherapy')}</h1>
+  </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

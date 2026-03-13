@@ -1,4 +1,4 @@
-import '../App.css';
+import "../info/Info.css";
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import amy from "../images copy/essence.png";
@@ -31,19 +31,10 @@ export function Func() {
         }}>
           <Topbar />
         </header>
-                                                                  <div className="container-blue">
+        <div className="container-blue">
 
-        <div className="container" style={{
-          // Solution 4: Remove any top spacing on container
-          marginTop: 0,
-          paddingTop: '20px' // Add some breathing room if needed
-        }}>
-          <h1 style={{
-            fontFamily: 'sans-serif',
-            // Solution 5: Ensure h1 starts at top
-            marginTop: 0
-          }}>{t("Functional Medicine")}</h1>
-          
+        <div>
+          <h1>{t("Functional Medicine")}</h1> 
           <div className="row mb-4">
             <div className="col-md-12">
               <div className="card" style={{ border: '1px solid #dee2e6' }}>

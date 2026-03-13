@@ -12,7 +12,10 @@ const Info3 = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className='container'>
+                         <div className="container-blue">
+
       <h1 className='logotitle'>{t('Detox')}</h1>
+      </div>
       <Fruits />
             <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}

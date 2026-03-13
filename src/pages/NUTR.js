@@ -99,8 +99,11 @@ things together right because you are a complex puzzle a very Advanced biochemic
   `
     return (
       <div className='container mobile-optimized'>
+                                 <div className="container-blue">
+
              <h1 className="logotitle">
               {t('Nutrigenomics')}</h1>
+              </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

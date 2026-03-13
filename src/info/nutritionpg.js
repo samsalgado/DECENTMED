@@ -275,7 +275,10 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
   `  
   return (
     <div className='container mobile-optimized'>
+                                         <div className="container-blue">
+
        <h1 className="logotitle">{t('Nutrition')}</h1>
+       </div>
       <div style={{
         display: 'flex',
         justifyContent: 'center',

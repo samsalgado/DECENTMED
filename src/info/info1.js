@@ -270,8 +270,10 @@ const iframeStyle = {
 }; 
  return (
     <div>
+                                         <div className="container-blue">
+
       <h1 className="logotitle" style={titleStyle}>{t('Acupuncture')}</h1>
-      
+      </div>
       <div style={mainWrapperStyle}>
         <div className="container-bbblue" style={containerBbblueStyle}>
           <div className='content-wrapper' style={contentWrapperStyle}>

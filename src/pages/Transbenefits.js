@@ -102,6 +102,8 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
 `
     return (
       <div className='container mobile-optimized'>
+                                           <div className="container-blue">
+
  <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
@@ -111,6 +113,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
       fontWeight:'800',
     paddingTop: '2rem'
   }}>              {t("Transformational Empowerment Coaching")}</h1>
+  </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

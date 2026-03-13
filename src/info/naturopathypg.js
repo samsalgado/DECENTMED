@@ -20,9 +20,12 @@ const Naturo = () => {
   return (
     <div>
       <div className='container mobile-optimized'>
+                   <div className="container-blue">
+
        <h1 className='logotitle'
 >
           {t('Naturopathy')}</h1>
+          </div>
         <div style={{
           display: 'flex',
           justifyContent: 'center',

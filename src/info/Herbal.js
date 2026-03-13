@@ -26,8 +26,11 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
   return (
     <>
       <div className='container'>
+                           <div className="container-blue">
+
         <h1 className="logotitle">
     {t('Herbal Medicine')}</h1>
+    </div>
         <div style={{
           display: 'flex',
           justifyContent: 'center',
