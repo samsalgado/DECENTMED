@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../../footer';
 import "../../info/Info.css";
+import Swal from 'sweetalert2';
 import "../../info/authform.css";
 import Info7 from '../../info/info7';
 import Offer2 from '../../offers/offer2';
