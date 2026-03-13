@@ -56,7 +56,7 @@ const Offer2 = () => {
             width: '30%',
             display: 'block',
             margin: '20px auto'
-          }} variant="contained" onClick={handleClickOpen}>{t('add cart')}</Button>
+          }} variant="contained" onClick={handleClickOpen}>{t('ADD TO CART')}</Button>
         </CookiesProvider>
       </div>
 </div>
