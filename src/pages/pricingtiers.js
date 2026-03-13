@@ -4,6 +4,7 @@ import tier2 from '../images copy/tier11.png';
 import tier3 from "../images copy/bigtierr.png";
 import '../info/Info.css';
 import tier0 from "../images copy/ad.png";
+import { Button } from 'react-bootstrap';
 
 export function Pricing() {
   const { t } = useTranslation('common');
@@ -74,10 +75,20 @@ export function Pricing() {
               <h3 style={{ color: '#00695C', fontSize: '1.2rem' }}>
                 {tier.name}
               </h3>
+              <Button className="custom-btn" href="https://decentmed.org/choose-provider-tier" >
+                            {t("Sign Up")}
+                          </Button>
             </div>
+            
           ))}
+        
         </div>
       </div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+           <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" >
+                            {t("Provider Onboarding Call")}
+                          </Button>
+          </div>
     </div>
   );
 }

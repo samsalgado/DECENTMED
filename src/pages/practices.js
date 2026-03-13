@@ -16,6 +16,7 @@ const Practice = () => {
 <br></br>
        <div className="signup-container">
         <Pricing />
+        
             <iframe class="rumble" title="signup" height="360"
               src="https://www.youtube.com/embed/uOb-h9NLqKc?si=jlehP8QTCzA-bs47" frameborder="0" allowfullscreen></iframe>
           </div>

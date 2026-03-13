@@ -11,6 +11,7 @@ import Info7 from '../../info/info7';
 import Offer2 from '../../offers/offer2';
 import Practice from '../practices';
 import '../Styles/AuthForm.css';
+import { Button } from 'react-bootstrap';
 import Topbar from '../topbar';
 const SignUp = () => {
   const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
@@ -121,17 +122,14 @@ const SignUp = () => {
     <>
       <Topbar />
       <div style={{ textAlign: 'center', marginTop: '80px', paddingTop: '2rem' }}>
-                                           <div className="container-blue">
 
         <h1 className='logotitle'>{t("Registration")}</h1>
-        </div>
-                                              <div className="container-blue">
+        
+        <div className="container-blue">
 
          <Practice />
+         
          </div>
-        <br></br>
-        <br></br>
-      
         <div className="auth-form-container">
           <div className="auth-form-wrapper">
             <button
@@ -222,6 +220,12 @@ const SignUp = () => {
      
       <Offer2 />
       <Info7 />
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem",marginBottom:'1rem' }}>
+
+      <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" >
+                                  {t("Provider Onboarding Call")}
+                                </Button>
+      </div>
       </div>
       <Footer />
     </>
