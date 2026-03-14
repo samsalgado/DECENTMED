@@ -10,8 +10,8 @@ import img6 from '../images copy/img6.png';
 function Benefitts() {
     const { t } = useTranslation('common');
     return (
-        <div className="container-blue">
-            <div className="row justify-content-center">
+        <div data-aos="slide-right" className="container-blue">
+            <div data-aos="slide-right" className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of Functional Doctor")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("In-depth look at the root cause of illness")}</h3>

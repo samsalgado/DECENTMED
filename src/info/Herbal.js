@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import "./homeo.css";
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import gsap from 'gsap';
+import flower from "../images copy/flower.png";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Button, Modal } from 'react-bootstrap';
 import homeo from '../images copy/meme3.png';
 import { useTranslation } from 'react-i18next';
 import spectraspray from "../images copy/spectraspray.png";
+gsap.registerPlugin(ScrollTrigger);
 const Herbal = () => {
   const { t } = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
@@ -23,12 +29,15 @@ s Alba taken internally for the treatment of rheumatism arthritis gout inflammat
 
 with Extreme Caution the root is powerfully resolvent because of its poisonous nature it is only used externally Shout Out Jose miti Jose Marti behind me this is uh ala Miguel Hernandez is Robin J tagor anel AIS AAS he's an escor and a poet then we got this beauty right here foran Felix dead right here Raphael Alberti fedo Garcia LCA guak gabron Khalil gabron there look at that beauty shout out Ruben doio that concludes exploring a beautiful Park in parque de palermo
   `
+   useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
   return (
     <>
       <div className='container'>
                            <div className="container-blue">
 
-        <h1 className="logotitle">
+        <h1 className="logotitle" data-aos="slide-right">
     {t('Herbal Medicine')}</h1>
     </div>
         <div style={{
@@ -45,7 +54,7 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
           }}>
             <div className='content-wrapper' style={{
               flex: '1'
-            }}>
+            }} data-aos="slide-right">
               <p className='pr'>{t("The body has an immense regenerative potential to heal itself. Herbal medicine is the real traditional medicine, every single pharmaceutical drug has a plant root. This page is my encyclopedia of herbal medicine, highlighting herbal plants from around the world. For the last few months, I traveled throughout North America, South America, and Central America to document these plants. Explore our encyclopedia of herbal medicine, and learn how these plants can help your body heal itself. Explore our medicinal herbal recipes from around the world below.")}</p>
             <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
@@ -75,12 +84,10 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
         </div>
 
         <div>
-                                 <div className="container-blue">
-
+         <div className="container-blue">
           <br />
-
           <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+            <img className='gridimag' data-aos="slide-right" src={spectraspray} alt='spectra spray' />
              </a>
               <br></br>
               <br></br>
@@ -155,7 +162,7 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
             }
           }
         `}</style>
-        <img className='gridimage' src={homeo} alt='21 Day Challenge' />
+        <img className='gridimage' data-aos="slide-right" src={homeo} alt='21 Day Challenge' />
 
       </div>
       </div>
@@ -181,7 +188,9 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
         </Modal>,
         document.body
       )}
-    </>
+      <img className="gridmag" src={flower} alt="Homeopathy" />
+      <br />
+      </>
   );
 };
 

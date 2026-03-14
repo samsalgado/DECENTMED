@@ -10,7 +10,7 @@ const Transcript = () => {
     
     return (
         <div>
-            <Button className="custom-btn" onClick={() => setShowModal(true)}>
+            <Button className="custom-btn" target="_blank" onClick={() => setShowModal(true)}>
                 {t("Transcript")}
             </Button>
 

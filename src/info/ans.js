@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Info.css';
-// Import the updated CSS file
-//When do I pay vs
-//Who is The Merlin Group
-//What is DECENTMED
-//move button down
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
 const ANS = () => {
   const {t} = useTranslation('common');
+  useEffect(() => {
+                AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+              }, []);
   return (
+    <div data-aos="slide-right">
     <Container>
       <h3 className="text-center mb-4">{t("FAQ")}</h3> {/* Title for the entire section */}
       <Row>
@@ -81,6 +82,7 @@ const ANS = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

@@ -2,6 +2,8 @@ import '../App.css';
 import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Button } from 'react-bootstrap';
 import MeditationVids from '../info/meditationvids';
 import MeditationInfo from '../info/mediationinfo';
@@ -16,6 +18,9 @@ const { t } = useTranslation('common');
         const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+   useEffect(() => {
+            AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+          }, []);
     return (
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -30,13 +35,12 @@ const { t } = useTranslation('common');
         </header>
             <MeditationInfo />
          <br />
-                            <div className="container-blue">
+       <div data-aos="slide-right" className="container-blue">
 
       <MedBenefits />
       </div>
        <br></br>
-                   <div className="container-blue">
-
+       <div data-aos="slide-right" className="container-blue">
         <h1 className='center'>{t("Meditation 101")}</h1>
       <MeditationVids />
       

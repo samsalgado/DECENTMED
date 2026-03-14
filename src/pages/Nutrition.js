@@ -2,6 +2,7 @@ import '../App.css';
 import Nutritionpage from '../info/nutritionpg';
 import Topbar from './topbar';
 import Footer from '../footer';
+import nutri from "../images copy/nutrimg.png";
 import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import spectraspray from "../images copy/spectraspray.png";
@@ -31,10 +32,13 @@ export function Nutrition() {
             </header>
             <Nutritionpage />
         <br></br>
-                                                 <div className="container-blue">
+                    <div className="container-blue">
 
-         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+                 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
+         <a href='https://decentmed.org/nutritionpract' alt="spectra spray">
+            <img className='gridmag' src={nutri} alt='spectra spray' />
              </a>
         <h1 className='center'>{t("Functional Nutrition")}</h1>
       <FuncVids />

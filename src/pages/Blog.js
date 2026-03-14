@@ -54,11 +54,10 @@ const BlogPage = () => {
         <header>
           <Topbar />
         </header>
-                                                                          <div className="container-blue">
-
+      <div className="container-blue">
         <div className='container'>
           <h1 className='logotitle'>{t("Health & Wellness Blogs")}</h1>
-          <img className='gridimag' src={blogs} alt="logo" />
+          <img className='gridmagg' src={blogs} alt="logo" />
         </div>
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fenbendazole for Cancer")}</h2>

@@ -126,9 +126,7 @@ const SignUp = () => {
         <h1 className='logotitle'>{t("Registration")}</h1>
         </div>
         <div className="container-blue">
-
          <Practice />
-         
          </div>
         <div className="auth-form-container">
           <div className="auth-form-wrapper">
@@ -215,9 +213,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-                                      <div className="container-blue">
-
-     
+        <div className="container-blue">
       <Offer2 />
       <Info7 />
       <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem",marginBottom:'1rem' }}>

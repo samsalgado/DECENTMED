@@ -1,16 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../App.css';
 import Treatment from "../pages/treatment";
 import Departments from "../pages/departments";
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Practices() {
     const { t } = useTranslation("common");
+     useEffect(() => {
+                  AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+                }, []);
     return (
         <>
-        <div className="container">
-            <div className="container-blue">
+        <div data-aos="slide-right" className="container">
+            <div data-aos="slide-right" className="container-blue">
                 <h1 className='logotitle'>{t("Telehealth Practices")}</h1>
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">

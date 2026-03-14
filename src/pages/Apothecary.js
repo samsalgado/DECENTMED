@@ -1,12 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../App.css';
 import Plants from "./Plants";
 import ApothecaryData from "./ApothecaryData";
 import { useTranslation } from 'react-i18next';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Apothecary = () => {
-
+ useEffect(() => {
+              AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+            }, []);
 const {t} = useTranslation('common')
   // Price: BTC
   // Medical Rating: 
@@ -1671,8 +1674,8 @@ const {t} = useTranslation('common')
 
   return (
 <>
-    <div className='contents'>
-      <div   className='plant-containers'>
+    <div data-aos="slide-right" className='contents'>
+      <div data-aos="slide-right" className='plant-containers'>
           {sortedPlants.map((val) => (
             <ApothecaryData val={val} key={val.id}>
             </ApothecaryData>))

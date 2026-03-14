@@ -1,6 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './acu.css'; 
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Button, Modal } from'react-bootstrap';
 import Benefits from "./akbenefits";
 import spectraspray from "../images copy/spectraspray.png";
@@ -9,9 +11,12 @@ import body from "../images copy/body.jpg"
 const Info8 = () => {
 const {t} = useTranslation('common');
     const [showModal, setShowModal] = useState(false);
+     useEffect(() => {
+          AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+        }, []);
     return (
       <div className='container mobile-optimized'>
-                                           <div className="container-blue">
+         <div data-aos="slide-right" className="container-blue">
 
              <h1 className="logotitle">{t('Applied Kinesiology')}</h1>
              </div>
@@ -20,13 +25,13 @@ const {t} = useTranslation('common');
         justifyContent: 'center',
         alignItems: 'center'
         }}>
-         <div className="container-bbblue" style={{
+         <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
           <p className="pr"><h2>{t("Seeking Applied Kinesiology near me?")}</h2></p>
@@ -47,7 +52,7 @@ const {t} = useTranslation('common');
         />
         </div>
       </div>
-                                               <div className="container-blue">
+         <div data-aos="slide-right" className="container-blue">
 
                   <img className='gridimag' src={body} alt='TCNH' />
                <Button className="custom-btn" href="http://tcnh-stl.com" target="_blank">{t("Explore Applied Kinesiology")}</Button>  {/* Added Bootstrap Button */}

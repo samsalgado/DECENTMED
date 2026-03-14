@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './acu.css'; 
 import './Info.css';
 import { Button,  Modal } from'react-bootstrap';
@@ -6,6 +6,8 @@ import Benefits from "./benefits";
 import { useTranslation } from "react-i18next";
 import Collapsible from 'react-collapsible';
 import ss from "../images copy/ss.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ssreview from "../images copy/ssreview.png";
 import greenreview from "../images copy/greenreview.png";
 import spectraspray from "../images copy/spectraspray.png";
@@ -13,11 +15,13 @@ import ReactDOM from 'react-dom';
 import Hypnostudies from "./hypnostudy";
 const HYPNO = () => {
 const {t} = useTranslation('common');
+   useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
   const [showModal, setShowModal] = useState(false);
     return (
       <div className='container mobile-optimized'>
-                                           <div className="container-blue">
-
+         <div data-aos="slide-right" className="container-blue">
              <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
@@ -31,16 +35,16 @@ const {t} = useTranslation('common');
         justifyContent: 'center',
         alignItems: 'center',
         margin: '20px 0'
-      }}>
+      }} data-aos="slide-right">
          <div className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
-      }}>
+      }} data-aos="slide-right">
         <div className='content-wrapper' style={{
           flex: '1'
-        }}>
+        }} data-aos="slide-right">
           <h1>{t("What is Hypnotherapy?")}</h1>
           <p className='pr'>{t("Hypnotherapy is a therapeutic technique that uses guided hypnosis to help individuals achieve a relaxed, focused state of mind, increasing their suggestibility and enabling them to address various issues. Hypnotherapy helps to break subconscious blocks that arise throughout people's lives. Utilize hypnotherapy to empower yourself and become your optimal YOU.")}</p>
           <h2 className='pr'>{t("Shea Shulman Therapy: Hypnotherapy for Trauma")}</h2>
@@ -104,7 +108,7 @@ const {t} = useTranslation('common');
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-                                                      <div className="container-blue">
+    <div data-aos="slide-right" className="container-blue">
 
             <Collapsible trigger={<h3 className="collapsible-trigger">{t('Shea Shulman Therapy')}</h3>}>
   <div className="row">

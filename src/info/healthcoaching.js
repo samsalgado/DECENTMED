@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import esteem from '../images copy/pg.png';
 import anxiety from '../images copy/motivation.png';
 import blocks from '../images copy/chronic.png';
@@ -7,9 +9,12 @@ import ptsd from '../images copy/awareness.png';
 import { useTranslation } from "react-i18next";
 function HealthCoaching() {
     const { t } = useTranslation('common');
+    useEffect(() => {
+              AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+            }, []);
     return (
-        <div className="container-blue">
-            <div className="row justify-content-center">
+        <div data-aos="slide-right" className="container-blue">
+            <div data-aos="slide-right" className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of Integrative Health Coaching")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Personal Guidance")}</h3>

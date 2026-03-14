@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import empowerment from '../images copy/empowerment.png';
 import calm from '../images copy/calm.png';
 import success from '../images copy/success.png';
@@ -7,11 +9,14 @@ import { useTranslation } from "react-i18next";
 import support from '../images copy/support.png';
 function Benefitts() {
     const { t } = useTranslation('common');
+     useEffect(() => {
+          AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+        }, []);
     return (
-        <div className="container-blue">
-            <div className="row justify-content-center">
+        <div data-aos="slide-right" className="container-blue">
+            <div data-aos="slide-right" className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of a Mindset Coach")}</h2>
-            <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+            <div  className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Empowerment")}</h3>
                     <img className='gridimage' src={empowerment} alt='' />
                     <p className="e">

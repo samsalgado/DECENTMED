@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import './acu.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 import Benefits from "./brbenefits";
@@ -36,14 +38,16 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
 
 
   `
+   useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);
   const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
 
     return (
       <div className='container mobile-optimized'>
-                                   <div className="container-blue">
-
+         <div data-aos="slide-right" className="container-blue">
             <h1 className='logotitle'>{t('Somatic Breathwork')}</h1>
             </div>
             <div style={{
@@ -51,16 +55,16 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         justifyContent: 'center',
         alignItems: 'center',
         margin: '20px 0'
-      }}>
+      }} data-aos="slide-right">
          <div className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
-      }}>
+      }} data-aos="slide-right">
         <div className='content-wrapper' style={{
           flex: '1'
-        }}>
+        }} data-aos="slide-right">
          
           <p className="pr"><h2>{t("What is Breathwork?")}</h2></p>
           <p className='pr'>{t("Breathwork is the practice of consciously using the breath to regulate your physical, emotional, and mental state. By shifting the rhythm, depth, and pattern of your breathing, you can calm the nervous system, release stored tension, increase clarity, and access deeper states of awareness. It’s a powerful tool for healing, transformation, and self-connection, helping you move out of survival mode and into presence, vitality, and emotional freedom. Breathwork can be gentle and grounding or deep and activating, depending on the intention and technique used. Seeking somatic breathwork near me? Click the button below to find great breathwork coaches.")}</p>
@@ -81,7 +85,7 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         />
         </div>
       </div>
-                      <div className="container-blue">
+       <div data-aos="slide-right" className="container-blue">
 
        <div className='gridimag'>
               <iframe
@@ -234,8 +238,9 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
              <br></br>
-
+        <div data-aos="slide-right">
         <Benefits />
+        </div>
                  <Button onClick={learnmore} className="custom-btn">
                           {t('Providers: Signup Here')}
                   </Button>       

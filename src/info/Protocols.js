@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Info.css'; // Import the updated CSS file
 import { useTranslation } from 'react-i18next';
 const Protocols = () => {
   const { t } = useTranslation("common");
-
+useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // once:true means animation runs only once
+  }, []);
   return (
+    <div data-aos="slide-right">
     <Container>
       <Row>
         <Col md={4}>
@@ -71,6 +76,7 @@ const Protocols = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

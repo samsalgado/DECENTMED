@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './acu.css'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Info.css';
 import ReactDOM from 'react-dom';
 import { Button, Modal } from'react-bootstrap';
@@ -12,6 +14,9 @@ const {t} = useTranslation('common');
  const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+   useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
   const [showModal, setShowModal] = useState(false);
   const txt = `She's an actual MD in functional medicine. We do have a functional medicine nutritionist on
 0:06 our platform, but it's great to have a functional medicine doctor. Hi, I'm Dr. Nadia Taylor. I love
@@ -239,7 +244,7 @@ const {t} = useTranslation('common');
 25:56 people and the empowerment that will come from the summit. So I'm excited to be a part of it.`
     return (
       <div className='container mobile-optimized'>
-          <h1 className="logotitle">{t('Functional Medicine')}</h1>
+          <h1 data-aos="slide-right" className="logotitle">{t('Functional Medicine')}</h1>
             <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -254,7 +259,7 @@ const {t} = useTranslation('common');
       }}>
         <div className='content-wrapper' style={{
           flex: '1'
-        }}>
+        }} data-aos="slide-right">
           <p className='pr'>{t("A thorough understanding of your lifestyle and habits is the cornerstone of better health. Our Holistic Evaluation offers clients in Florida an all-encompassing assessment. We meticulously review your diet and daily routines, forming a personalized nutrition and exercise strategy. Dr. Nadia Taylor believes in holistic medicine because it helped to heal her from disease and maladies. She has recently opened up her own holistic healing center, Essence of Life, in Boynton Beach, Florida in September 2025 so that she can help others heal through some of the same modalities that helped her. Dr. Taylor is excited to be back in South Florida after years living elsewhere and is continually looking to make positive changes in the community. She has dedicated her life to a life of service for the betterment of others.")}</p>
           <Button className="custom-btn" href="https://decentmed.org/funcmed" target="_blank">{t("Book Functional Medicine Session")}</Button>  {/* Added Bootstrap Button */}
         <br />
@@ -263,14 +268,13 @@ const {t} = useTranslation('common');
             {t("Transcript")}
           </Button>
         </div>
-         <div>
+         <div data-aos="slide-right">
             <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-              <img className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
-                <div className="container-blue">
-
+              <img data-aos="slide-right" className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                <div data-aos="slide-right" className="container-blue">
        <Button className="custom-btn" href="https://essenceoflife.us/" target="_blank">{t('How Dr. Taylor Serves Boyton Beach, FL')}</Button>
       <br></br>
       

@@ -1,6 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './acu.css'; 
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
 import thrivingbynature from "../images copy/thrivebynature.png";
@@ -325,9 +327,12 @@ completely new life for you. I know when I was starting mentorship and and I was
 possible for you. So borrow our belief because so many clients have gotten incredible results whether it's in their personal lives and you know health and relationships mending family relationships whether it's then their professional Like
 
   `
+  useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);
     return (
       <div className='container mobile-optimized'>
-                                   <div className="container-blue">
+         <div data-aos="slide-right" className="container-blue">
 
            <h1 className="logotitle">
 
@@ -344,10 +349,10 @@ possible for you. So borrow our belief because so many clients have gotten incre
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
-      }}>
+      }} data-aos="slide-right">
         <div className='content-wrapper' style={{
           flex: '1'
-        }}>
+        }} data-aos="slide-right">
           <p className="pr"><h2>{t("Mindset Coaching")}</h2></p>
           <p className='pr'>{t("A mindset coach helps you with getting a deeper understanding of who you really are. Try a mindset coach that can help you learn the science of achievement and the science of the mind so that you can create change at the root cause which lasts.")}</p>
           <p className="pr">{t("I’m Priscilla, a mindset coach passionate about helping individuals and entrepreneurs understand the transformative power of their mindset and how it directly impacts their results in all areas of their life so they can create their lives by design.")}</p>
@@ -361,6 +366,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         </div>
         
         <iframe
+        data-aos="slide-right"
           className="centered-video"
           src="https://www.youtube.com/embed/ya7yJQAjhi8?si=bDZPQpX5ROFThuv1"
           frameBorder="0"
@@ -376,7 +382,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         </div>
         
       </div>
-       <Button className="custom-btn" onClick={() => setShowModal(true)}>
+       <Button className="custom-btn" target="_blank" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
             <Button className="custom-btn" href="https://www.thrivingbynature.com/" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
@@ -434,7 +440,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
             }
           }
         `}</style>
-                                         <div className="container-blue">
+        <div data-aos="slide-right" className="container-blue">
 
         <iframe
           className="centered-video"
@@ -534,7 +540,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         alignItems: 'center',
         margin: '20px 0'
       }}></div>
-      <div className='gridimage'>
+      <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/zJ8LzxAJY3M?si=QfwisiHKJbGp4J_W"
@@ -548,7 +554,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/SV1FwUQLlRI?si=GY-fhng4wLC0Ywzw"
@@ -562,7 +568,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-               <div className='gridimage'>
+               <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/J9iXoONiyzw?si=Gkgomds54OWbnMmO" 
@@ -576,7 +582,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/zdDSojRXOPs?si=zQPV8CJzkjezazx7" 
@@ -590,7 +596,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-              <div className='gridimage'>
+              <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/6LZUIq3EWmQ?si=eXrzAwDNDnwaPU81"
@@ -604,7 +610,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/3_2MI8pJaj8?si=lOs0Mfo3lca5QM3e"
@@ -618,7 +624,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/kVhN1-60D0I?si=Bmx-yksDscBPgxEf"
@@ -632,7 +638,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/qnyiODM-8Sw?si=-S_yPTcMxk1JE1WI"
@@ -646,7 +652,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/XuhLwo9peSs?si=m5gHfh816JSgJN6p"

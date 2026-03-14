@@ -8,7 +8,17 @@
     margin: 0 auto; /* Center content horizontally */
     padding: 1rem; /* Add some padding for better spacing */
   }
-  
+  .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   table {
     /* Ensure table elements are responsive (optional) */
     width: 100%; /* Or use flexbox for more control */

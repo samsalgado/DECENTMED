@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, {useState, useEffect} from 'react';
 import "../App.css";
 import './Info.css';
 import ayurveda from "../images copy/ayurveda-science.png";
@@ -13,6 +13,8 @@ import pain4 from "../images copy/pain4.png";
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
 import Transcript from './herbtranscript';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Ayurvedaa = () => {
   const { t } = useTranslation("common");
     const [showModal, setShowModal] = useState(false);
@@ -158,6 +160,9 @@ ask people to do anything that I'm unwilling to do myself I know how hard it is 
 do I try to be like a living example of what ayurveda can do for you you know I hear all the time like gosh you have so much energy and um vitality and so on and I really attribute that to what I learned from Dr Krueger all those years ago and to pay it forward and to educate people like it's my passion to help educate people because you know life is good everything's better when you feel good Body Mind and Spirit you know if you enjoyed this video make sure to click the Subscribe button and visit the
 themerlingroupworld.com/ayurveda for more.
     `
+    useEffect(() => {
+          AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+        }, []);
     const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
@@ -166,17 +171,17 @@ themerlingroupworld.com/ayurveda for more.
   }
   return (
     <div className='container mobile-optimized'>
-                                         <div className="container-blue">
+      <div data-aos="slide-right" className="container-blue">
 
      <h1 className="logotitle">{t('Ayurveda Experience')}</h1>
      </div>
-    <div className="container-bbblue" style={{
+    <div data-aos="slide-right" className="container-bbblue" style={{
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
       gap: '20px'
     }}>
-      <div className='content-wrapper' style={{
+      <div data-aos="slide-right"className='content-wrapper' style={{
         flex: '1'
       }}>
         <p className='pr'>{t("Ayurveda, an ancient healing system, offers a holistic approach to wellness by balancing the body, mind, and spirit through natural remedies and personalized treatments. Unlike conventional medicine, Ayurveda focuses on preventing illness rather than just treating symptoms, using herbs, diet, and lifestyle adjustments tailored to each individual's constitution. Patients seeking gentle, long-term healing often turn to Ayurveda for its ability to address root causes rather than temporary relief.")}</p>
@@ -209,6 +214,7 @@ themerlingroupworld.com/ayurveda for more.
     `}</style>
    <br></br>
    <br></br>
+   <div data-aos="slide-right">
       <h2>{t("Ayurvedic Oil & Related Ayurvedic Treatments for Pain")}</h2>
      <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
             <img className='gridimage' src={pain1} alt='Ayurvedic Oil Pain Treatment' />
@@ -222,17 +228,19 @@ themerlingroupworld.com/ayurveda for more.
              <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
             <img className='gridimage' src={pain4} alt='Ayurvedic Oil Pain Treatment' />
              </a>
-                       <div className="container-blue">
-
+             <div data-aos="slide-right" className="container-blue">
                 <iframe width="100%" height={550} src="https://www.youtube.com/embed/fq3-RO6vc54?si=ll3WkLxskSh_oGMY"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
               <Button className="custom-btn" onClick={pain}>
                     {t("Experience Pain Relief")}
                   </Button>
+                  </div>
                 <br></br>
+                <div data-aos="slide-right">
                  <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-      <div className="collapsible">
+             </div>
+      <div data-aos="slide-right" className="collapsible">
         <Principles />
         <Elements />
         <br></br>
@@ -260,31 +268,29 @@ themerlingroupworld.com/ayurveda for more.
               )}
 
       <br />
-      <div className='pr'>
+      <div data-aos="slide-right" className="container-blue">
         <h2>{t('What is Ayurveda?')}</h2>
         <p>
           {t(`Ayurveda is a holistic healing system developed in India based on the delicate balance between mind, body, and spirit. The goal of Ayurveda is promoting good health instead of fighting disease. The goal is to cleanse your body of undigested food, which stay in your body and lead to illness. The process is called 'panchakarma', designed to reduce your symptoms and restore harmony and balance. Other processes used are blood purification, massage, medical oils, herbs, enemas, and laxatives.`)}
         </p>
         <br></br>
         <h2>{t('Types of Ayurvedic Oil')}</h2>
-        <div>
+        <div data-aos="slide-right">
   <p style={{textAlign: "left"}}>{t('1. Dhanwantharam, Bala oil - Massage (Abhyanga)')}</p>
   <p style={{textAlign: "left"}}>{t('2. Bhringraj, Neelibhringadi - Hair and scalp care')}</p>
   <p style={{textAlign: "left"}}>{t('3. Mahanarayan oil - Joint pain relief')}</p>
   <p style={{textAlign: "left"}}>{t('4. Kumkumadi oil (for glow), Neem oil - Skin conditions')}</p>
   <p style={{textAlign: "left"}}>{t('5. Brahmi or Ashwagandha oil - Stress and sleep')}</p>
-
 </div>
-
         <h2>{t('Why Choose Ayurveda?')}</h2>
-        <div>
+        <div data-aos="slide-right">
   <p style={{textAlign: "left"}}>{t('1. Truly embrace individual')}</p>
   <p style={{textAlign: "left"}}>{t('2. Foster self-awareness')}</p>
   <p style={{textAlign: "left"}}>{t('3. Focuses on prevention and the root cause of illness')}</p>
   <p style={{textAlign: "left"}}>{t('4. Truly intuitive')}</p>
 </div>
  <h2>{t('Benefits of Ayurveda')}</h2>
-        <div>
+        <div data-aos="slide-right">
   <p style={{textAlign: "left"}}>-{t('Root-cause hormone evaluation (labs + scans)')}</p>
   <p style={{textAlign: "left"}}>-{t('Personalized diet and lifestyle plans')}</p>
   <p style={{textAlign: "left"}}>-{t('Custom herbal blends')}</p>
@@ -299,28 +305,11 @@ themerlingroupworld.com/ayurveda for more.
         </Button>
       </div>
       <br></br>
-      <div className="video-container" style={{
-  width: '100vw',
-  marginLeft: 'calc(-50vw + 50%)',
-  marginRight: 'calc(-50vw + 50%)',
-  height: '56.25vw', // 16:9 aspect ratio
-  maxHeight: '80vh', // Don't exceed 80% of viewport height
-  minHeight: '400px'
-}}>
-  <iframe 
-    width="100%" 
-    height="100%" 
-    src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=O63KyChKYrVWpkyw"     title={t('YouTube video player')} 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowFullScreen
-    style={{
-      border: 'none',
-      objectFit: 'contain'
-    }}
-  />
+      <div className="container-blue">
+  <iframe width="100%" height={550} src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=O63KyChKYrVWpkyw"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
 <Transcript />
-         <Button onClick={learnmore} className="custom-btn">
+         <Button onClick={learnmore} target='_blank' className="custom-btn">
                   {t('Providers: Signup Here')}
                 </Button>       
     </div>

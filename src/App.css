@@ -19,6 +19,30 @@ html, body, #root {
     repeat-y,
     repeat-y;
 }
+.gridmag {
+  width: 155px !important;   /* force tiny size */
+  height: 155px !important;  /* force tiny size */
+  object-fit: contain;     /* keep proportions inside the box */
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(180deg); }
+}
+.gridmagg {
+  width: 355px !important;   /* force tiny size */
+  height: 355px !important;  /* force tiny size */
+  object-fit: contain;     /* keep proportions inside the box */
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(180deg); }
+}
+
+
 .video-wrapperr {
   position: relative;
   width: 100%;

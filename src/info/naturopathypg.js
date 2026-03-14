@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import "../App.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Info.css';
 import spectraspray from "../images copy/spectraspray.png";
 import totalcare from '../images copy/totalcare.png';
@@ -17,13 +19,15 @@ const Naturo = () => {
     const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: false}); // once:true means animation runs only once
+    }, []);
   return (
     <div>
       <div className='container mobile-optimized'>
                    <div className="container-blue">
 
-       <h1 className='logotitle'
->
+       <h1 className='logotitle' data-aos="slide-left">
           {t('Naturopathy')}</h1>
           </div>
         <div style={{
@@ -38,7 +42,7 @@ const Naturo = () => {
             alignItems: 'center',
             gap: '20px'
           }}>
-            <div className='content-wrapper' style={{
+            <div className='content-wrapper' data-aos="slide-right" style={{
               flex: '1'
             }}>
               <h3>{t("Homeopathy vs Naturopathy")}</h3>
@@ -66,12 +70,12 @@ const Naturo = () => {
            <Button className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
-                          <div className="container-blue">
+                          <div className="container-blue" data-aos="slide-left">
 
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-             <div>
+             <div data-aos="slide-right">
               <iframe
               width="100%"
               height="515"
@@ -86,7 +90,7 @@ const Naturo = () => {
               }}    
             />
             </div>
-<div>
+<div data-aos="slide-right">
               <iframe
               width="100%"
               height="515"
@@ -101,7 +105,7 @@ const Naturo = () => {
               }}    
             />
             </div>
-            <div>
+            <div data-aos="slide-right">
               <iframe
               width="100%"
               height="515"
@@ -116,7 +120,7 @@ const Naturo = () => {
               }}    
             />
             </div>
-             <div>
+             <div data-aos="slide-right">
               <iframe
               width="100%"
               height="515"
@@ -140,7 +144,7 @@ const Naturo = () => {
         </div>
        
         
-        <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Explained")}</th>}>
+        <Collapsible data-aos="slide-right"  trigger={<th className="collapsible-trigger">{t("Naturopathy Explained")}</th>}>
           <NatExplained />
         </Collapsible>
         <style jsx>{`
@@ -158,7 +162,7 @@ const Naturo = () => {
             }
           }
         `}</style>
-                        <div className="container-blue">
+                        <div data-aos="slide-right" className="container-blue">
 
         <a href="https://www.totalcarehealthsolutions.com/" target="_blank" rel="noopener noreferrer">
           <img className='gridimag' src={totalcare} alt='oceantreis' />
@@ -228,7 +232,7 @@ const Naturo = () => {
         <Collapsible trigger={<th className="collapsible-trigger">{t("Lower your Blood Sugar")}</th>}>
           <BloodSugar />
         </Collapsible>
-        <br />
+       <div data-aos="slide-right">
         <a href="https://meridianpassagewellness.com" target="_blank" rel="noopener noreferrer">
           <br />
           <img src={naturopathy} className="TELEa" alt="quote" />
@@ -237,7 +241,7 @@ const Naturo = () => {
                                   {t('Providers: Signup Here')}
                 </Button> 
       </div>
-
+</div>
       {/* Portal: Render modal at body level, outside wrapper */}
       {showModal && ReactDOM.createPortal(
         <Modal 
@@ -249,7 +253,6 @@ const Naturo = () => {
             <Modal.Title>{t("Transcript")}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            
             <p>{t("naturopathy")}</p>
           </Modal.Body>
           <Modal.Footer>

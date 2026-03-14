@@ -1,7 +1,9 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
 import ReactDOM from 'react-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "../App.css";
 import spectraspray from "../images copy/spectraspray.png";
 import ClinVids from "./clinvid";
@@ -97,10 +99,12 @@ for this that I do as well it's um great if again stubborn cases especially with
 
 things together right because you are a complex puzzle a very Advanced biochemical being so thank you so much um
   `
+  useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);
     return (
       <div className='container mobile-optimized'>
-                                 <div className="container-blue">
-
+        <div data-aos="slide-right"  className="container-blue">
              <h1 className="logotitle">
               {t('Nutrigenomics')}</h1>
               </div>
@@ -115,8 +119,8 @@ things together right because you are a complex puzzle a very Advanced biochemic
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
-      }}>
-        <div className='content-wrapper' style={{
+      }} data-aos="slide-right" >
+        <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
          
@@ -128,6 +132,7 @@ things together right because you are a complex puzzle a very Advanced biochemic
         </div>
         <iframe
           className="centered-video"
+          data-aos="slide-right" 
           src="https://player.vimeo.com/video/799868102?title=0&byline=0&portrait=0"
           frameBorder="0"
           allowFullScreen
@@ -158,15 +163,14 @@ things together right because you are a complex puzzle a very Advanced biochemic
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-                             <div className="container-blue">
+<div data-aos="slide-right"  className="container-blue">
 
      <iframe title="vimeo-player" src="https://player.vimeo.com/video/715588945?h=76c2c1fff8" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
       <br></br>
       <Button className="custom-btn" href="https://thriveresultscoaching.com/" target="_blank">{t('Find Out How Nutrigenomics Can Help You')}</Button>
         </div>
              <Button className="custom-btn" href="https://thriveresultscoaching.com/testimonials/" target="_blank">{t("More Reviews")}</Button>  {/* Added Bootstrap Button */}
-                             <div className="container-blue">
-
+        <div data-aos="slide-right"  className="container-blue">
         <h1 className='center'>{t("Seeking Holistic Nutritionist Near me? We have you covered:")}</h1>
         <ClinVids />
         <Button className="custom-btn" onClick={() => setShowModal(true)}>

@@ -1,5 +1,7 @@
 import React, {useEffect, useState, useCallback} from 'react';
 import Topbar from "../topbar";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import { Button, Modal } from 'react-bootstrap';
@@ -109,6 +111,9 @@ const Blog6 = () => {
   useEffect (() => {
     publishToNostr();
   }, [publishToNostr]);  
+  useEffect(() => {
+              AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+            }, []);
   return (
            <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
@@ -123,11 +128,10 @@ const Blog6 = () => {
         <Topbar />
       </header>
       <div className='container'>
-                                  <div className="container-blue">
-
-        <h1 className='logotitle'>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
+         <div className="container-blue">
+        <h1 data-aos="slide-right" className='logotitle'>{t("Vitamin B: Vitamin B17 - The Mysterious Case of Cancer")}
         </h1>
-        <div className='container'>
+        <div data-aos="slide-right" className='container'>
             <ReactPlayer
               url="https://www.dropbox.com/scl/fi/40iuefd3qdbo0h34vssq2/The-Curious-Case-of-Cancer-Vitamin-B17.mp4?rlkey=pejf34o2ndr5erb9ksde3qbkz&st=oibbui7r&dl=0" // Replace with your video URL
               width='100%'
@@ -165,7 +169,7 @@ const Blog6 = () => {
       
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <div className='pr'>
-                                          <div className="container-blue">
+          <div data-aos="slide-right" className="container-blue">
 
           <p>
             {t("B vitamins convert food into energy and help to strengthen the immune system.")}
@@ -221,7 +225,7 @@ const Blog6 = () => {
           </div>
         </div>
         <div>
-                                                    <div className="container-blue">
+           <div data-aos="slide-right" className="container-blue">
 
           <table className="collapsibles-table">
             <tbody>

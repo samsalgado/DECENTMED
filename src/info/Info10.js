@@ -1,6 +1,9 @@
 import React from "react";
+import { useEffect } from "react";
 import './acu.css'; 
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import event6 from "../images copy/airtable.png";
 import { Button } from'react-bootstrap';
 import spectraspray from "../images copy/spectraspray.png";
@@ -11,11 +14,12 @@ const {t} = useTranslation('common');
   const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
-
+ useEffect(() => {
+    AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+  }, []);
     return (
       <div className='container mobile-optimized'>
-                           <div className="container-blue">
-
+        <div className="container-blue" data-aos="slide-right">
           <h1 className="logotitle">{t('Sound Healing')}</h1>
           </div>
             <div style={{
@@ -30,22 +34,22 @@ const {t} = useTranslation('common');
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div className='content-wrapper' data-aos="slide-right" style={{
           flex: '1'
         }}>
           <p className='pr'>{t("Sound healing is an evidence-informed wellness practice that uses therapeutic sound frequencies to support nervous system regulation, stress reduction, and mental clarity. Through instruments such as crystal singing bowls, gongs, and harmonic tones, participants are guided into deep states of relaxation that support both mental and physical well-being.")}</p>
           <p className="pr">{t("Sound healing is a restorative wellness practice that uses carefully curated sound frequencies to guide the body and mind into deep relaxation. By slowing brainwave activity and calming the nervous system, sound healing supports stress reduction, emotional balance, and mental clarity. Participants often experience improved sleep, reduced anxiety, and a greater sense of grounding, making sound healing an effective complement to modern wellness programs—particularly for healthcare professionals and teams seeking sustainable stress management.")}</p>
           <Button className="custom-btn" href="https://decentmed.org/soundhealers" target="_blank">{t("Book Sound Healing Session")}</Button>  {/* Added Bootstrap Button */}
         </div>
-         <div>
+         <div data-aos="slide-right">
             <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/3wMDLvsGszU?si=jH-somtaNgNFsU2J" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         
       </div>
-                      <div className="container-blue">
+      <div className="container-blue">
 
-    <div className="vertical-video">
+    <div data-aos="slide-right" className="vertical-video">
   <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -53,7 +57,7 @@ const {t} = useTranslation('common');
     allowFullScreen>
   </iframe>
 </div>
- <div className="vertical-video">
+ <div data-aos="slide-right" className="vertical-video">
   <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -61,7 +65,7 @@ const {t} = useTranslation('common');
     allowFullScreen>
   </iframe>
 </div>
-<div className="vertical-video">
+<div data-aos="slide-right" className="vertical-video">
   <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -69,7 +73,7 @@ const {t} = useTranslation('common');
     allowFullScreen>
   </iframe>
 </div>
-<div className="vertical-video">
+<div data-aos="slide-right" className="vertical-video">
   <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -96,7 +100,7 @@ const {t} = useTranslation('common');
   maxWidth: '360px',
   margin: '0 auto',
   aspectRatio: '9/16'
-}}>
+}} data-aos="slide-right">
             <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -117,7 +121,7 @@ const {t} = useTranslation('common');
   maxWidth: '360px',
   margin: '0 auto',
   aspectRatio: '9/16'
-}}>
+}} data-aos="slide-right">
                <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -138,7 +142,7 @@ const {t} = useTranslation('common');
   maxWidth: '360px',
   margin: '0 auto',
   aspectRatio: '9/16'
-}}>
+}} data-aos="slide-right">
                    <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -154,7 +158,7 @@ const {t} = useTranslation('common');
             src="https://www.youtube.com/embed/4oWQToBMxpE" frameborder="0" allowfullscreen></iframe>
             </div>
             
-     <div style={{
+     <div data-aos="slide-right" style={{
   position: 'relative',
   width: '100%',
   maxWidth: '360px',
@@ -204,7 +208,7 @@ const {t} = useTranslation('common');
          
        
          <a href="https://airtable.com/appzQKVIm0Fbh56Jo/shrcUTpEXH6Q4yC0k/tbllSz2OJz9xGEGHw">
-        <img className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+        <img data-aos="slide-right" className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
         </a>
         
         <br></br>

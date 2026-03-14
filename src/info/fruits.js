@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../App.css';
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import turmeric from '../images copy/tumeric.png';
 import ginger from '../images copy/gin.png';
 import aloevera from '../images copy/aloevera.png';
@@ -10,8 +12,11 @@ import lemon from '../images copy/lemon.png';
 import { useTranslation } from 'react-i18next'
 function Fruits() {
     const { t } = useTranslation('common');
+     useEffect(() => {
+        AOS.init({ duration: 1000, once:false }); // once:true means animation runs only once
+      }, []);
     return (
-        <div className="container-blue">
+        <div data-aos="slide-right" className="container-blue">
             <div className="row justify-content-center">
             <h4 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Best Fruits, Spices and Vegetables for Detox Tea Detox")}</h4>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">

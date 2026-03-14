@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Topbar from "./topbar";
 import "../info/homeo.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Herbal from '../info/Herbal';
 import { Button } from 'react-bootstrap';
 import PlantVids from '../info/Plantvids';
@@ -13,6 +15,9 @@ const { t } = useTranslation('common');
         const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
   return (
 <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -31,9 +36,8 @@ const { t } = useTranslation('common');
          <Button className="custom-btn" href="https://decentmed.org/apoth" target="_blank">
           {t("Explore Apothecary")}
           </Button>
-                                  <div className="container-blue">
-
-        <h1 className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
+         <div data-aos="slide-right" className="container-blue">
+        <h1 data-aos="slide-right" className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
         </div>
                                    <Button onClick={learnmore} target='_blank' className="custom-btn">

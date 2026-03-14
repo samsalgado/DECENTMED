@@ -1,11 +1,30 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Components from './components';
 import './Info7.css';
 import { useTranslation } from 'react-i18next';
-
+import y from "../images copy/y.png";
 const Info7 = () => {
   const { t } = useTranslation("common");
+useEffect(() => {
+  const elements = document.querySelectorAll('.fade-in');
 
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // re-animate on scroll
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach(el => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
   return (
     <div className='container'>
 
@@ -13,6 +32,7 @@ const Info7 = () => {
    
       </div>
       <div className="collapsible">
+        <img className='gridimag fade-in' src={y} alt='' />
         <h1 className="text-center mb-4">{t('Why DecentMed?')}</h1>        
         <Components />
       </div>

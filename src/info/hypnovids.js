@@ -1,9 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hypnovids = () => {
     const { t } = useTranslation("common");
+     useEffect(() => {
+          AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+        }, []);
     const [plant] = useState([
         {
             id: 1,
@@ -91,7 +96,7 @@ const PlantCard = ({ val }) => {
 
     return (
         <div className="plant-card">
-                                                     <div className="container-blue">
+          <div  data-aos="slide-right" className="container-blue">
 
             <div className="video-container" ref={videoRef}>
                 {isInView ? (

@@ -32,7 +32,6 @@ const { t } = useTranslation('common');
                                    <Button onClick={learnmore} target="_blank"className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
-
             <footer>
                 <Footer />
             </footer>

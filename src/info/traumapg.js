@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./homeo.css";
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ReactDOM from 'react-dom';
 import book1 from "../images copy/book1.jpg";
 import book2 from "../images copy/book2.jpg";
@@ -132,25 +134,27 @@ the summit. Take a step into exploring all these different alternative ways to h
 
 plan and YouTube.com/amazinglifedesign. You can also visit their websites at amazinglifedesign.com for Jim and meridianpassagewwellness.com for Dr. Barnes. Thank you so much for joining us today and this has been the latest episode of Decent Med Spotlight.
   `
+   useEffect(() => {
+              AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+            }, []);
   return (
       <div className='container  mobile-optimized'>
-                                           <div className="container-blue">
-
+           <div data-aos="slide-right" className="container-blue">
         <h1 className='logotitle'>{t('Healing Trauma')}</h1>
         </div>
-        <div style={{
+        <div data-aos="slide-right" style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         margin: '20px 0'
       }}>
-        <div className="container-bbblue" style={{
+        <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-      <div className='content-wrapper' style={{
+      <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
           <h3>{t("Healing from Trauma Quotes")}</h3>
@@ -175,12 +179,11 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
         />
       </div>
     </div>
-                                                   <div className="container-blue">
-
+        <div data-aos="slide-right" className="container-blue">
       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-              <div className='gridimage'>
+              <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/hKOmN_-gEwc?si=Pq-NCQ-HW8vWh_wJ"
@@ -194,9 +197,9 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
               }}    
             />
             </div>
-             <Button className="custom-btn" href="https://amazinglifedesign.com/" target="_blank">{t("Experience Trauma Relief")}</Button>  {/* Added Bootstrap Button */}
+             <Button className="custom-btn" href="https://amazinglifedesign.com/" >{t("Experience Trauma Relief")}</Button>  {/* Added Bootstrap Button */}
                 <br></br>
-                  <Button className="custom-btn" onClick={() => setShowModal(true)}>
+                  <Button className="custom-btn" target='_blank' onClick={() => setShowModal(true)}>
                     {t("Transcript")}
                   </Button>
                             {showModal && ReactDOM.createPortal(
@@ -242,6 +245,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
 
       `}</style>
       </div>
+      <div data-aos="slide-right">
               <Collapsible trigger={<div className="collapsible-trigger">{t("Resources")}</div>}>
         <a href="https://www.amazon.com/Handbook-Human-Potential-Accessible-Personal/dp/B0G4J3JXKK/ref=sr_1_1?crid=1LMFQIDRNTC4I&dib=eyJ2IjoiMSJ9.pjgTbL2HmvhiV03i3tu_KSLHL8HpvWtIy4uoZLOHMnfh87vrOpD6RSEBMm-tsS2arI_I3b-NojrmDS9q0N34yxJNtvYt9qd-71XevY2aYYE.Vj_fGKnU_us7s3QAjSHSInuWtFxxRkWAxJ-TdruXhzQ&dib_tag=se&keywords=handbook+for+human+potential+an+accessible+guide+to+personal+growth&nsdOptOutParam=true&qid=1766436381&sprefix=Handbook+for+human+po%2Caps%2C122&sr=8-1"> <img src={book1} alt="img" /> </a>
         <a href="https://www.amazon.com/Wounds-Wisdom-Art-Healing-Trauma/dp/B0D8QNYCDK/ref=sr_1_4?crid=21ALF1LZPXSSH&dib=eyJ2IjoiMSJ9.MCes-FKwfcB0U6nV0hGmG9CRQPdERvi8LZdmsPpzHDTvF0nQabY4B8E7rkuYB9f5oBYHzkdLLAuXQPtRmv0IZcnf316y-LzntfvR1g8wpguwVpbDNnyaJ0IwjbQ-jJCaEs8udkrnW9kIINdTm9dXAXLVN1IYCB5bjsqeSMUOw4X7LnciqHBaG-7-LauZM2xdA9EH0oIetuIQbK-glHkQ4aqWJOEn07EhqGYxo5KGX0o.w4J2XMhKsqHhAnZehlR2Xp2L5HS4G-aWeHKKmtZCgPg&dib_tag=se&keywords=wounds+to+wisdom&qid=1766436621&sprefix=wounds+to+wisdom%2Caps%2C74&sr=8-4"> <img src={book2} alt="img" /> </a>
@@ -252,6 +256,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
         </Collapsible>
         <br></br>
         <TsBen />
+        </div>
       </div>
   );
 };

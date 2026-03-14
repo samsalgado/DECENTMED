@@ -14,6 +14,7 @@ useEffect(() => {
       const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+  
 
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
@@ -28,8 +29,9 @@ useEffect(() => {
             <header>
             <Topbar />
             </header>
-            
+           <div>
             <Pgchelation />
+            </div> 
   <Button onClick={learnmore} target='_blank' className="custom-btn">
                           {t('Providers: Signup Here')}
                         </Button> 

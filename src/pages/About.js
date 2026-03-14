@@ -17,7 +17,6 @@ export function About({ t }) {
                 <Topbar />
             </header>
             <div className="container-blue">
-
             <FAQ />
             </div>
             <footer>

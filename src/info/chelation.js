@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "../App.css";
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import spectraspray from "../images copy/spectraspray.png";
 import chelationgraphicES from '../images copy/IMG_9296.jpeg';
 import chelationgraphicNL from '../images copy/IMG_9297.jpeg';
@@ -13,19 +15,23 @@ import chelationgraphic from '../images copy/chelationgraphic.png';
 import chelationbenefits from '../images copy/chelationbenefits.png';
 //import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+
 const Pgchelation = () => {
   const { t } = useTranslation('common');
+   useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);
   return (
     <div className='container'>
-                                         <div className="container-blue">
+       <div data-aos="slide-right" className="container-blue">
 
        <h1 className="logotitle">{t("Chelation")}</h1>
        </div>
-                    <div className="container-blue">
+                    <div data-aos="slide-right" className="container-blue">
 
       <img className='gridimag' src={chelationgraphic} alt="Chelation Graphic" />
       {/* Title and Collapsible Content with Table Structure */}
-        <div className="button-container">
+        <div data-aos="slide-right" className="button-container">
               <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                 {t("Find Providers")}
               </Button>
@@ -33,7 +39,7 @@ const Pgchelation = () => {
         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
- <div className='gridimage'>
+ <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/utcEUI2EGyQ?si=fDVB9fC04fWMPR9D"
@@ -47,7 +53,7 @@ const Pgchelation = () => {
               }}    
             />
             </div>
-      <div className="title-container">
+      <div data-aos="slide-right" className="title-container">
 
         <table className="collapsibles-table">
           <tbody>

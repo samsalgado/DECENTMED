@@ -1,5 +1,7 @@
-import React,  {useState } from 'react';
+import React,  {useState, useEffect } from 'react';
 import "../App.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
 import './Info.css';
@@ -10,13 +12,17 @@ import { Button, Modal } from 'react-bootstrap';
 const Info3 = () => {
   const { t } = useTranslation("common"); // Access translation function
   const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
   return (
     <div className='container'>
-                         <div className="container-blue">
-
+      <div data-aos="slide-right" className="container-blue">
       <h1 className='logotitle'>{t('Detox')}</h1>
       </div>
+      
       <Fruits />
+      
             <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
                       {t("Discover Holistic Providers")}
             </Button>
@@ -29,9 +35,9 @@ const Info3 = () => {
       <br></br>
       <div className="collapsible"></div>
 
-      <div><img className='FACTS' src={DETOXIMG} alt="logo" /></div>
+      <div data-aos="slide-right"><img className='FACTS' src={DETOXIMG} alt="logo" /></div>
       <br />
-      <div className='ppr'>
+      <div className='pr'>
         <br />
         <p>
           {t('A detox cleanses the body. A water detox cleanse can flush out the body\'s toxins. The 3 day cleanse detox will restore your cells to ketosis. When detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness.')}

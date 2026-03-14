@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Channel from './channel';
 import './Info.css';
 import acuchart from '../images copy/acu=-chart.png';
-import './acu.css'; 
+import './acu.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import carpaltunnel from "../images copy/carpaltunnel.png";
 import ac from "../images copy/acuu.png";
 import acuu from "../images copy/2412335.jpg";
@@ -197,7 +199,9 @@ const Info1 = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
   const isMobile = windowWidth <= 768;
   const isSmallMobile = windowWidth <= 480;
   const isTablet = windowWidth <= 992 && windowWidth > 768;
@@ -269,8 +273,8 @@ const iframeStyle = {
   boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
 }; 
  return (
-    <div>
-                                         <div className="container-blue">
+    <div >
+    <div data-aos="slide-left" className="container-blue">
 
       <h1 className="logotitle" style={titleStyle}>{t('Acupuncture')}</h1>
       </div>
@@ -318,7 +322,7 @@ const iframeStyle = {
         
       </div>
       <br></br>
-                                               <div className="container-blue">
+      <div data-aos="slide-left" className="container-blue">
 
                   <Button className="custom-btn"  onClick={() => window.location.href = 'https://oceantreis.com/'}>
                     {t("Acupuncture in Tampa")}
@@ -516,7 +520,9 @@ const iframeStyle = {
     }
   `}</style>
 </Collapsible>
+<div data-aos="slide-left">
       <Acuvids />
+      </div>
       <Channel />
       <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}

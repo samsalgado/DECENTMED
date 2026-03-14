@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "../App.css";
 import Forum from './forum';
 import quote from '../images copy/quote.png';
@@ -7,6 +7,8 @@ import './Info.css';
 //import ultt from "../images copy/ultt.png";
 import b from '../images copy/b.png';
 import cys from '../images copy/cys.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import gluta from '../images copy/gluta.png';
 import polyphenols from '../images copy/polyphenols.png';
 import se from '../images copy/se.png';
@@ -17,14 +19,16 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const Info5 = () => {
   const { t } = useTranslation("common"); // Access translation function
-
+ useEffect(() => {
+    AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+  }, []);
   return (
     <div className='container'>
       <div className="title-container">
-        <h1 className="title">{t('Nutrition')}</h1>
+        <h1 className="title" data-aos="slide-left">{t('Nutrition')}</h1>
         <div><img src={homeo} className="HOMEO" alt="logo" /></div>
- 
-        <table className="collapsibles-table">
+ <div data-aos="slide-right">
+        <table data-aos="slide-right" className="collapsibles-table">
           <tbody> 
             <Collapsible trigger={<th className="collapsible-title">{t('Best Antioxidants for Your Immune System')}</th>}>
               <tr>
@@ -62,13 +66,10 @@ const Info5 = () => {
             </Collapsible>
           </tbody>
         </table>
+        </div>
       </div>
       
-      <div><img src={quote} className="TELE" alt="logo" /></div>
-      <br />
-      <div>
-        <Forum />      
-        </div>
+      <div data-aos="slide-right"><img src={quote} className="TELE" alt="logo" /></div>     
     </div>
   );
 }

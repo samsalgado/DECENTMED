@@ -1,6 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import product from "../cards/productramona.jpg";
 import Boundaries from "../info/Boundaries";
 import Collapsible from 'react-collapsible';
@@ -100,9 +102,12 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
 
 
 `
+useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
     return (
       <div className='container mobile-optimized'>
-                                           <div className="container-blue">
+      <div data-aos="slide-right" className="container-blue">
 
  <h1 style={{
     textDecoration: 'underline',
@@ -114,19 +119,19 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
     paddingTop: '2rem'
   }}>              {t("Transformational Empowerment Coaching")}</h1>
   </div>
-            <div style={{
+            <div data-aos="slide-right" style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         margin: '20px 0'
       }}>
-         <div className="container-bbblue" style={{
+         <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
          
@@ -157,7 +162,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
         </div>
       </div>
        <div className='gridimage'>
-                  <div className="container-blue">
+         <div data-aos="slide-right" className="container-blue">
 
               <iframe
               height="515"
@@ -172,7 +177,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/TuthiGHaJj4?si=ijcJ-ioLEBU1ynRR"
@@ -186,7 +191,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/YTxJu2JFyaM?si=Xkr2cPJ0GjJo51i5"
@@ -200,7 +205,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/ARlmUkq1VNs?si=bBTnI8_sELzMvozr"
@@ -214,7 +219,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/9wfZk-JRgpo?si=F73l4GPAglrHtEPh"
@@ -228,14 +233,10 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-                      <div className="container-blue">
-
-            
+               <div data-aos="slide-right" className="container-blue">
                <Button className="custom-btn" href="https://authenticlifejourney.com/" target="_blank">{t("Experience Transformation")}</Button>  {/* Added Bootstrap Button */}
               </div>
-
       <br></br>
-                    
                   {showModal && ReactDOM.createPortal(               
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
                 <Modal.Header closeButton>
@@ -251,7 +252,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 </Modal.Footer>
               </Modal>,
               document.body)}
-                        <div className="container-blue">
+                        <div data-aos="slide-right" className="container-blue">
 
  <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
@@ -273,7 +274,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
       `}</style>
      <Collapsible
   trigger={
-    <div
+    <div data-aos="slide-right"
       className="collapsible-triggger"
     >
       {t("How to Set Boundaries")}
@@ -297,7 +298,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
         </Collapsible>
         </div>
         <br></br>
-                  <div className="container-blue">
+                  <div data-aos="slide-right"className="container-blue">
 
 
                         <a href="https://ramonacrabtreefalkner.com/purposefulpause">
@@ -306,9 +307,9 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
                 </a>
                 </div>
         <br></br>
-                  <div className="container-blue">
+                  <div data-aos="slide-right" className="container-blue">
 
-        <div className='gridimage'>
+        <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/2YCXlgQlXL0?si=BX9CKBwgQ9CDknT8"
@@ -322,7 +323,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/YmXilRV4yaM?si=k3o1uGIOJQDp6rTs"
@@ -336,7 +337,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/c77_odmiexQ?si=nQeFps64GjmSDrjY"
@@ -350,7 +351,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/-JIJNOeW1yE?si=vyWImxQW9pgqFW-A"
@@ -364,7 +365,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/Em8pFdAdEGI?si=CMliuXJLwLuC8qLD"
@@ -378,7 +379,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/F2YIbP1Fnr0?si=LZu8DrvzcR9XtOq9"
@@ -392,7 +393,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/zL39mCvZJmA?si=2ToBxo-y4188vrgj"
@@ -406,7 +407,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/cX_68XibDlQ?si=r_2mKvOGmiydb8WT"
@@ -420,7 +421,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/-eW6TAUT_DU?si=fu2kxS-2R5CR99YD"
@@ -434,7 +435,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/8xI_WBwX6CY?si=-BntLu190uc0NzuT"
@@ -448,7 +449,7 @@ feeling. And at the end of the quiz, uh, once you finish it, you get a a landing
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div data-aos="slide-right"className='gridimage'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/YFBGTp_9_-8?si=S0NfXzdlczRjoLQC"

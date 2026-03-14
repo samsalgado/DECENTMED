@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import '../info/acu.css'; 
 import '../info/Info.css';
 import product from "../images copy/reviewss.png";
 import Collapsible from 'react-collapsible';
 import { Button, Modal } from'react-bootstrap';
 import EsBenefits from "./eben";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
@@ -25,7 +27,10 @@ const {t} = useTranslation('common');
 const [showModal, setShowModal] = useState(false);
 const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
-  }    
+  }
+   useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);    
     return (
          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
                 <Helmet>  {/* Add Helmet component */}
@@ -38,7 +43,7 @@ const learnmore = () => {
                 <header>
                     <Topbar />
                 </header>
-                   <div className="container-blue">
+                   <div data-aos="slide-left" className="container-blue">
 
  <h1 className="logotitle">{t("Energy Healing")}</h1>
  </div>
@@ -59,7 +64,7 @@ const learnmore = () => {
     <div className='content-wrapper' style={{
       flex: '1',
       minWidth: '300px'
-    }}>
+    }} data-aos="slide-right">
       <h2>{t("Tap into Remote Energy Healing")}</h2>
       <p className='pr'>-{t("Helps alleviate physical pain")}</p>
       <p className='pr'>-{t("Navigation through emotional distress")}</p>
@@ -99,7 +104,7 @@ const learnmore = () => {
 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-                                              <div className="container-blue">
+<div data-aos="slide-right" className="container-blue">
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div>
@@ -107,8 +112,7 @@ const learnmore = () => {
 
       </div>
       <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <br></br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugSZ9oeYm8c?si=bgDwSaZPqgYuXu9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -161,7 +165,9 @@ const learnmore = () => {
                 <figcaption>{t("Sign up")}</figcaption>
                 </a>
         <br></br>
+        <div data-aos="slide-right">
         <EsBenefits />
+        </div>
                           <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 

@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "../App.css";
 import Collapsible from 'react-collapsible';
 import obese from '../images copy/obese.png';
 import labs from '../images copy/8.jpg';
 import brain from '../images copy/9.jpg';
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import NutritionVids from '../info/nutritionvids';
 import { Button,  Modal } from 'react-bootstrap';
 import drSebiES from '../images copy/IMG_9273.jpeg';
@@ -270,27 +272,27 @@ doctor who's overweight and has a cigarette, you know, pack of cigarettes on the
 Dr. Terresa Wner of Total Care Chiropractic, Jim Pehkonen, who is our trauma coach, naturopath from Meridian Passage Wellness, Dr. Kristen Barnes, mindset coach as Michelle mentioned, Priscilla Emu, Anil, who is our spiritual coach, Anil Nuran. We do have two advertisers as well, and Happy DNA Candy by Linda Fuller, or sorry, Linda McB. And then last but not least, Authentic Life Journey by Ramona Crabtree Falner and our hypnotherapist Sarah Green. This will be on December 12th. We also
 
 have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants to join. Ladies, thank you for your time and this has been Decent Med Spotlight.
-
-
-  `  
+ `
+  useEffect(() => {
+       AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+     }, []);  
   return (
     <div className='container mobile-optimized'>
-                                         <div className="container-blue">
-
+       <div data-aos="slide-right" className="container-blue">
        <h1 className="logotitle">{t('Nutrition')}</h1>
        </div>
-      <div style={{
+      <div data-aos="slide-right" style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-         <div className="container-bbblue" style={{
+         <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
           <p className='pr'>{t("If you are searching nutritionist near me, look no further than our holistic nutritionists offering traditional and alkaline diet recipes to reach your optimal self. For example, our nutritionists assist clients with the best plans rich in B vitamins, vitamin D, vitamin C and more. We provide nutritionists for a wide range of people, Lori Graham is a former OT and a functional nutritionist who helps menopausal women lower their blood sugar and reduce menopausal symptoms.")}</p>
@@ -322,7 +324,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
     </div>
     
     <br></br>
-                                             <div className="container-blue">
+          <div data-aos="slide-right" className="container-blue">
 
           {showModal && ReactDOM.createPortal(
             <div>
@@ -360,7 +362,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
           }
         }
       `}</style>
-      <div className="container-blue">
+      <div data-aos="slide-right" className="container-blue">
         <table className="collapsibles-table">
           <tbody>
             <Collapsible trigger={<th className="collapsible-trigger">{t('Obesity Facts')}</th>}>

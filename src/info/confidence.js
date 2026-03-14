@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import practicalskills from "../images copy/practicalskills.png";
 import partnership from '../images copy/partnership.png';
 import env from '../images copy/env.png';
@@ -11,9 +13,12 @@ import selfcare from "../images copy/selfcare.png";
 import accc from "../images copy/accc.png";
 function Confidence() {
     const { t } = useTranslation('common');
+    useEffect(() => {
+          AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+        }, []);
     return (
-        <div className="container-blue">
-            <div className="row justify-content-center">
+        <div data-aos="slide-right" className="container-blue">
+            <div data-aos="slide-right" className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Coaching Confidence")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Client Relationship Partner")}</h3>

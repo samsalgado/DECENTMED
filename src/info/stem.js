@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Collapsible from 'react-collapsible';
 import "./stem.css"; 
 import { FaChevronDown } from 'react-icons/fa';
@@ -8,6 +8,8 @@ import whystemcell from '../images copy/whystemcell.png';
 import whatisastemcell from '../images copy/what-is-a-stem-cell-illustration.jpg';
 import stembenefits from '../images copy/stembenefits.png';
 import './Info.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import whystemcellspanish from '../images copy/IMG_9256.jpeg';
 import { Button, Modal } from 'react-bootstrap';
 import whystemcelldutch from '../images copy/IMG_9257.jpeg';
@@ -32,15 +34,17 @@ const Stem = () => {
    const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   } 
+  useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);
   return (
     <div className='container mobile-optimized'>
-                                         <div className="container-blue">
-
+  <div data-aos="slide-right" className="container-blue">
 <h1 className='logotitle' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
         {t('Stem Cell Therapy')}
       </h1>
       </div>
-        <div style={{
+        <div data-aos="slide-right" style={{
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
@@ -50,13 +54,13 @@ const Stem = () => {
         flexWrap: 'wrap' // responsive wrap
         
       }}>
-         <div className="container-bbblue" style={{
+         <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div data-aos="slide-right"className='content-wrapper' style={{
           flex: '1'
         }}>
            <p className='pr'>{t("Stem cell therapy is a form of regenerative medicine deriving from the following sources: Mesenchymal Stem Cells, Hematopoietic Stem Cells, Embryonic Stem Cells and more to repair or replace damaged tissues and cells in the body. Stem cell therapy for knees is my first experience with using stem cells for regenerative medicine. Many athletes like Ryan Tannehill, Kobe Bryant, Jamaal Charles, LaRon Landry, David Njoku, Chris Johnson, Peyton Manning and more chose to use the Mesenchymal Stem Cell (MSC) for their recovery. Peyton Manning had an NFL MVP season after using stem cells for his neck injury recovery. Ryan Tannehill extended his career after using stem cell therapy for knee (ACL) tears. Mesenchymal Stem Cells are multi-potent - stemming from various tissues in the body. MSCs are primarily found in Adipose tissue, Umbical chords, Bone Marrow and even the placenta.")}</p>
@@ -109,10 +113,12 @@ const Stem = () => {
           }
         }
       `}</style>
+      <div data-aos="slide-right">
      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-                       <div className="container-blue">
+             </div>
+      <div data-aos="slide-right" className="container-blue">
 
       {/* Flex container for equal width collapsibles */}
       <div className="collapsible-section">

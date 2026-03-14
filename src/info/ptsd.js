@@ -3,6 +3,8 @@ import './Info.css';
 import './acu.css'; 
 import { useTranslation } from 'react-i18next';
 import PTSDvids from './ptsdvids';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Button } from 'react-bootstrap';
 import spectraspray from "../images copy/spectraspray.png";
 const Ptsdd = () => {
@@ -78,16 +80,17 @@ const Ptsdd = () => {
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
   };
-
+    useEffect(() => {
+                AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+              }, []);
   return (
     <div className='container mobile-optimized' style={containerStyle}>
-                                         <div className="container-blue">
-
+       <div data-aos="slide-right" className="container-blue">
        <h1 className='logotitle'>{t('CPTSD vs PTSD')}</h1>
       </div>
       <div style={mainWrapperStyle}>
-        <div className="container-bbblue" style={containerBbblueStyle}>
-          <div className='content-wrapper' style={contentWrapperStyle}>
+        <div data-aos="slide-right" className="container-bbblue" style={containerBbblueStyle}>
+          <div data-aos="slide-right" className='content-wrapper' style={contentWrapperStyle}>
             <p className='pr' style={paragraphStyle}>
               {t("CPTSD vs PTSD stems from the cause and prolonged trauma vs a single event. Many people equate PTSD to military vets, yet some veterans do not have PTSD at all. CPTSD can stem from chronic abuse where escape seems impossible. PTSD stems from a single traumatic event like war, natural disasters or car accidents.")}
             </p>
@@ -117,7 +120,7 @@ const Ptsdd = () => {
             </Button>
           </div>
           
-          <div style={iframeWrapperStyle}>
+          <div data-aos="slide-right" style={iframeWrapperStyle}>
             <iframe
               src="https://www.youtube.com/embed/YEhDB72Mz5Y?si=rsENZd36-mSHY59y"
               title='CPTSD vs PTSD'
@@ -128,13 +131,15 @@ const Ptsdd = () => {
           </div>
         </div>
       </div>
-                                        <div className="container-blue">
+       <div data-aos="slide-right" className="container-blue">
 
        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
       <h1>{t("PTSD Help")}</h1>
+      <div data-aos="slide-right">
       <PTSDvids />
+      </div>
     </div>
     </div>
   );

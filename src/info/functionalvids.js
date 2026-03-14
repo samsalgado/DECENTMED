@@ -1,9 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../App.css';
 import { useTranslation } from 'react-i18next';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FuncVids = () => {
     const { t } = useTranslation("common");
+     useEffect(() => {
+           AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+         }, []); 
     const [plant] = useState([
         
         {
@@ -100,8 +105,8 @@ const PlantCard = ({ val }) => {
     }, []);
 
     return (
-        <div className="plant-card">
-            <div className="video-container" ref={videoRef}>
+        <div data-aos="slide-right" className="plant-card">
+            <div data-aos="slide-right" className="video-container" ref={videoRef}>
                 {isInView ? (
                     <iframe
                         width="100%"

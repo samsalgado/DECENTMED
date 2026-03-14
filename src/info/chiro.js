@@ -1,6 +1,9 @@
 import React from 'react'
 import "./chiro.css";
+import { useEffect } from 'react';
 import "../App.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import chiroFR from '../images copy/IMG_9300.jpeg';
 import betterhealthsolutions from '../images copy/drk.png';
 import img2 from "../images copy/Screenshot 2025-10-29 at 2.54.20 PM.png";
@@ -25,19 +28,21 @@ const Chiro = () => {
   const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+  useEffect(() => {
+            AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+          }, []);
   return (
     <div className='container mobile-optimized'>
-                                         <div className="container-blue">
-
+       <div data-aos="slide-right" className="container-blue">
       <h1 className="logotitle">{t("Chiropractic")}</h1>
       </div>
-      <div className="container-bbblue" style={{
+      <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
           <p className="pr">{t("Chiropractors use hands-on spinal manipulation and other manual techniques to help restore mobility, relieve pain, and support the body’s natural ability to heal itself without drugs or surgery. People often seek chiropractic care for back pain, neck pain, headaches, and posture-related issues, especially those caused by sedentary lifestyles or physical stress. It’s also valued for promoting overall wellness and nervous system function. According to the American Chiropractic Association, over 35 million Americans visit a chiropractor each year, highlighting its popularity.")}</p>
@@ -69,13 +74,13 @@ const Chiro = () => {
         }
       }
     `}</style>
-                                                     <div className="container-blue">
+       <div data-aos="slide-right" className="container-blue">
 
      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
              
-      <div className="title-container">
+      <div data-aos="slide-right" className="title-container">
         <table className="collapsibles-table">
           <tbody>
             <div id="clinics">
