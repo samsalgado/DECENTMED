@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import { useState } from 'react';
 import Footer from '../footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import obasi from "../images copy/obasi.png";
 import spectraspray from "../images copy/spectraspray.png";
@@ -106,7 +109,10 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
 `
  const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
-  }    
+  }  
+   useEffect(() => {
+         AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+       }, []);   
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
@@ -120,16 +126,28 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
             <Topbar />
             </header>
             <div className="container">
+                    <div data-aos="slide-right" className="container-blue">
             <h1>{t("Holistic Medicine Books and Related Products")}</h1>
- <div className="row">
-    <div className="col-md-4">
+              </div>
+ <div>
+    <div>
     </div>
   </div>
-  <div className="row">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aXfU_SMr2fY?si=JiML9hMTTZLsBHLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
+  <div>
+           <div data-aos="slide-right" className="container-blue">
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+  <iframe
+    width="560"
+    height="550"
+    src="https://www.youtube.com/embed/aXfU_SMr2fY?si=JiML9hMTTZLsBHLn"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  ></iframe>
+</div>                  
+</div>
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
@@ -143,7 +161,9 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
                   </Button>
                 </Modal.Footer>
               </Modal>
-    <div className="col-md-6">
+    <div>
+                 <div data-aos="slide-right" className="container-blue">
+
       <h2>{t("Solve your Out of Control Eating")}</h2>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
     <figure>
@@ -159,9 +179,12 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
           <figcaption>{t("Buy Book")}</figcaption>
         </figure>
       </a>
+      </div>
       <div>
      
 </div>
+           <div data-aos="slide-right" className="container-blue">
+
 <h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
 <p>
         {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
@@ -178,13 +201,18 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       <p>
       {t("This interactive guide combines insightful personal stories with workbook-like activities that challenge readers to examine their own emotional roadblocks. Through quizzes, timelines, and self-observation exercises, the book leads readers on a detective-like journey to solve the mystery of their eating habits. It’s more than just a book—it’s a roadmap to understanding emotional triggers and achieving lasting change.")}
       </p>
+      </div>
     </div>
   </div>
   <br></br>
 
-  <div className="row">
-    <div className="col-md-6">
+  <div>
+    <div>
+                 <div data-aos="slide-right" className="container-blue">
       <h2>{t("Kelechi Obasi Product Bundle")}</h2>
+      </div>
+        <div data-aos="slide-right" className="container-blue">
+
       <a href='https://selar.com/m/kelechiobasi'>
     <figure>
         <img 
@@ -199,14 +227,17 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
           <figcaption>{t("Buy")}</figcaption>
         </figure>
       </a>
+      </div>
       <div>
      
 </div>
     </div>
     
   </div>
-    <div className="row">
-    <div className="col-md-6">
+    <div>
+    <div>
+                       <div data-aos="slide-right" className="container-blue">
+
       <h2>{t("Purium Product Bundle")}</h2>
       <a href='https://ishoppurium.com/homepage?giftcard=JessicaJavens'>
     <figure>
@@ -222,23 +253,22 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
           <figcaption>{t("Buy")}</figcaption>
         </figure>
       </a>
+      </div>
       <div>   
 </div>
     </div>
   </div>
-  <div className="row">
-    <div className="col-md-6">
+  <div>
+    <div>
+    <div data-aos="slide-right" className="container-blue">
     <h2>{t("Lifewave Patch")}</h2>
+    
     <a href='https://www.lifewave.com/awicks'>
     <figure>
         <img 
           src={lifewave} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+          className='gridimag'
         />
           <figcaption>{t("Buy Now")}</figcaption>
         </figure>
@@ -246,10 +276,12 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       <p>
         {t("Harness your body's flow of energy with X39.")}
       </p>
+      </div>
     </div>
   </div>
-   <div className="row">
-    <div className="col-md-6">
+   <div>
+    <div>
+      <div data-aos="slide-right" className="container-blue">
     <h2>{t("Forever Living Aloe Vera")}</h2>
     <a href='https://foreverliving.com/shop/usa/en-us/products'>
     <figure>
@@ -268,11 +300,16 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       <p>
         {t("weeknd")}
       </p>
+      </div>
     </div>
   </div>
-<div className="row">
-    <div className="col-md-6">
+<div>
+    <div>
+                       <div data-aos="slide-right" className="container-blue">
       <h2>{t("Happy DNA Candy")}</h2>
+      </div>
+      <div data-aos="slide-right" className="container-blue">
+
       <a href='https://sites.google.com/view/lindamcbee806080/home'>
     <figure>
         <img 
@@ -286,16 +323,31 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         />
           <figcaption>{t("Buy Now")}</figcaption>
         </figure>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/S1j-Oxijls8?si=NqXQ_XaZgUqIhTWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+  <iframe
+    width="560"
+    height="550"
+    src="https://www.youtube.com/embed/S1j-Oxijls8?si=NqXQ_XaZgUqIhTWZ"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  ></iframe>
+</div> 
       </a>
            <p>
         {t("An extensive review, the product line is plant-based and features some of the highest performing herbs in the world: Moringa, Turmeric, Elderberry, Rosemary and more. The product line extends beyond products. She also has services to help health coaches and Energy healers.")}
       </p>
+      </div>
     </div>
   </div>
-  <div className="row">
-    <div className="col-md-6">
+  <div>
+    <div>
+     <div data-aos="slide-right" className="container-blue">
       <h2>{t("Spectra Spray")}</h2>
+      </div>
+      <div data-aos="slide-right" className="container-blue">
       <a href='https://www.spectraspray.com/shop'>
     <figure>
         <img 
@@ -310,7 +362,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
           <figcaption>{t("Buy Now")}</figcaption>
         </figure>
       </a>
-              <iframe width="100%" height={550} src="https://www.youtube.com/embed/At7Gc-qjbsc?si=3BMcLVIB7FKUxPUC"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+       <iframe width="100%" height={550} src="https://www.youtube.com/embed/At7Gc-qjbsc?si=3BMcLVIB7FKUxPUC"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
            <p>
         {t("Our Mission: To provide easy to use, highly effective, on-the-go health products that change lives everyday.")}
       </p>
@@ -320,12 +372,15 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
           <p>
         {t("Our Products: With an advanced micro-emulsion technology, our natural high-quality oral sprays provide direct absorption without binders, fillers, artificial color, dyes or allergens.")}
       </p>
+      </div>
     </div>
   </div>
+                   <div data-aos="slide-right" className="container-blue">
+
                                      <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
-
+</div>
 </div>
             <footer>
                 <Footer />

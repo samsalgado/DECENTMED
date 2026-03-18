@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import tier2 from '../images copy/tier11.png';
 import tier3 from "../images copy/bigtierr.png";
 import '../info/Info.css';
-import tier0 from "../images copy/ad.png";
+import tier0 from "../images copy/advertisingtier (1).png";
 import { Button } from 'react-bootstrap';
 
 export function Pricing() {
