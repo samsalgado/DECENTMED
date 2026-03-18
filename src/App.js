@@ -122,7 +122,7 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
-        <Route path="/lynn" element={<Lynn t={t} />} />
+        <Route path="/narcissism" element={<Lynn t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
          <Route path="/conversionoptimizationconsulting" element={<Blog24 t={t} />} />
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />
