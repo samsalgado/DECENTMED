@@ -47,16 +47,7 @@ useEffect(() => {
   });
 
   // Buttons: fade + slide
-  gsap.from(".custom-btn", {
-    scrollTrigger: {
-      trigger: ".custom-btn",
-      start: "top 90%",
-    },
-    y: 50,
-    opacity: 0,   // fade is fine for buttons
-    duration: 0.8,
-    stagger: 0.2
-  });
+  
 }, []);
  useEffect(() => {
           AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
@@ -88,9 +79,7 @@ useEffect(() => {
   </div>
                  <Button className="custom-btn" href="http://gorillaandshecoaching.com/" target="_blank">{t("Transform your Health")}</Button>  {/* Added Bootstrap Button */}
   <br></br>
-     <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
+   
                 {showModal && ReactDOM.createPortal(
                   
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">

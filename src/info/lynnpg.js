@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import './acu.css';
+import lynn3 from "../images copy/lynn3.png";
+import lynn2 from "../images copy/lynn2.png";
+import lynn1 from "../images copy/lynn1.png";
 import Narcissism from './narcissism';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import './Info.css';
 const LynnPg = () => {
 const {t} = useTranslation('common')
@@ -157,29 +162,28 @@ today on this decent man spotlight. Any final closing thoughts? >> Oh, I just wa
 doing and um I thank you for that. Um you're doing a lot of good things. So that's the main thing. So and it was nice to meet you and I was on uh onion soup with Dexter. That was fun. Heck yeah. >> He said you send a lot of people to him. So, >> Yep. I do. I do. I I want everybody to come on his podcast and as we start partnering with more. >> He's so cool. He's so nice. Yeah, >> he is. He is. >> So, visit reclaimingyourlife andjoy.com. Connect with Lynn and everybody have a
 
 great night. Yep.
-
-
-
   `
+    useEffect(() => {
+      AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    }, []);
     return (
       <div className='container mobile-optimized'>
-            <h1 className='title'>{t('Hypnosis & Narcissism')}</h1>
-            <div style={{
+            <h1 data-aos="slide-right" className='title'>{t('Hypnosis & Narcissism')}</h1>
+            <div data-aos="slide-right" style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         margin: '20px 0'
       }}>
-         <div className="container-bbblue" style={{
+         <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         gap: '20px'
       }}>
-        <div className='content-wrapper' style={{
+        <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
-         
           <p className="pr"><h2>{t("Types of Narcissism")}</h2></p>
           <p className='pr'>
             {t("Lynn is experienced dealing with narcissistic personalities and increasing personal confidence. Here are some types of narcissism that her method helps you overcome:")}
@@ -209,10 +213,9 @@ great night. Yep.
   />
         </div>
       </div>
-
                   <Button className="custom-btn" href="https://www.reclaimingyourlifeandjoy.com/" target="_blank">{t('Reclaim your Life & Joy')}</Button>
               <br></br>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
+              <Button target='_blank' className="custom-btn" onClick={() => setShowModal(true)}>
             {t("Transcript")}
           </Button>
           <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
@@ -244,8 +247,17 @@ great night. Yep.
           }
         }
       `}</style>
+      <div data-aos="slide-right">
+        <img className='gridimag' src={lynn1} alt='Features' />
+        <img className='gridimag' src={lynn2} alt='Features' />
+        <a href='https://www.reclaimingyourlifeandjoy.com/consultation-call-application' alt="Lynn Signup Page">
+        <img className='gridimag' src={lynn3} alt='Features' />
+          </a>
+        </div>
         <br></br>
+        <div data-aos="slide-right">
         <Narcissism />
+        </div>
         </div>
     )
 }

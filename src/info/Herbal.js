@@ -35,7 +35,7 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
   return (
     <>
       <div className='container'>
-                           <div className="container-blue">
+     <div className="container-blue">
 
         <h1 className="logotitle" data-aos="slide-right">
     {t('Herbal Medicine')}</h1>
@@ -56,9 +56,7 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
               flex: '1'
             }} data-aos="slide-right">
               <p className='pr'>{t("The body has an immense regenerative potential to heal itself. Herbal medicine is the real traditional medicine, every single pharmaceutical drug has a plant root. This page is my encyclopedia of herbal medicine, highlighting herbal plants from around the world. For the last few months, I traveled throughout North America, South America, and Central America to document these plants. Explore our encyclopedia of herbal medicine, and learn how these plants can help your body heal itself. Explore our medicinal herbal recipes from around the world below.")}</p>
-            <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+            
             </div>
               
             <iframe
@@ -189,7 +187,7 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
         document.body
       )}
       <img className="gridmag" src={flower} alt="Homeopathy" />
-      <br />
+ 
       </>
   );
 };

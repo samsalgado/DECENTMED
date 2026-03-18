@@ -40,10 +40,11 @@ const { t } = useTranslation('common');
         <h1 data-aos="slide-right" className='center'>{t('Encyclopedia of Herbal Medicine')}</h1>
         <PlantVids />
         </div>
-                                   <Button onClick={learnmore} target='_blank' className="custom-btn">
-                                  {t('Providers: Signup Here')}
+                 <div data-aos="slide-right" className="container-blue">
+             <Button onClick={learnmore} target='_blank' className="custom-btn">
+              {t('Providers: Signup Here')}
                 </Button> 
-
+            </div>
       <footer className='footer'>
         <Footer />
       </footer>

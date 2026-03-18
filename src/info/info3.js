@@ -55,9 +55,7 @@ const Info3 = () => {
             title="Rumble video player"
           />
         </div>
-               <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
+               
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="custom-modal">
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>

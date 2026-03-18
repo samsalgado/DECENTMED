@@ -150,10 +150,6 @@ either small doses or in the regular doses but also using off Lael drugs to kill
       </div>
                 <div data-aos="slide-right" className="container-blue">
               <Button className="custom-btn" href="https://www.drtshannon.com/" target="_blank">{t('Find Out How Dr. Shannon Can Help You')}</Button>
-      
-<Button className="custom-btn" onClick={() => setShowModal(true)}>
-  {t("Transcript")}
-</Button>
  <style jsx>{`
           @media (max-width: 768px) {
             .container-bbblue {

@@ -12,7 +12,6 @@ import { Prevent } from './pages/Prevent';
 import Wrapper from './info/Wrapper';
 import { HealPract } from './pages/HealPract';
 import { Soundhealing } from './pages/soundhealing';
-//<Route path="/lynn" element={<Lynn t={t} />} />
 import { Func } from './pages/Func';
 import {Energy} from './pages/Energy';
 import { EnergyPract } from './pages/EnergyPract';
@@ -50,7 +49,7 @@ import { Detox } from './pages/Detox';
 import { StemCell } from './pages/Stemcell';
 import { NotFound } from './pages/NotFound';
 import { Shop } from './pages/products';
-//import { Lynn } from './pages/lynn';
+import { Lynn } from './pages/lynn';
 import { Nutrition } from './pages/Nutrition';
 import BlogPage from './pages/Blog';
 import { Hypnotherapy } from './pages/Hypnotherapy';
@@ -123,6 +122,7 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
+        <Route path="/lynn" element={<Lynn t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
          <Route path="/conversionoptimizationconsulting" element={<Blog24 t={t} />} />
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />

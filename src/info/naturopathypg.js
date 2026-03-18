@@ -67,9 +67,7 @@ const Naturo = () => {
           </div>
         </div>
         <div>
-           <Button className="custom-btn" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+        
                           <div className="container-blue" data-aos="slide-left">
 
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">

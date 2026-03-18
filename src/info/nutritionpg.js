@@ -328,9 +328,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
 
           {showModal && ReactDOM.createPortal(
             <div>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                {t("Transcript")}
-              </Button>
+            
               <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
             <Modal.Header closeButton>
               <Modal.Title>{t("Transcript")}</Modal.Title>

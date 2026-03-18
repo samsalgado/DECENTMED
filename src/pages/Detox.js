@@ -27,9 +27,11 @@ export function Detox() {
                 </header>
 
                 <Info3 />
+                                 <div data-aos="slide-right" className="container-blue">
                 <Button onClick={learnmore} target="_blank" className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
+                </div>
                 <footer>
 
                     <Footer />

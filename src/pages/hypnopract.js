@@ -27,6 +27,7 @@ export function Hypnopract() {
     }
   }, []);
 
+  // ✅ SEARCH LOGIC
   const handleSearch = () => {
     const trimmed = location.trim().toLowerCase();
     if (!trimmed) return;
@@ -37,6 +38,16 @@ export function Hypnopract() {
       city = 'sarasota';
     } else if (trimmed.includes('tampa')) {
       city = 'tampa';
+    } 
+    // Florida catch-all
+    else if (
+      trimmed.includes('florida') ||
+      trimmed.includes('fl') ||
+      trimmed.includes('miami') ||
+      trimmed.includes('orlando') ||
+      trimmed.includes('jacksonville')
+    ) {
+      city = 'tampa'; // default priority for Florida
     }
 
     setSelectedCity(city);
@@ -45,6 +56,50 @@ export function Hypnopract() {
 
   const formattedLocation =
     location.charAt(0).toUpperCase() + location.slice(1).toLowerCase();
+
+  // ✅ PROVIDERS
+  const providers = [
+    {
+      id: 'tampa',
+      name: t("Green Hypnotherapy"),
+      city: 'tampa',
+      locationLabel: t("Tampa, Florida"),
+      image: Green,
+      link: "https://calendly.com/greenhypnotherapy/new-meeting",
+      buttonText: t("Book Consultation"),
+      bio: t("Green Hypnotherapy, while focused on individual healing, is also currently working towards building a community of healers who practice different modalities, such as Eastern medicine and acupuncture, massage therapy, body work (i.e. yoga, etc), traditional mental health counseling, Western medicine, and so much more. The aim is to connect and integrate the practices to better serve our communities and offer support to other healers."),
+      badges: [
+        t("Transform Negative Subconscious Beliefs"),
+        t("Reprogram 'Hidden' Beliefs"),
+        t("Overcome Trauma")
+      ],
+      iframe: "https://drive.google.com/file/d/14o0p_J7PigM-3OlyKMyHi8Xwbnrgda3z/preview"
+    },
+    {
+      id: 'sarasota',
+      name: t("Shea Shulman Therapy"),
+      city: 'sarasota',
+      locationLabel: t("Sarasota, Florida"),
+      image: shea,
+      link: "https://sheashulmantherapy.com/",
+      buttonText: t("Learn More"),
+      bio: t("shea_bio"),
+      badges: [
+        t("Subconscious Reprogramming"),
+        t("EMDR"),
+        t("Overcome Trauma")
+      ],
+      iframe: "https://www.youtube.com/embed/tWy0oFz82yw"
+    }
+  ];
+
+  // ✅ SORTING
+  const sortedProviders = [...providers].sort((a, b) => {
+    if (!selectedCity) return 0;
+    if (a.city === selectedCity) return -1;
+    if (b.city === selectedCity) return 1;
+    return 0;
+  });
 
   return (
     <div style={{ textAlign: 'center' }}>
@@ -97,137 +152,76 @@ export function Hypnopract() {
 
         {/* RESULTS */}
         {showResults && (
-          selectedCity ? (
-            <div className="results-section py-5">
-              <h2>
-                {t("Hypnotherapists in")} {formattedLocation}
-              </h2>
+          <div className="results-section py-5">
 
-              {selectedCity === 'tampa' && (
-                <div className="card mb-4">
-                  <div className="card-body row align-items-center">
+            <h2>
+              {selectedCity
+                ? `${t("Hypnotherapists in")} ${formattedLocation}`
+                : t("Available Hypnotherapists")}
+            </h2>
 
-                    <div className="col-md-3">
-                      <img
-                        src={Green}
-                        alt="Green Hypnotherapy"
-                        style={{ maxWidth: '100%' }}
-                      />
-                    </div>
+            {sortedProviders.map((provider) => (
+              <div className="card mb-4" key={provider.id}>
+                <div className="card-body row align-items-center">
 
-                    <div className="col-md-6 text-start">
-                      <h4>{t("Green Hypnotherapy")}</h4>
-                      <p>{t("Tampa, Florida")}</p>
-                       <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Transform Negative Subconscious Beliefs")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Reprogram 'Hidden' Beliefs")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Overcome Trauma")}</span>
-                            </div>
-                      <p className="small">
-                        {t("Green Hypnotherapy, while focused on individual healing, is also currently working towards building a community of healers who practice different modalities, such as Eastern medicine and acupuncture, massage therapy, body work (i.e. yoga, etc), traditional mental health counseling, Western medicine, and so much more. The aim is to connect and integrate the practices to better serve our communities and offer support to other healers.")}
-                      </p>
-                    </div>
-                      <div>
-                          <iframe
-                          style={{
-                            borderRadius: "8px",
-                            boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
-                          }}
-                          src="https://drive.google.com/file/d/14o0p_J7PigM-3OlyKMyHi8Xwbnrgda3z/preview"
-                          width="100%"
-                          height="305px"
-                          title="Acupuncture"
-                          allow="autoplay"
-                          allowFullScreen
-                        ></iframe>                        
-                        </div>
-                    <div className="col-md-3">
-                      <a
-                        href="https://calendly.com/greenhypnotherapy/new-meeting"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-outline-primary"
-                      >
-                        {t("Book Consultation")}
-                      </a>
-                    </div>
-
+                  {/* IMAGE */}
+                  <div className="col-md-3">
+                    <img
+                      src={provider.image}
+                      alt={provider.name}
+                      style={{ maxWidth: '100%' }}
+                    />
                   </div>
-                </div>
-              )}
 
-              {selectedCity === 'sarasota' && (
-                <div className="card mb-4">
-                  <div className="card-body row align-items-center">
+                  {/* TEXT */}
+                  <div className="col-md-6 text-start">
+                    <h4>{provider.name}</h4>
+                    <p>{provider.locationLabel}</p>
 
-                    <div className="col-md-3">
-                      <img
-                        src={shea}
-                        alt="Shea Shulman Therapy"
-                        style={{ maxWidth: '100%' }}
-                      />
+                    <div className="mb-2">
+                      {provider.badges.map((badge, i) => (
+                        <span key={i} className="badge bg-light text-dark me-1">
+                          {badge}
+                        </span>
+                      ))}
                     </div>
 
-                    <div className="col-md-6 text-start">
-                      <h4>{t("Shea Shulman Therapy")}</h4>
-                      <p>{t("Sarasota, Florida")}</p>
-                       <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Subconscious Reprogramming")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("EMDR")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Overcome Trauma")}</span>
-                            </div>
-                      <p className="small">
-                        {t("shea_bio")}
-                      </p>
-                    </div>
-                        <div>
-                          <iframe
-                          style={{
-                            borderRadius: "8px",
-                            boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
-                          }}
-                          src="https://www.youtube.com/embed/tWy0oFz82yw?si=FVQbe1o75aOv1ZZR"
-                          width="100%"
-                          height="305px"
-                          title="Acupuncture"
-                          allow="autoplay"
-                          allowFullScreen
-                        ></iframe>  
-                        </div>
-                       
-                    <div className="col-md-3">
-                      <a
-                        href="https://sheashulmantherapy.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-outline-primary"
-                      >
-                        {t("Learn More")}
-                      </a>
-                    </div>
-
+                    <p className="small">{provider.bio}</p>
                   </div>
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className="no-results text-center py-5">
-              <h3>
-                {t("No hypnotherapists available in")} {formattedLocation}
-              </h3>
 
-              <button
-                className="custom-btn mt-3"
-                onClick={() => {
-                  setLocation("Tampa");
-                  setSelectedCity("tampa");
-                  setShowResults(true);
-                }}
-              >
-                {t("View Florida Hypnotherapists")}
-              </button>
-            </div>
-          )
+                  {/* VIDEO */}
+                  <div>
+                    <iframe
+                      style={{
+                        borderRadius: "8px",
+                        boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
+                      }}
+                      src={provider.iframe}
+                      width="100%"
+                      height="305px"
+                      title={provider.name}
+                      allow="autoplay"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+
+                  {/* BUTTON */}
+                  <div className="col-md-3">
+                    <a
+                      href={provider.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                    >
+                      {provider.buttonText}
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            ))}
+
+          </div>
         )}
 
       </div>

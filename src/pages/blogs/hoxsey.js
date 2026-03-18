@@ -214,8 +214,7 @@ const Hoxsey = ({t}) => {
       }, [publishToNostr]);
 
   return (
-            <div style={{textAlign: 'center', marginTop: '80px', 
-    paddingTop: '2rem'}}>
+          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
       <Helmet>
         <title>{t("You Don’t Have to Die")}</title>

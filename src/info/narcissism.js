@@ -1,5 +1,8 @@
 import React from "react";
 import '../App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import emotion from '../images copy/hyp.jpeg';
 import trauma from '../images copy/life.jpg';
 import toxic from "../images copy/toxic.png";
@@ -10,11 +13,14 @@ import stress from '../images copy/i.png';
 import sleep from '../images copy/boundaries.jpg';
 function Narcissism() {
     const { t } = useTranslation('common');
+       useEffect(() => {
+        AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+      }, []);
     return (
-        <div className="container-blue">
-            <div className="row justify-content-center">
+        <div data-aos="slide-left" className="container-blue">
+            <div data-aos="slide-left" className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of Lynn's Methodology")}</h2>
-            <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
+            <div  className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("How do you reprogram your subconscious mind")}</h3>
                     <img className='gridimage' src={emotion} alt='' />
                     <p className="e">

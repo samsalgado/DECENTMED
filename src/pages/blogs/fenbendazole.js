@@ -5,6 +5,7 @@ import Fenhindi from './fenhindi';
 import Fenfrance from './fenfr';
 import { useState } from "react";
 import Fendutch from './fendutch';
+import "../../App.css";
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import Collapsible from 'react-collapsible';
@@ -55,8 +56,7 @@ const {t} = useTranslation('common');
   const [showModal, setShowModal] = useState(false);
 
   return (
-              <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
-
+      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t("Fenbendazole for Humans")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,11 +65,13 @@ const {t} = useTranslation('common');
       <header>
         <Topbar />
       </header>
-                           <div className="container-blue">
+          <div className="container-blue">
 
       <div className='container'>
+      <div className="container-blue">
       <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t("Fenbendazole for Humans with Cancer")}
       </h1>
+      </div>
       <div className='container'>
     <iframe width='100%' height='700px'
  src="https://www.youtube.com/embed/NWIDl_FOexQ?si=aD9fp4XfGQtmlUoq"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -221,7 +223,7 @@ const {t} = useTranslation('common');
        <div className="container">
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Reources')}</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
                <a href="/fenbendazole"> <img className="gridimag" src={fenben} alt='' /> </a>
                <a href="/ivermectin"> <img className="gridimag" src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img className="gridimag" src={hhoxsey} alt='' /> </a>

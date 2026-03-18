@@ -59,9 +59,7 @@ time. I really was drawn to your vision of how you can help people with this typ
             allowFullScreen
           ></iframe>
           </div>
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
-               {t("Transcript")}
-              </Button>
+             
               {showModal && ReactDOM.createPortal(    
               
               <Modal show={showModal} className="transcriptt-modal" onHide={() => setShowModal(false)} size="lg" >

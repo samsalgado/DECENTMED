@@ -328,9 +328,7 @@ const iframeStyle = {
                     {t("Acupuncture in Tampa")}
                   </Button>
 
-                  <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
+               
                   {showModal && ReactDOM.createPortal(
                   
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">

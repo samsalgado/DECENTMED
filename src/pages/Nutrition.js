@@ -9,7 +9,6 @@ import spectraspray from "../images copy/spectraspray.png";
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
-import FuncModal from '../info/funcmodal';
 export function Nutrition() {
     const { t } = useTranslation('common');
     useEffect(() => {
@@ -42,8 +41,7 @@ export function Nutrition() {
              </a>
         <h1 className='center'>{t("Functional Nutrition")}</h1>
       <FuncVids />
-      <FuncModal />
-                                   <Button onClick={learnmore} className="custom-btn">
+         <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
                 </Button> 
                 </div>

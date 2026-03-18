@@ -143,9 +143,6 @@ useEffect(() => {
           {//<p><h3>{t("Jessica Javens: Transformational Coaching")}</h3></p>    
 }
           <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
-          <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
         </div>
 <iframe
           className="centered-video"
@@ -285,6 +282,8 @@ useEffect(() => {
   <Boundaries />
 </Collapsible>
 </div>
+                        <div data-aos="slide-right" className="container-blue">
+
             <Collapsible trigger={<th className="collapsible-triggger">{t('Self Care Journal')}</th>}>
               <tr>
                 <a href="https://www.linkedin.com/pulse/flow-feeling-honoring-your-emotions-work-life-ramona-crabtree-falkner-4rrve/?trackingId=XKJ1BW5BQ3quljT4fWOovg%3D%3D">
@@ -296,6 +295,7 @@ useEffect(() => {
                 <a href="https://www.linkedin.com/pulse/why-slowing-down-most-powerful-move-you-can-make-crabtree-falkner-3gwae/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage'src={slow} alt='Why Slowing Down is the Most Powerful Move You Can Make' /></a>
               </tr>
         </Collapsible>
+        </div>
         </div>
         <br></br>
                   <div data-aos="slide-right"className="container-blue">

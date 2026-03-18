@@ -173,9 +173,7 @@ things together right because you are a complex puzzle a very Advanced biochemic
         <div data-aos="slide-right"  className="container-blue">
         <h1 className='center'>{t("Seeking Holistic Nutritionist Near me? We have you covered:")}</h1>
         <ClinVids />
-        <Button className="custom-btn" onClick={() => setShowModal(true)}>
-          {t("Transcript")}
-        </Button>
+       
               {showModal && ReactDOM.createPortal(
         
         <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">

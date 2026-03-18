@@ -129,7 +129,7 @@ const {t} = useTranslation('common');
     <>
       <Helmet>
         <title>{t("Ivermectin for Cancer")}</title>
-                                <meta property="og:title" content="Ivermectin for Cancer" />                
+        <meta property="og:title" content="Ivermectin for Cancer" />                
         <meta name="description" content="Ivermectin for Cancer" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={t("Documenting the efficacy of Ivermectin for Cancer in humans. Take a journey into the world of cancer research, in the pursuit of a cure.")} />
@@ -138,13 +138,12 @@ const {t} = useTranslation('common');
         <Topbar />
       </header>
       <div className='container'>
+               <div className="container-blue">
       <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Ivermectin for Cancer in Humans")}
       </h1>
-                           <div className="container-blue">
-
-      <div className='container'>
-<iframe width="100%" height="600px" src="https://www.youtube.com/embed/Mmig5oGD1iE?si=QiKNPMC8ATboFcV1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-</div>
+      </div>
+       <div className="container-blue">
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Mmig5oGD1iE?si=QiKNPMC8ATboFcV1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       <Button className="custom-btn" onClick={() => setShowModal(true)}>
                   {t("Transcript")}
                 </Button>
@@ -161,9 +160,9 @@ const {t} = useTranslation('common');
                 </Button>
               </Modal.Footer>
             </Modal>
-           
       </div>
-      
+             <div className="container-blue">
+
       <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <div className='container'>
           <p>
@@ -230,7 +229,9 @@ const {t} = useTranslation('common');
            <a href="https://www.sciencedirect.com/science/article/pii/S1043661820315152">{t('Source 4')}</a>
            </p>
           </div>
+          </div>
       </div>
+             <div className="container-blue">
        <div>
         <table className="collapsibles-table">
           <tbody> 
@@ -324,16 +325,18 @@ const {t} = useTranslation('common');
 </tbody>
 </table>
 </div>
+
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Reources')}</th>}>
+          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
               <a href="/funcmed"> <img src={essence} alt="img" /> </a>
             </Collapsible>
           </tbody>
         </table>
+        </div>
        </div>
       </div>
       <Footer />

@@ -12,7 +12,6 @@ import pain2 from "../images copy/pain2.png";
 import pain4 from "../images copy/pain4.png";
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
-import Transcript from './herbtranscript';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Ayurvedaa = () => {
@@ -247,9 +246,6 @@ themerlingroupworld.com/ayurveda for more.
         <iframe width="100%" height={550} src="https://www.youtube.com/embed/Y32t5F81XCc?si=IPuvCmEujPuEcH3K"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
       
-              <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
                     {showModal && ReactDOM.createPortal(
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="transcriptt-modal">
                 <Modal.Header closeButton>
@@ -308,7 +304,7 @@ themerlingroupworld.com/ayurveda for more.
       <div className="container-blue">
   <iframe width="100%" height={550} src="https://www.youtube.com/embed/BT3Sdg2B5Fc?si=O63KyChKYrVWpkyw"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 </div>
-<Transcript />
+
          <Button onClick={learnmore} target='_blank' className="custom-btn">
                   {t('Providers: Signup Here')}
                 </Button>       

@@ -198,10 +198,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
             />
             </div>
              <Button className="custom-btn" href="https://amazinglifedesign.com/" >{t("Experience Trauma Relief")}</Button>  {/* Added Bootstrap Button */}
-                <br></br>
-                  <Button className="custom-btn" target='_blank' onClick={() => setShowModal(true)}>
-                    {t("Transcript")}
-                  </Button>
+               
                             {showModal && ReactDOM.createPortal(
                   
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">

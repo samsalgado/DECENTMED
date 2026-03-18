@@ -382,9 +382,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         </div>
         
       </div>
-       <Button className="custom-btn" target="_blank" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
+      
             <Button className="custom-btn" href="https://www.thrivingbynature.com/" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
       <br></br>
 
