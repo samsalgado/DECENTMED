@@ -29,8 +29,8 @@ const ChooseProviderTier = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "40px" }}>
-                                            <div className="container-blue">
-
+      <div className="container-blue">
+      <h1 className="logotitle">{t("Providers Must Sign Up Before Registration")}</h1>
       <h1 className="logotitle">{t("Select Tier")}</h1>
       <p>{t("Please choose your subscription tier to continue.")}</p>
 
