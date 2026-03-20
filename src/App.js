@@ -77,6 +77,7 @@ import { Nutritionpract } from './pages/nutritionpract';
 import { Coaching } from './pages/coach';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
 import { Acupract } from './pages/acupract';
+import {ProviderLandingPage} from "./pages/ProviderLandingPage";
 import { Breathworkk } from './pages/Breathwork';
 import { Natpract } from './pages/naturopathics';
 import { Naturopathy } from './pages/Naturopathy';
@@ -123,6 +124,7 @@ function App() {
         <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
         <Route path="/narcissism" element={<Lynn t={t} />} />
+        <Route path="/providers" element={<ProviderLandingPage t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
          <Route path="/conversionoptimizationconsulting" element={<Blog24 t={t} />} />
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />

@@ -259,11 +259,14 @@ const indiaTerms = [
                     <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
                     <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
                   </div>
-                  
+                   <div className='jim-container'>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bz7bhIAwu5o?si=wMaEInebhe4T302h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                   <p className="card-text small">
                     {t("kristina_bio")}
                   </p>
                 </div>
+                
                 <div className="col-md-3 text-end">
                   {/* Calendly Embed */}
                           <div className="col-md-12 mt-4">
@@ -363,8 +366,7 @@ const indiaTerms = [
                     <span className="badge bg-light text-dark me-1">{t("ADHD")}</span>
                     <span className="badge bg-light text-dark me-1">{t("Execute and Thrive")}</span>
                   </div>
-                  <div className='jim-container'>
-                    </div>
+                
                   <p className="card-text small">
                     {t("amber_bio")}
                   </p>

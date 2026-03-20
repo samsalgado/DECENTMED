@@ -2,7 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import '../App.css';
+import relax from "../images copy/1763150536.jpg";
 import Footer from '../footer';
+import sportshypno from "../images copy/sportshypnosis.png";
 import fert from "../images copy/fertility.png";
 import detoxxx from "../images copy/detoxxx.png";
 import B17 from "../images copy/B17.png";
@@ -13,27 +15,21 @@ import cup from "../images copy/cup.jpg";
 import conversion from "../images copy/conversion.png";
 import drk from "../images copy/drk.png";
 import conversions from "../images copy/conversion.png";
-import moon from "../images copy/moon.png";
 import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
-import mike from "../images copy/lanenaturopathy.png";
 //import img from "../images copy/img.png";
 import acu from "../images copy/2412335.jpg";
 import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
-import golf from "../images copy/golf.jpg";
-import tammy from "../images copy/tammy.png";
 import acuu from "../images copy/acuu.png";
 //import imgg from "../images copy/imgg.png";
 import cell from "../images copy/cell.png";
 import chirotreat from '../images copy/chirotreats.png';
 import constipation from '../images copy/constipation.png';
 import consult from "../images copy/consult.png";
-import depression from '../images copy/depression.jpg';
 import Fenbendazole from '../images copy/Fenbendazole.png';
 import hepB from "../images copy/hepB.png";
 import hypnotherapy from "../images copy/hypno.png";
-import Fagen from "../images copy/IMG_6505.jpeg";
 import Ivermectin from '../images copy/IVERMECTINCANCER.jpeg';
 import montreal from "../images copy/montreal.png";
 import nutritionbenefits from "../images copy/nutritionbenefits.png";
@@ -196,18 +192,26 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          
-          
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('How Chiropractic Care Can Accelerate Recovery from Common Sports Injuries')}</h2>
+           <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Sports Hypnosis')}</h2>
           <div className='pr'>
-            <p>
-              {t("Recover Faster from Sports Injuries with Expert Chiropractic Care in Miami Beach When you're active, injuries can feel like an unexpected detour.")}
-            </p>
             <div className='container'>
-              <a href='https://www.drnarson.com/blog/1325688-how-chiropractic-care-can-accelerate-recovery-from-common-sports-injuries target="_blank" rel="noopener noreferrer"'>
+              <a href='http://hypnosissilverspring.com/2017/05/02/sports-hypnosis/'>
                 <figure>
-                  <img className='gridimag' src={golf} alt="logo" />
+                  <img className='gridimag' src={sportshypno} alt="logo" />
+                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Relax To Go Faster')}</h2>
+          <div className='pr'>
+            <div className='container'>
+              <a href='https://www.hypnosissilverspring.com/2017/05/02/relax-to-go-faster/'>
+                <figure>
+                  <img className='gridimag' src={relax} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
                 </figure>
               </a>
@@ -314,23 +318,7 @@ const BlogPage = () => {
           </div>
 
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t(`New Study Explores How Food Choices Shape Mental Health and Affect Depression`)}</h2>
-          <div className='pr'>
-            <p>
-              {t(`A new study from the University of Reading found that a poor-quality diet may be associated with changes in the brain structure that are linked to depression and anxiety.`)}
-            </p>
-            <div className='container'>
-              <a href='https://needtoknow.news/2024/08/new-study-explores-how-food-choices-shape-mental-health-and-affect-depression/' target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img className='gridimag' src={depression} alt="logo" />
-                  {/* <figcaption>{t('Click on image for blog by Epoch Times on correlation between Food and Mental Health')}</figcaption> */}
-                </figure>
-              </a>
-            </div>
-          </div>
-
-        </div>
+       
 
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Batana Oil: Batana Oil Benefits')}</h2>
@@ -430,38 +418,8 @@ const BlogPage = () => {
           </div>
         </div>
 
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('The Root Cause Approach: A Path to True Healing')}</h2>
-          <div className='pr'>
-            <p>
-              {t(`In the world of healthcare, a quiet revolution is underway. Patients and practitioners alike are realizing that the traditional 'band-aid' approach—managing symptoms without addressing underlying causes—often falls short. This growing awareness has sparked interest in functional medicine, a patient-centered approach that focuses on uncovering and resolving the root causes of illness. So, what makes functional medicine so transformative? Let’s explore why this approach is reshaping the future of healthcare.`)}
-            </p>
-            <div className='container'>
-              <a href='https://www.linkedin.com/pulse/root-cause-approach-path-true-healing-randee-fagen-dev2e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via' target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img className='gridimag' src={Fagen} alt="logo" />
-                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('How Feeling Your Emotions Can Improve Your Well-Being By: Tammy Machmali')}</h2>
-          <div className='pr'>
-            <p>
-              {t(`Have you ever wondered why some people seem so disconnected from their emotions?`)}
-            </p>
-            <div className='container'>
-              <a href='https://www.tammymachmali.com/blog-tammy-machmali-holistic-healing-empowering-energy-work/forgiveness-for-healing-7ra44-yzmfe-sfhar-p2gxd-3yrd4' target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img className='gridimag' src={tammy} alt="logo" />
-                  {/* <figcaption>{t('Experience Transformation')}</figcaption> */}
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
+       
+       
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Rose Oil Benefits')}</h2>
           <div className='pr'>
@@ -489,40 +447,6 @@ const BlogPage = () => {
                 <figure>
                   <img className='gridimag' src={green} alt="logo" />
                   {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
-       
-       
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Jyotish New Moon ~ June 25, 2025')}</h2>
-          <div className='pr'>
-            <p>
-              {t(`A powerful Jyotish New Moon in Ardra awakens karmic healing, soul intention, and divine transformation. June 25, 2025.`)}
-            </p>
-            <div className='container'>
-              <a href='https://michelleberrybliss.com/2025/06/23/jyotish-new-moon-june-2025-ardra-sadhana-sankalpa/' target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img className='gridimag' src={moon} alt="logo" />
-                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Ways to Improve Your Sleep Quality')}</h2>
-          <div className='pr'>
-            <p>
-              {t(`Here are some natural ways to improve your sleep quality and overall health.`)}
-            </p>
-            <div className='container'>
-              <a href='/naturopathylane'>
-                <figure>
-                  <img className='gridimag' src={mike} alt="logo" />
-                  {/* <figcaption>{t('Click on image for full Blog by Michael Lane')}</figcaption> */}
                 </figure>
               </a>
             </div>

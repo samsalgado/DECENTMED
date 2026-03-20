@@ -27,7 +27,9 @@ const { t } = useTranslation('common');
             </header>
             <HYPNO />
             <br></br>
-            <h1 className='center'>{t("Hypnotherapy Services")}</h1>
+            <div className="container-bbblue" data-aos="slide-right">
+            <h1 className='center'>{t("Hypnotherapy Content")}</h1>
+            </div>
             <Hypnovids />
                                    <Button onClick={learnmore} target="_blank"className="custom-btn">
                                   {t('Providers: Signup Here')}

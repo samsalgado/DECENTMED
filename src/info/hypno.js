@@ -52,6 +52,10 @@ const {t} = useTranslation('common');
           <p className='pr'>-{t("My hypnotherapy methodology creates fast, noticeable change beginning in the very first session.")}</p>
           <p className="pr">-{t("By working directly with the subconscious mind, I help clients eplace trauma, fear, doubt, grief, guilt, shame, stress, and anxiety with strength, certainty, emotional freedom, and the ability to move forward with confidence and happiness.")}</p>
           <p className="pr">-{t("Therapy is healing, restorative, empowering and life-changing")}</p>
+          <h2 style={{textAlign:"center"}}>{t("Sports Hypnotherapy")}</h2>
+          <p className="pr">{t("Sports Performance Coaching with Donald Pelles, Ph.D., is designed for athletes who want to perform at their highest level, consistently and under pressure. This work focuses on the mental side of performance, where outcomes are often decided.")}</p>
+          <p className="pr">{t("Using targeted hypnotherapy and his Empowered Self Framework, Donald helps athletes deliberately access “the zone”, that state of simultaneous focus and relaxation where movement becomes fluid, timing sharpens, and execution feels natural. Through mental rehearsal, state control, and precise internal alignment, athletes strengthen mental toughness, refine technique, and perform with greater ease and consistency.")}</p>
+          <p className="pr">{t("Limiting patterns such as hesitation, overthinking, or performance anxiety are resolved at their unconscious source, allowing training to translate more fully into competition. The result is a stronger, more reliable mental game, greater confidence, and the ability to perform with clarity, intensity, and control when it matters most.")}</p>
           <Button className="custom-btn" href="https://decentmed.org/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </div>
         <iframe
@@ -70,9 +74,6 @@ const {t} = useTranslation('common');
       </div>
             <Button className="custom-btn" href="https://www.decentmed.org/hypnopract" target="_blank">{t('Find Out How Hypnotherapy Can Help You')}</Button>
       <br></br>
-              <Button className="custom-btn" target="_blank" onClick={() => setShowModal(true)}>
-            {t("Transcript")}
-          </Button>
             {showModal && ReactDOM.createPortal(    
           <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="transcriptt-modal">
         <Modal.Header closeButton>
@@ -161,6 +162,12 @@ const {t} = useTranslation('common');
   </div>
 </Collapsible>
         <br></br>
+        <div className="row justify-content-center">
+        <h2 style={{textAlign:"center"}}>{t("Executive Performance Coaching")}</h2>
+        <p className="per">{t("Executive Performance Coaching with Donald Pelles, Ph.D., is designed for leaders, entrepreneurs, and high-level professionals who expect to perform at their best when it matters most. This work goes beyond strategy and skill-building, focusing instead on the internal conditions that drive consistent, high-level execution.")}</p>
+        <p className="per">{t("Through his Empowered Self Framework, Donald helps clients access a state of calm focus, clarity, and precision, the kind of state where decision-making sharpens, communication lands cleanly, and performance becomes reliable under pressure. Internal interference such as hesitation, overthinking, or loss of focus is resolved at its source, allowing for a more natural, effective way of operating.")}</p>
+        <p className="per">{t("The result is not just improved performance, but a quieter mind, stronger presence, and the ability to meet high-stakes moments with confidence and control.")}</p>
+        </div>
         <Benefits />
         <br></br> 
         <Collapsible trigger={<th className="collapsible-trigger">{t("Hypnotherapy Case Study")}</th>}>
