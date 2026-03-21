@@ -24,10 +24,12 @@ const Providers = () => {
 <h1 className='logotitle' style={{ display: 'flex', marginTop: '120px', textAlign: 'center' }}>
         {t('Turn Your Expertise Into a Steady Flow of Paying Clients')}
       </h1>
+        <div data-aos="slide-right" className="container-blue">
             <img className='gridimag' src={OurPlan} alt='spectra spray' />
         <Button onClick={learnmore} className="custom-btn">
-          {t('Book Consultation')}
+          {t('Book Meeting')}
         </Button> 
+        </div>
       </div>
         
       <style jsx>{`
@@ -47,16 +49,22 @@ const Providers = () => {
       `}</style>
       <div className='container-blue' data-aos="slide-right">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/uOb-h9NLqKc?si=SrrlhrlhY2udLoGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <Button onClick={learnmore} className="custom-btn">
+          {t('Book Consultation')}
+        </Button> 
              </div>
       <div data-aos="slide-right" className="container-blue">
  <div className="row justify-content-center">
         <h1 style={{textAlign:"center"}}>{t("How We Transform Your Business")}</h1>
         <h5 className="per">{t("At DecentMed, we post provider educational content, studies and testimonials on a decentralized network in order to combat censorship, validate the effectiveness of your work and increase patient acquisition. Providers on our platform can access additional revenue streams through annual payouts from our Apothecary, Affiliate Programs, and Content Library.")}</h5>
+        <Button onClick={learnmore} target='_blank' className="custom-btn">
+          {t('Book Meeting')}
+        </Button> 
         </div>
         <ImageGrid />
         <br />
          <Button onClick={learnmore} className="custom-btn">
-          {t('Book Consultation')}
+          {t('Book Meeting')}
         </Button> 
 <div className='container mobile-optimized'>
        <div data-aos="slide-right" className="container-blue">

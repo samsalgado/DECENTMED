@@ -33,7 +33,7 @@ const Reviews = () => {
             <img className="gridimag" src={graphic6} alt="New Review" />
             <img alt='' />
              <Button onClick={learnmore} className="custom-btn">
-          {t('Book Consultation')}
+          {t('Book Meeting')}
         </Button> 
     </Collapsible>
   </tbody>
