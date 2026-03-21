@@ -15,9 +15,9 @@ export function ProviderLandingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-   const handleEmailClick = () => {
-    window.location.href = "mailto:themerlingroupworld@gmail.com";
-  };
+  const handleEmailClick = () => {
+  window.open("mailto:themerlingroupworld@gmail.com");
+};
   return (
     <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
@@ -29,8 +29,6 @@ export function ProviderLandingPage() {
           content={t("Discover how Mesenchymal Stem Cell therapy supports tissue repair, reduces inflammation, and promotes natural healing for a wide range of conditions.")}        
         />      
       </Helmet>
-
-      {/* Navbar background image */}
       <div 
         style={{ 
           backgroundImage: `url(${plants})`, 
