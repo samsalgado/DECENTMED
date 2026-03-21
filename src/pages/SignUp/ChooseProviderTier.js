@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import tier0 from "../../images copy/ad.png";
-import tier2 from "../../images copy/tier11.png";
+import tier2 from '../../images copy/Screenshot 2026-03-21 at 10.58.45 AM.png';
 import tier3 from "../../images copy/bigtierr.png";
 import { useTranslation } from 'react-i18next';
 const ChooseProviderTier = () => {

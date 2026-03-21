@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
-import tier2 from '../images copy/tier.png';
+import tier2 from '../images copy/Screenshot 2026-03-21 at 10.58.45 AM.png';
 import tier3 from "../images copy/bigtierr.png";
 import '../info/Info.css';
 import tier0 from "../images copy/advertisingtier (1).png";

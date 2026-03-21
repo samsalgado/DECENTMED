@@ -19,6 +19,21 @@ html, body, #root {
     repeat-y,
     repeat-y;
 }
+.gridiag {
+  width: 100%; /* Make the image take up the full width of the column */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the space properly */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Add space between columns */
+  flex-wrap: wrap; /* Ensure responsive wrapping */
+}
+
+.col-12.col-md-3 {
+  padding: 0 15px; /* Add horizontal padding for spacing between columns */
+}
 .gridmag {
   width: 155px !important;   /* force tiny size */
   height: 155px !important;  /* force tiny size */

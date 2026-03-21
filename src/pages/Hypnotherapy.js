@@ -31,8 +31,8 @@ const { t } = useTranslation('common');
             <h1 className='center'>{t("Hypnotherapy Content")}</h1>
             </div>
             <Hypnovids />
-                                   <Button onClick={learnmore} target="_blank"className="custom-btn">
-                                  {t('Providers: Signup Here')}
+                 <Button onClick={learnmore} target="_blank"className="custom-btn">
+                {t('Providers: Signup Here')}
                 </Button> 
             <footer>
                 <Footer />

@@ -25,7 +25,7 @@ const Naturo = () => {
   return (
     <div>
       <div className='container mobile-optimized'>
-                   <div className="container-blue">
+      <div className="container-blue">
 
        <h1 className='logotitle' data-aos="slide-left">
           {t('Naturopathy')}</h1>

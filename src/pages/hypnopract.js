@@ -3,17 +3,18 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import Green from '../cards/Green-hypnotherapy.png';
 import shea from "../cards/shea.png";
+import don from "../cards/don.jpg";
+import Green from '../cards/Green-hypnotherapy.png';
 import { useTranslation } from 'react-i18next';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export function Hypnopract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [selectedCity, setSelectedCity] = useState(null);
-
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -26,34 +27,35 @@ export function Hypnopract() {
       setUserLocation('Enter your location');
     }
   }, []);
-
+useEffect(() => {
+      AOS.init({ duration: 1000, once: false}); // once:true means animation runs only once
+    }, []);
   // ✅ SEARCH LOGIC
-  const handleSearch = () => {
-    const trimmed = location.trim().toLowerCase();
-    if (!trimmed) return;
+const handleSearch = () => {
+  const trimmed = location.trim().toLowerCase();
+  if (!trimmed) return;
 
-    let city = null;
+  let city = null;
 
-    if (trimmed.includes('sarasota')) {
-      city = 'sarasota';
-    } else if (trimmed.includes('tampa')) {
-      city = 'tampa';
-    } 
-    // Florida catch-all
-    else if (
-      trimmed.includes('florida') ||
-      trimmed.includes('fl') ||
-      trimmed.includes('miami') ||
-      trimmed.includes('orlando') ||
-      trimmed.includes('jacksonville')
-    ) {
-      city = 'tampa'; // default priority for Florida
-    }
+  if (trimmed.includes('sarasota')) {
+    city = 'sarasota';
+  } else if (trimmed.includes('tampa')) {
+    city = 'tampa';
+  } 
+  // Florida catch-all
+  else if (
+    trimmed.includes('florida') ||
+    trimmed.includes('fl') ||
+    trimmed.includes('miami') ||
+    trimmed.includes('orlando') ||
+    trimmed.includes('jacksonville')
+  ) {
+    city = 'tampa'; // default priority for Florida
+  }
 
-    setSelectedCity(city);
-    setShowResults(true);
-  };
-
+  setSelectedCity(city);
+  setShowResults(true);
+};
   const formattedLocation =
     location.charAt(0).toUpperCase() + location.slice(1).toLowerCase();
 
@@ -76,6 +78,24 @@ export function Hypnopract() {
       iframe: "https://drive.google.com/file/d/14o0p_J7PigM-3OlyKMyHi8Xwbnrgda3z/preview"
     },
     {
+      id:"United States",
+      name:t("Hypnosis Silver Spring"),
+      city:t("Silver Springs, Maryland"),
+      locationLabel:t("United States"),
+      image:don,
+      link:"https://calendly.com/donald-pelles/hypnotherapy-consultation?month=2026-03",
+      buttonText: t("Book Consulation"),
+      bio:t("Donald Pelles, Ph.D., is a hypnotherapist based in Silver Spring, MD, working with clients over the internet. He helps individuals resolve difficult challenges and transform how they experience their lives, using his Empowered Self Framework. Through targeted hypnotherapy and NLP, Donald works with clients to move beyond anxiety, fears, unwanted habits, and performance blocks, while also enhancing focus, confidence, and effectiveness in the moments that matter most. His work supports lasting, authentic change and a greater sense of clarity, ease, and high-level performance. Hypnotherapy is Donald’s third successful career; he was previously a mathematics professor and later a software developer. He is happily married to Rosalyn Pelles, and they have three sons and three grandchildren."),
+      badges:[
+        t("Rewire Unconscious patterns"),
+        t("Executive High Performance Coaching"),
+        t("Advanced NLP"),
+        t("Sports Hypnosis"),
+        t("Self-Hypnosis")
+      ],
+      iframe:"https://www.youtube.com/embed/irOvpukq6HY?si=afUmQ9EfzU_V6GGV"
+    },
+     {
       id: 'sarasota',
       name: t("Shea Shulman Therapy"),
       city: 'sarasota',
@@ -139,7 +159,6 @@ export function Hypnopract() {
               onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
               style={{ height: '50px', fontSize: '16px', borderRadius: '6px' }}
             />
-
             <button
               className="custom-btn"
               onClick={handleSearch}
@@ -150,8 +169,8 @@ export function Hypnopract() {
           </div>
         </div>
 
-        {/* RESULTS */}
         {showResults && (
+          <div  data-aos="slide-left" className="container-blue">
           <div className="results-section py-5">
 
             <h2>
@@ -184,8 +203,9 @@ export function Hypnopract() {
                           {badge}
                         </span>
                       ))}
+                      
                     </div>
-
+                      
                     <p className="small">{provider.bio}</p>
                   </div>
 
@@ -219,8 +239,9 @@ export function Hypnopract() {
 
                 </div>
               </div>
+              
             ))}
-
+          </div>
           </div>
         )}
 
