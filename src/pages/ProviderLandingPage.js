@@ -17,7 +17,7 @@ useEffect(() => {
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t('Provider Landing')}</title>  
+        <title>{t('Provider Sign Up')}</title>  
         <meta property="og:title" content={t("Provider Landing Page")} />                
         <meta name="description" content={t("Provider Landing Page")} />        
         <meta
