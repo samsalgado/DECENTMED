@@ -50,7 +50,7 @@ const Providers = () => {
       <div className='container-blue' data-aos="slide-right">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/uOb-h9NLqKc?si=SrrlhrlhY2udLoGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              <Button onClick={learnmore} className="custom-btn">
-          {t('Book Consultation')}
+          {t('Book Meeting')}
         </Button> 
              </div>
       <div data-aos="slide-right" className="container-blue">
