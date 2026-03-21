@@ -2,40 +2,74 @@ import '../App.css';
 import Providers from '../info/providrs';
 import Footer from '../footer';
 import { useEffect } from 'react';
-import Navbar from "react-bootstrap/Navbar";
 import "../App.css";
 import LOGO from "../images copy/dmed.png";
-import { Helmet } from 'react-helmet'; // Import Helmet
+import plants from "../images copy/plants.png";
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
+import { FaEnvelope } from "react-icons/fa"; // mail icon
+
 export function ProviderLandingPage() {
-const {t} = useTranslation('common')
-useEffect(() => {
+  const {t} = useTranslation('common');
+
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-     
-
-    return(
-       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
-        <Helmet>  {/* Add Helmet component */}
-        <title>{t('Provider Sign Up')}</title>  
+   const handleEmailClick = () => {
+    window.location.href = "mailto:themerlingroupworld@gmail.com";
+  };
+  return (
+    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+      <Helmet>
+        <title>{t('Provider Sign Up')}</title>
         <meta property="og:title" content={t("Provider Landing Page")} />                
         <meta name="description" content={t("Provider Landing Page")} />        
         <meta
           name="description"
-          content={t("Discover how Mesenchymal Stem Cell therapy supports tissue repair, reduces inflammation, and promotes natural healing for a wide range of conditions.")}        />      
-</Helmet>
-<Navbar.Brand href="https://decentmed.org/" className="d-flex align-items-center">
-          <img src={LOGO} className="Logo" alt="logo" />
-        </Navbar.Brand>
+          content={t("Discover how Mesenchymal Stem Cell therapy supports tissue repair, reduces inflammation, and promotes natural healing for a wide range of conditions.")}        
+        />      
+      </Helmet>
 
-            <Providers />
-                             
-            <br></br>
-            <footer>
-                <Footer />
-            </footer>
-        </div>
-    )
-    }
+      {/* Navbar background image */}
+      <div 
+        style={{ 
+          backgroundImage: `url(${plants})`, 
+          backgroundSize: "cover", 
+          backgroundPosition: "center", 
+          height: "120px", 
+          position: "relative"
+        }}
+      >
+        {/* Logo top-left */}
+       {/* Logo top-left */}
+    <img 
+      src={LOGO} 
+      alt="logo" 
+      className="Logo"
+      style={{ 
+        position: "absolute", 
+        top: "12px", 
+        left: "8px" 
+      }} 
+    />
+     <FaEnvelope 
+          onClick={handleEmailClick}
+          style={{ 
+            position: "absolute", 
+            top: "10px", 
+            right: "10px", 
+            color: "white", 
+            fontSize: "24px", 
+            cursor: "pointer" 
+          }}
+        />
+      </div>
 
+      <Providers />             
 
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  );
+}
