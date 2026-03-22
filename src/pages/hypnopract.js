@@ -93,7 +93,7 @@ const handleSearch = () => {
         t("Sports Hypnosis"),
         t("Self-Hypnosis")
       ],
-      iframe:"https://www.youtube.com/embed/irOvpukq6HY?si=afUmQ9EfzU_V6GGV"
+      iframe:"https://www.youtube.com/embed/AI1uRqbSUgQ?si=B08d14I-3TsipDXa"
     },
      {
       id: 'sarasota',

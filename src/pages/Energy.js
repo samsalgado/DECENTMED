@@ -35,7 +35,7 @@ const learnmore = () => {
          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("Intuitive Energy Healing")}</title>
-                                    <meta property="og:title" content={t('Intuitive Energy Healing')} />                
+                <meta property="og:title" content={t('Intuitive Energy Healing')} />                
                 <meta name="description" content={t("Experience Intuitive Energy Healing")} />
                     <meta name="description" content={t("Seeking Energy Healing near me? Experience intuitive energy healing from around the world.")} />
                 </Helmet>
@@ -106,10 +106,9 @@ const learnmore = () => {
              </a>
 <div data-aos="slide-right" className="container-blue">
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CTmY6wEpTdA?si=1aGXOoQ7jGXH2Ub6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CTmY6wEpTdA?si=1aGXOoQ7jGXH2Ub6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -160,17 +159,47 @@ const learnmore = () => {
               </tr>
         </Collapsible>
         <br></br>
-                        <a href="https://www.totalhealingcentre.com/">
+           <a href="https://www.totalhealingcentre.com/">
                 <img className='gridimag' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
                 <figcaption>{t("Sign up")}</figcaption>
                 </a>
         <br></br>
+        <div className="container-bbblue" style={{
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '20px',
+    maxWidth: '1200px',
+    width: '100%'
+  }}>
+    <div className='content-wrapper' style={{
+      flex: '1',
+      minWidth: '300px'
+    }} data-aos="slide-right">
+       <div className="row justify-content-center">
+        <h2 style={{textAlign:"center"}}>{t("Benefits of Quantum Energy Healing Techniques")}</h2>
+        <p className="per">1. {t("DNA Transformation on a cellular level for enhanced immune system function")}</p>
+        <p className="per">2. {t("Reset your Biofield")}</p>
+        <p className="per">3. {t("Expansion in consciousness")}</p>
+        <p className="per">4. {t("Whole Body Healing")}</p>
+        <p className="per">5. {t("Chemical free living")}</p>
+        <p className="per">6. {t("Intergrate body, mind, spirit as Multidimensional being")}</p>
+        <p className="per">7. {t("Become your best self and biohack your life")}</p>
+        <p className="per">8. {t("New Earth Wayshower")}</p>
+        </div>
+    </div>
+     <div>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/04ojko4ZzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+          <Button className="custom-btn" href="https://calendly.com/mgreenan89/30min" target="_blank">{t("Try Quantum Energy Healing")}</Button>
         <div data-aos="slide-right">
         <EsBenefits />
         </div>
-                          <Button onClick={learnmore} className="custom-btn">
+          <Button onClick={learnmore} className="custom-btn">
                                   {t('Providers: Signup Here')}
-                </Button> 
+          </Button> 
                <footer>
               <Footer />
             </footer>

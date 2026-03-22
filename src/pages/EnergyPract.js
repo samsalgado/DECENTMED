@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect, useState } from 'react';
+import michelle from "../cards/SUNRISEWELLNESS.jpeg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Charlotte from '../cards/charlottethc.jpg'
 import { useTranslation } from 'react-i18next'
 export function EnergyPract() {
@@ -10,7 +13,9 @@ export function EnergyPract() {
   const [userLocation, setUserLocation] = useState('');
   const [filteredPractitioners, setFilteredPractitioners] = useState([]);
   const [showAllPractitioners, setShowAllPractitioners] = useState(true);
-
+ useEffect(() => {
+              AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+            }, []);
   // Define practitioners data
   const practitioners = [
      {
@@ -27,6 +32,32 @@ export function EnergyPract() {
       description: t("With years of experience in health and wellness, our founder is dedicated to helping clients reach their fullest potential. Through one-on-one sessions and group workshops, you will receive the guidance and motivation needed to transform your life."),
       servesGlobally: true,
       countries: ["USA"]
+    },
+    {
+      id:2,
+      name:t("Michele Greenan"),
+      title:t("Sunrise Wellness"),
+      location:t("USA"),
+      availability: t("Available Worldwide"),
+      availabilityType:"telehealth",
+      image:michelle,
+      website:"https://thesunrisewellness.com/",
+      embedCode:`<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:700px">
+  <iframe 
+    title="Schedule with Michael Greenan" 
+    src="https://calendly.com/mgreenan89/30min?embed_domain=yourdomain.com&embed_type=Inline" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    frameborder="0"
+    scrolling="no">
+  </iframe>
+</div>,`,
+      video:"https://www.youtube.com/embed/ujxPrLsVYHQ?si=YyU0vMpJ6Te8jWKG",
+      description:"The moment my life changed forever was the day I was diagnosed with intraductal carcinoma in my breast. What made it even more shocking was that I was in the best shape of my life. I had been lifting weights 5–7 days a week, pushing my body, mind, and spirit to new limits. I felt strong… yet everything shifted in an instant. When I received my diagnosis, I asked about natural and holistic options. I was told that if I chose that path, I could die. Those words echoed deeply within me. At the time, I was a wife and a mother of two beautiful children. I knew I had to make choices not from fear, but from alignment. I began looking inward. I started reprogramming my subconscious mind, listening to transformational speakers on YouTube because I knew my happiness and inner peace were not where I wanted them to be. That search led me to deeper healing. I sought guidance from a Reiki and spiritual master, and that is when everything truly began to shift. I immersed myself in learning, growth, and healing. I read Twin Flames and the Event by Jen McCarty and attended monthly sessions that helped me “fill my spiritual bank account.” Through this journey, I moved through layers of trauma, releasing old patterns and reprogramming my subconscious mind. I learned to trust. I learned to surrender. I learned to have faith in the Divine. Over time, I became Reiki certified, sound healing certified, and stepped into my path as a quantum healer. My healing became more than physical—it became spiritual, emotional, and energetic. I began to feel transformed at a cellular level, as if my very being was shifting into something lighter, clearer… more crystalline. This wasn’t just a healing journey. It was a rebirth.",
+      servesGlobally: true,
+      countries: ["USA"]
+
     }      
   ];
 
@@ -78,7 +109,7 @@ export function EnergyPract() {
 
         <Helmet>
           <title>{t("Energy Healer Near Me")}</title> 
-                                              <meta property="og:title" content={t("Energy Healer Near Me")} />                
+             <meta property="og:title" content={t("Energy Healer Near Me")} />                
                 <meta name="description" content={t("Seeking Energy Healer Near Me? Experience lasting change!")} />
  
           <meta name="description" content={t("Seeking energy healer near me? Look no further than great energy healers that can assist you holistically, and provide you wholeness.")} />
@@ -166,6 +197,7 @@ export function EnergyPract() {
           <div className="row">
             {practitionersToShow.map((practitioner) => (
               <div key={practitioner.id} className="col-md-10" style={{ marginBottom: '40px' }}>
+                <div data-aos="slide-right" className="container-blue">
                 <h2>{practitioner.title}</h2>
                 
                 {/* Location and Availability Info */}
@@ -176,6 +208,8 @@ export function EnergyPract() {
                   marginBottom: '20px',
                   border: '1px solid #dee2e6'
                 }}>
+                        <div data-aos="slide-right" className="container-blue">
+
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                     <span style={{ fontSize: '18px', marginRight: '8px' }}>📍</span>
                     <strong>{t("Based in:")}</strong>
@@ -195,7 +229,7 @@ export function EnergyPract() {
                     </span>
                   </div>
                 </div>
-
+                </div>
                 {/* Display image without link */}
                 <figure>
                   <img src={practitioner.image} style={{
@@ -205,8 +239,8 @@ export function EnergyPract() {
                   }} alt={practitioner.name} />
                 </figure>
 
-                {/* Add contact button - with special handling for Yogi's embed code */}
                <div style={{ marginBottom: '20px' }}>
+                
                   {practitioner.embedCode ? (
                     // Check if embedCode is a mailto link
                     practitioner.embedCode.startsWith('mailto:') ? (
@@ -225,7 +259,7 @@ export function EnergyPract() {
                           display: 'inline-block',
                           marginBottom: '10px'
                         }}
-                      >
+                      >      
                         ✉️ {t("Email")} {practitioner.name}
                       </a>
                     ) : (
@@ -284,6 +318,7 @@ export function EnergyPract() {
 
                 <h3>{practitioner.name}</h3>
                 <p>{practitioner.description}</p>
+                </div>
               </div>
             ))}
           </div>
