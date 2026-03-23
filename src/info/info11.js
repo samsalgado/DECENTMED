@@ -244,7 +244,9 @@ const {t} = useTranslation('common');
 25:56 people and the empowerment that will come from the summit. So I'm excited to be a part of it.`
     return (
       <div className='container mobile-optimized'>
+               <div data-aos="slide-right" className="container-blue">
           <h1 data-aos="slide-right" className="logotitle">{t('Functional Medicine')}</h1>
+          </div>
             <div style={{
         display: 'flex',
         justifyContent: 'center',

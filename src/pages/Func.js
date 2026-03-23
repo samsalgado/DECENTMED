@@ -1,6 +1,9 @@
 import "../info/Info.css";
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import "../App.css";
 import amy from "../images copy/essence.png";
 import prices from "../images copy/PRICESS.png";
 import Footer from '../footer';
@@ -13,13 +16,15 @@ export function Func() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+useEffect(() => {
+       AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+     }, []);  
   return(
   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
           <title>{t("Functional Medicine")}</title> 
-                                                        <meta property="og:title" content={t("Functional Medicine")} />                
+               <meta property="og:title" content={t("Functional Medicine")} />                
                 <meta name="description" content={t("Functional Medicine")} />
  
           <meta name="description" content={t("Working with complex disorders and cancers via functional medicine. Essence of Life Wellness Center assists you holsitically, utilizing frequencies to communicate with the brain.")} />
@@ -34,7 +39,9 @@ export function Func() {
         <div className="container-blue">
 
         <div>
+        <div data-aos="slide-right" className="container-blue">
           <h1>{t("Functional Medicine")}</h1> 
+          </div>
           <div className="row mb-4">
             <div className="col-md-12">
               <div className="card" style={{ border: '1px solid #dee2e6' }}>

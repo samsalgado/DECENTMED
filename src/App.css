@@ -19,6 +19,12 @@ html, body, #root {
     repeat-y,
     repeat-y;
 }
+.container-whitesmoke {
+  background-color: whitesmoke;
+  padding: 20px;        /* adds spacing inside */
+  border-radius: 8px;   /* optional: rounded corners */
+  display: inline-block; /* keeps it tight around content */
+}
 .gridiag {
   width: 100%; /* Make the image take up the full width of the column */
   height: auto; /* Maintain aspect ratio */
