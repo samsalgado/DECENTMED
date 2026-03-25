@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const Initial = () => {
 const {t} = useTranslation('common')
   return (
-    <div className='container'>
+    <div className='container-blue' >
       <h1 className='title'>{t('Our Reviews')}</h1>
       <blockquote className="quote">
         {t("'I really was drawn to your vision of how you can help people with this type of platform'")}

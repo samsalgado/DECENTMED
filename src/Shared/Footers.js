@@ -191,6 +191,7 @@ const Footers = () => {
             <img src={Inspire} className="geyserImgLarge" alt="Support DecentMed on Geyser Fund" />
             <Button className="custom-btn">Support our Charity of Choice</Button>
           </a>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/LFTzCOn59_s?si=_FcEzoSIY3wmTOyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
       <div className="footer-bottom">
