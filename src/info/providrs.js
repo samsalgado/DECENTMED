@@ -17,7 +17,6 @@ const Providers = () => {
   useEffect(() => {
         AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
       }, []);
-      
   return (
     <>
   <div data-aos="slide-right" className="container-blue">

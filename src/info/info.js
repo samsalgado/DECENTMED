@@ -8,6 +8,7 @@ import HealthFacts from './Health';
 //import { Button } from 'react-bootstrap';
 import BlueContainer from './deptcontainer';
 import WellnessInro from './wellness';
+import allan from "../images copy/allan.png";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Values from './ourvalues';
@@ -29,6 +30,14 @@ const Info = () => {
       <BlueContainer />
       </div>
       <WellnessInro />
+                <div className="container-blue">
+          <a href="https://linktr.ee/AllanLRoberts" target="_blank" rel="noopener noreferrer">
+              <figure>
+            <img className='gridimag' src={allan} alt='Apothecary' />
+              <figcaption>{t("Buy")}</figcaption>
+        </figure>
+          </a>
+          </div>
           <div className="container-blue" data-aos="slide-right">
           <img className='gridmag' src={features} alt='Features' />
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>

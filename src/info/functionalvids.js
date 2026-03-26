@@ -63,9 +63,24 @@ const FuncVids = () => {
         },  
         {
             id:9,
-            videoUrl:"https://www.youtube.com/embed/q1LDlydc8eo?si=QTqLG6ROvY1ovsQk",
-            name:`${t("Blood Sugar Quiz")}`
-        }
+            videoUrl:"https://www.youtube.com/embed/Xe-hAInphCk",
+            name:`${t("What Happens If You Wait Until Your A1C Is 7.0 to Act")}`
+        },
+        {
+            id:10,
+            videoUrl:"https://www.youtube.com/embed/m74Bf4uGpH4?si=-h1Cg3tTh_tdUmHa",
+            name:`${t("Raw Diet-an Introduction: Fuelling your body with optimal vitamins, minerals, antioxidants and fiber")}`
+        },
+        {
+            id:11,
+            videoUrl:"https://www.youtube.com/embed/Ocq-WcrSNBU",
+            name:`${t("This is Why Your Heart Doesn't Care That You'Feel Fine'")}`
+        },
+         {
+            id:12,
+            videoUrl:"https://www.youtube.com/embed/iM1dMJ0coU4",
+            name:`${t("Why You Can't Stop Thinking About Food HOW TO STOP THE HIGH BLOOD SUGAR = FOOD OBSESSION")}`
+        },
     ]);
     return (
         <div className="contents">

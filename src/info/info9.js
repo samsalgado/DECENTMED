@@ -734,6 +734,76 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/vbyhNcw1iTs?si=Q-t9pWA8MmKMPZZF"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/KGhDjo1AKS4" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/ZIkENzHmvus" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+            <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/XOgnwowxIO0" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/YEToF6s3dEw" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
           <Button className="custom-btn" href="https://calendly.com/thrivingbynaturecoaching/30min?" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
         <br></br>
         <Benefitts />
