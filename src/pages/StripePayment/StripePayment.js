@@ -6,7 +6,7 @@ import CheckOutFrom from './CheckOutFrom';
 const stripePromise = loadStripe(process.env.REACT_APP_PAYMENT_GATEWAY_PK);
 const StripePayment = () => {
   return (
-    <div style={{ margin: '30px' }}>
+    <div style={{ margin: '50px' }}>
       <Elements stripe={stripePromise}>
         <CheckOutFrom></CheckOutFrom>
       </Elements>

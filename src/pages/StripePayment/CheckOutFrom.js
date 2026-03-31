@@ -252,6 +252,9 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './CheckOutForm.css';
+import "../../App.css";
+import '../../info/Info.css';
+
 
 const CheckOutForm = () => {
   const { t } = useTranslation();
@@ -380,6 +383,7 @@ const CheckOutForm = () => {
 
   return (
     <div className='containers'>
+      <div className="container-blue">
       <h2 className="closes-icon" onClick={handleClickClosed}>X</h2>
       <h4>{t('Join the Coalition')}</h4>
 
@@ -451,6 +455,7 @@ const CheckOutForm = () => {
 
         {message && <h4>{message}</h4>}
       </form>
+      </div>
     </div>
   );
 };
