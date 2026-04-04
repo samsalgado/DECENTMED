@@ -182,7 +182,7 @@ const Footers = () => {
 
           {/* ===== Geyser Fund under social ===== */}
           <a
-            href="https://geyser.fund/project/decentmedpubliccancercure/"
+            href="https://inspireworldfoundation.org/"
             target="_blank"
             rel="noopener noreferrer"
             className="geyser-link"

@@ -159,9 +159,9 @@ const learnmore = () => {
               </tr>
         </Collapsible>
         <br></br>
-           <a href="https://www.totalhealingcentre.com/">
+           <a href="tel:+13163935162">
                 <img className='gridimag' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
-                <figcaption>{t("Sign up")}</figcaption>
+                <figcaption>{t("Contact")}</figcaption>
                 </a>
         <br></br>
         <div className="container-bbblue" style={{

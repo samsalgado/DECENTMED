@@ -74,10 +74,10 @@ useEffect(() => {
       <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>
         <div data-aos="slide-right" className="pr"> <a href="https://www.cdmhealthandwellness.com/" alt="CDM Health and Wellness"> <img className="gridimag" src={cdm} alt="CDM Health and Wellness" /> </a> </div>
         <div data-aos="slide-right" className="pr"> <a href="https://calendly.com/ambernacolle/15-30min?month=2026-03" alt="Amber Nacolle Caroll"> <img className="gridimag" src={amber} alt="CDM Health and Wellness" /> </a> </div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7bu3HRvtWwE?si=ACqAdP6xGl5-FqMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <div data-aos="slide-right">
   <Coachingvids />
   </div>
-                 <Button className="custom-btn" href="http://gorillaandshecoaching.com/" target="_blank">{t("Transform your Health")}</Button>  {/* Added Bootstrap Button */}
   <br></br>
    
                 {showModal && ReactDOM.createPortal(

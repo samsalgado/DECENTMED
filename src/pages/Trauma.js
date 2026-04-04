@@ -25,10 +25,10 @@ const learnmore = () => {
             <Topbar />
         </header>
         <Traumapg />
-                                                       <div className="container-blue">
-
-                          <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Signup Here')}
+        
+            <div className="container-blue">
+                <Button onClick={learnmore} className="custom-btn">
+                {t('Providers: Signup Here')}
                 </Button> 
                 </div>
         <footer>

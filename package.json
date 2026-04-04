@@ -59,6 +59,7 @@
     "react-pdf": "^9.2.1",
     "react-phone-input-2": "^2.15.1",
     "react-player": "^2.16.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.29.0",
     "react-scripts": "^5.0.1",
     "react-snap": "^1.23.0",

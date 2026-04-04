@@ -73,6 +73,7 @@ import { Chiro } from './pages/ChiroPRACT';
 import { Breathwork } from './pages/breathworkers';
 import { Hypnopract } from './pages/hypnopract';
 import { AYPract } from './pages/AYPRACT';
+import { WomensTrauma } from './pages/Grief';
 import { Nutritionpract } from './pages/nutritionpract';
 import { Coaching } from './pages/coach';
 import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
@@ -119,6 +120,7 @@ function App() {
         <Route path="/soundhealers" element={<HealPract />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/naturopathylane" element={<Mike t={t} />} />
+        <Route path="/womenstrauma" element={<WomensTrauma t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />

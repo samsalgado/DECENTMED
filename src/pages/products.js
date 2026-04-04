@@ -4,8 +4,11 @@ import Topbar from './topbar';
 import { useState } from 'react';
 import Footer from '../footer';
 import AOS from 'aos';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import lifewavee from "../images copy/Screenshot 2026-04-03 at 8.58.06 PM.png";
 import { Button, Modal } from 'react-bootstrap';
 import obasi from "../images copy/obasi.png";
 import spectraspray from "../images copy/spectraspray.png";
@@ -19,7 +22,6 @@ export function Shop() {
 const { t } = useTranslation('common');
 const [showModal, setShowModal] = useState(false);
 const txt = `
-
 Welcome to our next episode of Decent Med Spotlight. Today we're here with the tag team of Michelle Hollesberger and Vicky Todd. They are the authors of Solve Your Out of Control Eating, a groundbreaking book about emotional eating. When it comes to nutritionists, one of the biggest problems that they face is getting their clients to maintain and stick to their diets. Well, Vicki and Michelle have a whole new perspective on why that is, and it all stems from mental health. Ladies, introduce yourself.
 
 >> I'm Victoria Todd. I'm a child and adult psychoanalyst and an eating disorder specialist. And my work in the field started many years ago. I was fresh out of graduate school and I was assigned a girl struggling with bulimia. And there was no information. I didn't know what bulimia was. There was no information available. So I had to scramble and I finally found some things causitive factors course of treatment at the medical library. And uh fast forward 35 years now I've
@@ -117,9 +119,8 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         <div>
         <Helmet>  {/* Add Helmet component */}
         <title>{t("Products")}</title>  
-                                                          <meta property="og:title" content={t("Products")} />                
+         <meta property="og:title" content={t("Products")} />                
         <meta name="description" content={t("Products")} />        
-
         <meta name="description" content={t("Seeking Holistic products that help you meet your health needs. We only work with the best products in the world!")} />
       </Helmet>
             <header>
@@ -134,7 +135,84 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
   </div>
   <div>
-           <div data-aos="slide-right" className="container-blue">
+  <div data-aos="slide-right" className="container-blue">
+    <Carousel autoPlay infiniteLoop>
+      <div>
+        <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
+        <img 
+          src={SYOOCE} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        </a>
+        </div>
+        <div>
+        <img 
+          src={obasi} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        </div>
+        <div>
+          <img 
+          src={purium} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        </div>
+         <div>
+          <img 
+          src={lifewavee} 
+          alt="logo" 
+          className='gridimage'
+        />
+        </div>
+         <div>
+          <img 
+          src={forever} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        </div>
+         <div>
+          <img 
+          src={linda} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        </div>
+         <div>
+          <img 
+          src={spectraspray} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        </div>
+    </Carousel>
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
   <iframe
     width="560"
@@ -162,8 +240,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
                 </Modal.Footer>
               </Modal>
     <div>
-                 <div data-aos="slide-right" className="container-blue">
-
+       <div data-aos="slide-right" className="container-blue">
       <h2>{t("Solve your Out of Control Eating")}</h2>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
     <figure>
@@ -182,7 +259,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </div>
       <div>
      
-</div>
+      </div>
            <div data-aos="slide-right" className="container-blue">
 
 <h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
@@ -208,7 +285,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
 
   <div>
     <div>
-                 <div data-aos="slide-right" className="container-blue">
+      <div data-aos="slide-right" className="container-blue">
       <h2>{t("Kelechi Obasi Product Bundle")}</h2>
       </div>
         <div data-aos="slide-right" className="container-blue">
@@ -236,7 +313,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
   </div>
     <div>
     <div>
-                       <div data-aos="slide-right" className="container-blue">
+      <div data-aos="slide-right" className="container-blue">
 
       <h2>{t("Purium Product Bundle")}</h2>
       <a href='https://ishoppurium.com/homepage?giftcard=JessicaJavens'>
@@ -305,7 +382,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
   </div>
 <div>
     <div>
-                       <div data-aos="slide-right" className="container-blue">
+      <div data-aos="slide-right" className="container-blue">
       <h2>{t("Happy DNA Candy")}</h2>
       </div>
       <div data-aos="slide-right" className="container-blue">
