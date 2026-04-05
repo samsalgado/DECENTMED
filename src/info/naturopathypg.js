@@ -103,6 +103,7 @@ const Naturo = () => {
               }}    
             />
             </div>
+            
             <div data-aos="slide-right">
               <iframe
               width="100%"
@@ -123,6 +124,51 @@ const Naturo = () => {
               width="100%"
               height="515"
               src="https://www.youtube.com/embed/bI_c90p2zMQ?si=UsEfhVCzyJ18TTvU"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+            <div data-aos="slide-right">
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/m1vr-y8T2FY?si=jqrT3QsTqky6P5xU"              
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+             <div data-aos="slide-right">
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/PL-3LiSADbA?si=iDLbfRsDkSL_byVZ"              
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+            <div data-aos="slide-right">
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/6yO5kNpzvY0?si=OHMvz04v5zmOEcZo"              
               title="Patient Acquisition Engine Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

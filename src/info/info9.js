@@ -804,6 +804,20 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
+             <div className='gridimage'>
+              <iframe
+              height="515"
+                  src="https://www.youtube.com/embed/NGUvyX9SHco"
+    title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
           <Button className="custom-btn" href="https://calendly.com/thrivingbynaturecoaching/30min?" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
         <br></br>
         <Benefitts />

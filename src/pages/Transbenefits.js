@@ -8,6 +8,12 @@ import Boundaries from "../info/Boundaries";
 import Collapsible from 'react-collapsible';
 import { Button, Modal } from'react-bootstrap';
 import ramyoga from "../images copy/ramyoga.png";
+import ns1 from "../images copy/ns1.png";
+import ns2 from "../images copy/ns2.png";
+import ns3 from "../images copy/ns3.png";
+import ns4 from "../images copy/ns4.png";
+import ns5 from "../images copy/ns5.png";
+import ns6 from "../images copy/ns6.png";
 import slow from "../images copy/slowdown.png";
 import TsBenefits from "./tben";
 import spectraspray from "../images copy/spectraspray.png";
@@ -21,6 +27,9 @@ const [showModal, setShowModal] = useState(false);
 const learnmore = () => {
   window.location.href = 'https://decentmed.org/signup/provider'
 }    
+const learntmore = () => {
+  window.location.href = 'https://authenticlifejourney.com/work-with-me/'
+}  
 const txt = `
 Ramona Crabtree Faulner. I'm the owner of Authentic Life Journey. I'm a transformational empowerment coach, speaker, author, and retreat facilitator. So, I have been working in the holistic wellness field for over 20 years. Started out as massage therapist, worked my way into yoga and meditation and energy work. And over that time I had my own journey that I experienced of healing and growth and expansion that included uh you know dropping into spaces of needing to break through hustle mentality and burnout. And as I
 
@@ -230,6 +239,34 @@ useEffect(() => {
               }}    
             />
             </div>
+            <div data-aos="slide-right" className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/fj4LaoeSroc?si=12akdiWeMxteZDsV" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
+             <div data-aos="slide-right" className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/SKoURjI4ykA?si=eyA_vDIdqZchB31O" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            </div>
                <div data-aos="slide-right" className="container-blue">
                <Button className="custom-btn" href="https://authenticlifejourney.com/" target="_blank">{t("Experience Transformation")}</Button>  {/* Added Bootstrap Button */}
               </div>
@@ -278,11 +315,10 @@ useEffect(() => {
     </div>
   }
 >
- 
   <Boundaries />
 </Collapsible>
 </div>
-                        <div data-aos="slide-right" className="container-blue">
+          <div data-aos="slide-right" className="container-blue">
 
             <Collapsible trigger={<th className="collapsible-triggger">{t('Self Care Journal')}</th>}>
               <tr>
@@ -295,12 +331,21 @@ useEffect(() => {
                 <a href="https://www.linkedin.com/pulse/why-slowing-down-most-powerful-move-you-can-make-crabtree-falkner-3gwae/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage'src={slow} alt='Why Slowing Down is the Most Powerful Move You Can Make' /></a>
               </tr>
         </Collapsible>
+         <Collapsible trigger={<th className="collapsible-triggger">{t('3 Simple Ways to Support Your Nervous System')}</th>}>
+              <tr>
+                <img className='gridimage' src={ns1} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
+                <img className='gridimage' src={ns2} alt='The Season That Changed Everything: Why Reclaiming Empowerment Is Just the Beginning' /> 
+                <img className='gridimage' src={ns3} alt='yoga awareness month' />
+                <img className='gridimage' src={ns4} alt='yoga awareness month' />
+                <img className='gridimage' src={ns5} alt='yoga awareness month' />
+                <img className='gridimage'src={ns6} alt='Why Slowing Down is the Most Powerful Move You Can Make' />
+              </tr>
+              <Button onClick={learntmore} className="custom-btn">{t("Learn More")}</Button>
+        </Collapsible>
         </div>
         </div>
         <br></br>
                   <div data-aos="slide-right"className="container-blue">
-
-
                         <a href="https://ramonacrabtreefalkner.com/purposefulpause">
                 <img className='gridimage' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
                 <figcaption>{t("Signup")}</figcaption>
@@ -465,9 +510,9 @@ useEffect(() => {
             </div>
           <Button className="custom-btn" href="https://jessicajavens.com/" target="_blank">{t("Experience Transformation")}</Button>
         <TsBenefits />
-                          <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Signup Here')}
-                </Button> 
+          <Button onClick={learnmore} className="custom-btn">
+            {t('Providers: Signup Here')}
+          </Button> 
         </div>
         </div>
     )

@@ -19,8 +19,6 @@ const { t } = useTranslation('common');
             <Topbar />
         </header>
         <Naturo />
-              
-
         <footer>
             <Footer />
         </footer>
