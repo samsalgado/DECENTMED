@@ -78,6 +78,11 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Chronic Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Weight Loss')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Sexual Dysfunction')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Back Pain')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Incontinence')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Urinary Dysfunction')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Scoliosis')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Stored Trauma')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Stress')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Autoimmune Diseases')}</NavLink></ul>

@@ -182,12 +182,8 @@ const Naturo = () => {
           <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">
             {t('Find Out How Dr. Barnes Can Help You')}
           </Button>
-          
+        </div> 
         </div>
-        
-        </div>
-       
-        
         <Collapsible data-aos="slide-right"  trigger={<th className="collapsible-trigger">{t("Naturopathy Explained")}</th>}>
           <NatExplained />
         </Collapsible>

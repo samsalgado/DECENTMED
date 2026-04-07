@@ -28,6 +28,9 @@ const Chiro = () => {
   const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }
+    const l = () => {
+    window.location.href = 'https://totalcarechiro.com/services/emsella-chair-therapy/'
+  }
   useEffect(() => {
             AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
           }, []);
@@ -79,7 +82,27 @@ const Chiro = () => {
      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-             
+      <h2>{t("EMSELLA® Chair Treatment")}</h2>   
+      <p>
+        {t("Our exciting new EMSELLA® Chair Therapy treats incontinence, and aids in improving sexual function for men and women. Join the movement toward a treatment for these issues without the high cost, risk, pain, and recovery time of surgery and without drugs!")}
+</p>    
+<div className='gridimage'>
+              <iframe
+              height="515"
+              src="https://www.youtube.com/embed/GADF0I8Kckw?si=G3N_1fmM8mr4l8Xk" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            <Button onClick={l} className="custom-btn">
+                        {t('Learn More')}
+                      </Button>
+            </div>
       <div data-aos="slide-right" className="title-container">
         <table className="collapsibles-table">
           <tbody>
@@ -124,8 +147,6 @@ const Chiro = () => {
               }}    
             />
             </div>
-    
-     
   </div>
 </Collapsible>
 

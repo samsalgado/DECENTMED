@@ -82,9 +82,6 @@ export function Chiropractic() {
 </div> */}
 
       <Chiro />
-                   
-      
-
         <footer>
           <Footer />
         </footer>
