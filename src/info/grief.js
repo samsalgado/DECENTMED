@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect, useState} from 'react';
 import "./homeo.css";
 import './Info.css';
 import AOS from 'aos';
@@ -19,19 +19,45 @@ import Collapsible from 'react-collapsible';
 import { Button } from 'react-bootstrap';
 const Grief = () => {
   const { t } = useTranslation('common');
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
    useEffect(() => {
               AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
             }, []);
+  const isMobile = windowWidth <= 768;
+  const isSmallMobile = windowWidth <= 480;
+  const isTablet = windowWidth <= 992 && windowWidth > 768;
+  const iframeStyle = {
+  width: '100%',
+  height: isSmallMobile ? '210px' : isMobile ? '260px' : isTablet ? '290px' : '330px', // slight bump
+  border: 'none',
+  borderRadius: '8px',
+  boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+}; 
+const titleStyle = {
+    textAlign: 'center',
+    marginBottom: isMobile ? '20px' : '30px',
+    fontSize: isSmallMobile ? '1.5rem' : isMobile ? '1.8rem' : '2.5rem'
+  };
+const iframeWrapperStyle = {
+  flex: isMobile || isTablet ? 'none' : '0 0 450px', // bumped from 400px
+  width: '100%',
+  maxWidth: isMobile || isTablet ? '100%' : '450px' // bumped from 420px
+};
   return (
       <div className='container  mobile-optimized'>
-           <div data-aos="slide-right" className="container-blue">
-        <h1 className='logotitle'>{t('Womens Trauma Therapy Treatment')}</h1>
+        <div data-aos="slide-right" className="container-blue">
+        <h1 className='logotitle' style={titleStyle}>{t('Womens Trauma Therapy Treatment')}</h1>
         </div>
         <div data-aos="slide-right" style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: '20px 0'
+        margin: '28px 0'
       }}>
         <div data-aos="slide-right" className="container-bbblue" style={{
         display: 'flex',
@@ -50,19 +76,18 @@ const Grief = () => {
             {t("Experience Healing")}
         </Button>
       </div>
+        <div style={iframeWrapperStyle}>
         <iframe
           width="100%"
-          height="515"
+          height="315"
           src="https://www.youtube.com/embed/eEUGxoz19-I?si=czfah5eg9nO0SuQg"
           title="Patient Acquisition Engine Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          style={{
-            maxWidth: '400px',
-            width: '100%',
-            height: 'auto'
-          }}    
+          style={iframeStyle}
+   
         />
+        </div>
       </div>
     </div>
         <div data-aos="slide-right" className="container-blue">

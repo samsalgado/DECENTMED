@@ -312,7 +312,7 @@ const iframeStyle = {
           
           <div style={iframeWrapperStyle}>
             <iframe
-              src="https://www.youtube.com/embed/elo9Rh_6UAY?si=-RtZVGRP9Hx1B1xi"               title='Acupuncture'
+              src="https://www.youtube.com/embed/elo9Rh_6UAY?si=-RtZVGRP9Hx1B1xi"title='Acupuncture'
               allow="autoplay"
               style={iframeStyle}
               allowFullScreen
