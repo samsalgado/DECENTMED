@@ -240,7 +240,6 @@ const Info1 = () => {
     width: '100%',
     paddingRight: isMobile || isTablet ? '0' : '20px'
   };
-
   const paragraphStyle = {
     fontSize: isSmallMobile ? '13px' : isMobile ? '14px' : '16px',
     lineHeight: isSmallMobile ? '1.4' : isMobile ? '1.5' : '1.6',
@@ -248,7 +247,6 @@ const Info1 = () => {
     textAlign: isMobile ? 'left' : 'justify',
     color: '#333'
   };
-
   const buttonStyle = {
     width: isMobile ? '100%' : 'auto',
     padding: isSmallMobile ? '10px 15px' : isMobile ? '12px 20px' : '12px 24px',
@@ -256,13 +254,11 @@ const Info1 = () => {
     marginTop: isMobile ? '10px' : '0',
     transition: 'all 0.3s ease'
   };
-
 const iframeWrapperStyle = {
   flex: isMobile || isTablet ? 'none' : '0 0 450px', // bumped from 400px
   width: '100%',
   maxWidth: isMobile || isTablet ? '100%' : '460px' // bumped from 420px
 };
-
 const iframeStyle = {
   width: '100%',
   height: isSmallMobile ? '210px' : isMobile ? '260px' : isTablet ? '290px' : '330px', // slight bump
@@ -273,7 +269,6 @@ const iframeStyle = {
  return (
     <div >
     <div data-aos="slide-left" className="container-blue">
-
       <h1 className="logotitle" style={titleStyle}>{t('Acupuncture')}</h1>
       </div>
       <div style={mainWrapperStyle}>
