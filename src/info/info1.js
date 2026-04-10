@@ -235,7 +235,6 @@ const Info1 = () => {
     borderRadius: '10px',
     boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
   };
-
   const contentWrapperStyle = {
     flex: '1',
     width: '100%',
