@@ -22,25 +22,12 @@ function Values() {
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <h3>
-        <a 
-            href="https://decentmed.s3visibility.solutions/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={{
-                color: '#1E90FF', // Cute blue color
-                textDecoration: 'none', // Remove underline
-                transition: 'color 0.3s ease', // Smooth color transition
-            }}
-            onMouseEnter={(e) => e.target.style.color = '#6495ED'} // Slightly lighter blue on hover
-            onMouseLeave={(e) => e.target.style.color = '#1E90FF'} // Back to original blue
-        >
             {t('Holistic Marketing')}
-        </a>
-    </h3>
-    <p className="edu">{t('Although our team is comprised of SEO experts, to ensure you get more patients - we have partnered with a digital marketing agency (S3 Visibility) specializing in optimizing the Google ecosystem.')}</p>
-                </div>
+                </h3>
+            <p className="edu">{t('Although our team is comprised of SEO experts, to ensure you get more patients - we have partnered with a digital marketing agency (S3 Visibility) specializing in optimizing the Google ecosystem.')}</p>
             </div>
-        </div>
+            </div>
+            </div>
         </>
     );
 }

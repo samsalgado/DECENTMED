@@ -223,7 +223,6 @@ const Info1 = () => {
     margin: isMobile ? '15px 0' : '20px 0',
     padding: '0 10px'
   };
-
   const containerBbblueStyle = {
     display: 'flex',
     flexDirection: isMobile || isTablet ? 'column' : 'row',
