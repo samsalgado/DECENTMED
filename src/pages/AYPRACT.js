@@ -52,7 +52,7 @@ export function AYPract() {
   type="text/javascript">
 </script>
 `,
-     video:"https://www.youtube.com/embed/E_KQIobaqF8?si=mgpDLlsIkVOQH1z4",
+     video:"https://www.youtube.com/embed/Ah4Usk_zcrg?si=IzV3-ZLPuqUpFA_Z",
       description: t("I guide women in perimenopause how to balance hormones naturally using lab testing, Ayurvedic principles, diet, and nervous system regulation — without relying on band-aid solutions. Angela Romero is an Ayurvedic & Integrative Holistic Hormone Practitioner specializing in natural hormone balance and perimenopause support. She is the founder of Ground Roots Health Collective, where she combines advanced lab testing, AO scans, personalized nutrition, lifestyle restructuring, herbal medicine, and targeted supplementation to help women restore energy, regulate hormones, and heal from the root. Her mission is to help women reclaim their health through ancient wisdom and modern holistic healing."),
       servesGlobally: true,
       countries: ["USA"]

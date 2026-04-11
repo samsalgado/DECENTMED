@@ -191,11 +191,8 @@ themerlingroupworld.com/ayurveda for more.
           {t("Experience Ayurveda")}
         </Button>
       </div>
-      <img className='gridimag' src={ayurveda} alt={t('Ayurveda Science')} style={{
-        maxWidth: '400px',
-        width: '100%',
-        height: 'auto'
-      }} />
+     
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ah4Usk_zcrg?si=bJ6Y6nEWJDmViuCf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <style jsx>{`
       @media (max-width: 768px) {
@@ -238,9 +235,16 @@ themerlingroupworld.com/ayurveda for more.
                  <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+              <img className='gridimag' src={ayurveda} alt={t('Ayurveda Science')} style={{
+        maxWidth: '400px',
+        width: '100%',
+        height: 'auto'
+      }} />
              </div>
       <div data-aos="slide-right" className="collapsible">
+        
         <Principles />
+        
         <Elements />
         <br></br>
         <iframe width="100%" height={550} src="https://www.youtube.com/embed/Y32t5F81XCc?si=IPuvCmEujPuEcH3K"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

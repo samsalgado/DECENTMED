@@ -71,6 +71,8 @@ const learnmore = () => {
       <p className='pr'>-{t("Clears monkey mind (anxiety) of the mind")}</p>
       <p className='pr'>-{t("Clearing major generational, conditions and illnesses")}</p>
       <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" title="Stacy Theodossin DD" seamless src="https://player.simplecast.com/7c3a0915-ba46-4d06-93d8-b423a4de2039?dark=false"></iframe>
+
     </div>
     <div style={{
       flex: '1',
