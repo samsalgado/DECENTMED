@@ -75,10 +75,16 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/energyhealing">{t('Carcinoma')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Type2 Diabetes')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/womenstrauma">{t('Grief')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Chronic Pain')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Weight Loss')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('Menopausal Symptoms')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Mineral/Vitamin Deficiencies')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBD')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Hormone Imbalance')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBD')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Sexual Dysfunction')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Back Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Incontinence')}</NavLink></ul>
