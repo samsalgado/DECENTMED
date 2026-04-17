@@ -10,7 +10,6 @@ import Anil from '../cards/anil.png';
 import dr from "../cards/nourishedwellness.png";
 import Lynn from "../cards/lynn.png";
 import caroline from "../cards/caroline.png";
-import Kristina from "../images copy/kristina.png";
 import Jessica from "../cards/jessica.jpg";
 import Priscilla from '../cards/priscilla.jpg';
 import jimp from '../cards/jimp.png';
@@ -30,7 +29,6 @@ export function Coaching() {
   const [showJim, setShowJim] = useState(false);
   const [showJessica, setShowJessica] = useState(false);
   const [showPriscilla, setShowPriscilla] = useState(false);
-  const [showKristina, setShowKristina] = useState(false);
   const [showRamona, setShowRamona] = useState(false);
   const [regionPriority, setRegionPriority] = useState('global'); // 'uk', 'india', 'global'
 function CalendlyEmbed({ url, height = 700 }) {
@@ -90,7 +88,6 @@ const handleSearch = () => {
     setShowNourishedHearts(true);
     setShowPriscilla(true);
     setShowJessica(true);
-    setShowKristina(true);
     setShowAmber(true);
     setShowJim(true);
     setShowRamona(true);
@@ -215,7 +212,6 @@ const indiaTerms = [
   setShowNourishedHearts(isUSA);
   setShowJohn(true); // Always show John
   setShowPriscilla(true); // Always show Priscilla
-  setShowKristina(isUSA || isFlorida); // Show for any USA location
   setShowRamona(isFlorida || isUSA);
   setShowJim(isNV || isUSA);
   setShowCaroline(isKCMo);
@@ -230,60 +226,6 @@ const indiaTerms = [
   };
 
   // Component rendering functions
-  const renderKristina = () => (
-    showKristina && (
-      <div className="row mb-4" key="kristina">
-        <div className="col-md-12">
-          <div className="card" style={{ border: '1px solid #dee2e6' }}>
-            <div className="card-body">
-              <div className="row">
-                <div className="col-md-2 text-center">
-                  <img 
-                    src={Kristina} 
-                    alt="Kristina" 
-                    style={{ 
-                      maxWidth: '100px', 
-                      maxHeight: '100px', 
-                      objectFit: 'contain' 
-                    }} 
-                  />
-                </div>
-                <div className="col-md-7">
-                  <h2 className="h4 mb-1">{t('THRIVE Results Coaching')}</h2>
-                  <p className="text-muted mb-2">{t("Kristina Hess CNS, LDN, Health Coach")}</p>
-                  
-                  <p className="mb-2">
-                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                    {t("30 Old Kings Hwy S Darien, Connecticut United States")}
-                  </p>
-                  
-                  <div className="mb-2">
-                    <span className="badge bg-success text-white me-1">{t("USA")}</span>
-                    <span className="badge bg-light text-dark me-1">{t("Health Coaching")}</span>
-                    <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
-                    <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
-                  </div>
-                   <div className='jim-container'>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bz7bhIAwu5o?si=wMaEInebhe4T302h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                  <p className="card-text small">
-                    {t("kristina_bio")}
-                  </p>
-                </div>
-                
-                <div className="col-md-3 text-end">
-                  {/* Calendly Embed */}
-                          <div className="col-md-12 mt-4">
-                            <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
-                          </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  );
     const renderCaroline = () => (
     showCaroline && (
       <div className="row mb-4" key="kristina">
@@ -879,14 +821,12 @@ const renderCoachesInOrder = () => {
   if (regionPriority === 'nv') {
     // Nevada: Jim first, then others
     coaches.push(renderJim());
-    coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderJohn());
     coaches.push(renderPriscilla());
     coaches.push(renderNourishedHearts());
   } else if (regionPriority === 'usa') {
     // USA (non-Nevada): Kristina first
-    coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderCarol());
     coaches.push(renderJim());
@@ -901,7 +841,6 @@ const renderCoachesInOrder = () => {
     coaches.push(renderJohn());
     coaches.push(renderPriscilla());
     coaches.push(renderAnil());
-    coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderJim());
     coaches.push(renderNourishedHearts());
@@ -911,7 +850,6 @@ const renderCoachesInOrder = () => {
     coaches.push(renderJohn());
     coaches.push(renderPriscilla());
     coaches.push(renderAnil());
-    coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderJim());
   } else if (regionPriority === 'india') {
@@ -919,7 +857,6 @@ const renderCoachesInOrder = () => {
     coaches.push(renderAnil());
     coaches.push(renderJohn());
     coaches.push(renderPriscilla());
-    coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderJim());
   } else if (regionPriority === 'brazil') {
@@ -932,7 +869,6 @@ const renderCoachesInOrder = () => {
     // Global/default order
     coaches.push(renderJohn());
     coaches.push(renderPriscilla());
-    coaches.push(renderKristina());
     coaches.push(renderRamona());
     coaches.push(renderAnil());
     coaches.push(renderJim());
@@ -1031,7 +967,7 @@ const renderCoachesInOrder = () => {
               {renderCoachesInOrder()}
 
               {/* Show message if no location-specific coaches but still show global ones */}
-              {!showAnil && !showLynn && !showKristina && !showRamona && !showNourishedHearts && (showJohn || showPriscilla) && (
+              {!showAnil && !showLynn && !showRamona && !showNourishedHearts && (showJohn || showPriscilla) && (
                 <div className="row mb-4">
                   <div className="col-md-12">
                     <div className="alert alert-info">

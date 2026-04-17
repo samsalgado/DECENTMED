@@ -1,45 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import Topbar from './topbar';
 import Footer from '../footer';
 import '../App.css';
 import '../info/Info.css';
-
-// Import images and assets
-import krisina from '../images copy/kristina.png';
 import Nutrifyourlife from '../cards/nutrifyourlife.jpg';
-
-// ✅ Calendly Embed Component (inline, so no extra file needed)
-function CalendlyEmbed({ url, height = 700 }) {
-  const widgetRef = useRef(null);
-
-  useEffect(() => {
-    const existingScript = document.getElementById('calendly-widget-script');
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.id = 'calendly-widget-script';
-      script.src = 'https://assets.calendly.com/assets/external/widget.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
-
-    const interval = setInterval(() => {
-      if (window.Calendly && widgetRef.current) {
-        window.Calendly.initInlineWidget({
-          url,
-          parentElement: widgetRef.current,
-        });
-        clearInterval(interval);
-      }
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, [url]);
-
-  return <div ref={widgetRef} style={{ minWidth: '320px', height }} />;
-}
-
 export function Nutritionpract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -252,54 +218,6 @@ export function Nutritionpract() {
                     </div>
                   </div>
 
-                  {/* Kristina - Virtual Services with Working Calendly */}
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={krisina} 
-                                alt="Thrive Results Coaching" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                            <div className="col-md-7">
-                              <h2 className="h4 mb-1">{t('Thrive Results Coaching')}</h2>
-                              <p className="text-muted mb-2">{t("Kristina Hess - Clinical Nutritionist")}</p>
-                  
-                              <p className="mb-2">
-                                <i className="fas fa-globe text-primary me-2"></i>
-                                {t("USA (Virtual Consultations Only)")}
-                              </p>
-                              
-                              <div className="mb-2">
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Clinical Nutrition")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Weight Management")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
-                              </div>
-                              
-                              <p className="card-text small">
-                                {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. She is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.")}
-                              </p>
-                            </div>
-                          </div>
-                          
-                          {/* Calendly Embed */}
-                          <div className="col-md-12 mt-4">
-                            <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </>
               ) : (
                 <>
@@ -383,67 +301,7 @@ export function Nutritionpract() {
                     </div>
                   </div>
 
-                  {/* Kristina - Virtual Services Available Everywhere with Working Calendly */}
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={krisina} 
-                                alt="Thrive Results Coaching" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                               
-                            <div className="col-md-7">
-                              <h2 style={{textAlign: 'center'}} className="h4 mb-1">{t('Thrive Results Coaching')}</h2>
-                              <p className="text-muted mb-2">{t("Kristina Hess - Clinical Nutritionist")}</p>
-                              
-                              <p className="mb-2">
-                                <i className="fas fa-globe text-primary me-2"></i>
-                                {t("Virtual Consultations Only")}
-                              </p>
-                              
-                              <div className="mb-2">
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Functional & Integrative")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Personalized Plans")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Nutrigenomics")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Metabolic Health")}</span>
-                              </div>
-                               
-                              <p className="card-text small">
-                                {t("Kristina is a licensed dietitian-nutritionist with a functional and integrative approach. She is especially passionate about a clean, whole-foods based, cyclical ketogenic approach to treat inflammation and restore metabolic health. She utilizes nutrigenomics data and other functional lab tests to assess what is best for your biology.")}
-                              </p>
-                          
-                              <strong className="text-success">{t("kristina")}</strong>
-                            </div>
-                            <div className="col-md-3 text-end">
-                              <a 
-                                href="tel:+12039847989" 
-                                className="btn btn-outline-primary mb-2"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Contact for Telehealth")}
-                              </a>
-                            </div>
-                          </div>
-                          
-                          {/* Calendly Embed */}
-                          <div className="col-md-12 mt-4">
-                            <CalendlyEmbed url="https://calendly.com/kristinahess/15min" height={700} />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                 
 
                   {/* Information about local vs telehealth options */}
                   <div className="row mb-4">

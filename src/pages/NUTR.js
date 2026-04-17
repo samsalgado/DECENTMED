@@ -123,7 +123,6 @@ things together right because you are a complex puzzle a very Advanced biochemic
         <div data-aos="slide-right" className='content-wrapper' style={{
           flex: '1'
         }}>
-         
           <p className="pr"><h2>{t("Best Nutrigenomics Services for Weight Management:")}</h2></p>
           <p className='pr'>{t("- Specialized lab packages that take the guesswork out of deciding what to eat")}</p>
           <p className='pr'>{t("- Stool Testing")}</p>
@@ -164,18 +163,13 @@ things together right because you are a complex puzzle a very Advanced biochemic
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
 <div data-aos="slide-right"  className="container-blue">
-
      <iframe title="vimeo-player" src="https://player.vimeo.com/video/715588945?h=76c2c1fff8" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
       <br></br>
-      <Button className="custom-btn" href="https://thriveresultscoaching.com/" target="_blank">{t('Find Out How Nutrigenomics Can Help You')}</Button>
         </div>
-             <Button className="custom-btn" href="https://thriveresultscoaching.com/testimonials/" target="_blank">{t("More Reviews")}</Button>  {/* Added Bootstrap Button */}
         <div data-aos="slide-right"  className="container-blue">
         <h1 className='center'>{t("Seeking Holistic Nutritionist Near me? We have you covered:")}</h1>
         <ClinVids />
-       
               {showModal && ReactDOM.createPortal(
-        
         <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
           <Modal.Header closeButton>
             <Modal.Title>{t("Transcript")}</Modal.Title>
@@ -193,6 +187,6 @@ things together right because you are a complex puzzle a very Advanced biochemic
       )}
         </div>
         </div>
-    )
+  )
 }
 export default Nutri;

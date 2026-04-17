@@ -23,13 +23,11 @@ const { t } = useTranslation('common');
             </header>
             <Nutri />
             <Button onClick={learnmore} target="_blank" className="custom-btn">
-                                  {t('Providers: Signup Here')}
-                </Button> 
-
+            {t('Providers: Signup Here')}
+            </Button> 
             <footer>
-                <Footer />
+            <Footer />
             </footer>
         </div>
-    )
-    
+    )   
 }

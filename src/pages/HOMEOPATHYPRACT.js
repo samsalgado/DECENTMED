@@ -143,7 +143,7 @@ export function HomeopathyPract() {
                           
                           <p className="mb-2">
                             <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                            {t("Israel")} | <i className="fas fa-video text-success me-1"></i>{t("Telehealth Available")}
+                            {t("South Africa")} | <i className="fas fa-video text-success me-1"></i>{t("Telehealth Available")}
                           </p>
                           
                           <div className="mb-2">

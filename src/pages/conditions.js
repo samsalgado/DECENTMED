@@ -75,14 +75,13 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/energyhealing">{t('Carcinoma')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Type2 Diabetes')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/womenstrauma">{t('Grief')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Chronic Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('Menopausal Symptoms')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Mineral/Vitamin Deficiencies')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBD')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBS')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Hormone Imbalance')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBD')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Sexual Dysfunction')}</NavLink></ul>
@@ -107,7 +106,7 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chelation">{t('Heart Disease')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/stemcell">{t('Knee Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Prevention')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('Diabetes')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('High Blood Sugar')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/meditation">{t('Blood Pressure')}</NavLink></ul>
     </NavDropdown>
   </>
