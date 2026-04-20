@@ -364,7 +364,6 @@ possible for you. So borrow our belief because so many clients have gotten incre
          {t("Try Coaching")}
         </Button>        
         </div>
-        
         <iframe
         data-aos="slide-right"
           className="centered-video"
@@ -378,12 +377,9 @@ possible for you. So borrow our belief because so many clients have gotten incre
             height: '350px'
           }}
         />
-        
-        </div>
-        
+        </div>     
       </div>
-      
-            <Button className="custom-btn" href="https://www.thrivingbynature.com/" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
+        <Button className="custom-btn" href="https://www.thrivingbynature.com/" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
       <br></br>
 
               <style jsx global>{`
@@ -466,9 +462,6 @@ possible for you. So borrow our belief because so many clients have gotten incre
         </a>
          <a href="https://calendly.com/thrivingbynaturecoaching/speaker-inquiry-booking" alt="Thriving by Nature">
         <img className='gridimag' src={bethanyspeaks} alt='Bethany Stone Speaker Inquiry' />
-        </a>
-         <a href="https://www.thrivingbynature.com/river-cruise" alt="Thriving by Nature">
-        <img className='gridimag' src={europe} alt='21 Day Challenge' />
         </a>
         <div>
         </div>
