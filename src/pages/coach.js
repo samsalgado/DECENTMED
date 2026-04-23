@@ -455,12 +455,11 @@ const indiaTerms = [
                   />
                 </div>
                 <div className="col-md-7">
-                  <h2 className="h4 mb-1">{t('Dr. Stephanie Nartaki Heinhold Nourished Hearts Wellness Coaching')}</h2>                  
+                  <h2 className="h4 mb-1">{t('Dr. Stephanie "Nartaki" Heinhold Nourished Hearts Wellness Coaching')}</h2>                  
                   <p className="mb-2">
                     <i className="fas fa-map-marker-alt text-primary me-2"></i>
                     {t("USA")}
                   </p>
-                  
                   <div className="mb-2">
                     <span className="badge bg-success text-white me-1">{t("Women's Wellness & Trauma Healing")}</span>
                     <span className="badge bg-light text-dark me-1">{t("Grief Counseling")}</span>
@@ -470,7 +469,10 @@ const indiaTerms = [
                   <p className="card-text small">
                     {t("nartaki")}
                   </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/zC62vgTyHLg?si=SmcbtsE31DV67rSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 </div>
+                     
                 <div className="col-md-3 text-end">
                           <div className="col-md-12 mt-4">
                             <Button className="custom-btn" href="https://www.nourishedheartswellness.com/book-online" target="_blank">{t('Contact')}</Button>
@@ -892,7 +894,7 @@ const renderCoachesInOrder = () => {
         <header>
           <Topbar />
         </header>
-                                                          <div className="container-blue">
+          <div className="container-blue">
 
         <div className="container">
           {/* Search Bar Section */}

@@ -30,6 +30,12 @@ function Practices() {
                             <img className="img-custom" src={Treatment.massage} alt={t("Massage Therapy")} />
                         </NavLink>
                     </div>
+                      <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                        <NavLink to='/energyhealers'>
+                            <h3 className="card-title-fixed" >{t("Energy Healing")}</h3>
+                            <img className="img-custom" src={Treatment.energy} alt={t("Energy Healing")} />
+                        </NavLink>
+                    </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to="/acupuncturists">
                         <h3 className="card-title-fixed" >{t("Acupuncture")}</h3>

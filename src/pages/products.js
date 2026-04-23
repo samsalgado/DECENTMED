@@ -135,18 +135,20 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
   </div>
   <div>
-  <div data-aos="slide-right" className="container-blue">
-    <Carousel autoPlay infiniteLoop>
+  <div data-aos="slide-right" className="carousel-wrapper">
+    <Carousel  autoPlay 
+    infiniteLoop 
+    showThumbs={false}
+    showStatus={false}
+    swipeable={true}
+    emulateTouch={true}
+    interval={3500}>
       <div>
         <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
         <img 
           src={SYOOCE} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+        className="carousel-img" 
         />
         </a>
         </div>
@@ -154,66 +156,45 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         <img 
           src={obasi} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+          className="carousel-img" 
         />
         </div>
         <div>
           <img 
           src={purium} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+          className="carousel-img" 
         />
         </div>
          <div>
           <img 
           src={lifewavee} 
           alt="logo" 
-          className='gridimage'
-        />
+          className="carousel-img"         />
         </div>
          <div>
           <img 
           src={forever} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+          className="carousel-img" 
         />
         </div>
          <div>
           <img 
           src={linda} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+          className="carousel-img" 
         />
         </div>
          <div>
           <img 
           src={spectraspray} 
           alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
+         className="carousel-img" 
         />
         </div>
     </Carousel>
-<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+<div>
   <iframe
     width="560"
     height="550"

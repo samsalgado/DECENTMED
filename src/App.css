@@ -19,6 +19,26 @@ html, body, #root {
     repeat-y,
     repeat-y;
 }
+.carousel-wrapper {
+  width: 100%;
+  max-width: 480px; /* keeps it clean on mobile */
+  margin: 0 auto;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Optional: improve spacing on small screens */
+@media (max-width: 480px) {
+  .carousel-img {
+    border-radius: 6px;
+  }
+}
+
 .container-whitesmoke {
   background-color: whitesmoke;
   padding: 20px;        /* adds spacing inside */

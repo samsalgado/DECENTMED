@@ -9,7 +9,6 @@ import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
 import spectraspray from "../images copy/spectraspray.png";
 import group from "../images copy/group.png";
-import europe from "../images copy/europe.png";
 import bethanyspeaks from "../images copy/bethanyspeaks.png";
 import specialoffer from "../images copy/specialoffer.png";
 import Confidence from "./confidence";
