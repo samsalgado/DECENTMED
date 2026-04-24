@@ -13,6 +13,7 @@ const treatmentLinks = {
   empower:"https://decentmed.org/transformationalcoaching",
   ak:"https://decentmed.org/applied-kinesiology",
   nutri:"https://decentmed.org/nutrigenomics",
+  func:"https://decentmed.org/functionalmedicine",
   breathwork:"https://decentmed.org/breathwork",
   chelation:"https://decentmed.org/chelation",
   hypnotherapy:"https://decentmed.org/hypnotherapy",

@@ -22,6 +22,12 @@ function BlueContainer() {
                         <img className="img-custom" src={Treatment.acupuncture} alt={t('Acupuncture')} />
                     </NavLink>
                 </div>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                    <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Functional Medicine')}</h3>
+                    <NavLink to="/functionalmedicine" className="link">
+                        <img className="img-custom" src={Treatment.functionalmedicine} alt={t('Functional Medicine')} />
+                    </NavLink>
+                </div>
                  <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Energy Healing')}</h3>
                     <NavLink to="/energyhealing" className="link">
