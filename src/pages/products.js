@@ -7,6 +7,8 @@ import AOS from 'aos';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import 'aos/dist/aos.css';
+import qrcream from "../images copy/qrcream.png";
+import lowbackpain from "../images copy/lowbackpain.png";
 import { useEffect } from 'react';
 import lifewavee from "../images copy/Screenshot 2026-04-03 at 8.58.06 PM.png";
 import { Button, Modal } from 'react-bootstrap';
@@ -129,7 +131,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
             <div className="container">
                     <div data-aos="slide-right" className="container-blue">
             <h1>{t("Holistic Medicine Books and Related Products")}</h1>
-              </div>
+  </div>
  <div>
     <div>
     </div>
@@ -151,6 +153,13 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         className="carousel-img" 
         />
         </a>
+        </div>
+        <div>
+        <img 
+          src={lowbackpain} 
+          alt="logo" 
+        className="carousel-img" 
+        />
         </div>
         <div>
         <img 
@@ -244,7 +253,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
            <div data-aos="slide-right" className="container-blue">
 
 <h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
-<p>
+      <p>
         {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
       </p>
       <p>
@@ -263,7 +272,6 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
   </div>
   <br></br>
-
   <div>
     <div>
       <div data-aos="slide-right" className="container-blue">
@@ -295,7 +303,6 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     <div>
     <div>
       <div data-aos="slide-right" className="container-blue">
-
       <h2>{t("Purium Product Bundle")}</h2>
       <a href='https://ishoppurium.com/homepage?giftcard=JessicaJavens'>
     <figure>
@@ -317,10 +324,66 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
   </div>
   <div>
+     <div>
+    <div>
+      <div data-aos="slide-right" className="container-blue">
+      <h2>{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
+        <a href='https://www.amazon.com/Low-Back-Pain-Relief-Minutes/dp/B0CZ9FBTMF/ref=sr_1_1?crid=3NZ1VHP7IPFVU&dib=eyJ2IjoiMSJ9.5cMR3fX_JaFTtaiMjgrr6lCjDtg8Jq8RD7A9DEzLM0BnY-2-sY65xTG9vP36xZvOhIjI66ShG6eZ0qGM3BOynRy3vU3KkY5IEaLq69dc-2eQoZTp0MxkB2ZZpoIhEahZg5uZRSCYo7co1vqKF7EC8zwnTF4DK8oyR3aXaVT1Se0HGNn3gBC6MXoPgJoWMHBCLGbvVs4a_xIfgIxEJ3hImGcqQixluH1JOVRMbh-Ptn0.PvrPfv5z4-3f7hv4Go8SKA-NanPQqXfRTdWkMZ1EFSA&dib_tag=se&keywords=helene+bertrand&qid=1777076483&sprefix=helene+bertrand%2Caps%2C329&sr=8-1'>
+    <figure>
+        <img 
+          src={lowbackpain} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        <figcaption>{t("Buy")}</figcaption>
+        </figure>
+      </a>
+      <p>
+        {t("Have you ever had low back pain so severe that it interfered with every area of your life, from your sleep, work, and family obligations to your relationship and even your sex life? Do you know someone who has? Then this book is for you. Did you know that doctors classify 90% of all low back pain as being “nonspecific”? That means the treatments they give for low back pain are also “nonspecific”. No wonder people with this problem have trouble finding relief!")}
+      </p>
+      <p>
+        {t("After 37 years of lower back pain, Dr. Bertrand developed a new way to examine the lower back that tells most of those who have pain there exactly which joints are displaced, how they are displaced, and by how much. Once you know the cause, the treatment becomes obvious. This book will tell you exactly how you can find the cause and the two-minute exercise to correct it that provides 90% of those who do it with immediate pain relief. It will then explain how people can stay healthy and pain-free and discuss the different conditions that can accompany this pain and how to relieve them.")}
+      </p>
+      <p>
+        {t("Imagine no longer having to rely on doctors, medications, chiropractors, physiotherapists, surgeons, and other health professionals as most readers will know how to relieve their own low back pain in minutes and how to prevent it coming back!")}
+      </p>
+      </div>
+      <div>   
+    </div>
+    </div>
+  </div>
+    <div>
+     <div>
+    <div>
+      <div data-aos="slide-right" className="container-blue">
+      <h2>{t("QR cream")}</h2>
+        <a href='https://qrcream.us/'>
+    <figure>
+        <img 
+          src={qrcream} 
+          alt="logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: '8px'
+          }}
+        />
+        <figcaption>{t("Buy")}</figcaption>
+        </figure>
+      </a>
+      </div>
+      <div>   
+    </div>
+    </div>
+  </div>
+</div>
     <div>
     <div data-aos="slide-right" className="container-blue">
     <h2>{t("Lifewave Patch")}</h2>
-    
     <a href='https://www.lifewave.com/awicks'>
     <figure>
         <img 
@@ -337,6 +400,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </div>
     </div>
   </div>
+  
    <div>
     <div>
       <div data-aos="slide-right" className="container-blue">
