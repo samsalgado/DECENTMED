@@ -154,6 +154,13 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         />
         </a>
         </div>
+         <div>
+        <img 
+          src={qrcream} 
+          alt="logo" 
+        className="carousel-img" 
+        />
+        </div>
         <div>
         <img 
           src={lowbackpain} 
