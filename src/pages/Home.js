@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import Footer from '../footer';
 
-export function Home() {
+export default function Home() {
   const { t } = useTranslation('common');
   return (
 <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>

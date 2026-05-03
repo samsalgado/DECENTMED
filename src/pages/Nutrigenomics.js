@@ -5,7 +5,7 @@ import Footer from '../footer';
 import { Button } from 'react-bootstrap';
 import Nutri from './NUTR';
 import { useTranslation } from 'react-i18next';
-export function Nutrigenomics() {
+export default function Nutrigenomics() {
 const { t } = useTranslation('common');
      const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

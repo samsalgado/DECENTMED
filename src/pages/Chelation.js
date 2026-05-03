@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-export function Chelation() {
+export default function Chelation() {
 const { t } = useTranslation("common");
 useEffect(() => {
   window.scrollTo(0, 0);

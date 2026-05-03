@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
-import tier2 from '../images copy/Screenshot 2026-03-21 at 10.58.45 AM.png';
-import tier3 from "../images copy/bigtierr.png";
+import tier3 from '../images copy/Screenshot 2026-05-02 at 11.04.24 AM.png';
+import tier2 from "../images copy/TIER1PRICE.png";
 import '../info/Info.css';
 import tier0 from "../images copy/advertisingtier (1).png";
 import { Button } from 'react-bootstrap';
@@ -12,7 +12,7 @@ export function Pricing() {
   const tiers = [
     { name: 'Advertising Tier', price: 500, img: tier0 },
     { name: 'Tier 1', price: 1500, img: tier2 },
-    { name: 'Tier 2', price: 2500, img: tier3 }
+    { name: 'Tier 2', price: 4000, img: tier3 }
   ];
 
   useEffect(() => {

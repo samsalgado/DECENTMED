@@ -5,7 +5,7 @@ import Footer from '../footer';
 import { useEffect, useState } from 'react';
 import Saumil from '../cards/Saumil.png'
 import { useTranslation } from 'react-i18next'
-export function HealPract() {
+export default function HealPract() {
   const { t } = useTranslation('common');
   const [userLocation, setUserLocation] = useState('');
   const [filteredPractitioners, setFilteredPractitioners] = useState([]);

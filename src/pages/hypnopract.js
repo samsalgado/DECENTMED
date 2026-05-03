@@ -9,7 +9,7 @@ import Green from '../cards/Green-hypnotherapy.png';
 import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-export function Hypnopract() {
+export default function Hypnopract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

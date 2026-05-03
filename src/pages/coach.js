@@ -15,7 +15,7 @@ import Priscilla from '../cards/priscilla.jpg';
 import jimp from '../cards/jimp.png';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
-export function Coaching() {
+export default function Coaching() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

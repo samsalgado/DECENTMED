@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Info11 from '../info/info11';
 import { useTranslation } from 'react-i18next';
-export function FuncMed() {
+export default function FuncMed() {
 const { t } = useTranslation('common');
        
 
@@ -21,8 +21,7 @@ const { t } = useTranslation('common');
             <Topbar />
             </header>
            <Info11 />
-                       
-
+                    
             <footer>
                 <Footer />
             </footer>

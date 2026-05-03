@@ -6,7 +6,7 @@ import Footer from '../footer';
 import "../info/Info.css";
 import { useTranslation } from 'react-i18next'
 
-export function StemPract() {
+export default function StemPract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

@@ -1,95 +1,42 @@
 import { Routes, Route } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import './App.css';
 import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
-import { Home } from './pages/Home';
-import BrowserOnly from "./Components/BrowserOnly";
-import { Mindset } from './pages/Thoughts';
-import Fen from './pages/blogs/fenbendazole';
-import Ivermectin from './pages/blogs/ivermectin';
+import BrowserOnly from "./Components/BrowserOnly"
 import Hoxsey from './pages/blogs/hoxsey';
-import { Prevent } from './pages/Prevent';
 import Wrapper from './info/Wrapper';
-import { HealPract } from './pages/HealPract';
-import { Soundhealing } from './pages/soundhealing';
-import { Func } from './pages/Func';
-import {Energy} from './pages/Energy';
-import { EnergyPract } from './pages/EnergyPract';
-import {Summit} from './pages/Summit';
-import {ADHD} from "./pages/ADHD";
-import MassPract from './pages/Mass';
-import Blog21 from './pages/blogs/blog21';
-import { Trauma } from './pages/Trauma';
-import { PTSD } from './pages/PTSD';
-import Blog22 from './pages/blogs/blog22';
-import { Nutrigenomics } from './pages/Nutrigenomics';
-import Blog5 from './pages/blogs/blog5';
-import { FuncMed } from './pages/funcmed';
 import Bitcoin from './pages/blogs/bitcoin';
-import Blog8 from './pages/blogs/blog8';
-import Blog24 from './pages/blogs/blog24';
-import Meditation from './pages/Meditation';
+import BlogAcu from './pages/blogs/blogacu';
 import Blog7 from './pages/blogs/blog7';
+import Blog4 from './pages/blogs/blog4';
+import Ramona from './pages/blogs/ramona';
 import Blog9 from './pages/blogs/blog9';
 import Blog20 from './pages/blogs/blog20';
-import { ReviewPage } from './pages/reviewpage';
 import Blog16 from './pages/blogs/blog16';
-import HerbalMedicine from './pages/HerbalMedicine';
-import Blog1 from './pages/blogs/blog1';
-import BlogAcu from './pages/blogs/blogacu';
-import Mike from './pages/blogs/mike';
-import { HolisticHealers } from './pages/holistichealers';
-import { AppliedKinesiology } from './pages/AK';
-import { AKPract } from './pages/kin';
-import Blog18 from './pages/blogs/blog18';
-import { Transformational } from './pages/transform';
-import Blog12 from './pages/blogs/blog12';
-import Blog14 from './pages/blogs/blog14';
-import { Detox } from './pages/Detox';
-import { StemCell } from './pages/Stemcell';
-import { NotFound } from './pages/NotFound';
-import { Shop } from './pages/products';
-import { Lynn } from './pages/lynn';
-import { Nutrition } from './pages/Nutrition';
-import BlogPage from './pages/Blog';
-import { Hypnotherapy } from './pages/Hypnotherapy';
+import Blog3 from './pages/blogs/blog3';
 import Blog6 from './pages/blogs/cancer';
+import Blog5 from './pages/blogs/blog5';
 import Blog10 from './pages/blogs/blog10';
 import Blog19 from './pages/blogs/blog19';
-import Ramona from './pages/blogs/ramona';
-import { About } from './pages/About';
-import { Homeopathy } from './pages/Homeopathy';
-import { Acupuncture } from './pages/Acupuncture';
-import { Ayurveda } from './pages/Ayurveda';
-import { Marketing } from './pages/DigitalMarketing';
-import { Chiropractic } from './pages/Chiropractic';
-import { Chelation } from './pages/Chelation';
-import { Telehealth } from './pages/Telehealth';
-import Blog3 from './pages/blogs/blog3';
-import ChooseProviderTier from './pages/SignUp/ChooseProviderTier';
-import Blog4 from './pages/blogs/blog4';
-import { Apoth } from './pages/Apoth';
-import { Chiro } from './pages/ChiroPRACT';
-import { Breathwork } from './pages/breathworkers';
-import { Hypnopract } from './pages/hypnopract';
-import { AYPract } from './pages/AYPRACT';
-import { WomensTrauma } from './pages/Grief';
-import { Nutritionpract } from './pages/nutritionpract';
-import { Coaching } from './pages/coach';
-import { HomeopathyPract } from './pages/HOMEOPATHYPRACT';
-import { Acupract } from './pages/acupract';
-import {ProviderLandingPage} from "./pages/ProviderLandingPage";
-import { Breathworkk } from './pages/Breathwork';
-import { Natpract } from './pages/naturopathics';
-import { Naturopathy } from './pages/Naturopathy';
+import Blog12 from './pages/blogs/blog12';
+import Blog14 from './pages/blogs/blog14';
+import BlogPage from "./pages/Blog";
+import Blog23 from './pages/blogs/blog23';
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/Login/SignIn';
+import {ProviderLandingPage} from "./pages/ProviderLandingPage";
+import Blog18 from './pages/blogs/blog18';
+import Blog1 from './pages/blogs/blog1';
 import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-import { StemPract } from './pages/STEMPRACT';
-
+import Blog8 from './pages/blogs/blog8';
+import Fen from './pages/blogs/fenbendazole';
+import Ivermectin from './pages/blogs/ivermectin';
+import Blog24 from './pages/blogs/blog24';
+import HerbalMedicine from './pages/HerbalMedicine';
 import PublicSignUp from './pages/SignUp/PublicSignup';
 import SignupOptions from './pages/SignupOptions';
 import StripePayment from './pages/StripePayment/StripePayment';
@@ -97,10 +44,64 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import ProviderDashboard from './Dashboard/ProviderDashboard';
 import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
-import Blog23 from './pages/blogs/blog23';
+import Mike from './pages/blogs/mike';
+ import Blog22 from './pages/blogs/blog22';
+import Blog21 from './pages/blogs/blog21';
 
 
 
+
+const Home = lazy(() => import('./pages/Home'));
+const Mindset = lazy(() => import('./pages/Thoughts'));
+const Prevent = lazy(() => import('./pages/Prevent'));
+const HealPract = lazy(() => import('./pages/HealPract'));
+const Soundhealing = lazy(() => import('./pages/soundhealing'));
+const Func = lazy(() => import('./pages/Func'));
+const Energy = lazy(() => import('./pages/Energy'));
+const EnergyPract = lazy(() => import('./pages/EnergyPract'));
+const Summit = lazy(() => import('./pages/Summit'));
+const ADHD = lazy(() => import('./pages/ADHD'));
+const MassPract = lazy(() => import('./pages/Mass'));
+const Trauma = lazy(() => import('./pages/Trauma'));
+const PTSD = lazy(() => import('./pages/PTSD'));
+const Nutrigenomics = lazy(() => import('./pages/Nutrigenomics'));
+const FuncMed = lazy(() => import('./pages/funcmed'));
+const Meditation = lazy(() => import('./pages/Meditation'));
+const ReviewPage = lazy(() => import('./pages/reviewpage'));
+const HolisticHealers = lazy(() => import('./pages/holistichealers'));
+const AppliedKinesiology = lazy(() => import('./pages/AK'));
+const AKPract = lazy(() => import('./pages/kin'));
+const Transformational = lazy(() => import('./pages/transform'));
+const Detox = lazy(() => import('./pages/Detox'));
+const StemCell = lazy(() => import('./pages/Stemcell'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const Shop = lazy(() => import('./pages/products'));
+const Lynn = lazy(() => import('./pages/lynn'));
+const Nutrition = lazy(() => import('./pages/Nutrition'));
+const Hypnotherapy = lazy(() => import('./pages/Hypnotherapy'));
+const About = lazy(() => import('./pages/About'));
+const Homeopathy = lazy(() => import('./pages/Homeopathy'));
+const Acupuncture = lazy(() => import('./pages/Acupuncture'));
+const Ayurveda = lazy(() => import('./pages/Ayurveda'));
+const Marketing = lazy(() => import('./pages/DigitalMarketing'));
+const Chiropractic = lazy(() => import('./pages/Chiropractic'));
+const Chelation = lazy(() => import('./pages/Chelation'));
+const Telehealth = lazy(() => import('./pages/Telehealth'));
+const ChooseProviderTier = lazy(() => import('./pages/SignUp/ChooseProviderTier'));
+const Apoth = lazy(() => import('./pages/Apoth'));
+const Chiro = lazy(() => import('./pages/ChiroPRACT'));
+const Breathwork = lazy(() => import('./pages/breathworkers'));
+const Hypnopract = lazy(() => import('./pages/hypnopract'));
+const AYPract = lazy(() => import('./pages/AYPRACT'));
+const WomensTrauma = lazy(() => import('./pages/Grief'));
+const Nutritionpract = lazy(() => import('./pages/nutritionpract'));
+const Coaching = lazy(() => import('./pages/coach'));
+const HomeopathyPract = lazy(() => import('./pages/HOMEOPATHYPRACT'));
+const Acupract = lazy(() => import('./pages/acupract'));
+const Breathworkk = lazy(() => import('./pages/Breathwork'));
+const Natpract = lazy(() => import('./pages/naturopathics'));
+const Naturopathy = lazy(() => import('./pages/Naturopathy'));
+const StemPract = lazy(() => import('./pages/STEMPRACT'));
 
 function App() {
   const { t } = useTranslation();
@@ -114,6 +115,7 @@ function App() {
       {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}
       </BrowserOnly>
       <Wrapper>
+     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
         <Route path="/soundhealing" element={<Soundhealing />} />
@@ -218,6 +220,7 @@ function App() {
           </PrivateRoute>
         } />
       </Routes>
+              </Suspense>
 </Wrapper>
     </QueryClientProvider>
   );

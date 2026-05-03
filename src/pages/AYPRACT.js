@@ -8,7 +8,7 @@ import angela from '../cards/angela.jpg';
 import stacyservices from "../cards/stacyservices.png";
 import Yogi from '../cards/yogiSanjivana.jpg';
 import { useTranslation } from 'react-i18next';
-export function AYPract() {
+export default function AYPract() {
   const { t } = useTranslation('common');
   const [userLocation, setUserLocation] = useState('');
   const [filteredPractitioners, setFilteredPractitioners] = useState([]);

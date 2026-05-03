@@ -6,7 +6,7 @@ import Footer from '../footer';
 //import ReactPlayer from 'react-player';
 import JenB from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
 import { useTranslation } from 'react-i18next'
-export function HolisticHealers() {
+export default function HolisticHealers() {
 const { t } = useTranslation('common');
 useEffect(() => {
     window.scrollTo(0, 0);

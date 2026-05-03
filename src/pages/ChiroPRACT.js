@@ -17,7 +17,7 @@ import { useTranslation } from 'react-i18next';
 //Homeopathy
 //Emotional Work
 
-export function Chiro() {
+export default function Chiro() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

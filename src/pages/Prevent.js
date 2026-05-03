@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PreventWellness from '../info/preventwellness';
 import { Helmet } from 'react-helmet'; // Import Helmet
-export function Prevent() {
+export default function Prevent() {
       const { t } = useTranslation('common');
     useEffect(() => {
         window.scrollTo(0, 0);

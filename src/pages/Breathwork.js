@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import BREATH from '../info/br';
 import { useTranslation } from 'react-i18next';
-export function Breathworkk() {
+export default function Breathworkk() {
 const { t } = useTranslation('common');
     return(
         <div>

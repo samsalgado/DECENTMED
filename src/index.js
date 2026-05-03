@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { lazy, Suspense } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
@@ -14,9 +14,8 @@ import francais from './lang/fr.json';
 import chinese from './lang/ch.json';
 import hindi from './lang/hi.json';
 import arabic from './lang/ar.json';
-
+const App = lazy(() => import('./App'));
 const preferredLang = localStorage.getItem("preferredLanguage") || "en";
-
 i18next.init({
   lng: preferredLang,
   fallbackLng: "en",
@@ -52,13 +51,15 @@ i18next.on("missingKey", async (lng, namespace, key) => {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <I18nextProvider i18n={i18next}>
-    <React.StrictMode>
-      <Router>
-        <App />
-      </Router>
-    </React.StrictMode>
-  </I18nextProvider>
+  <Suspense fallback={<div>Loading...</div>}>
+    <I18nextProvider i18n={i18next}>
+      <React.StrictMode>
+        <Router>
+          <App />
+        </Router>
+      </React.StrictMode>
+    </I18nextProvider>
+  </Suspense>
 );
 
 reportWebVitals();

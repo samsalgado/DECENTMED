@@ -22,7 +22,7 @@ import thc1 from  "../images copy/thc1.png";
 import thc3 from  "../images copy/thc3.png";
 import ReactDOM from 'react-dom';
 import { useTranslation } from "react-i18next";
-export function Energy () {
+export default function Energy () {
 const {t} = useTranslation('common');
 const [showModal, setShowModal] = useState(false);
 const learnmore = () => {

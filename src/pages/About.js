@@ -4,7 +4,7 @@ import Footer from '../footer';
 import FAQ from '../info/faq';
 import { Helmet } from 'react-helmet';
 
-export function About({ t }) {
+export default function About({ t }) {
     return (
         <div>
             <Helmet>  {/* Add Helmet component */}

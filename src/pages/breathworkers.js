@@ -8,7 +8,7 @@ import JenB from '../cards/scarlett.JPG';
 import { useTranslation } from 'react-i18next';
 //import PhoneInput from 'react-phone-input-2'; // ✅ Import
 
-export function Breathwork({ providerEmail }) {
+export default function Breathwork({ providerEmail }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);

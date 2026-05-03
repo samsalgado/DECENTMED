@@ -4,7 +4,7 @@ import Footer from '../footer';
 import Naturo from "../info/naturopathypg";
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
-export function Naturopathy() {
+export default function Naturopathy() {
 const { t } = useTranslation('common');
     
     return( 

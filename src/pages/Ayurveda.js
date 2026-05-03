@@ -5,7 +5,7 @@ import Footer from '../footer';
 import Ayurvedaa from '../info/ayurveda';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
-export function Ayurveda() {
+export default function Ayurveda() {
 const {t} = useTranslation('common');
 useEffect(() => {
     window.scrollTo(0, 0);

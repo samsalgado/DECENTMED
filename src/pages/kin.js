@@ -6,7 +6,7 @@ import prices from "../images copy/prices.png";
 import Footer from '../footer';
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react';
-export function AKPract() {
+export default function AKPract() {
   const { t } = useTranslation('common');
 
   // Solution 1: Force scroll to top when component mounts

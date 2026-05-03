@@ -8,7 +8,7 @@ import Erica from '../cards/erica.png';
 import { useTranslation } from 'react-i18next'
 import { Button,  Modal } from 'react-bootstrap';
 
-export function Acupract() {
+export default function Acupract() {
 const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [showModal, setShowModal] = useState(false);

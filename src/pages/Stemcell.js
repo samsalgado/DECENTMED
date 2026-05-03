@@ -7,7 +7,7 @@ import "../App.css";
 
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
-export function StemCell() {
+export default function StemCell() {
 const {t} = useTranslation('common')
 useEffect(() => {
     window.scrollTo(0, 0);

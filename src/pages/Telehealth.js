@@ -6,7 +6,7 @@ import Topbar from './topbar';
 import "../info/Info.css";
 import { useTranslation } from 'react-i18next';
 import {Button} from 'react-bootstrap';
-export function Telehealth() {
+export default function Telehealth() {
     const { t } = useTranslation("common");
         const txt = `
          An estimated 35% of Americans have lost trust in the traditional medical system. An estimated 8% of Americans do not have health insurance. That's around 26 to 28 million people. There needs to be an alternative to the traditional medical system. Introducing Dimemed, a holistic medicine information portal that connects patients with providers. At first, we decided to focus solely on the provider. We found three major pain points associated with provider problems. The first one being patient

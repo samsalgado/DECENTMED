@@ -5,7 +5,7 @@ import Footer from '../footer';
 import { Button } from 'react-bootstrap';
 import Adhdberg from '../info/adhdberg';
 import { useTranslation } from 'react-i18next';
-export function ADHD() {
+export default function  ADHD() {
 const { t } = useTranslation('common');
         const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

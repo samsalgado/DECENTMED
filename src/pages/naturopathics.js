@@ -7,7 +7,7 @@ import Meridian from '../cards/meridian.png';
 import { useTranslation } from 'react-i18next';
 import drtess from '../cards/drtess.png';
 
-export function Natpract() {
+export default function Natpract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

@@ -7,7 +7,7 @@ import Footer from '../footer';
 import Pricing from "./pricingtiers";
 import { Helmet } from 'react-helmet';
 import Initial from "./initial";
-export function ReviewPage() {
+export default function ReviewPage() {
     const { t } = useTranslation("common");
     return(
         <div>

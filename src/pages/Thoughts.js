@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Info9 from '../info/info9.js';
 import { useTranslation } from 'react-i18next';
-export function Mindset() {
+export default function Mindset() {
 const { t } = useTranslation('common');
     return(
      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>

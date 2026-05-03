@@ -9,7 +9,7 @@ import spectraspray from "../images copy/spectraspray.png";
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
-export function Nutrition() {
+export default function Nutrition() {
     const { t } = useTranslation('common');
     useEffect(() => {
         window.scrollTo(0, 0);

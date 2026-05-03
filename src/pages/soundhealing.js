@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Info10 from '../info/Info10';
 import { useTranslation } from 'react-i18next';
-export function Soundhealing() {
+export default function Soundhealing() {
 const { t } = useTranslation('common');
     return(
      <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>

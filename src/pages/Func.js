@@ -5,11 +5,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "../App.css";
 import amy from "../images copy/essence.png";
+import services from "../cards/Screenshot 2026-05-03 at 7.59.31 PM.png";
+import am from "../cards/web-logo-scaled.png";
 import prices from "../images copy/PRICESS.png";
 import Footer from '../footer';
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react';
-export function Func() {
+export default function Func() {
   const { t } = useTranslation('common');
 
   // Solution 1: Force scroll to top when component mounts
@@ -37,7 +39,6 @@ useEffect(() => {
           <Topbar />
         </header>
         <div className="container-blue">
-
         <div>
         <div data-aos="slide-right" className="container-blue">
           <h1>{t("Functional Medicine")}</h1> 
@@ -118,11 +119,89 @@ useEffect(() => {
             </div>
           </div>
         </div>
+               <div className="container-blue">
+        <div>
+          <div className="row mb-4">
+            <div className="col-md-12">
+              <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                <div className="card-body">
+                  <div className="row">
+                    <div className="col-md-2 text-center">
+                      <img 
+                        src={am} 
+                        alt="Optimal Root Wellness" 
+                        style={{ 
+                          maxWidth: '100px', 
+                          maxHeight: '100px', 
+                          objectFit: 'contain' 
+                        }} 
+                      />
+                    </div>
+                    <div className="col-md-7">
+                      <h2 className="h4 mb-1">{t('Optimal Root Wellness')}</h2>
+                      <p className="text-muted mb-2">{t("Lorna Ching-Carter")}</p>
+                      
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("170 N Henderson Rd # 310, King of Prussia, PA 19406")}
+                      </p>
+                      
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Advanced Testing")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Systems-Based Approach")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Personalized care and approach")}</span>
+                      </div>
+                    </div>
+                    <p>
+                      {t("After years in conventional healthcare, Lorna felt limited by short visits, symptom-based protocols, and systems that weren’t designed for true healing. She saw patients struggling with fatigue, gut issues, hormones, and chronic symptoms—and no one was putting the full picture together. Lorna created Optimal Root Wellness to change that. A practice where patients get time, answers, and support. A place where healing isn’t rushed—and where every step of your care is intentional. Lorna combines years of clinical experience with advanced training in functional and integrative medicine. Her approach includes: In-depth functional testing, Lifestyle and nutrition support, Root-cause analysis for chronic symptoms, Trauma-informed, relationship-centered care and Realistic plans that fit your life")}
+                    </p>
+                      
+            <iframe class="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=vsr7w14uyoTe2gvF" frameborder="0" allowfullscreen></iframe>
+                    <div className="col-md-5 text-end">
+<div style={{ textAlign: 'center', margin: '20px 0' }}>
+  <div style={{ 
+    fontSize: '18px', 
+    fontWeight: 'bold', 
+    marginBottom: '10px',
+    color: '#333'
+  }}>
+   
+  </div>
+         
+
+  <a 
+    href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+     <figure>
+    <img 
+      src={services} 
+      alt="The Center for Natural Health" 
+      style={{ 
+        maxWidth: '500px', 
+        maxHeight: '420px', 
+        objectFit: 'contain',
+        width: '100%',
+        cursor: 'pointer'
+      }}
+    />
+    <figcaption>{t("Buy")}</figcaption>
+    </figure>
+  </a> 
+</div>                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
         <footer>
           <Footer />
         </footer>
-
+      </div>
     </div>
   )
 }

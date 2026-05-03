@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import Footer from '../footer';
 // import BookingForm from './BookingForm/BookingForm';
 
-export function Summit() {
+export default function Summit() {
   const { t } = useTranslation('common');
 
   // I have removed the useState and useEffect for the popup here.

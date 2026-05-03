@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import tier0 from "../../images copy/ad.png";
-import tier2 from '../../images copy/Screenshot 2026-03-21 at 10.58.45 AM.png';
-import tier3 from "../../images copy/bigtierr.png";
+import tier3 from '../../images copy/Screenshot 2026-05-02 at 11.04.24 AM.png';
+import tier2 from "../../images copy/TIER1PRICE.png";
 import { useTranslation } from 'react-i18next';
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');
@@ -19,7 +19,7 @@ const ChooseProviderTier = () => {
     amount = 1500;
   } else if (selectedTier === "tier2") {
     tier = "Tier 2";
-    amount = 2500;
+    amount = 4000;
   }
   navigate("/stripepay", {
     state: { tier, amount }
@@ -58,7 +58,7 @@ const ChooseProviderTier = () => {
             alt="Tier 3"
             style={{ width: "520px", borderRadius: "10px" }}
           />
-          <p>{t("Tier 2 — $2500")}</p>
+          <p>{t("Tier 2 — $4000")}</p>
         </div>
       </div>
       {/* Dropdown */}
@@ -75,7 +75,7 @@ const ChooseProviderTier = () => {
       >
         <option value="tier0">{t("Tier 0 — $500")}</option>
         <option value="tier1">{t("Tier 1 — $1500")}</option>
-        <option value="tier2">{t("Tier 2 — $2500")}</option>
+        <option value="tier2">{t("Tier 2 — $4000")}</option>
       </select>
       {/* Continue Button */}
       <button

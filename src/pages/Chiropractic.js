@@ -43,7 +43,7 @@ import Chiro from '../info/chiro';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-export function Chiropractic() {
+export default function Chiropractic() {
   const { t } = useTranslation('common');
 
   useEffect(() => {

@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Benefitts from './Transbenefits';
 import { useTranslation } from 'react-i18next';
-export function Transformational() {
+export default function Transformational() {
 const { t } = useTranslation('common');
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>

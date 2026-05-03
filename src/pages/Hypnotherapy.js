@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 import HYPNO from '../info/hypno';
 import Hypnovids from '../info/hypnovids';
 import { useTranslation } from 'react-i18next';
-export function Hypnotherapy() {
+export default function Hypnotherapy() {
 const { t } = useTranslation('common');
         const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

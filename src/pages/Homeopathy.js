@@ -6,7 +6,7 @@ import Homeo from "../info/homeopathypg";
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
-export function Homeopathy() {
+export default function Homeopathy() {
 const { t } = useTranslation('common');
         const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

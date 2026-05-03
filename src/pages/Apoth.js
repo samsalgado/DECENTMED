@@ -36,7 +36,7 @@ import { Helmet } from 'react-helmet';
 import Footer from '../footer';
 import { useTranslation } from 'react-i18next';
 
-export function Apoth() {
+export default function  Apoth() {
   const { t } = useTranslation('common');
 
   return (

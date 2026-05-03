@@ -6,7 +6,7 @@ import Footer from '../footer';
 import '../App.css';
 import '../info/Info.css';
 import Nutrifyourlife from '../cards/nutrifyourlife.jpg';
-export function Nutritionpract() {
+export default function Nutritionpract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

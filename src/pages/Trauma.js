@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import Traumapg from "../info/traumapg";
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
-export function Trauma() {
+export default function Trauma() {
 const { t } = useTranslation('common');
 const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

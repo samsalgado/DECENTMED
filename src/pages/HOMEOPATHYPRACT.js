@@ -6,7 +6,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import svet from "../cards/svetoslav.png";
 import { useTranslation } from 'react-i18next';
-export function HomeopathyPract() {
+export default function HomeopathyPract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
   const [userLocation, setUserLocation] = useState('');

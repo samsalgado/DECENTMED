@@ -5,7 +5,7 @@ import Ptsdd from "../info/ptsd";
 import { Button } from "react-bootstrap";
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from "react-i18next";
-export function PTSD() {
+export default function PTSD() {
 const { t } = useTranslation('common');
  const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

@@ -5,7 +5,7 @@ import Footer from '../footer';
 import {Button} from 'react-bootstrap';
 import Info8 from '../info/info8';
 import { useTranslation } from 'react-i18next';
-export function AppliedKinesiology() {
+export default function  AppliedKinesiology() {
 const { t } = useTranslation('common');
 const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'

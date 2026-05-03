@@ -5,7 +5,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import LynnPg from '../info/lynnpg';
 import { useTranslation } from 'react-i18next';
-export function Lynn() {
+export default function Lynn() {
 const { t } = useTranslation('common');
     return(
         <div>

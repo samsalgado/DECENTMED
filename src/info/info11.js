@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import './Info.css';
 import ReactDOM from 'react-dom';
 import { Button, Modal } from'react-bootstrap';
+import funcmed from "../images copy/Screenshot 2026-05-03 at 7.44.47 PM.png";
 import Benefitts from "./Ben";
 import event6 from "../images copy/taylorholistic.png"
 import spectraspray from "../images copy/spectraspray.png";
@@ -273,7 +274,17 @@ const {t} = useTranslation('common');
           </div>
         </div>
       </div>
-              <img data-aos="slide-right" className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+       <div data-aos="slide-right">
+            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
+          </div>
+                                              <div data-aos="slide-right" className="container-blue">
+                        <img data-aos="slide-right" className='gridimage' src={funcmed} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                        
+                                    </div>
+                                           <Button className="custom-btn" href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" target="_blank">{t('Try Optimal Root Wellness')}</Button>
+                                    <div data-aos="slide-right" className="container-blue">
+                    <img data-aos="slide-right" className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                  </div>
                 <div data-aos="slide-right" className="container-blue">
        <Button className="custom-btn" href="https://essenceoflife.us/" target="_blank">{t('How Dr. Taylor Serves Boyton Beach, FL')}</Button>
       <br></br>

@@ -12,7 +12,7 @@ import Footer from '../footer';
 import price from "../images copy/tier33.png";
 import { Helmet } from 'react-helmet';
 
-export function Marketing() {
+export default function Marketing() {
     const { t } = useTranslation("common");
     return(
         <div>

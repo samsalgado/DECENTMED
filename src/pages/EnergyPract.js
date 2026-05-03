@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Charlotte from '../cards/charlottethc.jpg'
 import { useTranslation } from 'react-i18next'
-export function EnergyPract() {
+export default function EnergyPract() {
   const { t } = useTranslation('common');
   const [userLocation, setUserLocation] = useState('');
   const [filteredPractitioners, setFilteredPractitioners] = useState([]);
