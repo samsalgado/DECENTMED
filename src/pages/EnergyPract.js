@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import michelle from "../cards/SUNRISEWELLNESS.jpeg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import C from '../cards/Headshot-Shoshana-from-Aneeahseah-3-152-scaled.jpg';
 import Charlotte from '../cards/charlottethc.jpg'
 import { useTranslation } from 'react-i18next'
 export default function EnergyPract() {
@@ -58,6 +59,20 @@ export default function EnergyPract() {
       servesGlobally: true,
       countries: ["USA"]
 
+    },
+    {
+      id:3,
+      name: t('Shosana Leopold'),
+       title:t("Shosana's Healing Arts"),
+       location: "USA",
+       availability: t("Available Worldwide"),
+      availabilityType: "telehealth",
+      image: C,
+      website:"https://square.site/book/NNRR8PTT2YNB0/shoshana-s-healing-arts-ashland-or",
+      video:"https://www.youtube.com/embed/3R48M38T8jY?si=_sdzi8ullbbF19vb",
+      description: t("Shoshana Leopold is a grateful & happy Founder of SHA.  As a younger woman she earned degrees in Biology & Education & dedicated her work-life to improving science education in a variety of educational settings.  During these years, Shoshana learned that Western medicine is only one in a myriad of methods that could potentially help people be healthy & vibrant. She became fascinated by the benefits offered by holistic health traditions including Acupuncture, Homeopathy & Reflexology. Growing in the understanding that our natural tendency is to be healthy, she was intrigued & set about exploring the world of complimentary traditions for her family & herself. She was awed by just how powerful these healing methods are! It was with Reflexology that Shoshana first found a great professional fit. As a Reflexologist for more than 20 years, she has focused her work on creating full body relaxation, increasing energy & optimizing balance throughout the body. Always advancing her studies & expertise, Shoshana expanded her energy healing acumen by studying & adding Aromatherapy & more recently with IHT-Way© Coaching & Creation Healing,© both created & taught by Master teacher & Shaman, Adalayah (Aneeahseah). As a certified IHT-Way® practitioner, Shoshana has introduced new & dynamic, life-changing dimensions to her services. IHT-Way Coaching© offers the opportunity to take charge of the difficult, even daunting, issues in your life.  Whether you want more of or less of specific concerns, study & apply the IHT-Way© teachings to immediately & finally change them. With the profound form of energetic spiritual healing, Creation Healing the Souls Supreme Flight©, SHA offers the opportunity for clients to experience their natural state of wellbeing. Both Creation Healing© & IHT-Way© Coaching are available in person or remotely. Join Shoshana today in imagining & creating a world in which it is perfectly natural to feel great!"),
+      servesGlobally: true,
+      countries: ["USA"]
     }      
   ];
 
