@@ -33,7 +33,7 @@ function Vitamins() {
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t('CoQ10')}</h3>
-                    <img className='eve' src={coq10} alt='' />
+                    <img className='gridimage' src={coq10} alt='' />
                     <p className="e">
                         {t('This antioxidant converts food into energy. It helps fight diabetes, fertility, cancer and headaches. It is highest in liver, strawberries and oranges and seeds like lentils.')}
                     </p>

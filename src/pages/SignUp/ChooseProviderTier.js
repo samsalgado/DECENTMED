@@ -26,41 +26,53 @@ const ChooseProviderTier = () => {
   });
 };
 
-
-  return (
-    <div style={{ textAlign: "center", padding: "40px" }}>
-      <div className="container-blue">
-      <h1 className="logotitle">{t("Providers Must Sign Up Before Registration")}</h1>
+return (
+  <div style={{ textAlign: "center", padding: "40px" }}>
+    <div className="container-blue">
+      <h1 className="logotitle">
+        {t("Providers Must Sign Up Before Registration")}
+      </h1>
       <h1 className="logotitle">{t("Select Tier")}</h1>
       <p>{t("Please choose your subscription tier to continue.")}</p>
 
       {/* Images */}
-      <div style={{ display: "flex", justifyContent: "center", gap: "40px", marginTop: "30px" }}>
-        <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "10px",
+          marginTop: "30px",
+          flexWrap: "wrap",
+        }}
+      >
+        <div style={{ flex: "1 1 300px", maxWidth: "390px", textAlign: "center" }}>
           <img
             src={tier0}
             alt="Tier 0"
-            style={{ width: "520px", borderRadius: "10px" }}
+            style={{ width: "100%", borderRadius: "10px" }}
           />
           <p>{t("Tier 0 — $500")}</p>
         </div>
-    <div>
+
+        <div style={{ flex: "1 1 300px", maxWidth: "300px", textAlign: "center" }}>
           <img
             src={tier2}
             alt="Tier 1"
-            style={{ width: "520px", borderRadius: "10px" }}
+            style={{ width: "100%", borderRadius: "10px" }}
           />
           <p>{t("Tier 1 — $1500")}</p>
         </div>
-        <div>
+
+        <div style={{ flex: "1 1 300px", maxWidth: "300px", textAlign: "center" }}>
           <img
             src={tier3}
-            alt="Tier 3"
-            style={{ width: "520px", borderRadius: "10px" }}
+            alt="Tier 2"
+            style={{ width: "100%", borderRadius: "10px" }}
           />
           <p>{t("Tier 2 — $4000")}</p>
         </div>
       </div>
+
       {/* Dropdown */}
       <select
         value={selectedTier}
@@ -70,13 +82,14 @@ const ChooseProviderTier = () => {
           padding: "12px",
           fontSize: "16px",
           borderRadius: "6px",
-          border: "1px solid #ccc"
+          border: "1px solid #ccc",
         }}
       >
         <option value="tier0">{t("Tier 0 — $500")}</option>
         <option value="tier1">{t("Tier 1 — $1500")}</option>
         <option value="tier2">{t("Tier 2 — $4000")}</option>
       </select>
+
       {/* Continue Button */}
       <button
         onClick={handleContinue}
@@ -89,14 +102,15 @@ const ChooseProviderTier = () => {
           border: "none",
           borderRadius: "6px",
           fontSize: "18px",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
       >
         {t("Continue to Payment")}
       </button>
     </div>
-    </div>
-  );
+  </div>
+);
+
 };
 
 export default ChooseProviderTier;

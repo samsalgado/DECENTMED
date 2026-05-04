@@ -1,125 +1,209 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import '../App.css';
-import { useTranslation } from 'react-i18next';
-import anil from "../images copy/hateu.png";
-import linda from "../images copy/linda.jpeg";
-
 // Reusable wrapper for videos/images
-const MediaWrapper = ({ children }) => (
-  <div style={{
-    position: 'relative',
-    width: '100%',
-    paddingBottom: '56.25%', // 16:9 aspect ratio
-    overflow: 'hidden',
-    marginTop: '10px',
-  }}>
-    <div style={{
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-    }}>
-      {children}
-    </div>
-  </div>
-);
-
 function Speakers() {
-  const { t } = useTranslation("common");
-
-  const speakers = [
-    {
-      name: "Stacy Theodossin: Healing Goddess",
-      link: "https://www.healinggoddess.com/",
-      media: <iframe src="https://www.youtube.com/embed/ZaEGTAKvhSs?si=m7WllEoMq8MKNh4s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+  const [speakers] = useState([
+     {
+      name: "Bethany Bee",
+      link: "https://beelimitlessnow.com/",
+      videoUrl:"https://www.youtube.com/embed/ugSZ9oeYm8c?si=nIHZqOdX9JoH7vT0",
     },
-    {
-      name: "Lori Graham: Nutrify Your Life",
-      link: "https://decentmed.s3visibility.solutions/",
-      media: <iframe src="https://www.youtube.com/embed/dvtBiqgSsoU?si=KGFKbLwZzhWNnyK_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+     {
+      name: "Charlotte Clark",
+      link: "https://www.facebook.com/totalhealingcentre/",
+      videoUrl:"https://www.youtube.com/embed/BGjJ4usFVXo?si=7ekvGMmRkbJL3_fk",
     },
-    {
-      name: "Total Care Chiropractic",
-      link: "https://totalcarechiro.com/",
-      media: <iframe src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=g4ZTNSwkJVGYN69F" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+     {
+      name: "Bethany Stone",
+      link: "https://www.thrivingbynature.com/",
+      videoUrl:"https://www.youtube.com/embed/9pUjEybptCQ?si=emDj0hEwg-eygm8m",
     },
-    {
+     {
       name: "Jim Pehkonen: Amazing Life Design",
       link: "https://amazinglifedesign.com/",
-      media: <iframe src="https://www.youtube.com/embed/n3TTyHHPV8M?si=QBskcLDeYTLqX6ND" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+      videoUrl:"https://www.youtube.com/embed/nr2OmQRzAzQ?si=_FzbXMaZLky8IEeW",
+    },
+     {
+      name: "Saumil Manek",
+      link: "https://unioniscreation.com/",
+      videoUrl:"https://www.youtube.com/embed/ncNrRRyriVU?si=_FQX6gK7tpqySozZ",
     },
     {
-      name: "Dr. Kristen Barnes: Meridian Passage Wellness",
-      link: "https://meridianpassagewellness.com/",
-      media: <iframe src="https://www.youtube.com/embed/6dMNWTx2wrc?si=doJq3KvO8Jfh11Ez" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+      name: "Dr. Stephanie Heinhold",
+      link: "https://nourishedheartswellness.com/",
+      videoUrl:"https://www.youtube.com/embed/zC62vgTyHLg?si=UEFju3xC4I9WVdkp",
+    },
+     {
+      name: "Angela Romero",
+      link: "https://grhc.love/",
+      videoUrl:"https://www.youtube.com/embed/Ah4Usk_zcrg?si=TlVUQp1gdgohnFy7",
+    },
+      {
+      name: "Caroline McQueen",
+      link: "https://www.cdmhealthandwellness.com/",
+      videoUrl:"https://www.youtube.com/embed/ac1DvrGlIDQ?si=0y1EZz-3GB-8ZyEL",
     },
     {
-      name: "Ramona Crabtree-Falkner: Authentic Life Journey",
-      link: "http://authenticlifejourney.com/",
-      media: <iframe src="https://www.youtube.com/embed/hgHkSicJ6xc?si=6SsgL2WDYwH9Oi_5" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
-    },
-    {
-      name: "Anil Narain",
-      link: "ninedoors.in",
-      media: <img className="img-custom" src={anil} alt={t('Anil Narain')} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      name: "Dr. Tess Volner: Total Care Chiropractic",
+      link: "https://totalcarechiro.com/",
+      videoUrl:"https://www.youtube.com/embed/FTb_LYGzAVg?si=JrcHKc7F8tOktbP1",
     },
     {
       name: "Priscilla Muite",
       link: "https://sourceapp.dynamitelifestyle.com/thesource",
-      media: <iframe src="https://www.youtube.com/embed/ya7yJQAjhi8?si=Aptd9XVqFDx3oUwp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+      videoUrl:"https://www.youtube.com/embed/ya7yJQAjhi8?si=vyqoNwLSncyYa-8L",
+    },
+    {
+      name: "Shea Shulman",
+      link: "https://www.sheashulmantherapy.com/",
+      videoUrl:"https://www.youtube.com/embed/tWy0oFz82yw?si=Yphqt8MrJwzq8zHk",
+    },
+    {
+      name:"Donald Pelles",
+      link:"https://www.hypnosissilverspring.com/",
+      videoUrl:"https://www.youtube.com/embed/AI1uRqbSUgQ?si=Jq2wW0rXvQ5a0TqB",
+    },
+     {
+      name: "Lori Graham: Nutrify Your Life",
+      link: "https://nutrifyourlife.com/",
+      videoUrl:"https://www.youtube.com/embed/dvtBiqgSsoU?si=yeHuhGj889PfrjYz",
+    },
+     {
+      name: "Lorna Ching-Carter: Optimal Root Wellness",
+      link: "https://optimalrootwellness.com/",
+      videoUrl:"https://www.youtube.com/embed/Q3N9OzN-3iE?si=VC5Hj7o4kiJVuuF_",
+    },
+    {
+      name: "Stacy Theodossin: Healing Goddess",
+      link: "https://www.healinggoddess.com/",
+      videoUrl:"https://www.youtube.com/embed/ZaEGTAKvhSs?si=dYFlxRV-TrMVncPz",
+    },
+    {
+      name: "Dr. Kristen Barnes: Meridian Passage Wellness",
+      link: "https://meridianpassagewellness.com/",
+      videoUrl:"https://www.youtube.com/embed/_GCEZaTmBBE?si=SlyPihE8IJAPypVX",
+    },
+    {
+      name: "Ramona Crabtree-Falkner: Authentic Life Journey",
+      link: "http://authenticlifejourney.com/",
+      videoUrl:"https://www.youtube.com/embed/hgHkSicJ6xc?si=1iPqeQzH1GM3ObZ3"
+    },
+     {
+      name: "Dr. Nadia Taylor: Essence of Life",
+      link: "https://essenceoflife.us/",
+      videoUrl:"https://rumble.com/embed/v6zhjpy/?pub=4hu51y",
     },
     {
       name: "Advertiser: Linda McBee (Happy DNA Candy)",
       link: "https://sites.google.com/view/aplgo-products/product-details",
-      media: <img className="img-custom" src={linda} alt={t('Happy DNA Candy')} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      videoUrl:"https://www.youtube.com/embed/S1j-Oxijls8?si=HLLO1xYsTuiMjH7_",
     },
-    {
-      name: "Sarah Green: Green Hypnotherapy",
-      link: "https://green-hypnotherapy.com",
-      media: <iframe src="https://www.youtube.com/embed/DBiJKxlwqs8?si=IxRWijRAmB-pDouw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
-    },
-    {
-      name: "Kristina Hess: Thrive Results Coaching",
-      link: "https://thriveresultscoaching.com/",
-      media: <iframe src="https://www.youtube.com/embed/bz7bhIAwu5o?si=RZ7xOt4qUvTLXdxO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
-    },
-    {
-      name: "Dr. Nadia Taylor: Essence of Life",
-      link: "https://thriveresultscoaching.com/",
-      media: <iframe title="Alternative Cancer Treatment" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameBorder="0" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+   {
+      name: "Advertiser: Spectra Spray",
+      link: "https://www.spectraspray.com/",
+      videoUrl:"https://www.youtube.com/embed/At7Gc-qjbsc?si=mR8Nq0p20cHdGHhB",
     },
     {
       name: "Advertiser: Solve Your Out-of-Control Eating",
       link: "https://solveyouroutofcontroleating.com/",
-      media: <iframe src="https://www.youtube.com/embed/aXfU_SMr2fY?si=L9f2BtP7oQPLZsTY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ width: '100%', height: '100%' }}></iframe>
+      videoUrl:"https://www.youtube.com/embed/aXfU_SMr2fY?si=V9-VxHvLNEjShyIZ",
     }
-  ];
-
+  ]);
   return (
-    <div className="container-blue">
-      <h1 className="text-center mb-4" style={{ fontFamily: 'sans-serif' }}>{t('Our Speakers')}</h1>
-      <div className="row justify-content-center">
-        {speakers.map((speaker, index) => (
-          <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-            <a
-              href={speaker.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#1E90FF', textDecoration: 'none', transition: 'color 0.3s ease' }}
-              onMouseEnter={(e) => e.target.style.color = '#6495ED'}
-              onMouseLeave={(e) => e.target.style.color = '#1E90FF'}
-            >
-              <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t(speaker.name)}</h3>
-            </a>
-            <MediaWrapper>
-              {speaker.media}
-            </MediaWrapper>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+        <div className="contents">
+            <div className="plant-container">
+                {speakers.map((val, key) => (
+                    <PlantCard key={key} val={val} />
+                ))}
+            </div>
+        </div>
+    );
 }
+const PlantCard = ({ val }) => {
+    const [isInView, setIsInView] = useState(false);
+    const videoRef = useRef(null);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsInView(true);
+                        observer.disconnect(); // Stop observing once in view
+                    }
+                });
+            },
+            { threshold: 0.2 } // 50% visible in viewport
+        );
+
+        if (videoRef.current) {
+            observer.observe(videoRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+return (
+  <div className="plant-card">
+    <div
+      ref={videoRef}
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "315px",     // fixed height = fullscreen button visible
+        overflow: "hidden",  // prevents parent overlap
+        borderRadius: "8px",
+        backgroundColor: "#000",
+      }}
+    >
+      {isInView ? (
+        <iframe
+          title={`${val.name} Plant Video`}
+          src={`${val.videoUrl}&modestbranding=1&rel=0&fs=1`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowFullScreen
+          loading="lazy"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: "none",
+            touchAction: "manipulation",
+            pointerEvents: "auto",
+            zIndex: 1,
+          }}
+        />
+      ) : (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#ccc",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <p>Loading...</p>
+        </div>
+      )}
+    </div>
+     <h3>
+      <a
+        href={val.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none", color: "#027360" }}
+      >
+        {val.name}
+      </a>
+    </h3>
+  </div>
+);
+}
 export default Speakers;

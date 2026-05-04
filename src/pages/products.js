@@ -20,7 +20,7 @@ import linda from "../images copy/linda.png";
 import purium from "../images copy/purium.png";
 import forever from "../images copy/forever.png";
 import { useTranslation } from 'react-i18next';
-export function Shop() {
+export default function Shop() {
 const { t } = useTranslation('common');
 const [showModal, setShowModal] = useState(false);
 const txt = `
