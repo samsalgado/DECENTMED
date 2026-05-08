@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import tier0 from "../../images copy/ad.png";
-import tier3 from '../../images copy/Screenshot 2026-05-02 at 11.04.24 AM.png';
-import tier2 from "../../images copy/TIER1PRICE.png";
+import tier3 from '../../images copy/Screenshot 2026-05-08 at 9.58.11 AM.png';
+import tier2 from "../../images copy/Screenshot 2026-05-08 at 9.56.44 AM.png";
 import { useTranslation } from 'react-i18next';
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');

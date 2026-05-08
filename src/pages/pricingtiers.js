@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
-import tier3 from '../images copy/Screenshot 2026-05-02 at 11.04.24 AM.png';
-import tier2 from "../images copy/TIER1PRICE.png";
+import tier3 from '../images copy/Screenshot 2026-05-08 at 9.49.58 AM.png';
+import tier2 from "../images copy/Screenshot 2026-05-08 at 9.45.02 AM.png";
 import '../info/Info.css';
 import tier0 from "../images copy/advertisingtier (1).png";
 import { Button } from 'react-bootstrap';
