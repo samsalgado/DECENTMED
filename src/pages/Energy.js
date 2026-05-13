@@ -7,6 +7,7 @@ import { Button, Modal } from'react-bootstrap';
 import EsBenefits from "./eben";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import iht from "../images copy/Screenshot 2026-05-13 at 9.24.57 AM.png";
 import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
@@ -39,7 +40,6 @@ const learnmore = () => {
                 <meta name="description" content={t("Experience Intuitive Energy Healing")} />
                     <meta name="description" content={t("Seeking Energy Healing near me? Experience intuitive energy healing from around the world.")} />
                 </Helmet>
-
                 <header>
                     <Topbar />
                 </header>
@@ -70,6 +70,10 @@ const learnmore = () => {
       <p className='pr'>-{t("Navigation through emotional distress")}</p>
       <p className='pr'>-{t("Clears monkey mind (anxiety) of the mind")}</p>
       <p className='pr'>-{t("Clearing major generational, conditions and illnesses")}</p>
+      <h2>{t("Reiki healing for chronic fear and anxiety")}</h2>
+            <p className='pr'>{t("Reiki is a Japanese energy-based therapeutic technique used to support relaxation, reduce stress, and assist the body’s natural healing processes.")}</p>
+            <p className='pr'>{t("The word Reiki comes from two Japanese terms: Rei, meaning 'higher wisdom' or 'universal intelligence', and Ki, meaning 'life force energy'. Together, Reiki refers to universal life energy.")}</p>
+            <p className='pr'>{t("During a session, a practitioner places their hands lightly on or just above specific areas of the body with the intention of supporting energetic balance. Reiki is believed to help regulate the nervous system, reduce physiological stress responses, and promote a state of deep relaxation. Many individuals report improved emotional balance, decreased anxiety, better sleep, and an overall sense of well-being following sessions.")}</p>
       <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
         <iframe height="200px" width="100%" frameborder="no" scrolling="no" title="Stacy Theodossin DD" seamless src="https://player.simplecast.com/7c3a0915-ba46-4d06-93d8-b423a4de2039?dark=false"></iframe>
 
@@ -101,8 +105,11 @@ const learnmore = () => {
      
     </div>
   </div>
+  
 </div>     
- 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RoNbOhrSAMc?si=VDkJwYAwDABiU2Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dmw4nDIS3ac?si=facb93zUWm9dOjDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -115,6 +122,7 @@ const learnmore = () => {
       <div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
+                  <img className='gridimag' src={iht} alt='IHT' />
       <br></br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugSZ9oeYm8c?si=bgDwSaZPqgYuXu9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   {showModal && ReactDOM.createPortal(               
@@ -185,7 +193,7 @@ const learnmore = () => {
         <p className="per">3. {t("Expansion in consciousness")}</p>
         <p className="per">4. {t("Whole Body Healing")}</p>
         <p className="per">5. {t("Chemical free living")}</p>
-        <p className="per">6. {t("Intergrate body, mind, spirit as Multidimensional being")}</p>
+        <p className="per">6. {t("Integrate body, mind, spirit as Multidimensional being")}</p>
         <p className="per">7. {t("Become your best self and biohack your life")}</p>
         <p className="per">8. {t("New Earth Wayshower")}</p>
         </div>
@@ -193,7 +201,6 @@ const learnmore = () => {
      <div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/04ojko4ZzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      
     </div>
           <Button className="custom-btn" href="https://calendly.com/mgreenan89/30min" target="_blank">{t("Try Quantum Energy Healing")}</Button>
         <div data-aos="slide-right">

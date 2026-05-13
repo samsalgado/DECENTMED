@@ -38,18 +38,21 @@ const {t} = useTranslation('common');
           flex: '1'
         }}>
           <p className='pr'>{t("Sound healing is an evidence-informed wellness practice that uses therapeutic sound frequencies to support nervous system regulation, stress reduction, and mental clarity. Through instruments such as crystal singing bowls, gongs, and harmonic tones, participants are guided into deep states of relaxation that support both mental and physical well-being.")}</p>
-          <p className="pr">{t("Sound healing is a restorative wellness practice that uses carefully curated sound frequencies to guide the body and mind into deep relaxation. By slowing brainwave activity and calming the nervous system, sound healing supports stress reduction, emotional balance, and mental clarity. Participants often experience improved sleep, reduced anxiety, and a greater sense of grounding, making sound healing an effective complement to modern wellness programs—particularly for healthcare professionals and teams seeking sustainable stress management.")}</p>
+          <p className="pr">{t("It is a restorative wellness practice that uses carefully curated sound frequencies to guide the body and mind into deep relaxation. By slowing brainwave activity and calming the nervous system, sound healing supports stress reduction, emotional balance, and mental clarity. Participants often experience improved sleep, reduced anxiety, and a greater sense of grounding, making sound healing an effective complement to modern wellness programs—particularly for healthcare professionals and teams seeking sustainable stress management.")}</p>
+          <p className="pr">{t("Instruments such as crystal singing bowls, gongs, chimes, or tuning forks are used to produce sustained frequencies that help guide the brain into slower wave states associated with calm and restorative processes (such as alpha and theta states). These shifts can support reduced stress levels, improved sleep quality, enhanced mental clarity, and emotional balance. Sound healing is often used as an Integrative approach that works alongside diagnostics to help regulate the stress response, promote relaxation, and support overall well-being.")}</p>
           <Button className="custom-btn" href="https://decentmed.org/soundhealers" target="_blank">{t("Book Sound Healing Session")}</Button>  {/* Added Bootstrap Button */}
         </div>
-         <div data-aos="slide-right">
-            <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/3wMDLvsGszU?si=jH-somtaNgNFsU2J" frameborder="0" allowfullscreen></iframe>
+         <div>
+                     <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/3wMDLvsGszU?si=jH-somtaNgNFsU2J" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         
       </div>
       <div className="container-blue">
+                     <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/gvFt9Xh9iMU?si=PVY_x1ev4W0g7i2f" frameborder="0" allowfullscreen></iframe>
 
     <div data-aos="slide-right" className="vertical-video">
+      
   <iframe 
     className="rumble" 
     title="Sound Healing" 
@@ -136,7 +139,7 @@ const {t} = useTranslation('common');
     }}
            src="https://www.youtube.com/embed/Fk1kKCbr184" frameborder="0" allowfullscreen></iframe>
           </div>
-                             <div style={{
+          <div style={{
   position: 'relative',
   width: '100%',
   maxWidth: '360px',
@@ -177,8 +180,51 @@ const {t} = useTranslation('common');
       borderRadius: '8px',
       border: 'none'
     }}
-             src="https://www.youtube.com/embed/TIdvnXPirrg" frameborder="0" allowfullscreen></iframe>
+      src="https://www.youtube.com/embed/TIdvnXPirrg" frameborder="0" allowfullscreen></iframe>
+      
             </div>
+              <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}} data-aos="slide-right">
+               <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }}
+           src="https://www.youtube.com/embed/hAjzCXaa_tU?autoplay=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div style={{
+  position: 'relative',
+  width: '100%',
+  maxWidth: '360px',
+  margin: '0 auto',
+  aspectRatio: '9/16'
+}} data-aos="slide-right">
+               <iframe 
+    className="rumble" 
+    title="Sound Healing" 
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      borderRadius: '8px',
+      border: 'none'
+    }}
+           src="https://www.youtube.com/embed/iLTVANlcP_Q?si=vfLjo01kvZ_UDDm8" frameborder="0" allowfullscreen></iframe>
+          </div>
       <style jsx>{`
         @media (max-width: 768px) {
         body, html { background: none !important; background-color: transparent !important; }
@@ -197,7 +243,7 @@ const {t} = useTranslation('common');
       `}</style>
         <br></br>
       </div>
-
+<div className="container-blue" data-aos="slide-right">
       <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
@@ -205,7 +251,7 @@ const {t} = useTranslation('common');
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
-         
+        </div> 
        
          <a href="https://airtable.com/appzQKVIm0Fbh56Jo/shrcUTpEXH6Q4yC0k/tbllSz2OJz9xGEGHw">
         <img data-aos="slide-right" className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
