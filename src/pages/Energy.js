@@ -7,7 +7,6 @@ import { Button, Modal } from'react-bootstrap';
 import EsBenefits from "./eben";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import iht from "../images copy/Screenshot 2026-05-13 at 9.24.57 AM.png";
 import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
@@ -122,7 +121,6 @@ const learnmore = () => {
       <div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-                  <img className='gridimag' src={iht} alt='IHT' />
       <br></br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugSZ9oeYm8c?si=bgDwSaZPqgYuXu9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   {showModal && ReactDOM.createPortal(               

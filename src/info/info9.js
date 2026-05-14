@@ -12,6 +12,7 @@ import group from "../images copy/group.png";
 import bethanyspeaks from "../images copy/bethanyspeaks.png";
 import specialoffer from "../images copy/specialoffer.png";
 import Confidence from "./confidence";
+import sha from "../images copy/Screenshot 2026-05-14 at 4.29.27 PM.png";
 import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.JPG";
 import { useTranslation } from "react-i18next";
 const Info9 = () => {
@@ -449,6 +450,9 @@ possible for you. So borrow our belief because so many clients have gotten incre
         />
         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
+              <a href='https://calendly.com/shah333' alt="spectra spray">
+            <img className='gridimag' src={sha} alt='spectra spray' />
              </a>
         <a href="https://calendly.com/thrivingbynaturecoaching/30min?" alt="Thriving by Nature">
         <img className='gridimag' src={thrivingbynature} alt='21 Day Challenge' />
