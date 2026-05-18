@@ -93,7 +93,6 @@ const Chiro = lazy(() => import('./pages/ChiroPRACT'));
 const Breathwork = lazy(() => import('./pages/breathworkers'));
 const Hypnopract = lazy(() => import('./pages/hypnopract'));
 const AYPract = lazy(() => import('./pages/AYPRACT'));
-const WomensTrauma = lazy(() => import('./pages/Grief'));
 const Nutritionpract = lazy(() => import('./pages/nutritionpract'));
 const Coaching = lazy(() => import('./pages/coach'));
 const HomeopathyPract = lazy(() => import('./pages/HOMEOPATHYPRACT'));
@@ -102,7 +101,6 @@ const Breathworkk = lazy(() => import('./pages/Breathwork'));
 const Natpract = lazy(() => import('./pages/naturopathics'));
 const Naturopathy = lazy(() => import('./pages/Naturopathy'));
 const StemPract = lazy(() => import('./pages/STEMPRACT'));
-
 function App() {
   const { t } = useTranslation();
   const queryClient = new QueryClient();
@@ -122,7 +120,6 @@ function App() {
         <Route path="/soundhealers" element={<HealPract />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/naturopathylane" element={<Mike t={t} />} />
-        <Route path="/womenstrauma" element={<WomensTrauma t={t} />} />
         <Route path="/stemcell" element={<StemCell t={t} />} />
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />

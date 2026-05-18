@@ -6,15 +6,8 @@ import HealthCoaching from './healthcoaching';
 import amber from "../images copy/amber.png";
 import spectraspray from "../images copy/spectraspray.png";
 import './Info.css';
-import book1 from "../images copy/graphic1.png";
-import book3 from "../images copy/Screenshot 2026-04-03 at 9.40.18 PM.png";
-import book2 from "../images copy/Screenshot 2026-04-03 at 9.38.30 PM.png";
-import book4 from "../images copy/Screenshot 2026-04-03 at 9.41.38 PM.png";
-import book5 from "../images copy/Screenshot 2026-04-03 at 9.43.19 PM.png";
-import book6 from "../images copy/Screenshot 2026-04-03 at 9.44.13 PM.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Collapsible from 'react-collapsible';
 import cdm from "../images copy/cdm.png";
 import "./prevent.css";
 import AOS from 'aos';
@@ -26,9 +19,6 @@ const PreventWellness = () => {
   const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
   }   
-  const learntmore = () => {
-  window.location.href = 'https://www.nourishedheartswellness.com/book-online'
-} 
 useEffect(() => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -87,44 +77,6 @@ useEffect(() => {
   <div data-aos="slide-right">
   <Coachingvids />
   </div>
-   <iframe
-              height="515"
-              src="https://www.youtube.com/embed/7bu3HRvtWwE?si=P6WSLCYc-Fjd0OS4"
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '550px',
-                width: '100%',
-                height: '400px'
-              }}    
-            />
-             <iframe
-              height="515"
-              src="https://www.youtube.com/embed/zC62vgTyHLg?si=SmcbtsE31DV67rSo"
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '550px',
-                width: '100%',
-                height: '400px'
-              }}    
-            />
-
-            <div data-aos="slide-right">
-              <Collapsible trigger={<div className="collapsible-trigger">{t("Slides")}</div>}>
-         <img src={book1} className='gridimage' alt="img" />
-        <img className='gridimage' src={book2} alt="img" />
-        <img className='gridimage' src={book3} alt="img" />
-        <img className='gridimage' src={book4} alt="img" />
-        <img className='gridimage' src={book5} alt="img" />
-        <img className='gridimage' src={book6} alt="img" />
-          <Button onClick={learntmore} target='_blank' className="custom-btn">
-                {t('Learn More')}
-            </Button>
-        </Collapsible>
-        </div>
   <br></br>
    
                 {showModal && ReactDOM.createPortal(
