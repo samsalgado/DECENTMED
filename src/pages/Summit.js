@@ -9,9 +9,7 @@ import Footer from '../footer';
 
 export default function Summit() {
   const { t } = useTranslation('common');
-
   // I have removed the useState and useEffect for the popup here.
-
   return (
   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 

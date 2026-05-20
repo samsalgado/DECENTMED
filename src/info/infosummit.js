@@ -13,16 +13,13 @@ const SummitInfo = () => {
   return (
     <div data-aos="slide-right" className='theecontainer'>
       <div data-aos="slide-right" className='flex-container'>
-        <div  data-aos="slide-right"className='paragraph-container'>
+        <div  data-aos="slide-left"className='paragraph-container'>
           <p className='paragraph'>
             {t('Before traditional medicine, there was wellness. Our ancestors experienced vitality - living off the land. This first summit of many features providers eager to highlight their expertise and help you discover a new sense of wellness and experirence vitality.')}
           </p>
             <p className='paragraph'>
-            {t('Are you a provider passionate about wellness? Sign up now to become part of a community that fosters collaboration, learning, and growth. Share your knowledge and connect with like-minded professionals in our recurring summits, where expertise and innovation come together to shape the future of holistic care.')}
+            {t('May is Mental Health Awareness month, secure your spot today and educate the public about how your work helps with mental health.')}
           </p>
-        <p className='paragraph'>
-            {t('As a participant, register today to immerse yourself in a transformative experience that goes beyond traditional healthcare. Join us in these ongoing summits, where you can learn from the best, connect with top experts, and discover the tools to enhance your wellness journey. Together, we will redefine what it means to truly thrive.')}
-        </p>
         </div>
       </div>
     </div>

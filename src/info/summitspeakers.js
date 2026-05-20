@@ -28,11 +28,6 @@ function Speakers() {
       link: "https://unioniscreation.com/",
       videoUrl:"https://www.youtube.com/embed/ncNrRRyriVU?si=_FQX6gK7tpqySozZ",
     },
-    {
-      name: "Dr. Stephanie Heinhold",
-      link: "https://nourishedheartswellness.com/",
-      videoUrl:"https://www.youtube.com/embed/zC62vgTyHLg?si=UEFju3xC4I9WVdkp",
-    },
      {
       name: "Angela Romero",
       link: "https://grhc.love/",
