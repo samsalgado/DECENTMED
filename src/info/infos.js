@@ -2,7 +2,7 @@ import React, { useEffect} from 'react';
 import './Info.css';
 import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
-import summit from "../images copy/MentalHealthMatters.png";
+import summit from "../images copy/MentalHealthMatters (1).png";
 import SummitInfo from './infosummit';
 import { Button } from 'react-bootstrap';
 import LeadGenForm from './LeadGenForm';
