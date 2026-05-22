@@ -13,33 +13,19 @@ export default function LeadGenForm() {
     document.body.appendChild(script);
 
     return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
+      document.body.removeChild(script);
     };
   }, []);
 
   return (
-    <div
-      style={{
-        width: "100%",
-        maxWidth: "680px",
-        margin: "0 auto",
-        borderRadius: "12px",
-        overflow: "hidden",
-        boxShadow: "0 4px 24px rgba(0,0,0,0.10)",
-        background: "#fff",
-        minHeight: "713px",
-      }}
-    >
+    <div style={{ width: "100%", minHeight: 570 }}>
       <iframe
         src="https://api.leadconnectorhq.com/widget/form/8bDFekdAdog48e9KZORM"
         style={{
           width: "100%",
-          height: "713px",
+          height: "570px",
           border: "none",
-          borderRadius: "12px",
-          display: "block",
+          borderRadius: "4px",
         }}
         id="inline-8bDFekdAdog48e9KZORM"
         data-layout='{"id":"INLINE"}'
@@ -50,7 +36,7 @@ export default function LeadGenForm() {
         data-deactivation-type="neverDeactivate"
         data-deactivation-value=""
         data-form-name="Lead Generation"
-        data-height="713"
+        data-height="570"
         data-layout-iframe-id="inline-8bDFekdAdog48e9KZORM"
         data-form-id="8bDFekdAdog48e9KZORM"
         title="Lead Generation"
