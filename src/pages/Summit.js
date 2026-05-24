@@ -30,7 +30,6 @@ export default function Summit() {
         {/* <BookingForm token={localStorage.getItem('token')} ></BookingForm> */}
         <InfoSummit t={t} />
         <br />
-
         <footer>
           <Footer />
         </footer>

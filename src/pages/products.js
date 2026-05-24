@@ -379,6 +379,18 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
             borderRadius: '8px'
           }}
         />
+             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+  <iframe
+    width="660"
+    height="550"
+    src="https://www.youtube.com/embed/ag4WOBP24j0?si=wnzWLP2hKSZ0kgXv"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  ></iframe>
+</div> 
         <figcaption>{t("Buy")}</figcaption>
         </figure>
       </a>
@@ -505,9 +517,8 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
   </div>
                    <div data-aos="slide-right" className="container-blue">
-
-                                     <Button onClick={learnmore} className="custom-btn">
-                                  {t('Providers: Signup Here')}
+                   <Button onClick={learnmore} className="custom-btn">
+        {t('Providers: Signup Here')}
                 </Button> 
 </div>
 </div>
