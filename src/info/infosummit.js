@@ -18,7 +18,7 @@ const SummitInfo = () => {
             {t('Before traditional medicine, there was wellness. Our ancestors experienced vitality - living off the land. This first summit of many features providers eager to highlight their expertise and help you discover a new sense of wellness and experirence vitality.')}
           </p>
             <p className='paragraph'>
-            {t('May is Mental Health Awareness month, secure your spot today and educate the public about how your work helps with mental health.')}
+            {t('May is Mental Health Awareness month, learn about how holistic medicine helps with mental health.')}
           </p>
         </div>
       </div>

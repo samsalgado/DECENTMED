@@ -16,7 +16,6 @@ export default function LeadGenForm() {
         setIframeHeight(570);
       }
     };
-
     updateHeight();
     window.addEventListener("resize", updateHeight);
 

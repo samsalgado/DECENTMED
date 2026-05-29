@@ -2,7 +2,7 @@ import React, { useEffect} from 'react';
 import './Info.css';
 import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
-import summit from "../images copy/MentalHealthMatters (1).png";
+import summit from "../images copy/MentalHealthMatterss";
 import SummitInfo from './infosummit';
 import { Button } from 'react-bootstrap';
 import LeadGenForm from './LeadGenForm';
@@ -32,10 +32,10 @@ const InfoSummit = () => {
         <div>
           <img className='gridimag' src={summit} alt='' />
           <div>
-            <h1>Sign Up to Watch Summit</h1>
+            <h1>{t('Sign Up to Watch Summit')}</h1>
             <LeadGenForm />
           </div>
-            <h2>Previous Summits</h2>
+            <h2>{t('Previous Summits')}</h2>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/iNvwz2_FGSg?si=GPjYbA2nrKt6X4dl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div>
           </div>
@@ -45,7 +45,7 @@ const InfoSummit = () => {
       </div>
        <div className="container-blue">
       <SummitInfo />
-        <h2>Speakers</h2>
+        <h2>{t('Speakers')}</h2>
       <Speakers />
       </div>
       </div>
