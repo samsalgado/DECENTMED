@@ -53,6 +53,7 @@ import Blog21 from './pages/blogs/blog21';
 
 
 const Home = lazy(() => import('./pages/Home'));
+const Feldenkrais = lazy(() => import('./pages/Feldenkrais'));
 const Mindset = lazy(() => import('./pages/Thoughts'));
 const Prevent = lazy(() => import('./pages/Prevent'));
 const HealPract = lazy(() => import('./pages/HealPract'));
@@ -131,6 +132,7 @@ function App() {
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />
+        <Route path="/feldenkrais" element={<Feldenkrais t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/fertiility" element={<Blog22 t={t} />} />
         <Route path="/holistichealthmarketing" element={<Blog23 t={t} />} />

@@ -9,7 +9,6 @@ import LeadGenForm from './LeadGenForm';
 import "../App.css";
 const InfoSummit = () => {
   const { t } = useTranslation("common");
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://link.msgsndr.com/js/form_embed.js";
