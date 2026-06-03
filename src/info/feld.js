@@ -4,6 +4,7 @@ import "../App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Info.css';
+import spectraspray from "../images copy/qrcream.png";
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
 const Feld = () => {
@@ -60,7 +61,11 @@ const Feld = () => {
             </div>
           </div>
         </div>
-          
+            <div data-aos="slide-right" className="container-blue">
+     <a href='https://qrcream.us/' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
+             </div>
         <div data-aos="slide-right" style={{ marginTop: '20px' }}>
           <Button onClick={learnmore} className="custom-btn">
             {t('Providers: Signup Here')}
