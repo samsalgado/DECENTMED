@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 //In the Collapsible for Departments. Initially, it will go to Education page. Later it will point to Telehealth pages for respective practice.
 import "./Info.css";
-import ANS from './ans';
 import Merlin from './merlin';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -21,8 +20,7 @@ const FAQ = () => {
             <div data-aos="slide-right">
             <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
-            <ANS />        
+             </a>       
             </div>
             </div>
     
