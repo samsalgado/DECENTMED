@@ -7,6 +7,7 @@ import { Button, Modal } from'react-bootstrap';
 import EsBenefits from "./eben";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ren from "../images copy/reikiben.png";
 import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
@@ -167,11 +168,23 @@ const learnmore = () => {
               </tr>
         </Collapsible>
         <br></br>
+        
            <a href="tel:+13163935162">
                 <img className='gridimag' src={product} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
                 <figcaption>{t("Contact")}</figcaption>
                 </a>
         <br></br>
+          <div className='content-wrapper' style={{
+      flex: '1',
+      minWidth: '300px'
+    }} data-aos="slide-right">
+       <div className="row justify-content-center">
+        <h2 style={{textAlign:"center"}}>{t("5 Benefits of Reiki")}</h2>
+                   <a href="https://www.risingwithv.com/">
+                        <img className='gridimag' src={ren} alt='5 Benefits of Reiki' />
+                        </a>
+        </div>
+    </div>
         <div className="container-bbblue" style={{
     display: 'flex',
     flexDirection: 'row',
