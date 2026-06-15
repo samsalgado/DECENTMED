@@ -49,13 +49,10 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("Who is DECENTMED made for?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                 {t("- Providers looking for more patients")}
+                 {t("- Holistic Providers and Coaches looking for more patients")}
               </Card.Text>
               <Card.Text>
                 {t("- Those who do not have health insurance")}
-              </Card.Text>
-              <Card.Text>
-               {t("- Everyone, because Holistic medicine has a far better success rate than conventional")}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -75,7 +72,7 @@ const ANS = () => {
             <Card.Header className='card-header' as="h5">{t("Why healthcare?")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                {t("We have witnessed the corruption of the healthcare system. After the pandemic, we noticed the catastrophic shift in the current system and want to provide a cheaper alternatives to healthcare globally.")}
+                {t("After the pandemic, we noticed the catastrophic shift in the current system and want to provide less expensive and non-invasive alternatives to traditional healthcare globally.")}
               </Card.Text>
             </Card.Body>
           </Card>

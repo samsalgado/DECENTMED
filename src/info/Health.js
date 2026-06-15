@@ -16,7 +16,7 @@ const HealthFacts = () => {
                  {t("- Estimated $455 billion spent on healthcare yearly is lost each year to fraud and corruption.")}
               </Card.Text>
               <Card.Text>
-                 {t("- 45% of global citizens believe the healthcare sector is corrupt or very corrupt.")}
+                 {t("- According to WHO, About 4.6 billion people worldwide still lack access to essential health services. Additionally, around 2.1 billion people experience financial hardship when paying for healthcare.")}
               </Card.Text>
             </Card.Body>
           </Card>
