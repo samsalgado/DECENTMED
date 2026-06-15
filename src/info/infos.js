@@ -2,7 +2,7 @@ import React, { useEffect} from 'react';
 import './Info.css';
 import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
-import summit from "../images copy/MentalHealthMatterss.png";
+import summit from "../images copy/ptsdsummit.png";
 import SummitInfo from './infosummit';
 import { Button } from 'react-bootstrap';
 import LeadGenForm from './LeadGenForm';
@@ -37,6 +37,7 @@ const InfoSummit = () => {
             <h2>{t('Previous Summits')}</h2>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/iNvwz2_FGSg?si=GPjYbA2nrKt6X4dl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H7a3_Y1iphk?si=1fbHb2TzxwPt6v9T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           
         </div>
@@ -44,7 +45,7 @@ const InfoSummit = () => {
       </div>
        <div className="container-blue">
       <SummitInfo />
-        <h2>{t('Speakers')}</h2>
+        <h2>{t('Previous Speakers')}</h2>
       <Speakers />
       </div>
       </div>

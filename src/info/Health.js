@@ -26,13 +26,13 @@ const HealthFacts = () => {
             <Card.Header className='card-header' as="h3">{t("Obesity Statistics")}</Card.Header>
             <Card.Body>
               <Card.Text>
-                {t("- 1/3 Adults in the United States are obese.")}
+                {t("- 1/3 Adults in the United States are obese.")} <a href="decentmed.org/nutrition">(https://decentmed.org/nutrition)</a>
               </Card.Text>
               <Card.Text>
-                 {t("- 32.5% of American adults are overweight; obesity is linked to at least 60 chronic diseases.")}
+                 {t("- 32.5% of American adults are overweight; obesity is linked to at least 60 chronic diseases.")} <a href="decentmed.org/nutrition">(https://decentmed.org/nutrition)</a>
               </Card.Text>
               <Card.Text>
-                 {t("- Obesity affects 1/6 children in the United States. Obesity costs Americans an estimated $147 billion a year.")}
+                 {t("- Obesity affects 1/6 children in the United States. Obesity costs Americans an estimated $147 billion a year.")} <a href="decentmed.org/nutrition">(https://decentmed.org/nutrition)</a>
               </Card.Text>
             </Card.Body>
           </Card>

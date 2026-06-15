@@ -20,6 +20,9 @@ const SummitInfo = () => {
             <p className='paragraph'>
             {t('May is Mental Health Awareness month, learn about how holistic medicine helps with mental health.')}
           </p>
+            <p className='paragraph'>
+            {t('June is PTSD Awareness month, we are dedicated to showcasing providers that specialize in PTSD.')}
+          </p>
         </div>
       </div>
     </div>
