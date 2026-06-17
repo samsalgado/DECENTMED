@@ -71,12 +71,11 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('ADD')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('Digestion')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Muscoskeletal Issues')}</NavLink></ul>
-            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Chronic Pain')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Chronic Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/trauma">{t('Trauma')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Chronic Fatigue')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Chronic Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('Menopausal Symptoms')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
