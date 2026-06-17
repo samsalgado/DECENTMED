@@ -45,9 +45,7 @@ useEffect(() => {
     stagger: 0.3,
     ease: "back.out(1.7)"
   });
-
   // Buttons: fade + slide
-  
 }, []);
  useEffect(() => {
           AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
@@ -96,7 +94,16 @@ useEffect(() => {
               </Modal>,
               document.body
               )}
-
+    <div>
+                <h2>{t("What does a Life Coach do?")}</h2>
+      <p className='pr'>-{t("Helps with Self-Awareness")}</p>
+      <p className='pr'>-{t("Assists Emotional well-being")}</p>
+      <p className='pr'>-{t("Offers Clarity and direction")}</p>
+      <p className='pr'>-{t("Provides Stress reduction")}</p>
+      <p className='pr'>-{t("Adds Confidence and personal growth")}</p>
+      <p className='pr'>-{t("Supports to make aligned decisions")}</p>
+      <p className='pr'>-{t("Offers Action plans, guidance and follow up")}</p>
+      </div>
             <HealthCoaching />
             
             </div>

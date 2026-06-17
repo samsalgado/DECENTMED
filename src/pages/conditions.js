@@ -107,6 +107,8 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Prevention')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('High Blood Sugar')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/meditation">{t('Blood Pressure')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Adjustment difficulties')}</NavLink></ul>
+
     </NavDropdown>
   </>
 );

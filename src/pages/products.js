@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import 'aos/dist/aos.css';
 import qrcream from "../images copy/qrcream.png";
+import webinar from "../images copy/FreeWebinar_Helene (1).png";
 import lowbackpain from "../images copy/lowbackpain.png";
 import { useEffect } from 'react';
 import lifewavee from "../images copy/Screenshot 2026-04-03 at 8.58.06 PM.png";
@@ -334,21 +335,66 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
      <div>
     <div>
       <div data-aos="slide-right" className="container-blue">
-      <h2>{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
-        <a href='https://www.amazon.com/Low-Back-Pain-Relief-Minutes/dp/B0CZ9FBTMF/ref=sr_1_1?crid=3NZ1VHP7IPFVU&dib=eyJ2IjoiMSJ9.5cMR3fX_JaFTtaiMjgrr6lCjDtg8Jq8RD7A9DEzLM0BnY-2-sY65xTG9vP36xZvOhIjI66ShG6eZ0qGM3BOynRy3vU3KkY5IEaLq69dc-2eQoZTp0MxkB2ZZpoIhEahZg5uZRSCYo7co1vqKF7EC8zwnTF4DK8oyR3aXaVT1Se0HGNn3gBC6MXoPgJoWMHBCLGbvVs4a_xIfgIxEJ3hImGcqQixluH1JOVRMbh-Ptn0.PvrPfv5z4-3f7hv4Go8SKA-NanPQqXfRTdWkMZ1EFSA&dib_tag=se&keywords=helene+bertrand&qid=1777076483&sprefix=helene+bertrand%2Caps%2C329&sr=8-1'>
-    <figure>
-        <img 
-          src={lowbackpain} 
-          alt="logo" 
+        <div
+  style={{
+    display: "flex",
+    gap: "20px",
+    alignItems: "flex-start",
+    flexWrap: "wrap"
+  }}
+>
+  <div style={{ width: "200px" }}>
+    <h2>{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
+    <a href="https://www.amazon.com/Low-Back-Pain-Relief-Minutes/dp/B0CZ9FBTMF">
+      <figure>
+        <img
+          src={lowbackpain}
+          alt="logo"
           style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
+            width: "100%",
+            height: "auto",
+            borderRadius: "8px"
           }}
         />
         <figcaption>{t("Buy")}</figcaption>
-        </figure>
-      </a>
+      </figure>
+    </a>
+  </div>
+  <div style={{ width: "200px" }}>
+    <h2>{t("Free Webinar")}</h2>
+<a href="mailto:dr.hbertrand@gmail.com">      
+  <figure>
+        <img
+          src={webinar}
+          alt="logo"
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "8px"
+          }}
+        />
+        <figcaption>{t("Contact")}</figcaption>
+      </figure>
+    </a>
+  </div>
+  <div style={{ width: "200px" }}>
+    <h2>{t("QR Cream")}</h2>
+    <a href="https://qrcream.us/">
+      <figure>
+        <img
+          src={qrcream}
+          alt="logo"
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "8px"
+          }}
+        />
+        <figcaption>{t("Buy")}</figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
       <p>
         {t("Have you ever had low back pain so severe that it interfered with every area of your life, from your sleep, work, and family obligations to your relationship and even your sex life? Do you know someone who has? Then this book is for you. Did you know that doctors classify 90% of all low back pain as being “nonspecific”? That means the treatments they give for low back pain are also “nonspecific”. No wonder people with this problem have trouble finding relief!")}
       </p>
@@ -367,18 +413,6 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
      <div>
     <div>
       <div data-aos="slide-right" className="container-blue">
-      <h2>{t("QR cream")}</h2>
-        <a href='https://qrcream.us/'>
-    <figure>
-        <img 
-          src={qrcream} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
   <iframe
     width="660"
@@ -391,9 +425,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     allowFullScreen
   ></iframe>
 </div> 
-        <figcaption>{t("Buy")}</figcaption>
-        </figure>
-      </a>
+        
       </div>
       <div>   
     </div>

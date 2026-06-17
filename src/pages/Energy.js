@@ -70,13 +70,19 @@ const learnmore = () => {
       <p className='pr'>-{t("Navigation through emotional distress")}</p>
       <p className='pr'>-{t("Clears monkey mind (anxiety) of the mind")}</p>
       <p className='pr'>-{t("Clearing major generational, conditions and illnesses")}</p>
+      <div>
+        <h2>{t("Shamanic Energy Work")}</h2>
+                    <p className='pr'>{t("Earth-Based Shamanic Energy Work helps people explore deeper aspects of themselves through intention, guided journeys, breathwork, and spiritual energy.")}</p>
+                    <p className='pr'>{t("This work is based on the understanding that some challenges have emotional, energetic, symbolic, or spiritual dimensions that may not be fully accessed through thinking alone. Through guided exploration, clients may gain insight, release limiting patterns, reconnect with their inner wisdom, and create meaningful change.")}</p>
+                    <p className="pr">{t("This approach does not use plant medicines or substances. Instead, it uses sacred space, focused intention, breathwork, and guided journeys to support self-discovery, healing, and transformation.")}</p>
+                    <p className="pr">{t("The goal is not to tell people what is true for them, but to help them access their own deeper knowing and understanding.")}</p>
+      </div>
       <h2>{t("Reiki healing for chronic fear and anxiety")}</h2>
             <p className='pr'>{t("Reiki is a Japanese energy-based therapeutic technique used to support relaxation, reduce stress, and assist the body’s natural healing processes.")}</p>
             <p className='pr'>{t("The word Reiki comes from two Japanese terms: Rei, meaning 'higher wisdom' or 'universal intelligence', and Ki, meaning 'life force energy'. Together, Reiki refers to universal life energy.")}</p>
             <p className='pr'>{t("During a session, a practitioner places their hands lightly on or just above specific areas of the body with the intention of supporting energetic balance. Reiki is believed to help regulate the nervous system, reduce physiological stress responses, and promote a state of deep relaxation. Many individuals report improved emotional balance, decreased anxiety, better sleep, and an overall sense of well-being following sessions.")}</p>
       <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
         <iframe height="200px" width="100%" frameborder="no" scrolling="no" title="Stacy Theodossin DD" seamless src="https://player.simplecast.com/7c3a0915-ba46-4d06-93d8-b423a4de2039?dark=false"></iframe>
-
     </div>
     <div style={{
       flex: '1',
@@ -114,6 +120,16 @@ const learnmore = () => {
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
 <div data-aos="slide-right" className="container-blue">
+                <div>
+                <h2>{t("What is Shamanic Healing?")}</h2>
+      <p className='pr'>-{t("Releasing liming beliefs and patterns")}</p>
+      <p className='pr'>-{t("Connecting more deeply with the self, the higher self, the authentic self")}</p>
+      <p className='pr'>-{t("Soul retrieval")}</p>
+      <p className='pr'>-{t("Empowerment")}</p>
+      <p className='pr'>-{t("Clarity around your life purpose")}</p>
+      <p className='pr'>-{t("Releasing of energy blocks")}</p>
+      <p className='pr'>-{t("Feeling more aligned and living from your true self")}</p>
+      </div>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div>
