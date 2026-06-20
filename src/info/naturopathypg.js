@@ -68,16 +68,124 @@ const Naturo = () => {
         </div>
         <div>
         
-                          <div className="container-blue" data-aos="slide-left">
+        <div className="container-blue" data-aos="slide-left">
 
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+            <img className='gridimage' src={spectraspray} alt='spectra spray' />
              </a>
+                <div data-aos="slide-right">            
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/Tl-EMNXu1LE?si=cicn9fRmi7YXwcBx"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+                <div data-aos="slide-right">            
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/UYHTZDxXTFE?si=WdfJzINmvxe6X-HJ"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+                <div data-aos="slide-right">            
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/H9vPhnOnpXw?si=JSgwqOswjtpDpO_H"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+             
+                <div data-aos="slide-right">            
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/m1vr-y8T2FY?si=CJeKn83C0XfXi2TT"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+                <div data-aos="slide-right">            
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/bI_c90p2zMQ?si=D3jCNvecnABhkGXE"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+                <div data-aos="slide-right">            
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/PL-3LiSADbA?si=0ju5iYIxlFC3poV_"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
              <div data-aos="slide-right">
+              
               <iframe
               width="100%"
               height="515"
               src="https://www.youtube.com/embed/GjPp6HbNvI8?si=_vYO1vXwk_V2CRSv"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '300px'
+              }}    
+            />
+            </div>
+            <div data-aos="slide-right">
+              
+              <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/dAyQVioRJRk?si=dkPlkyu6Agc8Rok5"
               title="Patient Acquisition Engine Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -119,66 +227,8 @@ const Naturo = () => {
               }}    
             />
             </div>
-             <div data-aos="slide-right">
-              <iframe
-              width="100%"
-              height="515"
-              src="https://www.youtube.com/embed/bI_c90p2zMQ?si=UsEfhVCzyJ18TTvU"
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '550px',
-                width: '100%',
-                height: '300px'
-              }}    
-            />
-            </div>
-            <div data-aos="slide-right">
-              <iframe
-              width="100%"
-              height="515"
-              src="https://www.youtube.com/embed/m1vr-y8T2FY?si=jqrT3QsTqky6P5xU"              
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '550px',
-                width: '100%',
-                height: '300px'
-              }}    
-            />
-            </div>
-             <div data-aos="slide-right">
-              <iframe
-              width="100%"
-              height="515"
-              src="https://www.youtube.com/embed/PL-3LiSADbA?si=iDLbfRsDkSL_byVZ"              
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '550px',
-                width: '100%',
-                height: '300px'
-              }}    
-            />
-            </div>
-            <div data-aos="slide-right">
-              <iframe
-              width="100%"
-              height="515"
-              src="https://www.youtube.com/embed/6yO5kNpzvY0?si=OHMvz04v5zmOEcZo"              
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '550px',
-                width: '100%',
-                height: '300px'
-              }}    
-            />
-            </div>
+           
+          
           <Button className="custom-btn" href="https://meridianpassagewellness.com/" target="_blank">
             {t('Find Out How Dr. Barnes Can Help You')}
           </Button>
