@@ -8,8 +8,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import 'aos/dist/aos.css';
 import qrcream from "../images copy/qrcream.png";
+import dnaact from "../images copy/dnaact.png";
 import webinar from "../images copy/FreeWebinar_Helene (1).png";
 import lowbackpain from "../images copy/lowbackpain.png";
+import PRODUCT1 from "../images copy/IMG_5685.jpeg";
+import PRODUCT2 from "../images copy/essentialoil.jpeg";
+import PRODUCT3 from "../images copy/IMG_5681.jpeg";
 import { useEffect } from 'react';
 import lifewavee from "../images copy/Screenshot 2026-04-03 at 8.58.06 PM.png";
 import { Button, Modal } from 'react-bootstrap';
@@ -150,6 +154,15 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
         <img 
           src={SYOOCE} 
+          alt="logo" 
+        className="carousel-img" 
+        />
+        </a>
+        </div>
+          <div>
+        <a href='https://shop.solexnation.com/SunriseWellness/home'>
+        <img 
+          src={dnaact} 
           alt="logo" 
         className="carousel-img" 
         />
@@ -344,6 +357,77 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
   }}
 >
   <div style={{ width: "200px" }}>
+    <h2>{t("Coconut, Shea Butter, Vitamin E Beeswax Loce SPF 20-30")}</h2>
+    <a href="https://shop.solexnation.com/SunriseWellness/home">
+      <figure>
+        <img
+          src={PRODUCT1}
+          alt="logo"
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "8px"
+          }}
+        />
+        <figcaption>{t("Buy")}</figcaption>
+      </figure>
+    </a>
+  </div>
+  <div style={{ width: "200px" }}>
+    <h2>{t("Essential Oil")}</h2>
+<a href="https://shop.solexnation.com/SunriseWellness/home">      
+  <figure>
+        <img
+          src={PRODUCT2}
+          alt="logo"
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "8px"
+          }}
+        />
+        <figcaption>{t("Contact")}</figcaption>
+      </figure>
+    </a>
+  </div>
+  <div style={{ width: "200px" }}>
+    <h2>{t("THC Love")}</h2>
+    <a href="https://shop.solexnation.com/SunriseWellness/home">
+      <figure>
+        <img
+          src={PRODUCT3}
+          alt="logo"
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "8px"
+          }}
+        />
+        <figcaption>{t("Buy")}</figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+      <p>
+        {t("DNA Acivation products by Solexnation!")}
+      </p>
+      </div>
+      <div>   
+    </div>
+    </div>
+  </div>
+       <div>
+    <div>
+      <div data-aos="slide-right" className="container-blue">
+        <div
+  style={{
+    display: "flex",
+    gap: "20px",
+    alignItems: "flex-start",
+    flexWrap: "wrap"
+  }}
+>
+  <div style={{ width: "200px" }}>
     <h2>{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
     <a href="https://www.amazon.com/Low-Back-Pain-Relief-Minutes/dp/B0CZ9FBTMF">
       <figure>
@@ -409,6 +493,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     </div>
     </div>
   </div>
+
     <div>
      <div>
     <div>

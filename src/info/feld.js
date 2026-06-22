@@ -37,7 +37,7 @@ const Feld = () => {
               <p>
                 {t("Feldenkrais (specifically the Feldenkrais Method) is a form of alternative physical therapy and 'somatic education' focused on body awareness and mindful movement. Think of it as mindfulness or meditation, but entirely through physical motion. It was developed in the mid-20th century by Moshé Feldenkrais, a physicist, engineer, and martial artist who used his understanding of mechanics and neurology to heal his own severe knee injuries.")}
               </p>
-              <Button className="custom-btn" href="https://decentmed.org/" target="_blank">
+              <Button className="custom-btn" href="https://calendly.com/wellness1ssc/30min?back=1&month=2026-06" target="_blank">
                 {t("Try Feldenkrais")}
               </Button>
             </div>
