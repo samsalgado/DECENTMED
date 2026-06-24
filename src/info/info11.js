@@ -264,20 +264,37 @@ const {t} = useTranslation('common');
           flex: '1'
         }} data-aos="slide-right">
           <p className='pr'>{t("A thorough understanding of your lifestyle and habits is the cornerstone of better health. Our Holistic Evaluation offers clients in Florida an all-encompassing assessment. We meticulously review your diet and daily routines, forming a personalized nutrition and exercise strategy. Dr. Nadia Taylor believes in holistic medicine because it helped to heal her from disease and maladies. She has recently opened up her own holistic healing center, Essence of Life, in Boynton Beach, Florida in September 2025 so that she can help others heal through some of the same modalities that helped her. Dr. Taylor is excited to be back in South Florida after years living elsewhere and is continually looking to make positive changes in the community. She has dedicated her life to a life of service for the betterment of others.")}</p>
+          <h2 className='pr'>{t("Benefits of Functional Medicine for Women")}</h2>
+                    <p className='pr'>-{t("Balance hormones naturally")}</p>
+                    <p className='pr'>-{t("Reduce hot flashes and night sweats")}</p>
+                    <p className='pr'>-{t("Improve energy and combat fatigue")}</p>
+                    <p className='pr'>-{t("Support healthy weight management and metabolism")}</p>
+                     <p className='pr'>-{t("Reduce brain fog and improve mental clarity")}</p>
+                    <p className='pr'>-{t("Improve sleep quality")}</p>
+                    <p className='pr'>-{t("Stabilize mood, anxiety, and irritability")}</p>
+                    <p className='pr'>-{t("Support bones, heart, brain, and long-term health")}</p>
+                    <p className='pr'>-{t("Restore confidence, vitality, and quality of life")}</p>
+                    <p className='pr'>-{t("Improve libido and sexual wellness")}</p>
           <Button className="custom-btn" href="https://decentmed.org/funcmed" target="_blank">{t("Book Functional Medicine Session")}</Button>  {/* Added Bootstrap Button */}
         <br />
         <br />
-        
         </div>
          <div data-aos="slide-right">
             <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
           </div>
+           
         </div>
       </div>
        <div data-aos="slide-right">
             <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
           </div>
-                                              <div data-aos="slide-right" className="container-blue">
+      <div data-aos="slide-right">
+            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
+          </div>
+      
+                      <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/" target="_blank">{t('Try Hormone Health with Dr. Brown')}</Button>
+
+          <div data-aos="slide-right" className="container-blue">
                         <img data-aos="slide-right" className='gridimage' src={funcmed} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
                         
                                     </div>

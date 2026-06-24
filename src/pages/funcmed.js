@@ -20,8 +20,7 @@ const { t } = useTranslation('common');
             <header>
             <Topbar />
             </header>
-           <Info11 />
-                    
+           <Info11 />      
             <footer>
                 <Footer />
             </footer>

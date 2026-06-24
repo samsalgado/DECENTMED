@@ -7,9 +7,11 @@ import "../App.css";
 import amy from "../images copy/essence.png";
 import services from "../cards/Screenshot 2026-05-03 at 7.59.31 PM.png";
 import am from "../cards/web-logo-scaled.png";
+import brown from "../cards/drbrown.png";
 import prices from "../images copy/PRICESS.png";
 import Footer from '../footer';
 import { useTranslation } from 'react-i18next'
+import { Button } from "react-bootstrap";
 import { useEffect } from 'react';
 export default function Func() {
   const { t } = useTranslation('common');
@@ -119,6 +121,66 @@ useEffect(() => {
             </div>
           </div>
         </div>
+<div className="container-blue">
+        <div>
+          <div className="row mb-4">
+            <div className="col-md-12">
+              <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                <div className="card-body">
+                  <div className="row">
+                    <div className="col-md-2 text-center">
+                      <img 
+                        src={brown} 
+                        alt="Hormone Health with Dr. Brown" 
+                        style={{ 
+                          maxWidth: '100px', 
+                          maxHeight: '100px', 
+                          objectFit: 'contain' 
+                        }} 
+                      />
+                    </div>
+                    <div className="col-md-7">
+                      <h2 className="h4 mb-1">{t('Hormone Health with Dr. Brown')}</h2>
+                      <p className="text-muted mb-2">{t("DR. JEFFREY L. BROWN, D.O")}</p>
+                      
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("Palm Beach Gardens, FL")}
+                      </p>
+                      
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Hormone Health")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Endometriosis")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Menopause")}</span>
+                      </div>
+                    </div>
+                    <p>
+                      {t("I empower women with endometriosis, adenomyosis and other painful menstrual disorders, to break free from their cycle of pain, boost fertility potential, and help them live a vibrant, fulfilling life through holistic care. I also help women navigate perimenopause and menopause naturally by uncovering the root causes of hormone imbalances, fatigue, weight gain, sleep issues, hot flashes, and mood changes so they can regain their energy, balance their hormones, and feel vibrant again. I address women’s health issues by using a comprehensive, holistic approach to understand the root cause and help the body return to normal.")}
+                    </p>
+                      
+            <iframe class="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
+                    <div className="col-md-5 text-end">
+<div style={{ textAlign: 'center', margin: '20px 0' }}>
+  <div style={{ 
+    fontSize: '18px', 
+    fontWeight: 'bold', 
+    marginBottom: '10px',
+    color: '#333'
+  }}>
+   
+  </div>
+  <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/contact-us" target="_blank">
+                {t("Book")}
+  </Button>
+</div>                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>        
                <div className="container-blue">
         <div>
           <div className="row mb-4">

@@ -48,6 +48,7 @@ import ScrollTop from './Components/ScrollTop';
 import Mike from './pages/blogs/mike';
  import Blog22 from './pages/blogs/blog22';
 import Blog21 from './pages/blogs/blog21';
+import Menopause from './pages/Menopause';
 
 
 
@@ -133,6 +134,7 @@ function App() {
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />
         <Route path="/feldenkrais" element={<Feldenkrais t={t} />} />
+        <Route path="/menopause" element={<Menopause t={t} />} />
         <Route path="/trauma" element={<Trauma t={t} />} />
         <Route path="/fertiility" element={<Blog22 t={t} />} />
         <Route path="/holistichealthmarketing" element={<Blog23 t={t} />} />
