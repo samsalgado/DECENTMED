@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import val2 from "../images copy/val22.png";
-import val3 from "../images copy/val3.png";
-import val4 from "../images copy/Screenshot 2026-03-21 at 10.30.13 AM.png";
-import val1 from "../images copy/value1.png";
+import val2 from "../images copy/Screenshot 2026-06-26 at 12.47.34 PM.png";
+import val3 from "../images copy/Screenshot 2026-06-26 at 12.51.23 PM.png";
+import val4 from "../images copy/Screenshot 2026-06-26 at 12.55.16 PM.png";
+import val1 from "../images copy/Screenshot 2026-06-26 at 12.42.21 PM.png";
 
 // Updated to use CSS Grid for a strict 2x2 layout
 const GridContainer = styled.div`
@@ -26,8 +26,8 @@ const GridImage = styled.img`
 const ImageGrid = () => {
   return (
     <GridContainer>
-      <GridImage src={val1} alt="spectra spray 1" />
-      <GridImage src={val2} alt="spectra spray 2" />
+      <GridImage src={val1} alt="Education" />
+      <GridImage src={val2} alt="Sales and Marketing System" />
       <GridImage src={val3} alt="spectra spray 3" />
       <GridImage src={val4} alt="spectra spray 4" />
     </GridContainer>

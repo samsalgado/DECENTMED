@@ -1,16 +1,14 @@
 import '../App.css';
 import Providers from '../info/providrs';
-import Footer from '../footer';
 import { useEffect } from 'react';
 import "../App.css";
 import { Button } from 'react-bootstrap';
 import LOGO from "../images copy/dmed.png";
-import plants from "../images copy/plants.png";
+import plants from "../images copy/bckgrd.png";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 export function ProviderLandingPage() {
   const {t} = useTranslation('common');
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -35,10 +33,8 @@ export function ProviderLandingPage() {
           backgroundPosition: "center", 
           height: "120px", 
           position: "relative"
-        }}
+      }}
       >
-        {/* Logo top-left */}
-       {/* Logo top-left */}
     <img 
       src={LOGO} 
       alt="logo" 
@@ -49,7 +45,7 @@ export function ProviderLandingPage() {
         left: "8px" 
       }} 
     />
-         <Button style={{ 
+    <Button style={{ 
             position: "absolute", 
             top: "10px", 
             right: "10px", 
@@ -58,13 +54,9 @@ export function ProviderLandingPage() {
             cursor: "pointer" 
           }} onClick={handleEmailClick} target='_blank' className="custom-btn">
           {t('Book Meeting')}
-        </Button>    
+    </Button>    
       </div>
       <Providers />             
-
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }

@@ -237,7 +237,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
   ></iframe>
 </div>                  
 </div>
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+<Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
                 <Modal.Header closeButton>
                   <Modal.Title>{t("Transcript")}</Modal.Title>
                 </Modal.Header>
@@ -249,7 +249,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
                     {t("Close")}
                   </Button>
                 </Modal.Footer>
-              </Modal>
+</Modal>
     <div>
        <div data-aos="slide-right" className="container-blue">
       <h2>{t("Solve your Out of Control Eating")}</h2>
@@ -269,10 +269,8 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
       </a>
       </div>
       <div>
-     
       </div>
-           <div data-aos="slide-right" className="container-blue">
-
+<div data-aos="slide-right" className="container-blue">
 <h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
       <p>
         {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
@@ -315,8 +313,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         </figure>
       </a>
       </div>
-      <div>
-     
+      <div>    
 </div>
     </div>
     
