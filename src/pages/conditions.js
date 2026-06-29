@@ -76,7 +76,14 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Chronic Fatigue')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('Menopausal Symptoms')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Endometriosis')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Menopausal Symptoms')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('PMOS (PCOS)')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Menopausal Symptoms')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Postmenopause')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('PMS')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Perimenopause')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Premenstrual Dysphoric Disorder')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Autonomic dysfunction')}</NavLink></ul>
