@@ -19,7 +19,7 @@ import lifewavee from "../images copy/Screenshot 2026-04-03 at 8.58.06 PM.png";
 import { Button, Modal } from 'react-bootstrap';
 import obasi from "../images copy/obasi.png";
 import spectraspray from "../images copy/spectraspray.png";
-import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
+import SYOOCE from '../cards/SOLVEYOUROUTOFCONTROLEATING.webp';
 import lifewave from '../images copy/lifewave.png';
 import linda from "../images copy/linda.png";
 import purium from "../images copy/purium.png";

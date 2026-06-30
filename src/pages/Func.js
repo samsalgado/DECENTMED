@@ -7,7 +7,7 @@ import "../App.css";
 import amy from "../images copy/essence.png";
 import services from "../cards/Screenshot 2026-05-03 at 7.59.31 PM.png";
 import am from "../cards/web-logo-scaled.png";
-import brown from "../cards/drbrown.png";
+import brown from "../cards/drbrown.webp";
 import prices from "../images copy/PRICESS.png";
 import Footer from '../footer';
 import { useTranslation } from 'react-i18next'

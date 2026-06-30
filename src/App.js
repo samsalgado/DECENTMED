@@ -1,54 +1,55 @@
 import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import './App.css';
-import FileUploadDownload from './pages/landingpage';
 import { useTranslation } from 'react-i18next';
 import BrowserOnly from "./Components/BrowserOnly"
-import Hoxsey from './pages/blogs/hoxsey';
 import Wrapper from './info/Wrapper';
-import Bitcoin from './pages/blogs/bitcoin';
-import BlogAcu from './pages/blogs/blogacu';
-import Blog7 from './pages/blogs/blog7';
-import Shop from "./pages/products";
-import Blog4 from './pages/blogs/blog4';
-import Ramona from './pages/blogs/ramona';
-import Blog9 from './pages/blogs/blog9';
-import Blog20 from './pages/blogs/blog20';
-import Blog16 from './pages/blogs/blog16';
-import Blog3 from './pages/blogs/blog3';
-import Blog6 from './pages/blogs/cancer';
-import Blog5 from './pages/blogs/blog5';
-import Blog10 from './pages/blogs/blog10';
-import Blog19 from './pages/blogs/blog19';
-import Blog12 from './pages/blogs/blog12';
-import Blog14 from './pages/blogs/blog14';
-import BlogPage from "./pages/Blog";
-import Blog23 from './pages/blogs/blog23';
-import SignUp from './pages/SignUp/SignUp';
-import SignIn from './pages/Login/SignIn';
-import {ProviderLandingPage} from "./pages/ProviderLandingPage";
-import Blog18 from './pages/blogs/blog18';
-import Blog1 from './pages/blogs/blog1';
 import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-import Blog8 from './pages/blogs/blog8';
-import Fen from './pages/blogs/fenbendazole';
-import Ivermectin from './pages/blogs/ivermectin';
-import Blog24 from './pages/blogs/blog24';
-import HerbalMedicine from './pages/HerbalMedicine';
-import PublicSignUp from './pages/SignUp/PublicSignup';
-import SignupOptions from './pages/SignupOptions';
-import StripePayment from './pages/StripePayment/StripePayment';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
-import ProviderDashboard from './Dashboard/ProviderDashboard';
-import AdminDashboard from './Dashboard/AdminDashboard';
 import ScrollTop from './Components/ScrollTop';
-import Mike from './pages/blogs/mike';
- import Blog22 from './pages/blogs/blog22';
-import Blog21 from './pages/blogs/blog21';
-import Menopause from './pages/Menopause';
+
+const FileUploadDownload = lazy(() => import('./pages/landingpage'));
+const Hoxsey = lazy(() => import('./pages/blogs/hoxsey'));
+const Bitcoin = lazy(() => import('./pages/blogs/bitcoin'));
+const BlogAcu = lazy(() => import('./pages/blogs/blogacu'));
+const Blog7 = lazy(() => import('./pages/blogs/blog7'));
+const Shop = lazy(() => import("./pages/products"));
+const Blog4 = lazy(() => import('./pages/blogs/blog4'));
+const Ramona = lazy(() => import('./pages/blogs/ramona'));
+const Blog9 = lazy(() => import('./pages/blogs/blog9'));
+const Blog20 = lazy(() => import('./pages/blogs/blog20'));
+const Blog16 = lazy(() => import('./pages/blogs/blog16'));
+const Blog3 = lazy(() => import('./pages/blogs/blog3'));
+const Blog6 = lazy(() => import('./pages/blogs/cancer'));
+const Blog5 = lazy(() => import('./pages/blogs/blog5'));
+const Blog10 = lazy(() => import('./pages/blogs/blog10'));
+const Blog19 = lazy(() => import('./pages/blogs/blog19'));
+const Blog12 = lazy(() => import('./pages/blogs/blog12'));
+const Blog14 = lazy(() => import('./pages/blogs/blog14'));
+const BlogPage = lazy(() => import("./pages/Blog"));
+const Blog23 = lazy(() => import('./pages/blogs/blog23'));
+const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
+const SignIn = lazy(() => import('./pages/Login/SignIn'));
+const ProviderLandingPage = lazy(() => import('./pages/ProviderLandingPage').then(module => ({ default: module.ProviderLandingPage })));
+const Blog18 = lazy(() => import('./pages/blogs/blog18'));
+const Blog1 = lazy(() => import('./pages/blogs/blog1'));
+const Blog8 = lazy(() => import('./pages/blogs/blog8'));
+const Fen = lazy(() => import('./pages/blogs/fenbendazole'));
+const Ivermectin = lazy(() => import('./pages/blogs/ivermectin'));
+const Blog24 = lazy(() => import('./pages/blogs/blog24'));
+const HerbalMedicine = lazy(() => import('./pages/HerbalMedicine'));
+const PublicSignUp = lazy(() => import('./pages/SignUp/PublicSignup'));
+const SignupOptions = lazy(() => import('./pages/SignupOptions'));
+const StripePayment = lazy(() => import('./pages/StripePayment/StripePayment'));
+const ProviderDashboard = lazy(() => import('./Dashboard/ProviderDashboard'));
+const AdminDashboard = lazy(() => import('./Dashboard/AdminDashboard'));
+const Mike = lazy(() => import('./pages/blogs/mike'));
+const Blog22 = lazy(() => import('./pages/blogs/blog22'));
+const Blog21 = lazy(() => import('./pages/blogs/blog21'));
+const Menopause = lazy(() => import('./pages/Menopause'));
 
 
 
@@ -103,6 +104,13 @@ const Breathworkk = lazy(() => import('./pages/Breathwork'));
 const Natpract = lazy(() => import('./pages/naturopathics'));
 const Naturopathy = lazy(() => import('./pages/Naturopathy'));
 const StemPract = lazy(() => import('./pages/STEMPRACT'));
+
+const LoadingSpinner = () => (
+  <div className="spinner-container">
+    <div className="custom-spinner"></div>
+  </div>
+);
+
 function App() {
   const { t } = useTranslation();
   const queryClient = new QueryClient();
@@ -115,7 +123,7 @@ function App() {
       {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}
       </BrowserOnly>
       <Wrapper>
-     <Suspense fallback={<div>Loading...</div>}>
+     <Suspense fallback={<LoadingSpinner />}>
       <Routes>
         <Route exact path="/" element={<Home t={t} />} />
         <Route path="/soundhealing" element={<Soundhealing />} />

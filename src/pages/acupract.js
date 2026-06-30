@@ -3,8 +3,8 @@ import '../App.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import Footer from '../footer';
-import Treis from '../cards/oceantreis.jpg';
-import Erica from '../cards/erica.png';
+import Treis from '../cards/oceantreis.webp';
+import Erica from '../cards/erica.webp';
 import { useTranslation } from 'react-i18next'
 import { Button,  Modal } from 'react-bootstrap';
 

@@ -21,89 +21,89 @@ function Practices() {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/homeopract'>
                             <h3 className="card-title-fixed" >{t("Homeopathy")}</h3>
-                            <img className="img-custom" src={Treatment.homeopath} alt={t("Homeopathy")} />
+                            <img className="img-custom" loading="lazy" src={Treatment.homeopath} alt={t("Homeopathy")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/massagetherapy'>
                             <h3 className="card-title-fixed" >{t("Massage Therapy")}</h3>
-                            <img className="img-custom" src={Treatment.massage} alt={t("Massage Therapy")} />
+                            <img className="img-custom" loading="lazy" src={Treatment.massage} alt={t("Massage Therapy")} />
                         </NavLink>
                     </div>
                       <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/energyhealers'>
                             <h3 className="card-title-fixed" >{t("Energy Healing")}</h3>
-                            <img className="img-custom" src={Treatment.energy} alt={t("Energy Healing")} />
+                            <img className="img-custom" loading="lazy" src={Treatment.energy} alt={t("Energy Healing")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to="/acupuncturists">
                         <h3 className="card-title-fixed" >{t("Acupuncture")}</h3>
-                        <img className="img-custom" src={Treatment.acupuncture} alt={t("Acupuncture")} />
+                        <img className="img-custom" loading="lazy" src={Treatment.acupuncture} alt={t("Acupuncture")} />
                     </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <h3 className="card-title-fixed" >{t("Chelation")}</h3>
-                        <img className="img-custom" src={Treatment.chelation} alt={t("Chelation")} />
+                        <img className="img-custom" loading="lazy" src={Treatment.chelation} alt={t("Chelation")} />
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to="/coaching">
                         <h3 className="card-title-fixed" >{t("Coaching")}</h3>
-                        <img className="img-custom" src={Departments.prevent} alt={t("Health Coach")} />
+                        <img className="img-custom" loading="lazy" src={Departments.prevent} alt={t("Health Coach")} />
                     </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to="/chiropract">
                             <h3 className="card-title-fixed" >{t("Chiropractic")}</h3>
-                            <img className="img-custom" src={Departments.chiro} alt={t("Chiropractic")} />
+                            <img className="img-custom" loading="lazy" src={Departments.chiro} alt={t("Chiropractic")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to="/naturopathicproviders">
                         <h3 className="card-title-fixed" >{t("Naturopathy")}</h3>
-                        <img className="img-custom" src={Departments.naturopathy} alt={t("Naturopathy")} />
+                        <img className="img-custom" loading="lazy" src={Departments.naturopathy} alt={t("Naturopathy")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/hypnopract'>
                             <h3 className="card-title-fixed" >{t("Hypnotherapy")}</h3>
-                            <img className="img-custom" src={Departments.hypnotherapy} alt={t("Hypnotherapy")} />
+                            <img className="img-custom" loading="lazy" src={Departments.hypnotherapy} alt={t("Hypnotherapy")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/ayurvedicmedicine'>
                             <h3 className="card-title-fixed" >{t("Ayurveda")}</h3>
-                            <img className="img-custom" src={Departments.ayurveda} alt={t("Ayurveda")} />
+                            <img className="img-custom" loading="lazy" src={Departments.ayurveda} alt={t("Ayurveda")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                         <NavLink to='/nutritionpract'>
                             <h3 className="card-title-fixed" >{t("Nutrition")}</h3>
-                            <img className="img-custom" src={Departments.nutriton} alt={t("Nutrition")} />
+                            <img className="img-custom" loading="lazy" src={Departments.nutriton} alt={t("Nutrition")} />
                         </NavLink>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to='/stemcellproviders'>
                         <h3 className="card-title-fixed" >{t("Stem Cell Therapy")}</h3>
-                        <img className="img-custom" src={Departments.stemcell} alt={t("Stem Cell")} />
+                        <img className="img-custom" loading="lazy" src={Departments.stemcell} alt={t("Stem Cell")} />
                         </NavLink>
                     </div>
                   <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to='/funcmed'>
                         <h3 className="card-title-fixed" >{t("Functional Medicine")}</h3>
-                        <img className="img-custom" src={Departments.Func} alt={t("Functional Medicine")} />
+                        <img className="img-custom" loading="lazy" src={Departments.Func} alt={t("Functional Medicine")} />
                         </NavLink>
                     </div>
                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to='/breathworkers'>
                         <h3 className="card-title-fixed" >{t("Somatic Breathwork")}</h3>
-                        <img className="img-custom" src={Departments.BREATH} alt={t("Somatic Breathwork")} />
+                        <img className="img-custom" loading="lazy" src={Departments.BREATH} alt={t("Somatic Breathwork")} />
                         </NavLink>
                    </div>
                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <NavLink to='/akpract'>
                         <h3 className="card-title-fixed" >{t("Frequency Medicine")}</h3>
-                        <img className="img-custom" src={Departments.freq} alt={t("Frequency Medicine")} />
+                        <img className="img-custom" loading="lazy" src={Departments.freq} alt={t("Frequency Medicine")} />
                         </NavLink>
                    </div>
                 </div>

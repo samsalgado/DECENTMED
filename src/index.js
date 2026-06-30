@@ -51,7 +51,7 @@ i18next.on("missingKey", async (lng, namespace, key) => {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Suspense fallback={<div>Loading...</div>}>
+  <Suspense fallback={<div className="spinner-container"><div className="custom-spinner"></div></div>}>
     <I18nextProvider i18n={i18next}>
       <React.StrictMode>
         <Router>

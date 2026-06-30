@@ -27,3 +27,7 @@ node_modules/
 dist/
 build/
 .vercel
+
+# backups of original heavy images
+src/images copy/backups/
+compress.ps1

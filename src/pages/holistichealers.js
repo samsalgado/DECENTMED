@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import { useEffect } from 'react';
 import Footer from '../footer';
 //import ReactPlayer from 'react-player';
-import JenB from '../cards/SOLVEYOUROUTOFCONTROLEATING.png';
+import JenB from '../cards/SOLVEYOUROUTOFCONTROLEATING.webp';
 import { useTranslation } from 'react-i18next'
 export default function HolisticHealers() {
 const { t } = useTranslation('common');

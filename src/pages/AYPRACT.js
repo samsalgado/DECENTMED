@@ -4,7 +4,7 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import { useEffect, useState } from 'react';
 import Stacy from '../cards/stacy.png';
-import angela from '../cards/angela.jpg';
+import angela from '../cards/angela.webp';
 import stacyservices from "../cards/stacyservices.png";
 import Yogi from '../cards/yogiSanjivana.jpg';
 import { useTranslation } from 'react-i18next';

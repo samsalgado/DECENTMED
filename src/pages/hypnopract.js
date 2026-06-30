@@ -3,7 +3,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import shea from "../cards/shea.png";
+import shea from "../cards/shea.jpg";
 import don from "../cards/don.jpg";
 import Green from '../cards/Green-hypnotherapy.png';
 import { useTranslation } from 'react-i18next';

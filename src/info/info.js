@@ -34,17 +34,17 @@ const Info = () => {
                 <div className="container-blue">
           <a href="https://linktr.ee/AllanLRoberts" target="_blank" rel="noopener noreferrer">
               <figure>
-            <img className='gridimag' src={allan} alt='Apothecary' />
+            <img className='gridimag' src={allan} alt='Apothecary' loading="lazy" width="1200" height="600" />
               <figcaption>{t("Buy")}</figcaption>
         </figure>
           </a>
           </div>
           <div className="container-blue" data-aos="slide-right">
-          <img className='gridmag' src={features} alt='Features' />
+          <img className='gridmag' src={features} alt='Features' loading="lazy" width="954" height="896" />
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
       <Values />
       <a href='decentmed.org/apoth'>
-          <img className='gridmagg' src={hol} alt='Apothecary' />
+          <img className='gridmagg' src={hol} alt='Apothecary' loading="lazy" width="1002" height="670" />
       </a>
       <ANS />
       </div>
