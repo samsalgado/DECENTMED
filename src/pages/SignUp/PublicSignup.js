@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { loadLanguageFile } from "../../translationUtils";
 import "../../info/Info.css";
 import "../Styles/AuthForm.css";
 const PublicSignUp = () => {
@@ -142,15 +143,19 @@ const PublicSignUp = () => {
   };
 
   // Function to change language
-  const changeLang = (lang) => {
-    i18n.changeLanguage(lang)
-      .then(() => {
-        localStorage.setItem("preferredLanguage", lang);
-        setSelectedLang(lang);
-        window.location.reload(); // Refresh page after language change
-
-      })
-      .catch(err => console.error("Language change error:", err));
+  const changeLang = async (lang) => {
+    try {
+      if (!i18n.hasResourceBundle(lang, 'common')) {
+        const translations = await loadLanguageFile(lang);
+        i18n.addResourceBundle(lang, 'common', translations, true, true);
+      }
+      await i18n.changeLanguage(lang);
+      localStorage.setItem("preferredLanguage", lang);
+      setSelectedLang(lang);
+      window.location.reload(); // Refresh page after language change
+    } catch (err) {
+      console.error("Language change error:", err);
+    }
   };
 
   // UseEffect hook to check localStorage on page load

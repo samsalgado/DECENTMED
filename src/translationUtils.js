@@ -50,3 +50,27 @@ export const saveTranslation = (lang, key, translatedText) => {
   translations[lang][key] = translatedText;
   localStorage.setItem("translations", JSON.stringify(translations));
 };
+
+/**
+ * Dynamically import a language JSON file based on the language code.
+ * @param {string} lang - The language code (e.g. 'en', 'es', 'nl')
+ * @returns {Promise<object>} - The translation resources
+ */
+export const loadLanguageFile = async (lang) => {
+  try {
+    switch (lang) {
+      case 'nl': return (await import('./lang/nl.json')).default;
+      case 'es': return (await import('./lang/es.json')).default;
+      case 'fr': return (await import('./lang/fr.json')).default;
+      case 'ch': return (await import('./lang/ch.json')).default;
+      case 'hi': return (await import('./lang/hi.json')).default;
+      case 'ar': return (await import('./lang/ar.json')).default;
+      case 'en':
+      default: return (await import('./lang/en.json')).default;
+    }
+  } catch (err) {
+    console.error(`Error loading translation file for ${lang}, falling back to English:`, err);
+    return (await import('./lang/en.json')).default;
+  }
+};
+

@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import './Info.css';
-import features from "../images copy/features.png";
+import features from "../images copy/features.webp";
 import AOS from 'aos';
-import hol from "../images copy/hol.png";
+import hol from "../images copy/hol.webp";
 import 'aos/dist/aos.css';
 import HealthFacts from './Health';
 import ANS from './ans';
 //import { Button } from 'react-bootstrap';
 import BlueContainer from './deptcontainer';
 import WellnessInro from './wellness';
-import allan from "../images copy/allan.png";
+import allan from "../images copy/allan.webp";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Values from './ourvalues';
@@ -34,18 +34,17 @@ const Info = () => {
       <div className="container-blue">
         <a href="https://linktr.ee/AllanLRoberts" target="_blank" rel="noopener noreferrer">
           <figure>
-            {/* <img className='gridimag' src={allan} alt='Apothecary' loading="lazy" width="1200" height="600" /> */}
-            <img className='gridimag' src={allan} alt='Apothecary' width="1200" height="600" />
+            <img className='gridimag' loading="lazy" src={allan} alt='Apothecary' width="1200" height="600" />
             <figcaption>{t("Buy")}</figcaption>
           </figure>
         </a>
       </div>
       <div className="container-blue" data-aos="slide-right">
-        <img className='gridmag' src={features} alt='Features' width="954" height="896" />
+        <img className='gridmag' loading="lazy" src={features} alt='Features' width="954" height="896" />
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
         <Values />
         <a href='decentmed.org/apoth'>
-          <img className='gridmagg' src={hol} alt='Apothecary' width="1002" height="670" />
+          <img className='gridmagg' loading="lazy" src={hol} alt='Apothecary' width="1002" height="670" />
         </a>
         <ANS />
       </div>

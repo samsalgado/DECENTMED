@@ -3,7 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import "../App.css";
-import LOGO from "../images copy/DMEDLOGO.png";
+import { loadLanguageFile } from "../translationUtils";
+import LOGO from "../images copy/DMEDLOGO.webp";
 import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
 
@@ -22,15 +23,19 @@ const Topbar = () => {
 
   const toggleMenu = () => setShowMenu((prev) => !prev);
 
-  const changeLang = (lang) => {
-    i18n
-      .changeLanguage(lang)
-      .then(() => {
-        localStorage.setItem("preferredLanguage", lang);
-        setSelectedLang(lang);
-        setShowMenu(false);
-      })
-      .catch((err) => console.error("Language change error:", err));
+  const changeLang = async (lang) => {
+    try {
+      if (!i18n.hasResourceBundle(lang, 'common')) {
+        const translations = await loadLanguageFile(lang);
+        i18n.addResourceBundle(lang, 'common', translations, true, true);
+      }
+      await i18n.changeLanguage(lang);
+      localStorage.setItem("preferredLanguage", lang);
+      setSelectedLang(lang);
+      setShowMenu(false);
+    } catch (err) {
+      console.error("Language change error:", err);
+    }
   };
 
   useEffect(() => {
