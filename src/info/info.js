@@ -34,10 +34,10 @@ const Info = () => {
       </div>
       <WellnessInro />
       <div className="container-blue">
-        <a href="https://linktr.ee/AllanLRoberts" target="_blank" rel="noopener noreferrer">
-          <figure>
+        <a href="https://linktr.ee/AllanLRoberts" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+          <figure style={{ margin: 0 }}>
             <img className='gridimag' loading="lazy" src={allan} alt='Apothecary' width="1200" height="600" />
-            <figcaption>{t("Buy")}</figcaption>
+            <figcaption style={{ color: '#fff', backgroundColor: '#00695c', fontWeight: 'bold', padding: '6px 12px', borderRadius: '4px', display: 'inline-block', marginTop: '10px' }}>{t("Buy")}</figcaption>
           </figure>
         </a>
       </div>

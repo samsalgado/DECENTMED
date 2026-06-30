@@ -74,16 +74,16 @@ const Footers = () => {
         <div className="footer-section social">
           <h3 className="footer-title">{t("Follow Us")}</h3>
           <div className="social-icons-list">
-            <a href="https://www.linkedin.com/company/themerlingroupworld/" className="social-icon linkedin">
+            <a href="https://www.linkedin.com/company/themerlingroupworld/" aria-label="LinkedIn" className="social-icon linkedin">
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com/share/16SxAvn1Cr/?mibextid=wwXIfr" className="social-icon facebook">
+            <a href="https://www.facebook.com/share/16SxAvn1Cr/?mibextid=wwXIfr" aria-label="Facebook" className="social-icon facebook">
               <FaFacebook />
             </a>
-            <a href="https://wa.me/18137664900" className="social-icon whatsapp">
+            <a href="https://wa.me/18137664900" aria-label="WhatsApp" className="social-icon whatsapp">
               <FaWhatsapp />
             </a>
-            <a href="https://www.youtube.com/@DCNTMD" className="social-icon youtube">
+            <a href="https://www.youtube.com/@DCNTMD" aria-label="YouTube" className="social-icon youtube">
               <FaYoutube />
             </a>
           </div>
