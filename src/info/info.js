@@ -26,10 +26,10 @@ const Info = () => {
   // Access translation function
   return (
     <div className='container'>
-      <div className="container-blue">
+      <div className="container-blue" style={{ marginTop: '20px', marginBottom: '20px' }}>
         <h1 className='logotitle' data-aos="slide-left">{t('DecentMed')}</h1>
       </div>
-      <div data-aos="slide-right">
+      <div data-aos="slide-right" style={{ marginBottom: '20px' }}>
         <BlueContainer />
       </div>
       <WellnessInro />
