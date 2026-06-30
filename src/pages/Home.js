@@ -8,10 +8,10 @@ import Footer from '../footer';
 export default function Home() {
   const { t } = useTranslation('common');
   return (
-<div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
-     <Helmet>
+    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+      <Helmet>
         <title>{t('DecentMed')}</title>
-                <meta property="og:title" content={t("DecentMed")} />                
+        <meta property="og:title" content={t("DecentMed")} />
         <meta name="description" content={t("DecentMed")} />
 
         <meta
@@ -21,12 +21,12 @@ export default function Home() {
           )}
         />
       </Helmet>
-      <Topbar t={t} />    
-        <Info t={t} />
-        <br />
-        <footer>
-          <Footer />
-        </footer>
-     </div>
+      <Topbar t={t} />
+      <Info t={t} />
+      <br />
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }

@@ -13,121 +13,122 @@ function BlueContainer() {
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Homeopathy')}</h3>
                     <NavLink to="/homeopathy" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.homeopath} alt={t('Homeopathy')} />
+                        {/* <img className="img-custom" loading="lazy" src={Treatment.homeopath} alt={t('Homeopathy')} /> */}
+                        <img className="img-custom" src={Treatment.homeopath} alt={t('Homeopathy')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Acupuncture')}</h3>
                     <NavLink to="/acupuncture" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.acupuncture} alt={t('Acupuncture')} />
+                        <img className="img-custom" src={Treatment.acupuncture} alt={t('Acupuncture')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Functional Medicine')}</h3>
                     <NavLink to="/functionalmedicine" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.functionalmedicine} alt={t('Functional Medicine')} />
+                        <img className="img-custom" src={Treatment.functionalmedicine} alt={t('Functional Medicine')} />
                     </NavLink>
                 </div>
-                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Energy Healing')}</h3>
                     <NavLink to="/energyhealing" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.energy} alt={t('Energy Healing')} />
+                        <img className="img-custom" src={Treatment.energy} alt={t('Energy Healing')} />
                     </NavLink>
                 </div>
-                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Sound Healing')}</h3>
                     <NavLink to="/soundhealing" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.soundhealing} alt={t('Sound Healing')} />
+                        <img className="img-custom" src={Treatment.soundhealing} alt={t('Sound Healing')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Herbal Medicine')}</h3>
                     <NavLink to="/herbalmedicine" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.herbalmedicine} alt={t('Herbal Medicine')} />
+                        <img className="img-custom" src={Treatment.herbalmedicine} alt={t('Herbal Medicine')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Wellness Coaches')}</h3>
                     <NavLink to="/prevent" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.prevent} alt={t('Wellness Coaching')} />
+                        <img className="img-custom" src={Treatment.prevent} alt={t('Wellness Coaching')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Hypnotherapy')}</h3>
                     <NavLink to="/hypnotherapy" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.hypnotherapy} alt={t('Hypnotherapy')} />
+                        <img className="img-custom" src={Treatment.hypnotherapy} alt={t('Hypnotherapy')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Chelation')}</h3>
                     <NavLink to="/chelation" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.chelation} alt={t('Chelation')} />
+                        <img className="img-custom" src={Treatment.chelation} alt={t('Chelation')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Chiropractic')}</h3>
                     <NavLink to="/chiropractic" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.chiro} alt={t('Chiropractic')} />
+                        <img className="img-custom" src={Treatment.chiro} alt={t('Chiropractic')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Detox')}</h3>
                     <NavLink to="/detox" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.detox} alt={t('Detox')} />
+                        <img className="img-custom" src={Treatment.detox} alt={t('Detox')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Ayurveda')}</h3>
                     <NavLink to="/ayurveda" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.ayurveda} alt={t('Ayurveda')} />
+                        <img className="img-custom" src={Treatment.ayurveda} alt={t('Ayurveda')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Breathwork')}</h3>
                     <NavLink to="/breathwork" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.breathwork} alt={t('Breathwork')} />
+                        <img className="img-custom" src={Treatment.breathwork} alt={t('Breathwork')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Meditation')}</h3>
                     <NavLink to="/meditation" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.meditation} alt={t('Meditation')} />
+                        <img className="img-custom" src={Treatment.meditation} alt={t('Meditation')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Nutrition')}</h3>
                     <NavLink to="/nutrition" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.nutriton} alt={t('Nutrition')} />
+                        <img className="img-custom" src={Treatment.nutriton} alt={t('Nutrition')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Stem Cell Therapy')}</h3>
                     <NavLink to="/stemcell" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.stemcell} alt={t('Stem Cell Therapy')} />
+                        <img className="img-custom" src={Treatment.stemcell} alt={t('Stem Cell Therapy')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Naturopathy')}</h3>
                     <NavLink to="/naturopathy" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.naturopathy} alt={t('Naturopathy')} />
+                        <img className="img-custom" src={Treatment.naturopathy} alt={t('Naturopathy')} />
                     </NavLink>
                 </div>
-                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Applied Kinesiology')}</h3>
                     <NavLink to="/applied-kinesiology" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.ak} alt={t('Applied Kinesiology')} />
+                        <img className="img-custom" src={Treatment.ak} alt={t('Applied Kinesiology')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Transformational Empowerment Coaching')}</h3>
                     <NavLink to="/transformationalcoaching" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.empower} alt={t('Transformational Empowerment Coaching')} />
+                        <img className="img-custom" src={Treatment.empower} alt={t('Transformational Empowerment Coaching')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Mindset Coaching')}</h3>
                     <NavLink to="/mindset" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.mindset} alt={t('Mindset Coaching')} />
+                        <img className="img-custom" src={Treatment.mindset} alt={t('Mindset Coaching')} />
                     </NavLink>
                 </div>
             </div>
