@@ -13,13 +13,13 @@ function BlueContainer() {
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Homeopathy')}</h3>
                     <NavLink to="/homeopathy" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.homeopath} alt={t('Homeopathy')} />
+                        <img className="img-custom" fetchpriority="high" src={Treatment.homeopath} alt={t('Homeopathy')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Acupuncture')}</h3>
                     <NavLink to="/acupuncture" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.acupuncture} alt={t('Acupuncture')} />
+                        <img className="img-custom" src={Treatment.acupuncture} alt={t('Acupuncture')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">

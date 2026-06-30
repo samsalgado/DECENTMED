@@ -52,9 +52,6 @@ export default function Breathwork({ providerEmail }) {
 
               {/* Contact Form */}
              <div>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-  </style>
   <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
   <a 
     href="https://book.carepatron.com/Scarlett-Dee/Scarlett-?p=aJmLuXtkR3esU9i7t2nEJg&s=KIVRtyGw&e=b"
