@@ -3,12 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import "../App.css";
-<<<<<<< HEAD
 import { loadLanguageFile } from "../translationUtils";
-import LOGO from "../images copy/DMEDLOGO.webp";
-=======
-import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
->>>>>>> 64f60505103284cd2318d4bd06c67c6ec5b96480
+import LOGO from "../images copy/logo-new.webp";
 import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
 const Topbar = () => {
