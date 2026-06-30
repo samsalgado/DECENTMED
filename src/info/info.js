@@ -27,9 +27,9 @@ const Info = () => {
   return (
     <div className='container'>
       <div className="container-blue" style={{ marginTop: '20px', marginBottom: '20px' }}>
-        <h1 className='logotitle' data-aos="slide-left">{t('DecentMed')}</h1>
+        <h1 className='logotitle'>{t('DecentMed')}</h1>
       </div>
-      <div data-aos="slide-right" style={{ marginBottom: '20px' }}>
+      <div style={{ marginBottom: '20px' }}>
         <BlueContainer />
       </div>
       <WellnessInro />
