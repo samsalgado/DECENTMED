@@ -1,14 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Info.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
 const ANS = () => {
   const {t} = useTranslation('common');
-  useEffect(() => {
-                AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
-              }, []);
   return (
     <div data-aos="slide-right">
     <Container>

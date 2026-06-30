@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import './Info.css';
 import features from "../images copy/features.webp";
-import AOS from 'aos';
 import hol from "../images copy/hol.webp";
-import 'aos/dist/aos.css';
 import HealthFacts from './Health';
 import ANS from './ans';
 //import { Button } from 'react-bootstrap';
@@ -18,7 +16,11 @@ gsap.registerPlugin(ScrollTrigger);
 const Info = () => {
   const { t } = useTranslation("common");
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
+    import('aos').then((module) => {
+      const AOS = module.default || module;
+      import('aos/dist/aos.css');
+      AOS.init({ duration: 1000, once: false });
+    });
   }, []);
 
   // Access translation function
