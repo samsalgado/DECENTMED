@@ -937,7 +937,7 @@ min-height: 100%;
 /* General Logo Styling */
 /* Base logo styling */
 .Logo {
-  width: 80px; /* Default size for desktop */
+  width: 120px; /* Default size for desktop */
   height: auto;
   object-fit: contain;
   display: inline-block;

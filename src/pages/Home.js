@@ -13,7 +13,6 @@ export default function Home() {
         <title>{t('DecentMed')}</title>
         <meta property="og:title" content={t("DecentMed")} />
         <meta name="description" content={t("DecentMed")} />
-
         <meta
           name="description"
           content={t(
