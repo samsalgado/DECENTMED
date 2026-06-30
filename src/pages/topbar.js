@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import "../App.css";
 import { loadLanguageFile } from "../translationUtils";
-import LOGO from "../images copy/logo-original-size.webp";
+import LOGO from "../images copy/dmed.webp";
 import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
 const Topbar = () => {
