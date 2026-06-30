@@ -4,9 +4,10 @@ import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import "../App.css";
 import { loadLanguageFile } from "../translationUtils";
-import LOGO from "../images copy/dmed.webp";
 import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
+
+const LOGO = process.env.PUBLIC_URL + "/dmed.webp";
 const Topbar = () => {
   const { t, i18n } = useTranslation("common");
   const [showMenu, setShowMenu] = useState(false);
