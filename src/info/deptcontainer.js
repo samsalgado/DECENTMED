@@ -13,7 +13,7 @@ function BlueContainer() {
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Homeopathy')}</h3>
                     <NavLink to="/homeopathy" className="link">
-                        <img className="img-custom" fetchpriority="high" src={Treatment.homeopath} alt={t('Homeopathy')} />
+                        <img className="img-custom" fetchpriority="high" src={process.env.PUBLIC_URL + '/homeo.webp'} alt={t('Homeopathy')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
