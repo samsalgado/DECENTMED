@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 import Inspire from "../images copy/Inspire.png";
-import LOGO from "../images copy/dmed.png";
+import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
 import alignable from "../images copy/alignable.png";
 import wish from "../images copy/wish.png";
 const Footers = () => {
@@ -13,7 +13,6 @@ const Footers = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-
         {/* ===== About Section ===== */}
         <div className="footer-section about">
           <img src={LOGO} className="footer-logo" alt="DecentMed Logo" />

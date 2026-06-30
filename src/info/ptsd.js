@@ -4,8 +4,11 @@ import './acu.css';
 import { useTranslation } from 'react-i18next';
 import PTSDvids from './ptsdvids';
 import AOS from 'aos';
+import Basics from "./Basics";
+import Collapsible from 'react-collapsible';
 import 'aos/dist/aos.css';
 import { Button } from 'react-bootstrap';
+import Vets from './vets';
 import spectraspray from "../images copy/spectraspray.png";
 const Ptsdd = () => {
   const {t} = useTranslation('common');
@@ -141,6 +144,48 @@ const Ptsdd = () => {
     textAlign: "center",
   }}
 >
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/YqyGwFqbNxA?si=SxsZWq7MVG5XXwx6"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+  <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD Basics Slide Deck')}</th>}>
+          <Basics />
+          <Button
+  className="custom-btn"
+  onClick={() => {
+    window.location.href = "tel:+13163935162";
+  }}
+  style={buttonStyle}
+  onMouseOver={(e) => {
+    e.target.style.transform = "translateY(-2px)";
+  }}
+  onMouseOut={(e) => {
+    e.target.style.transform = "translateY(0)";
+    e.target.style.boxShadow = "none";
+  }}
+>
+  {t("Contact")}
+</Button>
+            </Collapsible>
+  <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD for Military Veterans Slide Deck')}</th>}>
+              <Vets />
+            </Collapsible>
+             <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD for Women: Survival to Safety Slide Deck')}</th>}>
+              <tr>
+               
+              </tr>
+            </Collapsible>
+            <Collapsible trigger={<th className="collapsible-trigger">{t('Energy Work for PTSD Slide Deck')}</th>}>
+              <tr>
+               
+              </tr>
+            </Collapsible>
   <h1>{t("Mental Health Matters Roundtable")}</h1>
 
   <iframe
