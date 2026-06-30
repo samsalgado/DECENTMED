@@ -4,6 +4,7 @@ import './acu.css';
 import { useTranslation } from 'react-i18next';
 import PTSDvids from './ptsdvids';
 import AOS from 'aos';
+import Women from './women';
 import Basics from "./Basics";
 import Collapsible from 'react-collapsible';
 import 'aos/dist/aos.css';
@@ -175,17 +176,46 @@ const Ptsdd = () => {
             </Collapsible>
   <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD for Military Veterans Slide Deck')}</th>}>
               <Vets />
+                  <Button
+  className="custom-btn"
+  onClick={() => {
+    window.location.href = "https://meridianpassagewellness.com/contact/";
+  }}
+  style={buttonStyle}
+  onMouseOver={(e) => {
+    e.target.style.transform = "translateY(-2px)";
+  }}
+  onMouseOut={(e) => {
+    e.target.style.transform = "translateY(0)";
+    e.target.style.boxShadow = "none";
+  }}
+>
+  {t("Contact")}
+</Button>
             </Collapsible>
              <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD for Women: Survival to Safety Slide Deck')}</th>}>
               <tr>
-               
+               <Women />
+                              <Button
+  className="custom-btn"
+  onClick={() => {
+    window.location.href = "https://grhc.love/vipwellnessdiscoverycall";
+  }}
+  style={buttonStyle}
+  onMouseOver={(e) => {
+    e.target.style.transform = "translateY(-2px)";
+  }}
+  onMouseOut={(e) => {
+    e.target.style.transform = "translateY(0)";
+    e.target.style.boxShadow = "none";
+  }}
+>
+  {t("Contact")}
+</Button>
               </tr>
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Energy Work for PTSD Slide Deck')}</th>}>
-              <tr>
-               
-              </tr>
-            </Collapsible>
+            <br></br>
+            <br></br>
   <h1>{t("Mental Health Matters Roundtable")}</h1>
 
   <iframe
