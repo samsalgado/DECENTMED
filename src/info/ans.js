@@ -6,6 +6,7 @@ const ANS = () => {
   const {t} = useTranslation('common');
   return (
     <div data-aos="slide-right">
+      <br></br>
     <Container>
       <h3 className="text-center mb-4">{t("FAQ")}</h3> {/* Title for the entire section */}
       <Row>

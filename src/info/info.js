@@ -43,6 +43,9 @@ const Info = () => {
       </div>
       <div className="container-blue" data-aos="slide-right">
         <img className='gridmag' loading="lazy" src={features} alt='Features' width="954" height="896" />
+        <br></br>
+        <br></br>
+
         <h1 className="text-center mb-4">{t('Features & Additional Services')}</h1>
         <Values />
         <a href='decentmed.org/apoth'>

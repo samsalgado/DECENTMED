@@ -28,7 +28,7 @@ const WellnessInro = () => {
               cursor: 'pointer', 
               position: 'relative', 
               width: '100%', 
-              height: '215px', 
+              height: '255px', 
               backgroundColor: '#000',
               borderRadius: '8px',
               overflow: 'hidden'
@@ -46,8 +46,8 @@ const WellnessInro = () => {
               transform: 'translate(-50%, -50%)', 
               backgroundColor: 'rgba(0,105,92,0.85)', 
               borderRadius: '50%', 
-              width: '60px', 
-              height: '60px', 
+              width: '80px', 
+              height: '80px', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center',
@@ -60,6 +60,9 @@ const WellnessInro = () => {
           </div>
         )}
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
       <Button onClick={learnmore} target='_blank' className="custom-btn">
           {t('Providers: Join Trusted Network')}
         </Button>

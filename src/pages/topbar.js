@@ -20,7 +20,6 @@ const Topbar = () => {
     window.location.reload();
   };
   const toggleMenu = () => setShowMenu((prev) => !prev);
-
   const changeLang = async (lang) => {
     try {
       if (!i18n.hasResourceBundle(lang, 'common')) {

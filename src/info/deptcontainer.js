@@ -109,25 +109,25 @@ function BlueContainer() {
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Naturopathy')}</h3>
                     <NavLink to="/naturopathy" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.naturopathy} alt={t('Naturopathy')} />
+                        <img className="gridimage" loading="lazy" src={Treatment.naturopathy} alt={t('Naturopathy')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Applied Kinesiology')}</h3>
                     <NavLink to="/applied-kinesiology" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.ak} alt={t('Applied Kinesiology')} />
+                        <img className="gridimage" loading="lazy" src={Treatment.ak} alt={t('Applied Kinesiology')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Transformational Empowerment Coaching')}</h3>
                     <NavLink to="/transformationalcoaching" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.empower} alt={t('Transformational Empowerment Coaching')} />
+                        <img className="gridimage" loading="lazy" src={Treatment.empower} alt={t('Transformational Empowerment Coaching')} />
                     </NavLink>
                 </div>
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <h3 className="card-title-fixed" style={{ fontFamily: 'sans-serif' }}>{t('Mindset Coaching')}</h3>
                     <NavLink to="/mindset" className="link">
-                        <img className="img-custom" loading="lazy" src={Treatment.mindset} alt={t('Mindset Coaching')} />
+                        <img className="gridimage" loading="lazy" src={Treatment.mindset} alt={t('Mindset Coaching')} />
                     </NavLink>
                 </div>
             </div>
