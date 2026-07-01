@@ -5,56 +5,45 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Hypnovids = () => {
-    const { t } = useTranslation("common");
      useEffect(() => {
           AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
         }, []);
     const [plant] = useState([
         {
             id: 1,
-            videoUrl: "https://www.youtube.com/embed/3n3Wkzi9i1s",
-            name: t("Conversational Hypnosis in Action Pt. 1")
-            
+            videoUrl: "https://www.youtube.com/embed/3n3Wkzi9i1s",            
         },
         {
             id: 2,
             videoUrl: "https://www.youtube.com/embed/oqBM35IBqXk",
-            name: `${t("Conversational Hypnosis in Action Pt. 2")}`
         },
         {
             id: 4,
             videoUrl: "https://www.youtube.com/embed/tSFgmyCDrvo",
-            name: `${t("How to Stop Choosing the Wrong Relationships")}`
         },
         {
             id: 5,
             videoUrl: "https://www.youtube.com/embed/GrAuvx6XzuU",
-            name: `${t("How to Heal Trauma (5 Tips)")}`
         },
         {
             id: 6,
             videoUrl: "https://www.youtube.com/embed/eLynvmE1pWs",
-            name: `${t("The KEY to Healing childhood Wounds")}`
         },
         {
             id: 7,
             videoUrl: "https://www.youtube.com/embed/Wq5dDr24iaM?si=eOk4jHcp1-iP5yBs",
-            name: `${t("The OverSoul")}`
         },
         {
             id:8,
             videoUrl:"https://www.youtube.com/embed/lwPD6Ug3PAk",
-            name: `${t("Tampa Healing: CPTSD")}`
         },
        {
             id:9,
             videoUrl:"https://www.youtube.com/embed/7VBO0_v4bmw",
-            name: `${t("Releasing Soul Ties")}`
         },
          {
             id:9,
             videoUrl:"https://www.youtube.com/embed/UfWUv1QoIec?si=BZUgPCyAHjpTnXpO",
-            name: `${t("Hypnotherapy 101")}`
         }
     ]);
     return (
