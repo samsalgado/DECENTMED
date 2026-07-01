@@ -6,8 +6,7 @@ import "../App.css";
 import { loadLanguageFile } from "../translationUtils";
 import EducationMenu from "./EducationMenu";
 import Conditions from "./conditions";
-
-const LOGO = process.env.PUBLIC_URL + "/dmed.webp";
+import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
 const Topbar = () => {
   const { t, i18n } = useTranslation("common");
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +19,6 @@ const Topbar = () => {
     localStorage.removeItem("token");
     window.location.reload();
   };
-
   const toggleMenu = () => setShowMenu((prev) => !prev);
 
   const changeLang = async (lang) => {
