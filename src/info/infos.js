@@ -14,7 +14,6 @@ const InfoSummit = () => {
     script.src = "https://link.msgsndr.com/js/form_embed.js";
     script.async = true;
     document.body.appendChild(script);
-
     return () => {
       if (document.body.contains(script)) {
         document.body.removeChild(script);
