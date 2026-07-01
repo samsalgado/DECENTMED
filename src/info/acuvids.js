@@ -54,35 +54,36 @@ const PlantCard = ({ val }) => {
     }, []);
 
     return (
-        <div className="plant-card">
-            <div className="video-container" ref={videoRef}>
-                {isInView ? (
-                    <iframe
-                        width="100%"
-                        height="315"
-                        title="Video"
-                        src={val.videoUrl}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        loading="lazy"
-                    />
-                ) : (
-                    <div
-                        style={{
-                            width: "100%",
-                            height: "315px",
-                            backgroundColor: "#ccc",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}
-                    >
-                        <p>{t("Loading...")}</p>
-                    </div>
-                )}
-                <h3>{val.name}</h3>
-            </div>
-        </div>
+<div className="plant-card">
+  <div className="video-container" ref={videoRef}>
+    {isInView ? (
+      <iframe
+        width="100%"
+        height="315"
+        title="Video"
+        src={val.videoUrl}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        loading="lazy"
+      />
+    ) : (
+      <div
+        style={{
+          width: "100%",
+          height: "305px",
+          backgroundColor: "#ccc",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <p>{t("Loading...")}</p>
+      </div>
+    )}
+  </div>
+
+  <h3 className="video-title">{val.name}</h3>
+</div>
     );
 }
 

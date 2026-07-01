@@ -783,7 +783,34 @@ min-height: 100%;
   display: block;
   margin: 10px auto; /* Adds spacing around images */
 }
+.collapsible-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.collapsible-trrigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
+.collapsible-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
   .collapsible-trigger {

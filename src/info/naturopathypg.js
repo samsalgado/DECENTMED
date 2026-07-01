@@ -234,7 +234,7 @@ const Naturo = () => {
           </Button>
         </div> 
         </div>
-        <Collapsible data-aos="slide-right"  trigger={<th className="collapsible-trigger">{t("Naturopathy Explained")}</th>}>
+        <Collapsible data-aos="slide-right"  trigger={<div className="collapsible-trigger">{t("Naturopathy Explained")}</div>}>
           <NatExplained />
         </Collapsible>
         <style jsx>{`
@@ -316,10 +316,10 @@ const Naturo = () => {
              <Button className="custom-btn" href="https://totalcarehealthsolutions.com/" target="_blank">
             {t('Find Out How Dr. Volner Can Help You')}
           </Button>
-        <Collapsible trigger={<th className="collapsible-trigger">{t("Naturopathy Case Study")}</th>}>
+   <Collapsible trigger={<div className="collapsible-trigger">{t('Naturopathy Case Study')}</div>}>
           <NatStudy />
         </Collapsible>
-        <Collapsible trigger={<th className="collapsible-trigger">{t("Lower your Blood Sugar")}</th>}>
+        <Collapsible trigger={<div className="collapsible-trigger">{t("Lower your Blood Sugar")}</div>}>
           <BloodSugar />
         </Collapsible>
        <div data-aos="slide-right">

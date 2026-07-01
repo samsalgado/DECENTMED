@@ -349,14 +349,15 @@ const iframeStyle = {
           <img className='gridimag' src={burnout} alt='oceantreis' />
         </a>      
       </div>
-      <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Resources')}</th>}>
+            <div>
+      <Collapsible trigger={<div className="collapsible-trigger">{t('Acupuncture Resources')}</div>}>
           <a href="/acupuncture-for-carpal-tunnel"><img className='gridimag' src={carpaltunnel} alt='Acupuncture for Carpal Tunnel' /> </a>
            <a href="/acupuncture-cost"><img className='gridimag' src={ac} alt='Acupuncture Cost' /> </a>
           <a href="/acupuncture-for-migraines"><img className='gridimag' src={acuu} alt='Acupuncture for Migraines' /> </a>         
       </Collapsible>
       <h1>{t("Top 10 Benefits of Acupuncture")}</h1>
       <img className='gridimag' src={acuben} alt='Ac' />
-       <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Case Studies')}</th>}>
+       <Collapsible trigger={<div className="collapsible-trigger">{t('Acupuncture Case Studies')}</div>}>
   <div className="row">
     <div className="col-12 col-md-8 mb-3">
       <a href="http://www.chineseacupunctureprinceton.com">
@@ -451,7 +452,7 @@ const iframeStyle = {
     }
   `}</style>
 </Collapsible>
-      <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Tampa')}</th>}>
+      <Collapsible trigger={<div className="collapsible-trigger">{t('Acupuncture Tampa')}</div>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
       <a href="tel:+18333362326">
@@ -486,7 +487,7 @@ const iframeStyle = {
     }
   `}</style>
 </Collapsible>
-   <Collapsible trigger={<th className="collapsible-trigger">{t('Acupuncture Milwaukee')}</th>}>
+   <Collapsible trigger={<div className="collapsible-trigger">{t('Acupuncture Milwaukee')}</div>}>
   <div className="row">
     <div className="col-12 col-md-6 mb-3">
       <a href="tel:+14146512850">
@@ -511,6 +512,7 @@ const iframeStyle = {
     }
   `}</style>
 </Collapsible>
+      </div>
 <div data-aos="slide-left">
       <Acuvids />
       </div>

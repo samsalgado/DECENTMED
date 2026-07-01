@@ -132,9 +132,16 @@ const learnmore = () => {
       <p className='pr'>-{t("Releasing of energy blocks")}</p>
       <p className='pr'>-{t("Feeling more aligned and living from your true self")}</p>
       </div>
- <Collapsible trigger={<th className="collapsible-trigger">{t('Energy Work for PTSD Slide Deck')}</th>}>
-                 <E /> 
-              </Collapsible>
+  <Collapsible
+    trigger={
+      <th className="collapsible-trigger">
+        {t('Energy Work for PTSD Slide Deck')}
+      </th>
+    }
+  >
+    <E />
+  </Collapsible>
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/CTmY6wEpTdA?si=1aGXOoQ7jGXH2Ub6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

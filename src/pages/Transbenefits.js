@@ -118,15 +118,8 @@ useEffect(() => {
       <div className='container mobile-optimized'>
       <div data-aos="slide-right" className="container-blue">
 
- <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '3.5rem',
-      fontSize: '43px',
-      fontWeight:'800',
-    paddingTop: '2rem'
-  }}>              {t("Transformational Empowerment Coaching")}</h1>
+  <h1 className='logotitle' data-aos="slide-left">
+          {t('Transformational Empowerment Coaching')}</h1>
   </div>
             <div data-aos="slide-right" style={{
         display: 'flex',
@@ -286,11 +279,8 @@ useEffect(() => {
                 </Modal.Footer>
               </Modal>,
               document.body)}
-                        <div data-aos="slide-right" className="container-blue">
+                        <div>
 
- <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
       <style jsx>{`
         @media (max-width: 768px) {
           .container-bbblue {
@@ -306,20 +296,13 @@ useEffect(() => {
           }
         }
       `}</style>
-     <Collapsible
-  trigger={
-    <div data-aos="slide-right"
-      className="collapsible-triggger"
-    >
-      {t("How to Set Boundaries")}
-    </div>
-  }
->
-  <Boundaries />
-</Collapsible>
+      </div>
+      <br></br>
+            <br></br>
+    <br></br>
+   <br></br> 
 </div>
-          <div data-aos="slide-right" className="container-blue">
-
+          <div>
             <Collapsible trigger={<th className="collapsible-triggger">{t('Self Care Journal')}</th>}>
               <tr>
                 <a href="https://www.linkedin.com/pulse/flow-feeling-honoring-your-emotions-work-life-ramona-crabtree-falkner-4rrve/?trackingId=XKJ1BW5BQ3quljT4fWOovg%3D%3D">
@@ -331,7 +314,7 @@ useEffect(() => {
                 <a href="https://www.linkedin.com/pulse/why-slowing-down-most-powerful-move-you-can-make-crabtree-falkner-3gwae/?trackingId=Cpc5BfMRRVmY8bQM0uebyA%3D%3D"><img className='gridimage'src={slow} alt='Why Slowing Down is the Most Powerful Move You Can Make' /></a>
               </tr>
         </Collapsible>
-         <Collapsible trigger={<th className="collapsible-triggger">{t('3 Simple Ways to Support Your Nervous System')}</th>}>
+         <Collapsible trigger={<th className="collapsible-triggger">{t('Supporting Your Nervous System')}</th>}>
               <tr>
                 <img className='gridimage' src={ns1} alt='The Flow of Feeling: Honoring Your Emotions at Work & in Life' />
                 <img className='gridimage' src={ns2} alt='The Season That Changed Everything: Why Reclaiming Empowerment Is Just the Beginning' /> 
@@ -342,7 +325,17 @@ useEffect(() => {
               </tr>
               <Button onClick={learntmore} className="custom-btn">{t("Learn More")}</Button>
         </Collapsible>
-        </div>
+         <Collapsible
+  trigger={
+    <div
+      className="collapsible-triggger"
+    >
+      {t("How to Set Boundaries")}
+    </div>
+  }
+>
+  <Boundaries />
+</Collapsible>
         </div>
         <br></br>
                   <div data-aos="slide-right"className="container-blue">
@@ -510,6 +503,9 @@ useEffect(() => {
             </div>
           <Button className="custom-btn" href="https://jessicajavens.com/" target="_blank">{t("Experience Transformation")}</Button>
         <TsBenefits />
+         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
+            <img className='gridimag' src={spectraspray} alt='spectra spray' />
+             </a>
           <Button onClick={learnmore} className="custom-btn">
             {t('Providers: Signup Here')}
           </Button> 

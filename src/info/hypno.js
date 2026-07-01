@@ -24,13 +24,8 @@ const {t} = useTranslation('common');
     return (
       <div className='container mobile-optimized'>
          <div data-aos="slide-right" className="container-blue">
-             <h1 style={{
-    textDecoration: 'underline',
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    marginTop: '4.5rem',
-    paddingTop: '3rem'
-  }}>{t('Hypnotherapy')}</h1>
+              <h1 className='logotitle' data-aos="slide-left">
+          {t('Hypnotherapy')}</h1>
   </div>
             <div style={{
         display: 'flex',
@@ -112,7 +107,6 @@ const {t} = useTranslation('common');
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
     <div data-aos="slide-right" className="container-blue">
-
             <Collapsible trigger={<h3 className="collapsible-trigger">{t('Hypnosis Silver Springs')}</h3>}>
   <div className="row">
      <iframe
@@ -199,7 +193,7 @@ const {t} = useTranslation('common');
         </div>
         <Benefits />
         <br></br> 
-        <Collapsible trigger={<th className="collapsible-trigger">{t("Hypnotherapy Case Study")}</th>}>
+   <Collapsible trigger={<h3 className="collapsible-trigger">{t('Hypnotherapy Case Study')}</h3>}>
         <Hypnostudies />
         <Button className="custom-btn" href="https://themerlingroupworld.com/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </Collapsible>
