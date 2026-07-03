@@ -155,7 +155,7 @@ const Ptsdd = () => {
     referrerPolicy="strict-origin-when-cross-origin"
     allowFullScreen
   />
-  <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD Basics Slide Deck')}</th>}>
+  <Collapsible trigger={<div className="collapsible-trigger">{t('PTSD Basics Slide Deck')}</div>}>
           <Basics />
           <Button
   className="custom-btn"
@@ -174,7 +174,7 @@ const Ptsdd = () => {
   {t("Contact")}
 </Button>
             </Collapsible>
-  <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD for Military Veterans Slide Deck')}</th>}>
+  <Collapsible trigger={<div className="collapsible-trigger">{t('PTSD for Military Veterans Slide Deck')}</div>}>
               <Vets />
                   <Button
   className="custom-btn"
@@ -193,7 +193,7 @@ const Ptsdd = () => {
   {t("Contact")}
 </Button>
             </Collapsible>
-             <Collapsible trigger={<th className="collapsible-trigger">{t('PTSD for Women: Survival to Safety Slide Deck')}</th>}>
+             <Collapsible trigger={<div className="collapsible-trigger">{t('PTSD for Women: Survival to Safety Slide Deck')}</div>}>
               <tr>
                <Women />
                               <Button
