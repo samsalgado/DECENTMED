@@ -23,7 +23,6 @@ const Meno = () => {
     <div>
       <div className='container mobile-optimized'>
       <div className="container-blue">
-
        <h1 className='logotitle' data-aos="slide-left">
           {t('Hormone Health for Women')}</h1>
           </div>
@@ -58,6 +57,7 @@ const Meno = () => {
                 {t("Try Functional Medicine")}
               </Button>
             </div>
+                  <div className="video-wrapper">
             <iframe
               width="100%"
               height="515"
@@ -71,19 +71,19 @@ const Meno = () => {
                 height: 'auto'
               }}    
             />
+            </div>
           </div>
         </div>
         <div>
-        
         </div>
         <div data-aos="slide-right" className="container-blue">      
-        <Collapsible trigger={<th className="collapsible-trigger">{t("Functional Medicine Case Study")}</th>}>
+        <Collapsible trigger={<div className="collapsible-trigger">{t("Functional Medicine Case Study")}</div>}>
           <HStudy />
              <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/" target="_blank">
             {t('Find Out How Dr. Brown Can Help You')}
           </Button>
         </Collapsible>
-         <Collapsible trigger={<th className="collapsible-trigger">{t("Testimonials")}</th>}>
+         <Collapsible trigger={<div className="collapsible-trigger">{t("Testimonials")}</div>}>
           <Reviewss />
             <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/contact-us" target="_blank">
             {t('Find Out How Dr. Brown Can Help You')}
