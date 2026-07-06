@@ -4,113 +4,112 @@ import tier0 from "../../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
 import tier3 from '../../images copy/Screenshot 2026-07-06 at 9.42.42 AM.png';
 import tier2 from "../../images copy/Screenshot 2026-07-06 at 9.41.32 AM.png";
 import { useTranslation } from 'react-i18next';
+
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');
   const navigate = useNavigate();
   const [selectedTier, setSelectedTier] = useState("tier1");
+
   const handleContinue = () => {
-  let tier = "";
-  let amount = 0;
-  if (selectedTier === "tier0") {
-    tier = "Tier 0";
-    amount = 500;
-  } else if (selectedTier === "tier2") {
-    tier = "Tier 1";
-    amount = 1500;
-  } else if (selectedTier === "tier3") {
-    tier = "Tier 2";
-    amount = 4000;
-  }
-  navigate("/stripepay", {
-    state: { tier, amount }
-  });
-};
+    let tier = "";
+    let amount = 0;
+    if (selectedTier === "tier0") {
+      tier = "Tier 0";
+      amount = 500;
+    } else if (selectedTier === "tier1") {
+      tier = "Tier 1";
+      amount = 1500;
+    } else if (selectedTier === "tier2") {
+      tier = "Tier 2";
+      amount = 4000;
+    }
+    navigate("/stripepay", { state: { tier, amount } });
+  };
 
-return (
-  <div style={{ textAlign: "center", padding: "40px" }}>
-    <div className="container-blue">
-      <h1 className="logotitle">
-        {t("Providers Must Sign Up Before Registration")}
-      </h1>
-      <h1 className="logotitle">{t("Select Tier")}</h1>
-      <p>{t("Please choose your subscription tier to continue.")}</p>
+  return (
+    <div style={{ textAlign: "center", padding: "40px" }}>
+      <div className="container-blue">
+        <h1 className="logotitle">
+          {t("Providers Must Sign Up Before Registration")}
+        </h1>
+        <h1 className="logotitle">{t("Select Tier")}</h1>
+        <p>{t("Please choose your subscription tier to continue.")}</p>
 
-      {/* Images */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "10px",
-          marginTop: "30px",
-          flexWrap: "wrap",
-        }}
-      >
-        <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
-          <img
-            src={tier0}
-            alt="Tier 0"
-            style={{ width: "100%", borderRadius: "10px" }}
-          />
-          <p>{t("Tier 0 — $500")}</p>
+        {/* Images */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "10px",
+            marginTop: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
+            <img
+              src={tier0}
+              alt="Tier 0"
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
+            <p>{t("Tier 0 — $500")}</p>
+          </div>
+
+          <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
+            <img
+              src={tier2}
+              alt="Tier 1"
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
+            <p>{t("Tier 1 — $1500")}</p>
+          </div>
+
+          <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
+            <img
+              src={tier3}
+              alt="Tier 2"
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
+            <p>{t("Tier 2 — $4000")}</p>
+          </div>
         </div>
 
-        <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
-          <img
-            src={tier2}
-            alt="Tier 1"
-            style={{ width: "100%", borderRadius: "10px" }}
-          />
-          <p>{t("Tier 1 — $1500")}</p>
-        </div>
+        {/* Dropdown */}
+        <select
+          value={selectedTier}
+          onChange={(e) => setSelectedTier(e.target.value)}
+          style={{
+            marginTop: "30px",
+            padding: "12px",
+            fontSize: "16px",
+            borderRadius: "6px",
+            border: "1px solid #ccc",
+          }}
+        >
+          <option value="tier0">{t("Tier 0 — $500")}</option>
+          <option value="tier1">{t("Tier 1 — $1500")}</option>
+          <option value="tier2">{t("Tier 2 — $4000")}</option>
+        </select>
 
-        <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
-          <img
-            src={tier3}
-            alt="Tier 2"
-            style={{ width: "100%", borderRadius: "10px" }}
-          />
-          <p>{t("Tier 2 — $4000")}</p>
-        </div>
+        {/* Continue Button */}
+        <button
+          onClick={handleContinue}
+          style={{
+            display: "block",
+            margin: "30px auto",
+            padding: "12px 24px",
+            backgroundColor: "#027360",
+            color: "white",
+            border: "none",
+            borderRadius: "6px",
+            fontSize: "18px",
+            cursor: "pointer",
+          }}
+        >
+          {t("Continue to Payment")}
+        </button>
       </div>
-
-      {/* Dropdown */}
-      <select
-        value={selectedTier}
-        onChange={(e) => setSelectedTier(e.target.value)}
-        style={{
-          marginTop: "30px",
-          padding: "12px",
-          fontSize: "16px",
-          borderRadius: "6px",
-          border: "1px solid #ccc",
-        }}
-      >
-        <option value="tier0">{t("Tier 0 — $500")}</option>
-        <option value="tier1">{t("Tier 1 — $1500")}</option>
-        <option value="tier2">{t("Tier 2 — $4000")}</option>
-      </select>
-
-      {/* Continue Button */}
-      <button
-        onClick={handleContinue}
-        style={{
-          display: "block",
-          margin: "30px auto",
-          padding: "12px 24px",
-          backgroundColor: "#027360",
-          color: "white",
-          border: "none",
-          borderRadius: "6px",
-          fontSize: "18px",
-          cursor: "pointer",
-        }}
-      >
-        {t("Continue to Payment")}
-      </button>
     </div>
-  </div>
-);
-
+  );
 };
 
 export default ChooseProviderTier;

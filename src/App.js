@@ -214,7 +214,6 @@ function App() {
         <Route path="/signup/provider" element={<SignUp t={t} />} />
         <Route path="/provider" element={<SignUp t={t} />} />
         <Route path="/signin" element={<SignIn t={t} />} />
-
         {/* Telehealth Providers Dashboard (for regular users) */}
         <Route path="/provider-dashboard" element={
           <PrivateRoute>
