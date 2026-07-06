@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import tier0 from "../../images copy/ad.png";
-import tier3 from '../../images copy/Screenshot 2026-05-08 at 9.58.11 AM.png';
-import tier2 from "../../images copy/Screenshot 2026-05-08 at 9.56.44 AM.png";
+import tier0 from "../../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
+import tier3 from '../../images copy/Screenshot 2026-07-06 at 9.42.42 AM.png';
+import tier2 from "../../images copy/Screenshot 2026-07-06 at 9.41.32 AM.png";
 import { useTranslation } from 'react-i18next';
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');
@@ -14,10 +14,10 @@ const ChooseProviderTier = () => {
   if (selectedTier === "tier0") {
     tier = "Tier 0";
     amount = 500;
-  } else if (selectedTier === "tier1") {
+  } else if (selectedTier === "tier2") {
     tier = "Tier 1";
     amount = 1500;
-  } else if (selectedTier === "tier2") {
+  } else if (selectedTier === "tier3") {
     tier = "Tier 2";
     amount = 4000;
   }
@@ -45,7 +45,7 @@ return (
           flexWrap: "wrap",
         }}
       >
-        <div style={{ flex: "1 1 300px", maxWidth: "390px", textAlign: "center" }}>
+        <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
           <img
             src={tier0}
             alt="Tier 0"
@@ -54,7 +54,7 @@ return (
           <p>{t("Tier 0 — $500")}</p>
         </div>
 
-        <div style={{ flex: "1 1 300px", maxWidth: "300px", textAlign: "center" }}>
+        <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
           <img
             src={tier2}
             alt="Tier 1"
@@ -63,7 +63,7 @@ return (
           <p>{t("Tier 1 — $1500")}</p>
         </div>
 
-        <div style={{ flex: "1 1 300px", maxWidth: "300px", textAlign: "center" }}>
+        <div style={{ flex: "1 1 300px", maxWidth: "350px", textAlign: "center" }}>
           <img
             src={tier3}
             alt="Tier 2"

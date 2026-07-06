@@ -1,10 +1,11 @@
 import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
-import tier3 from '../images copy/Screenshot 2026-05-08 at 9.49.58 AM.png';
-import tier2 from "../images copy/Screenshot 2026-05-08 at 9.45.02 AM.png";
 import '../info/Info.css';
-import tier0 from "../images copy/advertisingtier (1).png";
 import { Button } from 'react-bootstrap';
+import tier0 from "../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
+import tier3 from '../images copy/Screenshot 2026-07-06 at 9.42.42 AM.png';
+import tier2 from "../images copy/Screenshot 2026-07-06 at 9.41.32 AM.png";
+
 
 export function Pricing() {
   const { t } = useTranslation('common');
