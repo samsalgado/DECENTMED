@@ -9,9 +9,11 @@ import carpaltunnel from "../images copy/carpaltunnel.png";
 import ac from "../images copy/acuu.png";
 import acuu from "../images copy/2412335.jpg";
 import slide1 from "../images copy/1.png";
+import prices from "../images copy/Screenshot 2026-07-09 at 9.11.36 PM.png";
 import slide2 from "../images copy/2.png";
 import slide3 from "../images copy/3.png";
 import slide4 from "../images copy/4.png";
+import NYC from "../images copy/Screenshot 2026-07-09 at 9.00.19 PM.png";
 import slide5 from "../images copy/5.png";
 import slide6 from "../images copy/acu5.png";
 import slide7 from "../images copy/acu6.png";
@@ -321,7 +323,8 @@ const iframeStyle = {
                     {t("Acupuncture in Tampa")}
                   </Button>
 
-               
+                     <h1>{t("Acupuncture Prices")}</h1>
+
                   {showModal && ReactDOM.createPortal(
                   
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
@@ -339,6 +342,7 @@ const iframeStyle = {
               </Modal>,
               document.body
               )}
+            <img className='gridimag' src={prices} alt='acupuncture prices' />
               <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
@@ -512,6 +516,9 @@ const iframeStyle = {
     }
   `}</style>
 </Collapsible>
+ <Collapsible trigger={<div className="collapsible-trigger">{t('Cost of Acupuncture Treatment NYC?')}</div>}>
+          <img className='gridimag' src={NYC} alt='cost of acupuncture treatment nyc?' /> 
+      </Collapsible>
       </div>
 <div data-aos="slide-left">
       <Acuvids />
