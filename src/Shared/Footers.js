@@ -77,9 +77,7 @@ const Footers = () => {
             <a href="https://www.linkedin.com/company/themerlingroupworld/" aria-label="LinkedIn" className="social-icon linkedin">
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com/share/16SxAvn1Cr/?mibextid=wwXIfr" aria-label="Facebook" className="social-icon facebook">
-              <FaFacebook />
-            </a>
+          
             <a href="https://wa.me/18137664900" aria-label="WhatsApp" className="social-icon whatsapp">
               <FaWhatsapp />
             </a>
