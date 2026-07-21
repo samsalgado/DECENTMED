@@ -45,16 +45,29 @@ const Meno = () => {
               <p>{t("I help women with endometriosis, adenomyosis, and undiagnosed chronic pelvic pain uncover the root causes driving their symptoms so they can reduce pain, restore energy, balance their hormones, improve fertility potential, and reclaim their quality of life.")}</p>
               <p>{t("Rather than focusing solely on symptom management, I take a comprehensive functional medicine approach that addresses inflammation, immune dysfunction, gut health, hormone imbalances, nutrient deficiencies, stress, and lifestyle factors that may contribute to ongoing pain and disease progression.")}</p>
               <p>{t("Through personalized testing, targeted nutrition, lifestyle modifications, supplementation, and ongoing support, I help women create an environment where healing can occur naturally. My goal is to empower women with the knowledge, tools, and guidance they need to break free from cycles of pain and regain control of their health.")}</p>
-                <h3>{t("7 Natural Menopause Treatments that really work")}</h3>
-              <p>1.{t("Advanced Testing")}</p>
-              <p>2.{t("Nutrition")}</p>
-              <p>3.{t("Lifestyle Optimization")}</p>
-              <p>4.{t("Targeted Supplementation")}</p>
-              <p>5.{t("Individualized care plans")}</p>
-              <p>6.{t("Personalized Plans")}</p>
-               <p>7.{t("Identifying and addressing the root causes behind their symptoms rather than simply masking them with medications.")}</p>                  
-              <Button className="custom-btn" href="https://decentmed.org/funcmed" target="_blank">
-                {t("Try Functional Medicine")}
+                <h3>{t("20 Symptoms of Endometriosis")}</h3>
+              <p>1.{t("Severe Menstrual Cramps")}</p>
+              <p>2.{t("Chronic Pelvic Pain")}</p>
+              <p>3.{t("Pain During Intercourse (Dyspareunia)")}</p>
+              <p>4.{t("Lower Back Pain")}</p>
+              <p>5.{t("Leg or Sciatic Pain")}</p>
+              <p>6.{t("Painful Ovulation (Mittelschmerz)")}</p>
+               <p>7.{t("Pain with Exercise")}</p> 
+              <p>8.{t("Abdominal Bloating")}</p>                  
+               <p>9.{t("Painful Bowel Movements")}</p>                  
+               <p>10.{t("Cyclical Diarrhea or Constipation")}</p>                  
+               <p>11.{t("Nausea and Vomiting")}</p>                  
+               <p>12.{t("Cyclical Rectal Bleeding")}</p>                  
+               <p>13.{t("Painful Urination")}</p>                  
+               <p>14.{t("Urinary Urgency and Frequency")}</p>                  
+               <p>15.{t("Bladder Pressure")}</p>                  
+               <p>16.{t("Heavy Menstrual Bleeding")}</p>                  
+               <p>17.{t("Irregular Spotting")}</p>                  
+               <p>18.{t("Infertility or Difficulty Conceiving")}</p>                  
+               <p>19.{t("Chronic Fatigue")}</p>                  
+               <p>20.{t("Mood Alterations & Anxiety")}</p>                  
+              <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/consultation" target="_blank">
+                {t("Try Functional Medicine with Dr. Brown")}
               </Button>
             </div>
                   <div className="video-wrapper">

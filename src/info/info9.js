@@ -448,6 +448,18 @@ possible for you. So borrow our belief because so many clients have gotten incre
             height: '350px'
           }}
         />
+         <iframe
+          className="centered-video"
+          src="https://www.youtube.com/embed/AADX-11_IrA?si=axtwaosI64KHIqiP"
+          frameBorder="0"
+          allowFullScreen
+          title="YouTube video player"
+          style={{
+            maxWidth: '575px',
+            width: '100%',
+            height: '350px'
+          }}
+        />
         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
