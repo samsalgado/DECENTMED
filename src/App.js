@@ -85,6 +85,7 @@ const Hypnotherapy = lazy(() => import('./pages/Hypnotherapy'));
 const About = lazy(() => import('./pages/About'));
 const Homeopathy = lazy(() => import('./pages/Homeopathy'));
 const Acupuncture = lazy(() => import('./pages/Acupuncture'));
+const Brain = lazy(() => import('./pages/Brain'));
 const Ayurveda = lazy(() => import('./pages/Ayurveda'));
 const Marketing = lazy(() => import('./pages/DigitalMarketing'));
 const Chiropractic = lazy(() => import('./pages/Chiropractic'));
@@ -149,6 +150,7 @@ function App() {
         <Route path="/reviews" element={<ReviewPage t={t} />} />
         <Route path="/energyhealing" element={<Energy t={t} />} />
         <Route path="/breathwork" element={<Breathworkk t={t} />} />
+        <Route path="/brainhealth" element={<Brain t={t} />} />
         <Route path="/acupuncture-for-migraines" element={<Blog21 t={t} />} />
         <Route path="/coaching" element={<Coaching t={t} />} />
         <Route path="/acupuncture-for-carpal-tunnel" element={<BlogAcu t={t} />} />

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
-import { FaLinkedin, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaYoutube} from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 import Inspire from "../images copy/Inspire.png";
 import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
