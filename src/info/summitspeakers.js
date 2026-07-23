@@ -184,7 +184,6 @@ return (
         </div>
       )}
     </div>
-    <h4>{val.time}</h4>
      <h3>
       <a
         href={val.link}
