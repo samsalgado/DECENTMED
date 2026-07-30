@@ -98,7 +98,7 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="https://decentmed.org/telehealth"
+              href="https://telehealth.decentmed.org/signup"
             >
               {t("Find Practitioner")}
             </Nav.Link>
