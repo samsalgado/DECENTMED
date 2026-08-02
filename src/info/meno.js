@@ -102,6 +102,12 @@ const Meno = () => {
             {t('Find Out How Dr. Brown Can Help You')}
           </Button>
         </Collapsible>
+        <Collapsible trigger={<div className="collapsible-trigger">{t("The Genetics of Menopause")}</div>}>
+          <HStudy />
+             <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/" target="_blank">
+            {t('Connect with Dr. Volner')}
+          </Button>
+        </Collapsible>
 </div>
       {/* Portal: Render modal at body level, outside wrapper */}
       {showModal && ReactDOM.createPortal(
