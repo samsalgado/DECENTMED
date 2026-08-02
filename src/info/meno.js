@@ -104,7 +104,7 @@ const Meno = () => {
         </Collapsible>
         <Collapsible trigger={<div className="collapsible-trigger">{t("The Genetics of Menopause")}</div>}>
           <HStudy />
-             <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/" target="_blank">
+             <Button className="custom-btn" href="https://totalcarehealthsolutions.com/" target="_blank">
             {t('Connect with Dr. Volner')}
           </Button>
         </Collapsible>
