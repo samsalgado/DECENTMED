@@ -4,9 +4,11 @@ import Topbar from './topbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "../App.css";
+import bailey from "../images copy/tsbailey.png";
 import amy from "../images copy/essence.png";
 import services from "../cards/Screenshot 2026-05-03 at 7.59.31 PM.png";
 import am from "../cards/web-logo-scaled.png";
+import kari from "../images copy/IMG_5454.JPG";
 import brown from "../cards/drbrown.webp";
 import prices from "../images copy/PRICESS.png";
 import Footer from '../footer';
@@ -121,7 +123,8 @@ useEffect(() => {
             </div>
           </div>
         </div>
-<div className="container-blue">
+        
+    <div className="container-blue">
         <div>
           <div className="row mb-4">
             <div className="col-md-12">
@@ -240,6 +243,84 @@ useEffect(() => {
      <figure>
     <img 
       src={services} 
+      alt="The Center for Natural Health" 
+      style={{ 
+        maxWidth: '500px', 
+        maxHeight: '420px', 
+        objectFit: 'contain',
+        width: '100%',
+        cursor: 'pointer'
+      }}
+    />
+    <figcaption>{t("Buy")}</figcaption>
+    </figure>
+  </a> 
+</div>                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="container-blue">
+        <div>
+          <div className="row mb-4">
+            <div className="col-md-12">
+              <div className="card" style={{ border: '1px solid #dee2e6' }}>
+                <div className="card-body">
+                  <div className="row">
+                    <div className="col-md-2 text-center">
+                      <img 
+                        src={kari} 
+                        alt="Optimal Root Wellness" 
+                        style={{ 
+                          maxWidth: '100px', 
+                          maxHeight: '100px', 
+                          objectFit: 'contain' 
+                        }} 
+                      />
+                    </div>
+                    <div className="col-md-7">
+                      <h2 className="h4 mb-1">{t('Kari Lockrem Wellness')}</h2>
+                      <p className="text-muted mb-2">{t("Kari Lockrem")}</p>
+                      
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("Lakeville, Minnesota, USA")}
+                      </p>
+                      
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Science-informed Approach")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Practical Nutrition")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Hair Loss Restoration")}</span>
+                      </div>
+                    </div>
+                    <p>
+                      {t("As a Board-Certified Functional Health Coach, I help clients uncover the root causes of chronic health concerns rather than simply managing symptoms. Using a personalized, science-informed approach, I evaluate nutrition, lifestyle, stress, sleep, gut health, hormones, metabolism, and environmental factors to create practical, sustainable plans that support long-term wellness. My goal is to educate and empower each client so they can understand their health, make informed decisions, and build lasting habits that improve their quality of life.")}
+                    </p>
+                      
+            <iframe class="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/2655-38U2_Q?si=VH2FANq8LGSvBJYd" frameborder="0" allowfullscreen></iframe>
+                    <div className="col-md-5 text-end">
+<div style={{ textAlign: 'center', margin: '20px 0' }}>
+  <div style={{ 
+    fontSize: '18px', 
+    fontWeight: 'bold', 
+    marginBottom: '10px',
+    color: '#333'
+  }}>
+   
+  </div>
+         
+  <a 
+    href="https://my.practicebetter.io/#/5f7214892a9029071895cc89/bookings?s=69aad0c515332eadf8c1891f" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+     <figure>
+    <img 
+      src={bailey} 
       alt="The Center for Natural Health" 
       style={{ 
         maxWidth: '500px', 

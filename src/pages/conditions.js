@@ -86,7 +86,14 @@ return (
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Menopausal Symptoms')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Postmenopause')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('PMS')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Perimenopause')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Thyroid dysfunction')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Perimenopause')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Hair loss (androgenic alopecia, telogen effluvium, and stress-related hair loss)')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Fatigue and low energy')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Weight management & metabolic health')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Gut health concerns (bloating, constipation, diarrhea, food sensitivities)')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Stress, HPA axis dysfunction & sleep concerns')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Inflammation and autoimmune support')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Premenstrual Dysphoric Disorder')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>

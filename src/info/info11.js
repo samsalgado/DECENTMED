@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import './Info.css';
 import ReactDOM from 'react-dom';
 import { Button, Modal } from'react-bootstrap';
+import hair from "../images copy/hair.png";
+import ts from "../images copy/tsbailey.png";
 import funcmed from "../images copy/Screenshot 2026-05-03 at 7.44.47 PM.png";
 import Benefitts from "./Ben";
 import event6 from "../images copy/taylorholistic.png"
@@ -14,6 +16,9 @@ const Info11 = () => {
 const {t} = useTranslation('common');
  const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
+  }
+  const valentina = () => {
+    window.location.href = 'https://www.karilockremwellness.com/'
   }
    useEffect(() => {
       AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
@@ -264,6 +269,7 @@ const {t} = useTranslation('common');
           flex: '1'
         }} data-aos="slide-right">
           <p className='pr'>{t("A thorough understanding of your lifestyle and habits is the cornerstone of better health. Our Holistic Evaluation offers clients in Florida an all-encompassing assessment. We meticulously review your diet and daily routines, forming a personalized nutrition and exercise strategy. Dr. Nadia Taylor believes in holistic medicine because it helped to heal her from disease and maladies. She has recently opened up her own holistic healing center, Essence of Life, in Boynton Beach, Florida in September 2025 so that she can help others heal through some of the same modalities that helped her. Dr. Taylor is excited to be back in South Florida after years living elsewhere and is continually looking to make positive changes in the community. She has dedicated her life to a life of service for the betterment of others.")}</p>
+          <p className='pr'>{t("As a Board-Certified Functional Health Coach, clients uncover the root causes of chronic health concerns rather than simply managing symptoms. Using a personalized, science-informed approach, I evaluate nutrition, lifestyle, stress, sleep, gut health, hormones, metabolism, and environmental factors to create practical, sustainable plans that support long-term wellness. My goal is to educate and empower each client so they can understand their health, make informed decisions, and build lasting habits that improve their quality of life.")}</p>          
           <h2 className='pr'>{t("Benefits of Functional Medicine for Women")}</h2>
                     <p className='pr'>-{t("Balance hormones naturally")}</p>
                     <p className='pr'>-{t("Reduce hot flashes and night sweats")}</p>
@@ -293,19 +299,26 @@ const {t} = useTranslation('common');
           </div>
       
                       <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/" target="_blank">{t('Try Hormone Health with Dr. Brown')}</Button>
-
           <div data-aos="slide-right" className="container-blue">
-                        <img data-aos="slide-right" className='gridimage' src={funcmed} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
-                        
-                                    </div>
-                                           <Button className="custom-btn" href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" target="_blank">{t('Try Optimal Root Wellness')}</Button>
+                        <img data-aos="slide-right" className='gridimage' src={funcmed} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />      
+          </div>
+                                   <Button className="custom-btn" href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" target="_blank">{t('Try Optimal Root Wellness')}</Button>
+                        <a href= "https://my.practicebetter.io/#/5f7214892a9029071895cc89/bookings?s=69aad0c515332eadf8c1891f&step=date" alt="Kari Lockrem Wellness">
+                        <img data-aos="slide-right" className='gridimage' src={hair} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                        </a>
+                                                <a href= "https://my.practicebetter.io/#/5f7214892a9029071895cc89/bookings?p=69af7d66944368a77fb2a556" alt="Kari Lockrem Wellness">
+                          <img data-aos="slide-right" className='gridimage' src={ts} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                                    </a>
+                                     <Button onClick={valentina} target='_blank' className="custom-btn">
+                                  {t('Visit Kari Lockrem Wellness')}
+                </Button> 
                                     <div data-aos="slide-right" className="container-blue">
                     <img data-aos="slide-right" className='gridimage' src={event6} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
+                  
                   </div>
-                <div data-aos="slide-right" className="container-blue">
+                  
        <Button className="custom-btn" href="https://essenceoflife.us/" target="_blank">{t('How Dr. Taylor Serves Boyton Beach, FL')}</Button>
       <br></br>
-      
           {showModal && ReactDOM.createPortal(
           
           <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="transcriptt-modal">
@@ -343,11 +356,22 @@ const {t} = useTranslation('common');
                   <img className='gridimag' src={spectraspray} alt='spectra spray' />
                    </a>
         <br></br>
+               <div data-aos="slide-right" className="container-blue">
+                <h2>{t("Why do I need a functional medicine health coach?")}</h2>
+      <p className='pr'>-{t("One-on-one guidance and accountability")}</p>
+      <p className='pr'>-{t("Practical nutrition and lifestyle strategies tailored to each client")}</p>
+      <p className='pr'>-{t("Evidence-informed recommendations based on functional health principles")}</p>
+      <p className='pr'>-{t("Sustainable habits designed for long-term success")}</p>
+      <p className='pr'>-{t("Education that empowers clients to take control of their health")}</p>
+      <p className='pr'>-{t("Collaborative support that works alongside their healthcare team when appropriate")}</p>
+      <Button onClick={valentina} target='_blank' className="custom-btn">
+                                  {t('Visit Kari Lockrem Wellness')}
+      </Button>  
+      </div>
         <Benefitts /> 
             <Button onClick={learnmore} target='_blank' className="custom-btn">
-                                  {t('Providers: Signup Here')}
-                </Button>       
-        </div>
+                {t('Providers: Signup Here')}
+            </Button>       
         </div>
     )
 }
