@@ -4,8 +4,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Info.css';
 import ReactDOM from 'react-dom';
+import Hashimoto from "../pages/Hashimotos";
 import { Button, Modal } from'react-bootstrap';
 import hair from "../images copy/hair.png";
+import Collapsible from 'react-collapsible';
 import ts from "../images copy/tsbailey.png";
 import funcmed from "../images copy/Screenshot 2026-05-03 at 7.44.47 PM.png";
 import Benefitts from "./Ben";
@@ -367,11 +369,17 @@ const {t} = useTranslation('common');
       <Button onClick={valentina} target='_blank' className="custom-btn">
                                   {t('Visit Kari Lockrem Wellness')}
       </Button>  
-      </div>
+      <Collapsible data-aos="slide-right"  trigger={<div className="collapsible-trigger">{t("Functional Medicine for Hashimoto's Thyroid Disease")}</div>}>
+          <a href="https://www.karilockremwellness.com/" alt="">
+          <Hashimoto />
+          </a>
+        </Collapsible>
+     
         <Benefitts /> 
             <Button onClick={learnmore} target='_blank' className="custom-btn">
                 {t('Providers: Signup Here')}
-            </Button>       
+            </Button>   
+             </div>    
         </div>
     )
 }
