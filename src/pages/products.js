@@ -128,14 +128,14 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
         <title>{t("Products")}</title>  
          <meta property="og:title" content={t("Products")} />                
         <meta name="description" content={t("Products")} />        
-        <meta name="description" content={t("Seeking Holistic products that help you meet your health needs. We only work with the best products in the world!")} />
+        <meta name="description" content={t("Seeking Holistic health products that help you meet your health needs? We feature and work with the best holistic health products in the world!")} />
       </Helmet>
             <header>
             <Topbar />
             </header>
             <div className="container">
                     <div data-aos="slide-right" className="container-blue">
-            <h1>{t("Holistic Medicine Books and Related Products")}</h1>
+            <h1>{t("Holistic Health Products")}</h1>
   </div>
  <div>
     <div>
