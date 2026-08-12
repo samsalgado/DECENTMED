@@ -1,9 +1,10 @@
 import '../App.css';
-import Providers from '../info/providrs';
+//import Providers from '../info/providrs';
+import Providerpage from '../info/providerpage';
 import { useEffect } from 'react';
 import "../App.css";
 import { Button } from 'react-bootstrap';
-import LOGO from "../images copy/dmed.png";
+import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
 import plants from "../images copy/bckgrd.png";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
@@ -56,7 +57,7 @@ export function ProviderLandingPage() {
           {t('Book Meeting')}
     </Button>    
       </div>
-      <Providers />             
+             <Providerpage />
     </div>
   );
 }
