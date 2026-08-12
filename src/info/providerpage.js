@@ -4,7 +4,7 @@ import './Info.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NStudy from './nicaraugats';
-//import { Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 const Providerpage = () => {
@@ -12,6 +12,9 @@ const Providerpage = () => {
    useEffect(() => {
         AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
       }, []);
+       const learnmore = () => {
+    window.location.href = 'https://decentmed.org/signup/provider'
+  }
   return (
     <div className='container'>
        <div data-aos="slide-right" className="container-blue">
@@ -34,6 +37,9 @@ const Providerpage = () => {
             />
             </div>
            <NStudy />     
+           <Button onClick={learnmore} className="custom-btn">
+                          {t('Book Meeting')}
+                  </Button>  
       </div>
     </div>
   );
