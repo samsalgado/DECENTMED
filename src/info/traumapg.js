@@ -160,7 +160,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
           <h3>{t("Healing from Trauma Quotes")}</h3>
       <p>{t("Life doesn’t have to feel overwhelming. Together, we can shift your outlook and create a life you’re excited to live. My coaching philosophy is rooted in the belief that everyone possesses their own unique potential and inner power. As a Life Architect, I work with you to unlock your true potential and design a life that aligns with your values, passions, and goals.")}</p>
       <p>{t("'The tools I received through coaching gave me clarity and confidence. My relationships are thriving, and I feel like I’m finally living the life I’ve always wanted.'")}</p>
-      <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
+      <Button className="custom-btn" href="https://amazinglifedesign.com/" target="_blank">
                 {t("Experience Healing")}
             </Button>
       </div>
@@ -179,6 +179,26 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
         />
       </div>
     </div>
+      <div data-aos="slide-right" className="container-bbblue" style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '20px'
+      }}>
+      <div data-aos="slide-right" className='content-wrapper' style={{
+          flex: '1'
+        }}>
+          <h3>{t("Seeking 'Somatic Therapy near me'?")}</h3>
+      <p>{t("Based on her training and research in Somatic Experiencing ®, trauma-informed yoga, and Pranayama Breathwork, Angela has curated a series of exercises that combine elements of each of these modalities to expose her clients to a variety of approaches that can provide them immediate body-mind relief from stress and trauma.")}</p>
+      <p>{t("Clients can select the exercises that work best for them and use different combinations, or they can adopt one or two exercises to do daily as a means of calming their nervous systems (i.e., shifting from a sympathetic [fight or flight] to a parasympathetic [rest and digest] state. In addition, these exercises can improve vagus nerve functioning, interrupt thought rumination, and facilitate the release of strong emotions such as fear, anger, shame, and sadness.")}</p>
+      <p>{t("Giving people the tools to become more connected to their bodies can help them understand how thoughts and emotions impact our bodies as well as our minds.")}</p>
+            <p>{t("Somatic exercises also teach people how to regulate their emotions to process traumatic events and respond to stress and uncertainty from a calmer and more grounded place, allowing their bodies to let go of chronic tension.")}</p>
+      <p>{t("As a result of strengthening the body-mind connection, people are attuned to the ways in which they move their bodies that may not be beneficial, which can motivate them to shift out of bad habits of sitting and moving in the process alleviating chronic physical pain and discomfort.")}</p>
+      <Button className="custom-btn" href="https://calendly.com/forestangela9/new-meeting?month=2026-02" target="_blank">
+                {t("Experience Healing")}
+            </Button>
+      </div>
+      </div>
         <div data-aos="slide-right" className="container-blue">
       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />

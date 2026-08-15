@@ -19,10 +19,7 @@ const { t } = useTranslation('common');
             <header>
             <Topbar />
             </header>
-
             <BREATH />
-
-
             <footer>
                 <Footer />
             </footer>

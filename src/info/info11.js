@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import Hashimoto from "../pages/Hashimotos";
 import { Button, Modal } from'react-bootstrap';
 import hair from "../images copy/hair.png";
+import StomachIssues from "../pages/Gut";
 import Collapsible from 'react-collapsible';
 import ts from "../images copy/tsbailey.png";
 import funcmed from "../images copy/Screenshot 2026-05-03 at 7.44.47 PM.png";
@@ -294,8 +295,19 @@ const {t} = useTranslation('common');
         </div>
       </div>
        <div data-aos="slide-right">
-            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
+            <iframe class="rumble" title="Functional Medicine Health Coaching ft. Optimal Root Wellness" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
           </div>
+                      <Button className="custom-btn" href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" target="_blank">{t('Try Optimal Root Wellness')}</Button>
+           <div data-aos="slide-right">
+            <iframe class="rumble" title="Functional Medicine Health Coaching ft. Kari Lockrem" width="640" height="360" src="https://www.youtube.com/embed/lE5vVNDyx0I?si=SnXDAq1M1pSt5n1z" frameborder="0" allowfullscreen></iframe>
+          </div>
+                       <Button onClick={valentina} target='_blank' className="custom-btn">
+                                  {t('Visit Kari Lockrem Wellness')}
+                </Button> 
+           <div data-aos="slide-right">
+            <iframe class="rumble" title="Functional Medicine Health Coaching ft. Angela Forest" width="640" height="360" src="https://www.youtube.com/embed/je9JZSZcdUw?si=lrU8HO59b5Sf_y5D" frameborder="0" allowfullscreen></iframe>
+          </div>
+         <Button className="custom-btn" href="robusthealthadvocacy.com" target="_blank">{t('Try Robust Health Advocacy')}</Button>
       <div data-aos="slide-right">
             <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
           </div>
@@ -374,7 +386,11 @@ const {t} = useTranslation('common');
           <Hashimoto />
           </a>
         </Collapsible>
-     
+  <Collapsible data-aos="slide-right"  trigger={<div className="collapsible-trigger">{t("Functional Medicine for Gut Issues")}</div>}>
+          <a href="https://robusthealthadvocacy.com/" alt="">
+          <StomachIssues />
+          </a>
+        </Collapsible>     
         <Benefitts /> 
             <Button onClick={learnmore} target='_blank' className="custom-btn">
                 {t('Providers: Signup Here')}

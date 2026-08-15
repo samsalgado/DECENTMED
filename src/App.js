@@ -13,6 +13,7 @@ import ScrollTop from './Components/ScrollTop';
 
 const FileUploadDownload = lazy(() => import('./pages/landingpage'));
 const Hoxsey = lazy(() => import('./pages/blogs/hoxsey'));
+const S = lazy(() => import('./pages/S'));
 const Bitcoin = lazy(() => import('./pages/blogs/bitcoin'));
 const BlogAcu = lazy(() => import('./pages/blogs/blogacu'));
 const Blog7 = lazy(() => import('./pages/blogs/blog7'));
@@ -135,6 +136,7 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
+        <Route path="/how-to-treat-sibo-naturally" element={<S t={t} />} />
         <Route path="/narcissism" element={<Lynn t={t} />} />
         <Route path="/providers" element={<ProviderLandingPage t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
