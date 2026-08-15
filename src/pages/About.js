@@ -3,8 +3,8 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import FAQ from '../info/faq';
 import { Helmet } from 'react-helmet';
-
 export default function About({ t }) {
+
     return (
         <div>
             <Helmet>  {/* Add Helmet component */}

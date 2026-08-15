@@ -53,13 +53,15 @@ time. I really was drawn to your vision of how you can help people with this typ
           <iframe
             width="100%"
             height='350vh'
-            src="https://www.youtube.com/embed/0QHU17Mi-Xk?si=dMxq1ugGFtfYEHIC"
+            src="https://www.youtube.com/embed/Qqw5SaKFZEk?si=WYgQkw1CvQSSUCZO"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
+          <Button className="custom-btn" href="https://decentmed.org/signup" target="_blank">{t('Sign Up')}</Button>
+
           </div>
-             
+
               {showModal && ReactDOM.createPortal(    
               
               <Modal show={showModal} className="transcriptt-modal" onHide={() => setShowModal(false)} size="lg" >
