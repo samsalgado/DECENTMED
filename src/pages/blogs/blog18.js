@@ -7,7 +7,7 @@ import lying from "../../images copy/lying.png";
 import seatedfold from "../../images copy/seatedforwardfold.png";
 import needle from "../../images copy/needle.jpeg";
 import standing from "../../images copy/standing.png";
-import "../../App.css";
+import '../../info/Info.css';
 import { Button } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 const Blog18 = () => {

@@ -1,11 +1,11 @@
 import React, {useEffect, useState, useCallback} from 'react';
 import Topbar from "../topbar";
 import AOS from 'aos';
+import '../../info/Info.css';
 import 'aos/dist/aos.css';
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import { Button, Modal } from 'react-bootstrap';
-import "../../App.css";
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import ReactDOM from 'react-dom';
 import fenben from '../../images copy/Fenbendazole.png';
@@ -229,7 +229,7 @@ const Blog6 = () => {
 
           <table className="collapsibles-table">
             <tbody>
-              <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
+              <Collapsible trigger={<h3 className="collapsible-trigger">{t('Additional Resources')}</h3>}>
                 <a href="/fenbendazole"> <img src={fenben} alt='' /> </a>
                 <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
                 <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>

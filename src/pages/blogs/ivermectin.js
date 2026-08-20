@@ -47,7 +47,7 @@ import ivermectin14 from '../../images copy/ivermectin13.jpeg';
 import ivermectin15 from '../../images copy/ivermectin15.jpeg';
 import ivermectin16 from '../../images copy/ivermectin16.jpeg';
 import ivermectin17 from '../../images copy/ivermectin17.jpeg';
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation } from "react-i18next";
 const Ivermectin = () => {
 const {t} = useTranslation('common');
@@ -235,7 +235,7 @@ const {t} = useTranslation('common');
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Ivermectina en Español</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">Ivermectina en Español</div>}>
                       <div className='container'>
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
@@ -329,7 +329,7 @@ const {t} = useTranslation('common');
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">{t('Additional Resources')}</div>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
               <a href="/hoxsey"> <img src={hhoxsey} alt='' /> </a>
               <a href="/funcmed"> <img src={essence} alt="img" /> </a>

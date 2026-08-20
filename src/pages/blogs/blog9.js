@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-import "../../App.css";
+import '../../info/Info.css';
 import Footer from "../../footer";
 import nutrition from "../../images copy/nutritionbenefits.png";
 import vitamins from '../../images copy/vitamins.webp';

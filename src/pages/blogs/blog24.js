@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import conversion from "../../images copy/conversion.png";
 import Footer from "../../footer";
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation, Trans } from "react-i18next";
 import { Button } from "react-bootstrap";
 

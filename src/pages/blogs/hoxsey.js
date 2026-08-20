@@ -116,7 +116,7 @@ import hoxsey41 from '../../images copy/IMG_6471.jpeg';
 
 import hoxsey42 from '../../images copy/IMG_6472.jpeg'; //
 
-import "../../App.css";
+import '../../info/Info.css';
 const Hoxsey = ({t}) => {
      //const [showModal, setShowModal] = useState(false);
     const publishToNostr = useCallback(async () => {
@@ -406,7 +406,7 @@ const Hoxsey = ({t}) => {
         <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Hoxsey Tratamiento en Español</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">Hoxsey Tratamiento en Español</div>}>
                       <div className='container'>
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
@@ -549,7 +549,7 @@ const Hoxsey = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Hoxsey en français</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">Hoxsey en français</div>}>
           <Hoxseyfr />
           </Collapsible>
           </tbody>
@@ -558,7 +558,7 @@ const Hoxsey = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Hoxsey-kankerbehandeling in het Nederlands</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">Hoxsey-kankerbehandeling in het Nederlands</div>}>
           <Hoxseydutch />
           </Collapsible>
           </tbody>
@@ -567,7 +567,7 @@ const Hoxsey = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">हॉक्ससी कैंसर उपचार हिंदी में</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">हॉक्ससी कैंसर उपचार हिंदी में</div>}>
           <Hoxseyhindi />
           </Collapsible>
           </tbody>
@@ -576,7 +576,7 @@ const Hoxsey = ({t}) => {
        <div>
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t("Additional Resources")}</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">{t("Additional Resources")}</div>}>
                <a href="/fenbendazole"> <img src={fenbenn} alt='' /> </a>
                <a href="/ivermectin"> <img src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/funcmed"> <img src={essence} alt="img" /> </a>

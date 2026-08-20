@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import chirotreat from '../../images copy/roseoil.png';
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation } from "react-i18next";
 import { Button } from "react-bootstrap";
 const Blog16 = () => {

@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import batana from '../../images copy/hepB.png';
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation } from "react-i18next";
 import { Button } from "react-bootstrap";
 const Blog8 = () => {

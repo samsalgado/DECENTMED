@@ -1,7 +1,7 @@
 import React from 'react'
-import "./chiro.css";
 import { useEffect } from 'react';
 import "../App.css";
+import './Info.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import chiroFR from '../images copy/IMG_9300.jpeg';
@@ -99,10 +99,13 @@ const Chiro = () => {
                 height: '400px'
               }}    
             />
-            <Button onClick={l} className="custom-btn">
+           
+            </div>
+             <Button onClick={l} className="custom-btn">
                         {t('Learn More')}
                       </Button>
-            </div>
+                      <br />
+                       <br />
       <div data-aos="slide-right" className="title-container">
         <table className="collapsibles-table">
           <tbody>

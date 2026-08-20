@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import acuu from "../../images copy/2412335.jpg";
 import Footer from "../../footer";
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation, Trans } from "react-i18next";
 import { Button } from "react-bootstrap";
 

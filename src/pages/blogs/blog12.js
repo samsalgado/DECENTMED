@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import montreal from '../../images copy/montreal.png';
-import "../../App.css";
+import '../../info/Info.css';
 import { Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 const Blog12 = () => {

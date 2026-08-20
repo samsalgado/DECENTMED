@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import cell from "../../images copy/lanenaturopathy.png";
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation } from "react-i18next";
 const Mike = () => {
   const { t } = useTranslation('common');
@@ -21,8 +21,7 @@ const Mike = () => {
       <header>
         <Topbar />
       </header>
-                     <div className="container-blue">
-
+          <div className="container-blue">
       <div className='container'>
         <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ways to Improve Your Sleep Quality')}</h1>
         <a href='https://www.naturopathylane.com/'> <img className='gridimag' src={cell} alt="logo" /></a>

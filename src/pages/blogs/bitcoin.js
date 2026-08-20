@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import bitcoin from "../../images copy/btc (1).png";
-import "../../App.css";
+import '../../info/Info.css';
 import { useTransition } from "react";
 const Bitcoin = () => {
 const {t} = useTransition('common')

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import cell from "../../images copy/cell.png";
 import { Button } from "react-bootstrap";
-import "../../App.css";
+import '../../info/Info.css';
 import { useTranslation } from "react-i18next";
 const Blog4 = () => {
   const { t } = useTranslation('common');

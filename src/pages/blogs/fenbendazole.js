@@ -5,7 +5,7 @@ import Fenhindi from './fenhindi';
 import Fenfrance from './fenfr';
 import { useState } from "react";
 import Fendutch from './fendutch';
-import "../../App.css";
+import '../../info/Info.css';
 import IVERMECTINCANCER from '../../images copy/IVERMECTINCANCER.jpeg';
 import hhoxsey from '../../images copy/IMG_6431.jpeg';
 import Collapsible from 'react-collapsible';
@@ -146,7 +146,7 @@ const {t} = useTranslation('common');
       <div className="container">
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">Fenbendazole in Spanish</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">Fenbendazole in Spanish</div>}>
                       <div className='container'>
           <p>
           <img className='gridimag' src={spanish} alt="logo" />
@@ -223,7 +223,7 @@ const {t} = useTranslation('common');
        <div className="container">
         <table className="collapsibles-table">
           <tbody> 
-          <Collapsible trigger={<th className="collapsible-trigger">{t('Additional Resources')}</th>}>
+          <Collapsible trigger={<div className="collapsible-trigger">{t('Additional Resources')}</div>}>
                <a href="/fenbendazole"> <img className="gridimag" src={fenben} alt='' /> </a>
                <a href="/ivermectin"> <img className="gridimag" src={IVERMECTINCANCER} alt="img" /> </a>
               <a href="/hoxsey"> <img className="gridimag" src={hhoxsey} alt='' /> </a>

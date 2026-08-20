@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import bitcoin from "../../images copy/BTC_payments.PNG";
-import "../../App.css";
+import '../../info/Info.css';
 const Blog17 = () => {
   return (
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>

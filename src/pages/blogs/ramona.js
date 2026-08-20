@@ -2,7 +2,7 @@ import Topbar from "../topbar";
 import { Helmet } from "react-helmet";
 import ramona from "../../images copy/ramona.jpeg";
 import Footer from "../../footer";
-import "../../App.css";
+import '../../info/Info.css';
 import { Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 const Ramona = () => {

@@ -5,7 +5,6 @@ import Footer from "../../footer";
 import ReactDOM from 'react-dom';
 import ReactPlayer from 'react-player';
 import cancerimg from "../../images copy/cancerimg.png";
-import "../../App.css";
 import "../../info/Info.css";
 import { Button, Modal } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
