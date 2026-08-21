@@ -363,14 +363,14 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
       <div data-aos="slide-right" className="container-blue">
         <table className="collapsibles-table">
           <tbody>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Obesity Facts')}</th>}>
+            <Collapsible trigger={<div className="collapsible-trigger">{t('Obesity Facts')}</div>}>
               <tr>
                 <img alt='' />
                 <img className='gridimage' src={obese} alt='' />
                 <img alt='' />
               </tr>
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Dr. Sebi Food List')}</th>}>
+            <Collapsible trigger={<div className="collapsible-trigger">{t('Dr. Sebi Food List')}</div>}>
               <tr>
                 <img alt='' />
                 <img className='gridimage' src={drsebi} alt='' />
@@ -381,11 +381,11 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
                 <img alt='' />
               </tr>
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Clinical Nutritionist')}</th>}>
+            <Collapsible trigger={<div className="collapsible-trigger">{t('Clinical Nutritionist')}</div>}>
              <NutritionVids />
              <Clinicals />
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Longevity Health Plan')}</th>}>
+            <Collapsible trigger={<div className="collapsible-trigger">{t('Longevity Health Plan')}</div>}>
               <tr>
                 <img alt='' />
                 <img className='gridimage' src={L1} alt='' />
@@ -427,7 +427,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
                 <img alt='' />
               </tr>
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Case Studies')}</th>}>
+            <Collapsible trigger={<div className="collapsible-trigger">{t('Case Studies')}</div>}>
               <tr>
                 <img alt='' />
                 <img className='gridimage' src={case1} alt='' />
@@ -443,7 +443,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
                 <img alt='' />
               </tr>
             </Collapsible>
-            <Collapsible trigger={<th className="collapsible-trigger">{t('Functional Nutrition Resources')}</th>}>
+            <Collapsible trigger={<div className="collapsible-trigger">{t('Functional Nutrition Resources')}</div>}>
             <div className="collapsible-content">
   <img className='griddimage' src={labs} alt="Functional Nutrition Resources"/>
   <img className='griddimage' src={brain} alt="Functional Nutrition Resources"/>
