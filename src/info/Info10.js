@@ -50,7 +50,7 @@ const {t} = useTranslation('common');
       </div>
       <div className="container-blue">
                      <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/gvFt9Xh9iMU?si=PVY_x1ev4W0g7i2f" frameborder="0" allowfullscreen></iframe>
-
+                     <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/k1xiB5xFrqQ?si=QgSv5ucYcmlbs2Xt" frameborder="0" allowfullscreen></iframe>
     <div data-aos="slide-right" className="vertical-video">
       
   <iframe 
@@ -59,6 +59,7 @@ const {t} = useTranslation('common');
     src="https://www.youtube.com/embed/fMwMZZcSFr0" 
     allowFullScreen>
   </iframe>
+
 </div>
  <div data-aos="slide-right" className="vertical-video">
   <iframe 

@@ -75,7 +75,7 @@ const learnmore = () => {
                     <p className='pr'>{t("Support for brain injury recovery that goes beyond symptom management, addressing what is held at both the structural and energetic level. Sessions conducted entirely remotely, so location is never a barrier to care. A personalized, layered approach. No two sessions look the same, because no two bodies are holding the same thing. Many clients notice results as early as the first session. A credentialed foundation. Combat Brain Training was developed with US military support and brings a documented, targeted neuroplasticity framework to the work Nearly 40 years of experience understanding how injury, stress, and suppressed patterns show up in the body Works alongside medical care rather than replacing it.")}</p>
                     <p className="pr">{t("The goal is not to tell people what is true for them, but to help them access their own deeper knowing and understanding.")}</p>
       </div>
-      <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
+      <Button className="custom-btn" href="https://wwww.shinewithsandra.com/cc" target="_blank">{t("Book Sound Healing Session")}</Button>
     </div>
     <div style={{
       flex: '1',
@@ -109,6 +109,7 @@ const learnmore = () => {
 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/k1xiB5xFrqQ?si=QgSv5ucYcmlbs2Xt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <div data-aos="slide-right" className="container-blue">
   <Collapsible
     trigger={
