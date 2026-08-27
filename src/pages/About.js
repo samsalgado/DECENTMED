@@ -4,7 +4,6 @@ import Footer from '../footer';
 import FAQ from '../info/faq';
 import { Helmet } from 'react-helmet';
 export default function About({ t }) {
-
     return (
         <div>
             <Helmet>  {/* Add Helmet component */}
@@ -16,9 +15,10 @@ export default function About({ t }) {
             <header>
                 <Topbar />
             </header>
-            <div className="container-blue">
+            <div >
             <FAQ />
             </div>
+            <br />
             <footer>
             <Footer />
             </footer>

@@ -64,69 +64,65 @@ return (
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
     >
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/cancer">{t('Cancer')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ptsd">{t('PTSD')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/adhd">{t('ADHD')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/how-to-treat-sibo-naturally">{t('SIBO')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/mindset">{t('Mental Clarity')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('ADD')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('Digestion')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Stroke')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Chronic Migraines')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Chronic Brain Injury')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Dementia')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Muscoskeletal Issues')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Chronic Pain')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/trauma">{t('Trauma')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Chronic Fatigue')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Gut Health')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Endometriosis')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Menopausal Symptoms')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('PMOS (PCOS)')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Menopausal Symptoms')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Postmenopause')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('PMS')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Thyroid dysfunction')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Perimenopause')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Hair loss (androgenic alopecia, telogen effluvium, and stress-related hair loss)')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Fatigue and low energy')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Weight management & metabolic health')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Gut health concerns (bloating, constipation, diarrhea, food sensitivities)')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Stress, HPA axis dysfunction & sleep concerns')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Inflammation and autoimmune support')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Premenstrual Dysphoric Disorder')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Autonomic dysfunction')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Mineral/Vitamin Deficiencies')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBS')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Hormone Imbalance')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('IBD')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Sexual Dysfunction')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Back Pain')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Incontinence')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Urinary Dysfunction')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Scoliosis')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/soundhealing">{t('Stress')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Subconscious Blocks')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Fear')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Low Self-Esteem')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Imposter Syndrome')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Neck Pain')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Poor Circulation')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Osteoarthritis')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Corporate Burnout')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/applied-kinesiology">{t('Autism')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/energyhealing">{t('Anxiety')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/transformationalcoaching">{t('Burnout')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chelation">{t('Heart Disease')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/stemcell">{t('Knee Pain')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Prevention')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('High Blood Sugar')}</NavLink></ul>
+                        <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('ADD')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/adhd">{t('ADHD')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Adjustment difficulties')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/energyhealing">{t('Anxiety')}</NavLink></ul>
+                                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/applied-kinesiology">{t('Autism')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Autonomic Dysfunction')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Back Pain')}</NavLink></ul>
       <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/meditation">{t('Blood Pressure')}</NavLink></ul>
-      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Adjustment difficulties')}</NavLink></ul>
-
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/transformationalcoaching">{t('Burnout')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/cancer">{t('Cancer')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Chronic Brain Injury')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Chronic Fatigue')}</NavLink></ul>
+                        <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Chronic Pain')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Corporate Burnout')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Chronic Migraines')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/homeopathy">{t('Digestion')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Dementia')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Endometriosis')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Fatigue & Low Energy')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Fear')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Gut Health Concerns')}</NavLink></ul>      
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Hair Loss')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t("Hashimoto's Syndrome")}</NavLink></ul>     
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chelation">{t('Heart Disease')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrition">{t('High Blood Sugar')}</NavLink></ul>
+                        <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ayurveda">{t('Hormone Imbalance')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('IBD')}</NavLink></ul>
+                              <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Imposter Syndrome')}</NavLink></ul>
+                              <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Incontinence')}</NavLink></ul>                     
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Inflammation and Autoimmune Support')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Insomnia')}</NavLink></ul>
+                  <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/detox">{t('Kidney Disease')}</NavLink></ul>
+                   <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/stemcell">{t('Knee Pain')}</NavLink></ul>
+                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Low Self-Esteem')}</NavLink></ul>
+                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Menopausal Symptoms')}</NavLink></ul>
+                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/mindset">{t('Mental Clarity')}</NavLink></ul>
+                          <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Metabolic Health Management')}</NavLink></ul>
+                          <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/nutrigenomics">{t('Mineral/Vitamin Deficiencies')}</NavLink></ul>
+                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/feldenkrais">{t('Muscoskeletal Issues')}</NavLink></ul>
+                   <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Neck Pain')}</NavLink></ul>
+                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Osteoarthritis')}</NavLink></ul>
+                          <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Perimenopause')}</NavLink></ul>
+                                <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('PMOS (PCOS)')}</NavLink></ul>
+                                                    <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/acupuncture">{t('Poor Circulation')}</NavLink></ul>
+                                      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Postmenopause')}</NavLink></ul>
+                          <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/menopause">{t('Premenstrual Dysphoric Disorder')}</NavLink></ul>
+                          <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Prevention')}</NavLink></ul>
+                                                          <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/ptsd">{t('PTSD')}</NavLink></ul>
+                                        <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/naturopathy">{t('Pyrrole Disorder')}</NavLink></ul>            
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Scoliosis')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Sexual Dysfunction')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/how-to-treat-sibo-naturally">{t('SIBO')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/breathwork">{t('Stress Management')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/brainhealth">{t('Stroke')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/hypnotherapy">{t('Subconscious Blocks')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/functionalmedicine">{t('Thyroid Dysfunction')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/trauma">{t('Trauma')}</NavLink></ul>
+            <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/chiropractic">{t('Urinary Dysfunction')}</NavLink></ul>
+      <ul style={{ textAlign:"left" }}><NavLink to="https://decentmed.org/prevent">{t('Weight Loss')}</NavLink></ul>
     </NavDropdown>
   </>
 );

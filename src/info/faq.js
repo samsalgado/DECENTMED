@@ -5,7 +5,6 @@ import Merlin from './merlin';
 import { Button } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 const FAQ = () => {
   const {t} = useTranslation('common');
@@ -17,20 +16,20 @@ const FAQ = () => {
               }, []);
   
   return (
-    
+    <>
     <div data-aos="slide-right" className='container'>
               <h1 className='logotitle'>{t("About Us")}</h1>
             <Merlin />
-            <div data-aos="slide-right">
-            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>       
             </div>
-                        <Button onClick={learnmore} target='_blank' className="custom-btn">
-                          {t('Providers: Signup Here')}
-                        </Button> 
+            <br />
+            <br />
 
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+        <Button onClick={learnmore} className="custom-btn">
+          {t('Providers: Signup Here')}
+        </Button>
+      </div>
+            </>
     
   )
 }

@@ -53,14 +53,14 @@ time. I really was drawn to your vision of how you can help people with this typ
           <iframe
             width="100%"
             height='350vh'
-            src="https://www.youtube.com/embed/Qqw5SaKFZEk?si=WYgQkw1CvQSSUCZO"
+            src="https://www.youtube.com/embed/K0NVZHqbG5E?si=8zwke9JWzdNVk4K2"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-          <Button className="custom-btn" href="https://decentmed.org/signup" target="_blank">{t('Sign Up')}</Button>
 
           </div>
+           
 
               {showModal && ReactDOM.createPortal(    
               
@@ -79,7 +79,6 @@ time. I really was drawn to your vision of how you can help people with this typ
           </Modal>,
           document.body)}
         <br></br>
-        <Button className="custom-btn" href="https://decentmed.org/signup" target="_blank">{t('Sign Up')}</Button>
     </div>
   );
 };
