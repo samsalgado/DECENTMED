@@ -294,9 +294,9 @@ const {t} = useTranslation('common');
            
         </div>
       </div>
-       <div data-aos="slide-right">
-                    <iframe class="rumble" title="DMED Addressing Diabesity Summit" width="640" height="360" src="https://www.youtube.com/embed/WPK7HeZcQC0?si=sm2Hav2D6OT-lXjF" frameborder="0" allowfullscreen></iframe>
+                          <iframe class="rumble" title="DMED Addressing Diabesity Summit" width="640" height="360" src="https://www.youtube.com/embed/WPK7HeZcQC0?si=sm2Hav2D6OT-lXjF" frameborder="0" allowfullscreen></iframe>
 
+       <div data-aos="slide-right">
             <iframe class="rumble" title="Functional Medicine Health Coaching ft. Optimal Root Wellness" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
           </div>
                       <Button className="custom-btn" href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" target="_blank">{t('Try Optimal Root Wellness')}</Button>
