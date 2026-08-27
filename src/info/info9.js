@@ -360,7 +360,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
           <p className="pr">{t("paulette")}</p>
           <p className="pr"><h3>{t("Bethany Stone: Overcoming Corporate Burnout")}</h3></p>
           <p className="pr">{t("wildflower")}</p>
-        <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
+        <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">
          {t("Try Coaching")}
         </Button>        
         </div>

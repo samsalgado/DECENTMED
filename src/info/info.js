@@ -27,7 +27,7 @@ const Info = () => {
   return (
     <div className='container'>
       <div className="container-blue" style={{ marginTop: '20px', marginBottom: '20px' }}>
-        <h1 className='logotitle'>{t('DecentMed: Ushering the Future of Medicine')}</h1>
+        <h1 className='logotitle'>{t('DMED: Connecting Patients with Providers')}</h1>
       </div>
       <div style={{ marginBottom: '20px' }}>
         <BlueContainer />

@@ -187,7 +187,7 @@ themerlingroupworld.com/ayurveda for more.
         <p className='pr'>{t("Ayurveda is a 5,000-year-old system of natural medicine that views the body as an intelligent, interconnected system of energy, digestion, hormones, emotions, and environment. Instead of masking symptoms, it focuses on identifying root imbalances and restoring harmony through food, herbs, lifestyle rhythms, detoxification, and nervous system support. Ayurveda honors a woman’s unique constitution and stage of life — especially during perimenopause — helping her move through transition with strength, clarity, and vitality.")}</p>
         <p className='pr'>{t("Angela blends ancient Ayurvedic wisdom with modern functional tools to create a truly integrative path to healing. Her work combines lab testing, AO scans, personalized diet and lifestyle protocols, custom herbal formulations, and strategic supplement recommendations. By addressing hormones, digestion, detoxification, and nervous system balance together, she helps women move through perimenopause with clarity, strength, and renewed vitality — without relying on quick fixes.")}</p>
         <br></br>
-        <Button className="custom-btn" href="https://decentmed.org/ayurvedicmedicine" target="_blank">
+        <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">
           {t("Experience Ayurveda")}
         </Button>
       </div>

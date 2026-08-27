@@ -24,7 +24,7 @@ function Values() {
                 <h3>
             {t('Holistic Marketing')}
                 </h3>
-            <p className="edu">{t('Although our team is comprised of SEO experts, to ensure you get more patients.')}</p>
+            <p className="edu">{t('Our team is comprised of SEO experts, to ensure you get more patients.')}</p>
             </div>
             </div>
             </div>

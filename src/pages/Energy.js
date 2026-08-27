@@ -82,7 +82,7 @@ const learnmore = () => {
             <p className='pr'>{t("Reiki is a Japanese energy-based therapeutic technique used to support relaxation, reduce stress, and assist the body’s natural healing processes.")}</p>
             <p className='pr'>{t("The word Reiki comes from two Japanese terms: Rei, meaning 'higher wisdom' or 'universal intelligence', and Ki, meaning 'life force energy'. Together, Reiki refers to universal life energy.")}</p>
             <p className='pr'>{t("During a session, a practitioner places their hands lightly on or just above specific areas of the body with the intention of supporting energetic balance. Reiki is believed to help regulate the nervous system, reduce physiological stress responses, and promote a state of deep relaxation. Many individuals report improved emotional balance, decreased anxiety, better sleep, and an overall sense of well-being following sessions.")}</p>
-      <Button className="custom-btn" href="https://www.decentmed.org/energyhealers" target="_blank">{t("Try Energy Healing")}</Button>
+      <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">{t("Try Energy Healing")}</Button>
         <iframe height="200px" width="100%" frameborder="no" scrolling="no" title="Stacy Theodossin DD" seamless src="https://player.simplecast.com/7c3a0915-ba46-4d06-93d8-b423a4de2039?dark=false"></iframe>
     </div>
     <div style={{

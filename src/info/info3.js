@@ -23,7 +23,7 @@ const Info3 = () => {
       
       <Fruits />
       
-            <Button className="custom-btn" href="https://decentmed.org/telehealth" target="_blank">
+            <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">
                       {t("Discover Holistic Providers")}
             </Button>
             <br></br>

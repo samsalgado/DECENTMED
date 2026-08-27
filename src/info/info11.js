@@ -284,7 +284,7 @@ const {t} = useTranslation('common');
                     <p className='pr'>-{t("Support bones, heart, brain, and long-term health")}</p>
                     <p className='pr'>-{t("Restore confidence, vitality, and quality of life")}</p>
                     <p className='pr'>-{t("Improve libido and sexual wellness")}</p>
-          <Button className="custom-btn" href="https://decentmed.org/funcmed" target="_blank">{t("Book Functional Medicine Session")}</Button>  {/* Added Bootstrap Button */}
+          <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">{t("Book Functional Medicine Session")}</Button>  {/* Added Bootstrap Button */}
         <br />
         <br />
         </div>

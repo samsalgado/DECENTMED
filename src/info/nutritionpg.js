@@ -302,7 +302,7 @@ have our first In person event tomorrow in Puerto Varta, Mexico if anyone wants 
               <p className='pr'>{t("- Address the Foundation: Optimize stomach acid and gut health")}</p>
               <p className='pr'>{t("- Personalize Your Protocol: Choose forms and doses based on YOUR genetics and deficiencies")}</p>
               <p className='pr'>{t("- Monitor and Adjust: Regular testing to track improvements and refine protocols")}</p>
-            <Button className="custom-btn" href="https://decentmed.org/nutritionpract" target="_blank">
+            <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">
                 {t("Find Providers")}
               </Button>
 

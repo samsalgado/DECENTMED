@@ -61,7 +61,7 @@ useEffect(() => {
       </div>
       <div data-aos="slide-right" className="container-blue">
       <Vitamins />
-       <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">
+       <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">
    {t("Find Wellness Coaches")}
      </Button>
       </div>
