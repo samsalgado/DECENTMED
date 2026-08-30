@@ -8,6 +8,7 @@ import Boundaries from "../info/Boundaries";
 import Collapsible from 'react-collapsible';
 import { Button, Modal } from'react-bootstrap';
 import ramyoga from "../images copy/ramyoga.png";
+import T from "../info/tes";
 import ns1 from "../images copy/ns1.png";
 import ns2 from "../images copy/ns2.png";
 import ns3 from "../images copy/ns3.png";
@@ -30,6 +31,9 @@ const learnmore = () => {
 const learntmore = () => {
   window.location.href = 'https://authenticlifejourney.com/work-with-me/'
 }  
+const l = () => {
+  window.location.href = 'https://app.acuityscheduling.com/schedule/f3645bcd/?appointmentTypeIds%5B%5D=59514298'
+} 
 const txt = `
 Ramona Crabtree Faulner. I'm the owner of Authentic Life Journey. I'm a transformational empowerment coach, speaker, author, and retreat facilitator. So, I have been working in the holistic wellness field for over 20 years. Started out as massage therapist, worked my way into yoga and meditation and energy work. And over that time I had my own journey that I experienced of healing and growth and expansion that included uh you know dropping into spaces of needing to break through hustle mentality and burnout. And as I
 
@@ -145,7 +149,9 @@ useEffect(() => {
           {//<p><h3>{t("Jessica Javens: Transformational Coaching")}</h3></p>    
 }
           <Button className="custom-btn" href="https://decentmed.org/coaching" target="_blank">{t("Try Coaching")}</Button>  {/* Added Bootstrap Button */}
+        
         </div>
+        
 <iframe
           className="centered-video"
           src="https://www.youtube.com/embed/hgHkSicJ6xc?si=P4xxLg4CeQ_grt5g"
@@ -162,7 +168,18 @@ useEffect(() => {
       </div>
        <div className='gridimage'>
          <div data-aos="slide-right" className="container-blue">
-
+          <iframe
+              height="515"
+              src="https://www.youtube.com/embed/Y6_8QDw2_yc?si=6Jc83I6cTrewDNE9"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
               <iframe
               height="515"
               src="https://www.youtube.com/embed/0WAOPweMgFk?si=Hl73Gx7vAPhT0osa"
@@ -303,6 +320,18 @@ useEffect(() => {
    <br></br> 
 </div>
           <div>
+             <Collapsible
+  trigger={
+    <div
+      className="collapsible-triggger"
+    >
+      {t("Client Testimonials")}
+    </div>
+  }
+>
+  <T />
+  </Collapsible>
+                <Button onClick={l} className="custom-btn">{t("Connect with Ramona")}</Button>
             <Collapsible trigger={<th className="collapsible-triggger">{t('Self Care Journal')}</th>}>
               <tr>
                 <a href="https://www.linkedin.com/pulse/flow-feeling-honoring-your-emotions-work-life-ramona-crabtree-falkner-4rrve/?trackingId=XKJ1BW5BQ3quljT4fWOovg%3D%3D">
@@ -347,7 +376,7 @@ useEffect(() => {
         <br></br>
                   <div data-aos="slide-right" className="container-blue">
 
-        <div data-aos="slide-right"className='gridimage'>
+        <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/2YCXlgQlXL0?si=BX9CKBwgQ9CDknT8"
@@ -361,7 +390,7 @@ useEffect(() => {
               }}    
             />
             </div>
-             <div data-aos="slide-right"className='gridimage'>
+             <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/YmXilRV4yaM?si=k3o1uGIOJQDp6rTs"
@@ -375,7 +404,7 @@ useEffect(() => {
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/c77_odmiexQ?si=nQeFps64GjmSDrjY"
@@ -389,7 +418,7 @@ useEffect(() => {
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/-JIJNOeW1yE?si=vyWImxQW9pgqFW-A"
@@ -403,7 +432,7 @@ useEffect(() => {
               }}    
             />
             </div>
-             <div data-aos="slide-right"className='gridimage'>
+             <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/Em8pFdAdEGI?si=CMliuXJLwLuC8qLD"
@@ -417,7 +446,7 @@ useEffect(() => {
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/F2YIbP1Fnr0?si=LZu8DrvzcR9XtOq9"
@@ -431,7 +460,7 @@ useEffect(() => {
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/zL39mCvZJmA?si=2ToBxo-y4188vrgj"
@@ -445,7 +474,7 @@ useEffect(() => {
               }}    
             />
             </div>
-            <div data-aos="slide-right" className='gridimage'>
+            <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/cX_68XibDlQ?si=r_2mKvOGmiydb8WT"
@@ -459,7 +488,7 @@ useEffect(() => {
               }}    
             />
             </div>
-            <div data-aos="slide-right"className='gridimage'>
+            <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/-eW6TAUT_DU?si=fu2kxS-2R5CR99YD"
@@ -473,7 +502,7 @@ useEffect(() => {
               }}    
             />
             </div>
-            <div data-aos="slide-right"className='gridimage'>
+            <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/8xI_WBwX6CY?si=-BntLu190uc0NzuT"
@@ -487,7 +516,7 @@ useEffect(() => {
               }}    
             />
             </div>
-            <div data-aos="slide-right"className='gridimage'>
+            <div data-aos="slide-right" className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/YFBGTp_9_-8?si=S0NfXzdlczRjoLQC"

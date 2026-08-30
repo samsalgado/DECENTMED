@@ -16,14 +16,14 @@ function Benefits() {
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of Breathwork")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Emotional Regulation")}</h3>
-                    <img className='gridimage' src={emotion} alt='' />
+                    <img className='gridimage' src={emotion} alt='breathwork facilitator' />
                     <p className="e">
                         {t("Breathwork helps regulate the nervous system, reducing emotional reactivity and bringing you back to balance, even in high-stress moments.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3> {t("Releasing Stored Trauma")}</h3>
-                    <img className='gridimage' src={trauma} alt='' />
+                    <img className='gridimage' src={trauma} alt='breathwork facilitator' />
                     <p className="e">
                      {t("Breath opens a powerful pathway to access and gently release trauma held in the body, creating space for healing and freedom.")}
                     </p>
@@ -31,42 +31,42 @@ function Benefits() {
 
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Expanded Self-Awareness")}</h3>
-                    <img className='gridimage' src={connct} alt='' />
+                    <img className='gridimage' src={connct} alt='breathwork facilitator' />
                     <p className="e">
                     {t("Breath brings you into deeper presence, sharpening intuition, quieting mental noise and helping you reconnect with your inner voice.")}
                     </p>
                 </div>
                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3> {t("Increased Energy & Vitality")}</h3>
-                    <img className='gridimage' src={ptsd} alt='' />
+                    <img className='gridimage' src={ptsd} alt='breathwork facilitator' />
                     <p className="e">
                          {t("When you breathe fully, your cells awaken. Breathwork oxygenates the body, boosts circulation, and leaves you feeling alive and energized.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3> {t("Improved Sleep & Relaxation")}</h3>
-                    <img className='gridimage' src={sleep} alt='' />
+                    <img className='gridimage' src={sleep} alt='breathwork facilitator' />
                     <p className="e">
                          {t("Practicing breathwork before bed calms the mind and activates the parasympathetic nervous system, making sleep deeper and more restful.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Breaking Cycles & Habits")}</h3>
-                    <img className='gridimage' src={str} alt='' />
+                    <img className='gridimage' src={str} alt='breathwork facilitator' />
                     <p className="e">
                         {t("Use breath to interrupt addictive patterns and shift out of autopilot. It helps you reset your mind and body in real time.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Building Confidence & Inner Strength")}</h3>
-                    <img className='gridimage' src={stress} alt='' />
+                    <img className='gridimage' src={stress} alt='breathwork facilitator' />
                     <p className="e">
                         {t("Breath anchors you in your body and truth. Over time, it strengthens your trust in yourself and your ability to handle whatever comes.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>  {t("Spiritual Connection & Clarity")}</h3>
-                    <img className='gridimage' src={connct} alt='' />
+                    <img className='gridimage' src={connct} alt='breathwork facilitator' />
                     <p className="e">
                           {t("Breathwork creates space for sacred connection, to your higher self, spirit, or source. It dissolves mental clutter and clarifies your path.")}
                     </p>

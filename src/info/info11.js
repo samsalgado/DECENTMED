@@ -295,7 +295,6 @@ const {t} = useTranslation('common');
         </div>
       </div>
                           <iframe class="rumble" title="DMED Addressing Diabesity Summit" width="640" height="360" src="https://www.youtube.com/embed/WPK7HeZcQC0?si=sm2Hav2D6OT-lXjF" frameborder="0" allowfullscreen></iframe>
-
        <div data-aos="slide-right">
             <iframe class="rumble" title="Functional Medicine Health Coaching ft. Optimal Root Wellness" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
           </div>

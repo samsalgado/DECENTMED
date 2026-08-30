@@ -15,13 +15,13 @@ function Principles() {
             <div className="row justify-content-center">
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Ayurveda Explained")}</h2>
                     <div className="col-12 col-sm-8 col-md-6 text-center mb-4">
-                    <img className='gridimage' src={princ} alt='' />
-                    <img className='gridimage' src={principles} alt='' />
+                    <img className='gridimage' src={princ} alt='ayurvedic medicine near me' />
+                    <img className='gridimage' src={principles} alt='ayurvedic medicine near me' />
 
                     
                 </div>
-                    <img className='gridimag' src={stacyd} alt='' style={{width: '100%', height: 'auto'}} />
-                      <img className='gridimag' src={doshas} alt='' style={{width: '100%', height: 'auto'}} />
+                    <img className='gridimag' src={stacyd} alt='ayurvedic medicine near me' style={{width: '100%', height: 'auto'}} />
+                      <img className='gridimag' src={doshas} alt='ayurvedic medicine near me' style={{width: '100%', height: 'auto'}} />
                       <a href='https://grhc.love/aboutayurvedaandholisticherbalism' alt="spectra spray">
             <img className='gridimage' src={ayurvedicgraphic} alt='spectra spray' />
              </a>

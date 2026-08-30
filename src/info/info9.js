@@ -435,7 +435,6 @@ possible for you. So borrow our belief because so many clients have gotten incre
           }
         `}</style>
         <div data-aos="slide-right" className="container-blue">
-
         <iframe
           className="centered-video"
           src="https://www.youtube.com/embed/9pUjEybptCQ?si=TTYSFG3DjqPRagLk"
@@ -540,13 +539,69 @@ possible for you. So borrow our belief because so many clients have gotten incre
     paddingTop: '3rem'
   }}>
               {t('Holistic Business Coach')}</h1>
-            <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: '20px 0'
-      }}></div>
-      <div data-aos="slide-right" className='gridimage'>
+      
+      <div data-aos="slide-right" className='container-blue'>
+         <iframe
+              height="515"
+src="https://www.youtube.com/embed/6yvf3-pzTqk?si=wlTIAyRD1gXgtdQV" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+         <iframe
+              height="515"
+src="https://www.youtube.com/embed/hr6YxlaSRI8?si=M8ISIVuS8p8wQ_8I" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+         <iframe
+              height="515"
+src="https://www.youtube.com/embed/uxPiaJVqKZ4?si=L1Uf5KbJtP-mEp2L" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+            <iframe
+              height="515"
+src="https://www.youtube.com/embed/-vQtxKcsQ-c?si=syW3l_f27p_rUQWV" 
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+                        <iframe
+              height="515"
+src="https://www.youtube.com/embed/RzAH5YlXWYc?si=PUSPhkpgZpNAcXKr"
+              title="Patient Acquisition Engine Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                maxWidth: '550px',
+                width: '100%',
+                height: '400px'
+              }}    
+            />
+
               <iframe
               height="515"
               src="https://www.youtube.com/embed/zJ8LzxAJY3M?si=QfwisiHKJbGp4J_W"
@@ -560,7 +615,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div data-aos="slide-right" className='gridimage'>
+            <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/SV1FwUQLlRI?si=GY-fhng4wLC0Ywzw"
@@ -574,7 +629,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-               <div data-aos="slide-right" className='gridimage'>
+               <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/J9iXoONiyzw?si=Gkgomds54OWbnMmO" 
@@ -588,7 +643,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/zdDSojRXOPs?si=zQPV8CJzkjezazx7" 
@@ -602,7 +657,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-              <div data-aos="slide-right" className='gridimage'>
+              <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/6LZUIq3EWmQ?si=eXrzAwDNDnwaPU81"
@@ -616,7 +671,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div data-aos="slide-right" className='gridimage'>
+            <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/3_2MI8pJaj8?si=lOs0Mfo3lca5QM3e"
@@ -630,7 +685,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/kVhN1-60D0I?si=Bmx-yksDscBPgxEf"
@@ -644,7 +699,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div data-aos="slide-right" className='gridimage'>
+             <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/qnyiODM-8Sw?si=-S_yPTcMxk1JE1WI"
@@ -658,7 +713,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div data-aos="slide-right" className='gridimage'>
+            <div data-aos="slide-right" className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/XuhLwo9peSs?si=m5gHfh816JSgJN6p"
@@ -672,7 +727,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/7eUDjuAeQ_w?si=NNbEsWtgdCQJc_39"
@@ -686,7 +741,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/MtYUEgHJUR8?si=_1PODi4eY_GACYG1"
@@ -700,7 +755,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/qlW4p2NxV5Y?si=LNd6rR3o92m5cWto"
@@ -714,7 +769,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-                <div className='gridimage'>
+                <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/v4zwBUfw2-Q?si=ltXbasNI_M42APEL"
@@ -728,7 +783,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/_sT7QCXy-Sw?si=OUKaiNBVnhA2T8H6"
@@ -742,7 +797,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/vbyhNcw1iTs?si=Q-t9pWA8MmKMPZZF"
@@ -756,7 +811,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/KGhDjo1AKS4" 
@@ -770,7 +825,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/ZIkENzHmvus" 
@@ -784,7 +839,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-            <div className='gridimage'>
+            <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/XOgnwowxIO0" 
@@ -798,7 +853,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/YEToF6s3dEw" 
@@ -812,7 +867,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
               }}    
             />
             </div>
-             <div className='gridimage'>
+             <div className='container-blue'>
               <iframe
               height="515"
                   src="https://www.youtube.com/embed/NGUvyX9SHco"

@@ -15,42 +15,42 @@ function Benefitts() {
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("Benefits of Functional Doctor")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("In-depth look at the root cause of illness")}</h3>
-                    <img className='gridimage' src={esteem} alt='' />
+                    <img className='gridimage' src={esteem} alt='DMED' />
                     <p className="e">
                         {t("A thorough understanding of your lifestyle and habits is the cornerstone of better health.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3> {t("Individualized approach to diagnostic testing")}</h3>
-                    <img className='gridimage' src={anxiety} alt='' />
+                    <img className='gridimage' src={anxiety} alt='DMED' />
                     <p className="e">
                      {t("Understanding your body's unique needs starts here with our Diagnostic Lab Testing.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Individualized treatment plan")}</h3>
-                    <img className='gridimage' src={img3} alt='' />
+                    <img className='gridimage' src={img3} alt='DMED' />
                     <p className="e">
                     {t("We’re committed to nurturing your journey toward holistic health at our Wellness Center.")}
                     </p>
                 </div>
                <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3> {t("Treatment based holistically on lifestyle changes and natural products")}</h3>
-                    <img className='gridimage' src={img4} alt='' />
+                    <img className='gridimage' src={img4} alt='DMED' />
                     <p className="e">
                          {t("A thorough understanding of your lifestyle and habits is the cornerstone of better health.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Goal is healing and not suppressing symptoms")}</h3>
-                    <img className='gridimage' src={img5} alt='' />
+                    <img className='gridimage' src={img5} alt='DMED' />
                     <p className="e">
                         {t("A thorough understanding of your lifestyle and habits is the cornerstone of better health.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Overall goal is holistic wellness; not just treating disease")}</h3>
-                    <img className='gridimage' src={img6} alt='' />
+                    <img className='gridimage' src={img6} alt='DMED' />
                     <p className="e">
                         {t("She is committed to improving the lives of individuals and communities by providing integrative health solutions.")}
                     </p>

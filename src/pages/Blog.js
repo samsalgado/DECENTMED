@@ -8,6 +8,7 @@ import sportshypno from "../images copy/sportshypnosis.png";
 import fert from "../images copy/fertility.png";
 import detoxxx from "../images copy/detoxxx.png";
 import B17 from "../images copy/B17.png";
+import owl from "../images copy/Screenshot 2026-08-29 at 6.34.56 PM.png";
 import ramona from "../images copy/ramona.jpeg";
 import lions from "../images copy/lions.png";
 import ak from "../images copy/1753114292278.jpeg";
@@ -19,7 +20,6 @@ import batana from "../images copy/batana.png";
 import blogs from '../images copy/blogs.png';
 //import img from "../images copy/img.png";
 import acu from "../images copy/2412335.jpg";
-import cancerimg from "../images copy/cancerimg.png";
 import green from "../images copy/green.png";
 import acuu from "../images copy/acuu.png";
 //import imgg from "../images copy/imgg.png";
@@ -111,6 +111,17 @@ const BlogPage = () => {
           </div>
         </div>
          <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("The (UN) Importance of Heredity, Bloodlines & DNA")}</h2>
+          <div className='container'>
+            <a href='/bloodlines'>
+              <figure>
+                <img className='gridimag' src={owl} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fertility and Naturopathic Medicine")}</h2>
           <div className='container'>
             <a href='/fertiility'>
@@ -193,6 +204,17 @@ const BlogPage = () => {
             </div>
           </div>
            <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Psychic Protection: An Ounce Of Prevention By Samuel Abrams")}</h2>
+          <div className='container'>
+            <a href='/bloodlines'>
+              <figure>
+                <img className='gridimag' src={owl} alt="logo" />
+                {/* <figcaption>{t("Click on image for full Blog")}</figcaption> */}
+              </figure>
+            </a>
+          </div>
+        </div>
+           <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Sports Hypnosis')}</h2>
           <div className='pr'>
             <div className='container'>
@@ -218,22 +240,7 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('The Curious Case of Cancer: Everyday Fruit for Prevention')}</h2>
-          <div className='pr'>
-            <p>
-              {t(`“Cancer Cases, Deaths in Men Predicted to Surge by 2050”. Currently, cancer is responsible for 1 in 5 deaths in the world. There is no cure for cancer, and statisticians expect cancer deaths to rise. What if I told you that the cure to cancer is found in the foods we eat? The number one fast food chain in the world is McDonald’s. “Canola oil was first created in the early 1970s as a natural oil. But in 1995, Monsanto created a genetically modified version of canola oil. By 2009, over 90 percent of the Canadian canola oil crop was genetically engineered (1).” Dr. Sebi theorized that seed oils are carcinogenic once heated. Let’s explore the relationship between food, cancer, and fruits with powerful preventive properties.`)}
-            </p>
-            <div className='container'>
-              <a href='/cancer-prevention'>
-                <figure>
-                  <img className='gridimag' src={cancerimg} alt="logo" />
-                  {/* <figcaption>{t('Click on image for full Blog')}</figcaption> */}
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
+       
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h2>
           <div className='pr'>

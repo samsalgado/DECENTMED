@@ -235,7 +235,7 @@ themerlingroupworld.com/ayurveda for more.
                  <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimag' src={spectraspray} alt='spectra spray' />
              </a>
-              <img className='gridimag' src={ayurveda} alt={t('Ayurveda Science')} style={{
+              <img className='gridimag' src={ayurveda} alt={t('ayurvedic medicine near me')} style={{
         maxWidth: '400px',
         width: '100%',
         height: 'auto'

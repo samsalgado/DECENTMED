@@ -19,6 +19,7 @@ const BlogAcu = lazy(() => import('./pages/blogs/blogacu'));
 const Blog7 = lazy(() => import('./pages/blogs/blog7'));
 const Shop = lazy(() => import("./pages/products"));
 const Blog4 = lazy(() => import('./pages/blogs/blog4'));
+const Owl1 = lazy(() => import('./pages/blogs/owl1'));
 const Ramona = lazy(() => import('./pages/blogs/ramona'));
 const Blog9 = lazy(() => import('./pages/blogs/blog9'));
 const Blog20 = lazy(() => import('./pages/blogs/blog20'));
@@ -27,6 +28,7 @@ const Blog3 = lazy(() => import('./pages/blogs/blog3'));
 const Blog6 = lazy(() => import('./pages/blogs/cancer'));
 const Blog5 = lazy(() => import('./pages/blogs/blog5'));
 const Blog10 = lazy(() => import('./pages/blogs/blog10'));
+const Owl2 = lazy(() => import('./pages/blogs/owl2'));
 const Blog19 = lazy(() => import('./pages/blogs/blog19'));
 const Blog12 = lazy(() => import('./pages/blogs/blog12'));
 const Blog14 = lazy(() => import('./pages/blogs/blog14'));
@@ -136,6 +138,8 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
+        <Route path="/psychicprotection" element={<Owl1 t={t} />} />
+        <Route path="/bloodlines" element={<Owl2 t={t} />} />
         <Route path="/how-to-treat-sibo-naturally" element={<S t={t} />} />
         <Route path="/narcissism" element={<Lynn t={t} />} />
         <Route path="/providers" element={<ProviderLandingPage t={t} />} />

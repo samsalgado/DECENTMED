@@ -43,6 +43,13 @@ const {t} = useTranslation('common')
                 allowFullScreen
               ></iframe>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+                        <br />
+
            <p>
           {t(`Health is optimal physical, mental, emotional and spiritual well-being. Over 50 million (15% of current pop.) Americans struggle with constipation. According to studies, “39.6% of Americans are obese”, more than double the percentage of constipated Americans. What is the American diet? The Standard American Diet (SAD) comprises high fats, dairy, oils, sugars, grains and artificial sweeteners. Shockingly, “65% of the world population have lactose intolerance”. If over half the world population (Over 4 billion people) struggle with lactose intolerance, why does American diet stress dairy? For decades, doctors linked dairy with dairy. However, athletes are turning toward plant-based protein and plant-based diets for nutrition. Star athletes — Serena and Venus Williams, Diana Taurasi (WNBA) and Nate Diaz(UFC) eat a vegan diet, along with many stars that eat primarily plant-based. Legends like Tom Brady, Arnold Schwarzenegger and LeBron James get their protein from plants. Moreover, plants are high in fiber — a cause of constipation is a low-fiber diet. Pears, strawberries, avocados, oats, raspberries and prunes are all good sources of fiber. Constipation is a symptom of a bigger problem — an obesity issue.`)}
 (<a href="https://medlineplus.gov/genetics/condition/lactose-intolerance/#:~:text=Approximately%2065%20percent%20of%20the,people%20affected%20in%20these%20communities.">{t('Source')}</a>)         

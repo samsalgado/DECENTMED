@@ -18,28 +18,28 @@ function Benefits() {
             <h2 style={{ textAlign: 'center', margin: '20px 0' }}>{t("What is Applied Kinesiology and Clinical Kinesiology?")}</h2>
             <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Treating Muscle Weakness and Imbalance")}</h3>
-                    <img className='gridimage' src={emotion} alt='' />
+                    <img className='gridimage' src={emotion} alt='The Center for Natural Health' />
                     <p className="e">
                         {t("Applied Kinesiology works with the nervous system, lymphatic system, vascular system and identifies nutritional deficiencies.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3> {t("Helps with Complex Disorders")}</h3>
-                    <img className='gridimage' src={trauma} alt='' />
+                    <img className='gridimage' src={trauma} alt='The Center for Natural Health' />
                     <p className="e">
                      {t("Utilizing combination of modalities to address emotinoal blockages and complex disorders like Anxiety, Autism and more. Some techniques have had better results than others, but most have helped to some degree. The top two that have been shown to have the most significance are Applied Kinesiology and SOT.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Utilizes muscle testing and emotional body mapping")}</h3>
-                    <img className='gridimage' src={skelly} alt='' />
+                    <img className='gridimage' src={skelly} alt='The Center for Natural Health' />
                     <p className="e">
                     {t("Form of Clinical Kinesiology and frequency medicine to address emotional blockages for disorders like Anxiety or certain food sensitivities. It also takes into account the entire GI system to make sure it is functioning optimally.")}
                     </p>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 text-center mb-4">
                     <h3>{t("Assessing organ function and system imbalances")}</h3>
-                    <img className='gridimage' src={organ} alt='' />
+                    <img className='gridimage' src={organ} alt='The Center for Natural Health' />
                     <p className="e">
                         {t("Addressing root causes rather than just symptoms, integrating physical, chemical, and emotional factors.")}
                     </p>

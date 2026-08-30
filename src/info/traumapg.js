@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import book1 from "../images copy/book1.jpg";
 import book2 from "../images copy/book2.jpg";
 import TsBen from './tsben';
+import C from '../pages/cheska';
 import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
@@ -194,6 +195,9 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
       <p>{t("Giving people the tools to become more connected to their bodies can help them understand how thoughts and emotions impact our bodies as well as our minds.")}</p>
             <p>{t("Somatic exercises also teach people how to regulate their emotions to process traumatic events and respond to stress and uncertainty from a calmer and more grounded place, allowing their bodies to let go of chronic tension.")}</p>
       <p>{t("As a result of strengthening the body-mind connection, people are attuned to the ways in which they move their bodies that may not be beneficial, which can motivate them to shift out of bad habits of sitting and moving in the process alleviating chronic physical pain and discomfort.")}</p>
+      <Collapsible trigger={<div className="collapsible-trigger">{t("Somatic Therapy Exercises PDF")}</div>}>
+          <C />
+        </Collapsible>
       <Button className="custom-btn" href="https://calendly.com/forestangela9/new-meeting?month=2026-02" target="_blank">
                 {t("Experience Healing")}
             </Button>
