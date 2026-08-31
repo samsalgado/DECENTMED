@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = "build"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [secrets_scan]
   smart_detection_enabled = true
   omit_values = ["AIzaSyDNubnZrraH6dZXD9ZH8oePqpdPyDfN3OE"]
