@@ -73,7 +73,7 @@ const Naturo = () => {
            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
             <img className='gridimage' src={spectraspray} alt='spectra spray' />
              </a>
-                <div data-aos="slide-right">            
+                <div data-aos="slide-right" className="container-blue">            
               <iframe
               width="100%"
               height="515"
@@ -88,7 +88,7 @@ const Naturo = () => {
               }}    
             />
             </div>
-                <div data-aos="slide-right">            
+                <div data-aos="slide-right" >            
               <iframe
               width="100%"
               height="515"
@@ -257,7 +257,7 @@ const Naturo = () => {
         <a href="https://www.totalcarehealthsolutions.com/" target="_blank" rel="noopener noreferrer">
           <img className='gridimag' src={totalcare} alt='oceantreis' />
         </a> 
-        <div className='gridimage'>
+        <div className="container-blue">
               <iframe
               height="515"
               src="https://www.youtube.com/embed/NdDj3Nadzas?si=Dna9qwheTXmFnhod"
