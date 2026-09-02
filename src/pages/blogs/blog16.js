@@ -23,11 +23,11 @@ const {t} = useTranslation('common')
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Rose Oil Benefits')}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Rose Oil Benefits')}
       </h1>
           <img className='gridimag' src={chirotreat} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
         <p>
         {t(`Rose Oil stems from the petals of Rosa centifolia and Rosa damascena. First, we will explain the medicinal benefits of Rosa centifolia and Rosa damascena, according to PFAF.org. Then, explain the efficacy of rose oil according to published studies. Finally, we'll explain the benefits of Rose Oil (not medical advice) for certain conditions.`)} 
@@ -71,6 +71,24 @@ const {t} = useTranslation('common')
       </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

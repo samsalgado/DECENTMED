@@ -22,13 +22,13 @@ const Owl2 = () => {
       </header>
     <div className="container-blue">
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('The (UN) Importance of Heredity, Bloodlines & DNA By Samuel Abrams')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('The (UN) Importance of Heredity, Bloodlines & DNA By Samuel Abrams')}</h1>
 
       </div>
       <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
           <a href="https://oldwiseowladvisor.com/#contactus"><img className='gridimag' src={owl} alt="Psychic Protection" /></a>
 </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
           <p>
     {t('I have seen a lot on Facebook and Reddit about this. First a true story. Back in the seventies, a question arose among Native Americans about who should be taught Native American ways. Many felt that only those of Native American blood should be taught such things and no outsiders should be taught them. A meeting of elders was called and many showed up and 4 medicine bundles of major tribes were also present, marking just how important this issue was.')}</p>

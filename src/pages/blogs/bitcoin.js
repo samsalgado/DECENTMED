@@ -1,11 +1,12 @@
 import Topbar from "../topbar";
+import { Button } from 'react-bootstrap';
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import bitcoin from "../../images copy/btc (1).png";
 import '../../info/Info.css';
-import { useTransition } from "react";
+import { useTranslation } from "react-i18next";
 const Bitcoin = () => {
-const {t} = useTransition('common')
+const {t} = useTranslation('common')
   return (
      <div style={{textAlign: 'center', marginTop: '80px', 
     paddingTop: '2rem'}}>
@@ -21,10 +22,10 @@ const {t} = useTransition('common')
         <Topbar />
       </header>
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t("What is Bitcoin?")}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t("What is Bitcoin?")}</h1>
           <img className='gridimag' src={bitcoin} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
             <p>
             {t("Imagine a world where you can send money from your phone to pay your bills, accept security deposits, and transact with anyone as if they were right next to you. The world is less complicated than people think; dropping an apple determine gravity. As of today, systems are complex. There are multiple channels and entities in place overseeing the simplest of exchanges. Bitcoin is this simplified world, a way to transact and exchange person-to-person without a “middleman.”")}
@@ -56,6 +57,24 @@ const {t} = useTransition('common')
         </div>
         </div>
     </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

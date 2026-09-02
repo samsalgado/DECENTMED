@@ -5,7 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Button, Modal } from'react-bootstrap';
 import Benefits from "./akbenefits";
-import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from "react-i18next";
 import body from "../images copy/body.jpg"
 const Info8 = () => {
@@ -88,9 +87,6 @@ const {t} = useTranslation('common');
         }
       `}</style>
         <br></br>
-        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
         <Benefits />
         </div>
         </div>

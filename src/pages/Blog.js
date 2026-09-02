@@ -55,7 +55,128 @@ const BlogPage = () => {
           <h1 className='logotitle'>{t("Health & Wellness Blogs")}</h1>
           <img className='gridmagg' src={blogs} alt="logo" />
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("The Illusion of Freedom")}</h2>
+          <div className='container'>
+            <a href='/the-illusion-of-freedom'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('We say we are free. That we have free will.')}</p>
+                <p className="blog-quote-card-sub">{t('Neither of these statements is true.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("The Guru's Cat From Darshan magazine")}</h2>
+          <div className='container'>
+            <a href='/the-gurus-cat'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('It continued for centuries, and learned people wrote about its divine meaning.')}</p>
+                <p className="blog-quote-card-sub">{t('In fact, it had become meaningless.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("COVID")}</h2>
+          <div className='container'>
+            <a href='/covid'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('The earth screamed, but you turned her off.')}</p>
+                <p className="blog-quote-card-sub">{t('So, I was born. I was not born to punish you. I was born to awaken you.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("On Doing a Reading For You")}</h2>
+          <div className='container'>
+            <a href='/on-doing-a-reading-for-you'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('There is no right or wrong way to do a reading.')}</p>
+                <p className="blog-quote-card-sub">{t('I never just state what will happen — I look at why it is happening.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Interpreting The Readings Of Others")}</h2>
+          <div className='container'>
+            <a href='/interpreting-the-readings-of-others'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('You have to learn the cards')}</p>
+                <p className="blog-quote-card-sub">{t('and you have to learn to trust your own intuition.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Metaphysical Places to go in and around Orlando, by location")}</h2>
+          <div className='container'>
+            <a href='/metaphysical-places-orlando'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('Downtown')} · {t('South')} · {t('Winter Park')} · {t('ONLINE')}</p>
+                <p className="blog-quote-card-sub">{t('A community-compiled directory of metaphysical, pagan, yoga, sound healing, and spiritual events and stores in and around Orlando, Florida — organized by neighborhood, from Downtown to Winter Park to Apopka.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Putting the Whole (inner person) in the forefront of Holistic Medicine")}</h2>
+          <div className='container'>
+            <a href='/inner-person-holistic-medicine'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('What is going on in the world, mirrors what is going on within.')}</p>
+                <p className="blog-quote-card-sub">{t('If we wish outer change, we must begin with inner change.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("On Real, Lasting Healing")}</h2>
+          <div className='container'>
+            <a href='/on-real-lasting-healing'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('What is the real root of the problem?')}</p>
+                <p className="blog-quote-card-sub">{t('The answers are found within, not without.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Greetings all you wonderful, divine, unique glorious light workers!!!")}</h2>
+          <div className='container'>
+            <a href='/greetings-light-workers'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('The realization of such things must come from within')}</p>
+                <p className="blog-quote-card-sub">{t('and never be dependent on what others say or think.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Defining Meditation: What it is, What it is Not")}</h2>
+          <div className='container'>
+            <a href='/defining-meditation'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('Meditation is a state of mind')}</p>
+                <p className="blog-quote-card-sub">{t('that can be practiced at any time and in any position.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("On Special Dates And Portals")}</h2>
+          <div className='container'>
+            <a href='/on-special-dates-and-portals'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('I am very skeptical of all this')}</p>
+                <p className="blog-quote-card-sub">{t('and have sensed no special energies at these times.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fenbendazole for Cancer")}</h2>
           <div className='container'>
             <a href='/fenbendazole'> 
@@ -66,7 +187,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+         <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Experience a Conversion Rate Optimization Consultant")}</h2>
           <div className='container'>
             <a href='/conversionoptimizationconsulting'> 
@@ -77,7 +198,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("How much Does Acupuncture Cost?")}</h2>
           <div className='container'>
             <a href='/acupuncture-cost'>
@@ -88,7 +209,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+         <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Detox and Cleanse Kit")}</h2>
           <div className='container'>
             <a href='/detox-cleanse'>
@@ -99,7 +220,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Holistic Health Marketing")}</h2>
           <div className='container'>
             <a href='/holistichealthmarketing'>
@@ -110,7 +231,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+         <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("The (UN) Importance of Heredity, Bloodlines & DNA")}</h2>
           <div className='container'>
             <a href='/bloodlines'>
@@ -121,7 +242,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+         <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Fertility and Naturopathic Medicine")}</h2>
           <div className='container'>
             <a href='/fertiility'>
@@ -132,7 +253,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Applied Kinesiology with Acupuncture and Chiropractic for Autism")}</h2>
           <div className='container'>
             <a href='/tcnh'>
@@ -143,7 +264,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Acupuncture for Migraines")}</h2>
           <div className='container'>
             <a href='/acupuncture-for-migraines'>
@@ -154,7 +275,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Corporate Mindfulness")}</h2>
           <div className='container'>
             <a href='/ramona'>
@@ -165,8 +286,8 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-          <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
             <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Lion's Mane Supplement Benefits")}</h2>
             <div className='container'>
               <a href='https://peakformsupplements.com/products/lions-mane-elite' target="_blank" rel="noopener noreferrer">
@@ -177,7 +298,7 @@ const BlogPage = () => {
               </a>
             </div>
           </div>
-          <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+          <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
             <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Ivermectin for Cancer')}</h2>
             <div className='container'>
               <a href='/ivermectin'>
@@ -203,7 +324,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-           <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+           <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Psychic Protection: An Ounce Of Prevention By Samuel Abrams")}</h2>
           <div className='container'>
             <a href='/bloodlines'>
@@ -214,7 +335,7 @@ const BlogPage = () => {
             </a>
           </div>
         </div>
-           <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+           <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Sports Hypnosis')}</h2>
           <div className='pr'>
             <div className='container'>
@@ -227,7 +348,7 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Relax To Go Faster')}</h2>
           <div className='pr'>
             <div className='container'>
@@ -241,7 +362,7 @@ const BlogPage = () => {
           </div>
         </div>
        
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h2>
           <div className='pr'>
             <p>
@@ -259,7 +380,7 @@ const BlogPage = () => {
         </div>
         <br></br>
         <br></br>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('How does the world get cheaper and less invasive healthcare?')}</h2>
           <div className='pr'>
             <p>
@@ -275,7 +396,7 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('What is Acupuncture?')}</h2>
           <div className='pr'>
             <p>
@@ -292,7 +413,7 @@ const BlogPage = () => {
           </div>
 
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Vitamin B: Vitamin B17 - The Mysterious Case of Cancer')}</h2>
           <div className='pr'>
             <p>
@@ -308,7 +429,7 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t(`What Is Hypnotherapy?`)}</h2>
           <div className='pr'>
             <p>
@@ -327,7 +448,7 @@ const BlogPage = () => {
         </div>
        
 
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Batana Oil: Batana Oil Benefits')}</h2>
           <div className='pr'>
             <p>
@@ -344,7 +465,7 @@ const BlogPage = () => {
             </figure>
           </a>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Acupuncture Montreal')}</h2>
           <div className='pr'>
             <p>
@@ -360,7 +481,7 @@ const BlogPage = () => {
             </figure>
           </a>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Pain Pill for Back: Best Chiropractor Near Me')}</h2>
           <div className='pr'>
             <p>
@@ -376,7 +497,7 @@ const BlogPage = () => {
           </a>
         </div>
 
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Hepatitis B: Herbal Medicine On Hep B')}</h2>
           <div className='pr'>
             <p>
@@ -392,7 +513,7 @@ const BlogPage = () => {
             </figure>
           </a>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('The Importance of Nutrition')}</h2>
           <div className='pr'>
             <p>
@@ -408,7 +529,7 @@ const BlogPage = () => {
             </figure>
           </a>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Mushrooms & Relationships')}    </h2>
           <div className='pr'>
             <p>
@@ -427,7 +548,7 @@ const BlogPage = () => {
 
        
        
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Rose Oil Benefits')}</h2>
           <div className='pr'>
             <p>
@@ -443,7 +564,7 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('Unlock a Calm and Balanced Mind with This Natural Supplement')}</h2>
           <div className='pr'>
             <p>
@@ -459,7 +580,7 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t('5 Reasons You Should Incorporate Therapeutic Cupping Into Your Health and Wellness Routine!')}</h2>
           <div className='pr'>
             <p>

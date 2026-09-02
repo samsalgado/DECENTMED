@@ -74,7 +74,7 @@ export default function Breathwork({ providerEmail }) {
       verticalAlign: 'middle',
       WebkitAppearance: 'none',
       textDecoration: 'none',
-      fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+      fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
       fontWeight: 500,
       letterSpacing: '0.02857em',
       transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',

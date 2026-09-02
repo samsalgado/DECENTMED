@@ -10,7 +10,6 @@ import case13 from '../images copy/IMG_2793.jpeg';
 import quote from '../images copy/quote.png';
 import { useTranslation } from 'react-i18next';
 import { Button, Modal } from 'react-bootstrap';
-import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 gsap.registerPlugin(ScrollTrigger);
 const Homeo = () => {
@@ -197,9 +196,6 @@ either small doses or in the regular doses but also using off Lael drugs to kill
           }
         }
       `}</style>
-      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-                  <img className='gridimag' src={spectraspray} alt='spectra spray' />
-                   </a>
       <br />
       </div>
             <div data-aos="slide-right">

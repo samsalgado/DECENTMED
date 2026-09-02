@@ -1,8 +1,10 @@
 import '../App.css';
+import './Shop.css';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Topbar from './topbar';
 import { useState } from 'react';
 import Footer from '../footer';
+import allan from "../images copy/allan.webp";
 import AOS from 'aos';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -25,6 +27,32 @@ import linda from "../images copy/linda.png";
 import purium from "../images copy/purium.png";
 import forever from "../images copy/forever.png";
 import { useTranslation } from 'react-i18next';
+
+const ProductCard = ({ title, img, href, ctaLabel, t, video, children }) => (
+  <div className="shop-card" data-aos="fade-up">
+    <div className="shop-card-img-wrap">
+      <img className="shop-card-img" src={img} alt={title} loading="lazy" />
+    </div>
+    <div className="shop-card-body">
+      {title && <h3 className="shop-card-title">{title}</h3>}
+      {children}
+      {video && (
+        <div className="shop-card-video shop-video">
+          <iframe
+            src={video}
+            title={t('YouTube video player')}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+      <a className="shop-card-cta" href={href} target="_blank" rel="noopener noreferrer">
+        {ctaLabel}
+      </a>
+    </div>
+  </div>
+);
+
 export default function Shop() {
 const { t } = useTranslation('common');
 const [showModal, setShowModal] = useState(false);
@@ -118,528 +146,289 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
 `
  const learnmore = () => {
     window.location.href = 'https://decentmed.org/signup/provider'
-  }  
+  }
    useEffect(() => {
          AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
-       }, []);   
+       }, []);
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Products")}</title>  
-         <meta property="og:title" content={t("Products")} />                
-        <meta name="description" content={t("Products")} />        
+        <title>{t("Products")}</title>
+         <meta property="og:title" content={t("Products")} />
+        <meta name="description" content={t("Products")} />
         <meta name="description" content={t("Seeking Holistic health products that help you meet your health needs? We feature and work with the best holistic health products in the world!")} />
       </Helmet>
             <header>
             <Topbar />
             </header>
-            <div className="container">
-                    <div data-aos="slide-right" className="container-blue">
-            <h1>{t("Holistic Health Products")}</h1>
-  </div>
- <div>
-    <div>
-    </div>
-  </div>
-  <div>
-  <div data-aos="slide-right" className="carousel-wrapper">
-    <Carousel  autoPlay 
-    infiniteLoop 
-    showThumbs={false}
-    showStatus={false}
-    swipeable={true}
-    emulateTouch={true}
-    interval={3500}>
-      <div>
-        <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
-        <img 
-          src={SYOOCE} 
-          alt="logo" 
-        className="carousel-img" 
-        />
-        </a>
-        </div>
-          <div>
-        <a href='https://shop.solexnation.com/SunriseWellness/home'>
-        <img 
-          src={dnaact} 
-          alt="logo" 
-        className="carousel-img" 
-        />
-        </a>
-        </div>
-         <div>
-        <img 
-          src={qrcream} 
-          alt="logo" 
-        className="carousel-img" 
-        />
-        </div>
-        <div>
-        <img 
-          src={lowbackpain} 
-          alt="logo" 
-        className="carousel-img" 
-        />
-        </div>
-        <div>
-        <img 
-          src={obasi} 
-          alt="logo" 
-          className="carousel-img" 
-        />
-        </div>
-        <div>
-          <img 
-          src={purium} 
-          alt="logo" 
-          className="carousel-img" 
-        />
-        </div>
-         <div>
-          <img 
-          src={lifewavee} 
-          alt="logo" 
-          className="carousel-img"         />
-        </div>
-         <div>
-          <img 
-          src={forever} 
-          alt="logo" 
-          className="carousel-img" 
-        />
-        </div>
-         <div>
-          <img 
-          src={linda} 
-          alt="logo" 
-          className="carousel-img" 
-        />
-        </div>
-         <div>
-          <img 
-          src={spectraspray} 
-          alt="logo" 
-         className="carousel-img" 
-        />
-        </div>
-    </Carousel>
-<div>
-  <iframe
-    width="560"
-    height="550"
-    src="https://www.youtube.com/embed/aXfU_SMr2fY?si=JiML9hMTTZLsBHLn"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
-</div>                  
-</div>
-<Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
-                <Modal.Header closeButton>
-                  <Modal.Title>{t("Transcript")}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  <p>{t(txt)}</p>
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button variant="secondary" onClick={() => setShowModal(false)}>
-                    {t("Close")}
-                  </Button>
-                </Modal.Footer>
-</Modal>
-    <div>
-       <div data-aos="slide-right" className="container-blue">
-      <h2>{t("Solve your Out of Control Eating")}</h2>
-      <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
-    <figure>
-        <img 
-          src={SYOOCE} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
-          <figcaption>{t("Buy Book")}</figcaption>
-        </figure>
-      </a>
-      </div>
-      <div>
-      </div>
-<div data-aos="slide-right" className="container-blue">
-<h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
-      <p>
-        {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
-      </p>
-      <p>
-        {t("This revolutionary book takes readers on a journey through real-life success stories, offering practical strategies to uncover and overcome the emotional roadblocks behind diet failures and disordered eating. Co-authors Victoria Todd and Michele Holzberger have transformed the way we approach eating issues, making this resource both interactive and accessible for the everyday person.")}
-      </p>
-      <p>
-        {t("'Vickie originally came to me with a write-up utilizing her experience as a psychoanalyst about doing podcasts for mental health professionals,' said Holzberger. 'As soon as I read it, I thought, ‘This could help so many people struggling with their eating habits. It needs to be a book!'")}
-      </p>
-      <p>
-        {t("The authors’ mission was clear: to create a guide that offers the life-changing tools typically available only to the .001% of the population—roughly 3,000 practicing analysts in the U.S.—and make these concepts understandable and usable for the rest of us. At the core of Solve Your Out-of-Control Eating is an understanding that unhealthy eating patterns are often not just about food—they're about emotions, habits, and deeper psychological issues. By presenting complex psychological principles in an easy-to-understand manner, the authors break down key concepts from the renowned psychoanalyst Anna Freud into bearable bits that readers can easily apply to their daily lives.")}
-      </p>
-      <p>
-      {t("This interactive guide combines insightful personal stories with workbook-like activities that challenge readers to examine their own emotional roadblocks. Through quizzes, timelines, and self-observation exercises, the book leads readers on a detective-like journey to solve the mystery of their eating habits. It’s more than just a book—it’s a roadmap to understanding emotional triggers and achieving lasting change.")}
-      </p>
-      </div>
-    </div>
-  </div>
-  <br></br>
-  <div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-      <h2>{t("Kelechi Obasi Product Bundle")}</h2>
-      </div>
-        <div data-aos="slide-right" className="container-blue">
 
-      <a href='https://selar.com/m/kelechiobasi'>
-    <figure>
-        <img 
-          src={obasi} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
-          <figcaption>{t("Buy")}</figcaption>
-        </figure>
-      </a>
-      </div>
-      <div>    
-</div>
-    </div>
-    
-  </div>
-    <div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-      <h2>{t("Purium Product Bundle")}</h2>
-      <a href='https://ishoppurium.com/homepage?giftcard=JessicaJavens'>
-    <figure>
-        <img 
-          src={purium} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
-          <figcaption>{t("Buy")}</figcaption>
-        </figure>
-      </a>
-      </div>
-      <div>   
-</div>
-    </div>
-  </div>
-  <div>
-     <div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-        <div
-  style={{
-    display: "flex",
-    gap: "20px",
-    alignItems: "flex-start",
-    flexWrap: "wrap"
-  }}
->
-  <div style={{ width: "200px" }}>
-    <h2>{t("Coconut, Shea Butter, Vitamin E Beeswax Loce SPF 20-30")}</h2>
-    <a href="https://shop.solexnation.com/SunriseWellness/home">
-      <figure>
-        <img
-          src={PRODUCT1}
-          alt="logo"
-          style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px"
-          }}
-        />
-        <figcaption>{t("Buy")}</figcaption>
-      </figure>
-    </a>
-  </div>
-  <div style={{ width: "200px" }}>
-    <h2>{t("Essential Oil")}</h2>
-<a href="https://shop.solexnation.com/SunriseWellness/home">      
-  <figure>
-        <img
-          src={PRODUCT2}
-          alt="logo"
-          style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px"
-          }}
-        />
-        <figcaption>{t("Contact")}</figcaption>
-      </figure>
-    </a>
-  </div>
-  <div style={{ width: "200px" }}>
-    <h2>{t("THC Love")}</h2>
-    <a href="https://shop.solexnation.com/SunriseWellness/home">
-      <figure>
-        <img
-          src={PRODUCT3}
-          alt="logo"
-          style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px"
-          }}
-        />
-        <figcaption>{t("Buy")}</figcaption>
-      </figure>
-    </a>
-  </div>
-</div>
-      <p>
-        {t("DNA Acivation products by Solexnation!")}
-      </p>
-      </div>
-      <div>   
-    </div>
-    </div>
-  </div>
-       <div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-        <div
-  style={{
-    display: "flex",
-    gap: "20px",
-    alignItems: "flex-start",
-    flexWrap: "wrap"
-  }}
->
-  <div style={{ width: "200px" }}>
-    <h2>{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
-    <a href="https://www.amazon.com/Low-Back-Pain-Relief-Minutes/dp/B0CZ9FBTMF">
-      <figure>
-        <img
-          src={lowbackpain}
-          alt="logo"
-          style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px"
-          }}
-        />
-        <figcaption>{t("Buy")}</figcaption>
-      </figure>
-    </a>
-  </div>
-  <div style={{ width: "200px" }}>
-    <h2>{t("Free Webinar")}</h2>
-<a href="mailto:dr.hbertrand@gmail.com">      
-  <figure>
-        <img
-          src={webinar}
-          alt="logo"
-          style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px"
-          }}
-        />
-        <figcaption>{t("Contact")}</figcaption>
-      </figure>
-    </a>
-  </div>
-  <div style={{ width: "200px" }}>
-    <h2>{t("QR Cream")}</h2>
-    <a href="https://qrcream.us/">
-      <figure>
-        <img
-          src={qrcream}
-          alt="logo"
-          style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "8px"
-          }}
-        />
-        <figcaption>{t("Buy")}</figcaption>
-      </figure>
-    </a>
-  </div>
-</div>
-      <p>
-        {t("Have you ever had low back pain so severe that it interfered with every area of your life, from your sleep, work, and family obligations to your relationship and even your sex life? Do you know someone who has? Then this book is for you. Did you know that doctors classify 90% of all low back pain as being “nonspecific”? That means the treatments they give for low back pain are also “nonspecific”. No wonder people with this problem have trouble finding relief!")}
-      </p>
-      <p>
-        {t("After 37 years of lower back pain, Dr. Bertrand developed a new way to examine the lower back that tells most of those who have pain there exactly which joints are displaced, how they are displaced, and by how much. Once you know the cause, the treatment becomes obvious. This book will tell you exactly how you can find the cause and the two-minute exercise to correct it that provides 90% of those who do it with immediate pain relief. It will then explain how people can stay healthy and pain-free and discuss the different conditions that can accompany this pain and how to relieve them.")}
-      </p>
-      <p>
-        {t("Imagine no longer having to rely on doctors, medications, chiropractors, physiotherapists, surgeons, and other health professionals as most readers will know how to relieve their own low back pain in minutes and how to prevent it coming back!")}
-      </p>
-      </div>
-      <div>   
-    </div>
-    </div>
-  </div>
+            <div className="shop-page">
+              <div className="shop-hero" data-aos="fade-down">
+                <h1>{t("Holistic Health Products")}</h1>
+              </div>
 
-    <div>
-     <div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
-  <iframe
-    width="660"
-    height="550"
-    src="https://www.youtube.com/embed/ag4WOBP24j0?si=wnzWLP2hKSZ0kgXv"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
-</div> 
-        
-      </div>
-      <div>   
-    </div>
-    </div>
-  </div>
-</div>
-    <div>
-    <div data-aos="slide-right" className="container-blue">
-    <h2>{t("Lifewave Patch")}</h2>
-    <a href='https://www.lifewave.com/awicks'>
-    <figure>
-        <img 
-          src={lifewave} 
-          alt="logo" 
-          className='gridimag'
-        />
-          <figcaption>{t("Buy Now")}</figcaption>
-        </figure>
-      </a>
-      <p>
-        {t("Harness your body's flow of energy with X39.")}
-      </p>
-      </div>
-    </div>
-  </div>
-  
-   <div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-    <h2>{t("Forever Living Aloe Vera")}</h2>
-    <a href='https://foreverliving.com/shop/usa/en-us/products'>
-    <figure>
-        <img 
-          src={forever} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
-          <figcaption>{t("Buy Now")}</figcaption>
-        </figure>
-      </a>
-      <p>
-        {t("weeknd")}
-      </p>
-      </div>
-    </div>
-  </div>
-<div>
-    <div>
-      <div data-aos="slide-right" className="container-blue">
-      <h2>{t("Happy DNA Candy")}</h2>
-      </div>
-      <div data-aos="slide-right" className="container-blue">
+              <div className="shop-carousel-wrapper" data-aos="fade-up">
+                <Carousel
+                  autoPlay
+                  infiniteLoop
+                  showThumbs={false}
+                  showStatus={false}
+                  swipeable={true}
+                  emulateTouch={true}
+                  interval={3500}
+                >
+                  {[SYOOCE, dnaact, qrcream, lowbackpain, obasi, purium, lifewavee, forever, linda, spectraspray].map((img, i) => (
+                    <div className="shop-carousel-slide" key={i}>
+                      <img className="shop-carousel-img" src={img} alt="Partner product" />
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
 
-      <a href='https://sites.google.com/view/lindamcbee806080/home'>
-    <figure>
-        <img 
-          src={linda} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
-          <figcaption>{t("Buy Now")}</figcaption>
-        </figure>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
-  <iframe
-    width="560"
-    height="550"
-    src="https://www.youtube.com/embed/S1j-Oxijls8?si=NqXQ_XaZgUqIhTWZ"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
-</div> 
-      </a>
-           <p>
-        {t("An extensive review, the product line is plant-based and features some of the highest performing herbs in the world: Moringa, Turmeric, Elderberry, Rosemary and more. The product line extends beyond products. She also has services to help health coaches and Energy healers.")}
-      </p>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-     <div data-aos="slide-right" className="container-blue">
-      <h2>{t("Spectra Spray")}</h2>
-      </div>
-      <div data-aos="slide-right" className="container-blue">
-      <a href='https://www.spectraspray.com/shop'>
-    <figure>
-        <img 
-          src={spectraspray} 
-          alt="logo" 
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-            borderRadius: '8px'
-          }}
-        />
-          <figcaption>{t("Buy Now")}</figcaption>
-        </figure>
-      </a>
-       <iframe width="100%" height={550} src="https://www.youtube.com/embed/At7Gc-qjbsc?si=3BMcLVIB7FKUxPUC"  title={t('YouTube video player')} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-           <p>
-        {t("Our Mission: To provide easy to use, highly effective, on-the-go health products that change lives everyday.")}
-      </p>
-          <p>
-        {t("Our Vision: To support every lifestyle, with natural solutions helping people stay well, sleep well and live life to the fullest.")}
-      </p>
-          <p>
-        {t("Our Products: With an advanced micro-emulsion technology, our natural high-quality oral sprays provide direct absorption without binders, fillers, artificial color, dyes or allergens.")}
-      </p>
-      </div>
-    </div>
-  </div>
-                   <div data-aos="slide-right" className="container-blue">
-                   <Button onClick={learnmore} className="custom-btn">
-        {t('Providers: Signup Here')}
-                </Button> 
-</div>
-</div>
+              <div className="shop-section">
+                <a
+                  className="shop-banner"
+                  href="https://linktr.ee/AllanLRoberts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-aos="fade-up"
+                >
+                  <img loading="lazy" src={allan} alt="Apothecary" />
+                  <span className="shop-banner-caption">{t("Buy")}</span>
+                </a>
+              </div>
+
+              <div className="shop-section shop-video" data-aos="fade-up">
+                <iframe
+                  src="https://www.youtube.com/embed/aXfU_SMr2fY?si=JiML9hMTTZLsBHLn"
+                  title={t('YouTube video player')}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <div className="shop-section shop-featured" data-aos="fade-up">
+                <div className="shop-featured-img-wrap">
+                  <img src={SYOOCE} alt={t("Solve your Out of Control Eating")} />
+                </div>
+                <div className="shop-featured-body">
+                  <h2>{t("Solve your Out of Control Eating")}</h2>
+                  <h3>{t("Michelle Holzberger, Victoria Todd: 'Solve your Out of Control Eating'")}</h3>
+                  <p>
+                    {t("Victoria Todd, Cleveland OH and Michele Holzberger, Tampa, FL are passionate about making psychological tools accessible to everyone. With backgrounds in mental health and psychoanalysis, they’ve dedicated themselves to helping individuals understand and overcome the deeper emotional issues that drive their eating habits.")}
+                  </p>
+                  <p>
+                    {t("This revolutionary book takes readers on a journey through real-life success stories, offering practical strategies to uncover and overcome the emotional roadblocks behind diet failures and disordered eating. Co-authors Victoria Todd and Michele Holzberger have transformed the way we approach eating issues, making this resource both interactive and accessible for the everyday person.")}
+                  </p>
+                  <p>
+                    {t("'Vickie originally came to me with a write-up utilizing her experience as a psychoanalyst about doing podcasts for mental health professionals,' said Holzberger. 'As soon as I read it, I thought, ‘This could help so many people struggling with their eating habits. It needs to be a book!'")}
+                  </p>
+                  <p>
+                    {t("The authors’ mission was clear: to create a guide that offers the life-changing tools typically available only to the .001% of the population—roughly 3,000 practicing analysts in the U.S.—and make these concepts understandable and usable for the rest of us. At the core of Solve Your Out-of-Control Eating is an understanding that unhealthy eating patterns are often not just about food—they're about emotions, habits, and deeper psychological issues. By presenting complex psychological principles in an easy-to-understand manner, the authors break down key concepts from the renowned psychoanalyst Anna Freud into bearable bits that readers can easily apply to their daily lives.")}
+                  </p>
+                  <p>
+                    {t("This interactive guide combines insightful personal stories with workbook-like activities that challenge readers to examine their own emotional roadblocks. Through quizzes, timelines, and self-observation exercises, the book leads readers on a detective-like journey to solve the mystery of their eating habits. It’s more than just a book—it’s a roadmap to understanding emotional triggers and achieving lasting change.")}
+                  </p>
+                  <div className="shop-featured-actions">
+                    <a
+                      className="shop-card-cta"
+                      href="https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("Buy Book")}
+                    </a>
+                    <Button className="shop-card-cta" onClick={() => setShowModal(true)}>
+                      {t("Transcript")}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="shop-section">
+                <h2 className="shop-section-title">{t("DNA Acivation products by Solexnation!")}</h2>
+                <div className="shop-grid">
+                  <ProductCard
+                    t={t}
+                    title={t("Coconut, Shea Butter, Vitamin E Beeswax Loce SPF 20-30")}
+                    img={PRODUCT1}
+                    href="https://shop.solexnation.com/SunriseWellness/home"
+                    ctaLabel={t("Buy")}
+                  />
+                  <ProductCard
+                    t={t}
+                    title={t("Essential Oil")}
+                    img={PRODUCT2}
+                    href="https://shop.solexnation.com/SunriseWellness/home"
+                    ctaLabel={t("Contact")}
+                  />
+                  <ProductCard
+                    t={t}
+                    title={t("THC Love")}
+                    img={PRODUCT3}
+                    href="https://shop.solexnation.com/SunriseWellness/home"
+                    ctaLabel={t("Buy")}
+                  />
+                </div>
+              </div>
+
+              <div className="shop-section">
+                <h2 className="shop-section-title">{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
+                <div className="shop-grid">
+                  <ProductCard
+                    t={t}
+                    title={t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}
+                    img={lowbackpain}
+                    href="https://www.amazon.com/Low-Back-Pain-Relief-Minutes/dp/B0CZ9FBTMF"
+                    ctaLabel={t("Buy")}
+                  >
+                    <p className="shop-card-text">
+                      {t("Have you ever had low back pain so severe that it interfered with every area of your life, from your sleep, work, and family obligations to your relationship and even your sex life? Do you know someone who has? Then this book is for you. Did you know that doctors classify 90% of all low back pain as being “nonspecific”? That means the treatments they give for low back pain are also “nonspecific”. No wonder people with this problem have trouble finding relief!")}
+                    </p>
+                    <p className="shop-card-text">
+                      {t("After 37 years of lower back pain, Dr. Bertrand developed a new way to examine the lower back that tells most of those who have pain there exactly which joints are displaced, how they are displaced, and by how much. Once you know the cause, the treatment becomes obvious. This book will tell you exactly how you can find the cause and the two-minute exercise to correct it that provides 90% of those who do it with immediate pain relief. It will then explain how people can stay healthy and pain-free and discuss the different conditions that can accompany this pain and how to relieve them.")}
+                    </p>
+                    <p className="shop-card-text">
+                      {t("Imagine no longer having to rely on doctors, medications, chiropractors, physiotherapists, surgeons, and other health professionals as most readers will know how to relieve their own low back pain in minutes and how to prevent it coming back!")}
+                    </p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("Free Webinar")}
+                    img={webinar}
+                    href="mailto:dr.hbertrand@gmail.com"
+                    ctaLabel={t("Contact")}
+                  >
+                    <p className="shop-card-text">
+                      {t("Join Dr. Hélène Bertrand, MD — a physician with 55 years of clinical experience and the developer of QR Cream — for a free webinar on living pain-free. She'll walk through the simple 2-minute exercise behind her low back pain relief method and how QR Cream calms nerve pain signals at the source. Email to reserve your spot.")}
+                    </p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("QR Cream")}
+                    img={qrcream}
+                    href="https://qrcream.us/"
+                    ctaLabel={t("Buy")}
+                  >
+                    <p className="shop-card-text">
+                      {t("QR Cream is a fast-acting topical pain relief cream developed by Dr. Hélène Bertrand, MD. Its active ingredient, mannitol, works at the nerve level to block pain signals before they reach the brain, while menthol helps it penetrate the skin and adds a soothing cooling effect. Free of numbing anesthetics, QR Cream is used for headaches, neck, shoulder, back, knee and foot pain, as well as psoriasis, eczema and neuropathy — often in as little as 2 minutes.")}
+                    </p>
+                  </ProductCard>
+                </div>
+              </div>
+
+              <div className="shop-section shop-video" data-aos="fade-up">
+                <iframe
+                  src="https://www.youtube.com/embed/ag4WOBP24j0?si=wnzWLP2hKSZ0kgXv"
+                  title={t('YouTube video player')}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <div className="shop-section">
+                <h2 className="shop-section-title">{t("More From Our Partners")}</h2>
+                <div className="shop-grid">
+                  <ProductCard
+                    t={t}
+                    title={t("Kelechi Obasi Product Bundle")}
+                    img={obasi}
+                    href="https://selar.com/m/kelechiobasi"
+                    ctaLabel={t("Buy")}
+                  >
+                    <p className="shop-card-text">
+                      {t("Kelechi Obasi is a holistic wellness practitioner specializing in breathwork, energy clearing, mindfulness coaching, biohacking, nervous system reset, and trauma-informed practices — with a mission to guide you back to life. This bundle brings together coaching sessions, healing intensives, and digital resources designed to support stress recovery, burnout relief, and nervous system regulation.")}
+                    </p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("Purium Product Bundle")}
+                    img={purium}
+                    href="https://ishoppurium.com/homepage?giftcard=JessicaJavens"
+                    ctaLabel={t("Buy")}
+                  >
+                    <p className="shop-card-text">
+                      {t("Purium, \"The Superfoods Superstore,\" is an organic, plant-based nutrition company built on the belief that the quality of food you eat is equal to the quality of life you live. Co-owned by Amy Venner and Dave Sandoval, Purium's Transformation and Biohack Packs combine clean, premium superfoods to support energy, detox, and whole-body wellness — good for your body and the earth.")}
+                    </p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("Lifewave Patch")}
+                    img={lifewave}
+                    href="https://www.lifewave.com/awicks"
+                    ctaLabel={t("Buy Now")}
+                  >
+                    <p className="shop-card-text">{t("Harness your body's flow of energy with X39.")}</p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("Forever Living Aloe Vera")}
+                    img={forever}
+                    href="https://foreverliving.com/shop/usa/en-us/products"
+                    ctaLabel={t("Buy Now")}
+                  >
+                    <p className="shop-card-text">{t("weeknd")}</p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("Happy DNA Candy")}
+                    img={linda}
+                    href="https://sites.google.com/view/lindamcbee806080/home"
+                    ctaLabel={t("Buy Now")}
+                    video="https://www.youtube.com/embed/S1j-Oxijls8?si=NqXQ_XaZgUqIhTWZ"
+                  >
+                    <p className="shop-card-text">
+                      {t("An extensive review, the product line is plant-based and features some of the highest performing herbs in the world: Moringa, Turmeric, Elderberry, Rosemary and more. The product line extends beyond products. She also has services to help health coaches and Energy healers.")}
+                    </p>
+                  </ProductCard>
+                  <ProductCard
+                    t={t}
+                    title={t("Spectra Spray")}
+                    img={spectraspray}
+                    href="https://www.spectraspray.com/shop"
+                    ctaLabel={t("Buy Now")}
+                    video="https://www.youtube.com/embed/At7Gc-qjbsc?si=3BMcLVIB7FKUxPUC"
+                  >
+                    <p className="shop-card-text">
+                      {t("Our Mission: To provide easy to use, highly effective, on-the-go health products that change lives everyday.")}
+                    </p>
+                    <p className="shop-card-text">
+                      {t("Our Vision: To support every lifestyle, with natural solutions helping people stay well, sleep well and live life to the fullest.")}
+                    </p>
+                    <p className="shop-card-text">
+                      {t("Our Products: With an advanced micro-emulsion technology, our natural high-quality oral sprays provide direct absorption without binders, fillers, artificial color, dyes or allergens.")}
+                    </p>
+                  </ProductCard>
+                </div>
+              </div>
+
+              <div className="shop-final-cta" data-aos="fade-up">
+                <Button onClick={learnmore} className="shop-card-cta">
+                  {t('Providers: Signup Here')}
+                </Button>
+              </div>
+            </div>
+
+            <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+              <Modal.Header closeButton>
+                <Modal.Title>{t("Transcript")}</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{t(txt)}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowModal(false)}>
+                  {t("Close")}
+                </Button>
+              </Modal.Footer>
+            </Modal>
+
             <footer>
                 <Footer />
             </footer>
         </div>
     )
-    
+
 }

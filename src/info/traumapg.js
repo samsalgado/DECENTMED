@@ -8,7 +8,6 @@ import book1 from "../images copy/book1.jpg";
 import book2 from "../images copy/book2.jpg";
 import TsBen from './tsben';
 import C from '../pages/cheska';
-import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import Trev from './traumarev';
@@ -204,9 +203,6 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
       </div>
       </div>
         <div data-aos="slide-right" className="container-blue">
-      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
               <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"

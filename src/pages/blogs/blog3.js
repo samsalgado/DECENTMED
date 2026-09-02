@@ -25,7 +25,7 @@ const Blog3 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Detox and Cleanse Kit')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Detox and Cleanse Kit')}</h1>
     <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
   <iframe
     className="rumble"
@@ -40,7 +40,7 @@ const Blog3 = () => {
 </div>
 
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
           <p>
     {t('A detox cleanses the body. A water detox cleanse can flush out the bodys toxins. The 3 day cleanse detox will restore your cells to ketosis. When detoxing, start with a water detox to flush toxins from the kidney and liver (not medical advice). A water detox helps the body to heal itself. Detoxification plays an integral role in Cellular regeneration and cellular rejuvenation - two components of wellness. Cancer treatments globally like the')} <a href='https://gerson.org/'>Gerson Therapy</a> and<a href="https://drsebiscellfood.com/">Dr. Sebi </a>{t('diet use forms of Detoxification to cleanse the body from toxins that cause cancer.')}
@@ -73,6 +73,24 @@ const Blog3 = () => {
       </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

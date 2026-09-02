@@ -13,7 +13,6 @@ import book6 from "../images copy/Screenshot 2026-04-03 at 9.44.13 PM.png";
 import FBen from './fBen';
 import review1 from "../images copy/Screenshot 2026-04-03 at 9.45.54 PM.png";
 import review2 from "../images copy/Screenshot 2026-04-03 at 9.47.02 PM.png";
-import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import { Button } from 'react-bootstrap';
@@ -95,9 +94,6 @@ const iframeWrapperStyle = {
             <img className='gridimag' src={graphic0} alt='GRAPHIC' />
              </a>
               <div data-aos="slide-right" className='gridimage'>
-                      <a href='http://spectraspray.com/' alt="spectra spray">
-                <img className='gridimag' src={spectraspray} alt='spectra spray' />
-                </a>
               <iframe
               height="515"
               src="https://www.youtube.com/embed/7bu3HRvtWwE?si=P6WSLCYc-Fjd0OS4"

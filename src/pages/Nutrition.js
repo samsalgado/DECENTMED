@@ -5,7 +5,6 @@ import Footer from '../footer';
 import nutri from "../images copy/nutrimg.png";
 import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import spectraspray from "../images copy/spectraspray.png";
 import FuncVids from '../info/functionalvids';
 import { Helmet } from 'react-helmet'; // Import Helmet
 import { useTranslation } from 'react-i18next';
@@ -33,9 +32,6 @@ export default function Nutrition() {
         <br></br>
                     <div className="container-blue">
 
-                 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
              <br />
          <a href='https://decentmed.org/nutritionpract' alt="spectra spray">
             <img className='gridmag' src={nutri} alt='spectra spray' />

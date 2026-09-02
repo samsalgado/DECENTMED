@@ -23,13 +23,13 @@ const Owl1 = () => {
       </header>
     <div className="container-blue">
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Psychic Protection: An Ounce Of Prevention By Samuel Abrams')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Psychic Protection: An Ounce Of Prevention By Samuel Abrams')}</h1>
 
       </div>
       <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
           <a href="https://oldwiseowladvisor.com/#contactus"><img className='gridimag' src={owl} alt="Psychic Protection" /></a>
 </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
           <p>
     {t('I have talked to many empaths who struggle with problems such as being drained by others or being affected by the emotions/vibes of others. This especially applies to readers, energy healers, LMT’s Mental Health counselors and nurses who are often exposed to negative energies. Some suffer from this without even knowing what is going on. Others may take it home with them. Don’t we have enough going on in our heads not to have to deal with that of other people? I wonder if this may be a cause of burnout for many.')}

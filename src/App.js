@@ -43,6 +43,17 @@ const Blog8 = lazy(() => import('./pages/blogs/blog8'));
 const Fen = lazy(() => import('./pages/blogs/fenbendazole'));
 const Ivermectin = lazy(() => import('./pages/blogs/ivermectin'));
 const Blog24 = lazy(() => import('./pages/blogs/blog24'));
+const Blog25 = lazy(() => import('./pages/blogs/blog25'));
+const Blog26 = lazy(() => import('./pages/blogs/blog26'));
+const Blog27 = lazy(() => import('./pages/blogs/blog27'));
+const Blog28 = lazy(() => import('./pages/blogs/blog28'));
+const Blog29 = lazy(() => import('./pages/blogs/blog29'));
+const Blog30 = lazy(() => import('./pages/blogs/blog30'));
+const Blog31 = lazy(() => import('./pages/blogs/blog31'));
+const Blog32 = lazy(() => import('./pages/blogs/blog32'));
+const Blog33 = lazy(() => import('./pages/blogs/blog33'));
+const Blog34 = lazy(() => import('./pages/blogs/blog34'));
+const Blog35 = lazy(() => import('./pages/blogs/blog35'));
 const HerbalMedicine = lazy(() => import('./pages/HerbalMedicine'));
 const PublicSignUp = lazy(() => import('./pages/SignUp/PublicSignup'));
 const SignupOptions = lazy(() => import('./pages/SignupOptions'));
@@ -145,6 +156,17 @@ function App() {
         <Route path="/providers" element={<ProviderLandingPage t={t} />} />
         <Route path="/nutrigenomics" element={<Nutrigenomics t={t} />} />
          <Route path="/conversionoptimizationconsulting" element={<Blog24 t={t} />} />
+        <Route path="/the-illusion-of-freedom" element={<Blog25 t={t} />} />
+        <Route path="/on-special-dates-and-portals" element={<Blog26 t={t} />} />
+        <Route path="/defining-meditation" element={<Blog27 t={t} />} />
+        <Route path="/greetings-light-workers" element={<Blog28 t={t} />} />
+        <Route path="/on-real-lasting-healing" element={<Blog29 t={t} />} />
+        <Route path="/inner-person-holistic-medicine" element={<Blog30 t={t} />} />
+        <Route path="/metaphysical-places-orlando" element={<Blog31 t={t} />} />
+        <Route path="/interpreting-the-readings-of-others" element={<Blog32 t={t} />} />
+        <Route path="/on-doing-a-reading-for-you" element={<Blog33 t={t} />} />
+        <Route path="/covid" element={<Blog34 t={t} />} />
+        <Route path="/the-gurus-cat" element={<Blog35 t={t} />} />
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />

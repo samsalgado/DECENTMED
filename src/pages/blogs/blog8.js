@@ -24,7 +24,7 @@ const {t} = useTranslation('common')
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}> {t('Hepatitis B: Herbal Medicine On Hep B')}</h1>
       <a href='/apoth'>
     <figure>
     <img className='gridimag' src={batana} alt="logo" />
@@ -32,7 +32,7 @@ const {t} = useTranslation('common')
         </figure>
       </a>
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
           <p>
           {t('Hepatitis B is a liver infection from HBV transmitted through another infected person’s blood, semen, or other fluids. Hepatitis B affects the liver and is more toxic in children than adults with the disease. The 5 major functions of the liver are supporting the body’s metabolism, immunity, digestion, detoxification, and vitamin storage. (Disclaimer not medical advice) There is currently no cure for hep B. This article will explore plants with potential benefits for fighting hepatitis B.')}
@@ -66,6 +66,24 @@ const {t} = useTranslation('common')
       </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

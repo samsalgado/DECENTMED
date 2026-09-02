@@ -1,6 +1,6 @@
 /* Collapsible Wrapper - Centers the entire collapsible */
 * {
-  font-family: sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 }
 .collapsible-wrapper {
     display: flex;
@@ -10,19 +10,19 @@
     margin: 2rem 0;
   }
   h1 {
-    font-family: sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     font-size: 2.5rem;
     color: "black";
     margin-bottom: 1rem;
   }
   h2 {
-    font-family: sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     font-size: 2rem;
     color: "black";
     margin-bottom: 1rem;
   }
   h3 {
-    font-family: sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     font-size: 1.5rem;
     color: "black";
     margin-bottom: 0.75rem;

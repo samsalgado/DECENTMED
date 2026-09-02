@@ -23,10 +23,10 @@ const {t} = useTranslation('common');
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}> {t('Batana Oil: Batana Oil Benefits')} </h1>
           <img className='gridimag' src={batana} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
           <p>
           {t(`Dr. Sebi was an herbalist, called a doctor because his unconventional diet protocols had miraculous consequences on people's health. Sebi claimed that the removal of 'lactose, carbonic acid, uric acid, milk, starches, and meat paired with cell cleansing cures cancer, AIDS, sickle cell, and more'. Dr. Sebi provided 'evidence' of his claims and won his lawsuit in the1980's. Dr. Sebi claimed, 'disease exists from mucus and acidity', asserting that people should eat foods that cleanse the body and avoid acidic food. Because of his astounding results, Sebi grew a mega-following and a massive herbal empire. Among his products, is batana oil - a potential solution to hair loss. On popular social media apps TikTok and YouTube, batana oil has recently become popular online for its potential hair growth. Let's explore batana oil and its possible benefits for your hair.`)}
@@ -60,6 +60,24 @@ const {t} = useTranslation('common');
         {t("Visit Apothecary")}
       </Button>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
     </div>

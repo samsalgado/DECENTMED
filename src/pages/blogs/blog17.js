@@ -1,9 +1,12 @@
 import Topbar from "../topbar";
+import { Button } from 'react-bootstrap';
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import bitcoin from "../../images copy/BTC_payments.PNG";
 import '../../info/Info.css';
+import { useTranslation } from "react-i18next";
 const Blog17 = () => {
+  const { t } = useTranslation('common');
   return (
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
@@ -21,10 +24,10 @@ const Blog17 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>What is Bitcoin?</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>What is Bitcoin?</h1>
           <img className='gridimag' src={bitcoin} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
             <p>
             Bitcoin is speculative to some and hope for others. The Bitcoin price has skyrocketed since the recent US election, so the question becomes — what’s next for Bitcoin? Bitcoin is not a stock, so playing “candlesticks” is not feasible for most. Similarly to the Bitcoin price, US inflation has risen rapidly since 2020. According to StatMuse: “Bitcoin closed January 31, 2020 at $9,357.21”. Today (12/3/2024), Bitcoin is $96,770.11. According to Investopedia, US inflation was 1.2% in 2020. In the last couple of years, it’s been 8% (2022) and 4.1% (2023). Canada, South America, Central America, Africa, and Asia have all experienced mass inflation since the fall of the Gold Standard. Businesses want to accept Bitcoin but don’t know how; let’s explain how to accept Bitcoin payments as a business.            </p>
@@ -79,6 +82,24 @@ const Blog17 = () => {
         </div>
         </div>
     </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

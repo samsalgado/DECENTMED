@@ -23,13 +23,13 @@ const BlogAcu = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Acupuncture for Carpal Tunnel')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Acupuncture for Carpal Tunnel')}
         </h1>
         <a href="https://oceantreis.com/">
         <img className='gridimag' src={lifewave} alt="logo" />
         </a>
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t("If you're experiencing tingling, numbness, or pain in your hands and wrists, you might be dealing with carpal tunnel syndrome. This common condition affects millions of people each year, particularly those who perform repetitive hand motions at work or home. While conventional treatments like wrist braces and surgery are well-known options, many people are discovering that acupuncture for carpal tunnel offers a natural, effective alternative for managing their symptoms.")}
@@ -65,6 +65,24 @@ const BlogAcu = () => {
         </div>
         </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

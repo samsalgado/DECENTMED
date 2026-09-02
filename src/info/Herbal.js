@@ -10,7 +10,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Button, Modal } from 'react-bootstrap';
 import homeo from '../images copy/meme3.png';
 import { useTranslation } from 'react-i18next';
-import spectraspray from "../images copy/spectraspray.png";
 gsap.registerPlugin(ScrollTrigger);
 const Herbal = () => {
   const { t } = useTranslation('common');
@@ -84,9 +83,6 @@ with Extreme Caution the root is powerfully resolvent because of its poisonous n
         <div>
          <div className="container-blue">
           <br />
-          <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' data-aos="slide-right" src={spectraspray} alt='spectra spray' />
-             </a>
               <br></br>
               <br></br>
          

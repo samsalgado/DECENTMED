@@ -49,7 +49,7 @@ const Offer2 = () => {
                           <img className='gridimag' src={cash} alt='cash businesses' />
               <p className="prr">{t("A major painpoint of holistic medicine is lack of awareness of holistic medicine, and its many benefits for wellbeing. We will host both in-person and live summits globally to offer the experience of holistic health to the public and expedite awareness on a global scale. In order to maximize value for providers, we offer 15% of affiliate programs and 5% of our content library to providers.")}</p>  
              <h5>{t("DecentMed is Innovation!")}</h5>
-<iframe class="rumble" title="signup" height="360"
+<iframe className="rumble" title="signup" height="360"
               src="https://www.youtube.com/embed/v2QuSppZqHE?si=8FfPlDwXaqsQLBtp" frameborder="0" allowfullscreen></iframe>          </div>
           <Button className="custom-btn"
             style={{

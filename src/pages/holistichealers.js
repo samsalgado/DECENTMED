@@ -22,21 +22,21 @@ useEffect(() => {
             <header>
             <Topbar />
             </header>
-            <div class="container">
+            <div className="container">
             <h1>{t("Emotional Eating Coaches and Emotional Eating Books")}</h1>
- <div class="row">
-    <div class="col-md-4">
+ <div className="row">
+    <div className="col-md-4">
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
+  <div className="row">
+    <div className="col-md-6">
       <h2>{t("Solve your Out of Control Eating")}</h2>
       <h3>{t("Vickie Todd")}</h3>
       <h3>{t("Michele Holzberger")}</h3>
       <a href='https://www.amazon.com/Solve-Your-Out-Control-Eating/dp/B0DDK2HDQN'>
     <figure>
-        <img src={JenB} alt="logo" />
+        <img src={JenB} alt="logo" style={{ maxWidth: '300px', width: '100%', height: 'auto', borderRadius: '8px' }} />
           <figcaption>{t("Buy Book")}</figcaption>
         </figure>
       </a>

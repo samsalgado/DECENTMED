@@ -83,7 +83,7 @@ useEffect(() => {
                       {t("Dr. Nadia Taylor believes in holistic medicine because it helped to heal her from disease and maladies. She has recently opened up her own holistic healing center, Essence of Life, in Boynton Beach, Florida in September 2025 so that she can help others heal through some of the same modalities that helped her. Dr. Taylor is excited to be back in South Florida after years living elsewhere and is continually looking to make positive changes in the community. She has dedicated her life to a life of service for the betterment of others.")}
                     </p>
                       
-            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
+            <iframe className="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
                     <div className="col-md-5 text-end">
 <div style={{ textAlign: 'center', margin: '20px 0' }}>
   <div style={{ 
@@ -162,7 +162,7 @@ useEffect(() => {
                       {t("I empower women with endometriosis, adenomyosis and other painful menstrual disorders, to break free from their cycle of pain, boost fertility potential, and help them live a vibrant, fulfilling life through holistic care. I also help women navigate perimenopause and menopause naturally by uncovering the root causes of hormone imbalances, fatigue, weight gain, sleep issues, hot flashes, and mood changes so they can regain their energy, balance their hormones, and feel vibrant again. I address women’s health issues by using a comprehensive, holistic approach to understand the root cause and help the body return to normal.")}
                     </p>
                       
-            <iframe class="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
+            <iframe className="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
                     <div className="col-md-5 text-end">
 <div style={{ textAlign: 'center', margin: '20px 0' }}>
   <div style={{ 
@@ -222,7 +222,7 @@ useEffect(() => {
                       {t("After years in conventional healthcare, Lorna felt limited by short visits, symptom-based protocols, and systems that weren’t designed for true healing. She saw patients struggling with fatigue, gut issues, hormones, and chronic symptoms—and no one was putting the full picture together. Lorna created Optimal Root Wellness to change that. A practice where patients get time, answers, and support. A place where healing isn’t rushed—and where every step of your care is intentional. Lorna combines years of clinical experience with advanced training in functional and integrative medicine. Her approach includes: In-depth functional testing, Lifestyle and nutrition support, Root-cause analysis for chronic symptoms, Trauma-informed, relationship-centered care and Realistic plans that fit your life")}
                     </p>
                       
-            <iframe class="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=vsr7w14uyoTe2gvF" frameborder="0" allowfullscreen></iframe>
+            <iframe className="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=vsr7w14uyoTe2gvF" frameborder="0" allowfullscreen></iframe>
                     <div className="col-md-5 text-end">
 <div style={{ textAlign: 'center', margin: '20px 0' }}>
   <div style={{ 
@@ -301,7 +301,7 @@ useEffect(() => {
                       {t("As a Board-Certified Functional Health Coach, I help clients uncover the root causes of chronic health concerns rather than simply managing symptoms. Using a personalized, science-informed approach, I evaluate nutrition, lifestyle, stress, sleep, gut health, hormones, metabolism, and environmental factors to create practical, sustainable plans that support long-term wellness. My goal is to educate and empower each client so they can understand their health, make informed decisions, and build lasting habits that improve their quality of life.")}
                     </p>
                       
-            <iframe class="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/2655-38U2_Q?si=VH2FANq8LGSvBJYd" frameborder="0" allowfullscreen></iframe>
+            <iframe className="youtube" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/2655-38U2_Q?si=VH2FANq8LGSvBJYd" frameborder="0" allowfullscreen></iframe>
                     <div className="col-md-5 text-end">
 <div style={{ textAlign: 'center', margin: '20px 0' }}>
   <div style={{ 

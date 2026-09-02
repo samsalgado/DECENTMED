@@ -27,7 +27,6 @@ import stemcelltranslated from '../images copy/IMG_9266.jpeg';
 import stemtype from '../images copy/stem-type.jpg';
 import graphic from '../images copy/Pink-Illustrative-Simple-Healthy-Habits-Infographic.jpeg';
 import { useTranslation } from 'react-i18next';
-import spectraspray from "../images copy/spectraspray.png";
 const Stem = () => {
   const { t } = useTranslation('common')
   const [showModal, setShowModal] = useState(false);
@@ -111,9 +110,6 @@ const Stem = () => {
         }
       `}</style>
       <div data-aos="slide-right">
-     <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
              </div>
       <div data-aos="slide-right" className="container-blue">
 

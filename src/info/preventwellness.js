@@ -4,7 +4,6 @@ import Coachingvids from './coachingvids';
 import ReactDOM from 'react-dom';
 import HealthCoaching from './healthcoaching';
 import amber from "../images copy/amber.png";
-import spectraspray from "../images copy/spectraspray.png";
 import './Info.css';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -66,9 +65,6 @@ useEffect(() => {
      </Button>
       </div>
        <div data-aos="slide-right" className="container-blue">
-      <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
       <h1 className='center'>{t("Coaching Education: Health Coaches Near Me")}</h1>
         <div data-aos="slide-right" className="pr"> <a href="https://www.cdmhealthandwellness.com/" alt="CDM Health and Wellness"> <img className="gridimag" src={cdm} alt="CDM Health and Wellness" /> </a> </div>
         <div data-aos="slide-right" className="pr"> <a href="https://calendly.com/ambernacolle/15-30min?month=2026-03" alt="Amber Nacolle Caroll"> <img className="gridimag" src={amber} alt="CDM Health and Wellness" /> </a> </div>

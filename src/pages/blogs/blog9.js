@@ -25,10 +25,10 @@ const Blog9 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('The Importance of Nutrition')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('The Importance of Nutrition')}</h1>
         <img className='gridimag' src={nutrition} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t('I am not a doctor or nutritionist, however, I am a developer and researcher who understands the value of showcasing Holistic Medicine to the public. Of the nine practices on the platform: Homeopathy, PRP, Hypnotherapy, Stem Cell Therapy, Chelation, Chiropractic, Ayurveda, and Acupuncture; Nutrition is the most valuable because it encompasses general elements of the others. I did not know that the Standard American Diet was insufficient for the vitamins humans lack. Humans lack vitamins A, D, E, and K, so nutritionists create diet plans specific to each person. Dr. Sebi was a herbalist who understood the correlation between diet and plants. His diet protocol might not be attainable for some people — a nutritionist can tailor a diet around different philosophies on health that work within someone’s capabilities. The most important element of a nutritionist is trust — have the confidence knowing that they have data on you and expertise in the health field.')}
@@ -72,6 +72,24 @@ const Blog9 = () => {
         {t("Learn More")}
       </Button>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
     </div>

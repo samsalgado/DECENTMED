@@ -30,7 +30,7 @@ const Blog21 = () => {
                      <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           {t('Acupuncture for Migraines')}
         </h1>
         <a href="https://decentmed.org/acupuncture">
@@ -38,7 +38,7 @@ const Blog21 = () => {
         </a>
       </div>
 
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
 
           {/* ⭐ ONE BLOCK — TRANSLATABLE ALL AT ONCE ⭐ */}
@@ -102,6 +102,24 @@ const Blog21 = () => {
         </Button>
       </div>
           </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

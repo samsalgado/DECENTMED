@@ -23,13 +23,13 @@ const Blog19 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Applied Kinesiology with Acupuncture and Chiropractic for Autism')}
         </h1>
         <a href="https://www.lifewave.com/awicks">
         <img className='gridimag' src={lifewave} alt="logo" />
         </a>
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t(`Holistic Medicine is comprehensive; it makes sense that providers work with a variety of modalities. Dr. Sebi and other herbalists believe that about 80% of disease can be attributed to diet and lifestyle. The Center for Natural Health in St Louis, Missouri, utilizes a myriad of holistic modalities like homeopathy, acupuncture, chiropractic and neurology to identify various conditions that most doctors miss. Dr. Amy Wicks utilizes NAET to help with various ailments and complaints.`)}</p>
@@ -63,6 +63,24 @@ const Blog19 = () => {
 </div>
         </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

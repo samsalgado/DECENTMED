@@ -6,7 +6,6 @@ import Elements from './elements';
 import Principles from './ayurev';
 import ReactDOM from 'react-dom';
 import pain3 from "../images copy/pain3.png";
-import spectraspray from "../images copy/spectraspray.png";
 import pain1 from "../images copy/pain1.png";
 import pain2 from "../images copy/pain2.png";
 import pain4 from "../images copy/pain4.png";
@@ -232,9 +231,6 @@ themerlingroupworld.com/ayurveda for more.
                   </div>
                 <br></br>
                 <div data-aos="slide-right">
-                 <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
               <img className='gridimag' src={ayurveda} alt={t('ayurvedic medicine near me')} style={{
         maxWidth: '400px',
         width: '100%',

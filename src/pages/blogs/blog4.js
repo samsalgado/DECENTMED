@@ -24,10 +24,10 @@ const Blog4 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Cellular Regeneration')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Cellular Regeneration')}</h1>
         <img className='gridimag' src={cell} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t(`Disease deteriorates people over time. For instance, Parkinson's reduced my grandmother to trembling, hunched over without uttering a word. African Americans are 3x more likely to to die from asthma than whites. Medicine has used black bodies without consent. As distrust of Organized Medicine intensifies people need to understand Prevention.`)}
@@ -67,6 +67,24 @@ const Blog4 = () => {
       </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

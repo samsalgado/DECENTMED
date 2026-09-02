@@ -3,7 +3,6 @@ import "../App.css";
 import './Info.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import spectraspray from "../images copy/spectraspray.png";
 import chelationgraphicES from '../images copy/IMG_9296.jpeg';
 import chelationgraphicNL from '../images copy/IMG_9297.jpeg';
 import chelationgraphicHI from '../images copy/IMG_9310.jpeg';
@@ -36,9 +35,6 @@ const Pgchelation = () => {
                 {t("Find Providers")}
               </Button>
             </div>
-        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
  <div data-aos="slide-right" className='gridimage'>
               <iframe
               height="515"

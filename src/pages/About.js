@@ -2,6 +2,7 @@ import '../App.css';
 import Topbar from './topbar';
 import Footer from '../footer';
 import FAQ from '../info/faq';
+import ANS from "../info/ans";
 import { Helmet } from 'react-helmet';
 export default function About({ t }) {
     return (
@@ -17,6 +18,11 @@ export default function About({ t }) {
             </header>
             <div >
             <FAQ />
+             <br />
+              <br />
+                    <div className="container-blue" data-aos="slide-right">
+            <ANS />
+            </div>
             </div>
             <br />
             <footer>

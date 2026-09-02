@@ -1,4 +1,5 @@
 import Topbar from "../topbar";
+import { Button } from 'react-bootstrap';
 import { Helmet } from "react-helmet";
 import Footer from "../../footer";
 import cell from "../../images copy/lanenaturopathy.png";
@@ -23,10 +24,10 @@ const Mike = () => {
       </header>
           <div className="container-blue">
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ways to Improve Your Sleep Quality')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Ways to Improve Your Sleep Quality')}</h1>
         <a href='https://www.naturopathylane.com/'> <img className='gridimag' src={cell} alt="logo" /></a>
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
         <h2>{t(`Avoid electronic devices before bedtime`)}</h2>
           <p>
@@ -58,6 +59,24 @@ const Mike = () => {
         </div>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

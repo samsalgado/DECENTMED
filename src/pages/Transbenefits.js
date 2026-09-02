@@ -17,7 +17,6 @@ import ns5 from "../images copy/ns5.png";
 import ns6 from "../images copy/ns6.png";
 import slow from "../images copy/slowdown.png";
 import TsBenefits from "./tben";
-import spectraspray from "../images copy/spectraspray.png";
 import flow from "../images copy/flow.png";
 import ReactDOM from 'react-dom';
 import r from "../images copy/r.png";
@@ -532,9 +531,6 @@ useEffect(() => {
             </div>
           <Button className="custom-btn" href="https://jessicajavens.com/" target="_blank">{t("Experience Transformation")}</Button>
         <TsBenefits />
-         <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
           <Button onClick={learnmore} className="custom-btn">
             {t('Providers: Signup Here')}
           </Button> 

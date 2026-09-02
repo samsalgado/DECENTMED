@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import './acu.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 import Benefits from "./brbenefits";
 import './Info.css';
@@ -234,9 +233,6 @@ it's it's going to be so you've got to be passionate about yoga to do it it's no
         }
       `}</style>
         <br></br>
-          <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
              <br></br>
         <div data-aos="slide-right">
         <Benefits />

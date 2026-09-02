@@ -24,12 +24,12 @@ const {t} = useTranslation('common')
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t("Acupuncture Montreal")}
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t("Acupuncture Montreal")}
       </h1>
       <img className='gridimag' src={montreal} alt="logo" />
 
     </div>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
             <p>
                 {t("Mass immigration in Canada has its advantages and disadvantages; assimilation led to Canadians adopting Traditional Chinese Medicine (TCM). Acupuncture Montreal adoption began with British Columbia adding acupuncture to the")} <a href="https://pubmed.ncbi.nlm.nih.gov/25555597/">{t('Canadian Medical Services Plan in 2008.')}</a>  {t("Ontario and British Columbia have the highest adoption of acupuncture among the ten provinces of Canada. Regulation in Canada is varied among the provinces. For instance")}, <a href="https://acupuncturecanada.org/acupuncture-101/regulation-and-education/#:~:text=Medical%20doctors%20and%20dentists%20may,but%20Quebec%20and%20British%20Columbia.">{t('chiropractors can use acupuncture everywhere but in British Columbia and Quebec.')}</a> {t("British Columbia has most regulations regarding the provinces.")}
@@ -62,6 +62,24 @@ const {t} = useTranslation('common')
       </Button>
       </div>
         </div>
+        <Button
+          style={{
+            display: 'block',
+            margin: '0 auto',
+            padding: '10px 20px',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            fontSize: '16px',
+            textAlign: 'center',
+            textDecoration: 'none',
+          }}
+          className="custom-btn"
+          href="https://oldwiseowladvisor.com/#contactus"
+          target="_blank"
+        >
+          {t('Connect with Samuel')}
+        </Button>
         <Footer />
         </div>
     )

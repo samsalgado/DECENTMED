@@ -23,10 +23,10 @@ const Blog5 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('What is Acupuncture?')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('What is Acupuncture?')}</h1>
         <img className='gridimag' src={acu} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t('According to the')}<a href="https://www.cdc.gov/" alt=''> {t('CDC,')}</a> {t(`there were 70360 opioid deaths in 2019. In an industry where the body divides into parts, acupuncture balances the flow of energy or life force believed to flow through pathways in your body. Acupuncture can relieve pain, nausea, vomiting, osteoarthritis and respiratory disorders at a reduced price and without the struggles of opioid addiction. Acupuncture works with the body's connective tissue that messages to your brain that alter brain chemistry in an effective and non-destructive way.`)}
@@ -62,6 +62,24 @@ const Blog5 = () => {
       </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

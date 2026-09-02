@@ -13,7 +13,6 @@ import ts from "../images copy/tsbailey.png";
 import funcmed from "../images copy/Screenshot 2026-05-03 at 7.44.47 PM.png";
 import Benefitts from "./Ben";
 import event6 from "../images copy/taylorholistic.png"
-import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
 const {t} = useTranslation('common');
@@ -289,28 +288,28 @@ const {t} = useTranslation('common');
         <br />
         </div>
          <div data-aos="slide-right">
-            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
+            <iframe className="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://rumble.com/embed/v6zhjpy/?pub=4hu51y" frameborder="0" allowfullscreen></iframe>
           </div>
            
         </div>
       </div>
-                          <iframe class="rumble" title="DMED Addressing Diabesity Summit" width="640" height="360" src="https://www.youtube.com/embed/WPK7HeZcQC0?si=sm2Hav2D6OT-lXjF" frameborder="0" allowfullscreen></iframe>
+                          <iframe className="rumble" title="DMED Addressing Diabesity Summit" width="640" height="360" src="https://www.youtube.com/embed/WPK7HeZcQC0?si=sm2Hav2D6OT-lXjF" frameborder="0" allowfullscreen></iframe>
        <div data-aos="slide-right">
-            <iframe class="rumble" title="Functional Medicine Health Coaching ft. Optimal Root Wellness" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
+            <iframe className="rumble" title="Functional Medicine Health Coaching ft. Optimal Root Wellness" width="640" height="360" src="https://www.youtube.com/embed/Q3N9OzN-3iE?si=nvtgCqD2Yn5w5DFv" frameborder="0" allowfullscreen></iframe>
           </div>
                       <Button className="custom-btn" href="https://intakeq.com/booking/iejguw?serviceId=f42e0268-683d-4bfd-b582-f34712263a49" target="_blank">{t('Try Optimal Root Wellness')}</Button>
            <div data-aos="slide-right">
-            <iframe class="rumble" title="Functional Medicine Health Coaching ft. Kari Lockrem" width="640" height="360" src="https://www.youtube.com/embed/lE5vVNDyx0I?si=SnXDAq1M1pSt5n1z" frameborder="0" allowfullscreen></iframe>
+            <iframe className="rumble" title="Functional Medicine Health Coaching ft. Kari Lockrem" width="640" height="360" src="https://www.youtube.com/embed/lE5vVNDyx0I?si=SnXDAq1M1pSt5n1z" frameborder="0" allowfullscreen></iframe>
           </div>
                        <Button onClick={valentina} target='_blank' className="custom-btn">
                                   {t('Visit Kari Lockrem Wellness')}
                 </Button> 
            <div data-aos="slide-right">
-            <iframe class="rumble" title="Functional Medicine Health Coaching ft. Angela Forest" width="640" height="360" src="https://www.youtube.com/embed/je9JZSZcdUw?si=lrU8HO59b5Sf_y5D" frameborder="0" allowfullscreen></iframe>
+            <iframe className="rumble" title="Functional Medicine Health Coaching ft. Angela Forest" width="640" height="360" src="https://www.youtube.com/embed/je9JZSZcdUw?si=lrU8HO59b5Sf_y5D" frameborder="0" allowfullscreen></iframe>
           </div>
          <Button className="custom-btn" href="robusthealthadvocacy.com" target="_blank">{t('Try Robust Health Advocacy')}</Button>
       <div data-aos="slide-right">
-            <iframe class="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
+            <iframe className="rumble" title="Alternative Cancer Treatment" width="640" height="360" src="https://www.youtube.com/embed/JG8vDZFswmA?si=31jeRikdQ5uPDLVB" frameborder="0" allowfullscreen></iframe>
           </div>
       
                       <Button className="custom-btn" href="https://hormonehealthwithdrbrown.com/" target="_blank">{t('Try Hormone Health with Dr. Brown')}</Button>
@@ -367,9 +366,6 @@ const {t} = useTranslation('common');
           }
         }
       `}</style>
-       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-                  <img className='gridimag' src={spectraspray} alt='spectra spray' />
-                   </a>
         <br></br>
                <div data-aos="slide-right" className="container-blue">
                 <h2>{t("Why do I need a functional medicine health coach?")}</h2>

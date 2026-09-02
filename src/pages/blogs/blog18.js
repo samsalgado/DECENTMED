@@ -26,9 +26,9 @@ const Blog18 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Top 5 Stretches for Back Pain in Scottsdale')}</h1>
       </div>
-      <div style={{ padding: '0px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '0px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
         <a href="https://decentmed.org/chiropractic">
         <img className='gridimag' src={cancerimg} alt="logo" />
@@ -72,6 +72,24 @@ const Blog18 = () => {
 </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

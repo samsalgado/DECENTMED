@@ -9,7 +9,7 @@ const AuditVids = () => {
             {/* The main title should be outside the map loop */}
             <h1 
                 style={{
-                    fontFamily: 'sans-serif',
+                    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
                     width:"100%",
                     textAlign: 'center',
                     fontSize: '2rem',  // Default font size
@@ -22,7 +22,7 @@ const AuditVids = () => {
             </div>
             <h1 
                 style={{
-                    fontFamily: 'sans-serif',
+                    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
                     width: "100%",
                     textAlign: 'center',
                     fontSize: '2rem',

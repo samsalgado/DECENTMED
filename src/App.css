@@ -1,6 +1,6 @@
 /* MASTER FONT STANDARD */
 * {
-  font-family: sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   
 }
 html, body, #root {
@@ -9,15 +9,53 @@ html, body, #root {
   height: 100%;
   background-image: url("./images copy/backgroundd.webp");
 
-  background-size: cover; 
-  background-position: 
+  background-size: cover;
+  background-position:
     left top,
     right top;
 
-  background-repeat: 
+  background-repeat:
     repeat-y,
     repeat-y;
 }
+
+/* GLOBAL RESPONSIVE IMAGE SAFETY NET
+   Plain <img> tags with no sizing of their own render at their native pixel
+   resolution (often 1200-2400px for photos/screenshots), which blows out
+   the whole page width on a phone. This caps every image to its container
+   and lets width-constrained/styled images keep behaving exactly as before,
+   since max-width is only a ceiling. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* MOBILE-OPTIMIZED VIDEO EMBEDS
+   Every YouTube / Rumble / Google Drive video iframe on the site is forced
+   responsive here, in one place, regardless of whatever fixed width/height
+   attributes or inline styles an individual page sets on it. This keeps
+   videos from overflowing the viewport or rendering with a broken aspect
+   ratio on small screens. !important is intentional: it overrides inline
+   style="" attributes, which no ordinary stylesheet rule can beat. */
+iframe[src*="youtube.com/embed"],
+iframe[src*="youtube-nocookie.com/embed"],
+iframe[src*="rumble.com/embed"],
+iframe[src*="drive.google.com/file"] {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  border: 0 !important;
+}
+
+/* Side-by-side text + video rows: stack them on narrow screens instead of
+   squeezing both columns down to a sliver. */
+@media (max-width: 700px) {
+  .sibo-video-row {
+    justify-content: center;
+  }
+}
+
 .carousel-wrapper {
   width: 100%;
   max-width: 480px; /* keeps it clean on mobile */
@@ -77,6 +115,24 @@ html, body, #root {
   animation: spin 5s linear infinite;
 }
 
+/* This image spins continuously, so its rotated bounding box (up to ~1.4x
+   its width on the diagonal) must fit comfortably inside the viewport, not
+   just its unrotated size — otherwise it causes a permanent horizontal
+   scroll on every phone. */
+@media (max-width: 768px) {
+  .gridmagg {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridmagg {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(180deg); }
@@ -114,7 +170,7 @@ html, body, #root {
 /* Transcript Modal - optimized for long text content */
 /* Consistent H1 and H2 styling */
 /* h1 {
-  font-family: sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 2.5rem;
   color: "black";
   margin-bottom: 1rem;
@@ -143,7 +199,7 @@ html, body, #root {
   }
 }
 h1 {
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean & professional font */
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; /* Clean & professional font */
   font-weight: 800; /* slightly bold for emphasis without being heavy */
   font-size: 2.8rem; /* slightly larger for readability */
   color: #201616; /* deep green, professional healthcare feel */
@@ -157,7 +213,7 @@ letter-spacing: 2px; /* characters er moddhe gap */
 
 
 h2 {
-  font-family: sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 2rem;
   color: #2d1e1e;       /* pure black */
   font-weight: 800;     /* bold */
@@ -167,7 +223,7 @@ letter-spacing: 2px; /* characters er moddhe gap */
 }
 
 h3 {
-  font-family: sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 1.5rem;
   color: #2b2222;       /* pure black */
   font-weight: 800;     /* bold */
@@ -178,8 +234,7 @@ letter-spacing: 4px; /* characters er moddhe gap */
 
 /* Main page titles */
 /* h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -196,7 +251,7 @@ letter-spacing: 4px; /* characters er moddhe gap */
 
 /* Subheadings */
 /* h2 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -606,7 +661,7 @@ min-height: 100%;
 .center {
   text-align: center;
   align-self: center;
-  font-family: "sans-serif";
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 }
 .hidden {
   display: none;
@@ -955,7 +1010,8 @@ min-height: 100%;
 }
 .acupen {
   width: 100%;
-  margin: 30px;
+  margin: 30px auto; /* auto side-margins so the 100% width doesn't add extra
+                        overflow on top of itself */
 }
 .gridmag {
   /* Set a consistent width for all images */
@@ -991,14 +1047,15 @@ min-height: 100%;
 /* Tablet and smaller devices */
 @media (max-width: 768px) {
   .Logo {
-    width: 60px;
+    width: 90px;
   }
 }
 
-/* Small mobile devices */
+/* Small mobile devices — most visitors land here, so keep the logo legible
+   rather than shrinking it down to the point of being unreadable. */
 @media (max-width: 480px) {
   .Logo {
-    width: 40px;
+    width: 78px;
   }
 }
 
@@ -1259,9 +1316,17 @@ button[type="submit"] {
 .container-bbblue {
   background-color: whitesmoke; /* Soft background color */
   display: flex;
+  flex-wrap: wrap; /* stack text/video columns instead of squeezing both on narrow screens */
   align-items: flex-start;
+  justify-content: center;
   gap: 20px; /* Increased gap between text and image */
   padding: 40px;
+}
+
+@media (max-width: 600px) {
+  .container-bbblue {
+    padding: 20px;
+  }
 }
 .p {
   font-size: 0.9rem; /* Makes text bigger - adjust as needed */
@@ -1390,6 +1455,31 @@ input[type="submit"]:hover {
   margin: 5px;
   bottom: 10px;
   
+}
+
+/* Blog quote card - used as a visual for text-driven blog posts that don't
+   have a photo of their own */
+.blog-quote-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00695c, #00332c);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.blog-quote-card-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.blog-quote-card-sub {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin: 0;
 }
 
 /* Footer container */
@@ -1625,7 +1715,7 @@ input[type="submit"]:hover {
   margin: 20px auto;
   padding: 20px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 }
 
 table {
@@ -1934,7 +2024,7 @@ td:last-child {
     white-space: nowrap;
     overflow-x: auto;
     display: block;
-    font-family: sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     font-size: 0.95rem;
     padding: 0.25rem;
     border-radius: 4px;

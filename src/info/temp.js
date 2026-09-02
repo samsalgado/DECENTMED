@@ -3,7 +3,7 @@
              <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
-    fontFamily: 'sans-serif',
+    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('ADHD Iceberg')}</h1>

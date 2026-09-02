@@ -4,7 +4,6 @@ import "../App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Info.css';
-import spectraspray from "../images copy/spectraspray.png";
 import { useTranslation } from 'react-i18next';
 import Collapsible from 'react-collapsible';
 import Reviewss from './drbrownreviews';
@@ -140,9 +139,6 @@ const Meno = () => {
               allowFullScreen
             />
        <div className="container-blue" data-aos="slide-left">
-           <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimage' src={spectraspray} alt='spectra spray' />
-             </a>
         </div> 
                  <Button onClick={learnmore} target='_blank' className="custom-btn">
                           {t('Providers: Signup Here')}

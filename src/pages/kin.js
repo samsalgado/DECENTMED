@@ -38,7 +38,7 @@ export default function AKPract() {
           paddingTop: '20px' // Add some breathing room if needed
         }}>
           <h1 style={{
-            fontFamily: 'sans-serif',
+            fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
             // Solution 5: Ensure h1 starts at top
             marginTop: 0
           }}>{t("Frequency Medicine")}</h1>

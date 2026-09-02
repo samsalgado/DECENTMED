@@ -9,7 +9,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import E from "./e";
 import ren from "../images copy/reikiben.png";
-import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
 import Footer from "../footer";
@@ -87,7 +86,7 @@ const learnmore = () => {
     </div>
     <div style={{
       flex: '1',
-      minWidth: '400px',
+      minWidth: 'min(400px, 100%)',
       position: 'relative',
       paddingBottom: '56.25%',
       height: 0
@@ -117,9 +116,6 @@ const learnmore = () => {
       <iframe width="560" height="315" src="https://www.youtube.com/embed/RoNbOhrSAMc?si=VDkJwYAwDABiU2Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/dmw4nDIS3ac?si=facb93zUWm9dOjDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
 <div data-aos="slide-right" className="container-blue">
  
                 <div>

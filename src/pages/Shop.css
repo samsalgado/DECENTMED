@@ -1,0 +1,262 @@
+/* ---------- Shop page layout ---------- */
+.shop-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+  box-sizing: border-box;
+}
+
+.shop-hero {
+  text-align: center;
+  margin: 30px auto 20px;
+}
+
+.shop-hero h1 {
+  font-size: 2.25rem;
+  color: #00695c;
+  margin: 0;
+}
+
+.shop-section {
+  margin: 50px 0;
+}
+
+.shop-section-title {
+  font-size: 1.6rem;
+  color: #00695c;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+/* ---------- Carousel ---------- */
+.shop-carousel-wrapper {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 10px;
+}
+
+.shop-carousel-wrapper .carousel .slide {
+  background: transparent;
+}
+
+.shop-carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.shop-carousel-img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* ---------- Banner CTA (Apothecary) ---------- */
+.shop-banner {
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.shop-banner img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.shop-banner-caption {
+  display: block;
+  text-align: center;
+  background-color: #00695c;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+}
+
+/* ---------- Video embeds ---------- */
+.shop-video {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.shop-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- Card grid ---------- */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.shop-card-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: whitesmoke;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.shop-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.shop-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px;
+  text-align: center;
+}
+
+.shop-card-title {
+  font-size: 1.1rem;
+  color: #00695c;
+  margin: 0 0 10px;
+}
+
+.shop-card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.shop-card-video {
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.shop-card-cta {
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  background-color: #00695c;
+  color: #fff !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+}
+
+.shop-card-cta:hover {
+  background-color: #004d40;
+}
+
+/* ---------- Featured book card ---------- */
+.shop-featured {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  align-items: flex-start;
+}
+
+.shop-featured-img-wrap {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.shop-featured-img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.shop-featured-body {
+  flex: 1 1 320px;
+}
+
+.shop-featured-body h2 {
+  color: #00695c;
+  margin-top: 0;
+}
+
+.shop-featured-body h3 {
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.shop-featured-body p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.shop-featured-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.shop-final-cta {
+  text-align: center;
+  margin: 60px 0 20px;
+}
+
+@media (max-width: 600px) {
+  .shop-featured {
+    padding: 20px;
+  }
+
+  .shop-featured-img-wrap {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}

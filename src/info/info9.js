@@ -7,7 +7,6 @@ import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
 import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
-import spectraspray from "../images copy/spectraspray.png";
 import group from "../images copy/group.png";
 import bethanyspeaks from "../images copy/bethanyspeaks.png";
 import specialoffer from "../images copy/specialoffer.png";
@@ -459,9 +458,6 @@ possible for you. So borrow our belief because so many clients have gotten incre
             height: '350px'
           }}
         />
-        <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
               <a href='https://calendly.com/shah333' alt="spectra spray">
             <img className='gridimag' src={sha} alt='spectra spray' />
              </a>
@@ -534,7 +530,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
-    fontFamily: 'sans-serif',
+    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>

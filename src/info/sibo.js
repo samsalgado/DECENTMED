@@ -31,9 +31,10 @@ const Sibo = () => {
           </h1>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div className="container-bbblue" style={{
+          <div className="container-bbblue sibo-video-row" style={{
             display: 'flex',
             flexDirection: 'row',
+            flexWrap: 'wrap',
             alignItems: 'center',
             gap: '20px',
             width: '100%'

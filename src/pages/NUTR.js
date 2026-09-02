@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "../App.css";
-import spectraspray from "../images copy/spectraspray.png";
 import ClinVids from "./clinvid";
 import { Button, Modal } from'react-bootstrap';
 import { useTranslation } from "react-i18next";
@@ -159,9 +158,6 @@ things together right because you are a complex puzzle a very Advanced biochemic
           }
         }
       `}</style>
-       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
 <div data-aos="slide-right"  className="container-blue">
      <iframe title="vimeo-player" src="https://player.vimeo.com/video/715588945?h=76c2c1fff8" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
       <br></br>

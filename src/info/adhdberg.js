@@ -7,7 +7,6 @@ import "../App.css";
 import { Button} from'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import adhd from "../images copy/adhd.png";
-import spectraspray from "../images copy/spectraspray.png";
 const Adhdberg = () => {
 const {t} = useTranslation('common');
  useEffect(() => {
@@ -60,9 +59,6 @@ const {t} = useTranslation('common');
           </div>
         </div>
         <div>
-           <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
            <div data-aos="slide-right" className="container-blue">
            <Button className="custom-btn" href="https://www.decentmed.org/coaching" target="_blank">{t('Find Out How An AHDH Coach Can Help You')}</Button>
            <a href='https://calendly.com/ambernacolle/15-30min' alt="ADHD Iceberg">

@@ -4,7 +4,6 @@ import "../App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Info.css';
-import spectraspray from "../images copy/spectraspray.png";
 import totalcare from '../images copy/totalcare.png';
 import naturopathy from '../images copy/naturopathybenefits.png';
 import { useTranslation } from 'react-i18next';
@@ -70,9 +69,6 @@ const Naturo = () => {
         
         <div className="container-blue" data-aos="slide-left">
 
-           <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimage' src={spectraspray} alt='spectra spray' />
-             </a>
                 <div data-aos="slide-right" className="container-blue">            
               <iframe
               width="100%"

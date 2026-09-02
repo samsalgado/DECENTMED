@@ -12,7 +12,6 @@ import 'aos/dist/aos.css';
 import framework from "../images copy/Screenshot 2026-03-21 at 7.56.50 AM.png";
 import ssreview from "../images copy/Screenshot 2026-03-21 at 7.55.32 AM.png";
 import greenreview from "../images copy/greenreview.png";
-import spectraspray from "../images copy/spectraspray.png";
 import ReactDOM from 'react-dom';
 import Hypnostudies from "./hypnostudy";
 const HYPNO = () => {
@@ -103,9 +102,6 @@ const {t} = useTranslation('common');
         }
       `}</style>
       
-       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
     <div data-aos="slide-right" className="container-blue">
             <Collapsible trigger={<h3 className="collapsible-trigger">{t('Hypnosis Silver Springs')}</h3>}>
   <div className="row">

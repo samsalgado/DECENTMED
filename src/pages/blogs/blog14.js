@@ -24,11 +24,11 @@ const Blog14 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: 'sans-serif' }}>{t('Pain Pill for Back: Best Chiropractor Near Me')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center',  fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Pain Pill for Back: Best Chiropractor Near Me')}
         </h1>
         <img className='gridimag' src={chirotreat} alt="logo" />
       </div>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t(`Back pain effects an estimated "80% of the US population". As people age, pain becomes more and more frequent. According to`)} <a href="https://nida.nih.gov/news-events/news-releases/2024/05/over-115-million-pills-containing-illicit-fentanyl-seized-by-law-enforcement-in-2023"> {t('NIDA')}</a>: {t(`Over 115 million pills containing illicit fentanyl seized by law enforcement in 2023, if this the seized number, imagine the actual number of pills containing fentanyl last year. The 'War on Drugs' was a collosal failure in the United States; Oregon decriminalized drugs in its state. However, this decision has not worked either, resulting in rampant drug use, overdose, homelessness and fentanyl deaths. Pain pills, or opioids have a long history of abuse and addiction. In 2022, over 107,000 people died of a drug overdose, with 75% of those deaths involving an opioid. According to WebMD: Estimated 3 million Americans suffer from OUD (Opioid Use Disorder). Chiropractors take a holistic perspective, the body can heal itself. Chiropractic techniques are 40% more effective than medical care for lower back pain. Suffering from back pain? Type: best chiropractor near me instead of using pain pills for back.`)}</p>
@@ -60,6 +60,24 @@ const Blog14 = () => {
       </Button>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

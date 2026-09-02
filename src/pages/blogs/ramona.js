@@ -23,7 +23,7 @@ const Ramona = () => {
                            <div className="container-blue">
 
       <div className='container'>
-      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: 'sans-serif' }}>{t('Ending Corporate Burnout')}</h1>
+      <h1 style={{ textDecoration: 'underline', textAlign: 'center', marginTop: '110px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('Ending Corporate Burnout')}</h1>
         <a href="https://authenticlifejourney.as.me/schedule/f3645bcd/appointment/59514298/calendar/any?appointmentTypeIds[]=59514298">
         <img className='gridimag' src={ramona} alt="logo" />
         </a>
@@ -47,7 +47,7 @@ const Ramona = () => {
       </Button>
       </div>
       
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t(`Are you a high-performing woman who feels stuck? Do you have it all together and still feel disconnected? Corporate burnout is right around the corner, so let this be your warning sign. You do not have to feel stuck, you can feel connected again and do not have to do it alone. Transformative coach Ramona Crabtree-Falkner can help you reconnect with yourself.`)}</p>
@@ -70,6 +70,24 @@ const Ramona = () => {
 </div>
       </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

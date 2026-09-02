@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import DETOXIMG from '../images copy/detoxpg.png';
 import Fruits from './fruits';
 import './Info.css';
-import spectraspray from "../images copy/spectraspray.png";
 import Protocols from './Protocols';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { Button, Modal } from 'react-bootstrap';
@@ -29,9 +28,6 @@ const Info3 = () => {
             <br></br>
                             <div className="container-blue">
 
-            <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
       <br></br>
       <div className="collapsible"></div>
 

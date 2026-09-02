@@ -24,7 +24,7 @@ const Blog20 = () => {
                            <div className="container-blue">
 
       <div className='container'>
-        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: 'sans-serif' }}>{t('How much Does Acupuncture Cost?')}
+        <h1 style={{ textDecoration: 'underline', textAlign: 'center', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>{t('How much Does Acupuncture Cost?')}
         </h1>
        
       </div>
@@ -55,7 +55,7 @@ const Blog20 = () => {
   />
 </div>
 
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
         <div className='pr'>
           <p>
             {t("Acupuncture, a practice rooted in Traditional Chinese Medicine, has gained popularity worldwide for its potential benefits in managing pain, reducing stress, and improving overall wellness. However, many people are curious about the acupuncture cost before deciding to give it a try. In this blog, we will break down the factors that influence the price of acupuncture treatments, so you can make an informed decision.")}</p>
@@ -99,6 +99,24 @@ const Blog20 = () => {
 </div>
         </div>
       </div>
+      <Button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '10px 20px',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          textAlign: 'center',
+          textDecoration: 'none',
+        }}
+        className="custom-btn"
+        href="https://oldwiseowladvisor.com/#contactus"
+        target="_blank"
+      >
+        {t('Connect with Samuel')}
+      </Button>
       <Footer />
     </div>
   );

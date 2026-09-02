@@ -10,7 +10,6 @@ import Collapsible from 'react-collapsible';
 import 'aos/dist/aos.css';
 import { Button } from 'react-bootstrap';
 import Vets from './vets';
-import spectraspray from "../images copy/spectraspray.png";
 const Ptsdd = () => {
   const {t} = useTranslation('common');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -229,10 +228,6 @@ const Ptsdd = () => {
     allowFullScreen
   />
 </div>
-       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
-             
       <h1>{t("PTSD Help")}</h1>
       <div data-aos="slide-right">
       <PTSDvids />

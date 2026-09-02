@@ -7,7 +7,6 @@ import { Button, Modal } from'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import B from "./B";
-import spectraspray from "../images copy/spectraspray.png";
 import { Helmet } from "react-helmet";
 import Topbar from "./topbar";
 import Footer from "../footer";
@@ -79,7 +78,7 @@ const learnmore = () => {
     </div>
     <div style={{
       flex: '1',
-      minWidth: '400px',
+      minWidth: 'min(400px, 100%)',
       position: 'relative',
       paddingBottom: '56.25%',
       height: 0
@@ -106,9 +105,6 @@ const learnmore = () => {
   </div>
   
 </div>     
-<a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/k1xiB5xFrqQ?si=QgSv5ucYcmlbs2Xt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <div data-aos="slide-right" className="container-blue">
   <Collapsible

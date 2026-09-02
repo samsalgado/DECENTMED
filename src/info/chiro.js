@@ -14,7 +14,6 @@ import review from '../images copy/reviewtcnh.png';
 import chiroNL from '../images copy/IMG_9311.jpeg';
 import reviewtcc from "../images copy/reviewtcc.png";
 import tcc from "../images copy/tcc.png";
-import spectraspray from "../images copy/spectraspray.png";
 import Collapsible from 'react-collapsible';
 import stats from '../images copy/stats.jpg';
 import { Button } from 'react-bootstrap';
@@ -79,9 +78,6 @@ const Chiro = () => {
     `}</style>
        <div data-aos="slide-right" className="container-blue">
 
-     <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-            <img className='gridimag' src={spectraspray} alt='spectra spray' />
-             </a>
       <h2>{t("EMSELLA® Chair Treatment")}</h2>   
       <p>
         {t("Our exciting new EMSELLA® Chair Therapy treats incontinence, and aids in improving sexual function for men and women. Join the movement toward a treatment for these issues without the high cost, risk, pain, and recovery time of surgery and without drugs!")}

@@ -6,7 +6,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import event6 from "../images copy/airtable.png";
 import { Button } from'react-bootstrap';
-import spectraspray from "../images copy/spectraspray.png";
 import HealingBen from "./healben";
 import { useTranslation } from "react-i18next";
 const Info11 = () => {
@@ -43,14 +42,14 @@ const {t} = useTranslation('common');
           <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">{t("Book Sound Healing Session")}</Button>  {/* Added Bootstrap Button */}
         </div>
          <div>
-                     <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/3wMDLvsGszU?si=jH-somtaNgNFsU2J" frameborder="0" allowfullscreen></iframe>
+                     <iframe className="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/3wMDLvsGszU?si=jH-somtaNgNFsU2J" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         
       </div>
       <div className="container-blue">
-                     <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/gvFt9Xh9iMU?si=PVY_x1ev4W0g7i2f" frameborder="0" allowfullscreen></iframe>
-                     <iframe class="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/k1xiB5xFrqQ?si=QgSv5ucYcmlbs2Xt" frameborder="0" allowfullscreen></iframe>
+                     <iframe className="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/gvFt9Xh9iMU?si=PVY_x1ev4W0g7i2f" frameborder="0" allowfullscreen></iframe>
+                     <iframe className="rumble" title="Sound Healing" width="640" height="360" src="https://www.youtube.com/embed/k1xiB5xFrqQ?si=QgSv5ucYcmlbs2Xt" frameborder="0" allowfullscreen></iframe>
     <div data-aos="slide-right" className="vertical-video">
       
   <iframe 
@@ -87,14 +86,11 @@ const {t} = useTranslation('common');
 </div>
        <Button className="custom-btn" href="https://unioniscreation.com/" target="_blank">{t('Experience Sound Healing (UNIONisCREATION™)')}</Button>
       <br></br>
-       <a href='https://www.spectraspray.com/shop' alt="spectra spray">
-                  <img className='gridimag' src={spectraspray} alt='spectra spray' />
-                   </a>
                        <br></br>  
                   <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
-    fontFamily: 'sans-serif',
+    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Healing Sounds Testimonial')}</h1>
@@ -248,7 +244,7 @@ const {t} = useTranslation('common');
       <h1 style={{
     textDecoration: 'underline',
     textAlign: 'center',
-    fontFamily: 'sans-serif',
+    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
     marginTop: '4.5rem',
     paddingTop: '3rem'
   }}>{t('Events')}</h1>
