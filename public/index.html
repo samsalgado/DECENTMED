@@ -19,6 +19,28 @@
     <link rel="preload" as="image" href="%PUBLIC_URL%/dmed.webp" fetchpriority="high" type="image/webp" />
 
     <!--
+      Site-wide entity markup for answer engines (Google AI Overviews,
+      Bing Copilot, ChatGPT/Perplexity browsing, etc.) so DecentMed is
+      recognized as a distinct organization independent of any one page.
+      Page-specific structured data (e.g. FAQPage on /faq) is added per
+      page via react-helmet.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "DecentMed",
+        "url": "https://decentmed.org",
+        "logo": "https://decentmed.org/logo192.png",
+        "description": "DecentMed is a holistic medicine information portal that connects patients with vetted holistic health providers - including acupuncture, naturopathy, chiropractic, functional medicine, energy healing, and more - via telehealth.",
+        "sameAs": [
+          "https://www.linkedin.com/company/themerlingroupworld/",
+          "https://www.youtube.com/@DCNTMD"
+        ]
+      }
+    </script>
+
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -48,6 +70,21 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <!--
+      Hidden static form so Netlify's build-time bot can detect and register
+      the "summit-signup" form (Netlify only scans plain HTML at build time,
+      not forms rendered by React at runtime). The real, interactive version
+      of this form lives in src/info/SummitForm.js and submits to this same
+      form name via fetch(). Do not remove or rename fields here without
+      updating SummitForm.js to match.
+    -->
+    <form name="summit-signup" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

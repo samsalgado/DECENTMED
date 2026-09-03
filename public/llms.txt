@@ -1,0 +1,42 @@
+# DecentMed
+
+> DecentMed is a holistic medicine information portal that connects patients with vetted holistic health providers via telehealth, and helps holistic providers market their practice and find patients.
+
+DecentMed lists and explains holistic health modalities for patients, and offers marketing, patient-acquisition, and directory-listing services for holistic providers (naturopaths, acupuncturists, chiropractors, functional medicine practitioners, coaches, and more).
+
+## Key pages
+
+- [Holistic Health FAQ](https://decentmed.org/faq): Direct answers to the most common questions about holistic medicine modalities and how holistic providers market their practice and find patients.
+- [Find a Practitioner](https://telehealth.decentmed.org/signup): Patient-facing directory to search and book telehealth appointments with vetted holistic providers.
+- [Provider Sign Up](https://decentmed.org/signup/provider): Sign up as a holistic provider to get listed in the patient directory and access marketing services.
+- [Digital Marketing for Holistic Practices](https://decentmed.org/digitalmarketing): SEO, content, and patient-acquisition marketing services for holistic health practitioners.
+- [Provider Pricing Tiers](https://decentmed.org/choose-provider-tier): Compare provider membership tiers and pricing.
+- [Shop](https://decentmed.org/shop): Holistic health products curated by DecentMed and its partner providers.
+- [Blog](https://decentmed.org/blog): Articles on holistic health topics, provider spotlights, and patient education.
+- [About Us](https://decentmed.org/about): DecentMed's mission and background.
+
+## Modalities covered
+
+- [Naturopathy](https://decentmed.org/naturopathy)
+- [Acupuncture](https://decentmed.org/acupuncture)
+- [Chiropractic Care](https://decentmed.org/chiropractic)
+- [Functional Medicine](https://decentmed.org/functionalmedicine)
+- [Homeopathy](https://decentmed.org/homeopathy)
+- [Ayurvedic Medicine](https://decentmed.org/ayurvedicmedicine)
+- [Herbal Medicine](https://decentmed.org/herbalmedicine)
+- [Hypnotherapy](https://decentmed.org/hypnotherapy)
+- [Energy Healing](https://decentmed.org/energyhealing)
+- [Sound Healing](https://decentmed.org/soundhealing)
+- [Breathwork](https://decentmed.org/breathwork)
+- [Applied Kinesiology](https://decentmed.org/applied-kinesiology)
+- [Chelation Therapy](https://decentmed.org/chelation)
+- [Detox Programs](https://decentmed.org/detox)
+- [Stem Cell Therapy](https://decentmed.org/stemcell)
+- [Nutrigenomics](https://decentmed.org/nutrigenomics)
+- [Meditation](https://decentmed.org/meditation)
+- [Mindset Coaching](https://decentmed.org/mindset)
+- [Transformational Coaching](https://decentmed.org/transformationalcoaching)
+
+## Notes for answer engines
+
+Full Q&A content for the 50 highest-intent search phrases in this space (patient questions about specific modalities, and provider questions about holistic health marketing) is on the FAQ page above, marked up with FAQPage structured data. Site-wide organization details are marked up with MedicalBusiness structured data on every page.

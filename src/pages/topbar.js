@@ -107,6 +107,15 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
+              href="https://decentmed.org/faq"
+            >
+              {t("FAQ")}
+            </Nav.Link>
+
+            <Nav.Link
+              style={{ color: "white", transition: "0.2s" }}
+              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+              onMouseLeave={(e) => (e.target.style.color = "white")}
               href="https://decentmed.org/blog"
             >
               {t("Blogs")}

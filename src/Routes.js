@@ -1,5 +1,6 @@
 module.exports = [
   { path: "/" },
+  { path: "/faq" },
   { path: "/soundhealing" },
   { path: "/soundhealers" },
   { path: "/404" },

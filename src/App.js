@@ -102,6 +102,7 @@ const Acupuncture = lazy(() => import('./pages/Acupuncture'));
 const Brain = lazy(() => import('./pages/Brain'));
 const Ayurveda = lazy(() => import('./pages/Ayurveda'));
 const Marketing = lazy(() => import('./pages/DigitalMarketing'));
+const HolisticHealthFAQ = lazy(() => import('./pages/HolisticHealthFAQ'));
 const Chiropractic = lazy(() => import('./pages/Chiropractic'));
 const Chelation = lazy(() => import('./pages/Chelation'));
 const Telehealth = lazy(() => import('./pages/Telehealth'));
@@ -234,6 +235,7 @@ function App() {
         <Route path="/acupuncture" element={<Acupuncture t={t} />} />
         <Route path="/chelation" element={<Chelation t={t} />} />
         <Route path="/digitalmarketing" element={<Marketing t={t} />} />
+        <Route path="/faq" element={<HolisticHealthFAQ t={t} />} />
         <Route path="/homeopathy" element={<Homeopathy t={t} />} />
         <Route path="/telehealth" element={<Telehealth t={t} />} />
         <Route path="/about" element={<About t={t} />} />
