@@ -13,11 +13,11 @@ const {t} = useTranslation('common')
         <br></br>
         {t("- Stacy Theodossin")}
       </blockquote>
-      <div className="video-wrapper">
+       <div className="video-wrapper" style={{ margin: '0 auto' }}>
         <iframe
           width="100%"
           height="515"
-          src="https://drive.google.com/file/d/1SFUVWy939D51V1H6dKUtVPhT1ReKWi6n/preview"
+          src="https://www.youtube.com/embed/iI5BqYd5FNo?si=5Til0TpUny87l4QG"
           title="Patient Acquisition Engine Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

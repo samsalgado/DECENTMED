@@ -27,6 +27,22 @@ const Info = () => {
     <div className='container'>
       <div className="container-blue" style={{ marginTop: '20px', marginBottom: '20px' }}>
         <h1 className='logotitle'>{t('DecentMed: Connecting Patients with Providers')}</h1>
+         <div className="video-wrapper" style={{ margin: '0 auto' }}>
+        <iframe
+          width="100%"
+          height="515"
+          src="https://www.youtube.com/embed/iI5BqYd5FNo?si=5Til0TpUny87l4QG"
+          title="Patient Acquisition Engine Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{
+            borderRadius: '12px',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
+            border: 'none',
+            overflow: 'hidden'
+          }}
+        />
+      </div>
       </div>
       <div style={{ marginBottom: '20px' }}>
         <BlueContainer />
