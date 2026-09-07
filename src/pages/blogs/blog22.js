@@ -14,8 +14,8 @@ const Blog22 = () => {
 
       <Helmet>
         <title>{t('Fertility and Naturopathic Medicine')}</title>
-        <meta property="og:title" content="Fertility and Naturopathic Medicine" />                
-        <meta name="description" content="Fertility and Naturopathic Medicine" />        
+        <meta property="og:title" content={"Fertility and Naturopathic Medicine"} />
+        <meta name="description" content={t("Explore how naturopathic medicine supports fertility through hormone balance, nutrition, and lifestyle changes, a holistic complement to conventional fertility treatment.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta 
           name="description" 

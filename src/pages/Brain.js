@@ -37,10 +37,9 @@ const learnmore = () => {
          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("Emotional Brain Training")}</title>
-                <meta property="og:title" content={t('Emotional Brain Training')} />                
-                <meta name="description" content={t("Experience Intuitive Energy Healing")} />
-                    <meta name="description" content={t("Seeking Energy Healing near me? Experience intuitive energy healing from around the world.")} />
-                </Helmet>
+        <meta property="og:title" content={t('Emotional Brain Training')} />
+        <meta name="description" content={t("Emotional Brain Training combines neuroplasticity-based Combat Brain Training with intuitive sound healing to support recovery from brain injury, concussions, and chronic headaches by addressing both structural and energetic levels.")} />
+        </Helmet>
                 <header>
                     <Topbar />
                 </header>

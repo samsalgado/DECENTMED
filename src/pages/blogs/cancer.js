@@ -118,12 +118,10 @@ const Blog6 = () => {
            <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t("Vitamin B17")}</title>
-                        <meta property="og:title" content="Vitamin B17" />                
-        <meta name="description" content="Vitamin B17" />        
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content={"Vitamin B17"} />
         <meta name="description" content={t("Many medical professions state that diseases like cancer exist from a vitamin B and vitamin B17 deficiency. Explore the mysteries behind vitamin B17.")} />
-      </Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </Helmet>
       <header>
         <Topbar />
       </header>

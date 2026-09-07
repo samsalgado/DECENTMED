@@ -20,13 +20,9 @@ export function ProviderLandingPage() {
     <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t('Provider Sign Up')}</title>
-        <meta property="og:title" content={t("Provider Landing Page")} />                
-        <meta name="description" content={t("Provider Landing Page")} />        
-        <meta
-          name="description"
-          content={t("Discover how Mesenchymal Stem Cell therapy supports tissue repair, reduces inflammation, and promotes natural healing for a wide range of conditions.")}        
-        />      
-      </Helmet>
+        <meta property="og:title" content={t("Provider Sign Up")} />
+        <meta name="description" content={t("Join DecentMed's holistic provider network to get listed in our patient-facing directory, access telehealth booking, and grow your practice with built-in marketing and patient acquisition support.")} />
+        </Helmet>
       <div 
         style={{ 
           backgroundImage: `url(${plants})`, 

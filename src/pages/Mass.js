@@ -41,10 +41,10 @@ export default function MassPract() {
                                                                 <div className="container-blue">
 
       <Helmet>
-        <title>{t('Massage Therapy')} - DecentMed</title>
-                <meta property="og:title" content={t("Find a Practitioner")} />                
-        <meta name="description" content={t("Find a Practitioner")} />        
-      </Helmet>
+        <title>{t("Find Massage Therapists Near You - Location-Based Massage Care")}</title>
+        <meta property="og:title" content={t("Find Massage Therapists Near You - Location-Based Massage Care")} />
+        <meta name="description" content={t("Find massage therapists in your area. Enter your location to see available massage therapy providers near you.")} />
+        </Helmet>
     <header>
       <Topbar />      
     </header>

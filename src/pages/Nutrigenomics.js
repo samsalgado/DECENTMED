@@ -13,11 +13,10 @@ const { t } = useTranslation('common');
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Nutrigenomics")}</title> 
-                <meta property="og:title" content={t("Nutrigenomics")} />                
-        <meta name="description" content={t("Nutrigenomics")} />        
+        <title>{t("Nutrigenomics")}</title>
+        <meta property="og:title" content={t("Nutrigenomics")} />
         <meta name="description" content={t("Discover the best nutrigenomics services for weight management. Learn how DNA‑based nutrition can optimize metabolism, support healthy weight goals, and improve overall wellness.")} />
-      </Helmet>
+        </Helmet>
             <header>
             <Topbar />
             </header>

@@ -10,16 +10,12 @@ export default function Home() {
   return (
     <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
-        <title>{t('DecentMed')}</title>
-        <meta property="og:title" content={t("DecentMed")} />
-        <meta name="description" content={t("DecentMed")} />
-        <meta
-          name="description"
-          content={t(
+        <title>{t("DecentMed: Connecting Patients with Providers")}</title>
+        <meta property="og:title" content={t("DecentMed: Connecting Patients with Providers")} />
+        <meta name="description" content={t(
             "DecentMed: a holistic medicine information portal that connects patients with providers. Explore how holistic medicine is right for you!"
-          )}
-        />
-      </Helmet>
+          )} />
+        </Helmet>
       <Topbar t={t} />
       <Info t={t} />
       <br />

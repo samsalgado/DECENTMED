@@ -16,12 +16,10 @@ export default function Prevent() {
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
              <Helmet>  {/* Add Helmet component */}
-        <title>Cellular Regeneration</title>  
-                                                  <meta property="og:title" content={t("Cellular Regeneration")} />                
-        <meta name="description" content={t("Cellular Regeneration")} />        
-
-        <meta name="description" content="Cellular regneration, your health is interconnected to your external environment, energy source, and internal body functions. Explore how preventive wellness can help you in your health journey." />
-      </Helmet>
+        <title>{t("Preventive Wellness & Cellular Health")}</title>
+        <meta property="og:title" content={t("Preventive Wellness & Cellular Health")} />
+        <meta name="description" content={"Cellular regneration, your health is interconnected to your external environment, energy source, and internal body functions. Explore how preventive wellness can help you in your health journey."} />
+        </Helmet>
             <header>
             <Topbar />
             </header>

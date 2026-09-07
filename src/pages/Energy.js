@@ -36,10 +36,9 @@ const learnmore = () => {
          <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("Intuitive Energy Healing")}</title>
-                <meta property="og:title" content={t('Intuitive Energy Healing')} />                
-                <meta name="description" content={t("Experience Intuitive Energy Healing")} />
-                    <meta name="description" content={t("Seeking Energy Healing near me? Experience intuitive energy healing from around the world.")} />
-                </Helmet>
+        <meta property="og:title" content={t('Intuitive Energy Healing')} />
+        <meta name="description" content={t("Seeking Energy Healing near me? Experience intuitive energy healing from around the world.")} />
+        </Helmet>
                 <header>
                     <Topbar />
                 </header>
@@ -130,13 +129,38 @@ const learnmore = () => {
       </div>
   <Collapsible
     trigger={
-      <th className="collapsible-trigger">
+      <div className="collapsible-trigger">
         {t('Energy Work for PTSD Slide Deck')}
-      </th>
+      </div>
     }
   >
     <E />
+          <Button className="custom-btn" href="https://app.acuityscheduling.com/schedule/c8f159b0/appointment/93141649/calendar/14072380?categories[]=%20Begin%20Here%2C%20Free%20Discovery%20Chat" target="_blank">{t("Try Energy Healing")}</Button>
+
   </Collapsible>
+
+  <div className="container-blue" style={{ maxWidth: '700px', margin: '20px auto' }}>
+          <h2>{t("Understanding Quantum Energy Healing")}</h2>
+
+    <p className='pr'>
+      {t("Most profiles list modalities like a menu. Steven McCann works differently. His focus at Pathwalker Quantum Healing is what he calls \"The Gap\" — the space between knowing something intellectually and actually living it. His clients usually aren't new to this work; they've done therapy, read the books, had the insights. What's missing isn't another technique — it's integration. Steve's role is to guide that process, drawing on Reiki, Quantum Shifting, hypnosis, NLP, or shamanic practice as the moment calls for. The starting premise: you were never broken. Nothing needs fixing. What's needed is allowing.")}
+    </p>
+    <p className='pr'>
+      {t("With a 12-year shamanic apprenticeship, Usui Reiki Master certification, and AWAKE School training, Steve brings real depth — but credentials aren't the pitch. What sets him apart is treating each person as already whole, and treating his job as clearing space for insight to finally become lived experience.")}
+    </p>
+    <div className="video-wrapper" style={{ margin: '20px auto' }}>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QYylvSvGgwQ"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+    </div>
+    <Button className="custom-btn" href="https://pathwalkerquantumhealing.com/contact" target="_blank">{t("Work with Steven")}</Button>
+  </div>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iA3DmEqtO1E?si=I8Tavmfvjo6x3_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div>

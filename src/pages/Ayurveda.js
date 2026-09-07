@@ -15,11 +15,10 @@ useEffect(() => {
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Ayurveda Experience")}</title> 
-                        <meta name="description" content={t('Ayurveda Experience')} />
-                <meta property="og:title" content={t('Experience the Ayurveda Experience')} /> 
+        <title>{t("Ayurveda Experience")}</title>
+        <meta property="og:title" content={t('Experience the Ayurveda Experience')} />
         <meta name="description" content={t("Experience the future of wellness in 2025. Explore The Ayurveda Experience for AI-guided mind-body balance, natural healing, and personalized holistic health.")} />
-      </Helmet>
+        </Helmet>
         <header>
         <Topbar />
         </header>

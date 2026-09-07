@@ -18,10 +18,9 @@ export default function Marketing() {
         <div>
             <Helmet>
                 <title>{t("Digital Marketing agency near me")}</title>
-                <meta name="description" content={t('Digital Marketing agency near me')} />
-                <meta property="og:title" content={t('Digital Marketing agency near me')} />                
-                <meta name="description" content={t("Searching for a digital marketing agency near me?Look no further; we implement data-driven SEO strategies and affordable PPC services like Google Ads or Meta Ads for your company.")} />
-            </Helmet>
+        <meta property="og:title" content={t('Digital Marketing agency near me')} />
+        <meta name="description" content={t("Searching for a digital marketing agency near me?Look no further; we implement data-driven SEO strategies and affordable PPC services like Google Ads or Meta Ads for your company.")} />
+        </Helmet>
             <header>
                 <Topbar />
             </header>

@@ -28,10 +28,9 @@ export default function Breathwork({ providerEmail }) {
   return (
     <div>
         <Helmet>
-          <title>{t("Somatic Breathwork")}</title>
-                                  <meta name="description" content={t('Experience Somatic Breathwork from global experts')} />
-                <meta property="og:title" content={t('Somatic Breathwork')} />
-          <meta name="description" content={t("If you want one of the best emotional eating books...")} />
+          <title>{t("Somatic Breathwork Coaches")}</title>
+        <meta property="og:title" content={t("Somatic Breathwork Coaches")} />
+        <meta name="description" content={t("Find certified somatic breathwork coaches offering guided sessions to reduce stress, release trauma, and reconnect breath with the nervous system. Explore practitioner profiles and book a session.")} />
         </Helmet>
 
         <header>

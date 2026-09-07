@@ -13,13 +13,9 @@ export default function ReviewPage() {
         <div>
             <Helmet>
                 <title>{t("Our Reviews")}</title>
-            <meta property="og:title" content={t("Our Reviews")} />                
-        <meta name="description" content={t("Our Reviews")} />        
-                <meta
-                name="description"
-                content={t("Searching for a digital marketing agency near me? Read our reviews to see how clients benefit from data-driven SEO strategies and affordable PPC services like Google Ads and Meta Ads for their business growth.")}
-                />
-            </Helmet>
+        <meta property="og:title" content={t("Our Reviews")} />
+        <meta name="description" content={t("Searching for a digital marketing agency near me? Read our reviews to see how clients benefit from data-driven SEO strategies and affordable PPC services like Google Ads and Meta Ads for their business growth.")} />
+        </Helmet>
             <header>
                 <Topbar />
             </header>

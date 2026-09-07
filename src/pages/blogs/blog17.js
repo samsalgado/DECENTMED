@@ -12,12 +12,10 @@ const Blog17 = () => {
 
     <Helmet>
         <title>How to Accept Bitcoin Payments as a Business</title>
-       <meta property="og:title" content="How to Accept Bitcoin Payments as a Business" />                
-        <meta name="description" content="How to Accept Bitcoin Payments as a Business" />        
-
+        <meta property="og:title" content={"How to Accept Bitcoin Payments as a Business"} />
+        <meta name="description" content={"What is Bitcoin? Bitcoin is speculative to some and hope for others. Explore how to accept Bitcoin as payment!"} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="What is Bitcoin? Bitcoin is speculative to some and hope for others. Explore how to accept Bitcoin as payment!" />
-      </Helmet>
+        </Helmet>
       <header>
         <Topbar />
       </header>

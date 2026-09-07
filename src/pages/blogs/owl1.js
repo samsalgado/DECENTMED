@@ -12,12 +12,10 @@ const Owl1 = () => {
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t('Psychic Protection')}</title>
-        <meta property="og:title" content={t("Psychic Protection")} />                
-        <meta name="description" content={t("Psychic Protection")} />        
+        <meta property="og:title" content={t("Psychic Protection")} />
+        <meta name="description" content={t("Psychic Protection: An Ounce Of Prevention By Samuel Abrams: Discover the ultimate guide to understanding psychic protection. The technique most commonly found in the literature is surrounding yourself with the white (or gold) light of divine protection.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" 
-        content={t("Psychic Protection: An Ounce Of Prevention By Samuel Abrams: Discover the ultimate guide to understanding psychic protection. The technique most commonly found in the literature is surrounding yourself with the white (or gold) light of divine protection.")} />
-      </Helmet>
+        </Helmet>
       <header>
         <Topbar />
       </header>

@@ -91,12 +91,10 @@ const kansasTerms = [
    <div style={{ width: "100%", margin: 0, padding: 0 }}>
 
       <Helmet>
-        <title>{t("Find Chiropractors Near You - Location-Based Chiropractic Care")}</title> 
-                                <meta name="description" content={t('Find Chiropractors Near You - Location-Based Chiropractic Care')} />
-                <meta property="og:title" content={t('Find Chiropractors Near You - Location-Based Chiropractic Care')} />
- 
+        <title>{t("Find Chiropractors Near You - Location-Based Chiropractic Care")}</title>
+        <meta property="og:title" content={t('Find Chiropractors Near You - Location-Based Chiropractic Care')} />
         <meta name="description" content={t("Find chiropractors in your area. Enter your location to see available chiropractic care providers near you.")} />
-      </Helmet>
+        </Helmet>
 
       <header>
         <Topbar />

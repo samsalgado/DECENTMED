@@ -9,11 +9,10 @@ const { t } = useTranslation('common');
     return( 
         <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Menopause")}</title>  
-                          <meta name="description" content={t("Perimenopause vs Menopause and Postmenopause")} />        
-        <meta name="description" content={t("Perimenopause vs Menopause and Postmenopause")} />
+        <title>{t("Menopause")}</title>
+        <meta property="og:title" content={t("Menopause")} />
         <meta name="description" content={t("When searching Perimenopause vs Menopause and Postmenopause, remember that the body has an immense regenerative potential to heal itself. Find a practitioner that can help you address your needs.")} />
-      </Helmet>
+        </Helmet>
         <header>
             <Topbar />
         </header>

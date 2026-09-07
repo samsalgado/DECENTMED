@@ -42,12 +42,10 @@ export default function StemPract() {
   return(
     <div>
       <Helmet>
-        <title>{t("Find Stem Cell Therapy Near You - Location-Based Treatment")}</title>  
-                <meta property="og:title" content={t("Find Stem Cell Therapy Near You - Location-Based Treatment")} />                
-        <meta name="description" content={t("Find Stem Cell Therapy Near You - Location-Based Treatment")} />        
-
+        <title>{t("Find Stem Cell Therapy Near You - Location-Based Treatment")}</title>
+        <meta property="og:title" content={t("Find Stem Cell Therapy Near You - Location-Based Treatment")} />
         <meta name="description" content={t("Find stem cell therapy providers in your area. Enter your location to see available stem cell treatment centers near you.")} />
-      </Helmet>
+        </Helmet>
 
       <header>
         <Topbar />

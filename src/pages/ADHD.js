@@ -14,11 +14,10 @@ const { t } = useTranslation('common');
     return(
       <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("ADHD Iceberg")}</title>  
-        <meta property="og:title" content={t("ADHD Iceberg")} />                
-        <meta name="description" content={t("ADHD Iceberg")} />        
+        <title>{t("ADHD Iceberg")}</title>
+        <meta property="og:title" content={t("ADHD Iceberg")} />
         <meta name="description" content={t("Learn about the ADHD Iceberg and how coaching can help! Learn more.")} />
-      </Helmet>
+        </Helmet>
 
             <header>
             <Topbar />

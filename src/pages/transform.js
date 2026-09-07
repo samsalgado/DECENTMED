@@ -9,11 +9,10 @@ const { t } = useTranslation('common');
     return(
        <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Transformative Coaching")}</title> 
-                        <meta property="og:title" content={t("Transformative Coaching")} />                
-        <meta name="description" content={t("Transformative Coaching")} />        
+        <title>{t("Transformative Coaching")}</title>
+        <meta property="og:title" content={t("Transformative Coaching")} />
         <meta name="description" content={t("Learn about transformative coaching and its benefits! Discover the ancient wisdom and techniques used to help people cope with stress, burnout, and more. Learn more.")} />
-      </Helmet>
+        </Helmet>
             <header>
             <Topbar />
             </header>

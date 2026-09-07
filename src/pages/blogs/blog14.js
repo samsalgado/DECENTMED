@@ -12,12 +12,10 @@ const Blog14 = () => {
 
       <Helmet>
         <title>{t('Pain Pill for Back')}</title>
-                                                <meta property="og:title" content={t("Pain Pill for Back")} />                
-        <meta name="description" content={t("Pain Pill for Back")} />        
-
+        <meta property="og:title" content={t("Pain Pill for Back")} />
+        <meta name="description" content={"Discover the hidden secret about hair growth. Batana oil is rich in vitamin E, learn more about batana oil benefits."} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Discover the hidden secret about hair growth. Batana oil is rich in vitamin E, learn more about batana oil benefits." />
-      </Helmet>
+        </Helmet>
       <header>
         <Topbar />
       </header>

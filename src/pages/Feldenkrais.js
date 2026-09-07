@@ -9,11 +9,10 @@ const { t } = useTranslation('common');
     return( 
         <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("What is Feldenkrais")}</title>  
-        <meta name="description" content={t("Naturopathy Near Me")} />        
-        <meta name="description" content={t("What is Feldenkrais")} />
+        <title>{t("What is Feldenkrais")}</title>
+        <meta property="og:title" content={t("What is Feldenkrais")} />
         <meta name="description" content={t("What is Feldenkrais? Discover the Feldenkrais Method: a gentle, somatic therapy that uses mindful movement to retrain your nervous system, relieve chronic pain, and improve mobility.")} />
-      </Helmet>
+        </Helmet>
         <header>
             <Topbar />
         </header>

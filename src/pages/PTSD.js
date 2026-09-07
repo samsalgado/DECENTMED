@@ -13,11 +13,10 @@ const { t } = useTranslation('common');
     return( 
     <div>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("CPTSD vs PTSD")}</title>  
-                                                                  <meta property="og:title" content={t("CPTSD vs PTSD")} />                
-        <meta name="description" content={t("CPTSD vs PTSD")} />        
+        <title>{t("CPTSD vs PTSD")}</title>
+        <meta property="og:title" content={t("CPTSD vs PTSD")} />
         <meta name="description" content={t("Navigate 2025's latest insights on CPTSD vs PTSD. Understand the key differences in symptoms, causes, and specialized recovery paths for complex trauma.")} />
-      </Helmet>
+        </Helmet>
         <header>
             <Topbar />
         </header>

@@ -47,11 +47,10 @@ export default function HomeopathyPract() {
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
       <Helmet>
-        <title>{t("Homeopathy Near Me")}</title>  
-        <meta property="og:title" content={t("Homeopathy Near Me")} />                
-        <meta name="description" content={t("Homeopathy Near Me")} />        
-        <meta name="description" content={t("Homeopathy near to me? Look no further than great homeopaths that can assist you holistically, and provide you wholeness.")} />
-      </Helmet>
+        <title>{t("Find Homeopathic Doctors Near You - Location-Based Homeopathy Care")}</title>
+        <meta property="og:title" content={t("Find Homeopathic Doctors Near You - Location-Based Homeopathy Care")} />
+        <meta name="description" content={t("Find homeopathic doctors in your area. Enter your location to see available homeopathy practitioners near you.")} />
+        </Helmet>
 
       <header>
         <Topbar />

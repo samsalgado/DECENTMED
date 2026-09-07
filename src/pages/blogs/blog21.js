@@ -14,8 +14,8 @@ const Blog21 = () => {
 
       <Helmet>
         <title>{t('Acupuncture for Migraines')}</title>
-                                       <meta property="og:title" content="Acupuncture for Migraines" />                
-        <meta name="description" content="Acupuncture for Migraines" />        
+        <meta property="og:title" content={"Acupuncture for Migraines"} />
+        <meta name="description" content={t("Migraines can be debilitating, but acupuncture offers a natural, complementary approach to reducing frequency and severity. Learn how targeted acupuncture points may help calm the nervous system and ease migraine pain.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta 
           name="description" 

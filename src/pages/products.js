@@ -153,11 +153,10 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
     return(
         <div>
         <Helmet>  {/* Add Helmet component */}
-        <title>{t("Products")}</title>
-         <meta property="og:title" content={t("Products")} />
-        <meta name="description" content={t("Products")} />
+        <title>{t("Holistic Health Products & Shop | DecentMed")}</title>
+        <meta property="og:title" content={t("Holistic Health Products & Shop | DecentMed")} />
         <meta name="description" content={t("Seeking Holistic health products that help you meet your health needs? We feature and work with the best holistic health products in the world!")} />
-      </Helmet>
+        </Helmet>
             <header>
             <Topbar />
             </header>

@@ -29,11 +29,9 @@ useEffect(() => {
   <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Functional Medicine")}</title> 
-               <meta property="og:title" content={t("Functional Medicine")} />                
-                <meta name="description" content={t("Functional Medicine")} />
- 
-          <meta name="description" content={t("Working with complex disorders and cancers via functional medicine. Essence of Life Wellness Center assists you holsitically, utilizing frequencies to communicate with the brain.")} />
+          <title>{t("Functional Medicine Providers")}</title>
+        <meta property="og:title" content={t("Functional Medicine Providers")} />
+        <meta name="description" content={t("Meet functional medicine practitioners and wellness centers, including Essence of Life Wellness Center, Dr. Brown, Optimal Root Wellness, and Kari Lockrem Wellness, offering root-cause, personalized care.")} />
         </Helmet>
         <header style={{
           // Solution 3: If header has fixed positioning, ensure it doesn't push content down

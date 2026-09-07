@@ -16,11 +16,9 @@ export default function Detox() {
 
                 <Helmet>  {/* Add Helmet component */}
                     <title>{t("3 Day Detox Cleanse")}</title>
-                <meta name="description" content={t('3 Day Detox Cleanse')} />
-                <meta property="og:title" content={t('3 Day Detox Cleanse')} />
-
-                    <meta name="description" content={t("3 Day Detox cleanse can clean the body from toxins. A detox cleanse is a great way to reset your cells into ketosis. Jumpstart your health journey!")} />
-                </Helmet>
+        <meta property="og:title" content={t('3 Day Detox Cleanse')} />
+        <meta name="description" content={t("3 Day Detox cleanse can clean the body from toxins. A detox cleanse is a great way to reset your cells into ketosis. Jumpstart your health journey!")} />
+        </Helmet>
 
                 <header>
                     <Topbar />

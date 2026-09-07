@@ -12,13 +12,9 @@ const Mike = () => {
 
       <Helmet>
         <title>{t('Ways to Improve Your Sleep Quality')}</title>
-      <meta property="og:title" content="Ways to Improve Your Sleep Quality" />                
-        <meta name="description" content="Ways to Improve Your Sleep Quality" />        
-            <meta
-            name="description"
-            content="Improve your sleep naturally with expert-backed holistic tips from naturopathylane. Discover simple lifestyle, diet, and wellness strategies for deeper, restorative sleep."
-          />      
-  </Helmet>
+        <meta property="og:title" content={"Ways to Improve Your Sleep Quality"} />
+        <meta name="description" content={"Improve your sleep naturally with expert-backed holistic tips from naturopathylane. Discover simple lifestyle, diet, and wellness strategies for deeper, restorative sleep."} />
+        </Helmet>
       <header>
         <Topbar />
       </header>

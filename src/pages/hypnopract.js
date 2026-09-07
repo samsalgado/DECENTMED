@@ -124,12 +124,10 @@ const handleSearch = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <Helmet>
-        <title>{t("Hypnotherapy Near Me")}</title>
-        <meta
-          name="description"
-          content={t("Looking for hypnotherapy near you? Find qualified hypnotherapists to assist with therapy and well-being.")}
-        />
-      </Helmet>
+        <title>{t("Find Hypnotherapists Near You - Location-Based Hypnotherapy Care")}</title>
+        <meta property="og:title" content={t("Find Hypnotherapists Near You - Location-Based Hypnotherapy Care")} />
+        <meta name="description" content={t("Find hypnotherapists in your area. Enter your location to see available hypnotherapy providers near you.")} />
+        </Helmet>
 
       <header>
         <Topbar />

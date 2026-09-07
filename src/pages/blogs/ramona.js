@@ -12,11 +12,10 @@ const Ramona = () => {
 
       <Helmet>
         <title>{t('Corporate Mindfulness')}</title>
-              <meta property="og:title" content="Corporate Mindfulness" />                
-        <meta name="description" content="Corporate Mindfulness" />        
+        <meta property="og:title" content={"Corporate Mindfulness"} />
+        <meta name="description" content={"Discover the key to mindfulness and transformation. Ramona Crabtree-Falkner has been in the holistic health space for over 20 years. This article explains her guide to corporate mindfulness."} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Discover the key to mindfulness and transformation. Ramona Crabtree-Falkner has been in the holistic health space for over 20 years. This article explains her guide to corporate mindfulness." />
-      </Helmet>
+        </Helmet>
       <header>
         <Topbar />
       </header>

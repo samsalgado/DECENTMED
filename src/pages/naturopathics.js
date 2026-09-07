@@ -132,11 +132,9 @@ export default function Natpract() {
     <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")}</title> 
-                  <meta name="description" content={t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")} />        
-        <meta name="description" content={t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")} />
- 
-          <meta name="description" content={t("Find naturopathic doctors in your area. Enter your location to see available naturopathy practitioners near you.")} />
+          <title>{t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")}</title>
+        <meta property="og:title" content={t("Find Naturopathic Doctors Near You - Location-Based Naturopathy Care")} />
+        <meta name="description" content={t("Find naturopathic doctors in your area. Enter your location to see available naturopathy practitioners near you.")} />
         </Helmet>
 
         <header>

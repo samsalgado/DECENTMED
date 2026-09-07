@@ -8,11 +8,10 @@ export default function About({ t }) {
     return (
         <div>
             <Helmet>  {/* Add Helmet component */}
-                <title>{t("The Merlin Group World")}</title>
-                <meta name="description" content={t('DecentMed About Us')} />
-                <meta property="og:title" content={t('The Merlin Group World: DecentMed About Us')} />
-                <meta name="description" content={t("The Merlin Group World is personally and professionally invested in the re-emergence of revolutionary therapies. Learn more about us.")} />
-            </Helmet>
+                <title>{t("About DecentMed | Holistic Health Information Portal")}</title>
+        <meta property="og:title" content={t("About DecentMed | Holistic Health Information Portal")} />
+        <meta name="description" content={t("The Merlin Group World is personally and professionally invested in the re-emergence of revolutionary therapies. Learn more about us.")} />
+        </Helmet>
             <header>
                 <Topbar />
             </header>

@@ -18,10 +18,9 @@ export default function AKPract() {
    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
 
         <Helmet>
-          <title>{t("Frequency Medicine")}</title>  
-        <meta property="og:title" content={t("Frequency Medicine")} />                
-        <meta name="description" content={t("Frequency Medicine")} />        
-          <meta name="description" content={t("Working with complex disorders via frequency medicine. The Center for Natural Health assists you holsitically, utilizing frequencies to communicate with the brain.")} />
+          <title>{t("Frequency Medicine")}</title>
+        <meta property="og:title" content={t("Frequency Medicine")} />
+        <meta name="description" content={t("Working with complex disorders via frequency medicine. The Center for Natural Health assists you holsitically, utilizing frequencies to communicate with the brain.")} />
         </Helmet>
 
         <header style={{
