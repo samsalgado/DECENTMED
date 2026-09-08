@@ -210,7 +210,9 @@ themerlingroupworld.com/ayurveda for more.
    <br></br>
    <br></br>
    <div data-aos="slide-right">
+          <div data-aos="slide-right" className='container-blue'>
       <h2>{t("Ayurvedic Oil & Related Ayurvedic Treatments for Pain")}</h2>
+      </div>
      <a href='https://grhc.love/painrelief' alt="Ayurvedic Oil Pain Treatment">
             <img className='gridimage' src={pain1} alt='Ayurvedic Oil Pain Treatment' />
              </a>
