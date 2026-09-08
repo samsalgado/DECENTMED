@@ -7,9 +7,12 @@ import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
 import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
+import flyer from "../images copy/flyer-poster.png";
 import group from "../images copy/group.png";
 import bethanyspeaks from "../images copy/bethanyspeaks.png";
 import specialoffer from "../images copy/specialoffer.png";
+import f from "../images copy/Screenshot 2026-09-07 at 8.03.03 PM.png";
+import eastidaho from "../images copy/eastidaho.png";
 import Confidence from "./confidence";
 import sha from "../images copy/Screenshot 2026-05-14 at 4.29.27 PM.png";
 import dyn from "../images copy/att.s5LUP_WLzm7Q9b_2gMlvv1-KVLtuD9UP2aonax1rE6s.JPG";
@@ -467,6 +470,9 @@ possible for you. So borrow our belief because so many clients have gotten incre
          <a href="https://www.thrivingbynature.com/special-offer" alt="Thriving by Nature">
         <img className='gridimag' src={specialoffer} alt='21 Day Challenge' />
         </a>
+         <a href="https://www.skool.com/the-thriving-leader-system-8145/about" alt="Thriving by Nature">
+        <img className='gridimag' src={f} alt='The Thriving Leader System' />
+        </a>
          <a href="https://calendly.com/thrivingbynaturecoaching/growth-mindset-group" alt="Thriving by Nature">
         <img className='gridimag' src={group} alt='Growth Mindset Group' />
         </a>
@@ -535,7 +541,22 @@ possible for you. So borrow our belief because so many clients have gotten incre
     paddingTop: '3rem'
   }}>
               {t('Holistic Business Coach')}</h1>
-      
+              <a href="https://calendly.com/thrivingbynaturecoaching/self-care-masterclass" alt="Mindset Coaching">
+              <img className='gridimag' src={flyer} alt='21 Day Challenge' />
+              </a>
+                        <Button className="custom-btn" href="https://calendly.com/thrivingbynaturecoaching/self-care-masterclass" target="_blank">{t('Sign Up for Free Masterclass')}</Button>
+               <h2 style={{
+    textDecoration: 'underline',
+    textAlign: 'center',
+    fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
+    marginTop: '4.5rem',
+    paddingTop: '3rem'
+  }}>
+              {t('Idaho Falls Events')}</h2>
+                            <a href="https://thrivingbynature.com/east-idaho-women-in-leadership" alt="Idaho Falls Events">
+              <img className='gridimag' src={eastidaho} alt='21 Day Challenge' />
+              </a>
+
       <div data-aos="slide-right" className='container-blue'>
          <iframe
               height="515"
