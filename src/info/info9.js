@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Button, Modal } from'react-bootstrap';
 import ReactDOM from 'react-dom';
+import andrea from "../images copy/Andrea graphic.png";
 import thrivingbynature from "../images copy/thrivebynature.png";
 import Benefitts from "./benefitts";
 import flyer from "../images copy/flyer-poster.png";
@@ -362,6 +363,15 @@ possible for you. So borrow our belief because so many clients have gotten incre
           <p className="pr">{t("paulette")}</p>
           <p className="pr"><h3>{t("Bethany Stone: Overcoming Corporate Burnout")}</h3></p>
           <p className="pr">{t("wildflower")}</p>
+          <p className="pr"><h3>{t("Beyond Mindset: The Missing Step to Lasting Change")}</h3></p>
+          <p className="pr">{t("You've read the books. Taken the courses. Changed your thinking. You may even understand why you're procrastinating, holding back or not creating the success you know you're capable of. So why hasn't knowing that changed it? Because insight and mindset are important — but they're not enough to create lasting change. In this eye-opening and experiential presentation, Andrea Isaacs reveals the missing step: embodiment. You'll discover why old ways of responding can remain even after your thinking has changed, and experience how engaging the body can create new neural pathways — turning what you KNOW into who you truly ARE.")}</p>
+          <p className="pr"><h3>{t("Empowered to be ALL that you Are")}</h3></p>
+          <p className="pr">
+            <strong>{t("Bridge the Gap Between Who You Are and Who You KNOW You Can Be")}</strong>
+            <br />
+            {t("You know there's more of you — more courage, wisdom, joy, love and possibility than you're bringing to your life right now. You may even have a clear sense of the person you want to be. Yet when life gets challenging, old habits, fears and emotional reactions can pull you away from that person. What if empowerment isn't about becoming someone better, but becoming more fully YOU? In this inspiring and experiential presentation, Andrea Isaacs shows you how to bridge the gap between who you are and who you KNOW you can be. You'll discover how to move beyond the old ways that have limited you, access more of the emotional qualities already within you and experience greater freedom to BE ALL that you are.")}
+          </p>
+
         <Button className="custom-btn" href="https://telehealth.decentmed.org/signup" target="_blank">
          {t("Try Coaching")}
         </Button>        
@@ -461,7 +471,10 @@ possible for you. So borrow our belief because so many clients have gotten incre
             height: '350px'
           }}
         />
-              <a href='https://calendly.com/shah333' alt="spectra spray">
+              <a href='https://andrea-isaacs.com/connect/' alt="Andrea Isaacs">
+            <img className='gridimag' src={andrea} alt='Andrea Isaacs' />
+             </a>
+               <a href='https://calendly.com/shah333' alt="spectra spray">
             <img className='gridimag' src={sha} alt='spectra spray' />
              </a>
         <a href="https://calendly.com/thrivingbynaturecoaching/30min?" alt="Thriving by Nature">
@@ -901,6 +914,7 @@ src="https://www.youtube.com/embed/RzAH5YlXWYc?si=PUSPhkpgZpNAcXKr"
           <Button className="custom-btn" href="https://calendly.com/thrivingbynaturecoaching/30min?" target="_blank">{t('Experience Breakthrough from Burnout')}</Button>
         <br></br>
         <Benefitts />
+                <Button className="custom-btn" href="https://andrea-isaacs.com/connect/" target="_blank">{t('Experience Breakthrough')}</Button>
         <Confidence />
             <Button onClick={learnmore} target='_blank' className="custom-btn">
                                           {t('Providers: Signup Here')}
