@@ -4,7 +4,7 @@ import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
 import summit from "../images copy/womenshealthsummitt.png";
 import sumit from "../images copy/maxresdefault.jpg";
-import tsnme from "../images copy/Screenshot 2026-09-09 at 6.36.33 PM.png";
+import tsnme from "../images copy/DecentMedBrochure .png";
 import sumit1 from "../images copy/ptsdsummit.png";
 import tsnmee from "../images copy/diabesity (2).png";
 import SummitInfo from './infosummit';
@@ -12,14 +12,14 @@ import { Button } from 'react-bootstrap';
 import SummitForm from './SummitForm';
 import "../App.css";
 const InfoSummit = () => {
-  const { t } = useTranslation("common");
+const { t } = useTranslation("common");
   return (
     <div className='container'>
       <div className="container-blue">
       <a href='https://telehealth.decentmed.org/signup'>
-            <h1>{t('Watch Full Summits on More Active')}</h1>
-            </a>
-</div>
+        <h1>{t('Watch Full Summits on More Active')}</h1>
+      </a>
+      </div>
       <div className='theecontainer'>
           <div className="container-blue">
         <div>
