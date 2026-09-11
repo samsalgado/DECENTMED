@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import "../info/Info.css";
 
 const SignupOptions = () => {
@@ -8,8 +9,14 @@ const SignupOptions = () => {
   const { t } = useTranslation('common');
 
   return (
-    <main 
-      className="page-content" 
+    <>
+    <Helmet>
+      <title>{t('Sign Up: Join as a Provider or Patient')}</title>
+      <meta property="og:title" content={t('Sign Up: Join as a Provider or Patient')} />
+      <meta name="description" content={t("Get started with DecentMed - choose whether you're signing up as a holistic health provider or as a patient looking for care.")} />
+    </Helmet>
+    <main
+      className="page-content"
       style={{
         display: 'flex',
         justifyContent: 'center',
@@ -86,6 +93,7 @@ const SignupOptions = () => {
         </button>
       </div>
     </main>
+    </>
   );
 };
 

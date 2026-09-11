@@ -13,6 +13,7 @@ import Practice from '../practices';
 import '../Styles/AuthForm.css';
 import { Button } from 'react-bootstrap';
 import Topbar from '../topbar';
+import { Helmet } from 'react-helmet';
 const SignUp = () => {
   const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
   const [error, setError] = useState('');
@@ -120,6 +121,11 @@ const SignUp = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{t('Provider Registration')}</title>
+        <meta property="og:title" content={t('Provider Registration')} />
+        <meta name="description" content={t("Sign up to join DecentMed as a holistic healthcare provider - get listed in our patient-facing directory, access telehealth booking, and grow your practice with built-in marketing support.")} />
+      </Helmet>
       <Topbar />
       <div style={{ textAlign: 'center', marginTop: '80px', paddingTop: '2rem' }}>
         <div className="container-blue">

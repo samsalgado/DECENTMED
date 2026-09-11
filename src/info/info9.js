@@ -855,10 +855,10 @@ src="https://www.youtube.com/embed/RzAH5YlXWYc?si=PUSPhkpgZpNAcXKr"
               }}    
             />
             </div>
-             <div className='container-blue'>
+             <div className='container-blue vertical-video'>
               <iframe
               height="515"
-              src="https://www.youtube.com/embed/ZIkENzHmvus" 
+              src="https://www.youtube.com/embed/ZIkENzHmvus"
               title="Patient Acquisition Engine Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -883,10 +883,10 @@ src="https://www.youtube.com/embed/RzAH5YlXWYc?si=PUSPhkpgZpNAcXKr"
               }}    
             />
             </div>
-             <div className='container-blue'>
+             <div className='container-blue vertical-video'>
               <iframe
               height="515"
-              src="https://www.youtube.com/embed/YEToF6s3dEw" 
+              src="https://www.youtube.com/embed/YEToF6s3dEw"
               title="Patient Acquisition Engine Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -897,7 +897,7 @@ src="https://www.youtube.com/embed/RzAH5YlXWYc?si=PUSPhkpgZpNAcXKr"
               }}    
             />
             </div>
-             <div className='container-blue'>
+             <div className='container-blue vertical-video'>
               <iframe
               height="515"
                   src="https://www.youtube.com/embed/NGUvyX9SHco"

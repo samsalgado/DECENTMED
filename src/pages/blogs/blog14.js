@@ -13,7 +13,7 @@ const Blog14 = () => {
       <Helmet>
         <title>{t('Pain Pill for Back')}</title>
         <meta property="og:title" content={t("Pain Pill for Back")} />
-        <meta name="description" content={"Discover the hidden secret about hair growth. Batana oil is rich in vitamin E, learn more about batana oil benefits."} />
+        <meta name="description" content={"Struggling with back pain? Learn why chiropractic care can be a safer, more effective alternative to pain pills and opioids, and how corrective care helps your body heal itself instead of just masking the pain."} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
       <header>

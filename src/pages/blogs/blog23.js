@@ -19,10 +19,6 @@ const Blog23 = () => {
         <meta property="og:title" content={"Holistic Health Marketing"} />
         <meta name="description" content={t("A look at how holistic health providers can market their practice effectively, from SEO and patient acquisition to building trust with a directory listing and educational content.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta 
-          name="description" 
-          content=
-            "Holistic health marketing thrives when brands connect mind, body, and lifestyle in authentic ways. Elevate your holistic marketing strategy with insights that help your wellness business - visit decentmed.org/signup/provider for more."        />
       </Helmet>
       <header>
         <Topbar />

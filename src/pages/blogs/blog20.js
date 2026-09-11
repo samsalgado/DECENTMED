@@ -25,30 +25,11 @@ const Blog20 = () => {
         </h1>
        
       </div>
-      <div
-  style={{
-    position: 'relative',
-    width: '100%',
-    maxWidth: '800px',
-    margin: '0 auto',
-    paddingBottom: '56.25%', // 16:9 ratio
-    height: 0,
-    overflow: 'hidden',
-    borderRadius: '12px',
-  }}
->
+      <div className="vertical-video" style={{ maxWidth: '400px', borderRadius: '12px', overflow: 'hidden' }}>
   <iframe
     src="https://www.youtube.com/embed/AqqywgJFzw0"
     title="YouTube video"
-    frameBorder="0"
     allowFullScreen
-    style={{
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-    }}
   />
 </div>
 

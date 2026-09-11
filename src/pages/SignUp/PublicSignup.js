@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { loadLanguageFile } from "../../translationUtils";
+import { Helmet } from "react-helmet";
 import "../../info/Info.css";
 import "../Styles/AuthForm.css";
 const PublicSignUp = () => {
@@ -171,6 +172,11 @@ const PublicSignUp = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{t('Sign Up as a Patient')}</title>
+        <meta property="og:title" content={t('Sign Up as a Patient')} />
+        <meta name="description" content={t("Create your free DecentMed patient account to book telehealth appointments and connect with vetted holistic health providers - acupuncture, naturopathy, chiropractic, functional medicine, energy healing, and more.")} />
+      </Helmet>
      <div className={`change-locale mi-start ${showMenu ? "is-open" : ""}`}>
           <button
             className="change-locale-toggle"

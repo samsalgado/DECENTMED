@@ -48,6 +48,28 @@ iframe[src*="drive.google.com/file"] {
   border: 0 !important;
 }
 
+/* PORTRAIT/VERTICAL VIDEO OVERRIDE
+   The blanket 16:9 rule above assumes every embedded video is landscape.
+   For an actual portrait-shot clip (e.g. a YouTube Short filmed vertically),
+   forcing 16:9 squeezes the real 9:16 video into a much shorter box than it
+   needs, cramming its controls (including the fullscreen button) into a
+   sliver of space where they become unreliable to tap on mobile. Any video
+   wrapped in .vertical-video keeps its intended 9:16 shape instead - this
+   needs !important too, purely to win the cascade over the rule above
+   (same mechanism, not a fight against inline styles), since a more specific
+   selector with matching !important still loses to a later plain !important
+   declaration otherwise. */
+.vertical-video iframe[src*="youtube.com/embed"],
+.vertical-video iframe[src*="youtube-nocookie.com/embed"],
+.vertical-video iframe[src*="rumble.com/embed"] {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 9 / 16 !important;
+}
+
 /* Side-by-side text + video rows: stack them on narrow screens instead of
    squeezing both columns down to a sliver. */
 @media (max-width: 700px) {

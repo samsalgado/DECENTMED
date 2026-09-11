@@ -4,6 +4,7 @@ import tier0 from "../../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
 import tier3 from '../../images copy/Screenshot 2026-07-06 at 9.42.42 AM.png';
 import tier2 from "../../images copy/Screenshot 2026-07-06 at 9.41.32 AM.png";
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');
@@ -28,6 +29,11 @@ const ChooseProviderTier = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "40px" }}>
+      <Helmet>
+        <title>{t('Choose Your Provider Tier')}</title>
+        <meta property="og:title" content={t('Choose Your Provider Tier')} />
+        <meta name="description" content={t("Compare DecentMed's provider subscription tiers and choose the plan that fits your holistic health practice before completing registration.")} />
+      </Helmet>
       <div className="container-blue">
         <h1 className="logotitle">
           {t("Providers Must Sign Up Before Registration")}

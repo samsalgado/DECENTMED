@@ -166,8 +166,8 @@ const learnmore = () => {
       <div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/CTmY6wEpTdA?si=1aGXOoQ7jGXH2Ub6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <div>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div className="vertical-video" style={{ maxWidth: '400px' }}>
+       <iframe src="https://www.youtube.com/embed/nxlKG_b3W80?si=aaLnoaO8yAj9XXIF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <br></br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugSZ9oeYm8c?si=bgDwSaZPqgYuXu9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

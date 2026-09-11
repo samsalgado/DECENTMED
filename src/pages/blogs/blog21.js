@@ -17,11 +17,6 @@ const Blog21 = () => {
         <meta property="og:title" content={"Acupuncture for Migraines"} />
         <meta name="description" content={t("Migraines can be debilitating, but acupuncture offers a natural, complementary approach to reducing frequency and severity. Learn how targeted acupuncture points may help calm the nervous system and ease migraine pain.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta 
-          name="description" 
-          content=
-          "Discover how acupuncture for migraines can provide natural, effective relief. Learn how this traditional therapy helps reduce migraine frequency, ease tension, and support long‑term wellness."
-        />
       </Helmet>
 
       <header>

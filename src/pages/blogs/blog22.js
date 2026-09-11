@@ -17,11 +17,6 @@ const Blog22 = () => {
         <meta property="og:title" content={"Fertility and Naturopathic Medicine"} />
         <meta name="description" content={t("Explore how naturopathic medicine supports fertility through hormone balance, nutrition, and lifestyle changes, a holistic complement to conventional fertility treatment.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta 
-          name="description" 
-          content=
-          "Discover how acupuncture for migraines can provide natural, effective relief. Learn how this traditional therapy helps reduce migraine frequency, ease tension, and support long‑term wellness."
-        />
       </Helmet>
 
       <header>

@@ -54,18 +54,13 @@ const {t} = useTranslation('common');
           <p className="pr">{t("Limiting patterns such as hesitation, overthinking, or performance anxiety are resolved at their unconscious source, allowing training to translate more fully into competition. The result is a stronger, more reliable mental game, greater confidence, and the ability to perform with clarity, intensity, and control when it matters most.")}</p>
           <Button className="custom-btn" href="https://decentmed.org/hypnopract" target="_blank">{t("Book Hypnotherapy Session")}</Button>  {/* Added Bootstrap Button */}
         </div>
-        <iframe
-          className="centered-video"
-          src="https://www.youtube.com/embed/65_dl3YowUI?si=Z7_t_F15anEquKTu"
-          frameBorder="0"
-          allowFullScreen
-          title="Rumble video player"
-          style={{
-            maxWidth: '400px',
-            width: '100%',
-            height: 'auto'
-          }}
-        />
+        <div className="vertical-video" style={{ maxWidth: '400px' }}>
+          <iframe
+            src="https://www.youtube.com/embed/65_dl3YowUI?si=Z7_t_F15anEquKTu"
+            allowFullScreen
+            title="Rumble video player"
+          />
+        </div>
         </div>
       </div>
             <Button className="custom-btn" href="https://www.decentmed.org/hypnopract" target="_blank">{t('Find Out How Hypnotherapy Can Help You')}</Button>

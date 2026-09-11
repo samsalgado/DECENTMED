@@ -50,19 +50,14 @@ const Naturo = () => {
                 {t("Try Naturopathy")}
               </Button>
             </div>
-            <iframe
-              width="100%"
-              height="515"
-              src="https://www.youtube.com/embed/38tcMPtyeUA?si=dEYNrakXQonv7CgU"
-              title="Patient Acquisition Engine Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                maxWidth: '400px',
-                width: '100%',
-                height: 'auto'
-              }}    
-            />
+            <div className="vertical-video" style={{ maxWidth: '400px' }}>
+              <iframe
+                src="https://www.youtube.com/embed/38tcMPtyeUA?si=dEYNrakXQonv7CgU"
+                title="Patient Acquisition Engine Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
         <div>

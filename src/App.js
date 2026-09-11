@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
+import { Helmet } from 'react-helmet';
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import BrowserOnly from "./Components/BrowserOnly"
@@ -134,6 +135,23 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      {/*
+        Site-wide fallback title/description, rendered on every route.
+        Each page supplies its own <Helmet> deeper in the tree (inside its
+        matched Route), and react-helmet resolves duplicate tags in favor
+        of the more deeply nested instance, so a page's own tags override
+        these defaults automatically. This only takes effect for the small
+        number of routes that don't set their own Helmet (e.g. /signup,
+        /holisticbusinessplan) or before a page's Helmet has mounted.
+        Kept in sync with public/index.html, which intentionally has no
+        static <meta name="description"> of its own anymore so crawlers
+        never see two competing description tags on the same page - see
+        scripts/prerender.mjs.
+      */}
+      <Helmet>
+        <title>DecentMed: Connecting Patients with Holistic Health Providers</title>
+        <meta name="description" content="DecentMed is a holistic medicine information portal that connects patients with vetted holistic health providers - acupuncture, naturopathy, chiropractic, functional medicine, energy healing, and more - via telehealth." />
+      </Helmet>
        <BrowserOnly>
       <ScrollTop />
       {/* ⬇️ ২️⃣ এখানে popup কম্পোনেন্ট বসাবে */}

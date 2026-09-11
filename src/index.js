@@ -7,7 +7,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
+import { Helmet } from 'react-helmet';
 import { loadLanguageFile } from './translationUtils';
+
+// react-helmet normally batches its <title>/<meta> DOM updates with
+// requestAnimationFrame, which never fires in the headless Chrome tab
+// used by the react-snap build step (see scripts/prerender.mjs). That
+// silently left every prerendered page's <title>/description stuck on
+// the generic default from public/index.html even though each page's
+// own <Helmet> content was correct. Disabling defer makes Helmet commit
+// synchronously so prerendering captures the real per-page title/meta.
+Helmet.defaultProps.defer = false;
+
 const App = lazy(() => import('./App'));
 const preferredLang = localStorage.getItem("preferredLanguage") || "en";
 

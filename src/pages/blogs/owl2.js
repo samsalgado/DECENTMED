@@ -12,7 +12,7 @@ const Owl2 = () => {
       <Helmet>
         <title>{t('The (UN)Importance of Heredity, Bloodlines & DNA')}</title>
         <meta property="og:title" content={t("The (UN)Importance of Heredity, Bloodlines & DNA")} />
-        <meta name="description" content={t("Psychic Protection: An Ounce Of Prevention By Samuel Abrams: Discover the ultimate guide to understanding psychic protection. The technique most commonly found in the literature is surrounding yourself with the white (or gold) light of divine protection.")} />
+        <meta name="description" content={t("Samuel Abrams explores why heredity, bloodlines, and DNA matter less than karma and mind on a spiritual level, including a Native American teaching on who has the right to learn sacred ways, and why anyone can awaken their innate spiritual potential.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
       <header>

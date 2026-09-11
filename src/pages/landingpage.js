@@ -2,6 +2,7 @@ import React from 'react';
 import '../info/page.css';
 import { useTranslation } from 'react-i18next'
 import { Button } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import "../info/Info.css";
 import Collapsible from 'react-collapsible';
 import Footer from '../footer';
@@ -11,6 +12,11 @@ const FileUploadDownload = () => {
 
   return (
     <main className="page-content">
+    <Helmet>
+      <title>{t('Holistic Medicine Business Action Plan')}</title>
+      <meta property="og:title" content={t('Holistic Medicine Business Action Plan')} />
+      <meta name="description" content={t("Proven strategies to grow your holistic health practice and attract more patients, covering marketing, patient acquisition, and building a sustainable business.")} />
+    </Helmet>
     <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
       <div className="bg-white rounded-xl shadow-2xl p-8">
         <div className="text-center mb-8">

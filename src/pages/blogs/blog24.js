@@ -19,10 +19,6 @@ const Blog24 = () => {
         <meta property="og:title" content={"Conversion Rate Optimization Consultant"} />
         <meta name="description" content={t("What a conversion rate optimization consultant does for a holistic health practice, and how improving your website's conversion rate turns more visitors into booked patients.")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta 
-          name="description" 
-          content=
-            "Experience a conversion rate optimization consultant to scale your holistic health practice. Elevate your holistic marketing strategy with insights that help your wellness business - visit decentmed.org/signup/provider for more."        />
       </Helmet>
       <header>
         <Topbar />

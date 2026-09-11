@@ -5,10 +5,15 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="DecentMed is a holistic medicine information portal that connects patients with vetted holistic health providers - acupuncture, naturopathy, chiropractic, functional medicine, energy healing, and more - via telehealth."
-    />
+    <!--
+      No static <meta name="description"> here on purpose: every route
+      sets its own via react-helmet (src/App.js has a site-wide fallback
+      for the few pages that don't set one). A static tag here would sit
+      alongside each page's react-helmet tag rather than being replaced
+      by it, producing two different, competing description tags on the
+      same page - which is exactly what caused every URL to show the
+      same generic description in Google search results.
+    -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <meta name="google-site-verification" content="EH68myzmbZ32ld5UQOAL-tWi52c5FHLitCEQHpWF4Y8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
