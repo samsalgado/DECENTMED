@@ -41,8 +41,7 @@ import { useTranslation } from 'react-i18next';
 export default function  Apoth() {
   const { t } = useTranslation('common');
   const learnmore = () => {
-    
-    window.location.href = 'mailto:themerlingroupworld@gmail.com'
+  window.location.href = 'https://wa.me/18137664900';
   }
   return (
     <div className='wrapper'>
@@ -63,7 +62,7 @@ export default function  Apoth() {
         />
         <br></br>
         <Button className="custom-btn" onClick={learnmore}>
-          {t('Herbal Shops: Email Us')}
+          {t('Herbal Shops: Contact Us')}
         </Button>
         </div>
         <br></br>
