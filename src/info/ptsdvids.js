@@ -7,7 +7,7 @@ const PTSDvids = () => {
     const [plant] = useState([
         {
             id: 1,
-            videoUrl:"https://www.youtube.com/embed/Y1xPUNgQA8U?si=fSdI9gMSdLpnfgIc",
+            videoUrl:"https://www.youtube.com/embed/Rv3U47Qi26k?si=j1fpACNETo009qGN",
             name: t("PTSD Healing")
         },
         {

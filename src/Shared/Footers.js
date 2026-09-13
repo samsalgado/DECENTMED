@@ -74,7 +74,7 @@ const Footers = () => {
         <div className="footer-section social">
           <h3 className="footer-title">{t("Follow Us")}</h3>
           <div className="social-icons-list">
-            <a href="https://www.linkedin.com/company/themerlingroupworld/" aria-label="LinkedIn" className="social-icon linkedin">
+            <a href="https://www.linkedin.com/in/decentmed/" aria-label="LinkedIn" className="social-icon linkedin">
               <FaLinkedin />
             </a>
           
