@@ -21,10 +21,10 @@ const { t } = useTranslation('common');
             <Topbar />
         </header>
        <Ptsdd />
-         <div className="container-blue">
+         <div className="container-blue" style={{ textAlign: 'center' }}>
          <Button onClick={learnmore} className="custom-btn">
           {t('Providers: Signup Here')}
-        </Button> 
+        </Button>
 </div>
         <footer>
             <Footer />
