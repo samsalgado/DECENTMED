@@ -12,6 +12,7 @@ import x from "../images copy/x.png";
 import instagram from "../images copy/insta.png";
 import facebook from "../images copy/facebook.png";
 import youtube from "../images copy/youtube.png";
+import { handleMailClick } from '../utils/mailFallback';
 import { useEffect, useState } from 'react';
 import michelle from "../cards/SUNRISEWELLNESS.jpeg";
 import AOS from 'aos';
@@ -33,10 +34,13 @@ export default function EnergyPract() {
       id: 1,
       name: t('Charlotte Clark'),
       title: t("Total Healing Centre"),
-      location: "USA",
+      location: "Kansas City",
       availability: t("Available Worldwide"),
       availabilityType: "telehealth",
       mail:"clarkcharlotte50@gmail.com",
+      youtube:"https://www.youtube.com/@aquariuswellnessinstitute",
+      instagram:"https://www.instagram.com/aquariuswellnessinstitute2.0?utm_source=qr&stkn=MzRxamg3b3cwZWd5",
+      facebook:"https://www.facebook.com/aquariuswellnessinstitute",
       tiktok:"https://www.tiktok.com/@clcthc?_r=1&_t=ZP-99nZ1WuxrG3",
       image: Charlotte,
       website:"https://thcclc.com/",
@@ -50,7 +54,7 @@ export default function EnergyPract() {
       id:2,
       name:t("Michele Greenan"),
       title:t("Sunrise Wellness"),
-      location:t("USA"),
+      location:t("Detroit, Michigan"),
       availability: t("Available Worldwide"),
       availabilityType:"telehealth",
       image:michelle,
@@ -77,7 +81,7 @@ export default function EnergyPract() {
       id:3,
       name: t('Shosana Leopold'),
        title:t("Shosana's Healing Arts"),
-       location: "USA",
+       location: "Rainier, Washington",
        mail:"shoshana@iht.life",
        linkedin:"https://www.linkedin.com/in/shoshana-leopold-707991102/",
        facebook:"https://www.facebook.com/susanshoshana.leopold/",
@@ -337,7 +341,7 @@ export default function EnergyPract() {
                     )}
                     <div className="provider-social-icons">
                       {practitioner.mail && (
-                        <a href={`mailto:${practitioner.mail}`} aria-label={t("Email")} title={t("Email")}>
+                        <a href={`mailto:${practitioner.mail}`} onClick={(e) => handleMailClick(e, practitioner.mail)} aria-label={t("Email")} title={t("Email")}>
                           <img src={mail} alt={t("Email")} />
                         </a>
                       )}

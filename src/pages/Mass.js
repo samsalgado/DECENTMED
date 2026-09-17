@@ -6,6 +6,7 @@ import Footer from '../footer';
 import jezy from '../images copy/IMG_0827.jpeg'; // ✅ Ensure this path is correct in your project
 import "../App.css";
 import "../info/Info.css";
+import { handleMailClick } from '../utils/mailFallback';
 export default function MassPract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -99,7 +100,7 @@ export default function MassPract() {
               <p>{t('We currently do not have providers listed in your area.')}</p>
               <p>
                 {t('Want to be the first?')}{' '}
-                <a href="mailto:themerlingroupworld@gmail.com">{t("themerlingroupworld@gmail.com")}</a>
+                <a href="mailto:themerlingroupworld@gmail.com" onClick={(e) => handleMailClick(e, 'themerlingroupworld@gmail.com')}>{t("themerlingroupworld@gmail.com")}</a>
               </p>
             </div>
           )}

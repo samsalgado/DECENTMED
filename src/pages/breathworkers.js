@@ -2,11 +2,11 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
-import { useEffect} from 'react';
-//import ReactPlayer from 'react-player';
+import { useEffect } from 'react';
 import JenB from '../cards/scarlett.JPG';
+import instagram from "../images copy/insta.png";
+import facebook from "../images copy/facebook.png";
 import { useTranslation } from 'react-i18next';
-//import PhoneInput from 'react-phone-input-2'; // ✅ Import
 
 export default function Breathwork({ providerEmail }) {
 
@@ -15,106 +15,64 @@ export default function Breathwork({ providerEmail }) {
   }, []);
 
   const { t } = useTranslation('common');
-  //const handleChange = (e) => {
-    //setFormData({ ...formData, [e.target.name]: e.target.value });
- // };
 
-  /*const handlePhoneChange = (value) => {
-    setFormData({ ...formData, phone: value });
-  };
-  */
-
-  
   return (
-    <div>
-        <Helmet>
-          <title>{t("Somatic Breathwork Coaches")}</title>
+    <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
+      <Helmet>
+        <title>{t("Somatic Breathwork Coaches")}</title>
         <meta property="og:title" content={t("Somatic Breathwork Coaches")} />
         <meta name="description" content={t("Find certified somatic breathwork coaches offering guided sessions to reduce stress, release trauma, and reconnect breath with the nervous system. Explore practitioner profiles and book a session.")} />
-        </Helmet>
+      </Helmet>
 
-        <header>
-          <Topbar />
-        </header>
-       <div className="container-blue">
+      <header>
+        <Topbar />
+      </header>
 
-        <div className="container">
-          <h1>{t("Somatic Breathwork & Breathwork Coaches")}</h1>
+      <div className="container">
+        <h1>{t("Somatic Breathwork & Breathwork Coaches")}</h1>
 
-          <div className="row">
-            <div className="col-md-6">
-              <h3>{t("Scarlett Dee")}</h3>
-              <figure>
-                <img src={JenB} alt="Scarlett" />
-              </figure>
-              <br />
+        <div className="provider-grid" style={{ alignItems: 'start' }}>
+          <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+            <div className="card-body provider-card-body">
+              <div className="provider-card-top">
+                <img src={JenB} alt="Scarlett Dee" className="provider-photo" />
+                <h2 className="h4 mb-1">{t("Scarlett Dee")}</h2>
+                <p className="text-muted mb-0">{t("Scarlett Dee, Somatic Breathwork Coach:")}</p>
+              </div>
 
-              {/* Contact Form */}
-             <div>
-  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-  <a 
-    href="https://book.carepatron.com/Scarlett-Dee/Scarlett-?p=aJmLuXtkR3esU9i7t2nEJg&s=KIVRtyGw&e=b"
-    rel="noopener noreferrer"
-    target="_blank"
-    title={t("Book Appointment")}
-    style={{
-      WebkitTextSizeAdjust: '100%',
-      WebkitFontSmoothing: 'antialiased',
-      display: 'inline-flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      position: 'relative',
-      WebkitTapHighlightColor: 'transparent',
-      outline: 0,
-      border: 0,
-      margin: 0,
-      cursor: 'pointer',
-      userSelect: 'none',
-      verticalAlign: 'middle',
-      WebkitAppearance: 'none',
-      textDecoration: 'none',
-      fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
-      fontWeight: 500,
-      letterSpacing: '0.02857em',
-      transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-      color: '#fff',
-      backgroundColor: '#027360',
-      textTransform: 'none',
-      boxSizing: 'border-box',
-      borderRadius: '4px',
-      boxShadow: 'none',
-      minWidth: 0,
-      overflow: 'hidden',
-      whiteSpace: 'nowrap',
-      textOverflow: 'ellipsis',
-      height: '36px',
-      padding: '6px 16px',
-      fontSize: '14px',
-      lineHeight: '26px'
-    }}
-  >
-    {t("Book Appointment")}
-  </a>
-  </div>
-</div>
-              <h5>{t("Scarlett Dee, Somatic Breathwork Coach:")}</h5>
-              <p>
-                {t(
-                  "Scarlett has over 30 years of experience in yoga, healing, and self-mastery. She guides transformational breathwork journeys that help release stored trauma, regulate the nervous system, and support deep emotional healing. Her sessions offer a powerful reset—reducing stress, calming anxiety, and rebuilding confidence from the inside out. Scarlett’s work is both grounding and expansive, helping clients overcome inner challenges and return to a state of clarity, presence, and aligned self-leadership."
-                )}
+              <p className="card-text small provider-bio">
+                {t("Scarlett has over 30 years of experience in yoga, healing, and self-mastery. She guides transformational breathwork journeys that help release stored trauma, regulate the nervous system, and support deep emotional healing. Her sessions offer a powerful reset—reducing stress, calming anxiety, and rebuilding confidence from the inside out. Scarlett’s work is both grounding and expansive, helping clients overcome inner challenges and return to a state of clarity, presence, and aligned self-leadership.")}
               </p>
-              <p>
-                {t(
-                  "Scarlett is a certified: 9D Breathwork Coach & Facilitator, Hypnotherapist, Holistic Therapist, Tantra & Yoga Teacher Trainer"
-                )}
+              <p className="card-text small provider-bio">
+                {t("Scarlett is a certified: 9D Breathwork Coach & Facilitator, Hypnotherapist, Holistic Therapist, Tantra & Yoga Teacher Trainer")}
               </p>
+
+              <div className="provider-card-footer">
+                <a
+                  href="https://book.carepatron.com/Scarlett-Dee/Scarlett-?p=aJmLuXtkR3esU9i7t2nEJg&s=KIVRtyGw&e=b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-primary"
+                >
+                  {t("Book Appointment")}
+                </a>
+                <div className="provider-social-icons">
+                  <a href="https://www.instagram.com/scarlettdeeofficial/" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                    <img src={instagram} alt={t("Instagram")} />
+                  </a>
+                  <a href="https://www.facebook.com/scarlettdeeofficial/" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+                    <img src={facebook} alt={t("Facebook")} />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        <footer>
-          <Footer />
-        </footer>
+      </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

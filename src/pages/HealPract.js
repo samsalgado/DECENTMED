@@ -5,6 +5,7 @@ import Footer from '../footer';
 import { useEffect, useState } from 'react';
 import Saumil from '../cards/Saumil.png'
 import { useTranslation } from 'react-i18next'
+import { handleMailClick } from '../utils/mailFallback';
 export default function HealPract() {
   const { t } = useTranslation('common');
   const [userLocation, setUserLocation] = useState('');
@@ -209,8 +210,9 @@ export default function HealPract() {
                   {practitioner.embedCode ? (
                     // Check if embedCode is a mailto link
                     practitioner.embedCode.startsWith('mailto:') ? (
-                      <a 
+                      <a
                         href={practitioner.embedCode}
+                        onClick={(e) => handleMailClick(e, practitioner.embedCode.slice('mailto:'.length))}
                         style={{
                           padding: '15px 30px',
                           backgroundColor: '#027360',

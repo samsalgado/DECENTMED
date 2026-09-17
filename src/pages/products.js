@@ -8,6 +8,7 @@ import allan from "../images copy/allan.webp";
 import AOS from 'aos';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { handleMailClick } from '../utils/mailFallback';
 import 'aos/dist/aos.css';
 import qrcream from "../images copy/qrcream.png";
 import dnaact from "../images copy/dnaact.png";
@@ -46,7 +47,13 @@ const ProductCard = ({ title, img, href, ctaLabel, t, video, children }) => (
           ></iframe>
         </div>
       )}
-      <a className="shop-card-cta" href={href} target="_blank" rel="noopener noreferrer">
+      <a
+        className="shop-card-cta"
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={href.startsWith('mailto:') ? (e) => handleMailClick(e, href.slice('mailto:'.length)) : undefined}
+      >
         {ctaLabel}
       </a>
     </div>

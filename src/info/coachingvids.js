@@ -8,9 +8,8 @@ const Coachingvids = () => {
     const [plant] = useState([
         {
             id: 1,
-            videoUrl:"https://www.youtube.com/embed/z7bKpFl8qGA?si=e1llD8eNVGhdieKR",
+            videoUrl:"https://www.youtube.com/embed/wPQFbSc4J-M?si=Fn41dooN5PlXzVcO",
             name: t("Six Steps for Fat Loss")
-            
         },
         {
             id: 2,

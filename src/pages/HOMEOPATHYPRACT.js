@@ -10,6 +10,7 @@ import mail from "../images copy/mail.png";
 import x from "../images copy/x.png";
 import instagram from "../images copy/insta.png";
 import facebook from "../images copy/facebook.png";
+import { handleMailClick } from '../utils/mailFallback';
 import { useTranslation } from 'react-i18next';
 export default function HomeopathyPract() {
   const { t } = useTranslation('common');
@@ -169,7 +170,7 @@ export default function HomeopathyPract() {
                         {t("View Profile")}
                       </a>
                       <div className="provider-social-icons">
-                        <a href="mailto:drbulatov2012@gmail.com" aria-label={t("Email")} title={t("Email")}>
+                        <a href="mailto:drbulatov2012@gmail.com" onClick={(e) => handleMailClick(e, 'drbulatov2012@gmail.com')} aria-label={t("Email")} title={t("Email")}>
                           <img src={mail} alt={t("Email")} />
                         </a>
                         <a
@@ -235,7 +236,7 @@ export default function HomeopathyPract() {
                         {t("View Profile")}
                       </a>
                       <div className="provider-social-icons">
-                        <a href="mailto:drtshann@gmail.com" aria-label={t("Email")} title={t("Email")}>
+                        <a href="mailto:drtshann@gmail.com" onClick={(e) => handleMailClick(e, 'drtshann@gmail.com')} aria-label={t("Email")} title={t("Email")}>
                           <img src={mail} alt={t("Email")} />
                         </a>
                         <a

@@ -3,6 +3,7 @@ import '../App.css';
 import { Helmet } from 'react-helmet';
 import Topbar from './topbar';
 import Footer from '../footer';
+import { handleMailClick } from '../utils/mailFallback';
 import shea from "../cards/shea.jpg";
 import don from "../cards/don.jpg";
 import Green from '../cards/Green-hypnotherapy.png';
@@ -240,7 +241,7 @@ const handleSearch = () => {
                       </a>
                       <div className="provider-social-icons">
                         {provider.mail && (
-                          <a href={`mailto:${provider.mail}`} aria-label={t("Email")} title={t("Email")}>
+                          <a href={`mailto:${provider.mail}`} onClick={(e) => handleMailClick(e, provider.mail)} aria-label={t("Email")} title={t("Email")}>
                             <img src={mail} alt={t("Email")} />
                           </a>
                         )}

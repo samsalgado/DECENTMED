@@ -11,6 +11,7 @@ import mail from "../images copy/mail.png";
 import instagram from "../images copy/insta.png";
 import facebook from "../images copy/facebook.png";
 import youtube from "../images copy/youtube.png";
+import { handleMailClick } from '../utils/mailFallback';
 export default function Nutritionpract() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -163,7 +164,6 @@ export default function Nutritionpract() {
                           <i className="fas fa-map-marker-alt text-primary me-2"></i>
                           {t("Stamford, Connecticut")}
                         </p>
-
                         <div className="mb-2">
                           <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
                           <span className="badge bg-light text-dark me-1">{t("Functional Medicine")}</span>
@@ -171,7 +171,6 @@ export default function Nutritionpract() {
                           <span className="badge bg-light text-dark me-1">{t("Lower Blood Sugar")}</span>
                           <span className="badge bg-light text-dark me-1">{t("Personalized Nutrition")}</span>
                         </div>
-
                         <div className="provider-video">
                           <iframe
                             src="https://drive.google.com/file/d/1FAa9HGZ_ABcLCE-75EbRyitItoW5FFmg/preview"
@@ -190,7 +189,7 @@ export default function Nutritionpract() {
                             {t("Contact")}
                           </a>
                           <div className="provider-social-icons">
-                            <a href="mailto:loribgraham@gmail.com" aria-label={t("Email")} title={t("Email")}>
+                            <a href="mailto:loribgraham@gmail.com" onClick={(e) => handleMailClick(e, "loribgraham@gmail.com")} aria-label={t("Email")} title={t("Email")}>
                               <img src={mail} alt={t("Email")} />
                             </a>
                             <a href="https://www.facebook.com/lovetoeatright" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
@@ -264,7 +263,7 @@ export default function Nutritionpract() {
                             {t("Contact for Telehealth")}
                           </a>
                           <div className="provider-social-icons">
-                            <a href="mailto:loribgraham@gmail.com" aria-label={t("Email")} title={t("Email")}>
+                            <a href="mailto:loribgraham@gmail.com" onClick={(e) => handleMailClick(e, "loribgraham@gmail.com")} aria-label={t("Email")} title={t("Email")}>
                               <img src={mail} alt={t("Email")} />
                             </a>
                             <a href="https://www.facebook.com/lovetoeatright" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>

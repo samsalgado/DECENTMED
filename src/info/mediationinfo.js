@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import { useTranslation } from 'react-i18next';
+import { handleMailClick } from '../utils/mailFallback';
 //import ultt from "../images copy/ultt.png";
 const MeditationInfo = () => {
   const { t } = useTranslation("common");
@@ -39,7 +40,7 @@ const MeditationInfo = () => {
                     document.body)}
       <div style={{ marginTop: '20px', width: '100%' }}>
         <Button style={{ marginRight: '20px' }} className="custom-btn" href="https://sanjivana.com/" target="_blank">{t('Visit Serenity Meditations')}</Button>
-        <Button className="custom-btn" href="mailto:serenitymeditation2021@gmail.com" target="_blank">{t('Contact')}</Button>
+        <Button className="custom-btn" href="mailto:serenitymeditation2021@gmail.com" onClick={(e) => handleMailClick(e, 'serenitymeditation2021@gmail.com')}>{t('Contact')}</Button>
       </div>
       <br />
             <div data-aos="slide-right" className="container-blue">

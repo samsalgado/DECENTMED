@@ -15,6 +15,7 @@ import x from "../images copy/x.png";
 import instagram from "../images copy/insta.png";
 import facebook from "../images copy/facebook.png";
 import youtube from "../images copy/youtube.png";
+import { handleMailClick } from '../utils/mailFallback';
 import { useTranslation } from 'react-i18next';
 // Remote Page: Frequency Medicine:
 //Dr. Amy Wicks
@@ -290,7 +291,7 @@ const kansasTerms = [
             />
           </div>
           <div className="provider-social-icons">
-            <a href="mailto:info@tcnh-stl.com" aria-label={t("Email")} title={t("Email")}>
+            <a href="mailto:info@tcnh-stl.com" onClick={(e) => handleMailClick(e, 'info@tcnh-stl.com')} aria-label={t("Email")} title={t("Email")}>
               <img src={mail} alt={t("Email")} />
             </a>
             <a href="https://facebook.com/tcnhstl" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>

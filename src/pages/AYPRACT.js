@@ -12,6 +12,7 @@ import instagram from "../images copy/insta.png";
 import facebook from "../images copy/facebook.png";
 import linkedin from "../images copy/linkedin.png";
 import youtube from "../images copy/youtube.png";
+import { handleMailClick } from '../utils/mailFallback';
 import { useTranslation } from 'react-i18next';
 export default function AYPract() {
   const { t } = useTranslation('common');
@@ -269,7 +270,7 @@ export default function AYPract() {
                     )}
                     <div className="provider-social-icons">
                       {practitioner.mail && (
-                        <a href={`mailto:${practitioner.mail}`} aria-label={t("Email")} title={t("Email")}>
+                        <a href={`mailto:${practitioner.mail}`} onClick={(e) => handleMailClick(e, practitioner.mail)} aria-label={t("Email")} title={t("Email")}>
                           <img src={mail} alt={t("Email")} />
                         </a>
                       )}

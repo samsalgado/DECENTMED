@@ -9,6 +9,7 @@ import drtess from '../cards/drtess.png';
 import linkedin from "../images copy/linkedin.png";
 import mail from "../images copy/mail.png";
 import youtube from "../images copy/youtube.png";
+import { handleMailClick } from '../utils/mailFallback';
 
 export default function Natpract() {
   const { t } = useTranslation('common');
@@ -244,7 +245,7 @@ export default function Natpract() {
                             {t("Book Now")}
                           </a>
                           <div className="provider-social-icons">
-                            <a href="mailto:hello@meridianpassagewellness.com" aria-label={t("Email")} title={t("Email")}>
+                            <a href="mailto:hello@meridianpassagewellness.com" onClick={(e) => handleMailClick(e, "hello@meridianpassagewellness.com")} aria-label={t("Email")} title={t("Email")}>
                               <img src={mail} alt={t("Email")} />
                             </a>
                             <a href="https://www.linkedin.com/in/kristinbarnes1/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
@@ -302,7 +303,7 @@ export default function Natpract() {
                             {t("Contact")}
                           </a>
                           <div className="provider-social-icons">
-                            <a href="mailto:hello@meridianpassagewellness.com" aria-label={t("Email")} title={t("Email")}>
+                            <a href="mailto:hello@meridianpassagewellness.com" onClick={(e) => handleMailClick(e, "hello@meridianpassagewellness.com")} aria-label={t("Email")} title={t("Email")}>
                               <img src={mail} alt={t("Email")} />
                             </a>
                             <a href="https://www.linkedin.com/in/kristinbarnes1/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
@@ -358,7 +359,7 @@ export default function Natpract() {
                             {t("Book Telehealth Session")}
                           </a>
                           <div className="provider-social-icons">
-                            <a href="mailto:hello@meridianpassagewellness.com" aria-label={t("Email")} title={t("Email")}>
+                            <a href="mailto:hello@meridianpassagewellness.com" onClick={(e) => handleMailClick(e, "hello@meridianpassagewellness.com")} aria-label={t("Email")} title={t("Email")}>
                               <img src={mail} alt={t("Email")} />
                             </a>
                             <a href="https://www.linkedin.com/in/kristinbarnes1/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>

@@ -19,8 +19,11 @@ import caroline from "../cards/caroline.png";
 import Jessica from "../cards/jessica.jpg";
 import Priscilla from '../cards/priscilla.jpg';
 import jimp from '../cards/jimp.png';
+import bethany from "../images copy/Screenshot 2026-09-17 at 9.53.11 AM.png";
+import andrea from "../images copy/Andrea graphic.png";
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
+import { handleMailClick } from '../utils/mailFallback';
 export default function Coaching() {
   const { t } = useTranslation('common');
   const [location, setLocation] = useState('');
@@ -256,11 +259,9 @@ const learnmore = () => {
             <span className="badge bg-light text-dark me-1">{t("Functional Nutrition")}</span>
             <span className="badge bg-light text-dark me-1">{t("Blood Sugar Regulation")}</span>
           </div>
-
           <div className="provider-video">
             <iframe src="https://www.youtube.com/embed/ac1DvrGlIDQ?si=SMd9SVsPBr17Btuc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
-
           <p className="card-text small provider-bio">
             {t("caroline_bio")}
           </p>
@@ -351,7 +352,7 @@ const learnmore = () => {
           </p>
 
           <div className="provider-card-footer">
-            <a href="mailto:jim@amazinglifedesign.com" className="btn btn-outline-primary">
+            <a href="mailto:jim@amazinglifedesign.com" onClick={(e) => handleMailClick(e, 'jim@amazinglifedesign.com')} className="btn btn-outline-primary">
               {t("Contact")}
             </a>
             <div className="provider-social-icons">
@@ -481,7 +482,7 @@ const learnmore = () => {
               {t("Contact")}
             </a>
             <div className="provider-social-icons">
-              <a href="mailto:info@ramonacrabtreefalkner.com" aria-label={t("Email")} title={t("Email")}>
+              <a href="mailto:info@ramonacrabtreefalkner.com" onClick={(e) => handleMailClick(e, 'info@ramonacrabtreefalkner.com')} aria-label={t("Email")} title={t("Email")}>
                 <img src={mail} alt={t("Email")} />
               </a>
               <a href="https://www.linkedin.com/in/ramonacrabtreefalkner/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
@@ -666,10 +667,171 @@ const learnmore = () => {
     )
   );
 
+  const renderBethany = () => (
+    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }} key="bethany">
+      <div className="card-body provider-card-body">
+        <div className="provider-card-top">
+          <img src={bethany} alt="Bethany Stone" className="provider-photo" />
+          <h2 className="h4 mb-1">{t('Thriving by Nature')}</h2>
+          <p className="text-muted mb-0">{t("Bethany Stone")}</p>
+        </div>
+
+        <div className="mb-2">
+          <span className="badge bg-light text-dark me-1">{t("Business and Leadership")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Mindset")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Montessori")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Gain Clarity")}</span>
+        </div>
+
+        <div className="provider-video">
+          <iframe
+            src="https://www.linkedin.com/video/embed/live/urn:li:ugcPost:7412193684672184320"
+            title="Bethany Stone Video"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+
+        <p className="card-text small provider-bio">
+          {t("bethany_bio")}
+        </p>
+
+        <div className="provider-card-footer">
+          <a href="https://thrivingbynature.com/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+            {t("View Profile")}
+          </a>
+          <div className="provider-social-icons">
+            <a href="https://www.facebook.com/bethany.e.courtright" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+              <img src={facebook} alt={t("Facebook")} />
+            </a>
+            <a href="https://www.instagram.com/thrivingbynaturecoaching/" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+              <img src={instagram} alt={t("Instagram")} />
+            </a>
+            <a href="https://www.linkedin.com/in/bethany-stone-mindset-coach/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+              <img src={linkedin} alt={t("LinkedIn")} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderShirley = () => (
+    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }} key="shirley">
+      <div className="card-body provider-card-body">
+        <div className="provider-card-top">
+          <h2 className="h4 mb-1">{t('Innergetics')}</h2>
+          <p className="text-muted mb-0">{t("Shirley Billigmeier")}</p>
+        </div>
+
+        <p className="mb-2">
+          <i className="fas fa-map-marker-alt text-primary me-2"></i>
+          {t("Long Lake, Minnesota")}
+        </p>
+
+        <div className="mb-2">
+          <span className="badge bg-light text-dark me-1">{t("Intuitive Eating")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Mindfulness")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Weight loss")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Inner Eating")}</span>
+        </div>
+
+        <div className="provider-video">
+          <iframe
+            src="https://www.youtube.com/embed/VW19EfgD43M?si=cLm23bgGu9M65ZEK"
+            title="Shirley Billigmeier Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+
+        <p className="card-text small provider-bio">
+          {t("shirley_bio")}
+        </p>
+
+        <div className="provider-card-footer">
+          <a href="https://www.innergetics.com/30min-consultation" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+            {t("Schedule Consultation")}
+          </a>
+          <div className="provider-social-icons">
+            <a href="https://www.linkedin.com/in/shirleybilligmeier/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+              <img src={linkedin} alt={t("LinkedIn")} />
+            </a>
+            <a href="https://www.instagram.com/innergeticsmethod/" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+              <img src={instagram} alt={t("Instagram")} />
+            </a>
+            <a href="https://www.tiktok.com/@innergetics" target="_blank" rel="noopener noreferrer" aria-label={t("TikTok")} title={t("TikTok")}>
+              <svg viewBox="0 0 448 512" width="26" height="26" fill="#000000" aria-hidden="true">
+                <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderAndrea = () => (
+    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }} key="andrea">
+      <div className="card-body provider-card-body">
+        <div className="provider-card-top">
+          <img src={andrea} alt="Andrea Isaacs" className="provider-photo" />
+          <h2 className="h4 mb-1">{t('Andrea Isaacs')}</h2>
+          <p className="text-muted mb-0">{t("Life Mastery Institute")}</p>
+        </div>
+
+        <p className="mb-2">
+          <i className="fas fa-map-marker-alt text-primary me-2"></i>
+          {t("Eugene, Oregon (serving all of Oregon)")}
+        </p>
+
+        <div className="mb-2">
+          <span className="badge bg-light text-dark me-1">{t("Mindset Coaching")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Somatic Focusing")}</span>
+          <span className="badge bg-light text-dark me-1">{t("EQ")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Body Wisdom")}</span>
+        </div>
+
+        <div className="provider-video">
+          <iframe
+            src="https://www.youtube.com/embed/rIv7tb-lQr4?si=SAPr7S7y1N-AV5en"
+            title="Andrea Isaacs Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+
+        <p className="card-text small provider-bio">
+          {t("andrea_bio")}
+        </p>
+
+        <div className="provider-card-footer">
+          <a href="https://calendly.com/andrea-eq/lets-talk?month=2026-09" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+            {t("Schedule Consultation")}
+          </a>
+          <div className="provider-social-icons">
+            <a href="https://www.facebook.com/Andrea.Isaacs.EQ/" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+              <img src={facebook} alt={t("Facebook")} />
+            </a>
+            <a href="https://www.linkedin.com/in/andreaisaacseq/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+              <img src={linkedin} alt={t("LinkedIn")} />
+            </a>
+            <a href="https://www.instagram.com/andreaisaacseq" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+              <img src={instagram} alt={t("Instagram")} />
+            </a>
+            <a href="https://x.com/andreaEQ" target="_blank" rel="noopener noreferrer" aria-label={t("X")} title={t("X")}>
+              <img src={x} alt={t("X")} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   // Function to render coaches in priority order
 const renderCoachesInOrder = () => {
   const coaches = [];
-  
+
   if (regionPriority === 'nv') {
     // Nevada: Jim first, then others
     coaches.push(renderJim());
@@ -722,7 +884,12 @@ const renderCoachesInOrder = () => {
     coaches.push(renderAnil());
     coaches.push(renderJim());
   }
-  
+
+  // These three coaches are always shown regardless of the searched location
+  coaches.push(renderBethany());
+  coaches.push(renderShirley());
+  coaches.push(renderAndrea());
+
   return coaches.filter(Boolean); // Remove null/undefined entries
 };
   return (

@@ -10,6 +10,7 @@ import mail from "../images copy/mail.png";
 import instagram from "../images copy/insta.png";
 import facebook from "../images copy/facebook.png";
 import x from "../images copy/x.png";
+import { handleMailClick } from '../utils/mailFallback';
 import { useTranslation } from 'react-i18next'
 import { Button,  Modal } from 'react-bootstrap';
 
@@ -222,7 +223,7 @@ Think of it as a reset button for your mind and body so you can feel more ground
                           />
                         </div>
                         <div className="provider-social-icons">
-                          <a href="mailto:contact@oceantreis.com" aria-label={t("Email")} title={t("Email")}>
+                          <a href="mailto:contact@oceantreis.com" onClick={(e) => handleMailClick(e, 'contact@oceantreis.com')} aria-label={t("Email")} title={t("Email")}>
                             <img src={mail} alt={t("Email")} />
                           </a>
                           <a href="https://www.instagram.com/oceantreis" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
@@ -295,7 +296,7 @@ Think of it as a reset button for your mind and body so you can feel more ground
                           {t("Book Appointment")}
                         </a>
                         <div className="provider-social-icons">
-                          <a href="mailto:erica@arightpath.com" aria-label={t("Email")} title={t("Email")}>
+                          <a href="mailto:erica@arightpath.com" onClick={(e) => handleMailClick(e, 'erica@arightpath.com')} aria-label={t("Email")} title={t("Email")}>
                             <img src={mail} alt={t("Email")} />
                           </a>
                           <a href="https://www.facebook.com/arightpathwellness" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
