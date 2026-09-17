@@ -1,19 +1,75 @@
 /* MASTER FONT STANDARD */
 * {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-  
+
+}
+
+/* AOS SCROLL-ANIMATION KILL SWITCH
+   AOS computes each [data-aos] element's scroll-trigger offset once, from
+   the layout at mount time, and this codebase never calls AOS.refresh()
+   afterward. Every page keeps loading images/iframes below the fold after
+   that first calculation, which shifts the real layout and invalidates the
+   cached offsets, so elements frequently never receive the "aos-animate"
+   class that reveals them. Until that class lands, an element like
+   data-aos="slide-right" sits at transform: translate3d(-100%,0,0) -
+   shifted completely off-screen by its own width - while still reserving
+   its full height in the page, which is exactly what shows up as a large
+   blank gap (or, if the shift only partially clears the viewport, as
+   content overlapping its neighbors). Browser zoom makes this worse: it
+   invalidates the cached offsets outright. Forcing every [data-aos]
+   element to its final, fully visible state removes this failure mode
+   site-wide without having to touch the 60+ pages that use it. */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* UNIFORM BUTTON COLOR
+   Most CTAs use .custom-btn (brand teal), but that class is actually
+   defined in Info.css, which is only pulled in by the lazy-loaded route
+   chunks that happen to import it - a page whose chunk never imports
+   Info.css gets no .custom-btn rule at all, so a handful of buttons that
+   also carry an inline style="{background: '#007bff'}" fall back to
+   that blue with nothing to override it. Other pages fell back to raw
+   Bootstrap variants instead (btn-primary/outline-primary render blue,
+   btn-secondary renders gray), or a native submit button (green, from
+   the button[type="submit"] rule below). Redeclaring .custom-btn here in
+   App.css - which every route loads eagerly, unlike Info.css - plus
+   !important on all of these, keeps every button on every page the same
+   color regardless of which variant, class, or inline style produced it. */
+.custom-btn,
+.btn-primary,
+.btn-outline-primary,
+.btn-secondary,
+.btn-outline-secondary,
+button[type="submit"],
+input[type="submit"] {
+  background-color: #00695c !important;
+  border-color: #00695c !important;
+  color: #fff !important;
+}
+
+.custom-btn:hover,
+.btn-primary:hover,
+.btn-outline-primary:hover,
+.btn-secondary:hover,
+.btn-outline-secondary:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: #004d40 !important;
+  border-color: #004d40 !important;
+  color: #fff !important;
 }
 html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
   background-image: url("./images copy/backgroundd.webp");
-
   background-size: cover;
   background-position:
     left top,
     right top;
-
   background-repeat:
     repeat-y,
     repeat-y;
@@ -161,20 +217,23 @@ iframe[src*="drive.google.com/file"] {
 }
 
 
+/* aspect-ratio instead of the old padding-bottom-percentage hack: as a
+   flex item (it sits inside a row on the ADHD page), that percentage was
+   resolving against the flex row's width rather than this element's own
+   max-width-clamped width, inflating it to ~660px tall instead of ~225px
+   and leaving a large blank gap below the actual video. aspect-ratio does
+   not have that containing-block ambiguity. */
 .video-wrapperr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
+  aspect-ratio: 16 / 9;
 }
 
 .video-wrapperr iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .imgg { width: 200px; height: 200px; object-fit: cover; /* keeps them from stretching */ border-radius: 8px; /* optional */}
@@ -356,9 +415,8 @@ a:hover {
   max-width: 400px;
   width: 100%;
 }
-/* Add a subtle background gradient */
 body {
-  background-color: #ffffff; /* Replace with your original color */
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   background-image: url("./images\ copy/background.png");
@@ -1637,6 +1695,19 @@ input[type="submit"]:hover {
   }
 }
 
+/* System video overview page: fixed 2x2 grid instead of the auto-fit
+   column count used elsewhere, collapsing to 1 column on small screens */
+.systemvids-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 767px) {
+  .systemvids-grid {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Plant container styles apothecary */
 .plant-containers {
   display: flex;
@@ -1924,6 +1995,12 @@ td:last-child {
 
   .plant-card h3 {
     font-size: 1.5rem;
+  }
+
+  /* Keep the system video overview locked to 2 columns instead of the
+     auto-fit column count used by the other .plant-container pages */
+  .systemvids-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2562,4 +2639,117 @@ td:last-child {
 @keyframes loader-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* PROVIDER DIRECTORY GRID
+   Shared, reusable layout for telehealth-directory pages (homeopathy and
+   onward): provider cards sit side by side in columns instead of each
+   stacking full-width one below the other, so comparing providers does
+   not require scrolling down past one to reach the next. Collapses to a
+   single column once a card would go narrower than 340px. */
+.provider-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.provider-card {
+  height: 100%;
+}
+
+.provider-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* !important: two other same-specificity .card-body rules exist
+     elsewhere (App.css's own rgba(0,0,0,0.5) dark overlay, meant for
+     text-over-image sections, and Info.css's #f8f9fa grey) and on any
+     page that happens to load one of them after this rule, a plain
+     background-color here would lose the tie on source order alone. */
+  background-color: #fff !important;
+}
+
+.provider-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.provider-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.provider-bio {
+  text-align: left;
+}
+
+.provider-card-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.provider-social-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.provider-social-icons img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.provider-social-icons img:hover {
+  transform: scale(1.15);
+}
+
+.provider-social-icons svg {
+  transition: transform 0.2s ease;
+}
+
+.provider-social-icons svg:hover {
+  transform: scale(1.15);
+}
+
+/* Per-provider intro video inside a provider-card - plain aspect-ratio
+   box, not the old padding-bottom-percentage hack (see .video-wrapperr
+   above): a provider-card is a flex/grid item, and that hack resolves
+   its percentage against the wrong containing block inside one. */
+.provider-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 12px;
+}
+
+.provider-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Third-party booking widgets (Carepatron, Calendly, ...) embedded via
+   dangerouslySetInnerHTML already size themselves to 100% width, this
+   just keeps them from overflowing a narrower provider-card. */
+.provider-booking-embed {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }

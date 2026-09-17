@@ -174,7 +174,8 @@
 .social-icons-list {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
   margin-top: 12px;
 }
 
@@ -192,6 +193,8 @@
 .social-icon.facebook:hover { color: #1877f2; }
 .social-icon.youtube:hover { color: #ff0000; }
 .social-icon.whatsapp:hover { color: #25d366; }
+.social-icon.tiktok:hover { color: #25f4ee; }
+.social-icon.email:hover { color: #ffb700; }
 
 /* === Footer Bottom === */
 .footer-bottom {

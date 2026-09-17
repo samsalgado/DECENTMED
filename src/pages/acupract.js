@@ -5,6 +5,11 @@ import Topbar from './topbar';
 import Footer from '../footer';
 import Treis from '../cards/oceantreis.webp';
 import Erica from '../cards/erica.webp';
+import linkedin from "../images copy/linkedin.png";
+import mail from "../images copy/mail.png";
+import instagram from "../images copy/insta.png";
+import facebook from "../images copy/facebook.png";
+import x from "../images copy/x.png";
 import { useTranslation } from 'react-i18next'
 import { Button,  Modal } from 'react-bootstrap';
 
@@ -155,86 +160,77 @@ Think of it as a reset button for your mind and body so you can feel more ground
                 <h2 className="mb-4">{t("Acupuncturists in")} {location}</h2>
                 
                 {/* Tampa Acupuncturist Listing */}
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Treis} 
-                              alt="Ocean Treis Medical" 
-                              style={{ 
-                                maxWidth: '300px', 
-                                maxHeight: '300px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div>
-                            <iframe
-                              style={{
-                                borderRadius: "8px",
-                                boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
-                              }}
-                              src="https://drive.google.com/file/d/1hmNaUgvbJ7nI5rmKIliGsLDsmEmdUsoJ/preview"
-                              width="100%"
-                              height="305px"
-                              title="Acupuncture"
-                              allow="autoplay"
-                              allowFullScreen
-                            />
-                          </div>
-                                            <Button className="custom-btn" onClick={() => setShowModal(true)}>
-                                          {t("Transcript")}
-                                        </Button>
-                                        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
-                                      <Modal.Header closeButton>
-                                        <Modal.Title>{t("Transcript")}</Modal.Title>
-                                      </Modal.Header>
-                                      <Modal.Body>
-                                        <p>{t(txt)}</p>
-                                      </Modal.Body>
-                                      <Modal.Footer>
-                                        <Button variant="secondary" onClick={() => setShowModal(false)}>
-                                          {t("Close")}
-                                        </Button>
-                                      </Modal.Footer>
-                                    </Modal>
-                          
-                          <div className="col-md-7">
-                            <h3 className="h4 mb-1">{t('Dr. Nettie Criscio')}</h3>
-                            <p className="text-muted mb-2">{t("Ocean Treis Medical")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("Tampa, Florida")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Stress Management")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
-                            </div>
-                            <p className="card-text small">
-                              {t("text")}
-                            </p>
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <div className="col-md-3 text-end">
-                            <div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
-                              <iframe 
-                                title={t("Carepatron Online Booking")} 
-                                alt={t("Book appointments online via Carepatron")} 
-                                width="100%" 
-                                height="100%" 
-                                src="https://book.carepatron.com/Ocean-Treis-Medical/Dr--Nettie?p=.MG7pzmtQCi.vG7CRJViDA&s=mjaA41Jt&e=i" 
-                                style={{ border: 0 }}
-                              />
-                            </div>
-                        </div>
+                <div className="provider-grid mb-4" style={{ alignItems: 'start' }}>
+                  <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                    <div className="card-body provider-card-body">
+                      <div className="provider-card-top">
+                        <img src={Treis} alt="Ocean Treis Medical" className="provider-photo" />
+                        <h3 className="h4 mb-1">{t('Dr. Nettie Criscio')}</h3>
+                        <p className="text-muted mb-0">{t("Ocean Treis Medical")}</p>
                       </div>
-                         
+
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("Tampa, Florida")}
+                      </p>
+
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("Corporate Burnout")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Stress Management")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                      </div>
+
+                      <div className="provider-video">
+                        <iframe
+                          src="https://drive.google.com/file/d/1hmNaUgvbJ7nI5rmKIliGsLDsmEmdUsoJ/preview"
+                          title="Acupuncture"
+                          allow="autoplay"
+                          allowFullScreen
+                        />
+                      </div>
+
+                      <p className="card-text small provider-bio">
+                        {t("We provide expert acupuncture treatments designed to relieve stress, reduce anxiety and restore balance. Our holistic approach goes beyond temporary relief, helping you achieve lasting calm, better sleep, improved digestion and overall well-being.")}
+                      </p>
+
+                      <Button className="btn btn-outline-primary mb-2" onClick={() => setShowModal(true)}>
+                        {t("Transcript")}
+                      </Button>
+                      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" className="custom-modal" centered>
+                        <Modal.Header closeButton>
+                          <Modal.Title>{t("Transcript")}</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          <p>{t(txt)}</p>
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <Button variant="secondary" onClick={() => setShowModal(false)}>
+                            {t("Close")}
+                          </Button>
+                        </Modal.Footer>
+                      </Modal>
+
+                      <div className="provider-card-footer">
+                        <div className="provider-booking-embed" style={{ minHeight: '600px' }}>
+                          <iframe
+                            title={t("Carepatron Online Booking")}
+                            aria-label={t("Book appointments online via Carepatron")}
+                            width="100%"
+                            height="100%"
+                            src="https://book.carepatron.com/Ocean-Treis-Medical/Dr--Nettie?p=.MG7pzmtQCi.vG7CRJViDA&s=mjaA41Jt&e=i"
+                            style={{ border: 0, minHeight: '600px' }}
+                          />
+                        </div>
+                        <div className="provider-social-icons">
+                          <a href="mailto:contact@oceantreis.com" aria-label={t("Email")} title={t("Email")}>
+                            <img src={mail} alt={t("Email")} />
+                          </a>
+                          <a href="https://www.instagram.com/oceantreis" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                            <img src={instagram} alt={t("Instagram")} />
+                          </a>
+                          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                            <img src={linkedin} alt={t("LinkedIn")} />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -246,78 +242,71 @@ Think of it as a reset button for your mind and body so you can feel more ground
                 <h2 className="mb-4">{t("Acupuncturists in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
                 {/* Milwaukee Acupuncturist Listing */}
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={Erica} 
-                              alt="Erica - Acupuncturist" 
-                              style={{ 
-                                maxWidth: '300px', 
-                                maxHeight: '300px', 
-                                objectFit: 'contain',
-                                borderRadius: '8px'
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h3 className="h4 mb-1">{t("Erica Zernzach")}</h3>
-                            <p className="text-muted mb-2">{t("A Right Path Wellness")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("Milwaukee, Wisconsin")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("EZ Method Academy")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("EZ Method Apothecary")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Wellness Care")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("At A Right Path Wellness, our mission is to promote total wellness through holistic medicine—restoring balance within your body, mind and spirit. Certified in the ancient practice of Eastern Medicine, our practitioners activate your body’s innate healing abilities—empowering our community by showing you that the path to transformation is right within your reach.")}
-                            </p>
-                            
-                            <div className="contact-info small text-muted">
-                              <p className="mb-1">
-                                <i className="fas fa-phone me-2"></i>
-                                {t("+1(414) 651-2850")}
-                              </p>
-                              <p className="mb-1">
-                                <i className="fas fa-envelope me-2"></i>
-                                {t("Erica@ARightPath.com")}
-                              </p>
-                              <p className="mb-1">
-                                <i className="fas fa-clock me-2"></i>
-                                {t("128 E Morgan Ave Milwaukee, WI 53207")}
-                              </p>
-                              <p className="mb-1">
-                                <i className="fas fa-clock me-2"></i>
-                                {t("M-F 10-8pm")}
-                              </p>
-                            </div>
-                          </div>
-                          <div className="col-md-3 text-end">
-                          <a 
-                              href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPK2rLwi2wW2Hcqnt45ru7xeMoXQ+UT3hcGgeFxwrNLxGas3EMbzye4U2WX/rwf9IYZDynb6+Fown6mYs0Nsk2BpT/NOiWu3gMIcjcx54KqTH4KyXa+URS5nvKy0AYp2ZueRDkn+eBaJi7meUvXLTDXuq6vGXcmPbRvasfHZGyLLi3eTPR9LgIPuOV4rK6W8Mya2KAv2FiUoQp1+s5fGqk7Y6y9hJHqSoM/MbpsZgQNkcbKgYpo1kmmLazM4XJ0T8yemk74007Ie4gqUguNOUYnQSWCu0K0dQ82ppPe7skL2I6ONF41SWIDf0BZzllZwb9PdAonfaRTwO9vxqKxZgGnyeREkAacIaUiHXeIo3euKsuPqhY41zH7o61bax3lThDNWgkwyPDFc5MvnIyiJvy4=' 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Book Appointment")}
-                            </a>
-                            <br />
-                            <a 
-                              href='mailto:Erica@ARightPath.com' 
-                              className="btn btn-outline-primary mb-2"
-                            >
-                              {t("Contact")}
-                            </a>
-                          </div>
+                <div className="provider-grid mb-4" style={{ alignItems: 'start' }}>
+                  <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                    <div className="card-body provider-card-body">
+                      <div className="provider-card-top">
+                        <img src={Erica} alt="Erica - Acupuncturist" className="provider-photo" />
+                        <h3 className="h4 mb-1">{t("Erica Zernzach")}</h3>
+                        <p className="text-muted mb-0">{t("A Right Path Wellness")}</p>
+                      </div>
+
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("Milwaukee, Wisconsin")}
+                      </p>
+
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("EZ Method Academy")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("EZ Method Apothecary")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Wellness Care")}</span>
+                      </div>
+
+                      <p className="card-text small provider-bio">
+                        {t("At A Right Path Wellness, our mission is to promote total wellness through holistic medicine—restoring balance within your body, mind and spirit. Certified in the ancient practice of Eastern Medicine, our practitioners activate your body’s innate healing abilities—empowering our community by showing you that the path to transformation is right within your reach.")}
+                      </p>
+
+                      <div className="contact-info small text-muted provider-bio">
+                        <p className="mb-1">
+                          <i className="fas fa-phone me-2"></i>
+                          {t("+1(414) 651-2850")}
+                        </p>
+                        <p className="mb-1">
+                          <i className="fas fa-envelope me-2"></i>
+                          {t("Erica@ARightPath.com")}
+                        </p>
+                        <p className="mb-1">
+                          <i className="fas fa-clock me-2"></i>
+                          {t("128 E Morgan Ave Milwaukee, WI 53207")}
+                        </p>
+                        <p className="mb-1">
+                          <i className="fas fa-clock me-2"></i>
+                          {t("M-F 10-8pm")}
+                        </p>
+                      </div>
+
+                      <div className="provider-card-footer">
+                        <a
+                          href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPK2rLwi2wW2Hcqnt45ru7xeMoXQ+UT3hcGgeFxwrNLxGas3EMbzye4U2WX/rwf9IYZDynb6+Fown6mYs0Nsk2BpT/NOiWu3gMIcjcx54KqTH4KyXa+URS5nvKy0AYp2ZueRDkn+eBaJi7meUvXLTDXuq6vGXcmPbRvasfHZGyLLi3eTPR9LgIPuOV4rK6W8Mya2KAv2FiUoQp1+s5fGqk7Y6y9hJHqSoM/MbpsZgQNkcbKgYpo1kmmLazM4XJ0T8yemk74007Ie4gqUguNOUYnQSWCu0K0dQ82ppPe7skL2I6ONF41SWIDf0BZzllZwb9PdAonfaRTwO9vxqKxZgGnyeREkAacIaUiHXeIo3euKsuPqhY41zH7o61bax3lThDNWgkwyPDFc5MvnIyiJvy4='
+                          className="btn btn-outline-primary"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {t("Book Appointment")}
+                        </a>
+                        <div className="provider-social-icons">
+                          <a href="mailto:erica@arightpath.com" aria-label={t("Email")} title={t("Email")}>
+                            <img src={mail} alt={t("Email")} />
+                          </a>
+                          <a href="https://www.facebook.com/arightpathwellness" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+                            <img src={facebook} alt={t("Facebook")} />
+                          </a>
+                          <a href="https://www.instagram.com/arightpathwellness/" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                            <img src={instagram} alt={t("Instagram")} />
+                          </a>
+                          <a href="https://twitter.com/arightpath" target="_blank" rel="noopener noreferrer" aria-label={t("X")} title={t("X")}>
+                            <img src={x} alt={t("X")} />
+                          </a>
                         </div>
                       </div>
                     </div>

@@ -5,6 +5,11 @@ import "../info/Info.css";
 import Topbar from './topbar';
 import Footer from '../footer';
 import svet from "../cards/svetoslav.png";
+import linkedin from "../images copy/linkedin.png";
+import mail from "../images copy/mail.png";
+import x from "../images copy/x.png";
+import instagram from "../images copy/insta.png";
+import facebook from "../images copy/facebook.png";
 import { useTranslation } from 'react-i18next';
 export default function HomeopathyPract() {
   const { t } = useTranslation('common');
@@ -123,58 +128,148 @@ export default function HomeopathyPract() {
             <div className="results-section">
               <h2 className="mb-4">{t("Homeopaths Available for Telehealth")}</h2>
               
-              {/* First Practitioner - Dr. Svetoslav Bulatov */}
-              <div className="row mb-4">
-                <div className="col-md-12">
-                  <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                    <div className="card-body">
-                      <div className="row">
-                        <div className="col-md-2 text-center">
-                          <img src={svet} alt="Dr. Svetoslav Bulatov" style={{ 
-                            maxWidth: '100px', 
-                            maxHeight: '100px', 
-                            objectFit: 'contain' 
-                          }} />
-                        </div>
-                        <div className="col-md-7">
-                          <h2 className="h4 mb-1">{t('Dr. Svetoslav Bulatov')}</h2>
-                          <p className="text-muted mb-2">{t("Riches of Health")}</p>
-                          
-                          <p className="mb-2">
-                            <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                            {t("South Africa")} | <i className="fas fa-video text-success me-1"></i>{t("Telehealth Available")}
-                          </p>
-                          
-                          <div className="mb-2">
-                            <span className="badge bg-light text-dark me-1">{t("Integrative Medicine")}</span>
-                            <span className="badge bg-light text-dark me-1">{t("Quantum Healing")}</span>
-                            <span className="badge bg-light text-dark me-1">{t("Online Consultations")}</span>
-                          </div>
-                          
-                          <p className="card-text small">
-                            {t("We are applying the best of ancient and modern medicine to resolve difficult cases. The integrative medicine looks at the whole person, not at the disease symptoms.")}
-                          </p>
-                          
-                          <p className="card-text small">
-                            <strong>{t("Pricing:")}</strong> {t("Quantum leap bodywork is R1000 for 60 min and R1600 for 120 min. R1600 for online consultation.")}
-                          </p>
-                        </div>
-                        <div className="col-md-3 text-end">
-                          <a 
-                            href='https://www.richesofhealth.co.za/distant-consultation.php' 
-                            className="btn btn-outline-primary mb-2"
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                          >
-                            {t("View Profile")}
-                          </a>
-                          <br />
-                          <small className="text-muted">{t("Telehealth Available")}</small>
-                        </div>
+              {/* Practitioners */}
+              <div className="provider-grid mb-4">
+
+                {/* Dr. Svetoslav Bulatov */}
+                <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                  <div className="card-body provider-card-body">
+                    <div className="provider-card-top">
+                      <img src={svet} alt="Dr. Svetoslav Bulatov" className="provider-photo" />
+                      <h2 className="h4 mb-1">{t('Dr. Svetoslav Bulatov')}</h2>
+                      <p className="text-muted mb-0">{t("Riches of Health")}</p>
+                    </div>
+
+                    <p className="mb-2">
+                      <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                      {t("South Africa")} | <i className="fas fa-video text-success me-1"></i>{t("Telehealth Available")}
+                    </p>
+
+                    <div className="mb-2">
+                      <span className="badge bg-light text-dark me-1">{t("Integrative Medicine")}</span>
+                      <span className="badge bg-light text-dark me-1">{t("Quantum Healing")}</span>
+                      <span className="badge bg-light text-dark me-1">{t("Online Consultations")}</span>
+                    </div>
+
+                    <p className="card-text small provider-bio">
+                      {t("We are applying the best of ancient and modern medicine to resolve difficult cases. The integrative medicine looks at the whole person, not at the disease symptoms.")}
+                    </p>
+
+                    <p className="card-text small provider-bio">
+                      <strong>{t("Pricing:")}</strong> {t("Quantum leap bodywork is R1000 for 60 min and R1600 for 120 min. R1600 for online consultation.")}
+                    </p>
+
+                    <div className="provider-card-footer">
+                      <a
+                        href='https://www.richesofhealth.co.za/distant-consultation.php'
+                        className="btn btn-outline-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("View Profile")}
+                      </a>
+                      <div className="provider-social-icons">
+                        <a href="mailto:drbulatov2012@gmail.com" aria-label={t("Email")} title={t("Email")}>
+                          <img src={mail} alt={t("Email")} />
+                        </a>
+                        <a
+                          href="https://za.linkedin.com/in/svetoslav-bulatov-54a87462"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={t("LinkedIn")}
+                          title={t("LinkedIn")}
+                        >
+                          <img src={linkedin} alt={t("LinkedIn")} />
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Dr. Tim Shannon */}
+                <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                  <div className="card-body provider-card-body">
+                    <div className="provider-card-top">
+                      <h2 className="h4 mb-1">{t('Dr. Tim Shannon')}</h2>
+                      <p className="text-muted mb-0">{t("Heart of Wellness")}</p>
+                    </div>
+
+                    <p className="mb-1">
+                      <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                      {t("Scottsdale, Arizona")}
+                    </p>
+                    <p className="mb-2">
+                      <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                      {t("205 Clark Place Southeast, Tumwater, WA, United States")}
+                    </p>
+                    <p className="mb-2">
+                      <i className="fas fa-video text-success me-1"></i>{t("Telehealth Available")}
+                    </p>
+
+                    <div className="mb-2">
+                      <span className="badge bg-light text-dark me-1">{t("Mental Health Relief")}</span>
+                      <span className="badge bg-light text-dark me-1">{t("Pain Relief")}</span>
+                      <span className="badge bg-light text-dark me-1">{t("Natural Medicine")}</span>
+                    </div>
+
+                    <p className="card-text small provider-bio">
+                      {t("Dr. Shannon specializes in homeopathy, naturopathic support, and natural approaches to mental health, anti-aging therapy, and general wellness.")}
+                    </p>
+                    <p className="card-text small provider-bio">
+                      {t("Dr. Shannon has advanced training in classical homeopathy. His treatment plans emphasize homeopathy along with diet and lifestyle changes and botanical medicine.")}
+                    </p>
+                    <p className="card-text small provider-bio">
+                      {t("Among the mental health problems he specializes in addressing through homeopathy and other natural means are depression, anxiety, seasonal affective disorder, bipolar disorder, other mood disorders, obsessive-compulsive disorder, eating disorders, self-harm, ADD/ADHD, and the entire autistic spectrum.")}
+                    </p>
+                    <p className="card-text small provider-bio">
+                      {t("Other conditions he specializes in treating include obesity, fatigue, insomnia, closed head injuries, diabetes, hypertension, HIV/AIDS, autoimmune disorders and neurological disorders.")}
+                    </p>
+
+                    <div className="provider-card-footer">
+                      <a
+                        href='https://www.drtshannon.com/'
+                        className="btn btn-outline-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("View Profile")}
+                      </a>
+                      <div className="provider-social-icons">
+                        <a href="mailto:drtshann@gmail.com" aria-label={t("Email")} title={t("Email")}>
+                          <img src={mail} alt={t("Email")} />
+                        </a>
+                        <a
+                          href="https://www.facebook.com/heartofwellness"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={t("Facebook")}
+                          title={t("Facebook")}
+                        >
+                          <img src={facebook} alt={t("Facebook")} />
+                        </a>
+                        <a
+                          href="https://www.instagram.com/heartofwellness/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={t("Instagram")}
+                          title={t("Instagram")}
+                        >
+                          <img src={instagram} alt={t("Instagram")} />
+                        </a>
+                        <a
+                          href="https://twitter.com/heartofwellness"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={t("X")}
+                          title={t("X")}
+                        >
+                          <img src={x} alt={t("X")} />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
               {/* Podcast Section */}

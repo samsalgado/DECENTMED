@@ -6,6 +6,10 @@ import Footer from '../footer';
 import shea from "../cards/shea.jpg";
 import don from "../cards/don.jpg";
 import Green from '../cards/Green-hypnotherapy.png';
+import mail from "../images copy/mail.png";
+import instagram from "../images copy/insta.png";
+import facebook from "../images copy/facebook.png";
+import youtube from "../images copy/youtube.png";
 import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -75,7 +79,11 @@ const handleSearch = () => {
         t("Reprogram 'Hidden' Beliefs"),
         t("Overcome Trauma")
       ],
-      iframe: "https://drive.google.com/file/d/14o0p_J7PigM-3OlyKMyHi8Xwbnrgda3z/preview"
+      iframe: "https://drive.google.com/file/d/14o0p_J7PigM-3OlyKMyHi8Xwbnrgda3z/preview",
+      mail: "greenhypnotherapy@gmail.com",
+      youtube: "https://www.youtube.com/channel/UCo7sDvf5wB9eE8bInWqf7wQ",
+      instagram: "https://www.instagram.com/ThatHypnoSis",
+      tiktok: "https://www.tiktok.com/@thathypnosis"
     },
     {
       id:"United States",
@@ -93,7 +101,10 @@ const handleSearch = () => {
         t("Sports Hypnosis"),
         t("Self-Hypnosis")
       ],
-      iframe:"https://www.youtube.com/embed/AI1uRqbSUgQ?si=B08d14I-3TsipDXa"
+      iframe:"https://www.youtube.com/embed/AI1uRqbSUgQ?si=B08d14I-3TsipDXa",
+      mail: "don@hypnosissilverspring.com",
+      youtube: "https://www.youtube.com/channel/UCfd_0ah70XzLzHyyxOy7F9w",
+      serviceAreas: t("DC Metro Area, Houston, Durham NC, Raleigh NC, Chapel Hill NC, Atlanta, and everywhere else, via the Internet")
     },
      {
       id: 'sarasota',
@@ -109,7 +120,10 @@ const handleSearch = () => {
         t("EMDR"),
         t("Overcome Trauma")
       ],
-      iframe: "https://www.youtube.com/embed/tWy0oFz82yw"
+      iframe: "https://www.youtube.com/embed/tWy0oFz82yw",
+      mail: "sheashulmantherapy@outlook.com",
+      instagram: "https://www.instagram.com/sheashulmantherapy/",
+      facebook: "https://www.facebook.com/p/Shea-Shulman-Therapy-100084499541130/"
     }
   ];
 
@@ -177,23 +191,24 @@ const handleSearch = () => {
                 : t("Available Hypnotherapists")}
             </h2>
 
-            {sortedProviders.map((provider) => (
-              <div className="card mb-4" key={provider.id}>
-                <div className="card-body row align-items-center">
+            <div className="provider-grid" style={{ alignItems: 'start' }}>
+              {sortedProviders.map((provider) => (
+                <div className="card provider-card" key={provider.id}>
+                  <div className="card-body provider-card-body">
+                    <div className="provider-card-top">
+                      <img src={provider.image} alt={provider.name} className="provider-photo" />
+                      <h4 className="mb-1">{provider.name}</h4>
+                    </div>
 
-                  {/* IMAGE */}
-                  <div className="col-md-3">
-                    <img
-                      src={provider.image}
-                      alt={provider.name}
-                      style={{ maxWidth: '100%' }}
-                    />
-                  </div>
-
-                  {/* TEXT */}
-                  <div className="col-md-6 text-start">
-                    <h4>{provider.name}</h4>
-                    <p>{provider.locationLabel}</p>
+                    <p className="mb-2">
+                      <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                      {provider.locationLabel}
+                    </p>
+                    {provider.serviceAreas && (
+                      <p className="mb-2 small">
+                        <strong>{t("Service Areas:")}</strong> {provider.serviceAreas}
+                      </p>
+                    )}
 
                     <div className="mb-2">
                       {provider.badges.map((badge, i) => (
@@ -201,44 +216,62 @@ const handleSearch = () => {
                           {badge}
                         </span>
                       ))}
-                      
                     </div>
-                      
-                    <p className="small">{provider.bio}</p>
-                  </div>
 
-                  {/* VIDEO */}
-                  <div>
-                    <iframe
-                      style={{
-                        borderRadius: "8px",
-                        boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
-                      }}
-                      src={provider.iframe}
-                      width="100%"
-                      height="305px"
-                      title={provider.name}
-                      allow="autoplay"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
+                    <div className="provider-video">
+                      <iframe
+                        src={provider.iframe}
+                        title={provider.name}
+                        allow="autoplay"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
 
-                  {/* BUTTON */}
-                  <div className="col-md-3">
-                    <a
-                      href={provider.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline-primary"
-                    >
-                      {provider.buttonText}
-                    </a>
-                  </div>
+                    <p className="small provider-bio">{provider.bio}</p>
 
+                    <div className="provider-card-footer">
+                      <a
+                        href={provider.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                      >
+                        {provider.buttonText}
+                      </a>
+                      <div className="provider-social-icons">
+                        {provider.mail && (
+                          <a href={`mailto:${provider.mail}`} aria-label={t("Email")} title={t("Email")}>
+                            <img src={mail} alt={t("Email")} />
+                          </a>
+                        )}
+                        {provider.facebook && (
+                          <a href={provider.facebook} target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+                            <img src={facebook} alt={t("Facebook")} />
+                          </a>
+                        )}
+                        {provider.instagram && (
+                          <a href={provider.instagram} target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                            <img src={instagram} alt={t("Instagram")} />
+                          </a>
+                        )}
+                        {provider.youtube && (
+                          <a href={provider.youtube} target="_blank" rel="noopener noreferrer" aria-label={t("YouTube")} title={t("YouTube")}>
+                            <img src={youtube} alt={t("YouTube")} />
+                          </a>
+                        )}
+                        {provider.tiktok && (
+                          <a href={provider.tiktok} target="_blank" rel="noopener noreferrer" aria-label={t("TikTok")} title={t("TikTok")}>
+                            <svg viewBox="0 0 448 512" width="26" height="26" fill="#000000" aria-hidden="true">
+                              <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                            </svg>
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-            ))}
+              ))}
+            </div>
           </div>
           </div>
         )}

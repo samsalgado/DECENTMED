@@ -19,6 +19,7 @@ const Bitcoin = lazy(() => import('./pages/blogs/bitcoin'));
 const BlogAcu = lazy(() => import('./pages/blogs/blogacu'));
 const Blog7 = lazy(() => import('./pages/blogs/blog7'));
 const Shop = lazy(() => import("./pages/products"));
+const OurSystem = lazy(() => import("./pages/OurSystem"));
 const Blog4 = lazy(() => import('./pages/blogs/blog4'));
 const Owl1 = lazy(() => import('./pages/blogs/owl1'));
 const Ramona = lazy(() => import('./pages/blogs/ramona'));
@@ -168,6 +169,7 @@ function App() {
         <Route path="/ayurveda" element={<Ayurveda t={t} />} />
         <Route path="/adhd" element={<ADHD t={t} />} />
         <Route path="/ptsd" element={<PTSD t={t} />} />
+        <Route path="/oursystem" element={<OurSystem t={t} />} />
         <Route path="/psychicprotection" element={<Owl1 t={t} />} />
         <Route path="/bloodlines" element={<Owl2 t={t} />} />
         <Route path="/how-to-treat-sibo-naturally" element={<S t={t} />} />

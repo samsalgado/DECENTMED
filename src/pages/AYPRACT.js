@@ -7,6 +7,11 @@ import Stacy from '../cards/stacy.png';
 import angela from '../cards/angela.webp';
 import stacyservices from "../cards/stacyservices.png";
 import Yogi from '../cards/yogiSanjivana.jpg';
+import mail from "../images copy/mail.png";
+import instagram from "../images copy/insta.png";
+import facebook from "../images copy/facebook.png";
+import linkedin from "../images copy/linkedin.png";
+import youtube from "../images copy/youtube.png";
 import { useTranslation } from 'react-i18next';
 export default function AYPract() {
   const { t } = useTranslation('common');
@@ -29,7 +34,11 @@ export default function AYPract() {
       embedCode: `<div style="display:grid;width:100%;height:100%;min-width:320px;min-height:600px;background-color:#c9d4b8"><iframe title="Carepatron Online Booking" alt="Book appointments online via Carepatron" width="100%" height="100%" src="https://form.carepatron.com/Forms/W2P9db6rKWDS7Botx?&e=i" style="border:0;"></iframe></div>`,      description: t("after_stacy_graduated"),
       video: "https://www.youtube.com/embed/ZaEGTAKvhSs?si=hlMEbykkS5kWNywN",
       servesGlobally: true,
-      countries: ["USA", "Canada", "UK", "Australia", "worldwide"]
+      countries: ["USA", "Canada", "UK", "Australia", "worldwide"],
+      mail: "healinggoddess222@gmail.com",
+      facebook: "https://www.facebook.com/healinggoddessworldwide",
+      youtube: "https://www.youtube.com/@healinggoddess222",
+      linkedin: "https://www.linkedin.com/in/stacy-theodossin-dd-921013177"
     },
      {
       id: 1,
@@ -55,7 +64,12 @@ export default function AYPract() {
      video:"https://www.youtube.com/embed/Ah4Usk_zcrg?si=IzV3-ZLPuqUpFA_Z",
       description: t("I guide women in perimenopause how to balance hormones naturally using lab testing, Ayurvedic principles, diet, and nervous system regulation — without relying on band-aid solutions. Angela Romero is an Ayurvedic & Integrative Holistic Hormone Practitioner specializing in natural hormone balance and perimenopause support. She is the founder of Ground Roots Health Collective, where she combines advanced lab testing, AO scans, personalized nutrition, lifestyle restructuring, herbal medicine, and targeted supplementation to help women restore energy, regulate hormones, and heal from the root. Her mission is to help women reclaim their health through ancient wisdom and modern holistic healing."),
       servesGlobally: true,
-      countries: ["USA"]
+      countries: ["USA"],
+      facebook: "https://www.facebook.com/GroundRootsHealthCollective",
+      instagram: "https://instagram.com/ground.roots.health.collective/",
+      youtube: "https://www.youtube.com/@GroundRootsHealth",
+      linkedin: "https://www.linkedin.com/in/ground-roots-health-collective-827604368",
+      tiktok: "https://www.tiktok.com/@groundrootsherbalco"
     },
     {
       id: 2,
@@ -205,128 +219,90 @@ export default function AYPract() {
             )}
           </div>
 
-          <div className="row">
+          <div className="provider-grid" style={{ alignItems: 'start' }}>
             {practitionersToShow.map((practitioner) => (
-              <div key={practitioner.id} className="col-md-10" style={{ marginBottom: '40px' }}>
-                <h2>{practitioner.title}</h2>
-                
-                {/* Location and Availability Info */}
-                <div style={{
-                  backgroundColor: '#f8f9fa',
-                  padding: '15px',
-                  borderRadius: '8px',
-                  marginBottom: '20px',
-                  border: '1px solid #dee2e6'
-                }}>
-                  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                    <span style={{ fontSize: '18px', marginRight: '8px' }}>📍</span>
-                    <strong>{t("Based in:")}</strong>
-                    <span style={{ marginLeft: '8px' }}>{practitioner.location}</span>
+              <div key={practitioner.id} className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                <div className="card-body provider-card-body">
+                  <div className="provider-card-top">
+                    <img src={practitioner.image} alt={practitioner.name} className="provider-photo" />
+                    <h2 className="h4 mb-1">{practitioner.name}</h2>
+                    <p className="text-muted mb-0">{practitioner.title}</p>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <span style={{ fontSize: '18px', marginRight: '8px' }}>
-                      {practitioner.availabilityType === 'telehealth' ? '🌐' : '✈️'}
-                    </span>
-                    <strong>{t("Availability:")}</strong>
-                    <span style={{ 
-                      marginLeft: '8px', 
-                      color: practitioner.availabilityType === 'telehealth' ? '#28a745' : '#007bff', 
-                      fontWeight: 'bold' 
-                    }}>
-                      {practitioner.availability}
-                    </span>
-                  </div>
-                </div>
 
-                {/* Display image without link */}
-                <figure>
-                  <img src={practitioner.image} style={{
-                    maxWidth: '100%',
-                    height: 'auto',
-                    borderRadius: '8px'
-                  }} alt={practitioner.name} />
-                </figure>
+                  <p className="mb-1">
+                    <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                    <strong>{t("Based in:")}</strong> {practitioner.location}
+                  </p>
+                  <p className="mb-2">
+                    <i className={practitioner.availabilityType === 'telehealth' ? "fas fa-video text-success me-1" : "fas fa-plane text-primary me-1"}></i>
+                    {practitioner.availability}
+                  </p>
 
-                {/* Add contact button - with special handling for Yogi's embed code */}
-               <div style={{ marginBottom: '20px' }}>
-                  {practitioner.embedCode ? (
-                    // Check if embedCode is a mailto link
-                    practitioner.embedCode.startsWith('mailto:') ? (
-                      <a 
-                        href={practitioner.embedCode}
-                        style={{
-                          padding: '15px 30px',
-                          backgroundColor: '#027360',
-                          color: 'white',
-                          border: 'none',
-                          borderRadius: '8px',
-                          cursor: 'pointer',
-                          fontSize: '18px',
-                          fontWeight: 'bold',
-                          textDecoration: 'none',
-                          display: 'inline-block',
-                          marginBottom: '10px'
-                        }}
-                      >
-                        ✉️ {t("Email")} {practitioner.name}
-                      </a>
-                    ) : (
-                      // Render the embed code for iframe embeds
-                      <div dangerouslySetInnerHTML={{ __html: practitioner.embedCode }} />
-                    )
-                  ) : (
-                    // Regular button for other practitioners with website
-                    <button 
-                      onClick={() => window.open(practitioner.website, '_blank')}
-                      style={{
-                        padding: '15px 30px',
-                        backgroundColor: '#027360',
-                        color: 'white',
-                        border: 'none',
-                        borderRadius: '8px',
-                        cursor: 'pointer',
-                        fontSize: '18px',
-                        fontWeight: 'bold',
-                        textDecoration: 'none',
-                        display: 'inline-block',
-                        marginBottom: '10px'
-                      }}
-                    >
-                      📞 {t("Contact")} {practitioner.title}
-                    </button>
+                  {practitioner.video && (
+                    <div className="provider-video">
+                      <iframe
+                        src={practitioner.video}
+                        title={`${practitioner.name} Video`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      />
+                    </div>
                   )}
-                </div>
 
-                {practitioner.services && (
-                  <img src={practitioner.services} style={{
-                        maxWidth: '100%',
-                        height: 'auto',
-                        borderRadius: '8px'
-                      }} alt={practitioner.name} />
-                )}
-                
-                {practitioner.video && (
-                  <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.15)", marginBottom: '20px' }}>
-                    <iframe
-                      src={practitioner.video}
-                      title={`${practitioner.name} Video`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        border: "0",
-                        borderRadius: "12px"
-                      }}
-                    />
+                  <p className="card-text small provider-bio">{practitioner.description}</p>
+
+                  {practitioner.services && (
+                    <img src={practitioner.services} style={{
+                      maxWidth: '100%',
+                      height: 'auto',
+                      borderRadius: '8px'
+                    }} alt={practitioner.name} />
+                  )}
+
+                  <div className="provider-card-footer">
+                    {practitioner.embedCode ? (
+                      <div className="provider-booking-embed" dangerouslySetInnerHTML={{ __html: practitioner.embedCode }} />
+                    ) : (
+                      <a href={practitioner.website} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+                        {t("Contact")} {practitioner.title}
+                      </a>
+                    )}
+                    <div className="provider-social-icons">
+                      {practitioner.mail && (
+                        <a href={`mailto:${practitioner.mail}`} aria-label={t("Email")} title={t("Email")}>
+                          <img src={mail} alt={t("Email")} />
+                        </a>
+                      )}
+                      {practitioner.facebook && (
+                        <a href={practitioner.facebook} target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+                          <img src={facebook} alt={t("Facebook")} />
+                        </a>
+                      )}
+                      {practitioner.instagram && (
+                        <a href={practitioner.instagram} target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                          <img src={instagram} alt={t("Instagram")} />
+                        </a>
+                      )}
+                      {practitioner.linkedin && (
+                        <a href={practitioner.linkedin} target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                          <img src={linkedin} alt={t("LinkedIn")} />
+                        </a>
+                      )}
+                      {practitioner.youtube && (
+                        <a href={practitioner.youtube} target="_blank" rel="noopener noreferrer" aria-label={t("YouTube")} title={t("YouTube")}>
+                          <img src={youtube} alt={t("YouTube")} />
+                        </a>
+                      )}
+                      {practitioner.tiktok && (
+                        <a href={practitioner.tiktok} target="_blank" rel="noopener noreferrer" aria-label={t("TikTok")} title={t("TikTok")}>
+                          <svg viewBox="0 0 448 512" width="26" height="26" fill="#000000" aria-hidden="true">
+                            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                          </svg>
+                        </a>
+                      )}
+                    </div>
                   </div>
-                )}
-
-                <h3>{practitioner.name}</h3>
-                <p>{practitioner.description}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -15,9 +15,13 @@
 html, body, #root {
   margin: 0;
   padding: 0;
-  min-height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  /* no overflow-x: hidden here - combined with the fixed height: 100%
+     that App.css sets on these same elements, it makes overflow-y
+     compute to auto per spec, turning #root into its own scroll
+     container clipped to one viewport tall instead of the page growing
+     to fit real content. main/footer below get overflow-x: hidden
+     instead, which is safe since neither has a fixed height. */
   box-sizing: border-box;
 }
 
@@ -36,7 +40,10 @@ html, body, #root {
 .page-wrapper {
   min-height: 100vh;
   width: 100%;
-  background: #fff;
+  /* transparent, not #fff: every page's content sits inside this wrapper,
+     so an opaque background here paints over the site's flower wallpaper
+     that html/body set behind everything. */
+  background: transparent;
   padding-top:0px;
 }
 
@@ -93,13 +100,18 @@ main {
 
 /* ============================================
    NAVBAR FIXES
+   topbar.js's actual wrapper div is .topbar-wrapper - ".navbar-container"
+   is never rendered anywhere in the app, so a same-named rule pair below
+   used to be completely dead: no wrap behavior was ever actually applied
+   here, and the nav silently overflowed the page at its default (nowrap)
+   flex behavior on any viewport under ~1440px.
 ============================================ */
-.navbar-container .navbar-nav {
+.topbar-wrapper .navbar-nav {
   width: 100%;
   flex-wrap: wrap;
 }
 
-.navbar-container .nav-link {
+.topbar-wrapper .nav-link {
   white-space: nowrap;
 }
 
@@ -108,11 +120,13 @@ main {
   height: auto;
 }
 
-@media (min-width: 1024px) {
-  .navbar-container .navbar-nav {
-    flex-wrap: nowrap;
-  }
-}
+/* No forced nowrap here on purpose: with ~10 nav items plus the language
+   switcher, their combined width already exceeds common desktop widths
+   like 1280px, and translated labels (fr/hi/ar/ch/...) run longer than
+   the English ones this was sized against - forcing everything onto one
+   row made the navbar itself the widest thing on the page and forced a
+   horizontal scrollbar on every single page. Left at flex-wrap: wrap
+   (set above), the row simply wraps to a second line instead. */
 
 /* ============================================
    LANGUAGE DROPDOWN

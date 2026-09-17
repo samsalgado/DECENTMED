@@ -9,6 +9,12 @@ import drtess from '../cards/drtess.png';
 import amy from "../images copy/amy.jpeg";
 import prices from "../images copy/prices.png";
 import betterhealthsolutions from '../images copy/drk.png'
+import linkedin from "../images copy/linkedin.png";
+import mail from "../images copy/mail.png";
+import x from "../images copy/x.png";
+import instagram from "../images copy/insta.png";
+import facebook from "../images copy/facebook.png";
+import youtube from "../images copy/youtube.png";
 import { useTranslation } from 'react-i18next';
 // Remote Page: Frequency Medicine:
 //Dr. Amy Wicks
@@ -174,51 +180,50 @@ const kansasTerms = [
                 <h2 className="mb-4">{t("Chiropractors in")}{" "} {location}</h2>
                 
                 {/* Dr. Abbas Khayami - Arizona */}
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 col-12 text-center mb-3">
-                            <img 
-                              src={betterhealthsolutions} 
-                              alt="Better Health Solutions" 
-                              style={{ 
-                                maxWidth: '100%', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Dr. Abbas Khayami')}</h2>
-                            <p className="text-muted mb-2">{t("Better Health Solutions")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("Scottsdale, Arizona")}
-                            </p>
-                            
-                            <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Spinal Adjustments")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Pain Management")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("Comprehensive chiropractic care in Scottsdale, AZ. Specializing in spinal health, pain reduction, and holistic wellness approaches.")}
-                            </p>
-                          </div>
-                          <div className="col-md-3 text-end">
-                            <a 
-                              href="tel:+14809456900" 
-                              className="btn btn-outline-primary"
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >
-                              {t("Contact")}
-                            </a>
-                          </div>
+                <div className="provider-grid mb-4">
+                  <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                    <div className="card-body provider-card-body">
+                      <div className="provider-card-top">
+                        <img src={betterhealthsolutions} alt="Better Health Solutions" className="provider-photo" />
+                        <h2 className="h4 mb-1">{t('Dr. Abbas Khayami')}</h2>
+                        <p className="text-muted mb-0">{t("Better Health Solutions")}</p>
+                      </div>
+
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("Scottsdale, Arizona")}
+                      </p>
+
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("Spinal Adjustments")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Pain Management")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                      </div>
+
+                      <p className="card-text small provider-bio">
+                        {t("Comprehensive chiropractic care in Scottsdale, AZ. Specializing in spinal health, pain reduction, and holistic wellness approaches.")}
+                      </p>
+
+                      <div className="provider-card-footer">
+                        <a href="tel:+14809456900" className="btn btn-outline-primary">
+                          {t("Contact")}
+                        </a>
+                        <div className="provider-social-icons">
+                          <a href="https://www.facebook.com/BetterHealthSolutionsScottsdale" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+                            <img src={facebook} alt={t("Facebook")} />
+                          </a>
+                          <a href="https://www.instagram.com/betterhealthchiroaz/" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                            <img src={instagram} alt={t("Instagram")} />
+                          </a>
+                          <a href="https://www.linkedin.com/in/abbas-khayami-823b9213/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                            <img src={linkedin} alt={t("LinkedIn")} />
+                          </a>
+                          <a href="https://www.youtube.com/channel/UCF9MdpqdrMG90UXSOPHxiVw" target="_blank" rel="noopener noreferrer" aria-label={t("YouTube")} title={t("YouTube")}>
+                            <img src={youtube} alt={t("YouTube")} />
+                          </a>
+                          <a href="https://x.com/BettrHealthSol1" target="_blank" rel="noopener noreferrer" aria-label={t("X")} title={t("X")}>
+                            <img src={x} alt={t("X")} />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -229,82 +234,72 @@ const kansasTerms = [
               <>
   <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
   
-  <div className="row mb-4">
-    <div className="col-md-12">
-      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-        <div className="card-body">
-          <div className="row">
-            <div className="col-md-2 text-center">
-              <img 
-                src={amy} 
-                alt="The Center for Natural Health" 
-                style={{ 
-                  maxWidth: '100px', 
-                  maxHeight: '100px', 
-                  objectFit: 'contain' 
-                }} 
-              />
-            </div>
-            <div className="col-md-7">
-              <h2 className="h4 mb-1">{t('The Center for Natural Health')}</h2>
-              <p className="text-muted mb-2">{t("Dr. Amy Wicks")}</p>
-              
-              <p className="mb-2">
-                <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                {t("St. Charles, Missouri")}
-              </p>
-              
-              <div className="mb-2">
-                <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
-                <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Complex Disorders")}</span>
-                <span className="badge bg-light text-dark me-1">{t("NAET Treatment (Nambudripad's Allergy Elimnation Techniques)")}</span>
-              </div>
-              
-              <p className="card-text small">
-                {t("Dr. Wicks' passion is to help others that seem to have nowhere else to turn.  She specializes in treating hard to treat conditions including (but not limited to) back pain, headaches, neurological conditions, digestive issues, arthritis, food sensitivities, seasonal allergies, and many more. When the body is functioning optimally, the way it was designed, then it has the ability to heal itself.  With adjustments, proper nutrition and balancing the body's systems using AK and CK procedures and/or NAET, it is then able to function optimally.")}
-              </p>
-              <div className="col-md-6">
-              <iframe
-                src="https://drive.google.com/file/d/1t4ouK9Afjmmc7PaIYsWM3ALrS0Phkbqf/preview"
-                title='Acupuncture'
-                allow="autoplay"
-                style={{
-                  width: '100%',
-                  height: '300px',
-                  borderRadius: '4px',
-                  border: 'none'
-                }}    
-                allowFullScreen
-              />
-            </div>
-            </div>
-            <div className="col-md-3 text-end">
-              <img 
-                src={prices} 
-                alt="The Center for Natural Health" 
-                style={{ 
-                  maxWidth: '100%', 
-                  maxHeight: '200px', 
-                  objectFit: 'contain',
-                  width: '100%',
-                  marginBottom: '15px'
-                }}
-              />
-              
-<div style={{ display: 'grid', width: '100%', height: '100%', minWidth: '320px', minHeight: '600px' }}>
-  <iframe 
-    title="Carepatron Online Booking"
-    width="100%" 
-    height="100%" 
-    src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Total-Care?p=J2kttqPqTiCjLVl6UMymig&s=2QnHnlj.&e=i"
-    style={{ border: 0 }}
-  >
-  </iframe>
-</div>            
-</div>
+  <div className="provider-grid mb-4">
+    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+      <div className="card-body provider-card-body">
+        <div className="provider-card-top">
+          <img src={amy} alt="The Center for Natural Health" className="provider-photo" />
+          <h2 className="h4 mb-1">{t('The Center for Natural Health')}</h2>
+          <p className="text-muted mb-0">{t("Dr. Amy Wicks")}</p>
+        </div>
+
+        <p className="mb-2">
+          <i className="fas fa-map-marker-alt text-primary me-2"></i>
+          {t("St. Charles, Missouri")}
+        </p>
+
+        <div className="mb-2">
+          <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Holistic Treatment for Complex Disorders")}</span>
+          <span className="badge bg-light text-dark me-1">{t("NAET Treatment (Nambudripad's Allergy Elimnation Techniques)")}</span>
+        </div>
+
+        <div className="provider-video">
+          <iframe
+            src="https://www.youtube.com/embed/P5tHTOchQ2s?si=twebzxrIuldmB8je"
+            title="The Center for Natural Health"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+
+        <p className="card-text small provider-bio">
+          {t("Dr. Wicks' passion is to help others that seem to have nowhere else to turn.  She specializes in treating hard to treat conditions including (but not limited to) back pain, headaches, neurological conditions, digestive issues, arthritis, food sensitivities, seasonal allergies, and many more. When the body is functioning optimally, the way it was designed, then it has the ability to heal itself.  With adjustments, proper nutrition and balancing the body's systems using AK and CK procedures and/or NAET, it is then able to function optimally.")}
+        </p>
+
+        <img
+          src={prices}
+          alt="The Center for Natural Health"
+          style={{
+            maxWidth: '100%',
+            maxHeight: '200px',
+            objectFit: 'contain',
+            width: '100%',
+            marginBottom: '15px'
+          }}
+        />
+
+        <div className="provider-card-footer">
+          <div className="provider-booking-embed" style={{ minHeight: '600px' }}>
+            <iframe
+              title="Carepatron Online Booking"
+              width="100%"
+              height="100%"
+              src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Total-Care?p=J2kttqPqTiCjLVl6UMymig&s=2QnHnlj.&e=i"
+              style={{ border: 0, minHeight: '600px' }}
+            />
           </div>
-          
-          
+          <div className="provider-social-icons">
+            <a href="mailto:info@tcnh-stl.com" aria-label={t("Email")} title={t("Email")}>
+              <img src={mail} alt={t("Email")} />
+            </a>
+            <a href="https://facebook.com/tcnhstl" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+              <img src={facebook} alt={t("Facebook")} />
+            </a>
+            <a href="https://instagram.com/thecenterfornaturalhealthstl" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+              <img src={instagram} alt={t("Instagram")} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -314,94 +309,70 @@ const kansasTerms = [
               <>
               <h2 className="mb-4">{t("Chiropractors in")}{" "}{location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
                 
-                <div className="row mb-4">
-                  <div className="col-md-12">
-                    <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-2 text-center">
-                            <img 
-                              src={drtess} 
-                              alt="Total Care Chiropractic" 
-                              style={{ 
-                                maxWidth: '100px', 
-                                maxHeight: '100px', 
-                                objectFit: 'contain' 
-                              }} 
-                            />
-                          </div>
-                          <div className="col-md-7">
-                            <h2 className="h4 mb-1">{t('Total Care Chiropractic')}</h2>
-                            <p className="text-muted mb-2">{t("Dr. Teresa Volner")}</p>
-                            
-                            <p className="mb-2">
-                              <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                              {t("6308 College Boulevard Overland Park, KS 66211")}
-                            </p>
-                           
-                            <div className="mb-2">
-                              <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Spinal Decompression near me")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Portable Hyperbaric Oxygen Chamber")}</span>
-                              <span className="badge bg-light text-dark me-1">{t("Holistic Health Labs")}</span>
-                            </div>
-                            
-                            <p className="card-text small">
-                              {t("Discover comprehensive wellness solutions at Total Care Chiropractic today. Without medications, we treat a range of conditions using chiropractic care, supplements, advanced alternative therapies (like hyperbaric chamber & Emsella®), and more. Dr. Tess Volner is an experienced Doctor of Chiropractic and Natural Medicine, having worked in the field 10 years now & keeping up-to-date with advancements in the fields of chiropractic and natural medicine. Let's enhance your well-being today!")}
-                            </p>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <div>
-                            <img 
-                              src={process} 
-                              alt="Total Care Chiropractic" 
-                             style={{ 
-                                maxWidth: '550px', 
-                                maxHeight: '420px', 
-                                objectFit: 'contain',
-                                width: '100%'
-                              }} 
-                            />
-                          </div>
-                          </div>
-                         <div className="col-md-3 text-end">
-                            <div>
-                            </div>
-<div 
-  style={{ 
-    display: 'grid', 
-    width: '100%', 
-    height: 'auto',
-    minHeight: '400px',
-    maxHeight: '90vh',
-    overflow: 'hidden'
-  }}
->
-  <iframe
-    title="Carepatron Online Booking"
-    alt="Book appointments online via Carepatron"
-    width="100%"
-    height="100%"
-    src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Teresa?p=J2kttqPqTiCjLVl6UMymig&s=Yh0KM2FQ&e=i"
-    style={{
-      border: 0,
-      width: '100%',
-      height: '100%',
-      minHeight: '400px'
-    }}
-  />
-</div>
-                            <br />
-                            <a 
-                              href="tel:+19135224473" 
-                              className="btn btn-primary mb-2"
-                              target="_blank" 
-                              style={{                                  color: '#fff',
-                              backgroundColor: '#027360',}}
-                              rel="noopener noreferrer"
-                            >
-                              {t("Contact")}
-                            </a>
-                          </div>    
+                <div className="provider-grid mb-4">
+                  <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                    <div className="card-body provider-card-body">
+                      <div className="provider-card-top">
+                        <img src={drtess} alt="Total Care Chiropractic" className="provider-photo" />
+                        <h2 className="h4 mb-1">{t('Total Care Chiropractic')}</h2>
+                        <p className="text-muted mb-0">{t("Dr. Teresa Volner")}</p>
+                      </div>
+
+                      <p className="mb-2">
+                        <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                        {t("6308 College Boulevard Overland Park, KS 66211")}
+                      </p>
+
+                      <div className="mb-2">
+                        <span className="badge bg-light text-dark me-1">{t("Chiropractic Adjustments")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Spinal Decompression near me")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Portable Hyperbaric Oxygen Chamber")}</span>
+                        <span className="badge bg-light text-dark me-1">{t("Holistic Health Labs")}</span>
+                      </div>
+
+                      <div className="provider-video">
+                        <iframe src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                      </div>
+
+                      <p className="card-text small provider-bio">
+                        {t("Discover comprehensive wellness solutions at Total Care Chiropractic today. Without medications, we treat a range of conditions using chiropractic care, supplements, advanced alternative therapies (like hyperbaric chamber & Emsella®), and more. Dr. Tess Volner is an experienced Doctor of Chiropractic and Natural Medicine, having worked in the field 10 years now & keeping up-to-date with advancements in the fields of chiropractic and natural medicine. Let's enhance your well-being today!")}
+                      </p>
+
+                      <img
+                        src={process}
+                        alt="Total Care Chiropractic"
+                        style={{
+                          maxWidth: '550px',
+                          maxHeight: '420px',
+                          objectFit: 'contain',
+                          width: '100%'
+                        }}
+                      />
+
+                      <div className="provider-card-footer">
+                        <div className="provider-booking-embed" style={{ minHeight: '400px' }}>
+                          <iframe
+                            title="Carepatron Online Booking"
+                            aria-label="Book appointments online via Carepatron"
+                            width="100%"
+                            height="100%"
+                            src="https://book.carepatron.com/Total-Care-Chiropractic-Wellness-and-Diagnostic-Center-LLC/Teresa?p=J2kttqPqTiCjLVl6UMymig&s=Yh0KM2FQ&e=i"
+                            style={{ border: 0, minHeight: '400px' }}
+                          />
+                        </div>
+                        <a href="tel:+19135224473" className="btn btn-outline-primary">
+                          {t("Contact")}
+                        </a>
+                        <div className="provider-social-icons">
+                          <a href="https://www.facebook.com/totalcarechiro.ks" target="_blank" rel="noopener noreferrer" aria-label={t("Facebook")} title={t("Facebook")}>
+                            <img src={facebook} alt={t("Facebook")} />
+                          </a>
+                          <a href="https://www.instagram.com/totalcarechiro" target="_blank" rel="noopener noreferrer" aria-label={t("Instagram")} title={t("Instagram")}>
+                            <img src={instagram} alt={t("Instagram")} />
+                          </a>
+                          <a href="https://www.linkedin.com/in/dr-tess-volner-totalcarehealthsolutions/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                            <img src={linkedin} alt={t("LinkedIn")} />
+                          </a>
                         </div>
                       </div>
                     </div>

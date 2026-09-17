@@ -18,6 +18,7 @@ const FAQ = () => {
   return (
     <>
     <div data-aos="slide-right" className='container'>
+      <br></br>
               <h1 className='logotitle'>{t("About Us")}</h1>
             <Merlin />
             </div>

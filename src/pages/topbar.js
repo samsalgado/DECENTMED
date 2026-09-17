@@ -98,19 +98,19 @@ const Topbar = () => {
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="https://telehealth.decentmed.org/signup"
+              href="https://decentmed.org/telehealth"
             >
               {t("Find Practitioner")}
             </Nav.Link>
-
-            <Nav.Link
+<Nav.Link
               style={{ color: "white", transition: "0.2s" }}
               onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="https://decentmed.org/faq"
+              href="https://decentmed.org/oursystem"
             >
-              {t("FAQ")}
+              {t("Our System")}
             </Nav.Link>
+           
 
             <Nav.Link
               style={{ color: "white", transition: "0.2s" }}

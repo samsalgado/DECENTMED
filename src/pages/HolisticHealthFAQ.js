@@ -370,15 +370,17 @@ export default function HolisticHealthFAQ() {
             market their practice and grow their patient base.
           </p>
         </div>
-
+<div className="container-bbblue">
         <h2 id="for-patients">For Patients: Finding the Right Holistic Modality</h2>
+        </div>
         <div className="container-blue" style={{ marginBottom: '2rem' }}>
           {patientFaqs.map((item) => (
             <FaqItem key={item.q} item={item} />
           ))}
         </div>
-
+<div className="container-bbblue">
         <h2 id="for-providers">For Providers: Holistic Health Marketing</h2>
+        </div>
         <div className="container-blue">
           {providerFaqs.map((item) => (
             <FaqItem key={item.q} item={item} />

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
-import { FaLinkedin, FaWhatsapp, FaYoutube} from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaYoutube, FaTiktok, FaEnvelope } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 import Inspire from "../images copy/Inspire.png";
 import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
@@ -83,6 +83,12 @@ const Footers = () => {
             </a>
             <a href="https://www.youtube.com/@DCNTMD" aria-label="YouTube" className="social-icon youtube">
               <FaYoutube />
+            </a>
+            <a href="https://www.tiktok.com/@bitcoinsranan?_r=1&_t=ZP-99niSBmbExb" aria-label="TikTok" className="social-icon tiktok">
+              <FaTiktok />
+            </a>
+            <a href="mailto:themerlingroupworld@gmail.com" aria-label="Email" className="social-icon email">
+              <FaEnvelope />
             </a>
           </div>
 

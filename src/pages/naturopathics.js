@@ -6,6 +6,9 @@ import Footer from '../footer';
 import Meridian from '../cards/meridian.png';
 import { useTranslation } from 'react-i18next';
 import drtess from '../cards/drtess.png';
+import linkedin from "../images copy/linkedin.png";
+import mail from "../images copy/mail.png";
+import youtube from "../images copy/youtube.png";
 
 export default function Natpract() {
   const { t } = useTranslation('common');
@@ -69,62 +72,47 @@ export default function Natpract() {
 
   // Dr. Tess Card Component with Calendly
   const DrTessCard = () => (
-    <div className="row mb-4">
-      <div className="col-md-12">
-        <div className="card" style={{ border: '1px solid #dee2e6' }}>
-          <div className="card-body">
-            <div className="row">
-              <div className="col-md-2 text-center">
-                <img 
-                  src={drtess} 
-                  alt="Total Health Solutions" 
-                  style={{ 
-                    maxWidth: '100px', 
-                    maxHeight: '100px', 
-                    objectFit: 'contain' 
-                  }} 
-                />
-              </div>
-              <div className="col-md-7">
-                <h2 className="h4 mb-1">{t('Total Care Health Solutions')}</h2>
-                <p className="text-muted mb-2">{t("Dr. Teresa Volner - Naturopathic Doctor")}</p>
-                
-                <p className="mb-2">
-                  <i className="fas fa-video text-success me-2"></i>
-                  {t("Telehealth Available")}
-                </p>
-                
-                <div className="mb-2">
-                  <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                  <span className="badge bg-light text-dark me-1">{t("Blood Sugar to Balance")}</span>
-                  <span className="badge bg-light text-dark me-1">{t("Lab Testing")}</span>
-                  <span className="badge bg-light text-dark me-1">{t("Integrative Medicine vs Functional Medicine")}</span>
-                </div>
-                
-                <p className="card-text small">
-                  {t("Total Care Health Solutions provides comprehensive naturopathic care with a focus on personalized treatment plans. Specializing in integrative medicine, she combines traditional naturopathic principles with modern healthcare approaches to address your unique health needs.")}
-                  <br />
-                  <strong className="text-success">{t("Available for virtual consultations worldwide!")}</strong>
-                </p>
-              </div>
-              <div className="col-md-3 text-end">
-                
-                <br />
-                <a 
-                  href="https://totalcarehealthsolutions.com/login" 
-                  className="btn btn-primary mb-2"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  {t("Join Today")}
-                </a>
-              </div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+      <div className="card-body provider-card-body">
+        <div className="provider-card-top">
+          <img src={drtess} alt="Total Health Solutions" className="provider-photo" />
+          <h2 className="h4 mb-1">{t('Total Care Health Solutions')}</h2>
+          <p className="text-muted mb-0">{t("Dr. Teresa Volner - Naturopathic Doctor")}</p>
+        </div>
+
+        <p className="mb-2">
+          <i className="fas fa-video text-success me-2"></i>
+          {t("Telehealth Available")}
+        </p>
+
+        <div className="mb-2">
+          <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Blood Sugar to Balance")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Lab Testing")}</span>
+          <span className="badge bg-light text-dark me-1">{t("Integrative Medicine vs Functional Medicine")}</span>
+        </div>
+
+        <div className="provider-video">
+          <iframe src="https://www.youtube.com/embed/L5Fg8RBgC6o?si=ZU5g_-E7tqskrXNo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        </div>
+
+        <p className="card-text small provider-bio">
+          {t("Total Care Health Solutions provides comprehensive naturopathic care with a focus on personalized treatment plans. Specializing in integrative medicine, she combines traditional naturopathic principles with modern healthcare approaches to address your unique health needs.")}
+          <br />
+          <strong className="text-success">{t("Available for virtual consultations worldwide!")}</strong>
+        </p>
+
+        <div className="provider-card-footer">
+          <a href="https://totalcarehealthsolutions.com/login" className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+            {t("Join Today")}
+          </a>
+          <div className="provider-social-icons">
+            <a href="https://www.linkedin.com/in/dr-tess-volner-totalcarehealthsolutions/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+              <img src={linkedin} alt={t("LinkedIn")} />
+            </a>
           </div>
         </div>
       </div>
-     
     </div>
   );
 
@@ -211,74 +199,61 @@ export default function Natpract() {
               {isWashingtonLocation ? (
                 <>
                   <h2 className="mb-4">{t("Naturopathic Doctors in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
-                  <DrTessCard />
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={Meridian} 
-                                alt="Meridian Passage Wellness" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                            <div className="col-md-7">
-                              <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
-                              <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
-                              <p className="mb-2">
-                                <i className="fas fa-map-marker-alt text-primary me-2"></i>
-                                {t("Port Townsend, Washington")}
-                                <span className="ms-2">
-                                  <i className="fas fa-video text-success me-1"></i>
-                                  {t("Telehealth Available")}
-                                </span>
-                              </p>
-                              <div className="mb-2">
-                                <span className="badge bg-primary text-white me-1">{t("LOCAL WASHINGTON")}</span>
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Psychedelic Medicine and Fascia Healing")}</span>
-                              </div>
-                              <p className="card-text small">
-                                {t("Text")}
-                              </p>
-                                                          
-                            </div>
-                            <div className="col-md-3 text-end">
-        
-
-                              <a 
-                                href="https://meridianpassagewellness.com/book-now/" 
-                                className="btn btn-primary"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Book Now")}
-                              </a>
-                            </div>
-                          <div className="d-flex justify-content-center mb-3">
-                        <iframe
-                          width="560"
-                          height="315"
-                          src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
-                          title="Patient Acquisition Engine Video"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen
-                          style={{
-                            border: 0,
-                            maxWidth: '100%',
-                            height: 'auto'
-                          }}
-                        />
-                      </div>
+                  <div className="provider-grid" style={{ alignItems: 'start' }}>
+                    <DrTessCard />
+                    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body provider-card-body">
+                        <div className="provider-card-top">
+                          <img src={Meridian} alt="Meridian Passage Wellness" className="provider-photo" />
+                          <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
+                          <p className="text-muted mb-0">{t("Kristen Barnes - Naturopathic Doctor")}</p>
                         </div>
+
+                        <p className="mb-2">
+                          <i className="fas fa-map-marker-alt text-primary me-2"></i>
+                          {t("Port Townsend, Washington")}
+                        </p>
+                        <p className="mb-2">
+                          <i className="fas fa-video text-success me-1"></i>
+                          {t("Telehealth Available")}
+                        </p>
+
+                        <div className="mb-2">
+                          <span className="badge bg-primary text-white me-1">{t("LOCAL WASHINGTON")}</span>
+                          <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Psychedelic Medicine and Fascia Healing")}</span>
+                        </div>
+
+                        <div className="provider-video">
+                          <iframe
+                            src="https://drive.google.com/file/d/17WvWujc0MhFQ0DM4xfjjqQEdOunjeNWO/preview"
+                            title="Patient Acquisition Engine Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                          />
+                        </div>
+
+                        <p className="card-text small provider-bio">
+                          {t("Text")}
+                        </p>
+
+                        <div className="provider-card-footer">
+                          <a href="https://meridianpassagewellness.com/book-now/" className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+                            {t("Book Now")}
+                          </a>
+                          <div className="provider-social-icons">
+                            <a href="mailto:hello@meridianpassagewellness.com" aria-label={t("Email")} title={t("Email")}>
+                              <img src={mail} alt={t("Email")} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/kristinbarnes1/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                              <img src={linkedin} alt={t("LinkedIn")} />
+                            </a>
+                            <a href="https://www.youtube.com/@alternativeflightplan" target="_blank" rel="noopener noreferrer" aria-label={t("YouTube")} title={t("YouTube")}>
+                              <img src={youtube} alt={t("YouTube")} />
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -287,65 +262,55 @@ export default function Natpract() {
               ) : isKansas ? (
                 <>
                   <h2 className="mb-4">{t("Naturopathic Doctors in")} {location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()}</h2>
-                  <DrTessCard />
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={Meridian} 
-                                alt="Meridian Passage Wellness" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                            <div className="col-md-7">
-                              <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
-                              <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
-                              <p className="mb-2">
-                                <i className="fas fa-video text-success me-2"></i>
-                                {t("Available via Telehealth")}
-                                <span className="ms-2">
-                                  <i className="fas fa-map-marker-alt text-primary me-1"></i>
-                                  {t("Based in Washington")}
-                                </span>
-                              </p>
-                              <div className="mb-2">
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
-                              </div>
-                              <p className="card-text small">
-                                {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
-                                <br />
-                                <strong className="text-success">{t("Offering telehealth consultations!")}</strong>
-                              </p>
-                            </div>
-                            <div className="col-md-3 text-end">
-                              <a 
-                                href="https://meridianpassagewellness.com/book-now/" 
-                                className="btn btn-outline-primary mb-2"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Book Telehealth Session")}
-                              </a>
-                              <br />
-                              <a 
-                                href="tel:+1206567827" 
-                                className="btn btn-outline-primary mb-2"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Contact")}
-                              </a>
-                            </div>
+                  <div className="provider-grid" style={{ alignItems: 'start' }}>
+                    <DrTessCard />
+                    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body provider-card-body">
+                        <div className="provider-card-top">
+                          <img src={Meridian} alt="Meridian Passage Wellness" className="provider-photo" />
+                          <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
+                          <p className="text-muted mb-0">{t("Kristen Barnes - Naturopathic Doctor")}</p>
+                        </div>
+
+                        <p className="mb-2">
+                          <i className="fas fa-video text-success me-2"></i>
+                          {t("Available via Telehealth")}
+                        </p>
+                        <p className="mb-2">
+                          <i className="fas fa-map-marker-alt text-primary me-1"></i>
+                          {t("Based in Washington")}
+                        </p>
+
+                        <div className="mb-2">
+                          <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
+                        </div>
+
+                        <p className="card-text small provider-bio">
+                          {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
+                          <br />
+                          <strong className="text-success">{t("Offering telehealth consultations!")}</strong>
+                        </p>
+
+                        <div className="provider-card-footer">
+                          <a href="https://meridianpassagewellness.com/book-now/" className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+                            {t("Book Telehealth Session")}
+                          </a>
+                          <a href="tel:+1206567827" className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+                            {t("Contact")}
+                          </a>
+                          <div className="provider-social-icons">
+                            <a href="mailto:hello@meridianpassagewellness.com" aria-label={t("Email")} title={t("Email")}>
+                              <img src={mail} alt={t("Email")} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/kristinbarnes1/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                              <img src={linkedin} alt={t("LinkedIn")} />
+                            </a>
+                            <a href="https://www.youtube.com/@alternativeflightplan" target="_blank" rel="noopener noreferrer" aria-label={t("YouTube")} title={t("YouTube")}>
+                              <img src={youtube} alt={t("YouTube")} />
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -355,57 +320,53 @@ export default function Natpract() {
               ) : (
                 <>
                   <h2 className="mb-4">{t("Naturopathic Doctors serving")} {location}</h2>
-                  <DrTessCard />
-                  <div className="row mb-4">
-                    <div className="col-md-12">
-                      <div className="card" style={{ border: '1px solid #dee2e6' }}>
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col-md-2 text-center">
-                              <img 
-                                src={Meridian} 
-                                alt="Meridian Passage Wellness" 
-                                style={{ 
-                                  maxWidth: '100px', 
-                                  maxHeight: '100px', 
-                                  objectFit: 'contain' 
-                                }} 
-                              />
-                            </div>
-                            <div className="col-md-7">
-                              <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
-                              <p className="text-muted mb-2">{t("Kristen Barnes - Naturopathic Doctor")}</p>
-                              <p className="mb-2">
-                                <i className="fas fa-video text-success me-2"></i>
-                                {t("Available via Telehealth")}
-                                <span className="ms-2">
-                                  <i className="fas fa-map-marker-alt text-primary me-1"></i>
-                                  {t("Based in Washington")}
-                                </span>
-                              </p>
-                              <div className="mb-2">
-                                <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
-                                <span className="badge bg-light text-dark me-1">{t("Mind-Body-Spirit")}</span>
-                              </div>
-                              <p className="card-text small">
-                                {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
-                                <br />
-                                <strong className="text-success">{t("Now offering virtual consultations - connect with Kristen from anywhere!")}</strong>
-                              </p>
-                            </div>
-                            <div className="col-md-3 text-end">
-                              <a 
-                                href="tel:+1206567827" 
-                                className="btn btn-outline-primary mb-2"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
-                                {t("Book Telehealth Session")}
-                              </a>
-                            </div>
+                  <div className="provider-grid" style={{ alignItems: 'start' }}>
+                    <DrTessCard />
+                    <div className="card provider-card" style={{ border: '1px solid #dee2e6' }}>
+                      <div className="card-body provider-card-body">
+                        <div className="provider-card-top">
+                          <img src={Meridian} alt="Meridian Passage Wellness" className="provider-photo" />
+                          <h2 className="h4 mb-1">{t('Meridian Passage Wellness')}</h2>
+                          <p className="text-muted mb-0">{t("Kristen Barnes - Naturopathic Doctor")}</p>
+                        </div>
+
+                        <p className="mb-2">
+                          <i className="fas fa-video text-success me-2"></i>
+                          {t("Available via Telehealth")}
+                        </p>
+                        <p className="mb-2">
+                          <i className="fas fa-map-marker-alt text-primary me-1"></i>
+                          {t("Based in Washington")}
+                        </p>
+
+                        <div className="mb-2">
+                          <span className="badge bg-success text-white me-1">{t("Telehealth Available")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Naturopathic Medicine")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Holistic Care")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Root Cause Medicine")}</span>
+                          <span className="badge bg-light text-dark me-1">{t("Mind-Body-Spirit")}</span>
+                        </div>
+
+                        <p className="card-text small provider-bio">
+                          {t("At Meridian Passage Wellness, we are committed to helping you reclaim a vibrant, and healthy life. I provide holistic care that addresses the root causes of your health concerns, focusing on mind, body, and spirit. Whether you're dealing with chronic pain, fatigue, or mental health challenges, I offer a range of integrative therapies designed to support your journey to optimal health.")}
+                          <br />
+                          <strong className="text-success">{t("Now offering virtual consultations - connect with Kristen from anywhere!")}</strong>
+                        </p>
+
+                        <div className="provider-card-footer">
+                          <a href="tel:+1206567827" className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+                            {t("Book Telehealth Session")}
+                          </a>
+                          <div className="provider-social-icons">
+                            <a href="mailto:hello@meridianpassagewellness.com" aria-label={t("Email")} title={t("Email")}>
+                              <img src={mail} alt={t("Email")} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/kristinbarnes1/" target="_blank" rel="noopener noreferrer" aria-label={t("LinkedIn")} title={t("LinkedIn")}>
+                              <img src={linkedin} alt={t("LinkedIn")} />
+                            </a>
+                            <a href="https://www.youtube.com/@alternativeflightplan" target="_blank" rel="noopener noreferrer" aria-label={t("YouTube")} title={t("YouTube")}>
+                              <img src={youtube} alt={t("YouTube")} />
+                            </a>
                           </div>
                         </div>
                       </div>

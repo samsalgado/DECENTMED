@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import "./Wrapper.css";
 
 export default function Wrapper({ children }) {
   const wrapperRef = useRef(null);
