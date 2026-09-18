@@ -3,6 +3,7 @@ import Collapsible from 'react-collapsible';
 import "./stem.css"; 
 import { FaChevronDown } from 'react-icons/fa'; // Importing icon
 import './Info.css';
+import amber from "../images copy/amberreview.png";
 import { Button } from 'react-bootstrap';
 import graphic6 from '../images copy/IMG_7977.jpeg';
 import newreview from '../images copy/newreview.png';
@@ -31,6 +32,7 @@ const Reviews = () => {
             <img className="gridimag" src={lori} alt="New Review" />
             <img className="gridimag" src={newreview} alt="Testimonial" />
             <img className="gridimag" src={graphic6} alt="New Review" />
+            <img className="gridimag" src={amber} alt="New Review" />
             <img alt='' />
              <Button onClick={learnmore} className="custom-btn">
           {t('Book Meeting')}
