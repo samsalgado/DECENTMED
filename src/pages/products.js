@@ -169,7 +169,7 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
             </header>
 
             <div className="shop-page">
-              <div className="shop-hero" data-aos="fade-down">
+              <div className="shop-hero container-blue" data-aos="fade-down">
                 <h1>{t("Holistic Health Products")}</h1>
               </div>
 

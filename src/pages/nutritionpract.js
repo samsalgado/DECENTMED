@@ -77,9 +77,7 @@ export default function Nutritionpract() {
         <header>
           <Topbar />
         </header>
-                                                          <div className="container-blue">
-
-        <div className="container">
+        <div className="container-blue">
           {/* Search Bar Section */}
           <div className="search-section" style={{ 
             background: '#f8f9fa', 
@@ -350,7 +348,6 @@ export default function Nutritionpract() {
             </div>
           )}
         </div>
-          </div>
         <footer>
           <Footer />
         </footer>

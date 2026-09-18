@@ -33,7 +33,7 @@ export default function AKPract() {
           <Topbar />
         </header>
 
-        <div className="container">
+        <div className="container-blue">
           <h1 style={{
             fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif",
             marginTop: 0

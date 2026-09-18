@@ -218,7 +218,7 @@ export default function EnergyPract() {
           <Topbar />
         </header>
 
-        <div className="container">
+        <div className="container-blue">
           <h1 style={{ fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
             {t("Seeking Energy Healing Near Me?")}
           </h1>

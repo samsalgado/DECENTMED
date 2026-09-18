@@ -904,9 +904,7 @@ const renderCoachesInOrder = () => {
         <header>
           <Topbar />
         </header>
-          <div className="container-blue" style={{ backgroundColor: '#fff', border: 'none' }}>
-
-        <div className="container">
+        <div className="container-blue" style={{ backgroundColor: '#fff', border: 'none' }}>
           {/* Search Bar Section */}
           <div className="search-section" style={{
             background: '#fff',
@@ -1030,7 +1028,6 @@ const renderCoachesInOrder = () => {
               </div>
             </div>
           )}
-        </div>
         </div>
         <footer>
           <Footer />

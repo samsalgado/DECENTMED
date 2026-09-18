@@ -148,7 +148,7 @@ const handleSearch = () => {
         <Topbar />
       </header>
 
-      <div className="container">
+      <div className="container-blue">
 
         {/* SEARCH */}
         <div

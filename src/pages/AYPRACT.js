@@ -142,9 +142,8 @@ export default function AYPract() {
         <header>
           <Topbar />
         </header>
-                                                          <div className="container-blue">
 
-        <div className="container">
+        <div className="container-blue">
           <h1 style={{ fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
             {t("Find an Ayurvedic Medical Practitioner Near You")}
           </h1>
@@ -320,7 +319,6 @@ export default function AYPract() {
               <p>{t("Try searching for a different location or browse all available practitioners.")}</p>
             </div>
           )}
-        </div>
         </div>
         <footer>
           <Footer />

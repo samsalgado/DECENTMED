@@ -87,7 +87,7 @@ export default function HealPract() {
           <Topbar />
         </header>
 
-        <div className="container">
+        <div className="container-blue">
           <h1 style={{ fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
             {t("Find Sound Bowl Healing Near You")}
           </h1>

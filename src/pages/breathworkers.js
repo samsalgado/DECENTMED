@@ -28,7 +28,7 @@ export default function Breathwork({ providerEmail }) {
         <Topbar />
       </header>
 
-      <div className="container">
+      <div className="container-blue">
         <h1>{t("Somatic Breathwork & Breathwork Coaches")}</h1>
 
         <div className="provider-grid" style={{ alignItems: 'start' }}>

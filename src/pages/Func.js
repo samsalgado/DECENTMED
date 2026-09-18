@@ -123,7 +123,7 @@ export default function Func() {
         <Topbar />
       </header>
 
-      <div className="container">
+      <div className="container-blue">
         <div data-aos="slide-right">
           <h1>{t("Functional Medicine")}</h1>
         </div>

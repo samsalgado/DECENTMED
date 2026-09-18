@@ -25,7 +25,7 @@ const { t } = useTranslation('common');
             </header>
             <HYPNO />
             <br></br>
-            <div className="container-bbblue" data-aos="slide-right">
+            <div className="container-blue" data-aos="slide-right">
             <h1 className='center'>{t("Hypnotherapy Content")}</h1>
             </div>
             <Hypnovids />

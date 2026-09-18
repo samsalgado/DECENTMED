@@ -87,8 +87,6 @@ Think of it as a reset button for your mind and body so you can feel more ground
         <Topbar />
       </header>
        <div className="container-blue">
-
-      <div className="container">
         {/* Search Bar Section */}
         <div className="search-section" style={{ 
           background: '#f8f9fa', 
@@ -426,7 +424,6 @@ Think of it as a reset button for your mind and body so you can feel more ground
             </div>
           </div>
         )}
-      </div>
       </div>
       <footer>
         <Footer />

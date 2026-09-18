@@ -21,7 +21,7 @@ useEffect(() => {
             <header>
             <Topbar />
             </header>
-            <div className="container">
+            <div className="container-blue">
             <h1>{t("Emotional Eating Coaches and Emotional Eating Books")}</h1>
  <div className="row">
     <div className="col-md-4">

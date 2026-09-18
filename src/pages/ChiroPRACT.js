@@ -107,8 +107,6 @@ const kansasTerms = [
         <Topbar />
       </header>
        <div className="container-blue">
-
-      <div className="container">
         {/* Search Bar Section */}
         <div className="search-section" style={{ 
           background: '#f8f9fa', 
@@ -457,7 +455,6 @@ const kansasTerms = [
             </div>
           </div>
         )}
-      </div>
 
       <footer>
         <Footer />

@@ -62,8 +62,8 @@ export default function HomeopathyPract() {
         <Topbar />
       </header>
 
-      <div className="container">
-        <div className="search-section" style={{ 
+      <div className="container-blue">
+        <div className="search-section" style={{
           background: '#f8f9fa', 
           padding: '2rem 0', 
           marginBottom: '2rem',

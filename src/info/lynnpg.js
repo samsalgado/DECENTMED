@@ -167,7 +167,7 @@ great night. Yep.
       AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
     }, []);
     return (
-      <div className='container mobile-optimized'>
+      <div className='container-blue mobile-optimized'>
             <h1 data-aos="slide-right" className='title'>{t('Hypnosis & Narcissism')}</h1>
             <div data-aos="slide-right" style={{
         display: 'flex',
