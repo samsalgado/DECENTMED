@@ -4,7 +4,7 @@ import Speakers from './summitspeakers';
 import { useTranslation } from 'react-i18next';
 import summit from "../images copy/womenshealthsummitt.png";
 import sumit from "../images copy/maxresdefault.jpg";
-import tsnme from "../images copy/SS (2).png";
+import tsnme from "../images copy/SSS.png";
 import sumit1 from "../images copy/ptsdsummit.png";
 import tsnmee from "../images copy/diabesity (2).png";
 import SummitInfo from './infosummit';
