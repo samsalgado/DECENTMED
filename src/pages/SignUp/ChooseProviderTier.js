@@ -1,30 +1,98 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Swal from "sweetalert2";
 import tier0 from "../../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
 import tier3 from '../../images copy/Screenshot 2026-07-06 at 9.42.42 AM.png';
 import tier2 from "../../images copy/Screenshot 2026-07-06 at 9.41.32 AM.png";
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
+import "../../info/authform.css";
+import '../Styles/AuthForm.css';
+
+const TIER_INFO = {
+  tier0: { tier: "Tier 0", amount: 500 },
+  tier1: { tier: "Tier 1", amount: 1500 },
+  tier2: { tier: "Tier 2", amount: 4000 },
+};
 
 const ChooseProviderTier = () => {
   const { t } = useTranslation('common');
   const navigate = useNavigate();
   const [selectedTier, setSelectedTier] = useState("tier1");
 
-  const handleContinue = () => {
-    let tier = "";
-    let amount = 0;
-    if (selectedTier === "tier0") {
-      tier = "Tier 0";
-      amount = 500;
-    } else if (selectedTier === "tier1") {
-      tier = "Tier 1";
-      amount = 1500;
-    } else if (selectedTier === "tier2") {
-      tier = "Tier 2";
-      amount = 4000;
-    }
+  // Inline signup modal state — shown instead of navigating away
+  // when a provider clicks "Continue to Payment" without being signed in.
+  const [showSignup, setShowSignup] = useState(false);
+  const [user, setUser] = useState({ name: '', email: '', password: '', code: '' });
+  const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const goToPayment = () => {
+    const { tier, amount } = TIER_INFO[selectedTier];
     navigate("/stripepay", { state: { tier, amount } });
+  };
+
+  const handleContinue = () => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      goToPayment();
+    } else {
+      // Instead of bouncing the provider back to a separate signup page
+      // (and losing their tier selection), show the signup form right here.
+      setError('');
+      setShowSignup(true);
+    }
+  };
+
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+    setError('');
+  };
+
+  const handleSignupSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    if (user.password.length < 6) {
+      setError('Password must be at least 6 characters');
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const payload = {
+        ...user,
+        role: "provider" // REQUIRED BY BACKEND
+      };
+
+      const res = await axios.post(
+        'https://decentmed-server.vercel.app/users',
+        payload,
+        { headers: { 'Content-Type': 'application/json' } }
+      );
+
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+        setShowSignup(false);
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Signup Successful!',
+          text: 'Continuing to payment...',
+          confirmButtonColor: '#027360',
+          confirmButtonText: 'Continue'
+        }).then(() => {
+          goToPayment();
+        });
+      }
+    } catch (err) {
+      setError(err.response?.data?.message || 'Signup failed');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -114,6 +182,108 @@ const ChooseProviderTier = () => {
           {t("Continue to Payment")}
         </button>
       </div>
+
+      {/* Inline signup modal — appears in place instead of navigating to a
+          separate signup page, so the selected tier isn't lost. */}
+      {showSignup && (
+        <div
+          onClick={() => setShowSignup(false)}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 9999,
+            padding: "16px",
+            boxSizing: "border-box",
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="auth-form-wrapper"
+            style={{ position: "relative" }}
+          >
+            <button
+              type="button"
+              className="close-btn"
+              onClick={() => setShowSignup(false)}
+            >
+              ❌
+            </button>
+
+            <form className="auth-form" onSubmit={handleSignupSubmit}>
+              <h2 className="compact-heading">
+                {t("Sign Up To Continue To Payment")}
+              </h2>
+              <p>
+                {t("An account is required before you can subscribe to a provider tier.")}
+              </p>
+
+              {error && <p className="error">{error}</p>}
+              {loading && <div className="loader"></div>}
+
+              <input
+                type="text"
+                name="name"
+                placeholder={t("Name")}
+                value={user.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder={t("Email")}
+                value={user.email}
+                onChange={handleChange}
+                required
+              />
+
+              <div className="password-field">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  placeholder={t("Password")}
+                  value={user.password}
+                  onChange={handleChange}
+                  required
+                />
+                <span
+                  className="eye-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+              </div>
+
+              <input
+                type="text"
+                name="code"
+                placeholder={t("Affiliate Code (optional)")}
+                value={user.code}
+                onChange={handleChange}
+              />
+
+              <button className="custom-btn" type="submit" disabled={loading}>
+                {loading
+                  ? <>{t("Create Provider Account")}...</>
+                  : <>{t("Create Provider Account")}</>
+                }
+              </button>
+
+              <p>
+                {t("Already have an account?")}{" "}
+                <a href="/signin">{t("Sign In")}</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
