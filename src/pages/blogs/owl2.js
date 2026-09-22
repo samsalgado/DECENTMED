@@ -24,7 +24,7 @@ const Owl2 = () => {
 
       </div>
       <div className="video-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
-          <a href="https://oldwiseowladvisor.com/#contactus"><img className='gridimag' src={owl} alt="Psychic Protection" /></a>
+          <a href="https://telehealth.decentmed.org/signup"><img className='gridimag' src={owl} alt="Psychic Protection" /></a>
 </div>
       <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <div className='pr'>
@@ -53,7 +53,7 @@ const Owl2 = () => {
           textDecoration: 'none',
         }}
         className="custom-btn"
-        href="https://oldwiseowladvisor.com/#contactus" 
+        href="https://telehealth.decentmed.org/signup" 
         target="_blank"
       >
         {t("Connect with Samuel")}
