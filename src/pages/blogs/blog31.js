@@ -80,7 +80,7 @@ const Blog31 = () => {
               textDecoration: 'none',
             }}
             className="custom-btn"
-            href="https://oldwiseowladvisor.com/#contactus"
+            href="https://telehealth.decentmed.org/signup"
             target="_blank"
           >
             {t('Connect with Samuel')}
