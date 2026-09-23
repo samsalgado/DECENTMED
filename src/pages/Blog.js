@@ -55,6 +55,17 @@ const BlogPage = () => {
           <img className='gridmagg' src={blogs} alt="logo" />
         </div>
         <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
+          <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("Functional Medicine Marketing")}</h2>
+          <div className='container'>
+            <a href='/functional-medicine-marketing'>
+              <div className="blog-quote-card" style={{ maxWidth: '400px' }}>
+                <p className="blog-quote-card-text">{t('Most people will never scroll to find your booking link.')}</p>
+                <p className="blog-quote-card-sub">{t('So we put it right in front of them.')}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style={{ padding: '20px', fontFamily: "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" }}>
           <h2 style={{ textDecoration: 'underline', textAlign: 'center', margin: '20px 0' }}>{t("The Illusion of Freedom")}</h2>
           <div className='container'>
             <a href='/the-illusion-of-freedom'>

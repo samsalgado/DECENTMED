@@ -5,6 +5,7 @@ import './Info.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NStudy from './nicaraugats';
+import convert from '../images copy/Screenshot 2026-09-23 at 5.17.32 PM.png';
 import Reviews from './reviews';
 import Pricing from '../pages/pricingtiers';
 import ProviderFaqSection from './providerFaq';
@@ -192,13 +193,16 @@ const Providerpage = () => {
     <div className='container'>
       <div data-aos="slide-right" className="container-blue">
         <h1 className="logotitle">{t("Turn Your Expertise Into a Steady Flow of Paying Clients")}</h1>
-        <p>
-          {t("DecentMed is a holistic medicine information portal that connects patients with providers. We post your video content, written content, graphics, reviews, and case studies on our platform — as well as on a decentralized platform called Nostr — in order to combat censorship and validate the effectiveness of your work. DecentMed is an innovative solution to send patients directly to you, fully educated on your process before they even book. Would you be open to a meeting on how to fill your calendar?")}
+       <p className='pr'>
+        {t("DecentMed is a holistic medicine information portal connecting patients with providers. We post your video content, written content, graphics reviews, and case studies on our platform as well as a decentralized platform, called Nostr in order to combat censorship and validate the effectiveness of your work. Unlike traditional telehealth directories, our platform provides off-platform Lead Generation services to ensure our provider base grows their practice.")}
         </p>
+        <Button className="custom-btn" href={BOOK_MEETING_URL} target="_blank">
+        {t('Book Meeting')}
+      </Button>
       </div>
-
+      <img className='gridimage' src={convert} alt='Conversion Rate Optimization' />
+    
       <BookMeetingButton />
-
       <div data-aos="slide-right" className="container-blue">
         <div data-aos="slide-right" className="contents">
           <div className="div-wrapper">
@@ -213,8 +217,14 @@ const Providerpage = () => {
 
         <NStudy />
       </div>
+            <div data-aos="slide-right" className="container-blue">
+      <Button className="custom-btn" href={BOOK_MEETING_URL} target="_blank">
+        {t('Book Meeting')}
+      </Button>
+      </div>
 
       <div data-aos="slide-right" className="container-blue">
+      
         <h1 className="logotitle">{t("What Providers & Patients Are Saying")}</h1>
         <blockquote className="quote">
           {t("'I really was drawn to your vision of how you can help people with this type of platform'")}

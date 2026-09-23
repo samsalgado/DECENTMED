@@ -56,6 +56,7 @@ const Blog32 = lazy(() => import('./pages/blogs/blog32'));
 const Blog33 = lazy(() => import('./pages/blogs/blog33'));
 const Blog34 = lazy(() => import('./pages/blogs/blog34'));
 const Blog35 = lazy(() => import('./pages/blogs/blog35'));
+const Blog36 = lazy(() => import('./pages/blogs/blog36'));
 const HerbalMedicine = lazy(() => import('./pages/HerbalMedicine'));
 const PublicSignUp = lazy(() => import('./pages/SignUp/PublicSignup'));
 const SignupOptions = lazy(() => import('./pages/SignupOptions'));
@@ -188,6 +189,7 @@ function App() {
         <Route path="/on-doing-a-reading-for-you" element={<Blog33 t={t} />} />
         <Route path="/covid" element={<Blog34 t={t} />} />
         <Route path="/the-gurus-cat" element={<Blog35 t={t} />} />
+        <Route path="/functional-medicine-marketing" element={<Blog36 t={t} />} />
         <Route path="/energyhealers" element={<EnergyPract t={t} />} />
         <Route path="/mindset" element={<Mindset t={t} />} />
         <Route path="/funcmed" element={<Func t={t} />} />
