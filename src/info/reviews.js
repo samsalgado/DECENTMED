@@ -13,9 +13,6 @@ import { useTranslation } from 'react-i18next';
 import caroline from "../images copy/new_Review.png";
 const Reviews = () => {
   const { t } = useTranslation('common');
-  const learnmore = () => {
-    window.location.href = 'https://cal.com/merlin-ayx5zg/30min'
-  }
   return (
 <div className="title-container">
 <table className="collapsibles-table">
@@ -34,9 +31,9 @@ const Reviews = () => {
             <img className="gridimag" src={graphic6} alt="New Review" />
             <img className="gridimag" src={amber} alt="New Review" />
             <img alt='' />
-             <Button onClick={learnmore} className="custom-btn">
+             <Button className="custom-btn" href="https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true" target="_blank">
           {t('Book Meeting')}
-        </Button> 
+        </Button>
     </Collapsible>
   </tbody>
 </table>

@@ -3,57 +3,35 @@ import '../App.css';
 import Providerpage from '../info/providerpage';
 import { useEffect } from 'react';
 import "../App.css";
-import { Button } from 'react-bootstrap';
-import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
-import plants from "../images copy/bckgrd.png";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
+import Topbar from './topbar';
+import Footer from '../footer';
+import { buildProviderFaqSchema } from '../info/providerFaq';
+
+// FAQPage structured data (Answer Engine Optimization) - lets AI search
+// tools and Google's answer boxes lift these provider Q&As directly and
+// cite this page as the source, driving provider searches here. The visible
+// FAQ content it mirrors is rendered by ProviderFaqSection inside
+// Providerpage. See HolisticHealthFAQ.js for the same pattern.
+const providerFaqSchema = buildProviderFaqSchema();
+
 export function ProviderLandingPage() {
   const {t} = useTranslation('common');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const handleEmailClick = () => {
-    window.location.href = 'https://cal.com/merlin-ayx5zg/30min'
-  } 
   return (
     <div style={{ textAlign: 'center', marginTop: 0, paddingTop: 0 }}>
       <Helmet>
         <title>{t('Provider Sign Up')}</title>
         <meta property="og:title" content={t("Provider Sign Up")} />
         <meta name="description" content={t("Join DecentMed's holistic provider network to get listed in our patient-facing directory, access telehealth booking, and grow your practice with built-in marketing and patient acquisition support.")} />
+        <script type="application/ld+json">{JSON.stringify(providerFaqSchema)}</script>
         </Helmet>
-      <div 
-        style={{ 
-          backgroundImage: `url(${plants})`, 
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
-          height: "120px", 
-          position: "relative"
-      }}
-      >
-    <img 
-      src={LOGO} 
-      alt="logo" 
-      className="Logo"
-      style={{ 
-        position: "absolute", 
-        top: "12px", 
-        left: "8px" 
-      }} 
-    />
-    <Button style={{ 
-            position: "absolute", 
-            top: "10px", 
-            right: "10px", 
-            color: "white", 
-            fontSize: "24px", 
-            cursor: "pointer" 
-          }} onClick={handleEmailClick} target='_blank' className="custom-btn">
-          {t('Book Meeting')}
-    </Button>    
-      </div>
+      <Topbar />
              <Providerpage />
+      <Footer />
     </div>
   );
 }

@@ -158,15 +158,6 @@ const Topbar = () => {
                 {t("Sign Up")}
               </Nav.Link>
             )}
-
-            <Nav.Link
-              style={{ color: "white", transition: "0.2s" }}
-              onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
-              onMouseLeave={(e) => (e.target.style.color = "white")}
-              href="https://decentmed.org/provider"
-            >
-              {t("Provider")}
-            </Nav.Link>
           </Nav>
 
           {/* LANGUAGE DROPDOWN */}
