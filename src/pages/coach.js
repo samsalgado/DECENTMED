@@ -685,7 +685,7 @@ const learnmore = () => {
 
         <div className="provider-video">
           <iframe
-            src="https://www.linkedin.com/video/embed/live/urn:li:ugcPost:7412193684672184320"
+            src="https://www.youtube.com/embed/9pUjEybptCQ?si=jQ875P-D-WkCUzC0"
             title="Bethany Stone Video"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             allowFullScreen
