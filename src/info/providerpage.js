@@ -194,7 +194,10 @@ const Providerpage = () => {
       <div data-aos="slide-right" className="container-blue">
         <h1 className="logotitle">{t("Turn Your Expertise Into a Steady Flow of Paying Clients")}</h1>
        <p className='pr'>
-        {t("DecentMed is a holistic medicine information portal connecting patients with providers. We post your video content, written content, graphics reviews, and case studies on our platform as well as a decentralized platform, called Nostr in order to combat censorship and validate the effectiveness of your work. Unlike traditional telehealth directories, our platform provides off-platform Lead Generation services to ensure our provider base grows their practice.")}
+        {t("DecentMed is a holistic medicine information portal and growth consultancy connecting practitioners with patients. Beyond a standard directory, we provide off-platform lead generation and conversion rate optimization consultancy to scale your practice. We syndicate your video content, reviews, and case studies to our platform and the censorship-resistant Nostr network, delivering patient discovery, professional credibility, and a permanent online presence.")}
+        </p>
+        <p className='pr'>
+        {t("Traditional directories list your name and leave you to figure out the rest. DecentMed is a holistic medicine information portal engineered to turn your expertise into a steady stream of pre-qualified clients. While we are not a traditional marketing agency, we provide high-impact infrastructure, off-platform lead generation, and conversion rate optimization tools designed to grow your practice.")}
         </p>
         <Button className="custom-btn" href={BOOK_MEETING_URL} target="_blank">
         {t('Book Meeting')}

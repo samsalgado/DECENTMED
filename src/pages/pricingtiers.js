@@ -11,9 +11,9 @@ export function Pricing() {
   const { t } = useTranslation('common');
 
   const tiers = [
-    { name: 'Advertising Tier', price: 500, img: tier0 },
-    { name: 'Tier 1', price: 1500, img: tier2 },
-    { name: 'Tier 2', price: 4000, img: tier3 }
+    { name: 'Advertising Tier: $500', price: 500, img: tier0 },
+    { name: 'Tier 1: $1500', price: 1500, img: tier2 },
+    { name: 'Tier 2: $4000', price: 4000, img: tier3 }
   ];
 
   useEffect(() => {
