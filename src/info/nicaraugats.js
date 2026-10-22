@@ -19,7 +19,7 @@ const NStudy = ({ t }) => {
   return (
     <div className="container">
         <Carousel 
-        showThumbs={false} 
+        showThumbs={true} 
         infiniteLoop={true} 
         autoPlay={true} 
         showStatus={false}

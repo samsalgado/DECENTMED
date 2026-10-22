@@ -10,6 +10,7 @@ import Reviews from './reviews';
 import Pricing from '../pages/pricingtiers';
 import ProviderFaqSection from './providerFaq';
 import { Button } from 'react-bootstrap';
+import NoStudy from "./nojob";
 import { useTranslation } from 'react-i18next';
 
 const BOOK_MEETING_URL = "https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true";
@@ -204,7 +205,20 @@ const Providerpage = () => {
       </Button>
       </div>
       <img className='gridimage' src={convert} alt='Conversion Rate Optimization' />
-    
+    <div data-aos="slide-right" className="container-blue">
+        <h1 className="logotitle">{t("Web Development & AEO")}</h1>
+       <div data-aos="slide-right" className="container-blue">
+        <div data-aos="slide-right" className="contents">
+          <div className="div-wrapper">
+            <VideoCard
+              videoUrl="https://www.youtube.com/embed/VvX77L0I9Pw?si=cqyi96Ew0TUHzrLI"
+              title="AEO Walkthrough"
+            />
+          </div>
+        </div>
+        </div>
+        </div>
+                <NoStudy />
       <BookMeetingButton />
       <div data-aos="slide-right" className="container-blue">
         <div data-aos="slide-right" className="contents">

@@ -2,9 +2,9 @@ import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import '../info/Info.css';
 import { Button } from 'react-bootstrap';
-import tier0 from "../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
-import tier3 from '../images copy/Screenshot 2026-07-06 at 9.42.42 AM.png';
-import tier2 from "../images copy/Screenshot 2026-07-06 at 9.41.32 AM.png";
+import tier0 from "../images copy/dmed_tier0.png";
+import tier3 from '../images copy/dmed_tier2.png';
+import tier2 from "../images copy/dmed_tier1.png";
 
 
 export function Pricing() {
