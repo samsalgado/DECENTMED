@@ -1,0 +1,70 @@
+/* Scoped to the NStudy carousel */
+.nstudy {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.nstudy .carousel .slide {
+  background: transparent;
+}
+
+/* Images scale to the screen and keep their aspect ratio */
+.nstudy .nstudy-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+}
+
+/* Thumbnails (desktop only) */
+.nstudy .carousel .thumbs-wrapper {
+  margin: 12px 0;
+}
+.nstudy .carousel .thumb {
+  border-width: 2px;
+}
+.nstudy .carousel .thumb img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* Bigger, easier-to-tap indicator dots, sitting below the image */
+.nstudy .carousel .control-dots {
+  position: static;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.nstudy .carousel .control-dots .dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  box-shadow: none;
+  background: #999;
+  opacity: 0.6;
+}
+.nstudy .carousel .control-dots .dot.selected {
+  background: #2f6f4f;
+  opacity: 1;
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .nstudy {
+    padding: 0 8px;
+  }
+  .nstudy .nstudy-img {
+    max-height: 60vh;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .nstudy .carousel .slider {
+    transition-duration: 0s !important;
+  }
+}

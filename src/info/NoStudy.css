@@ -1,0 +1,101 @@
+/* Scoped to the NoStudy carousel */
+.nostudy {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+ 
+.nostudy .carousel .slide {
+  background: transparent;
+}
+ 
+.nostudy-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* Images scale to the screen and keep their aspect ratio */
+.nostudy .nostudy-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+}
+ 
+/* Big, tappable "visit" link under each slide (replaces tiny thumbnail links on mobile) */
+.nostudy-visit {
+  display: inline-block;
+  margin: 10px 0 28px; /* bottom space clears the dots */
+  padding: 12px 20px;
+  min-height: 44px;          /* recommended minimum touch target */
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #2f6f4f;
+  border-radius: 8px;
+}
+ 
+.nostudy-visit:active {
+  opacity: 0.85;
+}
+ 
+/* Thumbnails (desktop only) */
+.nostudy .carousel .thumbs-wrapper {
+  margin: 12px 0;
+}
+.nostudy .carousel .thumb {
+  border-width: 2px;
+}
+.nostudy .carousel .thumb img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+ 
+/* Bigger, easier-to-tap indicator dots */
+.nostudy .carousel .control-dots {
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.nostudy .carousel .control-dots .dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  box-shadow: none;
+  background: #999;
+  opacity: 0.6;
+}
+.nostudy .carousel .control-dots .dot.selected {
+  background: #2f6f4f;
+  opacity: 1;
+}
+ 
+/* Phones */
+@media (max-width: 768px) {
+  .nostudy {
+    padding: 0 8px;
+  }
+  .nostudy .nostudy-img {
+    max-height: 60vh;
+  }
+  .nostudy-visit {
+    width: 100%;
+    max-width: 360px;
+    font-size: 0.95rem;
+  }
+}
+ 
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .nostudy .carousel .slider {
+    transition-duration: 0s !important;
+  }
+}

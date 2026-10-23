@@ -12,9 +12,7 @@ import ProviderFaqSection from './providerFaq';
 import { Button } from 'react-bootstrap';
 import NoStudy from "./nojob";
 import { useTranslation } from 'react-i18next';
-
 const BOOK_MEETING_URL = "https://cal.com/merlin-ayx5zg/30min?overlayCalendar=true";
-
 const BookMeetingButton = () => {
   const { t } = useTranslation('common');
   return (
@@ -25,7 +23,6 @@ const BookMeetingButton = () => {
     </div>
   );
 };
-
 // Lazy-loaded, fullscreen-capable video card matching the style used on the
 // education pages (e.g. decentmed.org/nutrition) - see functionalvids.js /
 // nutritionvids.js for the source of this pattern. Shared here by the two
@@ -218,7 +215,7 @@ const Providerpage = () => {
         </div>
         </div>
         </div>
-                <NoStudy />
+      <NoStudy />
       <BookMeetingButton />
       <div data-aos="slide-right" className="container-blue">
         <div data-aos="slide-right" className="contents">
@@ -229,9 +226,7 @@ const Providerpage = () => {
             />
           </div>
         </div>
-
         <BookMeetingButton />
-
         <NStudy />
       </div>
             <div data-aos="slide-right" className="container-blue">
@@ -272,5 +267,4 @@ const Providerpage = () => {
     </div>
   );
 }
-
 export default Providerpage;
