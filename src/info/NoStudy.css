@@ -1,37 +1,52 @@
-/* Scoped to the NoStudy carousel */
-.nostudy {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 12px;
-  box-sizing: border-box;
+/* Scoped to the NoStudy carousel.
+   Selectors are intentionally specific (.container.nostudy ...) and the key sizing
+   rules use !important so global rules in App.css (.container, .gridimag) can't
+   override them with fixed widths/heights. */
+
+.container.nostudy {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding: 0 12px !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden;
 }
- 
-.nostudy .carousel .slide {
+
+.container.nostudy .carousel,
+.container.nostudy .carousel-root,
+.container.nostudy .carousel .slider-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.container.nostudy .carousel .slide {
   background: transparent;
 }
- 
+
 .nostudy-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 /* Images scale to the screen and keep their aspect ratio */
-.nostudy .nostudy-img {
-  width: 100%;
-  height: auto;
-  max-height: 70vh;
-  object-fit: contain;
+.container.nostudy .carousel .slide img.nostudy-img,
+.container.nostudy .carousel .slide img.gridimag {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 70vh !important;
+  object-fit: contain !important;
   display: block;
+  margin: 0 auto;
 }
- 
-/* Big, tappable "visit" link under each slide (replaces tiny thumbnail links on mobile) */
-.nostudy-visit {
+
+/* Big, tappable "visit" link under each slide */
+.container.nostudy .nostudy-visit {
   display: inline-block;
   margin: 10px 0 28px; /* bottom space clears the dots */
   padding: 12px 20px;
-  min-height: 44px;          /* recommended minimum touch target */
+  min-height: 44px; /* recommended minimum touch target */
   box-sizing: border-box;
   font-size: 1rem;
   line-height: 1.4;
@@ -41,31 +56,31 @@
   background: #2f6f4f;
   border-radius: 8px;
 }
- 
-.nostudy-visit:active {
+
+.container.nostudy .nostudy-visit:active {
   opacity: 0.85;
 }
- 
-/* Thumbnails (desktop only) */
-.nostudy .carousel .thumbs-wrapper {
+
+/* Thumbnails (desktop) */
+.container.nostudy .carousel .thumbs-wrapper {
   margin: 12px 0;
 }
-.nostudy .carousel .thumb {
+.container.nostudy .carousel .thumb {
   border-width: 2px;
 }
-.nostudy .carousel .thumb img {
-  width: 100%;
-  height: 60px;
-  object-fit: cover;
+.container.nostudy .carousel .thumb img {
+  width: 100% !important;
+  height: 60px !important;
+  object-fit: cover !important;
 }
- 
+
 /* Bigger, easier-to-tap indicator dots */
-.nostudy .carousel .control-dots {
+.container.nostudy .carousel .control-dots {
   bottom: 0;
   margin: 0;
   padding: 0;
 }
-.nostudy .carousel .control-dots .dot {
+.container.nostudy .carousel .control-dots .dot {
   width: 12px;
   height: 12px;
   margin: 0 6px;
@@ -73,29 +88,35 @@
   background: #999;
   opacity: 0.6;
 }
-.nostudy .carousel .control-dots .dot.selected {
+.container.nostudy .carousel .control-dots .dot.selected {
   background: #2f6f4f;
   opacity: 1;
 }
- 
-/* Phones */
+
+/* Phones. These rules hide thumbnails/arrows in CSS too, so mobile works
+   even if the JS breakpoint hook doesn't fire. */
 @media (max-width: 768px) {
-  .nostudy {
-    padding: 0 8px;
+  .container.nostudy {
+    padding: 0 8px !important;
   }
-  .nostudy .nostudy-img {
-    max-height: 60vh;
+  .container.nostudy .carousel .thumbs-wrapper,
+  .container.nostudy .carousel .control-arrow {
+    display: none !important;
   }
-  .nostudy-visit {
+  .container.nostudy .carousel .slide img.nostudy-img,
+  .container.nostudy .carousel .slide img.gridimag {
+    max-height: 60vh !important;
+  }
+  .container.nostudy .nostudy-visit {
     width: 100%;
     max-width: 360px;
     font-size: 0.95rem;
   }
 }
- 
+
 /* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
-  .nostudy .carousel .slider {
+  .container.nostudy .carousel .slider {
     transition-duration: 0s !important;
   }
 }
