@@ -234,7 +234,6 @@ const Providerpage = () => {
         {t('Book Meeting')}
       </Button>
       </div>
-
       <div data-aos="slide-right" className="container-blue">
       
         <h1 className="logotitle">{t("What Providers & Patients Are Saying")}</h1>
