@@ -327,13 +327,7 @@ const {t} = useTranslation('common');
                           <img data-aos="slide-right" className='gridimage' src={ts} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
                                     </a>
                                     <div
-  style={{
-    position: 'relative',
-    width: '100%',
-    maxWidth: '400px',
-    aspectRatio: '9 / 16',
-    margin: 'auto'
-  }}
+  
 >
 
                                      <Button onClick={valentina} target='_blank' className="custom-btn">
