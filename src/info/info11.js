@@ -22,6 +22,9 @@ const {t} = useTranslation('common');
   const valentina = () => {
     window.location.href = 'https://www.karilockremwellness.com/'
   }
+   const lorna = () => {
+    window.location.href = 'https://optimalrootwellness.com'
+  }
    useEffect(() => {
       AOS.init({ duration: 1000, once: false }); // once:true means animation runs only once
     }, []);
@@ -332,18 +335,7 @@ const {t} = useTranslation('common');
     margin: 'auto'
   }}
 >
-  <iframe
-    src="https://www.youtube.com/embed/ln22tk3QIDA"
-    title="YouTube Short"
-    style={{
-      width: '100%',
-      height: '100%',
-      border: 0
-    }}
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  />
-</div>
+
                                      <Button onClick={valentina} target='_blank' className="custom-btn">
                                   {t('Visit Kari Lockrem Wellness')}
                 </Button> 
@@ -387,7 +379,22 @@ const {t} = useTranslation('common');
           }
         }
       `}</style>
-        <br></br>
+        <iframe
+    src="https://www.youtube.com/embed/ln22tk3QIDA"
+    title="YouTube Short"
+    style={{
+      width: '100%',
+      height: '100%',
+      border: 0
+    }}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  />
+
+ <Button onClick={lorna} target='_blank' className="custom-btn">
+                                  {t('Book Consultation')}
+</Button>
+      </div>
                <div data-aos="slide-right" className="container-blue">
                 <h2>{t("Why do I need a functional medicine health coach?")}</h2>
       <p className='pr'>-{t("One-on-one guidance and accountability")}</p>
@@ -412,7 +419,8 @@ const {t} = useTranslation('common');
         <Benefitts /> 
             <Button onClick={learnmore} target='_blank' className="custom-btn">
                 {t('Providers: Signup Here')}
-            </Button>   
+            </Button> 
+              
              </div>    
         </div>
     )
