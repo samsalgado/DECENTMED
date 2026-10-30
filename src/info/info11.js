@@ -323,6 +323,15 @@ const {t} = useTranslation('common');
                                                 <a href= "https://my.practicebetter.io/#/5f7214892a9029071895cc89/bookings?p=69af7d66944368a77fb2a556" alt="Kari Lockrem Wellness">
                           <img data-aos="slide-right" className='gridimage' src={ts} alt='Practice and Presence: An Ashtanga, Philosophy & Sound Healing Retreat' />
                                     </a>
+                                    <div style="position: relative; width: 100%; max-width: 400px; aspect-ratio: 9 / 16; margin: auto;">
+                                      <iframe
+                                        src="https://www.youtube.com/embed/ln22tk3QIDA"
+                                        title="YouTube Short"
+                                        style="width: 100%; height: 100%; border: 0;"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                      </iframe>
+                                    </div>
                                      <Button onClick={valentina} target='_blank' className="custom-btn">
                                   {t('Visit Kari Lockrem Wellness')}
                 </Button> 
