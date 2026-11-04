@@ -379,7 +379,7 @@ possible for you. So borrow our belief because so many clients have gotten incre
         <iframe
         data-aos="slide-right"
           className="centered-video"
-          src="https://www.youtube.com/embed/ya7yJQAjhi8?si=bDZPQpX5ROFThuv1"
+          src="https://www.youtube.com/embed/ya7yJQAjhi8?si=bDZPQpX5ROFThuv1" 
           frameBorder="0"
           allowFullScreen
           title="YouTube video player"
@@ -446,7 +446,9 @@ possible for you. So borrow our belief because so many clients have gotten incre
             }
           }
         `}</style>
+
         <div data-aos="slide-right" className="container-blue">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/LMRf3r5mCl4?si=_lHNxs73udonsyw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
         <iframe
           className="centered-video"
           src="https://www.youtube.com/embed/9pUjEybptCQ?si=TTYSFG3DjqPRagLk"
