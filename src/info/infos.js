@@ -8,6 +8,7 @@ import sumit from "../images copy/maxresdefault.jpg";
 import sumit1 from "../images copy/ptsdsummit.png";
 import tsnmee from "../images copy/diabesity (2).png";
 import SummitInfo from './infosummit';
+import azts from "../images copy/energy (1).png"
 import { Button } from 'react-bootstrap';
 import SummitForm from './SummitForm';
 import "../App.css";
@@ -23,17 +24,21 @@ const { t } = useTranslation("common");
       <div className='theecontainer'>
           <div className="container-blue">
             <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LMRf3r5mCl4?si=_lHNxs73udonsyw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
+              <div>
+            <img className='gridimag' src={azts} alt='DecentMed Summit' />
+            </div>
             <div>
             <h1>{t('Sign Up')}</h1>
             <SummitForm />
             <br />
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qS8gQtZAIz8?si=46g1xjy_cKat8xrq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <a href='https://telehealth.decentmed.org/signup'>
             <h1>{t('Watch Full Summits on More Active')}</h1>
             </a>
+                        <h2>{t('Previous Summits')}</h2>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LMRf3r5mCl4?si=_lHNxs73udonsyw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qS8gQtZAIz8?si=46g1xjy_cKat8xrq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-            <h2>{t('Previous Summits')}</h2>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/iNvwz2_FGSg?si=GPjYbA2nrKt6X4dl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div>
           <a href='https://telehealth.decentmed.org/signup'>

@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import ReactDOM from 'react-dom';
 import book1 from "../images copy/book1.jpg";
 import book2 from "../images copy/book2.jpg";
+import book3 from "../images copy/Calm Your Nervous System_ 5 Tools(1).png";
 import TsBen from './tsben';
 import C from '../pages/cheska';
 import { useTranslation } from 'react-i18next';
@@ -194,6 +195,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
       <p>{t("Giving people the tools to become more connected to their bodies can help them understand how thoughts and emotions impact our bodies as well as our minds.")}</p>
             <p>{t("Somatic exercises also teach people how to regulate their emotions to process traumatic events and respond to stress and uncertainty from a calmer and more grounded place, allowing their bodies to let go of chronic tension.")}</p>
       <p>{t("As a result of strengthening the body-mind connection, people are attuned to the ways in which they move their bodies that may not be beneficial, which can motivate them to shift out of bad habits of sitting and moving in the process alleviating chronic physical pain and discomfort.")}</p>
+      
       <Collapsible trigger={<div className="collapsible-trigger">{t("Somatic Therapy Exercises PDF")}</div>}>
           <C />
         </Collapsible>
@@ -266,6 +268,7 @@ plan and YouTube.com/amazinglifedesign. You can also visit their websites at ama
               <Collapsible trigger={<div className="collapsible-trigger">{t("Resources")}</div>}>
         <a href="https://www.amazon.com/Handbook-Human-Potential-Accessible-Personal/dp/B0G4J3JXKK/ref=sr_1_1?crid=1LMFQIDRNTC4I&dib=eyJ2IjoiMSJ9.pjgTbL2HmvhiV03i3tu_KSLHL8HpvWtIy4uoZLOHMnfh87vrOpD6RSEBMm-tsS2arI_I3b-NojrmDS9q0N34yxJNtvYt9qd-71XevY2aYYE.Vj_fGKnU_us7s3QAjSHSInuWtFxxRkWAxJ-TdruXhzQ&dib_tag=se&keywords=handbook+for+human+potential+an+accessible+guide+to+personal+growth&nsdOptOutParam=true&qid=1766436381&sprefix=Handbook+for+human+po%2Caps%2C122&sr=8-1"> <img className='gridimage' src={book1} alt="img" /> </a>
         <a href="https://www.amazon.com/Wounds-Wisdom-Art-Healing-Trauma/dp/B0D8QNYCDK/ref=sr_1_4?crid=21ALF1LZPXSSH&dib=eyJ2IjoiMSJ9.MCes-FKwfcB0U6nV0hGmG9CRQPdERvi8LZdmsPpzHDTvF0nQabY4B8E7rkuYB9f5oBYHzkdLLAuXQPtRmv0IZcnf316y-LzntfvR1g8wpguwVpbDNnyaJ0IwjbQ-jJCaEs8udkrnW9kIINdTm9dXAXLVN1IYCB5bjsqeSMUOw4X7LnciqHBaG-7-LauZM2xdA9EH0oIetuIQbK-glHkQ4aqWJOEn07EhqGYxo5KGX0o.w4J2XMhKsqHhAnZehlR2Xp2L5HS4G-aWeHKKmtZCgPg&dib_tag=se&keywords=wounds+to+wisdom&qid=1766436621&sprefix=wounds+to+wisdom%2Caps%2C74&sr=8-4"> <img className='gridimage' src={book2} alt="img" /> </a>
+                <a href="https://showuphappy.com/"> <img className='gridimage' src={book3} alt="img" /> </a>
         </Collapsible>
         <br></br>
         <Collapsible trigger={<div className="collapsible-trigger">{t("Client Testimonials")}</div>}>
