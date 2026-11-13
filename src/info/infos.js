@@ -8,7 +8,7 @@ import sumit from "../images copy/maxresdefault.jpg";
 import sumit1 from "../images copy/ptsdsummit.png";
 import tsnmee from "../images copy/diabesity (2).png";
 import SummitInfo from './infosummit';
-import azts from "../images copy/IMG_6769.jpeg";
+import azts from "../images copy/IMG_6770.jpeg";
 import { Button } from 'react-bootstrap';
 import SummitForm from './SummitForm';
 import "../App.css";
