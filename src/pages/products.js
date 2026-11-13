@@ -280,7 +280,8 @@ of diet failures, cravings, and eating disorders. This has been the latest episo
               </div>
 
               <div className="shop-section">
-                <h2 className="shop-section-title">{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2>
+
+               <div className="container-blue"> <h2 className="shop-section-title">{t("Low Back Pain: 3 Steps to Relief in 2 Minutes")}</h2></div>
                 <div className="shop-grid">
                   <ProductCard
                     t={t}
