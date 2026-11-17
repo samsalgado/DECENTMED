@@ -16,7 +16,7 @@ import '../Styles/AuthForm.css';
 // tier with the price below, then paste each link (https://buy.stripe.com/...)
 // between the quotes.
 const TIERS = [
-  { id: "tier0", label: "Tier 0 — $500", img: tier0, paymentLink: "https://buy.stripe.com/7sYaEY0Fi0w6dPS3m88Ra05" },
+  { id: "tier0", label: "Tier 0 — $500", img: tier0, paymentLink: "https://buy.stripe.com/3cIfZi87K6Uu3be1e08Ra0j" },
   { id: "tier1", label: "Tier 1 — $500", img: BLACKFRIDAY_TIER1, paymentLink: "https://buy.stripe.com/eVq9AU3Ru92CbHK8Gs8Ra0h" },
   { id: "tier2", label: "Tier 2 — $2000", img: BLACKFRIDAY_TIER2, paymentLink: "https://buy.stripe.com/eVq6oI2Nq4MmfY0cWI8Ra0i" },
 ];
