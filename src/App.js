@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
@@ -36,7 +36,6 @@ const Blog12 = lazy(() => import('./pages/blogs/blog12'));
 const Blog14 = lazy(() => import('./pages/blogs/blog14'));
 const BlogPage = lazy(() => import("./pages/Blog"));
 const Blog23 = lazy(() => import('./pages/blogs/blog23'));
-const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
 const SignIn = lazy(() => import('./pages/Login/SignIn'));
 const ProviderLandingPage = lazy(() => import('./pages/ProviderLandingPage').then(module => ({ default: module.ProviderLandingPage })));
 const Blog18 = lazy(() => import('./pages/blogs/blog18'));
@@ -265,8 +264,9 @@ function App() {
         <Route path="/stripepay" element={<PrivateRoute><StripePayment t={t} /></PrivateRoute>} />
         <Route path="/signup" element={<SignupOptions />} />
         <Route path="/signup/public" element={<PublicSignUp t={t} />} />
-        <Route path="/signup/provider" element={<SignUp t={t} />} />
-        <Route path="/provider" element={<SignUp t={t} />} />
+        {/* Provider signup is now Stripe Payment Links only (database is down) */}
+        <Route path="/signup/provider" element={<Navigate to="/choose-provider-tier" replace />} />
+        <Route path="/provider" element={<Navigate to="/choose-provider-tier" replace />} />
         <Route path="/signin" element={<SignIn t={t} />} />
         {/* Telehealth Providers Dashboard (for regular users) */}
         <Route path="/provider-dashboard" element={

@@ -137,8 +137,6 @@ const Blog6 = () => {
               controls={true}
             />
         </div>
-                
-
       </div>
             <Button className="custom-btn" onClick={() => setShowModal(true)}>
                         {t("Transcript")}

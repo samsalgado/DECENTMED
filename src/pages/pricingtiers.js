@@ -2,18 +2,19 @@ import React, { useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import '../info/Info.css';
 import { Button } from 'react-bootstrap';
-import tier0 from "../images copy/dmed_tier0.png";
-import tier3 from '../images copy/dmed_tier2.png';
-import tier2 from "../images copy/dmed_tier1.png";
+import BLACKFRIDAY_TIER1 from "../images copy/BLACKFRIDAYTIER1.png";
+import BLACKFRIDAY_TIER2 from "../images copy/BLACKFRIDAYTIER2.png";
+import tier0 from "../images copy/Screenshot 2026-07-06 at 9.39.46 AM.png";
+//import tier2 from '../images copy/Screenshot 2026-11-16 at 9.27.00 PM.png';
+//import tier1 from "../images copy/Screenshot 2026-11-16 at 9.29.42 PM.png";
 
 
 export function Pricing() {
   const { t } = useTranslation('common');
-
   const tiers = [
     { name: 'Advertising Tier: $500', price: 500, img: tier0 },
-    { name: 'Tier 1: $1500', price: 1500, img: tier2 },
-    { name: 'Tier 2: $4000', price: 4000, img: tier3 }
+    { name: 'Tier 1: $500', price: 500, img: BLACKFRIDAY_TIER1 },
+    { name: 'Tier 2: $2000', price: 2000, img: BLACKFRIDAY_TIER2 }
   ];
 
   useEffect(() => {

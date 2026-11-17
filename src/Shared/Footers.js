@@ -6,6 +6,7 @@ import { FaLinkedin, FaWhatsapp, FaYoutube, FaTiktok, FaEnvelope } from 'react-i
 import { handleMailClick } from '../utils/mailFallback';
 import { Button } from 'react-bootstrap';
 import Inspire from "../images copy/Inspire.png";
+import moreactive from "../images copy/moreactive.png";
 import LOGO from "../images copy/906f38b7-e2d8-45e0-89d3-15a867d484c1.png";
 import alignable from "../images copy/alignable.png";
 import wish from "../images copy/wish.png";
@@ -61,6 +62,9 @@ const Footers = () => {
         <div className="footer-section office">
           <h3 className="footer-title">{t("Office")}</h3>
           <img src={alignable} className="geyserImgLarge" alt="Alignable" />
+          <a href="https://moreactive.com/">
+          <img src={moreactive} className="geyserImgLarge" alt="More Active" />
+        </a>
           <p className="footer-address">5830 E 2ND ST Casper, WY 82609</p>
           <Button
             className="custom-btn"

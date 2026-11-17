@@ -53,5 +53,4 @@ const {t} = useTranslation('common')
     
   )
 }
-
 export default SEO
